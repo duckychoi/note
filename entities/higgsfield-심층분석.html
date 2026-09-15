@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우"/><meta name="twitter:description" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우 분석 방법: 저장된 인스타그램 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석 단순 기능 나열이 아닌 실제 화면/프롬프트/워크플로우에서 추출한 인사이트 1."/><meta property="og:description" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우 분석 방법: 저장된 인스타그램 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석 단순 기능 나열이 아닌 실제 화면/프롬프트/워크플로우에서 추출한 인사이트 1."/><meta property="og:image:alt" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우 분석 방법: 저장된 인스타그램 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석 단순 기능 나열이 아닌 실제 화면/프롬프트/워크플로우에서 추출한 인사이트 1."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/entities/higgsfield-심층분석"/><meta property="twitter:url" content="https://duckychoi.github.io/note/entities/higgsfield-심층분석"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우 분석 방법: 저장된 인스타그램 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석 단순 기능 나열이 아닌 실제 화면/프롬프트/워크플로우에서 추출한 인사이트 1."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/entities/higgsfield-심층분석-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/entities/higgsfield-심층분석-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/entities/higgsfield-심층분석-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="entities/higgsfield-심층분석" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-208" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-208" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../entities/">entities</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우</a></div></nav><h1 class="article-title">Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/higgsfield" class="internal internal-link tag-link">higgsfield</a><span class="note-properties-separator">, </span><a href="../tags/cinema-studio" class="internal internal-link tag-link">cinema-studio</a><span class="note-properties-separator">, </span><a href="../tags/soul-cast" class="internal internal-link tag-link">soul-cast</a><span class="note-properties-separator">, </span><a href="../tags/prompt-engineering" class="internal internal-link tag-link">prompt-engineering</a><span class="note-properties-separator">, </span><a href="../tags/심층분석" class="internal internal-link tag-link">심층분석</a><span class="note-properties-separator">, </span><a href="../tags/video-saas" class="internal internal-link tag-link">video-saas</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-04-10T00:00:00.000Z">2026년 4월 10일</time><span>13 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="higgsfield-심층-분석--cinema-studio--chat-노하우">Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#higgsfield-심층-분석--cinema-studio--chat-노하우" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>분석 방법: 저장된 인스타그램 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석
+단순 기능 나열이 아닌 <strong>실제 화면/프롬프트/워크플로우</strong>에서 추출한 인사이트</p>
+</blockquote>
+<hr/>
+<h2 id="1-cinema-studio--핵심-메커니즘">1. Cinema Studio — 핵심 메커니즘<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-cinema-studio--핵심-메커니즘" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="soul-cast--scene의-구조">Soul Cast + Scene의 구조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soul-cast--scene의-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Cinema Studio는 &quot;캐릭터&quot;와 &quot;모션&quot;을 분리해서 합성한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Soul Cast = 캐릭터 외형 (정면 사진 1장으로 추출)
+Scene = 모션/카메라워크 구조 (실제 촬영 영상이 뼈대)
+AI가 Scene의 모션을 유지하면서 외형만 Soul Cast로 교체</p>
+</div>
+</blockquote>
+<pre><code>[Soul Cast 이미지 1장]           [Scene 클립 N개]
+  캐릭터 외형 고정                 카메라/액션 구조
+       ↓                                ↓
+       └──────────── AI 합성 ───────────┘
+                         ↓
+              [새로운 일관된 캐릭터 영상]
+</code></pre>
+<p><strong>실제 확인된 사례:</strong></p>
+<ul>
+<li>스파이더맨 의상 남성 (Soul Cast) + 도시 스윙/점프/착지 클립 6개 (Scene)
+→ AI가 배우를 교체하면서 모든 액션 시퀀스를 해당 캐릭터로 재현</li>
+<li>의상(보라색 점퍼, 청바지), 체형, 헤어스타일 전 씬 일관 유지</li>
+</ul>
+<h3 id="soul-cast-이미지-노하우">Soul Cast 이미지 노하우<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soul-cast-이미지-노하우" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Soul Cast 최적 이미지 조건 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>정면/3/4 앵글 사진</strong>이 가장 높은 캐릭터 일관성</li>
+<li>조명: 스튜디오 조명처럼 고른 조명 > 강한 명암 대비</li>
+<li>배경: 단순할수록 캐릭터 인식 정확도 향상</li>
+<li>해상도: 얼굴이 선명하게 보일 것</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="scene-클립-노하우">Scene 클립 노하우<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scene-클립-노하우" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Scene은 창의적 생성이 아닌 &quot;구조 템플릿&quot;으로 사용된다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>원하는 카메라워크와 액션이 담긴 <strong>실제 촬영 영상</strong>을 Scene으로 사용하면 제어력 극대화.
+스톡 영상 사이트(Pexels, Shutterstock)의 액션 클립을 Scene으로 활용하는 것이 핵심 워크플로우.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="2-프롬프트-엔지니어링--실제-화면에서-추출">2. 프롬프트 엔지니어링 — 실제 화면에서 추출<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-프롬프트-엔지니어링--실제-화면에서-추출" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="패턴-1-카메라-구도-대문자-명시-soul-cinema-studio">패턴 1: 카메라 구도 대문자 명시 (Soul Cinema Studio)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#패턴-1-카메라-구도-대문자-명시-soul-cinema-studio" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>실제 영상에서 확인된 프롬프트:</p>
+<pre><code>THREE-QUARTER VIEW, angyal, moody, handsome man with black hair,
+heavy smoky eye makeup, tribal neck tattoo, and arm tattoos,
+wearing a...
+
+EXTREME LOW ANGLE WIDE LENS, Rebellion in women's a black combat...
+
+OVER THE SHOULDER SHOT (TIGHT), Rebellious woman with...
+</code></pre>
+<p><strong>구조 템플릿:</strong></p>
+<pre><code>[카메라 구도 — 대문자] [분위기 형용사] [인물 외모 상세] [의상/설정]
+</code></pre>
+<p><strong>자주 쓰는 구도 키워드:</strong></p>
+<ul>
+<li><code>THREE-QUARTER VIEW</code> — 인물 3/4 앵글</li>
+<li><code>EXTREME LOW ANGLE WIDE LENS</code> — 극단적 로우앵글</li>
+<li><code>OVER THE SHOULDER SHOT (TIGHT)</code> — 어깨 너머 클로즈업</li>
+<li><code>EXTREME CLOSE-UP</code> — 극클로즈업</li>
+<li><code>MEDIUM SHOT</code> — 미디엄 샷</li>
+<li><code>WIDE ESTABLISHING SHOT</code> — 넓은 배경 샷</li>
+</ul>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>구도를 대문자로 맨 앞에 쓸수록 결과가 더 정확해진다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>소문자로 “close-up shot”보다 대문자 “EXTREME CLOSE-UP”이 프롬프트 우선순위 더 높게 처리됨</p>
+</div>
+</blockquote>
+<hr/>
+<h3 id="패턴-2-타임스탬프-구간-제어-invideo--seedance">패턴 2: 타임스탬프 구간 제어 (invideo + Seedance)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#패턴-2-타임스탬프-구간-제어-invideo--seedance" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>가장 강력한 프롬프트 기법 — 타임스탬프로 씬을 스토리보드화 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>2초 단위로 장면을 지정하면 AI 영상을 스토리보드처럼 정밀 제어 가능</p>
+</div>
+</blockquote>
+<p>실제 영상에서 추출한 완전한 프롬프트 구조:</p>
+<pre><code>Create a 15-second stylized 3D animated magic scene using @image as full
+identity, character, and world.
+
+0:00-0:02:
+Extreme close-up. The magician performs fast flourish cuts.
+The deck splits, rotates, and recombines.
+
+0:02-0:04:
+Camera pulls back to medium shot. He spreads the deck toward camera,
+but keeps most cards slightly angled away. Only ONE card clearly visible:
+Ace of Hearts. He leans forward with a playful, challenging expression.
+
+0:04-0:06:
+Push-in. A different person's hand (from camera POV) reaches in naturally
+and grabs the ONLY clearly visible card: Ace of Hearts.
+
+0:06-0:08:
+The magician cleanly inserts it into the middle of the deck.
+Camera stays tight on the hands so the insertion feels clear and fair.
+
+0:08-0:10:
+Extremely fast, stylish shuffle sequence. Multiple flourish shuffles,
+snap cuts, and elegant hand transfers.
+
+0:10-0:12:
+With a sharp flick, he launches the deck upward. Cards burst outward
+and float dramatically in mid-air around him.
+
+0:12-0:13.5:
+Quick reaction montage. Audience stares upward, wide-eyed and shocked.
+
+0:13.5-0:15:
+He slowly pulls out one card. It is clearly the Ace of Hearts.
+
+Rules:
+- The selected card must always be Ace of Hearts
+- No card duplicates
+- The final revealed card must be the same Ace of Hearts
+
+Tone: playful, impressive, family-friendly, polished
+
+Camera: dynamic cinematic coverage, clean push-ins, close-ups for card
+logic, wider shots for magical payoff
+
+Negative prompt:
+magician selecting the card himself, wrong card, duplicate Ace of Hearts,
+unreadable reveal, broken card
+</code></pre>
+<p><strong>5섹션 구조 템플릿:</strong></p>
+<pre><code>[요약 지시 + @image 참조]
+
+[타임스탬프 구간별 상세 씬]
+0:00-0:02: ...
+0:02-0:04: ...
+
+Rules:
+- 논리 일관성 제약 조건
+
+Tone: 분위기/감성 키워드
+
+Camera: 촬영 스타일 전반
+
+Negative prompt: 자주 발생하는 오류 방지
+</code></pre>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>@image 키워드 사용법 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>프롬프트 내 <code>@image</code>를 쓰면 업로드한 이미지를 캐릭터/세계관 기준으로 참조.
+“using @image as full identity, character, and world” 구문이 캐릭터 고정에 핵심.</p>
+</div>
+</blockquote>
+<hr/>
+<h3 id="패턴-3-manga--live-action-seedance-20">패턴 3: Manga → Live Action (Seedance 2.0)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#패턴-3-manga--live-action-seedance-20" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>만화 패널 자체가 복합 프롬프트 역할을 한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>텍스트 입력창 없이, 여러 장의 만화 패널을 순서대로 업로드하면
+캐릭터 디자인 + 구도 + 대사 + 감정 흐름이 자동으로 실사 영상으로 변환</p>
+</div>
+</blockquote>
+<p><strong>실제 확인된 파이프라인:</strong></p>
+<pre><code>만화 패널 1: 조련장 아침 훈련 장면 + 대사
+만화 패널 2: 마법 대결 선언 대사
+만화 패널 3: 선생님 등장 + 감정 충돌
+        ↓
+Seedance 2.0
+        ↓
+실사 단편 영화 (HD, 전문 조명, 캐릭터 일관성 유지, 음향 포함)
+</code></pre>
+<p>말풍선 대사가 자동으로 음성/자막으로 변환됨.</p>
+<hr/>
+<h2 id="3-claude-code--higgsfield-완전-자동화-파이프라인">3. Claude Code + Higgsfield 완전 자동화 파이프라인<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-claude-code--higgsfield-완전-자동화-파이프라인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Claude Code가 픽셀 좌표로 Higgsfield UI를 직접 조작한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>스크린샷 인식 → <code>Clicked at (305, 759)</code> 같은 좌표 클릭 → 완전 무인 자동화</p>
+</div>
+</blockquote>
+<h3 id="실제-확인된-에이전트-로그">실제 확인된 에이전트 로그<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실제-확인된-에이전트-로그" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Used 2 tools
+Navigated to https://higgsfield.ai
+Clicked at (305, 759)
+Scrolled down by 3 ticks
+Update Todo list [✓]
+</code></pre>
+<h3 id="전체-자동화-파이프라인-도리토스-예시">전체 자동화 파이프라인 (도리토스 예시)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전체-자동화-파이프라인-도리토스-예시" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>INPUT: 제품 이미지 1장 + 명령어
+&quot;generate 50 brand assets for this product.&quot;
+    ↓
+[Step 1] 에이전트: 소셜미디어 경쟁사 리서치 + 10가지 광고 컨셉 수립
+    → &quot;The Last Chip&quot;, &quot;Launch Shatter&quot;, &quot;Cheese Pull Still Life&quot; 등
+    ↓
+[Step 2] 에이전트: higgsfield.ai 자동 접속
+    → Seedream 4.5 모델 선택
+    ↓
+[Step 3] 에이전트: 컨셉별 상세 프롬프트 자동 작성 + 입력
+예시 프롬프트:
+&quot;A Doritos Nacho Cheese chip captured at the exact moment of breaking apart,
+fragments suspended mid-air in a freeze-frame explosion. Orange cheese dust
+particles create a glowing cloud around the shatter point. Deep red-to-black
+gradient background...&quot;
+    ↓
+[Step 4] 에이전트: Generate 버튼 자동 클릭 × 10회+
+    ↓
+[Step 5] 사용자 명령: &quot;download all of them and save it local folder downloads&quot;
+    ↓
+[Step 6] 에이전트: 전체 이미지 자동 다운로드 → 로컬 폴더 저장
+    ↓
+[Step 7] 에이전트: Video 탭 이동 → Kling 3.0 선택 → 베스트 이미지 → 비디오 변환
+    ↓
+OUTPUT: 50개 브랜드 에셋 (이미지 + 비디오)
+</code></pre>
+<p><strong>사용자 입력량:</strong> 명령 2줄 + 제품 이미지 1장
+<strong>AI 작업량:</strong> 리서치 + 기획 + 프롬프트 작성 + 생성 + 다운로드 전체</p>
+<hr/>
+<h2 id="4-실제-영상-제작-워크플로우-전체-파이프라인">4. 실제 영상 제작 워크플로우 (전체 파이프라인)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-실제-영상-제작-워크플로우-전체-파이프라인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="패션-필름-제작-sferro21-확인">패션 필름 제작 (@sferro21 확인)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#패션-필름-제작-sferro21-확인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>[1] Soul Cast 생성
+    → 주인공 얼굴 사진 1장 업로드 → Soul ID 추출
+
+[2] Soul Cinema Studio 스타일 시트 생성
+    → 카메라 구도 대문자 프롬프트로 수십 장 스틸 이미지 생성
+    → 각 씬 설정: 사막/불꽃 런웨이/달 표면 등 배경 다양화
+
+[3] Kling 3.0 Image-to-Video
+    → 스틸 이미지들을 3~5초 영상 클립으로 변환
+
+[4] Adobe Premiere Pro 편집
+    → V1~V6 비디오 트랙에 수십 클립 배치
+    → 음악/SFX 추가 (A1~A5 오디오 트랙)
+
+[5] 최종 패션 필름 완성
+    → 실제 제작비 대비 99% 절감
+</code></pre>
+<p><strong>Premiere Pro 타임라인 구조 (실제 확인):</strong></p>
+<ul>
+<li>비디오 트랙: V1~V6 (6개 레이어)</li>
+<li>오디오 트랙: A1~A5 (5개 레이어)</li>
+<li>클립명 패턴: <code>shot 67.mp4</code>, <code>shot1.mp4</code> (씬 번호 순서)</li>
+<li>프로젝트 구조: <code>Soul cinema.prproj\Bin</code></li>
+</ul>
+<hr/>
+<h2 id="5-uiux-디테일--실제-확인된-요소">5. UI/UX 디테일 — 실제 확인된 요소<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-uiux-디테일--실제-확인된-요소" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="higgsfield-메인-탭-구조">Higgsfield 메인 탭 구조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#higgsfield-메인-탭-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>상단 네비게이션:
+[Image] [Video] [Audio] [Chat New] [Edit]
+
+우측 버튼:
+[Buy Credits] [Assets]
+
+이미지 생성 화면:
+- 프롬프트: &quot;Describe the scene you imagine&quot;
+- 모델 드롭다운: &quot;Seedream 4.5&quot; (기본값)
+- 그리드: 4열 이미지 갤러리
+
+Video 탭 활성화:
+- 모델 선택: &quot;Kling 3.0&quot;
+</code></pre>
+<h3 id="cinema-studio-3패널-레이아웃">Cinema Studio 3패널 레이아웃<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cinema-studio-3패널-레이아웃" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>┌─────────────────────────────────────┐
+│   FINAL RESULT (핑크 테두리 강조)    │
+│              50%                     │
+├──────────────────┬──────────────────┤
+│  SCENE CLIPS     │  SOUL CAST       │
+│  2×3 그리드      │  캐릭터 이미지   │
+│  6개 클립        │  1장             │
+└──────────────────┴──────────────────┘
+</code></pre>
+<hr/>
+<h2 id="6-핵심-노하우-요약-바로-쓸-수-있는-것">6. 핵심 노하우 요약 (바로 쓸 수 있는 것)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-핵심-노하우-요약-바로-쓸-수-있는-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>기법</th><th>방법</th><th>효과</th></tr></thead><tbody><tr><td>카메라 구도 대문자</td><td><code>EXTREME CLOSE-UP,</code> 앞에 위치</td><td>구도 제어 정확도 ↑</td></tr><tr><td>타임스탬프 제어</td><td><code>0:00-0:02:</code> 구간별 씬 지시</td><td>AI 영상 스토리보드화</td></tr><tr><td>@image 앵커</td><td><code>using @image as full identity</code></td><td>캐릭터/세계관 고정</td></tr><tr><td>Rules 섹션</td><td>논리 오류 명시적 금지</td><td>품질 일관성 ↑</td></tr><tr><td>Negative prompt</td><td>자주 발생 오류 타입 열거</td><td>실패 확률 ↓</td></tr><tr><td>Soul Cast 최적화</td><td>정면/고른 조명/단순 배경</td><td>캐릭터 일관성 ↑</td></tr><tr><td>Scene = 스톡 영상</td><td>스톡 액션 클립을 뼈대로 사용</td><td>카메라/액션 제어 ↑</td></tr><tr><td>Claude Code 자동화</td><td>픽셀 좌표 기반 UI 제어</td><td>대량 에셋 무인 생성</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-구현-시-우선-재현해야-할-것">7. 구현 시 우선 재현해야 할 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-구현-시-우선-재현해야-할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>최우선 구현 — @멘션 캐릭터 앵커링 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><code>@image</code> + <code>@캐릭터명</code> 시스템. 한 번 만든 캐릭터를 모든 씬에 참조. 이것이 캐릭터 일관성의 핵심.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>타임스탬프 프롬프트 에디터 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>사용자가 <code>0:00-0:02:</code> 구간별로 씬을 작성할 수 있는 에디터 UI. 스토리보드와 프롬프트의 통합.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Rules/Negative prompt 섹션 UI </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>생성 오류 방지를 위한 구조화된 제약 조건 입력창. 자유 텍스트가 아닌 섹션 분리 UI.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Scene + Soul Cast 분리 업로드 UI </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>두 개의 독립된 드롭존: 왼쪽(Scene 클립들), 오른쪽(Soul Cast 이미지). 직관적 구조.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/higgsfield-벤치마킹" class="internal internal-link alias" data-slug="entities/higgsfield-벤치마킹">Higgsfield-벤치마킹</a> — 전체 기능 구조 개요</li>
+<li><a href="../entities/higgsfield" class="internal internal-link" data-slug="entities/higgsfield">Higgsfield</a> — 엔티티 기본 정보</li>
+<li><a href="../concepts/claude-code-워크플로우" class="internal internal-link alias" data-slug="concepts/claude-code-워크플로우">Claude-Code-워크플로우</a> — 자동화 파이프라인</li>
+<li><a href="../concepts/ai-영상-생성-2026" class="internal internal-link alias" data-slug="concepts/ai-영상-생성-2026">AI-영상-생성-2026</a> — 경쟁 도구 지형도</li>
+<li><a href="../entities/seedance" class="internal internal-link" data-slug="entities/seedance">Seedance</a> — 영상 생성 모델</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-208" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#higgsfield-심층-분석--cinema-studio--chat-노하우" data-for="higgsfield-심층-분석--cinema-studio--chat-노하우">Higgsfield 심층 분석 — Cinema Studio &amp; Chat 노하우</a></li><li class="depth-1"><a href="#1-cinema-studio--핵심-메커니즘" data-for="1-cinema-studio--핵심-메커니즘">1. Cinema Studio — 핵심 메커니즘</a></li><li class="depth-2"><a href="#soul-cast--scene의-구조" data-for="soul-cast--scene의-구조">Soul Cast + Scene의 구조</a></li><li class="depth-2"><a href="#soul-cast-이미지-노하우" data-for="soul-cast-이미지-노하우">Soul Cast 이미지 노하우</a></li><li class="depth-2"><a href="#scene-클립-노하우" data-for="scene-클립-노하우">Scene 클립 노하우</a></li><li class="depth-1"><a href="#2-프롬프트-엔지니어링--실제-화면에서-추출" data-for="2-프롬프트-엔지니어링--실제-화면에서-추출">2. 프롬프트 엔지니어링 — 실제 화면에서 추출</a></li><li class="depth-2"><a href="#패턴-1-카메라-구도-대문자-명시-soul-cinema-studio" data-for="패턴-1-카메라-구도-대문자-명시-soul-cinema-studio">패턴 1: 카메라 구도 대문자 명시 (Soul Cinema Studio)</a></li><li class="depth-2"><a href="#패턴-2-타임스탬프-구간-제어-invideo--seedance" data-for="패턴-2-타임스탬프-구간-제어-invideo--seedance">패턴 2: 타임스탬프 구간 제어 (invideo + Seedance)</a></li><li class="depth-2"><a href="#패턴-3-manga--live-action-seedance-20" data-for="패턴-3-manga--live-action-seedance-20">패턴 3: Manga → Live Action (Seedance 2.0)</a></li><li class="depth-1"><a href="#3-claude-code--higgsfield-완전-자동화-파이프라인" data-for="3-claude-code--higgsfield-완전-자동화-파이프라인">3. Claude Code + Higgsfield 완전 자동화 파이프라인</a></li><li class="depth-2"><a href="#실제-확인된-에이전트-로그" data-for="실제-확인된-에이전트-로그">실제 확인된 에이전트 로그</a></li><li class="depth-2"><a href="#전체-자동화-파이프라인-도리토스-예시" data-for="전체-자동화-파이프라인-도리토스-예시">전체 자동화 파이프라인 (도리토스 예시)</a></li><li class="depth-1"><a href="#4-실제-영상-제작-워크플로우-전체-파이프라인" data-for="4-실제-영상-제작-워크플로우-전체-파이프라인">4. 실제 영상 제작 워크플로우 (전체 파이프라인)</a></li><li class="depth-2"><a href="#패션-필름-제작-sferro21-확인" data-for="패션-필름-제작-sferro21-확인">패션 필름 제작 (@sferro21 확인)</a></li><li class="depth-1"><a href="#5-uiux-디테일--실제-확인된-요소" data-for="5-uiux-디테일--실제-확인된-요소">5. UI/UX 디테일 — 실제 확인된 요소</a></li><li class="depth-2"><a href="#higgsfield-메인-탭-구조" data-for="higgsfield-메인-탭-구조">Higgsfield 메인 탭 구조</a></li><li class="depth-2"><a href="#cinema-studio-3패널-레이아웃" data-for="cinema-studio-3패널-레이아웃">Cinema Studio 3패널 레이아웃</a></li><li class="depth-1"><a href="#6-핵심-노하우-요약-바로-쓸-수-있는-것" data-for="6-핵심-노하우-요약-바로-쓸-수-있는-것">6. 핵심 노하우 요약 (바로 쓸 수 있는 것)</a></li><li class="depth-1"><a href="#7-구현-시-우선-재현해야-할-것" data-for="7-구현-시-우선-재현해야-할-것">7. 구현 시 우선 재현해야 할 것</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

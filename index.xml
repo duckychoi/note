@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Ducky&#039;s Note</title>
+      <link>https://duckychoi.github.io/note</link>
+      <description>Last 10 notes on Ducky&#039;s Note</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>multi-provider</title>
+    <link>https://duckychoi.github.io/note/tags/multi-provider</link>
+    <guid>https://duckychoi.github.io/note/tags/multi-provider</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>andrew-ng</title>
+    <link>https://duckychoi.github.io/note/tags/andrew-ng</link>
+    <guid>https://duckychoi.github.io/note/tags/andrew-ng</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>openai-compatible</title>
+    <link>https://duckychoi.github.io/note/tags/openai-compatible</link>
+    <guid>https://duckychoi.github.io/note/tags/openai-compatible</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>sentence-transformer</title>
+    <link>https://duckychoi.github.io/note/tags/sentence-transformer</link>
+    <guid>https://duckychoi.github.io/note/tags/sentence-transformer</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>semantic-search</title>
+    <link>https://duckychoi.github.io/note/tags/semantic-search</link>
+    <guid>https://duckychoi.github.io/note/tags/semantic-search</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>design-pattern</title>
+    <link>https://duckychoi.github.io/note/tags/design-pattern</link>
+    <guid>https://duckychoi.github.io/note/tags/design-pattern</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>claude.md</title>
+    <link>https://duckychoi.github.io/note/tags/claude.md</link>
+    <guid>https://duckychoi.github.io/note/tags/claude.md</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>llm-coding</title>
+    <link>https://duckychoi.github.io/note/tags/llm-coding</link>
+    <guid>https://duckychoi.github.io/note/tags/llm-coding</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>anomaly-detection</title>
+    <link>https://duckychoi.github.io/note/tags/anomaly-detection</link>
+    <guid>https://duckychoi.github.io/note/tags/anomaly-detection</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item><item>
+    <title>mlops</title>
+    <link>https://duckychoi.github.io/note/tags/mlops</link>
+    <guid>https://duckychoi.github.io/note/tags/mlops</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 15 Sep 2026 10:32:04 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

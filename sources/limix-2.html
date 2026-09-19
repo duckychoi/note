@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다"/><meta name="twitter:description" content="LimiX-2 (arXiv 2609.17488) 핵심 인사이트 — &quot;라벨 예측기&quot;를 &quot;빈칸 채우기 기계&quot;로 바꿨다."/><meta property="og:description" content="LimiX-2 (arXiv 2609.17488) 핵심 인사이트 — &quot;라벨 예측기&quot;를 &quot;빈칸 채우기 기계&quot;로 바꿨다."/><meta property="og:image:alt" content="LimiX-2 (arXiv 2609.17488) 핵심 인사이트 — &quot;라벨 예측기&quot;를 &quot;빈칸 채우기 기계&quot;로 바꿨다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/limix-2"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/limix-2"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="LimiX-2 (arXiv 2609.17488) 핵심 인사이트 — &quot;라벨 예측기&quot;를 &quot;빈칸 채우기 기계&quot;로 바꿨다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/limix-2-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/limix-2-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/limix-2-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/limix-2" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-630" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-630" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다</a></div></nav><h1 class="article-title">LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/ai-news" class="internal internal-link tag-link">ai-news</a><span class="note-properties-separator">, </span><a href="../tags/hf-paper" class="internal internal-link tag-link">hf-paper</a><span class="note-properties-separator">, </span><a href="../tags/tabular" class="internal internal-link tag-link">tabular</a><span class="note-properties-separator">, </span><a href="../tags/foundation-model" class="internal internal-link tag-link">foundation-model</a><span class="note-properties-separator">, </span><a href="../tags/in-context-learning" class="internal internal-link tag-link">in-context-learning</a><span class="note-properties-separator">, </span><a href="../tags/pfn" class="internal internal-link tag-link">pfn</a><span class="note-properties-separator">, </span><a href="../tags/causal-discovery" class="internal internal-link tag-link">causal-discovery</a><span class="note-properties-separator">, </span><a href="../tags/scm" class="internal internal-link tag-link">scm</a><span class="note-properties-separator">, </span><a href="../tags/scaling-law" class="internal internal-link tag-link">scaling-law</a><span class="note-properties-separator">, </span><a href="../tags/stable-ai" class="internal internal-link tag-link">stable-ai</a><span class="note-properties-separator">, </span><a href="../tags/tsinghua" class="internal internal-link tag-link">tsinghua</a><span class="note-properties-separator">, </span><a href="../tags/non-commercial" class="internal internal-link tag-link">non-commercial</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>18 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="limix-2-arxiv-260917488">LimiX-2 (arXiv 2609.17488)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limix-2-arxiv-260917488" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트 — <strong>&quot;라벨 예측기&quot;를 &quot;빈칸 채우기 기계&quot;로 바꿨다. 분류·회귀·결측치 보간이 같은 질문이 된다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>기존 tabular PFN(<a href="../sources/tabpfn" class="internal internal-link" data-slug="sources/tabpfn">TabPFN</a> 계보)은 <em>“designated target”</em> 한 열의 <code>p(y | x, D_context)</code> 를 배운다. LimiX-2의 CMN(Contextual Mechanism Networks)은 <strong>임의의 열을 마스킹하고 나머지로 채우는</strong> CCMM(Context-Conditional Masked Modeling)으로 <code>p(x, y | D_context)</code> 를 겨냥한다.
+🎯 결론 절 원문이 핵심을 한 줄로 적는다: <em>“a design paradigm that <strong>generalizes label prediction to the imputation of arbitrary masked columns</strong>”</em> — 라벨은 “마스킹된 열 중 하나”일 뿐이다. 그래서 <strong>한 체크포인트가 분류·회귀·결측치 보간을 파라미터 업데이트 없이</strong> 한다(배포 README의 지원 태스크: <code>✅ cls ✅ reg ✅ imputation</code>).
+📌 <strong>왜 중요한가</strong>: 실무 표 데이터의 최대 골칫거리는 결측치인데, 기존 PFN은 결측치를 “입력의 결함”으로 다뤘다. CMN은 그걸 <strong>학습 목표 그 자체</strong>로 삼는다. 자사 벤치 BCCO가 <em>“missing and incomplete features”</em> 에 초점을 둔 것도 이 설계와 짝이다(단 자사 벤치라는 한정 — 아래).</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 초록에 없던 수치 — 본문 전수 (수집기는 초록만 읽었다) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>Figure 1 / 표 2·5·6 (Elo, Random Forest=1000 고정, 95% 부트스트랩 CI 2000회)</strong></p>
+<pre><code>           LimiX-2 Elo [CI]          차점                         본문이 밝힌 격차
+TabArena   1935 [−77, +111]          TabFM+ 1818 [−84, +109]      +117.4
+TALENT     1506 [−32, +37]           TabFM  1471 [−28, +30]       +35
+BCCO       1432 [−38, +45]           AutoGluon 1.6 (EX,4h) 1376   +56 (TabFM +63, LimiX-16M +202)
+</code></pre>
+<ul>
+<li>TabArena(51 데이터셋): improvability <strong>3.3% vs TabFM+ 6.2%</strong> · 평균 순위 <strong>5.5 vs 9.0</strong> · 집계 승수 <strong>18.9 vs 5.3</strong>. 분류 38개 Elo 1917 / 회귀 13개 Elo <strong>2206</strong>(차점 TabFM+ 2063, AutoGluon 2060).</li>
+<li>TALENT(288 데이터셋): improvability <strong>6.75% vs 9.17%</strong>(상대 −26.4%) · 승수 84.3 vs 50.1</li>
+<li>BCCO(156 데이터셋): improvability <strong>6.97% vs 12.24%</strong>(상대 −43.1%) · 승수 50.4 vs 16.7</li>
+<li>🎯 <strong>“TabFM보다 4배 작은데 이긴다”</strong> (<em>“surpasses TabFM despite being 4 times smaller in model parameter size”</em>) — LimiX-2 최대 구성 <strong>406.2M</strong>(배포 README 표기 400M).</li>
+<li><strong>스케일링(표 8 전체)</strong>: 12.5M→406.2M 6개 크기, 로그선형 OLS</li>
+</ul>
+<pre><code>평가              α(100M 적합 Elo)   β(2배당 Elo)   R²       RMSE
+TabArena          1863.88            34.68          0.9808   8.31
+TALENT cls        1427.25            22.16          0.9792   5.53
+TALENT reg        1545.12            18.26          0.9680   5.69
+BCCO cls          1295.86            11.24          0.9617   3.84
+BCCO reg          1795.89            30.06          0.9702   9.03
+</code></pre>
+<p>TabArena Elo <strong>1766(12.5M) → 1935(406.2M)</strong>, 32.5배 크기에 +169. <em>“no clear evidence of performance saturation up to 406.2M”</em>.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <strong>&quot;1위&quot;와 &quot;통계적 우위&quot;는 다른 진술이다</strong> — 본문 자체 CI로 검산</p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>TabArena</strong>: LimiX-2 하한 1935−77 = <strong>1858</strong> &lt; TabFM+ 상한 1818+109 = <strong>1927</strong> → <strong>CI 겹침.</strong> 117점 격차는 점추정.</li>
+<li><strong>TALENT</strong>: LimiX-2 하한 <strong>1474</strong> &lt; TabFM 상한 <strong>1501</strong> → <strong>겹침.</strong> 하위 범주에서는 더 얇다 — 다중분류 <strong>1520 vs TabFM 1517(+3)</strong>, 회귀 <strong>1584 vs AutoGluon 1581(+3)</strong>, CI 폭은 ±50~90.</li>
+<li><strong>BCCO</strong>: 다중분류는 <strong>AutoGluon 1.6(1443)이 LimiX-2(1414)를 이긴다</strong> — 표 6 캡션이 스스로 밝힌다: <em>“AutoGluon 1.6 (EX, 4h) leads on multiclass”</em>. 회귀 1859의 CI는 <strong>[−112, +158]</strong> 로 폭 270.
+🎯 <strong>“highest Elo across all five evaluation categories”(TALENT) 는 참이지만, 그중 두 범주는 3점차다.</strong> 초록의 <em>“outperforms”</em> 는 <strong>점추정 기준 서열</strong>로 읽어야 한다. ✅ 다만 <strong>CI를 표에 직접 적은 것 자체는 모범 사례</strong>다 — 볼트가 이 검산을 할 수 있었던 건 저자가 구간을 공개했기 때문이다. → <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a>
+📌 <strong>개선도(improvability)·승수 지표에서는 격차가 더 크고 일관적</strong>(TabArena 3.3% vs 6.2%, BCCO 승수 3.0배) — <strong>Elo보다 이쪽이 우위의 더 강한 증거</strong>다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 평가 설계의 한정 4개 — 본문에 다 있다, 초록엔 없다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>BCCO는 자사 벤치다</strong> — 인용이 <em>“BCCO (<strong>LimiX Team</strong>, 2025)”</em>. 3개 중 1개는 <strong>출제자가 응시자</strong>다. 이 벤치가 겨냥하는 결측·불완전 데이터가 CMN의 설계 목표와 일치한다 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> 의 약한 형태(추정: 데이터 누수 증거는 없음, <strong>과제 선정의 우위</strong>).</li>
+<li><strong>TALENT 12개 데이터셋 제외</strong> — <em>“Excluding 12 classification datasets with <strong>more than 10 target classes</strong>”</em>. 제외 사유 미기재. <a href="../sources/tabfm-1.0.0" class="internal internal-link" data-slug="sources/tabfm-1.0.0">tabfm-1.0.0</a> 의 “최대 10클래스” 제약과 같은 선이다 — 비교 대상 제약 때문인지 LimiX-2 자신의 제약인지 <strong>본문으로는 판별 불가</strong>(미확인).</li>
+<li><strong>기본값 vs 튜닝</strong> — TabArena에서 LimiX-2는 <strong>(D) 기본 설정</strong>, 일부 기준선은 (T) 튜닝·(T+E) 튜닝+앙상블. 이건 LimiX-2에 <strong>불리한</strong> 방향이다(✅ 공정성 쪽). 단 기준선 점수는 <strong>공개 리더보드 인용</strong>(<em>“accessed September 15, 2026”</em>)이고 LimiX-2만 직접 실행 — 실행 환경 비대칭.</li>
+<li><strong>한계(Limitations) 절이 없다.</strong> 추론 비용·GPU 메모리·행/열 수 상한이 본문에 <strong>0건</strong>. 배포 README도 <code>cuda recommended</code> 만 적는다.</li>
+</ol>
+</div>
+</blockquote>
+<h2 id="인과-골격-복원--한정어가-결론에서-사라진다">인과 골격 복원 — 한정어가 결론에서 사라진다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#인과-골격-복원--한정어가-결론에서-사라진다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>표 7 전체 — <strong>F1은 6개 데이터셋 전부 1위, SHD는 6개 중 5개 1위</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>방법: 각 변수를 차례로 타깃으로 두고 <strong>피처 어텐션 점수에 임계값</strong>을 걸어 무방향 골격을 만든다. 인과발견 방법은 방향 그래프를 무방향으로 변환해 비교.</p>
+<pre><code>F1 ↑            Sachs   UF      CausalCh.  PATHFINDER  DIABETES  PIGS
+LimiX-2         0.7143  0.8617  0.7013     0.7829      0.7846    0.9385
+EXAONE Tabular  0.6429  0.6492  0.5195     0.5486      0.6994    0.8955
+TabFM           0.4286  0.2727  0.4156     0.2400      0.6028    0.6895
+TabICLv2        0.6429  0.1818  0.2857     0.1600      0.2277    0.1612
+TabPFN-3        0.5714  0.6845  0.3636     0.1429      0.0426    0.0271
+Xiaomi-TabLDM   0.3704  0.2364  0.2078     0.0114      0.2211    0.2426
+XGBoost         0.5714  0.2545  0.2632     0.2914      0.4111    0.8125
+TabCausal       0.5600  0.4000  0.5970     0.0000      0.1855    0.0000
+PC              0.6400  0.3817  0.4000     0.3659      0.4674    TIMEOUT
+GES             0.6400  0.6044  0.6234     TIMEOUT     TIMEOUT   TIMEOUT
+LiNGAM          0.5600  0.5521  0.6667     –           –         –
+AVICI           0.5000  0.4783  0.2917     0.0485      0.0251    0.0000
+NOTEARS-MLP     0.5600  0.4030  0.4571     0.6146      TIMEOUT   0.8907
+DAG-GNN         0.4167  0.0860  0.2642     0.3846      0.4320    0.1529
+
+SHD ↓           Sachs   UF      CausalCh.  PATHFINDER  DIABETES  PIGS
+LimiX-2         8       26      23         76          263       77
+EXAONE Tabular  10      67      37         158         367       131
+TabFM           16      80      45         266         485       389
+TabICLv2        10      90      55         294         943       1051
+TabPFN-3        12      59      49         300         1169      1219
+Xiaomi-TabLDM   17      84      61         346         951       949
+XGBoost         12      82      56         248         719       235
+TabCausal       11      81      27         189         685       592
+PC              9       81      39         156         449       TIMEOUT
+GES             9       72      29         TIMEOUT     TIMEOUT   TIMEOUT
+LiNGAM          11      73      21 🔴      –           –         –
+AVICI           12      72      34         196         622       592
+NOTEARS-MLP     11      80      38         158         TIMEOUT   145
+DAG-GNN         14      85      39         144         497       543
+(🔴 CausalChamber SHD는 LiNGAM 21 &lt; LimiX-2 23 — 유일하게 1위를 놓친 칸)
+</code></pre>
+<p>🎯 <strong>이건 인상적이다</strong> — 전용 인과발견 알고리즘(PC·GES·NOTEARS)이 12시간 타임아웃에 걸리는 이산 네트워크에서 LimiX-2는 <strong>추가 학습 없이 한 번의 forward pass 부산물(어텐션)로</strong> F1 0.78~0.94를 낸다.
+🔴 <strong>성립 조건 (추정)</strong>: 이산 3종(PATHFINDER·DIABETES·PIGS)은 bnlearn 베이지안 네트워크(<em>Scutari, 2026</em> 인용)에서 샘플링한 데이터 — 즉 <strong>알려진 DAG에서 생성된 데이터</strong>다. LimiX-2는 <strong>SCM(구조적 인과모형)으로 생성한 합성 데이터로만</strong> 사전학습됐다. 평가 데이터의 생성 과정이 사전학습 사전분포와 <strong>같은 종류</strong>다 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> 가능성(추정, 저자 미언급). 다만 차점 대비 F1 격차는 연속(+0.07·+0.18·+0.03)과 이산(+0.17·+0.09·+0.04)이 <strong>뚜렷이 갈리지 않고</strong>, SHD 1위를 놓친 유일한 칸은 연속 쪽(CausalChamber)이다 — <strong>표 7만으로는 이 가설을 지지도 반증도 못 한다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> 발생 — <strong>같은 문서 안에서 &quot;골격 복원&quot;이 &quot;인과 추론&quot;이 된다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<pre><code>초록     &quot;enabling accurate causal skeleton recovery&quot;                (골격, 무방향)
+본문 §5.5 &quot;causal skeleton recovery performance as an operational measurement of causal awareness&quot;
+결론     &quot;LimiX-2 performs classification, regression, missing-value imputation,
+          and causal inference in a single forward pass&quot;               ← 🔴 골격 → 인과 추론
+HF README &quot;the CMN paradigm also endows LimiX-2 with causal awareness&quot;  ← 초록 &quot;promotes&quot; → &quot;endows&quot;
+</code></pre>
+<p>🎯 <strong>골격(skeleton)은 “어느 변수 쌍이 직접 연결됐는가”까지다. 방향도, 개입 효과도 아니다.</strong> “인과 추론”은 그보다 훨씬 넓은 주장이다. ✅ 수집기는 <em>“방향성(DAG 전체)이 아니라 골격까지라는 한정을 보존”</em> 했다 — <strong>초록 기준으로는 정확했고, 저자 결론이 그 한정을 스스로 떨어뜨렸다.</strong>
+📌 그리고 <strong>배포물의 지원 태스크에 인과발견은 없다</strong>(<code>✅ cls ✅ reg ✅ imputation</code>). 어텐션 추출·임계값 설정 코드가 공개됐는지 <strong>미확인</strong> — 현재로서 표 7은 <strong>재현 경로가 문서화되지 않은 결과</strong>다.</p>
+</div>
+</blockquote>
+<h2 id="저자소속--본문-확인">저자·소속 — 본문 확인<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#저자소속--본문-확인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>저자 60명</strong> ✅ (HF API <code>authors</code> 60 · 본문 §8 Contribution: Project Design and Lead <strong>2</strong>명(Xingxuan Zhang, Peng Cui) + Core Contributors <strong>27</strong> + Contributors <strong>31</strong> = 60)</li>
+<li><strong>소속</strong>: 본문 표제 <em>“LimiX Team / Affiliation: <strong>Stable AI &amp; Tsinghua University</strong>”</em> ✅</li>
+<li>🔴 <strong>“Stable AI” ≠ Stability AI</strong> — 혼동 주의:
+<ul>
+<li>HF org <code>stable-ai</code>(fullname “Stable AI”, 멤버 3·모델 5) ≠ <code>stabilityai</code>(fullname “Stability AI”) — 별개 org (HF API 2026-09-19)</li>
+<li>모델 LICENSE 원문: <em>“Stable AI Technology Co., Ltd. … Wen Zhun (Xiong’an) Technology Co., Ltd. … <strong>稳准智能(雄安)科技有限公司</strong> … alternative Chinese and English names of the same legal entity”</em> → <strong>중국 슝안 소재 법인</strong>이다.</li>
+</ul>
+</li>
+<li>📌 60명 = 09-18 척도상 <strong>기업 보고서형</strong> ✅. 본문도 스스로 <em>“technical report”</em> 라 부른다.</li>
+</ul>
+<h2 id="라이선스-전환---이게-실무에서-가장-중요한-사실일-수-있다">라이선스 전환 — 🔴 이게 실무에서 가장 중요한 사실일 수 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#라이선스-전환---이게-실무에서-가장-중요한-사실일-수-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>LimiX-1(Apache 2.0) → <strong>LimiX-2 가중치는 비상업 전용</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>배포 README 뉴스 원문: 2025-09 LimiX는 <em>“open-sourced under the <strong>Apache 2.0</strong> license”</em></li>
+<li>LimiX-2 가중치: <strong>“StableAI LimiX Non-Commercial License”</strong> — 원문 <em>“This License is a custom non-commercial model license. It is <strong>not an open source license</strong> and does not grant commercial usage rights.”</em> Derivative Model 정의에 <strong>파인튠·LoRA·증류 전부 포함</strong>.</li>
+<li>코드: Apache 2.0 파생 + 추가 조항(<em>“Additional Attribution and Model Naming Requirements”</em>). GitHub API <code>license</code> = <code>other</code>/<code>NOASSERTION</code>.
+🎯 <a href="../sources/tabfm-1.0.0" class="internal internal-link" data-slug="sources/tabfm-1.0.0">tabfm-1.0.0</a> 도 비상업이다. <strong>표형 파운데이션 모델 상위권이 연달아 비상업으로 닫히는 흐름</strong> — 상용 파이프라인에 넣을 수 있는 건 여전히 GBDT·AutoGluon 쪽이다(AutoGluon은 이 논문에서 차점권).</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-ai-news">도메인별 추출 (ai-news)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-ai-news" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>신뢰도</strong>: HF 업보트 <strong>261</strong>(<code>upvotes</code>) · 공개 2026-09-15(<code>publishedAt</code>) · <code>githubStars</code> <strong>4,211</strong>(HF 필드) / GitHub API <code>stargazers_count</code> <strong>4,214</strong> · fork 304 · open_issues 8 · 가중치 공개(<code>stable-ai/LimiX-2</code>, 다운로드 348·♥41, <code>LimiX-2.ckpt</code> 1,625,774,719 B) · 데모 Space 1개 (전부 2026-09-19 조회). → <strong>medium</strong>: CI·프로토콜·전체 표 공개로 문서 품질은 높으나, 3벤치 중 1개가 자사 벤치이고 제3자 재현·공식 TabArena 리더보드 등재는 미확인.</li>
+<li><strong>즉시 활용</strong>: <strong>부분 YES</strong> — 비상업 실험 한정. 표 데이터 1건을 <code>LimiX-infer --task_type Classification</code> 으로 돌려 LightGBM과 비교 가능. GPU 권장. <strong>상업 서비스 투입 불가</strong>(라이선스).</li>
+<li><strong>6개월 영향력</strong>: “표 데이터 = GBDT” 상식에 대한 파운데이션 모델 쪽의 가장 강한 근거 중 하나. 특히 <strong>결측치 많은 실무 표</strong>에서 “보간 → 모델 학습” 2단 파이프라인을 1단으로 줄일 수 있다. 스케일링 곡선이 406M까지 포화 없음 → 10억급 후속이 예고됐다(<em>“forecasts rather than measured performance”</em> 라고 저자가 한정).</li>
+<li><strong>대체 관계</strong>: <a href="../sources/tabpfn" class="internal internal-link" data-slug="sources/tabpfn">TabPFN</a> · <a href="../sources/tabfm-1.0.0" class="internal internal-link" data-slug="sources/tabfm-1.0.0">tabfm-1.0.0</a>(본문 비교 대상 TabFM으로 추정 — 인용 <em>“Kong &amp; Das, 2026”</em>, 동일 모델 여부 미확인) · AutoGluon · XGBoost/LightGBM 튜닝 파이프라인. 결측치 보간 도구(MICE 등)도 겨냥.</li>
+<li><strong>허와 실</strong>: 예측 성능 우위는 <strong>점추정상 일관적</strong>이고 improvability·승수에서 더 선명하다. 그러나 “압도”는 아니다(CI 겹침). 인과 주장은 <strong>골격 복원</strong>까지이며 재현 경로 미공개.</li>
+<li><strong>액션</strong>: <a href="../concepts/금융-ai" class="internal internal-link alias" data-slug="concepts/금융-ai">금융-AI</a> 류 표 데이터로 LimiX-2 vs LightGBM vs TabPFN 3자 비교(비상업 PoC). 우선순위 낮음~중간.</li>
+</ul>
+<h2 id="수집기-대조">수집기 대조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수집기-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>✅ 일치: 업보트 261 · 공개 2026-09-15 · githubRepo <code>limix-ldm-ai/LimiX</code> · githubStars 4,211(HF 필드값) · 저자 60명 · org Stable AI · <code>p(y|x,D)</code> → <code>p(x,y|D)</code> · SCM 합성 데이터 전용 사전학습 · 평가 3벤치 · 초록 수치 0개 · 초록 비교 대상 모델명 0개 · “골격까지” 한정 보존 · 기업 보고서형 분류</li>
+<li>⚠️ 보강: 초록 수치 0 → <strong>본문에 Elo·CI·improvability·스케일링·인과 표 전부 있음</strong>(위). 초록의 “dataset-specific models and tabular foundation models”의 실제 명단은 본문 §5.1에 <strong>18종</strong>(트리 4 · AutoGluon 1 · 신경망 5 · 파운데이션 8).</li>
+<li>⚠️ 주의 추가: “Stable AI”는 Stability AI가 아니다(LICENSE 원문 법인명).</li>
+<li>미확인: <em>“7일 누적 창 1위(미수집 기준)”</em> — 볼트가 7일 창 전체 순위를 재구성하지 않았다.</li>
+<li>📌 레포 URL 표기 불일치(무해): 논문·README는 <code>github.com/limix-ldm/LimiX</code>, HF <code>githubRepo</code> 는 <code>limix-ldm-ai/LimiX</code> — GitHub API상 전자가 <strong>301 리다이렉트로 같은 저장소(id 1045442783)</strong> 다. HF 링크 표기도 <code>stableai-org</code> 와 <code>stable-ai</code> 가 섞여 있다.</li>
+</ul>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>당장 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>(낮음~중간)</strong> 비상업 PoC: 결측치가 있는 표 1건으로 LimiX-2(imputation+cls) vs LightGBM(자체 결측 처리) 비교 — CMN 설계의 실익이 가장 크게 드러날 조건.</li>
+<li><strong>(낮음)</strong> LimiX 레포에서 <strong>어텐션 기반 골격 추출 코드</strong>가 공개됐는지 확인 → 없으면 표 7은 “재현 불가 결과”로 볼트 표기 유지.</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 질문 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>TALENT에서 <strong>10클래스 초과 12개를 왜 뺐나</strong> — LimiX-2의 제약인가, 비교 대상(TabFM·TabPFN)의 제약인가?</li>
+<li><strong>추론 비용</strong>: 406M 셀 단위 표현(행이 아니라 <strong>셀마다</strong> 벡터)은 행×열에 비례해 메모리가 늘어날 텐데 상한이 어디인가? 본문 0건.</li>
+<li>인과 골격 <strong>임계값</strong>(<em>“determined by a threshold over the overall score distribution”</em>)을 어떻게 정했나 — 정답 그래프 없이 정할 수 있는 규칙인가?</li>
+<li>TabArena 공식 리더보드에 LimiX-2가 <strong>제3자 제출로 등재</strong>됐는가?</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/tabpfn" class="internal internal-link" data-slug="sources/tabpfn">TabPFN</a> — PFN 계보, <code>p(y|x,D)</code> 패러다임의 원형</li>
+<li><a href="../sources/tabfm-1.0.0" class="internal internal-link" data-slug="sources/tabfm-1.0.0">tabfm-1.0.0</a> — 비교 대상(추정 동일), 같은 비상업 라이선스·10클래스 선</li>
+<li><a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> — BCCO 자사 벤치 · SCM 사전분포 vs bnlearn 평가 데이터</li>
+<li><a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> — 골격 → 인과 추론</li>
+<li><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a> — 이 페이지는 표 7(F1·SHD)·표 8을 전체 전사. 표 2·5·6은 LimiX-2·차점 행만 인용했음을 명시(전체는 원문)</li>
+<li><a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a> — CI 공개(+) / Limitations 절 부재(−)</li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a></li>
+<li><a href="../concepts/금융-ai" class="internal internal-link alias" data-slug="concepts/금융-ai">금융-AI</a></li>
+<li><a href="../entities/stable-ai" class="internal internal-link" data-slug="entities/stable-ai">Stable-AI</a> <em>(신설 제안)</em></li>
+<li><a href="../domains/ai-news" class="internal internal-link" data-slug="domains/ai-news">ai-news</a></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/papers/2609.17488" class="external external-link">https://huggingface.co/papers/2609.17488<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> · 본문 <a href="https://arxiv.org/html/2609.17488" class="external external-link">https://arxiv.org/html/2609.17488<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (전문 열람)</li>
+<li>측정: HF papers API <code>upvotes</code> 261 · <code>authors</code> 60 · <code>organization.fullname</code> “Stable AI” · <code>githubStars</code> 4,211 · <code>publishedAt</code> 2026-09-15 / GitHub API <code>stargazers_count</code> 4,214 · <code>forks_count</code> 304 · <code>open_issues_count</code> 8 · <code>license</code> other / HF model <code>stable-ai/LimiX-2</code> <code>downloads</code> 348 · <code>likes</code> 41 · <code>createdAt</code> 2026-09-15 (전부 2026-09-19)</li>
+<li>가중치·라이선스: <a href="https://huggingface.co/stable-ai/LimiX-2" class="external external-link">https://huggingface.co/stable-ai/LimiX-2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (README·LICENSE 원문)</li>
+<li>신뢰도: ⭐⭐⭐ (업보트 261 · 전문·CI 공개 · 자사 벤치 포함 · 비상업)</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-629" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#limix-2-arxiv-260917488" data-for="limix-2-arxiv-260917488">LimiX-2 (arXiv 2609.17488)</a></li><li class="depth-1"><a href="#인과-골격-복원--한정어가-결론에서-사라진다" data-for="인과-골격-복원--한정어가-결론에서-사라진다">인과 골격 복원 — 한정어가 결론에서 사라진다</a></li><li class="depth-1"><a href="#저자소속--본문-확인" data-for="저자소속--본문-확인">저자·소속 — 본문 확인</a></li><li class="depth-1"><a href="#라이선스-전환---이게-실무에서-가장-중요한-사실일-수-있다" data-for="라이선스-전환---이게-실무에서-가장-중요한-사실일-수-있다">라이선스 전환 — 🔴 이게 실무에서 가장 중요한 사실일 수 있다</a></li><li class="depth-1"><a href="#도메인별-추출-ai-news" data-for="도메인별-추출-ai-news">도메인별 추출 (ai-news)</a></li><li class="depth-1"><a href="#수집기-대조" data-for="수집기-대조">수집기 대조</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/분포내-우위" class="internal">분포 내 우위</a></li><li><a href="../concepts/한정어-탈락" class="internal">한정어 탈락</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../entities/stable-ai" class="internal">Stable AI — LimiX 표형 파운데이션 모델 (Stability AI 아님)</a></li><li><a href="../sources/tabpfn" class="internal">PriorLabs/TabPFN — 테이블형 데이터 파운데이션 모델</a></li><li><a href="../sources/tabfm-1.0.0" class="internal">tabfm — 구글 테이블 데이터 제로샷 파운데이션 모델</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

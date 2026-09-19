@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>에이전트 스킬 (Agent Skills)</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="에이전트 스킬 (Agent Skills)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="에이전트 스킬 (Agent Skills)"/><meta name="twitter:description" content="에이전트 스킬 (Agent Skills) 2026-09-14 — 스킬이 늘어난 다음 질문: &quot;어느 스킬이 값을 하나&quot; (COBRA-Skills) 이 페이지는 스킬의 생산·배포·거버넌스를 쌓아 왔다."/><meta property="og:description" content="에이전트 스킬 (Agent Skills) 2026-09-14 — 스킬이 늘어난 다음 질문: &quot;어느 스킬이 값을 하나&quot; (COBRA-Skills) 이 페이지는 스킬의 생산·배포·거버넌스를 쌓아 왔다."/><meta property="og:image:alt" content="에이전트 스킬 (Agent Skills) 2026-09-14 — 스킬이 늘어난 다음 질문: &quot;어느 스킬이 값을 하나&quot; (COBRA-Skills) 이 페이지는 스킬의 생산·배포·거버넌스를 쌓아 왔다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/에이전트-스킬"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/에이전트-스킬"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="에이전트 스킬 (Agent Skills) 2026-09-14 — 스킬이 늘어난 다음 질문: &quot;어느 스킬이 값을 하나&quot; (COBRA-Skills) 이 페이지는 스킬의 생산·배포·거버넌스를 쌓아 왔다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/에이전트-스킬-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/에이전트-스킬-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/에이전트-스킬-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/에이전트-스킬" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-28" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-28" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>에이전트 스킬 (Agent Skills)</a></div></nav><h1 class="article-title">에이전트 스킬 (Agent Skills)</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/agent-skills" class="internal internal-link tag-link">agent-skills</a><span class="note-properties-separator">, </span><a href="../tags/claude-code" class="internal internal-link tag-link">claude-code</a><span class="note-properties-separator">, </span><a href="../tags/plugin" class="internal internal-link tag-link">plugin</a><span class="note-properties-separator">, </span><a href="../tags/prompt-engineering" class="internal internal-link tag-link">prompt-engineering</a><span class="note-properties-separator">, </span><a href="../tags/distribution" class="internal internal-link tag-link">distribution</a><span class="note-properties-separator">, </span><a href="../tags/governance" class="internal internal-link tag-link">governance</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>57 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="에이전트-스킬-agent-skills">에이전트 스킬 (Agent Skills)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에이전트-스킬-agent-skills" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-14 — <strong>스킬이 늘어난 다음 질문: &quot;어느 스킬이 값을 하나&quot;</strong> (<a href="../sources/cobra-skills" class="internal internal-link" data-slug="sources/cobra-skills">COBRA-Skills</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 페이지는 스킬의 <strong>생산·배포·거버넌스</strong>를 쌓아 왔다. <a href="../sources/cobra-skills" class="internal internal-link" data-slug="sources/cobra-skills">COBRA-Skills</a> 가 다음 층을 연다: <strong>선택과 평가의 비용.</strong>
+문제 정의: 기존 스킬 최적화는 <em>“costly <strong>execution-based evaluation</strong>”</em> 과 대량 과제 데이터에 의존한다. <strong>스킬이 좋은지 알려면 돌려 봐야 하고, 그게 비싸다.</strong>
+해법: <strong>컨텍스트 밴딧</strong>으로 <em>“promising <strong>or</strong> informative”</em> 후보에 평가 예산을 배분(탐색-활용 균형) + 실행 피드백으로 스킬 집단 갱신.
+실측: 6개 벤치 × 3개 모델에서 <strong>SkillOpt 대비 최적화 비용 55~58% 절감</strong> · <strong>벤치당 고유 예제 50개</strong>만 사용 · <strong>타깃 모델 자신으로 스킬 생성·정련해도 작동</strong>.
+🔴 <strong>한정어</strong>: <em>“strongest <strong>average</strong> performance”</em> — <strong>평균 최고이지 개별 벤치 전승이 아니고</strong>, 절대 점수와 SkillOpt 외 비교군 이름이 초록에 없다.</p>
+<p>🎯 <strong>왜 지금 이 질문이 나오나</strong> — 볼트가 추적한 스킬 규모가 이미 전수 평가 불가 구간이다: <a href="../sources/openmontage" class="internal internal-link" data-slug="sources/openmontage">OpenMontage</a> <strong>700+</strong> · <a href="../sources/claude-red" class="internal internal-link" data-slug="sources/claude-red">Claude-Red</a> <strong>78</strong> · <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>·<a href="../sources/awesome-agent-skills" class="internal internal-link" data-slug="sources/awesome-agent-skills">awesome-agent-skills</a> 계열의 누적.
+<strong>스킬을 쌓는 시대에서 스킬을 고르는 시대로 넘어간다.</strong> → <a href="../concepts/선택비용과-중복성" class="internal internal-link alias" data-slug="concepts/선택비용과-중복성">선택비용과-중복성</a> · <a href="../concepts/백필-우회" class="internal internal-link alias" data-slug="concepts/백필-우회">백필-우회</a>(후보 공간을 갱신하며 고를 때의 함정)</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-03 — 🚨 <strong>스킬 층에 처음으로 통제된 정량 근거가 붙었다</strong> (<a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 개념 페이지는 08-22 개설 이래 <strong>17개 소스</strong>를 쌓았지만, 그 전부가 <strong>스타 수·다운로드·자체 주장</strong>이었다. 08-28에 <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>을 두고 <em>“⭐11만은 인기의 증거이지 효과의 증거가 아니다”</em> 라고 적었고, 08-29에 <a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>의 <em>“190,000+ 과학자”</em> 를 자체 주장으로 분류했다.
+<strong>오늘 그 결측이 처음 메워졌다.</strong> <a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>(HF 데일리 <strong>1위</strong> · 업보트 334)은 <strong>GPT-5.5 백본·연구 하네스·실행 예산을 고정한 채 스킬 유무만 토글</strong>했다:
+<strong>MLE-bench +134.3% · PaperBench +34.4% · FrontierCS +9.2% · PassNet +14.0%</strong>
+⚠️ <strong>전부 상대 증가율이고 절대 점수가 초록에 없다</strong> — 크기는 아직 모른다. 그러나 <strong>크기를 모르는 것과 근거가 없는 것은 다르다.</strong> 이 개념의 근거 수준이 <em>“스타”</em> 에서 <em>“통제 실험”</em> 으로 한 칸 올라갔다.
+→ <strong>이 페이지의 평가 기준을 올린다.</strong> 앞으로 스킬 자산을 인제스트할 때 <strong>“백본 고정 대조가 있는가”</strong> 를 묻는다. 없으면 <em>인기 자산</em>으로 분류하고 효과를 주장하지 않는다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-03 — <strong>새 축: 스킬의 「생산 방식」</strong> (수작업 / 경험 / 증류)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>기존 4층 구조(자산·하네스·레지스트리·진화)는 <strong>스킬이 어디에 놓이는가</strong>를 나눈다. 이번 배치는 <strong>스킬이 어디서 오는가</strong>라는 직교 축을 드러냈다 — 같은 날 세 방식이 상위권에 동시에 있었다:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>생산 방식</th><th>대표</th><th>규모</th><th>근거</th></tr></thead><tbody><tr><td><strong>① 수작업</strong> — 사람이 규범을 쓴다</td><td><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></td><td><strong>1개</strong> · ⭐122,495</td><td>자체 벤치(자사 레포 측정)</td></tr><tr><td><strong>② 경험</strong> — 실행에서 만들고 사용 중 고친다</td><td><a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a></td><td>미공개 · ⭐240,408</td><td><strong>없음</strong>(이슈 38,696)</td></tr><tr><td><strong>③ 증류</strong> — 코퍼스에서 뽑는다</td><td><a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a></td><td><strong>5,000+개</strong>(레포 1,000개 → 20영역·178역량군)</td><td><strong>통제 실험 O</strong></td></tr></tbody></table></div>
+<p><strong>규모와 근거가 정확히 반비례한다.</strong> ②가 스타 최대인데 근거 최소이고, ③이 근거 최대인데 배포 규모는 미확인이다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>축의 급소 — <strong>증류는 &quot;하지 마라&quot;를 뽑지 못한다</strong>
+①과 ③은 경쟁 관계가 아니다. ③은 <strong>운영지식</strong>(<em>이렇게 하면 작동한다</em>)을 레포에서 뽑는다. ①은 <strong>억제</strong>(<em>하지 마라</em>)다.
+<strong>레포에는 하지 말았어야 할 것이 안 적힌다.</strong> 실패한 접근·과잉 구현·버려진 설계는 커밋되지 않거나 커밋에서 지워진다. 따라서 <strong>억제 규범은 원리적으로 증류의 사각지대</strong>에 있다.
+→ 08-28에 연 <strong>억제 축</strong>(<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>)이 <strong>왜 별도로 존재해야 하는지</strong>가 이번에 설명된다. 억제는 자동화가 대체할 수 없는 층이며, ⭐12만은 그 수요의 크기다.</p></div>
+                  
+                </div>
+</blockquote>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-03 — <strong>5,000개를 어떻게 찾게 할 것인가</strong> (미해결·같은 날 다른 논문이 같은 문제를 푼다)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>의 초록은 <strong>스킬 선택 메커니즘을 기술하지 않는다.</strong> 태스크마다 5,000개를 전부 로드할 수 없으므로 <strong>검색이 곧 성능</strong>인데 그 부분이 비어 있다.
+공교롭게 같은 배치 <a href="../sources/cogr" class="internal internal-link" data-slug="sources/cogr">CoGR</a>(데일리 4위)이 <strong>정확히 그 문제</strong>를 다룬다 — <em>“아이템 측 표현(키워드)을 LLM이 생성해 역색인에 넣고, 질의 성공률의 반사실적 변화로 그 표현을 학습시킨다.”</em>
+<strong>스킬을 아이템으로 치환하면 그대로 적용된다.</strong> 두 논문은 서로를 인용하지 않지만 <strong>자산 생산(③)과 자산 검색이 한 쌍</strong>이라는 사실이 이번 배치에서 드러났다.
+→ 이 개념에 <strong>5층 후보: 검색·선택 층</strong>을 <strong>잠정 등재</strong>한다. ⚠️ <strong>승격 조건: 스킬 검색을 명시적으로 다루는 소스 2건 추가.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-29 — <strong>&quot;자산 vs 소프트웨어&quot; 판별 축이 언어 태그가 아님이 5건 연속 스펙트럼으로 확정됐다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이번 배치 GitHub 5건이 <strong>이슈/포크 밀도의 연속 스펙트럼</strong>을 이뤘다:
+<strong><a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a> 0.0051 &lt; <a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a> 0.0070 &lt; <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 0.0285 &lt; <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a> 0.0353 &lt; <a href="../sources/openmontage" class="internal internal-link" data-slug="sources/openmontage">OpenMontage</a> 0.0388</strong> (최고/최저 <strong>7.6배</strong>)
+볼트는 그동안 <em>“실행되는 소프트웨어는 이슈가 많고 복사되는 텍스트 자산은 적다”</em> 를 반복 관측했는데, 이번 회차가 <strong>언어 태그가 그 프록시가 아님을 확정</strong>한다 — <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>는 <strong>JavaScript인데 상단</strong>이고 <a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>는 <strong>Python인데 최하단</strong>이다.
+→ <strong>판별 축은 “통째로 실행하는가, 조각을 떼어 쓰는가”</strong> 다. 카탈로그형 자산은 사용자가 <em>꺼내 쓰다</em> 실패해도 <strong>자기 환경 문제로 처리하지 레포에 이슈를 열지 않는다.</strong> <strong>언어 태그를 자산/소프트웨어 판별에 쓰지 않는다</strong>를 볼트 규칙으로 확정한다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-29 — 생태계에 <strong>반년의 시간 깊이</strong>가 확인됐다 (<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a> 재관측)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>는 <strong>생성일 2025-10-19</strong>로, 이번 배치 5건 중 <strong>유일한 2025년생</strong>이다(나머지는 2026-03~06). 104일 만의 재관측에서 ⭐23,434 → <strong>37,109</strong>(+58.3%·일평균 +131)로, <strong>급등 없이 3개월 반을 꾸준히</strong> 올랐다.
+→ 스킬 생태계는 2026년 봄의 폭발로만 보이지만 <strong>과학 도메인에는 반년 앞선 축적</strong>이 있었다. 볼트는 이 레포를 <strong>스킬 층위론의 시간 기준점</strong>으로 삼는다.
+<strong>성장 곡선의 두 유형이 확보됐다</strong>: <strong>급등-급감쇠형</strong>(<a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a> — 증가율이 매일 대략 반토막: +38.5%→+11.6%→+6.8%→+3.2%)과 <strong>저속-장기축적형</strong>(<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>). <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>는 그 중간(감쇠 0.79배/일로 완만).</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-29 — <strong>&quot;검증됨(validated)&quot; 표기가 과학 도메인에서 갖는 특수 위험</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>는 <strong>163종 스킬을 “validated”로 표기</strong>하고 <em>“175,000+ 과학자 사용”</em> 을 주장하나, <strong>검증 주체·기준·절차 전량 미확인</strong>이다. 볼트는 이 레포의 reliability를 <strong>high → medium으로 강등</strong>했다.
+⚠️ <strong>일반 코딩 스킬은 틀리면 코드가 안 돌지만, 과학 워크플로 스킬은 틀린 결과가 그럴듯하게 나온다.</strong> 같은 배치 <a href="../sources/frontierchallenge" class="internal internal-link" data-slug="sources/frontierchallenge">FrontierChallenge</a>가 이를 실측했다 — <strong>미통과 트레이스의 75.5%가 “완료했다”로 종료</strong>됐고, 분석화학은 <strong>평균 87.6점에 통과율 4%</strong> 였다.
+→ <strong>스킬 카탈로그는 그 실패를 표준화해서 배포할 수 있다.</strong> 이 페이지가 반복해 온 공통 약점(<strong>재현성 벤치 부재</strong>)이 과학 도메인에서는 <strong>단순한 품질 문제가 아니라 안전 문제</strong>가 된다.
+⚠️ 08-28에 연 <strong>억제(빼는) 축</strong>(<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>)의 효과 측정도 <strong>이번 회차에 여전히 0건</strong>이며, 푸시는 <strong>22일째 정체</strong>다(스타는 +1,174 유입 지속 — <em>텍스트 자산 패턴</em> 재확인). 단 <a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a>가 정체 예상을 깨고 08-28에 푸시를 찍어, <strong>“자산형 = 반드시 정체”는 아님</strong>이 확인됐다 — 정체는 자산형의 <em>허용 상태</em>이지 <em>필연</em>이 아니다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-26 — 생태계에 <strong>배포 레지스트리 층</strong>과 <strong>자가진화 층</strong>이 동시에 등장</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 페이지가 정리해 온 4개 층(자산 → 방법론 → 규격 → 실행)에 <strong>이번 배치로 두 층이 추가된다.</strong>
+<strong>(1) 배포/레지스트리 층 — <a href="../sources/claude-plugins-community" class="internal internal-link" data-slug="sources/claude-plugins-community">claude-plugins-community</a></strong> (⭐1,957·포크181·이슈42·Apache-2.0·<strong><a href="../entities/anthropic" class="internal internal-link" data-slug="entities/anthropic">Anthropic</a> 공식</strong>·트렌딩 2위). 지금까지 스킬 배포는 <strong>커뮤니티 개인 큐레이션</strong>(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>·<a href="../sources/awesome-agent-skills" class="internal internal-link" data-slug="sources/awesome-agent-skills">awesome-agent-skills</a>·<a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a>)이거나 <strong>벤더 규격</strong>(<a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a>)이었다. 이건 <strong>벤더가 “남이 만든 것을 싣는 목록”을 직접 소유</strong>하는 첫 사례이며, 레포가 <strong>read-only 미러</strong>이고 등록은 <strong>외부 폼</strong>으로만 되는 구조다(raw 메모 기준·README 미실측). 즉 <strong>git 레포를 레지스트리의 뷰로 쓰는 패턴</strong>.
+이 층의 등장이 뜻하는 것: 스킬 자산이 <strong>“clone해서 복사”에서 “레지스트리에서 install”</strong> 로 옮겨 가면 <strong>버전·업데이트·의존성</strong>이 새로운 관리 문제가 된다. ⚠️ 다만 <strong>등재 = 검증이 아니다</strong> — 심사 기준 공개 여부 미확인이고, 이슈 42건(0.23건/포크·순수 자산 레포치고 높음)은 <strong>트래커가 등록 문의·이의 창구로 쓰이고 있을 가능성</strong>을 시사한다(미검증).
+<strong>(2) 자가진화 층 — <a href="../sources/recuris" class="internal internal-link" data-slug="sources/recuris">Recuris</a>의 Skill Memory.</strong> 스킬이 <strong>손으로 쓰는 텍스트 자산</strong>에서 <strong>실행 증거로 갱신되는 자산</strong>이 된다. 검증 게이트를 통과한 국소 패치만 반영되며, 이는 <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>의 자가갱신 진화 노선을 <strong>메모리 아키텍처로 구조화</strong>한 것이다.
+<strong>(3) 인접 — <a href="../sources/autosaddler" class="internal internal-link" data-slug="sources/autosaddler">AutoSaddler</a>는 스킬이 아니라 하네스 전체를 최적화 대상으로 승격</strong>시킨다(프롬프트+툴 설정+제어 로직). 스킬 파일이 곧 하네스의 일부이므로, 이 페이지의 자산 개념은 이제 <strong>“최적화 가능한 코드”</strong> 로 읽어야 한다.
+<strong>종합하면 스킬 생태계는 축적기(자산 쌓기)를 지나 유통기(레지스트리)와 진화기(자가갱신)에 동시에 진입했다.</strong> 여전히 남는 공통 약점은 변하지 않았다 — <strong>재현성 벤치 부재</strong>.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-24 — 1층(자산)이 <strong>코딩 도메인 밖으로 확산</strong>, 동시에 코딩 1층은 커밋 정체</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>두 관측이 같은 날 맞물렸다.
+<strong>① 도메인 확산</strong> — <a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a>(⭐14,407·포크 1,545·MIT·트렌딩 <strong>2위</strong>·<strong>GitHub API 실검증</strong>)가 <strong>이미지 생성 프롬프트</strong>를 같은 형식으로 묶어 트렌딩 상위에 올랐다. 원문 설명이 <em>“Prompt as Code … 并提炼出Skills(스킬로 추출)”</em> 라고 직접 밝힌다. 지금까지 이 페이지가 다룬 스킬 자산은 전부 <strong>코딩 에이전트용 절차 지식</strong>이었으므로, <em>“스킬=배포 가능한 지식 자산”</em> 명제가 <strong>생성형 미디어 도메인으로 넘어간 첫 관측</strong>이다. 1층 경쟁이 코딩 안에서 2강 고착으로 포화되자 <strong>새 도메인으로 넓어지는</strong> 모양새.
+<strong>② 코딩 1층의 정체 고착</strong> — <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a> ⭐<strong>234,572</strong>(하루 +1,718)인데 <strong>푸시는 08-21에서 나흘째 멈춰 있다</strong>. 08-22→08-24 누적 +4,191 유입 동안 <strong>커밋 0건</strong>이다. 증분도 +2,473 → +1,718로 <strong>약 30% 둔화</strong>했다. 08-23에 <em>“현재 유입은 콘텐츠 개선이 아니라 트렌딩 노출의 자기강화 루프”</em> 라고 적은 판단이 <strong>추세로 확정</strong>됐다.
+<strong>③ 대조군이 선명해졌다</strong> — 같은 배치 <a href="../sources/openai-codex" class="internal internal-link" data-slug="sources/openai-codex">openai-codex</a>는 <strong>당일 푸시 + 하루 +2,046</strong>으로 스타 증분에서 자산 레포를 처음 추월했고 트렌딩 1위를 차지했다. <strong>“복사되는 텍스트 자산”과 “실행되는 소프트웨어”의 지표 패턴 차이</strong>가 이슈 수(11 vs 13,620)뿐 아니라 <strong>커밋 활성도</strong>에서도 갈린다.
+⚠️<strong>생태계 공통 약점은 그대로다</strong> — <a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a>의 <em>“530+ 사례·20+ 템플릿·공업급”</em> 은 <strong>전량 레포 자체 주장이며 미검증</strong>이다. 오히려 프롬프트 자산은 <strong>모델 버전에 종속</strong>돼(GPT-Image-2 갱신 시 자산이 조용히 낡음) 코딩 스킬보다 <strong>부패 속도가 빠를 수 있다</strong>는 새 약점이 추가된다. 이 페이지가 기록해 온 <strong>재현성 벤치 부재·스타≠품질</strong>은 새 도메인에서도 해소되지 않았다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>한 줄 정의 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>에이전트 스킬</strong>은 코딩 에이전트에게 “무엇을 언제 어떻게 하라”를 알려주는 <strong>프롬프트·절차·참조 파일의 묶음</strong>이며, 모델 가중치나 코드 라이브러리가 아니라 <strong>배포 가능한 지식 자산</strong>이다. 핵심 성질은 <em>모델을 바꾸지 않고 행동을 바꾼다</em>는 것 — 그래서 파인튜닝보다 싸고 빠르며, 그만큼 <strong>품질 보증 수단이 없다</strong>.</p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>왜 독립 개념 페이지인가 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트에 스킬 관련 소스가 <strong>20건 이상</strong> 누적됐음에도(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>·<a href="../sources/agent-skills" class="internal internal-link" data-slug="sources/agent-skills">agent-skills</a>·<a href="../sources/awesome-agent-skills" class="internal internal-link" data-slug="sources/awesome-agent-skills">awesome-agent-skills</a>·<a href="../sources/awesome-claude-skills" class="internal internal-link" data-slug="sources/awesome-claude-skills">awesome-claude-skills</a>·<a href="../sources/awesome-codex-skills" class="internal internal-link" data-slug="sources/awesome-codex-skills">awesome-codex-skills</a>·<a href="../sources/vercel-skills" class="internal internal-link" data-slug="sources/vercel-skills">vercel-skills</a>·<a href="../sources/google-skills" class="internal internal-link" data-slug="sources/google-skills">google-skills</a>·<a href="../sources/claude-skills" class="internal internal-link" data-slug="sources/claude-skills">claude-skills</a>·<a href="../sources/browserbase-skills" class="internal internal-link" data-slug="sources/browserbase-skills">browserbase-skills</a>·<a href="../sources/andrej-karpathy-skills" class="internal internal-link" data-slug="sources/andrej-karpathy-skills">andrej-karpathy-skills</a>·<a href="../sources/pm-skills" class="internal internal-link" data-slug="sources/pm-skills">pm-skills</a>·<a href="../sources/tech-leads-agent-skills" class="internal internal-link" data-slug="sources/tech-leads-agent-skills">tech-leads-agent-skills</a>·<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>·<a href="../sources/academic-research-skills" class="internal internal-link" data-slug="sources/academic-research-skills">academic-research-skills</a>·<a href="../sources/stitch-skills" class="internal internal-link" data-slug="sources/stitch-skills">stitch-skills</a>·<a href="../sources/mmskills" class="internal internal-link" data-slug="sources/mmskills">MMSkills</a>·<a href="../sources/skillspector" class="internal internal-link" data-slug="sources/skillspector">SkillSpector</a>·<a href="../sources/skillstotalent" class="internal internal-link" data-slug="sources/skillstotalent">SkillsToTalent</a>·<a href="../sources/from-context-to-skills" class="internal internal-link" data-slug="sources/from-context-to-skills">From-Context-to-Skills</a>·<a href="../sources/anthropic-cybersecurity-skills" class="internal internal-link" data-slug="sources/anthropic-cybersecurity-skills">Anthropic-Cybersecurity-Skills</a> 등) 개념 페이지가 없어 <a href="../claude" class="internal internal-link" data-slug="claude">CLAUDE.md</a> 스키마의 <em>“3개 이상 소스에서 등장한 개념은 반드시 concepts/ 독립 페이지 생성”</em> 규칙이 장기 미이행 상태였다. 2026-08-22 배치에서 스킬 축 3건(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a> 데일리 1위·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> 6위·<a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a> 8위)과 스킬 진화 논문 <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>가 동시에 올라온 것을 계기로 신설.</p>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-23 — <strong>하네스 내부 구조가 &quot;스킬=주 인터페이스&quot;로 이동한 실측 증거</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>신설 다음 날 배치에서 이 개념 페이지의 핵심 명제를 <strong>벤더 스스로 구조로 증명한 사례</strong>가 잡혔다. <a href="../sources/ecc" class="internal internal-link" data-slug="sources/ecc">ECC</a> README를 07-31 대비 재실측한 결과:</p>
+<ul>
+<li>서브에이전트 <strong>67 → 68</strong>, 스킬 <strong>281 → 286</strong>(증가)</li>
+<li>슬래시커맨드 <strong>94 → 94</strong>(개수 동일)이나 표기가 <strong>“94 legacy command shims”(레거시 호환 셰임)로 격하</strong></li>
+</ul>
+<p>즉 하네스가 <strong>슬래시커맨드를 1급 인터페이스에서 하위 호환 계층으로 내리고 스킬을 주 인터페이스로 승격</strong>시켰다. 이 페이지가 “스킬은 배포 가능한 지식 자산”이라 정의한 명제가, **명령어(고정 진입점) → 스킬(맥락 기반 자동 발동)**이라는 인터페이스 전환으로 실제 제품 구조에 반영된 것이다.</p>
+<p><strong>층별 성장률도 갈렸다</strong>(전량 GitHub API 실검증, 08-22→08-23 이틀):</p>
+<ul>
+<li><strong>1층(자산)</strong> <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a> 230,381 → <strong>232,854</strong> (+2,473)</li>
+<li><strong>2층(방법론)</strong> <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> 275,812 → <strong>276,399</strong> (+587)</li>
+<li><strong>하네스</strong> <a href="../sources/ecc" class="internal internal-link" data-slug="sources/ecc">ECC</a> 236,434(07-31) → <strong>242,304</strong> (23일 +5,870)</li>
+</ul>
+<p>1층이 2층을 <strong>약 4.2배 앞서며 성장률 역전이 이틀째 고착</strong>됐다. 방법론은 한 번 채택하면 반복 소비되지 않는 반면 자산은 계속 수집되는 성질을 감안하면 자연스러운 분화다.</p>
+<p>⚠️<strong>단, 이 페이지가 기록한 구조적 약점은 하나도 해소되지 않았다</strong>: 세 레포 모두 <strong>스킬 품질·재현성 벤치마크가 여전히 부재</strong>하다. 더구나 <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>(최종 푸시 08-21)·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>(08-19) 모두 <strong>커밋 정체 상태에서 스타만 늘고 있어</strong>, 현재 유입은 콘텐츠 개선이 아니라 <strong>트렌딩 노출의 자기강화 루프</strong>로 보는 편이 사실에 가깝다. 스타 급상승을 품질 신호로 읽지 말 것.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="생태계의-4개-층">생태계의 4개 층<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#생태계의-4개-층" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>에이전트 스킬을 둘러싼 소스들은 서로 경쟁이 아니라 <strong>다른 층</strong>에 있다. 볼트 소스를 층별로 정렬하면 구도가 선명해진다.</p>
+<p><strong>1층 — 자산(Assets): 스킬 그 자체</strong>
+개인·조직이 실제로 쓰던 절차를 공개한 것. <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>(⭐23.0만, “내 .agents 디렉토리에서 바로”)·<a href="../sources/andrej-karpathy-skills" class="internal internal-link" data-slug="sources/andrej-karpathy-skills">andrej-karpathy-skills</a>·<a href="../sources/vercel-skills" class="internal internal-link" data-slug="sources/vercel-skills">vercel-skills</a>·<a href="../sources/google-skills" class="internal internal-link" data-slug="sources/google-skills">google-skills</a>·도메인 특화(<a href="../sources/pm-skills" class="internal internal-link" data-slug="sources/pm-skills">pm-skills</a>·<a href="../sources/tech-leads-agent-skills" class="internal internal-link" data-slug="sources/tech-leads-agent-skills">tech-leads-agent-skills</a>·<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>·<a href="../sources/anthropic-cybersecurity-skills" class="internal internal-link" data-slug="sources/anthropic-cybersecurity-skills">Anthropic-Cybersecurity-Skills</a>). 스타 수가 곧 채택 신호.</p>
+<p><strong>2층 — 방법론(Methodology): 스킬을 어떻게 조직할 것인가</strong>
+<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>(⭐27.6만)가 대표. 개별 스킬이 아니라 <strong>스킬들이 자동 발동하며 이루는 개발 프로세스</strong>(스펙→계획→서브에이전트 실행→리뷰)를 규정. <a href="../sources/repo0" class="internal internal-link" data-slug="sources/repo0">Repo0</a>는 같은 신념의 <em>알고리즘판</em>(Dual-DAG 자료구조).</p>
+<p><strong>3층 — 규격·배포(Contract): 어디에 어떻게 실을 것인가</strong>
+<a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a>(Anthropic 마켓플레이스)·<a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a>(Cursor 규격). <strong>벤더가 계약을 정의</strong>하는 층으로, 여기 스타 수는 영향력의 대리 변수가 아니다(에디터에 내장되어 강제 배포되므로).</p>
+<p><strong>4층 — 유지·진화(Evolution): 스킬을 계속 좋게 유지하기</strong>
+가장 늦게 열린 층. <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>가 대표 — 스킬이 <em>자기가 유발한 상호작용 실패</em>로부터 개선되는 폐루프를 세우고, 싱글턴 QA 피드백으로는 1라운드 후 <strong>진화 기울기가 소멸</strong>한다는 점을 정면으로 짚는다. <a href="../sources/knowact-guiclaw" class="internal internal-link" data-slug="sources/knowact-guiclaw">KnowAct-GUIClaw</a>(스킬 자동 축적)·<a href="../sources/skillspector" class="internal internal-link" data-slug="sources/skillspector">SkillSpector</a>(점검)도 이 층.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>볼트가 읽어낸 이동 방향 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>2026년 상반기 스킬 축의 경쟁은 <strong>1층(누가 더 좋은 스킬을 모으나)</strong> 이었다. <a href="../sources/awesome-agent-skills" class="internal internal-link" data-slug="sources/awesome-agent-skills">awesome-agent-skills</a>·<a href="../sources/awesome-claude-skills" class="internal internal-link" data-slug="sources/awesome-claude-skills">awesome-claude-skills</a> 같은 수집형 리포가 쏟아진 게 그 국면이다. 2026-08 현재 1층은 사실상 포화(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> 2강 고착)이고, 새 경쟁은 <strong>3층(벤더 규격)과 4층(진화)</strong> 에서 열리고 있다. <a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a>와 <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>가 같은 날 트렌딩·데일리에 함께 오른 것이 이 전환의 신호.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="2026-08-27--4층진화이-패치에서-생성-으로-올라섰다">2026-08-27 — 4층(진화)이 “패치”에서 <strong>“생성”</strong> 으로 올라섰다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-08-27--4층진화이-패치에서-생성-으로-올라섰다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/jit-agent" class="internal internal-link" data-slug="sources/jit-agent">JIT-Agent</a>(HF 데일리 5위·업39·초록 원문 대조)가 4층의 성격을 바꾼다. 지금까지 이 층의 사례는 <strong>기존 것을 고치는</strong> 방식이었다.</p>
+<ul>
+<li><a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a> — 멀티턴 실패로부터 <strong>스킬 자가갱신</strong></li>
+<li><a href="../sources/autosaddler" class="internal internal-link" data-slug="sources/autosaddler">AutoSaddler</a> — <strong>설계시점</strong> 하네스 코드 패치(오프라인)</li>
+<li><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> — <strong>억제 축</strong>(직교 차원) · <a href="../sources/claude-obsidian" class="internal internal-link" data-slug="sources/claude-obsidian">claude-obsidian</a> — 볼트 구조 규정 자산</li>
+<li><a href="../sources/recuris" class="internal internal-link" data-slug="sources/recuris">Recuris</a> — <strong>실행시점</strong> 메모리 진화(온라인·부분)</li>
+<li><strong><a href="../sources/jit-agent" class="internal internal-link" data-slug="sources/jit-agent">JIT-Agent</a></strong> — 태스크마다 <strong>하네스 전체를 즉석 생성</strong>(just-in-time) + 이전 구성 아카이브에서 성능 신호를 증류해 자가진화</li>
+</ul>
+<p>앞의 셋과 JIT-Agent의 차이는 <strong>패치 대 생성</strong>이다. 그리고 JIT-Agent는 여기서 한 발 더 나가 개념적 주장을 한다 — 하네스(메모리 관리·계획 전략·행동 프로토콜·툴/스킬 오케스트레이션의 <strong>고정 4모듈</strong>)는 <strong>학습 가능·이전 가능·누적적</strong>이며 <strong>모델 스케일링과 직교하는</strong> 능력 차원이라는 것이다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>이 개념에 대한 함의 — &quot;스킬은 사람이 쓰는 자산&quot;이라는 전제가 흔들린다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 위키가 정리해온 4층 구조는 <strong>1층(자산)을 사람이 만든다</strong>는 전제 위에 있었다. JIT-Agent의 주장이 성립하면 1·2층 상당 부분이 <strong>4층의 출력물</strong>이 된다 — 큐레이션 자산(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>)의 가치는 “좋은 스킬 모음”에서 <strong>“생성 모델의 학습 재료·평가 기준”</strong> 으로 이동한다.
+⚠️ 다만 <strong>절대 점수·생성 비용·“성숙 런타임과 경쟁력 있다”의 판정 기준이 전량 미기재</strong>여서, 지금은 <strong>주장의 방향만</strong> 채택하고 크기는 보류한다.</p>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>4층의 천장은 어디인가 — 같은 날 나온 반대 방향 증거 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/frontierchallenge" class="internal internal-link" data-slug="sources/frontierchallenge">FrontierChallenge</a>는 같은 날 <strong>프런티어 모델 12종 × 스캐폴드 3종</strong>을 돌려 최고 구성도 <strong>Pass Rate 20.6%</strong> 라고 보고했다. 스캐폴드(하네스)를 바꿔도 천장이 있었다는 뜻이다. JIT-Agent는 하네스를 바꾸면 크게 오른다고 한다.
+두 결과는 <strong>태스크와 측정이 달라 직접 모순은 아니다.</strong> 그러나 함께 읽으면 이 층의 핵심 미해결 질문이 나온다 — <strong>하네스가 성능을 지배하는 구간과 모델 능력이 천장을 만드는 구간의 경계는 어디인가.</strong> 이 경계가 밝혀지기 전까지 “하네스만 고치면 된다”는 주장은 조건부로 읽어야 한다.</p>
+</div>
+</blockquote>
+<h3 id="1층에-새-변종--출력-형식을-규정하는-스킬">1층에 새 변종 — 출력 <strong>형식</strong>을 규정하는 스킬<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1층에-새-변종--출력-형식을-규정하는-스킬" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>(GitHub ⭐20,152·트렌딩 1위)는 1층 자산이지만 기존 자산들과 겨냥점이 다르다. <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>류가 <strong>에이전트의 행동</strong>을 바꾼다면 archify는 <strong>결과물의 전달 형식</strong>(자체완결 HTML·모션·내보내기)을 표준화한다. 스킬의 계약 범위가 <em>무엇을 하는가</em>에서 <em>무엇을 어떤 형태로 내놓는가</em>까지 넓어지는 사례다. ⚠️ “verifiable” 품질 주장은 자체 서술이며 근거 미확인.</p>
+<hr/>
+<h2 id="2026-08-25--스킬이-기능에서-평가-축으로-승격됐다-2026-08-25--스킬이-기능에서-평가-축으로-승격됐다">2026-08-25 — 스킬이 “기능”에서 “평가 축”으로 승격됐다## 2026-08-25 — 스킬이 “기능”에서 “평가 축”으로 승격됐다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-08-25--스킬이-기능에서-평가-축으로-승격됐다-2026-08-25--스킬이-기능에서-평가-축으로-승격됐다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/mobilepa-bench" class="internal internal-link" data-slug="sources/mobilepa-bench">MobilePA-Bench</a>가 스킬 사용을 채점 대상으로 만들었다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>지금까지 스킬은 <strong>제공하는 쪽의 기능 목록</strong>이었다. 벤더가 스킬 규격을 내고, 커뮤니티가 스킬 모음을 만들고, 사용자가 설치하는 구조 — 즉 <strong>“있다/없다”의 문제</strong>였다.
+<a href="../sources/mobilepa-bench" class="internal internal-link" data-slug="sources/mobilepa-bench">MobilePA-Bench</a>(HF 데일리 2위·2026-08-24)는 중앙 플래닝 에이전트를 3개 상위 차원에서 별도 평가하는데, 그중 하나가 <strong>스킬 사용(Skill Usage)</strong> 이다: <em>“매번 처음부터 모든 단계를 계획하는 대신 <strong>사전 패키징된 복합 스킬을 호출</strong>하는가”</em>. 나머지 둘은 <strong>서브에이전트 협업</strong>과 <strong>메모리 사용</strong>(<a href="../concepts/에이전트-메모리-레이어" class="internal internal-link alias" data-slug="concepts/에이전트-메모리-레이어">에이전트-메모리-레이어</a>)이다.
+<strong>의미</strong>: 스킬은 이제 <strong>“쓸 줄 아는가”가 점수로 매겨지는 능력</strong>이다. 스킬을 붙여줘도 <strong>에이전트가 그걸 안 쓰고 매번 처음부터 계획하면 감점</strong>이라는 것 — 이는 스킬 생태계가 오래 회피해 온 질문이다. 스킬 모음의 규모(수백 개)가 자랑거리였지 <strong>호출률·적중률은 측정된 적이 없었다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>그런데 이 배치는 그 능력이 아직 낮다고도 말한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>같은 논문이 <strong>프론티어 LLM들이 모바일 환경에서 여전히 신뢰할 수 없다</strong>고 결론내며 급락 조건을 <strong>툴 순서 강제·권한 제한·런타임 오류</strong> 셋으로 특정했다. <a href="../sources/thinkingbox" class="internal internal-link" data-slug="sources/thinkingbox">Thinkingbox</a>는 한 발 더 나가 **pass@1 65.36% vs pass^20 25.25%**를 제시한다.
+<strong>스킬 관점의 함의</strong>: 스킬을 잘 갖춰도 <strong>한 번 성공이 매번 성공을 뜻하지 않는다.</strong> 스킬 카탈로그를 늘리는 것보다 <strong>기존 스킬이 반복 호출에서 안정적인지 확인하는 쪽</strong>이 지금은 이득이 크다. 스킬 하나를 5~10회 반복 실행해 전부 같은 결과가 나오는지 보는 것이 새 스킬 5개를 추가하는 것보다 낫다.</p>
+</div>
+</blockquote>
+<h2 id="2026-08-28--억제inhibition-축이-직교로-열렸다">2026-08-28 — <strong>억제(inhibition) 축이 직교로 열렸다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-08-28--억제inhibition-축이-직교로-열렸다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>지금까지 이 페이지가 정리한 4개 층(1층 자산 · 2층 방법론 · 3층 배포 레지스트리 · 4층 하네스 생성)은 <strong>전부 능력을 더하는 축</strong>이었다. <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>(⭐<strong>114,596</strong> · 볼트 스킬 자산 최대)이 그 전제를 깬다.</p>
+<ul>
+<li><strong>더하는 축</strong>: <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>(타입스크립트 능력) · <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>(방법론) · <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>(출력 형식) · <a href="../sources/openmontage" class="internal internal-link" data-slug="sources/openmontage">OpenMontage</a>(영상 제작 700+ 스킬)</li>
+<li><strong>빼는 축</strong>: <strong><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></strong> — <em>“가장 게으른 시니어처럼 생각하게 만든다. 최고의 코드는 쓰지 않은 코드다.”</em></li>
+</ul>
+<p><strong>이건 5번째 층이 아니라 모든 층에 직교하는 두 번째 차원이다.</strong> 억제 자산은 자산 층(1층)에 놓이지만, 그 대상은 다른 1층 자산들이 만들어내는 산출이다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>10만 스타가 말하는 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>단일 행동 규범 텍스트가 <strong>⭐114,596</strong>을 모았다는 사실은, <strong>코딩 에이전트의 지배적 고통이 “못 한다”가 아니라 “시키지 않은 것까지 만든다”</strong> 임을 시사한다. 능력 추가 자산이 포화하면서 <strong>상쇄재 수요</strong>가 생긴 것으로 읽는다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>억제 자산도 효과 측정이 없다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>은 코드 감축량·리뷰 통과율·결함률 <strong>어느 것도 제시하지 않는다.</strong> 그리고 반대 방향 위험 — <strong>필요한 코드까지 안 쓰게 만드는 과소생성</strong> — 이 전혀 측정되지 않았다. “가장 게으른 시니어” 페르소나는 그 실패를 구조적으로 유도할 수 있다.
+<strong>잠재 충돌</strong>: <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>(덜 만들어라)과 <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>(자체완결 HTML까지 만들어라)를 동시 적용하면 어느 쪽이 이기는지 미확인이다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-28 — 볼트 구조 자체를 규정하는 자산이 등장했다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/claude-obsidian" class="internal internal-link" data-slug="sources/claude-obsidian">claude-obsidian</a>(⭐14,215 · MIT · Obsidian + Claude Code)은 1~4층 어디에도 들어가지 않는다. 이건 <strong>에이전트가 축적하는 지식 저장소의 구조를 규정하는 자산</strong>이다 — <a href="../concepts/llm-wiki" class="internal internal-link" data-slug="concepts/llm-wiki">LLM-Wiki</a> 패턴을 명시적으로 구현했다고 밝힌다.
+스킬 생태계가 <em>에이전트의 행동</em> → <em>산출물 형식</em> → <em>배포 경로</em> → <em>하네스 생성</em> 을 차례로 상품화한 뒤, <strong>이제 에이전트의 기억 구조까지 상품화</strong>하는 단계로 보인다.</p>
+</div>
+</blockquote>
+<p><strong>이슈 밀도 기준선 갱신(2026-08-28 배치 5건)</strong>: <a href="../sources/claude-obsidian" class="internal internal-link" data-slug="sources/claude-obsidian">claude-obsidian</a> <strong>0.098</strong> > <a href="../sources/openmontage" class="internal internal-link" data-slug="sources/openmontage">OpenMontage</a> 0.038 > <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a> 0.031 > <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 0.028 > <a href="../sources/awesome-gpt-image-2" class="internal internal-link" data-slug="sources/awesome-gpt-image-2">awesome-gpt-image-2</a> <strong>0.0072</strong>. 최대·최소 <strong>13.6배</strong> 차이로, <em>“이슈 밀도는 품질이 아니라 소프트웨어의 종류를 말한다”</em> 는 규칙이 <strong>네 회차 연속 유지</strong>된다.</p>
+<h2 id="2026-08-30--스킬이-애플리케이션을-감싸는-껍데기가-됐다-1층-두-번째-변종">2026-08-30 — 스킬이 <strong>애플리케이션을 감싸는 껍데기</strong>가 됐다 (1층 두 번째 변종)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-08-30--스킬이-애플리케이션을-감싸는-껍데기가-됐다-1층-두-번째-변종" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/openmaic" class="internal internal-link" data-slug="sources/openmaic">OpenMAIC</a>(⭐22,701·MIT·칭화 THU-MAIC)는 4개 층 어디에도 깔끔히 들어가지 않는다. 이 레포는 <strong>동시에 두 방향으로 스킬과 관계</strong>한다:</p>
+<ul>
+<li><strong>안쪽으로 소비</strong>: 내부에 <strong>내장 스킬 20개</strong>(슬라이드·퀴즈·인터랙티브·PBL·이미지·영상·음성·<code>.pptx</code> 임포트)를 두고 코스를 조립한다 — 여기까지는 평범한 1층 활용.</li>
+<li><strong>바깥으로 공급</strong>: 동시에 <strong>ClawHub에 설치 가능한 스킬 하나</strong>로 자신을 노출한다(<code>clawhub install openmaic</code>). 사용자는 채팅앱에서 <em>“양자역학 가르쳐줘”</em> 라고 말하면 되고, 스킬은 <strong>원격 서비스를 호출해 비동기 작업을 폴링하고 링크를 돌려준다.</strong></li>
+</ul>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>스킬의 내용물이 <strong>프롬프트에서 서비스 호출 규약으로</strong> 바뀌는 지점</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>1층 자산(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a>)의 실체는 <strong>텍스트</strong>다 — 절차, 규칙, 참조 파일. 복사해 가면 그만이고 서버가 필요 없다. <a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>는 여기서 한 발 나가 <em>출력 형식</em>을 규정했지만 여전히 로컬에서 완결된다(자체완결 HTML).
+<a href="../sources/openmaic" class="internal internal-link" data-slug="sources/openmaic">OpenMAIC</a>의 스킬은 다르다. <strong>내용물의 핵심이 “무엇을 하라”가 아니라 “어디에 어떻게 요청하고 어떻게 기다리라”</strong> 다. 호스티드 모드에서는 액세스 코드를 받아 원격 서비스를 부르고, 자체호스팅 모드에서는 클론·설정·기동을 단계별로 안내한다. 즉 <strong>스킬이 SDK 겸 설치 가이드 겸 클라이언트</strong>가 된다.
+이것이 중요한 이유: 1층 자산은 <strong>품질 보증 수단이 없다는 것이 구조적 약점</strong>이었는데(아래 섹션), 서비스형 스킬은 <strong>서비스 쪽에 책임 주체가 생긴다.</strong> 대신 새 약점이 붙는다 — <strong>로컬에서 검증 불가</strong>하고, 서비스가 죽으면 스킬도 죽으며, 데이터가 밖으로 나간다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>3층(레지스트리)이 벤더 하나로 수렴하지 않는다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 3층을 <em>“벤더가 계약을 정의하는 층”</em> 으로 적고 <a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a>·<a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a>를 예로 들었다. <a href="../sources/openmaic" class="internal internal-link" data-slug="sources/openmaic">OpenMAIC</a>가 <strong>ClawHub</strong>라는 제3의 허브를 통해 배포된다는 사실은, 레지스트리가 <strong>에디터/모델 벤더 소유가 아닌 곳에서도 생긴다</strong>는 뜻이다.
+같은 날 관측된 수치가 이를 보강한다 — <a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a>은 <strong>배치 최저 성장률(+1.03%/일)</strong> 이었다. <strong>공식 인덱스라는 지위가 유입을 만들어 주지 않는다.</strong> 사람들은 인덱스가 아니라 자산과 서비스로 간다.</p>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>그래서 이건 5층인가, 1층의 변종인가 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 <strong>판단을 보류하고 1층의 두 번째 변종으로 잠정 분류</strong>한다(<a href="../sources/archify" class="internal internal-link" data-slug="sources/archify">archify</a>가 첫 번째 변종 — <em>출력 형식</em>을 규정). 근거: 표본이 <a href="../sources/openmaic" class="internal internal-link" data-slug="sources/openmaic">OpenMAIC</a> 하나뿐이고, ClawHub 생태계 자체를 볼트가 아직 관측하지 않았다.
+<strong>판별 기준을 미리 적어 둔다</strong> — <em>원격 서비스를 감싸는 스킬</em> 사례가 서로 다른 도메인에서 2건 더 나오면 <strong>“서비스 래퍼”를 독립 층으로 승격</strong>한다. 그전까지는 변종으로 둔다.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="이-개념의-구조적-약점">이 개념의 구조적 약점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-개념의-구조적-약점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>스킬에는 품질 보증 수단이 사실상 없다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>코드 라이브러리는 타입·테스트·시맨틱 버저닝이 있지만, 스킬은 <strong>자연어 절차</strong>라 다음이 전부 결여돼 있다:</p>
+<ul>
+<li><strong>재현성 벤치 없음</strong> — <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> 어느 쪽도 “이 스킬을 쓰면 성공률이 N% 오른다”는 정량 근거를 리포에 제시하지 않는다. <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>의 설명문에 붙은 <em>“that works”</em> 는 주장이지 측정이 아니다.</li>
+<li><strong>스타 수 ≠ 품질</strong> — 저자 브랜드 파워가 스타를 견인하는 구조(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>는 Matt Pocock의 TypeScript 교육자 기반).</li>
+<li><strong>결함이 멀티턴에서만 드러남</strong> — <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>가 실증한 비대칭. 한 번 써보고 괜찮으면 좋은 스킬로 보이지만, 여러 턴 이어 쓸 때만 나타나는 결함은 발견 경로 자체가 없다.</li>
+<li><strong>이식성 미해결</strong> — 하니스별 규격이 갈라지면(<a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a> vs <a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a>) 같은 스킬을 여러 곳에 유지해야 한다. <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>가 멀티 하니스 지원을 내세우는 것이 이 압력의 방증.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>자동 발동의 양면성 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>류의 자동 트리거는 사용자가 조작할 필요가 없다는 장점이 있지만, 동시에 <strong>에이전트를 특정 프로세스에 강하게 구속</strong>한다. 빠른 단발 태스크에는 오버헤드이고, 의도치 않은 개입 여지가 있다.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="실무-함의">실무 함의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무-함의" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>스킬을 도입·작성할 때의 판단 기준 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>1층 자산은 복사 전 읽어라</strong> — 스타 수가 아니라 실제 절차 내용을 본다. 브랜드가 스타를 만든다.</li>
+<li><strong>개선은 멀티턴 로그에서 뽑아라</strong> — <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>의 핵심 교훈. 1회 실행 결과로 스킬을 고치면 1라운드 뒤 개선이 멈춘다.</li>
+<li><strong>규격 종속을 경계하라</strong> — 3층은 아직 갈라지는 중이다. 스킬 본문은 하니스 중립으로 쓰고, 규격 어댑터만 분리한다.</li>
+<li><strong>“works” 주장은 근거를 요구하라</strong> — 방법론 층 리포일수록 정량 근거가 없다.</li>
+</ol>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-09-06--두-개의-새-축이-붙는다-프로세스-소유권과-모델-간-전이">🆕 2026-09-06 — <strong>두 개의 새 축이 붙는다: 「프로세스 소유권」과 「모델 간 전이」</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-06--두-개의-새-축이-붙는다-프로세스-소유권과-모델-간-전이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="축-1--프로세스-소유권-이-배치가-논쟁의-양쪽을-같이-들여왔다">축 1 — 프로세스 소유권: 이 배치가 논쟁의 양쪽을 같이 들여왔다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#축-1--프로세스-소유권-이-배치가-논쟁의-양쪽을-같이-들여왔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>볼트는 09-06에 <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>를 인제스트하며 그 문제 제기를 기록했다 — <em>“GSD·BMAD·<strong>Spec-Kit</strong>이 개발 프로세스 전체를 소유해 버려 프로세스 자체의 버그를 잡기 어렵다.”</em> 그리고 09-05 배치에서 <strong>비판 대상인 <a href="../sources/spec-kit" class="internal internal-link" data-slug="sources/spec-kit">spec-kit</a>이 직접 들어왔다</strong>(GitHub 공식 · ⭐133,645 · 오픈이슈 316).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th><a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a></th><th><a href="../sources/spec-kit" class="internal internal-link" data-slug="sources/spec-kit">spec-kit</a></th></tr></thead><tbody><tr><td>주체</td><td>개인</td><td><strong>GitHub 공식 조직</strong>(id 9919)</td></tr><tr><td>스타</td><td>253,313</td><td>133,645</td></tr><tr><td>issue/star</td><td>—</td><td><strong>0.0024</strong>(배치 최저 수준)</td></tr><tr><td>처방</td><td>작게 쪼개 <strong>수정 가능</strong>하게</td><td>명세를 먼저 <strong>확정</strong>시켜 이탈 차단</td></tr><tr><td>배포</td><td>플러그인(읽기전용) / skills.sh(복사·개조)</td><td>CLI 절차 강제</td></tr></tbody></table></div>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>⚠️ <strong>양쪽 다 정량 근거가 없다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>“프로세스를 쪼개야 한다”도 “명세를 굳혀야 한다”도 <strong>대조 실험이 없다.</strong> <a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>이 세운 기준(<strong>백본·하네스·예산 고정 후 변수 하나만 토글</strong>)을 어느 쪽도 충족하지 않는다.
+→ <strong>이 대립은 판정하지 말고 축으로 기록한다.</strong> 볼트가 직접 판정하려면 동일 과제를 (a)직접 지시 (b)명세 선행 두 조건으로 돌려 보는 수밖에 없다(actionable 등록).</p>
+</div>
+</blockquote>
+<h3 id="축-2---모델-간-전이-스킬하네스-자산의-재검증-요구-harnessdev">축 2 — 🔴 <strong>모델 간 전이: 스킬·하네스 자산의 재검증 요구</strong> (<a href="../sources/harnessdev" class="internal internal-link" data-slug="sources/harnessdev">HarnessDev</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#축-2---모델-간-전이-스킬하네스-자산의-재검증-요구-harnessdev" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 배치에서 <strong>가장 실무적으로 무거운 발견</strong>이다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>하네스는 모델 외부 인프라인데도 <strong>모델에 결박된다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/harnessdev" class="internal internal-link" data-slug="sources/harnessdev">HarnessDev</a> 초록: <em>“고정 런타임 모델 실험은 이득이 <strong>하네스를 실행하는 모델에 강하게 의존</strong>함을 보이며, 이는 <strong>모델 간 전이가 제한적</strong>임을 시사한다.”</em>
+스킬·하네스를 <strong>모델 바깥에 두면 재사용 가능한 자산</strong>이 될 거라는 게 이 개념 전체의 암묵 전제였다. 그 전제가 <strong>처음으로 실험적 반증을 받았다.</strong></p>
+</div>
+</blockquote>
+<p>그리고 <strong>같은 배치에서 동형 사례가 하나 더 나왔다</strong> — <a href="../sources/latentpress" class="internal internal-link" data-slug="sources/latentpress">LatentPress</a>의 <strong>“reader-matched” 어댑터</strong>는 특정 디코더에 맞춰 학습되므로 모델을 바꾸면 메모리 자산을 다시 만들어야 한다. <strong>메모리 층과 하네스 층에서 독립적으로 같은 결박이 관측됐다.</strong></p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>스킬 평가 기준에 3개 축 추가 (기존 4개 기준에 이어) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol start="5">
+<li><strong>홀드아웃 성공률로 요구하라</strong> — 개발 중 본 과제의 성능은 근거가 아니다(<a href="../sources/aspire" class="internal internal-link" data-slug="sources/aspire">Aspire</a>: 좁은 자체평가는 히든 평가로 전이되지 않는다)</li>
+<li><strong>실행 토큰 비용을 함께 재라</strong> — 성능만 재면 <strong>비용으로 성능을 사는</strong> 스킬이 이긴다(<a href="../sources/harnessdev" class="internal internal-link" data-slug="sources/harnessdev">HarnessDev</a>가 능력/효율 이중 측정을 설계에 넣은 이유)</li>
+<li><strong>🔴 모델을 바꿔 재검증하라</strong> — 볼트의 스킬 자산은 <strong>현재 모델에 과적합돼 있을 수 있다.</strong> 모델 교체 시 성능 유지를 가정하지 않는다</li>
+</ol>
+</div>
+</blockquote>
+<h3 id="스킬-생산-방식-축의-현황-09-03-신설--09-06-갱신">스킬 생산 방식 축의 현황 (09-03 신설 → 09-06 갱신)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#스킬-생산-방식-축의-현황-09-03-신설--09-06-갱신" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>수작업 단일 규범</strong> — <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>(⭐128,445) · <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>(⭐253,313)</li>
+<li><strong>경험 기반 자동생성</strong> — <a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a>(⭐242,165) ⚠️ <a href="../sources/aspire" class="internal internal-link" data-slug="sources/aspire">Aspire</a>가 이 층의 주장에 <strong>직접 반증</strong>을 제시: 자기진화의 가중치 수준 향상은 <strong>희소하고 불안정</strong>하며 계속 탐색하면 <strong>앞선 개선이 지워진다</strong></li>
+<li><strong>코퍼스 증류</strong> — <a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>(통제 실험 보유, MLE-bench +134.3%)</li>
+<li><strong>🆕 프로세스 강제</strong> — <a href="../sources/spec-kit" class="internal internal-link" data-slug="sources/spec-kit">spec-kit</a>(GitHub 공식, 근거 없음)</li>
+</ol>
+<hr/>
+<h2 id="-2026-09-07--3층규격배포에서-첫-폐기가-관측됐다-스킬-레포--플러그인">🔴 2026-09-07 — <strong>3층(규격·배포)에서 첫 폐기가 관측됐다: 스킬 레포 → 플러그인</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-07--3층규격배포에서-첫-폐기가-관측됐다-스킬-레포--플러그인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <strong><a href="../sources/openai-skills" class="internal internal-link" data-slug="sources/openai-skills">openai-skills</a>(⭐25,754)가 deprecated 됐다</strong> — README 원문 대조</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><em>“This repository is <strong>deprecated</strong>. For current Codex skill and plugin examples, use the <strong>OpenAI Plugins repository</strong>. If you want to add your own skills to Codex, follow the Build plugins guide, which includes instructions for creating a <strong>skill-only plugin</strong>.”</em>
+<strong>스킬이 사라진 게 아니라 플러그인 안으로 들어갔다.</strong> 배포 단위가 <strong>스킬 레포 → 플러그인</strong>으로 한 층 올라갔고, 스킬은 그 <strong>내용물</strong>이 됐다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>같은 날 <strong>독립 사례 2건</strong> — 벤더 한 곳의 결정이 아니다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong><a href="../sources/openai-skills" class="internal internal-link" data-slug="sources/openai-skills">openai-skills</a></strong>: 이동을 <strong>선언</strong>했다(README 최상단)</li>
+<li><strong><a href="../sources/humanlayer-skills" class="internal internal-link" data-slug="sources/humanlayer-skills">humanlayer-skills</a></strong>: 이동을 <strong>이미 마쳤다</strong> — 루트에 <code>skills/</code> 가 <strong>없고</strong> <code>plugins/</code>·<code>.claude-plugin/</code> 이 있다(contents API 실측). README는 아직 <code>npx skills add</code> 로 안내하는데 <strong>레포 구조는 플러그인 레이아웃</strong>이다.
+→ <a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a>(Anthropic 마켓플레이스)까지 합하면 <strong>3층의 수렴 방향이 3개 벤더에서 일치</strong>한다. 08-30에 <em>“3층이 벤더 하나로 수렴하지 않는다”</em> 고 적었는데, <strong>규격은 갈라져도 배포 단위는 플러그인으로 모인다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <strong>&quot;스타 수 ≠ 영향력&quot; 규칙이 가장 강하게 실증됐다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/openai-skills" class="internal internal-link" data-slug="sources/openai-skills">openai-skills</a> 는 폐기됐는데 <strong>스타가 계속 붙는다</strong>(raw 수집 25,751 → 실측 <strong>25,754</strong>, +3). 최종 push는 <strong>2026-07-14</strong>, 약 2개월 정체.
+그리고 <strong>API <code>archived</code> 는 <code>false</code></strong> 다 — <strong>폐기 신호가 기계 판독 가능한 곳에 없다.</strong> README 본문을 읽어야만 안다.
+→ 이 층의 기존 문장(<em>“여기 스타 수는 영향력의 대리 변수가 아니다”</em>)을 <strong>강화</strong>한다: <strong>스타는 과거의 크기를 잰다.</strong> 볼트 수집기는 지표만으로 폐기 레포를 걸러낼 수 없으며, 실제로 09-07 배치가 이걸 <em>“신규 소스”</em> 로 올렸다.</p>
+</div>
+</blockquote>
+<h2 id="2026-09-07--1층자산이-비-코딩-직무의-주류로-넘어갔다">2026-09-07 — 1층(자산)이 <strong>비-코딩 직무의 주류</strong>로 넘어갔다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-07--1층자산이-비-코딩-직무의-주류로-넘어갔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/marketingskills" class="internal internal-link" data-slug="sources/marketingskills">marketingskills</a>(⭐<strong>47,746</strong> · MIT)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>1층은 지금까지 사실상 <strong>개발자 직무</strong>의 절차였다(<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>·<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>·<a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a>). 이 레포는 <strong>CRO·카피라이팅·SEO·애널리틱스·그로스</strong> 를 같은 형식으로 담아 4.7만 스타를 받았다.
+볼트는 <a href="../sources/pm-skills" class="internal internal-link" data-slug="sources/pm-skills">pm-skills</a>·<a href="../sources/scientific-agent-skills" class="internal internal-link" data-slug="sources/scientific-agent-skills">scientific-agent-skills</a> 로 08-24에 이미 코딩 밖 확산을 관측했지만, <strong>4.7만 규모</strong>는 그 관측을 <em>“소수 실험”</em> 에서 <strong>“주류 채택”</strong> 으로 올린다.</p>
+<p><strong>구조적 신규성 2가지</strong>:</p>
+<ol>
+<li><strong>스킬 사이에 의존 그래프가 있다</strong> — <code>product-marketing</code> 이 루트가 되어 나머지가 이를 먼저 읽는다. 볼트가 본 1층 자산 대부분은 <strong>평평한 모음</strong>이었다. <a href="../sources/repo0" class="internal internal-link" data-slug="sources/repo0">Repo0</a> 가 <em>알고리즘</em>(Dual-DAG)으로 한 것을 <strong>파일 배치만으로</strong> 흉내낸 형태 → <strong>1층과 2층의 경계가 흐려진다.</strong></li>
+<li><strong>자체 검증 스크립트 보유</strong> — <code>validate-skills.sh</code> · <strong><code>validate-skills-official.sh</code></strong>(루트 contents API 실측). 1층 자산으로는 이례적이다.</li>
+</ol>
+<p>⚠️ <strong>단 <code>partners.json</code> 과 <code>tools/</code> 가 실재</strong>한다 — 유료 “Verified Partners” 도구 통합. <strong>스킬이 도구를 추천할 때 그것이 파트너십의 산물인지 판단의 산물인지 구분할 방법이 사용자에게 없다.</strong> 이 개념의 기존 약점(<em>“품질 보증 수단 부재”</em>)이 여기서는 <strong>이해충돌</strong>의 형태로 나타난다.</p>
+</div>
+</blockquote>
+<h2 id="2026-09-07--4층진화에-사용자의-시스템을-설계해주는-스킬-이-등장">2026-09-07 — 4층(진화)에 <strong>“사용자의 시스템을 설계해주는 스킬”</strong> 이 등장<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-07--4층진화에-사용자의-시스템을-설계해주는-스킬-이-등장" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/humanlayer-skills" class="internal internal-link" data-slug="sources/humanlayer-skills">humanlayer-skills</a> <code>design-control-loop</code></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>README 원문: <em>“당신을 <strong>인터뷰</strong>해서 — <strong>센서·컨트롤러·액추에이터·외란(disturbances)</strong> — 코드베이스에 맞는 에이전틱 제어 루프를 설계하고, 로컬 실행 가능한 컴포넌트 + <strong>스케줄된 코딩 에이전트 워크플로</strong>로 빌드까지 한다.”</em>
+4층의 기존 사례는 스킬이 <strong>자기를 고치거나</strong>(<a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a>) <strong>자기를 생성</strong>(<a href="../sources/jit-agent" class="internal internal-link" data-slug="sources/jit-agent">JIT-Agent</a>)했다. 여기서는 스킬이 <strong>자기 자신이 아니라 사용자의 자동화 시스템 전체</strong>를 설계한다.
+그리고 어휘가 <strong>제어공학</strong>이다 — LLM 에이전트를 <em>“프롬프트 체인”</em> 이 아니라 <strong>피드백 제어 시스템</strong>으로 모델링한다. <strong>이 개념이 이 어휘를 스킬 층에서 본 것은 처음.</strong></p>
+<p><code>build-iterated-agentic-loop</code> 와 짝을 이뤄 <strong>설계 → 빌드 2단</strong>을 이루고, 둘 다 산출물에 <strong>스케줄된 CI 워크플로</strong>가 들어간다.
+→ <strong>스킬의 출력이 “이번 대화의 결과물”이 아니라 “계속 도는 시스템”</strong> 이다. 이 개념의 정의(<em>“스킬 = 절차 지식”</em>)를 <strong>“스킬 = 시스템 부트스트래퍼”</strong> 로 확장해야 할 수 있다. ⚠️ 단 <strong>제어공학 어휘가 실제 폐루프인지 비유인지 미확인</strong> — SKILL.md 본문 확인 후 판정.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <strong>볼트 자신의 실패 — raw 요약을 소스로 취급했다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>raw는 <a href="../sources/humanlayer-skills" class="internal internal-link" data-slug="sources/humanlayer-skills">humanlayer-skills</a> 를 <em>“스킬 <strong>3종</strong>”</em> 으로 적었다. <strong>README 실측 결과 5종</strong>이다(<code>improve-claude-md</code> · <code>narrow-react-prop-types</code> · <code>build-iterated-agentic-loop</code> · <strong><code>design-control-loop</code></strong> · <strong><code>show-me</code></strong>).
+누락된 2종 중 하나가 <strong>이 레포에서 가장 중요한 스킬</strong>이었다. <strong>raw 요약만 믿었다면 4층의 새 변종을 통째로 놓쳤다.</strong>
+→ 09-06에 세운 <em>“raw 수집값과 실측을 전건 대조”</em> 규칙을 <strong>지표(숫자)뿐 아니라 내용(구성)에도 적용</strong>한다. <code>actionable.md</code> 반영.</p>
+</div>
+</blockquote>
+<h3 id="스킬-생산-방식-축--09-07-현황">스킬 생산 방식 축 — 09-07 현황<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#스킬-생산-방식-축--09-07-현황" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>수작업 단일 규범</strong> — <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> · <a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a> · 🆕 <a href="../sources/marketingskills" class="internal internal-link" data-slug="sources/marketingskills">marketingskills</a>(비-코딩 직무·의존 그래프)</li>
+<li><strong>경험 기반 자동생성</strong> — <a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a> ⚠️ <a href="../sources/aspire" class="internal internal-link" data-slug="sources/aspire">Aspire</a> 반증</li>
+<li><strong>코퍼스 증류</strong> — <a href="../sources/repo-to-skill" class="internal internal-link" data-slug="sources/repo-to-skill">Repo-To-Skill</a>(통제 실험 보유)</li>
+<li><strong>프로세스 강제</strong> — <a href="../sources/spec-kit" class="internal internal-link" data-slug="sources/spec-kit">spec-kit</a></li>
+<li><strong>🆕 시스템 부트스트랩</strong> — <a href="../sources/humanlayer-skills" class="internal internal-link" data-slug="sources/humanlayer-skills">humanlayer-skills</a> <code>design-control-loop</code>(인터뷰 → 제어 루프 설계 → CI 워크플로 생성)</li>
+</ol>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 2026-09-19 — <strong>연구 방법론을 스킬로 패키징</strong>: <a href="../sources/marin" class="internal internal-link" data-slug="sources/marin">marin</a> 은 Delphi 스케일링 방법론을 <code>add_scaling_heuristic</code> 에이전트 스킬로 배포하고 <code>.agents/skills</code>·<code>.claude/skills</code> 를 기여자 경로로 안내한다. (🔴 &quot;볼트 최초 관측&quot;은 전수 검색 없는 추정)</p></div>
+                  
+                </div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/marin" class="internal internal-link" data-slug="sources/marin">marin</a></li>
+<li><a href="../sources/marketingskills" class="internal internal-link" data-slug="sources/marketingskills">marketingskills</a> · <a href="../sources/openai-skills" class="internal internal-link" data-slug="sources/openai-skills">openai-skills</a> · <a href="../sources/humanlayer-skills" class="internal internal-link" data-slug="sources/humanlayer-skills">humanlayer-skills</a> — <strong>2026-09-07 신규(1층 비코딩 확산 · 3층 첫 폐기 · 4층 시스템 부트스트랩)</strong></li>
+<li><a href="../concepts/claude-code-워크플로우" class="internal internal-link alias" data-slug="concepts/claude-code-워크플로우">Claude-Code-워크플로우</a> — 이 개념이 실제로 구현되는 내 작업 환경</li>
+<li><a href="../concepts/ai-에이전트-프레임워크" class="internal internal-link alias" data-slug="concepts/ai-에이전트-프레임워크">AI-에이전트-프레임워크</a> — 상위 프레임워크 축(스킬은 그 안의 배포 단위)</li>
+<li><a href="../concepts/바이브코딩" class="internal internal-link alias" data-slug="concepts/바이브코딩">바이브코딩</a> — 스킬이 전제하는 작업 방식</li>
+<li><a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a> · <a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> · <a href="../sources/cursor-plugins" class="internal internal-link" data-slug="sources/cursor-plugins">cursor-plugins</a> · <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a> — 층별 대표 소스</li>
+<li><a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a> · <a href="../sources/agent-skills" class="internal internal-link" data-slug="sources/agent-skills">agent-skills</a> · <a href="../sources/awesome-agent-skills" class="internal internal-link" data-slug="sources/awesome-agent-skills">awesome-agent-skills</a> — 배포·수집 층</li>
+<li><a href="../sources/repo0" class="internal internal-link" data-slug="sources/repo0">Repo0</a> — 방법론의 알고리즘판(Dual-DAG)</li>
+<li><a href="../concepts/에이전트-메모리-레이어" class="internal internal-link alias" data-slug="concepts/에이전트-메모리-레이어">에이전트-메모리-레이어</a> — 스킬이 “절차 지식”이라면 메모리는 “경험 지식”(대응 축)</li>
+<li><a href="../sources/harnessdev" class="internal internal-link" data-slug="sources/harnessdev">HarnessDev</a> · <a href="../sources/aspire" class="internal internal-link" data-slug="sources/aspire">Aspire</a> — <strong>모델 간 전이 한계 · 자기진화 반증</strong>(2026-09-06 신규)</li>
+<li><a href="../sources/spec-kit" class="internal internal-link" data-slug="sources/spec-kit">spec-kit</a> — 프로세스 강제 축(4번째 생산 방식)</li>
+<li><a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> — 홀드아웃/히든 평가 요구의 근거</li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>근거 소스: 볼트 내 스킬 관련 소스 20건 이상 (2026-04 ~ 2026-08 누적)</li>
+<li>신뢰도: ⭐⭐⭐⭐ (다수 소스 누적 기반 종합 — 단 “스킬 효과의 정량 근거 부재”는 이 개념의 확인된 공백이며 본 페이지도 그 공백을 메우지 못함)</li>
+<li>신설: 2026-08-22 (스킬 축 3건 + <a href="../sources/skillevo" class="internal internal-link" data-slug="sources/skillevo">SkillEvo</a> 동시 등장 계기 · 스키마의 3소스 규칙 장기 미이행 해소)</li>
+</ul>
+<hr/>
+<h2 id="-2026-09-11-갱신--레지스트리에서-패키지-매니저로-계보-4번째-칸">🔄 2026-09-11 갱신 — <strong>레지스트리에서 패키지 매니저로</strong> (계보 4번째 칸)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-11-갱신--레지스트리에서-패키지-매니저로-계보-4번째-칸" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/vercel-skills" class="internal internal-link" data-slug="sources/vercel-skills">vercel-skills</a> ⭐31,337 (4.5개월 만에 2.0배)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>2026-04-23 인제스트 당시(⭐15,695)는 <em>“npx 한 줄 설치 레지스트리”</em> 였다. 지금은 <strong>동사가 늘었다</strong>:</p>
+<ul>
+<li><strong><code>npx skills use &lt;source></code></strong> — <em>“Use one skill <strong>without installing</strong>”</em>. 임시 디렉터리에 쓰고 <strong>프롬프트만 stdout 출력</strong> → <code>| claude</code> 로 <strong>파이프 가능</strong></li>
+<li><code>--agent</code> 지정 시 지원 에이전트를 <strong>프롬프트와 함께 대화형 기동</strong></li>
+<li><code>--agent '*'</code> / <code>--skill '*'</code> <strong>와일드카드</strong>, <code>remove --all</code></li>
+<li>지원 에이전트: <strong>자기보고 79 / 표 실카운트 78</strong>(두 자동생성 블록이 어긋남 → <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a>)
+→ 🎯 설치·사용·제거의 <strong>생애주기 + 와일드카드 대상 지정</strong> = 레지스트리가 아니라 <strong>패키지 매니저 문법</strong>이다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>계보 정리 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>포맷</strong> — <code>SKILL.md</code> 규약 (<a href="../sources/agent-skills" class="internal internal-link" data-slug="sources/agent-skills">agent-skills</a>·<a href="../entities/anthropic" class="internal internal-link" data-slug="entities/anthropic">Anthropic</a>)</li>
+<li><strong>묶음</strong> — 플러그인/패키지 (<a href="../sources/openai-plugins" class="internal internal-link" data-slug="sources/openai-plugins">openai-plugins</a>·<a href="../sources/text-to-cad" class="internal internal-link" data-slug="sources/text-to-cad">text-to-cad</a>, 2026-09-10)</li>
+<li><strong>버전관리·배포</strong> — git+MR (<a href="../sources/teamai-cli" class="internal internal-link" data-slug="sources/teamai-cli">teamai-cli</a>)</li>
+<li><strong>🆕 의존성 관리 도구</strong> — <a href="../sources/vercel-skills" class="internal internal-link" data-slug="sources/vercel-skills">vercel-skills</a> <code>use</code>/와일드카드/79개 에이전트 타깃
+→ 다음 칸의 후보: <strong>의존성 해결·버전 제약·충돌 탐지</strong>. 아직 없다.</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>채택의 폭이 넓어지고 있다 — 지식베이스 앱까지 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/llm_wiki" class="internal internal-link" data-slug="sources/llm_wiki">llm_wiki</a>(⭐18,381) 의 Rust 챗 에이전트가 <strong>로컬 <code>SKILL.md</code> 폴더를 스캔해 <code>/skill</code> 로 선택</strong>한다(README 48행).
+→ <strong>스킬 규약이 코딩 에이전트를 벗어나 일반 데스크톱 앱으로 확산</strong>. <a href="../concepts/에이전트-스킬" class="internal internal-link alias" data-slug="concepts/에이전트-스킬">에이전트-스킬</a> 이 사실상 표준 인터페이스가 되고 있다는 신호.
+→ 반대편 극단: <a href="../sources/clodds" class="internal internal-link" data-slug="sources/clodds">Clodds</a> 는 <strong>119개 스킬로 자금을 집행</strong>한다 — 스킬이 <strong>권한을 갖는 단계</strong>(⚠️ 이해관계 경고 있는 저장소).</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>당장 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong><code>npx skills use</code> 실험</strong> — 설치 없이 1회성으로 쓰는 경로는 <code>~/.claude/skills/</code> 비대화를 막는 실질 대안. 그리고 <a href="../sources/i-have-adhd" class="internal internal-link" data-slug="sources/i-have-adhd">i-have-adhd</a> 규칙 1개 적용(→ 순차적 개입, <a href="../sources/agentgrad" class="internal internal-link" data-slug="sources/agentgrad">AgentGrad</a>).</p>
+</div>
+</blockquote>
+<h2 id="관련-페이지-2026-09-11-추가">관련 페이지 (2026-09-11 추가)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-2026-09-11-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/vercel-skills" class="internal internal-link" data-slug="sources/vercel-skills">vercel-skills</a></li>
+<li><a href="../entities/vercel" class="internal internal-link" data-slug="entities/vercel">Vercel</a></li>
+<li><a href="../sources/llm_wiki" class="internal internal-link" data-slug="sources/llm_wiki">llm_wiki</a></li>
+<li><a href="../sources/clodds" class="internal internal-link" data-slug="sources/clodds">Clodds</a></li>
+<li><a href="../sources/i-have-adhd" class="internal internal-link" data-slug="sources/i-have-adhd">i-have-adhd</a></li>
+<li><a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a></li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-28" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#에이전트-스킬-agent-skills" data-for="에이전트-스킬-agent-skills">에이전트 스킬 (Agent Skills)</a></li><li class="depth-1"><a href="#생태계의-4개-층" data-for="생태계의-4개-층">생태계의 4개 층</a></li><li class="depth-1"><a href="#2026-08-27--4층진화이-패치에서-생성-으로-올라섰다" data-for="2026-08-27--4층진화이-패치에서-생성-으로-올라섰다">2026-08-27 — 4층(진화)이 “패치”에서 “생성” 으로 올라섰다</a></li><li class="depth-2"><a href="#1층에-새-변종--출력-형식을-규정하는-스킬" data-for="1층에-새-변종--출력-형식을-규정하는-스킬">1층에 새 변종 — 출력 형식을 규정하는 스킬</a></li><li class="depth-1"><a href="#2026-08-25--스킬이-기능에서-평가-축으로-승격됐다-2026-08-25--스킬이-기능에서-평가-축으로-승격됐다" data-for="2026-08-25--스킬이-기능에서-평가-축으로-승격됐다-2026-08-25--스킬이-기능에서-평가-축으로-승격됐다">2026-08-25 — 스킬이 “기능”에서 “평가 축”으로 승격됐다## 2026-08-25 — 스킬이 “기능”에서 “평가 축”으로 승격됐다</a></li><li class="depth-1"><a href="#2026-08-28--억제inhibition-축이-직교로-열렸다" data-for="2026-08-28--억제inhibition-축이-직교로-열렸다">2026-08-28 — 억제(inhibition) 축이 직교로 열렸다</a></li><li class="depth-1"><a href="#2026-08-30--스킬이-애플리케이션을-감싸는-껍데기가-됐다-1층-두-번째-변종" data-for="2026-08-30--스킬이-애플리케이션을-감싸는-껍데기가-됐다-1층-두-번째-변종">2026-08-30 — 스킬이 애플리케이션을 감싸는 껍데기가 됐다 (1층 두 번째 변종)</a></li><li class="depth-1"><a href="#이-개념의-구조적-약점" data-for="이-개념의-구조적-약점">이 개념의 구조적 약점</a></li><li class="depth-1"><a href="#실무-함의" data-for="실무-함의">실무 함의</a></li><li class="depth-1"><a href="#-2026-09-06--두-개의-새-축이-붙는다-프로세스-소유권과-모델-간-전이" data-for="-2026-09-06--두-개의-새-축이-붙는다-프로세스-소유권과-모델-간-전이">🆕 2026-09-06 — 두 개의 새 축이 붙는다: 「프로세스 소유권」과 「모델 간 전이」</a></li><li class="depth-2"><a href="#축-1--프로세스-소유권-이-배치가-논쟁의-양쪽을-같이-들여왔다" data-for="축-1--프로세스-소유권-이-배치가-논쟁의-양쪽을-같이-들여왔다">축 1 — 프로세스 소유권: 이 배치가 논쟁의 양쪽을 같이 들여왔다</a></li><li class="depth-2"><a href="#축-2---모델-간-전이-스킬하네스-자산의-재검증-요구-harnessdev" data-for="축-2---모델-간-전이-스킬하네스-자산의-재검증-요구-harnessdev">축 2 — 🔴 모델 간 전이: 스킬·하네스 자산의 재검증 요구 (HarnessDev)</a></li><li class="depth-2"><a href="#스킬-생산-방식-축의-현황-09-03-신설--09-06-갱신" data-for="스킬-생산-방식-축의-현황-09-03-신설--09-06-갱신">스킬 생산 방식 축의 현황 (09-03 신설 → 09-06 갱신)</a></li><li class="depth-1"><a href="#-2026-09-07--3층규격배포에서-첫-폐기가-관측됐다-스킬-레포--플러그인" data-for="-2026-09-07--3층규격배포에서-첫-폐기가-관측됐다-스킬-레포--플러그인">🔴 2026-09-07 — 3층(규격·배포)에서 첫 폐기가 관측됐다: 스킬 레포 → 플러그인</a></li><li class="depth-1"><a href="#2026-09-07--1층자산이-비-코딩-직무의-주류로-넘어갔다" data-for="2026-09-07--1층자산이-비-코딩-직무의-주류로-넘어갔다">2026-09-07 — 1층(자산)이 비-코딩 직무의 주류로 넘어갔다</a></li><li class="depth-1"><a href="#2026-09-07--4층진화에-사용자의-시스템을-설계해주는-스킬-이-등장" data-for="2026-09-07--4층진화에-사용자의-시스템을-설계해주는-스킬-이-등장">2026-09-07 — 4층(진화)에 “사용자의 시스템을 설계해주는 스킬” 이 등장</a></li><li class="depth-2"><a href="#스킬-생산-방식-축--09-07-현황" data-for="스킬-생산-방식-축--09-07-현황">스킬 생산 방식 축 — 09-07 현황</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="depth-1"><a href="#-2026-09-11-갱신--레지스트리에서-패키지-매니저로-계보-4번째-칸" data-for="-2026-09-11-갱신--레지스트리에서-패키지-매니저로-계보-4번째-칸">🔄 2026-09-11 갱신 — 레지스트리에서 패키지 매니저로 (계보 4번째 칸)</a></li><li class="depth-1"><a href="#관련-페이지-2026-09-11-추가" data-for="관련-페이지-2026-09-11-추가">관련 페이지 (2026-09-11 추가)</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/ai-에이전트-프레임워크" class="internal">AI 에이전트 프레임워크</a></li><li><a href="../concepts/국소-수리-원리" class="internal">국소 수리 원리 (Localized Repair)</a></li><li><a href="../concepts/에이전트-메모리-레이어" class="internal">에이전트 메모리 레이어</a></li><li><a href="../concepts/에이전트-스킬" class="internal">에이전트 스킬 (Agent Skills)</a></li><li><a href="../concepts/에이전트-웹접근" class="internal">에이전트 웹접근 (Agent Web Access)</a></li><li><a href="../concepts/자기제한-명시" class="internal">자기제한 명시</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../entities/anthropic" class="internal">Anthropic</a></li><li><a href="../entities/heygen" class="internal">HeyGen</a></li><li><a href="../entities/nousresearch" class="internal">NousResearch</a></li><li><a href="../entities/openai" class="internal">OpenAI</a></li><li><a href="../entities/snailsploit" class="internal">SnailSploit</a></li><li><a href="../entities/university-of-waterloo" class="internal">University of Waterloo — Program-as-Weights 계보를 밀고 있는 대학 연구 축</a></li><li><a href="../entities/vercel" class="internal">Vercel</a></li><li><a href="../entities/pascalorg" class="internal">pascalorg</a></li><li><a href="../" class="internal">Ducky's Note</a></li><li><a href="../sources/agentic-artifact-creation" class="internal">Agentic Artifact Creation — 에이전트 산출물 생성 서베이 (259편)</a></li><li><a href="../sources/ask-before-you-optimize" class="internal">Ask Before You Optimize — &quot;언제 되물어야 하는가&quot;를 평가 대상으로 만든 벤치마크 (OR-Clarify · InterOPT)</a></li><li><a href="../sources/autosaddler" class="internal">AutoSaddler — 실패 트레이스로 에이전트 하네스를 자동 최적화</a></li><li><a href="../sources/cobra-skills" class="internal">COBRA-Skills — 스킬 최적화를 '예산 제한 순차 최적화'로 재정의</a></li><li><a href="../sources/claude-red" class="internal">claude-red — 공격보안 스킬 라이브러리</a></li><li><a href="../sources/clodds" class="internal">alsk1992/CloddsBot — 예측시장·크립토 자율 트레이딩 에이전트 (이해관계 경고)</a></li><li><a href="../sources/comp-ai-crm" class="internal">Comp AI CRM — 에이전트가 1차 사용자인 오픈소스 CRM</a></li><li><a href="../sources/compile-by-training" class="internal">Compile by Training — 자연어 명세를 로컬 신경 함수로 &quot;컴파일&quot;하는 PAW 후속 (업보트 29)</a></li><li><a href="../sources/ecc" class="internal">ECC — 코딩 에이전트 하네스 성능 최적화 시스템 (스킬·메모리·보안 통합)</a></li><li><a href="../sources/graph-engineering" class="internal">Graph Engineering in the Era of LLM Agents — 개별 지능에서 시스템 지능으로 (포지션·서베이)</a></li><li><a href="../sources/harnessdev" class="internal">HarnessDev — LLM은 자기 하네스를 직접 만들고 진화시킬 수 있는가</a></li><li><a href="../sources/huihui-qwen3.8-27b-abliterated-gguf" class="internal">Huihui-Qwen3.8-27B-abliterated-GGUF — 거부 제거 배포본이 월 219만 다운로드, 그런데 벤치마크가 하나도 없다</a></li><li><a href="../sources/jit-agent" class="internal">JIT-Agent — 하네스를 즉석 생성·수리·자가진화시키는 &quot;하네스 지능&quot; 모델</a></li><li><a href="../sources/mathmodelagent" class="internal">MathModelAgent — 수학 모델링 전용 멀티에이전트 (라이선스 부재)</a></li><li><a href="../sources/metrollm-bench" class="internal">MetroLLM-Bench — 지하철 키오스크 런타임으로서의 LLM 평가</a></li><li><a href="../sources/mobilepa-bench" class="internal">MobilePA-Bench — 상태 유지 실행 샌드박스 기반 모바일 플래닝 에이전트 벤치</a></li><li><a href="../sources/openclaude" class="internal">OpenClaude — 임의 LLM 백엔드용 코딩 에이전트 CLI (Claude Code 파생·무허가 자체 고지)</a></li><li><a href="../sources/openmaic" class="internal">OpenMAIC — 멀티에이전트 인터랙티브 교실</a></li><li><a href="../sources/pi-desktop" class="internal">PI-Desktop — 코딩 에이전트 전용 로컬 우선 데스크톱 워크스페이스</a></li><li><a href="../sources/pascal-editor" class="internal">Pascal Editor — MCP로 에이전트가 조작하는 로컬 3D 건축 에디터</a></li><li><a href="../sources/recuris" class="internal">Recuris — 재귀적 경험-작업기억 진화 (롱호라이즌 에이전트 하네스)</a></li><li><a href="../sources/repo-to-skill" class="internal">Repo-To-Skill (DisCo) — 레포 1,000개를 검증된 스킬 5,000개로 증류</a></li><li><a href="../sources/skillevo" class="internal">SkillEvo — 멀티턴 상호작용 피드백으로 자가 갱신되는 스킬 진화 기울기</a></li><li><a href="../sources/thinkingbox" class="internal">Thinkingbox — &quot;한 번 성공 ≠ 신뢰성&quot; (pass@1 65.36% vs pass^20 25.25%)</a></li><li><a href="../sources/tiel-coder-35b-a3b-gguf" class="internal">Tiel-Coder-35B-A3B-GGUF — 4bit 22GB로 Opus 4.6과 동률, 대신 지식을 팔았다 (n=25의 한계 포함)</a></li><li><a href="../sources/weknora" class="internal">WeKnora — 문서를 RAG·에이전트·자가유지 위키로 바꾸는 Tencent 플랫폼</a></li><li><a href="../sources/academic-research-skills" class="internal">academic-research-skills — Claude Code용 학술 연구 자동화 스킬셋</a></li><li><a href="../sources/anthropics-skills" class="internal">anthropics/skills — Agent Skills 명세 원본 저장소 (⭐173,849)</a></li><li><a href="../sources/apache-maka" class="internal">apache/maka — append-only 실행 기록 기반 로컬 우선 에이전트 워크스페이스 (ASF 인큐베이팅)</a></li><li><a href="../sources/archify" class="internal">tt-a1i/archify — 다이어그램을 자체완결 HTML로 뽑는 에이전트 스킬</a></li><li><a href="../sources/awesome-gpt-image-2" class="internal">freestylefly/awesome-gpt-image-2 — GPT-Image-2 프롬프트 엔진·템플릿 자산 라이브러리</a></li><li><a href="../sources/browser-use" class="internal">browser-use — ⭐113,014짜리 원본이 볼트에 없었다 (파생은 두 번 잡고 본체는 10개월 놓친 사건)</a></li><li><a href="../sources/claude-obsidian" class="internal">AgriciDaniel/claude-obsidian — Karpathy LLM-Wiki 패턴의 패키지화된 구현체</a></li><li><a href="../sources/claude-plugins-community" class="internal">anthropics/claude-plugins-community — Claude 플러그인 커뮤니티 마켓플레이스 (read-only 미러)</a></li><li><a href="../sources/claude-plugins-official" class="internal">anthropics/claude-plugins-official — Anthropic 공식 Claude Code 플러그인 디렉토리</a></li><li><a href="../sources/cursor-plugins" class="internal">cursor/plugins — Cursor 플러그인 규격 및 공식 플러그인 저장소</a></li><li><a href="../sources/firstmate" class="internal">firstmate — 단일 창구 에이전트가 crew를 스폰·감독하는 &quot;에이전트 배포판&quot;</a></li><li><a href="../sources/hermes-agent" class="internal">NousResearch/hermes-agent — 오픈소스 AI 에이전트 프레임워크</a></li><li><a href="../sources/humanizer" class="internal">humanizer — Wikipedia AI 문체 탐지 35패턴을 스킬로 굳힌 &quot;빼는&quot; 에이전트 (⭐41,974)</a></li><li><a href="../sources/humanlayer-skills" class="internal">humanlayer/skills — 스킬이 &quot;제어 루프를 설계해주는&quot; 층으로 올라섰다 (⭐3,326 · raw 오류 1건 정정)</a></li><li><a href="../sources/hyperframes" class="internal">hyperframes — 영상 생성을 모델에서 빼내 렌더러로 되돌린다 (HeyGen 공식·⭐47,070)</a></li><li><a href="../sources/hyperresearch" class="internal">hyperresearch — Claude Code용 16단계 딥리서치 파이프라인 + 영속 볼트</a></li><li><a href="../sources/i-have-adhd" class="internal">i-have-adhd — 코딩 에이전트 응답을 간결·실행중심으로 재구성하는 스킬</a></li><li><a href="../sources/llm_wiki" class="internal">nashsu/llm_wiki — 문서를 상호링크된 위키로 자동 변환하는 데스크톱 앱 (이 볼트의 직접 대조군)</a></li><li><a href="../sources/marin" class="internal">Marin — 실패를 산출물로 내는 오픈 개발 LLM 플랫폼. 회고 문서에 '우리가 망친 것' 목록이 수치와 함께 있다</a></li><li><a href="../sources/marketingskills" class="internal">coreyhaines31/marketingskills — 스킬 1층이 비-코딩 직군으로 넘어간 최대 사례 (⭐47,746)</a></li><li><a href="../sources/mattpocock-skills" class="internal">mattpocock/skills — 실무 엔지니어용 Claude 에이전트 스킬 모음</a></li><li><a href="../sources/no-ai-slop" class="internal">no-ai-slop — AI 문체 패턴 제거 스킬</a></li><li><a href="../sources/open-science" class="internal">aipoch/open-science — 로컬 우선 AI 연구 워크벤치, DOI는 실재하고 &quot;1위 배지&quot;는 자체 발급 (⭐4,019)</a></li><li><a href="../sources/openai-codex" class="internal">openai/codex — OpenAI 공식 로컬 코딩 에이전트 CLI (Rust·Apache-2.0)</a></li><li><a href="../sources/openai-plugins" class="internal">openai/plugins — Codex 플러그인 공식 예제 모음</a></li><li><a href="../sources/openai-skills" class="internal">openai/skills — ⭐25,754짜리 벤더 스킬 카탈로그가 폐기됐다 (3층 재편의 첫 실측)</a></li><li><a href="../sources/opencode" class="internal">opencode — 벤더 비종속 오픈소스 코딩 에이전트</a></li><li><a href="../sources/pentagi" class="internal">PentAGI — 자율 침투테스트 에이전트 시스템</a></li><li><a href="../sources/ponytail" class="internal">DietrichGebert/ponytail — &quot;안 쓴 코드가 최고의 코드&quot; 행동 규범 자산</a></li><li><a href="../sources/prompts-chat" class="internal">prompts.chat — 최초의 프롬프트 라이브러리가 셀프호스팅 제품이 된 경로 (⭐169,220)</a></li><li><a href="../sources/qm" class="internal">qm — 멀티플레이어 에이전트 하네스 (Slack + 웹)</a></li><li><a href="../sources/scientific-agent-skills" class="internal">scientific-agent-skills — 분야별 AI 에이전트 스킬 모음</a></li><li><a href="../sources/spec-kit" class="internal">spec-kit — 코드보다 명세를 먼저 확정시키는 GitHub 공식 SDD 툴킷</a></li><li><a href="../sources/superpowers" class="internal">obra/superpowers — 에이전트 스킬·소프트웨어 개발 방법론 프레임워크</a></li><li><a href="../sources/teamai-cli" class="internal">Tencent/teamai-cli — 팀 단위 에이전트 하네스 동기화 CLI</a></li><li><a href="../sources/text-to-cad" class="internal">text-to-cad — CAD/CAE/CAM 에이전트 스킬 라이브러리</a></li><li><a href="../sources/vercel-skills" class="internal">vercel-labs/skills — AI 에이전트용 오픈 스킬 레지스트리</a></li><li><a href="../sources/video-shotcraft" class="internal">video-shotcraft — Remotion 제품영상 에이전트 스킬 (157 레시피 카드)</a></li><li><a href="../sources/watermarks-remover" class="internal">watermarks-remover — 다중 벤더 AI 출처표시 제거 에이전트 스킬</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

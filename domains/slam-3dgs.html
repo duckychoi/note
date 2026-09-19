@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>로봇 SLAM / 3DGS / 카메라 누적 인사이트</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트"/><meta name="twitter:description" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트 목표: SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인 최근 흐름 (2026-09-14 배치) — 시각을 더 쓰는 게 아니라 통로를 좁힌다 🎯 신규 1건 — LIT (raw ai-news → slam-3dgs 재판정) 재판정 근거: 이득이 미학습 카메라 구성·조명 변화·방해물에서 나오고 감독 신호가 SE(3) 말단 자세다."/><meta property="og:description" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트 목표: SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인 최근 흐름 (2026-09-14 배치) — 시각을 더 쓰는 게 아니라 통로를 좁힌다 🎯 신규 1건 — LIT (raw ai-news → slam-3dgs 재판정) 재판정 근거: 이득이 미학습 카메라 구성·조명 변화·방해물에서 나오고 감독 신호가 SE(3) 말단 자세다."/><meta property="og:image:alt" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트 목표: SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인 최근 흐름 (2026-09-14 배치) — 시각을 더 쓰는 게 아니라 통로를 좁힌다 🎯 신규 1건 — LIT (raw ai-news → slam-3dgs 재판정) 재판정 근거: 이득이 미학습 카메라 구성·조명 변화·방해물에서 나오고 감독 신호가 SE(3) 말단 자세다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/domains/slam-3dgs"/><meta property="twitter:url" content="https://duckychoi.github.io/note/domains/slam-3dgs"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="로봇 SLAM / 3DGS / 카메라 누적 인사이트 목표: SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인 최근 흐름 (2026-09-14 배치) — 시각을 더 쓰는 게 아니라 통로를 좁힌다 🎯 신규 1건 — LIT (raw ai-news → slam-3dgs 재판정) 재판정 근거: 이득이 미학습 카메라 구성·조명 변화·방해물에서 나오고 감독 신호가 SE(3) 말단 자세다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/domains/slam-3dgs-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/domains/slam-3dgs-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/domains/slam-3dgs-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="domains/slam-3dgs" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-49" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-49" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../domains/">domains</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></div></nav><h1 class="article-title">로봇 SLAM / 3DGS / 카메라 누적 인사이트</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/slam" class="internal internal-link tag-link">slam</a><span class="note-properties-separator">, </span><a href="../tags/3dgs" class="internal internal-link tag-link">3dgs</a><span class="note-properties-separator">, </span><a href="../tags/gaussian-splatting" class="internal internal-link tag-link">gaussian-splatting</a><span class="note-properties-separator">, </span><a href="../tags/camera" class="internal internal-link tag-link">camera</a><span class="note-properties-separator">, </span><a href="../tags/robotics" class="internal internal-link tag-link">robotics</a><span class="note-properties-separator">, </span><a href="../tags/nerf" class="internal internal-link tag-link">nerf</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-17T00:00:00.000Z">2026년 9월 17일</time><span>29 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="로봇-slam--3dgs--카메라-누적-인사이트">로봇 SLAM / 3DGS / 카메라 누적 인사이트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#로봇-slam--3dgs--카메라-누적-인사이트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>목표: SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인</p>
+<hr/>
+<h2 id="최근-흐름-2026-09-14-배치--시각을-더-쓰는-게-아니라-통로를-좁힌다">최근 흐름 (2026-09-14 배치) — <strong>시각을 더 쓰는 게 아니라 통로를 좁힌다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#최근-흐름-2026-09-14-배치--시각을-더-쓰는-게-아니라-통로를-좁힌다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 신규 1건 — <a href="../sources/lit" class="internal internal-link" data-slug="sources/lit">LIT</a> (raw <code>ai-news</code> → <strong>slam-3dgs 재판정</strong>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>재판정 근거: 이득이 <strong>미학습 카메라 구성·조명 변화·방해물</strong>에서 나오고 감독 신호가 <strong>SE(3) 말단 자세</strong>다. 09-13에 <a href="../sources/freeflow" class="internal internal-link" data-slug="sources/freeflow">FreeFlow</a>·<a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a>·<a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a> 에 적용한 기준과 동일.</p>
+<p><strong>진단</strong>: 로봇 파운데이션 모델은 학습 분포 안에서 행동과 우연히 상관된 <strong>과제 무관 시각 단서</strong>를 이용하고, 그 상관이 깨지면 무너진다(<em>“vision-action shortcuts”</em>).
+<strong>해법의 방향이 특이하다</strong> — 시각을 더 잘 쓰게 만드는 게 아니라 <strong>시각이 지나갈 통로를 하나로 좁힌다.</strong></p>
+<ul>
+<li>1단계: <strong>이미지 없이</strong> 언어·로봇 상태·<strong>시연 청크의 종료 SE(3) 자세</strong>로 행동 사전분포 학습 → 지름길이 생길 수 없는 조건</li>
+<li>2단계: 그 자세를 <strong>복원하도록 감독된 잠재 인터페이스</strong>가 <strong>유일한 시각 조건 경로</strong></li>
+</ul>
+<p>🎯 <strong>1단계의 조건이 2단계의 감독 타깃이 된다.</strong> 통로를 좁히는 것과 통로에 무엇을 흘릴지 정하는 것이 <strong>같은 장치로</strong> 해결된다. 프레임워크 무관 — Pi0.5·MolmoAct2·FAST-WAM·ImageWAM <strong>4종 전건 개선</strong>.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <strong>이 도메인에 &quot;인터페이스만 설계한다&quot; 계보가 쌓이고 있다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a>(09-13) — <strong>동결</strong> 비디오 모델에 어댑터 없이 <em>“카메라·시간 라벨 붙은 시각 상태”</em> 로 <strong>입력 형식만 번역</strong></li>
+<li><a href="../sources/lit" class="internal internal-link" data-slug="sources/lit">LIT</a>(09-14) — 백본을 바꾸지 않고 <strong>시각 조건 경로 하나만</strong> 끼운다
+둘 다 <strong>모델을 재학습하지 않고 모델이 보는 것의 형태를 바꾼다.</strong> <a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a> 의 <em>“코드 표현은 있었고 없던 것은 짓는 절차”</em> 와 같은 태도다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 성립 조건 — <strong>이득은 분포 외에서만 난다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>실로봇 <strong>+13.30~16.70%p</strong> 의 조건은 <em>“unseen camera configurations, lighting variations, and distractors”</em> 이고, 통상 LIBERO는 <em>“<strong>preserving or improving</strong>”</em> 수준이다.
+<strong>“LIT가 로봇을 더 잘하게 만든다”로 읽으면 틀린다.</strong> 지름길을 끊었으니 분포 내는 유지되고 분포 외가 살아나는 게 <strong>예측되는 결과</strong>다 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> 의 거울상.
+🔴 절대 성공률 없음(%p 증분만) · 실로봇 3과제 이름·개별 수치 없음 · LIBERO-Plus <strong>3.87~10.70%p(2.8배 범위)</strong> 의 아키텍처별 배분 없음.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="최근-흐름-2026-09-13-배치--3건-이관-입고">최근 흐름 (2026-09-13 배치) — 3건 이관 입고<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#최근-흐름-2026-09-13-배치--3건-이관-입고" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>raw가 <code>ai-news</code> 로 분류한 3건을 <strong>주제 기준으로 이 도메인에 이관</strong>했다(<a href="../sources/freeflow" class="internal internal-link" data-slug="sources/freeflow">FreeFlow</a>·<a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a>·<a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a>). 09-11/09-12에 적용한 <em>“주제가 도메인을 정한다”</em> 기준의 일관 적용이다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 세 논문이 같은 방향을 본다 — <strong>전용 부품을 빼고 범용 구조에 맡긴다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong><a href="../sources/freeflow" class="internal internal-link" data-slug="sources/freeflow">FreeFlow</a></strong>: 옵티컬 플로우에서 상관볼륨·워핑·반복정제를 <strong>전부 제거</strong>, 어텐션 3종만 남김. 얻은 것은 <strong>스케일링</strong>(키우면 오른다)</li>
+<li><strong><a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a></strong>: 태스크별 모듈·추가 학습 없이 <strong>동결 비디오 모델</strong>에 입력 형식만 번역해 넣음</li>
+<li><strong><a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a></strong>: 표현(코드)은 이미 있었고 없던 것은 <strong>짓는 절차</strong> — 솔버 재귀로 해결</li>
+</ul>
+<p>공통: <strong>특수 부품 대신 범용 구조 + 좋은 입력/절차.</strong> 볼트가 08-31에 세운 <a href="../concepts/국소-수리-원리" class="internal internal-link alias" data-slug="concepts/국소-수리-원리">국소-수리-원리</a> 의 연장선이고, 특히 RCWM은 그 원리에 빠져 있던 조각(<strong>국소 수리 뒤 전역 정합의 책임 주체 = 부모 호출</strong>)을 채운다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 셋 다 실시간 판단이 불가능하다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><a href="../sources/freeflow" class="internal internal-link" data-slug="sources/freeflow">FreeFlow</a>: FPS·지연 수치 <strong>없음</strong>(<em>“memory efficient at 1080p”</em> 는 메모리 얘기다)</li>
+<li><a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a>: VLM 에이전트 재귀 렌더-비교 → <strong>호출 수가 장면 복잡도에 비례</strong>. 오프라인 복원 경로</li>
+<li><a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a>: 디노이징 + 캐시 밖 검색 + 기하 렌더링 전처리
+→ <strong>이 배치에서 30fps 후보는 없다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>파이프라인 관점의 실익 — 하류 소비처가 생긴다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/world-in-world" class="internal internal-link" data-slug="sources/world-in-world">World-in-World</a> 는 <strong>목표시점 투영과 기하 렌더링을 “증거”로 받는다.</strong> 기존 SLAM/3DGS 산출물을 <strong>비디오 모델 입력으로 재사용</strong>하는 경로다.
+<a href="../sources/rcwm" class="internal internal-link" data-slug="sources/rcwm">RCWM</a> 은 출력이 <strong>실행 가능한 코드</strong>(RSP)다. 3DGS 산출물은 고치기 어렵지만 <strong>코드는 국소 수정과 diff가 된다</strong> → <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> 노선과 정합.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="현재-sota-및-오픈소스-구현체">현재 SOTA 및 오픈소스 구현체<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#현재-sota-및-오픈소스-구현체" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>소스 ingest 시 자동 누적</em></p>
+<h2 id="실시간-동작-가능-조건">실시간 동작 가능 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실시간-동작-가능-조건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>소스 ingest 시 자동 누적</em></p>
+<h2 id="카메라-파이프라인-구조">카메라 파이프라인 구조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#카메라-파이프라인-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>소스 ingest 시 자동 누적</em></p>
+<h2 id="응용-가능한-것">응용 가능한 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#응용-가능한-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>소스 ingest 시 자동 누적</em></p>
+<h2 id="반드시-읽어야-할-논문레포">반드시 읽어야 할 논문/레포<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반드시-읽어야-할-논문레포" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>소스 ingest 시 자동 누적</em></p>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<hr/>
+<h2 id="월드모델--엣지-로보틱스-2026-07-12-synthesis">월드모델 × 엣지 로보틱스 (2026-07-12 synthesis)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#월드모델--엣지-로보틱스-2026-07-12-synthesis" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>slam-3dgs ↔ world-model 접점 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../synthesis/jepa효율화-로컬추론" class="internal internal-link alias" data-slug="synthesis/jepa효율화-로컬추론">JEPA효율화-로컬추론</a>에서 도출 — <strong>SLAM/3DGS = “지금 어디에 무엇이 있나”(명시적 기하·현재)</strong>, <strong><a href="../concepts/월드모델" class="internal internal-link alias" data-slug="concepts/월드모델">월드모델</a> = “다음에 무엇이 일어날까”(암묵적 예측·미래)</strong>. 엣지 로봇(Jetson)엔 둘 다 필요하며 같은 하드웨어 예산 안에서 경쟁·협력.</p>
+<ul>
+<li>가능한 합성: 3DGS를 <a href="../concepts/월드모델" class="internal internal-link alias" data-slug="concepts/월드모델">월드모델</a>의 렌더러/타깃으로, 또는 <a href="../concepts/jepa" class="internal internal-link" data-slug="concepts/jepa">JEPA</a> 월드모델을 SLAM의 예측 사전(prior)으로.</li>
+<li>연결: <a href="../concepts/임바디드-ai" class="internal internal-link alias" data-slug="concepts/임바디드-ai">임바디드-AI</a> · <a href="../sources/embodied-cpp" class="internal internal-link" data-slug="sources/embodied-cpp">Embodied-cpp</a>(온디바이스 런타임) · <a href="../sources/robodojo" class="internal internal-link" data-slug="sources/robodojo">RoboDojo</a>(sim-and-real 평가) · <a href="../concepts/jepa" class="internal internal-link" data-slug="concepts/jepa">JEPA</a> · <a href="../concepts/mamba4" class="internal internal-link" data-slug="concepts/mamba4">Mamba4</a>(선형 롤아웃)</li>
+</ul>
+</div>
+</blockquote>
+<hr/>
+<h2 id="2026-09-04-배치--통합-월드모델과-의미-분할이-만나는-지점">[2026-09-04] 배치 — 통합 월드모델과 의미 분할이 만나는 지점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-04-배치--통합-월드모델과-의미-분할이-만나는-지점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-puffin-world--물리기하외형을-한-모델의-네이티브-상태로-업보트-31-ace-robotics">🌍 <a href="../sources/puffin-world" class="internal internal-link" data-slug="sources/puffin-world">Puffin-World</a> — 물리·기하·외형을 한 모델의 네이티브 상태로 (업보트 31, ACE Robotics)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-puffin-world--물리기하외형을-한-모델의-네이티브-상태로-업보트-31-ace-robotics" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>볼트에 월드모델 소스가 <strong>28건</strong> 쌓였지만 대부분 <em>“미래 프레임을 그럴듯하게 그린다”</em> 쪽이다. Puffin-World의 차이는 <strong>무엇을 상태로 두는가</strong>에 있다 — <strong>물리(중력장·위도) · 기하(깊이) · 외형(이미지)</strong> 을 <strong>네이티브 월드 상태 3종</strong>으로 함께 모델링하고 <strong>외부 오프라인 모듈에 의존하지 않는다</strong>.</p>
+<ul>
+<li><strong>Omni-Camera 표현</strong>으로 카메라를 통일, <strong>절대 카메라 속성을 실세계에 접지(grounding)</strong> → 물리적 일관·시각적 안정 주장</li>
+<li>외형과 기하를 <strong>단일 생성 과정에 결합</strong> — 미래 뷰를 합성하면서 <strong>그 뷰의 기하를 동시에 복원</strong> → 닫힌 루프(mimic·자기 보정 월드 탐색)</li>
+<li><strong>Puffin-16M</strong>: <strong>1,500만 vision-language-camera 트리플렛 + 100만 궤적</strong></li>
+<li><strong>“외부 모듈 없이”가 실질 주장</strong>이다 — 기존 파이프라인은 깊이 추정기·포즈 추정기·물리 엔진을 따로 붙이고, <strong>모듈 경계는 곧 드리프트 발생 지점</strong>이다(<a href="../sources/lio-sam" class="internal internal-link" data-slug="sources/lio-sam">LIO-SAM</a> 계열 고전 문제)</li>
+<li>🚨 <strong>정량 수치 0건</strong>: 벤치마크·비교군·SOTA 주장 <strong>전부 없음</strong>. <em>“physically consistent and visually stable”</em> 은 <strong>주장</strong>이다. 코드·모델·데이터셋을 <em>“released”</em> 라 했으나 <strong>HF 페이지에 링크 없음</strong>. <a href="../sources/pawbench" class="internal internal-link" data-slug="sources/pawbench">PAWBench</a> 교훈(월드모델 11개 시스템 전멸)을 감안해 <strong>특히 보수적으로</strong> 읽을 것</li>
+<li>→ <strong>우선순위는 데이터 > 모델</strong>: Puffin-16M의 <strong>실재·라이선스만 먼저 확인</strong>한다. 사실이면 이 축 최대 획득물</li>
+</ul>
+<h3 id="-sam3와의-교차--의미가-붙은-3d-재구성">🔗 <a href="../sources/sam3" class="internal internal-link" data-slug="sources/sam3">sam3</a>와의 교차 — 의미가 붙은 3D 재구성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-sam3와의-교차--의미가-붙은-3d-재구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../sources/puffin-world" class="internal internal-link" data-slug="sources/puffin-world">Puffin-World</a>가 <strong>깊이·기하</strong>를 생성하고 <a href="../sources/sam3" class="internal internal-link" data-slug="sources/sam3">sam3</a>가 <strong>개방 어휘 의미 분할</strong>(텍스트로 모든 인스턴스, 비디오 추적)을 붙이면 <strong>의미가 붙은 3D 재구성</strong>으로 간다. <a href="../sources/x2sam" class="internal internal-link" data-slug="sources/x2sam">X2SAM</a>·<a href="../sources/4d-human-scene-reconstruction" class="internal internal-link" data-slug="sources/4d-human-scene-reconstruction">4D-Human-Scene-Reconstruction</a> 축과 직결되며, SAM 3는 <strong>🤗 Transformers 정식 통합</strong>이라 실험 진입 비용이 낮다.</p>
+<h3 id="축-관측">축 관측<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#축-관측" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../sources/puffin-world" class="internal internal-link" data-slug="sources/puffin-world">Puffin-World</a>가 중력·위도·깊이를 <strong>암묵적 학습에 맡기지 않고 상태 변수로 승격</strong>시킨 것은, 이번 배치 5건에서 반복된 <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a> 패턴의 3D판이다. 방향은 <a href="../synthesis/jepa-vs-diffusion-월드모델" class="internal internal-link alias" data-slug="synthesis/jepa-vs-diffusion-월드모델">JEPA-vs-Diffusion-월드모델</a>의 <em>“무엇을 예측 대상으로 삼는가”</em> 논점의 확장.</p>
+<hr/>
+<h1 id="-2026-09-07-배치--worldsculpt-재분류-ai-news--slam-3dgs">📦 2026-09-07 배치 — <a href="../sources/worldsculpt" class="internal internal-link" data-slug="sources/worldsculpt">WorldSculpt</a> (재분류: ai-news → slam-3dgs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-07-배치--worldsculpt-재분류-ai-news--slam-3dgs" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="통짜-재구성에서-분해-가능성decomposability-으로">통짜 재구성에서 <strong>분해 가능성(decomposability)</strong> 으로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#통짜-재구성에서-분해-가능성decomposability-으로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>목표 표현이 <em>“공유 월드 프레임에 배치된 <strong>개별 오브젝트 메시들의 집합</strong>”</em> 이고, 초록이 이유를 명시한다 — <strong>게임·AR/VR·시뮬레이션·로보틱스가 그걸 요구하기 때문</strong>이다.</p>
+<p>기존 두 갈래의 실패를 논문이 직접 짚는다:</p>
+<ul>
+<li><strong>기하 기반</strong>: 장면을 <strong>하나의 표현</strong>으로 재구성 → <strong>가려진 영역의 기하가 미완성</strong></li>
+<li><strong>기존 조합적 방법</strong>: <strong>비교적 단순한 장면</strong>에 한정</li>
+</ul>
+<p>→ 볼트의 3DGS 축(<a href="../sources/globalsplat" class="internal internal-link" data-slug="sources/globalsplat">GlobalSplat</a>·<a href="../sources/anyrecon" class="internal internal-link" data-slug="sources/anyrecon">anyrecon</a>·<a href="../sources/beyond-pixels-4d" class="internal internal-link" data-slug="sources/beyond-pixels-4d">Beyond-Pixels-4D</a>)이 대체로 <strong>통짜 표현</strong>이었다면 이건 <strong>분해</strong> 축이다. <strong>로보틱스에 쓰려면 물체 단위로 잡히지 않으면 쓸모가 없다</strong>는 요구가 표현 방식을 결정한다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>학습 분포와 추론 복잡도가 <strong>분리됐다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>초록 원문: <em>“the model is finetuned <strong>entirely on single objects in canonical space</strong>, it generalizes to large scenes with severe occlusion <strong>without any scene-level training</strong>.”</em>
+<strong>밀집 장면을 생성하기 위해 밀집 장면을 학습할 필요가 없었다.</strong> 단일 오브젝트 prior(<strong>Pixal3D</strong>)에 <strong>multi-view conditioning 경로</strong>만 달면 된다.
+그리고 주장의 형태가 좋다 — <em>“<strong>격차가 장면 복잡도와 가림이 커질수록 벌어진다</strong>”</em>. 평균 우위가 아니라 <strong>겨냥한 실패 모드를 실제로 푼다</strong>는 증거 형태.</p>
+</div>
+</blockquote>
+<h2 id="-월드모델-축과-slam-3dgs-축이-여기서-연결된다">🔗 <a href="../concepts/월드모델" class="internal internal-link alias" data-slug="concepts/월드모델">월드모델</a> 축과 <a href="../domains/slam-3dgs" class="internal internal-link" data-slug="domains/slam-3dgs">slam-3dgs</a> 축이 여기서 <strong>연결된다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-월드모델-축과-slam-3dgs-축이-여기서-연결된다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>초록 마지막: <em>“생성된 <strong>3DGS 월드</strong>(<strong>Marble</strong>, <strong>HY-World 2.0</strong>)를 compositional <strong>mesh</strong> scenes로 변환”</em>.
+→ 볼트가 따로 추적하던 두 축 사이에 <strong>변환 경로</strong>가 생겼다. 3DGS로 만든 월드를 <strong>게임/시뮬레이터에 넣을 수 있는 형식</strong>으로 내리는 다리다.</p>
+<h2 id="벤치마크-ue-meshyscene">벤치마크: UE-MeshyScene<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#벤치마크-ue-meshyscene" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수백 오브젝트 · <strong>오브젝트별 주석</strong> · <strong>GT 메시</strong> 를 갖춘 포토리얼 밀집 장면. → <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a></p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>확인 안 된 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>절대 수치 전무</strong> — <em>“일관되게 상회”</em> 이상 인용 금지</li>
+<li><strong>실시간성 판정 불가</strong> — 생성 시간이 초록에 없다. 오브젝트 수백 개를 개별 생성하면 <strong>오브젝트 수에 선형 이상</strong>일 가능성</li>
+<li><strong>코드·모델 공개 미확인</strong> · <strong>저자 소속 미확인</strong></li>
+<li>🔴 <strong>오브젝트 경계를 누가 정하는가</strong> — <em>“grounded video”</em> 는 <strong>분할이 이미 주어졌음</strong>을 시사한다. 그렇다면 실사용 난이도가 <strong>분할 품질에 종속</strong>되고 <a href="../sources/x2sam" class="internal internal-link" data-slug="sources/x2sam">X2SAM</a> 계열이 전처리로 붙는다</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="추적-공백-신규-3건">추적 공백 (신규 3건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#추적-공백-신규-3건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Pixal3D</strong>(기반 prior · 읽어야 할 1순위) · <strong>Marble</strong> · <strong>HY-World 2.0</strong> — 셋 다 볼트에 페이지 없음.</p>
+<hr/>
+<h2 id="2026-09-08-배치--검증-루프를-지었더니-메모리-부재가-드러났다">[2026-09-08] 배치 — 검증 루프를 지었더니 메모리 부재가 드러났다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-08-배치--검증-루프를-지었더니-메모리-부재가-드러났다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>신규 1건</strong>: <a href="../sources/embodiedskills" class="internal internal-link" data-slug="sources/embodiedskills">EmbodiedSkills</a>(HF 논문 · 업보트 5 · 저자 17인 · 코드 공개)</p>
+<h3 id="구조--모델-출력을-결정이-아니라-제안으로-격하시킨다">구조 — 모델 출력을 “결정”이 아니라 “제안”으로 격하시킨다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#구조--모델-출력을-결정이-아니라-제안으로-격하시킨다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>“행동 예측이나 모델이 생성한 스킬 결정은 <strong>그 자체로는</strong> 제안된 조작이 현재 상태에서 유효한지, 결과가 검증될지를 보장하지 않는다.”</em>
+→ <strong>제안 → 사전조건 검사 → 실행 → 사후 검증</strong>을 <strong>고정된 실행가능 스킬 인터페이스</strong>로 강제한다.</p>
+<p><strong>고정 인터페이스의 효과</strong>: 저수준 VLA 정책을 <strong>에이전트 루프를 안 바꾸고 교체</strong>할 수 있다. VLA 모델의 교체 주기가 짧다는 점(볼트 관측: 파운데이션 모델 세대 교체가 <a href="../sources/timesfm-3.0-pytorch" class="internal internal-link" data-slug="sources/timesfm-3.0-pytorch">timesfm-3.0-pytorch</a> 사례에서 <strong>4일</strong>)을 고려하면 실질적 이득이다. 소프트웨어 공학의 <strong>의존성 역전</strong>을 로봇 스택에 적용한 형태.</p>
+<p><strong>부수 효과가 더 중요하다</strong>: 인터페이스가 계획·실행·검증·복구를 <strong>구조화된 궤적으로 기록</strong>하고, <strong>그 기록이 다시 각 구성요소의 감독 신호</strong>가 된다. → <strong>검사 창을 지으면 로그가 남고, 로그는 학습 데이터가 된다</strong>(<a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> 확장).</p>
+<h3 id="실측--그리고-저자가-자기-한계를-먼저-썼다">실측 — 그리고 저자가 자기 한계를 먼저 썼다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실측--그리고-저자가-자기-한계를-먼저-썼다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>벤치마크</th><th>성공률</th></tr></thead><tbody><tr><td>RoboTwin 2.0 50태스크 평균</td><td><strong>86.20%</strong></td></tr><tr><td>LIBERO 4스위트</td><td><strong>97.40%</strong></td></tr><tr><td><strong>RMBench 기억의존 4태스크</strong></td><td><strong>🔴 12.5%</strong></td></tr></tbody></table></div>
+<p><strong>구성</strong>: Qwen3-VL(고수준) + OpenPI/pi0.5(저수준).</p>
+<p>📌 <strong>12.5%를 초록에 쓴 것</strong>, 그리고 <em>“이 결과들은 <strong>태스크 적응된 저수준 VLA 정책의 실행 성능</strong>을 확립한다”</em> 며 <strong>86.20%를 프레임워크의 공으로 주장하지 않은 것</strong> — 둘 다 신뢰도를 올린다. 볼트가 <a href="../sources/thinkingbox" class="internal internal-link" data-slug="sources/thinkingbox">Thinkingbox</a>·<a href="../sources/apache-maka" class="internal internal-link" data-slug="sources/apache-maka">apache-maka</a> 에서 경고한 <em>“중간 지표 ≠ 최종 결과”</em> 의 <strong>역방향 사례</strong>다.</p>
+<h3 id="-125가-말하는-것--검증-루프를-잘-지어도-메모리는-별도-문제다">🔴 12.5%가 말하는 것 — 검증 루프를 잘 지어도 메모리는 별도 문제다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-125가-말하는-것--검증-루프를-잘-지어도-메모리는-별도-문제다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>사전조건 검사 → 실행 → 사후 검증은 <strong>전부 현재 상태에 대한 판단</strong>이다. <strong>과거에 무엇을 했는지</strong>는 이 루프에 들어갈 자리가 없다.
+→ <a href="../concepts/에이전트-메모리-레이어" class="internal internal-link alias" data-slug="concepts/에이전트-메모리-레이어">에이전트-메모리-레이어</a> 축과 정확히 만난다. <strong>구조적 검사는 <em>“지금 유효한가”</em> 를 답하지 <em>“아까 뭘 했나”</em> 를 답하지 않는다.</strong>
+⚠️ RMBench 태스크가 <strong>4개뿐</strong>이라 표본이 작고, 저자도 실패 원인을 분해하지 않았다.</p>
+<h3 id="도메인-템플릿-미답-항목">도메인 템플릿 미답 항목<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인-템플릿-미답-항목" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>실시간 가능성</strong>: <strong>미확인.</strong> 초록에 지연시간·주기 수치가 <strong>전혀 없다.</strong> 매 스킬마다 사전·사후 검증을 돌리면 오버헤드가 있을 수밖에 없는데 그 값이 없다 — 로봇에서 이건 결정적이다.</li>
+<li><strong>카메라 파이프라인</strong>: Qwen3-VL이 시각 입력 처리, 구체 형식 미기재.</li>
+<li><strong>필수 레퍼런스</strong>: <strong>RoboTwin 2.0 · LIBERO · RMBench — 볼트에 페이지가 없다. 추적 공백 3건 등록.</strong></li>
+</ul>
+<h3 id="-도메인-간-수렴--이번-배치-최대-신호">📌 도메인 간 수렴 — 이번 배치 최대 신호<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-도메인-간-수렴--이번-배치-최대-신호" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../sources/embodiedskills" class="internal internal-link" data-slug="sources/embodiedskills">EmbodiedSkills</a>(로봇 제어)와 <a href="../sources/tgopd" class="internal internal-link" data-slug="sources/tgopd">TGOPD</a>(LLM 학습)가 <strong>서로를 인용하지 않고 같은 골격</strong>에 도달했다: <em>“신뢰할 수 있는지 먼저 검증하고, 통과할 때만 쓴다.”</em> 도메인이 최대한 멀리 떨어져 있는데 처방이 같다 → <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> 가 도메인 특수적 유행이 아니라는 <strong>지금까지 중 가장 강한 근거</strong>.</p>
+<hr/>
+<h2 id="2026-09-09-배치--단안-깊이추정이-1-step으로-내려왔다">[2026-09-09] 배치 — 단안 깊이추정이 1-step으로 내려왔다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-09-배치--단안-깊이추정이-1-step으로-내려왔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/marigold-v2" class="internal internal-link" data-slug="sources/marigold-v2">Marigold-V2</a> — HF 데일리 1위(업보트 24)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>raw는 <code>ai-news</code> 로 보냈지만 <strong>단안 깊이추정은 이 도메인의 입력단</strong>이다.
+기여는 새 모델이 아니라 <strong>레시피</strong>: 사전학습된 <strong>다단계 flow-matching DiT</strong>를 <strong>1-step 추론</strong>으로 돌려 SOTA 깊이추정기로 전환.</p>
+</div>
+</blockquote>
+<h3 id="처방-두-가지-순진한-학습의-아티팩트-진단-후">처방 두 가지 (순진한 학습의 아티팩트 진단 후)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#처방-두-가지-순진한-학습의-아티팩트-진단-후" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>모델 내부 표현을 GT에서 추출한 의미 피처와 정렬</strong></li>
+<li><strong>Sinkhorn 기반 신규 손실을 축으로 한 2단계 파인튜닝</strong>
+필요시 <strong>양자화</strong>를 적용해 모델 용량은 보존하면서 실행 비용을 낮춘다.</li>
+</ol>
+<h3 id="현재-sota-수치">현재 SOTA 수치<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#현재-sota-수치" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>KITTI · ETH3D에서 AbsRel 기존 최고 대비 16–26% 개선</strong></li>
+<li><strong>표면 법선 추정 · 본질 이미지 분해</strong> 등 다른 밀집 회귀 과제에서도 SOTA</li>
+<li>정성: <em>“<strong>fur, foliage, and hair-thin edges</strong>”</em> — 기존 모델이 놓치던 <strong>머리카락 두께 경계</strong>를 해결</li>
+</ul>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>즉시 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>HF Space에서 내 소스 이미지로 먼저 돌린다</strong>(설치 0): <a href="https://hf.co/spaces/huawei-bayerlab/marigold-v2-web" class="external external-link">https://hf.co/spaces/huawei-bayerlab/marigold-v2-web<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+판단 기준은 벤치마크가 아니라 <strong>내 데이터에서 경계 디테일이 실제로 살아나는가</strong>. 3DGS 초기화·깊이 프라이어에서 경계 품질이 병목이었다면 직접적 개선.</p>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미확인 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>fps 수치가 논문에 없다.</strong> 1-step + 양자화로 “cheap to run”이라 주장하지만 <strong>30fps+ 실시간 가능 여부는 판정 불가</strong> — DiT 백본 크기가 지배할 것으로 보인다. 실측 필요.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="2026-09-11-교차-참조--spatialblock-도메인은-ai-news-축은-여기">[2026-09-11] 교차 참조 — <a href="../sources/spatialblock" class="internal internal-link" data-slug="sources/spatialblock">SpatialBlock</a> (도메인은 <code>ai-news</code>, 축은 여기)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-11-교차-참조--spatialblock-도메인은-ai-news-축은-여기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>도메인 판정 기록 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>raw는 <code>ai-news</code> 로 보냈고 볼트도 <strong><code>ai-news</code> 유지</strong>로 판정했다. 근거: 이 논문은 <strong>재구성 파이프라인이 아니라 LVLM 학습 데이터셋</strong>이라, 이 도메인 템플릿(실시간성·카메라 파이프라인·재구성 SOTA)에 답할 항목이 거의 없다.
+2026-09-10 <a href="../sources/pascal-editor" class="internal internal-link" data-slug="sources/pascal-editor">Pascal-Editor</a> 판정(<em>“slam-3dgs는 깊이추정·재구성 계열”</em>)과 <strong>일관된 기준 적용</strong>이다.
+다만 주제가 이 도메인의 관심사와 직결되므로 <strong>교차 참조를 남긴다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>이 도메인에 주는 함의 — <strong>공간지능 학습에 실데이터가 필수가 아닐 수 있다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/spatialblock" class="internal internal-link" data-slug="sources/spatialblock">SpatialBlock</a> 초록이 지적하는 기존 방식의 문제:
+<em>“constructing such labels is <strong>costly, time-consuming, and often noisy due to reliance on external perception modules</strong>”</em>
+→ 🎯 <strong>②가 이 도메인에 특히 아프다.</strong> 실장면 공간 QA 라벨을 만들 때 <strong>깊이추정·SLAM 같은 외부 인지 모듈</strong>을 쓰는데, 그 모듈의 오차가 <strong>라벨에 그대로 섞인다.</strong> 정답을 만드는 도구가 피학습자와 같은 실패 모드를 갖는 구조 → <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a>.
+우회로: <strong>합성 블록쌓기 15,000문제</strong>(3D→2D 투영 · 시점 변환 · 구조 결합 + 앵커 추론 유도용 통제 색 변조). <strong>정답이 생성 규칙에서 직접 나오므로 인지 모듈이 개입할 여지가 없다.</strong>
+결과: <em>“<strong>generalize to real-world spatial tasks, despite the dataset’s synthetic and compact nature</strong>”</em> — 직답 학습·추론기반 학습 <strong>둘 다</strong> 효과(견고성 신호).</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>정량 수치 부재 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>“significantly outperform”이라는 정성 서술뿐, <strong>벤치 점수가 초록에 없다.</strong> 저자 3명·업보트 35의 소규모 논문. 코드·데이터는 공개(github.com/rsoohyun/SpatialBlock)되어 <strong>검증 가능하나 미검증</strong>.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>이 도메인 관점의 액션 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>공간 인지 라벨을 만들 일이 생기면 <strong>“외부 인지 모듈로 라벨을 만들 것인가, 정답이 생성 규칙에서 나오는 합성 과제를 만들 것인가”</strong> 를 먼저 묻는다. 후자가 가능하면 <strong>비용과 오염을 동시에 없앤다.</strong></p>
+</div>
+</blockquote>
+<h2 id="관련-페이지-1">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/spatialblock" class="internal internal-link" data-slug="sources/spatialblock">SpatialBlock</a></li>
+<li><a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a></li>
+<li><a href="../concepts/임바디드-ai" class="internal internal-link alias" data-slug="concepts/임바디드-ai">임바디드-AI</a></li>
+<li><a href="../sources/pascal-editor" class="internal internal-link" data-slug="sources/pascal-editor">Pascal-Editor</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-09-17--액션-토크나이저의-평가-관행을-반증했다-actionpiece--raw-ai-news--재판정-slam-3dgs">🆕 2026-09-17 — <strong>액션 토크나이저의 평가 관행을 반증했다</strong> (<a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> · raw <code>ai-news</code> → 재판정 <code>slam-3dgs</code>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-17--액션-토크나이저의-평가-관행을-반증했다-actionpiece--raw-ai-news--재판정-slam-3dgs" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 MSE가 낮은데 동작 방향이 뒤집힐 수 있다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>VLA(vision-language-action) 모델의 액션 토크나이저는 통상 <strong>MSE 같은 점별 복원 오차</strong>로 평가된다. 초록 원문:</p>
+<blockquote>
+<p><em>“<strong>small individual errors do not fully characterize how faithfully action adjustments across demonstrations are preserved</strong>. After compression, similar actions may still cluster around a representative motion, while the adjustments needed for different contexts are <strong>diminished, distorted, or even reversed</strong>.”</em></p>
+</blockquote>
+<p>🎯 <strong><code>or even reversed</code></strong> — MSE가 낮은 토크나이저가 <strong>로봇을 반대로 움직이게</strong> 만들 수 있다.
+📌 <strong>원인</strong>: 압축이 유사 동작을 대표 모션으로 뭉치면 <strong>각 점은 대표값에 가까워져 MSE가 작아진다.</strong> 무너지는 것은 점이 아니라 <strong>점들 사이의 관계</strong>다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>새 지표 PRC — 구현 비종속으로 설계됐다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>PRC(physical rank consistency)</strong>: 복원 후에도 <strong>국소 물리 거리의 순위</strong>가 보존되는지 잰다.
+✅ <em>“Evaluating decoded actions provides a <strong>common reference across token vocabularies and decoder architectures</strong>”</em> — <strong>디코딩된 액션에서</strong> 재므로 토큰 어휘·디코더 구조가 달라도 비교 가능하다.
+방법: 표현학습과 양자화를 <strong>공동 감독</strong>(인코더/양자화 특징의 가까움-멂 순서 + 코드워드 할당 분포에 같은 순서). 복원 손실을 <strong>대체하지 않고 증강</strong>한다.</p>
+</div>
+</blockquote>
+<h2 id="도메인-템플릿-답-actionpiece">도메인 템플릿 답 (ActionPiece)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인-템플릿-답-actionpiece" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>현재 SOTA</strong>: 동일 <strong>Qwen3-VL-4B</strong> 정책 학습 설정에서 <strong>LIBERO 94.8%</strong> · 미학습 <strong>LIBERO-Plus 68.8%</strong> · SimplerEnv <strong>71.9%</strong> · VLA-Arena L0–L2 <strong>51.5%</strong>. ⚠️ <strong>토크나이저 비교 실험이므로 전역 SOTA 주장이 아니다</strong></li>
+<li><strong>실시간 가능성</strong>: 🔴 <strong>초록에 지연시간·주파수 수치 없음 — 확인 불가.</strong> 구조상(이산 토큰 자기회귀 + frozen decoder) 기존 VLA와 동급 비용</li>
+<li><strong>카메라 파이프라인</strong>: 입력 시각+언어 → <strong>이산 액션 토큰</strong> → frozen decoder → 실행 명령</li>
+<li><strong>응용 가능성</strong>: 🔴 <strong>직접 응용 경로 없음</strong>(로봇 하드웨어 미보유). 🎯 <strong>발상은 이식 가능</strong> — <em>“압축 후 관계 순위가 보존되는가”</em> 는 임베딩·양자화 평가 전반에 적용된다</li>
+<li><strong>필수 레퍼런스</strong>: 🔴 <strong>코드 링크 초록에 없음.</strong> LIBERO · LIBERO-Plus · SimplerEnv · VLA-Arena 가 비교 기준선</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 지는 축이 크다 — 일반화는 해결되지 않았다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>학습 분포 <strong>94.8%</strong> vs 미학습 <strong>68.8%</strong> = <strong>−26.0점 격차</strong> · VLA-Arena L0–L2 <strong>51.5% = 절반 수준</strong>.
+🎯 <strong>토크나이저를 고쳐 얻은 것은 분포 내 충실도이고, 분포 밖 일반화는 여전히 미해결</strong>이다 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> 의 <strong>로보틱스 판본</strong>.
+🔗 같은 배치 <a href="../sources/programdistill" class="internal internal-link" data-slug="sources/programdistill">ProgramDistill</a> 의 <em>“프런티어 에이전트 최고 49.2%”</em> 와 <strong>같은 메시지</strong> — 2026 하반기 에이전트/로봇 벤치가 <strong>절반 근처에서 막혀 있다.</strong>
+🔴 <strong>볼트 미확인</strong>: PRC 수식 · 비교 토크나이저 목록 · 어블레이션 수치 · <strong>PRC 값 자체가 초록에 없다</strong>(<em>“jointly improve PRC”</em> 까지만). 베이스라인 성능이 없어 <strong>94.8%가 얼마나 개선된 것인지 알 수 없다</strong></p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="2026-09-19--physbrain-15-ai-news--slam-3dgs-재판정---physbrain-10-오분류-정정">2026-09-19 — <a href="../sources/physbrain-1.5" class="internal internal-link" data-slug="sources/physbrain-1.5">PhysBrain-1.5</a> (ai-news → slam-3dgs 재판정) · 🔴 <a href="../sources/physbrain" class="internal internal-link" data-slug="sources/physbrain">PhysBrain</a> 1.0 오분류 정정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-19--physbrain-15-ai-news--slam-3dgs-재판정---physbrain-10-오분류-정정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <strong>제목의 세 능력(이해·행동·예측) 중 정량 평가된 것은 이해뿐이다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Qwen3-VL-8B 위에 <a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> 액션 토큰 + 미래 RGB/깊이/마스크 토큰을 얹은 통합 모델. 28벤치 평균 72.5(오픈 1위 14 · GPT-6 Astra 73.3 “근접” — 초록만 <em>“on par”</em>, 본문은 <em>“approaches”</em>).
+🎯 <strong>지는 14개가 포인팅(6)·궤적(2)에 몰림</strong> — 행동에 가장 가까운 범주가 약점. 🔴 1.0 이 쟀던 LIBERO · SimplerEnv · RoboCasa 제어 벤치가 1.5 에서 <strong>평가에서 사라지고 SFT 데이터로만</strong> 쓰임. 폐루프 제어 정량 0(오프라인 액션 토큰 퍼플렉시티만).
+🔴 폐쇄 모델 최저 추론 설정 · 비교 전원 자체 재평가 → <a href="../concepts/비매칭-비교" class="internal internal-link alias" data-slug="concepts/비매칭-비교">비매칭-비교</a> · 13벤치 학습 분할 포함 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a> · 일반 멀티모달 12개 중 7개가 베이스 대비 하락.</p>
+</div>
+</blockquote>
+<ul>
+<li><strong>현재 SOTA 판단</strong>: 임바디드 <em>이해</em> 벤치 오픈 상위권은 맞다. <em>제어</em> SOTA 판단 근거는 없다.</li>
+<li><strong>실시간 가능성</strong>: 미측정.</li>
+<li><strong>필수 레퍼런스</strong>: 본문 부록 B.3(액션 퍼플렉시티) · 조직 → <a href="../entities/deepcybo" class="internal internal-link" data-slug="entities/deepcybo">DeepCybo</a></li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-49" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#로봇-slam--3dgs--카메라-누적-인사이트" data-for="로봇-slam--3dgs--카메라-누적-인사이트">로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></li><li class="depth-1"><a href="#최근-흐름-2026-09-14-배치--시각을-더-쓰는-게-아니라-통로를-좁힌다" data-for="최근-흐름-2026-09-14-배치--시각을-더-쓰는-게-아니라-통로를-좁힌다">최근 흐름 (2026-09-14 배치) — 시각을 더 쓰는 게 아니라 통로를 좁힌다</a></li><li class="depth-1"><a href="#최근-흐름-2026-09-13-배치--3건-이관-입고" data-for="최근-흐름-2026-09-13-배치--3건-이관-입고">최근 흐름 (2026-09-13 배치) — 3건 이관 입고</a></li><li class="depth-1"><a href="#현재-sota-및-오픈소스-구현체" data-for="현재-sota-및-오픈소스-구현체">현재 SOTA 및 오픈소스 구현체</a></li><li class="depth-1"><a href="#실시간-동작-가능-조건" data-for="실시간-동작-가능-조건">실시간 동작 가능 조건</a></li><li class="depth-1"><a href="#카메라-파이프라인-구조" data-for="카메라-파이프라인-구조">카메라 파이프라인 구조</a></li><li class="depth-1"><a href="#응용-가능한-것" data-for="응용-가능한-것">응용 가능한 것</a></li><li class="depth-1"><a href="#반드시-읽어야-할-논문레포" data-for="반드시-읽어야-할-논문레포">반드시 읽어야 할 논문/레포</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#월드모델--엣지-로보틱스-2026-07-12-synthesis" data-for="월드모델--엣지-로보틱스-2026-07-12-synthesis">월드모델 × 엣지 로보틱스 (2026-07-12 synthesis)</a></li><li class="depth-1"><a href="#2026-09-04-배치--통합-월드모델과-의미-분할이-만나는-지점" data-for="2026-09-04-배치--통합-월드모델과-의미-분할이-만나는-지점">[2026-09-04] 배치 — 통합 월드모델과 의미 분할이 만나는 지점</a></li><li class="depth-2"><a href="#-puffin-world--물리기하외형을-한-모델의-네이티브-상태로-업보트-31-ace-robotics" data-for="-puffin-world--물리기하외형을-한-모델의-네이티브-상태로-업보트-31-ace-robotics">🌍 Puffin-World — 물리·기하·외형을 한 모델의 네이티브 상태로 (업보트 31, ACE Robotics)</a></li><li class="depth-2"><a href="#-sam3와의-교차--의미가-붙은-3d-재구성" data-for="-sam3와의-교차--의미가-붙은-3d-재구성">🔗 sam3와의 교차 — 의미가 붙은 3D 재구성</a></li><li class="depth-2"><a href="#축-관측" data-for="축-관측">축 관측</a></li><li class="depth-0"><a href="#-2026-09-07-배치--worldsculpt-재분류-ai-news--slam-3dgs" data-for="-2026-09-07-배치--worldsculpt-재분류-ai-news--slam-3dgs">📦 2026-09-07 배치 — WorldSculpt (재분류: ai-news → slam-3dgs)</a></li><li class="depth-1"><a href="#통짜-재구성에서-분해-가능성decomposability-으로" data-for="통짜-재구성에서-분해-가능성decomposability-으로">통짜 재구성에서 분해 가능성(decomposability) 으로</a></li><li class="depth-1"><a href="#-월드모델-축과-slam-3dgs-축이-여기서-연결된다" data-for="-월드모델-축과-slam-3dgs-축이-여기서-연결된다">🔗 월드모델 축과 slam-3dgs 축이 여기서 연결된다</a></li><li class="depth-1"><a href="#벤치마크-ue-meshyscene" data-for="벤치마크-ue-meshyscene">벤치마크: UE-MeshyScene</a></li><li class="depth-2"><a href="#추적-공백-신규-3건" data-for="추적-공백-신규-3건">추적 공백 (신규 3건)</a></li><li class="depth-1"><a href="#2026-09-08-배치--검증-루프를-지었더니-메모리-부재가-드러났다" data-for="2026-09-08-배치--검증-루프를-지었더니-메모리-부재가-드러났다">[2026-09-08] 배치 — 검증 루프를 지었더니 메모리 부재가 드러났다</a></li><li class="depth-2"><a href="#구조--모델-출력을-결정이-아니라-제안으로-격하시킨다" data-for="구조--모델-출력을-결정이-아니라-제안으로-격하시킨다">구조 — 모델 출력을 “결정”이 아니라 “제안”으로 격하시킨다</a></li><li class="depth-2"><a href="#실측--그리고-저자가-자기-한계를-먼저-썼다" data-for="실측--그리고-저자가-자기-한계를-먼저-썼다">실측 — 그리고 저자가 자기 한계를 먼저 썼다</a></li><li class="depth-2"><a href="#-125가-말하는-것--검증-루프를-잘-지어도-메모리는-별도-문제다" data-for="-125가-말하는-것--검증-루프를-잘-지어도-메모리는-별도-문제다">🔴 12.5%가 말하는 것 — 검증 루프를 잘 지어도 메모리는 별도 문제다</a></li><li class="depth-2"><a href="#도메인-템플릿-미답-항목" data-for="도메인-템플릿-미답-항목">도메인 템플릿 미답 항목</a></li><li class="depth-2"><a href="#-도메인-간-수렴--이번-배치-최대-신호" data-for="-도메인-간-수렴--이번-배치-최대-신호">📌 도메인 간 수렴 — 이번 배치 최대 신호</a></li><li class="depth-1"><a href="#2026-09-09-배치--단안-깊이추정이-1-step으로-내려왔다" data-for="2026-09-09-배치--단안-깊이추정이-1-step으로-내려왔다">[2026-09-09] 배치 — 단안 깊이추정이 1-step으로 내려왔다</a></li><li class="depth-2"><a href="#처방-두-가지-순진한-학습의-아티팩트-진단-후" data-for="처방-두-가지-순진한-학습의-아티팩트-진단-후">처방 두 가지 (순진한 학습의 아티팩트 진단 후)</a></li><li class="depth-2"><a href="#현재-sota-수치" data-for="현재-sota-수치">현재 SOTA 수치</a></li><li class="depth-1"><a href="#2026-09-11-교차-참조--spatialblock-도메인은-ai-news-축은-여기" data-for="2026-09-11-교차-참조--spatialblock-도메인은-ai-news-축은-여기">[2026-09-11] 교차 참조 — SpatialBlock (도메인은 ai-news, 축은 여기)</a></li><li class="depth-1"><a href="#관련-페이지-1" data-for="관련-페이지-1">관련 페이지</a></li><li class="depth-1"><a href="#-2026-09-17--액션-토크나이저의-평가-관행을-반증했다-actionpiece--raw-ai-news--재판정-slam-3dgs" data-for="-2026-09-17--액션-토크나이저의-평가-관행을-반증했다-actionpiece--raw-ai-news--재판정-slam-3dgs">🆕 2026-09-17 — 액션 토크나이저의 평가 관행을 반증했다 (ActionPiece · raw ai-news → 재판정 slam-3dgs)</a></li><li class="depth-1"><a href="#도메인-템플릿-답-actionpiece" data-for="도메인-템플릿-답-actionpiece">도메인 템플릿 답 (ActionPiece)</a></li><li class="depth-1"><a href="#2026-09-19--physbrain-15-ai-news--slam-3dgs-재판정---physbrain-10-오분류-정정" data-for="2026-09-19--physbrain-15-ai-news--slam-3dgs-재판정---physbrain-10-오분류-정정">2026-09-19 — PhysBrain-1.5 (ai-news → slam-3dgs 재판정) · 🔴 PhysBrain 1.0 오분류 정정</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/local-llm" class="internal">Local/Edge/Small LLM + 에이전트 메모리 누적 인사이트</a></li><li><a href="../domains/slam-3dgs" class="internal">로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></li><li><a href="../" class="internal">Ducky's Note</a></li><li><a href="../sources/4d-human-scene-reconstruction" class="internal">4D Human-Scene Reconstruction from Low-Overlap Captures</a></li><li><a href="../sources/4danyone" class="internal">4DAnyone — 캐주얼 단안 비디오로 임의 인물 4D 재구성</a></li><li><a href="../sources/abot-earth" class="internal">ABot-Earth 0.5 — 생성형 3D 지구 모델</a></li><li><a href="../sources/abot-n1" class="internal">ABot-N1 — 범용 시각-언어 내비게이션 파운데이션 모델</a></li><li><a href="../sources/ace-ego-0" class="internal">ACE-Ego-0 — 인간·로봇 에고센트릭 통합 VLA 사전학습 모델</a></li><li><a href="../sources/actionpiece" class="internal">ActionPiece — MSE로 액션 토크나이저를 평가하는 관행을 반증하고 PRC를 제시</a></li><li><a href="../sources/anchorworld" class="internal">AnchorWorld — 에고센트릭 체현 AI 세계 시뮬레이션 (Kling Team)</a></li><li><a href="../sources/articulated-object-reconstruction" class="internal">Articulated Object Reconstruction — 정지 상태 관측만으로 관절형 객체 3D 복원 (2607.27749)</a></li><li><a href="../sources/beyond-pixels-4d" class="internal">Beyond Pixels — 비디오 프라이어에서 4D 월드 복원으로 (2608.10744)</a></li><li><a href="../sources/canvas360" class="internal">Canvas360 — 기하 인지 사전학습 기반 인컨텍스트 360도 파노라마 생성</a></li><li><a href="../sources/chronovision" class="internal">ChronoVision — 잠재 상태 재구성 기반 시간 추론 (2608.05631)</a></li><li><a href="../sources/direct-3d-aware-object-insertion" class="internal">Direct 3D-Aware Object Insertion — 이미지 내 3D 인식 객체 삽입</a></li><li><a href="../sources/domain-arithmetic" class="internal">Domain Arithmetic — 산술 연산으로 VLA 모델을 신규 환경에 원샷 적응</a></li><li><a href="../sources/dreamx-phi" class="internal">DreamX-Phi 1.0 — 로봇 조작용 행동조건부 비디오 월드모델 (2608.13489)</a></li><li><a href="../sources/dreamx-world-1.0" class="internal">DreamX-World 1.0 — AMAP-ML 범용 인터랙티브 월드 모델</a></li><li><a href="../sources/embodied-navigator" class="internal">Embodied-Navigator — Point, Think, Memorize, and Align (HF 논문)</a></li><li><a href="../sources/gst-bench" class="internal">GST-Bench — VLM이 비디오만으로 전역 공간 인식을 획득하는가 (2608.05747)</a></li><li><a href="../sources/geometric-action-model" class="internal">Geometric Action Model — ETH Zürich, SE(3) 대칭성 기반 로봇 정책 학습</a></li><li><a href="../sources/hy-embodied" class="internal">HY-Embodied-0.5 — 실세계 로봇용 소형 임베디드 파운데이션 모델</a></li><li><a href="../sources/hifi-umi" class="internal">HiFi-UMI — 로봇 없는 고충실도 UMI 데이터만으로 배포 가능한 조작 정책</a></li><li><a href="../sources/hivla" class="internal">HiVLA — 계층적 시각 기반 로봇 조작 시스템</a></li><li><a href="../sources/hunyuan3d-buffalo" class="internal">Hunyuan3D-Buffalo 1.0 — 3D 생성·이해·편집 통합 멀티모달 모델</a></li><li><a href="../sources/introduction-to-autonomous-robots" class="internal">Introduction-to-Autonomous-Robots — 자율 로봇 공학 입문 오픈소스 교과서</a></li><li><a href="../sources/lio-sam" class="internal">TixiaoShan/LIO-SAM — 라이다-IMU 긴밀 결합 SLAM 프레임워크</a></li><li><a href="../sources/marigold-v2" class="internal">Marigold V2 — DiT를 1-step 단안 깊이추정기로 되돌리기</a></li><li><a href="../sources/marionette" class="internal">Marionette — 월드 스테이트 예측·지오메트리 렌더링·외형 페인팅 단계화 월드모델</a></li><li><a href="../sources/meshy-t2" class="internal">Meshy T2 — 플로우 매칭 기반 네이티브 3D 메시 고속 생성</a></li><li><a href="../sources/openspatial" class="internal">OpenSpatial — 멀티모달 모델의 3D 공간 이해력 향상을 위한 데이터 엔진</a></li><li><a href="../sources/orca" class="internal">Orca — The World is in Your Mind (범용 월드 파운데이션 모델)</a></li><li><a href="../sources/playful-agentic-robot" class="internal">Playful Agentic Robot Learning — UC Berkeley 플레이풀 로봇 학습</a></li><li><a href="../sources/revsi" class="internal">ReVSI — VLM 3D 공간 추론 평가 프레임워크 재구성</a></li><li><a href="../sources/refertrack" class="internal">ReferTrack — 참조 후 추적(Referring Then Tracking) 임보디드 비주얼 트래킹</a></li><li><a href="../sources/rynnbrain-1.1" class="internal">RynnBrain 1.1 — 더 범용적인 임바디드 파운데이션 모델 (2B/9B/122B)</a></li><li><a href="../sources/s-agent" class="internal">S-Agent — 공간 도구 사용으로 LLM 공간 추론 능력 향상</a></li><li><a href="../sources/shuttermuse" class="internal">ShutterMuse — MLLM 기반 실시간 촬영 가이드</a></li><li><a href="../sources/simwam" class="internal">SimWAM — 자율주행용 단순 구조 월드 액션 모델 (2608.07468)</a></li><li><a href="../sources/spatialblock" class="internal">SpatialBlock — 합성 블록쌓기 15k 문제로 LVLM 공간지능을 키운다</a></li><li><a href="../sources/stateflow" class="internal">StateFlow — 프리비주얼라이제이션용 3D 월드 상태 구축·진화·접근 (2608.12314)</a></li><li><a href="../sources/trellis.2" class="internal">microsoft/TRELLIS.2 — 3D 생성용 네이티브 구조화 잠재표현</a></li><li><a href="../sources/trimming-long-tail" class="internal">Trimming the Long-Tail of Visual World Modeling Evaluation — 비주얼 월드모델 평가 효율화</a></li><li><a href="../sources/urbanground" class="internal">UrbanGround — 실축척 홍콩 복제본에서 MLLM 에이전트의 &quot;공간 행위력&quot;을 재는 샌드박스</a></li><li><a href="../sources/vla-corrector" class="internal">VLA-Corrector — 액션 청킹 VLA의 감지-수정 추론 + 적응형 행동 지평</a></li><li><a href="../sources/vla-safety" class="internal">VLA Safety — 비전-언어-행동 시스템 위협·방어 종합 조사</a></li><li><a href="../sources/vibeworlding" class="internal">VibeWorlding — 멀티모달 에이전트의 3D 오픈월드 엔드투엔드 구성</a></li><li><a href="../sources/worldclaw" class="internal">WorldClaw — 대규모 에이전트형 3D 오픈월드 생성 (2608.05248)</a></li><li><a href="../sources/worldsculpt" class="internal">WorldSculpt — 장면 학습 없이 수백 개 오브젝트 장면을 조합적으로 생성 (3DGS 월드 → 메시 변환 시연)</a></li><li><a href="../sources/anomalib" class="internal">open-edge-platform/anomalib — 이상 탐지 딥러닝 라이브러리</a></li><li><a href="../sources/opencv" class="internal">opencv/opencv — 오픈소스 컴퓨터 비전 라이브러리</a></li><li><a href="../sources/supervision" class="internal">roboflow/supervision — 모델-비종속 컴퓨터 비전 파이프라인 라이브러리</a></li><li><a href="../synthesis/jepa효율화-로컬추론" class="internal">JEPA 효율화 × 로컬 추론 — 온디바이스 월드모델의 길</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

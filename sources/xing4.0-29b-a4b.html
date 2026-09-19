@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다"/><meta name="twitter:description" content="Xing4.0-29B-A4B 핵심 인사이트: &quot;첫&quot;은 규모 한정어가 있어야 성립한다."/><meta property="og:description" content="Xing4.0-29B-A4B 핵심 인사이트: &quot;첫&quot;은 규모 한정어가 있어야 성립한다."/><meta property="og:image:alt" content="Xing4.0-29B-A4B 핵심 인사이트: &quot;첫&quot;은 규모 한정어가 있어야 성립한다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/xing4.0-29b-a4b"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/xing4.0-29b-a4b"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Xing4.0-29B-A4B 핵심 인사이트: &quot;첫&quot;은 규모 한정어가 있어야 성립한다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/xing4.0-29b-a4b-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/xing4.0-29b-a4b-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/xing4.0-29b-a4b-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/xing4.0-29b-a4b" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1062" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1062" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다</a></div></nav><h1 class="article-title">XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/local-llm" class="internal internal-link tag-link">local-llm</a><span class="note-properties-separator">, </span><a href="../tags/hf-model" class="internal internal-link tag-link">hf-model</a><span class="note-properties-separator">, </span><a href="../tags/moe" class="internal internal-link tag-link">moe</a><span class="note-properties-separator">, </span><a href="../tags/mla" class="internal internal-link tag-link">mla</a><span class="note-properties-separator">, </span><a href="../tags/mhc" class="internal internal-link tag-link">mhc</a><span class="note-properties-separator">, </span><a href="../tags/mtp" class="internal internal-link tag-link">mtp</a><span class="note-properties-separator">, </span><a href="../tags/ascend" class="internal internal-link tag-link">ascend</a><span class="note-properties-separator">, </span><a href="../tags/mindspore" class="internal internal-link tag-link">mindspore</a><span class="note-properties-separator">, </span><a href="../tags/china-telecom" class="internal internal-link tag-link">china-telecom</a><span class="note-properties-separator">, </span><a href="../tags/telechat" class="internal internal-link tag-link">telechat</a><span class="note-properties-separator">, </span><a href="../tags/agent" class="internal internal-link tag-link">agent</a><span class="note-properties-separator">, </span><a href="../tags/한정어-탈락" class="internal internal-link tag-link">한정어-탈락</a><span class="note-properties-separator">, </span><a href="../tags/표-부분인용" class="internal internal-link tag-link">표-부분인용</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>17 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="xing40-29b-a4b">Xing4.0-29B-A4B<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xing40-29b-a4b" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트: &quot;첫&quot;은 규모 한정어가 있어야 성립한다. 그 한정어는 언어마다 다르다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 카드 원문(영어): <em>“It is <strong>the first model of this scale</strong> trained <strong>entirely</strong> on the Ascend NPU platform <strong>with the MindSpore framework</strong>”</em>.
+GitHub <code>README_zh.md</code> 원문(중국어): <em>“是<strong>国内首个</strong>基于<strong>国产算力与国产框架</strong>完成训练、<strong>面向复杂工程任务深度优化</strong>的<strong>百亿参数</strong>大模型”</em>(국내 최초로 국산 연산력·국산 프레임워크로 학습을 완료하고 복잡한 엔지니어링 과제에 깊이 최적화된 백억(10B)급 파라미터 대형 모델).
+🔴 같은 회사 선대 보고서(카드가 인용한 arXiv 2512.24157 <em>Training Report of TeleChat3-MoE</em>) 초록: <em>“parameter counts ranging from <strong>105 billion to over one trillion</strong>, trained <strong>end-to-end on Ascend NPU cluster</strong>”</em>.
+🎯 <strong>더 큰 모델을 이미 Ascend로 끝까지 학습한 선례가 같은 계보 안에 있다.</strong> 그래서 “첫” 주장은 <strong>“이 규모(29B)“라는 한정어로만 참이다.</strong> 더 작은 규모의 최초라는 뜻이다. 중국어판은 한정어를 더 쌓는다(国内 · 百亿参数 · 面向复杂工程任务深度优化). *“Ascend만으로 학습한 첫 모델”*로 옮기는 순간 틀린 문장이 된다 → <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a>.
+📌 TeleChat3-MoE가 <strong>MindSpore를 전용으로</strong> 썼는지는 볼트가 확인하지 못했다. TeleChat3 README는 <em>“完全基于国产算力训练”</em> + Atlas 800T A2에서 MindSpore 학습 “지원”이라고만 적는다. “with the MindSpore framework”가 선대와의 실질 차이일 가능성은 남는다(미확인).</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 굵은 글씨 오류 확인. 그리고 자사 GitHub 본문은 그 오류를 스스로 부정한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 카드 표의 굵은 글씨는 4개이고 <strong>모두 Xing 열</strong>이다: Claw-Eval 76.55 · <strong>SWE-bench Verified 75.00</strong> · Terminal-Bench 2.1 57.50 · DeepresearchBII 60.80.
+SWE-bench Verified 같은 행 <strong>Qwen3.6-35B-A3B는 76.00</strong>이다(✅ 수집기 일치). 카드는 굵은 글씨의 뜻을 정의하지 않는다. 다만 나머지 3개 굵은 칸은 모두 실제 행 최고값이므로 “행 최고” 관례로 읽히고, 그 관례로는 <strong>오류</strong>다.
+🎯 결정적 대조: GitHub README(같은 조직, <code>XingChen-AGI/Xing4.0-29B-A4B</code>)의 <strong>같은 표에는 굵은 글씨가 전혀 없고</strong>, 본문은 *“On SWE-bench Verified (75.0), it <strong>approaches</strong> Qwen3.6-35B-A3B (76.0)“*라고 쓴다. <strong>텍스트는 졌다고 말하는데 HF 카드의 서식은 이겼다고 표시한다.</strong> 서식은 HF 카드에만 덧칠됐다. → 🎯 <strong>볼트 규칙 후보: 굵은 글씨는 주장이지 데이터가 아니다. 행 최고값은 볼트가 직접 계산한다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>파라미터 29B vs <code>safetensors.total</code> 31,215,031,088: 볼트 역산으로 원인 확인(추정)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>✅ 수집기 값 일치(HF API 2026-09-19: BF16 31,215,028,352 + F32 2,736 = <strong>31,215,031,088</strong>).
+볼트 역산(<code>config.json</code>: 40층 · hidden 3584 · MLA q_lora 768/kv_lora 512 · 처음 2층 덴스 FFN 9216 · 나머지 38층 MoE 64전문가×1024 + 공유 1 · vocab 131,072 · <code>tie_word_embeddings: false</code> · <strong><code>num_nextn_predict_layers: 1</code></strong> · mHC <code>hc_mult: 4</code>):</p>
+<pre><code>본체 40층 + 임베딩 + lm_head        29,477,977,984
+mHC 파라미터(hc_fn 등, 80개 모듈)       ≈27,530,000
+  → 본체 소계                        ≈29.51B   ← 카드 &quot;29B&quot;
+MTP 층(model.layers.40) 블록 본체       769,998,144
+MTP 층 자체 embed_tokens + shared_head.head  939,524,096  (131,072×3584 ×2, 중복 사본)
+  → 합계                             ≈31.215B  ← safetensors.total (잔차 &lt; 0.001%)
+활성 파라미터(볼트 추정)             ≈3.9B     ← 카드 &quot;4B active&quot;
+</code></pre>
+<p>🎯 <strong>수집기의 “MTP 층 포함 여부 미기재(추정 원인)“가 산술로 뒷받침된다.</strong> 차이 1.71B 중 0.94B는 MTP 층에 <strong>임베딩·출력 헤드를 중복 저장</strong>했기 때문이다(<code>model.safetensors.index.json</code>에 <code>model.layers.40.embed_tokens.weight</code>·<code>model.layers.40.shared_head.head.weight</code>가 실재). → <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a>: 카드의 “29B”는 <strong>추론 본체</strong>, 파일은 <strong>학습 체크포인트 전체</strong>를 센다. <strong>로컬 VRAM은 MTP를 안 쓰면 29.5B, 쓰면 31.2B로 잡는다.</strong></p>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-local-llm">도메인별 추출 (local-llm)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-local-llm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>도메인 재판정: ai-news → <strong>local-llm</strong> (ai-news 태그 병기)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>근거: ① 활성 약 3.9B MoE라 <strong>토큰당 연산은 4B급</strong>이다. ② 볼트는 같은 형태(36B-A4B)의 <a href="../sources/k2-horizon-mova-36b-a4b" class="internal internal-link" data-slug="sources/k2-horizon-mova-36b-a4b">K2-Horizon-MoVA-36B-A4B</a>를 local-llm으로 분류했다. ③ 카드가 Claude Code·OpenClaw·<strong>Hermes</strong> 등 에이전트 프레임워크 적응을 명시한다. 핵심 주장(Ascend 자립)은 ai-news 성격이라 태그로 남긴다.</p>
+</div>
+</blockquote>
+<ul>
+<li><strong>실용성 판단</strong>: 🔴 <strong>현재는 NO(메인라인 기준).</strong> HF 카드 서두는 *“compatible with Transformers, vLLM, SGLang, KTransformers, and other mainstream inference frameworks”*라고 쓴다. 그런데 GitHub README는 *“submitted … via pull requests, which are currently under review and <strong>not yet merged</strong> into their main branches”*라고 쓴다. 볼트 실측(GitHub API, 2026-09-19) 결과 5개 PR이 **전부 <code>open</code> · <code>merged: false</code>**다: sglang#39793 · vllm#57135 · TensorRT-LLM#19283 · llama.cpp#29012 · ktransformers#2168. → <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> 역방향 A(카드가 “PR 브랜치 한정”을 뺐다).
+<ul>
+<li>용량: BF16 약 62.4GB(<code>total_size</code> 62,430,071,008 B). <code>-GGUF</code> 레포는 <strong>IQ4_NL 한 종류(3분할, 합 20,104,013,088 B ≈ 20.1GB)</strong> 뿐이고, llama.cpp PR이 미병합이라 <strong>메인라인 llama.cpp로는 못 돌린다.</strong> FP8판 있음. 24GB GPU + 병합된 llama.cpp라면 IQ4_NL로 올라갈 크기다(추정). <strong>지연시간 수치는 카드에 없다.</strong></li>
+</ul>
+</li>
+<li><strong>메모리 아키텍처</strong>: 외부 메모리 없음. <strong>MLA</strong>(KV를 kv_lora_rank 512로 압축)라서 GQA 대비 <strong>긴 컨텍스트 KV 캐시가 작다</strong>(로컬에서 256K를 노릴 때 유리한 구조, 정량은 미측정). 컨텍스트 256K 네이티브(<code>max_position_embeddings</code> 262,144, YaRN factor 64 · original 4,096), 512K 확장.</li>
+<li><strong>Hermes 적용</strong>: 🟡 카드가 *“targeted adaptation and format alignment for agent frameworks such as OpenCode, Claude Code, OpenClaw, and <strong>Hermes</strong>”*라고 명시한다. 볼트 <a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a>와 같은 것인지 확인되지 않았다(추정 가능성 높음). <strong>추론 스택 PR이 병합되기 전에는 적용 불가.</strong> 병합 후 1순위 실험 대상이다. Terminal-Bench 2.1 57.50 · Claw-Eval 76.55가 이 비교군 안에서 1위인 축이 바로 ChinameBot에 필요한 축이다.</li>
+<li><strong>트레이드오프</strong>: 에이전트/도구 축(Claw-Eval·Terminal-Bench·DeepresearchBII)에서 이기고, **지시수행(IFBench −3.00 vs Gemma)·장문맥(AA.LCR −5.00 vs Gemma)·수학(AIME −2.70 vs Qwen)**에서 진다. → <a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a>가 또 재현됐다. 지시수행 약세는 봇 용도에서 감점이다.</li>
+<li><strong>오픈소스 구현체</strong>: 가중치 Apache-2.0 · GitHub <code>XingChen-AGI/Xing4.0-29B-A4B</code> ★63 · fork 3 · open issues 0(2026-09-19). LLaMA-Factory·MindFormers 파인튜닝 튜토리얼 포함. <strong>학습 코드·데이터는 공개하지 않았다.</strong></li>
+</ul>
+<h2 id="수집기-대조">수집기 대조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수집기-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>수집기 주장</th><th>원문/실측</th><th>판정</th></tr></thead><tbody><tr><td>DL 3,073 · 2026-09-16 생성 · Apache-2.0</td><td><code>downloads</code> 3,073 · <code>createdAt</code> 2026-09-16T06:44:40Z · apache-2.0</td><td>✅ 일치</td></tr><tr><td>♥539</td><td><code>likes</code> <strong>542</strong></td><td>⚠️ +3 드리프트(조회 시각 차이, 오류 아님)</td></tr><tr><td>트렌딩 6위</td><td>미조회</td><td>미확인</td></tr><tr><td>중국전신 AI · 총 29B/활성 4B · 라우팅 64/활성 4/공유 1 · MLA+mHC+MTP · 256K→512K</td><td>카드 표·Highlights·<code>config.json</code> 일치</td><td>✅ 일치</td></tr><tr><td><em>”이 규모에서 Ascend NPU+MindSpore만으로 학습한 첫 모델”</em></td><td>영어 원문 일치. 단 중국어판 한정어 상이 · 선대 TeleChat3-MoE 105B~1T Ascend 학습</td><td>✅ 인용 일치 · ⚠️ 맥락 보충</td></tr><tr><td>학습 처리량 약 96% 향상(기본 대비)</td><td><em>“approximately <strong>96%</strong> over out-of-the-box performance”</em></td><td>✅ 일치</td></tr><tr><td>safetensors 31,215,031,088 · MTP 추정 원인</td><td>일치 · 볼트 역산으로 확인</td><td>✅ 일치 (+강화)</td></tr><tr><td>9행 값 27개</td><td>카드 표 전 셀 대조</td><td>✅ 전건 일치</td></tr><tr><td>6개 축 1위 아님 / 3개 축 1위</td><td>볼트 행별 최대값 계산 일치</td><td>✅ 일치</td></tr><tr><td>SWE-bench Verified 굵은 글씨 오류(75.00 vs 76.00)</td><td>카드 원문 확인 · GitHub 본문 “approaches”</td><td>✅ 일치 (+자사 텍스트 모순)</td></tr><tr><td>측정 프로토콜(SWE 210K SWE-agent · TB terminus-2 3회 · Tau3 4회 · AIME 5회)</td><td>각주 원문 일치</td><td>✅ 일치 · 누락 보충 아래</td></tr><tr><td>비교 모델 수치 측정 주체 미명시</td><td>각주는 전부 “We evaluate <strong>Xing4.0-29B-A4B</strong>”</td><td>✅ 일치</td></tr></tbody></table></div>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>각주 보충(수집기가 옮기지 않은 것) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>Claw-Eval 3회 평균</strong> · <strong>AA.LCR 3회 평균</strong>. IFBench · SWE-bench 두 종 · DeepresearchBII는 <strong>회차 미기재</strong>다.</li>
+<li>Terminal-Bench 2.1은 <strong>24시간 타임아웃</strong> · <code>max_tokens</code> 64K.</li>
+<li>DeepresearchBII는 <strong>OpenCode 하네스 + Exa MCP 서버 활성</strong>. 검색 도구 조건이 붙은 수치다. 비교 모델이 같은 조건이었는지는 적혀 있지 않다.</li>
+<li>Tau3-Bench 링크는 <code>sierra-research/tau-bench</code>(원 tau-bench 레포)를 가리킨다. tau3 전용 하네스인지 불명확하다(미확인).</li>
+<li>온도가 벤치마다 1.0/0.8로 다르다(SWE·AIME·AA.LCR 1.0, 나머지 0.8).</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="전체-비교표-카드-원문-부분인용-금지">전체 비교표 (카드 원문, 부분인용 금지)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전체-비교표-카드-원문-부분인용-금지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>벤치</th><th>Xing4.0-29B-A4B</th><th>Gemma4-26B-A4B</th><th>Qwen3.6-35B-A3B</th><th>행 1위(볼트 계산)</th></tr></thead><tbody><tr><td>IFBench</td><td>69.67</td><td><strong>72.67</strong></td><td>65.50</td><td>Gemma</td></tr><tr><td>AIME2026</td><td>90.00</td><td>88.30</td><td><strong>92.70</strong></td><td>Qwen</td></tr><tr><td>AA.LCR</td><td>61.00</td><td><strong>66.00</strong></td><td>62.00</td><td>Gemma</td></tr><tr><td>Tau3-Bench</td><td>64.63</td><td>58.90</td><td><strong>67.20</strong></td><td>Qwen</td></tr><tr><td>Claw-Eval</td><td><strong>76.55</strong></td><td>71.49</td><td>74.54</td><td>Xing</td></tr><tr><td>SWE-bench Verified</td><td>75.00 <em>(카드는 굵게)</em></td><td>53.00</td><td><strong>76.00</strong></td><td>Qwen</td></tr><tr><td>Terminal-Bench 2.1</td><td><strong>57.50</strong></td><td>30.00</td><td>51.50</td><td>Xing</td></tr><tr><td>SWE-bench Multilingual</td><td>66.00</td><td>51.00</td><td><strong>67.20</strong></td><td>Qwen</td></tr><tr><td>DeepresearchBII</td><td><strong>60.80</strong></td><td>39.30</td><td>59.70</td><td>Xing</td></tr></tbody></table></div>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>표를 전부 읽으면 보이는 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>Qwen3.6-35B-A3B가 4행, Gemma가 2행, Xing이 3행에서 1위다.</strong> 비교군 3종 중 최다 1위는 Xing이 아니라 <strong>Qwen</strong>이다.</li>
+<li>Xing의 이기는 축 3개는 모두 <strong>에이전트 하네스 의존 벤치</strong>(Claw-Eval·Terminal-Bench·DeepresearchBII)다. 하네스 조건이 비교 모델과 같았는지 불명확한 바로 그 축들이다.</li>
+<li>✅ <strong>대조: <a href="../sources/k2-horizon-7b" class="internal internal-link" data-slug="sources/k2-horizon-7b">K2-Horizon-7B</a>와 달리 이 카드는 비교군을 행마다 바꾸지 않는다</strong>(3열 고정). 그래서 지는 6개 행이 그대로 보인다. <strong>서식(굵은 글씨) 1건을 빼면 표 구성은 정직하다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<h2 id="조직계보">조직·계보<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#조직계보" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>HF 카드: <em>“a next-generation large language model in the Xing series (<strong>formerly <a href="https://github.com/Tele-AI/TeleChat3" class="external external-link">TeleChat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong>), developed by <strong>China Telecom Artificial Intelligence Technology Co., Ltd.</strong>”</em> (✅ 구 TeleChat · China Telecom 관계는 카드 원문에 명시)</li>
+<li>중국어판: <em>“由<strong>中电信人工智能科技有限公司</strong>研发，是<strong>星辰语义大模型</strong>系列（原 TeleChat）的新一代模型”</em>. 조직명 “XingChen” = 星辰(TeleChat의 중국어 브랜드 “星辰语义大模型”).</li>
+<li>🔴 선대 TeleChat3 README는 개발 주체를 <em>“<strong>中国电信人工智能研究院</strong>”</em>(China Telecom AI 연구원, TeleAI)으로 적는다. <strong>법인명이 다르다</strong>(科技有限公司 vs 研究院). 두 법인의 관계는 원문에 없다(미확인).</li>
+<li>카드 인용 논문: TeleChat3-MoE 학습 보고서(2512.24157, 저자 54명) · TeleChat2/2.5/T1 기술보고서(2507.18013). 🎯 <strong>96% 향상에 쓴 기법 중 “DVM 자동 그래프-연산자 융합”은 TeleChat3-MoE 보고서 초록에도 있다</strong>(<em>“DVM-based operator fusion”</em>). 효율 기법 일부는 선대에서 이어졌다.</li>
+<li>HF 조직 <code>XingChen-AGI</code>: 멤버 10 · 모델 3(본체·GGUF·FP8) · 팔로워 101 · <code>isVerified</code> false(2026-09-19). GitHub 레포 생성 2026-09-17.</li>
+<li>📌 좋아요/다운로드 비율: ♥542 / DL 3,073 ≈ <strong>0.18</strong>. <a href="../sources/k2-horizon-7b" class="internal internal-link" data-slug="sources/k2-horizon-7b">K2-Horizon-7B</a>는 212/12,834 ≈ 0.017로 <strong>약 10배 차이</strong>다. 생성 3일차라 DL이 아직 쌓이지 않은 탓이 크다(<a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a> “공개 후 72시간 지표 무효” 규칙 경계선). 판정에는 쓰지 않는다.</li>
+</ul>
+<h2 id="도메인-템플릿-보충-ai-news-교차">도메인 템플릿 보충 (ai-news 교차)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인-템플릿-보충-ai-news-교차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>신뢰도</strong>: HF DL 3,073 · ♥542 · GitHub ★63 · 선대 기술보고서 있음(본 모델 전용 보고서 없음) · 벤치 전부 자체 보고 · 서식 오류 1건 · 추론 스택 미병합. → <strong>low</strong>.</li>
+<li><strong>즉시 활용</strong>: <strong>NO.</strong> 추론 PR 5건이 전부 미병합이다.</li>
+<li><strong>6개월 영향력</strong>: <strong>중간.</strong> 🎯 비-NVIDIA 학습 스택(Ascend 910C + MindSpore/MindFormers)으로 <strong>에이전트 벤치 경쟁력이 있는 29B MoE</strong>가 나왔다는 산업적 신호다. PR이 병합되면 로컬 에이전트 후보가 된다.</li>
+<li><strong>대체 관계</strong>: 병합 후 <a href="../sources/qwen3.6-35b-a3b" class="internal internal-link" data-slug="sources/qwen3.6-35b-a3b">Qwen3.6-35B-A3B</a> · <a href="../sources/gemma-4-26b" class="internal internal-link" data-slug="sources/gemma-4-26b">Gemma-4-26B</a>와 같은 슬롯(활성 3~4B MoE 로컬 에이전트)을 놓고 경쟁한다.</li>
+<li><strong>허와 실</strong>: 걷어내면 <strong>“Ascend로 학습한 29B-A4B MoE. 에이전트 하네스 벤치 3개에서 앞서고 나머지 6개에서 뒤진다. ‘첫 Ascend 학습’은 규모 한정 주장이고, 선대가 더 큰 모델로 이미 했다.”</strong></li>
+</ul>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>당장 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>추론 PR 5건 병합 추적</strong>(특히 llama.cpp#29012 · vllm#57135). 병합 전에는 설치하지 않는다.</li>
+<li>병합 후 ChinameBot 후보 평가: <strong>IFBench 69.67(Gemma 72.67보다 낮음)이므로 지시 준수 테스트를 먼저</strong> 한다.</li>
+<li>볼트 규칙 제안: <strong>“굵은 글씨는 주장이지 데이터가 아니다. 행 최고값은 볼트가 계산한다”</strong>(관리자 판단).</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 질문 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>TeleChat3-MoE는 MindSpore만으로 학습했나? 그렇다면 영어판 “first … with the MindSpore framework”도 규모 한정어만 남는다.</li>
+<li>비교 모델(Gemma4-26B-A4B·Qwen3.6-35B-A3B) 수치는 자체 측정인가, 공식 보고치 인용인가? 동일 하네스·동일 회차였나?</li>
+<li>카드의 “Hermes”는 Nous Research의 <a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a>인가?</li>
+<li>96% 향상의 기준선(“out-of-the-box”)은 어떤 설정인가? 절대 처리량(TFLOPS/MFU) 수치가 없다.</li>
+<li>MTP 층은 추론 시 speculative decoding용으로 쓰이나? PR 코드 미확인.</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/k2-horizon-7b" class="internal internal-link" data-slug="sources/k2-horizon-7b">K2-Horizon-7B</a></li>
+<li><a href="../sources/k2-horizon-mova-36b-a4b" class="internal internal-link" data-slug="sources/k2-horizon-mova-36b-a4b">K2-Horizon-MoVA-36B-A4B</a></li>
+<li><a href="../sources/qwen3.6-35b-a3b" class="internal internal-link" data-slug="sources/qwen3.6-35b-a3b">Qwen3.6-35B-A3B</a></li>
+<li><a href="../sources/gemma-4-26b" class="internal internal-link" data-slug="sources/gemma-4-26b">Gemma-4-26B</a></li>
+<li><a href="../sources/hermes-agent" class="internal internal-link" data-slug="sources/hermes-agent">hermes-agent</a></li>
+<li><a href="../sources/opencode" class="internal internal-link" data-slug="sources/opencode">opencode</a></li>
+<li><a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a></li>
+<li><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a></li>
+<li><a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a></li>
+<li><a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a></li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a></li>
+<li><a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a></li>
+<li><a href="../domains/local-llm" class="internal internal-link" data-slug="domains/local-llm">local-llm</a></li>
+<li><a href="../entities/china-telecom" class="internal internal-link" data-slug="entities/china-telecom">China-Telecom</a> <em>(신설 제안)</em></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B" class="external external-link">https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> · 카드 원문 <code>raw/main/README.md</code> · <code>config.json</code> · <code>model.safetensors.index.json</code></li>
+<li>GitHub: <a href="https://github.com/XingChen-AGI/Xing4.0-29B-A4B" class="external external-link">https://github.com/XingChen-AGI/Xing4.0-29B-A4B<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (<code>README.md</code>, <code>README_zh.md</code>) · 선대 <a href="https://github.com/Tele-AI/TeleChat3" class="external external-link">https://github.com/Tele-AI/TeleChat3<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (README) · arXiv 2512.24157 초록(HF papers API + arXiv API)</li>
+<li>볼트 실측(2026-09-19): HF models API <code>downloads</code> 3,073 · <code>likes</code> 542 · <code>createdAt</code> 2026-09-16 · <code>lastModified</code> 2026-09-18 · <code>safetensors.total</code> 31,215,031,088 · <code>gated</code> false · GitHub API ★63/fork 3/open issues 0 · 추론 PR 5건 <code>state: open</code>, <code>merged: false</code> · GGUF IQ4_NL 합 20,104,013,088 B</li>
+<li>신뢰도: ⭐ (표 구성은 정직하고 각주가 상세한 점은 가점 · 서식 오류·추론 스택 미병합·“첫” 주장 한정어 의존·전 벤치 자체 보고는 감점)</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-1061" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#xing40-29b-a4b" data-for="xing40-29b-a4b">Xing4.0-29B-A4B</a></li><li class="depth-1"><a href="#도메인별-추출-local-llm" data-for="도메인별-추출-local-llm">도메인별 추출 (local-llm)</a></li><li class="depth-1"><a href="#수집기-대조" data-for="수집기-대조">수집기 대조</a></li><li class="depth-1"><a href="#전체-비교표-카드-원문-부분인용-금지" data-for="전체-비교표-카드-원문-부분인용-금지">전체 비교표 (카드 원문, 부분인용 금지)</a></li><li class="depth-1"><a href="#조직계보" data-for="조직계보">조직·계보</a></li><li class="depth-1"><a href="#도메인-템플릿-보충-ai-news-교차" data-for="도메인-템플릿-보충-ai-news-교차">도메인 템플릿 보충 (ai-news 교차)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/에이전트축-분기" class="internal">에이전트축 분기 — 작은 모델은 &quot;아는 것&quot;에 지고 &quot;찾아오는 것&quot;에 이긴다</a></li><li><a href="../concepts/파생표기-함정" class="internal">파생표기 함정</a></li><li><a href="../concepts/한정어-탈락" class="internal">한정어 탈락</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/local-llm" class="internal">Local/Edge/Small LLM + 에이전트 메모리 누적 인사이트</a></li><li><a href="../entities/china-telecom" class="internal">China Telecom — TeleChat·Xing 계열, Ascend 학습</a></li><li><a href="../sources/qwen3.6-35b-a3b" class="internal">Qwen3.6-35B-A3B</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

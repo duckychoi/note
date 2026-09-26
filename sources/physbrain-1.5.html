@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>PhysBrain 1.5 — 28벤치 절반을 이겼다. 그리고 1.0이 쟀던 로봇 제어 벤치는 사라졌다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="PhysBrain 1.5 — 28벤치 절반을 이겼다. 그리고 1.0이 쟀던 로봇 제어 벤치는 사라졌다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="PhysBrain 1.5 — 28벤치 절반을 이겼다. 그리고 1.0이 쟀던 로봇 제어 벤치는 사라졌다"/><meta name="twitter:description" content="PhysBrain 1.5 (arXiv 2609.14973) 핵심 인사이트 — &quot;이해·행동·예측을 하나의 토큰열로&quot;라는 제목의 세 능력 중 정량 평가된 것은 하나(이해)뿐이다 언어 응답 · 엔드이펙터 궤적(ActionPiece 토크나이저, 512 어휘) · 미래 RGB/깊이/로봇마스크(VQ-VAE 16,384 어휘)를 Qwen3-VL-8B 어휘에 추가해 다음토큰예측 하나로 학습한다."/><meta property="og:description" content="PhysBrain 1.5 (arXiv 2609.14973) 핵심 인사이트 — &quot;이해·행동·예측을 하나의 토큰열로&quot;라는 제목의 세 능력 중 정량 평가된 것은 하나(이해)뿐이다 언어 응답 · 엔드이펙터 궤적(ActionPiece 토크나이저, 512 어휘) · 미래 RGB/깊이/로봇마스크(VQ-VAE 16,384 어휘)를 Qwen3-VL-8B 어휘에 추가해 다음토큰예측 하나로 학습한다."/><meta property="og:image:alt" content="PhysBrain 1.5 (arXiv 2609.14973) 핵심 인사이트 — &quot;이해·행동·예측을 하나의 토큰열로&quot;라는 제목의 세 능력 중 정량 평가된 것은 하나(이해)뿐이다 언어 응답 · 엔드이펙터 궤적(ActionPiece 토크나이저, 512 어휘) · 미래 RGB/깊이/로봇마스크(VQ-VAE 16,384 어휘)를 Qwen3-VL-8B 어휘에 추가해 다음토큰예측 하나로 학습한다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/physbrain-1.5"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/physbrain-1.5"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="PhysBrain 1.5 (arXiv 2609.14973) 핵심 인사이트 — &quot;이해·행동·예측을 하나의 토큰열로&quot;라는 제목의 세 능력 중 정량 평가된 것은 하나(이해)뿐이다 언어 응답 · 엔드이펙터 궤적(ActionPiece 토크나이저, 512 어휘) · 미래 RGB/깊이/로봇마스크(VQ-VAE 16,384 어휘)를 Qwen3-VL-8B 어휘에 추가해 다음토큰예측 하나로 학습한다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/physbrain-1.5-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/physbrain-1.5-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/physbrain-1.5-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/physbrain-1.5" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-847" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-847" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>PhysBrain 1.5 — 28벤치 절반을 이겼다. 그리고 1.0이 쟀던 로봇 제어 벤치는 사라졌다</a></div></nav><h1 class="article-title">PhysBrain 1.5 — 28벤치 절반을 이겼다. 그리고 1.0이 쟀던 로봇 제어 벤치는 사라졌다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/slam-3dgs" class="internal internal-link tag-link">slam-3dgs</a><span class="note-properties-separator">, </span><a href="../tags/ai-news" class="internal internal-link tag-link">ai-news</a><span class="note-properties-separator">, </span><a href="../tags/hf-paper" class="internal internal-link tag-link">hf-paper</a><span class="note-properties-separator">, </span><a href="../tags/embodied" class="internal internal-link tag-link">embodied</a><span class="note-properties-separator">, </span><a href="../tags/vla" class="internal internal-link tag-link">vla</a><span class="note-properties-separator">, </span><a href="../tags/vlm" class="internal internal-link tag-link">vlm</a><span class="note-properties-separator">, </span><a href="../tags/world-model" class="internal internal-link tag-link">world-model</a><span class="note-properties-separator">, </span><a href="../tags/action-tokenizer" class="internal internal-link tag-link">action-tokenizer</a><span class="note-properties-separator">, </span><a href="../tags/deepcybo" class="internal internal-link tag-link">deepcybo</a><span class="note-properties-separator">, </span><a href="../tags/qwen3-vl" class="internal internal-link tag-link">qwen3-vl</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>15 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="physbrain-15-arxiv-260914973">PhysBrain 1.5 (arXiv 2609.14973)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#physbrain-15-arxiv-260914973" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트 — <strong>&quot;이해·행동·예측을 하나의 토큰열로&quot;라는 제목의 세 능력 중 정량 평가된 것은 하나(이해)뿐이다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>언어 응답 · 엔드이펙터 궤적(<strong><a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> 토크나이저</strong>, 512 어휘) · 미래 RGB/깊이/로봇마스크(VQ-VAE 16,384 어휘)를 <strong>Qwen3-VL-8B 어휘에 추가</strong>해 다음토큰예측 하나로 학습한다.</p>
+<ul>
+<li><strong>이해</strong>: 28벤치 표 1개(아래 전량) — 정량 ✅</li>
+<li><strong>행동</strong>: 이미지평면·3D 궤적 <strong>그림</strong> + 부록 B.3 <strong>액션 토큰 퍼플렉시티</strong>(ID 17.12→5.07 · OOD RoboDojo 12.39→6.57) — 🔴 <strong>폐루프 실행·과제 성공률 0건.</strong> 저자 원문: <em>“The evidence concerns <strong>offline trajectory prediction</strong> conditioned on observed action history, <strong>rather than closed-loop execution or full-task success</strong>.”</em></li>
+<li><strong>예측</strong>: 1초 앞 RGB/깊이/마스크 <strong>예시 그림만</strong> — 🔴 정량 0건.
+🎯 <strong>그리고 전작과 비교하면 후퇴가 보인다</strong>: PhysBrain 1.0(2605.15298)은 초록에서 <strong>SimplerEnv-WidowX · LIBERO · RoboCasa</strong> 제어 벤치 결과를 보고했다. <strong>1.5는 LIBERO·RoboCasa·VLA-Arena를 SFT 학습 데이터로 쓰면서 평가표에서는 뺐다.</strong> “VLM → 물리 파운데이션 모델”로 범위를 넓힌 버전이 <strong>제어 성능은 재지 않았다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 28벤치 전량 — <strong>이긴 14개와 진 14개를 모두 옮긴다</strong> (표 4, 0~100, 오픈소스 8종 대비 순위)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>오픈소스 1위 14개</strong>:</p>
+<pre><code>벤치              PB1.5   오픈 차점(모델)        폐쇄 최고(모델)
+BLINK             87.9    86.1 (Hy-Emb-VLM)      89.2 (Gemini 3.6F)
+CV-Bench          90.0    89.4 (MiMo)            90.0 (Gemini 3.6F)
+3DSRBench         63.0    62.1 (Hy-Emb-VLM)      67.7 (Gemini 3.6F)
+Q-Spatial-Bench   81.2    76.2 (Hy-Emb/RoboB)    87.1 (Gemini 3.6F)
+RoboSpatial-Home  73.9    72.0 (Emb-R1.5)        73.7 (GPT-6 Astra)
+ViewSpatial       62.5    56.4 (RynnBrain1.1)    56.6 (Gemini 3.6F)
+COSMOS            72.8    67.5 (Emb-R1.5)        75.7 (GPT-6 Astra)
+EgoPlan-Bench2    62.1    53.1 (Emb-R1.5)        69.3 (GPT-6 Astra)
+ERQA-PLUS         85.2    83.6 (RynnBrain1.1)    92.2 (Gemini 3.6F)
+RoboVQA           61.5    60.9 (RynnBrain1.1)    41.7 (Gemini 3.6F)
+VLABench          76.4    50.9 (Hy-Emb-VLM)      66.3 (GPT-6 Astra)
+Part-Affordance   84.0    83.4 (Emb-R1.5)        78.1 (Opus 5)
+PIOBench          68.3    64.8 (RynnBrain1.1)    80.9 (Gemini 3.6F)
+RoboRefit         89.6    86.2 (Cosmos3 Nano)    85.9 (Gemini 3.6F)
+</code></pre>
+<p><strong>오픈소스 1위가 아닌 14개</strong> (🔴 수집기 지적 — 이게 나머지 절반이다):</p>
+<pre><code>벤치              PB1.5   오픈 1위(모델)          PB 오픈순위  폐쇄 최고
+EmbSpatial        81.8    82.1 (Cosmos3 Nano)       3위       84.7
+MindCube          86.2    94.2 (ACE-Brain-0.5)      2위       78.8
+MMSI-Bench        41.0    46.0 (RynnBrain1.1)       2위       57.9
+SAT               79.3    81.3 (Hy-Emb-VLM)         2위       96.7
+VSI-Bench         61.9    65.9 (RynnBrain1.1)       2위       59.8
+ERQA              52.8    56.3 (Hy-Emb-VLM)         2위       75.8
+PixMo-Points      62.2    65.6 (ACE-Brain-0.5)      3위       75.2
+PointBench        64.3    64.5 (Emb-R1.5)           2위       71.9
+RefSpatial-Bench  50.9    63.2 (RynnBrain1.1)       6위       78.0
+RoboAfford        80.4    81.1 (Cosmos3 Nano)       2위       84.6
+VABench-Point     65.2    75.7 (Emb-R1.5)           2위       65.3
+Where2Place       72.1    75.0 (Emb-R1.5)           4위       76.9
+ShareRobot-Traj.  84.9    85.2 (RoboBrain2.5)       2위       83.1
+VABench-V.-Trace  89.8    92.3 (Emb-R1.5)           2위       91.6
+</code></pre>
+<p>🎯 <strong>패배가 몰린 곳</strong>: <em>공간 접지·포인팅·어포던스</em> 9개 중 <strong>6개 패배</strong>, <em>시각 궤적 추론</em> 2개 <strong>전패</strong>. 즉 <strong>“행동”에 가장 가까운 이해 범주에서 약하다</strong> — 이 모델이 액션 토큰을 내는 모델이라는 점을 생각하면 역설적이다. 🔴 <strong>RefSpatial-Bench는 오픈 6위</strong>(50.9 vs 63.2)로 표 전체 최악.
+📌 평균(Overall): Gemini 3.6 Flash 73.0 · GPT-6 Astra 73.3 · Claude Opus 5 67.9 · Hy-Embodied-VLM-1.0 66.0 · Embodied-R1.5 64.9 · RynnBrain1.1 63.1 · Cosmos3 Nano 62.3 · Qwen3-VL-8B 59.5 · ACE-Brain-0.5 59.0 · RoboBrain2.5 58.2 · MiMo Embodied 57.4 · <strong>PhysBrain 1.5 72.5</strong>. 오픈 2위 이내 <strong>24개</strong> · 베이스 Qwen3-VL-8B 대비 <strong>28/28 전부 우위</strong> — ✅ 볼트 재계산 일치.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 &quot;on par with GPT-6-Astra&quot;를 읽기 전에 알아야 할 조건 3개 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>폐쇄 모델은 가장 낮은 추론 설정으로 쟀다</strong> — <em>“minimal thinking for Gemini, low thinking for GPT, and adaptive thinking with low effort for Claude”</em>. 오픈 경쟁 모델 중 Hy-Embodied·MiMo는 thinking을 켰다.</li>
+<li><strong>모든 비교 모델을 DeepCybo가 자체 재평가했다</strong> — <em>“we independently re-evaluate all comparison models using a single canonical metric … some scores in our table may differ from those reported in the original papers.”</em> 평가 도구는 자사 <code>PhysBrainEvalKit</code>.</li>
+<li><strong>표현이 채널마다 다르다</strong> — 초록 <em>“on par with”</em> · 본문 <em>“approaches”</em> · 결론 <em>“approaching”</em>. 수치로는 72.5 vs 73.0/73.3 = <strong>−0.5 / −0.8점</strong>. → 볼트는 <strong>“근접”</strong> 으로 적는다 → <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a></li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 SFT 데이터에 평가 벤치의 <strong>학습 분할·동일 출처</strong>가 다수 들어 있다 (표 2·3, 볼트 이름 대조)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>SAT-Train · VSI-Train-10K/VSI-590K · MindCube-Train · EgoPlan-IT · RoboVQA-Train · VLABench · RoboRefIt-Train · PixMo-Points · RefSpatial-Train · RoboPoint(Where2Place 출처) · RoboSpatial-Train · RoboAfford-Train · ShareRobot — <strong>28개 중 13개 벤치</strong>가 학습 데이터 목록에 대응 항목이 있다.
+🎯 <strong>이건 오염(test leak)이 아니라 분포 내 학습이다</strong> — 이름이 <code>-Train</code> 인 공식 학습 분할이다. 🔴 그러나 <strong>최대 격차 벤치 VLABench(+25.5, 76.4 vs 50.9)가 SFT 데이터에 VLABench를 직접 넣은 경우</strong>다 → <a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a>.
+✅ 반대 증거도 있다: 13개 중 <strong>8개(SAT·VSI·MindCube·PixMo·RefSpatial·Where2Place·RoboAfford·ShareRobot)는 오히려 졌다.</strong> 학습 분할을 넣었다고 이기지는 않았다. 🔴 <strong>경쟁 모델들이 같은 분할을 썼는지는 볼트가 확인하지 않았다</strong> — 공정성 판정 보류.</p>
+</div>
+</blockquote>
+<h2 id="-전작동조직-대비--무엇이-바뀌었나">🔀 전작·동조직 대비 — 무엇이 바뀌었나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-전작동조직-대비--무엇이-바뀌었나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>PhysBrain 1.0 (2605.15298)</th><th>PhysBrain 1.5 (2609.14973)</th></tr></thead><tbody><tr><td>공개</td><td>2026-05-14 · 저자 13 · 업보트 61(09-19 실측)</td><td>2026-09-14 · 저자 54(53명+“DeepCybo Team”) · 업보트 166</td></tr><tr><td>핵심</td><td>1인칭 사람 영상 → <strong>물리 상식 QA 감독</strong> → VLA 정책으로 이전</td><td>언어·<strong>액션 토큰</strong>·<strong>미래 시각 토큰</strong>을 <strong>하나의 자기회귀 어휘</strong>로 통합</td></tr><tr><td>출력</td><td>언어(VLM) + 별도 VLA 정책</td><td>언어 + 16스텝 손목 궤적(32토큰) + 1초 미래 RGB/깊이/마스크</td></tr><tr><td>평가</td><td>ERQA · PhysBench · <strong>SimplerEnv-WidowX · LIBERO · RoboCasa</strong>(제어)</td><td>28 이해 벤치 + 12 일반 벤치 · <strong>제어 벤치 0</strong></td></tr><tr><td>코드</td><td><code>Phys-Brain/PhysBrain-VLA</code> ★42</td><td><code>DeepCybo-PhysAI/PhysBrain-1.5</code> ★44 — <strong>파일 5개(README·PDF·로고)</strong>, 코드 없음</td></tr><tr><td>가중치</td><td>— (볼트 미확인)</td><td>HF <code>PhysBrain1.5-8B</code>(DL 357 · ♥25) · <code>-2B</code>(DL 209 · ♥13)</td></tr></tbody></table></div>
+<ul>
+<li>🎯 <strong><a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> 와의 관계가 확정됐다</strong>: 1.5가 ActionPiece 토크나이저를 <strong>2,870만 개 16스텝 궤적 세그먼트(4.592억 타임스텝)</strong> 로 학습해 액션 어휘로 쓴다. HF 컬렉션 <code>DeepCybo/physbrain-15</code> 에 두 논문이 함께 묶여 있다. → ActionPiece의 LIBERO 94.8%는 <strong>토크나이저 단독 정책 실험</strong>이고, <strong>1.5 본체의 제어 성능은 아니다.</strong> 둘을 합쳐 “PhysBrain 1.5가 LIBERO 94.8%“로 읽으면 안 된다.</li>
+<li>🔴 <strong>볼트 <a href="../sources/physbrain" class="internal internal-link" data-slug="sources/physbrain">PhysBrain</a> 페이지 정정 필요</strong>: 그 페이지는 1.0을 <em>“물리 법칙 추론(역학·열역학·광학 등) 특화 멀티모달 모델”</em> 로 적었으나, <strong>1.0 초록(HF API 09-19 실측)은 역학·열역학·광학을 한 번도 언급하지 않는다</strong> — 실제 내용은 <em>“converting large-scale human egocentric video into structured physical commonsense supervision”</em> 과 VLA 이전이다. <strong>로봇/임바디드 모델을 “과학 계산 AI”로 잘못 분류했다.</strong></li>
+<li>📌 소속: README 로고 대체텍스트 <em>“DeepCybo · Zhongguancun Academy · Zhongguancun Institute of Artificial Intelligence”</em> — 볼트 <a href="../sources/physbrain" class="internal internal-link" data-slug="sources/physbrain">PhysBrain</a> 페이지의 “신생 기관” 서술에 <strong>중관촌 연구원 계열</strong>이라는 정보가 추가된다(🔴 조직 관계의 세부는 미확인).</li>
+</ul>
+<h2 id="일반-멀티모달--retaining의-실제-표-56-베이스-대비-전량">일반 멀티모달 — “retaining”의 실제 (표 5·6, 베이스 대비 전량)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일반-멀티모달--retaining의-실제-표-56-베이스-대비-전량" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>          MME      MMStar  RealWorldQA VideoMME MVBench POPE  AI2D  ChartQA DocVQA TextVQA V*    ScreenSpot
+Qwen3-VL  2392.70  64.99   68.37       69.07    68.53   88.40 83.74 84.96   95.66  81.94   83.77 91.59
+PB 1.5    2330.07  65.60   69.41       68.22    66.07   89.49 82.16 86.24   94.43  81.58   87.96 90.17
+</code></pre>
+<p>🔴 <strong>12개 중 7개 하락</strong>(MME −62.63 · MVBench −2.46 · AI2D −1.58 · ScreenSpot −1.42 · DocVQA −1.23 · VideoMME −0.85 · TextVQA −0.36), 5개 상승(V* +4.19 최대). 저자 표현 <em>“comparable to that of the base model”</em> 는 <strong>틀리진 않지만 “유지”보다는 “소폭 손실 동반”</strong> 이다 → <a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a> 의 임바디드 판본(특화 이득 ↔ 범용 비용).</p>
+<h2 id="도메인별-추출-slam-3dgs">도메인별 추출 (slam-3dgs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-slam-3dgs" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>🔀 <strong>도메인 재판정: 수집기 <code>ai-news</code> → 볼트 <code>slam-3dgs</code></strong> — 선례 <a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a>(같은 조직, 같은 기준으로 재판정). 평가 대상이 공간 추론·포인팅·궤적이고 <a href="../concepts/임바디드-ai" class="internal internal-link alias" data-slug="concepts/임바디드-ai">임바디드-AI</a> 누적선이 이 도메인에 있다.</p>
+<ul>
+<li><strong>현재 SOTA</strong>: 오픈 임바디드 VLM 중 28벤치 평균 1위(72.5, <strong>자체 재평가 기준</strong>). 🔴 전역 SOTA 아님 — 폐쇄 2종보다 낮고, 포인팅·궤적 범주는 <a href="../sources/hy-embodied" class="internal internal-link" data-slug="sources/hy-embodied">HY-Embodied</a>·Embodied-R1.5·RynnBrain이 앞선다.</li>
+<li><strong>실시간 가능성</strong>: 🔴 <strong>지연시간·제어 주파수 수치 0건.</strong> 액션 1청크 = 32토큰, 미래 프레임 1장 = 770토큰(3모달 × 256 + 경계 2) — <strong>미래 예측을 매 스텝 쓰면 실시간은 어렵다</strong>(볼트 추정, 측정 없음).</li>
+<li><strong>카메라 파이프라인</strong>: 입력 RGB(+이전 액션 청크 선택) → 출력 손목 궤적(카메라/로봇별 좌표계 <strong>비정렬</strong> — 저자: <em>“we do not impose a single globally canonicalized coordinate frame”</em>). 🔴 <strong>체화체 간 좌표 정규화를 하지 않았다</strong> — 궤적을 다른 로봇에 그대로 쓸 수 없다는 뜻.</li>
+<li><strong>응용 가능성</strong>: 🔴 볼트 직접 응용 경로 없음(로봇 미보유). 🎯 <strong>공간 VQA·포인팅 백본</strong>으로는 8B·2B 가중치가 공개돼 바로 시험 가능 — 단 라이선스 필드가 비어 있다(HF <code>cardData.license</code> 없음, GitHub license None).</li>
+<li><strong>필수 레퍼런스</strong>: <a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a>(액션 어휘) · 평가도구 <code>DeepCybo-PhysAI/PhysBrainEvalKit</code> · 비교축 <a href="../sources/hy-embodied" class="internal internal-link" data-slug="sources/hy-embodied">HY-Embodied</a>.</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>수집기 대조 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>✅ 원문 대조 일치: 업보트 166 · githubStars 44 · 저자 54 · org DeepCybo · 28벤치 평균 72.5 · 오픈 최고 14개 · “on par”(초록 원문) · 사람 영상 전량 사전학습 · SFT 혼합 · ActionPiece 동조직(HF API <code>organization.name</code> DeepCybo 확인) · 볼트 기보유.</li>
+<li>🔴 정정: 수집기 <em>“궤적 생성·미래 장면 예측은 정량 평가 없음”</em> → <strong>궤적은 부록 B.3에 오프라인 액션 토큰 퍼플렉시티 수치가 있다</strong>(17.12→5.07 / OOD 12.39→6.57). 결론 방향(폐루프 성능 미측정)은 <strong>유지</strong> — 저자 본인이 그렇게 적었다.</li>
+<li>📌 보강: 저자 54 = 개인 53명 + <code>&quot;DeepCybo Team&quot;</code> 항목 1개. 본문 “on par”는 초록에만 있고 본문·결론은 “approaches”.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>당장 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong><a href="../sources/physbrain" class="internal internal-link" data-slug="sources/physbrain">PhysBrain</a> 페이지 정정</strong>(1.0 = 사람 1인칭 영상 → 물리 상식 → VLA, “물리 법칙/과학 계산” 아님) — 오케스트레이터 반영 대상</li>
+<li><strong>ActionPiece ↔ PhysBrain 1.5 연결</strong> 기록 — “토크나이저 정책 실험(LIBERO 94.8%)“과 “본체 제어 성능(미측정)“을 분리해 적는다</li>
+<li>(낮음) 공간 VQA 필요 시 <code>PhysBrain1.5-2B</code> 로 RefSpatial·포인팅 약점 재현 확인 — 라이선스 먼저 확인</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 질문 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>1.5 본체를 LIBERO·SimplerEnv에서 폐루프로 돌리면? 1.0보다 나은가? (제어 벤치를 SFT에만 쓰고 평가에서 뺀 이유가 본문에 없다)</li>
+<li>경쟁 오픈 모델들도 SAT-Train·VSI-Train·RoboRefIt-Train 등을 썼는가? 안 썼다면 13개 벤치의 비교는 분포 내 우위다</li>
+<li>폐쇄 모델을 기본/높은 추론 설정으로 재면 격차는?</li>
+<li>미래 예측 1초 horizon의 정량 오차(깊이 오차·마스크 IoU)는?</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/physbrain" class="internal internal-link" data-slug="sources/physbrain">PhysBrain</a> — 1.0 (🔴 정정 필요)</li>
+<li><a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> — 액션 토크나이저(같은 조직, 같은 HF 컬렉션)</li>
+<li><a href="../sources/hy-embodied" class="internal internal-link" data-slug="sources/hy-embodied">HY-Embodied</a> — 오픈 비교축 1위 경쟁자(Hy-Embodied-VLM-1.0 66.0)</li>
+<li><a href="../concepts/임바디드-ai" class="internal internal-link alias" data-slug="concepts/임바디드-ai">임바디드-AI</a></li>
+<li><a href="../concepts/월드모델" class="internal internal-link alias" data-slug="concepts/월드모델">월드모델</a></li>
+<li><a href="../concepts/분포내-우위" class="internal internal-link alias" data-slug="concepts/분포내-우위">분포내-우위</a></li>
+<li><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a></li>
+<li><a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a></li>
+<li><a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a></li>
+<li><a href="../entities/alibaba" class="internal internal-link" data-slug="entities/alibaba">Alibaba</a> — 베이스 Qwen3-VL-8B/2B-Instruct</li>
+<li><a href="../sources/minimax-h3-physical-reasoning" class="internal internal-link" data-slug="sources/minimax-h3-physical-reasoning">MiniMax-H3-Physical-Reasoning</a> — 같은 배치, 물리세계 추론을 <strong>생성 모델</strong> 쪽에서 잰 제3자 평가</li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/papers/2609.14973" class="external external-link">https://huggingface.co/papers/2609.14973<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> · 본문 <a href="https://arxiv.org/html/2609.14973" class="external external-link">https://arxiv.org/html/2609.14973<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>레포: <a href="https://github.com/DeepCybo-PhysAI/PhysBrain-1.5" class="external external-link">https://github.com/DeepCybo-PhysAI/PhysBrain-1.5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> · 가중치: <a href="https://huggingface.co/collections/DeepCybo/physbrain-15" class="external external-link">https://huggingface.co/collections/DeepCybo/physbrain-15<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>볼트 실측(2026-09-19): HF papers API <code>upvotes</code> 166 · <code>githubStars</code> 44 · <code>authors</code> 54 · <code>organization.name</code> DeepCybo · <code>publishedAt</code> 2026-09-14 / GitHub API <code>stargazers_count</code> 44 · <code>forks_count</code> 0 · <code>open_issues_count</code> 1 · <code>created_at</code> 2026-09-08 · license None · 트리 5파일 / HF models API <code>DeepCybo/PhysBrain1.5-8B</code> <code>downloads</code> 357 · <code>likes</code> 25 · <code>cardData.base_model</code> Qwen/Qwen3-VL-8B-Instruct · <code>safetensors.total</code> 8,903,438,576 · <code>-2B</code> <code>downloads</code> 209 · <code>likes</code> 13 · base Qwen3-VL-2B-Instruct / 비교용 HF papers API 2605.15298(PhysBrain 1.0) <code>upvotes</code> 61 · <code>githubRepo</code> Phys-Brain/PhysBrain-VLA · <code>githubStars</code> 42 · 저자 13 / 2609.18487(ActionPiece) <code>upvotes</code> 39 · org DeepCybo / arXiv HTML 본문 전문 읽음(표 1~6, 부록 B.1·B.3; 한계 절 <strong>없음</strong>)</li>
+<li>신뢰도: ⭐⭐ (가중치 공개 · 28벤치 전량 게시 · 🔴 비교 모델 전원 자체 재평가 · 폐쇄 모델 최저 추론 설정 · 제어/예측 정량 0 · 학습 분할 다수 포함 · 코드 레포에 코드 없음)</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-846" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#physbrain-15-arxiv-260914973" data-for="physbrain-15-arxiv-260914973">PhysBrain 1.5 (arXiv 2609.14973)</a></li><li class="depth-1"><a href="#-전작동조직-대비--무엇이-바뀌었나" data-for="-전작동조직-대비--무엇이-바뀌었나">🔀 전작·동조직 대비 — 무엇이 바뀌었나</a></li><li class="depth-1"><a href="#일반-멀티모달--retaining의-실제-표-56-베이스-대비-전량" data-for="일반-멀티모달--retaining의-실제-표-56-베이스-대비-전량">일반 멀티모달 — “retaining”의 실제 (표 5·6, 베이스 대비 전량)</a></li><li class="depth-1"><a href="#도메인별-추출-slam-3dgs" data-for="도메인별-추출-slam-3dgs">도메인별 추출 (slam-3dgs)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/분포내-우위" class="internal">분포 내 우위</a></li><li><a href="../concepts/비매칭-비교" class="internal">비매칭 비교 — &quot;A가 B를 넘었다&quot; 앞에 조건이 같은지</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/slam-3dgs" class="internal">로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></li><li><a href="../entities/deepcybo" class="internal">DeepCybo — PhysBrain·ActionPiece 임바디드 AI 조직</a></li><li><a href="../sources/actionpiece" class="internal">ActionPiece — MSE로 액션 토크나이저를 평가하는 관행을 반증하고 PRC를 제시</a></li><li><a href="../sources/minimax-h3-physical-reasoning" class="internal">MiniMax-H3 물리세계 추론 평가 — 벤더가 0개 낸 숫자를 제3자가 처음 냈다: 41.97%</a></li><li><a href="../sources/physbrain" class="internal">PhysBrain 1.0 — 물리 법칙 추론 특화 멀티모달 모델</a></li><li><a href="../sources/reacthuman" class="internal">ReactHuman — MLLM이 3건 중 1건의 위험을 오처리하고, 규모로 줄지 않는다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

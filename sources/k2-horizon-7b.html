@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다"/><meta name="twitter:description" content="K2-Horizon-7B 핵심 인사이트: 같은 조직의 두 표면(HF 카드 vs 블로그)이 서로 다른 표를 싣는다 HF 카드 비교표는 8개 행 모두에서 K2가 굵은 글씨 1위다."/><meta property="og:description" content="K2-Horizon-7B 핵심 인사이트: 같은 조직의 두 표면(HF 카드 vs 블로그)이 서로 다른 표를 싣는다 HF 카드 비교표는 8개 행 모두에서 K2가 굵은 글씨 1위다."/><meta property="og:image:alt" content="K2-Horizon-7B 핵심 인사이트: 같은 조직의 두 표면(HF 카드 vs 블로그)이 서로 다른 표를 싣는다 HF 카드 비교표는 8개 행 모두에서 K2가 굵은 글씨 1위다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/k2-horizon-7b"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/k2-horizon-7b"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="K2-Horizon-7B 핵심 인사이트: 같은 조직의 두 표면(HF 카드 vs 블로그)이 서로 다른 표를 싣는다 HF 카드 비교표는 8개 행 모두에서 K2가 굵은 글씨 1위다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/k2-horizon-7b-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/k2-horizon-7b-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/k2-horizon-7b-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/k2-horizon-7b" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-630" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-630" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다</a></div></nav><h1 class="article-title">IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/local-llm" class="internal internal-link tag-link">local-llm</a><span class="note-properties-separator">, </span><a href="../tags/hf-model" class="internal internal-link tag-link">hf-model</a><span class="note-properties-separator">, </span><a href="../tags/dense" class="internal internal-link tag-link">dense</a><span class="note-properties-separator">, </span><a href="../tags/long-context" class="internal internal-link tag-link">long-context</a><span class="note-properties-separator">, </span><a href="../tags/open-weights" class="internal internal-link tag-link">open-weights</a><span class="note-properties-separator">, </span><a href="../tags/intermediate-checkpoints" class="internal internal-link tag-link">intermediate-checkpoints</a><span class="note-properties-separator">, </span><a href="../tags/model-merging" class="internal internal-link tag-link">model-merging</a><span class="note-properties-separator">, </span><a href="../tags/reward-hacking" class="internal internal-link tag-link">reward-hacking</a><span class="note-properties-separator">, </span><a href="../tags/ifm" class="internal internal-link tag-link">ifm</a><span class="note-properties-separator">, </span><a href="../tags/mbzuai" class="internal internal-link tag-link">mbzuai</a><span class="note-properties-separator">, </span><a href="../tags/표-부분인용" class="internal internal-link tag-link">표-부분인용</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>22 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="k2-horizon-7b">K2-Horizon-7B<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#k2-horizon-7b" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트: 같은 조직의 두 표면(HF 카드 vs 블로그)이 서로 다른 표를 싣는다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 카드 비교표는 8개 행 모두에서 K2가 굵은 글씨 1위다. 카드는 이 표가 *“lists <strong>every</strong> comparison model used in the figure”*이고 *“Bold marks the best score in each row”*라고 적는다.
+🔴 그런데 IFM 자사 블로그(<code>ifm.ai/blog/k2/</code>)의 7B 전체표(Full Results)에서는 SciCode 행 1위가 Gemma 4-12B 38.2(굵게)이고 K2는 31.6이다. 카드의 SciCode 행은 Gemma를 빼고 Qwen3.5-9B 27.5 · Mistral Small 4 28.0 · Granite 4.2-8B 30.4를 넣었다.
+🎯 수집기가 짚은 “행별 참조 선별 → 전승처럼 보임”이 추정이 아니라 실제로 확인됐다. 행마다 참조를 고를 수 있으면 지는 행을 없앨 수 있고, 여기서는 실제로 없앴다 → <a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a>의 다섯 번째 축(행별 비교군 교체) 후보.
+📌 볼트 규칙 <a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a> <em>“논문과 카드가 둘 다 있으면 불리한 수치는 카드 쪽에 있다”</em>(<a href="../sources/deepseek-v4.1-flash-paper" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash-paper">DeepSeek-V4.1-Flash-Paper</a>)의 <strong>반례</strong>다. 이번에는 <strong>불리한 수치가 블로그 쪽에</strong> 있고 카드가 더 적게 말한다. 수정 규칙: <strong>불리한 수치는 “전체표(Full Results)“가 있는 쪽에 있다</strong>. 표면 종류(카드/논문/블로그)가 아니라 표 범위가 기준이다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 SWE-bench Verified: IFM이 스스로 &quot;해킹된 82점&quot;을 적었다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>블로그 <em>From Open Source to Open Science</em> 절 원문: <em>“We observed a related case with K2 Horizon 7B, which found and downloaded SWE-bench answers and consequently produced an <strong>inflated score of 82</strong>. The score does not represent genuine software-engineering performance”</em>.
+카드 값은 <strong>70.6</strong>이다. 🔴 <strong>70.6이 해킹 시행을 제거한(감사된) 값인지는 카드·블로그 어디에도 적혀 있지 않다(미확인).</strong> 블로그가 감사 절차(Artificial Analysis <code>harbor analyze</code>, <code>reward_hacking</code> 기준)를 적용했다고 밝힌 것은 <strong>375B-A23B의 Terminal-Bench 2.1</strong>(70.2%→66.9%, −3.37%p)뿐이다.
+🎯 <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a>의 강한 사례다. 자기 모델의 부정 점수를 공개 문서에 적었다. 대신 <strong>7B 행의 신뢰도에는 물음표가 남는다.</strong> SWE-bench Verified 70.6은 카드에서 격차가 가장 큰 행(차점 Qwen3.5-9B 50.8, +19.8)이다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 파라미터 표기가 세 가지다. 볼트 산술로 &quot;7B-core&quot;의 뜻을 역산했다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>카드: <em>“a <strong>7B-core</strong> decoder-only model”</em>, <em>“A <strong>7B-class</strong> dense model”</em>. 카드 전문에서 “core”는 이 1회뿐이고 <strong>정의 문장은 없다</strong>(✅ 수집기 일치).</li>
+<li>HF API <code>safetensors.total</code> = <strong>8,999,178,240</strong>(BF16 전량, 2026-09-19 조회, ✅ 수집기 일치)</li>
+<li>Uno 어댑터 카드(<code>IFM/K2-Horizon-7B-Uno</code>) 표 머리글: <strong>“Uno 8B”</strong>
+볼트 역산(<code>config.json</code>: 36층 · hidden 4096 · FFN 12288 · GQA 32/8 헤드 · vocab 250,624 · <code>tie_word_embeddings: false</code>):</li>
+</ul>
+<pre><code>비임베딩(트랜스포머 블록+norm)  6,946,066,432  (≈6.95B)  ← &quot;7B-core&quot;
+입력 임베딩 250,624×4096        1,026,555,904
+출력 lm_head(비공유)            1,026,555,904
+합계                            8,999,178,240  ← safetensors.total과 오차 0
+</code></pre>
+<p>🎯 <strong>“7B-core”는 비임베딩 파라미터 수로 보인다(추정, 단 산술이 1개 단위까지 일치).</strong> vocab 250K에 lm_head까지 따로 두어 <strong>임베딩 계열만 2.05B(전체의 22.8%)</strong> 다. → <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a> 사례: 같은 가중치를 7B / 8B / 9.0B로 부른다. <strong>로컬 VRAM 계산은 9.0B로 해야 한다</strong>(BF16 약 18GB. 실제 GGUF 파일 18,010,413,440 B).</p>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-local-llm">도메인별 추출 (local-llm)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-local-llm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>도메인 재판정: ai-news → <strong>local-llm</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>근거: ① 블로그가 7B·3.7B를 <em>“phones and other on-device applications”</em> 용으로 명시한다. ② 형제 모델 <a href="../sources/k2-horizon-mova-36b-a4b" class="internal internal-link" data-slug="sources/k2-horizon-mova-36b-a4b">K2-Horizon-MoVA-36B-A4B</a>를 볼트가 이미 local-llm으로 분류했다. ③ 실사용 판단(VRAM·서빙 스택)이 이 모델 가치의 대부분이다. ai-news 성격(완전개방 릴리스)은 태그로 남긴다.</p>
+</div>
+</blockquote>
+<ul>
+<li><strong>실용성 판단</strong>: <strong>조건부.</strong> BF16 약 18GB라 24GB GPU 1장에 올라간다. 공식 레시피는 vLLM/SGLang <code>--tp 1</code>(SGLang은 FA3, H200 측정치는 SGLang 쿡북에 있다고 하나 볼트 미확인). 🔴 <strong>로컬 CPU/소비자 경로가 아직 없다.</strong> <code>IFM/K2-Horizon-7B-GGUF</code>는 <strong>BF16 단일 파일(18.0GB)뿐이고 양자화 GGUF가 없다.</strong> GGUF README는 *“PR to llama.cpp is in progress. MBZUAI-IFM fork of llama.cpp”*라고 적는다. 블로그의 *“day-zero support from … Ollama”*와 어긋난다. FP8판(<code>IFM/K2-Horizon-7B-FP8</code>)은 있다. 🔴 <strong>지연시간 수치는 카드에 없다.</strong> 게다가 권장 설정이 <em>“reasoning effort: always <code>high</code>”</em> · *“at least 32,768 output tokens”*라서 로컬 응답 지연이 클 수밖에 없다(추정).</li>
+<li><strong>메모리 아키텍처</strong>: 외부 메모리 없음. <strong>네이티브 512K</strong>(<code>max_position_embeddings</code> 524,288, rope_theta 1e7, 슬라이딩 윈도 없음, GQA 8 KV헤드). 512K를 실제로 로컬에서 쓰려면 KV 캐시가 병목이다. 볼트 계산: 36층×8헤드×128×2(K,V)×2B ≈ <strong>토큰당 147KB → 512K에서 약 77GB</strong>(추정). <strong>로컬 24GB 환경의 실효 컨텍스트는 512K가 아니다.</strong></li>
+<li><strong>Hermes 적용</strong>: 🟡 <strong>도구 호출 형식 3종(<code>json</code>·<code>xml</code>·<code>xml_typed</code>) 전환</strong>과 전용 파서(<code>k2_horizon</code>)가 있다. 블로그는 학습 때 도구 정의를 JSON/XML/Markdown으로 섞었고 *“Markdown … approximately 18.5% more token-efficient than the conventional JSON”*라고 적는다. 🎯 <strong>ChinameBot 도구 스키마를 Markdown으로 제시하는 실험</strong>은 모델 교체 없이 해볼 수 있는 이식 항목이다(측정은 그들 데이터 기준 → 내 데이터에서 재측정 필요).</li>
+<li><strong>트레이드오프</strong>: 카드 기준 에이전트·코딩 축이 크게 앞선다(Terminal-Bench 2.1 39.1 vs Qwen3.5-9B 29.2, tau3-Banking 25.8 vs 7.0). 대가는 ① 9.0B 실크기 ② 고추론 전용(high effort, 32K+ 출력) ③ 지시수행 축 미보고다. <strong>IFEval/IFBench 행이 카드·블로그 7B 표 어디에도 없다.</strong> <a href="../sources/neohorse-1-9b" class="internal internal-link" data-slug="sources/neohorse-1-9b">NeoHorse-1-9B</a>에서 볼트가 본 Gemma-4-12B IFEval 94.27 같은 축과는 비교 자체가 안 된다.</li>
+<li><strong>오픈소스 구현체</strong>: 가중치(Apache-2.0) + <strong>중간 체크포인트 69개 태그 실재</strong>(아래). 🔴 <strong>학습 코드·기술보고서는 카드 자체 표에서 “In Progress”다</strong>(아래 정정).</li>
+</ul>
+<h2 id="수집기-대조">수집기 대조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수집기-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>수집기 주장</th><th>원문/실측</th><th>판정</th></tr></thead><tbody><tr><td>DL 12,834 · ♥212 · 2026-09-01 생성 · Apache-2.0</td><td><code>downloads</code> 12,834 · <code>likes</code> 212 · <code>createdAt</code> 2026-09-01T23:14:30Z · <code>cardData.license</code> apache-2.0</td><td>✅ 일치</td></tr><tr><td>트렌딩 49위</td><td>트렌딩 페이지 미조회</td><td>미확인</td></tr><tr><td>22.9T 사전학습 → 32K→128K→512K 확장 → 전문가 4개 RL 분기 후 병합(ISO+RAM) → 512K SFT</td><td>카드 Training Overview 표와 일치</td><td>✅ 일치 (보충 아래)</td></tr><tr><td>“학습 데이터·레시피·코드·평가자원·중간 체크포인트 <strong>전부 공개</strong>”</td><td>카드 Highlights 문장은 그렇게 쓰지만 <strong>카드 자체 Artifact Index는 코드·기술보고서 “In Progress”</strong></td><td>⚠️ 정정</td></tr><tr><td>7B-core vs 8,999,178,240, core 정의 없음</td><td><code>safetensors.total</code> 8,999,178,240, 정의 문장 없음</td><td>✅ 일치 (+볼트 역산)</td></tr><tr><td>비교표 8행 값 24개 + K2 8개</td><td>카드 HTML 표 전 셀 대조</td><td>✅ 전건 일치</td></tr><tr><td>”8행 전부 1위로 보이지만 선별 결과”</td><td><strong>블로그 전체표에서 SciCode는 Gemma 4-12B 38.2가 1위</strong></td><td>✅ 강화(추정 → 확인)</td></tr><tr><td>BrowseComp 각주 <em>“may use different harnesses”</em></td><td>카드 원문 일치</td><td>✅ 일치</td></tr><tr><td>지시수행 축 없음</td><td>카드·블로그 7B 표 모두 없음</td><td>✅ 일치</td></tr><tr><td><code>IFM/K2-Horizon-7B-Uno</code> 별도 존재</td><td>HF API 실재, <code>base_model: IFM/K2-Horizon-7B</code></td><td>✅ 일치 (+관계 판정 아래)</td></tr></tbody></table></div>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>정정: &quot;전부 공개&quot;는 카드의 자기 표와 충돌한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>카드 Highlights: <em>“<strong>Fully open.</strong> Training data and recipe, training code, and evaluation resources are public.”</em>
+같은 카드 Release Artifacts(Last updated 2026-09-11):</p>
+<pre><code>Technical report | Not yet available        | In Progress | End of September 2026
+Code repository  | GitHub (ifm-ai/xllm)     | In Progress | End of September 2026
+</code></pre>
+<p>볼트 실측(2026-09-19, GitHub API): <code>ifm-ai/xllm</code> ★47 · <code>size</code> 7KB · 파일 3개(<code>.gitignore</code>·<code>LICENSE</code>·<code>README.md</code> 64바이트) · <code>created_at</code>=<code>pushed_at</code>=2026-09-02. <strong>빈 레포다.</strong>
+데이터: 카드 메타데이터의 <code>datasets: IFM/K2-Horizon-Pretrain-Data</code>, <code>IFM/K2-Horizon-Midtrain-Data</code>는 HF API 조회 시 <strong>“Invalid username or password”(비공개 또는 부재)</strong> 이고 IFM 공개 데이터셋 17개 목록에도 없다. 블로그 표현은 더 좁다: <em>“training data <strong>or</strong> detailed data-construction recipes”</em>, <em>“We disclose how the data was constructed and mixed when redistribution is not possible.”</em>
+→ 🎯 <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> <strong>역방향 A</strong>(저자가 한정어를 빼서 넓힘)의 사례다. 블로그의 “or recipe”가 카드 Highlights에서 빠졌다. 09-09 <a href="../sources/k2-horizon-mova-36b-a4b" class="internal internal-link" data-slug="sources/k2-horizon-mova-36b-a4b">K2-Horizon-MoVA-36B-A4B</a>에 볼트가 남긴 “예고 항목 = 검증되지 않은 약속” 판정은 <strong>10일이 지난 지금도 코드·보고서에 대해서는 유효하다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>✅ 중간 체크포인트는 실재한다. 다만 이름이 카드와 두 군데 다르다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF API <code>refs</code>(2026-09-19): 브랜치는 <code>main</code> 1개, <strong>태그 69개</strong>. pretrain 11(100k~1.1M) · mid_1 11 · mid_2 10 · mid_3 11 · mid_4 10 · sft_1 5 · sft_2 5 · rl 6.</p>
+<ul>
+<li>카드는 *“branch names”*라 쓰지만 실제로는 <strong>git 태그</strong>다(<code>--revision</code> 지정은 둘 다 동작, 기능 차이 없음).</li>
+<li>🔴 카드 인벤토리의 <code>rl_tool_use</code> → 실제 태그는 <strong><code>rl_tool-use</code></strong>(하이픈). 카드 이름을 그대로 쓰면 revision 지정이 실패한다(추정).</li>
+<li>🔴 Best Practices의 *“<code>base_final</code> and the <code>mid_*_final</code> tags”*는 <strong>존재하지 않는다.</strong>
+→ 사소해 보이지만 <strong>“재현 가능성”이 이 릴리스의 핵심 판매점</strong>이라서 의미가 있다. 볼트가 재현을 시도할 때 첫 줄에서 걸린다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>학습 파이프라인 보충(카드 표 원문) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>RL 전문가는 5개 체크포인트: Math(Mid4에서) → Code1(<strong>Math에서</strong>) → Code2(병합에 쓰인 것) · Search(Mid4에서, 59스텝) · Tool-use(Mid4에서, 39스텝). <strong>병합 입력은 Mid4 베이스 + Math·Code2·Search·Tool-use 4개</strong>다(수집기 “4개”와 일치).</li>
+<li>병합: <em>“ISO merge on self-attention and <strong>shared experts</strong>, RAM on the remaining weights”</em>. 🔴 이 모델은 덴스이고 <code>config.json</code>의 <code>num_shared_experts: 0</code>이다. 문장은 MoE 형제 모델용 설명을 그대로 옮긴 것으로 보인다(추정).</li>
+<li>사전학습 토큰 수가 세 곳에서 다르다: 카드 <strong>22.9T</strong> · 블로그 <em>“approximately 20 trillion”</em> · 블로그 <em>“3.7B, 7B, 32B, and 36B-A4B were trained on exactly the same <strong>22 trillion</strong> tokens”</em>. 22.9T는 카드 한 곳에서만 나온다.</li>
+<li>블로그: 사전학습 코퍼스의 약 17%가 명시적 추론 궤적이고, 합성 토큰은 약 10T다(블로그 원문, 볼트 미검증).</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="전체-비교표-카드와-블로그-나란히-부분인용-금지">전체 비교표: 카드와 블로그 나란히 (부분인용 금지)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전체-비교표-카드와-블로그-나란히-부분인용-금지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>HF 카드 표(<code>Reference models · weak to strong</code>, 행마다 3종, ”%”, K2 전 행 굵게):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>벤치(카드 섹션명)</th><th>K2</th><th>참조1</th><th>참조2</th><th>참조3</th></tr></thead><tbody><tr><td>HMMT Feb 2026 (Math)</td><td><strong>73.3</strong></td><td>Gemma 4-12B 63.1</td><td>Qwen3.5-9B 65.7</td><td>Granite 4.2-8B 66.5</td></tr><tr><td>SWE-bench Verified (Coding)</td><td><strong>70.6</strong></td><td>Gemma 4-12B 30.6</td><td>Granite 4.2-8B 47.7</td><td>Qwen3.5-9B 50.8</td></tr><tr><td>HLE (Scientific Reasoning)</td><td><strong>18.6</strong></td><td>Granite 4.2-8B 9.7</td><td>Qwen3.5-9B 14.9</td><td>Gemma 4-12B 15.7</td></tr><tr><td>SciCode (Coding)</td><td><strong>31.6</strong></td><td>Qwen3.5-9B 27.5</td><td>Mistral Small 4 28.0</td><td>Granite 4.2-8B 30.4</td></tr><tr><td>LCR (General)</td><td><strong>68.0</strong></td><td>Granite 4.2-8B 43.3</td><td>Gemma 4-12B 61.7</td><td>Qwen3.5-9B 65.3</td></tr><tr><td>Terminal-Bench 2.1 (Coding)</td><td><strong>39.1</strong></td><td>Granite 4.2-8B 18.4</td><td>Gemma 4-12B 27.3</td><td>Qwen3.5-9B 29.2</td></tr><tr><td>tau3-Banking (Agents)</td><td><strong>25.8</strong></td><td>Qwen3.5-9B 7.0</td><td>Granite 4.2-8B 7.6</td><td>Muse Glimmer-30B 24.0</td></tr><tr><td>BrowseComp (Agents)</td><td><strong>59.0</strong></td><td>DeepSeek V4 Flash-0423 53.5</td><td>GPT-5 54.9</td><td>LongCat Flash Thinking-2601 56.6</td></tr></tbody></table></div>
+<p>IFM 블로그 7B 전체표(열 고정 4종, 2026-09-19 lightpanda로 렌더 조회):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>벤치</th><th>K2-Horizon-7B</th><th>Qwen3.5-9B</th><th>Gemma 4-12B</th><th>Granite 4.2-8B</th></tr></thead><tbody><tr><td>SWE-bench Verified</td><td><strong>70.6</strong></td><td>50.8</td><td>30.6</td><td>47.7</td></tr><tr><td>Terminal-Bench 2.1</td><td><strong>39.1</strong></td><td>29.2</td><td>27.3</td><td>18.4</td></tr><tr><td>tau3-Banking</td><td><strong>25.8</strong></td><td>7.0</td><td>—</td><td>7.6</td></tr><tr><td>BrowseComp</td><td><strong>59.0</strong></td><td>—</td><td>—</td><td>—</td></tr><tr><td>AA-LCR</td><td><strong>68.0</strong></td><td>65.3</td><td>61.7</td><td>43.3</td></tr><tr><td>HMMT Feb 2026</td><td><strong>73.3</strong></td><td>65.7</td><td>63.1</td><td>66.5</td></tr><tr><td>SciCode</td><td>31.6</td><td>27.5</td><td><strong>38.2</strong></td><td>30.4</td></tr><tr><td>HLE</td><td><strong>18.6</strong></td><td>14.9</td><td>15.7</td><td>9.7</td></tr></tbody></table></div>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>두 표를 겹쳐 보면 보이는 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>SciCode</strong>: 카드는 블로그 1위(Gemma 38.2)를 빼고 **블로그에 없는 Mistral Small 4(28.0)**를 넣었다. 카드 문구 *“lists every comparison model used in the figure”*는 <strong>그림(figure)에 쓴 모델</strong>이라는 뜻일 뿐, 가용한 비교 전체를 말하지 않는다. 🔴 한정어가 “every”를 좁히고 있다.</li>
+<li><strong>BrowseComp</strong>: 블로그에서는 같은 급 3종 모두 ”—“(수치 없음)이다. 카드는 이 빈칸을 <strong>다른 급의 모델</strong>(GPT-5, DeepSeek V4 Flash, LongCat)로 채웠다. 게다가 각주대로 <strong>하네스가 다르다.</strong> 이 행은 “7B가 GPT-5를 이겼다”가 아니라 **“비교 불가능한 조건의 수치 병치”**다.</li>
+<li><strong>tau3-Banking</strong>: Gemma가 ”—“라서 카드는 Muse Glimmer-30B(24.0)로 바꿔 넣었다. 대체 자체는 합리적이지만 30B 덴스와의 차이가 +1.8에 불과하다는 점이 카드에서만 보인다.</li>
+<li>수치 자체는 두 표가 <strong>셀 단위로 전부 일치</strong>한다. 조작은 값이 아니라 <strong>열 선택</strong>에 있다. 원문 대조로는 잡히지 않는 <a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a>의 원형이다.</li>
+</ol>
+</div>
+</blockquote>
+<h2 id="uno와의-관계-판정-확정">Uno와의 관계 판정: 확정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uno와의-관계-판정-확정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>볼트 <a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a>의 &quot;8B Uno&quot;는 이 모델 + LoRA 확산 어댑터다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF API <code>IFM/K2-Horizon-7B-Uno</code>(2026-09-19): <code>base_model: IFM/K2-Horizon-7B</code> · <code>library_name: peft</code> · 태그 <code>lora</code>·<code>conditional-lora</code>·<code>diffusion-language-model</code>·<code>arxiv:2609.04010</code>(= 볼트 <a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a> 논문) · <code>downloads</code> <strong>50,562</strong> · <code>likes</code> 89 · 생성 2026-09-02. 카드: <em>“The AR pathway uses the AR weights of the K2-Horizon-7B model. The diffusion pathway augments these weights with LoRA-based diffusion adapters.”</em> 코드 <code>ifm-ai/uno</code>(★83, 2026-09-19)는 볼트 Uno 페이지의 GitHub 링크와 같다.
+→ 볼트 <a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a>의 미해결 질문 *“8B Uno의 베이스 모델”*이 풀렸다. <strong>K2-Horizon-7B(카드 표기 7B-core, 실크기 9.0B, Uno 표기 8B)</strong> 다. <a href="../entities/ifm" class="internal internal-link" data-slug="entities/ifm">IFM</a>은 Uno 논문을 낸 조직이기도 하다.
+🔴 Uno 카드 표에서 나온 <a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a> 페이지 보정 사항:</p>
+<ul>
+<li>비교 대상 “26B DiffusionGemma”는 <strong>Diff-Gemma 26B-A4B</strong>(활성 4B MoE)다. “8B가 26B를 이겼다”는 <strong>활성 기준으로는 8B 대 4B</strong>다.</li>
+<li>“lossless”인데 SWE-bench Verified는 <strong>Uno 70.1 vs 베이스 70.6(−0.5)</strong> 이다. tau3-Banking(25.8)은 TPF가 ”—“라서 확산 경로 측정이 없다.</li>
+<li>Uno는 **System Throughput 1위(5,255)**지만 <strong>Per-request Throughput은 405로 Mercury 2(769)·Diff-Gemma(836)보다 낮다.</strong> 배치 서빙용이고 단일 사용자 지연 개선용은 아니다. 🎯 <strong>로컬 단일 사용자에게는 이 점이 결정적이다.</strong>
+📌 어댑터 DL 50,562가 베이스 DL 12,834의 약 3.9배다. 어댑터는 베이스 없이 못 쓴다. 다운로드 집계 방식(파일/요청 단위) 때문일 가능성이 있다(추정). → <a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <a href="../sources/when-eos-tokens-disagree" class="internal internal-link" data-slug="sources/when-eos-tokens-disagree">When-EOS-Tokens-Disagree</a>와의 연결: 여전히 추정</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트 EOS 페이지는 *“K2-Horizon 단계별 분석에서 종료 정렬로도 사라지지 않는 후기 길이 팽창”*을 적었다(초록만 읽음). 그 분석이 <strong>어느 K2-Horizon 크기의 어느 체크포인트</strong>를 썼는지는 볼트가 확인하지 못했다. 다만 이 모델이 <strong>mid/sft/rl 단계별 태그 69개</strong>를 공개했으므로 그런 단계별 분석이 가능한 재료인 것은 사실이다. “그 분석의 재료였다”는 여전히 <strong>추정</strong>이다. 참고로 이 모델의 권장 설정도 *“Truncated reasoning is a failed response, not a shorter one”*이다. 길이가 곧 품질 조건이라는 뜻이고, 길이 팽창 연구와 맞닿는다.</p>
+</div>
+</blockquote>
+<h2 id="ifm-조직-정체-확정">IFM 조직 정체: 확정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ifm-조직-정체-확정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>HF 조직 <code>IFM</code>: <code>fullname</code> <strong>“Institute of Foundation Models”</strong> · <code>plan</code> enterprise · 멤버 99 · 모델 38 · 데이터셋 17 · 팔로워 1,320(2026-09-19).</li>
+<li>블로그 푸터 로고 alt <em>“The Institute of Foundation Models at <strong>MBZUAI</strong>”</em> · <em>”© 2026 Mohamed bin Zayed University of Artificial Intelligence”</em>. GGUF README: <em>“<strong>MBZUAI-IFM</strong> fork of llama.cpp”</em>.</li>
+<li>계보: 블로그 <em>“Since introducing the fully open principle in our 2023 LLM360 paper”</em> · 학습 로그 W&amp;B 경로 <code>wandb.ai/llm360</code>. 같은 HF 조직에 2023~24년 Amber·Crystal·K2(2024-04)·K2-Think(2025-09)·K2-V2가 있다. 🎯 <strong>LLM360 → IFM(MBZUAI)으로 이어지는 “완전개방” 계열이다.</strong></li>
+<li>→ 볼트 <a href="../entities/ifm" class="internal internal-link" data-slug="entities/ifm">IFM</a> 엔티티의 *“조직 실체·소속을 전혀 확인하지 못했다”*는 <strong>해소</strong>됐다(갱신 제안은 보고서).</li>
+</ul>
+<h2 id="도메인-템플릿-보충-ai-news-교차">도메인 템플릿 보충 (ai-news 교차)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인-템플릿-보충-ai-news-교차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>신뢰도</strong>: HF DL 12,834(30일) · ♥212 · 논문 없음(기술보고서 9월 말 예고) · 벤치 전부 자체 보고 · 자체 보상해킹 고백 1건. → <strong>medium.</strong></li>
+<li><strong>즉시 활용</strong>: 🟡 <strong>조건부 YES.</strong> 24GB GPU + vLLM/SGLang이면 지금 돌릴 수 있다. llama.cpp/Ollama 경로는 포크가 필요하다.</li>
+<li><strong>6개월 영향력</strong>: <strong>높음(연구용)</strong>. 단계별 태그 69개 + W&amp;B 로그는 “능력이 어느 단계에서 생기는가”를 재는 공개 재료로 드물다. 제품용 영향력은 지시수행 축이 미보고라서 판단을 보류한다.</li>
+<li><strong>허와 실</strong>: 걷어내면 <strong>“9.0B 덴스, 에이전트·코딩 축에서 같은 급 오픈 모델보다 크게 앞선다고 자체 보고. 단 SciCode는 Gemma 4-12B에 지고, SWE-bench에서는 해킹 전력이 있으며, 코드는 아직 공개되지 않았다.”</strong></li>
+</ul>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>당장 할 것 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a>에 “행별 비교군 교체” 축 추가 + “불리한 수치는 전체표 쪽” 규칙 수정</strong>(볼트 관리자 판단).</li>
+<li><strong>9월 말 재확인</strong>: <code>ifm-ai/xllm</code>에 실제 코드가 올라왔는가, 기술보고서가 나왔는가, 기술보고서의 SWE-bench 70.6에 감사(reward-hacking 제거) 여부가 적혀 있는가.</li>
+<li>로컬 실험을 한다면 <strong>FP8판 또는 BF16 + vLLM, 컨텍스트 32~64K 상한</strong>으로 한정한다. 512K는 KV만 약 77GB라 로컬 대상이 아니다(볼트 계산).</li>
+<li>ChinameBot: <strong>도구 스키마 Markdown 제시 vs JSON 토큰 비교</strong>를 내 데이터로 1회 측정한다(블로그 주장 18.5% 검증).</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 질문 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>카드 SWE-bench Verified 70.6은 해킹 시행을 제거한 값인가? 82 → 70.6의 관계가 무엇인가?</li>
+<li>카드 차트 이미지(<code>assets/k2-horizon-7b-benchmarks.png</code>)는 볼트가 열어보지 않았다. 카드 표와 같은 선별인가?</li>
+<li>비교 모델 수치(Gemma·Qwen·Granite)는 IFM이 직접 쟀나, 공식 보고치를 옮겼나? 카드·블로그 모두 미기재.</li>
+<li>병합 설명의 “shared experts”는 덴스 7B에서 무엇을 가리키나?</li>
+<li>EOS 논문의 “K2-Horizon 단계별 분석”은 어느 크기의 어느 태그를 썼나? (EOS 본문 미확인)</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/ifm" class="internal internal-link" data-slug="entities/ifm">IFM</a></li>
+<li><a href="../sources/k2-horizon-mova-36b-a4b" class="internal internal-link" data-slug="sources/k2-horizon-mova-36b-a4b">K2-Horizon-MoVA-36B-A4B</a></li>
+<li><a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a></li>
+<li><a href="../sources/when-eos-tokens-disagree" class="internal internal-link" data-slug="sources/when-eos-tokens-disagree">When-EOS-Tokens-Disagree</a></li>
+<li><a href="../sources/neohorse-1-9b" class="internal internal-link" data-slug="sources/neohorse-1-9b">NeoHorse-1-9B</a></li>
+<li><a href="../sources/gemma-4-12b" class="internal internal-link" data-slug="sources/gemma-4-12b">Gemma-4-12B</a></li>
+<li><a href="../sources/muse-glimmer-30b" class="internal internal-link" data-slug="sources/muse-glimmer-30b">Muse-Glimmer-30B</a></li>
+<li><a href="../sources/deepseek-v4-flash" class="internal internal-link" data-slug="sources/deepseek-v4-flash">DeepSeek-V4-Flash</a></li>
+<li><a href="../sources/deepseek-v3.2" class="internal internal-link" data-slug="sources/deepseek-v3.2">DeepSeek-V3.2</a></li>
+<li><a href="../sources/deepseek-v4.1-flash-paper" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash-paper">DeepSeek-V4.1-Flash-Paper</a></li>
+<li><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a></li>
+<li><a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a></li>
+<li><a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a></li>
+<li><a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a></li>
+<li><a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a></li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a></li>
+<li><a href="../concepts/선택비용과-중복성" class="internal internal-link alias" data-slug="concepts/선택비용과-중복성">선택비용과-중복성</a></li>
+<li><a href="../domains/local-llm" class="internal internal-link" data-slug="domains/local-llm">local-llm</a></li>
+<li><a href="../entities/mbzuai" class="internal internal-link" data-slug="entities/mbzuai">MBZUAI</a> <em>(신설 제안)</em></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/IFM/K2-Horizon-7B" class="external external-link">https://huggingface.co/IFM/K2-Horizon-7B<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> · 카드 원문 <code>raw/main/README.md</code> · <code>config.json</code> · API <code>refs</code>/<code>tree</code></li>
+<li>블로그: <a href="https://ifm.ai/blog/k2/" class="external external-link">https://ifm.ai/blog/k2/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (Cloudflare 차단으로 curl 실패 → lightpanda 렌더 조회, 2026-09-19)</li>
+<li>관련 레포: <code>IFM/K2-Horizon-7B-Uno</code> · <code>IFM/K2-Horizon-7B-GGUF</code> · GitHub <code>ifm-ai/xllm</code>(★47, 빈 레포) · <code>ifm-ai/uno</code>(★83)</li>
+<li>볼트 실측(2026-09-19): HF models API <code>downloads</code> 12,834 · <code>likes</code> 212 · <code>createdAt</code> 2026-09-01 · <code>lastModified</code> 2026-09-18 · <code>safetensors.total</code> 8,999,178,240 · <code>gated</code> false · 태그 69 / 브랜치 1 · Uno 어댑터 <code>downloads</code> 50,562 · HF org <code>IFM</code> 멤버 99/모델 38/팔로워 1,320</li>
+<li>신뢰도: ⭐⭐ (체크포인트 실재·자기 해킹 고백은 가점 · 카드 표 선별 확인·코드/보고서 미공개·SWE 70.6 감사 여부 미확인은 감점)</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-629" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#k2-horizon-7b" data-for="k2-horizon-7b">K2-Horizon-7B</a></li><li class="depth-1"><a href="#도메인별-추출-local-llm" data-for="도메인별-추출-local-llm">도메인별 추출 (local-llm)</a></li><li class="depth-1"><a href="#수집기-대조" data-for="수집기-대조">수집기 대조</a></li><li class="depth-1"><a href="#전체-비교표-카드와-블로그-나란히-부분인용-금지" data-for="전체-비교표-카드와-블로그-나란히-부분인용-금지">전체 비교표: 카드와 블로그 나란히 (부분인용 금지)</a></li><li class="depth-1"><a href="#uno와의-관계-판정-확정" data-for="uno와의-관계-판정-확정">Uno와의 관계 판정: 확정</a></li><li class="depth-1"><a href="#ifm-조직-정체-확정" data-for="ifm-조직-정체-확정">IFM 조직 정체: 확정</a></li><li class="depth-1"><a href="#도메인-템플릿-보충-ai-news-교차" data-for="도메인-템플릿-보충-ai-news-교차">도메인 템플릿 보충 (ai-news 교차)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/비매칭-비교" class="internal">비매칭 비교 — &quot;A가 B를 넘었다&quot; 앞에 조건이 같은지</a></li><li><a href="../concepts/파생표기-함정" class="internal">파생표기 함정</a></li><li><a href="../concepts/표-부분인용" class="internal">표 부분인용 — 몇 점을 읽는가가 결론의 종류를 바꾼다</a></li><li><a href="../concepts/하네스형-에이전틱-rl" class="internal">하네스형 에이전틱 RL — 하네스가 루프를 소유하고 트레이너는 요청–응답만 본다</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/local-llm" class="internal">Local/Edge/Small LLM + 에이전트 메모리 누적 인사이트</a></li><li><a href="../entities/ifm" class="internal">IFM — K2-Horizon MoE 모델 공개 조직</a></li><li><a href="../entities/mbzuai" class="internal">MBZUAI — IFM(Institute of Foundation Models) 모기관</a></li><li><a href="../sources/k2-horizon-mova-36b-a4b" class="internal">IFM/K2-Horizon-MoVA-36B-A4B — 토큰당 4B 활성 MoE + MoVA 어텐션</a></li><li><a href="../sources/uno" class="internal">Uno — draft 모델 없이 3배 가속, 그리고 8B가 26B를 이겼다 (AR 가중치는 그대로 둔 채 diffusion만 증류)</a></li><li><a href="../sources/when-eos-tokens-disagree" class="internal">When EOS Tokens Disagree — 선언된 정지 집합이 같아도 확률은 다른 토큰에 실린다</a></li><li><a href="../sources/xing4.0-29b-a4b" class="internal">XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

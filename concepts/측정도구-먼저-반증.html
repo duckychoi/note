@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라"/><meta name="twitter:description" content="측정도구 먼저 반증 2026-09-18 — 🔴 trendingScore: None 3연속."/><meta property="og:description" content="측정도구 먼저 반증 2026-09-18 — 🔴 trendingScore: None 3연속."/><meta property="og:image:alt" content="측정도구 먼저 반증 2026-09-18 — 🔴 trendingScore: None 3연속."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/측정도구-먼저-반증"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/측정도구-먼저-반증"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="측정도구 먼저 반증 2026-09-18 — 🔴 trendingScore: None 3연속."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/측정도구-먼저-반증-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/측정도구-먼저-반증-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/측정도구-먼저-반증-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/측정도구-먼저-반증" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-46" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-46" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</a></div></nav><h1 class="article-title">측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/concept" class="internal internal-link tag-link">concept</a><span class="note-properties-separator">, </span><a href="../tags/measurement" class="internal internal-link tag-link">measurement</a><span class="note-properties-separator">, </span><a href="../tags/evaluation" class="internal internal-link tag-link">evaluation</a><span class="note-properties-separator">, </span><a href="../tags/null-hypothesis" class="internal internal-link tag-link">null-hypothesis</a><span class="note-properties-separator">, </span><a href="../tags/vault-rule" class="internal internal-link tag-link">vault-rule</a><span class="note-properties-separator">, </span><a href="../tags/cross-domain" class="internal internal-link tag-link">cross-domain</a><span class="note-properties-separator">, </span><a href="../tags/methodology" class="internal internal-link tag-link">methodology</a><span class="note-properties-separator">, </span><a href="../tags/채널한계" class="internal internal-link tag-link">채널한계</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-19T00:00:00.000Z">2026년 9월 19일</time><span>27 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="측정도구-먼저-반증">측정도구 먼저 반증<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#측정도구-먼저-반증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-18 — 🔴 <strong><code>trendingScore: None</code> 3연속. 볼트는 &quot;트렌딩 N위&quot;를 원리적으로 검증할 수 없다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<pre><code>볼트 HF API 실측 (오늘 모델 3건 전부)
+  facebook/mms-300m           trendingScore: None   ← raw &quot;트렌딩 31위&quot;
+  TokenRhythm/NeoHorse-1-4B   trendingScore: None   ← raw &quot;트렌딩 5위&quot;
+  TokenRhythm/NeoHorse-1-9B   trendingScore: None   ← raw &quot;트렌딩 29위&quot;
+</code></pre>
+<p>🔴 <strong><a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a>(09-14)에서 한 번 관측된 것이 오늘 3연속으로 재현됐다 — 누적 4번째다.</strong>
+📌 <strong>볼트 판정: 이건 일시적 API 이상이 아니라 채널 한계다.</strong> 수집기가 보고하는 트렌딩 순위는 <strong>웹 페이지에서만 얻을 수 있고 볼트는 API로 대조할 수 없다.</strong> → <strong>인용 시 항상 미검증 표기.</strong> 순위를 근거로 쓰는 판단(<em>“상위 3개 선발”</em>)은 <strong>대조 불가능한 값에 의존한다.</strong></p>
+<p><strong>✅ 그리고 이 개념의 교과서 사례가 논문으로 들어왔다 — <a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a></strong>
+초록이 개선을 주장하기 <strong>전에</strong> 기존 측정 방식을 반증한다: <em>“existing work typically evaluates harnesses as <strong>monolithic systems</strong>, leaving the effectiveness of individual components unclear.”</em> → 그래서 <strong>실행 루프를 고정하고 3요소만 변주해 176개 대조 설정</strong>을 만들었다. 🎯 <strong>측정 단위를 바꾼 것이 기여의 본체다.</strong></p>
+<p><strong>📌 그리고 볼트 자신의 측정 도구가 반증됐다 — <a href="../concepts/선발창-누락" class="internal internal-link alias" data-slug="concepts/선발창-누락">선발창-누락</a></strong>
+🔴 <strong>“HF 데일리 상위 5”는 최종 중요도의 대리지표가 아니다.</strong> 업보트 <strong>421</strong> 논문(<code>2609.08183</code>)이 열흘간 배달되지 않았고, 같은 날 배달된 1위는 <a href="../sources/uno" class="internal internal-link" data-slug="sources/uno">Uno</a> <strong>19</strong> 였다. 🎯 <strong><a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a> 가 다운로드에서 확정한 “72시간 규칙”의 업보트 버전이다 — 지표마다 시간 상수가 다르다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-16 — 🎯 <strong>네 번째 관찰: 이것은 예외가 아니라 기본값이다 (빈도 측정)</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 그동안 자체 벤치마크를 <strong>개별 사례로</strong> 지적해 왔다(<a href="../entities/m-a-p" class="internal internal-link" data-slug="entities/m-a-p">m-a-p</a>/WildSongBench 09-12 등). 이번 배치에서 <strong>비율을 셌다.</strong></p>
+<p><strong>2026-09-16 논문 5건 중 3건(60%)이 자기 측정도구를 논문과 함께 도입한다</strong>:</p>
+<ul>
+<li><a href="../sources/continual-learning-compose" class="internal internal-link" data-slug="sources/continual-learning-compose">Continual-Learning-Compose</a> — <em>“we <strong>construct</strong> three distinct 100-task memorization datasets”</em></li>
+<li><a href="../sources/lynnreal-omni" class="internal internal-link" data-slug="sources/lynnreal-omni">LynnReal-Omni</a> — <em>“introduce <strong>MSAVP</strong>, a 100-prompt, 20-metric evaluation design”</em></li>
+<li><a href="../sources/stepaudio-3-realtime" class="internal internal-link" data-slug="sources/stepaudio-3-realtime">StepAudio-3-Realtime</a> — <strong>StepAudioChat</strong>(모델명과 동일한 이름의 벤치, 73.0 macro)</li>
+</ul>
+<p>📌 <strong>이것이 곧 부정직은 아니다</strong> — 새 능력에는 기존 벤치가 없을 수 있고, 세 논문 다 자체 설계임을 초록에 밝힌다.
+🔴 <strong>그러나 빈도가 60%라면 “자기 자로 잰 우위”가 이 분야의 기본 보고 형식이라는 뜻이다.</strong> 개별 논문을 의심하는 문제가 아니라 <strong>읽는 쪽의 기본 자세를 정하는 문제</strong>다.</p>
+<blockquote>
+<p><strong>볼트 규칙</strong>: 논문의 헤드라인 수치를 볼 때 <strong>벤치마크 이름이 저자 소유인지 먼저 확인한다.</strong> 저자 소유면 그 수치는 <strong>자기 정의 안에서의 우위</strong>이고, 외부 재현 전까지 <strong>상대 주장</strong>이다.
+🎯 <strong>반례도 같은 배치에 있다</strong>: <a href="../sources/ai-for-games-fm-era" class="internal internal-link" data-slug="sources/ai-for-games-fm-era">AI-for-Games-FM-Era</a> 는 새 지표를 만들지 않고, 오히려 <em>“downstream claims <strong>require validation in the target setting</strong>”</em> 을 초록에 직접 적는다.</p>
+</blockquote>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-16 — <strong>같은 원자료, 다른 집계, 다른 숫자</strong> (<a href="../sources/bge-small-en-v1.5" class="internal internal-link" data-slug="sources/bge-small-en-v1.5">bge-small-en-v1.5</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>수집기가 카드 <code>model-index</code> <strong>68개 결과</strong>를 파싱해 <strong>비가중 평균 58.09 (n=68)</strong> 를 냈다. 내역: Retrieval 46.07(n=27) · Classification 74.14(n=12) · Clustering 43.82(n=11) · STS 81.59(n=10) · Reranking 58.36(n=4) · PairClassification 84.92(n=3) · Summarization 30.12(n=1).</p>
+<p>🔴 <strong>이 58.09는 공식 MTEB 리더보드 평균이 아니다.</strong> 리더보드는 데이터셋 구성·가중이 다르다.
+🎯 <strong>어느 쪽도 틀리지 않았다 — 비교 불가능할 뿐이다.</strong> 그리고 <strong>분모 구성 자체가 결과를 만든다</strong>: Retrieval이 27/68 = 39.7%로 편중됐고 그 점수(46.07)가 두 번째로 낮아 <strong>평균을 끌어내린다.</strong> Summarization은 <strong>n=1</strong>인데 7개 범주 중 하나로 동등한 자격을 갖는다.
+📌 <strong>수집기가 분모를 밝혔기 때문에 이 지적이 가능했다.</strong> 평균을 보고할 때 <strong>n과 구성을 함께 적는 것</strong>을 볼트 기본값으로 유지한다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-15 — <strong>세 번째 실패 양식: 두 지표가 같은 모집단을 재고 있는가</strong> (<a href="../sources/llama-3.1-8b-instruct" class="internal internal-link" data-slug="sources/llama-3.1-8b-instruct">Llama-3.1-8B-Instruct</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 개념은 지금까지 두 가지를 물었다: <em>“계측기가 거짓을 거짓으로 읽는가”</em>(09-09) · <em>“언제부터 정확한가”</em>(09-14).
+이번 배치가 <strong>세 번째</strong>를 추가한다: <strong>분자와 분모가 같은 집단에서 나왔는가.</strong></p>
+<p><a href="../sources/llama-3.1-8b-instruct" class="internal internal-link" data-slug="sources/llama-3.1-8b-instruct">Llama-3.1-8B-Instruct</a> 의 DL:♥ = <strong>750:1</strong> 은 <a href="../sources/clip-vit-base-patch32" class="internal internal-link" data-slug="sources/clip-vit-base-patch32">clip-vit-base-patch32</a> <strong>14,046:1</strong> 의 19분의 1이다. 관심도가 19배 높아 보인다. <strong>그런데 이 모델은 <code>gated: manual</code> 이다.</strong></p>
+<ul>
+<li><strong>DL</strong>(분모)은 <strong>승인 절차를 통과한 접근만</strong> 집계된다</li>
+<li><strong>♥</strong>(분자)는 <strong>게이트와 무관하게 누구나</strong> 누른다</li>
+</ul>
+<p>🎯 <strong>비율이 높아 보이는 것은 관심이 많아서가 아니라 분모가 잘려서일 수 있다.</strong> 게이트 저장소의 DL:♥ 를 비게이트 모델과 나란히 놓는 것은 <strong>정의가 다른 두 수를 나누는 것</strong>이다.
+📌 <strong>일반형</strong>: 비율을 만들기 전에 <strong>분자와 분모의 모집단이 일치하는지</strong> 확인한다. 시간 축(09-14)에 이어 <strong>모집단 축</strong>이 추가됐다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-15 — 🎯 <strong>이 개념의 가장 강한 실증이 도착했다</strong> (<a href="../sources/dataflex-rl" class="internal internal-link" data-slug="sources/dataflex-rl">DataFlex-RL</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 그동안 <em>“계측기를 먼저 반증하라”</em> 를 <strong>원칙</strong>으로 주장해 왔다. <a href="../sources/dataflex-rl" class="internal internal-link" data-slug="sources/dataflex-rl">DataFlex-RL</a> 이 <strong>정량 증거</strong>를 준다.</p>
+<p>동일한 <strong>9개 Qwen2.5-7B-Instruct 런</strong>을 두 방식으로 재채점:</p>
+<ul>
+<li>수학 편중 <strong>6벤치</strong>(수학 5 + GPQA-Diamond, 논리 없음)</li>
+<li>도메인 균형 <strong>12벤치</strong></li>
+</ul>
+<p>→ <strong>두 순위의 상관계수 -0.33 (음의 상관).</strong> 12개를 모두 유지한 요약끼리는 대체로 일치.</p>
+<p><strong>같은 모델, 같은 점수, 다른 집계 → 순위가 뒤집힌다.</strong> 계측기가 고장 난 게 아니라 <strong>요약 방식이 결론을 만든다.</strong>
+또한 같은 논문이 <strong>롤아웃 선택·재가중 8개 기법 중 어느 것도 균일 샘플링 대비 95% CI가 0을 배제하지 못했다</strong>고 보고한다 — <strong>개선처럼 보이던 것들이 측정 정밀도 안에서 사라진다.</strong></p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <strong>볼트 규칙 (채택)</strong>
+<strong>모델 비교 수치를 기록할 때 &quot;몇 개 벤치의 평균인지&quot;와 &quot;그 묶음의 도메인 구성&quot;을 같은 불릿에 적는다.</strong> 분모를 적지 않은 비교는 재현 불가능하다.</p></div>
+                  
+                </div>
+</blockquote>
+<p>🔗 같은 배치 <a href="../sources/distilbert-base-uncased" class="internal internal-link" data-slug="sources/distilbert-base-uncased">distilbert-base-uncased</a> 가 <strong>한 모델 안에서</strong> 같은 문제를 보여준다 — GLUE 8개 중 CoLA 51.3 · RTE 59.9가 50%대인데 단순평균 79.5는 이를 완전히 덮는다.
+🔗 <a href="../concepts/상대속도-가림" class="internal internal-link alias" data-slug="concepts/상대속도-가림">상대속도-가림</a> 은 <strong>순위 정렬</strong>에서의 같은 문제다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-14 — <strong>계측기가 거짓말하는 게 아니라 &quot;너무 일찍 읽는&quot; 경우</strong> (<a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a> · <a href="../sources/minicpm5-2b" class="internal internal-link" data-slug="sources/minicpm5-2b">MiniCPM5-2B</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 개념은 그동안 <em>“계측기가 거짓을 거짓으로 읽는지”</em> 를 물었다. 이번 배치가 <strong>다른 실패 양식</strong>을 추가한다: <strong>계측기는 정확한데 읽는 시점이 틀렸다.</strong></p>
+<p>볼트가 09-10·09-11에 두 모델의 <strong>♥/다운로드 비율</strong>로 <em>“관심만 있고 실사용이 없다”</em> 고 판정했다. 3~4일 뒤 실측:</p>
+<ul>
+<li><a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a>: 다운로드 <strong>6 → 244,457</strong>(<strong>×40,743</strong>) · ♥ 1,583 → 2,303(×1.45) · 비율 <strong>0.004:1 → 106:1</strong></li>
+<li><a href="../sources/minicpm5-2b" class="internal internal-link" data-slug="sources/minicpm5-2b">MiniCPM5-2B</a>: 다운로드 <strong>2,879 → 150,110</strong>(<strong>×52</strong>) · ♥ 1,007 → 1,362(×1.35) · 비율 <strong>2.9:1 → 110:1</strong></li>
+</ul>
+<p>🎯 <strong>두 지표의 시간 상수가 다르다.</strong> ♥는 공개 즉시 포화하고(며칠 만에 1.35<del>1.45배), 다운로드는 <strong>며칠 뒤에야 실체를 얻는다</strong>(52</del>40,743배). 같은 시점에 두 지표를 나눠 비율을 만들면 <strong>분자와 분모가 서로 다른 시간을 가리킨다.</strong>
+🔴 <strong>09-11 <a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a> 페이지는 이 함정을 스스로 예측했었다</strong> — <em>“이 규칙은 성숙한 모델에만 적용된다. 공개 당일 + 초대형에는 무효”</em>. <strong>예측이 3일 뒤 확증됐다.</strong> 반면 09-10 <a href="../sources/minicpm5-2b" class="internal internal-link" data-slug="sources/minicpm5-2b">MiniCPM5-2B</a> 페이지는 그 한정 없이 판정했고 <strong>반증됐다.</strong></p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p> <strong>볼트 규칙 (채택)</strong>
+<strong>공개 후 72시간 이내의 다운로드 수는 지표가 아니다.</strong> ♥/다운로드 비율은 <strong>공개 +7일 이후에만</strong> 계산한다. 그 이전 수치는 <em>&quot;측정 시점이 이르다&quot;</em> 를 함께 적지 않으면 기록하지 않는다.</p></div>
+                  
+                </div>
+</blockquote>
+<p>📌 <strong>일반형</strong>: <strong>서로 다른 속도로 수렴하는 두 지표의 비(ratio)는 수렴 전에 의미가 없다.</strong> 계측기 검증은 <em>“정확한가”</em> 뿐 아니라 <strong>“언제부터 정확한가”</strong> 를 포함해야 한다.
+🔗 이번 배치의 <a href="../sources/benchmark-radar" class="internal internal-link" data-slug="sources/benchmark-radar">Benchmark-Radar</a> 가 대시보드에 <strong>“점수 대 실측 사용량의 파레토 프론티어”</strong> 를 넣은 것도 같은 문제의식이다 — <strong>점수와 사용량은 다른 시간에 자란다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>한 줄 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>결과를 믿기 전에 계측기를 반증하라.</strong> 지표가 “잘 나온다”는 것은 대상이 좋다는 증거가 아니라, <strong>계측기가 무엇에든 잘 나오는 것일 수도 있다</strong>는 미확인 상태다. 보장된 <strong>null</strong>(틀린 입력·랜덤 대조·이론이 실패를 예측하는 조건)을 먼저 만들고, 거기서 점수가 <strong>떨어지는지</strong> 확인한 다음에야 본 실험을 읽는다.</p>
+</div>
+</blockquote>
+<h2 id="2026-09-09-배치에서-다섯-번-반복된-형태">2026-09-09 배치에서 다섯 번 반복된 형태<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-09-배치에서-다섯-번-반복된-형태" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-틀린-입력에도-점수가-나온다-language-transfer-robot-policies">① 틀린 입력에도 점수가 나온다 (<a href="../sources/language-transfer-robot-policies" class="internal internal-link" data-slug="sources/language-transfer-robot-policies">Language-Transfer-Robot-Policies</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-틀린-입력에도-점수가-나온다-language-transfer-robot-policies" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>단일목표 벤치마크가 <strong>올바른 그리스어 지시에 84.6%</strong>, <strong>일부러 틀린 지시에 82.6%</strong>.
+차이 <strong>2점</strong> — 즉 이 벤치마크는 <strong>지시를 읽었는지를 거의 재지 않는다.</strong> 색 히스토그램 지표는 한술 더 떠 <strong>노이즈에 보상</strong>을 줬고, 학습 손실은 성공률을 예측하지 못했으며, 단일 실행 비교는 시드 분산에 지배됐다.</p>
+<blockquote>
+<p><strong>논문의 결론이 곧 이 개념의 정의다</strong>: <em>“build a guaranteed null before trusting a metric.”</em></p>
+</blockquote>
+<h3 id="-이론이-실패를-예측하고-실패시켜-보여준다-cadence">② 이론이 실패를 예측하고, 실패시켜 보여준다 (<a href="../sources/cadence" class="internal internal-link" data-slug="sources/cadence">Cadence</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-이론이-실패를-예측하고-실패시켜-보여준다-cadence" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>저자가 자기 주장(도메인 국소성)을 <strong>반증하려 시도</strong>한다 — SDRBench에서 이론은 실패를 예측했고 <strong>실제로 중앙값 −0.8%, 27쌍 중 0쌍 개선</strong>. 부정 결과 3건과 <strong>철회한 주장 8건</strong>을 함께 보고.
+→ <strong>성공 사례만 있는 결과지는 계측기가 검증되지 않았다는 신호다.</strong></p>
+<h3 id="-읽히는-곳은-작동하는-곳이-아니다-encoded-early-used-late">③ 읽히는 곳은 작동하는 곳이 아니다 (<a href="../sources/encoded-early-used-late" class="internal internal-link" data-slug="sources/encoded-early-used-late">Encoded-Early-Used-Late</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-읽히는-곳은-작동하는-곳이-아니다-encoded-early-used-late" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>프로브로 <strong>가장 잘 디코딩되는 초기 레이어</strong>에 개입해도 출력이 거의 안 변하고, <strong>디코딩이 우연 수준으로 떨어진 중반 이후</strong> 개입이 거의 완전히 전파된다(차이 한 자릿수 배 이상).
+→ <strong>디코딩 가능성 ≠ 인과성.</strong> 프로브는 계측기이고, 계측기는 개입 실험으로 반증되기 전까지 주장이 아니다. <a href="../sources/sae-interventions-unreliable" class="internal internal-link" data-slug="sources/sae-interventions-unreliable">SAE-Interventions-Unreliable</a> 와 같은 축.</p>
+<h3 id="-자기보고-신뢰도를-입력으로-받지-않는다-comp-ai-crm">④ 자기보고 신뢰도를 입력으로 받지 않는다 (<a href="../sources/comp-ai-crm" class="internal internal-link" data-slug="sources/comp-ai-crm">Comp-AI-CRM</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-자기보고-신뢰도를-입력으로-받지-않는다-comp-ai-crm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p><em>“<strong>No tool accepts a confidence score</strong>, because a model asked to grade its own certainty will, and it will be <strong>wrong in the direction that makes it look useful</strong>.”</em>
+툴은 <strong>관찰</strong>(<code>crm.signature-block</code>)만 보고하고 <strong>증거 원장이 가격을 매긴다.</strong> 약한 증거는 레코드가 아니라 <strong>사람이 판정할 제안으로 격하</strong>된다.
+→ 계측기가 <strong>자기 자신을 채점하게 두지 말 것.</strong> <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> 의 “출력을 결정이 아니라 제안으로 격하” 관문과 같은 장치.</p>
+</blockquote>
+<h3 id="-난이도-축으로-펼쳐야-붕괴-지점이-보인다-robospa">⑤ 난이도 축으로 펼쳐야 붕괴 지점이 보인다 (<a href="../sources/robospa" class="internal internal-link" data-slug="sources/robospa">RoboSPA</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-난이도-축으로-펼쳐야-붕괴-지점이-보인다-robospa" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>56개 base task를 <strong>5단계 난이도로 인스턴스화해 280 변형</strong>. 이진 성공률은 “되는가”만 답하지만, 난이도 축은 <strong>“어디서 깨지는가”</strong> 를 답한다.
+→ <strong>단일 숫자 지표는 붕괴 지점을 숨긴다.</strong></p>
+<h2 id="볼트-자신에게-적용--이것이-raw-문제의-정확한-진단이다">볼트 자신에게 적용 — 이것이 raw 문제의 정확한 진단이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#볼트-자신에게-적용--이것이-raw-문제의-정확한-진단이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 볼트는 09-07·09-08 배치에서 같은 교훈을 <strong>표면 형태로만</strong> 배웠다: <em>“raw의 한줄요약은 수집기의 요약이지 소스가 아니다”</em>.
+<a href="../sources/comp-ai-crm" class="internal internal-link" data-slug="sources/comp-ai-crm">Comp-AI-CRM</a> 이 그 교훈의 <strong>일반형</strong>을 준다 — <strong>raw는 자기 요약의 신뢰도를 스스로 매기는 계측기이고, 예상대로 “쓸모 있어 보이는 방향”으로 틀린다.</strong></p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-09 배치에서 확인된 raw의 편향 — 방향이 뒤집혔다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-07·09-08의 raw 오류는 <strong>과장</strong>이었다(범위 확대·2배로 세기).
+<strong>09-09의 raw 오류는 반대 방향, 즉 “누락”이다</strong> — 부정·유보 문장을 남기고 <strong>정량 성과를 버렸다</strong>:</p>
+<ul>
+<li><a href="../sources/cadence" class="internal internal-link" data-slug="sources/cadence">Cadence</a>: 9.7%(부차적 비교)만 적고 <strong>13.3% / 28.3% / 297전승</strong>(본 결과) 누락</li>
+<li><a href="../sources/language-transfer-robot-policies" class="internal internal-link" data-slug="sources/language-transfer-robot-policies">Language-Transfer-Robot-Policies</a>: “최대 2.7점”(부정)만 적고 <strong>이중언어 6.7–7.1점 우위</strong>(긍정) 누락</li>
+<li><a href="../sources/spark-x2.5-4b" class="internal internal-link" data-slug="sources/spark-x2.5-4b">Spark-X2.5-4B</a>: 에이전트 축 강조하며 <strong>수학 축 전면 우위</strong>(AIME 90.7 · HMMT 81.2) 누락
+→ <strong>공통점은 “과장”이 아니라 “raw가 세운 프레임에 맞는 문장만 남긴 것”이다.</strong> 과장이든 누락이든 <strong>원인은 하나</strong> — 요약자가 자기 요약을 검증 없이 신뢰도 판정했다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>볼트 규칙으로 승격 (2026-09-09) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>인용 수치에는 “어느 줄에서 왔는지”를 함께 적는다.</strong> <a href="../sources/video-shotcraft" class="internal internal-link" data-slug="sources/video-shotcraft">video-shotcraft</a> 는 같은 README 안에 <strong>157 / 152 / 214 / 216</strong> 네 개 숫자가 공존했다.</li>
+<li><strong>부정 결과만 있는 raw 요약은 긍정 결과 누락을 의심한다</strong> — 그 반대도 마찬가지.</li>
+<li><strong>모델 출력의 재현성에 실행 조건을 포함한다.</strong> <a href="../sources/cadence" class="internal internal-link" data-slug="sources/cadence">Cadence</a>: 예측은 <strong>배치 크기가 바뀌면 비트 동일하지 않고, 어떤 PyTorch 설정으로도 고쳐지지 않는다.</strong> 관측 시각(09-08 규칙)에 <strong>배치·디바이스</strong>를 추가.</li>
+<li><strong>벤더의 자기 규정과 벤더의 자기 측정이 다르면 측정을 채택한다.</strong> → <a href="../sources/glm-5.3-cybersecurity-fp8" class="internal internal-link" data-slug="sources/glm-5.3-cybersecurity-fp8">GLM-5.3-CYBERSECURITY-FP8</a> 이 이 규칙의 최초 적용 사례.</li>
+</ol>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-10 — 원칙이 <strong>프로토콜로 형식화</strong>됐다 (<a href="../sources/discovery-certification-protocol" class="internal internal-link" data-slug="sources/discovery-certification-protocol">Discovery-Certification-Protocol</a>)</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 배치는 볼트 원칙에 대한 <strong>외부 검증</strong>을 가져왔다. DCP(arXiv 2609.09219)의 제목이 곧 이 개념이다 — <strong>“점수만으로는 발견이 증명되지 않는다.”</strong>
+대응이 1:1이다:</p>
+<ul>
+<li>볼트 <em>“보장된 null 도입”</em> ↔ DCP <strong>60쌍 널 스터디</strong></li>
+<li>볼트 <em>“틀린 입력 arm 추가”</em> ↔ DCP <strong>Gate 2</strong>(목표 연구 이력 차단한 대조 에이전트)</li>
+<li>볼트 <em>“요약자가 판정하지 않는다”</em> ↔ DCP <strong>LLM 없는 결정적 검증기</strong>
+DCP 통제 감사 2건: <strong>96 에피소드 복구 0건, 상한 0.0468</strong> · 진실 피드백 복구 <strong>30건 vs 중립 0건</strong> · <strong>60쌍 널 통과</strong>.
+🎯 <strong>핵심 발상</strong>: <strong>발견의 증거는 결과가 아니라 “대안 경로의 부재”다.</strong> → <a href="../concepts/요약자와-판정자-분리" class="internal internal-link alias" data-slug="concepts/요약자와-판정자-분리">요약자와-판정자-분리</a></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-10 — 좋은 벤치마크와 나쁜 벤치마크가 <strong>같은 배치에</strong> 들어왔다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>벤치마크 3건의 신뢰도가 갈렸고, <strong>판별 기준은 하나였다 — 정답의 출처가 저자 밖에 있는가.</strong></p>
+<ul>
+<li><strong><a href="../sources/wearableqa" class="internal internal-link" data-slug="sources/wearableqa">WearableQA</a> ⭐⭐⭐</strong> — 데이터가 <strong>외부 실측</strong>(실제 200명·최대 500일). 축을 <strong>직교 분해</strong>(데이터추론/건강추론 × 단일신호/교차신호 = 16유형). <strong>14종 평가로 스프레드 공개</strong>(19.6~72.9%, 기준선 10%). 저자가 먼저 <em>“far from solved”</em> 라고 쓴다.</li>
+<li><strong><a href="../sources/saescientist-bench" class="internal internal-link" data-slug="sources/saescientist-bench">SAEScientist-Bench</a> ⭐⭐⭐</strong> — 참조가 <strong>외부 앵커</strong>(Neuronpedia 전문가 특징). 10구성×20과제. 잘하는 축과 못하는 축을 병기.</li>
+<li><strong>CombatStateBench(=<a href="../sources/programmable-world-model" class="internal internal-link" data-slug="sources/programmable-world-model">Programmable-World-Model</a>) ⭐⭐</strong> — <strong>저자가 같은 논문에서 신설</strong>. 94%/98%라는 높은 점수를 내지만 <strong>비교 대상 모델명도 비교 수치도 초록에 없다</strong>. <strong>자기가 만든 시험지의 자기 점수.</strong>
+→ <strong>규칙: 벤치마크를 신설한 논문은 벤치마크 자체가 먼저 반증돼야 한다.</strong> 절대값은 난이도를 저자가 정했으므로 무의미하고, 의미 있는 건 비교뿐인데 그 비교가 없다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-10 — 계측기가 아니라 <strong>계측기의 출력 포맷</strong>에 속는다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이번 배치는 이 개념의 <strong>메타 레벨 사례 3건</strong>을 냈다 — API의 파생 분류(<a href="../sources/teamai-cli" class="internal internal-link" data-slug="sources/teamai-cli">teamai-cli</a> 라이선스), 표의 볼드 서식(<a href="../sources/qwen3.8-flash-next-nvfp4" class="internal internal-link" data-slug="sources/qwen3.8-flash-next-nvfp4">Qwen3.8-Flash-Next-NVFP4</a>), 벤치마크 구성에서 모달리티 역추론(<a href="../sources/qwopus3.8-27b-flash-gguf" class="internal internal-link" data-slug="sources/qwopus3.8-27b-flash-gguf">Qwopus3.8-27B-Flash-GGUF</a>).
+→ 별도 개념으로 분리했다: <strong><a href="../concepts/파생표기-함정" class="internal internal-link alias" data-slug="concepts/파생표기-함정">파생표기-함정</a></strong></p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>raw 오류 방향 추적 — 4배치째 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-07/08 <strong>과장</strong> → 09-09 <strong>누락</strong> → <strong>09-10 역전</strong>(1건). 방향은 매번 바뀌고 위치는 안 바뀐다(<strong>판정 단계</strong>).
+✅ <strong>다만 09-10 배치는 정확도가 크게 올랐다</strong> — 논문 5건 초록 <strong>전량 일치</strong>, HF 모델 3건 수치 <strong>전량 일치</strong>, GitHub 5건 스타 드리프트만(+2~+10, 자연 증가). <strong>오류 1건</strong>(teamai-cli 라이선스) + <strong>누락 2건</strong>(Qwopus 멀티모달, text-to-cad 조용한 실패 3번째).</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-09-17--교과서적-사례-2건이-한-배치에-나왔다">🆕 2026-09-17 — <strong>교과서적 사례 2건이 한 배치에 나왔다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-17--교과서적-사례-2건이-한-배치에-나왔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> — 점별 오차가 작은데 방향이 뒤집힌다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>VLA 액션 토크나이저는 통상 <strong>MSE 같은 점별 복원 오차</strong>로 평가된다. 초록 원문(볼트 문자 일치):</p>
+<blockquote>
+<p><em>“<strong>small individual errors do not fully characterize how faithfully action adjustments across demonstrations are preserved</strong>. After compression, similar actions may still cluster around a representative motion, while the adjustments needed for different contexts are <strong>diminished, distorted, or even reversed</strong>.”</em></p>
+</blockquote>
+<p>🎯 <strong><code>or even reversed</code> 가 결정적이다</strong> — MSE가 낮은 토크나이저가 <strong>로봇을 반대로 움직이게</strong> 만들 수 있다.
+📌 <strong>왜 MSE가 못 잡나</strong>: 압축이 유사 동작을 대표 모션으로 뭉치면 <strong>각 점은 대표값에 가까워져 MSE가 작아진다.</strong> 무너지는 것은 점이 아니라 <strong>점들 사이의 관계</strong>다. <strong>MSE는 점을 재고 관계를 재지 않는다.</strong>
+✅ <strong>대체 지표가 비교 가능하게 설계됐다</strong>: <code>PRC</code>(physical rank consistency)는 <strong>복원된 액션에서</strong> 국소 물리 거리 <strong>순위</strong>를 재므로 <em>“a common reference <strong>across token vocabularies and decoder architectures</strong>”</em> 가 된다 — <strong>측정 도구가 구현 비종속</strong>이다.
+🔴 단 <strong>PRC 수치 자체가 초록에 없다</strong>(<em>“jointly improve PRC”</em> 까지). <strong>새 지표를 제시하고 그 값을 안 적었다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <a href="../sources/xconf" class="internal internal-link" data-slug="sources/xconf">XConf</a> — 기존 방법 전체가 공유하는 전제를 지목했다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<blockquote>
+<p><em>“Existing confidence estimators, however, <strong>share one design premise: they only read the current inference process</strong>, either by introspecting on it, scoring its token probabilities, or resampling it. <strong>We argue that the current inference is not a sufficient basis for confidence.</strong>”</em></p>
+</blockquote>
+<p>🎯 <strong>내성·토큰확률·리샘플링 세 계열이 전부 “지금 이 추론”만 본다.</strong> 대안은 <strong>과거 채점 이력</strong>(태스크·반성·당시 신뢰도·결과·교훈 5필드)에서 신뢰도를 끌어오는 것.
+✅ <strong>분모가 공개됐다</strong>: 9벤치·3패밀리 4모델 · <strong>24개 비교 중 23개</strong>에서 10샘플 self-consistency의 AUROC 이상 · ECE 낮음 · <strong>비용 1/10</strong>.
+🔴 <strong>볼트가 짚는 산술 불일치</strong>: 9×4=<strong>36</strong>인데 비교 수가 <strong>24</strong>다. 초록이 24의 구성을 설명하지 않는다 → <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> 변종(<em>한정어는 있는데 산술이 닫히지 않음</em>).</p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔍 빈도 관찰 갱신 — 09-16 60% → 09-17 40% </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-16 볼트 관찰: <em>논문 5건 중 3건(60%)이 자체 벤치 동반.</em>
+<strong>09-17</strong>: 5건 중 <strong>2건이 새 측정도구/지표를 제시</strong>(<a href="../sources/actionpiece" class="internal internal-link" data-slug="sources/actionpiece">ActionPiece</a> PRC · <a href="../sources/programdistill" class="internal internal-link" data-slug="sources/programdistill">ProgramDistill</a> 벤치), <strong>1건이 새 현상을 명명</strong>(<a href="../sources/sp3o" class="internal internal-link" data-slug="sources/sp3o">SP3O</a> Value Flattening), <strong>1건이 병목을 명명</strong>(<a href="../sources/scienceide" class="internal internal-link" data-slug="sources/scienceide">ScienceIDE</a> scientific experience bottleneck).
+🎯 <strong>더 일반적인 패턴이 보인다: 5건 중 4건(80%)이 “먼저 이름을 붙이거나 지표를 만든다”.</strong> 2026 하반기 논문의 공통 문법으로 보인다 — 개선을 주장하기 전에 <strong>측정 대상을 재정의</strong>한다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 2026-09-19 — <strong>같은 필드가 레포마다 다른 것을 잰다: <code>open_issues_count</code></strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이슈:PR 분해 — <a href="../sources/marin" class="internal internal-link" data-slug="sources/marin">marin</a> 500:97(실험 장부) · <a href="../sources/tradingview-mcp" class="internal internal-link" data-slug="sources/tradingview-mcp">tradingview-mcp</a> 61:195(병합 병목) · <a href="../sources/agent-lightning" class="internal internal-link" data-slug="sources/agent-lightning">agent-lightning</a> 100:60 · <a href="../sources/gitdiagram" class="internal internal-link" data-slug="sources/gitdiagram">gitdiagram</a> 23:17. 비율만 보면 marin 과 tradingview 가 “이슈 많음”으로 같아 보인다.
+📌 수집기 요청 필드에 <strong>이슈/PR 분해값</strong> 추가 제안(search API 비인증 조회 가능).
+🔴 볼트 자기 사례: <a href="../sources/neohorse-1-paper" class="internal internal-link" data-slug="sources/neohorse-1-paper">NeoHorse-1-Paper</a> 업보트 421 → 170(동일 API 하루 차이).</p>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/marin" class="internal internal-link" data-slug="sources/marin">marin</a></li>
+<li><a href="../sources/tradingview-mcp" class="internal internal-link" data-slug="sources/tradingview-mcp">tradingview-mcp</a></li>
+<li><a href="../sources/agent-lightning" class="internal internal-link" data-slug="sources/agent-lightning">agent-lightning</a></li>
+<li><a href="../sources/gitdiagram" class="internal internal-link" data-slug="sources/gitdiagram">gitdiagram</a></li>
+<li><a href="../sources/neohorse-1-paper" class="internal internal-link" data-slug="sources/neohorse-1-paper">NeoHorse-1-Paper</a></li>
+<li><a href="../sources/discovery-certification-protocol" class="internal internal-link" data-slug="sources/discovery-certification-protocol">Discovery-Certification-Protocol</a> · <a href="../sources/wearableqa" class="internal internal-link" data-slug="sources/wearableqa">WearableQA</a> · <a href="../sources/saescientist-bench" class="internal internal-link" data-slug="sources/saescientist-bench">SAEScientist-Bench</a> — 2026-09-10 외부 검증 3건</li>
+<li><a href="../concepts/파생표기-함정" class="internal internal-link alias" data-slug="concepts/파생표기-함정">파생표기-함정</a> · <a href="../concepts/요약자와-판정자-분리" class="internal internal-link alias" data-slug="concepts/요약자와-판정자-분리">요약자와-판정자-분리</a> — 2026-09-10 파생 개념</li>
+<li><a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a></li>
+<li><a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a></li>
+<li><a href="../sources/sae-interventions-unreliable" class="internal internal-link" data-slug="sources/sae-interventions-unreliable">SAE-Interventions-Unreliable</a></li>
+<li><a href="../sources/beyond-static-leaderboards" class="internal internal-link" data-slug="sources/beyond-static-leaderboards">Beyond-Static-Leaderboards</a></li>
+<li><a href="../sources/personalization-mirage" class="internal internal-link" data-slug="sources/personalization-mirage">Personalization-Mirage</a></li>
+<li><a href="../concepts/llm-wiki" class="internal internal-link" data-slug="concepts/llm-wiki">LLM-Wiki</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-09-23--반례가-지표-아티팩트였던-사례">🔄 2026-09-23 — <strong>반례가 지표 아티팩트였던 사례</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-23--반례가-지표-아티팩트였던-사례" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 이번 배치 대표 사례 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 가설에 대해 수집기가 <em>“<a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> ↔ <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 격차 0.85% → 반례 1건”</em> 을 제출했다.
+✅ 볼트가 지표를 먼저 의심한 결과: <strong><code>downloads</code> 는 최근 창, <code>downloadsAllTime</code> 은 누적</strong>이었고, 누적으로 보면 파생이 원본의 <strong>1.445배</strong> — <strong>반례가 아니라 지지 사례</strong>였다 → <a href="../concepts/지표-창길이" class="internal internal-link alias" data-slug="concepts/지표-창길이">지표-창길이</a>.
+🎯 <strong>가설을 수정할 뻔한 관측이 사실은 자(尺)의 눈금 문제였다.</strong> 개념 페이지에 오염된 사례가 들어가기 직전에 막았다.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>트리거 규칙 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>누적이어야 할 값이 감소하면 즉시 지표 정의를 다시 읽는다.</strong> 불가능한 값은 데이터 오류가 아니라 <strong>정의 오해의 신호</strong>다.
+(이번 발견의 방아쇠: <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 9,354,057 → 7,019,401 <strong>감소</strong>)</p>
+</div>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-46" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#측정도구-먼저-반증" data-for="측정도구-먼저-반증">측정도구 먼저 반증</a></li><li class="depth-1"><a href="#2026-09-09-배치에서-다섯-번-반복된-형태" data-for="2026-09-09-배치에서-다섯-번-반복된-형태">2026-09-09 배치에서 다섯 번 반복된 형태</a></li><li class="depth-2"><a href="#-틀린-입력에도-점수가-나온다-language-transfer-robot-policies" data-for="-틀린-입력에도-점수가-나온다-language-transfer-robot-policies">① 틀린 입력에도 점수가 나온다 (Language-Transfer-Robot-Policies)</a></li><li class="depth-2"><a href="#-이론이-실패를-예측하고-실패시켜-보여준다-cadence" data-for="-이론이-실패를-예측하고-실패시켜-보여준다-cadence">② 이론이 실패를 예측하고, 실패시켜 보여준다 (Cadence)</a></li><li class="depth-2"><a href="#-읽히는-곳은-작동하는-곳이-아니다-encoded-early-used-late" data-for="-읽히는-곳은-작동하는-곳이-아니다-encoded-early-used-late">③ 읽히는 곳은 작동하는 곳이 아니다 (Encoded-Early-Used-Late)</a></li><li class="depth-2"><a href="#-자기보고-신뢰도를-입력으로-받지-않는다-comp-ai-crm" data-for="-자기보고-신뢰도를-입력으로-받지-않는다-comp-ai-crm">④ 자기보고 신뢰도를 입력으로 받지 않는다 (Comp-AI-CRM)</a></li><li class="depth-2"><a href="#-난이도-축으로-펼쳐야-붕괴-지점이-보인다-robospa" data-for="-난이도-축으로-펼쳐야-붕괴-지점이-보인다-robospa">⑤ 난이도 축으로 펼쳐야 붕괴 지점이 보인다 (RoboSPA)</a></li><li class="depth-1"><a href="#볼트-자신에게-적용--이것이-raw-문제의-정확한-진단이다" data-for="볼트-자신에게-적용--이것이-raw-문제의-정확한-진단이다">볼트 자신에게 적용 — 이것이 raw 문제의 정확한 진단이다</a></li><li class="depth-1"><a href="#-2026-09-17--교과서적-사례-2건이-한-배치에-나왔다" data-for="-2026-09-17--교과서적-사례-2건이-한-배치에-나왔다">🆕 2026-09-17 — 교과서적 사례 2건이 한 배치에 나왔다</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#-2026-09-23--반례가-지표-아티팩트였던-사례" data-for="-2026-09-23--반례가-지표-아티팩트였던-사례">🔄 2026-09-23 — 반례가 지표 아티팩트였던 사례</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/검사가능성-공사" class="internal">검사 가능성 공사 (Inspectability Construction)</a></li><li><a href="../concepts/단위-불일치" class="internal">단위 불일치</a></li><li><a href="../concepts/메타데이터-부재-추론" class="internal">메타데이터 부재 추론 — 필드가 비어 있다는 것은 사실이 없다는 뜻이 아니다</a></li><li><a href="../concepts/백필-우회" class="internal">백필 우회 — 필터가 비운 자리를 채울 때 필터가 사라진다</a></li><li><a href="../concepts/벤치마크-이미지-봉인" class="internal">벤치마크-이미지-봉인</a></li><li><a href="../concepts/분포내-우위" class="internal">분포 내 우위</a></li><li><a href="../concepts/비매칭-비교" class="internal">비매칭 비교 — &quot;A가 B를 넘었다&quot; 앞에 조건이 같은지</a></li><li><a href="../concepts/상대속도-가림" class="internal">상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다</a></li><li><a href="../concepts/선발창-누락" class="internal">선발창 누락 — &quot;당일 순위&quot;는 누적형 지표를 구조적으로 놓친다</a></li><li><a href="../concepts/수확체감-변곡점" class="internal">수확체감 변곡점 — &quot;가장 많이 쓰이는 크기&quot;는 인기가 아니라 곡선이 꺾이는 지점이다</a></li><li><a href="../concepts/에이전트축-분기" class="internal">에이전트축 분기 — 작은 모델은 &quot;아는 것&quot;에 지고 &quot;찾아오는 것&quot;에 이긴다</a></li><li><a href="../concepts/요약자와-판정자-분리" class="internal">요약자와 판정자 분리</a></li><li><a href="../concepts/원본-파생-역전" class="internal">원본-파생 역전</a></li><li><a href="../concepts/자기제한-명시" class="internal">자기제한 명시</a></li><li><a href="../concepts/지표-창길이" class="internal">지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</a></li><li><a href="../concepts/출처표시-무력화" class="internal">출처표시 무력화 — 표식은 &quot;붙어 있다&quot;와 &quot;지워지지 않는다&quot;가 다르다</a></li><li><a href="../concepts/파생표기-함정" class="internal">파생표기 함정</a></li><li><a href="../concepts/포맷-불일치-오염" class="internal">포맷 불일치 오염 — 오염이 점수를 깎아 스스로를 숨긴다 (잠정)</a></li><li><a href="../concepts/표-부분인용" class="internal">표 부분인용 — 몇 점을 읽는가가 결론의 종류를 바꾼다</a></li><li><a href="../concepts/하네스-설계-축" class="internal">하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다</a></li><li><a href="../concepts/한정어-탈락" class="internal">한정어 탈락</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/local-llm" class="internal">Local/Edge/Small LLM + 에이전트 메모리 누적 인사이트</a></li><li><a href="../domains/video-saas" class="internal">영상 AI SaaS 누적 인사이트</a></li><li><a href="../entities/baai" class="internal">BAAI (Beijing Academy of AI) — 임베딩 바닥 인프라를 MIT로 푸는 조직</a></li><li><a href="../entities/ifm" class="internal">IFM — K2-Horizon MoE 모델 공개 조직</a></li><li><a href="../entities/openbmb" class="internal">OpenBMB</a></li><li><a href="../entities/remco-hendriks" class="internal">Remco Hendriks</a></li><li><a href="../entities/m-a-p" class="internal">m-a-p (Multimodal Art Projection)</a></li><li><a href="../sources/ai-for-games-fm-era" class="internal">AI for Games in the Foundation Model Era — 전이 주장에 반증 조건을 스스로 붙인 서베이</a></li><li><a href="../sources/actionpiece" class="internal">ActionPiece — MSE로 액션 토크나이저를 평가하는 관행을 반증하고 PRC를 제시</a></li><li><a href="../sources/agentgrad" class="internal">AgentGrad — 개입으로 원인 에이전트를 특정하는 멀티에이전트 프롬프트 최적화</a></li><li><a href="../sources/atria-dawn" class="internal">Atria Dawn — 검증 가능 경험 파이프라인으로 학습한 연구·엔지니어링 에이전틱 LM</a></li><li><a href="../sources/benchmark-radar" class="internal">Benchmark Radar — 벤치마크 자체를 매일 수집하는 살아있는 DB·검색엔진</a></li><li><a href="../sources/cobra-skills" class="internal">COBRA-Skills — 스킬 최적화를 '예산 제한 순차 최적화'로 재정의</a></li><li><a href="../sources/cadence" class="internal">Cadence — 시계열 파운데이션 모델 기반 오차한정 손실압축</a></li><li><a href="../sources/comp-ai-crm" class="internal">Comp AI CRM — 에이전트가 1차 사용자인 오픈소스 CRM</a></li><li><a href="../sources/continual-learning-compose" class="internal">Continual Learning Mechanisms Compose for Long-Horizon Memorization — 28배 개선의 성립 조건</a></li><li><a href="../sources/dataflex-rl" class="internal">DataFlex-RL — RLVR 데이터 정책을 공통 레시피에서 비교한 평가 플랫폼(음성 결과)</a></li><li><a href="../sources/deepseek-v4.1-flash" class="internal">DeepSeek-V4.1-Flash — KV 캐시를 토큰당 890바이트로 줄인 552B 멀티모달 MoE</a></li><li><a href="../sources/discovery-certification-protocol" class="internal">Scores Alone Do Not Prove Discovery — 발견 인증 프로토콜(DCP)</a></li><li><a href="../sources/evosafeharness" class="internal">EvoSafeHarness — 에이전트 보안 하네스를 전문가 대신 탐색으로 합성</a></li><li><a href="../sources/freeflow" class="internal">FreeFlow — 귀납편향 없는 옵티컬 플로우 트랜스포머</a></li><li><a href="../sources/happyworld-bench" class="internal">HappyWorld-Bench — 월드모델을 '상호작용 후에도 세계가 남는가'로 재는 3트랙 벤치</a></li><li><a href="../sources/harness-design-empirical" class="internal">Harness-Design-Empirical — 배치에서 유일하게 대조 실험을 한 하네스 연구</a></li><li><a href="../sources/k2-horizon-7b" class="internal">IFM/K2-Horizon-7B — 카드는 8행 전승, 자사 블로그 전체표는 SciCode 패배. 그리고 SWE-bench 82점을 스스로 '해킹'이라 적었다</a></li><li><a href="../sources/lit" class="internal">LIT — 로봇 정책의 시각→행동 지름길을 자세 감독 잠재 인터페이스로 끊는다</a></li><li><a href="../sources/language-transfer-robot-policies" class="internal">Measuring Language Transfer in Robot Policies — Cosmos3 VLA에 그리스어 추가</a></li><li><a href="../sources/last-ai-built-by-humans" class="internal">The Last AI Built by Humans — 제목은 완료형, 초록은 과제 목록</a></li><li><a href="../sources/limix-2" class="internal">LimiX-2 — 표형 데이터 파운데이션 모델을 p(y|x)에서 p(x,y)로. 3개 벤치 Elo 1위, 그러나 1위 마진 상당수가 신뢰구간 안이다</a></li><li><a href="../sources/llama-3.1-8b-instruct" class="internal">meta-llama/Llama-3.1-8B-Instruct — 게이트된 8B 지시조정 모델</a></li><li><a href="../sources/lynnreal-omni" class="internal">LynnReal-Omni — 843ms의 성립 조건과 자체 설계 평가지표</a></li><li><a href="../sources/metrollm-bench" class="internal">MetroLLM-Bench — 지하철 키오스크 런타임으로서의 LLM 평가</a></li><li><a href="../sources/mi-ripple" class="internal">Mi-Ripple — 반복 AI 편집이 남긴 '디지털 물결' 복원</a></li><li><a href="../sources/mimo-v2.6-rl-livestream" class="internal">MiMo-V2.6 RL 훈련 생중계 — 샤오미가 트레이너 로그를 실시간 공개하다</a></li><li><a href="../sources/minicpm5-2b" class="internal">openbmb/MiniCPM5-2B — 밀집 2B가 4B급 5종을 평균에서 상회</a></li><li><a href="../sources/minimax-h3-physical-reasoning" class="internal">MiniMax-H3 물리세계 추론 평가 — 벤더가 0개 낸 숫자를 제3자가 처음 냈다: 41.97%</a></li><li><a href="../sources/mirofish" class="internal">MiroFish — 시드 정보로 평행 디지털 세계를 만들어 다중 에이전트로 결과를 예측</a></li><li><a href="../sources/modularrsi" class="internal">ModularRSI — 하네스를 5모듈로 쪼개 따로 진화시켰다. 그리고 벤치를 진화에서 뺐다</a></li><li><a href="../sources/neohorse-1-paper" class="internal">NeoHorse-1 논문 — 하네스가 데이터 공장이다. 그리고 루프는 아직 한 바퀴다</a></li><li><a href="../sources/plc-dpo" class="internal">PLC-DPO — 잡음 선호쌍을 거르지 않고 감독의 방향과 강도를 교정</a></li><li><a href="../sources/programmable-world-model" class="internal">Programmable World Model — 상태 진화와 시각 생성의 분리</a></li><li><a href="../sources/qwen-drive-1.0-4b" class="internal">Qwen-Drive-1.0-4B — 자율주행 통합 VLM (가중치)</a></li><li><a href="../sources/qwen3.8-27b-gguf" class="internal">Qwen3.8-27B-GGUF — Qwen3.8-27B GGUF 양자화 재배포판 (unsloth)</a></li><li><a href="../sources/qwen3.8-27b" class="internal">Qwen/Qwen3.8-27B — Qwen3.8-27B 베이스 원본 (image-text-to-text)</a></li><li><a href="../sources/qwen3.8-flash-next-nvfp4" class="internal">nvidia/Qwen3.8-Flash-Next-NVFP4 — 4비트 양자화가 9개 중 5개에서 FP8을 이겼다</a></li><li><a href="../sources/qwopus3.8-27b-flash-gguf" class="internal">Jackrong/Qwopus3.8-27B-Flash-GGUF — 능력이 아니라 지연을 산 파인튜닝</a></li><li><a href="../sources/rewardverse" class="internal">RewardVerse — 루브릭을 먼저 만들고 그 루브릭으로 채점한다 (초록 수치 0개)</a></li><li><a href="../sources/robospa" class="internal">RoboSPA — VLA의 공간추론·장기계획을 분리 진단하는 벤치마크</a></li><li><a href="../sources/saescientist-bench" class="internal">SAEScientist-Bench — AI 에이전트가 자율 SAE 해석성 연구를 수행할 수 있는가</a></li><li><a href="../sources/sas" class="internal">SAS — 희소 어텐션 선택기를 증류가 아니라 LM 손실로 직접 학습</a></li><li><a href="../sources/swe-bench-pro-verified" class="internal">SWE-Bench Pro Verified — 표준 벤치가 오염됐다는 교정판</a></li><li><a href="../sources/show-harness" class="internal">Show-Harness: Just a VLM Agent Can Play Robots — 의미 액션 인터페이스</a></li><li><a href="../sources/sol-pi" class="internal">SoL-Pi — NVIDIA가 썼다. 그리고 코드 레포가 이미 ★2,185다</a></li><li><a href="../sources/spatialblock" class="internal">SpatialBlock — 합성 블록쌓기 15k 문제로 LVLM 공간지능을 키운다</a></li><li><a href="../sources/stepaudio-3-realtime" class="internal">StepAudio 3 Realtime — 98.9와 56.0%가 같은 초록에 있다</a></li><li><a href="../sources/superposition-linearity" class="internal">Superposition Linearity — 선형성은 학습으로 생기지 않고 학습할수록 사라진다</a></li><li><a href="../sources/t1" class="internal">T1 — 장기 터미널 작업용 에이전트 강화학습 (122B MoE)</a></li><li><a href="../sources/the-past-frames-the-future" class="internal">The Past Frames the Future — AR 비디오 생성 메모리 서베이 (메모리를 조작적으로 정의한다)</a></li><li><a href="../sources/wrop-object-permanence" class="internal">WROP — 물체 영속성을 '창발했는가' 대신 '가르칠 수 있는가'로 바꾼 데이터 인프라</a></li><li><a href="../sources/wearableqa" class="internal">WearableQA — 실제 웨어러블 데이터 기반 건강 추론 벤치마크</a></li><li><a href="../sources/when-eos-tokens-disagree" class="internal">When EOS Tokens Disagree — 선언된 정지 집합이 같아도 확률은 다른 토큰에 실린다</a></li><li><a href="../sources/world-in-world" class="internal">World in World — 학습 없는 비디오 월드모델 제어 인터페이스</a></li><li><a href="../sources/xconf" class="internal">XConf — 신뢰도를 현재 추론이 아니라 과거 채점 이력에서 끌어오는 방법</a></li><li><a href="../sources/xing4.0-29b-a4b" class="internal">XingChen-AGI/Xing4.0-29B-A4B — '첫 Ascend 전량 학습'은 규모 한정어가 떠받친다. 선대 TeleChat3-MoE는 105B~1T를 이미 Ascend로 학습했다</a></li><li><a href="../sources/yue" class="internal">YuE2 (코드 레포) — 기호 계획 기반 음악 생성</a></li><li><a href="../sources/yue2-3b" class="internal">YuE2-3B — 기획→생성→합성 4단계 음악 생성 (상업 이용 금지)</a></li><li><a href="../sources/bge-small-en-v1.5" class="internal">BAAI/bge-small-en-v1.5 — 58.09의 분모와 &quot;v1.5가 바꾼 것&quot;의 정정</a></li><li><a href="../sources/colibri" class="internal">JustVugg/colibri — 744B~2.8T MoE를 순수 C로 소비자 하드웨어에서 돌리는 추론 엔진</a></li><li><a href="../sources/gliner2.5-multi-v1" class="internal">gliner2.5-multi-v1 — 287M 다국어 경계(boundary) 정보추출. 카드가 적은 가중치 크기가 실물과 다르고, 한국어는 인코더 사전학습까지만 확인된다</a></li><li><a href="../sources/marin" class="internal">Marin — 실패를 산출물로 내는 오픈 개발 LLM 플랫폼. 회고 문서에 '우리가 망친 것' 목록이 수치와 함께 있다</a></li><li><a href="../sources/mms-300m" class="internal">mms-300m — HF가 파이프라인 태그조차 붙이지 못한 모델. 3년 3개월 미갱신</a></li><li><a href="../sources/security-audit-skill" class="internal">cloudflare/security-audit-skill — 심각도를 붙일 수 없는 칸을 설계의 중심에 둔 스킬 묶음</a></li><li><a href="../sources/system_prompts_leaks" class="internal">asgeirtj/system_prompts_leaks</a></li><li><a href="../sources/teamai-cli" class="internal">Tencent/teamai-cli — 팀 단위 에이전트 하네스 동기화 CLI</a></li><li><a href="../sources/text-to-cad" class="internal">text-to-cad — CAD/CAE/CAM 에이전트 스킬 라이브러리</a></li><li><a href="../sources/tradingview-mcp" class="internal">tradingview-mcp — Claude Code를 TradingView 데스크톱에 CDP로 붙이는 MCP. 도구는 78개가 아니라 84개이고, 열린 PR이 195건 쌓여 있다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

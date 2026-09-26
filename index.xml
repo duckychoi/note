@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Ducky&#039;s Note</title>
+      <link>https://duckychoi.github.io/note</link>
+      <description>Last 10 notes on Ducky&#039;s Note</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>agent-sdk</title>
+    <link>https://duckychoi.github.io/note/tags/agent-sdk</link>
+    <guid>https://duckychoi.github.io/note/tags/agent-sdk</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>web</title>
+    <link>https://duckychoi.github.io/note/tags/web</link>
+    <guid>https://duckychoi.github.io/note/tags/web</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>puppeteer</title>
+    <link>https://duckychoi.github.io/note/tags/puppeteer</link>
+    <guid>https://duckychoi.github.io/note/tags/puppeteer</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>job-automation</title>
+    <link>https://duckychoi.github.io/note/tags/job-automation</link>
+    <guid>https://duckychoi.github.io/note/tags/job-automation</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>pdf-generation</title>
+    <link>https://duckychoi.github.io/note/tags/pdf-generation</link>
+    <guid>https://duckychoi.github.io/note/tags/pdf-generation</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>token-optimization</title>
+    <link>https://duckychoi.github.io/note/tags/token-optimization</link>
+    <guid>https://duckychoi.github.io/note/tags/token-optimization</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>prompt-compression</title>
+    <link>https://duckychoi.github.io/note/tags/prompt-compression</link>
+    <guid>https://duckychoi.github.io/note/tags/prompt-compression</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>llm-cost</title>
+    <link>https://duckychoi.github.io/note/tags/llm-cost</link>
+    <guid>https://duckychoi.github.io/note/tags/llm-cost</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>debug</title>
+    <link>https://duckychoi.github.io/note/tags/debug</link>
+    <guid>https://duckychoi.github.io/note/tags/debug</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item><item>
+    <title>game-dev</title>
+    <link>https://duckychoi.github.io/note/tags/game-dev</link>
+    <guid>https://duckychoi.github.io/note/tags/game-dev</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:35:28 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

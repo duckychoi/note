@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flow × JEPA 월드모델 — 연구 아이디어 심화노트</title>
+<style>
+  :root{
+    --bg:#080b11;--bg2:#0f1622;--card:#111a28;--card2:#16202f;
+    --line:#233246;--txt:#e8eef7;--dim:#93a4bd;--dimmer:#647388;
+    --neon:#39ff9e;--cyan:#00d4ff;--purple:#a78bfa;--amber:#fbbf24;--pink:#f472b6;--red:#fb7185;
+    --grad:linear-gradient(120deg,#a78bfa,#00d4ff);--gradn:linear-gradient(120deg,#39ff9e,#00d4ff);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",Pretendard,Roboto,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .mono{font-family:"SF Mono",ui-monospace,Menlo,monospace}
+  code{font-family:"SF Mono",ui-monospace,Menlo,monospace;background:#0b1220;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.85em;color:var(--neon)}
+  .eq{display:block;background:#0b1220;border:1px solid var(--line);border-left:3px solid var(--purple);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:14px;color:#d7e3f4;overflow-x:auto}
+  .eq .c{color:var(--dimmer)}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(8,11,17,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:4px;align-items:center;height:54px;flex-wrap:wrap}
+  nav .brand{font-weight:800;margin-right:auto;font-size:14px;letter-spacing:.3px}
+  nav .brand span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav a.nl{color:var(--dim);font-size:12.5px;padding:6px 10px;border-radius:8px}
+  nav a.nl:hover{color:var(--txt);background:var(--card2);text-decoration:none}
+
+  header{position:relative;padding:80px 0 56px;overflow:hidden;border-bottom:1px solid var(--line)}
+  .glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.30;z-index:0}
+  .g1{width:460px;height:460px;background:#6d3bd6;top:-150px;right:-60px}
+  .g2{width:400px;height:400px;background:#0a6ca8;bottom:-180px;left:-100px}
+  header .wrap{position:relative;z-index:1}
+  .eyebrow{color:var(--purple);font-weight:700;letter-spacing:3px;font-size:11.5px;text-transform:uppercase}
+  h1{font-size:clamp(30px,5.4vw,54px);line-height:1.08;font-weight:850;margin:14px 0 12px;letter-spacing:-1.2px}
+  h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--dim);font-size:clamp(15px,2.3vw,19px);max-width:780px}
+  .thesis{margin-top:26px;padding:18px 22px;border:1px solid #2c3b57;background:linear-gradient(120deg,rgba(167,139,250,.08),rgba(0,212,255,.05));border-radius:14px;font-size:15.5px}
+  .thesis b{color:var(--txt)}
+  .chipsrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+  .pill{font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--bg2)}
+
+  section{padding:60px 0;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--cyan);font-weight:700;font-size:12.5px;letter-spacing:2px;text-transform:uppercase}
+  h2{font-size:clamp(24px,3.8vw,36px);font-weight:820;margin:8px 0 6px;letter-spacing:-.5px}
+  h2 .n{color:var(--dimmer);font-weight:700;font-size:.62em;margin-right:10px}
+  .lead{color:var(--dim);max-width:840px;margin-bottom:24px;font-size:16px}
+  h3{font-size:19px;font-weight:750;margin:26px 0 10px;display:flex;align-items:center;gap:9px}
+  p{color:#cfd8e6;margin-bottom:12px}
+  ul{margin:8px 0 14px 4px}
+  li{color:#cfd8e6;margin:6px 0;padding-left:20px;position:relative;list-style:none}
+  li::before{content:"▹";position:absolute;left:0;color:var(--purple)}
+
+  .grid{display:grid;gap:16px}.g2c{grid-template-columns:1fr 1fr}.g3c{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:820px){.g2c,.g3c{grid-template-columns:1fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .box h4{font-size:15.5px;font-weight:750;margin-bottom:8px}
+  .box p,.box li{font-size:14px}
+  .ico{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:15px;flex:none}
+
+  /* diagram */
+  .archwrap{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px;margin-top:8px}
+  .tabs{display:flex;gap:6px;padding:8px;flex-wrap:wrap}
+  .tabs button{flex:1;min-width:150px;border:1px solid var(--line);color:var(--dim);padding:12px;border-radius:10px;cursor:pointer;font-weight:700;font-size:13.5px;background:transparent;transition:.15s}
+  .tabs button.on{color:#06121a;background:var(--gradn);border-color:transparent}
+  .tabs button.warn.on{background:linear-gradient(120deg,#fb7185,#fbbf24)}
+  .tabs button:not(.on):hover{color:var(--txt);border-color:#31465f}
+  .view{padding:24px 22px 12px}
+  .view .desc{color:var(--dim);font-size:14px;margin-bottom:18px;min-height:40px}
+  .flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+  .node{border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;text-align:center;background:var(--bg2);min-width:92px}
+  .node .t{font-weight:750;font-size:13.5px}.node .s{font-size:10.5px;color:var(--dimmer)}
+  .node.src{border-color:var(--cyan)}.node.mid{border-color:var(--purple)}.node.tgt{border-color:var(--neon)}.node.bad{border-color:var(--red)}
+  .arrow{color:var(--dimmer);font-size:20px}.arrow b{color:var(--purple)}
+  .pulse{animation:pulse 1.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(167,139,250,.5)}70%{box-shadow:0 0 0 12px rgba(167,139,250,0)}100%{box-shadow:0 0 0 0 rgba(167,139,250,0)}}
+  .verdict{margin-top:16px;font-size:13.5px;padding:10px 14px;border-radius:10px}
+  .verdict.bad{background:rgba(251,113,133,.1);border:1px solid rgba(251,113,133,.3);color:#fda4b0}
+  .verdict.ok{background:rgba(57,255,158,.08);border:1px solid rgba(57,255,158,.28);color:#9df5c8}
+
+  /* pitfall/fix */
+  .pf{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  @media(max-width:820px){.pf{grid-template-columns:1fr}}
+  .pf .p{border:1px solid rgba(251,113,133,.3);background:linear-gradient(160deg,rgba(251,113,133,.07),transparent);border-radius:14px;padding:18px 20px}
+  .pf .f{border:1px solid rgba(57,255,158,.3);background:linear-gradient(160deg,rgba(57,255,158,.07),transparent);border-radius:14px;padding:18px 20px}
+  .pf h4{font-size:15px;font-weight:800;margin-bottom:8px}
+  .pf .p h4{color:var(--red)}.pf .f h4{color:var(--neon)}
+
+  /* idea explorer */
+  .ctrls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 6px}
+  .chip{font-size:12.5px;font-weight:700;padding:8px 13px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--card);cursor:pointer;transition:.15s;user-select:none}
+  .chip:hover{color:var(--txt);border-color:#31465f}.chip.on{color:#06121a;background:var(--grad);border-color:transparent}
+  .sortsel{margin-left:auto;background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:8px 10px;font-size:12.5px}
+  .ideas{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+  @media(max-width:820px){.ideas{grid-template-columns:1fr}}
+  .icard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;transition:.2s;opacity:0;transform:translateY(8px);animation:rise .4s forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .icard:hover{border-color:#33476220;border-color:#334762;transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  .icard .top{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+  .icard .rank{font-family:"SF Mono",monospace;font-weight:800;font-size:13px;color:var(--purple);background:rgba(167,139,250,.12);border-radius:7px;padding:3px 8px}
+  .icard .cat{margin-left:auto;font-size:10.5px;font-weight:700;color:var(--dimmer);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+  .icard h4{font-size:16.5px;font-weight:800;line-height:1.3;margin:4px 0 10px}
+  .icard .row{margin:10px 0}
+  .icard .lbl{font-size:11px;font-weight:700;color:var(--dimmer);letter-spacing:.5px;text-transform:uppercase}
+  .icard .txt{font-size:13.5px;color:#cfd8e6}
+  .icard .txt b{color:var(--txt)}
+  .meters{display:flex;gap:14px;margin:12px 0 6px;flex-wrap:wrap}
+  .mtr{flex:1;min-width:90px}
+  .mtr .mh{display:flex;justify-content:space-between;font-size:10.5px;color:var(--dimmer);margin-bottom:4px}
+  .bar{height:6px;border-radius:6px;background:var(--bg2);overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:6px}
+  .bn i{background:var(--gradn)}.bi i{background:var(--grad)}.bd i{background:linear-gradient(90deg,#fbbf24,#fb7185)}
+
+  /* accordion proposal */
+  .acc{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:8px;background:var(--card)}
+  .acc .h{padding:16px 20px;cursor:pointer;display:flex;align-items:center;gap:10px;font-weight:750;font-size:16px;user-select:none}
+  .acc .h .tg{margin-left:auto;color:var(--dimmer);transition:.2s}
+  .acc.open .h .tg{transform:rotate(45deg)}
+  .acc .b{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 20px}
+  .acc.open .b{max-height:1400px;padding-bottom:16px}
+  .kv{display:grid;grid-template-columns:120px 1fr;gap:6px 14px;font-size:14px;margin-top:6px}
+  .kv .k{color:var(--purple);font-weight:700}
+
+  .refs{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-top:10px}
+  @media(max-width:820px){.refs{grid-template-columns:1fr}}
+  .ref{font-size:13px;color:var(--dim);padding:6px 0;border-bottom:1px solid #182333}
+  .ref b{color:var(--txt);font-weight:650}
+
+  .honest{background:var(--card2);border:1px dashed var(--line);border-radius:12px;padding:16px 18px;color:var(--dim);font-size:13.5px;margin-top:22px}
+  .honest b{color:var(--amber)}
+  footer{padding:44px 0 60px;color:var(--dimmer);font-size:13px}
+  .toTop{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--purple);display:grid;place-items:center;cursor:pointer;opacity:0;transition:.2s;z-index:40;font-size:18px}
+  .toTop.show{opacity:1}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand"><span>Flow × JEPA</span> · 연구노트</div>
+  <a class="nl" href="#thesis">핵심논지</a>
+  <a class="nl" href="#idea1">아이디어 1</a>
+  <a class="nl" href="#idea2">아이디어 2</a>
+  <a class="nl" href="#ideas">파생 아이디어</a>
+  <a class="nl" href="#proposal">제안서</a>
+  <a class="nl" href="#topics">확장 8주제</a>
+  <a class="nl" href="#effmix">효율×JEPA</a>
+  <a class="nl" href="#refs">레퍼런스</a>
+</div></nav>
+
+<header>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap">
+    <div class="eyebrow">Research Note · Generative Predictor as World Model</div>
+    <h1>노이즈로부터 배우는 예측<br><span class="hl">Flow</span>를 만난 <span class="hl">JEPA</span> 월드모델</h1>
+    <p class="sub">"픽셀이 어디서부터 오는가"를 벡터필드(=스코어)로 배우고, 그 생성 과정을 <b>JEPA의 표현 철학</b> 위에서 쓰자. 결정론적 예측기를 <b>잠재공간의 조건부 생성 과정</b>으로 바꾸는 아이디어의 심화 정리.</p>
+    <div class="thesis">
+      <b>한 줄 논지 —</b> JEPA의 약점(결정론적 예측기 → 다봉 미래를 못 담아 latent z가 필요)과 Diffusion의 약점(픽셀 재구성에 용량 낭비·느린 롤아웃)을 서로가 메운다.
+      <b>해법 = "EMA 자기증류 잠재공간에서, 미래를 조건부 Flow로 예측한다."</b>
+    </div>
+    <div class="chipsrow">
+      <span class="pill">Flow Matching</span><span class="pill">Stochastic Interpolant</span><span class="pill">PF-ODE Inversion</span>
+      <span class="pill">REPA</span><span class="pill">Consistency</span><span class="pill">Energy-based Planning</span>
+    </div>
+  </div>
+</header>
+
+<!-- THESIS -->
+<section id="thesis"><div class="wrap">
+  <div class="kicker">개요</div>
+  <h2><span class="n">00</span>왜 두 축을 합치는가</h2>
+  <p class="lead">당신이 던진 세 아이디어는 모두 같은 지점을 가리킵니다 — <b>"predictor를 회귀가 아니라 생성(score/flow)으로, 그리고 픽셀이 아니라 표현공간에서."</b></p>
+  <div class="grid g3c">
+    <div class="box"><h4><span class="ico" style="background:rgba(57,255,158,.14)">🧠</span> JEPA가 주는 것</h4><p>예측 불가능한 디테일을 버리는 <b>추상 표현</b>, 붕괴 방지(EMA·VICReg), 계획에 좋은 의미공간. <br><b>약점:</b> 결정론적 predictor는 다봉 미래를 못 담아 별도 latent z가 필요.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(167,139,250,.14)">🎨</span> Flow/Diffusion이 주는 것</h4><p>조건부 <b>확률 분포</b>를 학습·샘플링 → 다봉 미래·불확실성 표현이 자연스러움. <br><b>약점:</b> 픽셀공간은 무겁고 느리며 오차 누적, 예측불가 디테일에 용량 낭비.</p></div>
+    <div class="box" style="border-color:var(--purple)"><h4><span class="ico" style="background:var(--grad)">⚡</span> 합치면</h4><p><b>표현공간의 조건부 flow.</b> noise seed가 곧 JEPA가 원하던 z. 렌더링 없이 다봉 미래를 예측 → 샘플효율 계획 + 추상화 + 확률성.</p></div>
+  </div>
+</div></section>
+
+<!-- IDEA 1 -->
+<section id="idea1"><div class="wrap">
+  <div class="kicker">아이디어 1 · 심화</div>
+  <h2><span class="n">01</span>"픽셀이 노이즈로부터 온다"를 배우고 비교</h2>
+  <p class="lead">당신 직관을 정확한 용어로 옮기면 세 조각의 합성입니다. 각각은 이미 존재하고, <b>새로움은 이 조합을 "미래 예측(월드모델)"에 트는 것</b>입니다.</p>
+  <div class="grid g3c">
+    <div class="box"><h4>① 벡터필드 = 스코어</h4><p>noise→data를 수송하는 velocity field <code>v_θ(x,t)</code> 학습. = <b>Flow Matching / Score-based</b>.</p></div>
+    <div class="box"><h4>② "초기 노이즈를 찾는다"</h4><p>Probability-Flow ODE <b>역방향(data→noise)=인코더</b>. 각 입력에 결정론적 노이즈 코드 <code>ε(x)</code>. = <b>DDIM inversion / Diffusion Autoencoder</b>.</p></div>
+    <div class="box"><h4>③ JEPA 철학 도입</h4><p>이 예측·비교를 <b>픽셀이 아니라 학습된 표현공간</b>에서. 예측불가 디테일은 애초에 배제.</p></div>
+  </div>
+
+  <h3>⚠️ 핵심 함정과 정공법 <span style="font-size:.62em;color:var(--dimmer);font-weight:600">— 탭을 눌러 비교</span></h3>
+  <div class="archwrap">
+    <div class="tabs">
+      <button class="warn on" data-a="naive">❌ 노이즈 L2 비교 (원안 그대로)</button>
+      <button data-a="fm">✅ Flow-Matching 손실</button>
+      <button data-a="bridge">⭐ 현재→미래 브릿지</button>
+    </div>
+    <div class="view">
+      <div class="desc" id="vdesc"></div>
+      <div class="flow" id="vflow"></div>
+      <div id="vverd"></div>
+    </div>
+  </div>
+
+  <div class="pf" style="margin-top:20px">
+    <div class="p"><h4>함정: 왜 "두 노이즈 L2"가 위험한가</h4>
+      <ul>
+        <li>data→noise 사상은 측도는 보존하지만 <b>립시츠가 아님</b> — 시각적으로 거의 같은 두 프레임이 노이즈 코드에선 멀어짐(카오스).</li>
+        <li>노이즈 공간 L2 ≠ 의미적 거리 → 학습 불안정.</li>
+        <li>포인트 매칭이라 <b>다봉 미래를 뭉갬</b>(평균으로 붕괴).</li>
+      </ul></div>
+    <div class="f"><h4>해법 3선</h4>
+      <ul>
+        <li><b>과정을 비교</b> = 조건부 Flow-Matching 손실(분포 매칭). "두 분포를 비교"가 이 손실로 원리적 실현.</li>
+        <li><b>중간 시각 t 코드</b> — 디퓨전 중간 특징이 가장 의미론적. 부분 역전 코드를 world code로.</li>
+        <li><b>표현 정렬(REPA)</b> — 플로우 내부 특징을 EMA-타깃 SSL 임베딩에 정렬 → "예측불가 픽셀에 용량 낭비 마라"는 JEPA 철학을 디퓨전 내부에 주입.</li>
+      </ul></div>
+  </div>
+
+  <h3>최소 정식화 — <span style="color:var(--neon)">JEPA-Flow</span></h3>
+  <p>context 인코더 <code>f</code>, EMA 타깃 <code>f̄</code>(stop-grad). predictor를 <b>잠재 조건부 flow</b>로 교체:</p>
+  <div class="eq">
+    z₀ ~ N(0,I) ,  z₁ = f̄(target) ,  z_t = (1−t)·z₀ + t·z₁      <span class="c"># rectified-flow 보간</span><br>
+    L_flow = 𝔼_t ‖ v_θ(z_t, t | f(ctx), a) − (z₁ − z₀) ‖²        <span class="c"># 조건부 velocity 매칭</span><br>
+    L = L_flow  +  λ · L_REPA( h_θ(z_t) , f̄(target) )            <span class="c"># 미래표현 정렬(선택)</span>
+  </div>
+  <p>→ 이것은 곧 <b>"JEPA에 확률적·다봉 predictor를 준 것"</b>. JEPA가 필요로 하던 latent z를 <b>noise seed가 대신</b>합니다. 롤아웃은 <code>a</code>(행동)로 조건화하여 자기회귀.</p>
+</div></section>
+
+<!-- IDEA 2 -->
+<section id="idea2"><div class="wrap">
+  <div class="kicker">아이디어 2 · 심화</div>
+  <h2><span class="n">02</span>픽셀이 불편하면 — 컨텍스트를 노이즈로부터 (잠재판)</h2>
+  <p class="lead">아이디어 1의 <b>latent 실현</b>이자 가장 현실적인 출발점. 관측 → JEPA/DINO 인코더로 토큰화 → <b>잠재공간에서 flow-matching 월드모델</b>.</p>
+  <div class="grid g2c">
+    <div class="box"><h4>유사 선행 (정직한 위치)</h4>
+      <ul>
+        <li><b>DINO-WM</b> — DINO 잠재에서 예측하지만 <b>결정론적</b>(다봉 X)</li>
+        <li><b>GAIA-2</b> — 잠재 디퓨전 월드모델(운전), 하지만 픽셀 디코딩 지향</li>
+        <li><b>Diffusion Forcing</b> — 인과 디퓨전(픽셀/잠재), per-token 노이즈</li>
+        <li><b>Var-JEPA</b> — JEPA의 변분 정식화(가장 가까운 사촌)</li>
+      </ul></div>
+    <div class="box" style="border-color:var(--neon)"><h4>당신 안의 차별점 (= 논문 델타)</h4>
+      <ul>
+        <li>타깃을 <b>EMA 자기증류 표현</b>으로 → 픽셀 재구성 완전 제거(순수 표현공간 생성)</li>
+        <li>소스를 순수 노이즈가 아니라 <b>"현재 표현"에서 출발</b> 가능(→ 파생 A 브릿지)</li>
+        <li>다봉 미래를 <b>확률적</b>으로, 롤아웃은 <b>consistency</b>로 저렴하게(→ 파생 B)</li>
+      </ul></div>
+  </div>
+  <div class="honest"><b>주의:</b> 순수 표현공간 생성은 타깃 인코더가 무너지면(collapse) 함께 붕괴합니다. EMA + stop-grad, 또는 VICReg류 분산·공분산 정규화를 반드시 병행하세요. 또한 표현이 <i>학습 중 변한다</i>는 점(moving target)에서 diffusion을 학습하므로, 타깃 EMA 속도·워밍업 스케줄이 안정성의 핵심 변수입니다.</p></div>
+</div></section>
+
+<!-- IDEAS EXPLORER -->
+<section id="ideas"><div class="wrap">
+  <div class="kicker">아이디어 3 · 파생</div>
+  <h2><span class="n">03</span>파생 연구 아이디어 탐색기</h2>
+  <p class="lead">위 코어에서 뻗어나오는 방향들. <b>카테고리 필터</b> · <b>정렬(참신성/임팩트/난이도)</b>로 살펴보세요. 순위는 나의 추천(참신성×임팩트/난이도) 기준.</p>
+  <div class="ctrls" id="catchips"></div>
+  <div class="ctrls">
+    <span style="color:var(--dimmer);font-size:12.5px">정렬:</span>
+    <select class="sortsel" id="sort">
+      <option value="rank">추천순 (기본)</option>
+      <option value="novelty">참신성 높은순</option>
+      <option value="impact">임팩트 높은순</option>
+      <option value="easy">쉬운순 (난이도 낮은)</option>
+    </select>
+  </div>
+  <div class="ideas" id="ideas"></div>
+</div></section>
+
+<!-- PROPOSAL -->
+<section id="proposal"><div class="wrap">
+  <div class="kicker">추천 · 정식화</div>
+  <h2><span class="n">04</span>추천 3선 + 1페이지 제안서</h2>
+  <p class="lead">가장 논문성 있는 3개: <b>A. 표현 브릿지 월드모델</b> · <b>(코어) JEPA-Flow + E. 예측용 REPA</b> · <b>B. Consistency 롤아웃</b>. 대표로 A를 1페이지 제안서로 펼쳤습니다.</p>
+
+  <div class="acc open" id="acc1">
+    <div class="h">⭐ 제안서 — Representation Bridge World Model <span class="tg">＋</span></div>
+    <div class="b">
+      <div class="kv">
+        <div class="k">문제</div><div>결정론적 JEPA는 다봉 미래를 못 담고, 픽셀 디퓨전 WM은 무겁다. 표현공간에서 <b>확률적·저비용</b>으로 미래를 예측하는 월드모델이 필요.</div>
+        <div class="k">핵심 착상</div><div>noise→target이 아니라 <b>현재 표현 → 미래 표현을 잇는 확률적 다리(Stochastic Interpolant / Bridge Matching)</b>를 flow로 학습. 소스가 이미 정보 풍부 → 노이즈 사상의 병리 제거, 불확실성은 브릿지의 확률성에서.</div>
+        <div class="k">수식</div><div class="mono" style="font-size:13px">z₀=f̄(oₜ), z₁=f̄(o₍ₜ₊ₖ₎); x_s=(1−s)z₀+s z₁+σ√(s(1−s))·ε ; L=𝔼‖v_θ(x_s,s|ctx,a)−(z₁−z₀+drift)‖²</div>
+        <div class="k">아키텍처</div><div>공유 인코더 f(+EMA f̄) · 행동조건 velocity 네트워크 v_θ(·|ctx,a) · consistency 증류 헤드(롤아웃 가속) · REPA 정렬 헤드(선택).</div>
+        <div class="k">손실</div><div>브릿지 flow-matching + λ·REPA(미래표현 정렬) + VICReg(붕괴방지).</div>
+        <div class="k">베이스라인</div><div>DINO-WM(결정론적), V-JEPA2-AC, GAIA-2/NWM(픽셀 디퓨전), Diffusion Forcing(잠재).</div>
+        <div class="k">최소 실험</div><div>① CLEVRER/Push-T에서 다봉 미래 캘리브레이션(NLL·다양성) ② 잠재 MPC 성공률/속도 vs DINO-WM ③ consistency 1–2 NFE 롤아웃 품질.</div>
+        <div class="k">리스크</div><div>moving-target 불안정(EMA 스케줄), 브릿지 drift 추정 분산, 표현 붕괴 → 정규화·워밍업으로 완화.</div>
+        <div class="k">기대 기여</div><div>"픽셀 없는 확률적 월드모델"의 깔끔한 정식화 + 저비용 롤아웃 + JEPA·diffusion을 잇는 이론적 다리.</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- TOPICS (8) -->
+<section id="topics"><div class="wrap">
+  <div class="kicker">확장 · 8주제</div>
+  <h2><span class="n">05</span>JEPA 확장 연구주제 8선</h2>
+  <p class="lead">JEPA는 이미 확장이 많이 돼서, 새로움은 대부분 <b>마스킹 단위·타깃·손실의 재설계</b>에 있어요. 아래 탭으로 <b>① 구현형 확장 5선</b>과 <b>② 메타 질문(손실·마스킹·다음 연구)</b>을 나눠 담았습니다. <span style="color:var(--dimmer)">(포화도 = 이미 붐비는 정도, 높을수록 델타를 더 날카롭게 잡아야 함)</span></p>
+
+  <div class="ctrls" id="toptabs">
+    <div class="chip on" data-tt="ext">① 구현형 확장 5선</div>
+    <div class="chip" data-tt="meta">② 메타 질문 (6·7·8)</div>
+  </div>
+
+  <div id="tt-ext">
+    <div class="ideas" id="topcards"></div>
+  </div>
+
+  <div id="tt-meta" style="display:none">
+    <div class="grid" style="gap:16px">
+      <div class="box"><h3 style="margin-top:0">🎯 6. 잠재 비교 loss로 L2가 정말 최선인가 — <span style="color:var(--red)">아니오(조건부 최선)</span></h3>
+        <ul>
+          <li><b>L2는 등방 가우시안 잔차 가정</b> → 모든 차원 동일 페널티, 예측가능성 차이 무시.</li>
+          <li><b>치명적 한계</b>: 미래가 다봉이면 L2는 <b>평균으로 붕괴(mode averaging)</b> → 우리가 flow/변분으로 넘어간 근본 이유.</li>
+          <li>더 나은 후보: <b>코사인</b>(스케일 불변, BYOL/DINO) · <b>화이트닝/마할라노비스 L2</b>(타깃 공분산) · <b>프로토타입 CE</b>(DINO/iBOT, 의미론에 종종 L2보다 강함) · <b>분포/생성 손실</b>(변분·flow NLL, 다봉에 원리적).</li>
+          <li><b>결론</b>: "타깃 공간을 얼마나 잘 조건화(EMA·화이트닝·분산유지)했나"가 손실 선택보다 더 중요. 결정론적 콘텐츠→코사인/L2, 확률적 미래→분포/생성, 의미론→프로토타입 CE. <b>보편 최선은 없음.</b></li>
+        </ul></div>
+      <div class="box"><h3 style="margin-top:0">🎭 7. 마스크 설계·훈련방식이 성능을 크게 좌우하나 — <span style="color:var(--neon)">네, 결정적으로</span></h3>
+        <ul>
+          <li><b>I-JEPA 논문 자체가 입증</b>: 크고 의미 있는 target block + 정보량 있는 context가 핵심. MAE식 작은 랜덤 마스킹은 표현이 나빠짐. <b>멀티블록·대규모 마스킹이 JEPA를 JEPA로 만드는 귀납편향.</b></li>
+          <li>V-JEPA: <b>튜브 마스킹 + 고비율(~90%)</b>. C-JEPA: 마스킹을 <b>객체 단위</b>로 바꾼 게 기여 전부.</li>
+          <li>레버: 마스킹 <b>단위</b>(패치→블록→객체→세그먼트) · 비율 · 의미 vs 랜덤 · 커리큘럼/적응 마스킹 · context 정보량 · target 개수 · EMA 모멘텀 스케줄 · predictor 깊이(얇게).</li>
+          <li><b>그 자체가 연구축</b>: <b>학습된/적응형 마스킹</b> — 예측이 가장 유익한 곳을 가리는 적대적/엔트로피 기반 마스커(AdaMAE·hard-patch mining의 JEPA판). 추천 주제.</li>
+        </ul></div>
+      <div class="box"><h3 style="margin-top:0">🔮 8. 인과 JEPA 다음에 올 연구 — 역사 아크 기반 예측</h3>
+        <p style="font-size:14px;color:var(--dim)">아크: I-JEPA(공간) → V-JEPA(시간) → V-JEPA2(행동/월드모델) → C-JEPA(객체/인과·반사실). 다음 자연스러운 단계:</p>
+        <ul>
+          <li><b>① 개입형·에이전트 JEPA (내 1픽)</b> — C-JEPA는 마스킹으로 <i>반사실 유사</i> 질의를 만듦. 다음은 <b>실제 개입(행동)으로 학습</b> — 마스크가 곧 에이전트가 선택하는 행동/실험이 되는 능동 월드모델(호기심·능동학습). "관찰→실험".</li>
+          <li><b>② 관계적·구성적 인과</b> — 단일 객체 인과 → <b>다개체 관계 그래프/구조적 인과모델(SCM)</b>을 잠재에서 학습(뉴로-심볼릭).</li>
+          <li><b>③ 계층적 시간추상 H-JEPA</b> — LeCun 청사진의 미완성 조각. 잠재에서 옵션/스킬 발견 → 장기 계획.</li>
+          <li><b>④ 통합 멀티모달 임베디드 월드모델</b> — 비전·언어·오디오·행동·고유수용을 <b>하나의 예측 잠재공간</b>으로(data2vec의 꿈 + 월드모델).</li>
+          <li><b>⑤ 이론: 인과표현 식별가능성</b> — "언제 진짜 인과 요인을 복원하나"(LeJEPA identifiability 연장). 뜨거운 방법 뒤엔 항상 이론·식별성 단계가 옴.</li>
+          <li><b>⑥ 생성-예측 통합(EBM)</b> — 이 노트의 flow×JEPA. LeCun의 에너지기반 종착점: JEPA를 하나의 에너지 지형의 특수 사례로 보고 테스트타임 추론/계획.</li>
+        </ul>
+        <p style="font-size:13.5px;color:var(--dim)"><b>역사 패턴</b>(CNN→ResNet→Attention→Transformer→스케일링→RLHF): 방법이 성숙하면 (a) 스케일·파운데이션판 (b) 이론/식별성 (c) 에이전트/상호작용 확장 (d) 모달리티 통합이 순차/병렬로 옴. → 베팅: <b>"개입형·계층적·다물체 인과 월드모델 + 생성-예측 통합".</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="honest"><b>총평:</b> 1·2·5·6·7·8이 연구성 높음(특히 5-B LoRA 예측, 7 적응형 마스킹, 6 손실 재검토, 8 개입형). 3·4는 각각 <b>data2vec</b>·<b>MC-JEPA</b>가 이미 커버하니 <i>구체 델타</i>를 잡아야 함.</p></div>
+</div></section>
+
+<script>
+const TOPICS=[
+ {r:1,t:"Semantic Segmentation JEPA",star:"⭐⭐⭐⭐",cat:"Dense",nv:4,fe:4,sat:3,
+  verd:"좋음 — 단, '세그먼트 마스킹' 각도가 필요(그냥 JEPA로 seg는 새롭지 않음)",
+  how:"마스킹 단위 = SAM 마스크/슈퍼픽셀/프로토타입(사각패치 X). 가려진 세그먼트의 풀링 임베딩을 문맥으로 예측(EMA). 손실 = 잠재 L2 + Sinkhorn/프로토타입 CE(의미 그룹핑). 평가: 비지도 seg mIoU·퓨샷.",
+  delta:"인접: I-JEPA·DINOSAUR·Leopart·CrIBo. 당신 기여 = <b>경계 인식 마스킹 + 세그먼트 레벨 타깃</b> → 라벨 없이 경계에 정렬된 dense feature."},
+ {r:2,t:"Pose JEPA",star:"⭐⭐⭐⭐",cat:"Structured",nv:4,fe:4,sat:2,
+  verd:"매력적 — 운동학 물리 프라이어가 킥",
+  how:"스켈레톤 그래프 트랜스포머/GCN + EMA. (a)관절 마스킹(신체구조) (b)관절×시간 마스킹(동역학). 손실 = 잠재 L2 + VICReg + SE(3)/회전 등변성(시점 견고).",
+  delta:"마스크드 모션(MDM/HuMoR)은 대개 생성형. JEPA판은 <b>비생성 잠재</b> → 샘플효율·견고 표현. '직관물리 JEPA'의 pose 버전."},
+ {r:3,t:"Sequence JEPA",star:"⭐⭐⭐",cat:"Sequence",nv:3,fe:4,sat:5,
+  verd:"좋지만 이미 큰 부분 존재(data2vec/LLM-JEPA) → 델타 필수",
+  how:"인과/양방향 트랜스포머, block(span) 마스킹, span-pooled 잠재 타깃. 빈 곳: 가변길이 span 예측 · 인과(미래) span · 계층적.",
+  delta:"⚠️ <b>data2vec/2.0</b>이 모달리티 불문 마스킹 잠재예측 = 사실상 시퀀스 JEPA. 덜 포화한 각도 = <b>시계열 예측 JEPA</b>(서브시리즈 마스킹→잠재→경량 디코더), DNA/단백질/이벤트로그."},
+ {r:4,t:"Optical Flow JEPA",star:"⭐⭐⭐",cat:"Motion",nv:3,fe:4,sat:4,
+  verd:"주의 — 핵심작 MC-JEPA와 정면충돌",
+  how:"공유/투스트림 인코더, 플로우 영역 마스킹→잠재 예측 + forward-backward 잠재 일관성.",
+  delta:"⚠️ <b>MC-JEPA</b>(Bardes·Ponce·LeCun)가 이미 자기지도 플로우+콘텐츠. 빈 곳: <b>플로우를 타깃 모달리티로</b>(RGB→플로우 잠재) · 오클루전 인식 · <b>플로우를 브릿지로</b> 미래프레임 표현 예측."},
+ {r:5,t:"LoRA JEPA (predict-the-LoRA)",star:"⭐⭐⭐⭐",cat:"Meta-learning",nv:4,fe:3,sat:2,
+  verd:"해석 따라 매우 흥미 — '어댑터를 예측'이 정답",
+  how:"태스크 인코더 → predictor → 어댑터 임베딩(EMA 타깃 어댑터) → 하이퍼디코더가 ΔW. 손실 = 어댑터 잠재 매칭 + 다운스트림 태스크.",
+  delta:"인접: Text-to-LoRA(Sakana). <b>JEPA 델타</b>: LoRA를 <b>가중치공간 L2로 비교하면 병리적</b>(flow 노트의 노이즈-L2 함정과 동형!) → <b>학습된 어댑터-임베딩 공간에서</b> 예측·비교. 'weight도 표현공간에서 예측'이라는 철학 일반화."}
+];
+(function(){
+ function bar2(l,cls,val){return `<div class="mtr"><div class="mh"><span>${l}</span><span>${val}/5</span></div><div class="bar ${cls}"><i style="width:${val*20}%"></i></div></div>`;}
+ const box=document.getElementById('topcards');
+ TOPICS.forEach((i,idx)=>{
+   const c=document.createElement('div');c.className='icard';c.style.animationDelay=(idx*40)+'ms';
+   c.innerHTML=`<div class="top"><span class="rank">#${i.r}</span><span style="font-size:12px">${i.star}</span><span class="cat">${i.cat}</span></div>
+     <h4>${i.t}</h4>
+     <div class="meters">${bar2('참신성','bn',i.nv)}${bar2('실현성','bi',i.fe)}${bar2('포화도','bd',i.sat)}</div>
+     <div class="row"><div class="lbl">평가</div><div class="txt">${i.verd}</div></div>
+     <div class="row"><div class="lbl">구현 (최소)</div><div class="txt">${i.how}</div></div>
+     <div class="row"><div class="lbl">델타 (vs 기존)</div><div class="txt">${i.delta}</div></div>`;
+   box.appendChild(c);
+ });
+ const tabs=document.getElementById('toptabs');
+ tabs.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{
+   tabs.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));ch.classList.add('on');
+   const ext=ch.dataset.tt==='ext';
+   document.getElementById('tt-ext').style.display=ext?'':'none';
+   document.getElementById('tt-meta').style.display=ext?'none':'';
+ });
+})();
+</script>
+
+<!-- EFF x JEPA -->
+<section id="effmix"><div class="wrap">
+  <div class="kicker">교차 · 2025~2026 효율화 × JEPA</div>
+  <h2><span class="n">06</span>LLM 경량화 트렌드 × JEPA 교차 아이디어</h2>
+  <p class="lead">2025~2026 오픈소스 LLM 최적화 기법(어텐션·양자화·MoE·SSM·추론·멀티모달·장문)을 <b>JEPA와 접목</b>한 신규 연구주제. 핵심 관찰: 이 기법 다수가 <b>"예측 가능한 것은 버린다"</b>는 JEPA 철학과 원리적으로 같은 곳을 겨눕니다. 카테고리 칩으로 필터하세요. <span style="color:var(--dimmer)">(각 카드에 원천 트렌드 # 표기)</span></p>
+  <div class="ctrls" id="effchips"></div>
+  <div class="ideas" id="effcards"></div>
+  <div class="honest"><b>가장 레버리지 큰 4선:</b> ① Latent CoT-JEPA(추론 토큰 급감) · ② Mixture-of-Futures Predictor(다봉 미래+MoE 효율) · ③ State-Space JEPA(선형 장기 롤아웃) · ⑤ Predictive Visual Token Pruning(멀티모달 실용). 이들은 "표현공간 예측"이 곧 "무엇을 버려도 되는가"를 알려준다는 JEPA의 핵심을 효율화 축으로 직접 전환합니다.</div>
+</div></section>
+
+<script>
+const EFF=[
+ {r:1,cat:"Reasoning",src:"#12 CoT압축",t:"Latent Chain-of-Thought JEPA",nv:5,fe:4,
+  what:"장황한 CoT 토큰 대신 <b>잠재공간에서 추론을 롤아웃</b>하고 최종 답만 디코딩.",
+  why:"JEPA 철학(토큰 아닌 표현 예측) = CoT '과사고' 제거의 정공법. Coconut(연속사고)+JEPA 목적함수.",
+  how:"다음 사고상태의 <b>표현</b>을 예측(EMA 타깃)하는 thought-world-model. 정확도 유지하며 토큰 45~80%↓."},
+ {r:2,cat:"Architecture",src:"#7 Qwen3 MoE",t:"Mixture-of-Futures Predictor (MoE-JEPA)",nv:4,fe:4,
+  what:"JEPA predictor를 <b>MoE</b>로 — 전문가 = 미래의 서로 다른 모드, context로 라우팅.",
+  why:"JEPA의 mode-averaging(다봉 붕괴)을 sparse MoE로 해결 + 활성 10%로 효율. flow의 대안.",
+  how:"top-k 전문가 예측 혼합 + 부하분산 손실. 각 전문가가 하나의 미래 가설."},
+ {r:3,cat:"Architecture",src:"#8 Mamba-3",t:"State-Space JEPA World Model",nv:4,fe:4,
+  what:"잠재 dynamics predictor를 <b>SSM(Mamba-3)</b>로 → 롤아웃이 horizon에 <b>선형</b>.",
+  why:"월드모델은 장기 롤아웃 필수인데 어텐션은 2차. SSM으로 5배 처리량·장기 계획.",
+  how:"행동조건 SSM predictor로 잠재상태 재귀. 하이브리드(Jamba식)로 표현력 보강."},
+ {r:4,cat:"Inference·Mem",src:"#1 #11 FlashKDA·LMCache",t:"Predictive KV Cache",nv:4,fe:3,
+  what:"<b>예측 가능한 KV는 저장하지 않고</b> 작은 JEPA predictor가 문맥에서 복원.",
+  why:"'가려진 표현을 예측'=KV 축소의 학습판. 저장은 unpredictable만 → KV 75%↓와 결합.",
+  how:"KV 블록 마스킹→잠재 예측, 엔트로피로 저장 vs 예측 결정."},
+ {r:5,cat:"Multimodal",src:"#18 EvoComp·Tempo",t:"Predictive Visual Token Pruning",nv:4,fe:4,
+  what:"JEPA가 <b>예측 가능하다고 본 시각토큰을 드롭/병합</b> → 학습된 토큰 압축.",
+  why:"'predictable = compressible' 원리. 0.5~16토큰/프레임 동적압축의 원리적 근거 제공.",
+  how:"마스크드 잠재 예측오차 낮은 토큰 제거, LLM 입력 전. 예측오차 = 유지 우선순위."},
+ {r:6,cat:"Attention",src:"#3 #4 BSFA·MoA",t:"Predictability-Guided Sparse Attention",nv:4,fe:3,
+  what:"<b>surprise(예측오차)로 어텐션 예산 배분</b> — 예측 어려운 블록에 집중.",
+  why:"JEPA의 '예측가능 디테일 버리기'를 어텐션 선택 기준으로. 상위-k를 predictability로.",
+  how:"경량 JEPA 헤드가 블록 중요도(=비예측성) 산출 → BSFA 블록 선택/ MoA 윈도우 길이."},
+ {r:7,cat:"Quant·Edge",src:"#5 BitNet",t:"Ternary / VQ Latent World Model",nv:3,fe:4,
+  what:"<b>3진 가중치 + 양자화 잠재</b> 월드모델 → CPU/엣지(Jetson)에서 계획.",
+  why:"가설: 표현공간 예측이 픽셀/로짓보다 <b>양자화에 강건</b> → BitNet급 압축을 적은 손실로.",
+  how:"BitNet 백본 + VQ 잠재 타깃. 예측 vs 생성 목적의 양자화 강건성 벤치."},
+ {r:8,cat:"SLM·KD",src:"#17 DA-KD/SLM",t:"World-Model Distillation in Latent",nv:3,fe:4,
+  what:"대형 월드모델→소형으로 <b>로짓이 아니라 '예측된 잠재'를 매칭</b>해 증류.",
+  why:"잠재 KD가 표현 정합에 직접적 → 4B급 온-디바이스 월드모델.",
+  how:"교사 예측잠재↔학생 예측잠재 L2/코사인 + 동적(DA) KD 가중."},
+ {r:9,cat:"Training",src:"#15 DoRA",t:"Directional JEPA Loss",nv:4,fe:4,
+  what:"예측 잠재를 <b>크기(에너지) + 방향(의미)으로 분해</b>해 따로 감독.",
+  why:"DoRA의 분해 통찰을 손실로 → 앞서 '잠재 L2 최선인가' 질문의 구체 해법. 방향=코사인, 크기=에너지.",
+  how:"L = 1−cos(dir) + λ·|‖pred‖−‖tgt‖|. mode-averaging 완화 실험."},
+ {r:10,cat:"Long-context",src:"#19 SWAA·SWAT",t:"Context World Model (장문)",nv:3,fe:3,
+  what:"슬라이딩 윈도우로 <b>버리는 먼 문맥을 예측된 잠재 요약상태</b>로 대체.",
+  why:"JEPA 월드모델을 '문맥 상태'로 → 재학습 없이 장문 처리, Predictive KV와 시너지.",
+  how:"드롭 블록을 잠재로 압축·예측, 필요시 복원(플러그앤플레이)."},
+ {r:11,cat:"Training",src:"#13 #14 GaLore·Adam-mini",t:"Memory-Efficient JEPA Pretraining",nv:2,fe:5,
+  what:"EMA-타깃 moving-target 학습을 <b>GaLore/Adam-mini</b>로 저메모리化.",
+  why:"JEPA 대규모 사전학습 비용↓(실용). moving-target 안정성과의 상호작용이 연구점.",
+  how:"그래디언트 저랭크 투영 + 블록별 lr, EMA 모멘텀 스케줄 공동 튜닝."}
+];
+(function(){
+ function b(l,cls,v){return `<div class="mtr"><div class="mh"><span>${l}</span><span>${v}/5</span></div><div class="bar ${cls}"><i style="width:${v*20}%"></i></div></div>`;}
+ const CATS=["전체","Reasoning","Architecture","Attention","Quant·Edge","Inference·Mem","Multimodal","SLM·KD","Training","Long-context"];
+ let f="전체";
+ const cc=document.getElementById('effchips');
+ CATS.forEach(c=>{const e=document.createElement('div');e.className='chip'+(c==="전체"?' on':'');e.textContent=c;e.onclick=()=>{f=c;[...cc.children].forEach(x=>x.classList.remove('on'));e.classList.add('on');rn();};cc.appendChild(e);});
+ const box=document.getElementById('effcards');
+ function rn(){
+   box.innerHTML='';
+   EFF.filter(i=>f==="전체"||i.cat===f).forEach((i,idx)=>{
+     const c=document.createElement('div');c.className='icard';c.style.animationDelay=(idx*35)+'ms';
+     c.innerHTML=`<div class="top"><span class="rank">#${i.r}</span><span class="cat">${i.src}</span></div>
+       <h4>${i.t}</h4>
+       <div class="meters">${b('참신성','bn',i.nv)}${b('실현성','bi',i.fe)}</div>
+       <div class="row"><div class="lbl">무엇</div><div class="txt">${i.what}</div></div>
+       <div class="row"><div class="lbl">왜 JEPA와 맞나</div><div class="txt">${i.why}</div></div>
+       <div class="row"><div class="lbl">어떻게 (최소)</div><div class="txt">${i.how}</div></div>`;
+     box.appendChild(c);
+   });
+ }
+ rn();
+})();
+</script>
+
+<!-- REFS -->
+<section id="refs"><div class="wrap">
+  <div class="kicker">근거</div>
+  <h2><span class="n">07</span>꼭 대조할 선행 연구</h2>
+  <p class="lead">당신 아이디어의 각 조각이 어디에 이미 있는지 — 표절이 아니라 <b>차별점을 명확히</b> 하기 위한 지도.</p>
+  <div class="refs" id="refs"></div>
+  <div class="honest"><b>정직한 요약:</b> 조각(flow matching · PF-ODE 인코더 · REPA · latent diffusion WM · stochastic interpolant · consistency)은 존재합니다. <b>새로운 조합</b>은 "JEPA의 EMA 자기증류 표현공간에서, 미래를 조건부 flow/bridge로 예측하고, 예측용 REPA로 정렬하는 월드모델." 원안의 '노이즈 L2 비교' 함정만 (분포비교/중간코드/브릿지)로 교체하면 충분히 연구가 됩니다.</p></div>
+</div></section>
+
+<footer><div class="wrap">
+  Flow × JEPA 월드모델 — 연구 아이디어 심화노트 · 브레인스토밍 정리 · 2026-07
+</div></footer>
+<div class="toTop" id="toTop">↑</div>
+
+<script>
+/* diagram */
+const V={
+ naive:{d:"원안 그대로: GT와 예측을 각각 역전(data→noise)해 노이즈 코드를 얻고 L2로 비교. 직관은 좋지만 노이즈 사상이 카오스적이라 불안정.",
+  warn:true,
+  nodes:[["oₜ₊ₖ (GT)","target","tgt"],["→","",""],["reverse ODE","data→noise","mid"],["→","",""],["ε_gt","코드","src"],["⟂","L2 (위험)","bad pulse"],["ε_pred","예측코드","src"],["←","",""],["predict","ctx→noise","mid"],["←","",""],["ctx","context","tgt"]],
+  verd:["bad","❌ 노이즈-공간 L2 + 완전역전 → 립시츠 아님·다봉 붕괴. 그대로는 비권장."]},
+ fm:{d:"과정을 비교: context로 조건화한 예측 velocity가 GT 보간경로의 목표 velocity와 일치하도록. '두 분포 비교'가 이 손실로 원리적 실현.",
+  nodes:[["z₀~N(0,I)","noise","src"],["→","flow","mid pulse"],["v_θ(·|ctx,a)","예측 벡터필드","mid"],["→","",""],["z₁=f̄(tgt)","미래표현","tgt"]],
+  verd:["ok","✅ 분포 매칭이라 안정·다봉 보존. noise seed = JEPA의 latent z. 권장 코어."]},
+ bridge:{d:"소스를 노이즈가 아닌 '현재 표현'으로 교체 — 현재→미래를 잇는 확률적 다리. 노이즈 병리 제거, 불확실성은 다리의 확률성에서.",
+  nodes:[["z₀=f̄(oₜ)","현재표현","src pulse"],["→","bridge","mid"],["stochastic interpolant","+σ√(s(1-s))ε","mid"],["→","",""],["z₁=f̄(oₜ₊ₖ)","미래표현","tgt"]],
+  verd:["ok","⭐ 가장 우아. 소스가 이미 정보 풍부 → 학습 쉬움·의미 보존. 제안서 A."]}
+};
+function draw(k){
+  const v=V[k];document.getElementById('vdesc').textContent=v.d;
+  const f=document.getElementById('vflow');f.innerHTML='';
+  v.nodes.forEach(n=>{
+    if(["→","←","⟂","↔"].includes(n[0])){const s=document.createElement('div');s.className='arrow';s.innerHTML=(n[1]?'<b>'+n[0]+'</b><div style="font-size:10px;color:var(--dimmer)">'+n[1]+'</div>':n[0]);f.appendChild(s);return;}
+    const d=document.createElement('div');d.className='node '+(n[2]||'');d.innerHTML='<div class="t">'+n[0]+'</div><div class="s">'+n[1]+'</div>';f.appendChild(d);
+  });
+  const vv=document.getElementById('vverd');vv.innerHTML='<div class="verdict '+v.verd[0]+'">'+v.verd[1]+'</div>';
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>{x.classList.remove('on');});
+  b.classList.add('on');draw(b.dataset.a);
+});
+draw('naive');
+
+/* accordion */
+document.getElementById('acc1').querySelector('.h').onclick=function(){this.parentElement.classList.toggle('open');};
+
+/* ideas */
+const IDEAS=[
+ {r:1,t:"A · 표현 브릿지 월드모델 (Stochastic Interpolant)",cat:"Core",nv:5,im:5,df:4,
+  what:"noise→target이 아니라 <b>현재 표현 → 미래 표현을 잇는 확률적 다리</b>를 flow로 학습.",
+  jepa:"소스가 이미 정보 풍부 → 노이즈 병리 제거. 불확실성=다리의 확률성 → JEPA의 z 문제 해결.",
+  how:"stochastic interpolant + 행동조건 velocity. VICReg로 붕괴방지."},
+ {r:2,t:"B · Latent Consistency/Shortcut 월드모델",cat:"Efficiency",nv:3,im:5,df:3,
+  what:"잠재 flow를 <b>consistency/shortcut/MeanFlow</b>로 증류 → 프레임당 1–2 NFE 롤아웃.",
+  jepa:"디퓨전 WM 최대약점(느린 롤아웃) 제거 → 실전 플래닝 가능.",
+  how:"JEPA-Flow 학습 후 consistency 증류 헤드 추가."},
+ {r:3,t:"C · 에너지=보상·놀람 신호 (Energy-based Planning)",cat:"Planning",nv:4,im:4,df:3,
+  what:"flow-matching 손실/스코어 = 예측상태의 <b>plausibility(에너지)</b>. 계획·이상탐지·호기심 보상으로.",
+  jepa:"LeCun의 에너지기반 세계모델 철학과 직결 — 낮은 에너지 궤적 선호.",
+  how:"롤아웃 중 v_θ residual을 energy로 집계 → MPC 비용/내적보상."},
+ {r:4,t:"D · 미분가능 Flow-MPC (adjoint 행동 최적화)",cat:"Planning",nv:4,im:4,df:4,
+  what:"velocity field가 행동 a로 조건화 → ODE를 통해 <b>a에 대해 미분</b> → gradient-based MPC.",
+  jepa:"NWM식 샘플링 대신 연속 최적화로 행동을 직접 밀어넣음.",
+  how:"adjoint sensitivity로 ODE 롤아웃 역전파, 행동열 최적화."},
+ {r:5,t:"E · 예측용 REPA (미래표현 정렬)",cat:"Representation",nv:3,im:4,df:2,
+  what:"플로우 중간특징을 <b>미래 EMA-타깃 SSL 임베딩</b>에 정렬 → 예측가능한 의미에 집중.",
+  jepa:"'디퓨전 안에 JEPA를 넣는' 손실. 생성 가속엔 검증됨(REPA), 예측/제어로 트는 게 기여.",
+  how:"L_flow + λ·cos( h_θ(z_t), f̄(future) ). 가장 쉬운 착수점."},
+ {r:6,t:"F · 계층적 Flow (H-JEPA × Diffusion)",cat:"Hierarchy",nv:4,im:4,df:5,
+  what:"거친 잠재의 <b>장기 flow(추상 미래)</b> + 필요 시 세밀 flow(디테일).",
+  jepa:"LeCun의 H-JEPA 청사진을 flow로 실현 — 다중 시간스케일 계획.",
+  how:"coarse→fine 잠재 계층 각각 조건부 flow, 상위가 하위를 조건화."},
+ {r:7,t:"G · 부분역전 'World Code' (리트리벌·플래닝)",cat:"Core",nv:3,im:3,df:2,
+  what:"중간시각 PF-ODE 부분역전으로 얻은 <b>결정론적 코드</b>로 latent 최근접·궤적계획.",
+  jepa:"아이디어 1의 부산물 — 매끄러운 의미 코드(중간 t가 가장 의미론적).",
+  how:"t≈0.5 부분역전 코드로 kNN·궤적 검색·계획."}
+];
+const CATS=["전체","Core","Efficiency","Planning","Representation","Hierarchy"];
+let catFilter="전체", sortBy="rank";
+const cc=document.getElementById('catchips');
+CATS.forEach(c=>{const e=document.createElement('div');e.className='chip'+(c==="전체"?' on':'');e.textContent=c;e.onclick=()=>{catFilter=c;[...cc.children].forEach(x=>x.classList.remove('on'));e.classList.add('on');renderIdeas();};cc.appendChild(e);});
+document.getElementById('sort').onchange=e=>{sortBy=e.target.value;renderIdeas();};
+function bar(cls,val){return `<div class="mtr"><div class="mh"><span>${cls.l}</span><span>${val}/5</span></div><div class="bar ${cls.b}"><i style="width:${val*20}%"></i></div></div>`;}
+function renderIdeas(){
+  const box=document.getElementById('ideas');box.innerHTML='';
+  let list=IDEAS.filter(i=>catFilter==="전체"||i.cat===catFilter);
+  const s={rank:(a,b)=>a.r-b.r,novelty:(a,b)=>b.nv-a.nv,impact:(a,b)=>b.im-a.im,easy:(a,b)=>a.df-b.df}[sortBy];
+  list=list.sort(s);
+  list.forEach((i,idx)=>{
+    const c=document.createElement('div');c.className='icard';c.style.animationDelay=(idx*40)+'ms';
+    c.innerHTML=`<div class="top"><span class="rank">#${i.r}</span><span class="cat">${i.cat}</span></div>
+      <h4>${i.t}</h4>
+      <div class="meters">
+        ${bar({l:'참신성',b:'bn'},i.nv)}${bar({l:'임팩트',b:'bi'},i.im)}${bar({l:'난이도',b:'bd'},i.df)}
+      </div>
+      <div class="row"><div class="lbl">무엇</div><div class="txt">${i.what}</div></div>
+      <div class="row"><div class="lbl">JEPA 연결</div><div class="txt">${i.jepa}</div></div>
+      <div class="row"><div class="lbl">어떻게 (최소)</div><div class="txt">${i.how}</div></div>`;
+    box.appendChild(c);
+  });
+}
+renderIdeas();
+
+/* refs */
+const REFS=[
+ ["Flow Matching for Generative Modeling","Lipman et al., ICLR 2023","2210.02747"],
+ ["Rectified Flow","Liu et al., ICLR 2023","2209.03003"],
+ ["Stochastic Interpolants","Albergo, Boffi, Vanden-Eijnden 2023","2303.08797"],
+ ["I²SB: Image-to-Image Schrödinger Bridge","Liu et al., ICML 2023","2302.05872"],
+ ["Diffusion Schrödinger Bridge Matching","Shi et al., NeurIPS 2023","2303.16852"],
+ ["Consistency Models","Song et al., ICML 2023","2303.01469"],
+ ["One-Step Diffusion via Shortcut Models","Frans et al., ICLR 2025","2410.12557"],
+ ["MeanFlow","2025","2505.13447"],
+ ["REPA: Representation Alignment for Generation","Yu et al., ICLR 2025","2410.06940"],
+ ["Diffusion Autoencoders","Preechakul et al., CVPR 2022","2111.15640"],
+ ["DDIM (deterministic inversion)","Song et al., ICLR 2021","2010.02502"],
+ ["Score-based SDE / Probability-Flow ODE","Song et al., ICLR 2021","2011.13456"],
+ ["Diffusion Forcing","Chen et al., NeurIPS 2024","2407.01392"],
+ ["DINO-WM","Zhou et al., ICML 2025","2411.04983"],
+ ["GAIA-2 (latent-diffusion driving WM)","Wayve 2025","2503.20523"],
+ ["Navigation World Models (CDiT)","Bar et al., CVPR 2025","2412.03572"],
+ ["Var-JEPA (variational JEPA)","2026","2603.20111"],
+ ["V-JEPA 2 (action-conditioned WM)","Meta 2025","2506.09985"]
+];
+const rb=document.getElementById('refs');
+REFS.forEach(r=>{const e=document.createElement('div');e.className='ref';e.innerHTML=`<b>${r[0]}</b> · ${r[1]} · <a href="https://arxiv.org/abs/${r[2]}" target="_blank">arXiv:${r[2]}</a>`;rb.appendChild(e);});
+
+/* to top */
+const tt=document.getElementById('toTop');tt.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+window.onscroll=()=>tt.classList.toggle('show',window.scrollY>600);
+</script>
+</body>
+</html>

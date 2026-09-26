@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>duckychoi · wiki</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3e;
+    --accent: #7c6ff7;
+    --accent2: #e879f9;
+    --accent3: #22d3ee;
+    --accent4: #4ade80;
+    --accent5: #fb923c;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+  /* HERO */
+  .hero {
+    padding: 60px 40px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #0a0a1f, #1a0a2e, #0f1a2e);
+    border-bottom: 1px solid var(--border);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(124,111,247,0.12) 0%, transparent 55%),
+                radial-gradient(ellipse at 80% 50%, rgba(34,211,238,0.08) 0%, transparent 55%);
+  }
+  .hero-back {
+    position: absolute; top: 20px; left: 28px;
+    color: var(--muted); font-size: 13px; text-decoration: none;
+    display: flex; align-items: center; gap: 6px; position: relative;
+  }
+  .hero-back:hover { color: var(--text); }
+  .hero-title {
+    font-size: clamp(28px, 5vw, 52px); font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, var(--accent3) 50%, var(--accent) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    position: relative; margin-bottom: 10px;
+  }
+  .hero-sub { color: var(--muted); font-size: 14px; position: relative; }
+  .hero-stats {
+    display: flex; gap: 20px; justify-content: center; margin-top: 20px;
+    flex-wrap: wrap; position: relative;
+  }
+  .stat-chip {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    padding: 5px 14px; border-radius: 20px; font-size: 12px; color: var(--muted);
+  }
+  .stat-chip span { color: var(--text); font-weight: 700; }
+
+  /* SEARCH */
+  .search-bar {
+    max-width: 560px; margin: 0 auto 0;
+    padding: 28px 24px 0; position: relative;
+  }
+  .search-input {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 16px 12px 40px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  .search-icon {
+    position: absolute; left: 38px; top: 42px;
+    color: var(--muted); font-size: 14px; pointer-events: none;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px 60px; }
+
+  /* SECTION */
+  .wiki-section { margin-bottom: 48px; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+  }
+  .section-icon {
+    width: 32px; height: 32px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; flex-shrink: 0;
+  }
+  .si-concept  { background: rgba(124,111,247,0.15); }
+  .si-domain   { background: rgba(34,211,238,0.12); }
+  .si-entity   { background: rgba(232,121,249,0.12); }
+  .si-source   { background: rgba(74,222,128,0.10); }
+  .section-title { font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  .st-concept  { color: var(--accent); }
+  .st-domain   { color: var(--accent3); }
+  .st-entity   { color: var(--accent2); }
+  .st-source   { color: var(--accent4); }
+  .section-count {
+    font-size: 11px; color: var(--muted);
+    background: var(--surface2); border: 1px solid var(--border);
+    padding: 2px 8px; border-radius: 10px; margin-left: auto;
+  }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .wiki-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .wiki-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(124,111,247,0.12); }
+  .wiki-card.hidden { display: none; }
+  .card-type-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    display: inline-block; margin-right: 6px; vertical-align: middle;
+  }
+  .dot-concept { background: var(--accent); }
+  .dot-domain  { background: var(--accent3); }
+  .dot-entity  { background: var(--accent2); }
+  .dot-source  { background: var(--accent4); }
+  .card-title { font-size: 15px; font-weight: 700; margin-bottom: 7px; line-height: 1.3; }
+  .card-desc  { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 10px; }
+  .card-tags  { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag {
+    font-size: 10px; padding: 2px 8px; border-radius: 6px;
+    background: rgba(255,255,255,0.05); color: #64748b; border: 1px solid var(--border);
+  }
+  .card-date { font-size: 10px; color: #3a4060; margin-top: 10px; }
+
+  /* MODAL */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.75); z-index: 100;
+    align-items: center; justify-content: center; padding: 24px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    max-width: 680px; width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 32px;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 16px; right: 16px;
+    background: none; border: none; color: var(--muted);
+    font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 6px;
+  }
+  .modal-close:hover { background: rgba(255,255,255,0.08); color: var(--text); }
+  .modal-type { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+  .modal-title { font-size: 24px; font-weight: 800; margin-bottom: 12px; }
+  .modal-desc { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+  .modal-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .modal-tag {
+    font-size: 11px; padding: 3px 10px; border-radius: 6px;
+    background: rgba(124,111,247,0.1); color: var(--accent); border: 1px solid rgba(124,111,247,0.2);
+  }
+  .modal-sources { font-size: 12px; color: #4a5568; }
+  .modal-sources span { color: var(--accent4); }
+
+  .footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: 12px; color: #2a3040; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <a href="index.html" class="hero-back">← lab</a>
+  <div class="hero-title">Personal Wiki</div>
+  <div class="hero-sub">LLM-Wiki 패턴 기반 개인 지식베이스 — Andrej Karpathy 방식</div>
+  <div class="hero-stats">
+    <div class="stat-chip">concepts <span>11</span></div>
+    <div class="stat-chip">domains <span>4</span></div>
+    <div class="stat-chip">entities <span>10</span></div>
+    <div class="stat-chip">sources <span>27</span></div>
+    <div class="stat-chip">total <span>52</span></div>
+  </div>
+</div>
+
+<div class="search-bar">
+  <span class="search-icon">🔍</span>
+  <input class="search-input" type="text" placeholder="검색..." oninput="filterCards(this.value)" />
+</div>
+
+<div class="container">
+
+  <!-- CONCEPTS -->
+  <div class="wiki-section" id="section-concept">
+    <div class="section-header">
+      <div class="section-icon si-concept">💡</div>
+      <div class="section-title st-concept">Concepts</div>
+      <div class="section-count">11</div>
+    </div>
+    <div class="card-grid">
+      <div class="wiki-card" data-search="ai 3d 생성 3d-generation meshy tripo blender" onclick="openModal('AI 3D 생성','concept','2026년 현재 AI 기반 3D 모델 생성 기술 지형도. 단일 이미지나 텍스트 프롬프트에서 고품질 3D 에셋을 수 초 안에 생성하는 것이 가능해졌다.','3d-generation, ai-3d, meshy, tripo, blender','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>AI 3D 생성</div>
+        <div class="card-desc">단일 이미지·텍스트 프롬프트에서 고품질 3D 에셋을 수 초 안에 생성하는 기술 지형도.</div>
+        <div class="card-tags"><span class="tag">3d-generation</span><span class="tag">meshy</span><span class="tag">tripo</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="ai 에이전트 프레임워크 agent framework tools memory" onclick="openModal('AI 에이전트 프레임워크','concept','LLM에 도구(Tools), 메모리(Memory), 멀티스텝 추론 루프를 더해 자율적으로 복잡한 작업을 수행하게 만드는 소프트웨어 구조.','agent-framework, tools, memory, multi-step, LLM-agent','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>AI 에이전트 프레임워크</div>
+        <div class="card-desc">LLM에 Tools + Memory + 멀티스텝 추론을 더해 자율 작업을 수행하게 만드는 구조.</div>
+        <div class="card-tags"><span class="tag">agent-framework</span><span class="tag">memory</span><span class="tag">multi-step</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="ai 영상 생성 2026 video generation higgsfield seedance kling" onclick="openModal('AI 영상 생성 2026','concept','2026년 현재 AI 영상 생성 기술의 지형도. 개인 크리에이터와 소규모 스튜디오가 할리우드 수준의 영상을 저비용으로 제작할 수 있는 시대가 열렸다.','video-generation, ai-video, higgsfield, seedance, kling','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>AI 영상 생성 2026</div>
+        <div class="card-desc">개인 크리에이터가 할리우드 수준의 영상을 저비용으로 제작할 수 있게 된 2026년 지형도.</div>
+        <div class="card-tags"><span class="tag">video-generation</span><span class="tag">higgsfield</span><span class="tag">kling</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="after effects mcp motion design claude automation" onclick="openModal('After Effects MCP','concept','MCP(Model Context Protocol)를 통해 Claude 등 AI가 After Effects를 자연어로 직접 제어하는 통합. 모션 디자인 워크플로우의 자동화를 크게 앞당길 수 있다.','after-effects, mcp, motion-design, claude-code, automation','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>After Effects MCP</div>
+        <div class="card-desc">AI가 After Effects를 자연어로 직접 제어하는 MCP 통합. 모션 디자인 자동화.</div>
+        <div class="card-tags"><span class="tag">after-effects</span><span class="tag">mcp</span><span class="tag">automation</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="claude code 워크플로우 workflow automation dotclaude" onclick="openModal('Claude Code 워크플로우','concept','Claude Code를 단순 챗봇이 아닌 엔지니어링 시스템으로 사용하는 방법. 1인이 올바른 설정만으로 연 5억 인건비를 대체하는 자동화 시스템을 구축하는 사례가 다수 등장.','claude-code, workflow, automation, dotclaude, ai-coding','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>Claude Code 워크플로우</div>
+        <div class="card-desc">Claude Code를 엔지니어링 시스템으로 사용하는 방법. .claude/ 훅, RTK 프록시, 음성 코딩.</div>
+        <div class="card-tags"><span class="tag">claude-code</span><span class="tag">workflow</span><span class="tag">dotclaude</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="llm wiki knowledge management pkm karpathy" onclick="openModal('LLM-Wiki','concept','LLM을 활용하여 개인 지식베이스를 복리 축적형으로 구축하는 패턴. Andrej Karpathy가 2026년 공개한 아이디어 가이드에서 비롯됨.','knowledge-management, LLM, PKM, wiki','2026-04-09')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>LLM-Wiki</div>
+        <div class="card-desc">LLM이 직접 wiki를 소유·작성하는 복리 축적형 개인 지식베이스 패턴. Karpathy 아이디어.</div>
+        <div class="card-tags"><span class="tag">knowledge-management</span><span class="tag">LLM</span><span class="tag">PKM</span></div>
+        <div class="card-date">2026-04-09</div>
+      </div>
+      <div class="wiki-card" data-search="mamba4 ssm state space model transformer architecture" onclick="openModal('Mamba4','concept','Transformer의 O(n²) 어텐션 비용 문제를 해결한 State Space Model(SSM) 기반 아키텍처. Mamba의 4번째 버전.','mamba, ssm, state-space-model, architecture, transformer-alternative','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>Mamba4</div>
+        <div class="card-desc">Transformer O(n²) 어텐션 비용 문제를 해결한 SSM 기반 아키텍처. 4세대 Mamba.</div>
+        <div class="card-tags"><span class="tag">mamba</span><span class="tag">ssm</span><span class="tag">transformer-alternative</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="rag llm wiki 비교 knowledge management" onclick="openModal('RAG vs LLM-Wiki','concept','두 접근의 철학적·실용적 차이 비교. RAG는 검색 기반, LLM-Wiki는 LLM이 직접 지식을 소화·재작성하는 방식.','RAG, LLM-Wiki, 비교, knowledge-management','2026-04-09')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>RAG vs LLM-Wiki</div>
+        <div class="card-desc">검색 기반 RAG와 LLM 직접 소화 방식 LLM-Wiki의 철학적·실용적 차이 비교.</div>
+        <div class="card-tags"><span class="tag">RAG</span><span class="tag">LLM-Wiki</span><span class="tag">비교</span></div>
+        <div class="card-date">2026-04-09</div>
+      </div>
+      <div class="wiki-card" data-search="금융 ai finance trading time-series quant llm" onclick="openModal('금융 AI','concept','LLM·에이전트·파운데이션 모델을 금융 데이터 분석, 트레이딩, 예측에 적용하는 분야. 2024~2026년 급성장 중.','finance-ai, trading, time-series, multi-agent, LLM, quant','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>금융 AI</div>
+        <div class="card-desc">LLM·에이전트·파운데이션 모델을 트레이딩·예측·분석에 적용하는 분야. 2024~2026 급성장.</div>
+        <div class="card-tags"><span class="tag">finance-ai</span><span class="tag">trading</span><span class="tag">time-series</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="바이브코딩 vibe coding no-code ai claude app" onclick="openModal('바이브코딩','concept','코드 문법을 몰라도 AI에게 원하는 것을 말하는 것만으로 앱을 만드는 개발 패러다임. 2026년 초 한국에서 빠르게 확산.','vibe-coding, no-code, ai-coding, claude-code, 앱개발','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>바이브코딩</div>
+        <div class="card-desc">코드 없이 AI에게 말하는 것만으로 앱을 만드는 패러다임. 2026년 한국 확산 중.</div>
+        <div class="card-tags"><span class="tag">vibe-coding</span><span class="tag">no-code</span><span class="tag">ai-coding</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="시계열 예측 파운데이션 모델 time-series zero-shot forecasting" onclick="openModal('시계열 예측 파운데이션 모델','concept','LLM의 대규모 사전학습 → 제로샷 범용화 패러다임을 시계열 예측 도메인에 적용한 모델군. 도메인별 학습 없이 다양한 시계열 데이터를 예측.','time-series, foundation-model, zero-shot, forecasting, finance-ai','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-concept"></span>시계열 예측 파운데이션 모델</div>
+        <div class="card-desc">제로샷으로 다양한 시계열 데이터를 예측하는 파운데이션 모델 패러다임.</div>
+        <div class="card-tags"><span class="tag">time-series</span><span class="tag">foundation-model</span><span class="tag">zero-shot</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOMAINS -->
+  <div class="wiki-section" id="section-domain">
+    <div class="section-header">
+      <div class="section-icon si-domain">🗺️</div>
+      <div class="section-title st-domain">Domains</div>
+      <div class="section-count">4</div>
+    </div>
+    <div class="card-grid">
+      <div class="wiki-card" data-search="ai news github trending workflow tool" onclick="openModal('AI 뉴스 도메인','domain','AI 도구 발굴 + 워크플로우 통합을 목표로 하는 누적 인사이트 도메인. GitHub 트렌딩, 에이전트 프레임워크, TTS, 영상 처리 등 다양한 AI 뉴스를 소화.','ai-news, github-trending, workflow, tool, claude-code','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-domain"></span>AI 뉴스</div>
+        <div class="card-desc">쓸모있는 AI 도구 발굴 + 내 워크플로우 통합. GitHub 트렌딩 누적 인사이트.</div>
+        <div class="card-tags"><span class="tag">ai-news</span><span class="tag">github-trending</span><span class="tag">workflow</span></div>
+        <div class="card-date">updated 2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="local llm edge slm agent memory on-device" onclick="openModal('Local/Edge LLM','domain','경량 모델 실배포 + 에이전트 메모리 구축을 목표로 하는 도메인. On-device AI, SLM, Hermes 에이전트 메모리 관련 인사이트 누적.','local-llm, edge-ai, slm, agent-memory, on-device','2026-04-09')">
+        <div class="card-title"><span class="card-type-dot dot-domain"></span>Local/Edge LLM</div>
+        <div class="card-desc">경량 모델 실배포 + Hermes/에이전트 메모리 심기. On-device AI 인사이트.</div>
+        <div class="card-tags"><span class="tag">local-llm</span><span class="tag">edge-ai</span><span class="tag">slm</span></div>
+        <div class="card-date">2026-04-09</div>
+      </div>
+      <div class="wiki-card" data-search="slam 3dgs gaussian splatting camera robotics nerf" onclick="openModal('로봇 SLAM / 3DGS','domain','SLAM 기술 이해 + 3DGS 렌더링 + 카메라 파이프라인을 목표로 하는 도메인. Gaussian Splatting, NeRF 후속 기술 인사이트 누적.','slam, 3dgs, gaussian-splatting, camera, robotics, nerf','2026-04-09')">
+        <div class="card-title"><span class="card-type-dot dot-domain"></span>로봇 SLAM / 3DGS</div>
+        <div class="card-desc">SLAM 기술 + 3D Gaussian Splatting + 카메라 파이프라인 누적 인사이트.</div>
+        <div class="card-tags"><span class="tag">slam</span><span class="tag">3dgs</span><span class="tag">gaussian-splatting</span></div>
+        <div class="card-date">2026-04-09</div>
+      </div>
+      <div class="wiki-card" data-search="video saas higgsfield seedance kling 영상자동화" onclick="openModal('영상 AI SaaS','domain','Higgsfield 같은 영상 자동화 SaaS 개발을 목표로 하는 도메인. 핵심 기능, 워크플로우, 기술 스택, 수익모델 인사이트 누적.','video-saas, higgsfield, seedance, kling, 영상자동화','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-domain"></span>영상 AI SaaS</div>
+        <div class="card-desc">Higgsfield 같은 영상 자동화 SaaS 개발 목표. 기능·워크플로우·기술스택 누적.</div>
+        <div class="card-tags"><span class="tag">video-saas</span><span class="tag">higgsfield</span><span class="tag">seedance</span></div>
+        <div class="card-date">updated 2026-04-10</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENTITIES -->
+  <div class="wiki-section" id="section-entity">
+    <div class="section-header">
+      <div class="section-icon si-entity">🏷️</div>
+      <div class="section-title st-entity">Entities</div>
+      <div class="section-count">10</div>
+    </div>
+    <div class="card-grid">
+      <div class="wiki-card" data-search="andrej karpathy openai tesla ai researcher" onclick="openModal('Andrej Karpathy','entity','AI 연구자. OpenAI 공동창업자. Tesla AI 前 디렉터. 교육자. LLM-Wiki 패턴을 포함한 AI 생산성 아이디어를 공개하는 인플루언서.','인물, AI, OpenAI, Tesla, 연구자','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Andrej Karpathy</div>
+        <div class="card-desc">AI 연구자. OpenAI 공동창업자. Tesla AI 前 디렉터. LLM-Wiki 패턴 창시자.</div>
+        <div class="card-tags"><span class="tag">인물</span><span class="tag">OpenAI</span><span class="tag">Tesla</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="higgsfield 벤치마킹 cinema studio chat video saas" onclick="openModal('Higgsfield 벤치마킹','entity','Higgsfield 전체 기능 아키텍처 분석. Cinema Studio 플로우, Chat 기능, 멀티모델 전략(Sora 2, Kling 3.0, Seedance 2.0), VFX 프리셋, 앱 생태계, 갭 분석.','higgsfield, benchmarking, cinema-studio, chat, video-saas','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Higgsfield 벤치마킹</div>
+        <div class="card-desc">Cinema Studio 플로우, Chat, 멀티모델 전략, VFX 프리셋, 갭 분석 전체 아키텍처.</div>
+        <div class="card-tags"><span class="tag">higgsfield</span><span class="tag">benchmarking</span><span class="tag">cinema-studio</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="higgsfield 심층분석 soul cast scene prompt engineering" onclick="openModal('Higgsfield 심층분석','entity','인스타그램 저장 영상 5개를 Gemini 2.5 Pro로 직접 분석. Soul Cast + Scene 메커니즘, 타임스탬프 구간 제어, 실제 프롬프트 추출, Claude Code 픽셀 자동화, Doritos 파이프라인.','higgsfield, cinema-studio, soul-cast, prompt-engineering, 심층분석','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Higgsfield 심층분석</div>
+        <div class="card-desc">영상 5개 직접 분석. Soul Cast 메커니즘, 타임스탬프 프롬프트, Claude Code 자동화.</div>
+        <div class="card-tags"><span class="tag">soul-cast</span><span class="tag">prompt-engineering</span><span class="tag">심층분석</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="higgsfield ai video cinema studio 2.5" onclick="openModal('Higgsfield','entity','AI 기반 영상 생성 스튜디오 플랫폼. Cinema Studio 2.5가 최신 버전. 캐릭터, 씬, 샷을 통합된 워크플로우에서 생성해 영화 제작 파이프라인 전체를 AI로 대체하는 것을 목표로 한다.','video-generation, higgsfield, cinema-studio, ai-video, 영상자동화','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Higgsfield</div>
+        <div class="card-desc">AI 영상 생성 스튜디오. Cinema Studio 2.5. 영화 제작 파이프라인 전체를 AI로 대체 목표.</div>
+        <div class="card-tags"><span class="tag">cinema-studio</span><span class="tag">ai-video</span><span class="tag">video-saas</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="meshy 3d generation ai tool product design" onclick="openModal('Meshy','entity','텍스트 프롬프트 또는 스케치/이미지에서 3D 모델을 생성하는 AI 도구. Meshy.ai. 제품 디자인, 게임 에셋, 건축 시각화 분야에서 많이 사용.','3d-generation, meshy, ai-3d, product-design','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Meshy</div>
+        <div class="card-desc">텍스트/이미지에서 3D 모델을 생성하는 AI 도구. 제품 디자인·게임 에셋 특화.</div>
+        <div class="card-tags"><span class="tag">3d-generation</span><span class="tag">ai-3d</span><span class="tag">product-design</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="netflix ai research video inpainting void model open source" onclick="openModal('Netflix AI Research','entity','글로벌 스트리밍 플랫폼 Netflix의 AI 연구 부서. VOID 모델 등 영상 처리·편집 AI 기술 개발 및 오픈소스 공개.','netflix, video-ai, research, open-source, inpainting','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Netflix AI Research</div>
+        <div class="card-desc">Netflix AI 연구부서. VOID 등 영상 인페인팅·처리 AI 기술 개발 및 오픈소스 공개.</div>
+        <div class="card-tags"><span class="tag">netflix</span><span class="tag">video-ai</span><span class="tag">inpainting</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="nous research open source llm hermes agent framework" onclick="openModal('NousResearch','entity','오픈소스 LLM 파인튜닝과 에이전트 프레임워크 개발로 유명한 독립 AI 연구 그룹. Hermes 시리즈로 유명.','open-source-llm, agent-framework, hermes, fine-tuning','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>NousResearch</div>
+        <div class="card-desc">오픈소스 LLM 파인튜닝 + 에이전트 프레임워크 개발. Hermes 시리즈로 유명한 독립 연구그룹.</div>
+        <div class="card-tags"><span class="tag">open-source-llm</span><span class="tag">hermes</span><span class="tag">fine-tuning</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="seedance bytedance vfx ai video 2.0" onclick="openModal('Seedance','entity','ByteDance가 만든 AI 영상 생성 모델. Seedance 2.0은 특히 VFX(시각 효과) 분야에서 높은 평가를 받는다. Higgsfield의 핵심 백엔드 모델 중 하나.','video-generation, seedance, bytedance, vfx, ai-video','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Seedance</div>
+        <div class="card-desc">ByteDance의 AI 영상 생성 모델. VFX 분야 특화. Higgsfield 백엔드 모델 중 하나.</div>
+        <div class="card-tags"><span class="tag">bytedance</span><span class="tag">vfx</span><span class="tag">ai-video</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="tripo 3d ai single image mesh blender" onclick="openModal('Tripo','entity','단일 이미지에서 3D 메시를 생성하는 AI 도구. Tripo.ai. 이미지 → 여러 개의 분리된 메시 생성이 강점으로, Blender 후작업 워크플로우와 잘 연동된다.','3d-generation, tripo, ai-3d, blender','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Tripo</div>
+        <div class="card-desc">이미지 1장 → 분리된 3D 메시 생성. Blender 후작업 워크플로우 연동 특화.</div>
+        <div class="card-tags"><span class="tag">3d-generation</span><span class="tag">blender</span><span class="tag">single-image</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="zhipu ai zai glm chinese llm moe monday" onclick="openModal('Zhipu AI (Z.AI)','entity','중국 베이징 기반 AI 연구 기업. GLM(General Language Model) 시리즈 개발사. 글로벌 브랜드명은 Z.AI. GLM-5-Turbo 등 최신 모델 운영 중.','zhipu-ai, zai, GLM, chinese-llm, MoE, bilingual','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-entity"></span>Zhipu AI (Z.AI)</div>
+        <div class="card-desc">중국 베이징 AI 기업. GLM 시리즈 개발사. 글로벌명 Z.AI. GLM-5-Turbo 운영.</div>
+        <div class="card-tags"><span class="tag">GLM</span><span class="tag">chinese-llm</span><span class="tag">Z.AI</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="wiki-section" id="section-source">
+    <div class="section-header">
+      <div class="section-icon si-source">📄</div>
+      <div class="section-title st-source">Sources</div>
+      <div class="section-count">27</div>
+    </div>
+    <div class="card-grid" id="sources-grid">
+      <!-- 소스 목록 (간략) -->
+      <div class="wiki-card" data-search="instagram 저장 2026" onclick="openModal('인스타그램 저장 2026.02–04','source','2026년 2월~4월 사이 저장한 인스타그램 포스트 102개 요약. 비디오SaaS, AI뉴스, SLAM/3DGS, 모션디자인, 바이브코딩, 3D AI 등 카테고리별 분류.','instagram, source, 2026','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>인스타그램 저장 2026.02–04</div>
+        <div class="card-desc">102개 저장 포스트 분류 — video-saas, ai-news, slam-3dgs, 모션디자인, 바이브코딩.</div>
+        <div class="card-tags"><span class="tag">instagram</span><span class="tag">source</span><span class="tag">102 posts</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="GLM 5.1 zhipu ai glm model" onclick="openModal('GLM-5.1','source','GLM-5.1 모델 관련 소스. Zhipu AI / Z.AI의 최신 GLM 시리즈 업데이트 내용.','GLM, zhipu-ai, model','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>GLM-5.1</div>
+        <div class="card-desc">Zhipu AI GLM-5.1 모델 업데이트 소스.</div>
+        <div class="card-tags"><span class="tag">GLM</span><span class="tag">zhipu-ai</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="hermes agent nous research framework" onclick="openModal('hermes-agent','source','NousResearch Hermes 에이전트 프레임워크 관련 소스.','hermes, agent, nous-research','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>hermes-agent</div>
+        <div class="card-desc">NousResearch Hermes 에이전트 프레임워크 소스.</div>
+        <div class="card-tags"><span class="tag">hermes</span><span class="tag">agent</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="gemma 4 google model" onclick="openModal('Gemma-4 시리즈','source','Google Gemma-4 모델군 (26B, 31B, E4B) 관련 소스.','gemma, google, model','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>Gemma-4 시리즈</div>
+        <div class="card-desc">Google Gemma-4 (26B / 31B / E4B) 모델 소스.</div>
+        <div class="card-tags"><span class="tag">gemma</span><span class="tag">google</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="karpathy skills llm wiki andrej" onclick="openModal('andrej-karpathy-skills','source','Andrej Karpathy의 LLM-Wiki 및 AI 생산성 스킬 관련 가이드 소스.','karpathy, llm-wiki, skills','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>andrej-karpathy-skills</div>
+        <div class="card-desc">Karpathy LLM-Wiki 패턴 및 AI 생산성 스킬 가이드.</div>
+        <div class="card-tags"><span class="tag">karpathy</span><span class="tag">llm-wiki</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="timesfm kronos trading agents finance time-series" onclick="openModal('금융 AI 소스 묶음','source','TimesFM (Google 시계열 파운데이션 모델), Kronos (AWS 시계열), TradingAgents (멀티에이전트 트레이딩) 관련 소스 3종.','time-series, finance, trading-agents','2026-04-11')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>금융 AI 소스 (TimesFM·Kronos·TradingAgents)</div>
+        <div class="card-desc">Google TimesFM, AWS Kronos, 멀티에이전트 TradingAgents 소스 3종.</div>
+        <div class="card-tags"><span class="tag">time-series</span><span class="tag">trading</span></div>
+        <div class="card-date">2026-04-11</div>
+      </div>
+      <div class="wiki-card" data-search="void model netflix video inpainting" onclick="openModal('VOID-model','source','Netflix AI Research의 비디오 인페인팅 VOID 모델 오픈소스 소스.','void, netflix, video-inpainting','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>VOID-model</div>
+        <div class="card-desc">Netflix AI Research 비디오 인페인팅 VOID 모델 소스.</div>
+        <div class="card-tags"><span class="tag">void</span><span class="tag">inpainting</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+      <div class="wiki-card" data-search="mineru 2.5 document parsing ocr" onclick="openModal('MinerU2.5','source','문서 파싱 AI 도구 MinerU 2.5 소스. PDF/이미지 → 구조화 마크다운 변환.','mineru, document-parsing, ocr','2026-04-10')">
+        <div class="card-title"><span class="card-type-dot dot-source"></span>MinerU2.5</div>
+        <div class="card-desc">문서 파싱 AI. PDF/이미지 → 구조화 마크다운 변환 도구.</div>
+        <div class="card-tags"><span class="tag">document-parsing</span><span class="tag">ocr</span></div>
+        <div class="card-date">2026-04-10</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-type" id="modal-type"></div>
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-desc" id="modal-desc"></div>
+    <div class="modal-meta" id="modal-tags"></div>
+    <div class="modal-sources" id="modal-date"></div>
+  </div>
+</div>
+
+<div class="footer">github.com/duckychoi/lab · wiki</div>
+
+<script>
+function openModal(title, type, desc, tags, date) {
+  document.getElementById('modal-type').textContent = type.toUpperCase();
+  document.getElementById('modal-type').style.color =
+    type === 'concept' ? '#7c6ff7' : type === 'domain' ? '#22d3ee' : type === 'entity' ? '#e879f9' : '#4ade80';
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-desc').textContent = desc;
+  const tagsEl = document.getElementById('modal-tags');
+  tagsEl.innerHTML = tags.split(',').map(t => `<span class="modal-tag">${t.trim()}</span>`).join('');
+  document.getElementById('modal-date').innerHTML = `<span>updated</span> ${date}`;
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
+function closeModalOutside(e) { if (e.target.id === 'modal') closeModal(); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function filterCards(q) {
+  const query = q.toLowerCase().trim();
+  document.querySelectorAll('.wiki-card').forEach(card => {
+    const searchText = (card.dataset.search || '') + card.textContent.toLowerCase();
+    card.classList.toggle('hidden', query.length > 0 && !searchText.includes(query));
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다"/><meta name="twitter:description" content="상대 속도 가림 (Relative Velocity Masking) 정의 절대 증가량(당일 +N)으로 정렬한 순위는 이미 큰 항목을 구조적으로 위로 올린다. 큰 레포·큰 모델은 아무 일이 없어도 기저 유입만으로 상위에 든다."/><meta property="og:description" content="상대 속도 가림 (Relative Velocity Masking) 정의 절대 증가량(당일 +N)으로 정렬한 순위는 이미 큰 항목을 구조적으로 위로 올린다. 큰 레포·큰 모델은 아무 일이 없어도 기저 유입만으로 상위에 든다."/><meta property="og:image:alt" content="상대 속도 가림 (Relative Velocity Masking) 정의 절대 증가량(당일 +N)으로 정렬한 순위는 이미 큰 항목을 구조적으로 위로 올린다. 큰 레포·큰 모델은 아무 일이 없어도 기저 유입만으로 상위에 든다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/상대속도-가림"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/상대속도-가림"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="상대 속도 가림 (Relative Velocity Masking) 정의 절대 증가량(당일 +N)으로 정렬한 순위는 이미 큰 항목을 구조적으로 위로 올린다. 큰 레포·큰 모델은 아무 일이 없어도 기저 유입만으로 상위에 든다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/상대속도-가림-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/상대속도-가림-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/상대속도-가림-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/상대속도-가림" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-25" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-25" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다</a></div></nav><h1 class="article-title">상대 속도 가림 — 절대 증가량 정렬은 큰 것을 항상 위로 올린다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/concept" class="internal internal-link tag-link">concept</a><span class="note-properties-separator">, </span><a href="../tags/methodology" class="internal internal-link tag-link">methodology</a><span class="note-properties-separator">, </span><a href="../tags/ranking" class="internal internal-link tag-link">ranking</a><span class="note-properties-separator">, </span><a href="../tags/trending" class="internal internal-link tag-link">trending</a><span class="note-properties-separator">, </span><a href="../tags/vault-rule" class="internal internal-link tag-link">vault-rule</a><span class="note-properties-separator">, </span><a href="../tags/metrics" class="internal internal-link tag-link">metrics</a><span class="note-properties-separator">, </span><a href="../tags/selection-bias" class="internal internal-link tag-link">selection-bias</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-26T00:00:00.000Z">2026년 9월 26일</time><span>12 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="상대-속도-가림-relative-velocity-masking">상대 속도 가림 (Relative Velocity Masking)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#상대-속도-가림-relative-velocity-masking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>정의 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>절대 증가량(당일 +N)으로 정렬한 순위는 이미 큰 항목을 구조적으로 위로 올린다.</strong> 큰 레포·큰 모델은 <strong>아무 일이 없어도</strong> 기저 유입만으로 상위에 든다.
+그 결과 “트렌딩”이라는 한 줄에 <strong>“새로 뜨는 것”과 “원래 큰 것”이 섞여 들어오고</strong>, 독자는 둘을 구분할 수 없다.</p>
+</div>
+</blockquote>
+<h2 id="2026-09-15-배치--같은-표-안에서-상대-속도가-50배-차이-났다">2026-09-15 배치 — 같은 표 안에서 상대 속도가 50배 차이 났다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-15-배치--같은-표-안에서-상대-속도가-50배-차이-났다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>소스</th><th>당일 증가</th><th>총 스타</th><th><strong>상대 속도</strong></th></tr></thead><tbody><tr><td><a href="../sources/firstmate" class="internal internal-link" data-slug="sources/firstmate">firstmate</a></td><td>+978</td><td>6,003</td><td><strong>16.3%</strong></td></tr><tr><td><a href="../sources/all-agentic-architectures" class="internal internal-link" data-slug="sources/all-agentic-architectures">all-agentic-architectures</a></td><td>+217</td><td>4,507</td><td><strong>4.8%</strong></td></tr><tr><td><a href="../sources/mirofish" class="internal internal-link" data-slug="sources/mirofish">MiroFish</a></td><td>+560</td><td>73,504</td><td>0.76%</td></tr><tr><td><a href="../sources/ai-engineering-hub" class="internal internal-link" data-slug="sources/ai-engineering-hub">ai-engineering-hub</a></td><td>+134</td><td>37,549</td><td>0.36%</td></tr><tr><td><a href="../sources/huggingface-transformers" class="internal internal-link" data-slug="sources/huggingface-transformers">huggingface-transformers</a></td><td><strong>+536</strong></td><td>166,137</td><td><strong>0.32%</strong></td></tr></tbody></table></div>
+<p><strong>절대 증가량 2위가 상대 속도 꼴찌다.</strong> <a href="../sources/huggingface-transformers" class="internal internal-link" data-slug="sources/huggingface-transformers">huggingface-transformers</a> 는 2018년생 8년차 상시 인프라이며 신규 릴리스로 오른 게 아니다. <a href="../sources/firstmate" class="internal internal-link" data-slug="sources/firstmate">firstmate</a> 는 3개월 된 레포가 하루에 자기 크기의 1/6을 불렸다 — <strong>완전히 다른 사건인데 같은 목록의 이웃 행이다.</strong></p>
+<h3 id="hf-모델-채널에서는-더-심하다--채널-전체가-뒤집혔다">HF 모델 채널에서는 더 심하다 — 채널 전체가 뒤집혔다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hf-모델-채널에서는-더-심하다--채널-전체가-뒤집혔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>수집기 자기보고(09-15): HF 모델 기준이 <em>“트렌딩 상위 3개(다운로드 수 기준)”</em> 인데, <strong>다운로드 절대량으로 정렬하면 2022~2024년 상시 인프라가 상위를 독점한다.</strong></p>
+<ul>
+<li>배달 3건: <a href="../sources/clip-vit-base-patch32" class="internal internal-link" data-slug="sources/clip-vit-base-patch32">clip-vit-base-patch32</a>(2024-02 이후 갱신 없음) · <a href="../sources/distilbert-base-uncased" class="internal internal-link" data-slug="sources/distilbert-base-uncased">distilbert-base-uncased</a>(2024-05) · <a href="../sources/llama-3.1-8b-instruct" class="internal internal-link" data-slug="sources/llama-3.1-8b-instruct">Llama-3.1-8B-Instruct</a>(2024-09) — <strong>전부 신규 릴리스가 아니다</strong></li>
+<li><strong>탈락 21건 쪽에 2026년 신규 모델이 몰려 있었다</strong> — DeepSeek-V4.1-Flash · Edge0 · MiniCPM5-2B · Nex-N2.5 · YuE2-3B · AuK</li>
+</ul>
+<p>🎯 <strong>즉 이 채널은 “볼트가 이미 다 아는 신규 모델”과 “볼트가 모르는 낡은 모델”로 양분돼 있었다.</strong> 정렬 기준 하나가 채널의 성격을 통째로 바꿨다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🪞 그런데 이번엔 <strong>가림이 이득을 냈다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>낡은 모델 3건이 올라온 덕에 볼트는 <a href="../sources/clip-vit-base-patch32" class="internal internal-link" data-slug="sources/clip-vit-base-patch32">clip-vit-base-patch32</a>·<a href="../sources/distilbert-base-uncased" class="internal internal-link" data-slug="sources/distilbert-base-uncased">distilbert-base-uncased</a>·<a href="../sources/huggingface-transformers" class="internal internal-link" data-slug="sources/huggingface-transformers">huggingface-transformers</a> 라는 <strong>1,043개 소스를 쌓는 동안 한 번도 기록하지 않은 바닥</strong>을 채웠다.
+📌 <strong>“편향된 정렬”과 “쓸모없는 정렬”은 다르다.</strong> 절대량 정렬은 신규성에 편향돼 있지만 <strong>완결성에는 유리하다</strong> — 상시 인프라는 뉴스가 되지 않으므로 뉴스성 기준으로는 영원히 들어오지 않는다.</p>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>볼트 규칙 (채택) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>트렌딩 지표를 기록할 때 절대 증가량과 상대 속도(증가량/총량)를 같은 불릿에 적는다.</strong>
+그리고 <strong>상대 속도가 1% 미만이면 “급상승”이라는 말을 쓰지 않는다</strong> — “기저 유입” 또는 “상시 의존”으로 적는다.</p>
+<p><strong>채널 기준에 대한 판단(수집기 질의 응답)</strong>: HF 모델 채널의 다운로드 절대량 정렬을 <strong>유지한다.</strong> 단 <strong>배달 시 각 건이 “신규 릴리스”인지 “상시 인프라”인지 명시</strong>할 것. 신규성은 HF 논문 채널이 이미 담당하고 있으므로 모델 채널까지 신규성으로 맞추면 <strong>볼트에 바닥 페이지가 영원히 안 생긴다.</strong></p>
+</div>
+</blockquote>
+<h2 id="일반형">일반형<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일반형" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>한 줄 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>증가량으로 줄을 세우면 크기가 순위에 섞여 들어온다.</strong> 순위를 읽기 전에 <strong>분모를 물어야</strong> 한다.
+이것은 <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a> 의 순위 버전이다 — 단위는 같은데 <strong>정규화가 안 돼 있다.</strong></p>
+</div>
+</blockquote>
+<p>🔗 <strong><a href="../sources/dataflex-rl" class="internal internal-link" data-slug="sources/dataflex-rl">DataFlex-RL</a> 과 짝을 이룬다.</strong> 그쪽은 <em>“어떤 벤치를 평균에 넣는지가 순위를 뒤집는다”</em>(상관 -0.33), 이쪽은 <em>“무엇으로 정렬하는지가 목록의 성격을 바꾼다”</em>. <strong>둘 다 집계 선택이 결론을 만든다는 같은 이야기다.</strong></p>
+<hr/>
+<h2 id="-2026-09-17--첫-음수-드리프트-기저-유입은-측정-한계일-수-있다-cline">🆕 2026-09-17 — <strong>첫 음수 드리프트: “기저 유입”은 측정 한계일 수 있다</strong> (<a href="../sources/cline" class="internal internal-link" data-slug="sources/cline">cline</a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-17--첫-음수-드리프트-기저-유입은-측정-한계일-수-있다-cline" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 볼트 관측 사상 처음으로 ★가 줄었다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 09-16까지 드리프트를 <em>“전부 상승 또는 동일”</em> 로 기록해 왔다. <a href="../sources/cline" class="internal internal-link" data-slug="sources/cline">cline</a> 이 처음으로 <strong>−1</strong> 을 냈다(raw 68,507 → 볼트 재호출 <strong>68,506</strong>).
+<strong>크기가 문제다</strong>:</p>
+<ul>
+<li><a href="../sources/cline" class="internal internal-link" data-slug="sources/cline">cline</a> 당일 증가량 <strong>+112 = 상대속도 0.16%</strong> → 볼트 재측정 <strong>−1</strong></li>
+<li>같은 시간 대조군: <a href="../sources/security-audit-skill" class="internal internal-link" data-slug="sources/security-audit-skill">security-audit-skill</a> <strong>+23</strong>(10.90%) · <a href="../sources/octop" class="internal internal-link" data-slug="sources/octop">Octop</a> <strong>+6</strong>(12.61%) · <a href="../sources/oh-my-hermes" class="internal internal-link" data-slug="sources/oh-my-hermes">oh-my-hermes</a> <strong>+4</strong>(3.02%) · <a href="../sources/wshobson-agents" class="internal internal-link" data-slug="sources/wshobson-agents">wshobson-agents</a> <strong>+1</strong>(0.10%)</li>
+</ul>
+<p>🎯 <strong>이 레포의 “일간 신호”는 언스타 노이즈와 같은 자릿수 안에 있다.</strong> +112 중 몇이 순증이고 몇이 교체인지 <strong>일간 스냅샷으로 분리 불가</strong>하다.
+📌 <strong>이 개념에 측정론적 근거가 추가됐다</strong>: 상대속도가 <strong>0.2% 미만이면 증가량 자체가 노이즈와 구분되지 않는다.</strong> 지금까지 <em>“기저 유입”</em> 이라 불러 온 것이 실은 <strong>측정 한계</strong> 일 수 있다.
+🔴 <strong>함의</strong>: 상시 인프라 판정 시 <em>“성장하지 않는다”</em> 와 <em>“성장을 측정할 수 없다”</em> 를 구분해야 한다. 전자는 사실 주장이고 후자는 <strong>도구 한계</strong>다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 같은 배치가 126배 차이를 보여줬다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/octop" class="internal internal-link" data-slug="sources/octop">Octop</a> <strong>12.61%</strong> vs <a href="../sources/wshobson-agents" class="internal internal-link" data-slug="sources/wshobson-agents">wshobson-agents</a> <strong>0.10%</strong> = <strong>126배.</strong> 그런데 당일 증가량 기준으로는 wshobson이 <strong>5위</strong>로 목록에 남는다(+41).
+🔴 <a href="../sources/wshobson-agents" class="internal internal-link" data-slug="sources/wshobson-agents">wshobson-agents</a> 의 절대 증가량은 1위(<a href="../sources/security-audit-skill" class="internal internal-link" data-slug="sources/security-audit-skill">security-audit-skill</a> +927)의 <strong>4.4%</strong> 다. <strong>★39,749라는 크기가 성장률을 분모에서 지운다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 HF 채널에서 같은 오류가 반복된다 — <code>trendingScore</code> 절대값</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-17 볼트 실측: 배달된 HF 모델 3건의 <code>trendingScore</code> 는 <strong>126·139·147 = 전체 32·33·37위</strong>이며 1위(2409)의 <strong>5~6%</strong> 다.
+🎯 <strong>그런데 이것은 모델이 시들해서가 아니다</strong> — 상위 31위 중 <strong>볼트 기보유가 23건(74.2%)</strong> 이라 중복 필터가 선발을 아래로 밀었기 때문이다.
+📌 <strong>즉 <code>trendingScore</code> 절대값은 모델의 인기가 아니라 볼트 커버리지의 함수다.</strong> 배치 간 비교에 쓰면 안 된다 → <a href="../concepts/파생저장소-식별" class="internal internal-link alias" data-slug="concepts/파생저장소-식별">파생저장소-식별</a>.</p>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/dataflex-rl" class="internal internal-link" data-slug="sources/dataflex-rl">DataFlex-RL</a> — 집계 선택이 순위를 뒤집는 정량 증거</li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a> · <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a> · <a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a></li>
+<li><a href="../sources/huggingface-transformers" class="internal internal-link" data-slug="sources/huggingface-transformers">huggingface-transformers</a> · <a href="../sources/firstmate" class="internal internal-link" data-slug="sources/firstmate">firstmate</a> · <a href="../sources/clip-vit-base-patch32" class="internal internal-link" data-slug="sources/clip-vit-base-patch32">clip-vit-base-patch32</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-09-24---증분이-둔화한-레포가-월-532만-번-설치된다-볼트-최강-사례">🆕 2026-09-24 — <strong>★ 증분이 둔화한 레포가 월 532만 번 설치된다 (볼트 최강 사례)</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-24---증분이-둔화한-레포가-월-532만-번-설치된다-볼트-최강-사례" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/agent-browser" class="internal internal-link" data-slug="sources/agent-browser">agent-browser</a> (<a href="../entities/vercel-labs" class="internal internal-link" data-slug="entities/vercel-labs">vercel-labs</a>) 실측:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>값</th><th>해석</th></tr></thead><tbody><tr><td>★ 총계</td><td><strong>43,140</strong></td><td>9개월 만에 4만대</td></tr><tr><td>★ 당일 증분</td><td><strong>+62</strong></td><td>수집기: <em>“둔화”</em></td></tr><tr><td><strong>npm 월 다운로드</strong></td><td><strong>5,326,951</strong> (2026-08-23~09-21)</td><td><strong>초당 약 2회 설치</strong></td></tr><tr><td>npm 버전 수</td><td><strong>127</strong></td><td>활발한 릴리스</td></tr></tbody></table></div>
+<p>🎯 <strong>★ 증분으로 채택을 읽으면 정확히 거꾸로 읽는다.</strong> ★는 <em>발견</em>의 속도를 세고 npm DL은 <em>사용</em>의 양을 센다. ★가 43k에서 포화하는 동안 설치는 월 500만대로 계속된다.</p>
+<p>📌 이 페이지의 기존 사례들은 <strong>“푸시 정체 중 ★만 유입”</strong>(<a href="../sources/tradingagents" class="internal internal-link" data-slug="sources/tradingagents">TradingAgents</a>·<a href="../sources/mattpocock-skills" class="internal internal-link" data-slug="sources/mattpocock-skills">mattpocock-skills</a>) 방향이었다 — <em>활동은 없는데 인지가 는다</em>. 이번은 <strong>정반대 방향</strong>이다: <em>인지 증가는 멎었는데 사용은 폭발적이다</em>. 🎯 <strong>두 지표가 어긋나는 방식이 양방향임이 확인됐다.</strong></p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 낡은 주장 만료 — <a href="../sources/tradingagents" class="internal internal-link" data-slug="sources/tradingagents">TradingAgents</a> &quot;5주 정체&quot; 사례를 대체한다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 페이지·<a href="../sources/tradingagents" class="internal internal-link" data-slug="sources/tradingagents">TradingAgents</a> 페이지가 <em>“트렌딩 5위 레포가 5주간 커밋 0”</em> 을 <strong>“스타를 활성도 지표로 쓸 수 없다는 볼트 누적 관측의 가장 큰 사례”</strong> 로 세워 뒀다.
+<strong>2026-09-24 실측 <code>pushed_at: 2026-09-24T07:51:55Z</code> — 오늘 푸시됐다. 정체는 끝났다.</strong>(★도 96,723 → <strong>108,376</strong>, 10만 돌파)
+→ <strong>일반 규칙은 유효하나 그 최대 근거는 만료됐다.</strong> 이번 <a href="../sources/agent-browser" class="internal internal-link" data-slug="sources/agent-browser">agent-browser</a> 사례가 <strong>더 강한 대체 근거</strong>다: ★ vs npm 이라는 <strong>두 독립 소스의 수치 대비</strong>이므로, 단일 레포의 커밋 공백보다 반박에 강하다.</p>
+</div>
+</blockquote>
+<p>⬜ <strong>한계</strong>: npm 월 532만 중 CI 재설치·미러 비중을 분리할 경로가 없다. <strong>이 경고는 npm 에도 적용된다</strong> — 다운로드 지표는 매체가 바뀌어도 액면가로 읽으면 안 된다.</p>
+<h2 id="2026-09-26-갱신--음수-드리프트가-한-배치에-2건-관측-34번째">2026-09-26 갱신 — <strong>음수 드리프트가 한 배치에 2건</strong> (관측 3·4번째)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-26-갱신--음수-드리프트가-한-배치에-2건-관측-34번째" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a> 수집기 ★37,015 → 볼트 <strong>37,014 (−1)</strong></li>
+<li><a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a> 수집기 ★291,795 → 볼트 <strong>291,794 (−1)</strong></li>
+</ul>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 볼트 최초 음수는 09-17 <a href="../sources/cline" class="internal internal-link" data-slug="sources/cline">cline</a>(−1) 단 1건이었고, 오늘 <strong>하루에 2건</strong>이 더 나왔다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>두 레포의 규모가 8배 차이(3.7만 vs 29.2만)인데 <strong>둘 다 정확히 −1</strong> 이다. 📌 <strong>언스타는 규모에 비례하지 않는다</strong> — 절대 스타가 클수록 음수가 커지는 게 아니라, <strong>관측 간격이 짧으면 어느 규모에서든 ±1 수준의 잡음이 보인다.</strong>
+대비: 같은 배치 <a href="../sources/paperclip" class="internal internal-link" data-slug="sources/paperclip">paperclip</a>(당일 +2,109 = 시간당 약 88)은 <strong>+8 드리프트</strong>, <a href="../sources/hindsight" class="internal internal-link" data-slug="sources/hindsight">hindsight</a>(당일 +1,653)는 <strong>+9</strong>. → <strong>드리프트 크기가 증분 속도를 따라간다</strong>는 08-30 가설(<a href="../sources/claude-plugins-official" class="internal internal-link" data-slug="sources/claude-plugins-official">claude-plugins-official</a> 에 기록)이 <strong>오늘 4건으로 다시 정합</strong>했다(정지에 가까운 레포는 −1, 빠른 레포는 +8~+9).
+🔴 <strong>그래도 표본은 여전히 작다</strong>(누적 7건). 확증이 아니라 <strong>누적 중인 상관</strong>으로 유지한다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 발견 지표 / 사용 지표 분리의 <strong>플랫폼 내부 사례</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> 3저장소 실측에서 <code>trendingScore</code> 최고(2,174)와 <code>downloads</code> 최저(42,469)가 <strong>같은 저장소</strong>였다. 09-24 <em>“★는 발견을, npm DL은 사용을”</em> 이 <strong>서로 다른 플랫폼 비교</strong>였던 데 반해, 이번은 <strong>한 플랫폼의 두 필드</strong>다.
+📌 <strong>“인기 지표가 낮아졌다”를 “쓰이지 않는다”로 읽으면 안 되고, 그 역도 안 된다.</strong></p>
+</div>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-25" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#상대-속도-가림-relative-velocity-masking" data-for="상대-속도-가림-relative-velocity-masking">상대 속도 가림 (Relative Velocity Masking)</a></li><li class="depth-1"><a href="#2026-09-15-배치--같은-표-안에서-상대-속도가-50배-차이-났다" data-for="2026-09-15-배치--같은-표-안에서-상대-속도가-50배-차이-났다">2026-09-15 배치 — 같은 표 안에서 상대 속도가 50배 차이 났다</a></li><li class="depth-2"><a href="#hf-모델-채널에서는-더-심하다--채널-전체가-뒤집혔다" data-for="hf-모델-채널에서는-더-심하다--채널-전체가-뒤집혔다">HF 모델 채널에서는 더 심하다 — 채널 전체가 뒤집혔다</a></li><li class="depth-1"><a href="#일반형" data-for="일반형">일반형</a></li><li class="depth-1"><a href="#-2026-09-17--첫-음수-드리프트-기저-유입은-측정-한계일-수-있다-cline" data-for="-2026-09-17--첫-음수-드리프트-기저-유입은-측정-한계일-수-있다-cline">🆕 2026-09-17 — 첫 음수 드리프트: “기저 유입”은 측정 한계일 수 있다 (cline)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#-2026-09-24---증분이-둔화한-레포가-월-532만-번-설치된다-볼트-최강-사례" data-for="-2026-09-24---증분이-둔화한-레포가-월-532만-번-설치된다-볼트-최강-사례">🆕 2026-09-24 — ★ 증분이 둔화한 레포가 월 532만 번 설치된다 (볼트 최강 사례)</a></li><li class="depth-1"><a href="#2026-09-26-갱신--음수-드리프트가-한-배치에-2건-관측-34번째" data-for="2026-09-26-갱신--음수-드리프트가-한-배치에-2건-관측-34번째">2026-09-26 갱신 — 음수 드리프트가 한 배치에 2건 (관측 3·4번째)</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/게시일-이중화" class="internal">게시일 이중화</a></li><li><a href="../concepts/선발창-누락" class="internal">선발창 누락 — &quot;당일 순위&quot;는 누적형 지표를 구조적으로 놓친다</a></li><li><a href="../concepts/수확체감-변곡점" class="internal">수확체감 변곡점 — &quot;가장 많이 쓰이는 크기&quot;는 인기가 아니라 곡선이 꺾이는 지점이다</a></li><li><a href="../concepts/원본-파생-역전" class="internal">원본-파생 역전</a></li><li><a href="../concepts/측정도구-먼저-반증" class="internal">측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</a></li><li><a href="../concepts/파생저장소-식별" class="internal">파생저장소 식별 — 재포장·양자화 저장소를 중복으로 볼 것인가</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../entities/huggingface" class="internal">HuggingFace — 모델 정의와 배포의 공통 기반</a></li><li><a href="../entities/vercel-labs" class="internal">Vercel Labs</a></li><li><a href="../" class="internal">Ducky's Note</a></li><li><a href="../sources/browserskill" class="internal">BrowserSkill — 에이전트에게 브라우저를 주지 않고 탭만 빌려준다</a></li><li><a href="../sources/comfyui" class="internal">ComfyUI — 그래프/노드 기반 디퓨전 모델 GUI·API·백엔드 (comfyanonymous)</a></li><li><a href="../sources/deepseek-r1" class="internal">deepseek-ai/DeepSeek-R1 — 열을 두 개 더 읽으면 &quot;7B가 32B와 같아진다&quot;</a></li><li><a href="../sources/panwatch" class="internal">PanWatch(盯盘侠) — TradingAgents를 버튼 하나로 태우는 자체호스팅 래퍼</a></li><li><a href="../sources/qwen3.8-27b-twin-turbo-709-gguf" class="internal">DavidAU/Qwen3.8-27B-TWIN-TURBO-...-709-L-Uncensored-GGUF — 카드가 이 레포를 &quot;거부 68/100&quot;이라 적었다</a></li><li><a href="../sources/reacthuman" class="internal">ReactHuman — MLLM이 3건 중 1건의 위험을 오처리하고, 규모로 줄지 않는다</a></li><li><a href="../sources/sol-pi" class="internal">SoL-Pi — NVIDIA가 썼다. 그리고 코드 레포가 이미 ★2,185다</a></li><li><a href="../sources/tradingagents" class="internal">TradingAgents — 멀티에이전트 LLM 주식거래 프레임워크</a></li><li><a href="../sources/agent-browser" class="internal">agent-browser — Vercel Labs 브라우저 자동화 CLI (★ 둔화 중 월 npm 532만)</a></li><li><a href="../sources/claude-plugins-official" class="internal">anthropics/claude-plugins-official — Anthropic 공식 Claude Code 플러그인 디렉토리</a></li><li><a href="../sources/cline" class="internal">cline/cline — 볼트 관측 사상 첫 ★ 음수 드리프트</a></li><li><a href="../sources/clip-vit-base-patch32" class="internal">openai/clip-vit-base-patch32 — 제로샷 이미지 분류 상시 의존 백본</a></li><li><a href="../sources/docling" class="internal">docling — 문서를 LLM 입력으로 바꾸는 층이 ★67,310까지 왔다</a></li><li><a href="../sources/higgsfield-repo" class="internal">higgsfield(레포) — 볼트가 8개월 추적해 온 영상 회사의 버려진 첫 제품이었다</a></li><li><a href="../sources/huggingface-transformers" class="internal">huggingface/transformers — 생태계 전체가 공유하는 모델 정의 피벗</a></li><li><a href="../sources/ms-marco-minilm-l6-v2" class="internal">cross-encoder/ms-marco-MiniLM-L6-v2 — 8,886만 다운로드는 수확체감 변곡점에 있다</a></li><li><a href="../sources/nasiko" class="internal">Nasiko — A2A 에이전트 컨트롤 플레인 (에이전트에 진짜 API 키를 주지 않는다)</a></li><li><a href="../sources/opensre" class="internal">opensre — 벤치마크가 없다는 것을 저자가 먼저 적은 AI SRE 프레임워크</a></li><li><a href="../sources/superpowers" class="internal">obra/superpowers — 에이전트 스킬·소프트웨어 개발 방법론 프레임워크</a></li><li><a href="../sources/wshobson-agents" class="internal">wshobson/agents — 하네스별 &quot;관용적 산출물&quot;을 원칙으로 못 박은 마켓플레이스</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

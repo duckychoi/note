@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — '검증 5주가 하루로 줄었다'는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — '검증 5주가 하루로 줄었다'는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — '검증 5주가 하루로 줄었다'는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다"/><meta name="twitter:description" content="2026년은 EDA가 '도구'에서 '에이전트'로 넘어간 해다. DAC 2026에서 시놉시스·케이던스·지멘스가 동시에 자율 워크플로를 공개했고, 케이던스는 '레벨 5 자율성'을 선언했다. 시놉시스의 RTL 검증 50배, 케이던스의 '5주→하루', 엔비디아 네모트론 3 울트라, 칩에이전트 1억 3400만 달러, 코그니칩 9300만 달러, 중국 화다주톈의 '4주→1주'까지 — 주장과 검증 가능한 사실을 2026년 9월 기준으로 갈라서 정리했다."/><meta property="og:description" content="2026년은 EDA가 '도구'에서 '에이전트'로 넘어간 해다. DAC 2026에서 시놉시스·케이던스·지멘스가 동시에 자율 워크플로를 공개했고, 케이던스는 '레벨 5 자율성'을 선언했다. 시놉시스의 RTL 검증 50배, 케이던스의 '5주→하루', 엔비디아 네모트론 3 울트라, 칩에이전트 1억 3400만 달러, 코그니칩 9300만 달러, 중국 화다주톈의 '4주→1주'까지 — 주장과 검증 가능한 사실을 2026년 9월 기준으로 갈라서 정리했다."/><meta property="og:image:alt" content="2026년은 EDA가 '도구'에서 '에이전트'로 넘어간 해다. DAC 2026에서 시놉시스·케이던스·지멘스가 동시에 자율 워크플로를 공개했고, 케이던스는 '레벨 5 자율성'을 선언했다. 시놉시스의 RTL 검증 50배, 케이던스의 '5주→하루', 엔비디아 네모트론 3 울트라, 칩에이전트 1억 3400만 달러, 코그니칩 9300만 달러, 중국 화다주톈의 '4주→1주'까지 — 주장과 검증 가능한 사실을 2026년 9월 기준으로 갈라서 정리했다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/drafts/2026-09-15"/><meta property="twitter:url" content="https://duckychoi.github.io/note/drafts/2026-09-15"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="2026년은 EDA가 '도구'에서 '에이전트'로 넘어간 해다. DAC 2026에서 시놉시스·케이던스·지멘스가 동시에 자율 워크플로를 공개했고, 케이던스는 '레벨 5 자율성'을 선언했다. 시놉시스의 RTL 검증 50배, 케이던스의 '5주→하루', 엔비디아 네모트론 3 울트라, 칩에이전트 1억 3400만 달러, 코그니칩 9300만 달러, 중국 화다주톈의 '4주→1주'까지 — 주장과 검증 가능한 사실을 2026년 9월 기준으로 갈라서 정리했다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/drafts/2026-09-15-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/drafts/2026-09-15-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/drafts/2026-09-15-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="drafts/2026-09-15" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-212" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-212" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../drafts/">drafts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — '검증 5주가 하루로 줄었다'는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다</a></div></nav><h1 class="article-title">에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — '검증 5주가 하루로 줄었다'는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">description</td><td class="note-properties-value metadata-property-value"><span class="note-properties-text">2026년은 EDA가 '도구'에서 '에이전트'로 넘어간 해다. DAC 2026에서 시놉시스·케이던스·지멘스가 동시에 자율 워크플로를 공개했고, 케이던스는 '레벨 5 자율성'을 선언했다. 시놉시스의 RTL 검증 50배, 케이던스의 '5주→하루', 엔비디아 네모트론 3 울트라, 칩에이전트 1억 3400만 달러, 코그니칩 9300만 달러, 중국 화다주톈의 '4주→1주'까지 — 주장과 검증 가능한 사실을 2026년 9월 기준으로 갈라서 정리했다.</span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-15T00:00:00.000Z">2026년 9월 15일</time><span>108 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="에이전틱-edaai-반도체-설계-자동화-완전-정복-2026-시놉시스-vs-케이던스-vs-지멘스-vs-칩에이전트코그니칩에이전트리스-vs-중국-화다주톈--검증-5주가-하루로-줄었다는-해에-ai-혼자-테이프아웃한-칩은-아직-0개다">에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — ‘검증 5주가 하루로 줄었다’는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에이전틱-edaai-반도체-설계-자동화-완전-정복-2026-시놉시스-vs-케이던스-vs-지멘스-vs-칩에이전트코그니칩에이전트리스-vs-중국-화다주톈--검증-5주가-하루로-줄었다는-해에-ai-혼자-테이프아웃한-칩은-아직-0개다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="목차">목차<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><a href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0" class="internal internal-link alias">들어가며: 같은 무대에서 나온 두 개의 문장</a></li>
+<li><a href="#%EC%88%AB%EC%9E%90%EB%A1%9C-%EB%B3%B4%EB%8A%94-2026" class="internal internal-link alias">숫자로 보는 2026년 에이전틱 EDA</a></li>
+<li><a href="#eda%EB%9E%80" class="internal internal-link alias">EDA란 무엇인가: 매출 20조 원짜리 산업이 왜 급소인가</a></li>
+<li><a href="#%EC%9E%90%EC%9C%A8%EC%84%B1-%EB%A0%88%EB%B2%A8" class="internal internal-link alias">에이전틱 EDA는 무엇이 다른가: ‘자율성 레벨’이라는 개념</a></li>
+<li><a href="#%EB%B9%853-%EC%8B%9C%EB%86%89%EC%8B%9C%EC%8A%A4" class="internal internal-link alias">빅3 ①: 시놉시스 — 검증 에이전트와 앤시스라는 베팅</a></li>
+<li><a href="#%EB%B9%853-%EC%BC%80%EC%9D%B4%EB%8D%98%EC%8A%A4" class="internal internal-link alias">빅3 ②: 케이던스 — ‘레벨 5’를 먼저 선언한 회사</a></li>
+<li><a href="#%EB%B9%853-%EC%A7%80%EB%A9%98%EC%8A%A4" class="internal internal-link alias">빅3 ③: 지멘스 EDA — ‘자가 검증’이라는 다른 각도</a></li>
+<li><a href="#%EC%97%94%EB%B9%84%EB%94%94%EC%95%84" class="internal internal-link alias">숨은 주인공: 엔비디아는 왜 EDA 바닥에 플랫폼을 깔았나</a></li>
+<li><a href="#%EB%8F%84%EC%A0%84%EC%9E%90%EB%93%A4" class="internal internal-link alias">도전자들: 칩에이전트 vs 코그니칩 vs 에이전트리스</a></li>
+<li><a href="#%EC%A4%91%EA%B5%AD%ED%8E%B8" class="internal internal-link alias">중국편: 화다주톈과 ‘골든 윈도우’라는 표현</a></li>
+<li><a href="#%EC%8B%9C%EC%9E%A5-%EA%B5%AC%EC%A1%B0" class="internal internal-link alias">시장 구조: 매출은 작은데 왜 아무도 대체하지 못하나</a></li>
+<li><a href="#%EC%9D%B8%EB%A0%A5-%EB%B3%91%EB%AA%A9" class="internal internal-link alias">인력 병목: ‘2030년까지 100만 명 부족’이라는 계산</a></li>
+<li><a href="#%ED%95%9C%EA%B3%84-%ED%99%98%EA%B0%81" class="internal internal-link alias">한계 ①: 오차 허용치 0인 산업에서 ‘환각’이란 무엇인가</a></li>
+<li><a href="#%ED%95%9C%EA%B3%84-%EC%95%84%EB%82%A0%EB%A1%9C%EA%B7%B8" class="internal internal-link alias">한계 ②: 아날로그라는 벽</a></li>
+<li><a href="#%ED%95%9C%EA%B3%84-%ED%85%8C%EC%9D%B4%ED%94%84%EC%95%84%EC%9B%83" class="internal internal-link alias">한계 ③: 테이프아웃 그라운드 트루스 문제</a></li>
+<li><a href="#%ED%95%9C%EA%B5%AD%ED%8E%B8-%EC%82%BC%EC%84%B1" class="internal internal-link alias">한국편 ①: 삼성전자 — cuLitho에서 ‘AI 팩토리’까지</a></li>
+<li><a href="#%ED%95%9C%EA%B5%AD%ED%8E%B8-sk" class="internal internal-link alias">한국편 ②: SK하이닉스와 2030 자율형 팹</a></li>
+<li><a href="#%ED%95%9C%EA%B5%AD%ED%8E%B8-%ED%8C%B9%EB%A6%AC%EC%8A%A4" class="internal internal-link alias">한국편 ③: 팹리스·스타트업이 지금 실제로 쓸 수 있는 것</a></li>
+<li><a href="#%EB%8F%84%EC%9E%85-%EA%B0%80%EC%9D%B4%EB%93%9C" class="internal internal-link alias">실무 도입 가이드: 어디부터 넣고, 어디는 손대지 말아야 하나</a></li>
+<li><a href="#%EB%B6%84%EA%B8%B0%EC%A0%90" class="internal internal-link alias">2027년을 가를 네 가지 변수</a></li>
+<li><a href="#%EB%B0%98%EB%8C%80%ED%8E%B8-%EC%8B%9C%EA%B0%81" class="internal internal-link alias">반대편 시각: 에이전틱 EDA는 과대평가인가</a></li>
+<li><a href="#faq" class="internal internal-link alias">자주 묻는 질문(FAQ)</a></li>
+<li><a href="#%EB%A7%88%EC%B9%98%EB%A9%B0" class="internal internal-link alias">마치며: 도구가 똑똑해진 게 아니라, 책임의 위치가 옮겨졌다</a></li>
+<li><a href="#%EC%B0%B8%EA%B3%A0-%EC%9E%90%EB%A3%8C" class="internal internal-link alias">참고 자료</a></li>
+</ol>
+<hr/>
+<h2 id="들어가며-같은-무대에서-나온-두-개의-문장-들어가며">들어가며: 같은 무대에서 나온 두 개의 문장 {#들어가며}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#들어가며-같은-무대에서-나온-두-개의-문장-들어가며" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026년 반도체 설계 업계에서 나온 두 문장을 나란히 놓아 보자. 둘 다 사실이고, 둘 다 2026년에 나왔다.</p>
+<p><strong>문장 1.</strong> 케이던스는 자사 ChipStack AI 슈퍼 에이전트가 칩 검증 주기를 “5주에서 하루 미만으로” 압축했다고 발표했다. 같은 회사는 이 에이전트를 “레벨 5 자율성”으로 확장했다고 선언했다. 자율주행에서 빌려온 그 레벨 5, 즉 사람의 개입이 원칙적으로 필요 없다는 그 단계다.</p>
+<p><strong>문장 2.</strong> 같은 해 나온 에이전틱 EDA 서베이 논문은 이렇게 적었다. 지금까지 <strong>LLM 기반 자율 에이전트가 산업용 칩을 사람 없이 완전히 테이프아웃한 사례는 보고된 바 없다.</strong></p>
+<p>두 문장 사이의 거리가 2026년 에이전틱 EDA의 정확한 좌표다.</p>
+<p>한쪽에서는 세계 3대 EDA 기업이 2026년 DAC(Design Automation Conference)에서 <strong>동시에</strong> 자율 워크플로를 공개했다. 업계 분석에서 “작업 보조(task assistance)에서 장시간 자율(long-running autonomy)로 넘어간 순간”이라고 기록될 만큼, 세 회사가 한꺼번에 같은 방향으로 움직인 건 흔한 일이 아니다. 시놉시스는 RTL 검증 시간을 최대 50배 단축했다고 했고, 지멘스는 ‘자가 검증(self-verifying)’ 워크플로를 내놨다. 스타트업 쪽에서는 칩에이전트가 시리즈 A를 1억 3400만 달러까지 늘렸고, 코그니칩은 누적 9300만 달러를 모았다.</p>
+<p>다른 한쪽에서는, 이 산업의 오차 허용치가 여전히 <strong>0</strong>이다. 잘못 만든 칩은 되돌릴 수 없다. 마스크 세트 한 벌에 수십억 원이 들고, 테이프아웃 후 버그가 발견되면 몇 달이 날아간다. 소프트웨어처럼 “핫픽스 배포”가 불가능한 세계다. 그 세계에서 “AI가 알아서 했습니다”라는 말은 칭찬이 아니라 위험 신호로 들린다.</p>
+<p>이 글은 그 두 문장 사이를 메우려는 시도다. 어디까지가 <strong>검증 가능한 사실</strong>이고, 어디부터가 <strong>벤더의 주장</strong>이며, 어디가 아직 <strong>아무도 답하지 못한 질문</strong>인지 갈라서 보겠다.</p>
+<p>특히 한국 독자에게 이 주제는 남의 일이 아니다. 삼성전자와 SK하이닉스는 이미 AI 기반 EDA를 양산 설계에 쓰고 있고, 두 회사는 2026년 6월 합계 3200조 원 규모의 투자 계획을 공시했다. 설계 인력이 모자라는 건 실리콘밸리만의 문제가 아니다.</p>
+<hr/>
+<h2 id="숫자로-보는-2026년-에이전틱-eda-숫자로-보는-2026">숫자로 보는 2026년 에이전틱 EDA {#숫자로-보는-2026}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#숫자로-보는-2026년-에이전틱-eda-숫자로-보는-2026" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>본론에 들어가기 전에, 2026년 9월 기준으로 확인 가능한 숫자들을 한자리에 모아 두자. 이 숫자들이 뒤에 나올 모든 논의의 바닥이 된다.</p>
+<p><strong>시장 규모</strong></p>
+<ul>
+<li>EDA 툴 시장 규모(2026년): <strong>207억 8000만 달러</strong> — 약 28조 원</li>
+<li>연평균 성장률: <strong>8.1%</strong>, 2031년 <strong>306억 7000만 달러</strong> 전망</li>
+<li>별도 추정: EDA는 연 <strong>13%</strong> 성장, 반도체 R&amp;D 지출은 연 <strong>7%</strong> 성장 → <strong>EDA가 R&amp;D보다 빠르게 성장 중</strong></li>
+<li>빅3 합계 매출(2025년 기준): 약 <strong>160억 달러</strong>
+<ul>
+<li>시놉시스: <strong>80억 달러</strong>(앤시스 포함)</li>
+<li>케이던스: <strong>53억 달러</strong></li>
+<li>지멘스 EDA: <strong>22억~25억 달러</strong>(추정)</li>
+</ul>
+</li>
+</ul>
+<p><strong>시놉시스 실적</strong></p>
+<ul>
+<li>FY2026 3분기 매출: <strong>24억 8000만 달러</strong>, 전년 대비 <strong>+42%</strong></li>
+<li>그중 Design Automation 부문: <strong>20억 달러</strong>, 전년 대비 <strong>+53%</strong></li>
+<li>앤시스(Ansys) 인수: 약 <strong>350억 달러</strong>, 2025년 1월 완료</li>
+</ul>
+<p><strong>벤더가 주장하는 성능</strong></p>
+<ul>
+<li>시놉시스 자율 설계검증 에이전트: <strong>RTL 검증 최대 50배 단축</strong>, 커버리지 <strong>+20%</strong></li>
+<li>시놉시스 자율 디버그 클로저: 사이클 타임 <strong>최대 40% 감소</strong></li>
+<li>케이던스 ChipStack: RTL 검증 사이클 <strong>40배 가속</strong>, 검증 주기 <strong>5주 → 하루 미만</strong></li>
+<li>중국 화다주톈: 설계 기간 <strong>4주 → 1주</strong></li>
+</ul>
+<p><strong>스타트업 자금</strong></p>
+<ul>
+<li>칩에이전트(ChipAgents): 2026년 2월 <strong>5000만 달러</strong>(누적 7400만), 7월 시리즈 A를 <strong>1억 3400만 달러</strong>로 확대. 2026년 상반기 ARR <strong>6배</strong> 성장, <strong>120건 이상</strong> 반도체 기업 도입</li>
+<li>코그니칩(Cognichip): 2026년 4월 <strong>6000만 달러</strong>(셀리그먼 벤처스 주도), 2024년 창업 이후 누적 <strong>9300만 달러</strong></li>
+<li>에이전트리스(Agentrys): 2026년 8월 공개, 누적 <strong>2450만 달러</strong>(시드 1910만 + 프리시드 540만, 프리시드는 미디어텍 주도)</li>
+</ul>
+<p><strong>인력</strong></p>
+<ul>
+<li>딜로이트 추산: 반도체 산업이 <strong>2030년까지 숙련 인력 100만 명 추가 필요</strong></li>
+<li>자격 요건을 갖춘 후보 1명당 채용 공고 약 <strong>3건</strong></li>
+<li>골드만삭스: 설계 엔지니어 병목이 2030년까지 연 <strong>37억 달러</strong>의 EDA 추가 매출을 만들 수 있음</li>
+</ul>
+<p><strong>중국</strong></p>
+<ul>
+<li>2026년 중국 EDA 시장: <strong>100억 위안</strong>(약 1조 8000억 원) 돌파 전망</li>
+</ul>
+<p>이 숫자들을 한 문장으로 요약하면 이렇다. <strong>시장은 작고, 성장은 빠르고, 인력은 모자라고, 벤더의 주장은 크다.</strong> 그리고 마지막 항목이 이 글의 나머지 대부분을 차지할 것이다.</p>
+<hr/>
+<h2 id="eda란-무엇인가-매출-20조-원짜리-산업이-왜-급소인가-eda란">EDA란 무엇인가: 매출 20조 원짜리 산업이 왜 급소인가 {#eda란}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eda란-무엇인가-매출-20조-원짜리-산업이-왜-급소인가-eda란" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>에이전틱 EDA를 이해하려면 EDA 자체를 먼저 이해해야 한다. 이미 아는 독자는 다음 절로 건너뛰어도 된다.</p>
+<h3 id="eda가-하는-일">EDA가 하는 일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eda가-하는-일" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>EDA(Electronic Design Automation, 전자설계자동화)는 <strong>반도체 칩을 설계·검증하는 소프트웨어 도구 묶음</strong>이다. 요즘 칩 하나에는 트랜지스터가 수백억 개 들어간다. 사람이 손으로 그릴 수 있는 규모가 아니다. EDA 도구 없이는 현대 반도체가 단 하나도 만들어지지 않는다.</p>
+<p>설계 흐름을 아주 거칠게 나누면 이렇다.</p>
+<p><strong>1) 사양(Spec) → RTL 설계</strong>
+무엇을 하는 칩인지 정의하고, 그것을 Verilog·VHDL 같은 하드웨어 기술 언어(HDL)로 기술한다. RTL(Register Transfer Level)은 “레지스터 사이에서 데이터가 어떻게 흐르는가”를 적는 추상화 수준이다. 소프트웨어로 치면 소스코드에 해당한다.</p>
+<p><strong>2) 검증(Verification)</strong>
+작성한 RTL이 사양대로 동작하는지 확인한다. <strong>이 단계가 전체 설계 공수의 절반 이상을 먹는다.</strong> 시뮬레이션을 수만~수백만 번 돌리고, 커버리지(설계의 어느 부분이 테스트됐는지)를 측정하고, 안 닿은 구석을 메우는 테스트를 또 만든다. 형식 검증(formal verification)은 수학적으로 특정 속성이 항상 참인지 증명한다. 에뮬레이션은 전용 하드웨어로 실제에 가까운 속도로 돌린다.</p>
+<p><strong>3) 합성(Synthesis)</strong>
+RTL을 실제 논리 게이트 회로로 변환한다. 컴파일에 해당한다.</p>
+<p><strong>4) 물리 설계(Physical Design)</strong>
+게이트를 실제 칩 면적 위에 배치(place)하고 배선(route)한다. 면적·전력·성능(PPA: Power, Performance, Area)의 삼각 트레이드오프를 여기서 조율한다. 5nm 이하 선단 공정에서는 이 단계가 지옥에 가깝다.</p>
+<p><strong>5) 사인오프(Sign-off)와 테이프아웃(Tape-out)</strong>
+타이밍·전력·신호 무결성·제조 규칙을 전부 최종 검사한다. 통과하면 마스크 제작 데이터를 파운드리에 넘긴다. 이게 테이프아웃이다.</p>
+<h3 id="왜-이-산업이-급소인가">왜 이 산업이 ‘급소’인가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이-산업이-급소인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>EDA 시장은 2026년 기준 207억 달러다. 반도체 산업 전체 규모에 비하면 <strong>아주 작다</strong>. 그런데 이 작은 산업이 전체의 목줄을 쥔다.</p>
+<p>이유는 세 가지다.</p>
+<p><strong>첫째, 대체 불가능성.</strong> 엔비디아든 애플이든 삼성이든, 칩을 만들려면 시놉시스·케이던스·지멘스 중 하나(보통은 셋 다)의 도구를 써야 한다. 자체 개발? 수십 년 축적된 물리 모델과 파운드리 인증 없이는 불가능하다.</p>
+<p><strong>둘째, 파운드리와의 결합.</strong> EDA 도구는 각 파운드리의 공정(PDK, Process Design Kit)과 인증된 상태로 맞물려 있다. TSMC 2nm 공정으로 칩을 뽑으려면 그 공정에 인증된 도구를 써야 한다. 이 인증 관계가 진입장벽 자체다.</p>
+<p><strong>셋째, 지정학.</strong> 미국이 중국에 대한 EDA 수출을 제한하면 중국의 선단 칩 설계가 즉시 멈춘다. 실제로 이 카드는 여러 차례 쓰였다. 중국이 국산 EDA에 사활을 거는 이유이기도 하다.</p>
+<p>그러니까 EDA는 <strong>“매출로는 작지만, 없으면 아무것도 안 되는”</strong> 산업이다. 그런 산업에 AI 에이전트가 들어온다는 건 단순한 생산성 이야기가 아니다.</p>
+<hr/>
+<h2 id="에이전틱-eda는-무엇이-다른가-자율성-레벨이라는-개념-자율성-레벨">에이전틱 EDA는 무엇이 다른가: ‘자율성 레벨’이라는 개념 {#자율성-레벨}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에이전틱-eda는-무엇이-다른가-자율성-레벨이라는-개념-자율성-레벨" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>여기서 중요한 구분이 하나 있다. <strong>EDA에 AI가 들어온 건 처음이 아니다.</strong></p>
+<h3 id="1세대-ai-최적화-엔진-20202023">1세대: AI 최적화 엔진 (2020~2023)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1세대-ai-최적화-엔진-20202023" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>시놉시스의 DSO.ai가 대표적이다. 이건 LLM이 아니라 강화학습 기반 최적화 엔진이었다. 물리 설계 단계에서 수천 가지 파라미터 조합을 탐색해 PPA 최적점을 찾는다. 사람이 몇 주 걸려 튜닝하던 걸 자동으로 돌린다.</p>
+<p>삼성전자는 <strong>2021년 국내 최초로 모바일 AP 설계에 DSO.ai를 적용</strong>했다. SK하이닉스도 메모리 설계에 도입했고, 양사 모두 HBM 설계에 활용하는 것으로 알려졌다. 즉 한국 대기업은 이미 5년 전부터 AI EDA를 실전에서 써 왔다.</p>
+<p>하지만 이건 **“도구 안에 들어간 똑똑한 최적화기”**였다. 사람이 도구를 조작하는 구조는 그대로였다.</p>
+<h3 id="2세대-llm-어시스턴트-20232025">2세대: LLM 어시스턴트 (2023~2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2세대-llm-어시스턴트-20232025" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>엔비디아의 ChipNeMo처럼 반도체 도메인에 특화된 LLM이 등장했다. 스크립트를 짜 주고, 버그 리포트를 요약하고, 문서를 찾아 준다. 코파일럿에 해당한다. 유용하지만 여전히 <strong>사람이 운전석에 앉아 있다.</strong></p>
+<h3 id="3세대-에이전틱-eda-2026">3세대: 에이전틱 EDA (2026~)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3세대-에이전틱-eda-2026" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>여기서 성격이 바뀐다. 화다주톈 회장 류웨이핑이 2026 국제집적회로혁신엑스포에서 한 표현이 정확하다.</p>
+<blockquote>
+<p>기존에는 <strong>사람이 설계 도구를 직접 조작</strong>했다면, 이제는 <strong>사람이 AI 에이전트에 작업을 지시</strong>하는 방식으로 전환되고 있다.</p>
+</blockquote>
+<p>에이전틱 EDA의 핵심은 **루프를 닫는 것(closing the loop)**이다. 예를 들어 검증 에이전트는 이런 순환을 스스로 돈다.</p>
+<ol>
+<li>사양·설계·테스트 저장소를 읽고 검증 목표를 분해한다</li>
+<li>테스트 플랜을 생성한다</li>
+<li>시뮬레이션을 수백 개 동시에 돌린다</li>
+<li>커버리지 구멍을 찾는다</li>
+<li>RTL 버그를 식별한다</li>
+<li>버그 수정안을 생성한다</li>
+<li>그 패치를 다시 검증한다</li>
+<li>커버리지가 닫힐 때까지 1~7을 반복한다</li>
+</ol>
+<p>사람은 목표만 주고, 결과를 검수한다. <strong>이게 ‘작업 보조’와 ‘장시간 자율’의 차이다.</strong></p>
+<h3 id="자율성-레벨이라는-프레임">자율성 레벨이라는 프레임<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#자율성-레벨이라는-프레임" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>업계는 자율주행의 레벨 0~5 프레임을 그대로 빌려 왔다. 공식 표준은 아니고 벤더마다 정의가 조금씩 다르지만, 대략 이렇게 통용된다.</p>
+<ul>
+<li><strong>레벨 1~2</strong>: 도구가 제안하고 사람이 실행. 코파일럿 수준</li>
+<li><strong>레벨 3</strong>: 에이전트가 정해진 작업을 수행하되, 정해진 체크포인트에서 사람이 승인</li>
+<li><strong>레벨 4</strong>: 특정 영역(예: 검증) 안에서 에이전트가 목표까지 자율 수행</li>
+<li><strong>레벨 5</strong>: 사람의 개입 없이 전 과정 자율 수행</li>
+</ul>
+<p>케이던스가 “레벨 5”를 주장한 건 2026년이고, 이건 <strong>마케팅 언어와 기술 현실이 겹치는 지점</strong>이다. 뒤에서 자세히 뜯어보겠다.</p>
+<p>여기서 미리 못 박아 둘 게 하나 있다. 자율주행에서 레벨 5가 “아무 데서나 운전 가능”을 뜻하듯, EDA에서도 레벨 5가 의미 있으려면 **“어떤 칩이든, 사람 없이, 테이프아웃까지”**여야 한다. 2026년 9월 기준 그 사례는 공개적으로 보고된 바 없다.</p>
+<hr/>
+<h2 id="빅3--시놉시스--검증-에이전트와-앤시스라는-베팅-빅3-시놉시스">빅3 ①: 시놉시스 — 검증 에이전트와 앤시스라는 베팅 {#빅3-시놉시스}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#빅3--시놉시스--검증-에이전트와-앤시스라는-베팅-빅3-시놉시스" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>시놉시스는 EDA 업계 1위다. 2025년 기준 매출 약 80억 달러(앤시스 포함). 2026년 3분기 매출은 24억 8000만 달러로 전년 대비 42% 성장했고, Design Automation 부문만 보면 20억 달러로 <strong>53%</strong> 늘었다.</p>
+<h3 id="agentengineer-무엇을-내놨나">AgentEngineer: 무엇을 내놨나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentengineer-무엇을-내놨나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 DAC에서 시놉시스가 공개한 핵심은 <strong>완전 자율 설계검증(DV, Design Verification) 에이전트</strong>다.</p>
+<p>주장하는 성능은 다음과 같다.</p>
+<ul>
+<li><strong>검증된 RTL까지의 시간 최대 50배 단축</strong></li>
+<li><strong>커버리지 20% 추가 개선</strong></li>
+<li>자율 디버그 클로저 워크플로: <strong>사이클 타임 최대 40% 감소</strong></li>
+<li>종단간 자율 검증 클로저: “수 주의 수작업을 수 시간의 에이전트 실행으로 압축”</li>
+</ul>
+<p>구조는 <strong>오케스트레이터 에이전트 + 전문 에이전트</strong> 형태다. 오케스트레이터가 사양·설계·테스트 저장소·사용자 입력으로부터 DV 목표를 분해하고, 테스트 플랜 생성부터 커버리지 클로저, 고급 디버그까지 검증 생애주기 전체에 걸쳐 전문 에이전트와 도구를 닫힌 루프로 조율한다.</p>
+<p>기술 스택은 시놉시스의 에이전틱 AI 플랫폼 위에 <strong>AgentEngineer™</strong> 기술이 올라가고, 그 아래를 <strong>엔비디아 에이전틱 AI 인프라</strong>가 받친다. 구체적으로는 NVIDIA Agent Toolkit, Nemotron 3 Ultra 오픈 모델, OpenShell 런타임이다.</p>
+<h3 id="amd마이크로소프트와의-협업">AMD·마이크로소프트와의 협업<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#amd마이크로소프트와의-협업" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 7월 27일 시놉시스는 AMD·마이크로소프트와 함께 <strong>Microsoft Discovery 위에서 동작하는 최초의 자율 EDA 워크플로</strong>를 발표했다. 이게 의미하는 바는 두 가지다.</p>
+<p>첫째, 에이전틱 EDA가 <strong>클라우드 플랫폼과 묶이기 시작했다</strong>. EDA는 전통적으로 온프레미스 성향이 극도로 강한 분야다. 설계 데이터는 회사의 가장 민감한 자산이고, 유출되면 회사가 끝난다. 그런데 에이전트를 돌리려면 대량의 GPU가 필요하고, 그건 클라우드가 유리하다. 이 긴장은 앞으로 몇 년간 계속될 주제다.</p>
+<p>둘째, <strong>AMD가 고객이자 파트너로 참여했다</strong>. 실제 선단 칩을 만드는 회사가 자기 워크플로를 걸었다는 건 데모 이상의 신호다. 다만 그 결과로 테이프아웃된 칩이 있는지는 별개 문제다.</p>
+<h3 id="앤시스-인수라는-큰-그림">앤시스 인수라는 큰 그림<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#앤시스-인수라는-큰-그림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>시놉시스는 2025년 1월 <strong>약 350억 달러</strong>를 들여 앤시스(Ansys) 인수를 완료했다. 앤시스는 다중물리(multiphysics) 시뮬레이션의 강자다. 열, 구조, 유체, 전자기 해석을 한다.</p>
+<p>왜 EDA 회사가 시뮬레이션 회사를 샀나. <strong>칩이 더 이상 칩만이 아니기 때문이다.</strong></p>
+<p>요즘 AI 가속기는 칩 하나가 아니라 <strong>패키지 전체</strong>가 제품이다. HBM이 적층되고, 인터포저 위에 여러 다이가 올라가고, 랙 단위로 수백 개가 묶인다. 이때 병목은 논리 설계가 아니라 <strong>열과 전력</strong>이다. 800W짜리 칩에서 나오는 열을 어떻게 뺄 것인가, 전류가 급변할 때 전압이 어떻게 흔들리는가 — 이건 전기 설계 문제가 아니라 물리 문제다.</p>
+<p>시놉시스는 이걸 “실리콘에서 시스템까지(silicon to systems)“라고 부른다. 앤시스를 붙이면 EDA + 다중물리 시뮬레이션을 한 플랫폼에서 돌릴 수 있고, <strong>여기에 에이전트를 얹으면 “칩부터 랙까지 자율 설계”라는 그림이 나온다.</strong></p>
+<p>야심 찬 그림이다. 그리고 350억 달러짜리 베팅이다.</p>
+<h3 id="실무-관점-평가">실무 관점 평가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무-관점-평가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>강점</strong>: 검증은 전체 공수의 절반 이상을 먹는 최대 병목이다. 거기를 정조준한 건 전략적으로 정확하다. 앤시스로 확보한 물리 영역은 경쟁사가 단기에 따라오기 어렵다.</li>
+<li><strong>주의점</strong>: “최대 50배”에서 중요한 단어는 **“최대”**다. 어떤 설계에서, 어떤 기준선 대비, 어떤 조건인지가 공개 자료만으로는 특정되지 않는다. 벤더 벤치마크는 대개 가장 유리한 케이스다.</li>
+<li><strong>확인할 것</strong>: 도입을 검토한다면 자사 설계 유형(디지털 SoC인지, 메모리인지, 아날로그 혼재인지)으로 PoC를 요구해야 한다. 남의 50배는 내 50배가 아니다.</li>
+</ul>
+<hr/>
+<h2 id="빅3--케이던스--레벨-5를-먼저-선언한-회사-빅3-케이던스">빅3 ②: 케이던스 — ‘레벨 5’를 먼저 선언한 회사 {#빅3-케이던스}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#빅3--케이던스--레벨-5를-먼저-선언한-회사-빅3-케이던스" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>케이던스는 2025년 기준 매출 약 53억 달러의 2위 사업자다. 그리고 2026년 에이전틱 EDA 경쟁에서 <strong>가장 공격적인 언어를 쓴 회사</strong>다.</p>
+<h3 id="chipstack-레벨-5-선언">ChipStack: 레벨 5 선언<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chipstack-레벨-5-선언" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>케이던스는 COMPUTEX 2026에서 <strong>ChipStack AI 슈퍼 에이전트를 레벨 5 자율성으로 확장</strong>했다고 발표했다. 회사 표현으로는 “반도체 업계 최초의 완전 자율 가상 에이전틱 AI 설계 엔지니어”다. 엔비디아와의 협업으로, Nemotron 모델과 OpenShell 런타임을 결합했다.</p>
+<p>작동 방식은 이렇다. 엔지니어가 자율 에이전트에 지시하면, 에이전트가 <strong>Xcelium 로직 시뮬레이션</strong>과 <strong>Jasper 형식 검증</strong>을 써서 수백 개 시뮬레이션을 동시에 돌린다. 그리고 재귀적으로 순환한다.</p>
+<ol>
+<li>RTL 버그를 식별한다</li>
+<li>버그 수정안을 생성한다</li>
+<li>그 패치를 검증한다</li>
+<li>커버리지 클로저를 확인한다</li>
+</ol>
+<p>케이던스가 주장하는 결과는 <strong>RTL 검증 사이클 40배 가속</strong>이고, 별도로 <strong>검증 주기 5주 → 하루 미만</strong>이라는 수치도 제시됐다.</p>
+<p>가용 시점은 <strong>2026년 하반기 얼리 액세스 고객 대상</strong>이다. 즉 이 글을 쓰는 2026년 9월 시점에 레벨 5 기능은 <strong>일반 출시 상태가 아니다.</strong> 이건 중요한 단서다.</p>
+<h3 id="aurastack-패키징으로의-확장">AuraStack: 패키징으로의 확장<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aurastack-패키징으로의-확장" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>케이던스는 ChipStack 외에 <strong>AuraStack AI 슈퍼 에이전트</strong>도 내놨다. 이쪽은 PCB와 첨단 패키징 설계를 담당한다. 목표는 랙 규모 AI 시스템의 다중물리 병목이다.</p>
+<p>시놉시스가 앤시스를 사서 물리 영역으로 들어간 것과 <strong>같은 방향</strong>이다. 접근법만 다르다. 시놉시스는 인수로, 케이던스는 자체 확장으로 갔다.</p>
+<p>여기에 <strong>AgentStack 오케스트레이션 프레임워크</strong>가 더해진다. 여러 에이전트를 조율하는 계층이다. 즉 케이던스는 “실리콘부터 시스템까지 에이전트 포트폴리오”를 완성했다고 주장한다.</p>
+<h3 id="레벨-5를-어떻게-읽어야-하나">‘레벨 5’를 어떻게 읽어야 하나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#레벨-5를-어떻게-읽어야-하나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>솔직하게 짚자. <strong>케이던스의 레벨 5 주장은 전체 칩 설계가 아니라 특정 워크플로 안에서의 자율성으로 읽어야 한다.</strong></p>
+<p>근거는 세 가지다.</p>
+<p>첫째, 발표 내용 자체가 <strong>검증(verification)에 집중돼 있다</strong>. RTL 버그 찾고, 고치고, 커버리지 닫는 루프다. 이건 칩 설계 전체가 아니라 한 단계다. 중요한 단계지만, 한 단계다.</p>
+<p>둘째, <strong>2026년 하반기 얼리 액세스</strong>라는 단서가 붙어 있다. 광범위한 실전 검증이 끝난 상태가 아니다.</p>
+<p>셋째, 앞서 인용한 서베이 논문이 지적한 그대로다. <strong>사람 없는 산업용 칩 테이프아웃 사례가 보고된 바 없다.</strong> 레벨 5의 진짜 기준이 그거라면, 아직 아무도 거기 도달하지 않았다.</p>
+<p>그렇다고 이게 허풍이라는 뜻은 아니다. 검증 루프를 자율로 닫는 것만 해도 업계에 큰 변화다. 다만 <strong>“레벨 5”라는 단어가 주는 인상과 실제 적용 범위 사이에는 간격이 있다</strong>는 걸 알고 읽어야 한다.</p>
+<h3 id="실무-관점-평가-1">실무 관점 평가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무-관점-평가-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>강점</strong>: Xcelium(시뮬레이션) + Jasper(형식 검증)라는 검증된 엔진 위에 에이전트를 얹었다. 새 엔진을 만든 게 아니라 기존 강점을 오케스트레이션한 구조라, 결과의 신뢰성 측면에서 유리하다.</li>
+<li><strong>주의점</strong>: “레벨 5”라는 표현은 마케팅 리스크가 있다. 경영진이 이 단어만 듣고 “그럼 검증 엔지니어를 줄여도 되겠네”라고 판단하면 사고가 난다.</li>
+<li><strong>확인할 것</strong>: 얼리 액세스 참여 시 <strong>실패 케이스</strong>를 요구하라. 어떤 종류의 버그를 못 찾았는지가 어떤 버그를 찾았는지보다 중요하다.</li>
+</ul>
+<hr/>
+<h2 id="빅3--지멘스-eda--자가-검증이라는-다른-각도-빅3-지멘스">빅3 ③: 지멘스 EDA — ‘자가 검증’이라는 다른 각도 {#빅3-지멘스}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#빅3--지멘스-eda--자가-검증이라는-다른-각도-빅3-지멘스" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>지멘스 EDA(구 멘토 그래픽스)는 빅3 중 매출로는 막내다. 2025년 추정 22억~25억 달러. 하지만 2026년 내놓은 프레이밍은 가장 흥미롭다.</p>
+<h3 id="fuse-eda-ai-agent와-자가-검증">Fuse EDA AI Agent와 ‘자가 검증’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fuse-eda-ai-agent와-자가-검증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>지멘스는 엔비디아와의 전략적 협업을 확대하며 <strong>자가 검증(self-verifying) 에이전틱 AI 워크플로</strong>를 EDA에 제공한다고 발표했다.</p>
+<p>핵심 표현은 이거다. 반도체·PCB 엔지니어링 팀이 <strong>“자율적 작업 오케스트레이션에서 더 신뢰할 수 있고 지속적으로 검증되는 엔지니어링 결과로”</strong> 이동하도록 돕는다는 것이다.</p>
+<p>이 문장을 뒤집어 읽어 보자. 지멘스는 암묵적으로 이렇게 말하고 있다. <strong>“에이전트가 작업을 자율로 돌리는 것만으로는 부족하다. 그 결과를 누가 믿을 것인가가 진짜 문제다.”</strong></p>
+<p>경쟁사가 “얼마나 빠른가”를 말할 때 지멘스는 “얼마나 믿을 수 있는가”를 말했다. 이건 포지셔닝 차이일 수도 있고(3위가 쓸 수 있는 차별화), 기술 철학 차이일 수도 있다. 어느 쪽이든 <strong>이 산업의 핵심 질문을 정확히 짚었다.</strong></p>
+<h3 id="기술-구성">기술 구성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#기술-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>지멘스 Fuse EDA AI 에이전트는 다음을 쓴다.</p>
+<ul>
+<li><strong>NVIDIA NeMo Gym</strong>: 에이전트 학습·평가 환경</li>
+<li><strong>Nemotron 오픈 모델</strong></li>
+<li><strong>CUDA-X 라이브러리</strong></li>
+</ul>
+<p>적용 범위는 반도체, 3D-IC, PCB, 시스템 설계에 걸쳐 <strong>구상부터 사인오프까지</strong>이며, 멀티 툴·멀티 에이전트 워크플로를 오케스트레이션한다.</p>
+<p>특히 <strong>NeMo Gym</strong>이 들어간 게 눈에 띈다. Gym은 강화학습에서 에이전트를 훈련·평가하는 환경을 뜻한다. 즉 지멘스는 에이전트를 그냥 프롬프트로 굴리는 게 아니라, <strong>평가 가능한 환경 위에서 훈련·검증하는 구조</strong>를 택했다. ‘자가 검증’이라는 표현과 일관된다.</p>
+<h3 id="실무-관점-평가-2">실무 관점 평가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무-관점-평가-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>강점</strong>: 신뢰성 프레이밍은 이 산업의 실제 고민과 정확히 맞는다. 3D-IC와 PCB까지 아우르는 범위도 넓다.</li>
+<li><strong>주의점</strong>: 빅3 중 시장 점유가 가장 작다. 툴체인 전체를 지멘스로 통일한 조직이 아니면 통합 비용이 발생한다.</li>
+<li><strong>확인할 것</strong>: ‘자가 검증’이 구체적으로 어떤 메커니즘인지 — 형식 검증으로 뒷받침되는지, 별도 에이전트가 교차 검증하는지, 아니면 단순 재실행인지 — 를 반드시 물어야 한다. 이 단어는 범위가 넓다.</li>
+</ul>
+<hr/>
+<h2 id="숨은-주인공-엔비디아는-왜-eda-바닥에-플랫폼을-깔았나-엔비디아">숨은 주인공: 엔비디아는 왜 EDA 바닥에 플랫폼을 깔았나 {#엔비디아}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#숨은-주인공-엔비디아는-왜-eda-바닥에-플랫폼을-깔았나-엔비디아" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>앞의 세 절을 다시 읽어 보면 이상한 점이 하나 눈에 띈다. <strong>시놉시스, 케이던스, 지멘스 — 셋 다 엔비디아를 쓴다.</strong></p>
+<ul>
+<li>시놉시스: NVIDIA Agent Toolkit, Nemotron 3 Ultra, OpenShell 런타임</li>
+<li>케이던스: Nemotron 모델, OpenShell 런타임</li>
+<li>지멘스: NeMo Gym, Nemotron 오픈 모델, CUDA-X</li>
+</ul>
+<p>경쟁하는 세 회사가 같은 바닥을 쓴다. 이건 우연이 아니다.</p>
+<h3 id="엔비디아가-공급한-것">엔비디아가 공급한 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#엔비디아가-공급한-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>엔비디아는 2026년 Agent Toolkit을 <strong>PhysicsNeMo</strong>와 <strong>CUDA-X 라이브러리</strong>로 확장했다. 이 툴킷이 세 EDA 회사의 공통 플랫폼이 됐다.</p>
+<p>주목할 건 모델 쪽이다. 엔비디아는 <strong>Nemotron 3 Ultra가 에이전틱 RTL 코딩에서 오픈 모델 중 선두</strong>라고 밝혔고, 엔비디아 리서치의 <strong>ACE-RTL</strong> 에이전트를 함께 내놨다.</p>
+<p>즉 엔비디아는 이 판에서 세 개 층을 동시에 공급한다.</p>
+<ol>
+<li><strong>하드웨어</strong>: 에이전트를 돌릴 GPU</li>
+<li><strong>모델</strong>: RTL 코딩에 특화된 Nemotron / ACE-RTL</li>
+<li><strong>런타임·툴킷</strong>: Agent Toolkit, OpenShell, NeMo Gym, PhysicsNeMo, CUDA-X</li>
+</ol>
+<h3 id="왜-그렇게까지-하나">왜 그렇게까지 하나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-그렇게까지-하나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>세 가지로 읽을 수 있다.</p>
+<p><strong>첫째, 자기 칩을 더 빨리 만들기 위해서다.</strong> 엔비디아는 세계 최대급 칩 설계 회사이기도 하다. 블랙웰급 칩의 설계·검증 부담은 상상을 초월한다. 자사 설계 생산성이 곧 제품 주기다. ChipNeMo부터 이어진 사내 도구 개발의 연장선이다.</p>
+<p><strong>둘째, 수요 창출이다.</strong> 에이전틱 EDA는 GPU를 엄청나게 먹는다. 수백 개 시뮬레이션을 동시에 돌리고, 대형 모델을 추론에 계속 쓰고, 그걸 몇 시간씩 반복한다. EDA가 에이전틱으로 가면 <strong>EDA 자체가 GPU 대형 수요처가 된다.</strong> 파는 쪽 입장에서 이보다 좋은 그림은 없다.</p>
+<p><strong>셋째, 플랫폼 장악이다.</strong> 세 EDA 회사가 모두 엔비디아 위에서 에이전트를 돌리면, 에이전틱 EDA의 표준 런타임은 사실상 엔비디아가 정한다. EDA 회사들은 서로 경쟁하지만, 바닥은 하나다.</p>
+<h3 id="한국-독자가-주목할-지점">한국 독자가 주목할 지점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국-독자가-주목할-지점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>엔비디아의 EDA 관여는 한국과 직접 연결된다. 엔비디아는 AI 기반 반도체 설계 자동화를 강화하면서 <strong>삼성전자와 TSMC도 이를 활용</strong>하는 구조를 만들고 있다.</p>
+<p>구체적으로 삼성전자는 엔비디아 <strong>cuLitho</strong>와 CUDA-X를 활용해 계산 리소그래피 성능을 <strong>최대 20배</strong> 끌어올렸고, <strong>PhysicsNeMo</strong>로는 <strong>최대 100억 개 셀 규모 칩의 열응력</strong>까지 분석하고 있다. 이건 마케팅 슬라이드가 아니라 실제 적용 사례로 보도된 내용이다.</p>
+<p>여기서 구조적 함의가 하나 나온다. <strong>에이전틱 EDA의 하부 플랫폼을 미국 회사 하나가 쥐고 있다.</strong> 소버린 AI 논의에서 반복되는 그 구도가, 반도체 설계 도구에서도 똑같이 재현되고 있다. 설계 도구는 빅3 미국·독일 기업, 그 아래 런타임과 모델은 엔비디아, 그 아래 GPU도 엔비디아다.</p>
+<hr/>
+<h2 id="도전자들-칩에이전트-vs-코그니칩-vs-에이전트리스-도전자들">도전자들: 칩에이전트 vs 코그니칩 vs 에이전트리스 {#도전자들}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도전자들-칩에이전트-vs-코그니칩-vs-에이전트리스-도전자들" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>빅3가 움직이는 동안, 스타트업 쪽에서도 돈이 몰렸다. 2026년 DAC에서 세 곳이 자금과 제품을 공개했다.</p>
+<h3 id="칩에이전트chipagents-가장-앞서-나간-도전자">칩에이전트(ChipAgents): 가장 앞서 나간 도전자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#칩에이전트chipagents-가장-앞서-나간-도전자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>자금</strong></p>
+<ul>
+<li>2026년 2월: 5000만 달러 조달, 누적 7400만 달러</li>
+<li>2026년 7월: 시리즈 A를 <strong>1억 3400만 달러</strong>로 확대(추가 6000만 달러)</li>
+</ul>
+<p><strong>성과 지표</strong></p>
+<ul>
+<li>2026년 상반기 <strong>ARR 6배 성장</strong></li>
+<li>반도체 기업 <strong>120건 이상 도입</strong></li>
+</ul>
+<p><strong>제품</strong>
+계획·추론·실행을 조율하는 AI 에이전트들이 극도로 복잡한 칩 설계 파이프라인 전반에서 작업을 수행하는 고도 자동화 플랫폼이다.</p>
+<p><strong>평가</strong>
+숫자만 보면 이 카테고리에서 가장 빠르게 움직인 곳이다. 특히 <strong>120건 이상 도입</strong>은 데모가 아니라 실제 판매가 일어나고 있다는 뜻이다. ARR 6배는 기저효과가 있겠지만, 방향은 분명하다.</p>
+<p>다만 여기서 주의할 점. <strong>‘도입(deployment)‘의 정의가 무엇인가.</strong> 파일럿 평가도 도입으로 셀 수 있고, 양산 워크플로 편입도 도입으로 셀 수 있다. 둘은 전혀 다른 이야기다. 공개 자료로는 이 구분이 확인되지 않는다.</p>
+<h3 id="코그니칩cognichip-다른-길을-택한-곳">코그니칩(Cognichip): 다른 길을 택한 곳<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#코그니칩cognichip-다른-길을-택한-곳" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>자금</strong></p>
+<ul>
+<li>2026년 4월: 6000만 달러(셀리그먼 벤처스 주도)</li>
+<li>2024년 창업 이후 누적 <strong>9300만 달러</strong></li>
+</ul>
+<p><strong>차별점</strong>
+코그니칩의 핵심은 <strong>범용 LLM에서 출발하지 않았다</strong>는 것이다. 칩 설계 데이터로 훈련한 자체 모델을 쓴다.</p>
+<p><strong>왜 이게 중요한가</strong>
+앞서 나온 비판을 떠올려 보자. 디지털 RTL용 파운데이션 모델은 인터넷에 널린 데이터로 훈련된다. 하지만 <strong>아날로그 IP — 예컨대 대역통과 필터나 전력 증폭기 — 는 공개돼 있지 않다.</strong> 게다가 아날로그 문제는 다중 도메인·다중 물리다.</p>
+<p>즉 “GitHub에 있는 Verilog로 학습한 모델”은 디지털 설계 일부는 도울 수 있어도, 실제 산업용 설계의 상당 부분은 건드리지 못한다. 코그니칩의 베팅은 **“도메인 데이터로 처음부터 훈련해야 진짜가 나온다”**는 쪽이다.</p>
+<p><strong>평가</strong>
+기술적으로는 더 정직한 접근일 수 있다. 문제는 데이터다. 칩 설계 데이터는 각 회사의 최고 기밀이다. 어디서, 어떤 조건으로 확보했는지가 이 회사의 성패를 가른다. 그리고 그건 외부에서 검증하기 어렵다.</p>
+<h3 id="에이전트리스agentrys-가장-늦게-가장-구체적으로">에이전트리스(Agentrys): 가장 늦게, 가장 구체적으로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에이전트리스agentrys-가장-늦게-가장-구체적으로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>자금</strong></p>
+<ul>
+<li>2026년 8월 공개, 누적 <strong>2450만 달러</strong></li>
+<li>시드 1910만 달러(에트나 랩스 주도) + 프리시드 540만 달러(<strong>미디어텍 주도</strong>)</li>
+</ul>
+<p><strong>포지션</strong>
+캘리포니아 산호세 소재. 자금은 채용, 에이전트 네이티브 도구, 고객 확보에 쓸 계획이다. 타깃 영역은 <strong>반도체 검증과 물리 설계</strong>다.</p>
+<p><strong>주목할 점</strong>
+프리시드를 <strong>미디어텍</strong>이 주도했다는 게 흥미롭다. 실제 대형 팹리스가 초기 단계부터 들어갔다는 건, 내부에서 이 문제의 절실함을 느끼고 있다는 신호다.</p>
+<p>다만 규모로 보면 칩에이전트의 1/5 수준이다. 이 카테고리에서 규모는 곧 학습 데이터 접근권과 고객 검증 기회를 뜻하므로, 격차는 실질적이다.</p>
+<h3 id="스타트업-vs-빅3-누가-이기나">스타트업 vs 빅3: 누가 이기나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#스타트업-vs-빅3-누가-이기나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>포브스가 던진 질문이 정확하다. <strong>“EDA AI 스타트업이 칩 설계의 새로운 클로드가 될 수 있을까?”</strong></p>
+<p>양쪽의 구조적 조건을 비교하면 이렇다.</p>
+<p><strong>빅3가 유리한 점</strong></p>
+<ul>
+<li>이미 고객의 툴체인 안에 들어가 있다. 에이전트를 기존 엔진(Xcelium, Jasper 등) 위에 얹으면 끝이다</li>
+<li>파운드리 PDK 인증 관계를 쥐고 있다</li>
+<li>고객 설계 데이터에 정당한 접근 경로가 있다(도구 사용 과정에서)</li>
+<li>실패해도 본업이 있다</li>
+</ul>
+<p><strong>스타트업이 유리한 점</strong></p>
+<ul>
+<li>레거시 툴체인의 불투명성에 묶이지 않는다. 처음부터 에이전트 네이티브로 설계할 수 있다</li>
+<li>빅3는 기존 라이선스 매출을 자기 손으로 갉아먹기 어렵다(고전적 혁신가의 딜레마). “엔지니어 10명이 하던 일을 1명이 한다”는 제품은 시트 기반 라이선스 모델과 충돌한다</li>
+<li>속도</li>
+</ul>
+<p><strong>현실적 전망</strong>
+가장 가능성 높은 결말은 <strong>인수</strong>다. 빅3는 에이전트 역량이 필요하고, 스타트업은 유통망과 인증이 필요하다. 시놉시스가 앤시스에 350억 달러를 쓴 회사라는 걸 기억하면, 수억 달러짜리 에이전트 스타트업 인수는 어려운 결정이 아니다.</p>
+<hr/>
+<h2 id="중국편-화다주톈과-골든-윈도우라는-표현-중국편">중국편: 화다주톈과 ‘골든 윈도우’라는 표현 {#중국편}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#중국편-화다주톈과-골든-윈도우라는-표현-중국편" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>에이전틱 EDA를 미국 이야기로만 보면 절반을 놓친다.</p>
+<h3 id="화다주톈華大九天-empyrean">화다주톈(華大九天, Empyrean)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#화다주톈華大九天-empyrean" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>화다주톈은 중국 EDA 선두 기업이다. 2026년 상황은 이렇다.</p>
+<p><strong>회장 발언</strong>
+류웨이핑 회장은 <strong>2026 국제집적회로혁신엑스포</strong>에서 “AI 에이전트가 반도체 설계에 <strong>패러다임 전환</strong>을 가져왔다”고 말했다. 앞서 인용한 그 문장 — 사람이 도구를 조작하던 방식에서 사람이 에이전트에 지시하는 방식으로 — 이 여기서 나왔다.</p>
+<p><strong>주장하는 성과</strong>
+AI 최적화 알고리즘과 AI 에이전트를 활용해 <strong>반도체 설계 기간을 4주에서 1주로 단축</strong>했다.</p>
+<p><strong>제품 구성</strong>
+화다주톈 EDA는 논리 설계, 물리 설계, 검증까지 반도체 설계 전 과정을 지원하는 <strong>완전한 구조를 갖춘 유일한 중국 EDA 도구</strong>다. 4개 시스템으로 구성된다.</p>
+<ol>
+<li>아날로그 반도체 설계</li>
+<li>디지털 SoC 설계</li>
+<li>평판 디스플레이(FPD) 설계</li>
+<li>파운드리 솔루션</li>
+</ol>
+<p><strong>시장 규모</strong>
+2026년 중국 EDA 시장은 <strong>100억 위안</strong>(약 1조 8000억 원) 돌파가 전망된다.</p>
+<h3 id="골든-윈도우라는-관점">‘골든 윈도우’라는 관점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#골든-윈도우라는-관점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>업계 일부에서는 에이전틱 AI 전환이 중국 EDA 업체에게 **‘골든 윈도우’**를 열어 줬다는 분석이 나온다. 논리는 이렇다.</p>
+<p>기존 EDA 경쟁력은 <strong>수십 년 축적</strong>의 결과다. 물리 모델, 알고리즘, 파운드리 인증, 고객 신뢰 — 전부 시간이 필요하다. 후발주자가 정면으로 따라잡기는 사실상 불가능하다.</p>
+<p>그런데 패러다임이 바뀌면 이야기가 달라진다. 인터페이스가 “도구 조작”에서 “에이전트 지시”로 바뀌면, <strong>축적된 GUI 자산과 워크플로 노하우의 가치가 일부 희석된다.</strong> 새 층에서는 모두가 비교적 비슷한 출발선에 선다.</p>
+<p>게다가 중국은 조건이 갖춰져 있다. 강한 국산화 정책 압력, 수출 통제로 인한 절실함, 내수 시장, 그리고 상당한 LLM 역량.</p>
+<h3 id="이-관점을-어떻게-볼-것인가">이 관점을 어떻게 볼 것인가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-관점을-어떻게-볼-것인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>동의할 부분과 회의적으로 볼 부분이 다 있다.</p>
+<p><strong>설득력 있는 부분</strong>: 인터페이스 층의 재편은 실제로 일어나고 있다. 그리고 절실함은 강력한 동력이다.</p>
+<p><strong>회의적인 부분</strong>: 에이전트는 <strong>결국 그 밑의 엔진을 호출한다.</strong> ChipStack이 Xcelium과 Jasper를 부르듯, 에이전트가 아무리 똑똑해도 시뮬레이션·형식 검증·배치배선 엔진 자체의 품질이 결과를 결정한다. 그리고 그 엔진들이야말로 수십 년 축적의 산물이다. 에이전트 층을 잘 만든다고 엔진 격차가 사라지지는 않는다.</p>
+<p><strong>한국 관점의 함의</strong>: 중국이 EDA 국산화에 성공하면 수출 통제 카드의 효력이 약해지고, 중국 팹리스의 설계 속도가 올라간다. 이건 한국 반도체 산업에 직접적인 경쟁 압력이다. 반대로 실패하면 격차가 유지된다. 어느 쪽이든 <strong>한국은 이 판에서 EDA 자체 역량이 거의 없다</strong>는 사실은 변하지 않는다. 이 점은 뒤 한국편에서 다시 다루겠다.</p>
+<hr/>
+<h2 id="시장-구조-매출은-작은데-왜-아무도-대체하지-못하나-시장-구조">시장 구조: 매출은 작은데 왜 아무도 대체하지 못하나 {#시장-구조}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#시장-구조-매출은-작은데-왜-아무도-대체하지-못하나-시장-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>숫자를 다시 보자.</p>
+<ul>
+<li>EDA 툴 시장(2026): <strong>207억 8000만 달러</strong></li>
+<li>빅3 합계(2025): 약 <strong>160억 달러</strong></li>
+</ul>
+<p>즉 <strong>빅3가 시장의 대부분을 먹는다.</strong> 이건 과점을 넘어 사실상 삼두 체제다.</p>
+<h3 id="성장률의-의미">성장률의 의미<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성장률의-의미" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>흥미로운 비교가 하나 있다. <strong>EDA는 연 13% 성장, 반도체 R&amp;D 지출은 연 7% 성장.</strong></p>
+<p>이게 왜 중요한가. EDA 매출은 근본적으로 반도체 회사의 R&amp;D 예산에서 나온다. 그런데 EDA가 R&amp;D보다 빠르게 성장한다는 건, <strong>R&amp;D 예산 내에서 EDA가 차지하는 비중이 커지고 있다</strong>는 뜻이다.</p>
+<p>원인은 세 가지로 볼 수 있다.</p>
+<ol>
+<li><strong>설계 복잡도 증가</strong>: 선단 공정일수록 필요한 도구와 컴퓨팅이 기하급수적으로 늘어난다</li>
+<li><strong>설계 주체의 다변화</strong>: 예전엔 인텔·퀄컴 같은 소수만 칩을 설계했다. 이제는 구글·아마존·MS·테슬라·오픈AI까지 자체 칩을 만든다. 고객 수가 늘었다</li>
+<li><strong>인력을 도구로 대체</strong>: 이게 이 글의 주제다. 엔지니어를 못 뽑으면 도구를 산다</li>
+</ol>
+<p>골드만삭스가 <strong>설계 엔지니어 병목이 2030년까지 연 37억 달러의 EDA 추가 매출을 만들 수 있다</strong>고 본 게 정확히 3번이다.</p>
+<h3 id="에이전틱-전환이-가격-모델에-던지는-질문">에이전틱 전환이 가격 모델에 던지는 질문<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에이전틱-전환이-가격-모델에-던지는-질문" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>여기서 아무도 명확히 답하지 않은 문제가 하나 있다. <strong>에이전틱 EDA는 어떻게 과금되어야 하는가.</strong></p>
+<p>전통 EDA는 <strong>시트(seat) 라이선스</strong>다. 엔지니어 수만큼 산다. 그런데 에이전트가 엔지니어 일을 대신하면?</p>
+<p>가능한 시나리오들:</p>
+<ul>
+<li><strong>시트 유지</strong>: 고객 입장에서 부조리하다. 사람이 줄었는데 라이선스는 그대로?</li>
+<li><strong>컴퓨팅 기반</strong>: 에이전트가 쓴 GPU 시간만큼 과금. 합리적이지만 예산 예측이 어렵고, 비용이 폭발할 수 있다</li>
+<li><strong>성과 기반</strong>: 테이프아웃 건당, 또는 절감된 시간만큼. 측정이 지옥이다</li>
+<li><strong>혼합</strong>: 현실적으로는 여기로 갈 가능성이 높다</li>
+</ul>
+<p>이건 단순한 가격 정책이 아니다. <strong>빅3가 에이전틱 전환에 얼마나 공격적으로 갈 수 있는지를 결정하는 구조적 제약</strong>이다. 자사 시트 매출을 스스로 잠식하는 제품을 최대 속도로 밀기는 어렵다. 스타트업이 파고들 틈이 여기에 있다.</p>
+<hr/>
+<h2 id="인력-병목-2030년까지-100만-명-부족이라는-계산-인력-병목">인력 병목: ‘2030년까지 100만 명 부족’이라는 계산 {#인력-병목}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#인력-병목-2030년까지-100만-명-부족이라는-계산-인력-병목" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>에이전틱 EDA에 이 정도 돈이 몰리는 근본 이유는 기술 열광이 아니다. <strong>사람이 없다.</strong></p>
+<h3 id="숫자">숫자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#숫자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>딜로이트 추산: 반도체 산업이 <strong>2030년까지 숙련 인력 100만 명 추가 필요</strong></li>
+<li>자격을 갖춘 후보 1명당 채용 공고 약 <strong>3건</strong></li>
+</ul>
+<h3 id="어디가-특히-모자라나">어디가 특히 모자라나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#어디가-특히-모자라나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>병목이 가장 심한 직군은 다음과 같다.</p>
+<ol>
+<li><strong>ASIC/SoC 검증 엔지니어</strong> — UVM, 형식 검증, 에뮬레이션</li>
+<li><strong>DFT(Design for Test) 아키텍트</strong></li>
+<li><strong>선단 노드 물리 설계 엔지니어</strong> — 5nm 이하</li>
+<li><strong>혼합신호·전력 IC 설계자</strong></li>
+<li><strong>신규 팹의 공정·수율 엔지니어</strong></li>
+</ol>
+<p>이 목록을 에이전틱 EDA 벤더들의 타깃과 겹쳐 보자.</p>
+<ul>
+<li>시놉시스: <strong>검증</strong> 에이전트</li>
+<li>케이던스: <strong>검증</strong>(ChipStack) + 패키징(AuraStack)</li>
+<li>에이전트리스: <strong>검증</strong>과 <strong>물리 설계</strong></li>
+</ul>
+<p><strong>1번과 3번을 정조준하고 있다.</strong> 우연이 아니다. 가장 아픈 곳에 가장 먼저 제품이 나온다.</p>
+<h3 id="여기서-나오는-역설">여기서 나오는 역설<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#여기서-나오는-역설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그런데 이상한 점이 있다. AI가 검증을 자동화하면 검증 엔지니어 수요가 줄어야 한다. 그런데 현실은 반대다. <strong>채용 공고는 여전히 후보의 3배다.</strong></p>
+<p>이 역설을 설명하는 가설은 두 가지다.</p>
+<p><strong>가설 1: 아직 효과가 안 나타났다.</strong> 에이전틱 EDA는 2026년에 막 나왔다. 케이던스 레벨 5는 하반기 얼리 액세스다. 노동시장에 반영되려면 몇 년 걸린다.</p>
+<p><strong>가설 2: 수요가 더 빨리 늘고 있다.</strong> 자체 칩을 만드는 회사가 늘고, 칩 복잡도가 오르고, AI 가속기 경쟁이 붙었다. AI가 생산성을 2배 올려도 수요가 3배 늘면 인력난은 심해진다.</p>
+<p>두 가설은 배타적이지 않다. 둘 다 작동 중일 가능성이 높다.</p>
+<h3 id="실무자에게-주는-시사점">실무자에게 주는 시사점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무자에게-주는-시사점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 구도에서 <strong>검증 엔지니어의 일이 사라진다고 보기는 어렵다.</strong> 다만 성격은 바뀔 것이다.</p>
+<ul>
+<li>테스트벤치를 손으로 짜는 시간 → 줄어든다</li>
+<li>에이전트가 만든 테스트 플랜을 검토하고, 커버리지 보고서를 해석하고, <strong>에이전트가 놓친 구멍을 찾는</strong> 시간 → 늘어난다</li>
+<li>그리고 <strong>“AI가 이 결과를 신뢰할 만한가”를 판단하는 책임</strong> → 사람에게 남는다</li>
+</ul>
+<p>번역 산업에서 번역가가 검수자가 된 것과 구조가 같다. 다만 이쪽은 실수 비용이 훨씬 크다.</p>
+<hr/>
+<h2 id="한계--오차-허용치-0인-산업에서-환각이란-무엇인가-한계-환각">한계 ①: 오차 허용치 0인 산업에서 ‘환각’이란 무엇인가 {#한계-환각}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한계--오차-허용치-0인-산업에서-환각이란-무엇인가-한계-환각" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이제 반대편을 보자. 에이전틱 EDA 서베이 논문과 업계 패널에서 반복적으로 제기된 문제들이다.</p>
+<h3 id="근본-제약-세-가지">근본 제약 세 가지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#근본-제약-세-가지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 기반 EDA 전환을 제약하는 구조적 요인은 다음 세 가지로 정리된다.</p>
+<ol>
+<li><strong>오차 무관용 체제(zero-tolerance error regime)에서의 신뢰성</strong></li>
+<li><strong>제한적이고 독점적인 학습 데이터</strong></li>
+<li><strong>레거시 툴체인의 불투명성</strong></li>
+</ol>
+<p>하나씩 보자.</p>
+<h3 id="1-오차-무관용이라는-조건">1) 오차 무관용이라는 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-오차-무관용이라는-조건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>소프트웨어에서 LLM이 틀리면 고치면 된다. 코드 리뷰에서 걸리거나, 테스트에서 걸리거나, 최악의 경우 배포 후 핫픽스한다.</p>
+<p>칩은 다르다. 테이프아웃 후 발견된 버그는 <strong>마스크를 새로 만들어야 고쳐진다.</strong> 선단 공정 마스크 세트는 수십억 원이고, 재설계·재검증·재제작에 몇 달이 걸린다. 그 사이 경쟁사는 제품을 판다.</p>
+<p>그래서 이 산업의 검증 문화는 극단적으로 보수적이다. “아마 맞을 것”은 통과하지 않는다. **“증명되었다”**여야 한다.</p>
+<p>LLM 기반 에이전트의 본질적 특성 — 확률적 생성, 그럴듯하지만 틀린 출력 — 은 이 문화와 정면으로 충돌한다.</p>
+<h3 id="2-과도한-신뢰라는-위험">2) 과도한 신뢰라는 위험<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-과도한-신뢰라는-위험" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>업계에서 반복적으로 지적된 표현이 있다. <strong>에이전틱 AI가 생산성을 높이는 건 맞지만, AI 시스템에 대한 과도한 신뢰(excessive trust) 위험이 있으며, AI는 아직 완전 자율 운영에 준비되지 않았고, 많은 설계 흐름 단계는 여전히 고정된 사람 개입 지점을 필요로 한다.</strong></p>
+<p>이 문장은 벤더의 “레벨 5” 마케팅과 정면으로 부딪친다. 그리고 현장 엔지니어의 감각에 훨씬 가깝다.</p>
+<h3 id="3-검증-특유의-공격-표면">3) 검증 특유의 공격 표면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-검증-특유의-공격-표면" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 유도 검증 도구는 새로운 위험을 만든다.</p>
+<ul>
+<li><strong>적대적 조작(adversarial manipulation)</strong>: 검증 에이전트를 속여 버그를 통과시키는 입력</li>
+<li><strong>편향된 테스트 생성(biased test generation)</strong>: 에이전트가 특정 유형의 테스트만 생성해 커버리지 숫자는 높은데 실제 위험 영역은 비어 있는 상태</li>
+<li><strong>환각된 보안 지침(hallucinated security guidance)</strong>: 그럴듯한 보안 권고를 만들어 내지만 근거가 없는 경우</li>
+</ul>
+<p>세 번째가 특히 고약하다. <strong>커버리지 100%를 달성했다는 보고서가 나왔는데, 그 커버리지 정의 자체를 에이전트가 만들었다면?</strong> 자기가 낸 시험을 자기가 채점한 꼴이다.</p>
+<p>지멘스가 ‘자가 검증’을 강조한 배경이 여기 있다. 다만 자가 검증도 근본적으로 같은 질문을 낳는다. <strong>검증하는 자를 누가 검증하는가.</strong></p>
+<h3 id="4-단일-에이전트의-조기-수렴">4) 단일 에이전트의 조기 수렴<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-단일-에이전트의-조기-수렴" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기술적 한계도 지적됐다. <strong>단일 에이전트 AI 시스템은 내적 긴장(internal tension)이 없어 국소 최적해에 조기 수렴하는 경향이 있다.</strong></p>
+<p>풀어 쓰면 이렇다. 혼자 생각하는 에이전트는 “이 정도면 됐다”에 빨리 도달한다. 더 나은 해가 있어도 탐색을 멈춘다. 물리 설계처럼 거대한 탐색 공간에서 이건 치명적이다.</p>
+<p>해법으로 제시되는 게 <strong>멀티 에이전트 구조</strong>다. 서로 다른 관점의 에이전트가 경쟁·비판하게 만든다. 빅3가 전부 ‘오케스트레이터 + 전문 에이전트’ 구조를 택한 이유 중 하나다. 다만 이게 실제로 조기 수렴을 해결하는지는 아직 공개된 독립 검증이 부족하다.</p>
+<hr/>
+<h2 id="한계--아날로그라는-벽-한계-아날로그">한계 ②: 아날로그라는 벽 {#한계-아날로그}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한계--아날로그라는-벽-한계-아날로그" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>디지털과 아날로그 사이에는 AI 적용 난이도의 절벽이 있다.</p>
+<h3 id="왜-아날로그가-어려운가">왜 아날로그가 어려운가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-아날로그가-어려운가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>지적된 내용은 명확하다.</p>
+<p><strong>첫째, 데이터가 없다.</strong> 디지털 RTL용 파운데이션 모델은 인터넷에 널린 데이터로 훈련된다. GitHub에 Verilog 코드가 많고, 오픈소스 RISC-V 코어가 있고, 교과서 예제가 있다.</p>
+<p>반면 <strong>아날로그 IP — 대역통과 필터, 전력 증폭기 같은 것 — 는 공개돼 있지 않다.</strong> 이건 각 회사의 핵심 자산이고, 수십 년 노하우의 집약이다. 공개 데이터로 학습할 방법이 없다.</p>
+<p><strong>둘째, 다중 도메인·다중 물리 문제다.</strong> 아날로그 회로는 전압·전류만의 문제가 아니다. 온도에 따라 특성이 변하고, 공정 산포에 민감하고, 노이즈와 기생 성분에 좌우된다. 전기·열·물리가 얽힌다.</p>
+<p>디지털은 “0이냐 1이냐”로 추상화할 수 있다. 아날로그는 그 추상화가 불가능하다. <strong>연속적인 물리 세계를 그대로 다뤄야 한다.</strong></p>
+<h3 id="이게-왜-중요한가">이게 왜 중요한가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이게-왜-중요한가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>현대 칩에 아날로그가 없는 경우는 거의 없다. 전원 관리(PMIC), 클럭 생성(PLL), 고속 인터페이스의 SerDes, ADC/DAC, 센서 인터페이스 — 전부 아날로그거나 혼합신호다.</p>
+<p>그리고 앞서 본 인력 병목 목록에서 <strong>혼합신호·전력 IC 설계자</strong>가 4위에 있었다. 가장 모자란 직군 중 하나인데, AI로 메우기 가장 어려운 영역이기도 하다.</p>
+<h3 id="코그니칩의-베팅이-여기서-다시-보인다">코그니칩의 베팅이 여기서 다시 보인다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#코그니칩의-베팅이-여기서-다시-보인다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>코그니칩이 범용 LLM 대신 자체 도메인 모델을 택한 이유가 여기 있다. 공개 데이터로 안 되는 영역이라면, 데이터를 직접 확보해 처음부터 훈련하는 수밖에 없다.</p>
+<p>문제는 <strong>그 데이터를 어디서 구하느냐</strong>다. 고객사가 자기 아날로그 IP를 학습 데이터로 내줄 이유가 없다. 이 딜레마를 어떻게 푸는지가 아날로그 영역 AI의 성패를 가른다.</p>
+<p>현실적인 해법 후보는 몇 가지다.</p>
+<ul>
+<li><strong>합성 데이터</strong>: 시뮬레이터로 대량 생성. 다만 시뮬레이터의 한계를 그대로 물려받는다</li>
+<li><strong>온프레미스 파인튜닝</strong>: 고객사 안에서 고객 데이터로 미세조정. 데이터는 안 나가지만 규모의 경제가 없다</li>
+<li><strong>연합학습</strong>: 이론적으로 가능하나 반도체 업계 신뢰 수준에서 현실성이 낮다</li>
+</ul>
+<p>어느 쪽도 완전한 답이 아니다. <strong>2026년 기준 아날로그는 여전히 사람의 영역이다.</strong></p>
+<hr/>
+<h2 id="한계--테이프아웃-그라운드-트루스-문제-한계-테이프아웃">한계 ③: 테이프아웃 그라운드 트루스 문제 {#한계-테이프아웃}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한계--테이프아웃-그라운드-트루스-문제-한계-테이프아웃" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 글에서 가장 중요한 절이다.</p>
+<h3 id="비판의-핵심">비판의 핵심<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#비판의-핵심" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에이전틱 EDA에 대한 가장 날카로운 비판은 이것이다.</p>
+<blockquote>
+<p><strong>실제 테이프아웃을 통한 ‘그라운드 트루스’ 검증이 없다. LLM 기반 자율 에이전트가 산업용 칩의 완전한 인간 없는 테이프아웃을 시연한 사례가 아직 없다.</strong></p>
+</blockquote>
+<p>이 문장을 풀어 보자.</p>
+<p>에이전틱 EDA 벤더들이 내놓는 숫자는 대부분 <strong>중간 지표</strong>다.</p>
+<ul>
+<li>“RTL 검증 50배 단축” → 검증 단계의 속도</li>
+<li>“커버리지 20% 개선” → 커버리지라는 대리 지표</li>
+<li>“검증 주기 5주 → 하루” → 역시 단계 속도</li>
+</ul>
+<p>이 지표들은 유용하지만, <strong>최종 질문에 답하지 못한다.</strong> 최종 질문은 이거다. <strong>“그래서 그 칩, 실제로 동작했나?”</strong></p>
+<h3 id="커버리지는-정답이-아니다">커버리지는 정답이 아니다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#커버리지는-정답이-아니다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>검증 엔지니어라면 다 아는 사실이 있다. <strong>커버리지 100%가 버그 0을 뜻하지 않는다.</strong></p>
+<p>커버리지는 “설계의 어느 부분이 자극을 받았는가”를 측정한다. 그 자극이 <strong>올바른 동작을 확인했는가</strong>는 다른 문제다. 코드 라인을 다 밟았어도, 체크하지 않은 조건이 있으면 버그는 통과한다.</p>
+<p>그래서 검증에서 진짜 실력은 **“무엇을 체크할 것인가”**를 아는 데 있다. 이건 도메인 이해와 경험의 영역이다. 에이전트가 커버리지 숫자를 올리는 건 상대적으로 쉽지만, <strong>의미 있는 체크를 설계하는 건 다른 차원</strong>이다.</p>
+<p>벤더 지표가 커버리지 중심인 건 측정하기 쉽기 때문이지, 그게 최선의 지표라서가 아니다.</p>
+<h3 id="그럼-뭘-봐야-하나">그럼 뭘 봐야 하나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그럼-뭘-봐야-하나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>진짜 검증은 <strong>실리콘</strong>이다. 실제로 칩을 뽑아서, 실제로 동작시켜 보는 것.</p>
+<p>여기서 정직하게 말하자. <strong>2026년 9월 기준, AI 에이전트가 사람 개입 없이 산업용 칩을 테이프아웃해서 그 칩이 정상 동작했다는 공개 사례는 확인되지 않는다.</strong></p>
+<p>이건 에이전틱 EDA가 쓸모없다는 뜻이 아니다. <strong>“레벨 5”라는 주장의 근거가 아직 최종 검증 단계를 통과하지 않았다</strong>는 뜻이다.</p>
+<h3 id="언제-이-질문에-답이-나오나">언제 이 질문에 답이 나오나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#언제-이-질문에-답이-나오나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>몇 년은 걸릴 것으로 보는 게 합리적이다. 이유는 시간 구조 때문이다.</p>
+<ol>
+<li>케이던스 레벨 5 얼리 액세스: <strong>2026년 하반기</strong></li>
+<li>실제 설계 프로젝트 투입 후 테이프아웃까지: 통상 <strong>1~2년</strong></li>
+<li>실리콘 검증(브링업, 양산 신뢰성): 추가 <strong>수개월~1년</strong></li>
+</ol>
+<p>즉 오늘 시작해도 결과는 <strong>2028년경</strong>에나 나온다. 그리고 그 결과가 “AI가 혼자 했다”일 가능성은 낮다. 현실적으로는 “AI가 90%를 하고 사람이 사인오프했다”에 가까울 것이다.</p>
+<p><strong>그리고 그건 충분히 훌륭한 결과다.</strong> 다만 레벨 5는 아니다.</p>
+<hr/>
+<h2 id="한국편--삼성전자--culitho에서-ai-팩토리까지-한국편-삼성">한국편 ①: 삼성전자 — cuLitho에서 ‘AI 팩토리’까지 {#한국편-삼성}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국편--삼성전자--culitho에서-ai-팩토리까지-한국편-삼성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>한국은 이 판에서 독특한 위치에 있다. <strong>EDA 도구를 만드는 쪽은 아니지만, 가장 많이 쓰는 쪽 중 하나다.</strong></p>
+<h3 id="5년-전부터-쓰고-있었다">5년 전부터 쓰고 있었다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5년-전부터-쓰고-있었다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>가장 먼저 짚을 사실. 삼성전자는 <strong>2021년 국내 최초로 모바일 AP(애플리케이션 프로세서) 설계에 시놉시스 DSO.ai를 적용</strong>했다. 에이전틱이 화제가 되기 5년 전부터 AI 기반 EDA를 양산 설계에 써 왔다는 뜻이다.</p>
+<p>SK하이닉스도 도입해 메모리 설계에 쓰고 있고, <strong>양사 모두 HBM 설계에 DSO.ai를 활용</strong>하는 것으로 알려졌다. HBM이 한국 반도체의 현재 먹거리라는 걸 감안하면, AI EDA는 이미 핵심 제품 라인에 들어가 있다.</p>
+<p>즉 한국 대기업에게 “AI로 반도체 설계”는 새 소식이 아니다. <strong>새로운 건 자율성의 수준이다.</strong></p>
+<h3 id="2026년-엔비디아와의-결합">2026년: 엔비디아와의 결합<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026년-엔비디아와의-결합" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 삼성전자는 엔비디아와 협력해 <strong>업계 최고 수준의 ‘반도체 AI 팩토리’</strong> 구축을 발표했다. 적용된 기술은 구체적이다.</p>
+<p><strong>1) cuLitho — 계산 리소그래피</strong>
+삼성전자는 엔비디아 cuLitho와 CUDA-X를 활용해 <strong>계산 리소그래피 성능을 최대 20배</strong> 끌어올렸다.</p>
+<p>계산 리소그래피가 뭔지 짚고 가자. 선단 공정에서는 빛의 파장보다 훨씬 작은 패턴을 그려야 한다. 그래서 마스크에 실제 원하는 모양과 다른 보정 패턴(OPC, Optical Proximity Correction)을 그려 넣는다. 이 보정 계산이 <strong>엄청나게 무겁다.</strong> 전통적으로 대규모 CPU 팜이 몇 주씩 돌았다. cuLitho는 이걸 GPU로 가속한다.</p>
+<p>20배는 마케팅 숫자일 수 있지만, 방향은 명확하다. <strong>마스크 준비 기간 단축 = 제품 출시 단축.</strong></p>
+<p><strong>2) PhysicsNeMo — 열응력 분석</strong>
+삼성전자는 PhysicsNeMo로 <strong>최대 100억 개 셀 규모 칩의 열응력</strong>을 분석하고 있다.</p>
+<p>앞서 시놉시스가 앤시스를 산 이유로 설명한 그 영역이다. HBM처럼 메모리를 쌓아 올리면 열이 빠져나갈 길이 막힌다. 열은 응력을 만들고, 응력은 미세 균열과 신뢰성 문제로 이어진다. 100억 셀 규모 해석은 전통 수치해석으로는 실용적 시간 안에 안 끝난다. AI 기반 대리 모델(surrogate model)이 필요한 이유다.</p>
+<h3 id="전주기-확대">전주기 확대<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전주기-확대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 3월 보도에 따르면 삼성전자와 SK하이닉스는 <strong>AI를 반도체 전주기에 확대 적용</strong>하는 방향으로 움직이고 있다. 설계부터 생산까지다. 팹에 가상 제조 환경(디지털 트윈)을 만들고, 휴머노이드 로봇 투입까지 구상에 포함돼 있다.</p>
+<p>그리고 2026년 6월 29일, 두 회사는 <strong>합계 3200조 원 규모의 반도체 투자 계획을 공시</strong>했다.</p>
+<h3 id="한국-관점에서-읽을-점">한국 관점에서 읽을 점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국-관점에서-읽을-점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>긍정적 측면</strong>: 한국 대기업은 AI EDA 도입에서 뒤처져 있지 않다. 오히려 초기 도입자였고, 엔비디아와의 협업 수준도 높다. 세계 최대급 메모리·파운드리 고객이라는 지위 덕분에 벤더와의 협상력도 있다.</p>
+<p><strong>구조적 취약점</strong>: 그런데 <strong>한국은 EDA 도구를 만들지 않는다.</strong> 설계 도구는 시놉시스·케이던스·지멘스, 그 아래 에이전트 런타임과 모델은 엔비디아, GPU도 엔비디아. 한국은 이 스택 전체에서 <strong>고객</strong>이다.</p>
+<p>이게 왜 문제인가. 두 가지다.</p>
+<p>첫째, <strong>비용</strong>. 에이전틱 EDA는 GPU를 대량으로 먹는다. 도구 라이선스에 더해 컴퓨팅 비용이 붙는다. 그리고 그 비용 구조를 결정하는 건 벤더다.</p>
+<p>둘째, <strong>데이터 주권</strong>. 에이전트를 잘 쓰려면 자사 설계 데이터로 학습·튜닝하는 게 유리하다. 그런데 그 학습이 어디서, 어떤 조건으로 일어나는가. 클라우드 기반 에이전트 워크플로가 늘어날수록 이 질문은 커진다. 시놉시스가 Microsoft Discovery 위에서 자율 워크플로를 돌린 게 바로 그 방향이다.</p>
+<p>한국 반도체 기업에게 <strong>“어떤 에이전트를 쓸 것인가”만큼 “우리 설계 데이터가 어디를 지나가는가”가 중요한 질문</strong>이 됐다.</p>
+<hr/>
+<h2 id="한국편--sk하이닉스와-2030-자율형-팹-한국편-sk">한국편 ②: SK하이닉스와 2030 자율형 팹 {#한국편-sk}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국편--sk하이닉스와-2030-자율형-팹-한국편-sk" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SK하이닉스의 방향은 삼성과 조금 다르다. 설계보다 <strong>제조 쪽에 무게가 실려 있다.</strong></p>
+<h3 id="2030-자율형-팹">2030 자율형 팹<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2030-자율형-팹" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SK하이닉스는 <strong>2030년까지 자율형 반도체 팹을 구축</strong>해 설계부터 양산까지 속도를 앞당긴다는 계획을 밝혔다.</p>
+<p>‘자율형 팹’은 에이전틱 EDA와 형제 개념이다. 설계 쪽에서 에이전트가 검증 루프를 닫는다면, 제조 쪽에서는 에이전트가 <strong>공정 파라미터 조정·수율 분석·설비 스케줄링 루프</strong>를 닫는다. 목표는 같다. 사람이 목표를 주고, 시스템이 최적화를 수행한다.</p>
+<h3 id="hbm이라는-특수-조건">HBM이라는 특수 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hbm이라는-특수-조건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SK하이닉스에게 이 주제가 특히 중요한 이유는 HBM이다.</p>
+<p>HBM은 설계·제조·패키징이 전례 없이 강하게 얽혀 있는 제품이다. 다이를 쌓고, TSV(실리콘 관통 전극)로 연결하고, 열을 빼야 한다. 설계 단계에서 내린 결정이 제조 수율을 직접 좌우하고, 제조에서 나온 데이터가 다음 세대 설계를 바꾼다.</p>
+<p>즉 <strong>설계 에이전트와 제조 에이전트가 따로 놀면 의미가 적다.</strong> 앞서 본 시놉시스(앤시스 인수)와 케이던스(AuraStack)가 패키징·다중물리로 확장한 것과, SK하이닉스가 설계~양산 전 구간을 묶으려는 것은 <strong>같은 문제 인식</strong>에서 나온다.</p>
+<h3 id="앞서-본-인력-병목과의-연결">앞서 본 인력 병목과의 연결<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#앞서-본-인력-병목과의-연결" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>인력 부족 목록에 **“신규 팹의 공정·수율 엔지니어”**가 있었다. 한국은 신규 팹을 공격적으로 짓는 나라다. 3200조 원 투자 계획이 그 규모를 보여 준다.</p>
+<p>팹은 지을 수 있다. 장비도 살 수 있다(리드타임이 문제지만). <strong>사람은 못 산다.</strong> 자율형 팹이 선택이 아니라 필연으로 가는 이유다.</p>
+<hr/>
+<h2 id="한국편--팹리스스타트업이-지금-실제로-쓸-수-있는-것-한국편-팹리스">한국편 ③: 팹리스·스타트업이 지금 실제로 쓸 수 있는 것 {#한국편-팹리스}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국편--팹리스스타트업이-지금-실제로-쓸-수-있는-것-한국편-팹리스" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>여기까지는 대기업 이야기였다. 한국의 중소 팹리스, AI 반도체 스타트업은 어떨까.</p>
+<h3 id="냉정한-현실">냉정한 현실<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#냉정한-현실" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>먼저 정직하게 말하자. <strong>에이전틱 EDA의 초기 혜택은 대기업에 쏠린다.</strong> 이유는 구조적이다.</p>
+<ol>
+<li><strong>가격</strong>: 빅3의 에이전트 기능은 상위 라이선스 티어에 묶일 가능성이 높다. 얼리 액세스 자체가 대형 고객 우선이다</li>
+<li><strong>컴퓨팅</strong>: 수백 개 시뮬레이션 동시 실행에는 상당한 GPU가 필요하다. 클라우드로 쓰면 비용이, 온프레미스로 쓰면 자본이 든다</li>
+<li><strong>데이터</strong>: 에이전트를 자사 설계에 맞게 튜닝하려면 축적된 설계 자산이 필요하다. 신생 팹리스는 그게 적다</li>
+<li><strong>검증 인력</strong>: 역설적이지만, <strong>에이전트 결과를 검수할 시니어 엔지니어가 있어야 에이전트를 쓸 수 있다.</strong> 그 사람이 없는 조직은 에이전트를 도입해도 결과를 신뢰할 수 없다</li>
+</ol>
+<p>4번이 특히 중요하다. 에이전틱 EDA는 주니어를 대체하는 도구지, 시니어를 대체하는 도구가 아니다. <strong>시니어가 없는 조직에서는 오히려 위험하다.</strong></p>
+<h3 id="그럼에도-지금-할-수-있는-것">그럼에도 지금 할 수 있는 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그럼에도-지금-할-수-있는-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>현실적인 진입 경로는 다음과 같다.</p>
+<p><strong>1) 검증 보조부터 (레벨 1~2)</strong>
+전체 자율 워크플로가 아니라, 테스트벤치 생성 보조·어서션 생성 보조·디버그 로그 요약 같은 저위험 영역부터 넣는다. 결과를 사람이 100% 검수하는 전제 하에서다. 여기는 진입 비용이 낮고 실패해도 손실이 적다.</p>
+<p><strong>2) 문서·스크립트 자동화</strong>
+사양 문서에서 검증 계획 초안 뽑기, 툴 실행 스크립트 생성, 릴리스 노트 정리. 칩 품질에 직접 영향을 주지 않으면서 시간을 확실히 아끼는 영역이다.</p>
+<p><strong>3) 오픈 모델 활용 검토</strong>
+엔비디아 Nemotron 3 Ultra 같은 오픈 모델이 에이전틱 RTL 코딩에서 성능을 낸다고 알려진 만큼, 상용 라이선스 부담 없이 내부 실험을 해 볼 여지가 있다. 다만 <strong>사내 데이터로 실험할 때 그 데이터가 어디로 가는지</strong>는 반드시 통제해야 한다.</p>
+<p><strong>4) PoC에서 요구할 것</strong>
+벤더 미팅에 들어간다면 다음을 요구하라.</p>
+<ul>
+<li>자사 설계 유형으로 진행하는 PoC(남의 벤치마크 말고)</li>
+<li><strong>실패 사례</strong> 공개 — 어떤 버그를 놓쳤는지</li>
+<li>컴퓨팅 비용 실측치 — “50배 빠름”의 GPU 비용</li>
+<li>데이터 처리 조건 — 설계 데이터가 어디에 저장되고 학습에 쓰이는지</li>
+<li>과금 모델의 향후 변경 가능성</li>
+</ul>
+<h3 id="하지-말아야-할-것">하지 말아야 할 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#하지-말아야-할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>인력 계획을 먼저 줄이는 것.</strong> 에이전틱 EDA 도입을 근거로 검증 인력을 선제적으로 감축하면, 도구가 기대에 못 미쳤을 때 복구가 불가능하다. 반도체 인력은 시장에서 즉시 조달되지 않는다(후보 1명당 공고 3건을 기억하라)</li>
+<li><strong>사인오프 단계에 에이전트를 먼저 넣는 것.</strong> 가장 위험도가 높은 곳이다. 여기는 마지막에 손대야 한다</li>
+<li><strong>커버리지 숫자만 보고 판단하는 것.</strong> 앞서 설명한 이유다</li>
+</ul>
+<hr/>
+<h2 id="실무-도입-가이드-어디부터-넣고-어디는-손대지-말아야-하나-도입-가이드">실무 도입 가이드: 어디부터 넣고, 어디는 손대지 말아야 하나 {#도입-가이드}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실무-도입-가이드-어디부터-넣고-어디는-손대지-말아야-하나-도입-가이드" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>조직 규모와 무관하게 적용할 수 있는 판단 프레임을 정리한다.</p>
+<h3 id="위험도--효용으로-나눈-4분면">위험도 × 효용으로 나눈 4분면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#위험도--효용으로-나눈-4분면" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>① 저위험 · 고효용 → 지금 바로</strong></p>
+<ul>
+<li>검증 로그·디버그 메시지 요약</li>
+<li>사양 문서에서 테스트 플랜 초안 생성</li>
+<li>툴 실행 스크립트·리그레션 설정 생성</li>
+<li>코드 리뷰 보조(사람이 최종 판단)</li>
+<li>설계 문서 검색·질의응답</li>
+</ul>
+<p>사람이 결과를 즉시 검증할 수 있고, 틀려도 손실이 작다.</p>
+<p><strong>② 저위험 · 저효용 → 우선순위 낮음</strong></p>
+<ul>
+<li>회의록, 이슈 트래커 정리 등 일반 사무 자동화</li>
+<li>필요하면 하되, EDA 예산으로 할 일은 아니다</li>
+</ul>
+<p><strong>③ 고위험 · 고효용 → 통제된 실험</strong></p>
+<ul>
+<li>자율 커버리지 클로저</li>
+<li>RTL 버그 자동 수정</li>
+<li>물리 설계 파라미터 자율 탐색</li>
+</ul>
+<p>여기가 벤더들이 파는 영역이다. 도입한다면 <strong>반드시 다음 조건을 걸어라.</strong></p>
+<ul>
+<li>사람 사인오프 게이트를 명시적으로 유지</li>
+<li>에이전트가 만든 수정은 별도 브랜치·별도 리뷰</li>
+<li>기존 방식과 병행 운영(shadow mode)으로 최소 1개 프로젝트 비교</li>
+<li>에이전트가 놓친 항목을 기록하는 로그 체계</li>
+</ul>
+<p><strong>④ 고위험 · 불확실 → 아직 하지 마라</strong></p>
+<ul>
+<li>아날로그·혼합신호 자동 설계</li>
+<li>최종 사인오프 자동화</li>
+<li>사람 없는 테이프아웃 결정</li>
+</ul>
+<p>앞서 설명한 이유들 때문이다.</p>
+<h3 id="도입-순서-제안">도입 순서 제안<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도입-순서-제안" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>1~3개월</strong>: ①영역 도입. 팀이 에이전트 출력의 품질 감각을 익히는 기간</li>
+<li><strong>3~9개월</strong>: ③영역을 shadow mode로 병행. 기존 방식과 결과를 비교하며 데이터 축적</li>
+<li><strong>9~18개월</strong>: 비교 데이터가 충분하면 일부 워크플로를 정식 전환. <strong>단, 사인오프 게이트는 유지</strong></li>
+<li><strong>이후</strong>: 자체 실리콘 검증 결과가 누적된 후에야 자율성 확대를 논의</li>
+</ol>
+<p>이 일정이 답답해 보인다면, 앞 절의 마스크 비용을 다시 떠올려 보시라.</p>
+<h3 id="조직이-미리-정해야-할-것">조직이 미리 정해야 할 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#조직이-미리-정해야-할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기술보다 중요한 건 <strong>책임 구조</strong>다. 다음 질문에 답이 없으면 도입해선 안 된다.</p>
+<ul>
+<li>에이전트가 만든 RTL 수정에 버그가 남았다면, <strong>누가 책임지나</strong></li>
+<li>에이전트 출력을 승인한 엔지니어는 어느 수준까지 검토할 의무가 있나</li>
+<li>에이전트가 커버리지 클로저를 선언했을 때, 그걸 그대로 받을 것인가 재확인할 것인가</li>
+<li>에이전트를 쓴 설계와 안 쓴 설계를 <strong>구분해 추적</strong>하는가</li>
+</ul>
+<p>마지막 항목이 특히 실무적으로 중요하다. 나중에 문제가 생겼을 때 원인을 분리하려면 기록이 필요하다.</p>
+<hr/>
+<h2 id="2027년을-가를-네-가지-변수-분기점">2027년을 가를 네 가지 변수 {#분기점}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2027년을-가를-네-가지-변수-분기점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>향후 1~2년 안에 이 분야의 방향을 결정할 변수를 꼽으면 다음 넷이다.</p>
+<h3 id="변수-1-첫-에이전트-주도-테이프아웃이-나오는가">변수 1: 첫 ‘에이전트 주도 테이프아웃’이 나오는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#변수-1-첫-에이전트-주도-테이프아웃이-나오는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>가장 결정적이다. 어떤 회사든 **“이 칩은 에이전트가 주도해 설계·검증했고, 실리콘에서 정상 동작했다”**고 공개하는 순간 판이 바뀐다.</p>
+<p>주목할 조건은 세 가지다.</p>
+<ul>
+<li>그 칩이 <strong>얼마나 복잡한가</strong> (테스트 칩인가, 상용 제품인가)</li>
+<li>사람이 <strong>어느 단계에 개입했는가</strong></li>
+<li><strong>첫 실리콘에서 성공했는가</strong>, 아니면 리비전이 있었나</li>
+</ul>
+<p>반대로 2027년까지 이런 발표가 안 나오면, “레벨 5” 담론은 신뢰를 잃는다.</p>
+<h3 id="변수-2-과금-모델이-어디로-정착하는가">변수 2: 과금 모델이 어디로 정착하는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#변수-2-과금-모델이-어디로-정착하는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>앞서 설명한 딜레마다. 시트 라이선스가 유지되면 빅3는 전환 속도를 스스로 늦추게 되고, 그 틈에 스타트업이 자란다. 컴퓨팅·성과 기반으로 빠르게 넘어가면 빅3가 판을 굳힌다.</p>
+<p>이건 기술 문제가 아니라 <strong>비즈니스 모델 문제</strong>이고, 그래서 더 예측하기 어렵다.</p>
+<h3 id="변수-3-아날로그-벽이-뚫리는가">변수 3: 아날로그 벽이 뚫리는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#변수-3-아날로그-벽이-뚫리는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>코그니칩처럼 도메인 데이터로 훈련한 모델이 아날로그·혼합신호에서 의미 있는 성과를 내면, 적용 범위가 크게 넓어진다. 못 내면 에이전틱 EDA는 **“디지털 검증 자동화 도구”**로 범위가 고정된다.</p>
+<p>그것도 큰 시장이지만, 지금 벤더들이 그리는 그림보다는 훨씬 좁다.</p>
+<h3 id="변수-4-중국-국산화가-어디까지-가는가">변수 4: 중국 국산화가 어디까지 가는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#변수-4-중국-국산화가-어디까지-가는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>화다주톈을 비롯한 중국 EDA가 에이전틱 전환을 발판으로 실질적 경쟁력을 확보하는지가 관건이다. 성공하면 수출 통제의 효력이 약해지고 중국 팹리스의 설계 속도가 오른다. 한국 입장에서는 직접적 경쟁 압력이다.</p>
+<p>다만 앞서 말한 대로, <strong>에이전트 층의 개선이 밑단 엔진 격차를 지우지는 못한다.</strong> 여기가 관전 포인트다.</p>
+<hr/>
+<h2 id="반대편-시각-에이전틱-eda는-과대평가인가-반대편-시각">반대편 시각: 에이전틱 EDA는 과대평가인가 {#반대편-시각}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반대편-시각-에이전틱-eda는-과대평가인가-반대편-시각" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 글은 전반적으로 신중한 톤을 유지했다. 그런데 그 신중함이 과한 건 아닌지도 따져 보자.</p>
+<h3 id="과대평가라는-주장의-논거">과대평가라는 주장의 논거<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#과대평가라는-주장의-논거" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>검증되지 않은 숫자</strong>: “50배”, “40배”, “5주→하루” 모두 벤더 발표다. 독립 검증이 없다</li>
+<li><strong>그라운드 트루스 부재</strong>: 실리콘으로 증명된 게 없다</li>
+<li><strong>가장 어려운 영역을 비켜간다</strong>: 아날로그, 사인오프, 아키텍처 설계는 여전히 사람 몫이다</li>
+<li><strong>역사적 패턴</strong>: EDA 업계는 “고수준 합성(HLS)“이 설계를 혁명한다고 했던 시절이 있었다. HLS는 유용한 도구가 됐지만 RTL을 대체하지 못했다</li>
+<li><strong>인력난이 안 풀린다</strong>: AI가 그렇게 효과적이면 채용 공고가 줄어야 하는데, 여전히 후보 1명당 3건이다</li>
+</ol>
+<h3 id="과소평가라는-반대-논거">과소평가라는 반대 논거<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#과소평가라는-반대-논거" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>빅3가 동시에 움직였다</strong>: 경쟁사 셋이 같은 해에 같은 방향으로 대규모 투자를 하는 건 흔치 않다. 내부적으로 뭔가를 확인했을 가능성이 높다</li>
+<li><strong>실제 매출이 나온다</strong>: 칩에이전트의 ARR 6배 성장과 120건 이상 도입은 데모가 아니다. 돈을 내는 고객이 있다는 뜻이다</li>
+<li><strong>대형 팹리스가 초기 투자자로 들어왔다</strong>: 미디어텍이 에이전트리스 프리시드를 주도했다. AMD가 시놉시스 워크플로에 참여했다. 사용자 쪽이 먼저 움직이고 있다</li>
+<li><strong>시놉시스 실적이 증명한다</strong>: Design Automation 부문 53% 성장은 가설이 아니라 회계 숫자다</li>
+<li><strong>검증은 진짜 병목이다</strong>: 전체 공수의 절반 이상을 먹는 영역에서 30%만 개선해도 산업적으로 거대하다</li>
+</ol>
+<h3 id="균형-잡힌-결론">균형 잡힌 결론<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#균형-잡힌-결론" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>두 관점을 종합하면 이렇게 정리된다.</p>
+<p><strong>에이전틱 EDA는 실재한다. 다만 벤더가 파는 프레임(“자율 엔지니어”, “레벨 5”)과 현재 실제 가치(“검증 생산성 도구”)가 다르다.</strong></p>
+<p>현재 검증 가능한 가치는 이 정도다.</p>
+<ul>
+<li>검증 단계의 반복 작업을 크게 줄인다 → <strong>확실함</strong></li>
+<li>커버리지 클로저 속도를 높인다 → <strong>확실함</strong></li>
+<li>주니어 엔지니어가 하던 일의 상당 부분을 대체한다 → <strong>가능성 높음</strong></li>
+<li>시니어 엔지니어의 판단을 대체한다 → <strong>근거 없음</strong></li>
+<li>사람 없이 칩을 완성한다 → <strong>아직 사례 없음</strong></li>
+</ul>
+<p>이 정도로 읽으면 과대평가도 과소평가도 아니다. 그리고 이 정도만 해도 <strong>산업 전체 생산성에 의미 있는 변화</strong>다.</p>
+<hr/>
+<h2 id="자주-묻는-질문faq-faq">자주 묻는 질문(FAQ) {#faq}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#자주-묻는-질문faq-faq" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Q1. 에이전틱 EDA와 기존 AI EDA(DSO.ai 같은)의 차이가 뭔가요?</strong></p>
+<p>DSO.ai 계열은 <strong>도구 안에 들어간 최적화 엔진</strong>입니다. 사람이 도구를 조작하고, AI는 파라미터 탐색을 자동화합니다. 에이전틱 EDA는 <strong>사람이 목표를 주면 에이전트가 여러 도구를 스스로 호출하며 루프를 닫습니다.</strong> 조작의 주체가 바뀌는 게 핵심 차이입니다.</p>
+<p><strong>Q2. ‘레벨 5 자율성’이면 이제 엔지니어가 필요 없나요?</strong></p>
+<p>아닙니다. 케이던스의 레벨 5 주장은 특정 워크플로(주로 검증) 안에서의 자율성으로 읽어야 하고, 2026년 하반기 얼리 액세스 단계입니다. 그리고 <strong>AI 에이전트가 사람 없이 산업용 칩을 테이프아웃한 사례는 아직 보고된 바 없습니다.</strong> 인력 수요는 오히려 후보 1명당 공고 3건 수준으로 여전히 초과 상태입니다.</p>
+<p><strong>Q3. 검증 엔지니어의 커리어는 어떻게 되나요?</strong></p>
+<p>일 자체는 남고, 성격이 바뀔 가능성이 큽니다. 테스트벤치를 손으로 짜는 비중은 줄고, <strong>에이전트 결과를 검토하고 놓친 구멍을 찾고 최종 판단을 내리는 비중</strong>이 늘어납니다. 도메인 이해와 “무엇을 체크해야 하는가”에 대한 감각이 더 중요해집니다. 커버리지 숫자를 올리는 기술은 가치가 떨어지고, 의미 있는 체크를 설계하는 능력은 가치가 오릅니다.</p>
+<p><strong>Q4. 중소 팹리스도 지금 도입할 수 있나요?</strong></p>
+<p>부분적으로만 권합니다. 저위험 영역(문서·스크립트·로그 요약·테스트 플랜 초안)부터 시작하는 건 지금도 가능합니다. 다만 자율 커버리지 클로저나 RTL 자동 수정 같은 고위험 영역은 <strong>결과를 검수할 시니어 엔지니어가 있는 조직</strong>에서만 의미가 있습니다. 시니어가 없으면 에이전트 출력을 신뢰할지 판단할 수 없어 오히려 위험합니다.</p>
+<p><strong>Q5. 커버리지 100%를 달성했다는 에이전트 보고서를 믿어도 되나요?</strong></p>
+<p><strong>커버리지 100%는 버그 0을 뜻하지 않습니다.</strong> 커버리지는 “설계의 어느 부분이 자극을 받았는가”를 측정할 뿐, 그 자극이 올바른 동작을 확인했는지는 별개입니다. 더구나 에이전트가 커버리지 정의 자체에 관여했다면 자기가 낸 시험을 자기가 채점하는 구조가 됩니다. 반드시 사람이 체크 항목의 적절성을 검토해야 합니다.</p>
+<p><strong>Q6. 아날로그 설계에도 쓸 수 있나요?</strong></p>
+<p>2026년 기준으로는 어렵습니다. 아날로그 IP는 공개 데이터가 사실상 없고(각 사의 핵심 자산), 다중 도메인·다중 물리 문제라 추상화가 안 됩니다. 코그니칩처럼 도메인 데이터로 자체 훈련하는 접근이 시도되고 있지만, 학습 데이터 확보 자체가 난제입니다.</p>
+<p><strong>Q7. 한국 기업이 특별히 주의할 점이 있나요?</strong></p>
+<p><strong>설계 데이터의 이동 경로</strong>입니다. 에이전틱 워크플로가 클라우드와 결합되는 추세(시놉시스-마이크로소프트 Discovery 사례)인데, 설계 데이터는 기업의 최고 기밀입니다. 도입 시 데이터가 어디 저장되고 학습에 쓰이는지를 계약 수준에서 명확히 해야 합니다. 또한 한국은 EDA 스택 전체(도구·런타임·모델·GPU)에서 고객 위치이므로, <strong>컴퓨팅 비용 구조 변화에 대한 협상력 확보</strong>도 과제입니다.</p>
+<p><strong>Q8. 엔비디아가 왜 EDA에 이렇게 깊이 관여하나요?</strong></p>
+<p>세 가지로 볼 수 있습니다. ① 자사 칩 설계 생산성을 높이기 위해, ② 에이전틱 EDA가 GPU 대형 수요처가 되기 때문에, ③ 세 EDA 회사가 모두 엔비디아 런타임 위에서 돌면 사실상 플랫폼 표준을 쥐게 되기 때문입니다.</p>
+<p><strong>Q9. 중국 EDA가 정말 따라잡을 수 있나요?</strong></p>
+<p>‘골든 윈도우’ 논리는 인터페이스 층이 바뀌면 축적된 노하우의 가치가 희석된다는 것인데, 일리가 있습니다. 다만 <strong>에이전트는 결국 밑단 엔진(시뮬레이션·형식 검증·배치배선)을 호출합니다.</strong> 그 엔진들이 수십 년 축적의 산물이라는 사실은 바뀌지 않습니다. 에이전트 층을 잘 만드는 것과 엔진 격차를 메우는 것은 다른 문제입니다.</p>
+<p><strong>Q10. 언제쯤 이 기술의 실체를 확인할 수 있나요?</strong></p>
+<p>현실적으로 <strong>2028년경</strong>입니다. 케이던스 레벨 5 얼리 액세스가 2026년 하반기, 실제 프로젝트 투입 후 테이프아웃까지 1<del>2년, 실리콘 검증에 추가 수개월</del>1년이 걸립니다. 그때 나올 결과도 “AI가 혼자 했다”보다는 “AI가 대부분을 하고 사람이 사인오프했다”에 가까울 가능성이 높습니다.</p>
+<hr/>
+<h2 id="마치며-도구가-똑똑해진-게-아니라-책임의-위치가-옮겨졌다-마치며">마치며: 도구가 똑똑해진 게 아니라, 책임의 위치가 옮겨졌다 {#마치며}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마치며-도구가-똑똑해진-게-아니라-책임의-위치가-옮겨졌다-마치며" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 글을 관통하는 긴장은 결국 하나였다. <strong>속도와 신뢰.</strong></p>
+<p>벤더들이 내놓은 숫자는 전부 속도다. 50배, 40배, 5주에서 하루로, 4주에서 1주로. 이 숫자들이 거짓이라고 볼 이유는 없다. 시놉시스의 Design Automation 부문이 53% 성장했고, 칩에이전트에 120곳이 넘는 반도체 기업이 돈을 냈다. 뭔가는 실제로 작동하고 있다.</p>
+<p>그런데 이 산업이 진짜로 파는 건 속도가 아니다. <strong>틀리지 않음</strong>이다.</p>
+<p>칩 하나가 잘못되면 마스크 값이 날아가고, 몇 달이 날아가고, 시장 기회가 날아간다. 그래서 반도체 검증은 “아마 맞을 것”을 통과시키지 않는 문화 위에 세워졌다. 확률적으로 그럴듯한 출력을 내는 시스템이 이 문화와 만났을 때 생기는 마찰이, 2026년 에이전틱 EDA의 본질적 문제다.</p>
+<p>지멘스가 ‘자가 검증’이라는 단어를 꺼낸 게 그래서 의미심장하다. 경쟁사가 “얼마나 빠른가”를 말할 때 “얼마나 믿을 수 있는가”를 말한 건, 이 산업의 실제 질문을 정확히 짚은 것이다.</p>
+<p>그리고 여기서 가장 중요한 변화가 드러난다. <strong>에이전틱 EDA가 바꾸는 건 일의 양이 아니라 책임의 위치다.</strong></p>
+<p>예전에 검증 엔지니어는 테스트벤치를 직접 짰다. 자기가 짠 것이므로 어디가 약한지 알았다. 이제 에이전트가 수백 개 테스트를 만들고 커버리지를 닫았다고 보고한다. 엔지니어는 그 결과를 승인한다. 일은 줄었다. <strong>그런데 책임은 그대로다.</strong> 오히려 자기가 만들지 않은 것을 승인해야 하므로 판단 난이도는 올라간다.</p>
+<p>번역가가 검수자가 되고, 회계사가 AI 장부를 감사하고, 의사가 AI 진료기록을 확인하는 것과 같은 구조다. 다른 점은 실수 비용이다. 오역은 고칠 수 있다. 테이프아웃된 칩은 못 고친다.</p>
+<p>그래서 이 기술을 도입하는 조직이 먼저 정해야 할 건 어떤 벤더를 쓸 것인가가 아니다. <strong>에이전트가 만든 결과에 누가, 어느 수준까지 책임지는가</strong>다. 그 답이 없는 상태에서 “레벨 5”를 사면, 사는 건 자율성이 아니라 책임 소재의 공백이다.</p>
+<p>2028년쯤 누군가 “에이전트가 주도한 칩이 첫 실리콘에서 동작했다”고 발표할 것이다. 아마 그럴 것이다. 그리고 그 발표문 어딘가에는 작은 글씨로 이렇게 적혀 있을 것이다. <strong>“최종 사인오프는 사람이 했다.”</strong></p>
+<p>그 작은 글씨가, 지금 이 산업에서 가장 중요한 문장이다.</p>
+<hr/>
+<h2 id="참고-자료-참고-자료">참고 자료 {#참고-자료}<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고-자료-참고-자료" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>빅3 발표 및 분석</strong></p>
+<ul>
+<li><a href="https://futurumgroup.com/insights/synopsys-cadence-and-siemens-take-agentic-chip-design-autonomous-at-dac/" class="external external-link">Synopsys, Cadence, and Siemens Take Agentic Chip Design Autonomous at DAC — Futurum<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://news.synopsys.com/2026-07-26-Synopsys-Showcases-Comprehensive-Autonomous-Engineering-Workflows-from-Silicon-to-Systems,-Developed-with-NVIDIA-Technology" class="external external-link">Synopsys Showcases Comprehensive Autonomous Engineering Workflows from Silicon to Systems (2026-07-26)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://news.synopsys.com/2026-07-27-Synopsys-Advances-Agentic-AI-Chip-Design-with-AMD-and-Microsoft" class="external external-link">Synopsys Advances Agentic AI Chip Design with AMD and Microsoft (2026-07-27)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.stocktitan.net/news/SNPS/synopsys-showcases-comprehensive-autonomous-engineering-workflows-x5gake6wmuxq.html" class="external external-link">Synopsys AI Workflow Achieves Up to 50X Faster RTL Validation — StockTitan<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html" class="external external-link">Cadence Unveils Industry’s First Fully Autonomous Virtual Engineer for Chip Design, powered by NVIDIA<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.engineering.com/cadence-extends-chip-design-agent-to-level-5-autonomy/" class="external external-link">Cadence extends chip design agent to Level-5 autonomy — Engineering.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://futurumgroup.com/insights/cadence-aurastack-extends-agentic-leadership-toward-advanced-packaging-design/" class="external external-link">Cadence AuraStack Extends Agentic Leadership Toward Advanced Packaging Design — Futurum<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.embedded.com/what-level-5-autonomy-could-mean-for-chip-design-engineers" class="external external-link">What Level 5 Autonomy Could Mean for Chip Design Engineers — Embedded<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.barchart.com/story/news/3471839/siemens-advances-self-verifying-agentic-ai-workflows-for-semiconductor-and-pcb-design" class="external external-link">Siemens advances self-verifying agentic AI workflows for semiconductor and PCB design<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://semiwiki.com/eda/372073-siemens-and-nvidia-tout-agentic-ai/" class="external external-link">Siemens and NVIDIA tout Agentic AI — SemiWiki<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026/" class="external external-link">AI in EDA Is Real, It’s Now, and It’s on Show at DAC 2026 — EE Times<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>엔비디아</strong></p>
+<ul>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-expands-nvidia-agent-toolkit-with-nvidia-physicsnemo-and-cuda-x-libraries-to-transform-how-the-world-engineers-designs-and-builds" class="external external-link">NVIDIA Expands Agent Toolkit With PhysicsNeMo and CUDA-X Libraries — NVIDIA Newsroom<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.electronicsweekly.com/market-sectors/ai/nvidia-says-agentic-ai-is-reshaping-chip-system-design-2026-07/" class="external external-link">Nvidia says agentic AI is reshaping chip system design — Electronics Weekly<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.mt.co.kr/amp/tech/2026/07/27/2026072715283292062" class="external external-link">엔비디아, AI로 반도체 설계 자동화 강화…삼성·TSMC도 활용 — 머니투데이<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>스타트업</strong></p>
+<ul>
+<li>[ChipAgents Expands Series A Funding to <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">134</span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord">—</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mord mathnormal">ess</span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">e</span><span class="mclose">]</span><span class="mopen">(</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ttp</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">//</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord">.</span><span class="mord mathnormal">b</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mord mathnormal">ess</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">e</span><span class="mord">.</span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span><span class="mord">/</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord mathnormal">s</span><span class="mord">/</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mord">/20260729819576/</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord mathnormal">hi</span><span class="mord mathnormal">p</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span><span class="mord mathnormal">x</span><span class="mord mathnormal">p</span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mord mathnormal" style="margin-right:0.0278em;">er</span><span class="mord mathnormal">i</span><span class="mord mathnormal">es</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6984em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span><span class="mord">−</span></span></span></span>134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design)</li>
+<li><a href="https://siliconangle.com/2026/02/18/chipagents-secures-50m-funding-accelerate-agentic-chip-design/" class="external external-link">ChipAgents secures $50M in funding to accelerate agentic chip design — SiliconANGLE<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips-that-power-ai-and-just-raised-60m-to-try/" class="external external-link">Cognichip wants AI to design the chips that power AI, and just raised $60M to try — TechCrunch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.axios.com/pro/enterprise-software-deals/2026/08/26/nvidia-agentrys-agentic-chip-design" class="external external-link">Exclusive: Agentrys raises $24.5M for agentic chip design — Axios<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.forbes.com/sites/karlfreund/2026/08/03/could-eda-ai-startups-be-the-new-claude-of-chip-design/" class="external external-link">Could EDA AI Startups Be The New Claude Of Chip Design? — Forbes<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>비판 및 한계</strong></p>
+<ul>
+<li><a href="https://arxiv.org/pdf/2512.23189" class="external external-link">The Dawn of Agentic EDA: A Survey of Autonomous Digital Chip Design — arXiv<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://semiengineering.com/executive-outlook-agentic-ais-impact-on-chip-design/" class="external external-link">Executive Outlook: Agentic AI’s Impact On Chip Design — Semiconductor Engineering<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.indexbox.io/blog/agentic-ai-in-semiconductor-design-benefits-challenges-and-future-outlook/" class="external external-link">Agentic AI Reshaping Chip Design Flows: Insights from 2026 ESD Alliance Panel — IndexBox<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://medium.com/@jungyhuang/the-transparent-agentic-eda-engineers-building-trust-in-agentic-chip-design-3ed3ce4c382c" class="external external-link">The “Transparent” Agentic EDA Engineers: Building Trust in Agentic Chip Design<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://institutionofelectronics.ac.uk/the-next-eda-wave-lessons-from-date-2026/" class="external external-link">The next EDA wave: Lessons from DATE 2026 — Institution of Electronics<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>시장 및 인력</strong></p>
+<ul>
+<li><a href="https://futurumgroup.com/insights/synopsys-q3-fy-2026-ai-design-demand-drives-eda-growth/" class="external external-link">Synopsys Q3 FY 2026: AI Design Demand Drives EDA Growth — Futurum<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://newsletter.semianalysis.com/p/eda-market-primer" class="external external-link">EDA Market Primer — SemiAnalysis<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.mordorintelligence.com/industry-reports/electronic-design-automation-eda-tools-market" class="external external-link">Electronic Design Automation Tools (EDA) Market Analysis — Mordor Intelligence<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.prismnews.com/workplace/goldman-sachs/goldman-sachs-sees-chip-designer-shortage-boosting-cadence" class="external external-link">Goldman Sachs sees chip designer shortage boosting Cadence and Synopsys<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.game7staffing.com/resources/blog/semiconductor-hiring-in-2026-the-tapeout-bottleneck" class="external external-link">Semiconductor Hiring in 2026: The Tapeout Bottleneck — Game7 Staffing<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.synopsys.com/blogs/chip-design/semiconductor-engineering-talent-shortage-solutions.html" class="external external-link">Solving the Semiconductor Engineering Talent Shortage — Synopsys<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>중국</strong></p>
+<ul>
+<li><a href="https://www.ajunews.com/view/20260913155536361" class="external external-link">“AI로 반도체 설계 4주→1주 단축” 中 EDA 선두기업 승부수 — 아주경제<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://pandaily.com/ai-eda-agentic-synopsys-cadence-siemens-chinese-vendors-golden-window-aug2026" class="external external-link">AI Starts Designing Chips: EDA Giants Open the Agentic AI War — Chinese Vendors See a Golden Window — Pandaily<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://csf.kiep.go.kr/issueInfoView.es?article_id=43222&amp;board_id=2&amp;mid=a20200000000" class="external external-link">이슈트렌드: 中 EDA, 반도체 설계 자동화 소프트웨어 산업 현황 — KIEP 중국전문가포럼<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>한국</strong></p>
+<ul>
+<li><a href="https://www.kukinews.com/article/view/kuk202609070214" class="external external-link">반도체 설계도, 이제 AI가 그린다…삼성·SK가 주목한 ‘AI 엔지니어’ — 쿠키뉴스<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%EC%99%80-%ED%95%A8%EA%BB%98-%EC%97%85%EA%B3%84-%EC%B5%9C%EA%B3%A0-%EC%88%98%EC%A4%80-%EB%B0%98%EB%8F%84%EC%B2%B4" class="external external-link">삼성전자, 엔비디아와 함께 ‘업계 최고 수준 반도체 AI 팩토리’ 구축 — 삼성전자 뉴스룸<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.etnews.com/20260318000242" class="external external-link">삼성·SK, 반도체 전주기에 AI 적용…”엔비디아 협력 확장” — 전자신문<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.synopsys.com/ko-kr/korean/press-releases/synopsys-ai-based-eda-applied.html" class="external external-link">삼성, SK, LG도 “AI로 반도체 설계” AI 기반 EDA 개화 — 시놉시스 코리아<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.newspim.com/news/view/20260629001445" class="external external-link">삼성전자·SK하이닉스, 반도체 ‘3200조 투자’ 계획 공시 — 뉴스핌<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<p><em>본 글은 2026년 9월 15일 기준으로 공개된 자료를 바탕으로 작성되었습니다. 벤더가 발표한 성능 수치(50배, 40배, 5주→하루 등)는 각 사의 주장이며 독립적으로 검증된 값이 아닙니다. 도입 검토 시에는 자사 설계 유형으로 진행하는 PoC 결과를 기준으로 판단하시기 바랍니다.</em></p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-212" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#에이전틱-edaai-반도체-설계-자동화-완전-정복-2026-시놉시스-vs-케이던스-vs-지멘스-vs-칩에이전트코그니칩에이전트리스-vs-중국-화다주톈--검증-5주가-하루로-줄었다는-해에-ai-혼자-테이프아웃한-칩은-아직-0개다" data-for="에이전틱-edaai-반도체-설계-자동화-완전-정복-2026-시놉시스-vs-케이던스-vs-지멘스-vs-칩에이전트코그니칩에이전트리스-vs-중국-화다주톈--검증-5주가-하루로-줄었다는-해에-ai-혼자-테이프아웃한-칩은-아직-0개다">에이전틱 EDA(AI 반도체 설계 자동화) 완전 정복 2026: 시놉시스 vs 케이던스 vs 지멘스 vs 칩에이전트·코그니칩·에이전트리스 vs 중국 화다주톈 — ‘검증 5주가 하루로 줄었다’는 해에, AI 혼자 테이프아웃한 칩은 아직 0개다</a></li><li class="depth-1"><a href="#목차" data-for="목차">목차</a></li><li class="depth-1"><a href="#들어가며-같은-무대에서-나온-두-개의-문장-들어가며" data-for="들어가며-같은-무대에서-나온-두-개의-문장-들어가며">들어가며: 같은 무대에서 나온 두 개의 문장 {#들어가며}</a></li><li class="depth-1"><a href="#숫자로-보는-2026년-에이전틱-eda-숫자로-보는-2026" data-for="숫자로-보는-2026년-에이전틱-eda-숫자로-보는-2026">숫자로 보는 2026년 에이전틱 EDA {#숫자로-보는-2026}</a></li><li class="depth-1"><a href="#eda란-무엇인가-매출-20조-원짜리-산업이-왜-급소인가-eda란" data-for="eda란-무엇인가-매출-20조-원짜리-산업이-왜-급소인가-eda란">EDA란 무엇인가: 매출 20조 원짜리 산업이 왜 급소인가 {#eda란}</a></li><li class="depth-2"><a href="#eda가-하는-일" data-for="eda가-하는-일">EDA가 하는 일</a></li><li class="depth-2"><a href="#왜-이-산업이-급소인가" data-for="왜-이-산업이-급소인가">왜 이 산업이 ‘급소’인가</a></li><li class="depth-1"><a href="#에이전틱-eda는-무엇이-다른가-자율성-레벨이라는-개념-자율성-레벨" data-for="에이전틱-eda는-무엇이-다른가-자율성-레벨이라는-개념-자율성-레벨">에이전틱 EDA는 무엇이 다른가: ‘자율성 레벨’이라는 개념 {#자율성-레벨}</a></li><li class="depth-2"><a href="#1세대-ai-최적화-엔진-20202023" data-for="1세대-ai-최적화-엔진-20202023">1세대: AI 최적화 엔진 (2020~2023)</a></li><li class="depth-2"><a href="#2세대-llm-어시스턴트-20232025" data-for="2세대-llm-어시스턴트-20232025">2세대: LLM 어시스턴트 (2023~2025)</a></li><li class="depth-2"><a href="#3세대-에이전틱-eda-2026" data-for="3세대-에이전틱-eda-2026">3세대: 에이전틱 EDA (2026~)</a></li><li class="depth-2"><a href="#자율성-레벨이라는-프레임" data-for="자율성-레벨이라는-프레임">자율성 레벨이라는 프레임</a></li><li class="depth-1"><a href="#빅3--시놉시스--검증-에이전트와-앤시스라는-베팅-빅3-시놉시스" data-for="빅3--시놉시스--검증-에이전트와-앤시스라는-베팅-빅3-시놉시스">빅3 ①: 시놉시스 — 검증 에이전트와 앤시스라는 베팅 {#빅3-시놉시스}</a></li><li class="depth-2"><a href="#agentengineer-무엇을-내놨나" data-for="agentengineer-무엇을-내놨나">AgentEngineer: 무엇을 내놨나</a></li><li class="depth-2"><a href="#amd마이크로소프트와의-협업" data-for="amd마이크로소프트와의-협업">AMD·마이크로소프트와의 협업</a></li><li class="depth-2"><a href="#앤시스-인수라는-큰-그림" data-for="앤시스-인수라는-큰-그림">앤시스 인수라는 큰 그림</a></li><li class="depth-2"><a href="#실무-관점-평가" data-for="실무-관점-평가">실무 관점 평가</a></li><li class="depth-1"><a href="#빅3--케이던스--레벨-5를-먼저-선언한-회사-빅3-케이던스" data-for="빅3--케이던스--레벨-5를-먼저-선언한-회사-빅3-케이던스">빅3 ②: 케이던스 — ‘레벨 5’를 먼저 선언한 회사 {#빅3-케이던스}</a></li><li class="depth-2"><a href="#chipstack-레벨-5-선언" data-for="chipstack-레벨-5-선언">ChipStack: 레벨 5 선언</a></li><li class="depth-2"><a href="#aurastack-패키징으로의-확장" data-for="aurastack-패키징으로의-확장">AuraStack: 패키징으로의 확장</a></li><li class="depth-2"><a href="#레벨-5를-어떻게-읽어야-하나" data-for="레벨-5를-어떻게-읽어야-하나">‘레벨 5’를 어떻게 읽어야 하나</a></li><li class="depth-2"><a href="#실무-관점-평가-1" data-for="실무-관점-평가-1">실무 관점 평가</a></li><li class="depth-1"><a href="#빅3--지멘스-eda--자가-검증이라는-다른-각도-빅3-지멘스" data-for="빅3--지멘스-eda--자가-검증이라는-다른-각도-빅3-지멘스">빅3 ③: 지멘스 EDA — ‘자가 검증’이라는 다른 각도 {#빅3-지멘스}</a></li><li class="depth-2"><a href="#fuse-eda-ai-agent와-자가-검증" data-for="fuse-eda-ai-agent와-자가-검증">Fuse EDA AI Agent와 ‘자가 검증’</a></li><li class="depth-2"><a href="#기술-구성" data-for="기술-구성">기술 구성</a></li><li class="depth-2"><a href="#실무-관점-평가-2" data-for="실무-관점-평가-2">실무 관점 평가</a></li><li class="depth-1"><a href="#숨은-주인공-엔비디아는-왜-eda-바닥에-플랫폼을-깔았나-엔비디아" data-for="숨은-주인공-엔비디아는-왜-eda-바닥에-플랫폼을-깔았나-엔비디아">숨은 주인공: 엔비디아는 왜 EDA 바닥에 플랫폼을 깔았나 {#엔비디아}</a></li><li class="depth-2"><a href="#엔비디아가-공급한-것" data-for="엔비디아가-공급한-것">엔비디아가 공급한 것</a></li><li class="depth-2"><a href="#왜-그렇게까지-하나" data-for="왜-그렇게까지-하나">왜 그렇게까지 하나</a></li><li class="depth-2"><a href="#한국-독자가-주목할-지점" data-for="한국-독자가-주목할-지점">한국 독자가 주목할 지점</a></li><li class="depth-1"><a href="#도전자들-칩에이전트-vs-코그니칩-vs-에이전트리스-도전자들" data-for="도전자들-칩에이전트-vs-코그니칩-vs-에이전트리스-도전자들">도전자들: 칩에이전트 vs 코그니칩 vs 에이전트리스 {#도전자들}</a></li><li class="depth-2"><a href="#칩에이전트chipagents-가장-앞서-나간-도전자" data-for="칩에이전트chipagents-가장-앞서-나간-도전자">칩에이전트(ChipAgents): 가장 앞서 나간 도전자</a></li><li class="depth-2"><a href="#코그니칩cognichip-다른-길을-택한-곳" data-for="코그니칩cognichip-다른-길을-택한-곳">코그니칩(Cognichip): 다른 길을 택한 곳</a></li><li class="depth-2"><a href="#에이전트리스agentrys-가장-늦게-가장-구체적으로" data-for="에이전트리스agentrys-가장-늦게-가장-구체적으로">에이전트리스(Agentrys): 가장 늦게, 가장 구체적으로</a></li><li class="depth-2"><a href="#스타트업-vs-빅3-누가-이기나" data-for="스타트업-vs-빅3-누가-이기나">스타트업 vs 빅3: 누가 이기나</a></li><li class="depth-1"><a href="#중국편-화다주톈과-골든-윈도우라는-표현-중국편" data-for="중국편-화다주톈과-골든-윈도우라는-표현-중국편">중국편: 화다주톈과 ‘골든 윈도우’라는 표현 {#중국편}</a></li><li class="depth-2"><a href="#화다주톈華大九天-empyrean" data-for="화다주톈華大九天-empyrean">화다주톈(華大九天, Empyrean)</a></li><li class="depth-2"><a href="#골든-윈도우라는-관점" data-for="골든-윈도우라는-관점">‘골든 윈도우’라는 관점</a></li><li class="depth-2"><a href="#이-관점을-어떻게-볼-것인가" data-for="이-관점을-어떻게-볼-것인가">이 관점을 어떻게 볼 것인가</a></li><li class="depth-1"><a href="#시장-구조-매출은-작은데-왜-아무도-대체하지-못하나-시장-구조" data-for="시장-구조-매출은-작은데-왜-아무도-대체하지-못하나-시장-구조">시장 구조: 매출은 작은데 왜 아무도 대체하지 못하나 {#시장-구조}</a></li><li class="depth-2"><a href="#성장률의-의미" data-for="성장률의-의미">성장률의 의미</a></li><li class="depth-2"><a href="#에이전틱-전환이-가격-모델에-던지는-질문" data-for="에이전틱-전환이-가격-모델에-던지는-질문">에이전틱 전환이 가격 모델에 던지는 질문</a></li><li class="depth-1"><a href="#인력-병목-2030년까지-100만-명-부족이라는-계산-인력-병목" data-for="인력-병목-2030년까지-100만-명-부족이라는-계산-인력-병목">인력 병목: ‘2030년까지 100만 명 부족’이라는 계산 {#인력-병목}</a></li><li class="depth-2"><a href="#숫자" data-for="숫자">숫자</a></li><li class="depth-2"><a href="#어디가-특히-모자라나" data-for="어디가-특히-모자라나">어디가 특히 모자라나</a></li><li class="depth-2"><a href="#여기서-나오는-역설" data-for="여기서-나오는-역설">여기서 나오는 역설</a></li><li class="depth-2"><a href="#실무자에게-주는-시사점" data-for="실무자에게-주는-시사점">실무자에게 주는 시사점</a></li><li class="depth-1"><a href="#한계--오차-허용치-0인-산업에서-환각이란-무엇인가-한계-환각" data-for="한계--오차-허용치-0인-산업에서-환각이란-무엇인가-한계-환각">한계 ①: 오차 허용치 0인 산업에서 ‘환각’이란 무엇인가 {#한계-환각}</a></li><li class="depth-2"><a href="#근본-제약-세-가지" data-for="근본-제약-세-가지">근본 제약 세 가지</a></li><li class="depth-2"><a href="#1-오차-무관용이라는-조건" data-for="1-오차-무관용이라는-조건">1) 오차 무관용이라는 조건</a></li><li class="depth-2"><a href="#2-과도한-신뢰라는-위험" data-for="2-과도한-신뢰라는-위험">2) 과도한 신뢰라는 위험</a></li><li class="depth-2"><a href="#3-검증-특유의-공격-표면" data-for="3-검증-특유의-공격-표면">3) 검증 특유의 공격 표면</a></li><li class="depth-2"><a href="#4-단일-에이전트의-조기-수렴" data-for="4-단일-에이전트의-조기-수렴">4) 단일 에이전트의 조기 수렴</a></li><li class="depth-1"><a href="#한계--아날로그라는-벽-한계-아날로그" data-for="한계--아날로그라는-벽-한계-아날로그">한계 ②: 아날로그라는 벽 {#한계-아날로그}</a></li><li class="depth-2"><a href="#왜-아날로그가-어려운가" data-for="왜-아날로그가-어려운가">왜 아날로그가 어려운가</a></li><li class="depth-2"><a href="#이게-왜-중요한가" data-for="이게-왜-중요한가">이게 왜 중요한가</a></li><li class="depth-2"><a href="#코그니칩의-베팅이-여기서-다시-보인다" data-for="코그니칩의-베팅이-여기서-다시-보인다">코그니칩의 베팅이 여기서 다시 보인다</a></li><li class="depth-1"><a href="#한계--테이프아웃-그라운드-트루스-문제-한계-테이프아웃" data-for="한계--테이프아웃-그라운드-트루스-문제-한계-테이프아웃">한계 ③: 테이프아웃 그라운드 트루스 문제 {#한계-테이프아웃}</a></li><li class="depth-2"><a href="#비판의-핵심" data-for="비판의-핵심">비판의 핵심</a></li><li class="depth-2"><a href="#커버리지는-정답이-아니다" data-for="커버리지는-정답이-아니다">커버리지는 정답이 아니다</a></li><li class="depth-2"><a href="#그럼-뭘-봐야-하나" data-for="그럼-뭘-봐야-하나">그럼 뭘 봐야 하나</a></li><li class="depth-2"><a href="#언제-이-질문에-답이-나오나" data-for="언제-이-질문에-답이-나오나">언제 이 질문에 답이 나오나</a></li><li class="depth-1"><a href="#한국편--삼성전자--culitho에서-ai-팩토리까지-한국편-삼성" data-for="한국편--삼성전자--culitho에서-ai-팩토리까지-한국편-삼성">한국편 ①: 삼성전자 — cuLitho에서 ‘AI 팩토리’까지 {#한국편-삼성}</a></li><li class="depth-2"><a href="#5년-전부터-쓰고-있었다" data-for="5년-전부터-쓰고-있었다">5년 전부터 쓰고 있었다</a></li><li class="depth-2"><a href="#2026년-엔비디아와의-결합" data-for="2026년-엔비디아와의-결합">2026년: 엔비디아와의 결합</a></li><li class="depth-2"><a href="#전주기-확대" data-for="전주기-확대">전주기 확대</a></li><li class="depth-2"><a href="#한국-관점에서-읽을-점" data-for="한국-관점에서-읽을-점">한국 관점에서 읽을 점</a></li><li class="depth-1"><a href="#한국편--sk하이닉스와-2030-자율형-팹-한국편-sk" data-for="한국편--sk하이닉스와-2030-자율형-팹-한국편-sk">한국편 ②: SK하이닉스와 2030 자율형 팹 {#한국편-sk}</a></li><li class="depth-2"><a href="#2030-자율형-팹" data-for="2030-자율형-팹">2030 자율형 팹</a></li><li class="depth-2"><a href="#hbm이라는-특수-조건" data-for="hbm이라는-특수-조건">HBM이라는 특수 조건</a></li><li class="depth-2"><a href="#앞서-본-인력-병목과의-연결" data-for="앞서-본-인력-병목과의-연결">앞서 본 인력 병목과의 연결</a></li><li class="depth-1"><a href="#한국편--팹리스스타트업이-지금-실제로-쓸-수-있는-것-한국편-팹리스" data-for="한국편--팹리스스타트업이-지금-실제로-쓸-수-있는-것-한국편-팹리스">한국편 ③: 팹리스·스타트업이 지금 실제로 쓸 수 있는 것 {#한국편-팹리스}</a></li><li class="depth-2"><a href="#냉정한-현실" data-for="냉정한-현실">냉정한 현실</a></li><li class="depth-2"><a href="#그럼에도-지금-할-수-있는-것" data-for="그럼에도-지금-할-수-있는-것">그럼에도 지금 할 수 있는 것</a></li><li class="depth-2"><a href="#하지-말아야-할-것" data-for="하지-말아야-할-것">하지 말아야 할 것</a></li><li class="depth-1"><a href="#실무-도입-가이드-어디부터-넣고-어디는-손대지-말아야-하나-도입-가이드" data-for="실무-도입-가이드-어디부터-넣고-어디는-손대지-말아야-하나-도입-가이드">실무 도입 가이드: 어디부터 넣고, 어디는 손대지 말아야 하나 {#도입-가이드}</a></li><li class="depth-2"><a href="#위험도--효용으로-나눈-4분면" data-for="위험도--효용으로-나눈-4분면">위험도 × 효용으로 나눈 4분면</a></li><li class="depth-2"><a href="#도입-순서-제안" data-for="도입-순서-제안">도입 순서 제안</a></li><li class="depth-2"><a href="#조직이-미리-정해야-할-것" data-for="조직이-미리-정해야-할-것">조직이 미리 정해야 할 것</a></li><li class="depth-1"><a href="#2027년을-가를-네-가지-변수-분기점" data-for="2027년을-가를-네-가지-변수-분기점">2027년을 가를 네 가지 변수 {#분기점}</a></li><li class="depth-2"><a href="#변수-1-첫-에이전트-주도-테이프아웃이-나오는가" data-for="변수-1-첫-에이전트-주도-테이프아웃이-나오는가">변수 1: 첫 ‘에이전트 주도 테이프아웃’이 나오는가</a></li><li class="depth-2"><a href="#변수-2-과금-모델이-어디로-정착하는가" data-for="변수-2-과금-모델이-어디로-정착하는가">변수 2: 과금 모델이 어디로 정착하는가</a></li><li class="depth-2"><a href="#변수-3-아날로그-벽이-뚫리는가" data-for="변수-3-아날로그-벽이-뚫리는가">변수 3: 아날로그 벽이 뚫리는가</a></li><li class="depth-2"><a href="#변수-4-중국-국산화가-어디까지-가는가" data-for="변수-4-중국-국산화가-어디까지-가는가">변수 4: 중국 국산화가 어디까지 가는가</a></li><li class="depth-1"><a href="#반대편-시각-에이전틱-eda는-과대평가인가-반대편-시각" data-for="반대편-시각-에이전틱-eda는-과대평가인가-반대편-시각">반대편 시각: 에이전틱 EDA는 과대평가인가 {#반대편-시각}</a></li><li class="depth-2"><a href="#과대평가라는-주장의-논거" data-for="과대평가라는-주장의-논거">과대평가라는 주장의 논거</a></li><li class="depth-2"><a href="#과소평가라는-반대-논거" data-for="과소평가라는-반대-논거">과소평가라는 반대 논거</a></li><li class="depth-2"><a href="#균형-잡힌-결론" data-for="균형-잡힌-결론">균형 잡힌 결론</a></li><li class="depth-1"><a href="#자주-묻는-질문faq-faq" data-for="자주-묻는-질문faq-faq">자주 묻는 질문(FAQ) {#faq}</a></li><li class="depth-1"><a href="#마치며-도구가-똑똑해진-게-아니라-책임의-위치가-옮겨졌다-마치며" data-for="마치며-도구가-똑똑해진-게-아니라-책임의-위치가-옮겨졌다-마치며">마치며: 도구가 똑똑해진 게 아니라, 책임의 위치가 옮겨졌다 {#마치며}</a></li><li class="depth-1"><a href="#참고-자료-참고-자료" data-for="참고-자료-참고-자료">참고 자료 {#참고-자료}</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

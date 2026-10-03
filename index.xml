@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Ducky&#039;s Note</title>
+      <link>https://duckychoi.github.io/note</link>
+      <description>Last 10 notes on Ducky&#039;s Note</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>판정단위</title>
+    <link>https://duckychoi.github.io/note/tags/%ED%8C%90%EC%A0%95%EB%8B%A8%EC%9C%84</link>
+    <guid>https://duckychoi.github.io/note/tags/%ED%8C%90%EC%A0%95%EB%8B%A8%EC%9C%84</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>태그 목록</title>
+    <link>https://duckychoi.github.io/note/tags/</link>
+    <guid>https://duckychoi.github.io/note/tags/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>api-cost</title>
+    <link>https://duckychoi.github.io/note/tags/api-cost</link>
+    <guid>https://duckychoi.github.io/note/tags/api-cost</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>structured-latent</title>
+    <link>https://duckychoi.github.io/note/tags/structured-latent</link>
+    <guid>https://duckychoi.github.io/note/tags/structured-latent</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>generative-3d</title>
+    <link>https://duckychoi.github.io/note/tags/generative-3d</link>
+    <guid>https://duckychoi.github.io/note/tags/generative-3d</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>tabular-data</title>
+    <link>https://duckychoi.github.io/note/tags/tabular-data</link>
+    <guid>https://duckychoi.github.io/note/tags/tabular-data</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>test-time-training</title>
+    <link>https://duckychoi.github.io/note/tags/test-time-training</link>
+    <guid>https://duckychoi.github.io/note/tags/test-time-training</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>pseudo-label</title>
+    <link>https://duckychoi.github.io/note/tags/pseudo-label</link>
+    <guid>https://duckychoi.github.io/note/tags/pseudo-label</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>regression</title>
+    <link>https://duckychoi.github.io/note/tags/regression</link>
+    <guid>https://duckychoi.github.io/note/tags/regression</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item><item>
+    <title>automl</title>
+    <link>https://duckychoi.github.io/note/tags/automl</link>
+    <guid>https://duckychoi.github.io/note/tags/automl</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 03 Oct 2026 10:40:05 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

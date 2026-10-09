@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinemaForge v2 — 검증된 스택 기반 개발 스펙</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --s1: #13161f;
+    --s2: #1a1e2a;
+    --s3: #222736;
+    --border: #2c3347;
+    --blue: #4f8ef7;
+    --purple: #8b6cf7;
+    --green: #3dd68c;
+    --yellow: #f7c94f;
+    --red: #f75f5f;
+    --orange: #f7934f;
+    --cyan: #4fdef7;
+    --text: #dde4f0;
+    --muted: #5a6482;
+    --muted2: #8896b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.6; }
+
+  /* ── HEADER ── */
+  header {
+    padding: 52px 48px 40px;
+    background: linear-gradient(160deg, #0d1020 0%, #131829 60%, #0b0d12 100%);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; top: -60px; right: -60px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(79,142,247,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .eyebrow { color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 38px; font-weight: 800; background: linear-gradient(90deg, #4f8ef7 0%, #8b6cf7 50%, #4fdef7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+  .tagline { color: var(--muted2); font-size: 15px; max-width: 680px; margin-bottom: 24px; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill { background: var(--s2); border: 1px solid var(--border); border-radius: 20px; padding: 4px 14px; font-size: 12px; color: var(--muted2); }
+  .pill.blue { color: var(--blue); border-color: rgba(79,142,247,0.3); }
+  .pill.green { color: var(--green); border-color: rgba(61,214,140,0.3); }
+  .pill.yellow { color: var(--yellow); border-color: rgba(247,201,79,0.3); }
+  .pill.red { color: var(--red); border-color: rgba(247,95,95,0.3); }
+
+  /* ── LAYOUT ── */
+  main { max-width: 1120px; margin: 0 auto; padding: 48px 40px; }
+  .section { margin-bottom: 60px; }
+  .sec-hd { display: flex; align-items: center; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+  .sec-num { width: 30px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; flex-shrink: 0; }
+  .num-blue { background: var(--blue); color: #fff; }
+  .num-purple { background: var(--purple); color: #fff; }
+  .num-green { background: var(--green); color: #0b0d12; }
+  .num-yellow { background: var(--yellow); color: #0b0d12; }
+  .num-orange { background: var(--orange); color: #0b0d12; }
+  .num-cyan { background: var(--cyan); color: #0b0d12; }
+  h2 { font-size: 20px; font-weight: 700; }
+  .sec-sub { color: var(--muted); font-size: 13px; margin-left: auto; }
+
+  /* ── CALLOUT ── */
+  .callout { border-radius: 12px; padding: 18px 22px; margin-bottom: 24px; border-left: 3px solid; }
+  .callout-blue { background: rgba(79,142,247,0.07); border-color: var(--blue); }
+  .callout-green { background: rgba(61,214,140,0.07); border-color: var(--green); }
+  .callout-yellow { background: rgba(247,201,79,0.07); border-color: var(--yellow); }
+  .callout-red { background: rgba(247,95,95,0.07); border-color: var(--red); }
+  .callout-title { font-weight: 700; font-size: 13px; margin-bottom: 6px; }
+  .callout-blue .callout-title { color: var(--blue); }
+  .callout-green .callout-title { color: var(--green); }
+  .callout-yellow .callout-title { color: var(--yellow); }
+  .callout-red .callout-title { color: var(--red); }
+  .callout p, .callout li { font-size: 13px; color: var(--muted2); line-height: 1.7; }
+  .callout ul { padding-left: 16px; }
+
+  /* ── MODEL TABLE ── */
+  .model-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+  .model-head { display: grid; grid-template-columns: 2fr 3fr 1.4fr 1.2fr 1fr; gap: 0; background: var(--s2); border-bottom: 1px solid var(--border); }
+  .model-head > div { padding: 10px 16px; font-size: 11px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .model-row { display: grid; grid-template-columns: 2fr 3fr 1.4fr 1.2fr 1fr; gap: 0; border-bottom: 1px solid rgba(44,51,71,0.5); transition: background 0.15s; }
+  .model-row:last-child { border-bottom: none; }
+  .model-row:hover { background: var(--s2); }
+  .model-row > div { padding: 13px 16px; }
+  .model-role { font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 2px; }
+  .model-sub { font-size: 12px; color: var(--muted); }
+  .model-id { font-family: monospace; font-size: 12px; color: var(--blue); background: rgba(79,142,247,0.08); padding: 2px 8px; border-radius: 4px; display: inline-block; word-break: break-all; }
+  .model-id a { color: inherit; text-decoration: none; }
+  .model-id a:hover { text-decoration: underline; }
+  .model-note { font-size: 12px; color: var(--muted2); margin-top: 4px; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 5px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .b-apache { background: rgba(61,214,140,0.12); color: var(--green); }
+  .b-gated { background: rgba(247,201,79,0.12); color: var(--yellow); }
+  .b-other { background: rgba(247,95,95,0.12); color: var(--red); }
+  .vram { font-size: 12px; color: var(--muted2); }
+  .vram-num { font-weight: 700; }
+  .vram-num.ok { color: var(--green); }
+  .vram-num.med { color: var(--yellow); }
+  .vram-num.high { color: var(--red); }
+  .role-tag { font-size: 11px; padding: 2px 8px; border-radius: 4px; display: inline-block; }
+  .rt-core { background: rgba(79,142,247,0.12); color: var(--blue); }
+  .rt-ai { background: rgba(139,108,247,0.12); color: var(--purple); }
+  .rt-opt { background: rgba(90,100,130,0.2); color: var(--muted2); }
+
+  /* ── STACK CARDS ── */
+  .stack-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .stack-card { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .stack-ch { padding: 12px 16px; background: var(--s2); border-bottom: 1px solid var(--border); font-size: 12px; font-weight: 700; color: var(--muted2); text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
+  .stack-body { padding: 12px 16px; }
+  .stack-item { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid rgba(44,51,71,0.4); gap: 10px; }
+  .stack-item:last-child { border-bottom: none; }
+  .stack-lib { font-family: monospace; font-size: 12px; color: var(--text); }
+  .stack-why { font-size: 12px; color: var(--muted); text-align: right; max-width: 140px; }
+
+  /* ── PHASE CHECKLIST ── */
+  .phase { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 16px; overflow: hidden; }
+  .phase-hd { padding: 16px 22px; background: var(--s2); display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border); }
+  .ph-badge { border-radius: 7px; padding: 3px 12px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+  .ph1 { background: var(--blue); color: #fff; }
+  .ph2 { background: var(--purple); color: #fff; }
+  .ph3 { background: #2a8a62; color: #fff; }
+  .ph4 { background: #8a6a2a; color: #fff; }
+  .ph5 { background: #8a2a2a; color: #fff; }
+  .ph6 { background: #2a4f8a; color: #fff; }
+  .phase-title { font-weight: 700; font-size: 15px; }
+  .phase-weeks { margin-left: auto; color: var(--muted); font-size: 12px; font-weight: 600; }
+  .checklist { padding: 18px 22px; display: grid; gap: 6px; }
+  .cg-title { font-size: 11px; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; margin-top: 12px; margin-bottom: 6px; }
+  .cg-title:first-child { margin-top: 0; }
+  .ci { display: flex; align-items: flex-start; gap: 11px; padding: 8px 0; border-bottom: 1px solid rgba(44,51,71,0.4); }
+  .ci:last-child { border-bottom: none; }
+  .cb { width: 17px; height: 17px; border: 1.5px solid var(--border); border-radius: 4px; background: var(--bg); flex-shrink: 0; margin-top: 2px; }
+  .ci-text { flex: 1; font-size: 13px; line-height: 1.5; }
+  .ci-note { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .ci-tag { margin-left: auto; flex-shrink: 0; }
+  .t-core { background: rgba(79,142,247,0.12); color: var(--blue); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+  .t-ai { background: rgba(139,108,247,0.12); color: var(--purple); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+  .t-ui { background: rgba(61,214,140,0.1); color: var(--green); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+  .t-later { background: rgba(90,100,130,0.15); color: var(--muted); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+
+  /* ── ARCH DIAGRAM ── */
+  .arch { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+  .arch-tier { margin-bottom: 8px; }
+  .arch-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 8px; }
+  .arch-boxes { display: flex; gap: 8px; flex-wrap: wrap; }
+  .arch-box { flex: 1; min-width: 100px; background: var(--s2); border: 1px solid var(--border); border-radius: 9px; padding: 10px 14px; text-align: center; }
+  .arch-box.hl { border-color: var(--blue); }
+  .arch-box.hl2 { border-color: var(--purple); }
+  .arch-box.hl3 { border-color: var(--green); }
+  .arch-box-name { font-size: 13px; font-weight: 600; }
+  .arch-box-tech { font-size: 11px; color: var(--muted); margin-top: 3px; font-family: monospace; }
+  .arch-arrow { text-align: center; color: var(--muted); font-size: 16px; margin: 6px 0; }
+  .arch-div { display: flex; align-items: center; gap: 12px; margin: 14px 0; }
+  .arch-line { flex: 1; height: 1px; background: var(--border); }
+  .arch-div-text { font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+  /* ── HARDWARE TABLE ── */
+  .hw-table { width: 100%; border-collapse: collapse; }
+  .hw-table th { background: var(--s2); padding: 10px 16px; text-align: left; font-size: 11px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); }
+  .hw-table td { padding: 11px 16px; border-bottom: 1px solid rgba(44,51,71,0.5); font-size: 13px; vertical-align: top; }
+  .hw-table tr:last-child td { border-bottom: none; }
+  .hw-table tr:hover td { background: var(--s2); }
+
+  /* ── COMPARISON ── */
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .compare-card { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .compare-card.good { border-color: rgba(61,214,140,0.4); }
+  .compare-card.bad { border-color: rgba(247,95,95,0.2); }
+  .compare-title { font-size: 13px; font-weight: 700; margin-bottom: 12px; }
+  .compare-card.good .compare-title { color: var(--green); }
+  .compare-card.bad .compare-title { color: var(--red); }
+  .compare-item { font-size: 13px; color: var(--muted2); padding: 5px 0; border-bottom: 1px solid rgba(44,51,71,0.4); }
+  .compare-item:last-child { border-bottom: none; }
+
+  footer { border-top: 1px solid var(--border); padding: 24px 40px; color: var(--muted); font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">CinemaForge · Product Spec v2.0 · 검증된 HuggingFace 모델 기반</div>
+  <h1>CinemaForge</h1>
+  <p class="tagline">3D 카메라 워크스페이스 × AI 멀티뷰 생성 × 영상 제작 프레임워크 — 서치 검증 완료 버전</p>
+  <div class="pill-row">
+    <span class="pill blue">React Three Fiber</span>
+    <span class="pill blue">Qwen Multi-Angle LoRA</span>
+    <span class="pill blue">Stable Virtual Camera</span>
+    <span class="pill blue">Wan2.1 VACE</span>
+    <span class="pill green">Apache-2.0 우선</span>
+    <span class="pill yellow">VRAM 24GB MVP</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══ 0. 이전 스펙과 무엇이 달라졌나 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-orange">!</div>
+    <h2>v1 스펙에서 빠진 것들 — 왜 다시 작성하는가</h2>
+  </div>
+
+  <div class="callout callout-red">
+    <div class="callout-title">놓친 핵심 모델 3개</div>
+    <ul>
+      <li><strong>Qwen/Qwen-Image-Edit-2511 + fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA</strong> — 이게 빠지면 카메라 포즈→뷰 생성 파이프라인의 핵심이 없음. 96 포즈, Gaussian Splatting 데이터 학습, Three.js 뷰포트 이미 존재 (ComfyUI-qwenmultiangle). Apache-2.0.</li>
+      <li><strong>stabilityai/stable-virtual-camera (SEVA)</strong> — 2025년 3월 릴리즈, 단일 이미지→카메라 궤적 영상 생성 SOTA. 1.3B 모델로 가볍고 14개 카메라 패스 내장. 단 비상업 라이선스 주의.</li>
+      <li><strong>Wan-AI/Wan2.1-VACE-14B</strong> — Wan 2.1 단순 I2V가 아닌 VACE(비디오 애니메이션 컨트롤 엔진). 카메라 트래젝토리, 참조 영상 기반 편집. Apache-2.0.</li>
+    </ul>
+  </div>
+  <div class="callout callout-yellow">
+    <div class="callout-title">잘못 제안된 항목들</div>
+    <ul>
+      <li><strong>TencentARC/InstantMesh</strong> → 기하학 품질 불안정, 실제 ArchViz에 쓰기 어려움. Qwen Multi-Angle로 대체.</li>
+      <li><strong>naver-labs-europe/MASt3R</strong> → 멀티뷰 3D 재구성용. 우리 MVP에는 과도함. 나중 단계로 이동.</li>
+      <li><strong>Wan-AI/Wan2.1-I2V-14B</strong> → 이미 Wan2.1-VACE-14B와 Wan2.2-I2V-A14B로 업그레이드됨. 구버전.</li>
+      <li><strong>CameraCtrl II</strong> → ICCV 2025 논문이지만 weights 공개 미확인. 포함 불가.</li>
+    </ul>
+  </div>
+  <div class="callout callout-blue">
+    <div class="callout-title">참조 프로젝트 발견</div>
+    <p><strong>Triplex (pmndrs/triplex)</strong> — React Three Fiber 기반 오픈소스 비주얼 워크스페이스. 2025년 10월 완전 오픈소스 전환. CinemaForge 3D 편집 UI의 직접적 레퍼런스. ComfyUI-qwenmultiangle도 이미 Three.js 뷰포트 + 카메라 각도 제어를 구현함 — 우리가 만들려는 것의 UI 패턴 직접 참조 가능.</p>
+  </div>
+</div>
+
+<!-- ═══ 1. AI 모델 확정 스택 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-blue">1</div>
+    <h2>AI 모델 확정 스택 — 검증된 HuggingFace 모델만</h2>
+    <div class="sec-sub">HF ID · 라이선스 · VRAM 실측 기준</div>
+  </div>
+
+  <div class="callout callout-blue">
+    <div class="callout-title">라이선스 원칙</div>
+    <p>Apache-2.0 = 상업 이용 가능. Gated = HF 동의 필요 (대부분 허용). Non-commercial = 연구/개인용만. MVP는 Apache-2.0 모델만으로 구성 가능.</p>
+  </div>
+
+  <div class="model-wrap">
+    <div class="model-head">
+      <div>역할</div>
+      <div>HuggingFace 모델 ID</div>
+      <div>라이선스</div>
+      <div>VRAM</div>
+      <div>우선순위</div>
+    </div>
+
+    <!-- Qwen Multi-Angle -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">카메라 각도 뷰 생성</div>
+        <div class="model-sub">이미지 1장 → 임의 카메라 포즈 뷰</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA" target="_blank">fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA</a></div>
+        <div class="model-note">96 카메라 포즈 · 3D 일관성 · Gaussian Splatting 학습 · ↓198K/월</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num ok">16GB</span> (base 포함)</div>
+      <div><span class="role-tag rt-core">MVP 핵심</span></div>
+    </div>
+
+    <!-- Qwen Base -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">이미지 편집 (텍스트 지시)</div>
+        <div class="model-sub">카드 패널 프롬프트 기반 편집</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/Qwen/Qwen-Image-Edit-2511" target="_blank">Qwen/Qwen-Image-Edit-2511</a></div>
+        <div class="model-note">Multi-Angle LoRA의 base 모델 · ↓502K/월</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num ok">16GB</span></div>
+      <div><span class="role-tag rt-core">MVP 핵심</span></div>
+    </div>
+
+    <!-- SEVA -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">전체 씬 NVS</div>
+        <div class="model-sub">카메라 궤적 → 일관된 씬 영상</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/stabilityai/stable-virtual-camera" target="_blank">stabilityai/stable-virtual-camera</a></div>
+        <div class="model-note">SEVA · 1.3B · 14개 카메라 패스 내장 · 2025.03 릴리즈 · ↓295K</div>
+      </div>
+      <div><span class="badge b-gated">비상업 ⚠️</span></div>
+      <div class="vram"><span class="vram-num ok">8GB</span></div>
+      <div><span class="role-tag rt-ai">씬 플라이스루</span></div>
+    </div>
+
+    <!-- FLUX dev -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">텍스트→이미지 생성</div>
+        <div class="model-sub">새 씬 이미지 생성, 레퍼런스 없을 때</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">black-forest-labs/FLUX.1-dev</a></div>
+        <div class="model-note">현 최고 품질 T2I · ↓수백만/월</div>
+      </div>
+      <div><span class="badge b-gated">Gated</span></div>
+      <div class="vram"><span class="vram-num med">24GB</span></div>
+      <div><span class="role-tag rt-ai">이미지 생성</span></div>
+    </div>
+
+    <!-- FLUX Fill -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">인페인팅 (마스크 편집)</div>
+        <div class="model-sub">Pause → 브러시 선택 → 영역 편집</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev" target="_blank">black-forest-labs/FLUX.1-Fill-dev</a></div>
+        <div class="model-note">↓3.6M/월 · 현 인페인팅 SOTA</div>
+      </div>
+      <div><span class="badge b-gated">Gated</span></div>
+      <div class="vram"><span class="vram-num med">24GB</span></div>
+      <div><span class="role-tag rt-ai">인페인팅</span></div>
+    </div>
+
+    <!-- Wan2.1 VACE -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">카메라 제어 비디오 생성</div>
+        <div class="model-sub">이미지 → 카메라 트래젝토리 영상</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/Wan-AI/Wan2.1-VACE-14B" target="_blank">Wan-AI/Wan2.1-VACE-14B</a></div>
+        <div class="model-note">VACE = 비디오 편집+제어 통합 · ↓113K · 2025.05</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num med">24GB</span></div>
+      <div><span class="role-tag rt-core">MVP 핵심</span></div>
+    </div>
+
+    <!-- Wan2.2 I2V -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">고품질 I2V (업그레이드)</div>
+        <div class="model-sub">480P/720P · 2-expert MoE</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B" target="_blank">Wan-AI/Wan2.2-I2V-A14B</a></div>
+        <div class="model-note">27B total / 14B active · 2025.07 · ↓86K</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num high">27GB ⚠️</span></div>
+      <div><span class="role-tag rt-opt">Phase 2+</span></div>
+    </div>
+
+    <!-- SAM2 -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">인터랙티브 세그멘테이션</div>
+        <div class="model-sub">클릭 → 마스크, 인페인팅 영역 선택</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/facebook/sam2-hiera-large" target="_blank">facebook/sam2-hiera-large</a></div>
+        <div class="model-note">↓5.4M/월 · 비디오 세그멘테이션 지원</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num ok">6GB</span></div>
+      <div><span class="role-tag rt-core">MVP 핵심</span></div>
+    </div>
+
+    <!-- Depth-Anything-V2 -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">깊이 추정</div>
+        <div class="model-sub">씬 3D 구조 이해, 포인트클라우드</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/depth-anything/Depth-Anything-V2-Large-hf" target="_blank">depth-anything/Depth-Anything-V2-Large-hf</a></div>
+        <div class="model-note">단안 깊이 추정 SOTA · 범용</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num ok">4GB</span></div>
+      <div><span class="role-tag rt-core">MVP 핵심</span></div>
+    </div>
+
+    <!-- IC-Light -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">재조명 (Relighting)</div>
+        <div class="model-sub">합성 이미지 조명 통일화</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/lllyasviel/ic-light" target="_blank">lllyasviel/ic-light</a></div>
+        <div class="model-note">배경 기반 조명 일관성 유지</div>
+      </div>
+      <div><span class="badge b-apache">Apache-2.0</span></div>
+      <div class="vram"><span class="vram-num ok">8GB</span></div>
+      <div><span class="role-tag rt-opt">Phase 2+</span></div>
+    </div>
+
+    <!-- Real-ESRGAN -->
+    <div class="model-row">
+      <div>
+        <div class="model-role">슈퍼해상도 (Export)</div>
+        <div class="model-sub">최종 영상 x2/x4 업스케일</div>
+      </div>
+      <div>
+        <div class="model-id"><a href="https://huggingface.co/xinntao/Real-ESRGAN" target="_blank">xinntao/Real-ESRGAN</a></div>
+        <div class="model-note">영상/이미지 업스케일 · 오프라인 실행</div>
+      </div>
+      <div><span class="badge b-apache">BSD-3</span></div>
+      <div class="vram"><span class="vram-num ok">4GB</span></div>
+      <div><span class="role-tag rt-opt">Export</span></div>
+    </div>
+
+  </div>
+
+  <div class="callout callout-yellow">
+    <div class="callout-title">라이선스 주의사항</div>
+    <ul>
+      <li><strong>SEVA (stable-virtual-camera)</strong> — 비상업 라이선스. 상업 프로젝트면 FLUX ControlNet 또는 Qwen Multi-Angle만으로 NVS 대체 가능.</li>
+      <li><strong>FLUX.1-dev / Fill</strong> — Gated 모델. HuggingFace에서 동의 후 사용 가능. 상업 이용 별도 조건 확인 필요.</li>
+      <li><strong>Wan2.2-I2V-A14B</strong> — Apache-2.0이지만 27GB VRAM. 개발 단계에선 Wan2.1-VACE-14B(24GB) 사용 권장.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 2. 프론트엔드 레퍼런스 아키텍처 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-purple">2</div>
+    <h2>검증된 프론트엔드 아키텍처</h2>
+    <div class="sec-sub">기존 오픈소스 레퍼런스 기반</div>
+  </div>
+
+  <div class="callout callout-green">
+    <div class="callout-title">핵심 레퍼런스 프로젝트 2개</div>
+    <ul>
+      <li><strong>Triplex (pmndrs/triplex)</strong> — React Three Fiber 기반 오픈소스 비주얼 3D 워크스페이스. 2025.10 완전 오픈소스 전환. 우리가 만들 3D 편집 UI의 직접 레퍼런스. 코드 분석 가능.</li>
+      <li><strong>ComfyUI-qwenmultiangle (jtydhr88)</strong> — Three.js 뷰포트 + 카메라 각도 드래그 → Qwen 프롬프트 생성. 우리 카메라 포즈 UI의 직접 레퍼런스 코드.</li>
+    </ul>
+  </div>
+
+  <div class="arch">
+    <div class="arch-tier">
+      <div class="arch-label">User Interface</div>
+      <div class="arch-boxes">
+        <div class="arch-box hl">
+          <div class="arch-box-name">3D Workspace</div>
+          <div class="arch-box-tech">React Three Fiber</div>
+        </div>
+        <div class="arch-box hl">
+          <div class="arch-box-name">Shot Card Panel</div>
+          <div class="arch-box-tech">React + dnd-kit</div>
+        </div>
+        <div class="arch-box hl">
+          <div class="arch-box-name">Timeline</div>
+          <div class="arch-box-tech">Custom Hook</div>
+        </div>
+        <div class="arch-box hl">
+          <div class="arch-box-name">Mask Brush</div>
+          <div class="arch-box-tech">Canvas 2D API</div>
+        </div>
+      </div>
+    </div>
+    <div class="arch-arrow">↕ Zustand (단일 상태 — cameras[], shots[], playState)</div>
+    <div class="arch-div"><div class="arch-line"></div><div class="arch-div-text">WebSocket (실시간 AI 결과 수신)</div><div class="arch-line"></div></div>
+    <div class="arch-tier">
+      <div class="arch-label">Backend</div>
+      <div class="arch-boxes">
+        <div class="arch-box hl2">
+          <div class="arch-box-name">FastAPI</div>
+          <div class="arch-box-tech">REST + WS</div>
+        </div>
+        <div class="arch-box hl2">
+          <div class="arch-box-name">Celery + Redis</div>
+          <div class="arch-box-tech">AI 작업 큐</div>
+        </div>
+        <div class="arch-box hl2">
+          <div class="arch-box-name">SQLite/PG</div>
+          <div class="arch-box-tech">프로젝트 메타</div>
+        </div>
+      </div>
+    </div>
+    <div class="arch-arrow">↓ diffusers / torch</div>
+    <div class="arch-tier">
+      <div class="arch-label">AI Pipeline (MVP)</div>
+      <div class="arch-boxes">
+        <div class="arch-box hl3">
+          <div class="arch-box-name">Qwen + LoRA</div>
+          <div class="arch-box-tech">카메라 포즈 뷰</div>
+        </div>
+        <div class="arch-box hl3">
+          <div class="arch-box-name">Wan2.1 VACE</div>
+          <div class="arch-box-tech">비디오 생성</div>
+        </div>
+        <div class="arch-box hl3">
+          <div class="arch-box-name">SAM2</div>
+          <div class="arch-box-tech">세그멘테이션</div>
+        </div>
+        <div class="arch-box hl3">
+          <div class="arch-box-name">Depth-Anything</div>
+          <div class="arch-box-tech">깊이 추정</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 3. 기술 스택 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-green">3</div>
+    <h2>기술 스택 선정</h2>
+  </div>
+
+  <div class="stack-grid">
+
+    <div class="stack-card">
+      <div class="stack-ch">⬡ 3D 엔진</div>
+      <div class="stack-body">
+        <div class="stack-item"><span class="stack-lib">@react-three/fiber</span><span class="stack-why">Three.js React 바인딩</span></div>
+        <div class="stack-item"><span class="stack-lib">@react-three/drei</span><span class="stack-why">OrbitControls, Line, Html</span></div>
+        <div class="stack-item"><span class="stack-lib">three.js</span><span class="stack-why">CatmullRomCurve3, Frustum</span></div>
+        <div class="stack-item"><span class="stack-lib">@react-three/postprocessing</span><span class="stack-why">Bloom, Outline FX</span></div>
+        <div class="stack-item"><span class="stack-lib">leva</span><span class="stack-why">3D 디버그 패널 (개발용)</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-ch">⚛ Frontend UI</div>
+      <div class="stack-body">
+        <div class="stack-item"><span class="stack-lib">React 18 + TypeScript</span><span class="stack-why">타입 안전성</span></div>
+        <div class="stack-item"><span class="stack-lib">Zustand</span><span class="stack-why">3D↔2D 상태 동기화</span></div>
+        <div class="stack-item"><span class="stack-lib">@dnd-kit/core</span><span class="stack-why">카드 순서 D&D</span></div>
+        <div class="stack-item"><span class="stack-lib">Tailwind CSS</span><span class="stack-why">다크 UI 스타일링</span></div>
+        <div class="stack-item"><span class="stack-lib">react-dropzone</span><span class="stack-why">에셋 드래그 업로드</span></div>
+        <div class="stack-item"><span class="stack-lib">Vite</span><span class="stack-why">빌드 툴, HMR</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-ch">🐍 Backend</div>
+      <div class="stack-body">
+        <div class="stack-item"><span class="stack-lib">FastAPI</span><span class="stack-why">비동기 REST+WebSocket</span></div>
+        <div class="stack-item"><span class="stack-lib">Celery + Redis</span><span class="stack-why">AI 생성 비동기 큐</span></div>
+        <div class="stack-item"><span class="stack-lib">SQLite (→ PostgreSQL)</span><span class="stack-why">프로젝트 메타데이터</span></div>
+        <div class="stack-item"><span class="stack-lib">diffusers + transformers</span><span class="stack-why">HF 모델 파이프라인</span></div>
+        <div class="stack-item"><span class="stack-lib">ffmpeg-python</span><span class="stack-why">영상 인코딩/합성</span></div>
+        <div class="stack-item"><span class="stack-lib">Pillow + OpenCV</span><span class="stack-why">이미지 전처리</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-ch">🔧 DevOps / Infra</div>
+      <div class="stack-body">
+        <div class="stack-item"><span class="stack-lib">Docker + docker-compose</span><span class="stack-why">프론트/백엔드/Redis 통합</span></div>
+        <div class="stack-item"><span class="stack-lib">NVIDIA Container Toolkit</span><span class="stack-why">GPU 컨테이너 접근</span></div>
+        <div class="stack-item"><span class="stack-lib">Nginx</span><span class="stack-why">리버스 프록시, 정적 서빙</span></div>
+        <div class="stack-item"><span class="stack-lib">pytest + vitest</span><span class="stack-why">백/프론트 테스트</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ 4. 하드웨어 요구사항 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-yellow">4</div>
+    <h2>현실적 하드웨어 요구사항</h2>
+  </div>
+  <div style="background:var(--s1);border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+    <table class="hw-table">
+      <thead>
+        <tr><th>구성</th><th>GPU</th><th>가능한 모델</th><th>제한사항</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:var(--green)">MVP 최소</strong></td>
+          <td>RTX 3090 / 4090<br><span style="color:var(--muted);font-size:12px">24GB VRAM</span></td>
+          <td>Qwen + LoRA, SEVA, SAM2, Depth-Anything, Wan2.1-VACE-14B</td>
+          <td>FLUX.1-dev 동시 실행 불가, Wan2.2 불가. 모델 스왑 필요.</td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--blue)">권장 풀스택</strong></td>
+          <td>A100 / H100 40-80GB<br><span style="color:var(--muted);font-size:12px">40GB+ VRAM</span></td>
+          <td>전체 모델 동시 로딩 가능</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--yellow)">저사양 대안</strong></td>
+          <td>RTX 3080 16GB</td>
+          <td>Qwen + LoRA (16GB), SAM2, Depth-Anything</td>
+          <td>Wan 계열 불가 → SEVA만 (8GB). 영상 생성 API 대체 필요.</td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--muted2)">개발/테스트</strong></td>
+          <td>CPU만</td>
+          <td>3D UI 개발, API 목업</td>
+          <td>AI 기능 전부 불가. 목업 응답으로 UI 개발 가능.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout callout-blue" style="margin-top:14px;">
+    <div class="callout-title">24GB 단일 GPU MVP 로딩 전략</div>
+    <p>동시 로딩 대신 작업별 모델 스왑: Qwen(16GB) → SAM2(6GB) → Wan VACE(24GB) 순서로 load/unload. torch.cuda.empty_cache() + gc.collect() 호출. bitsandbytes 4bit 양자화로 Wan VACE를 14→8GB로 줄일 수 있음.</p>
+  </div>
+</div>
+
+<!-- ═══ 5. 개발 프로세스 체크리스트 ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-cyan">5</div>
+    <h2>개발 프로세스 체크리스트</h2>
+  </div>
+
+  <!-- Phase 1 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph1">Phase 1</span>
+      <span class="phase-title">3D 워크스페이스 코어</span>
+      <span class="phase-weeks">예상 2주</span>
+    </div>
+    <div class="checklist">
+      <div class="cg-title">프로젝트 셋업</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Vite + React18 + TypeScript 프로젝트 생성<div class="ci-note">npm create vite@latest cinemaforge -- --template react-ts</div></div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">R3F + Drei + Three.js + Zustand + Tailwind 설치</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">SceneStore 설계 — cameras[], shots[], selectedCameraId, playState, currentFrame<div class="ci-note">이 인터페이스가 3D↔2D 동기화의 핵심</div></div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Triplex 소스 코드 분석 — 3D 편집 UI 패턴 파악<div class="ci-note">github.com/pmndrs/triplex 참조</div></div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+
+      <div class="cg-title">3D 뷰어 기본</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Canvas + 조명 + 배경 설정</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">OrbitControls — 드래그 회전, 휠 줌, 우클릭 패닝</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Grid + 축 기즈모 (Drei의 Grid 컴포넌트)</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+
+      <div class="cg-title">카메라 Frustum 시각화 (Rerun 스타일)</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">CameraFrustum 컴포넌트 — 절두체 와이어프레임<div class="ci-note">ComfyUI-qwenmultiangle의 Three.js viewport 코드 참조: github.com/jtydhr88/ComfyUI-qwenmultiangle</div></div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Frustum 근평면에 이미지 텍스처 배치 (PlaneGeometry + MeshBasicMaterial)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">카메라 선택 → Outline postprocessing 이펙트</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">카메라 이동 — TransformControls (Drei) 또는 드래그 핸들</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+    </div>
+  </div>
+
+  <!-- Phase 2 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph2">Phase 2</span>
+      <span class="phase-title">카메라 궤적 + 재생 시스템</span>
+      <span class="phase-weeks">예상 1.5주</span>
+    </div>
+    <div class="checklist">
+      <div class="cg-title">궤적 렌더링</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">CatmullRomCurve3로 카메라 포즈 시퀀스 → 스플라인 생성</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">TubeGeometry로 궤적 3D 라인 + 방향 화살표</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">궤적 컨트롤 포인트 드래그 수정 (Drei DragControls)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+
+      <div class="cg-title">재생 엔진</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">usePlayback 훅 — play / pause / seek(t) 상태<div class="ci-note">t: [0,1] 정규화된 궤적 위치</div></div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">useFrame 내 카메라 lerp/slerp 보간</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">씬별 생성된 영상 파일 → VideoTexture → Frustum 적용</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">하단 타임라인 바 — 씬 구간, 드래그 seek</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Pause → 편집 모드 전환 (카드 패널 활성화, 마스크 브러시 활성화)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+    </div>
+  </div>
+
+  <!-- Phase 3 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph3">Phase 3</span>
+      <span class="phase-title">샷 카드 패널 + 에셋 시스템</span>
+      <span class="phase-weeks">예상 1.5주</span>
+    </div>
+    <div class="checklist">
+      <div class="cg-title">카드 UI</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">ShotCard 컴포넌트 — 썸네일 + 프롬프트 textarea + Generate/Relight 버튼</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">dnd-kit 카드 순서 변경 → Zustand shots[] 업데이트 → 궤적 즉시 갱신</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">카드 선택 ↔ 3D 카메라 하이라이트 양방향 동기화</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">참조 이미지 첨부 (드래그 or 클릭 업로드)</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">카드 추가/삭제 → 3D 카메라 오브젝트 동기 생성/삭제</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+
+      <div class="cg-title">에셋 드래그 & 드롭</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">워크스페이스 전체 dropzone — 이미지/GLB/MP4 인식</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">이미지 드롭 → 3D 빌보드 배치 + Depth-Anything 자동 실행 → 포인트클라우드 힌트</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">GLB/OBJ 드롭 → GLTFLoader 3D 모델 배치<div class="ci-note">나중 단계 가능, MVP에서는 이미지만</div></div><span class="ci-tag"><span class="t-later">나중에</span></span></div>
+
+      <div class="cg-title">마스크 브러시 (인페인팅 준비)</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Pause 시 현재 프레임 위에 Canvas 2D 오버레이 렌더링</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">마우스 드래그 → 마스크 영역 페인팅 (흰=편집, 검=유지)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">SAM2 "클릭 → 자동 마스크" 버튼 (브러시 대안)</div><span class="ci-tag"><span class="t-ai">AI</span></span></div>
+    </div>
+  </div>
+
+  <!-- Phase 4 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph4">Phase 4</span>
+      <span class="phase-title">백엔드 + AI 파이프라인</span>
+      <span class="phase-weeks">예상 2.5주</span>
+    </div>
+    <div class="checklist">
+      <div class="cg-title">FastAPI 서버</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">프로젝트 CRUD API — 씬/카메라/에셋 메타데이터</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">WebSocket /ws/{project_id} — 씬 상태 실시간 sync + AI 진행률 스트리밍</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Celery task — generate_view, generate_video, inpaint, segment, depth 각각 분리</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">에셋 업로드/서빙 API + 파일 스토리지 구조</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+
+      <div class="cg-title">AI 모듈 구현</div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>Qwen Multi-Angle 파이프라인</strong> — 이미지 + 카메라 포즈 파라미터 → 생성 뷰<div class="ci-note">QwenImageEditPlusPipeline + fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA 로딩. 카메라 포즈를 azimuth/elevation/distance 프롬프트로 변환하는 converter 필요.</div></div><span class="ci-tag"><span class="t-ai">AI 핵심</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>SEVA 파이프라인</strong> — 이미지 → 카메라 경로 → NVS 영상<div class="ci-note">stabilityai/stable-virtual-camera. camera_poses 입력 형식 파악 필요 (SE3 행렬 or intrinsic/extrinsic).</div></div><span class="ci-tag"><span class="t-ai">AI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>Wan2.1 VACE 파이프라인</strong> — 이미지 시퀀스 + 카메라 트래젝토리 → 영상<div class="ci-note">24GB VRAM. 4bit 양자화 옵션 포함. bitsandbytes.</div></div><span class="ci-tag"><span class="t-ai">AI 핵심</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>SAM2 인터랙티브 세그멘테이션</strong> — 클릭 포인트 → 마스크 PNG<div class="ci-note">facebook/sam2-hiera-large. 클릭 좌표 → mask 반환. 응답 속도 최적화 중요.</div></div><span class="ci-tag"><span class="t-ai">AI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>FLUX.1-Fill 인페인팅</strong> — 이미지 + 마스크 + 프롬프트 → 편집된 이미지<div class="ci-note">FluxFillPipeline. Gated 모델 — HF 토큰 필요.</div></div><span class="ci-tag"><span class="t-ai">AI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text"><strong>Depth-Anything-V2</strong> — 이미지 → 깊이맵 → 3D 포인트클라우드 힌트</div><span class="ci-tag"><span class="t-ai">AI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">모델 로딩 매니저 — 24GB 환경에서 모델 스왑 (load → inference → unload → gc.collect)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+    </div>
+  </div>
+
+  <!-- Phase 5 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph5">Phase 5</span>
+      <span class="phase-title">2D↔3D 동기화 + 편집 루프</span>
+      <span class="phase-weeks">예상 1주</span>
+    </div>
+    <div class="checklist">
+      <div class="ci"><div class="cb"></div><div class="ci-text">카드 "Generate View" → Qwen API 호출 → 결과 이미지 → Frustum 텍스처 교체</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">3D 카메라 드래그 이동 → 카메라 포즈 파라미터 → 자동 Qwen 재생성 (debounce 500ms)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Pause → 마스크 브러시 → FLUX Fill → 결과 → 3D frustum 즉시 업데이트</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">카드 순서 변경 → 궤적 스플라인 실시간 갱신</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">AI 생성 진행률 → 카드 로딩 상태 + 3D 스피너</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Undo/Redo 스택 (카드 단위)</div><span class="ci-tag"><span class="t-later">나중에</span></span></div>
+    </div>
+  </div>
+
+  <!-- Phase 6 -->
+  <div class="phase">
+    <div class="phase-hd">
+      <span class="ph-badge ph6">Phase 6</span>
+      <span class="phase-title">Export + 후처리</span>
+      <span class="phase-weeks">예상 1주</span>
+    </div>
+    <div class="checklist">
+      <div class="ci"><div class="cb"></div><div class="ci-text">씬별 Wan2.1 VACE로 클립 생성 (Celery 큐, 순차 처리)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">ffmpeg으로 클립 concat → 최종 MP4 (H.264/H.265)</div><span class="ci-tag"><span class="t-core">Core</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Export 진행률 WebSocket → 프론트 프로그레스 바</div><span class="ci-tag"><span class="t-ui">UI</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">Real-ESRGAN 업스케일 옵션 (x2/x4, 선택)</div><span class="ci-tag"><span class="t-later">나중에</span></span></div>
+      <div class="ci"><div class="cb"></div><div class="ci-text">해상도/FPS/포맷 설정 UI (720p/1080p, 24/30fps)</div><span class="ci-tag"><span class="t-later">나중에</span></span></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ 6. MVP vs Full ═══ -->
+<div class="section">
+  <div class="sec-hd">
+    <div class="sec-num num-orange">6</div>
+    <h2>MVP 범위 vs 완전판</h2>
+  </div>
+  <div class="compare-grid">
+    <div class="compare-card good">
+      <div class="compare-title">✓ MVP (Phase 1~4 완료 기준)</div>
+      <div class="compare-item">3D 워크스페이스 + OrbitControls</div>
+      <div class="compare-item">카메라 Frustum + 이미지 텍스처</div>
+      <div class="compare-item">카메라 궤적 스플라인 시각화</div>
+      <div class="compare-item">Play/Pause 재생</div>
+      <div class="compare-item">샷 카드 패널 + 프롬프트 입력</div>
+      <div class="compare-item">이미지 드래그 업로드</div>
+      <div class="compare-item"><strong>Qwen Multi-Angle 뷰 생성</strong></div>
+      <div class="compare-item">SAM2 클릭 마스크</div>
+      <div class="compare-item">FLUX.1-Fill 인페인팅</div>
+      <div class="compare-item">Wan2.1 VACE 비디오 생성</div>
+      <div class="compare-item">기본 MP4 Export</div>
+    </div>
+    <div class="compare-card bad">
+      <div class="compare-title">○ 이후 단계 (Phase 5~6+)</div>
+      <div class="compare-item">SEVA 씬 플라이스루 (비상업)</div>
+      <div class="compare-item">IC-Light 재조명</div>
+      <div class="compare-item">Wan2.2 고품질 비디오 (27GB)</div>
+      <div class="compare-item">MASt3R 멀티뷰 3D 재구성</div>
+      <div class="compare-item">Real-ESRGAN 업스케일</div>
+      <div class="compare-item">GLB/3D 모델 드롭 지원</div>
+      <div class="compare-item">Undo/Redo</div>
+      <div class="compare-item">4K Export</div>
+      <div class="compare-item">다중 씬 동시 Export</div>
+    </div>
+  </div>
+</div>
+
+</main>
+<footer>
+  CinemaForge Spec v2.0 · 2026-04-08 · 서치 검증 완료 · HuggingFace 모델 ID 실확인 · Apache-2.0 우선
+</footer>
+</body>
+</html>

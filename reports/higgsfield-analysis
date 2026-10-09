@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Higgsfield 심층 분석 — Cinema Studio & 프롬프트 노하우</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3e;
+    --accent: #7c6ff7;
+    --accent2: #e879f9;
+    --accent3: #22d3ee;
+    --accent4: #4ade80;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --code-bg: #0d0d1a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0a0a1f 0%, #1a0a2e 50%, #0f1a2e 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(124,111,247,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(232,121,249,0.10) 0%, transparent 60%);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero-sub {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .meta-chip {
+    background: rgba(124,111,247,0.12);
+    border: 1px solid rgba(124,111,247,0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--accent);
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section { padding: 60px 0; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .section-num {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 14px; color: #fff;
+    flex-shrink: 0;
+  }
+  .section-title { font-size: 22px; font-weight: 700; }
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
+  /* CARDS */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: rgba(124,111,247,0.4); }
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+  /* SOUL CAST DIAGRAM */
+  .mechanism-diagram {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 24px 0;
+  }
+  .diagram-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .diag-box {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    text-align: center;
+    min-width: 160px;
+  }
+  .diag-box.soul { border-color: var(--accent); }
+  .diag-box.scene { border-color: var(--accent2); }
+  .diag-box.output { border-color: var(--accent4); background: rgba(74,222,128,0.05); }
+  .diag-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .diag-label.soul { color: var(--accent); }
+  .diag-label.scene { color: var(--accent2); }
+  .diag-label.output { color: var(--accent4); }
+  .diag-desc { font-size: 13px; color: var(--muted); }
+  .diag-arrow {
+    font-size: 24px;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  .diag-center {
+    text-align: center;
+    padding: 12px 0;
+  }
+  .diag-center .ai-pill {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  /* CODE BLOCKS */
+  .code-block {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12.5px;
+    line-height: 1.8;
+    overflow-x: auto;
+    white-space: pre;
+    color: #a8b8d0;
+  }
+  .code-block .kw { color: var(--accent2); font-weight: 700; }
+  .code-block .str { color: var(--accent4); }
+  .code-block .cm { color: #5a6a7a; font-style: italic; }
+  .code-block .hi { color: var(--accent3); }
+  .code-block .num { color: var(--accent); }
+
+  /* PROMPT STRUCTURE */
+  .prompt-timeline {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .prompt-header {
+    background: linear-gradient(90deg, rgba(124,111,247,0.15), rgba(232,121,249,0.1));
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .prompt-body { padding: 20px; }
+  .ts-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    align-items: flex-start;
+  }
+  .ts-tag {
+    background: rgba(124,111,247,0.15);
+    border: 1px solid rgba(124,111,247,0.3);
+    color: var(--accent);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: monospace;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .ts-desc { font-size: 13px; color: var(--text); }
+
+  /* SECTION TAGS */
+  .section-tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .stag {
+    border-radius: 10px;
+    padding: 14px 18px;
+    border: 1px solid;
+  }
+  .stag-name { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+  .stag-desc { font-size: 12px; color: var(--muted); }
+  .stag.rules { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.05); }
+  .stag.rules .stag-name { color: #f87171; }
+  .stag.tone { border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.05); }
+  .stag.tone .stag-name { color: #fbbf24; }
+  .stag.camera { border-color: rgba(34,211,238,0.3); background: rgba(34,211,238,0.05); }
+  .stag.camera .stag-name { color: var(--accent3); }
+  .stag.neg { border-color: rgba(156,163,175,0.3); background: rgba(156,163,175,0.05); }
+  .stag.neg .stag-name { color: #9ca3af; }
+
+  /* PIPELINE */
+  .pipeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .pipe-step {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  .pipe-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 52px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--border));
+  }
+  .pipe-num {
+    width: 42px; height: 42px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 14px; color: #fff;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .pipe-content {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+  .pipe-title { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .pipe-detail { font-size: 12px; color: var(--muted); }
+  .pipe-code {
+    font-family: monospace;
+    font-size: 11px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    color: var(--accent4);
+  }
+
+  /* CAMERA KEYWORDS */
+  .kw-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .kw-tag {
+    background: rgba(34,211,238,0.08);
+    border: 1px solid rgba(34,211,238,0.25);
+    color: var(--accent3);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* TECHNIQUE TABLE */
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .tech-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.2s;
+  }
+  .tech-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .tech-icon { font-size: 24px; margin-bottom: 10px; }
+  .tech-name { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .tech-method {
+    font-family: monospace;
+    font-size: 11px;
+    color: var(--accent4);
+    background: var(--code-bg);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .tech-effect { font-size: 12px; color: var(--muted); }
+
+  /* INSIGHT CALLOUTS */
+  .callout {
+    border-left: 3px solid;
+    padding: 16px 20px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .callout.insight {
+    border-color: var(--accent);
+    background: rgba(124,111,247,0.06);
+    color: #c4b8ff;
+  }
+  .callout.action {
+    border-color: var(--accent4);
+    background: rgba(74,222,128,0.05);
+    color: #86efac;
+  }
+  .callout.info {
+    border-color: var(--accent3);
+    background: rgba(34,211,238,0.05);
+    color: #a5f3fc;
+  }
+  .callout-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 30px 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* UI LAYOUT VISUAL */
+  .ui-mockup {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    font-family: monospace;
+    font-size: 12px;
+  }
+  .ui-row { display: flex; gap: 12px; margin-bottom: 12px; }
+  .ui-panel {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    flex: 1;
+  }
+  .ui-panel.result { border-color: rgba(232,121,249,0.5); flex: 2; }
+  .ui-panel.scene { border-color: rgba(34,211,238,0.5); }
+  .ui-panel.soul { border-color: rgba(124,111,247,0.5); }
+  .ui-panel-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .ui-panel.result .ui-panel-label { color: var(--accent2); }
+  .ui-panel.scene .ui-panel-label { color: var(--accent3); }
+  .ui-panel.soul .ui-panel-label { color: var(--accent); }
+  .ui-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .ui-cell {
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .ui-img {
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px;
+    height: 80px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .ui-result-preview {
+    background: rgba(232,121,249,0.08);
+    border-radius: 6px;
+    height: 100px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    color: var(--accent2);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Deep Analysis · 2026-04-10</div>
+  <h1>Higgsfield 심층 분석</h1>
+  <p class="hero-sub">Cinema Studio & 프롬프트 엔지니어링 노하우 — 인스타그램 영상 5개 직접 분석으로 추출한 실전 워크플로우</p>
+  <div class="hero-meta">
+    <span class="meta-chip">Soul Cast + Scene 메커니즘</span>
+    <span class="meta-chip">타임스탬프 프롬프트</span>
+    <span class="meta-chip">Claude Code 자동화</span>
+    <span class="meta-chip">Manga → Live Action</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SECTION 1: SOUL CAST MECHANISM -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div class="section-title">Cinema Studio — Soul Cast + Scene 메커니즘</div>
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">핵심 인사이트</div>
+      Cinema Studio는 "캐릭터 외형"과 "카메라/모션 구조"를 완전히 분리해서 합성한다. Soul Cast = 외형 고정, Scene = 모션 템플릿.
+    </div>
+
+    <div class="mechanism-diagram">
+      <div class="diagram-row">
+        <div class="diag-box soul">
+          <div class="diag-label soul">Soul Cast</div>
+          <div style="font-size: 28px; margin: 8px 0;">🧍</div>
+          <div class="diag-desc">정면 사진 1장<br>캐릭터 외형 고정</div>
+        </div>
+        <div class="diag-arrow">+</div>
+        <div class="diag-box scene">
+          <div class="diag-label scene">Scene Clips</div>
+          <div style="font-size: 28px; margin: 8px 0;">🎬</div>
+          <div class="diag-desc">실제 촬영 영상 N개<br>카메라워크 + 액션 구조</div>
+        </div>
+      </div>
+      <div class="diag-center">
+        <div style="color: var(--muted); font-size: 20px; margin: 8px 0;">↓</div>
+        <div class="ai-pill">AI 합성 — 모션 유지 + 외형 교체</div>
+        <div style="color: var(--muted); font-size: 20px; margin: 8px 0;">↓</div>
+      </div>
+      <div class="diagram-row">
+        <div class="diag-box output">
+          <div class="diag-label output">Output</div>
+          <div style="font-size: 28px; margin: 8px 0;">✨</div>
+          <div class="diag-desc">일관된 캐릭터가<br>모든 액션 씬에 등장</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Soul Cast 이미지 최적화 조건</div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+          <li style="display: flex; gap: 10px; align-items: flex-start;">
+            <span style="color: var(--accent4); font-weight: 700; flex-shrink:0;">앵글</span>
+            <span style="font-size: 13px; color: var(--muted);">정면 또는 3/4 앵글 — 사이드는 캐릭터 인식률 저하</span>
+          </li>
+          <li style="display: flex; gap: 10px; align-items: flex-start;">
+            <span style="color: var(--accent4); font-weight: 700; flex-shrink:0;">조명</span>
+            <span style="font-size: 13px; color: var(--muted);">스튜디오 고른 조명 &gt; 강한 명암 대비</span>
+          </li>
+          <li style="display: flex; gap: 10px; align-items: flex-start;">
+            <span style="color: var(--accent4); font-weight: 700; flex-shrink:0;">배경</span>
+            <span style="font-size: 13px; color: var(--muted);">단순할수록 캐릭터 인식 정확도 상승</span>
+          </li>
+          <li style="display: flex; gap: 10px; align-items: flex-start;">
+            <span style="color: var(--accent4); font-weight: 700; flex-shrink:0;">해상도</span>
+            <span style="font-size: 13px; color: var(--muted);">얼굴이 선명하게 보이는 고해상도</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Scene 클립 활용 전략</div>
+        <div class="callout info" style="margin: 0 0 12px 0;">
+          <div class="callout-label">핵심</div>
+          Scene은 창의적 생성이 아닌 "구조 템플릿"으로 사용한다
+        </div>
+        <p style="font-size: 13px; color: var(--muted);">원하는 카메라워크와 액션이 담긴 <strong style="color: var(--text);">실제 촬영 영상</strong>을 Scene으로 사용하면 제어력 극대화.</p>
+        <br>
+        <p style="font-size: 13px; color: var(--accent3);">→ Pexels, Shutterstock 스톡 액션 클립을 Scene으로 활용하는 것이 핵심 워크플로우</p>
+        <br>
+        <p style="font-size: 12px; color: var(--muted);">실제 사례: 스파이더맨 의상 남성 (Soul Cast) + 도시 스윙/점프/착지 클립 6개 (Scene) → AI가 배우 교체 후 전 씬 일관성 유지</p>
+      </div>
+    </div>
+
+    <!-- 3패널 UI 레이아웃 -->
+    <div style="margin-top: 28px;">
+      <div class="card-title" style="color: var(--muted); font-size: 12px; margin-bottom: 12px;">Cinema Studio 3패널 레이아웃</div>
+      <div class="ui-mockup">
+        <div class="ui-row">
+          <div class="ui-panel result">
+            <div class="ui-panel-label">Final Result</div>
+            <div class="ui-result-preview">🎬 합성 결과 미리보기</div>
+          </div>
+        </div>
+        <div class="ui-row">
+          <div class="ui-panel scene">
+            <div class="ui-panel-label">Scene Clips (2×3 그리드)</div>
+            <div class="ui-grid">
+              <div class="ui-cell">clip 1</div>
+              <div class="ui-cell">clip 2</div>
+              <div class="ui-cell">clip 3</div>
+              <div class="ui-cell">clip 4</div>
+            </div>
+          </div>
+          <div class="ui-panel soul">
+            <div class="ui-panel-label">Soul Cast</div>
+            <div class="ui-img">캐릭터 이미지 1장</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2: PROMPT ENGINEERING -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div class="section-title">프롬프트 엔지니어링 — 실제 화면 추출 패턴</div>
+    </div>
+
+    <!-- 패턴 1: 카메라 구도 대문자 -->
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card-title">패턴 1 — 카메라 구도 대문자 명시 (Soul Cinema Studio)</div>
+      <div class="callout insight" style="margin-bottom: 16px;">
+        <div class="callout-label">규칙</div>
+        구도를 대문자로 맨 앞에 쓸수록 결과가 더 정확해진다. "close-up shot" < "EXTREME CLOSE-UP"
+      </div>
+      <div style="font-size: 12px; color: var(--muted); margin-bottom: 12px; font-family: monospace;">구조 템플릿: [카메라 구도 — 대문자] [분위기 형용사] [인물 외모 상세] [의상/설정]</div>
+      <p style="font-size: 13px; color: var(--muted); margin-bottom: 14px;">자주 쓰는 구도 키워드 (실제 화면 확인):</p>
+      <div class="kw-grid">
+        <span class="kw-tag">THREE-QUARTER VIEW</span>
+        <span class="kw-tag">EXTREME LOW ANGLE WIDE LENS</span>
+        <span class="kw-tag">OVER THE SHOULDER SHOT (TIGHT)</span>
+        <span class="kw-tag">EXTREME CLOSE-UP</span>
+        <span class="kw-tag">MEDIUM SHOT</span>
+        <span class="kw-tag">WIDE ESTABLISHING SHOT</span>
+      </div>
+    </div>
+
+    <!-- 패턴 2: 타임스탬프 -->
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card-title">패턴 2 — 타임스탬프 구간 제어 (가장 강력한 기법)</div>
+      <div class="callout action" style="margin-bottom: 20px;">
+        <div class="callout-label">핵심 기법</div>
+        2초 단위로 장면을 지정하면 AI 영상을 스토리보드처럼 정밀 제어 가능. invideo + Seedance에서 실제 확인.
+      </div>
+
+      <div class="prompt-timeline" style="margin-bottom: 20px;">
+        <div class="prompt-header">실제 영상에서 추출한 프롬프트 구조 (마술 카드 트릭 — 15초)</div>
+        <div class="prompt-body">
+          <div class="ts-row">
+            <span class="ts-tag">INTRO</span>
+            <span class="ts-desc">Create a 15-second stylized 3D animated magic scene using <strong style="color: var(--accent3);">@image</strong> as full identity, character, and world.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:00–0:02</span>
+            <span class="ts-desc">Extreme close-up. The magician performs fast flourish cuts. The deck splits, rotates, and recombines.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:02–0:04</span>
+            <span class="ts-desc">Camera pulls back to medium shot. He spreads the deck toward camera, keeps most cards angled away. Only ONE card clearly visible: <strong>Ace of Hearts</strong>.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:04–0:06</span>
+            <span class="ts-desc">Push-in. A different person's hand (from camera POV) reaches in naturally and grabs the ONLY clearly visible card: Ace of Hearts.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:06–0:08</span>
+            <span class="ts-desc">The magician cleanly inserts it into the middle of the deck. Camera stays tight on the hands so the insertion feels clear and fair.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:08–0:10</span>
+            <span class="ts-desc">Extremely fast, stylish shuffle sequence. Multiple flourish shuffles, snap cuts, and elegant hand transfers.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:10–0:12</span>
+            <span class="ts-desc">With a sharp flick, he launches the deck upward. Cards burst outward and float dramatically in mid-air around him.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:12–0:13.5</span>
+            <span class="ts-desc">Quick reaction montage. Audience stares upward, wide-eyed and shocked.</span>
+          </div>
+          <div class="ts-row">
+            <span class="ts-tag">0:13.5–0:15</span>
+            <span class="ts-desc">He slowly pulls out one card. It is clearly the <strong>Ace of Hearts</strong>.</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;">5섹션 구조 — 모든 고품질 프롬프트의 공통 패턴:</div>
+      <div class="section-tags">
+        <div class="stag rules">
+          <div class="stag-name">Rules</div>
+          <div class="stag-desc">논리 일관성 제약 조건 — "The selected card must always be Ace of Hearts"</div>
+        </div>
+        <div class="stag tone">
+          <div class="stag-name">Tone</div>
+          <div class="stag-desc">분위기/감성 키워드 — "playful, impressive, family-friendly, polished"</div>
+        </div>
+        <div class="stag camera">
+          <div class="stag-name">Camera</div>
+          <div class="stag-desc">촬영 스타일 — "dynamic cinematic coverage, clean push-ins"</div>
+        </div>
+        <div class="stag neg">
+          <div class="stag-name">Negative Prompt</div>
+          <div class="stag-desc">자주 발생 오류 방지 — "wrong card, duplicate Ace of Hearts"</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 패턴 3: @image -->
+    <div class="card">
+      <div class="card-title">패턴 3 — @image 앵커링 & Manga → Live Action</div>
+      <div class="grid-2">
+        <div>
+          <div class="callout info" style="margin: 0 0 14px 0;">
+            <div class="callout-label">@image 키워드</div>
+            "using @image as full identity, character, and world" — 이 구문이 캐릭터 고정의 핵심
+          </div>
+          <p style="font-size: 13px; color: var(--muted);">프롬프트 내 @image를 쓰면 업로드한 이미지를 캐릭터/세계관 기준으로 참조. 하나의 이미지로 15초 영상 전체를 앵커링.</p>
+        </div>
+        <div>
+          <div class="callout insight" style="margin: 0 0 14px 0;">
+            <div class="callout-label">Manga → Live Action (Seedance 2.0)</div>
+            만화 패널 자체가 복합 프롬프트 역할
+          </div>
+          <p style="font-size: 13px; color: var(--muted);">여러 장의 만화 패널을 순서대로 업로드하면 캐릭터 디자인 + 구도 + 대사 + 감정 흐름이 자동으로 실사 영상으로 변환. 말풍선 대사 → 음성/자막 자동 변환.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3: CLAUDE CODE AUTOMATION -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div class="section-title">Claude Code + Higgsfield 완전 자동화 파이프라인</div>
+    </div>
+
+    <div class="callout action" style="margin-bottom: 28px;">
+      <div class="callout-label">실제 확인된 자동화</div>
+      Claude Code가 픽셀 좌표로 Higgsfield UI를 직접 조작한다. 스크린샷 인식 → <code style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; color: var(--accent4);">Clicked at (305, 759)</code> → 완전 무인 자동화
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <div style="font-size: 13px; color: var(--muted); margin-bottom: 12px;">에이전트 로그 (실제 확인):</div>
+      <div class="code-block"><span class="cm">Used 2 tools</span>
+<span class="hi">Navigated to https://higgsfield.ai</span>
+<span class="str">Clicked at (305, 759)</span>
+<span class="str">Scrolled down by 3 ticks</span>
+<span class="kw">Update Todo list [✓]</span></div>
+    </div>
+
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 14px; font-weight: 700; margin-bottom: 20px; color: var(--accent2);">도리토스 50개 브랜드 에셋 생성 파이프라인</div>
+      <div style="font-size: 12px; color: var(--muted); margin-bottom: 20px;">입력: 제품 이미지 1장 + "generate 50 brand assets for this product." 명령 2줄</div>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-num">1</div>
+          <div class="pipe-content">
+            <div class="pipe-title">소셜미디어 경쟁사 리서치 + 10가지 광고 컨셉 수립</div>
+            <div class="pipe-detail">"The Last Chip", "Launch Shatter", "Cheese Pull Still Life" 등 컨셉 도출</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num">2</div>
+          <div class="pipe-content">
+            <div class="pipe-title">higgsfield.ai 자동 접속 + Seedream 4.5 모델 선택</div>
+            <div class="pipe-detail">브라우저 제어로 플랫폼 진입 및 최적 모델 자동 선택</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num">3</div>
+          <div class="pipe-content">
+            <div class="pipe-title">컨셉별 상세 프롬프트 자동 작성 + 입력</div>
+            <div class="pipe-code">"A Doritos Nacho Cheese chip captured at the exact moment of breaking apart,
+fragments suspended mid-air in a freeze-frame explosion. Orange cheese dust
+particles create a glowing cloud around the shatter point. Deep red-to-black
+gradient background..."</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num">4</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Generate 버튼 자동 클릭 × 10회+</div>
+            <div class="pipe-detail">픽셀 좌표 기반 버튼 클릭 반복 실행</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num">5</div>
+          <div class="pipe-content">
+            <div class="pipe-title">전체 이미지 자동 다운로드 → 로컬 폴더 저장</div>
+            <div class="pipe-detail">사용자 명령: "download all of them and save it local folder downloads"</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num">6</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Video 탭 이동 → Kling 3.0 선택 → 이미지 → 비디오 변환</div>
+            <div class="pipe-detail">베스트 이미지를 자동 선별하여 영상 생성</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent4), var(--accent3));">✓</div>
+          <div class="pipe-content" style="border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.05);">
+            <div class="pipe-title" style="color: var(--accent4);">50개 브랜드 에셋 완성 (이미지 + 비디오)</div>
+            <div class="pipe-detail">사용자 실제 투입: 명령 2줄 + 제품 이미지 1장만</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4: FASHION FILM PIPELINE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <div class="section-title">패션 필름 제작 전체 파이프라인 (@sferro21 확인)</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent), #6366f1);">1</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Soul Cast 생성</div>
+            <div class="pipe-detail">주인공 얼굴 사진 1장 업로드 → Soul ID 추출</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent), #6366f1);">2</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Soul Cinema Studio 스타일 시트</div>
+            <div class="pipe-detail">카메라 구도 대문자 프롬프트로 수십 장 스틸 생성. 배경: 사막/불꽃 런웨이/달 표면 등</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent), #6366f1);">3</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Kling 3.0 Image-to-Video</div>
+            <div class="pipe-detail">스틸 이미지들을 3~5초 영상 클립으로 변환</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent), #6366f1);">4</div>
+          <div class="pipe-content">
+            <div class="pipe-title">Adobe Premiere Pro 편집</div>
+            <div class="pipe-detail">V1~V6 비디오 트랙에 수십 클립 배치, A1~A5 오디오 트랙 음악/SFX 추가</div>
+            <div class="pipe-code">프로젝트: Soul cinema.prproj\Bin
+클립명: shot 67.mp4, shot1.mp4 ...
+비디오: V1~V6 (6레이어)
+오디오: A1~A5 (5레이어)</div>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-num" style="background: linear-gradient(135deg, var(--accent4), #22c55e);">✓</div>
+          <div class="pipe-content" style="border-color: rgba(74,222,128,0.3);">
+            <div class="pipe-title" style="color: var(--accent4);">최종 패션 필름 완성</div>
+            <div class="pipe-detail">실제 제작비 대비 99% 절감</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">핵심 인사이트 — 왜 이 파이프라인인가</div>
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px;">
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--accent3); margin-bottom: 4px;">Soul Cast의 역할</div>
+            <div style="font-size: 13px; color: var(--muted);">한 번의 Soul ID 추출로 모든 씬에서 동일 캐릭터 유지. 배우/모델 섭외 불필요.</div>
+          </div>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--accent2); margin-bottom: 4px;">Image-to-Video의 역할</div>
+            <div style="font-size: 13px; color: var(--muted);">스틸 이미지를 완벽하게 제어한 뒤 Video로 변환 → 직접 Video 생성보다 구도/조명 제어력 훨씬 높음.</div>
+          </div>
+          <div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 4px;">Premiere Pro의 역할</div>
+            <div style="font-size: 13px; color: var(--muted);">AI 생성 클립들을 최종 조립. V1-V6 멀티트랙 구조로 복잡한 편집도 가능. AI는 생성, 인간은 큐레이션만.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5: TECHNIQUE TABLE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div class="section-title">핵심 노하우 — 바로 쓸 수 있는 8가지 기법</div>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">🎯</div>
+        <div class="tech-name">카메라 구도 대문자</div>
+        <div class="tech-method">EXTREME CLOSE-UP,</div>
+        <div class="tech-effect">구도를 프롬프트 맨 앞에 대문자로 → AI 우선순위 처리, 구도 제어 정확도 상승</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">⏱️</div>
+        <div class="tech-name">타임스탬프 구간 제어</div>
+        <div class="tech-method">0:00-0:02: ...</div>
+        <div class="tech-effect">2초 단위 씬 지정 → AI 영상을 스토리보드처럼 정밀 제어</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🖼️</div>
+        <div class="tech-name">@image 앵커</div>
+        <div class="tech-method">using @image as full identity</div>
+        <div class="tech-effect">업로드 이미지를 캐릭터/세계관 기준으로 고정 — 15초 전체에 적용</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📋</div>
+        <div class="tech-name">Rules 섹션</div>
+        <div class="tech-method">Rules: - 논리 오류 금지</div>
+        <div class="tech-effect">명시적 제약 조건 → 논리 오류/일관성 깨짐 방지, 품질 일관성 상승</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🚫</div>
+        <div class="tech-name">Negative Prompt</div>
+        <div class="tech-method">Negative prompt: ...</div>
+        <div class="tech-effect">자주 발생하는 오류 타입을 열거 → 실패 확률 대폭 감소</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">👤</div>
+        <div class="tech-name">Soul Cast 최적화</div>
+        <div class="tech-method">정면 / 고른 조명 / 단순 배경</div>
+        <div class="tech-effect">캐릭터 인식 정확도 극대화 → 전 씬 일관성 유지</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🎬</div>
+        <div class="tech-name">Scene = 스톡 영상</div>
+        <div class="tech-method">Pexels 액션 클립</div>
+        <div class="tech-effect">원하는 카메라워크가 담긴 스톡 영상을 Scene으로 → 액션 제어력 극대화</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🤖</div>
+        <div class="tech-name">Claude Code 자동화</div>
+        <div class="tech-method">Clicked at (305, 759)</div>
+        <div class="tech-effect">픽셀 좌표 기반 UI 자동 조작 → 50개 에셋 무인 일괄 생성</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6: IMPLEMENTATION PRIORITIES -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <div class="section-title">구현 시 우선 재현해야 할 것</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="callout action" style="border-radius: 12px; padding: 24px;">
+        <div class="callout-label">최우선 — @멘션 캐릭터 앵커링</div>
+        <p style="font-size: 13px; margin-top: 6px;">@image + @캐릭터명 시스템. 한 번 만든 캐릭터를 모든 씬에 참조. 캐릭터 일관성의 핵심.</p>
+      </div>
+      <div class="callout action" style="border-radius: 12px; padding: 24px;">
+        <div class="callout-label">타임스탬프 프롬프트 에디터</div>
+        <p style="font-size: 13px; margin-top: 6px;">0:00-0:02: 구간별로 씬을 작성하는 에디터 UI. 스토리보드와 프롬프트의 통합.</p>
+      </div>
+      <div class="callout action" style="border-radius: 12px; padding: 24px;">
+        <div class="callout-label">Rules/Negative Prompt 섹션 UI</div>
+        <p style="font-size: 13px; margin-top: 6px;">생성 오류 방지를 위한 구조화된 제약 조건 입력창. 자유 텍스트가 아닌 섹션 분리 UI.</p>
+      </div>
+      <div class="callout action" style="border-radius: 12px; padding: 24px;">
+        <div class="callout-label">Scene + Soul Cast 분리 업로드 UI</div>
+        <p style="font-size: 13px; margin-top: 6px;">두 개의 독립된 드롭존: 왼쪽(Scene 클립들), 오른쪽(Soul Cast 이미지). 직관적 구조.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Higgsfield 심층 분석 — 인스타그램 저장 영상 5개를 Gemini 2.5 Pro 멀티모달로 직접 분석
+  &nbsp;|&nbsp; 출처: higgsfield.ai 직접 확인 &nbsp;|&nbsp; 2026-04-10
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CinemaForge — Workspace</title>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"}}
+</script>
+<style>
+:root{
+  --bg:#09090b;--surface:#111113;--s2:#18181b;--s3:#222226;
+  --border:#27272a;--b2:#3f3f46;
+  --accent:#6366f1;--a2:#818cf8;--a3:#4f52c5;
+  --purple:#a855f7;--teal:#14b8a6;--amber:#f59e0b;--green:#22c55e;--rose:#f43f5e;
+  --text:#e4e4e7;--t2:#a1a1aa;--t3:#52525b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:'SF Pro Display',system-ui,sans-serif;font-size:13px;user-select:none}
+#app{display:flex;flex-direction:column;height:100vh}
+
+/* Toolbar */
+#tb{height:44px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 10px;gap:5px;flex-shrink:0;z-index:100}
+.logo{display:flex;align-items:center;gap:7px;margin-right:6px}
+.logo-mark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#6366f1,#a855f7);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:white}
+.logo-text{font-weight:700;font-size:14px;letter-spacing:-0.3px;background:linear-gradient(135deg,#818cf8,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo-ver{font-size:9px;color:var(--t3);border:1px solid var(--b2);border-radius:3px;padding:1px 4px;letter-spacing:.5px}
+.tdiv{width:1px;height:20px;background:var(--border);margin:0 2px;flex-shrink:0}
+.btn{height:28px;padding:0 9px;border-radius:6px;border:none;cursor:pointer;font-family:inherit;font-size:11.5px;font-weight:500;display:flex;align-items:center;gap:5px;transition:all .12s;white-space:nowrap;flex-shrink:0}
+.btn-g{background:transparent;color:var(--t2)}.btn-g:hover{background:var(--s2);color:var(--text)}.btn-g.on{background:var(--s2);color:var(--a2)}
+.btn-move.on{background:rgba(244,63,94,.12);color:var(--rose) !important;border:1px solid rgba(244,63,94,.35)}
+.btn-o{background:transparent;color:var(--t2);border:1px solid var(--border)}.btn-o:hover{border-color:var(--accent);color:var(--a2)}
+.btn-p{background:var(--accent);color:white}.btn-p:hover{background:var(--a3)}
+.btn-icon{width:28px;padding:0;justify-content:center}
+.sp{flex:1}
+.status{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--t3)}
+.sdot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 5px var(--green)}
+
+/* Main */
+#main{display:flex;flex:1;overflow:hidden;min-height:0;position:relative}
+
+/* Viewport */
+#vp{flex:1;position:relative;background:#05050a;overflow:hidden;min-width:0}
+#c{display:block;width:100%;height:100%}
+
+/* Overlays */
+.vp-tl{position:absolute;top:10px;left:10px;display:flex;gap:6px;pointer-events:all;align-items:center}
+.vp-tr{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;pointer-events:all;align-items:flex-end}
+.vp-bl{position:absolute;bottom:10px;left:10px;pointer-events:none}
+.vp-br{position:absolute;bottom:10px;right:10px;pointer-events:all}
+
+.mode-bar{background:rgba(9,9,11,.85);border:1px solid var(--border);backdrop-filter:blur(10px);border-radius:7px;display:flex;overflow:hidden}
+.mb{padding:4px 9px;font-size:11px;font-weight:500;cursor:pointer;color:var(--t3);border:none;background:transparent;font-family:inherit;transition:all .12s}
+.mb.on{background:var(--accent);color:white}.mb:hover:not(.on){color:var(--text)}
+
+.pill{background:rgba(9,9,11,.82);border:1px solid var(--border);backdrop-filter:blur(10px);border-radius:20px;padding:4px 9px;font-size:11px;color:var(--t2);display:flex;align-items:center;gap:5px}
+.pill.hi{border-color:rgba(99,102,241,.5);color:var(--a2)}
+.pdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+
+/* Move mode banner */
+.move-banner{position:absolute;bottom:52px;left:50%;transform:translateX(-50%);background:rgba(244,63,94,.12);border:1px solid rgba(244,63,94,.4);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--rose);backdrop-filter:blur(10px);pointer-events:none;display:none;z-index:20;white-space:nowrap}
+.move-banner.show{display:block}
+
+.nav-stack{background:rgba(9,9,11,.85);border:1px solid var(--border);backdrop-filter:blur(10px);border-radius:8px;display:flex;flex-direction:column;overflow:hidden}
+.nb{width:30px;height:30px;border:none;background:transparent;color:var(--t3);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;transition:all .12s;font-family:inherit}
+.nb:hover{background:var(--s3);color:var(--text)}.nb+.nb{border-top:1px solid var(--border)}
+
+.info-box{background:rgba(9,9,11,.78);border:1px solid var(--border);backdrop-filter:blur(8px);border-radius:6px;padding:5px 9px;font-size:10px;color:var(--t3);line-height:1.8;font-variant-numeric:tabular-nums}
+.iv{color:var(--t2)}
+
+/* POV frame */
+.pov-frame{position:absolute;inset:0;border:2px solid var(--accent);pointer-events:none;display:none}
+.pov-frame.show{display:block}
+.pov-label{position:absolute;top:8px;left:50%;transform:translateX(-50%);background:rgba(99,102,241,.15);border:1px solid var(--accent);border-radius:20px;padding:3px 12px;font-size:11px;font-weight:600;color:var(--a2);letter-spacing:.5px;white-space:nowrap}
+
+/* Drag highlight ring */
+.drag-ring{position:absolute;inset:0;border:2px solid var(--rose);pointer-events:none;display:none;animation:ring-pulse 1s ease-in-out infinite}
+.drag-ring.show{display:block}
+@keyframes ring-pulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* Sidebar — floating overlay panel */
+#sb{
+  position:absolute;right:0;top:0;bottom:0;
+  width:290px;
+  background:rgba(17,17,19,.96);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-left:1px solid var(--border);
+  display:flex;flex-direction:column;
+  overflow:hidden;z-index:30;
+  transform:translateX(0);
+  transition:transform .24s cubic-bezier(.4,0,.2,1);
+  box-shadow:-8px 0 32px rgba(0,0,0,.4);
+}
+#sb.collapsed{transform:translateX(100%)}
+#sb-toggle{
+  position:absolute;right:290px;top:50%;
+  transform:translateY(-50%);
+  z-index:40;width:18px;height:52px;
+  background:rgba(17,17,19,.9);
+  border:1px solid var(--border);border-right:none;
+  border-radius:6px 0 0 6px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  color:var(--t3);font-size:10px;line-height:1;
+  transition:right .24s cubic-bezier(.4,0,.2,1),color .12s,background .12s;
+  backdrop-filter:blur(8px);
+}
+#sb-toggle:hover{color:var(--text);background:rgba(34,34,38,.95)}
+#sb-toggle.collapsed{right:0}
+.sb-hd{height:38px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--t3);flex-shrink:0}
+.sb-tabs{display:flex;border-bottom:1px solid var(--border);flex-shrink:0}
+.sbt{flex:1;height:32px;border:none;background:transparent;color:var(--t3);font-family:inherit;font-size:12px;font-weight:500;cursor:pointer;transition:all .12s;border-bottom:2px solid transparent}
+.sbt.on{color:var(--text);border-bottom-color:var(--accent)}.sbt:hover:not(.on){color:var(--t2)}
+
+/* Tab panels */
+.tab-panel{display:none;flex:1;flex-direction:column;overflow:hidden;min-height:0}
+.tab-panel.on{display:flex}
+
+#shot-list{flex:1;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:6px}
+#shot-list::-webkit-scrollbar{width:3px}
+#shot-list::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+
+.sc{background:var(--s2);border:1px solid var(--border);border-radius:9px;overflow:hidden;cursor:pointer;transition:all .15s}
+.sc:hover{border-color:var(--b2);transform:translateY(-1px)}
+.sc.on{border-color:var(--accent);box-shadow:0 0 0 1px rgba(99,102,241,.25),0 4px 14px rgba(99,102,241,.15)}
+.sc.draggable{border-color:rgba(244,63,94,.4) !important}
+.sc.draggable:hover{box-shadow:0 0 0 1px rgba(244,63,94,.3)}
+
+.sc-thumb{width:100%;height:86px;position:relative;overflow:hidden}
+.sc-thumb canvas{width:100%;height:100%;display:block}
+.sc-vign{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,.65) 100%)}
+.sc-num{position:absolute;top:6px;left:7px;background:rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.15);border-radius:4px;padding:1px 6px;font-size:10px;font-weight:700;color:white}
+.sc-dur{position:absolute;bottom:6px;right:7px;font-size:10px;color:rgba(255,255,255,.65)}
+.sc-cdot{position:absolute;top:6px;right:7px;width:8px;height:8px;border-radius:50%;border:1px solid rgba(255,255,255,.3)}
+.sc-pov{position:absolute;bottom:6px;left:7px;background:rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.2);border-radius:4px;padding:1px 6px;font-size:9px;color:rgba(255,255,255,.7);cursor:pointer;font-family:inherit;transition:all .12s}
+.sc-pov:hover{border-color:var(--a2);color:var(--a2)}
+.sc-move-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:none;font-size:22px;color:white;text-shadow:0 0 8px rgba(244,63,94,.8)}
+.sc.draggable .sc-move-icon{display:block}
+
+.sc-body{padding:7px 10px 5px}
+.sc-name{font-size:12px;font-weight:600;color:var(--text);margin-bottom:3px}
+.sc-pos{font-size:10px;color:var(--t3);font-variant-numeric:tabular-nums;margin-bottom:2px}
+.sc-prompt{font-size:11px;color:var(--t3);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sc-foot{display:flex;gap:4px;padding:5px 8px 7px;border-top:1px solid var(--border)}
+.sc-btn{flex:1;height:22px;border:1px solid var(--border);background:transparent;color:var(--t3);border-radius:4px;font-family:inherit;font-size:10px;cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center;gap:3px}
+.sc-btn:hover{border-color:var(--accent);color:var(--a2)}
+.sc-btn.gen{background:rgba(99,102,241,.1);border-color:rgba(99,102,241,.4);color:var(--a2)}
+.sc-btn.gen:disabled{opacity:.45;cursor:default}
+
+.add-btn{margin:6px 8px 8px;height:34px;border:1px dashed var(--b2);background:transparent;color:var(--t3);border-radius:8px;font-family:inherit;font-size:12px;cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center;gap:6px;flex-shrink:0}
+.add-btn:hover{border-color:var(--accent);color:var(--a2)}
+
+.prompt-area{border-top:1px solid var(--border);padding:10px 10px 8px;flex-shrink:0}
+.pa-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--t3);margin-bottom:6px;display:flex;align-items:center;justify-content:space-between}
+.pa-lbl span{color:var(--a2);cursor:pointer;font-size:9px;text-transform:none;letter-spacing:0}
+.pa-in{width:100%;min-height:54px;background:var(--s3);border:1px solid var(--border);color:var(--text);border-radius:7px;padding:8px 10px;font-family:inherit;font-size:11.5px;resize:none;outline:none;line-height:1.5}
+.pa-in:focus{border-color:rgba(99,102,241,.5)}
+.pa-row{display:flex;gap:5px;margin-top:6px}
+.pa-model{font-size:10px;color:var(--t2);background:var(--s3);border:1px solid var(--border);border-radius:5px;padding:0 7px;height:24px;display:flex;align-items:center;gap:4px;cursor:pointer;white-space:nowrap}
+.pa-model:hover{border-color:var(--b2)}
+.pa-gen{flex:1;height:24px;background:var(--accent);border:none;color:white;border-radius:5px;font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .12s}
+.pa-gen:hover{background:var(--a3)}
+.pa-gen:disabled{opacity:.5;cursor:default}
+
+/* API Settings Panel */
+#api-panel{padding:12px 12px 8px;flex:1;overflow-y:auto}
+#api-panel::-webkit-scrollbar{width:3px}
+#api-panel::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.api-section{margin-bottom:16px}
+.api-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--t3);margin-bottom:8px}
+.api-input{width:100%;height:30px;background:var(--s3);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:0 10px;font-family:inherit;font-size:11.5px;outline:none}
+.api-input:focus{border-color:rgba(99,102,241,.5)}
+.api-input.key{font-family:monospace;font-size:11px;letter-spacing:.5px}
+.api-save{width:100%;height:28px;background:var(--accent);border:none;color:white;border-radius:6px;font-family:inherit;font-size:11.5px;font-weight:600;cursor:pointer;margin-top:8px;transition:all .12s}
+.api-save:hover{background:var(--a3)}
+.api-note{font-size:10px;color:var(--t3);line-height:1.6;margin-top:6px}
+.api-note a{color:var(--a2);text-decoration:none}
+.api-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;padding:2px 8px;border-radius:10px;margin-top:4px}
+.api-badge.ok{background:rgba(34,197,94,.12);color:var(--green);border:1px solid rgba(34,197,94,.3)}
+.api-badge.no{background:rgba(82,82,91,.12);color:var(--t3);border:1px solid var(--border)}
+.api-model-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.api-model-btn{font-size:10px;padding:3px 8px;border-radius:4px;border:1px solid var(--border);background:transparent;color:var(--t3);cursor:pointer;font-family:inherit;transition:all .12s}
+.api-model-btn.on{background:rgba(99,102,241,.15);border-color:var(--accent);color:var(--a2)}
+.api-model-btn:hover:not(.on){color:var(--t2);border-color:var(--b2)}
+.api-divider{height:1px;background:var(--border);margin:12px 0}
+
+/* Gen progress bar */
+.gen-progress{margin-top:6px;height:3px;background:var(--border);border-radius:2px;overflow:hidden;display:none}
+.gen-progress.show{display:block}
+.gen-bar{height:100%;background:linear-gradient(90deg,var(--accent),var(--purple));border-radius:2px;width:0%;transition:width .4s ease}
+
+/* Timeline */
+#tl{height:70px;background:var(--surface);border-top:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0}
+.tl-top{height:36px;padding:0 10px;display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--border)}
+.play-btn{width:28px;height:28px;border-radius:50%;border:none;background:var(--accent);color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:10px;transition:all .12s;flex-shrink:0}
+.play-btn:hover{background:var(--a3);transform:scale(1.06)}
+.tl-time{font-size:12px;font-weight:600;color:var(--t2);font-variant-numeric:tabular-nums;min-width:70px}
+.tl-dur{font-size:11px;color:var(--t3)}
+.scrub{flex:1;height:5px;background:var(--border);border-radius:3px;position:relative;cursor:pointer}
+.scrub-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--purple));border-radius:3px;width:0%;transition:width .08s linear}
+.scrub-head{width:12px;height:12px;background:white;border-radius:50%;position:absolute;top:50%;left:0%;transform:translate(-50%,-50%);box-shadow:0 0 0 2.5px var(--accent);transition:left .08s linear;cursor:grab}
+.tl-fps{font-size:10px;color:var(--t3)}
+.tl-btn{height:22px;padding:0 7px;border-radius:4px;border:1px solid var(--border);background:transparent;color:var(--t3);font-family:inherit;font-size:11px;cursor:pointer;transition:all .12s}
+.tl-btn:hover{border-color:var(--b2);color:var(--t2)}
+.tl-bot{flex:1;padding:4px 10px;display:flex;align-items:center;gap:3px}
+.tl-seg{height:22px;border-radius:4px;display:flex;align-items:center;padding:0 7px;font-size:10px;font-weight:700;color:white;cursor:pointer;transition:all .12s;overflow:hidden;white-space:nowrap;flex-shrink:0}
+.tl-seg:hover{opacity:.8;transform:scaleY(1.06)}.tl-seg.on{box-shadow:0 0 0 1.5px white inset}
+.tl-gap{width:3px;flex-shrink:0}.tl-lbl{font-size:10px;color:var(--t3);margin-left:4px}
+
+/* Gen overlay */
+.gen-ovl{position:absolute;inset:0;background:rgba(5,5,10,.75);backdrop-filter:blur(6px);display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;z-index:10}
+.gen-ovl.show{display:flex}
+.gen-ring{width:44px;height:44px;border:3px solid var(--b2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.gen-txt{font-size:13px;color:var(--t2)}.gen-sub{font-size:11px;color:var(--t3)}
+.gen-prog-wrap{width:200px}
+.gen-prog-bar{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.gen-prog-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--purple));border-radius:2px;width:0%;transition:width .6s ease}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- Toolbar -->
+<div id="tb">
+  <div class="logo">
+    <div class="logo-mark">CF</div>
+    <span class="logo-text">CinemaForge</span>
+    <span class="logo-ver">v0.2</span>
+  </div>
+  <div class="tdiv"></div>
+  <div style="display:flex;gap:2px">
+    <button class="btn btn-g on" id="mode-orbit" onclick="setInteractMode('orbit',this)">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4.5" stroke="currentColor"/><path d="M6 1.5C6 1.5 9 3.5 9 6s-3 4.5-3 4.5M6 1.5C6 1.5 3 3.5 3 6s3 4.5 3 4.5" stroke="currentColor"/><path d="M1.5 6h9" stroke="currentColor"/></svg>
+      Orbit
+    </button>
+    <button class="btn btn-g btn-move" id="mode-move" onclick="setInteractMode('move',this)">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10M6 1l-1.5 2h3L6 1zM6 11l-1.5-2h3L6 11zM1 6l2-1.5v3L1 6zM11 6l-2-1.5v3L11 6z" stroke="currentColor" stroke-linejoin="round"/></svg>
+      Move
+    </button>
+    <button class="btn btn-g" id="mode-cam" onclick="setInteractMode('cam',this)">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><rect x="1" y="2.5" width="7" height="6" rx="1" stroke="currentColor"/><path d="M8 5l3-1.5v4L8 6" stroke="currentColor" stroke-linejoin="round"/><circle cx="4.5" cy="5.5" r="1.2" stroke="currentColor"/></svg>
+      Camera POV
+    </button>
+  </div>
+  <div class="tdiv"></div>
+  <button class="btn btn-g btn-icon" onclick="toggleFrustums()" title="Toggle camera frustums">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2l5 4v4H2V6l5-4z" stroke="currentColor" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="btn btn-g btn-icon" onclick="toggleTraj()" title="Toggle trajectory">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 10C4 10 5 4 7 4s3 6 5 6" stroke="currentColor" stroke-linecap="round"/></svg>
+  </button>
+  <button class="btn btn-g btn-icon" title="Undo"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 5h5a3.5 3.5 0 010 7H4" stroke="currentColor" stroke-linecap="round"/><path d="M2 2.5V7.5L5.5 5" stroke="currentColor" stroke-linejoin="round"/></svg></button>
+  <button class="btn btn-g btn-icon" title="Redo"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M11 5H6a3.5 3.5 0 000 7h3" stroke="currentColor" stroke-linecap="round"/><path d="M11 2.5V7.5L7.5 5" stroke="currentColor" stroke-linejoin="round"/></svg></button>
+  <div class="sp"></div>
+  <div class="status"><span class="sdot" id="sdot"></span><span id="stxt">Ready</span></div>
+  <div class="tdiv"></div>
+  <button class="btn btn-o">Share</button>
+  <button class="btn btn-p">
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 9V2.5l7 3L2 9z" fill="currentColor"/></svg>
+    Export
+  </button>
+</div>
+
+<!-- Main -->
+<div id="main">
+  <button id="sb-toggle" onclick="toggleSidebar()" title="Toggle panel">&#x276E;</button>
+  <div id="vp">
+    <canvas id="c"></canvas>
+    <div class="pov-frame" id="pov-frame">
+      <div class="pov-label" id="pov-label">CAM 1 — Aerial POV</div>
+    </div>
+    <div class="drag-ring" id="drag-ring"></div>
+    <div class="move-banner" id="move-banner">&#x271C; Move Mode — Click &amp; drag cameras in 3D viewport &nbsp;|&nbsp; Press M to exit</div>
+    <div class="vp-tl">
+      <div class="mode-bar">
+        <button class="mb on" id="va-persp" onclick="setViewAngle('persp',this)">Persp</button>
+        <button class="mb" id="va-top"   onclick="setViewAngle('top',this)">Top</button>
+        <button class="mb" id="va-front" onclick="setViewAngle('front',this)">Front</button>
+        <button class="mb" id="va-side"  onclick="setViewAngle('side',this)">Side</button>
+      </div>
+      <div class="pill hi">
+        <span class="pdot" id="bdot" style="background:#6366f1"></span>
+        <span id="btxt">CAM 1 — Aerial</span>
+      </div>
+    </div>
+    <div class="vp-tr">
+      <div class="nav-stack">
+        <button class="nb" onclick="zoomIn()">+</button>
+        <button class="nb" onclick="zoomOut()">-</button>
+        <button class="nb" onclick="fitAll()" style="font-size:10px">&#x229F;</button>
+      </div>
+    </div>
+    <div class="vp-bl">
+      <div class="info-box">
+        X:<span class="iv" id="ix">0.0</span> Y:<span class="iv" id="iy">0.0</span> Z:<span class="iv" id="iz">0.0</span><br>
+        Frame <span class="iv" id="iframe">001</span>/240 &nbsp;|&nbsp; <span class="iv" id="imode">ORBIT</span>
+      </div>
+    </div>
+    <div class="vp-br">
+      <div class="pill">T:<span class="iv" style="margin-left:3px" id="it">0.00</span> &nbsp;|&nbsp; Traj:<span class="iv" style="margin-left:3px">4 cams</span></div>
+    </div>
+    <div class="gen-ovl" id="gen-ovl">
+      <div class="gen-ring"></div>
+      <div class="gen-txt" id="gen-model">Qwen Image Edit</div>
+      <div class="gen-sub" id="gen-step">Initializing...</div>
+      <div class="gen-prog-wrap">
+        <div class="gen-prog-bar"><div class="gen-prog-fill" id="gen-prog-fill"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sb">
+    <div class="sb-hd"><span>CinemaForge</span><span style="color:var(--a2);font-size:11px;cursor:pointer" onclick="addShot()">+ New</span></div>
+    <div class="sb-tabs">
+      <button class="sbt on" onclick="switchTab('shots',this)">Shots</button>
+      <button class="sbt" onclick="switchTab('api',this)">AI / API</button>
+      <button class="sbt" onclick="switchTab('assets',this)">Assets</button>
+    </div>
+
+    <!-- Shots tab -->
+    <div class="tab-panel on" id="tab-shots">
+      <div id="shot-list"></div>
+      <button class="add-btn" onclick="addShot()">+ Add Shot</button>
+      <div class="prompt-area">
+        <div class="pa-lbl">Active Prompt <span onclick="document.getElementById('pa-in').value=''">Clear</span></div>
+        <textarea class="pa-in" id="pa-in" placeholder="Describe shot composition, lighting, camera motion..."></textarea>
+        <div class="pa-row">
+          <div class="pa-model" onclick="cycleModel()">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><circle cx="4" cy="4" r="3" stroke="currentColor"/><path d="M4 2v2l1.5 1" stroke="currentColor" stroke-linecap="round"/></svg>
+            <span id="model-name">Wanx2.1-T2I</span>
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M2.5 3.5l2 2 2-2" stroke="currentColor"/></svg>
+          </div>
+          <button class="pa-gen" id="gen-btn" onclick="doGenerate(activeShot)">&#x2605; Generate</button>
+        </div>
+        <div class="gen-progress" id="gen-progress-bar">
+          <div class="gen-bar" id="gen-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- API tab -->
+    <div class="tab-panel" id="tab-api">
+      <div id="api-panel">
+        <div class="api-section">
+          <div class="api-label">DashScope API Key</div>
+          <input class="api-input key" id="api-key" type="password" placeholder="sk-xxxxxxxxxxxxxxxx" autocomplete="off"/>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+            <div class="api-badge no" id="api-status-badge">&#x25CF; Not configured</div>
+            <button class="api-save" style="width:auto;padding:0 12px" onclick="saveApiKey()">Save</button>
+          </div>
+          <div class="api-note">
+            Alibaba DashScope API — powers Qwen &amp; Wanx image models.<br>
+            Get key: <a href="#" onclick="return false">console.aliyun.com/api-keys</a>
+          </div>
+        </div>
+        <div class="api-divider"></div>
+        <div class="api-section">
+          <div class="api-label">Image Model</div>
+          <div class="api-model-row">
+            <button class="api-model-btn on" id="mdl-t2i" onclick="selectModel('wanx2.1-t2i-plus',this)">T2I Plus</button>
+            <button class="api-model-btn" id="mdl-edit" onclick="selectModel('wanx2.1-imageedit',this)">Image Edit</button>
+            <button class="api-model-btn" id="mdl-turbo" onclick="selectModel('wanx2.1-t2i-turbo',this)">Turbo</button>
+          </div>
+          <div class="api-note" style="margin-top:8px">
+            <b>T2I Plus</b>: Text → image generation<br>
+            <b>Image Edit</b>: Text-guided edit of existing shot<br>
+            <b>Turbo</b>: Fast generation, lower quality
+          </div>
+        </div>
+        <div class="api-divider"></div>
+        <div class="api-section">
+          <div class="api-label">Image Size</div>
+          <select class="api-input" id="api-size" style="cursor:pointer">
+            <option value="1280*720">1280×720 (16:9)</option>
+            <option value="1920*1080">1920×1080 (Full HD)</option>
+            <option value="768*768">768×768 (1:1)</option>
+          </select>
+        </div>
+        <div class="api-divider"></div>
+        <div class="api-section">
+          <div class="api-label">HuggingFace Token (optional)</div>
+          <input class="api-input key" id="hf-token" type="password" placeholder="hf_xxxxxxxxxxxxxxxx" autocomplete="off"/>
+          <div class="api-note" style="margin-top:6px">Fallback: uses HF Inference API with FLUX models when DashScope unavailable.</div>
+          <button class="api-save" onclick="saveHFToken()">Save HF Token</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Assets tab -->
+    <div class="tab-panel" id="tab-assets">
+      <div style="padding:20px 12px;text-align:center;color:var(--t3);font-size:12px;line-height:1.8">
+        <div style="font-size:24px;margin-bottom:8px">&#x1F5BC;</div>
+        Asset library coming soon.<br>Drop files here to import.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Timeline -->
+<div id="tl">
+  <div class="tl-top">
+    <button class="play-btn" id="play-btn" onclick="togglePlay()">
+      <svg id="play-ico" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 1.5l6 3.5-6 3.5V1.5z" fill="white"/></svg>
+    </button>
+    <button class="tl-btn" onclick="seekTo(0)">&#x23EE;</button>
+    <button class="tl-btn" onclick="seekTo(1)">&#x23ED;</button>
+    <span class="tl-time" id="tl-time">0:00</span>
+    <span class="tl-dur">/ 8:00</span>
+    <div class="scrub" id="scrub" onclick="scrubClick(event)">
+      <div class="scrub-fill" id="scrub-fill"></div>
+      <div class="scrub-head" id="scrub-head"></div>
+    </div>
+    <span class="tl-fps">24fps</span>
+    <button class="tl-btn" id="loop-btn" onclick="toggleLoop()">&#x27F3;</button>
+  </div>
+  <div class="tl-bot" id="tl-bot"></div>
+</div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// ──────────────────────────────────────────────
+// DATA
+// ──────────────────────────────────────────────
+const COLORS = ['#6366f1','#14b8a6','#f59e0b','#a855f7'];
+const MODELS_CYCLE = ['Wanx2.1-T2I','Wanx2.1-Edit','Wanx2.1-Turbo','FLUX.1-dev'];
+
+const shots = [
+  { id:1, name:'Aerial Establishing', dur:'2s', color:'#6366f1',
+    pos: new THREE.Vector3(-7, 7, 9),
+    target: new THREE.Vector3(0, 2.5, 0),
+    fov:50, tlW:88,
+    prompt:'Wide aerial drone establishing the luxury tower at golden hour. Slow descent, volumetric light rays.' },
+  { id:2, name:'Street Approach', dur:'2s', color:'#14b8a6',
+    pos: new THREE.Vector3(6, 1.2, 7),
+    target: new THREE.Vector3(0, 3, 0),
+    fov:62, tlW:88,
+    prompt:'Ground-level tracking shot approaching the entrance. Lush landscaping, glass facade reflecting sunset.' },
+  { id:3, name:'Facade Tilt-Up', dur:'2s', color:'#f59e0b',
+    pos: new THREE.Vector3(-3.5, 4, 3.5),
+    target: new THREE.Vector3(0, 8, 0),
+    fov:55, tlW:80,
+    prompt:'Medium tilt-up revealing full building facade. Glass panels, steel framing, balconies.' },
+  { id:4, name:'Rooftop Fly-Over', dur:'2s', color:'#a855f7',
+    pos: new THREE.Vector3(2, 11, -6),
+    target: new THREE.Vector3(0, 4, 0),
+    fov:58, tlW:88,
+    prompt:'High-altitude fly-over. City skyline background, rooftop amenities. Dusk lighting, city lights below.' },
+];
+
+// ──────────────────────────────────────────────
+// STATE
+// ──────────────────────────────────────────────
+let activeShot = 0;
+let isPlaying = false;
+let playT = 0;
+let looping = true;
+let showTraj = true;
+let showFrustums = true;
+let interactMode = 'orbit';
+let modelIdx = 0;
+let savedPos = null, savedTarget = null;
+const TOTAL_DUR = 8;
+
+// API config
+let dashApiKey = localStorage.getItem('cf_dashkey') || '';
+let hfToken = localStorage.getItem('cf_hftoken') || '';
+let selectedModel = localStorage.getItem('cf_model') || 'wanx2.1-t2i-plus';
+let selectedSize = localStorage.getItem('cf_size') || '1280*720';
+
+// ──────────────────────────────────────────────
+// RENDERER / CAMERA / CONTROLS
+// ──────────────────────────────────────────────
+const vpEl = document.getElementById('vp');
+const canvas = document.getElementById('c');
+
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
+
+const camera = new THREE.PerspectiveCamera(55, 1, 0.05, 300);
+camera.position.set(-13, 10, 15);
+camera.lookAt(0, 3, 0);
+
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.dampingFactor = 0.07;
+controls.target.set(0, 3, 0);
+controls.minDistance = 1.5;
+controls.maxDistance = 80;
+controls.maxPolarAngle = Math.PI * 0.88;
+
+function resize() {
+  const w = vpEl.clientWidth, h = vpEl.clientHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(vpEl);
+resize();
+
+// ──────────────────────────────────────────────
+// SCENE SETUP
+// ──────────────────────────────────────────────
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x05050a);
+scene.fog = new THREE.FogExp2(0x05050a, 0.022);
+
+scene.add(new THREE.AmbientLight(0x8888bb, 0.6));
+
+const sun = new THREE.DirectionalLight(0xfff8e0, 2.5);
+sun.position.set(10, 16, 8);
+sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048);
+sun.shadow.camera.left = -15; sun.shadow.camera.right = 15;
+sun.shadow.camera.top = 15;  sun.shadow.camera.bottom = -15;
+sun.shadow.camera.near = 0.5; sun.shadow.camera.far = 60;
+sun.shadow.bias = -0.001;
+scene.add(sun);
+
+const fill = new THREE.DirectionalLight(0x3050ff, 0.4);
+fill.position.set(-8, 4, -10);
+scene.add(fill);
+
+scene.add(new THREE.GridHelper(50, 50, 0x22222a, 0x1a1a22));
+
+const floorMesh = new THREE.Mesh(
+  new THREE.PlaneGeometry(100, 100),
+  new THREE.ShadowMaterial({ opacity: 0.28 })
+);
+floorMesh.rotation.x = -Math.PI / 2;
+floorMesh.receiveShadow = true;
+scene.add(floorMesh);
+
+// ──────────────────────────────────────────────
+// BUILDING
+// ──────────────────────────────────────────────
+const bldg = new THREE.Group();
+scene.add(bldg);
+
+function addBox(w, h, d, mat, x, y, z) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true; m.receiveShadow = true;
+  bldg.add(m); return m;
+}
+
+addBox(7, 0.9, 7, new THREE.MeshStandardMaterial({ color:0x282830, roughness:.8, metalness:.1 }), 0, 0.45, 0);
+addBox(3.4, 10, 3.4, new THREE.MeshStandardMaterial({ color:0x181828, roughness:.25, metalness:.55 }), 0, 5.9, 0);
+addBox(3.42, 10.02, 3.42, new THREE.MeshStandardMaterial({ color:0x3050a8, roughness:.05, metalness:.95, transparent:true, opacity:.55 }), 0, 5.9, 0);
+addBox(4, 0.12, 4, new THREE.MeshStandardMaterial({ color:0x232330, roughness:.7 }), 0, 10.96, 0);
+
+const ant = new THREE.Mesh(
+  new THREE.CylinderGeometry(0.03, 0.03, 1.3, 6),
+  new THREE.MeshStandardMaterial({ color:0x888888, metalness:1, roughness:.2 })
+);
+ant.position.set(0.9, 11.8, 0.9);
+bldg.add(ant);
+
+// Windows
+const winMat = new THREE.MeshStandardMaterial({ color:0x5070d0, emissive:0x3050a0, emissiveIntensity:.35, roughness:.05 });
+for (let fl = 0; fl < 9; fl++) {
+  for (let side = 0; side < 4; side++) {
+    for (let w = 0; w < 2; w++) {
+      const ang = side * Math.PI / 2;
+      const wm = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.48), winMat);
+      const r = 1.72;
+      const ox = Math.cos(ang + Math.PI / 2) * (w - 0.5) * 0.75;
+      const oz = Math.sin(ang + Math.PI / 2) * (w - 0.5) * 0.75;
+      wm.position.set(Math.sin(ang) * r + ox, 1.5 + fl * 1.02, Math.cos(ang) * r + oz);
+      wm.rotation.y = -ang;
+      bldg.add(wm);
+    }
+  }
+}
+
+// Trees
+const treePositions = [
+  [-4.5, 3.2], [-4.5, -3.2], [4.5, 3.2], [4.5, -3.2],
+  [-3.0, 0.0], [3.0, 0.0], [0.0, -4.5], [0.0, 4.5]
+];
+const trunkMat = new THREE.MeshStandardMaterial({ color:0x2a1a0a, roughness:.9 });
+const foliageMat = new THREE.MeshStandardMaterial({ color:0x1a401a, roughness:.9 });
+treePositions.forEach(function(xz) {
+  const x = xz[0], z = xz[1];
+  const tr = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.09, 0.55, 6), trunkMat);
+  tr.position.set(x, 0.28, z);
+  bldg.add(tr);
+  const fo = new THREE.Mesh(new THREE.SphereGeometry(0.38, 7, 7), foliageMat);
+  fo.position.set(x, 0.88, z);
+  bldg.add(fo);
+});
+
+// ──────────────────────────────────────────────
+// FRUSTUM GEOMETRY (along +Z so lookAt works)
+// ──────────────────────────────────────────────
+function makeFrustumLines(color, fov, aspect, near) {
+  const nh = 2 * Math.tan(fov * Math.PI / 360) * near;
+  const nw = nh * aspect;
+
+  const v = new Float32Array([
+    -nw/2,  nh/2, near,   nw/2,  nh/2, near,
+     nw/2,  nh/2, near,   nw/2, -nh/2, near,
+     nw/2, -nh/2, near,  -nw/2, -nh/2, near,
+    -nw/2, -nh/2, near,  -nw/2,  nh/2, near,
+    0, 0, 0,  -nw/2,  nh/2, near,
+    0, 0, 0,   nw/2,  nh/2, near,
+    0, 0, 0,   nw/2, -nh/2, near,
+    0, 0, 0,  -nw/2, -nh/2, near,
+    0, 0, 0,   0, nh * 0.7, 0,
+  ]);
+
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(v, 3));
+  return new THREE.LineSegments(geo, new THREE.LineBasicMaterial({
+    color: color, transparent: true, opacity: 0.85
+  }));
+}
+
+function makeCameraBody(hexColor) {
+  const grp = new THREE.Group();
+  const col = new THREE.Color(hexColor);
+  const bodyMat = new THREE.MeshStandardMaterial({ color: col, roughness:.35, metalness:.7, emissive: col, emissiveIntensity:.18 });
+  const blackMat = new THREE.MeshStandardMaterial({ color:0x111111, roughness:.1, metalness:.95 });
+  const glassMat = new THREE.MeshStandardMaterial({ color: col, emissive: col, emissiveIntensity:.9, roughness:0, metalness:1, transparent:true, opacity:.85 });
+
+  const body = new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.18, 0.32), bodyMat);
+  grp.add(body);
+  const barrel = new THREE.Mesh(new THREE.CylinderGeometry(0.065, 0.078, 0.24, 14), blackMat);
+  barrel.rotation.x = Math.PI / 2;
+  barrel.position.set(0, 0, 0.27);
+  grp.add(barrel);
+  const lensGlass = new THREE.Mesh(new THREE.CircleGeometry(0.052, 14), glassMat);
+  lensGlass.position.set(0, 0, 0.39);
+  grp.add(lensGlass);
+  const vf = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.07, 0.12), bodyMat);
+  vf.position.set(0, 0.125, 0.02);
+  grp.add(vf);
+  const grip = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.24, 0.28), bodyMat);
+  grip.position.set(-0.16, -0.2, 0);
+  grp.add(grip);
+  return grp;
+}
+
+// ──────────────────────────────────────────────
+// BUILD FRUSTUM OBJECTS
+// ──────────────────────────────────────────────
+const frustumGroup = new THREE.Group();
+scene.add(frustumGroup);
+
+const camObjects = [];
+const hitboxGroup = new THREE.Group();
+scene.add(hitboxGroup);
+
+shots.forEach(function(shot, i) {
+  const grp = new THREE.Group();
+
+  const lines = makeFrustumLines(shot.color, shot.fov, 16/9, 0.38);
+  grp.add(lines);
+
+  const body = makeCameraBody(shot.color);
+  grp.add(body);
+
+  grp.position.copy(shot.pos);
+  grp.lookAt(shot.target);
+
+  frustumGroup.add(grp);
+
+  // Label sprite
+  const lc = document.createElement('canvas');
+  lc.width = 200; lc.height = 44;
+  const lctx = lc.getContext('2d');
+  lctx.fillStyle = 'rgba(0,0,0,0.78)';
+  lctx.beginPath();
+  lctx.roundRect(0, 0, 200, 44, 8);
+  lctx.fill();
+  lctx.fillStyle = shot.color;
+  lctx.font = 'bold 16px Inter, system-ui, sans-serif';
+  lctx.fillText('CAM ' + shot.id + '  ' + shot.name, 10, 30);
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: new THREE.CanvasTexture(lc),
+    transparent: true,
+    depthTest: false,
+  }));
+  sp.scale.set(1.6, 0.35, 1);
+  sp.position.copy(shot.pos).add(new THREE.Vector3(0, 0.55, 0));
+  frustumGroup.add(sp);
+
+  // Thumbnail plane on near plane
+  var NEAR = 0.38;
+  var nh = 2 * Math.tan(shot.fov * Math.PI / 360) * NEAR;
+  var nw = nh * (16 / 9);
+  var tc = document.createElement('canvas');
+  tc.width = 256; tc.height = 144;
+  drawThumb(tc, i, shot.color);
+  var thumbMat = new THREE.MeshBasicMaterial({
+    map: new THREE.CanvasTexture(tc),
+    side: THREE.DoubleSide,
+    transparent: true, opacity: 0.92,
+    depthWrite: false,
+  });
+  var thumbPlane = new THREE.Mesh(new THREE.PlaneGeometry(nw, nh), thumbMat);
+  thumbPlane.position.set(0, 0, NEAR);
+  thumbPlane.rotation.y = Math.PI;
+  grp.add(thumbPlane);
+
+  // Invisible hitbox for raycasting (larger sphere around camera)
+  var hitbox = new THREE.Mesh(
+    new THREE.SphereGeometry(0.55, 8, 8),
+    new THREE.MeshBasicMaterial({ visible: false, side: THREE.FrontSide })
+  );
+  hitbox.position.copy(shot.pos);
+  hitbox.userData.shotIdx = i;
+  hitboxGroup.add(hitbox);
+
+  camObjects.push({ grp, lines, body, thumbPlane, sprite: sp, hitbox });
+});
+
+function drawThumb(canvas, idx, color) {
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  const pals = [
+    ['#e8712a', '#c0541a', '#1a1526'],
+    ['#1462a0', '#0d3060', '#c8e8ff'],
+    ['#d4a040', '#a07020', '#1a1a1a'],
+    ['#5020a0', '#200050', '#10d090']
+  ];
+  const p = pals[idx % pals.length];
+  const grd = ctx.createLinearGradient(0, 0, 0, h);
+  grd.addColorStop(0, p[0]); grd.addColorStop(1, p[1]);
+  ctx.fillStyle = grd; ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = p[2];
+  ctx.fillRect(w * 0.36, h * 0.18, w * 0.28, h * 0.75);
+  ctx.fillRect(w * 0.26, h * 0.48, w * 0.48, h * 0.52);
+  ctx.fillStyle = 'rgba(255,255,255,0.12)';
+  for (var r = 0; r < 7; r++) {
+    for (var c = 0; c < 2; c++) {
+      ctx.fillRect(w * 0.39 + c * w * 0.11, h * 0.22 + r * h * 0.08, w * 0.08, h * 0.055);
+    }
+  }
+  const grd2 = ctx.createLinearGradient(0, h * 0.6, 0, h);
+  grd2.addColorStop(0, 'transparent'); grd2.addColorStop(1, 'rgba(0,0,0,0.5)');
+  ctx.fillStyle = grd2; ctx.fillRect(0, 0, w, h);
+  ctx.strokeStyle = color; ctx.lineWidth = 2.5;
+  var cs = 11;
+  [[0,0],[w,0],[0,h],[w,h]].forEach(function(xy) {
+    var x = xy[0], y = xy[1];
+    ctx.beginPath();
+    ctx.moveTo(x + (x ? -cs : cs), y);
+    ctx.lineTo(x, y);
+    ctx.lineTo(x, y + (y ? -cs : cs));
+    ctx.stroke();
+  });
+}
+
+// ──────────────────────────────────────────────
+// TRAJECTORY SPLINE
+// ──────────────────────────────────────────────
+const trajGrp = new THREE.Group();
+scene.add(trajGrp);
+
+var trajTube = null;
+var trajDots = [];
+
+function buildTrajectory() {
+  // Clear old
+  trajGrp.clear();
+
+  const splinePts = shots.map(function(s) { return s.pos.clone(); });
+  splinePts.push(shots[0].pos.clone());
+  const curve = new THREE.CatmullRomCurve3(splinePts, true, 'centripetal');
+
+  trajTube = new THREE.Mesh(
+    new THREE.TubeGeometry(curve, 140, 0.028, 8, true),
+    new THREE.MeshBasicMaterial({ color: 0x818cf8, transparent: true, opacity: 0.6 })
+  );
+  trajGrp.add(trajTube);
+
+  for (var di = 0; di < 50; di++) {
+    var dd = new THREE.Mesh(
+      new THREE.SphereGeometry(0.045, 6, 6),
+      new THREE.MeshBasicMaterial({ color: 0x6366f1, transparent: true, opacity: 0.25 + 0.2 * (di % 2) })
+    );
+    dd.position.copy(curve.getPoint(di / 50));
+    trajGrp.add(dd);
+  }
+  return curve;
+}
+
+var trajCurve = buildTrajectory();
+
+// Playhead
+const playhead = new THREE.Group(); scene.add(playhead);
+const phMesh = new THREE.Mesh(
+  new THREE.SphereGeometry(0.14, 14, 14),
+  new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xffffff, emissiveIntensity: 1 })
+);
+const phGlow = new THREE.PointLight(0xffffff, 2.5, 4);
+playhead.add(phMesh); playhead.add(phGlow);
+
+// ──────────────────────────────────────────────
+// CAMERA DRAG (MOVE MODE)
+// ──────────────────────────────────────────────
+const raycaster = new THREE.Raycaster();
+const mouse2D = new THREE.Vector2();
+let draggingCamIdx = -1;
+let dragPlane = new THREE.Plane();
+let dragStartOffset = new THREE.Vector3();
+
+function getMouseNDC(e) {
+  const rect = canvas.getBoundingClientRect();
+  return new THREE.Vector2(
+    ((e.clientX - rect.left) / rect.width) * 2 - 1,
+    -((e.clientY - rect.top) / rect.height) * 2 + 1
+  );
+}
+
+canvas.addEventListener('mousedown', function(e) {
+  if (interactMode !== 'move') return;
+  if (e.button !== 0) return;
+
+  const ndc = getMouseNDC(e);
+  raycaster.setFromCamera(ndc, camera);
+  const hits = raycaster.intersectObjects(hitboxGroup.children);
+
+  if (hits.length > 0) {
+    const idx = hits[0].object.userData.shotIdx;
+    draggingCamIdx = idx;
+    controls.enabled = false;
+    canvas.style.cursor = 'grabbing';
+
+    // Drag plane = horizontal plane at the camera's current height
+    dragPlane.setFromNormalAndCoplanarPoint(
+      new THREE.Vector3(0, 1, 0),
+      shots[idx].pos
+    );
+
+    // Offset from intersection to camera center (so camera doesn't jump)
+    const intersect = new THREE.Vector3();
+    raycaster.ray.intersectPlane(dragPlane, intersect);
+    dragStartOffset.copy(shots[idx].pos).sub(intersect);
+
+    setActiveShot(idx, false);
+    document.getElementById('drag-ring').classList.add('show');
+    document.getElementById('stxt').textContent = 'Dragging CAM' + (idx+1);
+  }
+});
+
+canvas.addEventListener('mousemove', function(e) {
+  if (interactMode === 'move') {
+    // Hover highlight
+    const ndc = getMouseNDC(e);
+    raycaster.setFromCamera(ndc, camera);
+    const hits = raycaster.intersectObjects(hitboxGroup.children);
+    canvas.style.cursor = (hits.length > 0 && draggingCamIdx === -1) ? 'grab' : (draggingCamIdx !== -1 ? 'grabbing' : 'default');
+  }
+
+  if (draggingCamIdx === -1 || interactMode !== 'move') return;
+
+  const ndc = getMouseNDC(e);
+  raycaster.setFromCamera(ndc, camera);
+
+  const newPos = new THREE.Vector3();
+  if (raycaster.ray.intersectPlane(dragPlane, newPos)) {
+    newPos.add(dragStartOffset);
+
+    const shot = shots[draggingCamIdx];
+    const delta = newPos.clone().sub(shot.pos);
+
+    // Move pos & target together (preserve aim direction)
+    shot.pos.copy(newPos);
+    shot.target.add(delta);
+
+    // Update 3D objects
+    const obj = camObjects[draggingCamIdx];
+    obj.grp.position.copy(shot.pos);
+    obj.grp.lookAt(shot.target);
+    obj.sprite.position.copy(shot.pos).add(new THREE.Vector3(0, 0.55, 0));
+    obj.hitbox.position.copy(shot.pos);
+
+    // Update position display in card
+    updateCardPos(draggingCamIdx);
+  }
+});
+
+canvas.addEventListener('mouseup', function(e) {
+  if (draggingCamIdx !== -1) {
+    controls.enabled = true;
+    draggingCamIdx = -1;
+    canvas.style.cursor = 'grab';
+    document.getElementById('drag-ring').classList.remove('show');
+
+    // Rebuild trajectory
+    trajCurve = buildTrajectory();
+    trajGrp.visible = showTraj;
+
+    document.getElementById('stxt').textContent = 'Ready';
+  }
+});
+
+// Touch support for drag
+canvas.addEventListener('touchstart', function(e) {
+  if (interactMode !== 'move') return;
+  e.preventDefault();
+  const touch = e.touches[0];
+  canvas.dispatchEvent(new MouseEvent('mousedown', { clientX: touch.clientX, clientY: touch.clientY, button: 0 }));
+}, { passive: false });
+
+canvas.addEventListener('touchmove', function(e) {
+  if (interactMode !== 'move') return;
+  e.preventDefault();
+  const touch = e.touches[0];
+  canvas.dispatchEvent(new MouseEvent('mousemove', { clientX: touch.clientX, clientY: touch.clientY }));
+}, { passive: false });
+
+canvas.addEventListener('touchend', function(e) {
+  canvas.dispatchEvent(new MouseEvent('mouseup', {}));
+});
+
+function updateCardPos(idx) {
+  var cards = document.querySelectorAll('.sc');
+  if (!cards[idx]) return;
+  var posEl = cards[idx].querySelector('.sc-pos');
+  if (!posEl) return;
+  var p = shots[idx].pos;
+  posEl.textContent = 'X:' + p.x.toFixed(1) + ' Y:' + p.y.toFixed(1) + ' Z:' + p.z.toFixed(1);
+}
+
+// ──────────────────────────────────────────────
+// RENDER LOOP
+// ──────────────────────────────────────────────
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = clock.getDelta();
+  const elapsed = clock.elapsedTime;
+
+  if (isPlaying) {
+    playT += dt / TOTAL_DUR;
+    if (playT >= 1) {
+      if (looping) { playT = 0; }
+      else { playT = 1; isPlaying = false; updatePlayBtn(); }
+    }
+    updateTimeUI();
+  }
+
+  const pt = trajCurve.getPoint(playT % 1);
+  playhead.position.copy(pt);
+  phGlow.intensity = 2 + Math.sin(elapsed * 4) * 0.8;
+
+  var tps = 1 / shots.length;
+  var newActive = Math.floor((playT % 1) / tps) % shots.length;
+  if (newActive !== activeShot && draggingCamIdx === -1) setActiveShot(newActive);
+
+  camObjects.forEach(function(obj, i) {
+    var on = i === activeShot;
+    obj.lines.material.opacity = on ? 1.0 : 0.28;
+    obj.lines.material.color.set(shots[i].color);
+    if (obj.thumbPlane) {
+      obj.thumbPlane.material.opacity = on ? 0.95 : 0.45;
+    }
+    obj.body.children.forEach(function(child) {
+      if (child.material && child.material.emissiveIntensity !== undefined) {
+        child.material.emissiveIntensity = on ? (0.3 + Math.sin(elapsed * 3) * 0.1) : 0.08;
+      }
+    });
+    // Hover glow when in move mode
+    if (interactMode === 'move') {
+      obj.lines.material.opacity = 0.55;
+    }
+  });
+
+  trajGrp.visible = showTraj;
+  frustumGroup.visible = showFrustums;
+
+  controls.update();
+  renderer.render(scene, camera);
+
+  var cp = camera.position;
+  document.getElementById('ix').textContent = cp.x.toFixed(1);
+  document.getElementById('iy').textContent = cp.y.toFixed(1);
+  document.getElementById('iz').textContent = cp.z.toFixed(1);
+  document.getElementById('it').textContent = playT.toFixed(2);
+  document.getElementById('iframe').textContent = String(Math.floor(playT * 240) + 1).padStart(3, '0');
+}
+animate();
+
+// ──────────────────────────────────────────────
+// ANIMATION HELPER
+// ──────────────────────────────────────────────
+function lerpVec(vec, end, ms, cb) {
+  var start = vec.clone(), endClone = end.clone(), t0 = performance.now();
+  function step(now) {
+    var p = Math.min((now - t0) / ms, 1);
+    var ease = 1 - Math.pow(1 - p, 3);
+    vec.lerpVectors(start, endClone, ease);
+    if (p < 1) requestAnimationFrame(step);
+    else if (cb) cb();
+  }
+  requestAnimationFrame(step);
+}
+
+function flyTo(pos, tgt, ms) {
+  lerpVec(camera.position, pos, ms || 600);
+  lerpVec(controls.target, tgt, ms || 600);
+}
+
+// ──────────────────────────────────────────────
+// SHOT CARDS
+// ──────────────────────────────────────────────
+function buildCards() {
+  var list = document.getElementById('shot-list');
+  list.innerHTML = '';
+  shots.forEach(function(shot, i) {
+    var card = document.createElement('div');
+    var isMove = interactMode === 'move';
+    card.className = 'sc' + (i === activeShot ? ' on' : '') + (isMove ? ' draggable' : '');
+    card.onclick = function() { selectShot(i); };
+
+    var tc = document.createElement('canvas');
+    tc.width = 320; tc.height = 180;
+    drawThumb(tc, i, shot.color);
+
+    var p = shot.pos;
+    card.innerHTML = [
+      '<div class="sc-thumb">',
+      '<div class="sc-vign"></div>',
+      '<div class="sc-num">CAM ' + shot.id + '</div>',
+      '<div class="sc-dur">' + shot.dur + '</div>',
+      '<div class="sc-cdot" style="background:' + shot.color + '"></div>',
+      '<button class="sc-pov" onclick="event.stopPropagation();goToCamPOV(' + i + ')">&#x25B6; POV</button>',
+      '<div class="sc-move-icon">&#x2316;</div>',
+      '</div>',
+      '<div class="sc-body">',
+      '<div class="sc-name">' + shot.name + '</div>',
+      '<div class="sc-pos">X:' + p.x.toFixed(1) + ' Y:' + p.y.toFixed(1) + ' Z:' + p.z.toFixed(1) + '</div>',
+      '<div class="sc-prompt">' + shot.prompt + '</div>',
+      '</div>',
+      '<div class="sc-foot">',
+      '<button class="sc-btn gen" id="gen-card-' + i + '" onclick="event.stopPropagation();doGenerate(' + i + ')">&#x2605; Gen</button>',
+      '<button class="sc-btn" onclick="event.stopPropagation()">Edit</button>',
+      '<button class="sc-btn" onclick="event.stopPropagation()">Del</button>',
+      '</div>'
+    ].join('');
+
+    var thumbDiv = card.querySelector('.sc-thumb');
+    thumbDiv.insertBefore(tc, thumbDiv.firstChild);
+    list.appendChild(card);
+  });
+}
+
+function buildTimeline() {
+  var bot = document.getElementById('tl-bot');
+  bot.innerHTML = '';
+  shots.forEach(function(shot, i) {
+    var s = document.createElement('div');
+    s.className = 'tl-seg' + (i === activeShot ? ' on' : '');
+    s.style.cssText = 'background:' + shot.color + ';width:' + shot.tlW + 'px;opacity:' + (i === activeShot ? '1' : '0.6');
+    s.textContent = 'CAM' + shot.id;
+    s.onclick = function() { seekTo(i / shots.length); };
+    bot.appendChild(s);
+    if (i < shots.length - 1) {
+      var g = document.createElement('div'); g.className = 'tl-gap'; bot.appendChild(g);
+    }
+  });
+  var lbl = document.createElement('span');
+  lbl.className = 'tl-lbl'; lbl.textContent = '8s · 4 shots';
+  bot.appendChild(lbl);
+}
+
+function setActiveShot(idx, seek) {
+  activeShot = idx;
+  if (seek) { playT = idx / shots.length; updateTimeUI(); }
+  document.getElementById('btxt').textContent = 'CAM ' + shots[idx].id + ' — ' + shots[idx].name;
+  document.getElementById('bdot').style.background = shots[idx].color;
+  document.getElementById('pa-in').value = shots[idx].prompt;
+  document.querySelectorAll('.sc').forEach(function(c, i) { c.classList.toggle('on', i === idx); });
+  document.querySelectorAll('.tl-seg').forEach(function(s, i) { s.classList.toggle('on', i === idx); s.style.opacity = i === idx ? '1' : '0.6'; });
+  var cards = document.querySelectorAll('.sc');
+  if (cards[idx]) cards[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  document.getElementById('pov-label').textContent = 'CAM ' + shots[idx].id + ' — ' + shots[idx].name;
+  if (interactMode === 'cam') flyToCamPOV(idx);
+}
+
+function selectShot(idx) {
+  setActiveShot(idx, true);
+  if (interactMode === 'orbit') orbitToShowCamera(idx);
+}
+
+function orbitToShowCamera(idx) {
+  var shot = shots[idx];
+  var dir = shot.target.clone().sub(shot.pos).normalize();
+  var up = new THREE.Vector3(0, 1, 0);
+  if (Math.abs(dir.dot(up)) > 0.92) up.set(0, 0, 1);
+  var right = dir.clone().cross(up).normalize();
+  var camUp = right.clone().cross(dir).normalize();
+  var viewPos = shot.pos.clone()
+    .addScaledVector(dir, -2.8)
+    .addScaledVector(camUp, 1.2)
+    .addScaledVector(right, 0.6);
+  flyTo(viewPos, shot.pos, 680);
+}
+
+function flyToCamPOV(idx) {
+  flyTo(shots[idx].pos.clone(), shots[idx].target.clone(), 550);
+}
+
+// ──────────────────────────────────────────────
+// QWEN / WANX IMAGE GENERATION
+// ──────────────────────────────────────────────
+
+// Update thumbnail in both 3D near-plane and shot card
+function updateShotThumb(idx, imageUrl) {
+  var img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.onload = function() {
+    // Update 3D near-plane texture
+    var tc = document.createElement('canvas');
+    tc.width = 512; tc.height = 288;
+    var ctx = tc.getContext('2d');
+    ctx.drawImage(img, 0, 0, 512, 288);
+    camObjects[idx].thumbPlane.material.map = new THREE.CanvasTexture(tc);
+    camObjects[idx].thumbPlane.material.needsUpdate = true;
+
+    // Update shot card thumbnail
+    var cards = document.querySelectorAll('.sc');
+    if (cards[idx]) {
+      var thumbCanvas = cards[idx].querySelector('canvas');
+      if (thumbCanvas) {
+        var ctx2 = thumbCanvas.getContext('2d');
+        ctx2.drawImage(img, 0, 0, thumbCanvas.width, thumbCanvas.height);
+      }
+    }
+    document.getElementById('stxt').textContent = 'CAM' + (idx + 1) + ' updated';
+  };
+  img.onerror = function() {
+    // Try without CORS (for some CDN images)
+    var img2 = new Image();
+    img2.onload = function() {
+      try {
+        var tc = document.createElement('canvas');
+        tc.width = 512; tc.height = 288;
+        tc.getContext('2d').drawImage(img2, 0, 0, 512, 288);
+        camObjects[idx].thumbPlane.material.map = new THREE.CanvasTexture(tc);
+        camObjects[idx].thumbPlane.material.needsUpdate = true;
+      } catch(err) { console.warn('CORS restricted image, cannot draw to canvas'); }
+    };
+    img2.src = imageUrl;
+  };
+  img.src = imageUrl;
+}
+
+function setGenProgress(pct) {
+  document.getElementById('gen-prog-fill').style.width = pct + '%';
+  document.getElementById('gen-bar-fill') && (document.getElementById('gen-bar-fill').style.width = pct + '%');
+}
+
+async function callDashScopeAsync(prompt, apiKey, model, size) {
+  // Step 1: Submit task
+  var submitRes = await fetch('https://dashscope.aliyuncs.com/api/v1/services/aigc/image-generation/generation', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + apiKey,
+      'X-DashScope-Async': 'enable'
+    },
+    body: JSON.stringify({
+      model: model,
+      input: {
+        prompt: prompt,
+        negative_prompt: 'blurry, low quality, distorted, text, watermark'
+      },
+      parameters: {
+        size: size,
+        n: 1,
+        style: '<photography>'
+      }
+    })
+  });
+
+  if (!submitRes.ok) {
+    var err = await submitRes.text();
+    throw new Error('DashScope submit failed: ' + err);
+  }
+
+  var submitData = await submitRes.json();
+  var taskId = submitData.output && submitData.output.task_id;
+  if (!taskId) throw new Error('No task_id returned');
+
+  // Step 2: Poll for result
+  var maxPolls = 60;
+  for (var poll = 0; poll < maxPolls; poll++) {
+    await new Promise(function(r) { setTimeout(r, 2000); });
+    setGenProgress(20 + (poll / maxPolls) * 75);
+
+    var pollRes = await fetch('https://dashscope.aliyuncs.com/api/v1/tasks/' + taskId, {
+      headers: { 'Authorization': 'Bearer ' + apiKey }
+    });
+    var pollData = await pollRes.json();
+    var status = pollData.output && pollData.output.task_status;
+
+    if (status === 'SUCCEEDED') {
+      var results = pollData.output.results;
+      if (results && results.length > 0 && results[0].url) {
+        return results[0].url;
+      }
+      throw new Error('No image URL in result');
+    }
+    if (status === 'FAILED') {
+      throw new Error('Task failed: ' + JSON.stringify(pollData.output));
+    }
+  }
+  throw new Error('Timeout waiting for generation');
+}
+
+async function callHuggingFace(prompt, token) {
+  // Fallback: FLUX via HF Inference API
+  var res = await fetch('https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Content-Type': 'application/json',
+      'Accept': 'image/png'
+    },
+    body: JSON.stringify({
+      inputs: prompt,
+      parameters: { width: 1280, height: 720, num_inference_steps: 28, guidance_scale: 3.5 }
+    })
+  });
+  if (!res.ok) throw new Error('HF API error: ' + res.status);
+  var blob = await res.blob();
+  return URL.createObjectURL(blob);
+}
+
+window.doGenerate = async function(idx) {
+  var key = dashApiKey || localStorage.getItem('cf_dashkey') || '';
+  var hf = hfToken || localStorage.getItem('cf_hftoken') || '';
+
+  if (!key && !hf) {
+    alert('Please add your DashScope API key in the AI / API tab to enable generation.');
+    window.switchTab('api', document.querySelectorAll('.sbt')[1]);
+    return;
+  }
+
+  var prompt = shots[idx].prompt;
+  var model = selectedModel || 'wanx2.1-t2i-plus';
+  var size = selectedSize || '1280*720';
+
+  // UI: loading state
+  var ovl = document.getElementById('gen-ovl');
+  var progBar = document.getElementById('gen-progress-bar');
+  var genBtn = document.getElementById('gen-btn');
+  var cardBtn = document.getElementById('gen-card-' + idx);
+
+  ovl.classList.add('show');
+  progBar && progBar.classList.add('show');
+  if (genBtn) genBtn.disabled = true;
+  if (cardBtn) { cardBtn.disabled = true; cardBtn.textContent = '...'; }
+  setGenProgress(5);
+
+  var steps = key ? [
+    [model, 'Submitting task...'],
+    [model, 'Queueing generation...'],
+    [model, 'Rendering frames...'],
+    [model, 'Post-processing...'],
+  ] : [
+    ['FLUX.1-dev', 'Connecting to HF...'],
+    ['FLUX.1-dev', 'Generating image...'],
+  ];
+
+  document.getElementById('gen-model').textContent = steps[0][0];
+  document.getElementById('gen-step').textContent = steps[0][1];
+
+  // Cycle step labels while waiting
+  var stepI = 0;
+  var stepTimer = setInterval(function() {
+    stepI = (stepI + 1) % steps.length;
+    document.getElementById('gen-model').textContent = steps[stepI][0];
+    document.getElementById('gen-step').textContent = steps[stepI][1];
+  }, 2200);
+
+  try {
+    var imageUrl;
+    if (key) {
+      imageUrl = await callDashScopeAsync(prompt, key, model, size);
+    } else {
+      setGenProgress(30);
+      imageUrl = await callHuggingFace(prompt, hf);
+    }
+
+    clearInterval(stepTimer);
+    setGenProgress(100);
+    document.getElementById('gen-model').textContent = 'Complete!';
+    document.getElementById('gen-step').textContent = 'Updating thumbnail...';
+
+    updateShotThumb(idx, imageUrl);
+
+    setTimeout(function() {
+      ovl.classList.remove('show');
+      progBar && progBar.classList.remove('show');
+      setGenProgress(0);
+      if (genBtn) genBtn.disabled = false;
+      if (cardBtn) { cardBtn.disabled = false; cardBtn.innerHTML = '&#x2605; Gen'; }
+    }, 800);
+
+  } catch(err) {
+    clearInterval(stepTimer);
+    ovl.classList.remove('show');
+    progBar && progBar.classList.remove('show');
+    setGenProgress(0);
+    if (genBtn) genBtn.disabled = false;
+    if (cardBtn) { cardBtn.disabled = false; cardBtn.innerHTML = '&#x2605; Gen'; }
+
+    // Show error
+    var errMsg = err.message || String(err);
+    if (errMsg.includes('Failed to fetch') || errMsg.includes('NetworkError')) {
+      document.getElementById('stxt').textContent = 'CORS error — need backend proxy';
+      alert('CORS Error: DashScope API does not allow direct browser requests.\n\nSolution: Run CinemaForge behind a local proxy server, or use the HuggingFace token fallback.\n\nError: ' + errMsg);
+    } else {
+      document.getElementById('stxt').textContent = 'Gen error';
+      alert('Generation failed:\n' + errMsg);
+    }
+  }
+};
+
+// ──────────────────────────────────────────────
+// WINDOW-EXPOSED CONTROLS
+// ──────────────────────────────────────────────
+window.activeShot = activeShot;
+
+window.switchTab = function(name, btn) {
+  document.querySelectorAll('.sbt').forEach(function(b) { b.classList.remove('on'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('on'); });
+  if (btn) btn.classList.add('on');
+  var panel = document.getElementById('tab-' + name);
+  if (panel) panel.classList.add('on');
+};
+
+window.saveApiKey = function() {
+  var key = document.getElementById('api-key').value.trim();
+  if (!key) return;
+  dashApiKey = key;
+  localStorage.setItem('cf_dashkey', key);
+  var badge = document.getElementById('api-status-badge');
+  badge.className = 'api-badge ok';
+  badge.textContent = '● Configured';
+  document.getElementById('stxt').textContent = 'API key saved';
+};
+
+window.saveHFToken = function() {
+  var token = document.getElementById('hf-token').value.trim();
+  if (!token) return;
+  hfToken = token;
+  localStorage.setItem('cf_hftoken', token);
+  document.getElementById('stxt').textContent = 'HF token saved';
+};
+
+window.selectModel = function(model, btn) {
+  selectedModel = model;
+  localStorage.setItem('cf_model', model);
+  document.querySelectorAll('.api-model-btn').forEach(function(b) { b.classList.remove('on'); });
+  if (btn) btn.classList.add('on');
+  // Sync model display name
+  var names = { 'wanx2.1-t2i-plus':'Wanx2.1-T2I', 'wanx2.1-imageedit':'Wanx2.1-Edit', 'wanx2.1-t2i-turbo':'Wanx2.1-Turbo' };
+  document.getElementById('model-name').textContent = names[model] || model;
+};
+
+window.setInteractMode = function(mode, btn) {
+  var prevMode = interactMode;
+  interactMode = mode;
+  document.querySelectorAll('#tb .btn').forEach(function(b) { b.classList.remove('on'); });
+  if (btn) btn.classList.add('on');
+  document.getElementById('imode').textContent = mode.toUpperCase();
+  document.getElementById('move-banner').classList.toggle('show', mode === 'move');
+
+  // Update card styles for move mode
+  document.querySelectorAll('.sc').forEach(function(c) {
+    c.classList.toggle('draggable', mode === 'move');
+  });
+
+  if (mode === 'orbit') {
+    controls.enabled = true;
+    canvas.style.cursor = '';
+    document.getElementById('pov-frame').classList.remove('show');
+    if (savedPos && prevMode === 'cam') flyTo(savedPos.clone(), savedTarget ? savedTarget.clone() : new THREE.Vector3(0, 3, 0), 600);
+  } else if (mode === 'move') {
+    controls.enabled = true; // orbit still works, drag overrides
+    canvas.style.cursor = 'grab';
+    document.getElementById('pov-frame').classList.remove('show');
+  } else if (mode === 'cam') {
+    controls.enabled = false;
+    canvas.style.cursor = '';
+    savedPos = camera.position.clone();
+    savedTarget = controls.target.clone();
+    document.getElementById('pov-frame').classList.add('show');
+    flyToCamPOV(activeShot);
+  }
+};
+
+window.goToCamPOV = function(idx) {
+  setActiveShot(idx);
+  savedPos = camera.position.clone();
+  savedTarget = controls.target.clone();
+  interactMode = 'cam';
+  document.querySelectorAll('#tb .btn').forEach(function(b) { b.classList.remove('on'); });
+  document.getElementById('mode-cam').classList.add('on');
+  controls.enabled = false;
+  document.getElementById('pov-frame').classList.add('show');
+  document.getElementById('imode').textContent = 'CAM POV';
+  flyToCamPOV(idx);
+};
+
+window.setViewAngle = function(angle, btn) {
+  if (interactMode === 'cam') {
+    interactMode = 'orbit';
+    controls.enabled = true;
+    document.getElementById('pov-frame').classList.remove('show');
+    document.querySelectorAll('#tb .btn').forEach(function(b) { b.classList.remove('on'); });
+    document.getElementById('mode-orbit').classList.add('on');
+  }
+  document.querySelectorAll('.mb').forEach(function(b) { b.classList.remove('on'); });
+  if (btn) btn.classList.add('on');
+  document.getElementById('imode').textContent = angle.toUpperCase();
+
+  var presets = {
+    persp: { pos: new THREE.Vector3(-13, 10, 15), tgt: new THREE.Vector3(0, 3, 0) },
+    top:   { pos: new THREE.Vector3(0, 28, 0.01), tgt: new THREE.Vector3(0, 0, 0) },
+    front: { pos: new THREE.Vector3(0, 5, 24),    tgt: new THREE.Vector3(0, 5, 0) },
+    side:  { pos: new THREE.Vector3(24, 5, 0),    tgt: new THREE.Vector3(0, 5, 0) },
+  };
+  var pr = presets[angle];
+  if (pr) flyTo(pr.pos, pr.tgt, 600);
+};
+
+window.zoomIn  = function() { var d = controls.target.clone().sub(camera.position); camera.position.addScaledVector(d, 0.28); };
+window.zoomOut = function() { var d = camera.position.clone().sub(controls.target).normalize(); camera.position.addScaledVector(d, 2.5); };
+window.fitAll  = function() { flyTo(new THREE.Vector3(-13, 10, 15), new THREE.Vector3(0, 3, 0), 700); };
+
+window.toggleTraj     = function() { showTraj = !showTraj; trajGrp.visible = showTraj; };
+window.toggleFrustums = function() { showFrustums = !showFrustums; frustumGroup.visible = showFrustums; };
+
+window.toggleSidebar = function() {
+  var sb = document.getElementById('sb');
+  var toggle = document.getElementById('sb-toggle');
+  var collapsed = sb.classList.toggle('collapsed');
+  toggle.classList.toggle('collapsed', collapsed);
+  toggle.innerHTML = collapsed ? '&#x276F;' : '&#x276E;';
+  setTimeout(resize, 260);
+};
+
+window.addShot = function() {
+  var btn = document.querySelector('.add-btn');
+  if (btn) { btn.textContent = 'Shot added!'; btn.style.color = 'var(--green)'; btn.style.borderColor = 'var(--green)'; }
+  setTimeout(function() { if(btn){btn.textContent='+ Add Shot';btn.style.color=btn.style.borderColor='';} }, 1600);
+};
+
+window.cycleModel = function() {
+  modelIdx = (modelIdx + 1) % MODELS_CYCLE.length;
+  document.getElementById('model-name').textContent = MODELS_CYCLE[modelIdx];
+};
+
+window.togglePlay = function() {
+  isPlaying = !isPlaying;
+  if (isPlaying && playT >= 1) playT = 0;
+  updatePlayBtn();
+};
+
+function updatePlayBtn() {
+  document.getElementById('play-ico').innerHTML = isPlaying
+    ? '<rect x="2" y="1.5" width="2.5" height="7" rx=".4" fill="white"/><rect x="5.5" y="1.5" width="2.5" height="7" rx=".4" fill="white"/>'
+    : '<path d="M2.5 1.5l6 3.5-6 3.5V1.5z" fill="white"/>';
+  document.getElementById('sdot').style.background = isPlaying ? 'var(--amber)' : 'var(--green)';
+  document.getElementById('sdot').style.boxShadow  = isPlaying ? '0 0 5px var(--amber)' : '0 0 5px var(--green)';
+  document.getElementById('stxt').textContent = isPlaying ? 'Playing' : 'Ready';
+}
+
+window.seekTo = function(t) {
+  playT = Math.max(0, Math.min(1, t));
+  updateTimeUI();
+  var idx = Math.floor((playT % 1) / (1 / shots.length)) % shots.length;
+  if (idx !== activeShot) setActiveShot(idx);
+};
+
+window.scrubClick = function(e) {
+  var r = document.getElementById('scrub').getBoundingClientRect();
+  window.seekTo((e.clientX - r.left) / r.width);
+};
+
+window.toggleLoop = function() {
+  looping = !looping;
+  document.getElementById('loop-btn').style.color = looping ? 'var(--a2)' : '';
+};
+
+function updateTimeUI() {
+  var s = playT * TOTAL_DUR;
+  var m = Math.floor(s / 60), ss = Math.floor(s % 60);
+  document.getElementById('tl-time').textContent = m + ':' + String(ss).padStart(2, '0');
+  document.getElementById('scrub-fill').style.width = (playT * 100) + '%';
+  document.getElementById('scrub-head').style.left  = (playT * 100) + '%';
+  document.getElementById('iframe').textContent = String(Math.floor(playT * 240) + 1).padStart(3, '0');
+}
+
+// ──────────────────────────────────────────────
+// KEYBOARD SHORTCUTS
+// ──────────────────────────────────────────────
+document.addEventListener('keydown', function(e) {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.code === 'Space') { e.preventDefault(); window.togglePlay(); }
+  if (e.code === 'ArrowRight') window.seekTo(playT + 1 / shots.length);
+  if (e.code === 'ArrowLeft')  window.seekTo(playT - 1 / shots.length);
+  if (e.code === 'KeyF') window.fitAll();
+  if (e.code === 'KeyG') { // G = Generate active shot
+    window.doGenerate(activeShot);
+  }
+  if (e.code === 'KeyM') { // M = Toggle Move mode
+    var btn = document.getElementById(interactMode === 'move' ? 'mode-orbit' : 'mode-move');
+    window.setInteractMode(interactMode === 'move' ? 'orbit' : 'move', btn);
+  }
+  if (e.code === 'KeyC') {
+    var btn2 = document.getElementById(interactMode === 'cam' ? 'mode-orbit' : 'mode-cam');
+    window.setInteractMode(interactMode === 'cam' ? 'orbit' : 'cam', btn2);
+  }
+  if (e.code === 'Escape') {
+    if (interactMode !== 'orbit') {
+      window.setInteractMode('orbit', document.getElementById('mode-orbit'));
+    }
+  }
+});
+
+// ──────────────────────────────────────────────
+// INIT API UI STATE
+// ──────────────────────────────────────────────
+(function initAPIUI() {
+  if (dashApiKey) {
+    document.getElementById('api-key').value = dashApiKey;
+    var badge = document.getElementById('api-status-badge');
+    badge.className = 'api-badge ok';
+    badge.textContent = '● Configured';
+  }
+  if (hfToken) {
+    document.getElementById('hf-token').value = hfToken;
+  }
+  // Set active model button
+  var modelMap = { 'wanx2.1-t2i-plus':'mdl-t2i', 'wanx2.1-imageedit':'mdl-edit', 'wanx2.1-t2i-turbo':'mdl-turbo' };
+  var activeModelBtn = modelMap[selectedModel];
+  if (activeModelBtn) {
+    document.querySelectorAll('.api-model-btn').forEach(function(b) { b.classList.remove('on'); });
+    var btn = document.getElementById(activeModelBtn);
+    if (btn) btn.classList.add('on');
+  }
+  if (selectedSize) {
+    document.getElementById('api-size').value = selectedSize;
+  }
+  document.getElementById('api-size').addEventListener('change', function() {
+    selectedSize = this.value;
+    localStorage.setItem('cf_size', selectedSize);
+  });
+})();
+
+// ──────────────────────────────────────────────
+// INIT
+// ──────────────────────────────────────────────
+buildCards();
+buildTimeline();
+updateTimeUI();
+</script>
+</body>
+</html>

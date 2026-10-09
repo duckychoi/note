@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — '1달러 넣으면 5달러 번다'는 기지국 앞에서, 버라이즌 CTO는 '지금 비용으론 말이 안 된다'고 했다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — '1달러 넣으면 5달러 번다'는 기지국 앞에서, 버라이즌 CTO는 '지금 비용으론 말이 안 된다'고 했다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — '1달러 넣으면 5달러 번다'는 기지국 앞에서, 버라이즌 CTO는 '지금 비용으론 말이 안 된다'고 했다"/><meta name="twitter:description" content="2026년 10월 기준 AI-RAN(인공지능 기반 무선접속망)과 텔코 AI의 현주소를 정리했습니다. 노키아가 2026년 7월 15일 내놓은 '세계 최초 상용 AI-RAN 플랫폼'과 2028년 주파수 효율 100% 향상 목표, 에릭슨이 GPU 없이 베이스밴드에서 만들어낸 하향 처리량 20%·주파수 효율 10% 개선과 15개 이상 배포, 소프트뱅크 AITRAS가 제시한 '유휴 용량 3분의 2를 AI 추론으로 판다'는 모델과 자본 1달러당 5달러 주장, SKT가 과기정통부·NIA 사업으로 착수한 AI-RAN 선도망과 삼성·HFR·에릭슨·노키아 4사 동시 실증, 그리고 버라이즌·오렌지·삼성이 공개적으로 제기한 전력·비용 반박까지. 통신사가 기지국을 'AI 수익 자산'으로 바꾸려는 시도가 어디까지 왔고 어디서 막혔는지 짚습니다."/><meta property="og:description" content="2026년 10월 기준 AI-RAN(인공지능 기반 무선접속망)과 텔코 AI의 현주소를 정리했습니다. 노키아가 2026년 7월 15일 내놓은 '세계 최초 상용 AI-RAN 플랫폼'과 2028년 주파수 효율 100% 향상 목표, 에릭슨이 GPU 없이 베이스밴드에서 만들어낸 하향 처리량 20%·주파수 효율 10% 개선과 15개 이상 배포, 소프트뱅크 AITRAS가 제시한 '유휴 용량 3분의 2를 AI 추론으로 판다'는 모델과 자본 1달러당 5달러 주장, SKT가 과기정통부·NIA 사업으로 착수한 AI-RAN 선도망과 삼성·HFR·에릭슨·노키아 4사 동시 실증, 그리고 버라이즌·오렌지·삼성이 공개적으로 제기한 전력·비용 반박까지. 통신사가 기지국을 'AI 수익 자산'으로 바꾸려는 시도가 어디까지 왔고 어디서 막혔는지 짚습니다."/><meta property="og:image:alt" content="2026년 10월 기준 AI-RAN(인공지능 기반 무선접속망)과 텔코 AI의 현주소를 정리했습니다. 노키아가 2026년 7월 15일 내놓은 '세계 최초 상용 AI-RAN 플랫폼'과 2028년 주파수 효율 100% 향상 목표, 에릭슨이 GPU 없이 베이스밴드에서 만들어낸 하향 처리량 20%·주파수 효율 10% 개선과 15개 이상 배포, 소프트뱅크 AITRAS가 제시한 '유휴 용량 3분의 2를 AI 추론으로 판다'는 모델과 자본 1달러당 5달러 주장, SKT가 과기정통부·NIA 사업으로 착수한 AI-RAN 선도망과 삼성·HFR·에릭슨·노키아 4사 동시 실증, 그리고 버라이즌·오렌지·삼성이 공개적으로 제기한 전력·비용 반박까지. 통신사가 기지국을 'AI 수익 자산'으로 바꾸려는 시도가 어디까지 왔고 어디서 막혔는지 짚습니다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/drafts/2026-10-02"/><meta property="twitter:url" content="https://duckychoi.github.io/note/drafts/2026-10-02"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="2026년 10월 기준 AI-RAN(인공지능 기반 무선접속망)과 텔코 AI의 현주소를 정리했습니다. 노키아가 2026년 7월 15일 내놓은 '세계 최초 상용 AI-RAN 플랫폼'과 2028년 주파수 효율 100% 향상 목표, 에릭슨이 GPU 없이 베이스밴드에서 만들어낸 하향 처리량 20%·주파수 효율 10% 개선과 15개 이상 배포, 소프트뱅크 AITRAS가 제시한 '유휴 용량 3분의 2를 AI 추론으로 판다'는 모델과 자본 1달러당 5달러 주장, SKT가 과기정통부·NIA 사업으로 착수한 AI-RAN 선도망과 삼성·HFR·에릭슨·노키아 4사 동시 실증, 그리고 버라이즌·오렌지·삼성이 공개적으로 제기한 전력·비용 반박까지. 통신사가 기지국을 'AI 수익 자산'으로 바꾸려는 시도가 어디까지 왔고 어디서 막혔는지 짚습니다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/drafts/2026-10-02-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/drafts/2026-10-02-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/drafts/2026-10-02-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="drafts/2026-10-02" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-242" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-242" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../drafts/">drafts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — '1달러 넣으면 5달러 번다'는 기지국 앞에서, 버라이즌 CTO는 '지금 비용으론 말이 안 된다'고 했다</a></div></nav><h1 class="article-title">AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — '1달러 넣으면 5달러 번다'는 기지국 앞에서, 버라이즌 CTO는 '지금 비용으론 말이 안 된다'고 했다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">description</td><td class="note-properties-value metadata-property-value"><span class="note-properties-text">2026년 10월 기준 AI-RAN(인공지능 기반 무선접속망)과 텔코 AI의 현주소를 정리했습니다. 노키아가 2026년 7월 15일 내놓은 '세계 최초 상용 AI-RAN 플랫폼'과 2028년 주파수 효율 100% 향상 목표, 에릭슨이 GPU 없이 베이스밴드에서 만들어낸 하향 처리량 20%·주파수 효율 10% 개선과 15개 이상 배포, 소프트뱅크 AITRAS가 제시한 '유휴 용량 3분의 2를 AI 추론으로 판다'는 모델과 자본 1달러당 5달러 주장, SKT가 과기정통부·NIA 사업으로 착수한 AI-RAN 선도망과 삼성·HFR·에릭슨·노키아 4사 동시 실증, 그리고 버라이즌·오렌지·삼성이 공개적으로 제기한 전력·비용 반박까지. 통신사가 기지국을 'AI 수익 자산'으로 바꾸려는 시도가 어디까지 왔고 어디서 막혔는지 짚습니다.</span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-10-02T00:00:00.000Z">2026년 10월 02일</time><span>96 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="ai-ran텔코-ai-완전-정복-2026-엔비디아노키아-vs-에릭슨-vs-삼성skt-vs-소프트뱅크-aitras--1달러-넣으면-5달러-번다는-기지국-앞에서-버라이즌-cto는-지금-비용으론-말이-안-된다고-했다">AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — ‘1달러 넣으면 5달러 번다’는 기지국 앞에서, 버라이즌 CTO는 ‘지금 비용으론 말이 안 된다’고 했다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-ran텔코-ai-완전-정복-2026-엔비디아노키아-vs-에릭슨-vs-삼성skt-vs-소프트뱅크-aitras--1달러-넣으면-5달러-번다는-기지국-앞에서-버라이즌-cto는-지금-비용으론-말이-안-된다고-했다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="목차">목차<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><a href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0" class="internal internal-link alias">들어가며: 2026년, 기지국에서 나온 두 개의 상반된 선언</a></li>
+<li><a href="#%EC%88%AB%EC%9E%90" class="internal internal-link alias">숫자로 보는 2026년 AI-RAN</a></li>
+<li><a href="#%EA%B0%9C%EB%85%90" class="internal internal-link alias">개념 정리: AI-RAN은 하나가 아니라 세 개의 다른 사업이다</a></li>
+<li><a href="#%EC%A0%84%EC%84%A01" class="internal internal-link alias">전선 ①: AI-for-RAN — 에릭슨이 GPU 없이 먼저 숫자를 냈다</a></li>
+<li><a href="#%EC%A0%84%EC%84%A02" class="internal internal-link alias">전선 ②: AI-and-RAN — 노키아·엔비디아의 ‘세계 최초 상용’ 플랫폼</a></li>
+<li><a href="#%EC%A0%84%EC%84%A03" class="internal internal-link alias">전선 ③: AI-on-RAN — 소프트뱅크 AITRAS와 ‘유휴 3분의 2’</a></li>
+<li><a href="#%EC%A0%84%EC%84%A04" class="internal internal-link alias">전선 ④: 한국 — SKT의 AI-RAN 선도망, 그리고 삼성이 선 자리</a></li>
+<li><a href="#%EB%8F%88" class="internal internal-link alias">돈의 문제: 통신사는 왜 지금 기지국을 다시 파헤치는가</a></li>
+<li><a href="#%EA%B5%AD%EB%82%B4" class="internal internal-link alias">국내: 통신 3사의 진짜 AI 승부는 기지국이 아니라 데이터센터다</a></li>
+<li><a href="#%EC%A7%84%EC%8B%A41" class="internal internal-link alias">불편한 진실 ①: 전력 — “스쿠터에 V8 엔진을 얹는 일”</a></li>
+<li><a href="#%EC%A7%84%EC%8B%A42" class="internal internal-link alias">불편한 진실 ②: 수요 — 엣지 추론을 대체 누가 사는가</a></li>
+<li><a href="#%EC%A7%84%EC%8B%A43" class="internal internal-link alias">불편한 진실 ③: 표준 — 6G는 2029년이고, 그 전까지는 전부 ‘비표준’이다</a></li>
+<li><a href="#%EB%B9%84%EA%B5%90" class="internal internal-link alias">한눈에 비교</a></li>
+<li><a href="#%EB%AC%B8%EC%A0%9C" class="internal internal-link alias">아직 해결되지 않은 문제 7가지</a></li>
+<li><a href="#%EA%B4%80%EC%A0%84%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="internal internal-link alias">실무자·투자자·일반 독자를 위한 관전 포인트 8</a></li>
+<li><a href="#faq" class="internal internal-link alias">자주 묻는 질문(FAQ)</a></li>
+<li><a href="#%EB%A7%88%EC%B9%98%EB%A9%B0" class="internal internal-link alias">마치며</a></li>
+</ol>
+<hr/>
+<p><a id="들어가며"></a></p>
+<h2 id="1-들어가며-2026년-기지국에서-나온-두-개의-상반된-선언">1. 들어가며: 2026년, 기지국에서 나온 두 개의 상반된 선언<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-들어가며-2026년-기지국에서-나온-두-개의-상반된-선언" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026년 통신 산업 뉴스를 순서대로 읽으면, 같은 기술을 두고 정반대 방향을 가리키는 문장이 번갈아 나온다.</p>
+<p>하나는 2026년 7월 15일, 핀란드에서 나왔다.</p>
+<p><strong>노키아가 “업계 최초의 상용 AI-RAN 플랫폼”을 발표했다.</strong> 자사 소프트웨어 플랫폼인 anyRAN 위에 엔비디아의 Aerial AI-RAN 컴퓨팅을 결합한 구성이다. 노키아가 제시한 목표 숫자는 이렇다. 초기 단계에서 <strong>주파수 효율 20% 이상 개선</strong>, 2027년 <strong>최대 50%</strong>, 그리고 <strong>2028년에는 100% 이상</strong> — 다시 말해, 기지국 하드웨어를 더 세우지 않고 소프트웨어 업데이트만으로 <strong>같은 주파수에서 용량을 두 배로 쓰겠다</strong>는 선언이다. 파일럿은 2026년 말, 상용 공급은 2027년이다.</p>
+<p>여기에 엔비디아와 소프트뱅크가 붙인 수익 모델은 더 과감하다. <strong>AI-RAN 설비에 자본 1달러를 넣으면, AI 추론 매출로 약 5달러를 번다.</strong> 소프트뱅크는 AI-RAN 서버 한 대를 추가할 때 <strong>최대 219%의 투자 수익률</strong>을 기대할 수 있다고 추정했다. 통신사의 기지국이 비용 센터에서 <strong>“AI 수익 창출 자산(AI revenue producing asset)”</strong> 으로 바뀐다는 서사다.</p>
+<p>다른 하나는, 같은 기술에 대한 통신사 임원들의 발언이다.</p>
+<p>**버라이즌 최고기술책임자(CTO)**는 GPU 기반 접근이 <strong>“적어도 현재 형태로는 아직 뜨지 않을 것”</strong> 이라고 했다. 비용 측면에서 지금은 말이 안 된다는 것이다.</p>
+<p><strong>오렌지의 무선 혁신 담당 임원</strong>은 더 직접적이었다. <em>“우리는 솔직히 RAN 소프트웨어를 GPU 위에서 돌리는 데 찬성할 강력한 논거를 보지 못하고 있다. 특히 비용 관점에서.”</em></p>
+<p><strong>삼성전자 네트워크 사업 책임자</strong>도 회의적인 쪽에 섰다. 표준 GPU는 기지국에 들어갈 수 없고, 훨씬 싸고 훨씬 저전력이 되어야 하는데 — <strong>주요 GPU 업체에게는 싸고 저전력인 GPU를 만들 동기가 없다</strong>는 지적이었다. 시장이 그 방향으로 가고 있지 않기 때문이다.</p>
+<p>그리고 <strong>에릭슨은 GPU가 AI-RAN의 필수 요소라는 주장을 정면으로 부인했다.</strong> 에릭슨 쪽 설명은 이렇다. RAN 연산에 쓰이는 AI 모델은 파라미터가 적은 <strong>경량 모델이어야 하고</strong>, 그런 일에 GPU를 쓰는 건 <strong>“가위로 될 일에 전기톱을 쓰는 것”</strong> 이라는 것이다.</p>
+<p>여기서 중요한 건, 에릭슨이 말만 한 게 아니라는 점이다.</p>
+<p><strong>에릭슨은 2026년 6월 11일 ‘AI in RAN’을 출시했고, GPU 없이 기존 베이스밴드와 라디오 안에서 숫자를 냈다.</strong> 2026년 6월 기준 전 세계 <strong>15곳 이상에서 배포·시험</strong>이 진행 중이며, 공표된 성능은 <strong>하향 처리량 최대 20% 향상, 주파수 효율 최대 10% 개선</strong>이다. 신규 하드웨어는 필요 없고, 소프트웨어 구독으로 판다. 고객 명단에는 <strong>소프트뱅크, 벨(Bell), SK텔레콤, 로저스(Rogers)</strong> 가 있다.</p>
+<p>그리고 일본에서 소프트뱅크와 함께 상용 5G망에서 돌린 실증에서는, 특정 조건에서 <strong>주파수 효율 약 25%, 하향 사용자 처리량 약 50%</strong> 개선까지 나왔다. 다만 같은 발표에 중요한 단서가 붙어 있다. <strong>평가한 모든 지점의 평균으로는 두 지표 모두 약 10% 개선</strong>이었다.</p>
+<p>이 두 문장을 나란히 놓으면 2026년 AI-RAN의 구도가 그대로 보인다.</p>
+<blockquote>
+<p><strong>“기지국에 AI를 넣는다”는 방향에는 아무도 반대하지 않는다. 싸움은 전부 “그 AI를 GPU 위에 올릴 것인가”, 그리고 “그 GPU로 통신 말고 무엇을 더 팔 것인가”에서 벌어지고 있다.</strong></p>
+</blockquote>
+<p>그리고 이 싸움은 한국과 무관한 이야기가 아니다. <strong>SK텔레콤은 2026년 7월, 과학기술정보통신부와 한국지능정보사회진흥원(NIA)이 주관하는 ‘하이퍼 AI 네트워크 기반조성’ 실증사업의 수행기관으로 선정되어 ‘AI-RAN 선도망’ 구축에 착수했다.</strong> 그것도 한 회사 장비가 아니라 <strong>삼성전자·HFR·에릭슨·노키아 4개 제조사의 AI-RAN 장비를 동시에</strong> 개발·구축·실증하는 구조다. 삼성전자는 AI-RAN 얼라이언스의 창립 멤버이자 이사회 부의장이고, <strong>AI-on-RAN을 다루는 워킹그룹 3의 의장</strong>이다. 그리고 <strong>2026년 11월 11~12일, AI-RAN 얼라이언스 멤버 회의는 서울 연세대학교에서 열린다.</strong></p>
+<p>이 글은 그래서 다음 질문에 답하려고 한다.</p>
+<ul>
+<li>AI-RAN이라는 한 단어 안에 실제로는 <strong>몇 개의 서로 다른 사업</strong>이 섞여 있는가</li>
+<li>각 진영이 <strong>실제로 공개한 숫자</strong>는 무엇이고, 그 숫자에 붙은 <strong>단서</strong>는 무엇인가</li>
+<li>통신사가 <strong>왜 하필 2026년에</strong> 이걸 꺼냈는가 (힌트: 5G가 아니라 전력과 데이터센터다)</li>
+<li>그리고 <strong>왜 아직 상용 매출이 거의 없는가</strong></li>
+</ul>
+<hr/>
+<p><a id="숫자"></a></p>
+<h2 id="2-숫자로-보는-2026년-ai-ran">2. 숫자로 보는 2026년 AI-RAN<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-숫자로-보는-2026년-ai-ran" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="시장-전망">시장 전망<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#시장-전망" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>델오로 그룹(Dell’Oro Group)</strong>: 2026~2030년 <strong>5년간 AI-RAN 누적 매출 약 350억 달러</strong> 전망</li>
+<li><strong>AI-RAN 시장 규모</strong>: 2025년 약 <strong>29억 6,000만 달러</strong> → 2035년 약 <strong>371억 9,000만 달러</strong>, 연평균 성장률(CAGR) 약 <strong>28.8%</strong> 전망(Precedence Research 기준)</li>
+<li><strong>6G 시장</strong>: 2030년 약 <strong>414억 2,000만 달러</strong> 전망</li>
+<li><strong>전체 RAN 시장</strong>: 6G가 실제로 깔리는 <strong>2031년 초까지는 정체</strong> 전망</li>
+</ul>
+<p>여기서 첫 번째 중요한 해석이 나온다. <strong>AI-RAN 시장 전망치가 아무리 커도, 그 바탕인 RAN 시장 자체는 정체 중이다.</strong> AI-RAN은 성장하는 시장에 올라탄 신기능이 아니라, <strong>정체된 시장에서 새 성장 명분을 찾으려는 시도</strong>에 가깝다. 이 전제를 놓치면 모든 숫자가 과장돼 보인다.</p>
+<h3 id="표준생태계">표준·생태계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#표준생태계" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI-RAN 얼라이언스</strong>: 2024년 설립, 1년 만에 100개 이상 → <strong>2026년 132개 회원사</strong></li>
+<li>2026년 발표: <strong>혁신 데모 33건</strong>, <strong>산업 블루프린트 4건</strong> 신규</li>
+<li>임원·창립 회원: <strong>ARM, DeepSig, 에릭슨, 마이크로소프트, 노키아, 노스이스턴대, 엔비디아, 삼성전자, 소프트뱅크, T모바일, SK텔레콤, 퀄컴, 보다폰</strong></li>
+<li><strong>2026년 11월 11~12일 멤버 회의: 서울 연세대학교</strong></li>
+</ul>
+<h3 id="6g-표준-일정-3gpp">6G 표준 일정 (3GPP)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6g-표준-일정-3gpp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>릴리즈 21(Release 21)</strong>: 6G 규범 작업의 공식 시작</li>
+<li><strong>스테이지 1(서비스 요구사항·유즈케이스) 동결: 2027년 3월</strong></li>
+<li><strong>스테이지 2 동결: 2028년 6월</strong></li>
+<li><strong>최종 규격 완성: 2029년 초</strong></li>
+<li>첫 공식 6G RAN 기술 규격: <strong>2028년 말~2029년 초</strong> 전망</li>
+<li><strong>6G 상용화 시작: 2029년</strong>(ABI Research), 본격 확산 <strong>2029~2033년</strong></li>
+</ul>
+<h3 id="벤더별-공표-성능">벤더별 공표 성능<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#벤더별-공표-성능" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>에릭슨 ‘AI in RAN’</strong> (2026년 6월 11일 공개, Q2 2026 첫 기능 제공)</p>
+<ul>
+<li>하향 처리량 <strong>최대 20% 향상</strong></li>
+<li>주파수 효율 <strong>최대 10% 개선</strong></li>
+<li><strong>신규 하드웨어 불필요</strong>, GPU 불필요, 소프트웨어 구독</li>
+<li><strong>15곳 이상</strong> 배포·시험 (소프트뱅크, 벨, SK텔레콤, 로저스 등)</li>
+<li>소프트뱅크 일본 상용망 실증: 주파수 효율 <strong>최대 약 25%</strong>, 하향 사용자 처리량 <strong>최대 약 50%</strong> / <strong>전체 평균은 두 지표 모두 약 10%</strong></li>
+</ul>
+<p><strong>노키아 AI-RAN 플랫폼</strong> (2026년 7월 15일 발표)</p>
+<ul>
+<li>기반: 자사 <strong>anyRAN</strong> + 엔비디아 <strong>Aerial AI-RAN</strong></li>
+<li>초기 <strong>주파수 효율 20% 이상</strong> → 2027년 <strong>최대 50%</strong> → 2028년 <strong>100% 이상</strong> 목표</li>
+<li>하드웨어 3경로: ① 기존 <strong>AirScale에 GPU 용량 플러그인</strong>, ② <strong>독립형 AI-RAN 노드</strong>, ③ <strong>GPU 탑재 범용(COTS) 서버</strong></li>
+<li><strong>파일럿 2026년 말, 상용 2027년</strong></li>
+<li>소프트웨어 구독 모델</li>
+<li>PoC·실증 사업자: <strong>A1 그룹, 중화텔레콤, du, e&amp;, 모빌리, stc, TPG 텔레콤, 자인 사우디</strong> 등 (엔비디아 Aerial RAN Computer 활용)</li>
+<li>광범위 협력 대상: <strong>보다폰, BT, 오렌지, 도이치텔레콤, 엘리사, NTT 도코모, 인도삿 우레두 허치슨, 소프트뱅크</strong></li>
+</ul>
+<p><strong>소프트뱅크 AITRAS</strong> (엔비디아와 5년 협업)</p>
+<ul>
+<li>자체 개발 <strong>오케스트레이터</strong>로 AI·RAN 워크로드 통합 조율</li>
+<li>엔비디아 가속 <strong>GPU 서버 1대로 다수의 밀집 셀</strong> 처리</li>
+<li>기존 RAN 평균 용량 활용률 <strong>약 33%</strong> → AI-RAN에서 <strong>거의 100%</strong></li>
+<li>남는 <strong>3분의 2를 AI 추론 서비스로 수익화</strong></li>
+<li>엔비디아 AI Enterprise 서버리스 API 기반 <strong>AI 마켓플레이스</strong> 연동, 외부 추론 작업을 분산 인프라로 분배</li>
+<li>추정 수익: <strong>자본 1달러당 AI 추론 매출 약 5달러</strong>, 서버 1대당 <strong>최대 219% 수익률</strong></li>
+<li>2026년 5월: <strong>소버린 AI GPU 클라우드</strong> 출범</li>
+</ul>
+<h3 id="반대-진영의-공개-발언">반대 진영의 공개 발언<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반대-진영의-공개-발언" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>버라이즌 CTO</strong>: GPU 기반 방식, <strong>현재 형태로는 아직 안 뜬다</strong></li>
+<li><strong>오렌지 무선 혁신 담당</strong>: <em>“RAN 소프트웨어를 GPU에서 돌릴 강력한 논거를 못 보고 있다, 특히 비용 관점에서”</em></li>
+<li><strong>삼성전자 네트워크 책임자</strong>: 표준 GPU는 기지국에 못 들어간다, 훨씬 싸고 저전력이어야 하지만 <strong>GPU 업체에 그럴 동기가 없다</strong></li>
+<li><strong>에릭슨</strong>: GPU는 AI-RAN의 필수 요소가 아니다, RAN용 AI 모델은 <strong>경량이어야 하며 GPU는 과잉</strong></li>
+</ul>
+<h3 id="한국">한국<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>SKT</strong>: 2026년 2월 26일 <strong>AI-RAN 실증 성공</strong> 발표 → 2026년 7월 <strong>과기정통부·NIA ‘하이퍼 AI 네트워크 기반조성’ 실증사업 수행기관 선정</strong>, ‘AI-RAN 선도망’ 착수</li>
+<li>실증 구조: <strong>삼성전자·HFR·에릭슨·노키아 4개 제조사 장비 동시</strong> 개발·구축·실증</li>
+<li>노키아·HFR과 <strong>엔비디아 GPU 기반 범용 서버</strong>를 활용한 다양한 AI-RAN 장비 구조 개발·실증</li>
+<li><strong>HFR과는 GPU만으로 통신 기능과 AI 서비스를 함께 처리</strong>하는 방식 검증</li>
+<li><strong>2년간</strong> AI-RAN 기반 초저지연·고신뢰 네트워크로 <strong>로봇·자율이송 등 피지컬 AI 서비스 3종</strong> 검증</li>
+<li><strong>삼성전자 + SKT</strong>: 6G 핵심 기술 개발 MoU, <strong>1차 초점이 AI-RAN</strong></li>
+</ul>
+<hr/>
+<p><a id="개념"></a></p>
+<h2 id="3-개념-정리-ai-ran은-하나가-아니라-세-개의-다른-사업이다">3. 개념 정리: AI-RAN은 하나가 아니라 세 개의 다른 사업이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-개념-정리-ai-ran은-하나가-아니라-세-개의-다른-사업이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI-RAN 논의가 혼란스러운 이유는 단순하다. <strong>같은 단어로 전혀 다른 세 가지 사업을 부르고 있기 때문이다.</strong> AI-RAN 얼라이언스가 쓰는 구분을 따르면 이렇게 나뉜다.</p>
+<h3 id="-ai-for-ran--ai로-통신-성능을-올린다">① AI-for-RAN — “AI로 통신 성능을 올린다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ai-for-ran--ai로-통신-성능을-올린다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>무선 구간 자체를 AI로 개선하는 것이다. 채널 추정, 빔포밍, 스케줄링, 간섭 제어, 변조·복조 보조, 에너지 절감 같은 <strong>기지국 내부 알고리즘을 AI 모델로 교체하거나 보강</strong>한다.</p>
+<ul>
+<li><strong>목표</strong>: 주파수 효율, 처리량, 전력 효율</li>
+<li><strong>고객 가치</strong>: 기존 주파수와 장비에서 더 많은 용량 → <strong>설비 투자 지연</strong></li>
+<li><strong>필요 연산</strong>: 상대적으로 <strong>작다</strong>. 수 밀리초 단위로 반복 추론해야 하므로 모델은 작고 빨라야 한다</li>
+<li><strong>대표</strong>: <strong>에릭슨 AI in RAN</strong>, 노키아의 무선 자원 관리 AI</li>
+<li><strong>핵심 쟁점</strong>: 이걸 하려고 <strong>GPU까지 필요한가</strong></li>
+</ul>
+<p>여기서 에릭슨의 ‘가위 vs 전기톱’ 비유가 나온다. AI-for-RAN은 거대 모델이 필요한 영역이 아니다. 수 μs~ms 지연 예산 안에서 돌아야 하므로 모델은 작아야 하고, 작은 모델이면 기존 베이스밴드 가속기에서도 돌릴 수 있다. <strong>에릭슨이 GPU 없이 하향 처리량 20%·주파수 효율 10%를 주장할 수 있는 근거가 여기 있다.</strong></p>
+<h3 id="-ai-on-ran--통신망-위에서-ai-서비스를-판다">② AI-on-RAN — “통신망 위에서 AI 서비스를 판다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ai-on-ran--통신망-위에서-ai-서비스를-판다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기지국·엣지에 올려둔 연산 자원으로 <strong>통신이 아닌 AI 워크로드</strong>를 돌리는 것이다. 저지연이 필요한 추론, 로컬에 머물러야 하는 데이터, 현장 로봇·자율주행·XR 같은 용도다.</p>
+<ul>
+<li><strong>목표</strong>: <strong>새 매출</strong></li>
+<li><strong>고객 가치</strong>: 낮은 지연, 데이터 주권, 지역성</li>
+<li><strong>필요 연산</strong>: <strong>크다</strong>. 범용 AI 추론이므로 GPU가 자연스럽다</li>
+<li><strong>대표</strong>: <strong>소프트뱅크 AITRAS</strong>, 노키아·엔비디아의 유휴 용량 활용 데모</li>
+<li><strong>핵심 쟁점</strong>: <strong>그 추론을 살 고객이 실제로 있는가</strong></li>
+</ul>
+<p>삼성전자가 의장을 맡은 워킹그룹 3이 바로 이 영역이다. 그리고 SKT가 선도망에서 <strong>“로봇·자율이송 등 피지컬 AI 서비스 3종”</strong> 을 검증하겠다고 한 것도 정확히 이 범주다. 기술 시연이 아니라 <strong>수요 발굴</strong>이 목적인 단계라는 뜻이다.</p>
+<h3 id="-ai-and-ran--같은-하드웨어에서-둘을-같이-돌린다">③ AI-and-RAN — “같은 하드웨어에서 둘을 같이 돌린다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ai-and-ran--같은-하드웨어에서-둘을-같이-돌린다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>①과 ②를 <strong>하나의 가속 플랫폼에서 동시에</strong> 돌리는 것이다. 통신 트래픽이 한가할 때 남는 연산을 AI에 돌리고, 트래픽이 몰리면 다시 통신에 양보한다. 이걸 조율하는 소프트웨어가 <strong>오케스트레이터</strong>다.</p>
+<ul>
+<li><strong>목표</strong>: <strong>자산 활용률</strong></li>
+<li><strong>고객 가치</strong>: 같은 설비로 두 가지 수익</li>
+<li><strong>필요 연산</strong>: 크다 + <strong>실시간 우선순위 제어가 필수</strong></li>
+<li><strong>대표</strong>: <strong>노키아 AI-RAN 플랫폼</strong>, 소프트뱅크 AITRAS 오케스트레이터</li>
+<li><strong>핵심 쟁점</strong>: <strong>전력과 비용</strong>, 그리고 통신 품질 보장</li>
+</ul>
+<p>소프트뱅크의 “33% → 100%” 주장은 이 범주의 논리를 가장 압축해서 보여준다. 통신망은 <strong>최대 부하를 기준으로 설계</strong>되기 때문에 평균적으로는 용량의 3분의 1 정도만 쓴다. 남는 3분의 2는 그냥 비어 있다. <strong>그 빈 자리를 AI 추론으로 메우면, 같은 설비에서 매출이 하나 더 생긴다</strong> — 이것이 “1달러 넣고 5달러 번다”는 계산의 뼈대다.</p>
+<h3 id="왜-이-구분이-결정적인가">왜 이 구분이 결정적인가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-이-구분이-결정적인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 세 가지는 <strong>성공 조건이 완전히 다르다.</strong></p>
+<ul>
+<li><strong>AI-for-RAN은 이미 되고 있다.</strong> 에릭슨 15곳 이상, 신규 하드웨어 없이, 두 자릿수 개선. 통신사가 사는 이유가 명확하다(설비 투자 지연).</li>
+<li><strong>AI-and-RAN은 기술적으로는 됐지만 경제성이 미검증이다.</strong> 노키아가 상용 플랫폼을 내놨지만 파일럿은 2026년 말, 상용은 2027년이다.</li>
+<li><strong>AI-on-RAN은 기술보다 수요가 문제다.</strong> 유휴 GPU를 쓸 수 있다는 것과, 그 GPU 시간을 돈 내고 살 고객이 줄 서 있다는 건 전혀 다른 문장이다.</li>
+</ul>
+<p>그래서 <strong>“AI-RAN이 유망한가”</strong> 라는 질문은 답할 수 없다. <strong>“세 가지 중 어느 것 이야기인가”</strong> 를 먼저 물어야 한다. 2026년 현재, 매출이 실제로 발생하고 있는 건 사실상 ①뿐이다.</p>
+<hr/>
+<p><a id="전선1"></a></p>
+<h2 id="4-전선--ai-for-ran--에릭슨이-gpu-없이-먼저-숫자를-냈다">4. 전선 ①: AI-for-RAN — 에릭슨이 GPU 없이 먼저 숫자를 냈다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-전선--ai-for-ran--에릭슨이-gpu-없이-먼저-숫자를-냈다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="발표와-구조">발표와 구조<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#발표와-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에릭슨은 <strong>2026년 6월 11일 ‘AI in RAN’을 공개</strong>했다. 핵심 설계 사상은 한 줄로 요약된다. <strong>“통신사급 AI 모델을 베이스밴드와 라디오 안에 직접 심는다. 새 하드웨어는 필요 없다.”</strong></p>
+<p>첫 기능은 <strong>2026년 2분기부터 제공</strong>되기 시작했고, 추가 기능이 연중 순차 적용되는 로드맵이다. 판매 형태는 장비가 아니라 <strong>소프트웨어 구독</strong>이다.</p>
+<h3 id="공표-성능과-그-단서">공표 성능과 그 단서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#공표-성능과-그-단서" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>하향 처리량 최대 20% 향상</strong></li>
+<li><strong>주파수 효율 최대 10% 개선</strong></li>
+<li>에너지 효율 개선도 함께 주장</li>
+</ul>
+<p>그리고 일본 상용망 실증. 소프트뱅크와 함께 <strong>일본 최초로 상용 5G 네트워크에서 AI in RAN을 시험</strong>했고, 결과는 이렇게 발표됐다.</p>
+<ul>
+<li>기존 기술 대비 <strong>주파수 효율 최대 약 25%</strong></li>
+<li><strong>하향 사용자 처리량 최대 약 50%</strong></li>
+<li><strong>단, 평가한 전체 지점 평균으로는 두 지표 모두 약 10% 개선</strong></li>
+</ul>
+<p><strong>이 ‘최대 vs 평균’ 격차가 AI-RAN 숫자를 읽는 첫 번째 원칙이다.</strong> AI의 성능 이득은 균등하게 퍼지지 않는다. 간섭이 심하고 사용자가 밀집한 지점에서는 크게 좋아지고, 이미 조건이 좋은 지점에서는 거의 달라지지 않는다. 그래서 <strong>“최대 50%“는 거짓이 아니지만, 망 전체의 체감 개선은 10% 수준</strong>이라는 뜻이다.</p>
+<p>통신사 입장에서 10%가 작은 숫자냐 하면, 그렇지 않다. 주파수를 더 사거나 기지국을 더 세우는 비용과 비교하면 <strong>소프트웨어 구독으로 얻는 10%는 상당히 싸다.</strong> 이게 에릭슨 방식이 가장 먼저 팔리는 이유다.</p>
+<h3 id="배포-현황">배포 현황<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#배포-현황" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>15곳 이상에서 배포·시험</strong>이 진행 중이고, 공개된 사업자는 다음과 같다.</p>
+<ul>
+<li><strong>소프트뱅크</strong>(일본)</li>
+<li><strong>벨(Bell)</strong>(캐나다)</li>
+<li><strong>SK텔레콤</strong>(한국)</li>
+<li><strong>로저스(Rogers)</strong>(캐나다)</li>
+</ul>
+<p>지역이 흩어져 있고 모두 5G 투자가 큰 1군 사업자라는 점이 중요하다. <strong>시범 사업이 아니라 상용망 적용 사례</strong>로 쌓이고 있다는 뜻이다.</p>
+<h3 id="에릭슨이-gpu를-거부하는-이유">에릭슨이 GPU를 거부하는 이유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에릭슨이-gpu를-거부하는-이유" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에릭슨의 논거는 기술적으로 일관된다.</p>
+<ol>
+<li><strong>RAN 연산의 AI 모델은 작아야 한다.</strong> 무선 스케줄링은 슬롯 단위(수백 μs~수 ms)로 결정이 내려진다. 거대 모델을 끼워 넣을 지연 예산이 없다.</li>
+<li><strong>작은 모델이면 기존 베이스밴드 가속기로 충분하다.</strong> 전용 ASIC/가속기는 특정 연산에 대해 GPU보다 전력 효율이 좋다.</li>
+<li><strong>그래서 GPU는 과잉이다.</strong> “가위로 될 일에 전기톱.”</li>
+</ol>
+<p>여기에 상업적 동기도 겹친다. 에릭슨은 자체 베이스밴드 실리콘을 설계·공급하는 회사다. <strong>RAN의 연산 주도권이 GPU로 넘어가면, 에릭슨은 핵심 부가가치를 엔비디아에 넘기게 된다.</strong> 반대로 노키아는 자체 실리콘 의존도를 낮추고 엔비디아와 묶이는 전략을 택했다. <strong>두 회사의 기술적 입장 차이 뒤에는 공급망 주도권 다툼이 있다</strong> — 이 점을 빼고 읽으면 논쟁이 순수 기술 논쟁처럼 보이지만, 그렇지 않다.</p>
+<h3 id="정리">정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-for-RAN은 2026년 AI-RAN 중에서 <strong>유일하게 “이미 돈이 되고 있다”고 말할 수 있는 영역</strong>이다. 이유는 세 가지다.</p>
+<ul>
+<li><strong>신규 설비 투자가 0에 가깝다</strong> (소프트웨어 구독)</li>
+<li><strong>효익이 통신사의 기존 KPI로 바로 번역된다</strong> (용량, 처리량, 전력)</li>
+<li><strong>AI 서비스 수요를 새로 발굴할 필요가 없다</strong></li>
+</ul>
+<hr/>
+<p><a id="전선2"></a></p>
+<h2 id="5-전선--ai-and-ran--노키아엔비디아의-세계-최초-상용-플랫폼">5. 전선 ②: AI-and-RAN — 노키아·엔비디아의 ‘세계 최초 상용’ 플랫폼<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-전선--ai-and-ran--노키아엔비디아의-세계-최초-상용-플랫폼" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="무엇을-발표했나">무엇을 발표했나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#무엇을-발표했나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 7월 15일, 노키아는 <strong>“업계 최초 상용 AI-RAN 플랫폼”</strong> 을 발표했다. 구성은 <strong>노키아 anyRAN 소프트웨어 + 엔비디아 Aerial AI-RAN 컴퓨팅</strong>이다.</p>
+<p>노키아가 제시한 하드웨어 경로는 <strong>세 가지</strong>다. 이 세 갈래 구조 자체가 전략의 핵심이다.</p>
+<p><strong>① 기존 AirScale에 GPU 용량 플러그인</strong>
+이미 깔린 노키아 기지국을 뜯지 않고, GPU 기반 용량 모듈을 <strong>증설</strong>하는 방식이다. 교체 비용 장벽을 피하기 위한 현실적 경로다.</p>
+<p><strong>② 독립형 AI-RAN 노드</strong>
+통신과 AI를 함께 처리하는 <strong>전용 신규 장비</strong>다. 신규 구축이나 밀집 지역용이다.</p>
+<p><strong>③ GPU 탑재 범용(COTS) 서버</strong>
+클라우드 네이티브 사업자를 위한 경로다. 가상화 RAN(vRAN)을 범용 서버에서 돌리는 쪽을 겨냥한다.</p>
+<h3 id="성능-로드맵과-그-성격">성능 로드맵과 그 성격<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성능-로드맵과-그-성격" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>초기: 주파수 효율 20% 이상</strong> — AI 기반 무선 자원 관리와 신호 처리 개선으로</li>
+<li><strong>2027년: 최대 50%</strong></li>
+<li><strong>2028년: 100% 이상</strong></li>
+</ul>
+<p><strong>중요한 구분이 있다.</strong> 20%는 “초기 결과”로 제시된 값이지만, <strong>50%와 100%는 로드맵 목표치</strong>다. 즉 아직 측정된 숫자가 아니다. 2028년 100%는 “주파수를 더 사지 않고 용량을 두 배로”라는 뜻이고, 이게 사실이면 통신 산업의 설비 투자 구조를 바꾼다. 다만 <strong>지금 시점에서는 약속이다.</strong></p>
+<h3 id="일정">일정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>파일럿: 2026년 말부터</strong></li>
+<li><strong>상용 공급: 2027년</strong></li>
+<li>판매 형태: <strong>소프트웨어 구독</strong></li>
+</ul>
+<p>즉 <strong>“세계 최초 상용 AI-RAN 플랫폼”이라는 발표와, 실제로 상용망에 돈을 받고 들어가는 시점 사이에 1년 이상의 간격이 있다.</strong> 이 간격을 인지하는 게 중요하다.</p>
+<h3 id="고객-명단-poc와-상용-계약을-구분해야-한다">고객 명단: PoC와 상용 계약을 구분해야 한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#고객-명단-poc와-상용-계약을-구분해야-한다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>노키아가 공개한 명단은 두 층으로 읽어야 한다.</p>
+<p><strong>엔비디아 Aerial RAN Computer를 활용해 AI-RAN PoC·실증을 진행 중인 사업자</strong></p>
+<ul>
+<li><strong>A1 그룹</strong>(오스트리아), <strong>중화텔레콤</strong>(대만), <strong>du</strong>·<strong>e&amp;</strong>(UAE), <strong>모빌리</strong>·<strong>stc</strong>·<strong>자인 사우디</strong>(사우디), <strong>TPG 텔레콤</strong>(호주)</li>
+</ul>
+<p><strong>노키아의 광범위 AI-RAN 협력 대상</strong></p>
+<ul>
+<li><strong>보다폰, BT, 오렌지, 도이치텔레콤, 엘리사, NTT 도코모, 인도삿 우레두 허치슨, 소프트뱅크</strong></li>
+</ul>
+<p>눈여겨볼 점이 있다. <strong>이 명단에 오렌지가 들어 있다.</strong> 그런데 앞에서 본 것처럼, 오렌지의 무선 혁신 담당자는 “GPU에서 RAN을 돌릴 논거를 못 보겠다”고 공개 발언했다. 모순이 아니다. <strong>통신사는 회의적이면서도 PoC는 한다.</strong> 기술 옵션을 열어 두는 것과, 자본을 투입하는 것은 완전히 다른 결정이다. <strong>AI-RAN 명단의 길이를 수요의 증거로 읽으면 안 된다는 뜻이다.</strong></p>
+<h3 id="엔비디아의-역할과-야망">엔비디아의 역할과 야망<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#엔비디아의-역할과-야망" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>엔비디아는 <strong>GTC 2026에서 RAN 자체를 재발명하겠다는 구상</strong>을 내놨다. 구체적 전선은 이렇다.</p>
+<ul>
+<li><strong>T모바일</strong>: 시애틀 본사의 <strong>AI-RAN 혁신 센터</strong>에서 노키아와 함께 GPU 가속 AI-RAN 워크로드 시험</li>
+<li><strong>에릭슨 + T모바일</strong>: 엔비디아 플랫폼 기반 <strong>휴대형(portable) AI RAN</strong> 시험, <strong>상용 5G 어드밴스드 네트워크</strong>에서 AI-RAN 시험</li>
+<li><strong>인도삿, 소프트뱅크</strong>: 유사 실증</li>
+</ul>
+<p>흥미로운 건 <strong>에릭슨조차 T모바일·엔비디아 조합의 시험에는 참여</strong>한다는 점이다. GPU가 필수가 아니라고 주장하는 회사도, GPU 경로를 완전히 닫아 두지는 않는다.</p>
+<p>여기에 <strong>AI-RAN을 6G의 전제로 만들려는 더 큰 포석</strong>이 있다. BT·T모바일·노키아·SK텔레콤·에릭슨·소프트뱅크 같은 사업자·벤더가 엔비디아와 ‘AI 준비된 6G 인프라’를 함께 추진하는 구도다. <strong>AI-RAN이 5G의 애드온으로 남을지, 6G의 기본 전제가 될지가 진짜 승부처다.</strong> 후자가 되면 엔비디아는 통신 인프라의 기본 레이어가 된다.</p>
+<h3 id="정리-1">정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정리-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>노키아 경로의 매력은 <strong>“기지국 하드웨어 추가 없이 용량 두 배”</strong> 라는 단일 문장으로 통신사 CFO를 설득할 수 있다는 점이다. 약점도 분명하다.</p>
+<ul>
+<li>100%는 <strong>2028년 목표치</strong>이고, 측정된 값은 20%대다</li>
+<li>상용은 <strong>2027년</strong>이다</li>
+<li>그리고 GPU를 기지국 근처에 두는 데 따르는 <strong>전력·냉각·공간 비용</strong>이 아직 정리되지 않았다(10장에서 다룬다)</li>
+</ul>
+<hr/>
+<p><a id="전선3"></a></p>
+<h2 id="6-전선--ai-on-ran--소프트뱅크-aitras와-유휴-3분의-2">6. 전선 ③: AI-on-RAN — 소프트뱅크 AITRAS와 ‘유휴 3분의 2’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-전선--ai-on-ran--소프트뱅크-aitras와-유휴-3분의-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="aitras가-무엇인가">AITRAS가 무엇인가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aitras가-무엇인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>AITRAS</strong>는 소프트뱅크가 <strong>엔비디아와 5년간 협업해 만든 AI-RAN 솔루션</strong>이다. 핵심은 하드웨어가 아니라 <strong>소프트뱅크가 자체 개발한 오케스트레이터</strong>다. 이 오케스트레이터가 <strong>AI 워크로드와 RAN 워크로드를 통합 조율</strong>한다.</p>
+<p>기술적으로 눈에 띄는 점은 <strong>엔비디아 가속 GPU 서버 1대로 다수의 밀집 셀을 처리</strong>한다는 것이다. 즉 “셀 하나당 GPU 하나”가 아니라, <strong>집약해서 효율을 끌어내는 구조</strong>다. 이게 가능해야 GPU 단가를 정당화할 수 있다.</p>
+<h3 id="논리의-핵심-33--100">논리의 핵심: 33% → 100%<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#논리의-핵심-33--100" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AITRAS 서사의 뼈대는 통신망의 구조적 낭비에 있다.</p>
+<blockquote>
+<p><strong>통신망은 최대 부하를 기준으로 설계된다. 그래서 평균 용량 활용률은 약 33%다. 나머지 3분의 2는 비어 있다.</strong></p>
+</blockquote>
+<p>AI-RAN은 이 빈 자리를 <strong>AI 추론</strong>으로 채운다. 소프트뱅크·엔비디아의 주장은 <strong>활용률이 거의 100%까지 올라간다</strong>는 것이다.</p>
+<p>그 위에 수익 구조가 붙는다.</p>
+<ul>
+<li><strong>엔비디아 AI Enterprise 서버리스 API 기반 AI 마켓플레이스</strong>를 AI-RAN 오케스트레이터와 연동</li>
+<li>외부 AI 추론 작업을 <strong>여유 연산이 있는 AI-RAN 서버로 분배</strong></li>
+<li>제공 가치: <strong>지역화된(localised), 저지연, 보안된 추론 서비스</strong></li>
+</ul>
+<p>그래서 소프트뱅크가 내놓은 문장이 <strong>“기지국을 AI 수익 창출 자산으로 만든다”</strong> 이다.</p>
+<h3 id="수익-추정치와-그-추정치가-받은-대접">수익 추정치와, 그 추정치가 받은 대접<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수익-추정치와-그-추정치가-받은-대접" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>엔비디아·소프트뱅크 추정: AI-RAN 신규 설비 자본 1달러당 AI 추론 매출 약 5달러</strong></li>
+<li><strong>소프트뱅크 자체 추정: AI-RAN 서버 1대 추가 시 최대 219% 수익률</strong></li>
+</ul>
+<p>그런데 이 숫자에 대한 시장 반응은 분명했다. <strong>“널리 회의적으로 받아들여졌다.”</strong></p>
+<p>왜 그런가. 이 계산에는 <strong>검증되지 않은 가정이 최소 네 개</strong> 들어 있다.</p>
+<ol>
+<li><strong>유휴 연산을 팔 고객이 실제로 존재한다</strong> — 가장 큰 가정이다</li>
+<li><strong>그 고객이 중앙 클라우드 GPU보다 비싼 값을 엣지 지연 때문에 지불한다</strong></li>
+<li><strong>통신 품질을 해치지 않고 우선순위 전환이 실시간으로 된다</strong></li>
+<li><strong>추가 전력·냉각 비용이 매출을 잡아먹지 않는다</strong></li>
+</ol>
+<p>네 가정 중 하나만 틀려도 5배는 성립하지 않는다. 그리고 <strong>2026년 현재, 1번이 증명된 사례는 공개된 바 없다.</strong></p>
+<h3 id="그래도-소프트뱅크가-유리한-이유">그래도 소프트뱅크가 유리한 이유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그래도-소프트뱅크가-유리한-이유" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>소프트뱅크는 다른 통신사보다 이 베팅에 적합한 조건을 가졌다.</p>
+<ul>
+<li><strong>2026년 5월 소버린 AI GPU 클라우드를 출범</strong>시켰다. 즉 <strong>AI 추론 수요를 모을 자체 채널</strong>이 있다</li>
+<li>그룹 차원에서 AI 인프라에 대규모 투자를 하고 있어, <strong>엣지와 중앙을 하나의 사업으로 묶을 수 있다</strong></li>
+<li>엔비디아와 <strong>5년 협업</strong>으로 오케스트레이터라는 소프트웨어 자산을 확보했다</li>
+</ul>
+<p>그리고 노키아와의 공동 데모에서 <strong>AITRAS 오케스트레이터가 식별한 여유 AI-RAN 연산으로 제3자 AI 작업을 돌리는 것</strong>을 시연했다. 즉 <strong>AITRAS는 소프트뱅크 전용이 아니라 다른 벤더와 붙는 레이어</strong>로 포지셔닝되고 있다.</p>
+<p><strong>AI-on-RAN의 진짜 경쟁력은 GPU가 아니라 오케스트레이터와 수요 채널이다.</strong> 이게 소프트뱅크 사례의 가장 중요한 교훈이다.</p>
+<h3 id="정리-2">정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정리-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-on-RAN은 세 전선 중 <strong>잠재 수익은 가장 크고, 증명은 가장 덜 된 영역</strong>이다. 기술 시연은 끝났고, 남은 건 전부 <strong>수요</strong>다.</p>
+<hr/>
+<p><a id="전선4"></a></p>
+<h2 id="7-전선--한국--skt의-ai-ran-선도망-그리고-삼성이-선-자리">7. 전선 ④: 한국 — SKT의 AI-RAN 선도망, 그리고 삼성이 선 자리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-전선--한국--skt의-ai-ran-선도망-그리고-삼성이-선-자리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="skt-실증-성공에서-국책-사업으로">SKT: 실증 성공에서 국책 사업으로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#skt-실증-성공에서-국책-사업으로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한국의 AI-RAN은 2026년에 두 단계를 밟았다.</p>
+<p><strong>1단계 — 2026년 2월 26일: AI-RAN 실증 성공 발표</strong>
+SKT가 차세대 기지국 기술인 AI-RAN 실증에 성공했다고 발표했다. 구체적으로는 <strong>노키아·HFR과 협력해 엔비디아 GPU 기반 범용 서버를 활용한 다양한 AI-RAN 장비 구조를 개발·실증</strong>했다. 특히 국내 통신장비 기업 <strong>HFR과는 GPU만으로 통신 기능과 AI 서비스를 함께 처리하는 방식</strong>을 검증했다.</p>
+<p>여기서 <strong>“GPU만으로”</strong> 라는 표현이 중요하다. 전용 베이스밴드 가속기 없이 GPU 단독으로 RAN을 처리하는 구성은, 앞서 본 <strong>에릭슨의 ‘과잉’ 주장과 정면으로 대립하는 기술 경로</strong>다. 한국은 양쪽을 동시에 실험하고 있다는 뜻이다.</p>
+<p><strong>2단계 — 2026년 7월: 국책 실증사업 수행기관 선정</strong>
+SKT가 <strong>과학기술정보통신부와 한국지능정보사회진흥원(NIA)이 주관하는 ‘하이퍼 AI 네트워크 기반조성’ 실증사업의 수행기관으로 선정</strong>되어, <strong>‘AI-RAN 선도망’</strong> 구축에 착수했다.</p>
+<p>이 사업 설계에서 가장 눈에 띄는 건 <strong>멀티 벤더 구조</strong>다.</p>
+<blockquote>
+<p><strong>SKT는 삼성전자·HFR·에릭슨·노키아 4개 제조사의 AI-RAN 장비를 동시에 개발·구축·실증한다.</strong></p>
+</blockquote>
+<p>왜 이게 중요한가. 앞에서 본 것처럼 <strong>4개 회사의 기술 노선이 서로 다르다.</strong></p>
+<ul>
+<li><strong>에릭슨</strong>: GPU 불필요, 베이스밴드 내장 경량 AI</li>
+<li><strong>노키아</strong>: 엔비디아 GPU 결합, AirScale 플러그인/독립 노드/COTS 서버</li>
+<li><strong>삼성전자</strong>: GPU 회의론을 공개적으로 제기한 쪽, 동시에 AI-on-RAN 워킹그룹 의장</li>
+<li><strong>HFR</strong>: GPU 단독 처리 검증</li>
+</ul>
+<p><strong>즉 SKT의 선도망은 하나의 기술에 베팅하는 사업이 아니라, 노선 자체를 비교하는 시험대다.</strong> 통신사가 자기 돈으로 하기 어려운 종류의 비교를 국책 사업으로 하는 구조라고 볼 수 있다.</p>
+<h3 id="무엇을-검증하는가-피지컬-ai">무엇을 검증하는가: 피지컬 AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#무엇을-검증하는가-피지컬-ai" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>사업 내용은 2년간 <strong>AI-RAN 기반 초저지연·고신뢰 네트워크로 로봇·자율이송 등 피지컬 AI 서비스 3종을 검증</strong>하는 것이다.</p>
+<p>이 선택은 합리적이다. AI-on-RAN의 최대 난점이 <strong>“저지연 추론을 돈 내고 살 고객이 누구냐”</strong> 라면, 가장 설득력 있는 답은 <strong>움직이는 기계</strong>다.</p>
+<ul>
+<li>공장·물류센터의 <strong>자율이송 로봇(AMR)</strong>: 제어 루프가 늦으면 멈추거나 충돌한다</li>
+<li><strong>로봇 팔·협동 로봇</strong>: 지연 변동(jitter)에 민감하다</li>
+<li>데이터가 <strong>외부로 못 나가는</strong> 생산 현장: 로컬 추론이 요구사항이다</li>
+</ul>
+<p>이들은 “클라우드로 보내서 처리하면 되는데 왜 엣지?”라는 반론에 <strong>물리적으로</strong> 답할 수 있는 거의 유일한 범주다. 다만 여기에도 단서가 있다. <strong>이런 현장은 이미 사설 5G(프라이빗 네트워크)나 와이파이 + 온프레미스 서버로 해결해 온 영역</strong>이다. AI-RAN이 그 대안보다 싸고 좋다는 걸 따로 증명해야 한다.</p>
+<h3 id="삼성전자-회의론자이면서-표준-주도자">삼성전자: 회의론자이면서 표준 주도자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#삼성전자-회의론자이면서-표준-주도자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>삼성의 위치는 겉보기에 모순적이지만, 읽어보면 일관된다.</p>
+<ul>
+<li><strong>AI-RAN 얼라이언스 창립 멤버</strong>이자 <strong>이사회 부의장</strong></li>
+<li><strong>워킹그룹 3(AI-on-RAN) 의장</strong> — 즉 “통신망 위에서 AI를 판다”는 영역의 표준 작업을 주도</li>
+<li>동시에 <strong>네트워크 사업 책임자는 “표준 GPU는 기지국에 못 들어간다”</strong> 고 공개 발언</li>
+<li><strong>2026년 3월 MWC</strong>에서 AI-RAN 얼라이언스 파트너들과 공동 기술 시연</li>
+<li><strong>SK텔레콤과 6G 핵심 기술 MoU</strong>, 그 <strong>1차 초점이 AI-RAN</strong></li>
+</ul>
+<p>정리하면 삼성의 입장은 <strong>“AI-RAN은 한다, 그런데 엔비디아 GPU 방식으로는 아니다”</strong> 다. 삼성은 자체 베이스밴드 칩을 설계하는 장비 벤더이므로, 에릭슨과 구조적 이해관계가 같다. 그리고 <strong>AI-on-RAN 의장을 맡은 것은, 수익 모델 쪽 표준에서 주도권을 잡아 두려는 선택</strong>으로 읽힌다.</p>
+<h3 id="그리고-11월-서울">그리고 11월, 서울<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그리고-11월-서울" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>2026년 11월 11~12일, AI-RAN 얼라이언스 멤버 회의가 서울 연세대학교에서 열린다.</strong> 회원사 132개, 혁신 데모 33건, 산업 블루프린트 4건이 쌓인 상태에서 열리는 회의다. 한국 입장에서는 <strong>SKT 선도망 실증 결과와 삼성의 워킹그룹 작업을 국제 무대에 올릴 자리</strong>가 된다. AI-RAN의 국제 논의에서 한국이 변방이 아니라는 점은 분명하다.</p>
+<hr/>
+<p><a id="돈"></a></p>
+<h2 id="8-돈의-문제-통신사는-왜-지금-기지국을-다시-파헤치는가">8. 돈의 문제: 통신사는 왜 지금 기지국을 다시 파헤치는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-돈의-문제-통신사는-왜-지금-기지국을-다시-파헤치는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="질문을-거꾸로-세워보자">질문을 거꾸로 세워보자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#질문을-거꾸로-세워보자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-RAN 논쟁을 기술로만 보면 핵심을 놓친다. 진짜 질문은 이것이다. <strong>통신사는 왜 하필 2026년에, 이미 돈을 다 쓴 5G 기지국을 다시 건드리려 하는가.</strong></p>
+<p>답은 세 겹이다.</p>
+<h3 id="-ran-시장이-정체돼-있다">① RAN 시장이 정체돼 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ran-시장이-정체돼-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>전망은 분명하다. <strong>전체 RAN 시장은 6G가 실제로 깔리는 2031년 초까지 정체</strong>다. 5G 투자 사이클은 끝났고, 6G는 <strong>표준 규격이 2029년 초에야 완성</strong>된다. 그 사이 <strong>5~6년의 공백</strong>이 있다.</p>
+<p>이 공백은 벤더에게는 매출 공백이고, 통신사에게는 <strong>“5G에 쏟은 돈을 무엇으로 회수하느냐”</strong> 는 질문이다. <strong>AI-RAN은 이 공백을 메우려는 제안</strong>이다. 벤더에게는 신규 소프트웨어 구독 매출, 통신사에게는 설비 투자 지연과 새 매출 가능성이다.</p>
+<p><strong>이 구도를 알면 “왜 벤더들이 이렇게 적극적인가”가 설명된다.</strong> 그리고 동시에 <strong>“왜 통신사들은 미온적인가”</strong> 도 설명된다. 벤더에게 AI-RAN은 매출이고, 통신사에게는 비용이다.</p>
+<h3 id="-트래픽은-늘지만-요금은-안-오른다">② 트래픽은 늘지만 요금은 안 오른다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-트래픽은-늘지만-요금은-안-오른다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>통신사의 구조적 문제는 20년째 같다. 데이터 트래픽은 계속 늘고, 요금은 안 오르고, 설비 투자는 계속 들어간다. 이 구조에서 <strong>“주파수를 더 사지 않고 용량을 늘리는 기술”</strong> 은 항상 가치가 있다.</p>
+<p>AI-for-RAN이 가장 먼저 팔리는 이유가 여기에 있다. <strong>에릭슨이 말하는 ‘하향 처리량 20%, 주파수 효율 10%‘는 새 매출이 아니라 피한 비용</strong>이다. 그리고 통신사 재무 담당자에게 피한 비용은 <strong>불확실한 신규 매출보다 훨씬 설득하기 쉽다.</strong> 신규 설비 없이, 소프트웨어 구독으로, 측정 가능한 효익.</p>
+<h3 id="-진짜-ai-매출은-기지국이-아니라-데이터센터에서-나고-있다">③ 진짜 AI 매출은 기지국이 아니라 데이터센터에서 나고 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-진짜-ai-매출은-기지국이-아니라-데이터센터에서-나고-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>그리고 2026년의 가장 중요한 사실은 이것이다. <strong>통신사가 AI로 실제 돈을 벌고 있는 곳은 기지국이 아니라 데이터센터다.</strong></p>
+<p>이 대비가 선명하다.</p>
+<ul>
+<li><strong>AI-RAN 누적 매출 전망: 2026~2030년 5년간 약 350억 달러</strong>(델오로)</li>
+<li>반면 한국 통신 3사가 AI 데이터센터에 쏟겠다고 발표한 금액과 용량은 <strong>그 자체로 이 숫자와 비교될 규모</strong>다</li>
+</ul>
+<p>즉 통신사의 AI 전략에서 <strong>AI-RAN은 메인이 아니다.</strong> 메인은 AI 데이터센터이고, AI-RAN은 <strong>“기지국도 AI 인프라의 일부로 쓸 수 있다”는 확장 옵션</strong>에 가깝다. 이 순서를 뒤집어 읽으면 AI-RAN의 중요성을 과대평가하게 된다.</p>
+<p>다음 장에서 그 메인을 본다.</p>
+<hr/>
+<p><a id="국내"></a></p>
+<h2 id="9-국내-통신-3사의-진짜-ai-승부는-기지국이-아니라-데이터센터다">9. 국내: 통신 3사의 진짜 AI 승부는 기지국이 아니라 데이터센터다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-국내-통신-3사의-진짜-ai-승부는-기지국이-아니라-데이터센터다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="배경-해킹-이후의-반등-과제">배경: 해킹 이후의 반등 과제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#배경-해킹-이후의-반등-과제" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026년 한국 통신 3사를 설명하는 공통 배경이 하나 있다. <strong>전년도 해킹 사태의 여파로 실적이 부진했고, 2026년을 AI 사업을 앞세운 반등의 해로 설정했다는 것</strong>이다. 즉 국내 통신사의 AI 드라이브는 성장 전략이기도 하고, <strong>신뢰 회복과 실적 반등의 수단</strong>이기도 하다.</p>
+<p>그리고 그 드라이브의 중심은 <strong>AI 데이터센터(AIDC)</strong> 다.</p>
+<h3 id="sk텔레콤-가장-공격적인-숫자">SK텔레콤: 가장 공격적인 숫자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sk텔레콤-가장-공격적인-숫자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AWS와 협력해 울산에 건설 중인 AI 데이터센터를 1GW 이상 규모로 확장</strong> 계획</li>
+<li><strong>오픈AI와 서남권에 AI 데이터센터 공동 구축</strong> 합의</li>
+<li>단계적으로 <strong>영남권 전체에 2GW 이상</strong> 완성 구상</li>
+<li>외자 유치 포함 <strong>약 140조 원 투입</strong> 예정으로 발표</li>
+<li>국내 총 <strong>5GW 규모를 2029년부터 개소</strong>, <strong>2035년까지 15GW로 확대</strong>하는 방안 제시</li>
+</ul>
+<p><strong>이 숫자들은 발표된 계획이고 구상이다.</strong> 140조 원, 15GW 같은 수치는 외자 유치와 전력 확보가 전제이며, 어느 쪽도 확정된 것으로 읽으면 안 된다. 다만 <strong>방향은 분명하다. SKT는 자신을 통신사가 아니라 AI 인프라 사업자로 재정의하고 있다.</strong></p>
+<p>그리고 바로 이 맥락에서 <strong>SKT가 AI-RAN 선도망에 뛰어든 이유가 설명된다.</strong> AI 데이터센터와 AI 기지국은 <strong>같은 전략의 양 끝</strong>이다. 중앙에 대규모 학습·추론 인프라를 두고, 말단 기지국에 저지연 추론을 둔다. SKT가 쓰는 <strong>‘AI 고속도로’</strong> 라는 표현이 그 구상을 가리킨다.</p>
+<h3 id="kt-실수요-기반-분산-구축">KT: 실수요 기반, 분산 구축<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#kt-실수요-기반-분산-구축" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>약 5조 원 투자, 총 1GW 용량의 AIDC를 실수요 기반으로 추가 구축</strong></li>
+<li><strong>약 25곳 내외로 신설</strong> 예정</li>
+<li><strong>KT클라우드</strong>: 보도 기준 분기 매출 <strong>2,490억 원, 전년 동기 대비 20.3% 증가</strong></li>
+</ul>
+<p>KT의 접근은 SKT와 결이 다르다. <strong>“실수요 기반”</strong> 과 <strong>“25곳 분산”</strong> 이 핵심어다. 초대형 단일 캠퍼스가 아니라 수요가 확인된 곳에 중규모로 나눠 짓는 전략이다. <strong>전력 확보와 수요 불확실성이라는 두 리스크를 분산하는 선택</strong>으로 읽힌다.</p>
+<h3 id="lg유플러스-수도권-추론-거점">LG유플러스: 수도권 추론 거점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lg유플러스-수도권-추론-거점" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>경기도 <strong>파주에 200MW 하이퍼스케일급 AIDC</strong> 건설 중</li>
+<li><strong>수도권 내 최대 규모의 추론형 AIDC</strong> 역할 목표</li>
+<li>AI 데이터센터 매출: 보도 기준 <strong>1,031억 원, 전년 동기 대비 14.5% 증가</strong></li>
+</ul>
+<p>LG유플러스의 포지셔닝에서 <strong>‘추론형’</strong> 과 <strong>‘수도권’</strong> 이 중요하다. 학습용 대규모 클러스터는 전력이 싸고 땅이 넓은 곳에 짓는 게 맞지만, <strong>추론은 사용자와 가까워야 한다.</strong> 수도권에 추론 거점을 두는 건 AI-RAN의 논리와 같은 방향이다. 지연과 지역성이 가치가 되는 지점이다.</p>
+<h3 id="세-회사-전략의-공통점과-차이">세 회사 전략의 공통점과 차이<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#세-회사-전략의-공통점과-차이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>공통점</strong></p>
+<ul>
+<li>모두 <strong>AI 데이터센터를 AI 사업의 1순위</strong>로 두고 있다</li>
+<li>모두 <strong>전력 확보가 최대 변수</strong>다</li>
+<li>모두 <strong>해킹 이후의 실적 반등</strong>이라는 과제를 안고 있다</li>
+</ul>
+<p><strong>차이</strong></p>
+<ul>
+<li><strong>SKT</strong>: 최대 규모 + 해외 자본·빅테크 제휴 + 기지국까지 포함한 ‘AI 고속도로’</li>
+<li><strong>KT</strong>: 실수요 기반 분산 구축으로 리스크 관리</li>
+<li><strong>LGU+</strong>: 수도권 추론 특화</li>
+</ul>
+<h3 id="그래서-ai-ran은-어디에-놓이는가">그래서 AI-RAN은 어디에 놓이는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그래서-ai-ran은-어디에-놓이는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>국내 통신사 기준으로 AI-RAN의 현실적 위치는 이렇다.</p>
+<ol>
+<li><strong>매출 기여: 당장은 거의 없다.</strong> 선도망은 국책 실증사업이다</li>
+<li><strong>전략적 의미: 크다.</strong> 6G 표준 주도권과 피지컬 AI 수요 선점이 걸려 있다</li>
+<li><strong>AI 데이터센터와의 관계: 보완재다.</strong> 중앙 추론과 엣지 추론을 하나의 사업으로 묶을 수 있는지가 핵심</li>
+</ol>
+<p><strong>즉 AI-RAN은 2026년 국내 통신사에게 매출 항목이 아니라 옵션 확보 비용이다.</strong> 이렇게 읽는 것이 과대평가도 과소평가도 피하는 길이다.</p>
+<hr/>
+<p><a id="진실1"></a></p>
+<h2 id="10-불편한-진실--전력--스쿠터에-v8-엔진을-얹는-일">10. 불편한 진실 ①: 전력 — “스쿠터에 V8 엔진을 얹는 일”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-불편한-진실--전력--스쿠터에-v8-엔진을-얹는-일" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="비유가-정확하다">비유가 정확하다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#비유가-정확하다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-RAN 회의론에서 가장 많이 인용되는 비유가 있다. <strong>기지국에 GPU를 설치하는 것은 “베스파(스쿠터)에 V8 엔진을 얹는 것처럼 보인다”</strong> 는 것이다.</p>
+<p>이게 정확한 비유인 이유는, 문제가 성능이 아니라 <strong>비율</strong>이기 때문이다.</p>
+<h3 id="세-가지-제약">세 가지 제약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#세-가지-제약" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>① 전력</strong>
+기지국 사이트는 데이터센터가 아니다. 들어오는 전력 용량이 정해져 있고, 늘리려면 전력 인프라 공사가 필요하다. <strong>AI급 GPU 한 장의 소비 전력은 기존 기지국 장비 전체와 비교될 수준</strong>이다. 그리고 통신사 운영비에서 전력은 이미 가장 큰 항목 중 하나다.</p>
+<p><strong>② 냉각과 공간</strong>
+옥상, 철탑, 지하 통신실 — 기지국 설치 환경은 온도·습도·먼지 관리가 데이터센터와 다르다. GPU 서버가 요구하는 냉각을 수만 개 사이트에 넣는 비용은 장비 값과 별개다.</p>
+<p><strong>③ 비용 구조</strong>
+기지국은 <strong>수만 개 단위로 복제되는 설비</strong>다. 사이트당 비용 증가는 전국 단위로 곱해진다. 데이터센터에서 통하는 “GPU 한 장 더”의 산수가 RAN에서는 통하지 않는다.</p>
+<h3 id="그래서-조건부-성립이다">그래서 조건부 성립이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그래서-조건부-성립이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>회의론의 결론은 “불가능하다”가 아니라 <strong>“세 조건 중 하나는 충족돼야 한다”</strong> 는 쪽이다.</p>
+<ol>
+<li><strong>GPU가 훨씬 전력 효율적이 되거나</strong></li>
+<li><strong>추가 에너지 비용을 상쇄할 수 있거나</strong></li>
+<li><strong>통신사에 실제 매출 성장 기회를 가져오거나</strong></li>
+</ol>
+<p>그리고 삼성 쪽에서 나온 지적이 여기에 결정적인 단서를 붙인다. <strong>표준 GPU는 기지국에 들어갈 수 없고, 훨씬 싸고 저전력이어야 하는데 — GPU 업체에게는 그런 제품을 만들 동기가 없다.</strong> 시장이 그 방향으로 가고 있지 않기 때문이다.</p>
+<p>이건 기술 문제가 아니라 <strong>시장 구조 문제</strong>다. 엔비디아의 주력 수요는 데이터센터이고, 거기서는 <strong>전력당 성능</strong>보다 <strong>절대 성능</strong>이 팔린다. 기지국용 저전력·저가 GPU는 수익성 낮은 틈새 제품이 된다. <strong>GPU 업체가 자발적으로 그 방향으로 갈 이유가 없다.</strong></p>
+<p>그래서 AI-RAN의 전력 문제는 <strong>“기다리면 반도체가 해결해 줄 것”</strong> 으로 낙관하기 어렵다. 누군가 그 제품을 만들 경제적 이유를 먼저 만들어야 한다. 그게 통신사의 선구매 약정이든, 국책 사업이든.</p>
+<h3 id="중앙-집중-배치라는-우회로">중앙 집중 배치라는 우회로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#중앙-집중-배치라는-우회로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>노키아와 소프트뱅크가 모두 쓰는 완화 전략이 있다. <strong>GPU를 모든 기지국에 넣지 않고, 집약 지점에 모아 다수 셀을 처리하는 것</strong>이다.</p>
+<ul>
+<li>소프트뱅크 AITRAS: <strong>GPU 서버 1대로 다수의 밀집 셀 처리</strong></li>
+<li>노키아: <strong>독립형 AI-RAN 노드</strong>, <strong>COTS 서버 경로</strong></li>
+</ul>
+<p>이 구조면 전력·냉각 문제는 <strong>데이터센터에 가까운 환경으로 옮겨진다.</strong> 다만 대가가 있다. 집약하면 <strong>단말과의 거리가 멀어지고, AI-on-RAN의 핵심 가치인 초저지연이 희석된다.</strong> 그리고 집약 지점까지의 전송(프론트홀) 용량과 비용이 새 변수로 들어온다.</p>
+<p><strong>AI-RAN 아키텍처 논쟁의 상당 부분이 결국 “어디까지 집약할 것인가”라는 하나의 트레이드오프로 수렴한다.</strong> 완전 분산은 전력·비용이 안 되고, 완전 집약은 지연 이점이 사라진다.</p>
+<hr/>
+<p><a id="진실2"></a></p>
+<h2 id="11-불편한-진실--수요--엣지-추론을-대체-누가-사는가">11. 불편한 진실 ②: 수요 — 엣지 추론을 대체 누가 사는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-불편한-진실--수요--엣지-추론을-대체-누가-사는가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="가장-약한-고리">가장 약한 고리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#가장-약한-고리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-RAN의 수익 논리 전체가 하나의 가정 위에 서 있다. <strong>“저지연·지역화된 AI 추론을 돈 내고 살 고객이 있다.”</strong></p>
+<p>그리고 2026년 현재, <strong>이 가정을 뒷받침하는 상용 매출 사례는 공개되지 않았다.</strong> 엔비디아·소프트뱅크의 “1달러당 5달러”가 회의적으로 받아들여진 근본 이유가 이것이다.</p>
+<h3 id="엣지-추론이-중앙-클라우드를-이겨야-하는-조건">엣지 추론이 중앙 클라우드를 이겨야 하는 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#엣지-추론이-중앙-클라우드를-이겨야-하는-조건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>냉정하게 보면, 엣지 추론이 중앙 클라우드보다 나은 경우는 생각보다 좁다.</p>
+<p><strong>엣지가 이기는 경우</strong></p>
+<ul>
+<li><strong>지연이 제어 루프에 직접 묶인 경우</strong>: 로봇 제어, 자율이송, 산업 안전</li>
+<li><strong>데이터가 물리적으로 나갈 수 없는 경우</strong>: 규제, 영업비밀, 개인정보</li>
+<li><strong>상향 대역폭이 병목인 경우</strong>: 다수 카메라 영상을 원본으로 올리기 어려운 현장</li>
+<li><strong>연결이 불안정한 경우</strong>: 끊겨도 로컬에서 돌아야 하는 용도</li>
+</ul>
+<p><strong>중앙이 이기는 경우</strong></p>
+<ul>
+<li><strong>위 조건에 해당하지 않는 거의 모든 것</strong></li>
+</ul>
+<p>생성형 AI 수요의 대부분은 후자다. 챗봇 응답이 50ms 빨라지는 것에 추가 비용을 낼 사용자는 많지 않다. <strong>대규모 모델은 집약된 대형 클러스터에서 돌리는 것이 압도적으로 저렴하다.</strong> 엣지에 GPU를 분산 배치하면 규모의 경제를 포기하게 된다.</p>
+<h3 id="그래서-피지컬-ai가-유일한-유력-후보다">그래서 피지컬 AI가 유일한 유력 후보다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그래서-피지컬-ai가-유일한-유력-후보다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>SKT가 선도망에서 로봇·자율이송 등 피지컬 AI 3종을 검증하겠다고 한 선택은 이 분석과 정확히 맞는다.</strong> 움직이는 기계는 지연이 <strong>품질이 아니라 안전</strong>의 문제가 되는 거의 유일한 범주다.</p>
+<p>하지만 여기에도 반론이 있다.</p>
+<ol>
+<li><strong>이미 대안이 있다.</strong> 공장·물류 현장은 사설 5G, 와이파이 6/7, 온프레미스 GPU 서버로 이 문제를 풀어 왔다. AI-RAN이 <strong>그보다 싸거나 좋다는 걸 증명</strong>해야 한다</li>
+<li><strong>시장 규모가 통신사 기대만큼 큰지 불확실하다.</strong> 전국 기지국 투자를 정당화할 만큼의 피지컬 AI 수요가 언제 생기는가</li>
+<li><strong>구매 주체가 다르다.</strong> 통신사의 기존 영업 조직은 제조 현장의 자동화 투자 의사결정자와 접점이 약하다</li>
+</ol>
+<h3 id="수요-측-관점에서-다시-보는-33--100">수요 측 관점에서 다시 보는 “33% → 100%”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수요-측-관점에서-다시-보는-33--100" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>소프트뱅크의 논리를 뒤집어 보면 중요한 점이 보인다.</p>
+<p>유휴 용량이 <strong>3분의 2</strong>라는 건, 거꾸로 <strong>그 유휴 용량이 통신 피크 때는 사라진다</strong>는 뜻이다. 즉 AI-RAN이 파는 추론 용량은 <strong>본질적으로 가변적이고 우선순위가 낮은 자원</strong>이다.</p>
+<p>그러면 이 용량을 살 고객은 <strong>“언제든 밀려날 수 있는 저지연 추론”</strong> 을 사는 셈이다. 이런 자원이 맞는 용도도 있다(배치 추론, 재시도 가능한 작업). 그런데 <strong>그런 용도는 저지연이 필요 없다.</strong> 반대로 저지연이 꼭 필요한 로봇 제어는 <strong>밀려나면 안 되는 작업</strong>이다.</p>
+<p><strong>여기에 AI-on-RAN의 구조적 긴장이 있다.</strong> “남는 용량을 판다”는 경제 논리와, “저지연이 필요한 곳에 판다”는 가치 제안이 <strong>서로 다른 종류의 수요를 가리킨다.</strong> 이걸 동시에 만족시키려면 결국 <strong>저지연 작업용 용량을 따로 예약해 둬야 하고, 그러면 “남는 걸 공짜로 활용한다”는 전제가 약해진다.</strong></p>
+<p>이 긴장을 어떻게 푸는지가 AI-on-RAN 사업 모델의 진짜 시험이다. 그리고 2026년에는 아직 답이 나오지 않았다.</p>
+<hr/>
+<p><a id="진실3"></a></p>
+<h2 id="12-불편한-진실--표준--6g는-2029년이고-그-전까지는-전부-비표준이다">12. 불편한 진실 ③: 표준 — 6G는 2029년이고, 그 전까지는 전부 ‘비표준’이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-불편한-진실--표준--6g는-2029년이고-그-전까지는-전부-비표준이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="일정을-그대로-보자">일정을 그대로 보자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일정을-그대로-보자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>3GPP의 6G 작업 일정은 명확하다.</p>
+<ul>
+<li><strong>릴리즈 21</strong>: 6G 규범 작업의 공식 시작</li>
+<li><strong>스테이지 1(서비스 요구사항·유즈케이스) 동결: 2027년 3월</strong></li>
+<li><strong>스테이지 2 동결: 2028년 6월</strong></li>
+<li><strong>최종 규격 완성: 2029년 초</strong></li>
+<li>첫 공식 6G RAN 기술 규격: <strong>2028년 말~2029년 초</strong></li>
+<li><strong>상용화 시작: 2029년</strong>, 본격 확산 <strong>2029~2033년</strong></li>
+</ul>
+<p>즉 <strong>2026년에 배포되는 모든 AI-RAN은 6G 표준 이전의 구현</strong>이다.</p>
+<h3 id="이것이-만드는-세-가지-리스크">이것이 만드는 세 가지 리스크<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이것이-만드는-세-가지-리스크" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>① 벤더 종속</strong>
+표준이 없으면 인터페이스가 벤더별로 다르다. 노키아 AI-RAN 플랫폼에 맞춰 설계한 운영 체계가 삼성 장비로 그대로 이식되지 않는다. <strong>오픈랜이 벤더 종속을 깨려고 10년을 쓴 영역에서, AI-RAN이 새 종속을 만들 위험</strong>이 있다.</p>
+<p>SKT의 <strong>4개 제조사 동시 실증</strong>이 왜 설계상 영리한지가 여기서 드러난다. 한 벤더에 맞춰 운영 역량을 쌓아버리면 선택권을 잃는다.</p>
+<p><strong>② 투자 회수 기간 불일치</strong>
+통신 장비의 감가상각은 보통 수년 이상이다. 2026~2027년에 도입한 AI-RAN 설비가 <strong>2029년 6G 표준과 어긋나면</strong>, 회수 기간이 끝나기 전에 교체 압력을 받는다. 통신사가 신중한 합리적 이유다.</p>
+<p><strong>③ “AI-RAN”의 정의 자체가 유동적이다</strong>
+앞서 본 세 범주(AI-for/on/and-RAN)의 경계도 표준으로 확정된 게 아니다. 벤더마다 유리한 정의를 쓴다. <strong>에릭슨은 “GPU 없이도 AI-RAN”이라 하고, 엔비디아 진영은 “GPU 기반 통합 플랫폼”을 AI-RAN이라 한다.</strong> 같은 단어로 다른 제품을 파는 상태다.</p>
+<h3 id="그런데-역설이-있다">그런데 역설이 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그런데-역설이-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>표준이 없는 게 <strong>지금은 오히려 추진 동력</strong>이기도 하다. 6G 규격이 2029년에 확정된다면, <strong>그 규격에 자기 기술을 넣고 싶은 회사는 2026~2027년에 실증 데이터를 쌓아야 한다.</strong></p>
+<p>그래서 지금 벌어지는 일의 성격을 다시 읽을 수 있다.</p>
+<ul>
+<li>노키아의 “업계 최초 상용” 발표</li>
+<li>에릭슨의 15곳 이상 배포</li>
+<li>소프트뱅크의 수익 모델 제시</li>
+<li>SKT의 4사 동시 선도망 실증</li>
+<li>삼성의 워킹그룹 의장직</li>
+<li>AI-RAN 얼라이언스 132개 회원사, 데모 33건, 블루프린트 4건</li>
+</ul>
+<p><strong>이것들은 상용 매출 경쟁이라기보다, 2029년 표준에 들어갈 자리를 놓고 벌이는 포지셔닝 경쟁</strong>이다. 그렇게 보면 “왜 이렇게 요란한데 매출은 없는가”라는 의문이 풀린다. <strong>매출이 목표인 단계가 아니다.</strong></p>
+<p>그리고 이 해석은 통신사의 미온적 태도와도 모순되지 않는다. <strong>벤더는 표준 레이스를 뛰어야 하고, 통신사는 표준이 정해진 다음에 사면 된다.</strong> 이해관계가 다르다.</p>
+<hr/>
+<p><a id="비교"></a></p>
+<h2 id="13-한눈에-비교">13. 한눈에 비교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-한눈에-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="세-가지-ai-ran-비교">세 가지 AI-RAN 비교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#세-가지-ai-ran-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>① AI-for-RAN (AI로 통신 성능 개선)</strong></p>
+<ul>
+<li>대표: <strong>에릭슨 AI in RAN</strong>, 노키아 무선 자원 관리 AI</li>
+<li>GPU 필요성: <strong>낮음</strong> (경량 모델, 기존 베이스밴드 활용 가능)</li>
+<li>2026년 상용화 수준: <strong>실제 배포 중</strong> (에릭슨 15곳 이상)</li>
+<li>공표 성능: 하향 처리량 <strong>최대 20%</strong>, 주파수 효율 <strong>최대 10%</strong> (상용망 평균은 약 10%)</li>
+<li>통신사 구매 논리: <strong>피한 비용</strong> (주파수·기지국 증설 지연)</li>
+<li>핵심 리스크: 개선폭이 지점별로 크게 다름</li>
+<li>승자 조건: <strong>기존 장비에 소프트웨어로 얹히는 것</strong></li>
+</ul>
+<p><strong>② AI-and-RAN (한 하드웨어에서 통신+AI 동시)</strong></p>
+<ul>
+<li>대표: <strong>노키아 AI-RAN 플랫폼</strong>, 소프트뱅크 AITRAS 오케스트레이터</li>
+<li>GPU 필요성: <strong>높음</strong></li>
+<li>2026년 상용화 수준: <strong>플랫폼 발표 완료, 파일럿 2026년 말, 상용 2027년</strong></li>
+<li>공표 성능: 초기 <strong>20% 이상</strong> → 2027년 <strong>50%</strong> → 2028년 <strong>100% 이상</strong>(목표치)</li>
+<li>통신사 구매 논리: 설비 활용률 + 신규 매출 <strong>양쪽</strong></li>
+<li>핵심 리스크: <strong>전력·냉각·사이트 비용</strong>, 통신 품질 보장</li>
+<li>승자 조건: <strong>오케스트레이터 품질</strong>과 집약도 최적점 찾기</li>
+</ul>
+<p><strong>③ AI-on-RAN (통신망 위에서 AI 서비스 판매)</strong></p>
+<ul>
+<li>대표: <strong>소프트뱅크 AITRAS + AI 마켓플레이스</strong>, SKT 선도망 피지컬 AI 3종</li>
+<li>GPU 필요성: <strong>높음</strong></li>
+<li>2026년 상용화 수준: <strong>실증·시연 단계</strong>, 상용 매출 사례 미공개</li>
+<li>주장 수익: <strong>자본 1달러당 추론 매출 약 5달러</strong>, 서버당 <strong>최대 219%</strong> (회의적으로 받아들여짐)</li>
+<li>통신사 구매 논리: <strong>신규 매출</strong></li>
+<li>핵심 리스크: <strong>수요 자체가 미검증</strong>, 중앙 클라우드와의 원가 경쟁</li>
+<li>승자 조건: <strong>저지연이 안전 요건인 고객</strong>(로봇·자율이송) 확보 + 수요 채널</li>
+</ul>
+<h3 id="주요-플레이어-비교">주요 플레이어 비교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#주요-플레이어-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>에릭슨</strong></p>
+<ul>
+<li>노선: <strong>GPU 불필요</strong>, 베이스밴드 내장 경량 AI</li>
+<li>2026년 성과: <strong>6월 11일 AI in RAN 출시</strong>, <strong>15곳 이상</strong> 배포·시험</li>
+<li>고객: <strong>소프트뱅크, 벨, SK텔레콤, 로저스</strong></li>
+<li>수익 모델: <strong>소프트웨어 구독</strong></li>
+<li>전략적 동기: <strong>자체 베이스밴드 실리콘 주도권 유지</strong></li>
+<li>강점: 지금 당장 팔린다, 신규 설비 불필요</li>
+<li>약점: 성능 상한이 상대적으로 낮다, AI 서비스 매출 기회는 포기</li>
+</ul>
+<p><strong>노키아</strong></p>
+<ul>
+<li>노선: <strong>엔비디아 GPU 결합</strong>, anyRAN + Aerial</li>
+<li>2026년 성과: <strong>7월 15일 ‘업계 최초 상용 AI-RAN 플랫폼’</strong> 발표</li>
+<li>하드웨어 3경로: AirScale 플러그인 / 독립형 노드 / COTS 서버</li>
+<li>일정: <strong>파일럿 2026년 말, 상용 2027년</strong></li>
+<li>PoC 사업자: A1, 중화텔레콤, du, e&amp;, 모빌리, stc, TPG, 자인 사우디 등</li>
+<li>강점: <strong>용량 2배</strong>라는 단일 메시지, 기존 장비 증설 경로 확보</li>
+<li>약점: <strong>50%·100%는 목표치</strong>, 전력·비용 미해결, 엔비디아 의존</li>
+</ul>
+<p><strong>엔비디아</strong></p>
+<ul>
+<li>노선: <strong>RAN을 가속 컴퓨팅 플랫폼으로 재정의</strong></li>
+<li>2026년 성과: <strong>GTC 2026에서 RAN 재발명 구상</strong>, T모바일 시애틀 AI-RAN 혁신센터, 인도삿·소프트뱅크 실증</li>
+<li>핵심 자산: <strong>Aerial AI-RAN / Aerial RAN Computer</strong>, AI Enterprise 서버리스 API</li>
+<li>전략: <strong>AI-RAN을 6G의 전제로 만들기</strong></li>
+<li>강점: 생태계 소집력, 파트너 폭</li>
+<li>약점: <strong>기지국용 저전력·저가 GPU를 만들 동기 부재</strong>를 스스로 해결해야 함</li>
+</ul>
+<p><strong>소프트뱅크</strong></p>
+<ul>
+<li>노선: <strong>AI-on-RAN 수익 모델 개척</strong></li>
+<li>핵심 자산: <strong>AITRAS 오케스트레이터</strong>(엔비디아와 5년 협업), <strong>소버린 AI GPU 클라우드</strong>(2026년 5월)</li>
+<li>주장: 활용률 <strong>33% → 100%</strong>, 자본 1달러당 <strong>5달러</strong>, 서버당 <strong>최대 219%</strong></li>
+<li>실증: 에릭슨과 <strong>일본 최초 상용 5G망 AI in RAN 시험</strong>(최대 25%/50%, 평균 약 10%)</li>
+<li>강점: <strong>자체 AI 수요 채널 보유</strong>, 오케스트레이터 소프트웨어 자산</li>
+<li>약점: 수익 추정치의 <strong>회의적 수용</strong>, 가정이 많음</li>
+</ul>
+<p><strong>삼성전자</strong></p>
+<ul>
+<li>노선: <strong>AI-RAN 찬성, 엔비디아 GPU 방식 회의</strong></li>
+<li>조직: AI-RAN 얼라이언스 <strong>창립 멤버·이사회 부의장·워킹그룹 3(AI-on-RAN) 의장</strong></li>
+<li>2026년: <strong>3월 MWC 공동 기술 시연</strong>, <strong>SKT와 6G MoU(1차 초점 AI-RAN)</strong></li>
+<li>공개 입장: 표준 GPU는 기지국 불가, 저전력·저가 GPU를 만들 동기가 업계에 없다</li>
+<li>강점: <strong>표준 주도권 + 자체 실리콘</strong></li>
+<li>약점: GPU 경로가 실제로 승리하면 포지션 수정 필요</li>
+</ul>
+<p><strong>SK텔레콤</strong></p>
+<ul>
+<li>노선: <strong>멀티 벤더 비교 실증</strong></li>
+<li>2026년: <strong>2월 AI-RAN 실증 성공</strong>, <strong>7월 과기정통부·NIA ‘하이퍼 AI 네트워크 기반조성’ 수행기관 선정, AI-RAN 선도망 착수</strong></li>
+<li>구조: <strong>삼성·HFR·에릭슨·노키아 4사 장비 동시</strong> 개발·구축·실증</li>
+<li>검증 대상: <strong>2년간 로봇·자율이송 등 피지컬 AI 서비스 3종</strong></li>
+<li>특이점: <strong>HFR과 GPU만으로 통신+AI 동시 처리</strong> 검증</li>
+<li>병행 전략: <strong>AI 데이터센터</strong>(울산 1GW+, 오픈AI 서남권, 영남권 2GW+ 구상)</li>
+<li>강점: 국책 사업 기반, 중앙~엣지 통합 구상(‘AI 고속도로’)</li>
+<li>약점: 실증과 상용 매출 사이 거리</li>
+</ul>
+<hr/>
+<p><a id="문제"></a></p>
+<h2 id="14-아직-해결되지-않은-문제-7가지">14. 아직 해결되지 않은 문제 7가지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-아직-해결되지-않은-문제-7가지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-전력--아무도-아직-답하지-않았다">① 전력 — 아무도 아직 답하지 않았다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-전력--아무도-아직-답하지-않았다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기지국 사이트의 전력·냉각·공간 제약은 GPU 배치의 근본 장벽이다. “GPU가 더 전력 효율적이 되면 된다”는 해법은 <strong>그런 GPU를 만들 경제적 동기가 없다</strong>는 지적에 막혀 있다. 집약 배치로 우회하면 저지연 이점이 희석된다.</p>
+<h3 id="-수요--저지연-추론을-살-고객의-실체">② 수요 — 저지연 추론을 살 고객의 실체<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수요--저지연-추론을-살-고객의-실체" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI-on-RAN 수익 논리 전체가 이 가정 위에 있는데, 2026년까지 공개된 상용 매출 사례가 없다. 가장 유력한 후보인 피지컬 AI도 <strong>사설 5G·와이파이·온프레미스 서버라는 기존 대안</strong>과 경쟁해야 한다.</p>
+<h3 id="-남는-용량과-저지연-보장의-충돌">③ “남는 용량”과 “저지연 보장”의 충돌<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-남는-용량과-저지연-보장의-충돌" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>유휴 용량 활용은 <strong>밀려날 수 있는 자원</strong>을 파는 것이고, 저지연 가치 제안은 <strong>밀려나면 안 되는 작업</strong>을 겨냥한다. 둘을 동시에 만족시키려면 용량을 예약해야 하고, 그러면 “남는 걸 활용한다”는 경제성이 약해진다.</p>
+<h3 id="-표준-공백--2029년까지의-5년">④ 표준 공백 — 2029년까지의 5년<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-표준-공백--2029년까지의-5년" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>6G 규격은 2029년 초 완성이다. 그 전에 도입한 AI-RAN은 <strong>벤더 종속</strong>과 <strong>조기 교체 압력</strong> 위험을 안는다. AI-RAN이라는 용어 자체의 정의도 벤더마다 다르다.</p>
+<h3 id="-숫자의-해석--최대와-평균과-목표">⑤ 숫자의 해석 — ‘최대’와 ‘평균’과 ‘목표’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-숫자의-해석--최대와-평균과-목표" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에릭슨의 25%/50%는 최대값이고 평균은 10%다. 노키아의 50%·100%는 목표치다. <strong>공표 성능을 비교하려면 이 세 종류를 반드시 구분</strong>해야 하는데, 보도에서는 자주 섞인다.</p>
+<h3 id="-벤더-간-이해충돌이-기술-논쟁으로-포장된다">⑥ 벤더 간 이해충돌이 기술 논쟁으로 포장된다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-벤더-간-이해충돌이-기술-논쟁으로-포장된다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>에릭슨·삼성의 GPU 회의론에는 <strong>자체 베이스밴드 실리콘 주도권</strong>이라는 상업적 동기가 겹쳐 있다. 노키아의 GPU 포용에도 마찬가지로 전략적 동기가 있다. <strong>순수한 기술 평가를 얻기 어려운 구조</strong>다.</p>
+<h3 id="-통신사와-벤더의-동기-불일치">⑦ 통신사와 벤더의 동기 불일치<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-통신사와-벤더의-동기-불일치" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>벤더에게 AI-RAN은 정체된 RAN 시장의 신규 매출이다. 통신사에게는 효익이 불확실한 추가 비용이다. <strong>이 비대칭이 해소되지 않으면, 발표는 계속 나오고 구매는 계속 미뤄진다.</strong> 2026년의 “말은 많고 움직임은 적다”는 평가의 근원이 여기다.</p>
+<hr/>
+<p><a id="관전포인트"></a></p>
+<h2 id="15-실무자투자자일반-독자를-위한-관전-포인트-8">15. 실무자·투자자·일반 독자를 위한 관전 포인트 8<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-실무자투자자일반-독자를-위한-관전-포인트-8" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="통신네트워크-실무자를-위한-4">통신·네트워크 실무자를 위한 4<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#통신네트워크-실무자를-위한-4" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>① “AI-RAN”이라는 말이 나오면 세 범주 중 무엇인지부터 확정하라</strong>
+AI-for-RAN(성능 개선), AI-on-RAN(AI 서비스 판매), AI-and-RAN(동시 처리)은 <strong>도입 난이도·투자 규모·성공 조건이 전부 다르다.</strong> 벤더 제안서를 받으면 이 분류부터 적용하면 논의가 빨라진다.</p>
+<p><strong>② 성능 수치는 ‘최대/평균/목표’를 분리해서 받아라</strong>
+벤더 제안서의 개선율이 <strong>최대값인지, 전체 평균인지, 로드맵 목표치인지</strong> 반드시 명시를 요구하자. 에릭슨-소프트뱅크 사례에서 최대 50%와 평균 10%의 차이가 바로 이 지점이다. 그리고 <strong>자사 망의 간섭·밀집 조건에서 측정한 값</strong>이 아니면 그대로 적용되지 않는다.</p>
+<p><strong>③ AI-for-RAN부터 검토하는 게 합리적 순서다</strong>
+신규 하드웨어가 필요 없고, 효익이 기존 KPI(용량·처리량·전력)로 번역되며, 새 수요를 발굴할 필요가 없다. <strong>AI-on-RAN은 고객 확보가 선행 조건</strong>이므로 순서가 뒤다.</p>
+<p><strong>④ 멀티 벤더 선택권을 설계 단계에서 확보하라</strong>
+표준이 2029년에 나온다는 뜻은, <strong>지금 한 벤더 체계에 운영 역량을 고정하면 선택권을 잃는다</strong>는 것이다. SKT가 4개 제조사를 동시에 실증하는 구조를 참고할 만하다.</p>
+<h3 id="투자자를-위한-2">투자자를 위한 2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#투자자를-위한-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>⑤ AI-RAN 관련 매출은 지금 벤더 쪽에 먼저 생긴다</strong>
+2026년 현재 실제 계약이 쌓이는 건 <strong>AI-for-RAN 소프트웨어 구독</strong>이다. 통신사의 AI-on-RAN 매출은 아직 전망이다. <strong>“AI-RAN 수혜”라는 말이 붙은 종목이 어느 쪽인지 구분해야 한다.</strong></p>
+<p><strong>⑥ 통신사의 AI 실적은 기지국이 아니라 데이터센터에서 확인하라</strong>
+국내 통신 3사의 공시·실적에서 성장이 확인되는 항목은 <strong>AI 데이터센터(AIDC)·클라우드 매출</strong>이다. AI-RAN은 국책 실증 단계다. <strong>AIDC 매출 증가율, 전력 확보 진척, 수주 실체</strong>가 더 유효한 지표다. 그리고 발표된 투자 금액·용량 계획(예: 140조 원, 15GW 구상)과 <strong>실제 집행·착공·전력 계약</strong>을 구분해서 봐야 한다.</p>
+<h3 id="일반-독자를-위한-2">일반 독자를 위한 2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일반-독자를-위한-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>⑦ AI-RAN은 단기적으로 체감 변화가 거의 없다</strong>
+AI-for-RAN이 성공해도 사용자가 느끼는 건 <strong>혼잡 지역에서 속도가 조금 덜 떨어지는 정도</strong>다. 평균 개선이 약 10% 수준이라는 점을 기억하면 과한 기대를 피할 수 있다. 요금 인하로 돌아올 가능성도 낮다 — 효익은 설비 투자 지연으로 흡수된다.</p>
+<p><strong>⑧ 변화가 먼저 보일 곳은 소비자가 아니라 공장과 물류센터다</strong>
+AI-RAN의 첫 실제 수요는 <strong>로봇·자율이송처럼 지연이 안전 문제가 되는 산업 현장</strong>이다. SKT 선도망이 2년간 검증하는 것도 정확히 그 3종이다. <strong>소비자용 서비스로 먼저 오지 않는다.</strong></p>
+<hr/>
+<p><a id="faq"></a></p>
+<h2 id="16-자주-묻는-질문faq">16. 자주 묻는 질문(FAQ)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#16-자주-묻는-질문faq" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Q. AI-RAN이 정확히 뭔가요?</strong>
+A. 무선접속망(RAN, 기지국 영역)에 AI를 결합하는 기술 전반입니다. 다만 한 단어 안에 세 가지가 섞여 있습니다. ① <strong>AI-for-RAN</strong>: AI로 통신 성능 자체를 개선 ② <strong>AI-on-RAN</strong>: 기지국 연산 자원으로 통신이 아닌 AI 서비스를 제공 ③ <strong>AI-and-RAN</strong>: 같은 하드웨어에서 둘을 동시에 처리. 2026년 현재 실제로 배포되고 있는 건 주로 ①입니다.</p>
+<p><strong>Q. 기지국에 GPU가 꼭 필요한가요?</strong>
+A. <strong>이것이 2026년 최대 논쟁입니다.</strong> 엔비디아·노키아·소프트뱅크는 필요하다는 쪽, 에릭슨·삼성전자는 과잉이라는 쪽입니다. 에릭슨은 GPU 없이 기존 베이스밴드만으로 하향 처리량 최대 20%·주파수 효율 최대 10% 개선을 주장하며 15곳 이상에 배포했습니다. 반대로 GPU 없이는 AI-on-RAN(AI 서비스 판매)이 어렵습니다. <strong>목적에 따라 답이 다릅니다.</strong></p>
+<p><strong>Q. “1달러 넣으면 5달러 번다”는 게 사실인가요?</strong>
+A. 엔비디아와 소프트뱅크의 <strong>추정치</strong>이고, 시장에서는 <strong>회의적으로 받아들여졌습니다.</strong> 이 계산은 ① 유휴 연산을 살 고객이 존재하고 ② 중앙 클라우드보다 비싼 값을 지불하며 ③ 통신 품질을 해치지 않고 ④ 추가 전력 비용이 매출을 잡아먹지 않는다는 가정 위에 있습니다. 2026년까지 ①을 증명한 상용 사례는 공개되지 않았습니다.</p>
+<p><strong>Q. 노키아가 ‘세계 최초 상용 AI-RAN’이라고 했는데, 지금 살 수 있나요?</strong>
+A. 발표는 2026년 7월 15일이지만 <strong>파일럿이 2026년 말, 상용 공급은 2027년</strong>입니다. 발표와 실제 상용 사이에 1년 이상 간격이 있습니다.</p>
+<p><strong>Q. 주파수 효율 100% 향상이면 속도가 두 배 되나요?</strong>
+A. 노키아의 <strong>2028년 목표치</strong>입니다. 현재 측정된 값은 20%대이고, 50%(2027년)와 100%(2028년)는 로드맵상의 목표입니다. 또 “주파수 효율 2배”는 <strong>같은 주파수에서 망 전체 용량이 2배</strong>라는 뜻이고, 개별 사용자의 체감 속도가 2배가 된다는 뜻은 아닙니다.</p>
+<p><strong>Q. 한국은 어디까지 왔나요?</strong>
+A. SK텔레콤이 2026년 2월 AI-RAN 실증 성공을 발표했고, 7월에는 <strong>과학기술정보통신부·한국지능정보사회진흥원(NIA)의 ‘하이퍼 AI 네트워크 기반조성’ 실증사업 수행기관으로 선정</strong>되어 ‘AI-RAN 선도망’에 착수했습니다. <strong>삼성전자·HFR·에릭슨·노키아 4개 제조사 장비를 동시에</strong> 실증하고, 2년간 <strong>로봇·자율이송 등 피지컬 AI 서비스 3종</strong>을 검증합니다. 삼성전자는 AI-RAN 얼라이언스 이사회 부의장이자 AI-on-RAN 워킹그룹 의장이며, <strong>2026년 11월 11~12일 얼라이언스 멤버 회의가 서울 연세대에서 열립니다.</strong></p>
+<p><strong>Q. 6G랑은 무슨 관계인가요?</strong>
+A. 3GPP 릴리즈 21이 6G 규범 작업의 시작이고, <strong>최종 규격은 2029년 초, 상용화는 2029년</strong>부터로 전망됩니다. 지금 벌어지는 AI-RAN 경쟁은 상용 매출 경쟁보다 <strong>2029년 6G 표준에 자기 기술을 넣기 위한 포지셔닝</strong>의 성격이 강합니다. 그래서 “발표는 많은데 매출은 적다”는 현상이 나타납니다.</p>
+<p><strong>Q. 통신사가 AI로 돈을 벌고 있는 곳은 어디인가요?</strong>
+A. 2026년 기준으로는 <strong>AI 데이터센터(AIDC)</strong> 입니다. 국내 통신 3사 모두 AIDC를 1순위로 두고 있고, KT클라우드와 LG유플러스 AIDC 매출은 보도 기준 전년 동기 대비 두 자릿수 성장을 기록했습니다. <strong>AI-RAN은 아직 매출 항목이 아니라 옵션 확보 단계</strong>입니다.</p>
+<p><strong>Q. AI-RAN이 깔리면 통신 요금이 내려갈까요?</strong>
+A. 가능성은 낮습니다. AI-for-RAN의 효익은 주로 <strong>주파수 구매와 기지국 증설을 늦추는 비용 절감</strong>으로 흡수됩니다. 요금 인하로 전가될 구조적 이유가 약합니다.</p>
+<p><strong>Q. 일반 사용자는 언제 체감하게 되나요?</strong>
+A. 단기적으로는 체감이 거의 없습니다. 평균 개선폭이 약 10% 수준이면 <strong>혼잡한 장소에서 속도 저하가 조금 덜해지는 정도</strong>입니다. 더 뚜렷한 변화는 소비자용 서비스가 아니라 <strong>공장·물류센터의 로봇·자율이송</strong> 쪽에서 먼저 나타날 가능성이 높습니다.</p>
+<hr/>
+<p><a id="마치며"></a></p>
+<h2 id="17-마치며">17. 마치며<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#17-마치며" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026년 AI-RAN을 한 문장으로 정리하면 이렇다.</p>
+<blockquote>
+<p><strong>기지국에 AI를 넣는다는 방향에는 아무도 반대하지 않는다. 그런데 “그 AI를 GPU 위에 올려서, 통신 말고 무엇을 더 팔 것인가”에 대해서는 업계 전체가 둘로 갈려 있다.</strong></p>
+</blockquote>
+<p>이 글에서 본 사실을 정리하면 구도가 선명해진다.</p>
+<p><strong>이미 되고 있는 것</strong></p>
+<ul>
+<li>에릭슨 AI in RAN: <strong>GPU 없이, 신규 하드웨어 없이, 15곳 이상, 하향 처리량 최대 20%·주파수 효율 최대 10%</strong></li>
+<li>통신사가 사는 이유: <strong>새 매출이 아니라 피한 비용</strong></li>
+</ul>
+<p><strong>발표됐지만 아직 상용이 아닌 것</strong></p>
+<ul>
+<li>노키아 AI-RAN 플랫폼: <strong>2026년 7월 발표, 파일럿 2026년 말, 상용 2027년</strong>, 100%는 2028년 목표치</li>
+</ul>
+<p><strong>기술은 됐지만 수요가 미검증인 것</strong></p>
+<ul>
+<li>소프트뱅크 AITRAS의 <strong>33% → 100% 활용률</strong>, 자본 1달러당 5달러</li>
+<li>가장 약한 고리는 GPU도 전력도 아니라 <strong>“그 추론을 살 고객이 누구냐”</strong> 다</li>
+</ul>
+<p><strong>그리고 공개적으로 제기된 반박</strong></p>
+<ul>
+<li>버라이즌 CTO: 현재 형태로는 아직 아니다</li>
+<li>오렌지: 비용 관점에서 논거를 못 보겠다</li>
+<li>삼성전자: 표준 GPU는 기지국에 못 들어가고, <strong>싸고 저전력인 GPU를 만들 동기가 업계에 없다</strong></li>
+<li>에릭슨: 가위로 될 일에 전기톱</li>
+</ul>
+<p>여기서 가장 중요한 해석은 <strong>왜 이렇게 요란한데 매출이 거의 없는가</strong>에 대한 것이다. 답은 <strong>지금이 매출 경쟁 단계가 아니라는 것</strong>이다. 6G 규격은 <strong>2029년 초</strong>에 완성되고 상용화는 <strong>2029년</strong>부터다. RAN 시장 자체는 <strong>2031년 초까지 정체</strong> 전망이다. 벤더에게 지금은 <strong>표준에 자기 기술을 넣을 실증 데이터를 쌓는 시기</strong>이고, 통신사에게는 <strong>표준이 정해진 뒤 사면 되는 시기</strong>다. 이 비대칭이 “말은 많고 움직임은 적다”는 현상의 구조적 원인이다.</p>
+<p>한국의 위치는 그 안에서 분명하다. SKT는 <strong>한 기술에 베팅하지 않고 4개 제조사를 동시에 실증하는</strong> 국책 사업 구조를 택했다. 삼성전자는 <strong>GPU 방식에는 회의적이면서도 AI-on-RAN 워킹그룹 의장</strong>을 맡아 수익 모델 표준에 손을 얹었다. 그리고 <strong>2026년 11월, 얼라이언스 회의가 서울에서 열린다.</strong> 변방이 아니다.</p>
+<p>다만 가장 중요한 질문은 여전히 답을 기다리고 있다.</p>
+<blockquote>
+<p><strong>통신사가 수만 개 기지국에 연산 자원을 깔았을 때, 그 연산을 돈 내고 살 고객은 누구인가.</strong></p>
+</blockquote>
+<p>이 질문에 <strong>로봇과 자율이송</strong>이라는 답이 2026년 현재 가장 유력하고, SKT가 2년에 걸쳐 검증하려는 것도 바로 그것이다. 그 검증 결과가 <strong>“AI-RAN이 6G의 기본 전제가 될지, 5G 시대의 각주로 남을지”</strong> 를 가를 것이다.</p>
+<p>그때까지 AI-RAN 뉴스를 읽는 가장 실용적인 방법은 이것이다. <strong>발표된 개선율이 ‘최대’인지 ‘평균’인지 ‘목표’인지 확인하고, 명단에 오른 통신사가 PoC를 하는 것인지 돈을 쓴 것인지 구분하는 것.</strong> 이 두 가지만 분리해서 읽으면, 같은 보도자료가 전혀 다르게 보인다.</p>
+<hr/>
+<h3 id="참고-및-출처">참고 및 출처<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고-및-출처" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 글은 2026년 10월 2일까지 공개된 다음 유형의 자료를 바탕으로 정리했습니다.</p>
+<ul>
+<li><strong>벤더 공식 발표</strong>: 노키아의 상용 AI-RAN 플랫폼 발표 및 AI-RAN 도입 확대 보도자료(2026년 7월·9월), 에릭슨의 AI in RAN 출시 발표와 소프트뱅크 일본 상용망 시험 보도자료, 에릭슨-T모바일 휴대형 AI RAN 발표, 엔비디아의 AI-RAN 관련 개발자 블로그 및 소프트뱅크 협력 발표</li>
+<li><strong>표준·단체</strong>: AI-RAN 얼라이언스 공개 자료(회원 현황·워킹그룹 구성), 3GPP 6G 릴리즈 21 일정 관련 공개 자료 및 에릭슨 6G 표준화 블로그</li>
+<li><strong>시장조사</strong>: 델오로 그룹의 AI-RAN 누적 매출 전망, Precedence Research의 AI-RAN 시장 전망, ABI Research의 6G 상용화 전망</li>
+<li><strong>국내 기관·기업</strong>: SK텔레콤 뉴스룸의 AI-RAN 실증 발표 및 ‘AI-RAN 선도망’ 사업 착수 관련 발표, 과학기술정보통신부·한국지능정보사회진흥원 ‘하이퍼 AI 네트워크 기반조성’ 실증사업 관련 보도, 삼성전자 AI-RAN 얼라이언스 참여 발표</li>
+<li><strong>언론</strong>: Light Reading, Fierce Network, TelecomTV, DataCenterDynamics, Mobile World Live, Futurum, 그리고 국내 통신·산업 전문지의 통신 3사 AI 데이터센터 투자 보도</li>
+</ul>
+<blockquote>
+<p><strong>수치 해석에 관한 주의.</strong> 본문의 <strong>주파수 효율·처리량 개선율은 대부분 벤더 자체 발표값</strong>이며, 측정 환경(주파수 대역, 셀 밀집도, 간섭 조건, 단말 구성)에 따라 크게 달라집니다. 특히 <strong>‘최대값’과 ‘전체 평균’과 ‘로드맵 목표치’를 구분</strong>해서 읽어야 합니다(예: 에릭슨-소프트뱅크 실증의 최대 25%/50% vs 전체 평균 약 10%, 노키아의 2027년 50%·2028년 100%는 목표치). <strong>수익 추정치(자본 1달러당 5달러, 서버당 219%)는 엔비디아·소프트뱅크의 추정이며 시장에서 회의적으로 평가</strong>되고 있습니다. 또 국내 통신사의 <strong>투자 금액·용량 계획(140조 원, 15GW 등)은 발표된 구상이며 확정된 집행액이 아닙니다.</strong> 분기 실적 수치는 보도 기준으로, 정확한 값은 각 사 공시 원문을 확인하시기 바랍니다. 이 글은 <strong>투자 권유가 아니며</strong>, 장비 도입이나 투자 판단은 반드시 원문 자료와 전문가 검토를 거치시기 바랍니다.</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-242" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#ai-ran텔코-ai-완전-정복-2026-엔비디아노키아-vs-에릭슨-vs-삼성skt-vs-소프트뱅크-aitras--1달러-넣으면-5달러-번다는-기지국-앞에서-버라이즌-cto는-지금-비용으론-말이-안-된다고-했다" data-for="ai-ran텔코-ai-완전-정복-2026-엔비디아노키아-vs-에릭슨-vs-삼성skt-vs-소프트뱅크-aitras--1달러-넣으면-5달러-번다는-기지국-앞에서-버라이즌-cto는-지금-비용으론-말이-안-된다고-했다">AI-RAN·텔코 AI 완전 정복 2026: 엔비디아·노키아 vs 에릭슨 vs 삼성·SKT vs 소프트뱅크 AITRAS — ‘1달러 넣으면 5달러 번다’는 기지국 앞에서, 버라이즌 CTO는 ‘지금 비용으론 말이 안 된다’고 했다</a></li><li class="depth-1"><a href="#목차" data-for="목차">목차</a></li><li class="depth-1"><a href="#1-들어가며-2026년-기지국에서-나온-두-개의-상반된-선언" data-for="1-들어가며-2026년-기지국에서-나온-두-개의-상반된-선언">1. 들어가며: 2026년, 기지국에서 나온 두 개의 상반된 선언</a></li><li class="depth-1"><a href="#2-숫자로-보는-2026년-ai-ran" data-for="2-숫자로-보는-2026년-ai-ran">2. 숫자로 보는 2026년 AI-RAN</a></li><li class="depth-2"><a href="#시장-전망" data-for="시장-전망">시장 전망</a></li><li class="depth-2"><a href="#표준생태계" data-for="표준생태계">표준·생태계</a></li><li class="depth-2"><a href="#6g-표준-일정-3gpp" data-for="6g-표준-일정-3gpp">6G 표준 일정 (3GPP)</a></li><li class="depth-2"><a href="#벤더별-공표-성능" data-for="벤더별-공표-성능">벤더별 공표 성능</a></li><li class="depth-2"><a href="#반대-진영의-공개-발언" data-for="반대-진영의-공개-발언">반대 진영의 공개 발언</a></li><li class="depth-2"><a href="#한국" data-for="한국">한국</a></li><li class="depth-1"><a href="#3-개념-정리-ai-ran은-하나가-아니라-세-개의-다른-사업이다" data-for="3-개념-정리-ai-ran은-하나가-아니라-세-개의-다른-사업이다">3. 개념 정리: AI-RAN은 하나가 아니라 세 개의 다른 사업이다</a></li><li class="depth-2"><a href="#-ai-for-ran--ai로-통신-성능을-올린다" data-for="-ai-for-ran--ai로-통신-성능을-올린다">① AI-for-RAN — “AI로 통신 성능을 올린다”</a></li><li class="depth-2"><a href="#-ai-on-ran--통신망-위에서-ai-서비스를-판다" data-for="-ai-on-ran--통신망-위에서-ai-서비스를-판다">② AI-on-RAN — “통신망 위에서 AI 서비스를 판다”</a></li><li class="depth-2"><a href="#-ai-and-ran--같은-하드웨어에서-둘을-같이-돌린다" data-for="-ai-and-ran--같은-하드웨어에서-둘을-같이-돌린다">③ AI-and-RAN — “같은 하드웨어에서 둘을 같이 돌린다”</a></li><li class="depth-2"><a href="#왜-이-구분이-결정적인가" data-for="왜-이-구분이-결정적인가">왜 이 구분이 결정적인가</a></li><li class="depth-1"><a href="#4-전선--ai-for-ran--에릭슨이-gpu-없이-먼저-숫자를-냈다" data-for="4-전선--ai-for-ran--에릭슨이-gpu-없이-먼저-숫자를-냈다">4. 전선 ①: AI-for-RAN — 에릭슨이 GPU 없이 먼저 숫자를 냈다</a></li><li class="depth-2"><a href="#발표와-구조" data-for="발표와-구조">발표와 구조</a></li><li class="depth-2"><a href="#공표-성능과-그-단서" data-for="공표-성능과-그-단서">공표 성능과 그 단서</a></li><li class="depth-2"><a href="#배포-현황" data-for="배포-현황">배포 현황</a></li><li class="depth-2"><a href="#에릭슨이-gpu를-거부하는-이유" data-for="에릭슨이-gpu를-거부하는-이유">에릭슨이 GPU를 거부하는 이유</a></li><li class="depth-2"><a href="#정리" data-for="정리">정리</a></li><li class="depth-1"><a href="#5-전선--ai-and-ran--노키아엔비디아의-세계-최초-상용-플랫폼" data-for="5-전선--ai-and-ran--노키아엔비디아의-세계-최초-상용-플랫폼">5. 전선 ②: AI-and-RAN — 노키아·엔비디아의 ‘세계 최초 상용’ 플랫폼</a></li><li class="depth-2"><a href="#무엇을-발표했나" data-for="무엇을-발표했나">무엇을 발표했나</a></li><li class="depth-2"><a href="#성능-로드맵과-그-성격" data-for="성능-로드맵과-그-성격">성능 로드맵과 그 성격</a></li><li class="depth-2"><a href="#일정" data-for="일정">일정</a></li><li class="depth-2"><a href="#고객-명단-poc와-상용-계약을-구분해야-한다" data-for="고객-명단-poc와-상용-계약을-구분해야-한다">고객 명단: PoC와 상용 계약을 구분해야 한다</a></li><li class="depth-2"><a href="#엔비디아의-역할과-야망" data-for="엔비디아의-역할과-야망">엔비디아의 역할과 야망</a></li><li class="depth-2"><a href="#정리-1" data-for="정리-1">정리</a></li><li class="depth-1"><a href="#6-전선--ai-on-ran--소프트뱅크-aitras와-유휴-3분의-2" data-for="6-전선--ai-on-ran--소프트뱅크-aitras와-유휴-3분의-2">6. 전선 ③: AI-on-RAN — 소프트뱅크 AITRAS와 ‘유휴 3분의 2’</a></li><li class="depth-2"><a href="#aitras가-무엇인가" data-for="aitras가-무엇인가">AITRAS가 무엇인가</a></li><li class="depth-2"><a href="#논리의-핵심-33--100" data-for="논리의-핵심-33--100">논리의 핵심: 33% → 100%</a></li><li class="depth-2"><a href="#수익-추정치와-그-추정치가-받은-대접" data-for="수익-추정치와-그-추정치가-받은-대접">수익 추정치와, 그 추정치가 받은 대접</a></li><li class="depth-2"><a href="#그래도-소프트뱅크가-유리한-이유" data-for="그래도-소프트뱅크가-유리한-이유">그래도 소프트뱅크가 유리한 이유</a></li><li class="depth-2"><a href="#정리-2" data-for="정리-2">정리</a></li><li class="depth-1"><a href="#7-전선--한국--skt의-ai-ran-선도망-그리고-삼성이-선-자리" data-for="7-전선--한국--skt의-ai-ran-선도망-그리고-삼성이-선-자리">7. 전선 ④: 한국 — SKT의 AI-RAN 선도망, 그리고 삼성이 선 자리</a></li><li class="depth-2"><a href="#skt-실증-성공에서-국책-사업으로" data-for="skt-실증-성공에서-국책-사업으로">SKT: 실증 성공에서 국책 사업으로</a></li><li class="depth-2"><a href="#무엇을-검증하는가-피지컬-ai" data-for="무엇을-검증하는가-피지컬-ai">무엇을 검증하는가: 피지컬 AI</a></li><li class="depth-2"><a href="#삼성전자-회의론자이면서-표준-주도자" data-for="삼성전자-회의론자이면서-표준-주도자">삼성전자: 회의론자이면서 표준 주도자</a></li><li class="depth-2"><a href="#그리고-11월-서울" data-for="그리고-11월-서울">그리고 11월, 서울</a></li><li class="depth-1"><a href="#8-돈의-문제-통신사는-왜-지금-기지국을-다시-파헤치는가" data-for="8-돈의-문제-통신사는-왜-지금-기지국을-다시-파헤치는가">8. 돈의 문제: 통신사는 왜 지금 기지국을 다시 파헤치는가</a></li><li class="depth-2"><a href="#질문을-거꾸로-세워보자" data-for="질문을-거꾸로-세워보자">질문을 거꾸로 세워보자</a></li><li class="depth-2"><a href="#-ran-시장이-정체돼-있다" data-for="-ran-시장이-정체돼-있다">① RAN 시장이 정체돼 있다</a></li><li class="depth-2"><a href="#-트래픽은-늘지만-요금은-안-오른다" data-for="-트래픽은-늘지만-요금은-안-오른다">② 트래픽은 늘지만 요금은 안 오른다</a></li><li class="depth-2"><a href="#-진짜-ai-매출은-기지국이-아니라-데이터센터에서-나고-있다" data-for="-진짜-ai-매출은-기지국이-아니라-데이터센터에서-나고-있다">③ 진짜 AI 매출은 기지국이 아니라 데이터센터에서 나고 있다</a></li><li class="depth-1"><a href="#9-국내-통신-3사의-진짜-ai-승부는-기지국이-아니라-데이터센터다" data-for="9-국내-통신-3사의-진짜-ai-승부는-기지국이-아니라-데이터센터다">9. 국내: 통신 3사의 진짜 AI 승부는 기지국이 아니라 데이터센터다</a></li><li class="depth-2"><a href="#배경-해킹-이후의-반등-과제" data-for="배경-해킹-이후의-반등-과제">배경: 해킹 이후의 반등 과제</a></li><li class="depth-2"><a href="#sk텔레콤-가장-공격적인-숫자" data-for="sk텔레콤-가장-공격적인-숫자">SK텔레콤: 가장 공격적인 숫자</a></li><li class="depth-2"><a href="#kt-실수요-기반-분산-구축" data-for="kt-실수요-기반-분산-구축">KT: 실수요 기반, 분산 구축</a></li><li class="depth-2"><a href="#lg유플러스-수도권-추론-거점" data-for="lg유플러스-수도권-추론-거점">LG유플러스: 수도권 추론 거점</a></li><li class="depth-2"><a href="#세-회사-전략의-공통점과-차이" data-for="세-회사-전략의-공통점과-차이">세 회사 전략의 공통점과 차이</a></li><li class="depth-2"><a href="#그래서-ai-ran은-어디에-놓이는가" data-for="그래서-ai-ran은-어디에-놓이는가">그래서 AI-RAN은 어디에 놓이는가</a></li><li class="depth-1"><a href="#10-불편한-진실--전력--스쿠터에-v8-엔진을-얹는-일" data-for="10-불편한-진실--전력--스쿠터에-v8-엔진을-얹는-일">10. 불편한 진실 ①: 전력 — “스쿠터에 V8 엔진을 얹는 일”</a></li><li class="depth-2"><a href="#비유가-정확하다" data-for="비유가-정확하다">비유가 정확하다</a></li><li class="depth-2"><a href="#세-가지-제약" data-for="세-가지-제약">세 가지 제약</a></li><li class="depth-2"><a href="#그래서-조건부-성립이다" data-for="그래서-조건부-성립이다">그래서 조건부 성립이다</a></li><li class="depth-2"><a href="#중앙-집중-배치라는-우회로" data-for="중앙-집중-배치라는-우회로">중앙 집중 배치라는 우회로</a></li><li class="depth-1"><a href="#11-불편한-진실--수요--엣지-추론을-대체-누가-사는가" data-for="11-불편한-진실--수요--엣지-추론을-대체-누가-사는가">11. 불편한 진실 ②: 수요 — 엣지 추론을 대체 누가 사는가</a></li><li class="depth-2"><a href="#가장-약한-고리" data-for="가장-약한-고리">가장 약한 고리</a></li><li class="depth-2"><a href="#엣지-추론이-중앙-클라우드를-이겨야-하는-조건" data-for="엣지-추론이-중앙-클라우드를-이겨야-하는-조건">엣지 추론이 중앙 클라우드를 이겨야 하는 조건</a></li><li class="depth-2"><a href="#그래서-피지컬-ai가-유일한-유력-후보다" data-for="그래서-피지컬-ai가-유일한-유력-후보다">그래서 피지컬 AI가 유일한 유력 후보다</a></li><li class="depth-2"><a href="#수요-측-관점에서-다시-보는-33--100" data-for="수요-측-관점에서-다시-보는-33--100">수요 측 관점에서 다시 보는 “33% → 100%”</a></li><li class="depth-1"><a href="#12-불편한-진실--표준--6g는-2029년이고-그-전까지는-전부-비표준이다" data-for="12-불편한-진실--표준--6g는-2029년이고-그-전까지는-전부-비표준이다">12. 불편한 진실 ③: 표준 — 6G는 2029년이고, 그 전까지는 전부 ‘비표준’이다</a></li><li class="depth-2"><a href="#일정을-그대로-보자" data-for="일정을-그대로-보자">일정을 그대로 보자</a></li><li class="depth-2"><a href="#이것이-만드는-세-가지-리스크" data-for="이것이-만드는-세-가지-리스크">이것이 만드는 세 가지 리스크</a></li><li class="depth-2"><a href="#그런데-역설이-있다" data-for="그런데-역설이-있다">그런데 역설이 있다</a></li><li class="depth-1"><a href="#13-한눈에-비교" data-for="13-한눈에-비교">13. 한눈에 비교</a></li><li class="depth-2"><a href="#세-가지-ai-ran-비교" data-for="세-가지-ai-ran-비교">세 가지 AI-RAN 비교</a></li><li class="depth-2"><a href="#주요-플레이어-비교" data-for="주요-플레이어-비교">주요 플레이어 비교</a></li><li class="depth-1"><a href="#14-아직-해결되지-않은-문제-7가지" data-for="14-아직-해결되지-않은-문제-7가지">14. 아직 해결되지 않은 문제 7가지</a></li><li class="depth-2"><a href="#-전력--아무도-아직-답하지-않았다" data-for="-전력--아무도-아직-답하지-않았다">① 전력 — 아무도 아직 답하지 않았다</a></li><li class="depth-2"><a href="#-수요--저지연-추론을-살-고객의-실체" data-for="-수요--저지연-추론을-살-고객의-실체">② 수요 — 저지연 추론을 살 고객의 실체</a></li><li class="depth-2"><a href="#-남는-용량과-저지연-보장의-충돌" data-for="-남는-용량과-저지연-보장의-충돌">③ “남는 용량”과 “저지연 보장”의 충돌</a></li><li class="depth-2"><a href="#-표준-공백--2029년까지의-5년" data-for="-표준-공백--2029년까지의-5년">④ 표준 공백 — 2029년까지의 5년</a></li><li class="depth-2"><a href="#-숫자의-해석--최대와-평균과-목표" data-for="-숫자의-해석--최대와-평균과-목표">⑤ 숫자의 해석 — ‘최대’와 ‘평균’과 ‘목표’</a></li><li class="depth-2"><a href="#-벤더-간-이해충돌이-기술-논쟁으로-포장된다" data-for="-벤더-간-이해충돌이-기술-논쟁으로-포장된다">⑥ 벤더 간 이해충돌이 기술 논쟁으로 포장된다</a></li><li class="depth-2"><a href="#-통신사와-벤더의-동기-불일치" data-for="-통신사와-벤더의-동기-불일치">⑦ 통신사와 벤더의 동기 불일치</a></li><li class="depth-1"><a href="#15-실무자투자자일반-독자를-위한-관전-포인트-8" data-for="15-실무자투자자일반-독자를-위한-관전-포인트-8">15. 실무자·투자자·일반 독자를 위한 관전 포인트 8</a></li><li class="depth-2"><a href="#통신네트워크-실무자를-위한-4" data-for="통신네트워크-실무자를-위한-4">통신·네트워크 실무자를 위한 4</a></li><li class="depth-2"><a href="#투자자를-위한-2" data-for="투자자를-위한-2">투자자를 위한 2</a></li><li class="depth-2"><a href="#일반-독자를-위한-2" data-for="일반-독자를-위한-2">일반 독자를 위한 2</a></li><li class="depth-1"><a href="#16-자주-묻는-질문faq" data-for="16-자주-묻는-질문faq">16. 자주 묻는 질문(FAQ)</a></li><li class="depth-1"><a href="#17-마치며" data-for="17-마치며">17. 마치며</a></li><li class="depth-2"><a href="#참고-및-출처" data-for="참고-및-출처">참고 및 출처</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

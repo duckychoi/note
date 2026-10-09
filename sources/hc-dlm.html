@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>Hierarchical Continuous Diffusion Language Models (HC-DLM) — 연속 잠재를 &quot;유일한 지속 생성 상태&quot;로 두는 구조</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="Hierarchical Continuous Diffusion Language Models (HC-DLM) — 연속 잠재를 &quot;유일한 지속 생성 상태&quot;로 두는 구조"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Hierarchical Continuous Diffusion Language Models (HC-DLM) — 연속 잠재를 &quot;유일한 지속 생성 상태&quot;로 두는 구조"/><meta name="twitter:description" content="HC-DLM (2610.02193) 핵심 인사이트 문제 진단이 양쪽 진영을 동시에 깎는다. 이산 디퓨전 LM: 병렬 디코딩 시 각 토큰이 자기 marginal 에서 독립 샘플링돼 함께 디코딩되는 토큰 간 통계적 의존성이 끊긴다."/><meta property="og:description" content="HC-DLM (2610.02193) 핵심 인사이트 문제 진단이 양쪽 진영을 동시에 깎는다. 이산 디퓨전 LM: 병렬 디코딩 시 각 토큰이 자기 marginal 에서 독립 샘플링돼 함께 디코딩되는 토큰 간 통계적 의존성이 끊긴다."/><meta property="og:image:alt" content="HC-DLM (2610.02193) 핵심 인사이트 문제 진단이 양쪽 진영을 동시에 깎는다. 이산 디퓨전 LM: 병렬 디코딩 시 각 토큰이 자기 marginal 에서 독립 샘플링돼 함께 디코딩되는 토큰 간 통계적 의존성이 끊긴다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/hc-dlm"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/hc-dlm"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="HC-DLM (2610.02193) 핵심 인사이트 문제 진단이 양쪽 진영을 동시에 깎는다. 이산 디퓨전 LM: 병렬 디코딩 시 각 토큰이 자기 marginal 에서 독립 샘플링돼 함께 디코딩되는 토큰 간 통계적 의존성이 끊긴다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/hc-dlm-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/hc-dlm-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/hc-dlm-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/hc-dlm" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-642" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-642" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Hierarchical Continuous Diffusion Language Models (HC-DLM) — 연속 잠재를 &quot;유일한 지속 생성 상태&quot;로 두는 구조</a></div></nav><h1 class="article-title">Hierarchical Continuous Diffusion Language Models (HC-DLM) — 연속 잠재를 &quot;유일한 지속 생성 상태&quot;로 두는 구조</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/ai-news" class="internal internal-link tag-link">ai-news</a><span class="note-properties-separator">, </span><a href="../tags/hf-paper" class="internal internal-link tag-link">hf-paper</a><span class="note-properties-separator">, </span><a href="../tags/diffusion-lm" class="internal internal-link tag-link">diffusion-lm</a><span class="note-properties-separator">, </span><a href="../tags/discrete-diffusion" class="internal internal-link tag-link">discrete-diffusion</a><span class="note-properties-separator">, </span><a href="../tags/continuous-diffusion" class="internal internal-link tag-link">continuous-diffusion</a><span class="note-properties-separator">, </span><a href="../tags/sudoku" class="internal internal-link tag-link">sudoku</a><span class="note-properties-separator">, </span><a href="../tags/countdown" class="internal internal-link tag-link">countdown</a><span class="note-properties-separator">, </span><a href="../tags/lm1b" class="internal internal-link tag-link">lm1b</a><span class="note-properties-separator">, </span><a href="../tags/uiuc" class="internal internal-link tag-link">uiuc</a><span class="note-properties-separator">, </span><a href="../tags/amazon" class="internal internal-link tag-link">amazon</a><span class="note-properties-separator">, </span><a href="../tags/pdf-verified" class="internal internal-link tag-link">pdf-verified</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-10-03T00:00:00.000Z">2026년 10월 03일</time><span>12 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="hc-dlm-261002193">HC-DLM (2610.02193)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hc-dlm-261002193" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>문제 진단이 양쪽 진영을 동시에 깎는다.</strong>
+<strong>이산</strong> 디퓨전 LM: 병렬 디코딩 시 <strong>각 토큰이 자기 marginal 에서 독립 샘플링돼 함께 디코딩되는 토큰 간 통계적 의존성이 끊긴다.</strong>
+<strong>연속</strong> 디퓨전 LM: 공유 연속 상태를 디노이징해 이를 피하지만 <strong>디노이저가 그 상태만 보므로 최종 디코딩 전까지 유효한 토큰 구성에 묶이는 것이 아무것도 없다.</strong>
+<strong>HC-DLM</strong> 은 이산 토큰 생성과 연속 잠재 궤적을 <strong>단일 디노이징 과정</strong>으로 결합하고, 학습 목표를 <strong>토큰 우도의 변분 하한</strong>에서 유도한다.
+🎯 <strong>최근 유사 연구와의 차이를 스스로 명시</strong>: 자기완결적 이산 체인에 연속 컨텍스트를 <em>붙이는</em> 방식과 달리 <strong>잠재를 유일한 지속 생성 상태로 만든다</strong> — 매 스텝 잠재에서 토큰을 읽어내고 그것이 다음 잠재 업데이트의 <strong>scaffold</strong> 로 되먹임된다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 볼트 PDF 열람 — 초록이 &quot;수치 0개&quot;였던 논문의 표 3개를 전부 확보했다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><code>https://arxiv.org/pdf/2610.02193</code> → <strong>HTTP 200 · 617,457B · PDF 1.7 · 24페이지</strong> · <code>pypdf</code> 추출 <strong>78,992자</strong>.
+⚖️ <strong>초록에는 성능 수치가 1개도 없었다. 본문에는 3개 표가 있다.</strong> 아래는 전부 PDF 실측이다.</p>
+</div>
+</blockquote>
+<h2 id="-pdf-실측--표-3개">🏆 PDF 실측 — 표 3개<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-pdf-실측--표-3개" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Table 1 · Sudoku 정확도(%↑) — 9×9 격자 · L=81 · K=10 · 81칸 전부 일치해야 정답</strong>
+(Easy = Shah et al. 2024 표준 split, <strong>7가지 고정 논리 전략으로 풀리는 퍼즐</strong> / Hard = 그 전략 집합 밖 · Kim et al. 2025 프로토콜)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>방식</th><th><a href=".././tags/params" class="tag-link internal internal-link alias" data-slug="tags/params">params</a></th><th>Easy</th><th>Hard</th></tr></thead><tbody><tr><td>ARM (순서학습 없음)</td><td>42M</td><td>9.73</td><td>–</td></tr><tr><td>ARM (순서학습 있음)</td><td>42M</td><td>87.18</td><td>32.57</td></tr><tr><td>MDM (vanilla)</td><td>6M</td><td>6.88</td><td>3.62</td></tr><tr><td>MDM (top-prob.)</td><td>6M</td><td>18.51</td><td>9.44</td></tr><tr><td>MDM (top-prob. margin)</td><td>6M</td><td>89.49</td><td>49.88</td></tr><tr><td><strong>CCDD</strong> (하이브리드)</td><td>6M</td><td><strong>94.65</strong></td><td>70.73</td></tr><tr><td><strong>HC-DLM (ours)</strong></td><td>6M</td><td>94.21</td><td><strong>72.41</strong></td></tr></tbody></table></div>
+<p><strong>Table 2 · Countdown 정확도(%↑)</strong> — 표 캡션: <em>“Best overall result per subtask in <strong>bold</strong>; best result at the <strong>6M</strong> parameter scale underlined”</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>방식</th><th><a href=".././tags/params" class="tag-link internal internal-link alias" data-slug="tags/params">params</a></th><th>CD4</th><th>CD5</th></tr></thead><tbody><tr><td>GPT-2 Scratch</td><td>6M / 85M / 303M</td><td>31.9 / 45.8 / 41.3</td><td>4.3 / 5.1 / 4.5</td></tr><tr><td>Stream-of-Search</td><td>250M</td><td>54.2</td><td>–</td></tr><tr><td>LLaMA</td><td>7B / 13B</td><td>41.1 / 51.1</td><td>6.7 / 7.4</td></tr><tr><td>VDM</td><td>85M</td><td>73.4</td><td>16.3</td></tr><tr><td>D3PM</td><td>85M</td><td>83.1</td><td>27.6</td></tr><tr><td><strong>RDM</strong></td><td>85M</td><td><strong>87.0</strong></td><td><strong>45.8</strong></td></tr><tr><td>MDM (top-prob. margin)</td><td>6M</td><td>50.8</td><td>21.3</td></tr><tr><td>CCDD</td><td>6M</td><td>81.18</td><td>25.35</td></tr><tr><td><strong>HC-DLM (ours)</strong></td><td>6M</td><td>84.41</td><td>37.52</td></tr></tbody></table></div>
+<p><strong>Table 3 · LM1B 무조건 생성 Gen. PPL(↓ 낮을수록 좋음)</strong> — 베이스라인은 LangFlow 저자 재학습분</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>방식</th><th><a href=".././tags/params" class="tag-link internal internal-link alias" data-slug="tags/params">params</a></th><th>Gen. PPL</th></tr></thead><tbody><tr><td><strong>Transformer (자기회귀)</strong></td><td>108M</td><td><strong>66.7</strong></td></tr><tr><td>MDM</td><td>116M</td><td>103.9</td></tr><tr><td>SEDD</td><td>116M</td><td>115.9</td></tr><tr><td>Duo</td><td>116M</td><td>97.6</td></tr><tr><td>Plaid</td><td>109M</td><td>77.3</td></tr><tr><td>LangFlow</td><td>117M</td><td>92.2</td></tr><tr><td><strong>HC-DLM (ours)</strong></td><td>118M</td><td>75.5</td></tr><tr><td><em>Ground truth</em></td><td>–</td><td><em>40.4</em></td></tr></tbody></table></div>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 초록의 3개 주장 중 1개가 과대다 — 그리고 <strong>본문이 그것을 스스로 정정한다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>초록: <em>“HC-DLM improves over discrete and continuous diffusion baselines at matched model size, <strong>in puzzle accuracy on Sudoku and Countdown</strong> and in generative perplexity on LM1B.”</em>
+① <strong>Countdown</strong>: ✅ <strong>정확</strong>. 6M 급에서 CCDD 81.18→84.41(<strong>+3.23</strong>) · 25.35→37.52(<strong>+12.17</strong>). 🔴 단 <strong>전체 최고는 RDM 85M(87.0/45.8)</strong> 이고 표의 bold 가 거기 가 있다 — <strong>“matched model size” 한정이 정확히 그 때문에 붙어 있다.</strong>
+② <strong>LM1B</strong>: ✅ <strong>정확</strong>. 디퓨전 중 최저 PPL 75.5. 🔴 단 <strong>자기회귀 Transformer 66.7 이 더 좋다</strong>. 저자 서술이 정확히 한정한다 — <em>“best generative perplexity <strong>among the evaluated diffusion models</strong>”</em>.
+③ <strong>Sudoku</strong>: 🔴 <strong>부정확.</strong> Easy split 에서 <strong>CCDD 94.65 > HC-DLM 94.21 (−0.44%p 패배)</strong> 다. 승리는 Hard split(+1.68%p)뿐이다.
+✅ <strong>그런데 본문은 숨기지 않는다</strong>: <em>“the matched CCDD implementation attains comparable and <strong>marginally higher</strong> accuracy (<strong>94.65 vs. 94.21</strong>)”</em> — <strong>수치까지 적어 자기 패배를 명시한다.</strong>
+⚖️ <strong>그래서 이건 “저자가 숨겼다”가 아니라 “초록이라는 매체가 뭉갠다”다.</strong> 📌 <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a> 는 <strong>본문에서 실행됐고 초록에서 실행되지 않았다</strong> ⇒ 🆕 <strong><a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a> 에 “같은 논문 내 초록↔본문 정직성 격차” 유형 추가. 그리고 이것은 <a href="../concepts/벤치마크-이미지-봉인" class="internal internal-link alias" data-slug="concepts/벤치마크-이미지-봉인">벤치마크-이미지-봉인</a> 과 같은 축이다 — 분야 관행이 아니라 매체의 속성이다.</strong>
+🔴 <strong>파급</strong>: <strong>초록만 읽는 볼트의 15배치 관행이 바로 이 지점에서 틀린다.</strong> 초록 대조는 <em>“수집기가 옳게 인용했는가”</em> 를 검증하는데, <strong>수집기는 초록을 옳게 인용했고 초록이 과대했다.</strong> ⇒ ⚖️ <strong>“수집기 인용 검증 통과”가 “주장 검증 통과”가 아니라는 것을 처음으로 실물로 확인했다.</strong></p>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-local-llm--디퓨전-lm">도메인별 추출 (local-llm · 디퓨전 LM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-local-llm--디퓨전-lm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>실용성 판단</strong>: 🔴 <strong>현 시점 실배포 불가.</strong> 전부 <strong>6M~118M 규모 연구용</strong>이고 LM1B·Sudoku·Countdown 은 실서비스 과제가 아니다. 🟡 <strong>다만 구조 아이디어는 즉시 이해 가치가 있다</strong> — <em>“잠재를 유일한 지속 생성 상태로”</em> 는 토큰 병렬 생성 품질 문제의 명확한 진단이다.</li>
+<li><strong>메모리/상태 아키텍처</strong>: 🎯 <strong>같은 배치 <a href="../sources/beyond-memory-pos" class="internal internal-link" data-slug="sources/beyond-memory-pos">Beyond-Memory-PoS</a> 와 구조적 동형이다.</strong> 양쪽 다 <em>“지속적으로 유지되는 단일 상태”</em> 를 핵심에 둔다 — HC-DLM 은 <strong>생성 과정의 잠재</strong>, PoS 는 <strong>에이전트의 belief</strong>. 📌 <strong>서로 다른 층(디코딩 ↔ 에이전트 루프)에서 같은 처방이 같은 날 나왔다</strong> → <a href="../concepts/대립레시피-동시도착" class="internal internal-link alias" data-slug="concepts/대립레시피-동시도착">대립레시피-동시도착</a> · <a href="../concepts/에이전트-메모리-레이어" class="internal internal-link alias" data-slug="concepts/에이전트-메모리-레이어">에이전트-메모리-레이어</a>.</li>
+<li><strong>효율 주장</strong>: <em>“At large batch sizes, HC-DLM also maintains lower wall-clock sampling time, suggesting favorable efficiency for batched parallel generation”</em> (Fig. 4) · 엔트로피가 <strong>NFE 완화와 CFG 스윕 전반에서 안정</strong>(Table 7·Fig. 5). 🔴 <strong>둘 다 수치가 그림/부록에 있어 봉인</strong> → <a href="../concepts/벤치마크-이미지-봉인" class="internal internal-link alias" data-slug="concepts/벤치마크-이미지-봉인">벤치마크-이미지-봉인</a> <strong>그림매장형</strong>.</li>
+<li>✅ <strong><a href="../concepts/비매칭-비교" class="internal internal-link alias" data-slug="concepts/비매칭-비교">비매칭-비교</a> 모범 사례</strong>: CCDD 를 <em>“<strong>matched 6M-parameter scale</strong> under the <strong>same protocol</strong> with its <strong>original backbone replaced by our own</strong> for fair comparison”</em> 로 <strong>재현</strong>했다. 그리고 <em>“Parameter counts refer to <strong>sampling-time generative parameters, excluding token embeddings</strong>”</em> 로 <strong>파라미터 정의까지 명시</strong>(Appendix B.4). ⇒ 🏆 <strong>오늘 배치 최고의 비교 설계다.</strong></li>
+<li><strong>아블레이션</strong>: <em>“Both the continuous latent and the token feedback are needed”</em> — <strong>두 부품이 전부 필요하다</strong>고 Sudoku 등에서 보인다(본문 86행).</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 선언된 구현체가 비어 있다 — ★52 인데 코드가 0이다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF API <code>githubRepo</code> = <code>https://github.com/rhfeiyang/HC-DLM</code> · 설명 <em>“<strong>Official implementation</strong> of ‘Hierarchical Continuous Diffusion Language Models’”</em> · <strong>볼트 독립 실측 ★52</strong>(HF 보고 52 = 드리프트 0) · fork 1 · issues 1 · created <strong>2026-09-29</strong> · pushed <strong>2026-10-02</strong>.
+🔴 <strong>그런데 <code>GET /repos/.../contents/</code> 루트 항목이 3개다</strong>: <code>.gitignore</code> · <code>README.md</code> · <code>assets</code> 뿐이고 <strong><code>GET /languages</code> = <code>{}</code> (완전히 비어 있다)</strong>.
+⚖️ <strong>“Official implementation” 이라 선언하고 ★52 를 받았는데 코드가 없다.</strong> ⇒ 🆕 <strong><a href="../concepts/선언된-구현체-공백" class="internal internal-link alias" data-slug="concepts/선언된-구현체-공백">선언된-구현체-공백</a> 의 새 하위유형 — “활력형 공백”.</strong>
+📌 <strong>볼트 누적 3사례가 서로 다른 모양이다</strong>: 10-01 <a href="../sources/ride" class="internal internal-link" data-slug="sources/ride">RIDE</a> ★<strong>1</strong> · 10-02 <a href="../sources/corrgrpo" class="internal internal-link" data-slug="sources/corrgrpo">CorrGRPO</a> ★<strong>0</strong>·description <code>None</code> · 🆕 10-03 <strong>HC-DLM ★52 · description 있음 · pushed 어제 · 코드 0</strong>.
+⚖️ <strong>그래서 10-02 결론 <em>“★0 은 품질 신호가 아니라 시간 신호”</em> 를 보강해야 한다: ★는 시간 신호도 아니다. ★52 는 “코드가 있다”의 증거가 아니라 “논문에 관심이 있다”의 증거다.</strong> 구현체 존재는 <strong>★이 아니라 <code>languages</code>/<code>contents</code> 로 판정한다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 프로젝트 페이지가 같은 배치 <a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a> 의 진단을 실증했다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><code>https://hc-dlm.github.io/</code> 열람(<strong>HTTP 200 · 34,296B</strong>) — 🔴 <strong>github/code 링크 0개</strong>(프로젝트 페이지는 있으나 코드로 가는 경로가 없다).
+🎯 <strong>부수 발견</strong>: 외부 폰트 로드가 <strong><code>family=Inter</code>(+Fira Code) 단 하나</strong>다. 같은 배치 <a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a> 의 문제 설정이 <em>“모든 모델이 같은 SaaS 템플릿으로 학습돼 매 프로젝트에 같은 흔적(<strong>전부 Inter 폰트</strong> 등)이 나온다”</em> 였다. ⇒ <strong>진단과 증거가 같은 배치 안에서 만났다.</strong> 🔴 <strong>단 n=1 이고 이 페이지가 AI 생성이라는 증거는 없다 — 상관일 뿐이다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 질문 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>CCDD 가 Easy 에서 이기고 Hard 에서 지는 <strong>이유</strong>가 무엇인가(저자는 <em>“out-of-distribution Hard split”</em> 이라고만 적는다 — 일반화 우위라는 뜻인가?).</li>
+<li>🎯 <strong>같은 배치 <a href="../sources/on-policy-or-off-policy-distillation" class="internal internal-link" data-slug="sources/on-policy-or-off-policy-distillation">On-Policy-or-Off-Policy-Distillation</a> 과 Countdown 을 공유한다.</strong> 저쪽은 <em>“Countdown 더 어려운 변형의 일반화”</em> 를 본다. <strong>같은 과제의 난이도 축을 두 논문이 각자 쓰는데 설정이 호환되는지 미확인.</strong></li>
+<li><code>assets/</code> 에 무엇이 있는가(코드 없는 레포의 유일한 디렉터리).</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/beyond-memory-pos" class="internal internal-link" data-slug="sources/beyond-memory-pos">Beyond-Memory-PoS</a> — 같은 배치 · <strong>“지속되는 단일 상태”</strong> 구조적 동형</li>
+<li><a href="../sources/on-policy-or-off-policy-distillation" class="internal internal-link" data-slug="sources/on-policy-or-off-policy-distillation">On-Policy-or-Off-Policy-Distillation</a> — 같은 배치 · Countdown 공유</li>
+<li><a href="../sources/sharpening-tax" class="internal internal-link" data-slug="sources/sharpening-tax">Sharpening-Tax</a> · <a href="../sources/adaptive-reward-routing" class="internal internal-link" data-slug="sources/adaptive-reward-routing">Adaptive-Reward-Routing</a> — 같은 배치</li>
+<li><a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a> — 이 논문 프로젝트 페이지가 impeccable 진단을 실증</li>
+<li><a href="../concepts/선언된-구현체-공백" class="internal internal-link alias" data-slug="concepts/선언된-구현체-공백">선언된-구현체-공백</a> · <a href="../concepts/표-부분인용" class="internal internal-link alias" data-slug="concepts/표-부분인용">표-부분인용</a> · <a href="../concepts/비매칭-비교" class="internal internal-link alias" data-slug="concepts/비매칭-비교">비매칭-비교</a> · <a href="../concepts/벤치마크-이미지-봉인" class="internal internal-link alias" data-slug="concepts/벤치마크-이미지-봉인">벤치마크-이미지-봉인</a> · <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a></li>
+<li><a href="../domains/local-llm" class="internal internal-link" data-slug="domains/local-llm">local-llm</a> · <a href="../entities/uiuc" class="internal internal-link" data-slug="entities/uiuc">UIUC</a> · <a href="../entities/amazon" class="internal internal-link" data-slug="entities/amazon">Amazon</a></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/papers/2610.02193" class="external external-link">https://huggingface.co/papers/2610.02193<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>PDF: <a href="https://arxiv.org/pdf/2610.02193" class="external external-link">https://arxiv.org/pdf/2610.02193<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (<strong>볼트 열람 완료</strong> · 617KB · 24p)</li>
+<li>구현체: <a href="https://github.com/rhfeiyang/HC-DLM" class="external external-link">https://github.com/rhfeiyang/HC-DLM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (★52 · 🔴 <strong>코드 0 · <code>languages</code> 비어 있음</strong>)</li>
+<li>프로젝트: <a href="https://hc-dlm.github.io/" class="external external-link">https://hc-dlm.github.io/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (HTTP 200 · 34,296B · 🔴 코드 링크 0개)</li>
+<li><strong>볼트 독립 검증</strong>: upvote <strong>70</strong> ✅(수집기 일치) · publishedAt <strong>2026-10-01</strong> ✅ · 저자 <strong>5명</strong> ✅ · 초록 <strong>1,434자</strong></li>
+<li>🏆 <strong>저자 소속이 API 보고보다 많다</strong>: HF <code>organization</code> = <strong>UIUC-CS</strong> 단일이나 PDF 실측은 <strong>University of Illinois Urbana-Champaign + Amazon.com, Inc. 2개 기관</strong>. 저자 <strong>Hui Ren · Zihan Li · Chang Liu(UIUC) · Huidong Liu(Amazon) · Alexander Schwing(UIUC)</strong>. ⇒ 📌 <code>organization</code> 은 제1저자 소속만 반영한다(같은 배치 <a href="../sources/sharpening-tax" class="internal internal-link" data-slug="sources/sharpening-tax">Sharpening-Tax</a> 에서 2번째 확증).</li>
+<li>10-02 게시분 <strong>upvote 5위</strong></li>
+<li>신뢰도: ⭐⭐⭐⭐ (PDF 실측 표 3개 · 모범적 비교 설계 / 🔴 초록 1개 주장 과대 · 구현체 공백 · 연구 규모)</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-641" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#hc-dlm-261002193" data-for="hc-dlm-261002193">HC-DLM (2610.02193)</a></li><li class="depth-1"><a href="#-pdf-실측--표-3개" data-for="-pdf-실측--표-3개">🏆 PDF 실측 — 표 3개</a></li><li class="depth-1"><a href="#도메인별-추출-local-llm--디퓨전-lm" data-for="도메인별-추출-local-llm--디퓨전-lm">도메인별 추출 (local-llm · 디퓨전 LM)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/대립레시피-동시도착" class="internal">대립 레시피 동시 도착 — 반대되는 두 방법이 같은 날 오고, 둘 다 상대를 언급하지 않는다</a></li><li><a href="../concepts/동일대상-분리오판" class="internal">동일대상 분리오판 — 백필 우회의 거울상. 같은 대상을 둘로 쪼개는 오류</a></li><li><a href="../concepts/벤치마크-이미지-봉인" class="internal">벤치마크-이미지-봉인</a></li><li><a href="../concepts/복합지표-분해" class="internal">복합지표 분해 — open_issues_count 는 이슈 수가 아니다. 5배치의 &quot;이례적&quot; 판정이 집계 착오였다</a></li><li><a href="../concepts/선언된-구현체-공백" class="internal">선언된 구현체 공백 — 'Our code is available at…' 은 레포의 존재만 보증한다</a></li><li><a href="../concepts/에이전트-메모리-레이어" class="internal">에이전트 메모리 레이어</a></li><li><a href="../concepts/자기제한-명시" class="internal">자기제한 명시</a></li><li><a href="../concepts/측정도구-먼저-반증" class="internal">측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</a></li><li><a href="../concepts/표-부분인용" class="internal">표 부분인용 — 몇 점을 읽는가가 결론의 종류를 바꾼다</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/local-llm" class="internal">Local/Edge/Small LLM + 에이전트 메모리 누적 인사이트</a></li><li><a href="../entities/amazon" class="internal">Amazon (Amazon.com, Inc.)</a></li><li><a href="../entities/uiuc" class="internal">University of Illinois Urbana-Champaign (UIUC)</a></li><li><a href="../sources/adaptive-reward-routing" class="internal">Adaptive Reward Routing — 오디오·비디오 공동 디퓨전의 다중보상을 학습 중 동적 재조정</a></li><li><a href="../sources/beyond-memory-pos" class="internal">Beyond Memory (PoS) — 이력 보존·압축 대신 &quot;명시적 belief 상태&quot;를 유지하는 장기 에이전트 프레임워크</a></li><li><a href="../sources/dmm" class="internal">DMM (Decentralized Master-Mind) — 통신 라운드별 의도 디노이징으로 공동 행동을 정제하는 분산 MAPF</a></li><li><a href="../sources/e-moe" class="internal">E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models — MoE 라우팅을 이산 공유 잠재로</a></li><li><a href="../sources/on-policy-or-off-policy-distillation" class="internal">On-Policy or Off-Policy Learning? — &quot;온폴리시가 본질적으로 낫다&quot;를 통제 실험으로 반박</a></li><li><a href="../sources/sharpening-tax" class="internal">Sharpening Tax in Post-Training — RL 후처리가 커버리지를 깎는 비용을 지표화 (42케이스)</a></li><li><a href="../sources/x-tree" class="internal">X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization — 스킬을 문맥이 아니라 가중치에</a></li><li><a href="../sources/impeccable" class="internal">impeccable — AI 하네스 디자인 언어 (pbakaus)</a></li><li><a href="../synthesis/매체가-숨긴다" class="internal">매체가 숨긴다 — 정직성의 판정 단위는 저자가 아니라 매체다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

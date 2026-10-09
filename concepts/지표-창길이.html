@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다"/><meta name="twitter:description" content="지표 창길이 🔴🔴 2026-10-04 볼트가 어제 요청한 &quot;관측 시각 병기&quot;를 어제 기록이 안 지켰다 — 그래서 오늘 일증분을 확정할 수 없다 10-03 에 볼트는 수집기에게 “관측 시각 병기” 를 요청했다."/><meta property="og:description" content="지표 창길이 🔴🔴 2026-10-04 볼트가 어제 요청한 &quot;관측 시각 병기&quot;를 어제 기록이 안 지켰다 — 그래서 오늘 일증분을 확정할 수 없다 10-03 에 볼트는 수집기에게 “관측 시각 병기” 를 요청했다."/><meta property="og:image:alt" content="지표 창길이 🔴🔴 2026-10-04 볼트가 어제 요청한 &quot;관측 시각 병기&quot;를 어제 기록이 안 지켰다 — 그래서 오늘 일증분을 확정할 수 없다 10-03 에 볼트는 수집기에게 “관측 시각 병기” 를 요청했다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/지표-창길이"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/지표-창길이"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="지표 창길이 🔴🔴 2026-10-04 볼트가 어제 요청한 &quot;관측 시각 병기&quot;를 어제 기록이 안 지켰다 — 그래서 오늘 일증분을 확정할 수 없다 10-03 에 볼트는 수집기에게 “관측 시각 병기” 를 요청했다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/지표-창길이-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/지표-창길이-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/지표-창길이-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/지표-창길이" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-54" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-54" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</a></div></nav><h1 class="article-title">지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/다운로드-지표" class="internal internal-link tag-link">다운로드-지표</a><span class="note-properties-separator">, </span><a href="../tags/메타데이터-부재-추론" class="internal internal-link tag-link">메타데이터-부재-추론</a><span class="note-properties-separator">, </span><a href="../tags/측정도구-먼저-반증" class="internal internal-link tag-link">측정도구-먼저-반증</a><span class="note-properties-separator">, </span><a href="../tags/원본-파생-역전" class="internal internal-link tag-link">원본-파생-역전</a><span class="note-properties-separator">, </span><a href="../tags/api-필드" class="internal internal-link tag-link">api-필드</a><span class="note-properties-separator">, </span><a href="../tags/암묵을-명시로" class="internal internal-link tag-link">암묵을-명시로</a><span class="note-properties-separator">, </span><a href="../tags/백필-우회" class="internal internal-link tag-link">백필-우회</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-10-05T00:00:00.000Z">2026년 10월 05일</time><span>37 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="지표-창길이">지표 창길이<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#지표-창길이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴🔴 2026-10-04 <strong>볼트가 어제 요청한 &quot;관측 시각 병기&quot;를 어제 기록이 안 지켰다 — 그래서 오늘 일증분을 확정할 수 없다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>10-03 에 볼트는 수집기에게 <strong>“관측 시각 병기”</strong> 를 요청했다. 🔴 <strong>그런데 10-03 볼트 기록 자체에 관측 시각이 없다</strong>(<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> ★152,194 · <a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a> ★74,563 · <a href="../sources/caveman" class="internal internal-link" data-slug="sources/caveman">caveman</a> ★109,249 · <a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a> ★89,190 전부 시각 미기재 · 10-02 ★151,003 도 없다).
+⇒ 🔴 <strong>결과: 오늘 24시간 증분을 계산할 수 없다. 산술은 가능하지만 구간 길이를 모른다.</strong> ⚖️ <strong>따라서 “일평균”으로 적지 않고 “구간 미확정 증분”으로만 적는다.</strong>
+🏆 <strong>요청의 필요성이 하루 만에 자기 기록에서 증명됐다.</strong> ✅ <strong>오늘부터 UTC+KST 병기</strong>(오늘 관측 <strong>2026-10-04T09:12:13Z / 18:12 KST</strong>). 🎯 <strong>시각이 필요한 이유의 구체 사례도 나왔다 — <a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a> <code>pushed</code> 가 2026-10-04T09:04:31Z 로 볼트 관측(09:12:13Z)보다 <strong>8분</strong> 앞이다. 시각 없이는 이 사실을 표현할 수 없다.</strong></p>
+<h2 id="️-stars-today-편향의-방향이-뒤집혔다--10-03-결론을-좁힌다">⚖️ “stars today” 편향의 <strong>방향이 뒤집혔다</strong> — 10-03 결론을 좁힌다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-stars-today-편향의-방향이-뒤집혔다--10-03-결론을-좁힌다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>10-03 기록: 트렌딩 <em>“+1,435 stars today”</em> ↔ API 24h <strong>+1,191</strong> ⇒ <em>“트렌딩이 +20~21% 과대”</em> · <a href="../concepts/지표-창길이" class="internal internal-link alias" data-slug="concepts/지표-창길이">지표-창길이</a> 에 <strong>“GitHub 자체 지표 간 불일치”</strong> 로 등재.
+<strong>10-04 전수 비교(수집기 “당일” ↔ 볼트 구간 증분):</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>레포</th><th>수집기</th><th>수집기 순위</th><th>볼트 구간</th><th>볼트 순위</th><th>부호</th></tr></thead><tbody><tr><td><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></td><td>+1,281</td><td>2위</td><td><strong>+1,771</strong></td><td><strong>1위</strong></td><td>🔴 수집기 <strong>−28% 낮다</strong></td></tr><tr><td><a href="../sources/impeccable" class="internal internal-link" data-slug="sources/impeccable">impeccable</a></td><td>+699</td><td>4위</td><td><strong>+1,101</strong></td><td>2위</td><td>🔴 수집기 <strong>−37% 낮다</strong></td></tr><tr><td><a href="../sources/caveman" class="internal internal-link" data-slug="sources/caveman">caveman</a></td><td>+507</td><td>5위</td><td>+417</td><td>4위</td><td>🔵 수집기 <strong>+22% 높다</strong></td></tr><tr><td><a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a></td><td><strong>+1,696</strong></td><td><strong>1위</strong></td><td>+974</td><td>3위</td><td>🔵 수집기 <strong>+74% 높다</strong></td></tr><tr><td>⇒ ⚖️ <strong>“불일치”는 유지하되 “과대”라는 방향은 기각한다. 2건은 높고 2건은 낮다 — 체계적 편향이 아니라 양방향 산포다.</strong></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>🔴 <strong>그리고 순위가 뒤바뀐다</strong>: 수집기 1위(<a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a> <em>“배치 최대 증분”</em>)가 볼트 측정에서 <strong>3위</strong>다. 🔴 <strong>그러나 볼트 쪽 구간도 미확정이므로 결론은 “어느 순위도 확립되지 않았다”다.</strong> 📌 <strong>이것이 “관측 시각 병기”를 최우선 actionable 로 올리는 이유다 — 시각이 없으면 순위조차 말할 수 없다.</strong></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="-배치-내-이상치--시계열-이상치-유형-추가">🆕 <strong>“배치 내 이상치 ≠ 시계열 이상치”</strong> 유형 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-배치-내-이상치--시계열-이상치-유형-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수집기가 <a href="../sources/ecc" class="internal internal-link" data-slug="sources/ecc">ECC</a> 의 <strong>fork/★ 14.9%</strong> 를 <em>“배치 최대 · 이상치 → 볼트 확인 필요”</em> 로 넘겼다. ✅ <strong>볼트 답: 이상치가 아니라 28일간 유지된 구조적 상수다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>★</th><th>fork</th><th><strong>fork/★</strong></th></tr></thead><tbody><tr><td>2026-09-06</td><td>250,338</td><td>37,662</td><td><strong>0.1504</strong></td></tr><tr><td>2026-10-04</td><td>272,500</td><td>40,687</td><td><strong>0.1493</strong></td></tr><tr><td>⇒ 📌 <strong>★+22,162 · fork+3,025 가 지나는 동안 비율이 0.11%p 만 움직였다.</strong> ⚖️ <strong>“이상치”는 그날 배치 안에서의 상대 위치일 뿐이고 이 레포의 시계열에서는 안정값이다.</strong> 🏆 <strong>교훈: 단일 배치의 횡단 비교로 “이상”을 선언하기 전에 그 대상의 종단 기록을 본다.</strong></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="-30일-창이-성장을-6배-과소평가한다--정량-사례">🆕 <strong>30일 창이 성장을 6배 과소평가한다</strong> — 정량 사례<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-30일-창이-성장을-6배-과소평가한다--정량-사례" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/ltx-2.5" class="internal internal-link" data-slug="sources/ltx-2.5">LTX-2.5</a> 09-30→10-04(4일): <strong>30일창 +40,886</strong> ↔ <strong>누적 +252,171</strong>. ⇒ <strong>차이 211,285 가 창 밖으로 빠졌다.</strong>
+📌 <strong>창 증분으로 성장률을 재면 실제의 약 16% 로 보인다.</strong> ⚖️ <strong>나이 73일 모델에서 30일 창은 성장 측정에 부적합하다 — 누적 차분을 쓴다.</strong>
+✅ <strong>반대 극 확인</strong>: <a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a> 는 나이 <strong>18일 &lt; 30일</strong> 이므로 <code>downloads(30일) == downloadsAllTime == 3,969,867</code> 이 <strong>정상</strong>이다(10-01 규칙의 8번째 실례).</p>
+<h2 id="-활동의-버스트성--한-주기가-관측됐다">🆕 <strong>활동의 버스트성</strong> — 한 주기가 관측됐다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-활동의-버스트성--한-주기가-관측됐다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>10-03 에 <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 에서 <em>“방치 18일이 아니라 18일 침묵 → 하루 15커밋 배치 릴리스”</em> 로 재해석하며 이 축을 세웠다. ✅ <strong>10-04 <code>pushed</code> 가 어제와 동일 = 오늘 푸시 0</strong> ⇒ <strong>침묵 → 버스트 → 침묵이 한 주기 관측됐다(n=1 주기).</strong> 📌 <strong>계속 볼 값은 <code>pushed</code> 자체가 아니라 버스트 간 간격이다.</strong>
+🎯 <strong>대조군 3일째 유지</strong>: <a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a> <code>pushed</code> <strong>2026-09-15T16:16:24Z</strong> = <strong>19일 동결</strong>(10-03 “18일”의 +1). <strong>같은 라벨의 두 레포가 갈린 상태가 n=3일째다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>✅ 2026-10-03 <strong>7번째 실례 — 처음으로 규칙이 먼저 있고 관측이 뒤에 왔다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 30일 DL: 수집기 <strong>6,934,867</strong> → 볼트 실측 <strong>6,895,117</strong> = <strong>−39,750 (−0.57%)</strong>.
+✅ <strong><code>createdAt</code> 2026-08-05 → 나이 59일 > 30일</strong> ⇒ <strong>30일 창에서 과거 일자가 빠져나가므로 감소가 구조적으로 가능</strong>하다. 📌 <strong>10-01 에 명문화한 규칙이 예측한 그대로다.</strong> 종전 6회는 관측이 먼저였고 설명이 뒤였다. <strong>이번엔 규칙으로 먼저 예상하고 확인했다</strong> ⇒ ⚖️ <strong>이 개념이 사후 설명에서 사전 예측으로 넘어간 첫 사례다.</strong></p>
+<p>🆕 <strong>새 축 — 값이 엔드포인트/파라미터에 의존한다</strong>
+<code>trendingScore</code> 는 <strong>기본 조회에 나타나지 않고 <code>?expand[]=trendingScore</code> 에서만 나온다</strong>(기본 <code>None</code> → expand <strong>352</strong> = 수집기 수치와 일치).
+⇒ 🔴 <strong>10-02 의 <em>“trendingScore 는 감쇠한다(3/3 하락: 774→771·418→416·280→279)”</em> 관측은 기각되지 않는다</strong> — 수집기가 expand 경로로 읽었다면 유효하다. <strong>그러나 그 관측을 기본 조회로 재검증하려 했다면 “필드 소멸”로 오판했을 것이다.</strong>
+⚖️ <strong>조항 추가: 지표를 시계열로 쌓을 때 “어떤 요청으로 얻은 값인지”를 함께 적는다. 요청이 다르면 같은 이름의 지표가 다른 값(또는 <code>None</code>)이다</strong> → <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> <strong>요청 미지정형</strong>(오늘 신설) · <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a>.</p>
+<p>🆕 <strong>새 수치 축 — 창 비중</strong>: 누적 <strong>12,626,437</strong> vs 30일 <strong>6,895,117</strong> = <strong>54.6%</strong>. 나이 59일 중 30일이 생애 다운로드의 <strong>절반 이상</strong>을 차지한다. 📌 <strong><code>lastModified</code> 가 50일째 동결인데 수요는 가속 중이다</strong> — 같은 배치 <a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a>(18일 동결 · ★일평균 393) 과 <strong>같은 패턴이 모델 쪽에서도 관측된다.</strong></p>
+<p>🔴 <strong>미해소 관측 1건 — 같은 축에서 베이스와 파생이 다르게 움직였다.</strong>
+같은 창에서 베이스 <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 는 <strong>−39,750 감소</strong>, 파생 <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 는 <strong>드리프트 0</strong>. <strong>둘 다 30일 초과</strong>(59일 / 51일)이므로 나이만으로 설명되지 않는다. ⚖️ <strong>판정 보류</strong> — n=2 이고 일별 분포를 모른다. 🔴 <strong>“드리프트 0 = 검증 통과” 로 읽지 않는다</strong>(10-01·10-02 에 두 번 깨진 논리다). 📌 <strong>감소가 구조적으로 가능한 나이인데 0 이라는 것은 설명이 필요한 관측이지, 안정성의 증거가 아니다.</strong></p>
+<p>🆕 <strong>GitHub 자체 지표 간 불일치 — 유형 확정(2배치 연속 미해소)</strong>
+<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 트렌딩 <em>“<strong>+1,435</strong> stars today”</em> ↔ 24시간 API 실차 <strong>+1,182~1,191</strong> = <strong>차이 약 244<del>253(+20</del>21%)</strong>. fork 도 같은 창에서 <strong>+63</strong>. 🔴 <strong>원인 미확인 — <code>stars today</code> 의 창 정의(UTC 00:00 / 롤링 24h)를 모르므로 어느 쪽이 틀렸다고 적지 않는다.</strong> 📌 종전 사례는 전부 <strong>수집기↔볼트 시점 차</strong>였고, 이것은 <strong>같은 제공자의 두 지표 간</strong> 불일치다.</p>
+<p>🆕 <strong><code>pushed</code> 의 버스트성 — 활동량이 아니라 릴리스 리듬이다</strong>
+<a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a>: 10-02 에 볼트가 <em>“18일째 동결 확증”</em> 으로 적은 필드가 10-03 에 갱신됐는데, 커밋 로그 실측 결과 <strong>하루에 15커밋 + 릴리스 v4.10.3</strong> 이었다. ⇒ ⚖️ <strong>“18일 방치”가 아니라 “18일 침묵 → 하루 배치 릴리스”다. 단일 시점 <code>pushed</code> 로 유지보수 상태를 판정할 수 없다.</strong> 🎯 <strong>같은 배치 <a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a> 가 18일 동결을 유지해 대조군이 됐다 — 같은 라벨의 두 레포가 하루에 갈렸다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <strong>먼저 — 이 페이지는 &quot;새 발견&quot;이 아니다. 볼트는 이미 알고 있었다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>수집기는 이번 배치에서 <em>”🔴 이번 배치 최대 발견 — DL 수치의 의미가 바뀐다”</em> 며 30일 창 가설을 제시했다.
+✅ <strong>볼트 실측 반박: 볼트는 이 사실을 최소 2026-09-06부터 관측했고 09-15에 규칙으로 명문화했다.</strong></p>
+<ul>
+<li><a href="../entities/huggingface" class="internal internal-link" data-slug="entities/huggingface">HuggingFace</a> 엔티티 27행: <em>”🔴 <strong><code>downloads</code> 는 30일 누적</strong>이다 — 전체 누적이 아니다”</em> · 32행: <em>“다운로드는 <strong>‘30일’을 항상 병기</strong>한다”</em></li>
+<li><a href="../sources/minimax-h3-physical-reasoning" class="internal internal-link" data-slug="sources/minimax-h3-physical-reasoning">MiniMax-H3-Physical-Reasoning</a> 71행: 09-06 <strong>4,986,349 → 09-19 4,449,605</strong>, <em>“줄었다(누적 아님)”</em> 로 이미 정확히 해석</li>
+<li><a href="../sources/qwen3.6-35b-uncensored" class="internal internal-link" data-slug="sources/qwen3.6-35b-uncensored">Qwen3.6-35B-Uncensored</a> 17행: <em>“30일 롤링 윈도 기반이라 신규 유입 둔화 시 수치가 감소하는 정상 등락”</em>
+🎯 <strong>그러므로 “볼트의 증분 해석 전체를 재검토해야 한다”는 수집기 주장은 과장이다.</strong> 볼트는 감소를 이미 창 이동으로 읽고 있었다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <strong>진짜로 새로운 것은 딱 하나 — 부재 판정이 틀렸다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트가 <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 85행에 적어 둔 문장:</p>
+<blockquote>
+<p><em>“<code>downloadsAllTime</code> 은 <strong>null로 미제공</strong>돼 <strong>교차 검증 경로도 없다</strong>.”</em>
+🔴 <strong>이 문장이 틀렸다.</strong> 필드는 존재하고, <strong><code>?expand[]=downloadsAllTime</code> 을 붙이면 값이 온다.</strong>
+✅ 볼트 실측 (2026-09-23, 3/3 성공):</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>모델</th><th><code>downloads</code>(30일)</th><th><code>downloadsAllTime</code>(누적)</th></tr></thead><tbody><tr><td>Qwen/Qwen3.8-27B</td><td>7,079,646</td><td><strong>9,681,199</strong></td></tr><tr><td>unsloth/Qwen3.8-27B-GGUF</td><td>7,019,401</td><td><strong>13,993,047</strong></td></tr><tr><td>prism-ml/Ternary-Bonsai-2-27B-gguf</td><td>2,569,604</td><td><strong>2,569,604</strong></td></tr></tbody></table></div>
+<p>🎯 <strong>없던 것은 데이터가 아니라 요청 파라미터였다.</strong> 볼트는 몇 주 동안 “교차검증 불가”를 전제로 동결·감소를 해석해 왔는데, <strong>경로는 처음부터 있었다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>✅ 내부 정합 검증 — 가장 어린 레포가 증명한다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a> 는 <strong>2026-09-16 생성 = 7일 차</strong>, 창 길이보다 어리다. 이 레포만 두 값이 <strong>정확히 일치</strong>한다(2,569,604).
+성숙한 레포 2건은 벌어진다(7.08M&lt;9.68M · 7.02M&lt;13.99M).
+🎯 <strong>레포 나이 &lt; 창 길이면 두 값은 같아야 한다</strong> — 3표본이 이 예측을 정확히 만족. 창 해석과 누적 필드 양쪽이 동시에 확인됐다.</p>
+</div>
+</blockquote>
+<h2 id="파급--원본-파생-역전-판정이-뒤집힌다-이번-배치-실질-성과">파급 — <a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 판정이 뒤집힌다 (이번 배치 실질 성과)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#파급--원본-파생-역전-판정이-뒤집힌다-이번-배치-실질-성과" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 같은 쌍이 창을 바꾸면 반대 결론을 준다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>수집기 판정: <em>“<a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> ↔ <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 격차 0.85% → 역전 성립 안 함. <strong>반례 1건 추가</strong>.”</em></p>
+<ul>
+<li><strong>30일 창</strong>: 7,079,646 vs 7,019,401 → 격차 <strong>0.85%</strong>, 역전 없음</li>
+<li><strong>누적</strong>: 9,681,199 vs <strong>13,993,047</strong> → 파생이 원본의 <strong>1.445배</strong>, <strong>역전 성립</strong>
+🔴 <strong>반례가 아니라 지지 사례였다.</strong> 새로 열린 누적 축이 없었다면 오염된 반례가 개념 페이지에 들어갔다 → <a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a>.</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="-볼트-자기-한계-숨기지-않는다">🔴 볼트 자기 한계 (숨기지 않는다)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-볼트-자기-한계-숨기지-않는다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>규칙은 있었는데 적용되지 않았다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../entities/huggingface" class="internal internal-link" data-slug="entities/huggingface">HuggingFace</a> 32행의 <em>“다운로드는 ‘30일’을 항상 병기한다”</em> 는 <strong>09-15에 만든 볼트 자체 규칙</strong>이다.
+그런데 <strong>09-22 log.md 는 여전히 <code>4,511,348→4,960,483(+449,135)</code> 형태의 맨 증분으로 적었다</strong>(233행). 창 표기 없음.
+🎯 <strong>지식이 페이지에 있는 것과 규칙이 작업에 적용되는 것은 다르다</strong> → <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a> 의 역방향 사례: <em>명시했는데도 적용되지 않았다.</em>
+📌 그래서 수집기가 “발견”으로 되가져왔을 때 볼트가 바로 반박하지 못할 뻔했다. <strong>자기 규칙의 미적용이 남의 과장을 키운다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>⬜ 확인 범위 (부재 주장에 범위를 붙인다) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>창 길이가 정확히 30일</strong>이라는 건 ⬜ <strong>공식 문서로 확인되지 않았다.</strong> <code>huggingface/hub-docs</code> <code>docs/hub/models-download-stats.md</code> <strong>전문 3,934바이트 확인</strong> — 카운팅 <em>방식</em>(쿼리 파일·GGUF·diffusers)만 서술하고 <strong>기간은 한 글자도 없다.</strong> “30일”은 볼트·커뮤니티의 <strong>관측 기반 통용값</strong>이다.</li>
+<li>기존 <a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 사례 6건의 <strong>누적값 재조회 미수행</strong> → 역전 방향이 바뀌는 사례가 더 있을 수 있다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>볼트 규칙 (개정) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li>HF 모델 조회는 <strong><code>?expand[]=downloadsAllTime</code> 필수.</strong> 두 값을 <strong>항상 병기</strong>: <code>DL 7,079,646(30일) / 9,681,199(누적)</code>.</li>
+<li><code>A→B</code> 증분 서술은 <strong>누적값에서만.</strong> 30일 값의 차이는 <strong>“창 이동”</strong> 으로 적는다.</li>
+<li><strong>동결·감소는 이제 “관측 실패”로 남기지 않는다</strong> — 누적 축으로 교차 확인한다. (기존 <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 109행의 <em>“격일 갱신 가설”</em> 도 누적 축으로 재검토 가능해졌다)</li>
+<li>창 길이는 <strong>⬜ 문서 미확인</strong> 상태로 표기한다. “30일”을 단정하지 않는다.</li>
+</ol>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../entities/huggingface" class="internal internal-link" data-slug="entities/huggingface">HuggingFace</a> — 30일 규칙의 원 출처(09-15). 이번에 <strong>부재 주장만 정정</strong></li>
+<li><a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> — <code>null</code> 은 미요청이었다</li>
+<li><a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> — 이 필드로 판정이 뒤집혔다</li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a> · <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a> · <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>실측: HF <code>GET /api/models/{id}</code> vs <code>?expand[]=downloadsAllTime</code> <strong>3모델 대조</strong> (2026-09-23)</li>
+<li>문서: <code>huggingface/hub-docs</code> <code>models-download-stats.md</code> <strong>전문 3,934B — 기간 서술 없음 확인</strong></li>
+<li>볼트 내부 대조: <a href="../entities/huggingface" class="internal internal-link" data-slug="entities/huggingface">HuggingFace</a> 27·32행 · <a href="../sources/minimax-h3-physical-reasoning" class="internal internal-link" data-slug="sources/minimax-h3-physical-reasoning">MiniMax-H3-Physical-Reasoning</a> 71행 · <a href="../sources/qwen3.6-35b-uncensored" class="internal internal-link" data-slug="sources/qwen3.6-35b-uncensored">Qwen3.6-35B-Uncensored</a> 17행 · <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 85행</li>
+<li>신뢰도: ⭐⭐⭐ (API 대조 + 문서 원문 + 볼트 선행기록 교차확인 / 창 길이만 ⬜)</li>
+</ul>
+<hr/>
+<h2 id="-2026-09-24--창-길이에-처음으로-수치-근거가-붙었다-문서는-여전히-없다">🆕 2026-09-24 — <strong>창 길이에 처음으로 수치 근거가 붙었다 (문서는 여전히 없다)</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-24--창-길이에-처음으로-수치-근거가-붙었다-문서는-여전히-없다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>볼트가 09-23에 남긴 ⬜: <em>“창 길이 <strong>30일</strong>은 여전히 문서 미확인 — 공식 <code>models-download-stats.md</code> 전문 3,934B 에 기간 서술이 한 글자도 없다. 볼트·커뮤니티 관측 기반 통용값일 뿐이다.”</em></p>
+<p><strong>문서는 여전히 없다.</strong> 그러나 <a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 소급 점검(7쌍 전수 재조회)에서 <strong>창 길이를 역산할 수 있는 쌍이 2건 나왔다</strong> — 생성 30일 이상 지난 저장소만 <code>창 ≠ 누적</code> 이 되기 때문이다.</p>
+<h3 id="역산--다운로드율이-균일하다고-가정할-때">역산 — 다운로드율이 균일하다고 가정할 때<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#역산--다운로드율이-균일하다고-가정할-때" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>저장소</th><th><code>createdAt</code></th><th>경과일</th><th>30일 창</th><th>누적</th><th>창/누적</th><th><strong>함의 창 길이</strong></th></tr></thead><tbody><tr><td><code>Qwen/Qwen3.5-9B</code></td><td>2026-02-27</td><td><strong>209일</strong></td><td>9,787,242</td><td>65,161,687</td><td><strong>15.02%</strong></td><td><strong>≈31.4일</strong></td></tr><tr><td><code>prism-ml/Ternary-Bonsai-27B-gguf</code>(v1)</td><td>2026-07-04</td><td><strong>82일</strong></td><td>653,298</td><td>1,879,078</td><td><strong>34.77%</strong></td><td><strong>≈28.5일</strong></td></tr></tbody></table></div>
+<p>🎯 <strong>규모가 35배 다르고(1.9M vs 65M) 나이가 2.5배 다른(82일 vs 209일) 두 저장소가 28.5일과 31.4일을 낸다. 둘 다 30일을 감싼다.</strong>
+📌 <strong>볼트 통용값 “30일”은 이제 근거 없는 관습이 아니라 실측 2건과 정합하는 추정값이다.</strong></p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 이 추정이 기대는 가정 — 숨기지 않는다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>균일 다운로드율 가정이 계산의 전부를 떠받친다.</strong> 실제 모델 다운로드는 보통 출시 직후 몰리고 감쇠한다.</p>
+<ul>
+<li>감쇠한다면 → 최근 30일 몫이 비례보다 <strong>작아야</strong> 한다 → 관측값(15.02% > 비례 14.35%)은 <strong>최근 유입이 평균보다 많다</strong>는 뜻 → 함의 창은 <strong>30일보다 짧아질</strong> 여지</li>
+<li>즉 <strong>28.5~31.4일은 신뢰구간이 아니다.</strong> 두 개의 점추정이고, 각각 해당 저장소의 다운로드 곡선 모양에 오염돼 있다.
+🔴 <strong>여전히 ⬜ 미확정이다.</strong> 다만 등급이 달라졌다: <em>“근거 없음”</em> → <em>“실측 2건이 30일 근방과 정합, 문서 미확인”</em>.
+⬜ 추가로 필요한 것: <strong>같은 저장소를 며칠 간격으로 연속 관측</strong>해 창이 어떻게 미끄러지는지 직접 보는 것. 1회 스냅샷 역산보다 강하다 → actionable.</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="-부수-발견--창-경계를-막-넘은-저장소가-경계를-보여준다">🎯 부수 발견 — 창 경계를 막 넘은 저장소가 경계를 보여준다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-부수-발견--창-경계를-막-넘은-저장소가-경계를-보여준다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>Qwen/Qwen3.8-Flash-Next</code> (created <strong>2026-08-24</strong> = <strong>31일</strong> 경과):</p>
+<ul>
+<li>30일 창 <strong>807,550</strong> / 누적 <strong>807,789</strong> → 차이 <strong>239</strong></li>
+</ul>
+<p>📌 <strong>31일 된 저장소에서 창 밖으로 밀려난 양이 239다.</strong> 창 길이가 30일이라면 이 239는 <em>“생애 첫 1일분”</em> 에 해당한다. 🎯 <strong>출시 첫날이 807,550의 0.03%밖에 안 된다는 것은 이 모델이 조용히 올라갔다가 나중에 퍼졌다는 뜻</strong>이고, 이는 위 “최근 유입이 평균보다 많다”는 관측과 <strong>같은 방향</strong>이다.
+🔴 단 <strong>1건 관측이고 <code>createdAt</code> 이 공개 시점과 같다는 보장이 없다</strong>(레포를 먼저 만들고 늦게 공개할 수 있다) → 약한 증거로만 취급.</p>
+<h3 id="-창누적이-나타나는-조건이-확정됐다">📌 창≠누적이 나타나는 조건이 확정됐다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-창누적이-나타나는-조건이-확정됐다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>7쌍 14개 저장소 중 <strong>창 ≠ 누적인 것은 위 3건뿐</strong>이고, <strong>전부 <code>createdAt</code> 이 30일 이상 지난 것</strong>이다. 30일 이내 생성된 11건은 <strong>예외 없이 창 = 누적</strong>.
+🎯 <strong>그래서 <code>downloads == downloadsAllTime</code> 은 결측 신호가 아니다 — “이 저장소는 30일보다 어리다”는 신호다.</strong> 09-23에 <a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a> 에서 1건으로 본 것이 <strong>11/11 로 확인됐다.</strong>
+📌 <strong>볼트 규약 추가</strong>: 두 값이 같으면 <code>createdAt</code> 을 확인해 <strong>“창이 생애 전체를 덮음”</strong> 이라 명시한다. <code>null</code> 이나 오류로 읽지 않는다.</p>
+<h2 id="2026-09-26-갱신--downloads--downloadsalltime-1515-무예외">2026-09-26 갱신 — <code>downloads == downloadsAllTime</code> <strong>15/15 무예외</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-26-갱신--downloads--downloadsalltime-1515-무예외" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>오늘 HF 모델 4건(수집 3 + 원본 1) 전수에서 <code>downloads</code>(30일) 와 <code>downloadsAllTime</code> 이 <strong>완전히 같았다</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>저장소</th><th>생성</th><th>나이</th><th>downloads</th><th>downloadsAllTime</th></tr></thead><tbody><tr><td><code>Qwen/Qwen-Image-2.1</code></td><td>09-14</td><td>12일</td><td>42,469</td><td>42,469</td></tr><tr><td><code>Comfy-Org/Qwen-Image-2.1</code></td><td>09-15</td><td>11일</td><td>3,266,380</td><td>3,266,380</td></tr><tr><td><code>prism-ml/Ternary-Bonsai-2-27B-gguf</code></td><td>09-16</td><td>10일</td><td>3,109,078</td><td>3,109,078</td></tr><tr><td><code>abenzerps/…-Uncensored-GGUF</code></td><td>09-20</td><td>6일</td><td>715,906</td><td>715,906</td></tr></tbody></table></div>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>09-24에 11/11 이었던 규칙이 <strong>15/15</strong> 가 됐다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong><code>downloads == downloadsAllTime</code> 은 결측 신호가 아니라 “생성 30일 미만”의 지표다.</strong> 네 건 전부 6~12일이다. 예외는 여전히 <strong>0건</strong>.
+🎯 그리고 이 규칙이 오늘 <strong>수집기 오류를 잡는 데 직접 쓰였다</strong> — 수집기가 <em>“3건 전부 <code>None</code> 이라 누적 미확보”</em> 라 보고했을 때, 볼트는 <strong>값이 있을 뿐 아니라 downloads와 같아야 한다</strong>고 예측했고 실측이 그대로였다. <strong>규칙이 관측을 예측했다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 창 길이 역산은 오늘 진전이 없다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-24에 생성 30일 넘은 2건에서 <strong>≈31.4일 · ≈28.5일</strong> 을 역산했으나(균일 다운로드율 가정), 오늘 배치는 <strong>4건 전부 30일 미만</strong>이라 역산에 쓸 표본이 <strong>0건</strong>이다. ⬜ <strong>여전히 점추정 2개</strong>이고 등급 변화 없음(<em>“실측 2건과 정합, 문서 미확인”</em>).
+📌 대신 <strong>창이 차오르는 속도</strong>가 관측됐다: <a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a> 09-24 1,908,396 → 09-26 <strong>3,109,078</strong>(이틀 +62.9%). 생성 10일차 저장소의 30일 창은 <strong>하루 단위로 크게 움직인다</strong> → <strong>배수 비교는 양쪽이 30일을 넘긴 뒤에.</strong></p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-09-27-갱신--3번째-점추정-확보-규모-1666배-구간에서-수렴">📊 2026-09-27 갱신 — <strong>3번째 점추정 확보, 규모 1,666배 구간에서 수렴</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-27-갱신--3번째-점추정-확보-규모-1666배-구간에서-수렴" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 09-26 의 &quot;진전 없음&quot;이 하루 만에 뒤집혔다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-26 기록: <em>“오늘 HF 4건이 <strong>전부 30일 미만</strong>이라 역산 표본이 0건. 여전히 점추정 2개.”</em>
+<strong>오늘 <a href="../sources/teleocr" class="internal internal-link" data-slug="sources/teleocr">TeleOCR</a> 이 created 2026-08-14 = 44일 차</strong>로 창보다 나이가 많아 <code>downloads ≠ downloadsAllTime</code> 이 됐다.</p>
+</div>
+</blockquote>
+<h3 id="역산-3점-균일-다운로드율-가정">역산 3점 (균일 다운로드율 가정)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#역산-3점-균일-다운로드율-가정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>저장소</th><th>created</th><th>나이</th><th><code>downloads</code>(30일)</th><th><code>downloadsAllTime</code></th><th>비율</th><th><strong>함의 창</strong></th></tr></thead><tbody><tr><td><code>Qwen/Qwen3.5-9B</code></td><td>2026-02-27</td><td><strong>209일</strong></td><td>9,787,242</td><td>65,161,687</td><td>15.02%</td><td><strong>≈31.4일</strong></td></tr><tr><td><code>prism-ml/Ternary-Bonsai-27B-gguf</code>(v1)</td><td>2026-07-04</td><td><strong>82일</strong></td><td>653,298</td><td>1,879,078</td><td>34.77%</td><td><strong>≈28.5일</strong></td></tr><tr><td><strong><code>StarDoc-AI/TeleOCR</code></strong></td><td><strong>2026-08-14</strong></td><td><strong>44일</strong></td><td><strong>27,837</strong></td><td><strong>39,391</strong></td><td><strong>70.67%</strong></td><td><strong>≈31.1일</strong></td></tr></tbody></table></div>
+<p>🎯 <strong>나이가 44·82·209일로 4.75배 차이</strong>고 <strong>누적 규모가 39,391 · 1.88M · 65.2M 로 1,666배 차이</strong>인데 셋 다 <strong>28.5~31.4일</strong>에 들어오고 <strong>30일을 감싼다.</strong></p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 그래도 신뢰구간이 아니다 — 그리고 이번 표본은 편향 방향이 예측된다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>① <strong>여전히 균일 다운로드율 가정에 전적으로 기댄 점추정 3개</strong>다.
+② 🔴 <strong>TeleOCR 은 균일했을 가능성이 특히 낮다</strong> — <strong>09-10 개명</strong>(NaviDC-OCR → TeleOCR)과 최근 트렌딩 진입(trendingScore 399)이 있어 <strong>다운로드가 후반에 집중됐을 것으로 보인다.</strong>
+🎯 <strong>후반 집중이면 함의 창은 실제보다 짧게 나온다</strong>(최근 30일에 전체의 70.67%가 몰리는 것이 창 길이 때문이 아니라 성장 때문이므로). → <strong>≈31.1일은 하한 쪽 편향 추정</strong>이다. 참값은 이보다 길 수 있다.
+③ 같은 논리로 <code>Qwen3.5-9B</code>(209일, 비율 15.02%)는 <strong>가장 성숙</strong>해서 균일 가정에 가장 가깝고, 따라서 <strong>≈31.4일이 세 점 중 가장 신뢰할 만하다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>등급 변화 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>09-24: <em>“근거 없음”</em> → <em>“실측 2건과 정합, 문서 미확인”</em></li>
+<li><strong>09-27: → “독립 점추정 3건이 규모 1,666배·나이 4.75배 구간에서 28.5~31.4일로 수렴. 문서 여전히 미확인. 편향 방향은 표본별로 예측 가능.”</strong>
+⬜ <strong>여전히 필요한 것</strong>: 같은 저장소를 며칠 간격으로 <strong>연속 관측</strong>(1회 스냅샷 역산보다 강하다). actionable 유지.</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="-downloads--downloadsalltime--30일-미만-규칙--1414-예외-없음">✅ <code>downloads == downloadsAllTime</code> ⟺ 30일 미만 규칙 — 14/14 예외 없음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-downloads--downloadsalltime--30일-미만-규칙--1414-예외-없음" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>오늘 3/3 만족: <a href="../sources/qwen-image-2.1-viggle-turbo" class="internal internal-link" data-slug="sources/qwen-image-2.1-viggle-turbo">Qwen-Image-2.1-viggle-turbo</a> 5일 차(133,151 = 133,151) · <a href="../sources/mimo-v2.6-pro-rl" class="internal internal-link" data-slug="sources/mimo-v2.6-pro-rl">MiMo-V2.6-Pro-RL</a> 6일 차(75,079 = 75,079) · <a href="../sources/teleocr" class="internal internal-link" data-slug="sources/teleocr">TeleOCR</a> 44일 차(27,837 ≠ 39,391).</p>
+<h3 id="-새-경고--이-창-안의-값도-불안정하다">🔴 새 경고 — 이 창 안의 값도 불안정하다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-새-경고--이-창-안의-값도-불안정하다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>오늘 <a href="../sources/qwen-image-2.1-viggle-turbo" class="internal internal-link" data-slug="sources/qwen-image-2.1-viggle-turbo">Qwen-Image-2.1-viggle-turbo</a> <code>downloads</code> 가 <strong>수십 분에 101,512 → 133,151(+31.2%)</strong> 로 변했다. <strong>창 길이를 알아도 그 안의 카운터가 배치 갱신되면 순간값은 신뢰 폭이 넓다</strong> → <a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> 신설.</p>
+<hr/>
+<h2 id="2026-09-28--점추정-4번째--내용량-지표-첫-확보">2026-09-28 — <strong>점추정 4번째 + 내용량 지표 첫 확보</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-28--점추정-4번째--내용량-지표-첫-확보" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="4번째-점추정-qwen38-27b">4번째 점추정: <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4번째-점추정-qwen38-27b" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>lastModified</code> <strong>2026-08-14 = 45일 갱신 없음</strong>(나이 54일)인데 <strong>오늘도 HF 트렌딩 40위 안 · 다운로드 1위(6,727,629)</strong> 다.
+🎯 <strong>오늘 이유의 일부가 설명됐다</strong> — 같은 배치에서 볼트가 연 <a href="../sources/hindsight" class="internal internal-link" data-slug="sources/hindsight">hindsight</a> Retain 리더보드에 <strong>이 모델이 실제 평가 대상으로 들어가 있다.</strong> <strong>갱신이 없어도 워크로드에 편입돼 있으면 트래픽은 유지된다.</strong> 갱신일은 <strong>저자의 활동</strong>이고 다운로드는 <strong>사용자의 활동</strong>이다 — 두 시계가 따로 간다.</p>
+<h3 id="--말고-움직이는-것을-처음-봤다--ai-engineering-from-scratch">🆕 ★ 말고 움직이는 것을 처음 봤다 — <a href="../sources/ai-engineering-from-scratch" class="internal internal-link" data-slug="sources/ai-engineering-from-scratch">ai-engineering-from-scratch</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#--말고-움직이는-것을-처음-봤다--ai-engineering-from-scratch" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>README 뱃지가 <strong><code>lessons-523</code> / <code>phases-20</code></strong> 를 직접 노출한다. 볼트 07-21 기록은 <strong>503 레슨 / 20 페이즈</strong> 였다 → <strong>레슨 +20, 페이즈 고정.</strong>
+📌 <strong>스타는 인기고 레슨 수는 작업량이다.</strong> 활성도 판단에서 후자가 훨씬 직접적인 증거다. 🎯 <strong><a href="../sources/tradingagents" class="internal internal-link" data-slug="sources/tradingagents">TradingAgents</a> 교훈(★≠활성도)의 건설적 대안이 오늘 처음 생겼다</strong> — <em>”★ 대신 무엇을 볼 것인가”</em> 에 <strong>레포가 스스로 노출하는 내용량 뱃지</strong>라는 답이 하나 나왔다.
+⬜ 뱃지 수치가 <strong>자동 갱신인지 수동 기입인지</strong> 미확인. 수동이면 이 지표도 <a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> 를 탄다.</p>
+<h3 id="-관련-페이지-추가">📌 관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-관련-페이지-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> · <a href="../sources/hindsight" class="internal internal-link" data-slug="sources/hindsight">hindsight</a> · <a href="../sources/ai-engineering-from-scratch" class="internal internal-link" data-slug="sources/ai-engineering-from-scratch">ai-engineering-from-scratch</a> · <a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> · <a href="../concepts/구조적-영값" class="internal internal-link alias" data-slug="concepts/구조적-영값">구조적-영값</a> · <a href="../sources/rayorch" class="internal internal-link" data-slug="sources/rayorch">RayOrch</a></li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 2026-09-30 — 14일 레포의 &quot;30일 DL&quot; 과 56일 본체를 나눈 비율은 해석 불가 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a>: created <strong>2026-09-16</strong> → 오늘 <strong>14일</strong>. HF <code>downloads</code>(30일)=<strong>3,581,027</strong> 이 실제로는 <strong>14일치 누적</strong>이다.
+<a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a>: created <strong>2026-08-05</strong> → 오늘 <strong>56일</strong>. 30일 창이 <strong>온전히 채워져 있다</strong>.
+🔴 <strong>따라서 파생/본체 = 51.0% 는 “14일치 ÷ 30일치” 다.</strong> <a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 에서 이 비율을 두 날 연속 관측했으나, <strong>비율 자체는 창 길이 보정 전에는 비교 근거가 아니다.</strong>
+✅ <strong>같은 창으로 비교 가능한 것은 일간 증분뿐이다</strong>: 본체 <strong>+175,891</strong> vs 파생 <strong>+123,903</strong>(09-29 09:08 → 09-30 09:04, 약 24시간).
+📌 <strong>규칙 추가: 30일 창 지표는 레포 나이가 30일 미만이면 “누적”으로 표기하고, 나이를 함께 적는다.</strong></p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-10-01--기전이-완성됐다-드리프트-0-은-모델의-안정성이-아니라-모델의-나이를-반영한다">🏆 2026-10-01 — <strong>기전이 완성됐다: “드리프트 0” 은 모델의 안정성이 아니라 모델의 나이를 반영한다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-01--기전이-완성됐다-드리프트-0-은-모델의-안정성이-아니라-모델의-나이를-반영한다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>볼트는 09-26~09-30 <strong>5배치 연속</strong> HF DL 수치를 <em>“드리프트 0 — 검증 통과”</em> 로 기록했다. 오늘 그 관행이 깨지면서 <strong>왜 0이었는지</strong>가 밝혀졌다.</p>
+<h3 id="18분-간격-실측-수집기-0903-utc--볼트-0921-utc">18분 간격 실측 (수집기 09:03 UTC → 볼트 09:21 UTC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#18분-간격-실측-수집기-0903-utc--볼트-0921-utc" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>모델</th><th>생성일</th><th>관측일 기준 나이</th><th><code>downloads</code>(30일) 변화</th><th><code>downloadsAllTime</code> 변화</th></tr></thead><tbody><tr><td><a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a></td><td>2026-08-05</td><td><strong>57일</strong></td><td>🔴 <strong>−87,425</strong></td><td>🔵 +171,203</td></tr><tr><td><a href="../sources/ltx-2.5" class="internal internal-link" data-slug="sources/ltx-2.5">LTX-2.5</a></td><td>2026-07-23</td><td><strong>70일</strong></td><td>🔴 <strong>−13,729</strong></td><td>🔵 +51,165</td></tr><tr><td><a href="../sources/ternary-bonsai-2-27b" class="internal internal-link" data-slug="sources/ternary-bonsai-2-27b">Ternary-Bonsai-2-27B</a></td><td>2026-09-16</td><td><strong>15일</strong></td><td><strong>0</strong></td><td><strong>0</strong></td></tr></tbody></table></div>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <strong>3/3 정합 — 30일을 넘은 모델은 둘 다 감소했고, 30일 미만인 모델만 0이다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>기전</strong>: 30일 창은 슬라이딩이다. 생성 후 30일이 안 된 모델은 <strong>모든 다운로드가 창 안에 있고</strong>(그래서 <code>downloads == downloadsAllTime</code>, Ternary 는 3,676,692 로 두 값이 동일), <strong>창에서 빠져나갈 과거 일자가 아예 없으므로 감소가 구조적으로 불가능</strong>하다.
+⚖️ <strong>규칙 신설: <code>downloads</code>(30일) 드리프트 0 을 “일치/검증 통과” 로 쓰기 전에 <code>createdAt</code> 이 30일을 넘었는지 본다. 30일 미만이면 0 은 정보가 아니다.</strong>
+🔴 <strong>볼트가 5배치 동안 “DL 3건 전부 드리프트 0” 을 검증 성과로 적어 왔는데, 그중 신생 모델 몫은 성과가 아니라 산술적 필연이었다.</strong></p>
+</div>
+</blockquote>
+<h3 id="-부호가-갈리는-것-자체가-교차검증-수단이다">🔵 부호가 갈리는 것 자체가 교차검증 수단이다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-부호가-갈리는-것-자체가-교차검증-수단이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>같은 18분에 <strong>30일값은 줄고 누적값은 늘었다</strong>(2개 모델 독립 재현). 두 필드가 <strong>반대 부호</strong>를 보이는 것은 오류가 아니라 <strong>창 길이가 서로 다르다는 증거</strong>다.
+⚖️ <strong>활용: 두 값을 함께 받아 부호를 비교하면, 캐시 지연(<a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a>)과 창 슬라이딩을 구별할 수 있다.</strong> 09-23 에 볼트가 <em>“교차검증 경로가 없다” 는 것만 틀렸다</em> 고 적었는데, <strong>오늘 그 경로가 구체화됐다.</strong></p>
+<p>🔴 <strong>남은 한계</strong>: <code>downloadsAllTime</code> 이 18분에 +171,203 (≈9,500/분) 늘어난 것은 실시간 카운터로 설명되지 않는다(일당 환산 시 누적총량 초과). <strong>배치 갱신 또는 필드별 캐시 주기 차이</strong>가 유력하나 <strong>미확정</strong> → <a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> 로 이월.</p>
+<h2 id="관련-페이지-추가">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../concepts/복합지표-분해" class="internal internal-link alias" data-slug="concepts/복합지표-분해">복합지표-분해</a> ← 오늘 같이 나온 계측 축 · <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> · <a href="../concepts/유예-은폐" class="internal internal-link alias" data-slug="concepts/유예-은폐">유예-은폐</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-10-02--규칙이-정교해졌다-기준은-createdat-이-아니라-공개일이다">🏆 2026-10-02 — <strong>규칙이 정교해졌다: 기준은 <code>createdAt</code> 이 아니라 공개일이다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-02--규칙이-정교해졌다-기준은-createdat-이-아니라-공개일이다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/nemotron-3-diarization" class="internal internal-link" data-slug="sources/nemotron-3-diarization">Nemotron-3-Diarization</a> 실측에서 <strong>10-01 에 굳힌 규칙이 반례를 만났다.</strong></p>
+<pre><code>downloads(30일)   = 40,936
+downloadsAllTime  = 40,936     ← 일치
+createdAt         = 2026-09-01 → 나이 31일 (30일 초과)
+</code></pre>
+<p>🔴 <strong>10-01 규칙대로면 불일치해야 한다</strong>(<em>“나이 30일 초과 → 창 밖 일자 존재 → 감소/불일치”</em>). <strong>일치했다.</strong></p>
+<p>✅ <strong>원인이 카드에 있다 — <code>Release Date</code> = 2026-09-23.</strong> 레포 생성(09-01)과 실제 공개(09-23) 사이 <strong>22일간 다운로드가 ~0</strong> 이었으므로, <strong>나이가 30일을 넘겨도 창 밖 구간에 실제 다운로드가 없어 두 값이 일치한다.</strong></p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>⚖️ 규칙 정교화 (2026-10-02 발효) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong><code>createdAt</code> 나이 30일 초과는 두 값 불일치의 필요조건이지 충분조건이 아니다.</strong>
+판정 기준은 나이가 아니라 <strong>“창 밖 구간에 실제 다운로드가 있었는지”</strong> 이고, 그것을 가르는 것은 <code>createdAt</code> 이 아니라 <strong>공개일(<code>Release Date</code> · 카드 기재)</strong> 이다.
+🎯 <strong>이로써 이 개념의 변수가 3개로 분해됐다</strong>: <code>createdAt</code>(레포 생성) · <strong><code>Release Date</code>(실제 공개)</strong> · 조회 시점. <strong>10-01 까지 볼트는 첫째와 셋째만 보고 있었다.</strong>
+📌 즉 레포 생성과 공개 사이의 <strong>잠복 기간</strong>이 세 번째 변수였고, 그것이 없다고 암묵 가정하고 있었다 → <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a>.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 <strong>새 축 — <code>trendingScore</code> 는 감쇠한다. DL 과 같은 논리로 다루면 안 된다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>2026-10-02 HF 모델 3건 <strong>전부 하락</strong>(수집 09:01:53 → 볼트 실측):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>모델</th><th>수집기</th><th>볼트 실측</th><th>차이</th></tr></thead><tbody><tr><td><a href="../sources/qwen-image-2.1-uncensored-gguf" class="internal internal-link" data-slug="sources/qwen-image-2.1-uncensored-gguf">Qwen-Image-2.1-Uncensored-GGUF</a></td><td>774</td><td><strong>771</strong></td><td><strong>−3</strong></td></tr><tr><td><a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a></td><td>418</td><td><strong>416</strong></td><td><strong>−2</strong></td></tr><tr><td><a href="../sources/nemotron-3-diarization" class="internal internal-link" data-slug="sources/nemotron-3-diarization">Nemotron-3-Diarization</a></td><td>280</td><td><strong>279</strong></td><td><strong>−1</strong></td></tr><tr><td>🎯 <strong>같은 조회에서 DL 3건은 드리프트 0, trendingScore 3건은 전부 음수다.</strong> ⇒ <strong>두 지표의 시간 거동이 반대 방향이다.</strong></td><td></td><td></td><td></td></tr><tr><td>⚖️ <strong>규칙 추가: “드리프트 0 = 검증 통과” 논리를 <code>trendingScore</code> 에 적용하지 않는다.</strong> DL 은 (창 효과를 제외하면) 단조 증가이므로 드리프트 0 이 유의미한 일치 신호지만, <strong>trendingScore 는 감쇠하므로 드리프트 0 이 오히려 이상 신호</strong>다. 🔴 <strong>3/3 하락은 우연으로 보기 어렵다</strong>(단 n=3 이고 감쇠 상수는 미확인).</td><td></td><td></td><td></td></tr><tr><td>📌 <strong><a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> 와 묶인다</strong> — 그 개념은 <em>“값이 낡았는지”</em> 를 다루고, 이쪽은 <em>“값이 어느 방향으로 낡는지”</em> 를 다룬다.</td><td></td><td></td><td></td></tr></tbody></table></div>
+</div>
+</blockquote>
+<h3 id="관련-페이지-추가-1">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../sources/nemotron-3-diarization" class="internal internal-link" data-slug="sources/nemotron-3-diarization">Nemotron-3-Diarization</a> — 🏆 <strong>규칙 정교화 계기(공개일 변수)</strong></li>
+<li><a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> · <a href="../sources/qwen-image-2.1-uncensored-gguf" class="internal internal-link" data-slug="sources/qwen-image-2.1-uncensored-gguf">Qwen-Image-2.1-Uncensored-GGUF</a> — trendingScore 감쇠 동시 관측</li>
+<li><a href="../concepts/캐시된-지표-신선도" class="internal internal-link alias" data-slug="concepts/캐시된-지표-신선도">캐시된-지표-신선도</a> — 자매 개념 · <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a> — 잠복 기간을 명시로</li>
+</ul>
+<h2 id="️-2026-10-05--30일-창이-감소하는-것을-처음-관측했다--평탄-성장-반대-극">⚖️ 2026-10-05 — <strong>30일 창이 감소하는 것을 처음 관측했다 + 평탄 성장 반대 극</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-2026-10-05--30일-창이-감소하는-것을-처음-관측했다--평탄-성장-반대-극" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>① 창 지표 감소</strong>: <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> <code>downloads</code>(30일) 10-04 <strong>6,895,117</strong> → 10-05 <strong>6,821,761</strong> = <strong>−73,356</strong>. ⚖️ <strong>창 밖으로 빠진 양 > 새 유입.</strong> 📌 <strong>“창 증분이 실제의 16%“</strong>(10-04 LTX-2.5 사례)<strong>의 반대편 — 창은 과소평가도 하고 음수도 만든다.</strong> 🔴 <strong>이것을 “인기 하락”으로 읽으면 안 된다.</strong>
+<strong>② 평탄 성장</strong>: <a href="../sources/marketingskills" class="internal internal-link" data-slug="sources/marketingskills">marketingskills</a> 09-07 ★47,746 → 10-05 ★<strong>53,252</strong> = <strong>+5,506 / 28일 = 일평균 ≈197</strong> 이고 <strong>수집기 보고 당일 증분이 +197</strong> 이다 ⇒ 🏆 <strong>28일 평균과 당일 값이 거의 같다 = 버스트 없는 평탄 성장.</strong> ⚖️ <strong><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></strong>(침묵→하루 15커밋 버스트→침묵)<strong>과 정반대 극</strong>이고, 이 레포에서는 <strong>창 길이가 결론을 바꾸지 않는다.</strong>
+🎯 <strong>규칙 정제: 창 길이가 문제가 되는 것은 성장이 불균등할 때만이다. 평탄하면 어떤 창이든 같은 값을 준다.</strong> ⇒ <strong>창을 의심하기 전에 균등성을 본다.</strong></p>
+<ul>
+<li><a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> · <a href="../sources/marketingskills" class="internal internal-link" data-slug="sources/marketingskills">marketingskills</a> · <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> · <a href="../sources/ltx-2.5" class="internal internal-link" data-slug="sources/ltx-2.5">LTX-2.5</a> · <a href="../concepts/복합지표-분해" class="internal internal-link alias" data-slug="concepts/복합지표-분해">복합지표-분해</a></li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-54" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#지표-창길이" data-for="지표-창길이">지표 창길이</a></li><li class="depth-1"><a href="#️-stars-today-편향의-방향이-뒤집혔다--10-03-결론을-좁힌다" data-for="️-stars-today-편향의-방향이-뒤집혔다--10-03-결론을-좁힌다">⚖️ “stars today” 편향의 방향이 뒤집혔다 — 10-03 결론을 좁힌다</a></li><li class="depth-1"><a href="#-배치-내-이상치--시계열-이상치-유형-추가" data-for="-배치-내-이상치--시계열-이상치-유형-추가">🆕 “배치 내 이상치 ≠ 시계열 이상치” 유형 추가</a></li><li class="depth-1"><a href="#-30일-창이-성장을-6배-과소평가한다--정량-사례" data-for="-30일-창이-성장을-6배-과소평가한다--정량-사례">🆕 30일 창이 성장을 6배 과소평가한다 — 정량 사례</a></li><li class="depth-1"><a href="#-활동의-버스트성--한-주기가-관측됐다" data-for="-활동의-버스트성--한-주기가-관측됐다">🆕 활동의 버스트성 — 한 주기가 관측됐다</a></li><li class="depth-1"><a href="#파급--원본-파생-역전-판정이-뒤집힌다-이번-배치-실질-성과" data-for="파급--원본-파생-역전-판정이-뒤집힌다-이번-배치-실질-성과">파급 — 원본-파생-역전 판정이 뒤집힌다 (이번 배치 실질 성과)</a></li><li class="depth-1"><a href="#-볼트-자기-한계-숨기지-않는다" data-for="-볼트-자기-한계-숨기지-않는다">🔴 볼트 자기 한계 (숨기지 않는다)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="depth-1"><a href="#-2026-09-24--창-길이에-처음으로-수치-근거가-붙었다-문서는-여전히-없다" data-for="-2026-09-24--창-길이에-처음으로-수치-근거가-붙었다-문서는-여전히-없다">🆕 2026-09-24 — 창 길이에 처음으로 수치 근거가 붙었다 (문서는 여전히 없다)</a></li><li class="depth-2"><a href="#역산--다운로드율이-균일하다고-가정할-때" data-for="역산--다운로드율이-균일하다고-가정할-때">역산 — 다운로드율이 균일하다고 가정할 때</a></li><li class="depth-2"><a href="#-부수-발견--창-경계를-막-넘은-저장소가-경계를-보여준다" data-for="-부수-발견--창-경계를-막-넘은-저장소가-경계를-보여준다">🎯 부수 발견 — 창 경계를 막 넘은 저장소가 경계를 보여준다</a></li><li class="depth-2"><a href="#-창누적이-나타나는-조건이-확정됐다" data-for="-창누적이-나타나는-조건이-확정됐다">📌 창≠누적이 나타나는 조건이 확정됐다</a></li><li class="depth-1"><a href="#2026-09-26-갱신--downloads--downloadsalltime-1515-무예외" data-for="2026-09-26-갱신--downloads--downloadsalltime-1515-무예외">2026-09-26 갱신 — downloads == downloadsAllTime 15/15 무예외</a></li><li class="depth-1"><a href="#-2026-09-27-갱신--3번째-점추정-확보-규모-1666배-구간에서-수렴" data-for="-2026-09-27-갱신--3번째-점추정-확보-규모-1666배-구간에서-수렴">📊 2026-09-27 갱신 — 3번째 점추정 확보, 규모 1,666배 구간에서 수렴</a></li><li class="depth-2"><a href="#역산-3점-균일-다운로드율-가정" data-for="역산-3점-균일-다운로드율-가정">역산 3점 (균일 다운로드율 가정)</a></li><li class="depth-2"><a href="#-downloads--downloadsalltime--30일-미만-규칙--1414-예외-없음" data-for="-downloads--downloadsalltime--30일-미만-규칙--1414-예외-없음">✅ downloads == downloadsAllTime ⟺ 30일 미만 규칙 — 14/14 예외 없음</a></li><li class="depth-2"><a href="#-새-경고--이-창-안의-값도-불안정하다" data-for="-새-경고--이-창-안의-값도-불안정하다">🔴 새 경고 — 이 창 안의 값도 불안정하다</a></li><li class="depth-1"><a href="#2026-09-28--점추정-4번째--내용량-지표-첫-확보" data-for="2026-09-28--점추정-4번째--내용량-지표-첫-확보">2026-09-28 — 점추정 4번째 + 내용량 지표 첫 확보</a></li><li class="depth-2"><a href="#4번째-점추정-qwen38-27b" data-for="4번째-점추정-qwen38-27b">4번째 점추정: Qwen3.8-27B</a></li><li class="depth-2"><a href="#--말고-움직이는-것을-처음-봤다--ai-engineering-from-scratch" data-for="--말고-움직이는-것을-처음-봤다--ai-engineering-from-scratch">🆕 ★ 말고 움직이는 것을 처음 봤다 — ai-engineering-from-scratch</a></li><li class="depth-2"><a href="#-관련-페이지-추가" data-for="-관련-페이지-추가">📌 관련 페이지 추가</a></li><li class="depth-1"><a href="#-2026-10-01--기전이-완성됐다-드리프트-0-은-모델의-안정성이-아니라-모델의-나이를-반영한다" data-for="-2026-10-01--기전이-완성됐다-드리프트-0-은-모델의-안정성이-아니라-모델의-나이를-반영한다">🏆 2026-10-01 — 기전이 완성됐다: “드리프트 0” 은 모델의 안정성이 아니라 모델의 나이를 반영한다</a></li><li class="depth-2"><a href="#18분-간격-실측-수집기-0903-utc--볼트-0921-utc" data-for="18분-간격-실측-수집기-0903-utc--볼트-0921-utc">18분 간격 실측 (수집기 09:03 UTC → 볼트 09:21 UTC)</a></li><li class="depth-2"><a href="#-부호가-갈리는-것-자체가-교차검증-수단이다" data-for="-부호가-갈리는-것-자체가-교차검증-수단이다">🔵 부호가 갈리는 것 자체가 교차검증 수단이다</a></li><li class="depth-1"><a href="#관련-페이지-추가" data-for="관련-페이지-추가">관련 페이지 추가</a></li><li class="depth-1"><a href="#-2026-10-02--규칙이-정교해졌다-기준은-createdat-이-아니라-공개일이다" data-for="-2026-10-02--규칙이-정교해졌다-기준은-createdat-이-아니라-공개일이다">🏆 2026-10-02 — 규칙이 정교해졌다: 기준은 createdAt 이 아니라 공개일이다</a></li><li class="depth-2"><a href="#관련-페이지-추가-1" data-for="관련-페이지-추가-1">관련 페이지 추가</a></li><li class="depth-1"><a href="#️-2026-10-05--30일-창이-감소하는-것을-처음-관측했다--평탄-성장-반대-극" data-for="️-2026-10-05--30일-창이-감소하는-것을-처음-관측했다--평탄-성장-반대-극">⚖️ 2026-10-05 — 30일 창이 감소하는 것을 처음 관측했다 + 평탄 성장 반대 극</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/게시일-이중화" class="internal">게시일 이중화</a></li><li><a href="../concepts/구조적-영값" class="internal">구조적 영값</a></li><li><a href="../concepts/동일대상-분리오판" class="internal">동일대상 분리오판 — 백필 우회의 거울상. 같은 대상을 둘로 쪼개는 오류</a></li><li><a href="../concepts/메타데이터-부재-추론" class="internal">메타데이터 부재 추론 — 필드가 비어 있다는 것은 사실이 없다는 뜻이 아니다</a></li><li><a href="../concepts/복합지표-분해" class="internal">복합지표 분해 — open_issues_count 는 이슈 수가 아니다. 5배치의 &quot;이례적&quot; 판정이 집계 착오였다</a></li><li><a href="../concepts/암묵을-명시로" class="internal">암묵을 명시로 — 모델 안에 숨은 것을 밖으로 꺼내면 제어가 생긴다</a></li><li><a href="../concepts/에이전트-메모리-레이어" class="internal">에이전트 메모리 레이어</a></li><li><a href="../concepts/원본-파생-역전" class="internal">원본-파생 역전</a></li><li><a href="../concepts/지표-창길이" class="internal">지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</a></li><li><a href="../concepts/측정도구-먼저-반증" class="internal">측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</a></li><li><a href="../concepts/캐시된-지표-신선도" class="internal">캐시된 지표 신선도 — 같은 숫자를 두 출처가 다르게 말할 때, 둘 다 맞다</a></li><li><a href="../concepts/파생저장소-식별" class="internal">파생저장소 식별 — 재포장·양자화 저장소를 중복으로 볼 것인가</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/video-saas" class="internal">영상 AI SaaS 누적 인사이트</a></li><li><a href="../entities/huggingface" class="internal">HuggingFace — 모델 정의와 배포의 공통 기반</a></li><li><a href="../entities/prism-ml" class="internal">prism-ml</a></li><li><a href="../" class="internal">Ducky's Note</a></li><li><a href="../sources/agent-reach" class="internal">Agent-Reach</a></li><li><a href="../sources/ecc" class="internal">ECC — 코딩 에이전트 하네스 성능 최적화 시스템 (스킬·메모리·보안 통합)</a></li><li><a href="../sources/ltx-2.5" class="internal">LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)</a></li><li><a href="../sources/mimo-v2.6-pro-rl" class="internal">MiMo-V2.6-Pro-RL — 09-18 사용자 소스의 미검증 주장 2건이 오늘 실측으로 확정됐다</a></li><li><a href="../sources/nemotron-3-diarization" class="internal">Nemotron-3-Diarization — 99M 으로 8화자를, 0.32초 지연으로. 그리고 모델카드가 자기 채점표를 변호했다</a></li><li><a href="../sources/qwen-image-2.1" class="internal">Qwen-Image-2.1 — 원본이 스스로 사용자를 파생으로 보냈다 (그리고 Apache-2.0 계보가 비상업으로 바뀌었다)</a></li><li><a href="../sources/qwen3.8-27b-gguf" class="internal">Qwen3.8-27B-GGUF — Qwen3.8-27B GGUF 양자화 재배포판 (unsloth)</a></li><li><a href="../sources/qwen3.8-27b" class="internal">Qwen/Qwen3.8-27B — Qwen3.8-27B 베이스 원본 (image-text-to-text)</a></li><li><a href="../sources/rayorch" class="internal">RayOrch — 확장 배수와 경쟁 대비 개선을 같은 칸에 넣지 마라</a></li><li><a href="../sources/teleocr" class="internal">TeleOCR — 창 길이 3번째 점추정 ≈31.1일을 준 모델, 그리고 카드가 말한 1.2B 는 실측 1.42B 다</a></li><li><a href="../sources/ternary-bonsai-2-27b" class="internal">Ternary-Bonsai-2-27B — 1.72bit는 '이상값'이고 출하물은 1.75/2.13이다</a></li><li><a href="../sources/voicestudio" class="internal">debpalash/VoiceStudio — 27개 음성 엔진을 한 껍데기로 묶은 로컬 ElevenLabs 대체</a></li><li><a href="../sources/ai-engineering-from-scratch" class="internal">rohitg00/ai-engineering-from-scratch — AI 엔지니어링 실무 지향 커리큘럼</a></li><li><a href="../sources/financial-services" class="internal">anthropics/financial-services — Anthropic 금융 서비스 AI 레퍼런스 구현체</a></li><li><a href="../sources/hindsight" class="internal">hindsight — SOTA 주장의 수치는 그림 안에 있는데, 누가 쟀는지는 본문에 적혀 있다</a></li><li><a href="../sources/marketingskills" class="internal">coreyhaines31/marketingskills — 스킬 1층이 비-코딩 직군으로 넘어간 최대 사례 (⭐47,746)</a></li><li><a href="../sources/openrig" class="internal">openrig — 설치 전에 '내가 네 머신에서 뭘 바꾸는지' 를 먼저 말하는 하네스</a></li><li><a href="../sources/ponytail" class="internal">DietrichGebert/ponytail — &quot;안 쓴 코드가 최고의 코드&quot; 행동 규범 자산</a></li><li><a href="../sources/univer" class="internal">univer — 4년 된 오피스 SDK가 'AI 에이전트용 하네스'로 재포지셔닝됐다. 코드가 아니라 포지션이 새 것이다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

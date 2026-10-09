@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)"/><meta name="twitter:description" content="Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델 2026-10-04 갱신 — DL(30일) 1,629,984 · 누적 3,026,027(볼트 실측 · 관측 2026-10-04T09:12:38Z) · 🏆🏆 볼트가 5배치 동안 &quot;게이트로 카드 미확인&quot;으로 적어 온 것이 틀렸다 — 게이트는 raw/ 경로에만 있고 HTML 페이지는 익명 HTTP 200 이다 · 🔴 게이트의 대가가 맞춤 광고 수신 동의다 볼트 독립 실측: downloads(30일) 1,629,984 · downloadsAllTime..."/><meta property="og:description" content="Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델 2026-10-04 갱신 — DL(30일) 1,629,984 · 누적 3,026,027(볼트 실측 · 관측 2026-10-04T09:12:38Z) · 🏆🏆 볼트가 5배치 동안 &quot;게이트로 카드 미확인&quot;으로 적어 온 것이 틀렸다 — 게이트는 raw/ 경로에만 있고 HTML 페이지는 익명 HTTP 200 이다 · 🔴 게이트의 대가가 맞춤 광고 수신 동의다 볼트 독립 실측: downloads(30일) 1,629,984 · downloadsAllTime..."/><meta property="og:image:alt" content="Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델 2026-10-04 갱신 — DL(30일) 1,629,984 · 누적 3,026,027(볼트 실측 · 관측 2026-10-04T09:12:38Z) · 🏆🏆 볼트가 5배치 동안 &quot;게이트로 카드 미확인&quot;으로 적어 온 것이 틀렸다 — 게이트는 raw/ 경로에만 있고 HTML 페이지는 익명 HTTP 200 이다 · 🔴 게이트의 대가가 맞춤 광고 수신 동의다 볼트 독립 실측: downloads(30일) 1,629,984 · downloadsAllTime..."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/sources/ltx-2.5"/><meta property="twitter:url" content="https://duckychoi.github.io/note/sources/ltx-2.5"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델 2026-10-04 갱신 — DL(30일) 1,629,984 · 누적 3,026,027(볼트 실측 · 관측 2026-10-04T09:12:38Z) · 🏆🏆 볼트가 5배치 동안 &quot;게이트로 카드 미확인&quot;으로 적어 온 것이 틀렸다 — 게이트는 raw/ 경로에만 있고 HTML 페이지는 익명 HTTP 200 이다 · 🔴 게이트의 대가가 맞춤 광고 수신 동의다 볼트 독립 실측: downloads(30일) 1,629,984 · downloadsAllTime..."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/sources/ltx-2.5-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/sources/ltx-2.5-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/sources/ltx-2.5-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="sources/ltx-2.5" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-719" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-719" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)</a></div></nav><h1 class="article-title">LTX-2.5 — 이미지→비디오 생성 HF 모델 (Lightricks)</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/ai-news" class="internal internal-link tag-link">ai-news</a><span class="note-properties-separator">, </span><a href="../tags/hf-model" class="internal internal-link tag-link">hf-model</a><span class="note-properties-separator">, </span><a href="../tags/image-to-video" class="internal internal-link tag-link">image-to-video</a><span class="note-properties-separator">, </span><a href="../tags/video-generation" class="internal internal-link tag-link">video-generation</a><span class="note-properties-separator">, </span><a href="../tags/lightricks" class="internal internal-link tag-link">lightricks</a><span class="note-properties-separator">, </span><a href="../tags/video-saas" class="internal internal-link tag-link">video-saas</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-10-05T00:00:00.000Z">2026년 10월 05일</time><span>43 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="lightricksltx-25--이미지-입력-영상-생성-모델">Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lightricksltx-25--이미지-입력-영상-생성-모델" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-10-04 갱신 — DL(30일) <strong>1,629,984</strong> · 누적 <strong>3,026,027</strong>(볼트 실측 · <strong>관측 2026-10-04T09:12:38Z</strong>) · 🏆🏆 <strong>볼트가 5배치 동안 &quot;게이트로 카드 미확인&quot;으로 적어 온 것이 틀렸다 — 게이트는 <code>raw/</code> 경로에만 있고 HTML 페이지는 익명 HTTP 200 이다</strong> · 🔴 <strong>게이트의 대가가 맞춤 광고 수신 동의다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>볼트 독립 실측</strong>: downloads(30일) <strong>1,629,984</strong> · downloadsAllTime <strong>3,026,027</strong> · likes <strong>6,179</strong>(수집기 6,178 = <strong>+1</strong>) · trendingScore <strong>407</strong>(일치 · 배치 모델 최고) · <code>safetensors.total</code> <strong>None</strong> · <code>gguf.total</code> <strong>None</strong> · license <strong>other</strong> · created <strong>2026-07-23</strong> · lastModified <strong>2026-10-02T21:01:57Z</strong>.
+🔵 <strong><code>lastModified</code> 가 2026-09-01 → 2026-10-02 로 움직였다</strong> — 09-30 기록의 <em>“09-01”</em> 에서 갱신됐다(31일 만).</p>
+<h2 id="-볼트-자기-오류-4번째--게이트는-한-경로에만-있었다">🏆🏆 볼트 자기 오류 4번째 — <strong>게이트는 한 경로에만 있었다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-볼트-자기-오류-4번째--게이트는-한-경로에만-있었다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 페이지는 <strong>09-30 에 5회 연속 게이트를 확인</strong>하고 <em>“카드 내용 미확인”</em> 을 이월해 왔다. ✅ <strong>오늘도 <code>raw/main/README.md</code> 는 그대로다</strong>: <strong>HTTP 401 · 126 바이트</strong> · <em>“Access to model Lightricks/LTX-2.5 is restricted…”</em>(6회 연속 확인).
+🔴🔴 <strong>그런데 볼트가 오늘 처음 다른 경로를 시도했다</strong>: <code>https://huggingface.co/Lightricks/LTX-2.5</code> (HTML 렌더 페이지) ⇒ <strong>HTTP 200 · 231,894 바이트 · 카드 본문 전체 포함.</strong>
+⇒ ⚖️ <strong>“벤더가 카드를 잠갔다”는 5배치 결론은 과도했다. 벤더는 <code>raw/</code> 다운로드만 잠갔고 읽기는 열려 있다.</strong> 🏆 <strong>그리고 이것은 <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> 의 볼트 자기 오류 <strong>4번째</strong>이며 네 건이 전부 같은 구조다:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>날짜</th><th>증상</th><th>실제 원인</th></tr></thead><tbody><tr><td>①</td><td>09-29</td><td>”arXiv 무응답”</td><td><strong>301 리다이렉트를 <code>-L</code> 없이 호출</strong></td></tr><tr><td>②</td><td>09-30</td><td><code>downloadsAllTime</code> = None</td><td><strong><code>?expand[]</code> 파라미터 누락</strong></td></tr><tr><td>③</td><td>10-02</td><td><code>safetensors.total</code> = None → “대조 불가”</td><td><strong><code>gguf.total</code> 을 안 봄</strong>(<a href="../concepts/대체필드-대조" class="internal internal-link alias" data-slug="concepts/대체필드-대조">대체필드-대조</a>)</td></tr><tr><td><strong>④</strong></td><td><strong>10-04</strong></td><td><strong>”게이트로 카드 미확인”</strong></td><td><strong><code>raw/</code> 만 막혔고 HTML 은 열려 있음</strong></td></tr><tr><td>🏆 <strong>공통 구조: 한 경로의 실패를 대상의 속성으로 귀속했다.</strong> ⇒ 📌 <strong>볼트 규약 추가(즉시 발효): 접근 실패를 “대상이 막혔다”로 적기 전에 <strong>최소 2개 경로</strong>를 시도한다. HF 모델이면 <code>raw/</code> · HTML 페이지 · <code>api/models/{id}</code> 의 <code>cardData</code> 세 경로가 있다.</strong> 🎯 <strong>오늘 같은 배치 <a href="../sources/agent-reach" class="internal internal-link" data-slug="sources/agent-reach">Agent-Reach</a> 의 “중국어 README 로 영어 grep 0건”도 같은 계열이다 — 하루에 두 건이 나왔다.</strong></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="-라이선스--수집기-확증--볼트가-조항-2개를-더-찾았다">✅ 라이선스 — 수집기 확증 + <strong>볼트가 조항 2개를 더 찾았다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-라이선스--수집기-확증--볼트가-조항-2개를-더-찾았다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>카드 원문(볼트 HTML 실측):</p>
+<blockquote>
+<p><strong>Under <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">10</span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mord mathnormal">ann</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord">—</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal">mm</span><span class="mord mathnormal" style="margin-right:0.0278em;">er</span><span class="mord mathnormal">c</span><span class="mord mathnormal">ia</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">se</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord">∗</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">n</span><span class="mord mathnormal">ocos</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">∗</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.0278em;">er</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">e</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">2.</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal">mm</span><span class="mord mathnormal">u</span><span class="mord mathnormal">ni</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mord mathnormal">L</span><span class="mord mathnormal">i</span><span class="mord mathnormal">ce</span><span class="mord mathnormal">n</span><span class="mord mathnormal">se</span><span class="mord">.</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">an</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mord mathnormal" style="margin-right:0.0278em;">er</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mord mathnormal">in</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">es</span><span class="mord mathnormal">ma</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.0359em;">q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal">p</span><span class="mord mathnormal">ai</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">ce</span><span class="mord mathnormal">n</span><span class="mord mathnormal">se</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">ina</span><span class="mord mathnormal" style="margin-right:0.0278em;">ccor</span><span class="mord mathnormal">d</span><span class="mord mathnormal">an</span><span class="mord mathnormal">ce</span><span class="mord mathnormal" style="margin-right:0.0269em;">w</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">e</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">2.</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal">mm</span><span class="mord mathnormal">u</span><span class="mord mathnormal">ni</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mord mathnormal">L</span><span class="mord mathnormal">i</span><span class="mord mathnormal">ce</span><span class="mord mathnormal">n</span><span class="mord mathnormal">se</span><span class="mord">.</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mord mathnormal" style="margin-right:0.0278em;">er</span></span></span></span>10M annual revenue</strong> — Paid Commercial [license]
+🆕 <strong>① 매출 산정 범위가 적혀 있다(수집기 미보고)</strong>: <em>“<strong>Revenue is measured across the whole entity, including subsidiaries and affiliates under common control.</strong>”</em> ⇒ 🔴 <strong>법인 단위 합산이고 자회사·공동지배 계열사를 포함한다. 사업부 매출로 $10M 미만을 주장할 수 없다.</strong>
+🆕 <strong>② 카드 텍스트는 구속력이 없다고 명시한다</strong>: <em>“The full, <strong>binding</strong> terms live in LICENSE.”</em> ⇒ ⚖️ <strong>즉 위의 요약은 마케팅 문구이고 실제 조건은 별도 파일이다</strong> — <code>cardData.license_link</code> = <code>https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x</code>(🔴 볼트 미열람).
+🎯 <strong>수집기가 세운 신규 축 확증</strong>: <em>“HF <code>license: other</code> 는 제한의 유무가 아니라 ‘제한의 형태’에 대한 정보가 0이다.”</em> ✅ <strong>볼트 보강 — <code>cardData</code> 에는 더 있었다</strong>: <code>license_name</code> = <strong><code>ltx-2.x-community-license-agreement</code></strong> · <code>license_link</code> = GitHub LICENSE-2_x. ⇒ 📌 <strong><code>license</code> 필드만 보면 <code>other</code> 로 0 정보지만 <code>cardData.license_name</code>·<code>license_link</code> 는 이름과 원문 위치를 준다</strong> — 🏆 <strong><a href="../concepts/대체필드-대조" class="internal internal-link alias" data-slug="concepts/대체필드-대조">대체필드-대조</a> 규약 1항(동의어 필드 열거)이 라이선스에서도 작동한다.</strong> ⚖️ <strong>따라서 “정보가 0”은 <code>license</code> 필드에 대해서만 참이다</strong> → <a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> 수정 등재.</p>
+</blockquote>
+<h2 id="-게이트의-정체--안전-게이트가-아니라-리드-수집-게이트다">🔴🔴 게이트의 정체 — <strong>안전 게이트가 아니라 리드 수집 게이트다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-게이트의-정체--안전-게이트가-아니라-리드-수집-게이트다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><code>cardData.extra_gated_description</code> 원문:</p>
+<blockquote>
+<p><em>“By clicking <strong>“Agree and Access”</strong> you acknowledge the [Privacy Policy] and <strong>consent to receive offers and updates including targeted and personalized advertisements.</strong> You can unsubscribe at any time.”</em>
+⇒ 🔴 <strong>게이트를 통과하는 대가가 “맞춤·타깃 광고 수신 동의”다.</strong> ⚖️ <strong>통상의 게이트 명분(오용 방지·라이선스 동의 확인)이 아니다.</strong> 📌 <strong><code>extra_gated_button_content</code> = <code>&quot;Agree and Access&quot;</code>.</strong>
+🎯 <strong>그리고 이것이 위의 경로 발견과 맞물린다: 읽기는 열려 있고 <code>raw/</code> 다운로드만 막혀 있다.</strong> ⇒ 🏆 <strong>구조가 설명된다 — 홍보 문구는 누구나 읽게 두고, 파일을 받으려는 사람에게서 마케팅 동의를 받는다. 게이트의 위치가 목적을 드러낸다.</strong></p>
+</blockquote>
+<h2 id="-아키텍처--수집기-전건-확증--신규-3건-볼트-카드-실측">✅ 아키텍처 — 수집기 전건 확증 + 신규 3건 (볼트 카드 실측)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-아키텍처--수집기-전건-확증--신규-3건-볼트-카드-실측" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>✅ <strong>파일 목록으로 확증</strong>: <code>text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors</code>(<strong>gemma4-12b 확증</strong>) · <code>vae/ltx-2.5-video-vae-conv-bf16.safetensors</code>(Conv VAE — faster/lighter) + <code>vae/ltx-2.5-audio-vae-bf16.safetensors</code>(<strong>Audio VAE + vocoder</strong> ⇒ <strong>영상·오디오 VAE 분리 확증</strong>) · <code>model_patches/ltx-2.5-duration-head-bf16.safetensors</code>(🆕 <strong>용도: <code>--num-frames</code> 생략 시 자동 길이</strong>) · <code>latent_upscale_models/…spatial-upscaler-x2…</code> + <code>…temporal-upsc…</code>(<strong>×2 공간·시간 업스케일러 확증 · 다단 파이프라인에 필수</strong>) · <code>diffusion_models/ltx-2.5-22b-dev-transformer-comfy-int8-convrot.safetensors</code>(🆕 <strong>ComfyUI 전용 · ltx-pipelines/PyTorch 불가</strong>) · <code>…distilled-transformer-nvfp4.safetensors</code>(🆕 <strong>Blackwell / ltx-kernels 필요</strong>) · <code>loras/ltx-2.5-22b-distilled-lora-450-bf16.safetensors</code>
+🆕 <strong>① 확산 비디오 디코더가 VAE 재구성 단계를 대체한다</strong>: <em>“New diffusion video decoder — <strong>replaces the VAE reconstruction stage</strong>; sharper faces, textures, and on-screen text, better motion, and fewer artifacts.”</em> ⇒ 🎯 <strong>같은 배치 <a href="../sources/video-generation-post-training-survey" class="internal internal-link" data-slug="sources/video-generation-post-training-survey">Video-Generation-Post-Training-Survey</a> 가 정리한 “모션–외형 결합” 난점에 벤더가 디코더 교체로 대응한 사례.</strong>
+🆕 <strong>② 장면 복잡도에 따른 동적 연산 배분</strong>: <em>“instead of locking every scene to one compression rate, our model <strong>dynamically allocates compute by scene complexity and budget</strong>.”</em>
+🆕 <strong>③ 네이티브 멀티샷</strong>: <em>“<strong>Native multishot generation</strong> — generate connected scenes in a single pass.”</em> ⇒ 🏆 <strong>볼트 <a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> 축에 직접 유효하다 — 연결된 장면을 한 패스에 만드는 것은 영상 자동화 파이프라인의 컷 연결 문제를 모델 안으로 옮긴다.</strong>
+🆕 <strong>④ 벤더 자발 한정</strong>: <em>“applicability to emerging domains such as <strong>robotics and physical AI is developing</strong>.”</em> ⇒ ✅ <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a> 사례(과대 적용을 스스로 차단).
+✅ <strong>배포 철학 명시</strong>: <em>“No per-generation billing, no per-seat lock-in, no forced API dependency”</em> + self-host.</p>
+<h2 id="-성능-수치-0개--수집기-주장을-볼트가-독립-확증한다">✅ 성능 수치 0개 — <strong>수집기 주장을 볼트가 독립 확증한다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-성능-수치-0개--수집기-주장을-볼트가-독립-확증한다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수집기: <em>”🔴 카드에 성능 수치 0개 — 벤치·fps·해상도 수치 없이 라이선스 블록이 카드 상단을 차지한다.”</em>
+✅ <strong>볼트 확증</strong>: 231,894B 카드 전문에서 품질 주장은 전부 <strong>정성어</strong>다(<em>sharper · better motion · fewer artifacts · flawless detail</em>). <strong>벤치 점수·fps·해상도 수치가 없다.</strong>
+🏆 <strong>같은 배치 대조가 날카롭다</strong>: <a href="../sources/video-generation-post-training-survey" class="internal internal-link" data-slug="sources/video-generation-post-training-survey">Video-Generation-Post-Training-Survey</a> 는 영상 평가 관행이 <strong>서베이로 정리될 만큼 성숙</strong>했다고 적는데, <strong>같은 날 도착한 22B 영상 모델(trendingScore 407 = 배치 최고)은 측정값을 0개 공개한다.</strong> ⇒ ⚖️ <strong><a href="../concepts/검사가능성-후퇴" class="internal internal-link alias" data-slug="concepts/검사가능성-후퇴">검사가능성-후퇴</a> 영상 도메인 사례로 확정 등재.</strong> 🆕 <strong>다만 볼트 신규 발견 — 논문이 있다</strong>: <code>cardData.arxiv</code> = <strong>2601.03233</strong>(수집기 미보고). 📌 <strong>수치는 카드가 아니라 논문에 있을 수 있다</strong> → actionable.</p>
+<h2 id="-safetensorstotalgguftotal-부재--추정이-선언으로-승격됐다">✅ <code>safetensors.total</code>·<code>gguf.total</code> 부재 — <strong>추정이 선언으로 승격됐다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-safetensorstotalgguftotal-부재--추정이-선언으로-승격됐다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수집기: <em>”✅ 둘 다 <code>None</code> 이고 <code>expand[]</code> 재조회에도 동일 ⇒ <strong>진짜 부재</strong>(단일 파일 분산 배포 구조 <strong>추정</strong> · <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> ‘요청 미지정형’ 아님으로 판정).”</em>
+✅ <strong>볼트 재확증</strong>(expand[] 11필드) 후 🏆 <strong>추정의 근거를 태그에서 찾았다 — <code>tags</code> 에 <code>diffusion-single-file</code> 이 있다.</strong> ⇒ 📌 <strong>수집기가 “구조 추정”으로 남긴 것을 벤더가 태그로 <strong>선언</strong>한다.</strong> ⚖️ <strong><a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> 의 모범 사례: 한 필드의 부재(<code>safetensors.total</code>)가 다른 필드의 존재(<code>tags</code>)로 설명된다.</strong>
+🆕 <strong>기타 메타데이터(볼트 신규)</strong>: <code>pinned</code> <strong>true</strong> · 카드 언어 <strong>9종</strong>(en·de·es·fr·<strong>ko</strong>·ja·zh·it·pt — <strong>한국어 포함</strong>) · 태스크 태그 <strong>11종</strong>(image/text/video/audio 조합 전부: <code>text-to-audio-video</code>·<code>image-text-to-audio-video</code> 등) · <code>demo</code> = <code>app.ltx.studio/ltx-2-playground/i2v</code>.</p>
+<h2 id="-지표--dl-가-볼트-기준선을-교차했다">📈 지표 — <strong>DL/♥ 가 볼트 기준선을 교차했다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-지표--dl-가-볼트-기준선을-교차했다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>DL(30일)</th><th>누적</th><th>♥</th><th><strong>DL/♥</strong></th></tr></thead><tbody><tr><td>08-31</td><td>1,137,181</td><td>—</td><td>2,295</td><td>495.5</td></tr><tr><td>09-30</td><td>1,589,098</td><td>2,773,856</td><td>5,600</td><td>283.8 (<em>“기준선 264.5 에 근접”</em>)</td></tr><tr><td><strong>10-04</strong></td><td><strong>1,629,984</strong></td><td><strong>3,026,027</strong></td><td><strong>6,179</strong></td><td>🔴 <strong>263.8 — 교차했다</strong></td></tr><tr><td>⇒ ⚖️ <strong>09-30 에 <em>“관심 우세 쪽으로 이동”</em> 이라 적은 궤적이 4일 만에 기준선을 넘었다.</strong> 🔴 <strong>단 09-30 기록대로 기준선 264.5 의 산출 근거는 오늘도 재확인하지 않았다</strong> — <strong>교차 자체는 사실이고, 교차의 의미는 기준선의 타당성에 의존한다.</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>🏆 <strong><a href="../concepts/지표-창길이" class="internal internal-link alias" data-slug="concepts/지표-창길이">지표-창길이</a> 정량 사례 — 30일 창이 성장을 6배 과소평가한다.</strong> 09-30→10-04(4일): <strong>30일창 +40,886</strong> ↔ <strong>누적 +252,171</strong>. ⇒ <strong>차이 211,285 가 창 밖으로 빠졌다.</strong> 📌 <strong>창 증분으로 성장률을 재면 실제의 약 16% 로 보인다</strong> — 나이 73일 모델에서 30일 창은 성장 측정에 부적합하다.</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h3 id="원본-갱신">원본 갱신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본-갱신" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>검증: <strong>2026-10-04T09:12:38Z</strong> HF 모델 API(expand[] 11필드) + <strong>HTML 카드 231,894B(HTTP 200)</strong> + <code>raw/README.md</code> <strong>401(6회 연속)</strong> 실호출 (볼트)</li>
+<li>🏆 <strong>해소</strong>: 카드 내용 5배치 이월 종결(경로 문제였음) · 라이선스 조항 2건 추가 · 게이트 목적 규명 · <code>safetensors</code> 부재 원인(<code>diffusion-single-file</code>)</li>
+<li>🔴 <strong>잔존</strong>: <code>LICENSE-2_x</code> 원문 미열람 · <strong>arXiv 2601.03233 미열람</strong>(성능 수치가 여기 있을 수 있다) · 기준선 264.5 근거 미재확인 · 볼트 실행 0건</li>
+<li>신뢰도: ⭐⭐⭐ medium 유지 — 메타데이터·카드·라이선스는 실검증, <strong>성능은 측정값 0개로 판정 불가</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-09-30 갱신 — DL <strong>1,589,098</strong> · 🔴 <strong>게이트 5회 연속 확인 — 그리고 정체가 &quot;0행&quot;이 아니라 HTTP 401 이다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>HF API 실호출(2026-09-30 09:13 UTC)</strong>: downloads(30일) <strong>1,589,098</strong>(수집기 <strong>완전 일치 · 드리프트 0</strong>) · downloadsAllTime <strong>2,773,856</strong>(수집기 <strong>완전 일치</strong>) · ♥<strong>5,600</strong>(수집기 5,597, <strong>+3</strong>) · license <strong>other</strong>(일치) · <code>image-to-video</code>(일치) · createdAt <strong>2026-07-23</strong> · lastModified <strong>2026-09-01</strong> · <code>safetensors</code> <strong>null</strong>(수집기 일치)
+🔴 <strong>게이트 원문 확인 — 수집기 표현을 정정한다.</strong> 수집기: <em>“<code>raw/main/README.md</code> 가 <strong>0행(게이트)</strong>”</em>. 볼트 실측(<code>curl -sL -w</code> 로 상태코드까지): <strong>HTTP 401 · 126 바이트</strong> · 본문 = <em>“Access to model Lightricks/LTX-2.5 is restricted. You must have access to it and be authenticated to access it. Please log in.”</em>
+🎯 <strong>“0행”과 “401” 은 다른 진단이다.</strong> 0행은 <em>파일이 비었다</em>(벤더가 안 썼다), 401은 <em>파일이 있고 접근이 막혔다</em>(벤더가 잠갔다). <strong>다운로드 바이트가 0이 아니라 126</strong> 이고 그 내용이 거부 메시지다. 🔴 <strong>볼트가 09-29 배치에서 배운 교훈이 여기 그대로 적용된다</strong> — 그때 <em>“arXiv 무응답”</em> 의 정체가 <strong>301 리다이렉트를 <code>-L</code> 없이 호출한 것</strong>이었다. <strong>응답 없음으로 보이는 것의 정체는 대개 응답이다.</strong> 상태코드를 보지 않으면 원인을 잘못 귀속한다 → <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> 에 <strong>HF 게이트 사례 추가</strong>.
+✅ <strong>볼트 자기 방법 정정 1건 — 같은 배치에서 또 나왔다.</strong> 볼트의 첫 HF API 호출에서 <code>downloadsAllTime</code> 이 <strong><code>None</code></strong> 으로 나와 수집기 수치(11,744,215 · 2,773,856)를 재현하지 못했다. 원인은 <strong><code>?expand[]=downloadsAllTime</code> 파라미터 누락</strong>이었고, 붙이자 <strong>두 건 모두 완전 일치</strong>했다. 🎯 <strong><code>-L</code> 누락과 같은 계열의 자기 오류</strong>다 — <strong>필드가 없는 것이 아니라 요청하지 않은 것</strong>이었다. <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> 에 등록.
+📈 <strong>궤적</strong>: 833,845(08-25) → 1,137,181(08-31) → <strong>1,589,098</strong>(09-30). 한 달 <strong>+451,917(+39.7%)</strong> · 일평균 <strong>+15,583</strong>. 🔴 <strong>8월 일평균(+50,556)의 31% 로 감속</strong>했다. ♥ 2,295 → <strong>5,600</strong>(2.4배) — <strong>♥ 증가율이 DL 증가율을 크게 앞선다</strong>(DL/♥ = 283.8 로 08-31 의 495.5 에서 하락).
+🎯 <strong>DL/♥ 하락의 해석</strong>: 볼트 트렌딩 판별 기준선 <strong>264.5</strong> 에 <strong>근접</strong>했다(283.8). 08-31 <em>“실사용 우세 대역”</em> 판정에서 <strong>관심 우세 쪽으로 이동</strong>했다는 뜻이다. ⬜ 단 기준선 자체의 산출 근거를 오늘 재확인하지 않았다.
+🔴 <strong>lastModified 2026-09-01 — 29일째 정지.</strong> 볼트 기존 기록의 <em>“35일째 401”</em> 표현은 <strong>수정 정지 일수와 게이트 지속 기간을 구분해 적어야 한다</strong>: 게이트는 <strong>08-25 이후 5회 연속 관측</strong>(08-25·08-31·09-2x·09-29·09-30)이고, <strong>가중치 수정 정지는 09-01 기준 29일</strong>이다.
+🔴 <strong>능력에 대해 확인된 것은 여전히 <code>pipeline_tag</code> 뿐이다</strong> — 파라미터 수 · 해상도 · 프레임레이트 · 벤치 수치 <strong>전부 미확인</strong>(5회 연속). <code>safetensors</code> null 이므로 <strong>샤드 크기 역산 경로도 막혔다</strong>(08-31 actionable 의 (1)번 경로 <strong>실패 확인</strong> — 이 경로는 폐기해야 한다).
+✅ <strong>우회 단서 1건</strong>: HF 태그에 <strong><code>arxiv:2601.03233</code></strong> 이 있다(볼트 실측). 🎯 <strong>09-29 배치에서 볼트가 이 태그로 게이트를 우회해 “영상 14B + 오디오 5B” 를 확보한 경로</strong>다. <strong>카드가 막혀도 논문은 열린다</strong> — actionable 경로를 (1)샤드역산 대신 <strong>(4)arXiv 2601.03233 본문</strong>으로 교체한다.
+📌 <strong>오늘 배치 문맥</strong>: 같은 날 <a href="../sources/maliang-harness" class="internal internal-link" data-slug="sources/maliang-harness">MaLiang-Harness</a> 가 <strong>비디오 생성 품질 임계 충족 76.9%</strong>(생성 성공 100% 대비)를 보고했다. 🎯 <strong>LTX-2.5 는 오픈 i2v 백본으로서 그 23.1%p 격차의 대상</strong>이 될 수 있는데, <strong>스펙을 모르므로 볼트가 그 비교에 넣을 수 없다.</strong> 게이트가 실질적 비용을 만드는 구체적 사례다.</p>
+</div>
+</blockquote>
+<p><strong>HF 모델</strong>: <a href="https://huggingface.co/Lightricks/LTX-2.5" class="external external-link">https://huggingface.co/Lightricks/LTX-2.5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<strong>지표</strong>: DL <strong>833,845</strong> · 좋아요 <strong>1,745</strong> (2026-08-25 <strong>HF API 실호출 검증</strong>) ← DL 466k·좋아요 1.15k(08-18 자동수집) ← DL 424k·좋아요 968 (08-16) ← 378k·885 (08-15) ← 208k·766 (08-14) · <strong>태스크</strong>: Image-to-Video · <strong>제작</strong>: Lightricks</p>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-31 갱신 — DL <strong>1,137,181</strong>(6일 +303,336·일평균 <strong>+50,556</strong>·🎯<strong>100만 돌파</strong>) · 좋아요 <strong>2,295</strong>(2배 증가) · ⚠️<strong>gated 확인 — 카드 접근 불가</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>DL 833,845(08-25) → <strong>1,137,181</strong> (2026-08-31 <strong>HF API 실호출 검증</strong>). <strong>6일간 +303,336 · 일평균 +50,556 · +36.4%</strong> · 🎯<strong>100만 돌파</strong>. 좋아요 1,150(08-18) → <strong>2,295</strong>(약 <strong>2배</strong>) · lastModified <strong>2026-08-30</strong>(전일) · image-to-video · 라이선스 <strong>other</strong>.
+🎯 <strong>이번 배치에서 유일하게 정상 증분이 관측된 HF 모델</strong>이다. <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a>·<a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a> 두 건이 동시 동결된 가운데 LTX-2.5만 +303,336을 기록했다 — 이는 <strong>집계 정지가 전역이 아니라 특정 모델/샤드 한정</strong>임을 시사한다. 오늘의 동결 진단에서 <strong>대조군 역할</strong>을 한다.
+<strong>성장 궤적</strong>: 424k(08-16) → 466k(08-18) → 833,845(08-25) → <strong>1,137,181</strong>(08-31). 보름 만에 <strong>2.7배</strong>. 좋아요도 968 → 1,150 → <strong>2,295</strong>로 같은 기간 2.4배 — <strong>DL과 좋아요가 함께 늘었다</strong>는 점에서 봇 트래픽이 아닌 실사용 유입으로 읽힌다.
+<strong>DL/좋아요 = 1,137,181/2,295 = 495.5.</strong> 볼트의 트렌딩 판별 기준선 <strong>264.5</strong>의 약 1.9배 — <em>실사용 우세</em> 대역이다. <a href="../sources/qwen3.8-27b-gguf" class="internal internal-link" data-slug="sources/qwen3.8-27b-gguf">Qwen3.8-27B-GGUF</a>의 2,714.7(도구성 대량 다운로드)과 <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a>의 336.8(관심 우세) 사이에서 <strong>중간</strong>에 위치한다.
+⚠️ <strong>gated: auto 확인.</strong> 모델 카드가 로그인 게이트 뒤에 있어 <strong>파라미터 수·해상도·프레임레이트·벤치 수치를 이번에도 확인하지 못했다</strong>(08-25에 이어 2회 연속). 라이선스도 <strong><code>other</code></strong> 로, Apache/MIT가 아니다 — <strong>상업적 사용 조건 미확인 상태</strong>가 계속된다.
+⚠️ <strong>113만 다운로드는 품질의 증거가 아니다.</strong> 오픈 i2v 선택지가 적다는 사실만으로도 이 수치는 설명된다. 볼트는 <strong>스펙 미확인 · 라이선스 미확인</strong> 두 항목이 해소되기 전까지 reliability <strong>medium을 유지</strong>하며, 실사용 후보로 올리지 않는다.</p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>gated 우회 없이 확인 가능한 경로 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 카드가 막혀 있어도 <strong>(1) 파일 목록 API로 가중치 샤드 크기 → 파라미터 규모 역산 (2) <code>config.json</code> 직접 조회 (3) Lightricks 공식 문서/GitHub</strong>로 스펙 확인이 가능하다. 다음 회차에 (1)(2)를 시도해 <strong>2회 연속 미확인 상태를 끊는다.</strong>
+⚠️ raw 수치(DL 1,137,181 · 좋아요 2,295)와 API <strong>완전 일치</strong> — 이번 배치 HF 모델 3건 모두 raw 드리프트 0.</p>
+</div>
+</blockquote>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-25 갱신 — DL <strong>833,845</strong>(466k → 83.4만·약 1.8배)·<strong>첫 API 실검증</strong>·⚠️라이선스 <code>other</code></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>DL <strong>833,845</strong> · 좋아요 <strong>1,745</strong> (2026-08-25 <strong>HF API 실호출 검증</strong>) ← 466k·1.15k(08-18 자동수집). 일주일 <strong>+약 36.8만(약 1.8배)</strong> 로 <strong>80만을 돌파</strong>했다. 트렌딩 <strong>8위</strong>·태스크 <code>image-to-video</code>·최종수정 2026-08-17.
+<strong>이 페이지는 08-18까지 자동수집 수치만 반영하고 HF 실호출을 하지 않았다</strong>(당시 기록에 <em>“HF 실WebFetch 미수행”</em> 명시). 이번 회차에 <strong>처음으로 API 실검증</strong>했고, 자동수집 계열 수치와 모순되지 않음을 확인했다(raw 790,378 ↔ API 833,845, 시점 차 +43,467).
+<strong>구조적으로 중요한 관찰</strong>: 이번 배치 HF 트렌딩 상위는 <strong>Qwen 텍스트 계열이 뒤덮었다</strong>(원본·GGUF·Uncensored·FP8 등 27B 파생이 상위 8개 중 6개). 그 틈에서 <strong>LTX-2.5는 영상 축의 유일한 상위 생존자</strong>다. 즉 <strong>영상 생성 수요는 LLM 트렌드 사이클과 독립된 별개 축</strong>으로 움직인다 — 텍스트 모델이 트렌딩을 독식하는 국면에서도 i2v 다운로드는 일주일 1.8배로 늘었다. <a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> 관점에서 <strong>오픈 i2v 백본 수요가 일시 유행이 아님</strong>을 뒷받침하는 데이터.
+⚠️ <strong>라이선스가 <code>other</code>다</strong>(API 태그 <code>license:other</code> 실측). apache-2.0인 Qwen 계열과 달리 <strong>상업 이용 조건을 별도로 확인해야 한다.</strong> 83만 다운로드 규모에서 라이선스 조건을 확인하지 않고 제품에 넣는 것은 실질적 리스크. 해상도·길이·품질 벤치는 <strong>여전히 원문 재현 전</strong> — reliability <strong>medium 유지</strong>.</p>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-18 갱신 — DL 466k·좋아요 1.15k (+약4.2만·좋아요 1천 돌파) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 다운로드 <strong>466k·좋아요 1.15k</strong>(2026-08-18 자동수집) ← 424k·968(08-16). DL이 424k→466k로 +약4.2만·<strong>좋아요 1천 돌파</strong>로 40만대 중반 안착 — 오픈 i2v 벤더 다변화(<a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a> 단독→복수)가 관심이 아닌 실다운로드로 계속 지속됨을 재확인. 같은 배치 <a href="../sources/moneyprinterturbo" class="internal internal-link" data-slug="sources/moneyprinterturbo">MoneyPrinterTurbo</a>(완성형 편집 레이어·10만 돌파)와 함께 <a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> 오픈 축의 백본·편집 레이어가 동반 성숙. 해상도·길이·품질 벤치는 원문 재현 전 → 미기재. reliability medium 유지. <em>raw 자동수집 수치 반영 — HF 실WebFetch 미수행(타임라인 유지).</em></p>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-16 갱신 — DL 424k (좋아요 968·+약4.6만) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 다운로드 <strong>424k·좋아요 968</strong>(2026-08-16 자동수집) ← 378k·885(08-15) ← 208k·766(08-14). 편입 사흘째 DL이 378k→424k로 +약4.6만 — 08-15의 +약17만 폭증에 비해 증분은 완만해졌으나 40만대 안착하며 실유입 지속. GitHub <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 공식 패키지와 짝을 이룬 오픈 i2v 대안이 <a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a> 단독 구도(이날 원본 DL 갱신 대상 아님)에서 <strong>벤더 다변화 실수요</strong>로 자리잡는 흐름 유지. 해상도·길이·품질 벤치는 원문 재현 전 → 미기재. reliability medium 유지. <em>raw 자동수집 수치 반영 — HF 실WebFetch 미수행(타임라인 유지).</em></p>
+</div>
+</blockquote>
+<blockquote class="callout update" data-callout="update">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>2026-08-15 갱신 — DL 378k (좋아요 885·하루 새 +약17만) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>HF 다운로드 <strong>378,439(약 378k)·좋아요 885</strong>(2026-08-15 자동수집) ← 208k·766(08-14). 편입 이튿날 DL이 208k→378k로 <strong>+약17만 급증</strong> — GitHub <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 공식 패키지와 짝을 이룬 오픈 i2v 대안이 실유입을 빠르게 늘리는 중. <a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a> 단독(이날 2.21M) 구도의 <strong>벤더 다변화가 실수요로 확인</strong>. 해상도·길이·품질 벤치는 원문 재현 전 → 미기재. reliability medium 유지. <em>raw 자동수집 수치 반영 — HF 실WebFetch 미수행(타임라인 유지).</em></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>핵심 인사이트 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>이미지 입력으로 영상을 생성하는 LTX-2.5 모델</strong>(raw 기반). GitHub <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 공식 패키지와 짝을 이루는 HF 가중치로, “코드(LTX-2 리포)↔가중치(LTX-2.5)“가 한 벤더(Lightricks) 생태계로 정렬. 08월 오픈 i2v 축이 <a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a>(DL 수백만·<a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> 재패키지 경로)로 사실상 독점되던 구도에, <strong>벤더 공식 i2v 대안</strong>이 하나 더 편입된 신호 — DL 208k는 MiniMax-H3 대비 낮지만, LTX 계열은 오디오 동반(<a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a>) 생태계를 함께 갖춘 점이 차별. <a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> 오픈 i2v 축의 선택지가 “MiniMax-H3 단독”에서 복수 벤더로 넓어지는 초기 단계.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>신뢰도 medium — 시뮬레이션 타임라인·스펙/벤치 미검증 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>DL 208k·좋아요 766·i2v는 <strong>raw 자동수집 API 수치 기반</strong>이며 볼트 시뮬레이션 타임라인(2026-08) 유지를 위해 <strong>HF 모델카드 실WebFetch 미수행</strong>. 해상도·길이·<a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 패키지와의 정확한 관계·라이선스·품질 벤치는 <strong>원문 재현 전이라 구체 수치 미기재</strong>(<a href="../claude" class="internal internal-link" data-slug="claude">CLAUDE.md</a> 사실확인 원칙). 다운로드·좋아요는 접근성·관심 지표이지 품질 근거 아님.</p>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-ai-news--video-saas-교차">도메인별 추출 (ai-news / video-saas 교차)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-ai-news--video-saas-교차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>신뢰도</strong>: ⭐⭐ (medium) — DL 378k·좋아요 885(08-15). Lightricks 공식이나 스펙·품질 미검증.</li>
+<li><strong>즉시 활용</strong>: MAYBE — 오픈 i2v 벤더 다변화 후보. <a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> 통합 여부·품질 스팟체크 선행 필요.</li>
+<li><strong>6개월 영향력</strong>: 중 — 오픈 i2v가 단일 모델 독점에서 복수 벤더 경쟁으로 넓어지는 신호.</li>
+<li><strong>대체 관계</strong>: <a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a> 오픈 i2v의 병렬 대안(오디오 동반 생태계 차별).</li>
+<li><strong>허와 실</strong>: DL이 MiniMax-H3 대비 낮음 — 실사용 채택은 <a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> 노드 통합·품질이 가름.</li>
+<li><strong>액션</strong>: <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 패키지와 묶어 오디오 동반 i2v 품질을 기존 오픈 i2v 스팟체크에 비교군으로 편입(낮음).</li>
+</ul>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> — 같은 생태계 공식 코드/LoRA 패키지</li>
+<li><a href="../sources/minimax-h3" class="internal internal-link" data-slug="sources/minimax-h3">MiniMax-H3</a> · <a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> — 오픈 i2v 축 대비</li>
+<li><a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> · <a href="../domains/ai-news" class="internal internal-link" data-slug="domains/ai-news">ai-news</a></li>
+</ul>
+<h2 id="원본">원본<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>출처: <a href="https://huggingface.co/Lightricks/LTX-2.5" class="external external-link">https://huggingface.co/Lightricks/LTX-2.5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>신뢰도: ⭐⭐ (DL 466k·좋아요 1.15k, raw 자동수집 · 실WebFetch 미수행 · 스펙/품질 미검증 medium)</li>
+</ul>
+<hr/>
+<h2 id="-2026-09-29--게이트는-3배치째-닫혀-있다-그런데-오늘-옆문으로-들어갔다">🔓 2026-09-29 — <strong>게이트는 3배치째 닫혀 있다. 그런데 오늘 옆문으로 들어갔다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-29--게이트는-3배치째-닫혀-있다-그런데-오늘-옆문으로-들어갔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>DL <strong>1,595,377</strong>(30일 · 수집기와 <strong>완전 일치, 드리프트 0</strong>) · ♥<strong>5,465</strong>(08-31 2,295 → <strong>+138%</strong>) · license <code>other</code> · 생성 2026-07-23 · 최종수정 2026-09-01 · pipeline <code>image-to-video</code>.</p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 게이트 3회 연속 확인 — <strong>볼트 실측</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<pre><code>GET huggingface.co/Lightricks/LTX-2.5/raw/main/README.md
+  → HTTP 401, 126 bytes   (&quot;Access to model is restricted&quot;)
+API: gated = &quot;auto&quot;
+</code></pre>
+<p>08-25 · 08-31 에 이어 <strong>09-29 세 번째</strong>. 카드 원문 미확보 상태가 <strong>35일째</strong> 유지된다. 수집기의 수집 실패 보고는 <strong>정확했다</strong>(볼트 독립 재현).</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 <strong>그런데 봉인은 전역이 아니었다 — API 태그가 논문 ID를 흘린다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>🎯 <strong>수집기가 “API 태그 목록만” 이라며 성능 주장을 전부 비운 그 태그 목록 안에, 태그가 아닌 것이 섞여 있었다:</strong></p>
+<pre><code>tags: ..., en, de, es, fr, ja, ko, zh, it, pt, arxiv:2601.03233, license:other, region:us
+                                                ^^^^^^^^^^^^^^^^
+</code></pre>
+<p><strong>볼트가 그 ID 를 오늘 고친 arXiv 경로로 조회했다</strong>(<a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a>) → <strong><code>2601.03233</code> = <em>LTX-2: Efficient Joint Audio-Visual Foundation Model</em>, 게재 2026-01-06, 저자 29인(Yoav HaCohen 외).</strong>
+📌 <strong><a href="../concepts/벤치마크-이미지-봉인" class="internal internal-link alias" data-slug="concepts/벤치마크-이미지-봉인">벤치마크-이미지-봉인</a> 09-28 판정이 여기서 재확인된다</strong> — <em>“봉인은 저장소-로컬일 수 있고, 다른 도메인을 한 번 더 찾으면 풀린다.”</em> <strong>게이트가 막은 것은 HF 카드 한 장이었고, 같은 내용의 상당 부분이 arXiv 에 열려 있었다.</strong>
+🎯 <strong>그리고 태그에 있던 9개 언어(en/de/es/fr/ja/ko/zh/it/pt)의 정체도 논문이 설명한다</strong> — <em>“We employ a <strong>multilingual text encoder</strong> for broader prompt understanding.”</em> 태그는 <strong>지원 언어 목록이 아니라 텍스트 인코더의 능력 표기</strong>였다.</p>
+</div>
+</blockquote>
+<h3 id="-논문에서-확보한-것-ltx-2-기준">✅ 논문에서 확보한 것 (LTX-2 기준)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-논문에서-확보한-것-ltx-2-기준" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>구조 — <strong>비대칭 듀얼 스트림. 영상에 용량을 더 준다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>축자: <em>“an <strong>asymmetric dual-stream transformer</strong> with a <strong>14B-parameter video stream</strong> and a <strong>5B-parameter audio stream</strong>, coupled through <strong>bidirectional audio-video cross-attention</strong> layers with temporal positional embeddings and <strong>cross-modality AdaLN</strong> for shared timestep conditioning.”</em></p>
+<ul>
+<li>🎯 <strong>35일간 미확인이던 “파라미터 수”가 나왔다: 영상 14B + 오디오 5B</strong>(합 19B, 단 <strong>아래 한정 주의</strong>)</li>
+<li>설계 의도 명시: <em>“while <strong>allocating more capacity for video generation than audio generation</strong>”</em> — 비대칭이 버그가 아니라 선택이다</li>
+<li><strong>modality-CFG</strong>(modality-aware classifier-free guidance) — 오디오·영상 정렬 제어용</li>
+<li>오디오 범위: <em>“Beyond generating speech, LTX-2 produces rich, coherent audio tracks that follow the <strong>characters, environment, style, and emotion</strong> of each scene — complete with natural <strong>background and foley</strong> elements.”</em> → <strong>말소리만이 아니라 폴리·앰비언스까지</strong></li>
+<li>성능 주장: <em>“<strong>state-of-the-art audiovisual quality and prompt adherence among open-source systems</strong>, while delivering results <strong>comparable to proprietary models at a fraction of their computational cost</strong>”</em> — 🟡 <strong>오픈소스 한정 SOTA + 상용 대비 동급</strong>(우위 아님)</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴🔴 <strong>한정어 필수 — 논문은 <code>LTX-2</code>, 이 페이지는 <code>LTX-2.5</code> 다. 같은 것으로 쓰면 안 된다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>논문 게재 <strong>2026-01-06</strong>, 이 모델 생성 <strong>2026-07-23</strong> — <strong>6개월 반 차이</strong>의 후속 버전이다.
+📌 <strong>따라서 14B+5B·modality-CFG 를 LTX-2.5 의 스펙으로 인용하면 <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> 이다.</strong> 볼트가 09-28 에 스스로 저지른 그 오류를 <strong>하루 만에 반복하지 않는다.</strong>
+✅ 인용 가능: <em>“LTX-2.5 의 <strong>전신인 LTX-2</strong> 는 14B 영상 + 5B 오디오 비대칭 구조다.”</em>
+🔴 인용 금지: <em>“LTX-2.5 는 19B 다.”</em> — <strong>2.5 의 파라미터 수는 여전히 미확인이다.</strong>
+⬜ 미확인: 2.5 가 2 대비 무엇을 바꿨는지(파라미터·해상도·길이·오디오 품질) — <strong>카드가 게이트 뒤라 알 수 없다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🟡 논문과 배포가 어긋난다 — <strong>&quot;All model weights and code are publicly released&quot;</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>논문 마지막 문장 축자: <em>“<strong>All model weights and code are publicly released.</strong>”</em>
+🔴 <strong>그런데 <code>Lightricks/LTX-2.5</code> 는 <code>gated: auto</code> 이고 라이선스는 <code>other</code> 다.</strong> 로그인 게이트 + 비표준 라이선스는 <em>“publicly released”</em> 의 통상 의미와 긴장 관계에 있다.
+📌 <strong>단정하지 않는다</strong>: ① 논문은 <strong>LTX-2</strong> 를 말하고 게이트는 <strong>LTX-2.5</strong> 에 걸려 있다(버전이 다르다) ② <code>gated: auto</code> 는 <strong>거절이 아니라 자동 승인 동의 절차</strong>일 수 있다 ③ LTX-2 쪽 저장소는 게이트가 없을 수 있다(미확인).
+⬜ <strong>검정 방법</strong>: <code>Lightricks/LTX-2</code> 저장소의 <code>gated</code> 값 조회 — 다음 배치 actionable.</p>
+</div>
+</blockquote>
+<h2 id="도메인별-추출-갱신-video-saas">도메인별 추출 갱신 (video-saas)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#도메인별-추출-갱신-video-saas" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>기능 벤치마킹</strong>: 🎯 <strong>처음으로 구현 난이도를 말할 수 있게 됐다</strong> — 듀얼 스트림 + 양방향 크로스어텐션은 <strong>단일 모델 파인튜닝으로 접근 불가</strong>한 아키텍처다. 볼트 SaaS 관점에서는 <strong>자체 구현이 아니라 API/가중치 소비</strong>가 유일한 경로.</li>
+<li><strong>경쟁 우위 빈틈</strong>: 오디오 동반 생성이 <em>“오픈소스 중 SOTA”</em> 라면, <strong>무음 영상 + 별도 TTS/BGM 파이프라인</strong>을 쓰는 기존 워크플로우는 <strong>정렬(sync) 품질에서 구조적으로 불리</strong>하다. 같은 배치 <a href="../sources/voicestudio" class="internal internal-link" data-slug="sources/voicestudio">VoiceStudio</a>(로컬 TTS)와 <strong>대비되는 접근</strong>: 분리형 vs 통합형.</li>
+<li><strong>액션</strong>: <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> 페이지에 논문 구조 반영 + <code>Lightricks/LTX-2</code> 게이트 여부 확인.</li>
+</ul>
+<h2 id="관련-페이지-추가">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> — 🏆 <strong>이 봉인을 푼 도구</strong> · <a href="../concepts/벤치마크-이미지-봉인" class="internal internal-link alias" data-slug="concepts/벤치마크-이미지-봉인">벤치마크-이미지-봉인</a> · <a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a> · <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a></li>
+<li><a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a> — 🔗 <strong>논문 2601.03233 의 대상. 스펙은 그쪽 소유다</strong></li>
+<li>같은 배치: <a href="../sources/yue2" class="internal internal-link" data-slug="sources/yue2">YuE2</a> — 🎯 <strong>오디오 생성 통합 축 동시 도착</strong> · <a href="../sources/voicestudio" class="internal internal-link" data-slug="sources/voicestudio">VoiceStudio</a> · <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a></li>
+</ul>
+<h2 id="원본-갱신-1">원본 갱신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본-갱신-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>실측(2026-09-29 09:08 UTC · HF API): DL <strong>1,595,377</strong>(수집기 일치) · ♥5,465 · <code>gated: auto</code> · <code>safetensors</code>·<code>gguf</code> <strong>둘 다 미제공</strong>(볼트 09-27 요청 2 <strong>수행 불가 확인</strong>) · pipeline <code>image-to-video</code> · arxiv 태그 <strong>2601.03233</strong></li>
+<li>🔴 README: <strong>HTTP 401 / 126 bytes</strong> (볼트 직접 재현)</li>
+<li>확인 범위: HF API 메타 전체 + <strong>arXiv 2601.03233 초록 전문</strong>. 🔴 모델카드 미확보(35일째) · 🔴 2.5 고유 스펙 미확인 · 🔴 미실행</li>
+<li>신뢰도: ⭐⭐⭐ <strong>medium</strong> (⭐⭐ → <strong>상향</strong>) — DL/게이트 API 실검증 + 전신 논문 구조 확보. <strong>단 2.5 자체 스펙은 여전히 미확인</strong>이라 high 가 아니다.</li>
+</ul>
+<hr/>
+<h2 id="-2026-10-01-갱신--dl-30일-창-감소-2번째-사례--36일째-safetensorsgguf-둘-다-null">🔄 2026-10-01 갱신 — DL 30일 창 감소 2번째 사례 · 36일째 <code>safetensors</code>/<code>gguf</code> 둘 다 null<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-01-갱신--dl-30일-창-감소-2번째-사례--36일째-safetensorsgguf-둘-다-null" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="실측-2026-10-01-0921-utc--수집기-0903--간격-18분">실측 (2026-10-01 09:21 UTC · 수집기 09:03 · 간격 18분)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실측-2026-10-01-0921-utc--수집기-0903--간격-18분" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>필드</th><th>수집기 09:03</th><th>볼트 09:21</th><th>차</th></tr></thead><tbody><tr><td><code>downloads</code>(30일)</td><td>1,602,348</td><td><strong>1,588,619</strong></td><td>🔴 <strong>−13,729 (−0.86%)</strong></td></tr><tr><td><code>downloadsAllTime</code></td><td>2,830,764</td><td><strong>2,881,929</strong></td><td>🔵 <strong>+51,165</strong></td></tr><tr><td><code>likes</code></td><td>5,758</td><td><strong>5,758</strong></td><td><strong>0</strong></td></tr></tbody></table></div>
+<ul>
+<li>🎯 <strong><a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 와 같은 부호 패턴</strong>(30일 ↓ · 누적 ↑)이 <strong>독립 2번째 모델에서 재현</strong>됐다. 생성 <strong>2026-07-23</strong> → 관측일 기준 <strong>70일</strong>로 30일 창을 넘었으므로 <a href="../concepts/지표-창길이" class="internal internal-link alias" data-slug="concepts/지표-창길이">지표-창길이</a> 기전과 정합. <strong>3/3 성립.</strong></li>
+<li>🔴 <strong><code>safetensors</code> = null · <code>gguf</code> = null 둘 다 유지</strong> → <strong>파라미터 수를 API 로 확정할 수 없는 상태가 36일째</strong>다. license <code>other</code>(cardData 확인) · pipeline <code>image-to-video</code>.</li>
+<li>✅ <strong>태스크 5종 전건 재확인</strong>: <code>image-to-video</code>(주) · <code>text-to-video</code> · <code>video-to-video</code> · <code>image-text-to-video</code> · <code>audio-to-video</code> — 수집기 주장과 <strong>일치</strong>.</li>
+<li>✅ <strong><code>arxiv:2601.03233</code> 태그 유지</strong> — 09-29 에 볼트가 카드 401 게이트를 우회한 경로가 <strong>오늘도 살아 있다</strong>. 🔴 <strong>단 논문은 <a href="../sources/ltx-2" class="internal internal-link" data-slug="sources/ltx-2">LTX-2</a>, 모델은 LTX-2.5(약 6.5개월 차)</strong> — <strong>스펙 전용 금지</strong> 경고 유지(<a href="../concepts/한정어-탈락" class="internal internal-link alias" data-slug="concepts/한정어-탈락">한정어-탈락</a>).</li>
+<li>✅ <strong>09-30 <code>downloadsAllTime</code> = <code>None</code> 사건의 원인 규명이 오늘 세 번째로 재확인</strong>됐다: 필드는 존재하며 <code>expand[]</code> 요청 여부 문제였다 → <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a>.</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 오늘 볼트가 <strong>같은 계열 오류를 또 저질렀다</strong> — 그리고 원인은 누락이 아니라 <strong>무효 옵션</strong>이었다</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>첫 HF 호출에서 3개 모델 <strong>전 필드가 <code>None</code></strong> 으로 나왔다. 09-30 의 <em>“<code>expand[]</code> 누락”</em> 과 증상이 같아 보였지만 원인이 달랐다:
+<strong><code>expand[]=license</code> 가 유효 옵션이 아니다</strong>(HF 허용 목록: <code>author</code>|<code>baseModels</code>|<code>cardData</code>|<code>config</code>|<code>createdAt</code>|…). 무효 옵션 <strong>1개</strong>가 <strong>요청 전체를 HTTP 400</strong> 으로 만들고, 볼트 스크립트가 <code>.get()</code> 으로 받아 <strong>모든 필드를 조용히 <code>None</code> 으로 출력</strong>했다.
+⚖️ <strong><a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> 신규 하위유형: “누락” 이 아니라 “무효 추가” 로도 전체 응답이 빈다.</strong> 10개 필드를 1개씩 분리 호출해 범인을 특정했고(✓9 / ✗1), 라이선스는 <code>cardData.license</code> 에서 정상 획득했다.</p>
+</div>
+</blockquote>
+<h3 id="원본-갱신-2">원본 갱신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원본-갱신-2" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>실측: 2026-10-01 09:21 UTC · dl30 <strong>1,588,619</strong> · 누적 <strong>2,881,929</strong> · ♥5,758 · <code>safetensors</code>/<code>gguf</code> <strong>둘 다 null(36일째)</strong> · license <code>other</code></li>
+<li>신뢰도: ⭐⭐ — 지표는 실측, <strong>파라미터 규모는 API 로 확정 불가 상태 지속</strong></li>
+</ul>
+<hr/>
+<h2 id="-2026-10-05-재관측-자동수집-10-05-배치--갱신">📥 2026-10-05 재관측 (자동수집 10-05 배치 · 갱신)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-05-재관측-자동수집-10-05-배치--갱신" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>볼트 독립 실측 2026-10-05</strong>: <code>downloads</code>(30일) <strong>1,626,951</strong> · <code>likes</code> <strong>6,366</strong> · <code>pipeline_tag</code> <strong>image-to-video</strong> · <code>gated</code> <strong>auto</strong> · <code>safetensors</code> <strong>미노출</strong>
+<strong>드리프트</strong>: 수집기와 <strong>전 필드 일치</strong>(관측 2026-10-05 09:02 UTC 병기 ✅)</p>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴🔴 수집기가 <strong>볼트가 10-04 에 이미 해소한 경로 실패를 반복했다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>수집기 보고: <em>“<strong>모델카드를 읽지 못했다</strong> — 게이트 레포로 <code>README.md</code> 접근이 인증 요구로 거부됐다. 따라서 성능 벤치마크·파라미터 수·라이선스 실제 조건 전부 미확인.”</em>
+🔴 <strong>10-04 볼트 기록</strong>: <em>“<code>raw/main/README.md</code> 는 6회 연속 401 이지만 <strong>HTML 페이지 <code>huggingface.co/Lightricks/LTX-2.5</code> 는 익명 HTTP 200 · 231,894B</strong> 로 카드 전문을 준다.”</em>
+✅ <strong>볼트가 10-05 에 재시험: HTTP 200 / 232,827B</strong> — 경로는 그대로 열린다.
+⚖️ <strong>즉 “게이트 때문에 못 읽었다”는 대상의 속성이 아니라 경로 선택의 결과다</strong> → <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> <strong>6번째이자 첫 “타인 반복” 사례</strong>. 📌 <strong>볼트가 해소한 것이 수집기에 전달되는 경로가 없다</strong>(구조 문제 · 수집기 책임 아님) ⇒ <strong>요청 항목으로 올린다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 카드 전문에서 확보한 신규 사실 4건 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>① <strong>라이선스 실체</strong>: <code>license</code> 필드 <code>other</code> → 실제는 <strong><code>ltx-2.x-community-license-agreement</code></strong>. ⚖️ <strong>수집기가 “라이선스 실제 조건 미확인”이라 한 것은 맞았고, 이름은 카드에 있다.</strong>
+② <strong>arXiv 2601.03233 보유</strong>(10-04 에 <code>cardData.arxiv</code> 로 확인한 것이 카드 본문에서도 확인).
+③ <strong>해상도·프레임 실측</strong>: 스테이지1 <strong>544×960 · 121프레임 · 24.0fps</strong>, <em>“stage 2 runs at 2x this”</em> ⇒ <strong>최종 1088×1920 · 약 5.04초</strong>. 🎯 <strong>10-04 에 <em>“벤치·fps·해상도 수치 0개”</em> 로 적은 것을 정정한다 — fps·해상도는 카드 코드 예제에 있다</strong>(산문이 아니라 코드에 있어서 grep 을 피했다).
+④ <strong>저VRAM 경로</strong>: <code>--quantization fp8-cast</code> + <code>--offload cpu</code> · bf16 체크포인트 다운캐스트.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆🏆 <code>pipeline_tag</code> 가 모델을 축소 기술한다 — <strong>오디오를 동시에 생성한다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>카드 태그 목록: <code>audio-to-video</code> · <code>text-to-audio</code> · <code>video-to-audio</code> · <code>audio-to-audio</code> · <strong><code>text-to-audio-video</code></strong> · <strong><code>image-to-audio-video</code></strong> · <strong><code>image-text-to-audio-video</code></strong>.
+코드 예제에 <strong><code>audio_latents</code></strong> 와 <strong><code>pipe.vocoder</code></strong> 가 있고 <code>encode_video(..., audio=audio[0], audio_sample_rate=...)</code> 로 <strong>영상과 오디오를 한 번에</strong> 낸다.
+🔴 <strong><code>pipeline_tag</code> 는 <code>image-to-video</code> 하나다</strong> ⇒ ⚖️ <strong>단일 필드가 7개 모달 조합을 숨긴다.</strong> 📌 <strong>수집기 한줄요약 <em>“이미지→비디오 모델”</em> 은 <code>pipeline_tag</code> 를 정확히 옮긴 것이고, 그 필드가 부정확하다</strong> → <a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> · <a href="../concepts/단위-불일치" class="internal internal-link alias" data-slug="concepts/단위-불일치">단위-불일치</a>.
+🎯 <strong><a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a> 도메인에 직접 영향</strong>: 영상+오디오 동시 생성이 <strong>오픈웨이트</strong>로 1,626,951 다운로드 규모에 와 있다. 볼트의 <a href="../reat-voice" class="internal internal-link" data-slug="reat-voice">reat-voice</a> 는 TTS 를 별도 단계로 두는데, 이 모델은 그 분리를 전제하지 않는다.</p>
+</div>
+</blockquote>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>벤치마크 수치는 여전히 0개</strong> — 카드에 성능 표가 없다(⇒ <a href="../concepts/검사가능성-후퇴" class="internal internal-link alias" data-slug="concepts/검사가능성-후퇴">검사가능성-후퇴</a> 영상 도메인 사례 <strong>유지</strong>). arXiv 2601.03233 <strong>미열람 2배치째</strong>.</li>
+<li><strong>파라미터 수 미확인</strong> — <code>safetensors</code> 미노출이고 카드 산문에도 없다.</li>
+<li><code>gated: &quot;auto&quot;</code> = <strong>자동 승인 게이트</strong>다. ⚠️ HF 계정 동의만으로 열릴 가능성이 높으나 <strong>미시도</strong>(볼트 HF 인증 없음).</li>
+</ul>
+</div>
+</blockquote>
+<p><strong>검증</strong>: <code>api.github.com</code>/HF API 실측 + <strong>HTML 카드 전문 232,827B 직접 열람</strong>
+<strong>관련 추가</strong>: <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> · <a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> · <a href="../concepts/검사가능성-후퇴" class="internal internal-link alias" data-slug="concepts/검사가능성-후퇴">검사가능성-후퇴</a> · <a href="../reat-voice" class="internal internal-link" data-slug="reat-voice">reat-voice</a> · <a href="../domains/video-saas" class="internal internal-link" data-slug="domains/video-saas">video-saas</a></p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-718" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#lightricksltx-25--이미지-입력-영상-생성-모델" data-for="lightricksltx-25--이미지-입력-영상-생성-모델">Lightricks/LTX-2.5 — 이미지 입력 영상 생성 모델</a></li><li class="depth-1"><a href="#-볼트-자기-오류-4번째--게이트는-한-경로에만-있었다" data-for="-볼트-자기-오류-4번째--게이트는-한-경로에만-있었다">🏆🏆 볼트 자기 오류 4번째 — 게이트는 한 경로에만 있었다</a></li><li class="depth-1"><a href="#-라이선스--수집기-확증--볼트가-조항-2개를-더-찾았다" data-for="-라이선스--수집기-확증--볼트가-조항-2개를-더-찾았다">✅ 라이선스 — 수집기 확증 + 볼트가 조항 2개를 더 찾았다</a></li><li class="depth-1"><a href="#-게이트의-정체--안전-게이트가-아니라-리드-수집-게이트다" data-for="-게이트의-정체--안전-게이트가-아니라-리드-수집-게이트다">🔴🔴 게이트의 정체 — 안전 게이트가 아니라 리드 수집 게이트다</a></li><li class="depth-1"><a href="#-아키텍처--수집기-전건-확증--신규-3건-볼트-카드-실측" data-for="-아키텍처--수집기-전건-확증--신규-3건-볼트-카드-실측">✅ 아키텍처 — 수집기 전건 확증 + 신규 3건 (볼트 카드 실측)</a></li><li class="depth-1"><a href="#-성능-수치-0개--수집기-주장을-볼트가-독립-확증한다" data-for="-성능-수치-0개--수집기-주장을-볼트가-독립-확증한다">✅ 성능 수치 0개 — 수집기 주장을 볼트가 독립 확증한다</a></li><li class="depth-1"><a href="#-safetensorstotalgguftotal-부재--추정이-선언으로-승격됐다" data-for="-safetensorstotalgguftotal-부재--추정이-선언으로-승격됐다">✅ safetensors.total·gguf.total 부재 — 추정이 선언으로 승격됐다</a></li><li class="depth-1"><a href="#-지표--dl-가-볼트-기준선을-교차했다" data-for="-지표--dl-가-볼트-기준선을-교차했다">📈 지표 — DL/♥ 가 볼트 기준선을 교차했다</a></li><li class="depth-2"><a href="#원본-갱신" data-for="원본-갱신">원본 갱신</a></li><li class="depth-1"><a href="#도메인별-추출-ai-news--video-saas-교차" data-for="도메인별-추출-ai-news--video-saas-교차">도메인별 추출 (ai-news / video-saas 교차)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#원본" data-for="원본">원본</a></li><li class="depth-1"><a href="#-2026-09-29--게이트는-3배치째-닫혀-있다-그런데-오늘-옆문으로-들어갔다" data-for="-2026-09-29--게이트는-3배치째-닫혀-있다-그런데-오늘-옆문으로-들어갔다">🔓 2026-09-29 — 게이트는 3배치째 닫혀 있다. 그런데 오늘 옆문으로 들어갔다</a></li><li class="depth-2"><a href="#-논문에서-확보한-것-ltx-2-기준" data-for="-논문에서-확보한-것-ltx-2-기준">✅ 논문에서 확보한 것 (LTX-2 기준)</a></li><li class="depth-1"><a href="#도메인별-추출-갱신-video-saas" data-for="도메인별-추출-갱신-video-saas">도메인별 추출 갱신 (video-saas)</a></li><li class="depth-1"><a href="#관련-페이지-추가" data-for="관련-페이지-추가">관련 페이지 추가</a></li><li class="depth-1"><a href="#원본-갱신-1" data-for="원본-갱신-1">원본 갱신</a></li><li class="depth-1"><a href="#-2026-10-01-갱신--dl-30일-창-감소-2번째-사례--36일째-safetensorsgguf-둘-다-null" data-for="-2026-10-01-갱신--dl-30일-창-감소-2번째-사례--36일째-safetensorsgguf-둘-다-null">🔄 2026-10-01 갱신 — DL 30일 창 감소 2번째 사례 · 36일째 safetensors/gguf 둘 다 null</a></li><li class="depth-2"><a href="#실측-2026-10-01-0921-utc--수집기-0903--간격-18분" data-for="실측-2026-10-01-0921-utc--수집기-0903--간격-18분">실측 (2026-10-01 09:21 UTC · 수집기 09:03 · 간격 18분)</a></li><li class="depth-2"><a href="#원본-갱신-2" data-for="원본-갱신-2">원본 갱신</a></li><li class="depth-1"><a href="#-2026-10-05-재관측-자동수집-10-05-배치--갱신" data-for="-2026-10-05-재관측-자동수집-10-05-배치--갱신">📥 2026-10-05 재관측 (자동수집 10-05 배치 · 갱신)</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/ai-영상-생성-2026" class="internal">AI 영상 생성 2026</a></li><li><a href="../concepts/검사가능성-공사" class="internal">검사 가능성 공사 (Inspectability Construction)</a></li><li><a href="../concepts/대체필드-대조" class="internal">대체필드 대조 — 한 칸이 비었다고 대조가 불가능한 것은 아니다</a></li><li><a href="../concepts/메타데이터-부재-추론" class="internal">메타데이터 부재 추론 — 필드가 비어 있다는 것은 사실이 없다는 뜻이 아니다</a></li><li><a href="../concepts/무응답-오귀속" class="internal">무응답 오귀속 — 내 클라이언트가 못 받은 것을 세상에 없는 것으로 읽지 마라</a></li><li><a href="../concepts/벤치마크-이미지-봉인" class="internal">벤치마크-이미지-봉인</a></li><li><a href="../concepts/숨김유인-부호" class="internal">숨김 유인의 부호 — 매체는 숨길 유인이 있을 때만 숨기고, 유인의 방향은 주장 유형이 정한다</a></li><li><a href="../concepts/자기제한-명시" class="internal">자기제한 명시</a></li><li><a href="../concepts/지표-창길이" class="internal">지표 창길이 — 볼트는 30일 창을 알고 있었고, 교차검증 경로가 없다는 것만 틀렸다</a></li><li><a href="../concepts/측정도구-먼저-반증" class="internal">측정도구 먼저 반증 — 성능을 재기 전에 계측기가 거짓을 거짓으로 읽는지 증명하라</a></li><li><a href="../concepts/캐시된-지표-신선도" class="internal">캐시된 지표 신선도 — 같은 숫자를 두 출처가 다르게 말할 때, 둘 다 맞다</a></li><li><a href="../concepts/한정어-탈락" class="internal">한정어 탈락</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/slam-3dgs" class="internal">로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></li><li><a href="../domains/video-saas" class="internal">영상 AI SaaS 누적 인사이트</a></li><li><a href="../entities/lightricks" class="internal">Lightricks</a></li><li><a href="../entities/qwen" class="internal">Qwen</a></li><li><a href="../sources/ava-encoder" class="internal">AVA-Encoder — Towards Agent-Native Video Representation Learning (HF 논문)</a></li><li><a href="../sources/crisis-video-attack-defense" class="internal">Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? — 위기 상황 겨냥 AI 생성 영상 공격 방어 평가</a></li><li><a href="../sources/ecc" class="internal">ECC — 코딩 에이전트 하네스 성능 최적화 시스템 (스킬·메모리·보안 통합)</a></li><li><a href="../sources/echowm" class="internal">EchoWM — 진입 가능한 옴니모달 월드모델 (720p 영상 + 환경음·음악·음성 동시 생성)</a></li><li><a href="../sources/infinityedit" class="internal">InfinityEdit — 스트리밍 무한 비디오 편집 어댑터 (Edit-Ignition Adapter)</a></li><li><a href="../sources/ltx-2" class="internal">LTX-2 — 오디오 동반 영상 생성 모델 공식 추론/LoRA 학습 패키지 (Lightricks)</a></li><li><a href="../sources/layerrecall" class="internal">LayerRecall — 층 선택적 메모리 라우터로 장기 비디오 일관성 확보</a></li><li><a href="../sources/maliang-harness" class="internal">MaLiang-Harness — '코드가 돌아가는 것'과 '요청대로 보이는 것'을 분리해 이름을 붙였다(P2V gap)</a></li><li><a href="../sources/minimax-h3" class="internal">Comfy-Org/MiniMax-H3 — 이미지+텍스트→비디오 모델 ComfyUI 배포판</a></li><li><a href="../sources/moneyprinterturbo" class="internal">harry0703/MoneyPrinterTurbo — AI LLM 기반 쇼트폼 영상 자동 생성 엔진</a></li><li><a href="../sources/openshell" class="internal">NVIDIA/OpenShell — 벤더가 '샌드박스'를 Rust로 내놓았는데, 위협모델은 적지 않았다</a></li><li><a href="../sources/qwen3.8-27b-gguf" class="internal">Qwen3.8-27B-GGUF — Qwen3.8-27B GGUF 양자화 재배포판 (unsloth)</a></li><li><a href="../sources/qwen3.8-27b" class="internal">Qwen/Qwen3.8-27B — Qwen3.8-27B 베이스 원본 (image-text-to-text)</a></li><li><a href="../sources/solarwm" class="internal">SolarWM — 장기지평 비디오 월드모델의 개방 데이터·학습 스택</a></li><li><a href="../sources/ternary-bonsai-2-27b" class="internal">Ternary-Bonsai-2-27B — 1.72bit는 '이상값'이고 출하물은 1.75/2.13이다</a></li><li><a href="../sources/video-generation-post-training-survey" class="internal">Video Generation Models: A Survey of Post-Training and Alignment — 영상 생성 사후학습·정렬 최초 종합 서베이</a></li><li><a href="../sources/voicestudio" class="internal">debpalash/VoiceStudio — 27개 음성 엔진을 한 껍데기로 묶은 로컬 ElevenLabs 대체</a></li><li><a href="../sources/yue2" class="internal">YuE2 — 악보를 먼저 쓰게 했더니 같은 체크포인트가 더 나아졌다 (49.3% vs 34.6%)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

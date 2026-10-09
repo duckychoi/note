@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유"/><meta name="twitter:description" content="2026년 9월 기준 AI 데이터센터 네트워킹의 현주소를 정리했습니다. 2023년 80%였던 인피니밴드가 왜 2년 만에 3분의 1로 내려앉았는지, 울트라 이더넷 1.0이 '대역폭'이 아니라 '기다림'을 고치는 방식, NVLink vs UALink 스케일업 표준 전쟁, 1.6T 광모듈 슈퍼사이클과 CPO, 그리고 아무도 크게 말하지 않는 진짜 병목인 '링크 플랩'까지. 국내 최대 B200 클러스터와 국가AI컴퓨팅센터 상황도 함께 짚습니다."/><meta property="og:description" content="2026년 9월 기준 AI 데이터센터 네트워킹의 현주소를 정리했습니다. 2023년 80%였던 인피니밴드가 왜 2년 만에 3분의 1로 내려앉았는지, 울트라 이더넷 1.0이 '대역폭'이 아니라 '기다림'을 고치는 방식, NVLink vs UALink 스케일업 표준 전쟁, 1.6T 광모듈 슈퍼사이클과 CPO, 그리고 아무도 크게 말하지 않는 진짜 병목인 '링크 플랩'까지. 국내 최대 B200 클러스터와 국가AI컴퓨팅센터 상황도 함께 짚습니다."/><meta property="og:image:alt" content="2026년 9월 기준 AI 데이터센터 네트워킹의 현주소를 정리했습니다. 2023년 80%였던 인피니밴드가 왜 2년 만에 3분의 1로 내려앉았는지, 울트라 이더넷 1.0이 '대역폭'이 아니라 '기다림'을 고치는 방식, NVLink vs UALink 스케일업 표준 전쟁, 1.6T 광모듈 슈퍼사이클과 CPO, 그리고 아무도 크게 말하지 않는 진짜 병목인 '링크 플랩'까지. 국내 최대 B200 클러스터와 국가AI컴퓨팅센터 상황도 함께 짚습니다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/drafts/2026-09-27"/><meta property="twitter:url" content="https://duckychoi.github.io/note/drafts/2026-09-27"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="2026년 9월 기준 AI 데이터센터 네트워킹의 현주소를 정리했습니다. 2023년 80%였던 인피니밴드가 왜 2년 만에 3분의 1로 내려앉았는지, 울트라 이더넷 1.0이 '대역폭'이 아니라 '기다림'을 고치는 방식, NVLink vs UALink 스케일업 표준 전쟁, 1.6T 광모듈 슈퍼사이클과 CPO, 그리고 아무도 크게 말하지 않는 진짜 병목인 '링크 플랩'까지. 국내 최대 B200 클러스터와 국가AI컴퓨팅센터 상황도 함께 짚습니다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/drafts/2026-09-27-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/drafts/2026-09-27-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/drafts/2026-09-27-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="drafts/2026-09-27" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-237" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-237" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../drafts/">drafts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유</a></div></nav><h1 class="article-title">AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">description</td><td class="note-properties-value metadata-property-value"><span class="note-properties-text">2026년 9월 기준 AI 데이터센터 네트워킹의 현주소를 정리했습니다. 2023년 80%였던 인피니밴드가 왜 2년 만에 3분의 1로 내려앉았는지, 울트라 이더넷 1.0이 '대역폭'이 아니라 '기다림'을 고치는 방식, NVLink vs UALink 스케일업 표준 전쟁, 1.6T 광모듈 슈퍼사이클과 CPO, 그리고 아무도 크게 말하지 않는 진짜 병목인 '링크 플랩'까지. 국내 최대 B200 클러스터와 국가AI컴퓨팅센터 상황도 함께 짚습니다.</span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-27T00:00:00.000Z">2026년 9월 27일</time><span>47 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="ai-데이터센터-네트워킹-완전-정복-2026-이더넷-vs-인피니밴드-vs-nvlink-vs-ualink--gpu-24만-장을-다-사놓고-54일-동안-419번-멈춘-이유">AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-데이터센터-네트워킹-완전-정복-2026-이더넷-vs-인피니밴드-vs-nvlink-vs-ualink--gpu-24만-장을-다-사놓고-54일-동안-419번-멈춘-이유" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="목차">목차<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#목차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><a href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0" class="internal internal-link alias">들어가며: 54일 동안 419번 멈췄다</a></li>
+<li><a href="#%EC%88%AB%EC%9E%90" class="internal internal-link alias">숫자로 보는 2026년 AI 네트워킹</a></li>
+<li><a href="#%EA%B0%9C%EB%85%90" class="internal internal-link alias">먼저 개념 정리: 스케일업 · 스케일아웃 · 스케일어크로스</a></li>
+<li><a href="#%EC%9D%B4%EB%8D%94%EB%84%B7" class="internal internal-link alias">전선 ①: 이더넷 vs 인피니밴드 — 2년 만에 80%에서 3분의 1로</a></li>
+<li><a href="#uec" class="internal internal-link alias">울트라 이더넷(UEC) 1.0 — 대역폭이 아니라 ‘기다림’을 고친다</a></li>
+<li><a href="#%EC%8A%A4%EC%BC%80%EC%9D%BC%EC%97%85" class="internal internal-link alias">전선 ②: 스케일업 표준 전쟁 — NVLink vs UALink vs 이더넷</a></li>
+<li><a href="#%EC%A7%84%EC%98%81" class="internal internal-link alias">진영별 정리: 엔비디아 · 브로드컴 · 아리스타 · 마벨 · 시스코</a></li>
+<li><a href="#%EA%B4%91" class="internal internal-link alias">전선 ③: 광 인터커넥트 — 1.6T 슈퍼사이클과 CPO</a></li>
+<li><a href="#%ED%94%8C%EB%9E%A9" class="internal internal-link alias">링크 플랩: 아무도 크게 말하지 않는 진짜 병목</a></li>
+<li><a href="#%ED%95%9C%EA%B5%AD" class="internal internal-link alias">한국: 인피니밴드로 지은 국내 최대 클러스터, 그리고 광모듈 기업들</a></li>
+<li><a href="#%EB%B9%84%EA%B5%90" class="internal internal-link alias">한눈에 비교</a></li>
+<li><a href="#%EB%AC%B8%EC%A0%9C" class="internal internal-link alias">아직 해결되지 않은 문제 6가지</a></li>
+<li><a href="#%EA%B4%80%EC%A0%84%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="internal internal-link alias">기업·개발자를 위한 관전 포인트 8</a></li>
+<li><a href="#faq" class="internal internal-link alias">자주 묻는 질문(FAQ)</a></li>
+<li><a href="#%EB%A7%88%EC%B9%98%EB%A9%B0" class="internal internal-link alias">마치며</a></li>
+</ol>
+<hr/>
+<p><a id="들어가며"></a></p>
+<h2 id="1-들어가며-54일-동안-419번-멈췄다">1. 들어가며: 54일 동안 419번 멈췄다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-들어가며-54일-동안-419번-멈췄다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026년 AI 인프라 이야기는 대부분 두 가지로 요약된다. <strong>GPU를 몇 장 샀는가, 전기를 어디서 구할 것인가.</strong> 그런데 실제로 대규모 학습을 돌려본 조직들이 공통적으로 지목하는 세 번째 문제가 있다. <strong>다 사놓은 GPU가 서로 대화하지 못해 놀고 있다는 것이다.</strong></p>
+<p>가장 자주 인용되는 사례는 메타의 LLaMA 3 학습 기록이다. 공개된 운영 데이터에 따르면 <strong>54일간의 학습 구간에서 학습이 419번 중단됐다.</strong> 하루 평균 7~8번이다. 24시간 돌아가는 수만 장 규모 클러스터에서 이 중단의 상당 부분은 ‘모델이 틀려서’가 아니라 <strong>인프라가 삐끗해서</strong> 발생한다.</p>
+<p>왜 이게 그렇게 치명적인가. 분산 학습의 구조 때문이다. 대규모 학습에서 GPU들은 <strong>수 밀리초마다 서로 그래디언트와 파라미터를 주고받는다(집합통신, collective communication).</strong> 이 통신은 가장 느린 참가자를 기다린다. 즉 <strong>1만 장 중 몇 장이 네트워크에서 대기하면, 나머지 9990여 장도 같이 대기한다.</strong></p>
+<p>비용으로 환산하면 감이 온다. GPU 8장이 들어간 학습 서버 한 대가 <strong>40만 달러(약 5억 원) 이상</strong>이고, 업계 분석에서는 AI 학습 총비용의 <strong>최대 80%가 GPU 몫</strong>으로 잡힌다. 그러니까 GPU가 노는 1분은 그대로 태워버린 돈이다. 광모듈 업계 자료에서는 <strong>장애율 2%가 약 20만 달러의 GPU 손실에 해당한다</strong>는 계산을 제시하는데, 이건 광모듈을 파는 쪽 자료라는 점은 감안해서 읽는 게 맞다. 다만 방향 자체는 여러 사업자 증언과 일치한다.</p>
+<p>여기서 이 글의 문제의식이 나온다. 2026년 AI 인프라의 승부처는 <strong>“GPU가 몇 페타플롭스냐”가 아니라 “그 GPU들을 얼마나 안 멈추고 묶어둘 수 있느냐”</strong> 쪽으로 이동했다. 그리고 그 영역에서 지금 세 개의 전선이 동시에 열려 있다.</p>
+<ul>
+<li><strong>전선 ①</strong> 랙 바깥을 잇는 스케일아웃: <strong>이더넷 vs 인피니밴드</strong></li>
+<li><strong>전선 ②</strong> 랙 안을 잇는 스케일업: <strong>NVLink vs UALink vs 이더넷 기반 방식</strong></li>
+<li><strong>전선 ③</strong> 그 모든 걸 실어 나르는 물리계층: <strong>1.6T 광모듈과 CPO(광학 동시패키징)</strong></li>
+</ul>
+<blockquote>
+<p>※ 이 글의 수치는 2026년 9월까지 공개된 시장조사기관 발표, 기업 실적자료, 표준화 단체 문서, 언론 보도를 기준으로 합니다. <strong>네트워킹 시장 점유율은 조사기관마다 ‘데이터센터 스위치’ 정의가 달라 수치가 엇갈립니다.</strong> 본문에서는 출처와 시점을 함께 표시했고, 벤더 자체 주장인 경우 그렇다고 명시했습니다.</p>
+</blockquote>
+<hr/>
+<p><a id="숫자"></a></p>
+<h2 id="2-숫자로-보는-2026년-ai-네트워킹">2. 숫자로 보는 2026년 AI 네트워킹<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-숫자로-보는-2026년-ai-네트워킹" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>먼저 규모 감각을 잡아보자.</p>
+<p><strong>스케일아웃(백엔드) 네트워크 판도</strong></p>
+<ul>
+<li>2023년: AI 백엔드 네트워크 데이터센터 스위치 매출에서 <strong>인피니밴드가 약 80%</strong></li>
+<li>2025년: <strong>이더넷이 인피니밴드를 추월</strong> (Dell’Oro Group)</li>
+<li>2026년 1분기: AI 클러스터 데이터센터 스위치 매출에서 <strong>이더넷이 약 3분의 2</strong></li>
+<li>Dell’Oro 전망: 향후 5년간 AI 백엔드 네트워크 데이터센터 스위치 매출 <strong>약 800억 달러</strong> 규모</li>
+</ul>
+<p><strong>벤더별 숫자(조사기관·시점 상이, 그대로 병기)</strong></p>
+<ul>
+<li>엔비디아 Spectrum-X: <strong>연 80억 달러 규모</strong> 매출로 성장 중</li>
+<li>엔비디아 2026년 1분기 스위치 매출 <strong>21억 달러, 전년 대비 +193%</strong>, 데이터센터 이더넷 스위칭 점유율 **약 21.5%**로 1년 만에 4% 미만에서 급등 (한 집계 기준)</li>
+<li>IDC 2025년 2분기 기준으로는 엔비디아가 **25.9% 점유율, 약 22.6억 달러, +647%**로 아리스타를 추월했다는 집계도 존재</li>
+<li>브로드컴: 데이터센터 이더넷 스위칭 <strong>약 19%</strong>, 2026년 네트워킹 매출 <strong>100억 달러 돌파 전망(+약 20%)</strong></li>
+<li>아리스타: 2026 회계연도 매출 가이던스 <strong>약 115억 달러(+27.7%)</strong>, AI 네트워킹 목표를 <strong>32.5억 → 35억 달러로 상향</strong></li>
+</ul>
+<p><strong>광 인터커넥트</strong></p>
+<ul>
+<li>1.6T 광모듈 출하량: 전년 <strong>250만 개 → 2026년 2000만 개</strong> 전망 (노무라)</li>
+<li>AI 데이터센터 광 인터커넥트 시장: <strong>2030년 1444억 달러</strong>, 2024년의 10배 이상</li>
+<li>그중 <strong>1.6T + 3.2T가 약 1100억 달러</strong>, 1.6T 단일 세그먼트가 <strong>656억 달러</strong></li>
+<li>실리콘 포토닉스 침투율: 1.6T 고급 구간에서 <strong>50~70%</strong> 전망</li>
+</ul>
+<p>여기서 한 가지가 눈에 걸린다. <strong>엔비디아가 이더넷 스위치 시장에서 1년 만에 4% 미만에서 20%대로 올라왔다는 것.</strong> 인피니밴드를 만든 회사가 이더넷 시장을 먹고 있다. 이 역설이 전선 ①의 전부다.</p>
+<hr/>
+<p><a id="개념"></a></p>
+<h2 id="3-먼저-개념-정리-스케일업--스케일아웃--스케일어크로스">3. 먼저 개념 정리: 스케일업 · 스케일아웃 · 스케일어크로스<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-먼저-개념-정리-스케일업--스케일아웃--스케일어크로스" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>용어가 섞여서 기사를 읽기 어려워지는 지점이라, 세 단어만 정리하고 넘어가자.</p>
+<p><strong>스케일업(scale-up) = 랙 한 대 안쪽</strong>
+GPU 수십~수백 장을 <strong>하나의 큰 GPU처럼</strong> 보이게 묶는 초고속·초저지연 연결. 메모리를 서로 직접 참조하는 수준이라 요구 대역폭이 가장 크다. 대표: <strong>NVLink / NVSwitch</strong>. NVLink 5세대는 GPU당 <strong>총 1.8TB/s</strong> 대역폭을 제공한다(블랙웰 기준).</p>
+<p><strong>스케일아웃(scale-out) = 랙과 랙, 홀과 홀 사이</strong>
+서버·랙·데이터센터 홀을 잇는 클러스터 패브릭. 대표: <strong>인피니밴드, 이더넷(RoCE / Spectrum-X)</strong>.</p>
+<p><strong>스케일어크로스(scale-across) = 데이터센터와 데이터센터 사이</strong>
+2026년에 새로 부각된 계층이다. 한 건물에 전기를 더 못 넣으니, <strong>여러 데이터센터를 하나의 학습 클러스터처럼</strong> 묶어야 한다. 엔비디아는 이 계층을 <strong>Spectrum-XGS</strong>로 제품화했고, 브로드컴은 <strong>Jericho4</strong>로 <strong>100km 이상 구간에서 무손실 RoCE 전송</strong>을 내세운다(이전 세대 대비 4배 용량).</p>
+<p>한 줄로 정리하면 이렇다. <strong>스케일업은 대역폭 싸움, 스케일아웃은 혼잡제어 싸움, 스케일어크로스는 거리와 지연 싸움이다.</strong> 세 계층은 서로 다른 기술이고, “AI 네트워크 1위” 같은 표현은 어느 계층을 말하는지 확인하지 않으면 의미가 없다.</p>
+<hr/>
+<p><a id="이더넷"></a></p>
+<h2 id="4-전선--이더넷-vs-인피니밴드--2년-만에-80에서-3분의-1로">4. 전선 ①: 이더넷 vs 인피니밴드 — 2년 만에 80%에서 3분의 1로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-전선--이더넷-vs-인피니밴드--2년-만에-80에서-3분의-1로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2023년만 해도 대규모 AI 학습 클러스터의 정답은 인피니밴드였다. 무손실 전송, 낮은 지연, 검증된 집합통신 성능. 그런데 2025년에 역전이 일어났고, 2026년 1분기에는 이더넷이 AI 클러스터 스위치 매출의 <strong>약 3분의 2</strong>를 차지했다.</p>
+<p><strong>이더넷이 이긴 이유는 성능이 아니었다.</strong></p>
+<ol>
+<li><strong>비용</strong> — 같은 대역폭을 더 싸게 깐다.</li>
+<li><strong>멀티벤더</strong> — 스위치·NIC·광모듈을 여러 회사에서 조달할 수 있다. GPU 공급망이 이미 한 회사에 묶여 있는 상황에서, 네트워크까지 같은 회사에 묶이는 걸 하이퍼스케일러들이 싫어했다.</li>
+<li><strong>운영 인력</strong> — 이더넷을 아는 엔지니어가 압도적으로 많다.</li>
+<li><strong>표준화</strong> — 울트라 이더넷 컨소시엄(UEC)이 AI용 결점들을 규격 차원에서 메우기 시작했다.</li>
+</ol>
+<p>그렇다고 인피니밴드가 죽은 것은 아니다. <strong>2026년에 인피니밴드는 반등했다.</strong> 엔비디아 블랙웰 울트라 플랫폼 출하가 본격화되면서 인피니밴드 스위치 매출이 한 분기에 3배 이상 뛴 구간이 있었다. 플랫폼 단위로 묶여 나가는 물량이 있는 한, 인피니밴드는 <strong>“최대 규모 학습 전용 고급 옵션”</strong> 자리를 지킬 가능성이 크다.</p>
+<p>정리하면 2026년의 구도는 “이더넷의 승리”가 아니라 <strong>“이더넷이 기본값, 인피니밴드가 특수 목적”</strong> 쪽이다. 그리고 여기서 가장 이득을 본 회사는 아이러니하게도 엔비디아다. <strong>인피니밴드로도 팔고, Spectrum-X 이더넷으로도 판다.</strong></p>
+<hr/>
+<p><a id="uec"></a></p>
+<h2 id="5-울트라-이더넷uec-10--대역폭이-아니라-기다림을-고친다">5. 울트라 이더넷(UEC) 1.0 — 대역폭이 아니라 ‘기다림’을 고친다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-울트라-이더넷uec-10--대역폭이-아니라-기다림을-고친다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이더넷이 AI 학습에서 약했던 이유를 이해하려면 <strong>“엘리펀트 플로우 해시 충돌”</strong> 한 가지만 알면 된다.</p>
+<p>전통적인 이더넷은 여러 경로 중 하나를 <strong>해시로 골라</strong> 트래픽을 보낸다. 웹 트래픽처럼 작은 흐름이 수백만 개일 때는 잘 분산된다. 그런데 AI 학습 트래픽은 정반대다. <strong>거대한 흐름 몇 개(엘리펀트 플로우)가 전부다.</strong> 이때 두 개의 거대한 흐름이 같은 물리 케이블로 해시되면, 그 링크는 즉시 포화되고 패킷이 버려진다. <strong>그런데 바로 옆 케이블은 사용률 0%로 놀고 있다.</strong></p>
+<p>울트라 이더넷 컨소시엄(UEC)은 2025년 6월 <strong>560페이지가 넘는 1.0 규격</strong>을 내놨고, 2026년 7월 16일자 <strong>1.0.3 리비전</strong>에서 <strong>레인당 200Gb/s 시그널링</strong>을 지원하며 전송·링크·PHY 계층 정정을 반영했다. 핵심 아이디어는 다음과 같다.</p>
+<ul>
+<li><strong>패킷 스프레이(packet spray)</strong> — 한 흐름을 여러 경로에 잘게 뿌린다. 해시 충돌 자체를 없애는 접근이다.</li>
+<li><strong>멀티패스 RDMA</strong> — 여러 경로를 동시에 쓴다.</li>
+<li><strong>비순차 전달(out-of-order delivery) 허용</strong> — 순서대로 오기를 기다리지 않고, 상위에서 재조립한다.</li>
+<li><strong>현대적 혼잡제어</strong> — 버퍼가 터지기 전에 속도를 조절한다.</li>
+</ul>
+<p>여기서 중요한 건 설계 철학이다. <strong>UEC는 대역폭을 늘리는 규격이 아니라, GPU가 네트워크를 기다리는 시간을 줄이는 규격이다.</strong> 앞서 본 “1만 장이 몇 장을 기다린다”는 문제를 직접 겨냥한다.</p>
+<p>주의할 점도 있다. <strong>규격이 나온 것과 현장에서 검증된 것은 다르다.</strong> 패킷 스프레이와 비순차 전달은 NIC·스위치·집합통신 라이브러리가 모두 맞물려야 효과가 나며, 2026년 현재 벤더별 구현 성숙도 차이가 있다. “UEC 지원”이라는 문구만으로 성능을 가정하면 안 된다.</p>
+<hr/>
+<p><a id="스케일업"></a></p>
+<h2 id="6-전선--스케일업-표준-전쟁--nvlink-vs-ualink-vs-이더넷">6. 전선 ②: 스케일업 표준 전쟁 — NVLink vs UALink vs 이더넷<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-전선--스케일업-표준-전쟁--nvlink-vs-ualink-vs-이더넷" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>스케일아웃에서는 이더넷이 이겼다. 그런데 <strong>랙 안쪽(스케일업)은 아직 엔비디아의 성역이다.</strong> 2026년의 진짜 싸움은 여기다.</p>
+<p><strong>진영 A: NVLink / NVSwitch (엔비디아)</strong>
+GPU당 1.8TB/s(NVLink 5). 실질적 독점이며, 랙 전체를 하나의 가속기처럼 보이게 만드는 완성도가 가장 높다. 업계에서는 **“장기적으로 NVSwitch는 스케일업 세계의 인피니밴드”**라는 표현이 나온다. 즉 기술적으로 우월하지만 폐쇄적이라는 뜻이고, 인피니밴드가 걸어간 길(고급 틈새로 후퇴)을 따라갈 수 있다는 전망이다.</p>
+<p>엔비디아는 이 비판에 <strong>NVLink Fusion</strong>으로 대응했다. 타사 가속기·CPU도 NVLink 패브릭에 붙일 수 있게 개방하는 방향이다. 다만 개방의 범위와 조건은 사례별로 다르다.</p>
+<p><strong>진영 B: UALink</strong>
+2025년 4월 <strong>UALink 1.0</strong> 규격이 나왔고, <strong>단일 스위칭 계층에서 최대 1,024개 가속기</strong>를 묶을 수 있다. 업계 분석에서는 **“포트 대 포트로 NVLink/NVSwitch와 맞설 수 있고, 확장 범위는 거의 두 배”**라는 평가가 나온다. 컨소시엄 회원사는 <strong>115개</strong> 수준이며, <strong>UALink 2.0</strong> 규격도 발표됐고 2.0 기반 고객 솔루션은 <strong>2027년</strong> 등장이 예상된다.</p>
+<p><strong>진영 C: 이더넷 기반 스케일업 (ESUN / SUE)</strong>
+“스케일업도 이더넷으로 하자”는 접근이다. 브로드컴이 적극적이고, **Tomahawk 6(102.4Tb/s)**는 스케일아웃과 랙 레벨 클러스터링을 <strong>둘 다</strong> 겨냥한다고 명시한다. 메모리 연산 영역은 <strong>CXL</strong>이 보완한다.</p>
+<p><strong>그래서 언제 결판이 나는가.</strong> 업계 관측은 대체로 **“규격에서 하드웨어로 넘어가는 시점이 2026년 말~2027년”**이다. 마벨은 스케일아웃 <strong>100T·200T</strong>, 스케일업 <strong>115T·57T</strong> 디바이스를 내놓으며 <strong>NVLink Fusion·UALink·ESUN을 모두 지원</strong>한다고 밝혔다. 이 “모두 지원” 전략 자체가 현재 상황을 잘 요약한다. <strong>아무도 승자를 확신하지 못하고 있다.</strong></p>
+<hr/>
+<p><a id="진영"></a></p>
+<h2 id="7-진영별-정리-엔비디아--브로드컴--아리스타--마벨--시스코">7. 진영별 정리: 엔비디아 · 브로드컴 · 아리스타 · 마벨 · 시스코<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-진영별-정리-엔비디아--브로드컴--아리스타--마벨--시스코" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>엔비디아 — 세 계층을 다 판다</strong>
+인피니밴드(Quantum), 스케일아웃 이더넷(Spectrum-X), 스케일업(NVLink), 데이터센터 간(Spectrum-XGS)까지 수직 통합. 2026년 하반기에는 **Spectrum-6 기반 Spectrum-X Photonics(CPO 내장 스위치)**가 나온다. 강점은 GPU와 함께 묶여 팔리는 구조, 약점은 고객들이 바로 그 구조를 경계한다는 점.</p>
+<p><strong>브로드컴 — 개방 진영의 실질적 엔진</strong>
+Tomahawk 6(102.4Tb/s, 이전 세대의 2배), Jericho4(100km 이상 무손실 RoCE). 하이퍼스케일러 자체 설계 칩(커스텀 XPU)의 파트너이기도 해서, <strong>“엔비디아를 피하려는 모든 시도”의 공통 수혜자</strong>다.</p>
+<p><strong>아리스타 — 순수 네트워킹 1위 사업자</strong>
+2024년 시스코를 넘어 데이터센터 이더넷 스위치 1위가 됐고, 2026 회계연도 매출 가이던스 <strong>약 115억 달러</strong>, AI 네트워킹 목표 <strong>35억 달러</strong>로 상향했다. 다만 분석에서는 <strong>고객 집중 리스크</strong>가 계속 지적된다. 소수 하이퍼스케일러 의존도가 높다.</p>
+<p><strong>마벨 — 맞춤형 실리콘과 양다리 전략</strong>
+스케일업/스케일아웃 양쪽 디바이스를 내놓고 세 표준을 모두 지원. 표준 전쟁이 길어질수록 유리한 포지션.</p>
+<p><strong>시스코 — 가장 큰 전략적 노출</strong>
+캠퍼스 스위칭, 데이터센터, 라우팅, 관리, 보안까지 이익 풀이 걸쳐 있어 AI 전환기에 방어할 면적이 가장 넓다. 동시에 시스코는 **“AI 시대에는 광 부품의 신뢰성 기준 자체가 달라져야 한다”**는 주장을 적극적으로 펴고 있는데, 이 이야기는 9절에서 다룬다.</p>
+<hr/>
+<p><a id="광"></a></p>
+<h2 id="8-전선--광-인터커넥트--16t-슈퍼사이클과-cpo">8. 전선 ③: 광 인터커넥트 — 1.6T 슈퍼사이클과 CPO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-전선--광-인터커넥트--16t-슈퍼사이클과-cpo" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>스위치 칩 용량이 2년마다 2배가 되면, 그걸 밖으로 빼내는 <strong>광모듈</strong>도 같이 뛰어야 한다. 2026년은 <strong>800G에서 1.6T로 넘어가는 변곡점</strong>이다.</p>
+<p><strong>숫자가 비정상적이다.</strong> 1.6T 광모듈 출하량은 전년 <strong>250만 개에서 2026년 2000만 개</strong>로 늘어날 것으로 전망된다(노무라). AI 데이터센터 광 인터커넥트 시장은 <strong>2030년 1444억 달러</strong>로 2024년의 10배 이상이 되고, 그중 <strong>실리콘 포토닉스가 매출의 약 3분의 2</strong>를 차지할 것으로 예측된다. 1.6T 고급 구간의 실리콘 포토닉스 침투율 전망은 **50~70%**다.</p>
+<p><strong>그리고 CPO(Co-Packaged Optics)가 등장한다.</strong></p>
+<p>기존 방식은 스위치 앞면에 <strong>플러거블 광모듈</strong>을 꽂는다. CPO는 광 엔진을 <strong>스위치 ASIC 바로 옆에 같이 패키징</strong>한다. 전기 신호가 이동하는 거리를 없애버리는 접근이다.</p>
+<p>효과는 전력에서 나온다. 엔비디아 자료에 따르면 1.6T 네트워크에서 플러거블을 CPO로 바꾸면 <strong>링크당 전력이 30W에서 9W로</strong> 떨어진다. 엔비디아는 <strong>전력 효율 5배, 복원력 10배</strong>를 주장하는데, 이건 벤더 주장이므로 독립 검증 결과를 따로 봐야 한다.</p>
+<p>전력이 왜 그렇게 중요한가. 앞서 다룬 데이터센터 전력 병목과 직결된다. 스위치 포트 수만 개에서 링크당 21W를 줄이면, 그만큼을 GPU에 돌릴 수 있다. 참고로 구글은 Jupiter 논문에서 스파인 계층의 전기 스위치를 <strong>광회로 스위치(OCS)로 대체해 네트워크 전력 41%를 줄였다</strong>고 보고했다.</p>
+<p><strong>일정은 이렇다.</strong> 2026년 하반기에 엔비디아 <strong>Spectrum-X Photonics(Spectrum-6 기반)</strong> 시스템이 나오고, 인피니밴드 쪽에서도 <strong>Quantum-X 계열 CPO 스위치</strong>가 등장한다. CPO 포트 수는 2023년 5만 개 수준에서 <strong>2026년 450만 개 이상</strong>으로 늘어난다는 전망이 있는데, 이 숫자는 집계 기준이 불분명한 편이라 방향성만 참고하는 게 안전하다.</p>
+<p><strong>냉정하게 볼 지점도 있다.</strong> 증권가 분석에서는 **“CPO의 파괴적 전환은 지연되고, 1.6T와 액체냉각 스위치의 생산 변곡점은 2027년”**이라는 시각이 나온다. CPO는 광 엔진이 고장 나면 <strong>스위치 전체를 교체</strong>해야 할 수 있어, 현장 유지보수 모델이 아직 정리되지 않았다. 2026년은 상용화 원년이지만, 주력 전환의 해는 아닐 가능성이 크다.</p>
+<hr/>
+<p><a id="플랩"></a></p>
+<h2 id="9-링크-플랩-아무도-크게-말하지-않는-진짜-병목">9. 링크 플랩: 아무도 크게 말하지 않는 진짜 병목<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-링크-플랩-아무도-크게-말하지-않는-진짜-병목" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 절이 이 글에서 가장 실무적인 부분이다.</p>
+<p>광 트랜시버의 <strong>완전 고장 평균 시간(MTBF)은 수백만 시간</strong> 단위다. 숫자만 보면 매우 안정적이다. 그런데 <strong>링크가 순간적으로 끊겼다 붙는 ‘플랩(flap)‘까지의 평균 시간은 수십만 시간</strong> 단위로 훨씬 짧다. 즉 <strong>“완전히 죽지는 않지만 순간적으로 흔들리는” 사건이 훨씬 자주 일어난다.</strong></p>
+<p>규모를 곱하면 문제가 드러난다. NIC-리프 스위치 간 링크 장애율은 <strong>연 0.68%</strong> 수준으로 보고되는데, 이건 <strong>GPU 1000장 클러스터에서 주당 한 번의 하드 링크 장애</strong>에 해당한다. 광 트랜시버가 1만 개 이상 들어가는 패브릭에서는 산술적으로 계속 뭔가가 흔들리고 있다는 뜻이다.</p>
+<p>여기서 앞머리의 숫자로 돌아가자. <strong>LLaMA 3 학습 54일간 419회 중단.</strong> 집합통신은 가장 느린 참가자를 기다리므로, 링크 하나의 플랩이 전체 스텝을 지연시키고, 심하면 학습 잡을 재시작시킨다. 재시작은 <strong>수만 GPU-시간</strong>을 날린다. 참고로 LLaMA 2 학습에는 7B 모델 <strong>18.4만 GPU-시간</strong>, 70B 모델 <strong>170만 GPU-시간</strong>이 들어갔다.</p>
+<p><strong>그래서 현장에서 무엇을 하는가.</strong> 요약하면 **“고치기 전에 예측하기”**다. 특정 트랜시버의 <strong>FEC 정정 건수 추세가 올라가는 것</strong>을 감지하면 실제 플랩이 나기 며칠 전에 예고 신호로 쓸 수 있다. 미리 빼면 학습 재시작을 막는다. 이 때문에 2026년에는 <strong>패브릭 텔레메트리</strong>가 선택이 아니라 필수 항목으로 취급된다.</p>
+<p>업계 대응도 이 방향이다. 시스코는 <strong>AI 시대에 맞는 광 부품 신뢰성 기준</strong>을 요구하고 있고, 크레도(Credo)는 아예 <strong>‘ZeroFlap’이라는 제품 카테고리</strong>를 만들어 플랩 억제를 판다. 문제를 제품화하는 회사가 생겼다는 건, 그 문제가 실재한다는 뜻이다.</p>
+<p><strong>한 줄 요약: 2026년 AI 클러스터의 실효 성능을 결정하는 것은 피크 대역폭이 아니라 링크 안정성이다.</strong></p>
+<hr/>
+<p><a id="한국"></a></p>
+<h2 id="10-한국-인피니밴드로-지은-국내-최대-클러스터-그리고-광모듈-기업들">10. 한국: 인피니밴드로 지은 국내 최대 클러스터, 그리고 광모듈 기업들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-한국-인피니밴드로-지은-국내-최대-클러스터-그리고-광모듈-기업들" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>국내 최대 B200 클러스터는 이더넷이 아니라 인피니밴드다.</strong></p>
+<p>NHN클라우드가 운영하는 <strong>NIPA-CL1</strong>은 2026년 6월 슈퍼컴퓨터 TOP500에서 국내 최고 순위에 올랐다. 구성은 <strong>HPE ProLiant Compute XD685, AMD EPYC 9365 CPU, 엔비디아 B200 GPU</strong>, 그리고 <strong>인피니밴드 기반 고속 네트워크</strong>, 여기에 <strong>수랭식 냉각</strong>이 적용됐다. 국내 최대 규모 B200 클러스터로 소개된다.</p>
+<p>이게 시사하는 점이 있다. 글로벌 시장에서는 이더넷이 신규 구축의 기본값이 됐지만, <strong>“최대 규모 학습 성능을 증명해야 하는 프로젝트”에서는 여전히 인피니밴드가 선택된다.</strong> 4절에서 정리한 “이더넷은 기본값, 인피니밴드는 특수 목적” 구도가 국내에서도 그대로 나타난다.</p>
+<p><strong>국가AI컴퓨팅센터</strong>는 2026년 8월 착공했다. <strong>GPU 1만 5000장, 사업 규모 약 2.5조 원</strong>이고, 컨소시엄에는 <strong>삼성SDS, 네이버클라우드, 삼성물산, 삼성전자, 카카오, 클러쉬, KT</strong> 등이 참여한다. 1만 5000장급 클러스터라면 네트워크 설계 선택(인피니밴드/이더넷, 스케일업 방식, 광모듈 세대)이 최종 성능을 크게 좌우한다. 공개된 네트워크 상세 스펙은 이 글을 쓰는 시점에 확인하지 못했다.</p>
+<p><strong>부품 쪽에서는 광모듈이 관전 포인트다.</strong></p>
+<ul>
+<li><strong>오이솔루션</strong>은 광트랜시버와 레이저 다이오드를 자체 개발·생산하는 국내 대표 기업으로, 2026년 5월 AI EXPO에서 차세대 광통신 기술을 공개했다. 5G·유선 네트워크에서 축적한 기술을 AI 데이터센터용 고속 광모듈로 확장하는 구도다.</li>
+<li><strong>삼성전자</strong>는 실리콘 포토닉스에서 움직이고 있다. 2026년 5월 보도에 따르면 <strong>하반기를 기점으로 광통신 모듈 대형 업체와 양산에 돌입</strong>하며 TSMC와 경쟁 구도에 들어간다.</li>
+</ul>
+<p>다만 솔직하게 정리하면, <strong>스위치 ASIC(브로드컴·엔비디아·마벨 영역)에서 한국 기업의 존재감은 사실상 없다.</strong> 한국의 접점은 <strong>HBM(메모리)과 광모듈·광부품</strong>이다. 그리고 광모듈은 1.6T 전환과 CPO 전환이 동시에 오는 구간이라, <strong>기술 세대를 한 번 놓치면 회복이 어려운</strong> 시장이기도 하다.</p>
+<hr/>
+<p><a id="비교"></a></p>
+<h2 id="11-한눈에-비교">11. 한눈에 비교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-한눈에-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>계층별 정리</strong></p>
+<ul>
+<li><strong>스케일업(랙 내부)</strong> — 후보: NVLink/NVSwitch, UALink, ESUN/SUE. 현재 상태: <strong>엔비디아 실질 독점</strong>. 대안 하드웨어는 2026년 말~2027년. 핵심 지표: GPU당 대역폭, 단일 도메인 가속기 수.</li>
+<li><strong>스케일아웃(클러스터)</strong> — 후보: 이더넷(UEC/RoCE/Spectrum-X), 인피니밴드. 현재 상태: <strong>이더넷 약 3분의 2</strong>, 인피니밴드는 최대 규모 학습에서 반등. 핵심 지표: 혼잡제어, 테일 레이턴시, 멀티벤더 조달.</li>
+<li><strong>스케일어크로스(DC 간)</strong> — 후보: Spectrum-XGS, Jericho4 계열. 현재 상태: <strong>2026년에 막 형성된 계층</strong>. 핵심 지표: 거리(100km+), 무손실 전송.</li>
+<li><strong>물리계층(광)</strong> — 후보: 800G 플러거블 → 1.6T 플러거블 → CPO. 현재 상태: <strong>1.6T 상용 진입, CPO 초기 배치</strong>. 핵심 지표: 링크당 전력(W), 플랩 빈도.</li>
+</ul>
+<p><strong>진영별 한 줄 요약</strong></p>
+<ul>
+<li><strong>엔비디아</strong>: 네 계층 전부 보유. 성능은 가장 검증됨. 고객이 종속을 경계한다.</li>
+<li><strong>브로드컴</strong>: 개방 진영의 실제 엔진. Tomahawk 6 / Jericho4. 커스텀 XPU 수요의 수혜자.</li>
+<li><strong>아리스타</strong>: 순수 네트워킹 1위. AI 매출 목표 35억 달러. 고객 집중 리스크.</li>
+<li><strong>마벨</strong>: 세 표준 모두 지원. 표준 전쟁 장기화 시 유리.</li>
+<li><strong>시스코</strong>: 노출 면적이 가장 넓음. 광 신뢰성 담론을 주도.</li>
+</ul>
+<hr/>
+<p><a id="문제"></a></p>
+<h2 id="12-아직-해결되지-않은-문제-6가지">12. 아직 해결되지 않은 문제 6가지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-아직-해결되지-않은-문제-6가지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>① 스케일업 개방은 아직 하드웨어로 증명되지 않았다.</strong> UALink 1.0 규격은 2025년 4월에 나왔지만, 2.0 기반 고객 솔루션 전망은 2027년이다. 규격과 양산 사이에 2년 이상의 공백이 있다.</p>
+<p><strong>② UEC “지원”의 실질이 벤더마다 다르다.</strong> 패킷 스프레이·비순차 전달은 스위치, NIC, 집합통신 라이브러리가 함께 맞아야 한다. 규격 준수 표기만으로 성능을 가정할 수 없다.</p>
+<p><strong>③ CPO의 유지보수 모델이 정리되지 않았다.</strong> 광 엔진이 ASIC과 한 패키지면, 고장 시 교체 단위가 커진다. “지연된 파괴”라는 분석이 나오는 이유다.</p>
+<p><strong>④ 링크 플랩은 표준화된 측정 지표가 없다.</strong> MTBF는 공시되지만 <strong>플랩 빈도는 공시 항목이 아니다.</strong> 구매 단계에서 비교할 공통 숫자가 없다.</p>
+<p><strong>⑤ 시장 점유율 숫자를 믿기 어렵다.</strong> 같은 시기 엔비디아 점유율이 21.5%와 25.9%로 갈리고, 매출도 21억 달러와 22.6억 달러로 갈린다. 조사기관의 ‘데이터센터 스위치’ 정의 차이 때문이다. 투자·조달 판단에 단일 숫자를 쓰면 위험하다.</p>
+<p><strong>⑥ 공급 제약이 성능 제약보다 먼저 온다.</strong> 아리스타는 2026년 2분기 실적에서 <strong>AI 네트워킹 수요가 공급을 크게 초과한다</strong>고 밝혔다. 1.6T 광모듈이 250만 개에서 2000만 개로 늘어야 하는 구간이라, 광부품·기판 공급이 실제 구축 속도를 결정할 수 있다.</p>
+<hr/>
+<p><a id="관전포인트"></a></p>
+<h2 id="13-기업개발자를-위한-관전-포인트-8">13. 기업·개발자를 위한 관전 포인트 8<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-기업개발자를-위한-관전-포인트-8" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. 벤치마크는 피크 대역폭이 아니라 테일 레이턴시로 본다.</strong> 집합통신은 가장 느린 참가자를 기다린다. p99 지연이 실효 성능을 결정한다.</p>
+<p><strong>2. 조달 시 플랩 관련 조건을 명시적으로 넣는다.</strong> MTBF만 받지 말고, FEC 정정 카운터 노출 여부와 텔레메트리 API 제공을 계약서에 요구한다.</p>
+<p><strong>3. 클러스터 규모에 맞춰 장애 예산을 계산한다.</strong> GPU 1000장에서 주 1회 하드 링크 장애가 기준선이라면, 1만 장 규모의 체크포인트 주기는 그에 맞춰 설계해야 한다.</p>
+<p><strong>4. 체크포인트 전략이 네트워크 투자보다 저렴할 수 있다.</strong> 419회 중단을 0으로 만드는 것보다, 중단당 손실을 줄이는 쪽이 비용 효율적인 경우가 많다.</p>
+<p><strong>5. 스케일업 종속 여부를 아키텍처 단계에서 결정한다.</strong> NVLink를 택하면 성능을 얻고 선택권을 줄인다. 2027년 UALink 하드웨어를 기다릴 여유가 있는지가 판단 기준이다.</p>
+<p><strong>6. CPO는 2026년에 “검토”, 2027년에 “결정”이 현실적이다.</strong> 전력 절감 효과는 크지만 유지보수 모델이 미정이다.</p>
+<p><strong>7. 광모듈 세대 전환을 조달 일정에 반영한다.</strong> 800G를 대량으로 깔아놓고 1.6T 전환을 맞으면 자산이 빨리 낡는다.</p>
+<p><strong>8. 국내 프로젝트는 인피니밴드 선택 사례를 참고한다.</strong> NIPA-CL1처럼 성능 증명이 목표라면 인피니밴드가 여전히 합리적 선택일 수 있다. 글로벌 트렌드를 그대로 복사할 필요는 없다.</p>
+<hr/>
+<p><a id="faq"></a></p>
+<h2 id="14-자주-묻는-질문faq">14. 자주 묻는 질문(FAQ)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-자주-묻는-질문faq" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Q. 이더넷이 인피니밴드를 이겼다는 말은 성능이 더 좋아졌다는 뜻인가요?</strong>
+아닙니다. 이긴 요인은 비용, 멀티벤더 조달, 운영 인력, 표준화였습니다. 초저지연과 무손실 전송이 극단적으로 중요한 최대 규모 학습에서는 인피니밴드가 여전히 우위로 평가되며, 2026년에 반등도 했습니다.</p>
+<p><strong>Q. 울트라 이더넷을 쓰면 인피니밴드 수준이 되나요?</strong>
+UEC는 대역폭보다 ‘기다림’을 줄이는 접근이고, 인피니밴드 성능에 <strong>근접한다</strong>는 평가가 나옵니다. 다만 구현체별 성숙도 차이가 있어, 실제 클러스터에서 측정해봐야 합니다.</p>
+<p><strong>Q. NVLink를 안 쓰고 대규모 학습이 가능한가요?</strong>
+스케일아웃은 이더넷으로 충분히 대체되고 있습니다. 문제는 랙 내부(스케일업)입니다. 2026년 현재 NVLink급 대안의 양산 하드웨어는 제한적이고, UALink 2.0 기반 솔루션은 2027년 전망입니다.</p>
+<p><strong>Q. CPO를 지금 도입해야 하나요?</strong>
+링크당 30W → 9W라는 전력 이득은 큽니다. 다만 고장 시 교체 단위와 현장 유지보수 절차가 아직 정리되지 않았습니다. 2026년 하반기 제품을 파일럿으로 검토하고, 주력 전환은 2027년 이후로 보는 시각이 우세합니다.</p>
+<p><strong>Q. 링크 플랩을 어떻게 미리 아나요?</strong>
+특정 트랜시버의 FEC 정정 건수 추세가 상승하는 패턴이 실제 플랩 며칠 전에 나타나는 것으로 보고됩니다. 이를 감지해 사전에 링크를 빼면 학습 재시작을 막을 수 있습니다. 패브릭 텔레메트리가 전제 조건입니다.</p>
+<p><strong>Q. 한국 기업이 참여할 수 있는 영역은 어디인가요?</strong>
+스위치 ASIC은 브로드컴·엔비디아·마벨이 장악했고 국내 존재감은 거의 없습니다. 접점은 <strong>HBM과 광모듈·광부품</strong>입니다. 오이솔루션 같은 광트랜시버 기업, 실리콘 포토닉스 양산을 준비하는 삼성전자가 해당 구간에 있습니다.</p>
+<p><strong>Q. 데이터센터 간 학습(스케일어크로스)은 실제로 쓰이나요?</strong>
+한 건물에 전력을 더 넣기 어려워지면서 2026년에 부각된 계층입니다. 엔비디아 Spectrum-XGS, 브로드컴 Jericho4(100km 이상 무손실 RoCE) 등 제품은 나왔습니다. 다만 대규모 상용 학습 잡이 실제로 여러 사이트에 걸쳐 어느 정도 효율로 돌아가는지는 공개 데이터가 제한적입니다.</p>
+<hr/>
+<p><a id="마치며"></a></p>
+<h2 id="15-마치며">15. 마치며<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-마치며" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026년 AI 인프라 논의는 GPU와 전기로 시작해서 GPU와 전기로 끝나는 경향이 있다. 그런데 실제 대규모 학습을 돌려본 조직들의 기록은 다른 이야기를 한다. <strong>54일에 419번.</strong> 그 중단의 상당 부분은 연산 장치가 부족해서가 아니라, 장치들을 잇는 선이 흔들려서 생긴다.</p>
+<p>그래서 2026년의 세 가지 사실만 기억하면 충분하다.</p>
+<p><strong>첫째, 스케일아웃은 이더넷으로 기울었다.</strong> 2023년 80%였던 인피니밴드가 2년 만에 3분의 1로 내려앉았고, 이긴 쪽의 무기는 성능이 아니라 비용과 조달 선택권이었다.</p>
+<p><strong>둘째, 스케일업은 아직 열리지 않았다.</strong> UALink 규격은 나왔지만 양산 하드웨어는 2027년 전망이다. 랙 안쪽은 여전히 한 회사의 영역이고, 이것이 2026~2027년 최대 변수다.</p>
+<p><strong>셋째, 실효 성능을 결정하는 것은 피크 대역폭이 아니라 링크 안정성이다.</strong> MTBF는 수백만 시간이지만 플랩까지는 수십만 시간이고, 1만 개 트랜시버 패브릭에서 그 차이는 매주 현실이 된다. 그런데 이 지표는 아직 표준 공시 항목조차 아니다.</p>
+<p>GPU를 사는 일은 예산 문제다. <strong>그 GPU들이 멈추지 않게 만드는 일은 설계 문제다.</strong> 2026년에 후자가 훨씬 어려운 문제가 됐다.</p>
+<hr/>
+<h2 id="참고자료">참고자료<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#참고자료" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Dell’Oro Group, “Ethernet is Winning the War Against InfiniBand in AI Back-End Networks”</li>
+<li>Dell’Oro Group, “Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound”</li>
+<li>Dell’Oro Group, “Data Center Networking in 2025–2026: Milestones and Opportunities Amid Supply Risk”</li>
+<li>SDxCentral, “Ethernet dominates AI networking as switch sales double, but InfiniBand rebounds”</li>
+<li>Ultra Ethernet Consortium, “UEC Launches Specification 1.0 Transforming Ethernet for AI and HPC at Scale”</li>
+<li>Network World, “Ultra Ethernet Consortium publishes 1.0 specification, readies Ethernet for HPC, AI”</li>
+<li>Arista Blogs, “Demystifying Ultra Ethernet”</li>
+<li>InsideDeepTech, “Ultra Ethernet: A Full Guide to AI Scale-Out Fabric After InfiniBand”</li>
+<li>InsideDeepTech, “NVLink, InfiniBand, and UALink: A Full Guide to How AI GPUs Actually Talk”</li>
+<li>The Next Platform, “In The Long Run, Nvidia NVSwitch Is The InfiniBand Of Scale Up AI Networks” (2026.08.31)</li>
+<li>Spheron Blog, “UALink vs NVLink: Open GPU Interconnect for AI Inference and Training (2026)”</li>
+<li>650 Group, “In the AI Era, Ethernet Set to Surge in Scale-Out and Ramp in Scale-Up”</li>
+<li>Gain America, “AI Data Center Networking: Scale-Up vs Scale-Out, InfiniBand vs Ethernet, and the Road to 1.6T”</li>
+<li>Cisco Blogs, “Scaling the future: Why Ethernet is the backbone of AI Supercomputing”</li>
+<li>Network World, “Broadcom expands AI networking portfolio with Jericho4 Ethernet fabric router”</li>
+<li>Network World, “Cisco: AI demands more reliable optical networking components”</li>
+<li>Network World, “Buyer’s guide to AI networking technology”</li>
+<li>Futuriom, “Broadcom Chip Advances Ethernet for AI”</li>
+<li>LightCounting, “Broadcom Pitches Ethernet for AI Scale Up”</li>
+<li>ValueAdd VC, “AI Networking Vendors Ranked 2026: Nvidia, Arista, Broadcom, and the InfiniBand vs Ethernet War”</li>
+<li>Arista Networks, Form 8-K FY2026 실적 발표자료 (SEC)</li>
+<li>Fierce Network, “‘AI tailwind’ keeps Arista at No. 1 spot in data center switching — now Nvidia looms”</li>
+<li>NVIDIA Newsroom, “NVIDIA Announces Spectrum-X Photonics, Co-Packaged Optics Networking Switches to Scale AI Factories to Millions of GPUs”</li>
+<li>NVIDIA, “Silicon Photonics Networking for Agentic AI”</li>
+<li>ServeTheHome, “NVIDIA Co-Packaged Optics with Silicon Photonics for Switching and Spectrum-XGS Scale-Across”</li>
+<li>NADDOD Blog, “NVIDIA Spectrum-XGS Ethernet Builds Giga-Scale AI Super Factory”</li>
+<li>Open Compute Project, “Optical Circuit Switching for AI” 백서 (2026.04)</li>
+<li>Tom’s Hardware, “AI data center optical interconnect market to hit $144 billion by 2030”</li>
+<li>EDN, “Where co-packaged optics (CPO) technology stands in 2026”</li>
+<li>Siemens, “Five Key Trends of Co-Packaged Optics (CPO) in 2026”</li>
+<li>MapYourTech, “Co-Packaged Optics: Architecture, Status, and the Path to 1.6T Switches”</li>
+<li>FinancialContent, “The 1.6T Surge: Silicon Photonics and CPO Redefine AI Data Centers in 2026”</li>
+<li>C-LIGHT, “AI Demand Ignites the Optical Transceiver Module Market in 2026”</li>
+<li>EDGE Optical Solutions, “How Optical Transceivers Impact AI Training Performance”</li>
+<li>Credo, “The Path to Zero Flap: Reinventing Optical Reliability for Scalable AI Clusters”</li>
+<li>Clockwork.io, “Unflappable Fabrics: Ending Link-Induced Chaos in GPU Clusters”</li>
+<li>arXiv, “The Ghost in the Datacenter: Link Flapping, Topology Knowledge Failures, and the FITO Category Mistake”</li>
+<li>arXiv, “Resilient AI Supercomputer Networking using MRC and SRv6”</li>
+<li>바이라인네트워크, “GPU 1만5000장 2.5조원 규모 ‘국가 AI 컴퓨팅센터’ 착공” (2026.08)</li>
+<li>블로터, “NHN클라우드, 국내 최고 슈퍼컴 등재…AI 인프라 주도권 키웠다” (2026.06)</li>
+<li>중앙이코노미뉴스, “NHN클라우드, ‘슈퍼컴퓨터 TOP500’ 국내 최고 성적”</li>
+<li>ZDNet Korea, “[종합] AI 인프라가 키운 한국 클라우드…GPU·데이터센터에 ‘올인’” (2026.05.13)</li>
+<li>파이낸셜뉴스, “AI 반도체 패권 가를 ‘실리콘 포토닉스’… 삼성도 양산 채비” (2026.05.11)</li>
+<li>아시아경제, “오이솔루션, AI EXPO 2026서 차세대 광통신 기술 공개” (2026.05.06)</li>
+<li>CEO매거진, “[포커스] AI 핵심 인프라 ‘광통신’ 관련 기업 분석”</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-237" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#ai-데이터센터-네트워킹-완전-정복-2026-이더넷-vs-인피니밴드-vs-nvlink-vs-ualink--gpu-24만-장을-다-사놓고-54일-동안-419번-멈춘-이유" data-for="ai-데이터센터-네트워킹-완전-정복-2026-이더넷-vs-인피니밴드-vs-nvlink-vs-ualink--gpu-24만-장을-다-사놓고-54일-동안-419번-멈춘-이유">AI 데이터센터 네트워킹 완전 정복 2026: 이더넷 vs 인피니밴드 vs NVLink vs UALink — GPU 24만 장을 다 사놓고, 54일 동안 419번 멈춘 이유</a></li><li class="depth-1"><a href="#목차" data-for="목차">목차</a></li><li class="depth-1"><a href="#1-들어가며-54일-동안-419번-멈췄다" data-for="1-들어가며-54일-동안-419번-멈췄다">1. 들어가며: 54일 동안 419번 멈췄다</a></li><li class="depth-1"><a href="#2-숫자로-보는-2026년-ai-네트워킹" data-for="2-숫자로-보는-2026년-ai-네트워킹">2. 숫자로 보는 2026년 AI 네트워킹</a></li><li class="depth-1"><a href="#3-먼저-개념-정리-스케일업--스케일아웃--스케일어크로스" data-for="3-먼저-개념-정리-스케일업--스케일아웃--스케일어크로스">3. 먼저 개념 정리: 스케일업 · 스케일아웃 · 스케일어크로스</a></li><li class="depth-1"><a href="#4-전선--이더넷-vs-인피니밴드--2년-만에-80에서-3분의-1로" data-for="4-전선--이더넷-vs-인피니밴드--2년-만에-80에서-3분의-1로">4. 전선 ①: 이더넷 vs 인피니밴드 — 2년 만에 80%에서 3분의 1로</a></li><li class="depth-1"><a href="#5-울트라-이더넷uec-10--대역폭이-아니라-기다림을-고친다" data-for="5-울트라-이더넷uec-10--대역폭이-아니라-기다림을-고친다">5. 울트라 이더넷(UEC) 1.0 — 대역폭이 아니라 ‘기다림’을 고친다</a></li><li class="depth-1"><a href="#6-전선--스케일업-표준-전쟁--nvlink-vs-ualink-vs-이더넷" data-for="6-전선--스케일업-표준-전쟁--nvlink-vs-ualink-vs-이더넷">6. 전선 ②: 스케일업 표준 전쟁 — NVLink vs UALink vs 이더넷</a></li><li class="depth-1"><a href="#7-진영별-정리-엔비디아--브로드컴--아리스타--마벨--시스코" data-for="7-진영별-정리-엔비디아--브로드컴--아리스타--마벨--시스코">7. 진영별 정리: 엔비디아 · 브로드컴 · 아리스타 · 마벨 · 시스코</a></li><li class="depth-1"><a href="#8-전선--광-인터커넥트--16t-슈퍼사이클과-cpo" data-for="8-전선--광-인터커넥트--16t-슈퍼사이클과-cpo">8. 전선 ③: 광 인터커넥트 — 1.6T 슈퍼사이클과 CPO</a></li><li class="depth-1"><a href="#9-링크-플랩-아무도-크게-말하지-않는-진짜-병목" data-for="9-링크-플랩-아무도-크게-말하지-않는-진짜-병목">9. 링크 플랩: 아무도 크게 말하지 않는 진짜 병목</a></li><li class="depth-1"><a href="#10-한국-인피니밴드로-지은-국내-최대-클러스터-그리고-광모듈-기업들" data-for="10-한국-인피니밴드로-지은-국내-최대-클러스터-그리고-광모듈-기업들">10. 한국: 인피니밴드로 지은 국내 최대 클러스터, 그리고 광모듈 기업들</a></li><li class="depth-1"><a href="#11-한눈에-비교" data-for="11-한눈에-비교">11. 한눈에 비교</a></li><li class="depth-1"><a href="#12-아직-해결되지-않은-문제-6가지" data-for="12-아직-해결되지-않은-문제-6가지">12. 아직 해결되지 않은 문제 6가지</a></li><li class="depth-1"><a href="#13-기업개발자를-위한-관전-포인트-8" data-for="13-기업개발자를-위한-관전-포인트-8">13. 기업·개발자를 위한 관전 포인트 8</a></li><li class="depth-1"><a href="#14-자주-묻는-질문faq" data-for="14-자주-묻는-질문faq">14. 자주 묻는 질문(FAQ)</a></li><li class="depth-1"><a href="#15-마치며" data-for="15-마치며">15. 마치며</a></li><li class="depth-1"><a href="#참고자료" data-for="참고자료">참고자료</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

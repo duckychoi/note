@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다"/><meta name="twitter:description" content="하네스 설계 축 🏆 2026-10-03 축에 측정 통화가 붙었다 + 이식성이 두 층으로 분해됐다 ① Sharpening-Tax 가 이 축에 측정 가능한 통화를 준다 — “커버리지”."/><meta property="og:description" content="하네스 설계 축 🏆 2026-10-03 축에 측정 통화가 붙었다 + 이식성이 두 층으로 분해됐다 ① Sharpening-Tax 가 이 축에 측정 가능한 통화를 준다 — “커버리지”."/><meta property="og:image:alt" content="하네스 설계 축 🏆 2026-10-03 축에 측정 통화가 붙었다 + 이식성이 두 층으로 분해됐다 ① Sharpening-Tax 가 이 축에 측정 가능한 통화를 준다 — “커버리지”."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/하네스-설계-축"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/하네스-설계-축"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="하네스 설계 축 🏆 2026-10-03 축에 측정 통화가 붙었다 + 이식성이 두 층으로 분해됐다 ① Sharpening-Tax 가 이 축에 측정 가능한 통화를 준다 — “커버리지”."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/하네스-설계-축-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/하네스-설계-축-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/하네스-설계-축-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/하네스-설계-축" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-66" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-66" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다</a></div></nav><h1 class="article-title">하네스 설계 축 — 하루치 트렌딩의 31%가 같은 문제를 다른 층에서 풀었다</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/ai-news" class="internal internal-link tag-link">ai-news</a><span class="note-properties-separator">, </span><a href="../tags/concept" class="internal internal-link tag-link">concept</a><span class="note-properties-separator">, </span><a href="../tags/agent" class="internal internal-link tag-link">agent</a><span class="note-properties-separator">, </span><a href="../tags/harness" class="internal internal-link tag-link">harness</a><span class="note-properties-separator">, </span><a href="../tags/context-management" class="internal internal-link tag-link">context-management</a><span class="note-properties-separator">, </span><a href="../tags/축신설" class="internal internal-link tag-link">축신설</a><span class="note-properties-separator">, </span><a href="../tags/신설" class="internal internal-link tag-link">신설</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-10-05T00:00:00.000Z">2026년 10월 05일</time><span>25 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="하네스-설계-축">하네스 설계 축<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#하네스-설계-축" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 2026-10-03 <strong>축에 측정 통화가 붙었다 + 이식성이 두 층으로 분해됐다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>① <a href="../sources/sharpening-tax" class="internal internal-link" data-slug="sources/sharpening-tax">Sharpening-Tax</a> 가 이 축에 측정 가능한 통화를 준다 — “커버리지”.</strong>
+<em>“경량 추론 하네스를 붙인 사전학습(base) 모델이 유능한 에이전트로 동작하고, pass@1 은 훨씬 낮아도 테스트시 예산이 충분하면 후처리 모델의 해법 커버리지(pass@K)를 자주 상회한다.”</em>
+⇒ ⚖️ <strong><em>“무엇을 모델에 넣고 무엇을 하네스에 둘 것인가”</em> 가 처음으로 수치 축(pass@K)으로 번역됐다.</strong> 📌 종전까지 이 축은 <strong>분류 도구</strong>였고 <strong>비교 도구가 아니었다.</strong>
+🔴 <strong>그러나 볼트 PDF 실측이 전제를 드러냈다</strong>: 초록의 <em>“sufficient test-time budget”</em> 은 본문에서 <strong><code>pass@128</code></strong>(37회 언급 · 주 설정)이다. ⚖️ <strong>base + 하네스 경로가 이기는 조건은 128배 샘플링이다. 초록만 읽으면 “base 모델이 더 낫다”로 오독한다.</strong> ⇒ 📌 <strong>축의 두 끝에 가격표가 다르게 붙는다: 모델 쪽은 학습 비용, 하네스 쪽은 추론 비용(×128).</strong></p>
+<p><strong>② 본문이 과제 쪽 분해를 준다 — 축이 제공자 쪽만이 아니다.</strong>
+<a href="../sources/sharpening-tax" class="internal internal-link" data-slug="sources/sharpening-tax">Sharpening-Tax</a> 본문은 에이전트 과제가 수학/코딩과 다른 이유를 <strong>4가지</strong>로 쪼갠다: ① 구조화된 액션 실행 ② 시나리오별 인터페이스로 다양한 도구 호출 ③ 불확실성 하 이질적 환경 피드백 반영 ④ 장기 궤적 일관성 유지.
+⇒ 📌 <strong>볼트는 지금까지 이 축을 <em>제공자 쪽</em>(모델/하네스)으로만 쪼갰다. 과제 쪽 분해가 없었다</strong> → <a href="../concepts/암묵을-명시로" class="internal internal-link alias" data-slug="concepts/암묵을-명시로">암묵을-명시로</a>.</p>
+<p><strong>③ 이식성이 “문서 열거”와 “매니페스트 유지”로 분해된다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>레포</th><th>형태</th><th>증거</th></tr></thead><tbody><tr><td><a href="../sources/superpowers" class="internal internal-link" data-slug="sources/superpowers">superpowers</a></td><td><strong>문서가 15종 이상 설치 경로를 열거</strong></td><td>README</td></tr><tr><td><strong><a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></strong></td><td><strong>9개 매니페스트를 실제 유지보수</strong></td><td>🏆 <strong>릴리스 1건에서 전부 +1-1 커밋</strong></td></tr><tr><td>ponytail 의 9종: <code>.claude-plugin</code>·<code>.codex-plugin</code>·<code>.devin-plugin</code>·<code>.github/plugin</code>·<code>.qoder-plugin</code>·<code>gemini-extension.json</code>·<code>package.json</code>·<code>plugin.yaml</code>·<code>ponytail-mcp/package.json</code>.</td><td></td><td></td></tr><tr><td>⇒ ⚖️ <strong>둘은 같은 지표가 아니다. README 열거 수 ≠ 유지되는 매니페스트 수.</strong> 📌 superpowers 쪽은 ②의 증거를 볼트가 <strong>확인하지 않았다</strong> — 공정하게 비교하려면 superpowers 커밋 로그도 열어야 한다(미수행 → actionable).</td><td></td><td></td></tr></tbody></table></div>
+<p><strong>④ 층들이 또 서로를 지목했다(2배치 연속).</strong> <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 이 <code>.openclaw/skills/</code> 를 <code>skills/</code> 와 <strong>이중 유지</strong>하고 커밋마다 양쪽을 동시 수정한다 ⇒ 📌 <strong><a href="../sources/openclaw" class="internal internal-link" data-slug="sources/openclaw">openclaw</a>(★391,087)가 별도 스킬 디렉터리 규약을 요구하는 플랫폼임을 벤더 커밋이 증명한다.</strong> 10-02 에 <a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a> README 가 <a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a> 을 호명한 것에 이어 <strong>분석자가 묶던 두 층을 벤더가 스스로 묶은 2번째 사례</strong>다.</p>
+<p><strong>⑤ 최하층에서 자기 규제 장치가 나왔다.</strong> <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a> 이 <code>CONTRIBUTING.md</code> 를 신설(+55행)하며 <strong>“benchmark gate for ruleset changes”</strong> — <strong>룰셋 변경에 벤치마크 통과를 요구</strong>한다. ⇒ ✅ <a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a> <strong>벤더 자발적 실행 2번째</strong>(10-02 <a href="../sources/nemotron-3-diarization" class="internal internal-link" data-slug="sources/nemotron-3-diarization">Nemotron-3-Diarization</a> 에 이어). 🔴 <strong>게이트 기준값·통과 조건 미열람.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>한 줄 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>모델을 바꾸지 않고 모델을 감싸는 층만 바꿔서 정확도·비용을 움직이는 것이 독립된 연구·제품 축으로 성립했다.</strong> 그리고 그 축의 결론은 대체로 <strong>“더 정교하게”가 아니라 “덜”</strong> 이다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 2026-09-19 — &quot;학습루프 내재화&quot; 층의 설계도 확보 → <a href="../sources/neohorse-1-paper" class="internal internal-link" data-slug="sources/neohorse-1-paper">NeoHorse-1-Paper</a></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>라우터가 매 턴 <strong>예측 티어(C0~C3)·실제 서빙 티어·결과</strong>를 분리 기록 → 그 기록이 <strong>궤적(데이터) + 라우팅 점수(커리큘럼 순서) + 결손 프로파일(다음 혼합)</strong> 셋을 동시에 공급한다.
+🎯 <strong>이 축의 첫 대조 실험 수치</strong>: 같은 레시피에서 <strong>데이터 출처만</strong> 바꿔 하네스 궤적이 공개 합성 데이터(Toucan) 대비 <strong>5벤치 평균 +6.26</strong>. 반면 데이터 양 스케일링은 <strong>+2.14</strong>. → <strong>하네스는 “무엇을 넣나”보다 “어디서 데이터를 받나”로도 가치를 낸다.</strong>
+🔴 <strong>단 라우팅 커리큘럼 자체의 절제는 없다</strong> — 하네스의 기여 중 “데이터 출처” 몫만 측정됐다.
+✅ 아래 미해결 ④(급등 원인이 이 논문일 가능성)는 <strong>절반 확인</strong>: 논문이 “하네스 매개 RSI”를 명시적으로 정식화한다. 단 09-18 배치 4건이 이 논문을 인용했는지는 미대조.</p>
+</div>
+</blockquote>
+<h2 id="2026-09-18--한-배치에서-4건-네-층이-전부-다르다">2026-09-18 — 한 배치에서 4건, 네 층이 전부 다르다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-18--한-배치에서-4건-네-층이-전부-다르다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>층                   사례                              근거 상태
+─────────────────────────────────────────────────────────────────
+구현(SDK)            [[harness-sdk]] ★7,345           🔴 벤치 0개
+자동탐색             [[SoL-Pi]] (NVlabs) ★2,185       ✅ 토큰 −44.7~49.0%
+대조실험             [[Harness-Design-Empirical]]      ✅ 176개 설정
+학습루프 내재화      [[NeoHorse-1-4B]]/[[NeoHorse-1-9B]]  ✅ 10벤치 8열표
+</code></pre>
+<p>🎯 <strong>13건 중 4건 = 31%.</strong> 09-16 배치의 <em>“모델 위 계층”</em>, 09-17의 <em>“실행 통제”</em> 에 이어 <strong>세 배치 연속으로 같은 방향의 상승이 관측된다.</strong> 그리고 이번에 처음으로 <strong>같은 축 안에서 층이 갈렸다.</strong></p>
+<h2 id="-이-배치의-가장-강한-신호--독립된-두-방법이-같은-지점을-가리킨다">🎯 이 배치의 가장 강한 신호 — 독립된 두 방법이 같은 지점을 가리킨다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-이-배치의-가장-강한-신호--독립된-두-방법이-같은-지점을-가리킨다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong><a href="../sources/sol-pi" class="internal internal-link" data-slug="sources/sol-pi">SoL-Pi</a></strong>: 자동연구 루프로 환경을 늘려 <strong>선택압을 통과한 메커니즘 4개</strong>만 남겼다 → 4개 중 <strong>2개가 컨텍스트 관련</strong>(압축·관측 처리).
+<strong><a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a></strong>: 176개 대조 설정으로 3요소를 절제 측정 → <strong>컨텍스트 관리가 가장 중요</strong>하고 이득의 대부분은 <strong>오버플로 실패 방지</strong>에서 온다.</p>
+<p>🎯 <strong>탐색으로 <em>남은 것</em>과 절제로 재서 <em>중요한 것</em>이 일치한다.</strong> 방법이 완전히 다른 두 연구가 같은 부품을 지목했다.
+📌 <strong>볼트 판정: 이 일치는 단일 논문의 결론보다 강한 근거다.</strong> 🔴 <strong>단 두 논문 다 같은 주(09-17 공개)에 나왔고 서로를 인용하지 않았을 가능성이 높다</strong> — 독립성은 추정이고 확인하지 않았다.</p>
+<h2 id="-이-축의-결론이-반직관적인-방향으로-모인다">🔴 이 축의 결론이 반직관적인 방향으로 모인다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-이-축의-결론이-반직관적인-방향으로-모인다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a> 의 4개 결론을 다시 읽으면 <strong>셋이 “빼라”</strong> 다:</p>
+<ul>
+<li><strong>생략분 복구 장치</strong> → 모델이 거의 쓰지 않아 <strong>정확도 이득 없음</strong>(빼라)</li>
+<li><strong>사전정의 도구</strong> → bash 능숙 모델에는 <strong>bash 단독이 더 싸다</strong>(빼라)</li>
+<li><strong>계획</strong> → 강한 모델에서는 정확도 <strong>불변</strong>, 비용만 절감(효과가 다르다)</li>
+<li><strong>컨텍스트 관리</strong> → 유일하게 “넣어라”, 단 <strong>예산이 빠듯할 때만</strong></li>
+</ul>
+<p>🎯 <strong><a href="../sources/sol-pi" class="internal internal-link" data-slug="sources/sol-pi">SoL-Pi</a> 도 같은 형태다</strong> — 다수 환경에서 <strong>살아남은 것만 4개</strong>다. 무엇을 추가할지 설계한 게 아니라 <strong>무엇이 죽는지 관찰</strong>했다.
+🎯 <strong><a href="../sources/opensre" class="internal internal-link" data-slug="sources/opensre">opensre</a> 도 같은 방향이다</strong> — <em>“AI SRE remains unsolved”</em> 로 <strong>주장 자체를 뺐다.</strong>
+📌 <strong>축의 성숙 신호: 기능 추가 경쟁이 아니라 절제 경쟁으로 넘어갔다.</strong></p>
+<h2 id="-그런데-구현과-근거가-반대편에-있다">🔴 그런데 구현과 근거가 반대편에 있다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-그런데-구현과-근거가-반대편에-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>★ 많은 쪽:    harness-sdk 7,345 · pi-agent-harness 106,058   → 벤치 0개
+근거 있는 쪽:  Harness-Design-Empirical (176설정)              → 🔴 코드 없음
+              SoL-Pi (수치 범위 제시)                          → ✅ 코드 ★2,185
+</code></pre>
+<p>🎯 <strong>가장 엄격하게 측정한 논문이 재현 코드를 안 냈고, 가장 널리 쓰이는 SDK는 측정치가 없다.</strong> → <a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a> 가 양쪽에서 절반씩만 지어졌다.
+📌 <strong>볼트가 쓸 수 있는 조합은 하나다</strong>: <a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a> 의 결론을 <strong>판정 기준</strong>으로 삼고, <a href="../sources/sol-pi" class="internal internal-link" data-slug="sources/sol-pi">SoL-Pi</a> 의 코드를 <strong>구현 참조</strong>로 읽고, <a href="../sources/harness-sdk" class="internal internal-link" data-slug="sources/harness-sdk">harness-sdk</a> 는 <strong>훅이 그 결론을 표현할 수 있는지</strong>로만 평가한다.</p>
+<h2 id="내게-적용되는-것-즉시">내게 적용되는 것 (즉시)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#내게-적용되는-것-즉시" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>✅ <strong>결론 ②를 볼트 인제스트 규칙으로 승격했다</strong> → <em>“큰 파일은 모델에게 던지기 전에 <code>grep</code>/<code>sed</code>/헤딩 스캔으로 규칙기반 축소를 먼저 한다.”</em>
+🎯 <strong>오늘 raw.md(454KB · 375행) 처리에서 실제로 그 순서를 썼다</strong> — 전문 로드 대신 <strong>헤딩 맵 → 해당 구간(196~375행)만</strong>. <strong>경험이 아니라 근거가 생겼다.</strong>
+✅ <strong>결론 ④도 내 방식을 지지한다</strong> — bash 중심 작업.</p>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>미해결 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>① 층 사이의 상호작용을 아무도 재지 않았다.</strong> 학습루제 내재화(<a href="../sources/neohorse-1-4b" class="internal internal-link" data-slug="sources/neohorse-1-4b">NeoHorse-1-4B</a>)와 추론 시 컨텍스트 관리를 <strong>같이 쓰면</strong> 어떻게 되는가.
+<strong>② <a href="../sources/harness-sdk" class="internal internal-link" data-slug="sources/harness-sdk">harness-sdk</a> 훅이 결론 ②(규칙기반 생략 → LLM 요약 순서)를 강제할 수 있는가</strong> — 미확인.
+<strong>③ 이 축의 결론이 최신 고난도 과제에서 유지되는가</strong> 🔴 — <a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a> 은 <strong>Terminal-Bench 2.1</strong> 을 썼고, <a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a> 는 <strong>TB 2.1 ↔ TB 4.0 에서 20점 갈린다</strong>는 것을 보여줬다. <strong>하네스 결론의 세대 일반화가 미검증이다.</strong>
+<strong>④ 이 축의 급등 원인이 <a href="../concepts/선발창-누락" class="internal internal-link alias" data-slug="concepts/선발창-누락">선발창-누락</a> 의 421 업보트 논문일 가능성</strong> — 원인을 못 받고 결과만 봤다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 2026-09-19 — <strong>세 번째 독립 분해: 부품 목록은 수렴, 중요도 서열은 불일치</strong> → <a href="../sources/modularrsi" class="internal internal-link" data-slug="sources/modularrsi">ModularRSI</a></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>5모듈(Agent Loop · Tool Use · Observation Mgmt · Context Mgmt · Task Completion Detection) 단일 진화(TB2.0): Agent Loop Acc 최대(+2.99) · <strong>Observation Mgmt 스텝 −35%</strong>(= <a href="../sources/sol-pi" class="internal internal-link" data-slug="sources/sol-pi">SoL-Pi</a> 관측 처리와 일치) · 🔴 <strong>Context Mgmt Acc 최저</strong>(+1.87) — <a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a> “컨텍스트 관리 1위”와 긴장(조건 차이로 읽음, 추정).
+🎯 <strong>예산을 맞춘 AHE·Meta-Harness 재현은 기준선 +1점 안팎</strong> — “벤치 위에서 진화시키면 벤치에 맞춰진다”의 첫 통제 증거.
+🆕 <strong>온라인 RL 층</strong>: <a href="../sources/agent-lightning" class="internal internal-link" data-slug="sources/agent-lightning">agent-lightning</a> 은 하네스를 RL 환경 그 자체로 쓴다 → <a href="../concepts/하네스형-에이전틱-rl" class="internal internal-link alias" data-slug="concepts/하네스형-에이전틱-rl">하네스형-에이전틱-RL</a> 신설. 새 소축 = <strong>단위 문제</strong>(롤아웃당 2.41 샘플).</p>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/modularrsi" class="internal internal-link" data-slug="sources/modularrsi">ModularRSI</a></li>
+<li><a href="../sources/agent-lightning" class="internal internal-link" data-slug="sources/agent-lightning">agent-lightning</a></li>
+<li><a href="../concepts/하네스형-에이전틱-rl" class="internal internal-link alias" data-slug="concepts/하네스형-에이전틱-rl">하네스형-에이전틱-RL</a></li>
+<li><a href="../sources/neohorse-1-paper" class="internal internal-link" data-slug="sources/neohorse-1-paper">NeoHorse-1-Paper</a></li>
+<li><a href="../sources/harness-design-empirical" class="internal internal-link" data-slug="sources/harness-design-empirical">Harness-Design-Empirical</a></li>
+<li><a href="../sources/sol-pi" class="internal internal-link" data-slug="sources/sol-pi">SoL-Pi</a></li>
+<li><a href="../sources/harness-sdk" class="internal internal-link" data-slug="sources/harness-sdk">harness-sdk</a></li>
+<li><a href="../sources/neohorse-1-4b" class="internal internal-link" data-slug="sources/neohorse-1-4b">NeoHorse-1-4B</a></li>
+<li><a href="../sources/neohorse-1-9b" class="internal internal-link" data-slug="sources/neohorse-1-9b">NeoHorse-1-9B</a></li>
+<li><a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a></li>
+<li><a href="../sources/opensre" class="internal internal-link" data-slug="sources/opensre">opensre</a></li>
+<li><a href="../concepts/rsi-프레이밍" class="internal internal-link alias" data-slug="concepts/rsi-프레이밍">RSI-프레이밍</a></li>
+<li><a href="../concepts/선발창-누락" class="internal internal-link alias" data-slug="concepts/선발창-누락">선발창-누락</a></li>
+<li><a href="../concepts/검사가능성-공사" class="internal internal-link alias" data-slug="concepts/검사가능성-공사">검사가능성-공사</a></li>
+<li><a href="../concepts/측정도구-먼저-반증" class="internal internal-link alias" data-slug="concepts/측정도구-먼저-반증">측정도구-먼저-반증</a></li>
+<li><a href="../concepts/에이전트축-분기" class="internal internal-link alias" data-slug="concepts/에이전트축-분기">에이전트축-분기</a></li>
+<li><a href="../sources/harness-handbook" class="internal internal-link" data-slug="sources/harness-handbook">Harness-Handbook</a></li>
+<li><a href="../sources/deepseek-v4.1-flash" class="internal internal-link" data-slug="sources/deepseek-v4.1-flash">DeepSeek-V4.1-Flash</a></li>
+</ul>
+<h2 id="-2026-09-30--하루치-논문의-60가-하네스다-그리고-두-건은-제목에-그-단어가-있다">🏆 2026-09-30 — <strong>하루치 논문의 60%가 하네스다. 그리고 두 건은 제목에 그 단어가 있다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-30--하루치-논문의-60가-하네스다-그리고-두-건은-제목에-그-단어가-있다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>소스                        층                         제목에 harness  근거 상태
+──────────────────────────────────────────────────────────────────────────────
+[[Raven]]                   하네스 자동생성·진화(메타)   ✅ &quot;Harness of        🔴 수치 0개
+                                                          Harnesses&quot;
+[[MaLiang-Harness]]         생성물 검증 루프            ✅ &quot;MaLiang-Harness&quot;  ✅ 5개
+[[Omni-IO-Skills]]          모달리티 커버리지 확장      ✅ &quot;Agent Harness&quot;    ✅ 7개(최다)
+                                                          (초록)
+[[OpenShell]]  (GitHub)     격리·감사 런타임            —                    🔴 수치 0개
+[[paperclip]]  (GitHub)     조직·예산 집행              —                    🔴 수치 0개
+</code></pre>
+<p>🎯 <strong>논문 5건 중 3건(60%) · 배치 13건 중 5건(38%).</strong> 09-18 배치가 <strong>31%(4/13)</strong> 로 이 축을 열었고, 09-16 <em>“모델 위 계층”</em> · 09-17 <em>“실행 통제”</em> 에 이어 <strong>여섯 배치 연속 같은 방향</strong>이며 <strong>비중은 최고치</strong>다.</p>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 오늘 축이 위아래로 동시에 늘어났다 — 이게 이번 관측의 요점이다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-18에 이 축이 갈린 네 층(SDK 구현 · 자동탐색 · 대조실험 · 학습루프)은 <strong>전부 “하네스를 어떻게 설계하나”</strong> 였다. 오늘 붙은 것은 <strong>그 위와 아래</strong>다:</p>
+<ul>
+<li><strong>위(메타)</strong>: <a href="../sources/raven" class="internal internal-link" data-slug="sources/raven">Raven</a> — 하네스를 <strong>사람이 설계하지 않고 자동 생성·진화</strong>시킨다. 단위를 <em>“model—harness pair”</em> 로 재정의한다.</li>
+<li><strong>아래(바닥)</strong>: <a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a> — 그 하네스가 <strong>셸을 만질 때의 격리·감사</strong>. NVIDIA가 Rust로.
+📌 <strong>즉 이 축은 더 이상 “층이 몇 개인가”의 문제가 아니라 “스택”이다.</strong> 09-18에 볼트는 <em>“같은 축 안에서 층이 갈렸다”</em> 고 적었다. 오늘은 <strong>갈린 층들이 수직으로 쌓였다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 축의 정의가 오늘 확장됐다 — 정확도·비용 → <strong>커버리지</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>이 페이지의 한 줄은 <em>“모델을 바꾸지 않고 감싸는 층만 바꿔서 <strong>정확도·비용</strong>을 움직인다”</em> 였다. <a href="../sources/omni-io-skills" class="internal internal-link" data-slug="sources/omni-io-skills">Omni-IO-Skills</a> 는 <strong>능력 자체(입력 지원 모달리티)</strong> 를 움직인다 — GPT-5.6 Sol <strong>40.00%→100%</strong> · Claude Sonnet 5 <strong>38.89%→100%</strong>(볼트 arXiv 원문 대조 확인).
+🔴 <strong>단 100%의 의미를 좁혀 읽어야 한다</strong> — <em>입력 수용률</em>이고 완주율이 아니다. 품질 축(SQCS)은 <strong>26.99→74.94 · 27.82→77.78</strong> 로 100%가 아니다.
+📌 <strong>같은 날 <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 이 47일 가중치 정지 상태로 하루 DL +175,891</strong> 을 기록했다. <strong>모델이 멈춘 동안 위층이 능력을 늘린다</strong>는 주장과 <strong>모델이 멈춘 동안에도 수요가 유지된다</strong>는 관측이 같은 배치에 있다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 축의 결론이 또 &quot;덜&quot;이다 — 오늘 세 소스가 서로 다른 층에서 같은 형태로 말했다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>09-18 결론은 <em>“더 정교하게가 아니라 ‘덜’”</em> 이었다. 오늘:</p>
+<ul>
+<li><a href="../sources/simple-wam" class="internal internal-link" data-slug="sources/simple-wam">Simple-WAM</a>(로봇 정책): 이득이 <strong>첫 디노이징 스텝에서 거의 전부</strong> — <em>“the benefit comes from <strong>preparing</strong> the future, not <strong>generating</strong> it.”</em> 다단계 디노이징 → <strong>1회 순전파</strong>.</li>
+<li><a href="../sources/panovln" class="internal internal-link" data-slug="sources/panovln">PanoVLN</a>(내비게이션): 파노라마로 <strong>입력을 늘려도 이득이 제한적</strong>이고, <strong>시각 토큰을 늘리지 않고</strong> 기하+의미를 결합해야 이득이 난다.</li>
+<li><a href="../sources/omni-io-skills" class="internal internal-link" data-slug="sources/omni-io-skills">Omni-IO-Skills</a>(에이전트): <strong>모델을 갱신하지 않고</strong> Skill 층으로 모달리티를 늘린다.
+🏆 <strong>세 층(로봇 정책 · 센서 소비 · 에이전트 능력)에서 같은 형태의 결론이 나왔다: 자원을 더하는 것이 아니라 자원의 어느 부분이 일하는지를 찾는 것.</strong> 볼트가 이 축에서 본 가장 강한 수렴이다.</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 이 축의 근거 상태가 나쁘다 — 5건 중 3건이 수치 0개 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/raven" class="internal internal-link" data-slug="sources/raven">Raven</a>(수치 0개 · reliability <strong>low</strong>) · <a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a>(능력 수치 0개) · <a href="../sources/paperclip" class="internal internal-link" data-slug="sources/paperclip">paperclip</a>(조정·절감 수치 0개, 4배치 연속). ✅ 수치가 있는 것은 <a href="../sources/maliang-harness" class="internal internal-link" data-slug="sources/maliang-harness">MaLiang-Harness</a>·<a href="../sources/omni-io-skills" class="internal internal-link" data-slug="sources/omni-io-skills">Omni-IO-Skills</a> 둘뿐이다.
+🎯 <strong>그리고 관심은 근거와 반대로 쏠렸다</strong> — upvote 1위 <a href="../sources/raven" class="internal internal-link" data-slug="sources/raven">Raven</a>(254)이 수치 0개, 수치 최다 <a href="../sources/omni-io-skills" class="internal internal-link" data-slug="sources/omni-io-skills">Omni-IO-Skills</a>(7개)가 최하위권(57) → <a href="../concepts/관심-검증-역상관" class="internal internal-link alias" data-slug="concepts/관심-검증-역상관">관심-검증-역상관</a>(오늘 신설).
+📌 <strong>축이 커지는 속도가 축의 검증 속도를 앞지른다.</strong> 6배치 연속 상승하는 축에서 근거 없는 주장의 비중이 줄지 않는다면, <strong>이 축의 성장 자체가 신호가 아니라 유행일 가능성</strong>을 배제할 수 없다. ⬜ 축 내 소스의 수치 보유율을 배치별로 추적할 필요(actionable 등록).</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-10-01--축-비율-하락513--313이지만-파라미터-고정-순수-사례가-처음-왔다">🔄 2026-10-01 — 축 비율 하락(5/13 → 3/13)이지만 <strong>“파라미터 고정” 순수 사례가 처음 왔다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-01--축-비율-하락513--313이지만-파라미터-고정-순수-사례가-처음-왔다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>오늘 하네스 계열: <strong><a href="../sources/openrig" class="internal internal-link" data-slug="sources/openrig">openrig</a></strong>(Claude Code + Codex 를 tmux/YAML 로 묶음) · <strong><a href="../sources/openclaw" class="internal internal-link" data-slug="sources/openclaw">openclaw</a></strong>(크로스 OS 개인 어시스턴트) · <strong><a href="../sources/evoduet" class="internal internal-link" data-slug="sources/evoduet">EvoDuet</a></strong>(파라미터 고정 루프) = <strong>3/13 = 23%</strong>. 09-30 의 <strong>38%(최고치)</strong> 에서 하락.</li>
+<li>🏆 <strong><a href="../sources/evoduet" class="internal internal-link" data-slug="sources/evoduet">EvoDuet</a> 은 이 축의 가장 순수한 사례다 — 학습이 0이다.</strong> <em>“co-evolves solutions and search queries with <strong>fixed model parameters</strong>”</em>. 검색 게이트(신규 검색 / 기존 재사용 / 건너뛰기 3분기) + 내부 루프(쿼리 정제·문서 순위화) + 외부 루프(병렬 후보 생성·결과 기록)만으로 <strong>OpenEvolve 발견 이득 61.3→82.3%</strong>(Gemini-3.8-Flash).
+<ul>
+<li>🔴 <strong>단 모델 의존</strong>: Qwen3.5-9B 는 <strong>이득 없음</strong>(저자 명시). 즉 <em>“하네스만으로 된다” 가 아니라 “충분히 좋은 모델 위에서 하네스가 작동한다”</em> 다 → <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a>.</li>
+</ul>
+</li>
+<li>🔴 <strong>볼트 한계가 이 축에서 가장 뼈아프다</strong>: <a href="../sources/openrig" class="internal internal-link" data-slug="sources/openrig">openrig</a> 은 <strong>3일 연속 배달</strong>이고 볼트 자신이 Claude Code 기반인데 <strong>README 도 안 열었고 설치도 안 했다</strong>(코드 실행 <strong>13배치 연속 0건</strong>) → <a href="../concepts/유예-은폐" class="internal internal-link alias" data-slug="concepts/유예-은폐">유예-은폐</a> 규칙 3 강제 승격 대상.</li>
+</ul>
+<h2 id="관련-페이지-추가">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../sources/evoduet" class="internal internal-link" data-slug="sources/evoduet">EvoDuet</a> · <a href="../sources/openrig" class="internal internal-link" data-slug="sources/openrig">openrig</a> · <a href="../sources/openclaw" class="internal internal-link" data-slug="sources/openclaw">openclaw</a> · <a href="../concepts/유예-은폐" class="internal internal-link alias" data-slug="concepts/유예-은폐">유예-은폐</a> · <a href="../concepts/자기제한-명시" class="internal internal-link alias" data-slug="concepts/자기제한-명시">자기제한-명시</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-10-02--축이-아래로-한-층-더-자랐고-층들이-서로를-문서로-지목했다">🏆 2026-10-02 — <strong>축이 아래로 한 층 더 자랐고, 층들이 서로를 문서로 지목했다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-02--축이-아래로-한-층-더-자랐고-층들이-서로를-문서로-지목했다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🆕 <strong>최하층 추가: &quot;커널 생성&quot;</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>지금까지 이 축은 <strong>위로</strong> 자랐다(09-18 4층: SDK·자동탐색·대조실험·학습루프 → 09-30 <a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a> “격리·감사” 층). 오늘 <a href="../sources/tilelang" class="internal internal-link" data-slug="sources/tilelang">TileLang</a> 이 <strong>그 아래</strong>로 붙었다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>층</th><th>소스</th><th>질문</th></tr></thead><tbody><tr><td>생성·진화</td><td><a href="../sources/raven" class="internal internal-link" data-slug="sources/raven">Raven</a></td><td>하네스를 <strong>만든다</strong></td></tr><tr><td>조직·예산</td><td><a href="../sources/paperclip" class="internal internal-link" data-slug="sources/paperclip">paperclip</a></td><td>하네스를 <strong>운영한다</strong></td></tr><tr><td>하네스 본체</td><td><strong><a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a></strong> · <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></td><td>모델을 <strong>감싼다</strong></td></tr><tr><td>격리·감사</td><td><strong><a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a></strong></td><td>셸을 <strong>막는다</strong></td></tr><tr><td>🆕 <strong>커널 생성</strong></td><td><strong><a href="../sources/tilelang" class="internal internal-link" data-slug="sources/tilelang">TileLang</a></strong></td><td>행렬곱이 <strong>어느 명령어로 내려가나</strong></td></tr><tr><td>📌 <strong>이 축은 위로만 자라는 줄 알았는데 아래로도 자란다.</strong> 🎯 <strong>그리고 최하층은 “에이전트”와 무관해 보이지만 무관하지 않다</strong> — 로컬 추론 비용이 하네스 선택의 제약 조건이다.</td><td></td><td></td></tr></tbody></table></div>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 <strong>첫 관측: 층들이 서로를 문서로 지목한다 (분석자가 묶은 것이 아니다)</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a> README 가 <strong>권한 시스템을 의도적으로 내장하지 않고</strong>, 경계가 필요하면 <strong>외부 샌드박스 3패턴</strong>(Gondolin 마이크로VM · Docker · <strong><a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a></strong>)을 안내한다.
+🏆 <strong>같은 날 트렌딩 3위(OpenShell)와 10위(pi)가 의존 관계로 연결돼 있다.</strong> 📌 <strong>지금까지 볼트는 두 층을 <em>분석자로서</em> 묶었다. 오늘은 벤더가 스스로 묶었다</strong> — 축이 볼트의 해석 틀이 아니라 <strong>생태계의 실제 구조</strong>임을 뒷받침한다.
+🔴 <strong>추가 관측</strong>: <a href="../sources/context-mode" class="internal internal-link" data-slug="sources/context-mode">context-mode</a>·<a href="../sources/openrig" class="internal internal-link" data-slug="sources/openrig">openrig</a> topics 가 <code>pi-agent</code>/<code>codex-cli</code> 를 명시 ⇒ <strong>pi 는 볼트가 수집한 레포들의 지목 대상이었으나 본체가 늦게 왔다.</strong></p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <strong>같은 날 &quot;보안&quot;이 두 층에서 다르게 다뤄졌다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>소스</th><th>보안을 어디서 막나</th><th>구체 수단</th></tr></thead><tbody><tr><td><a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a></td><td><strong>런타임</strong></td><td>커널 계측 · 정책 형식 검증 · 자격증명 격리</td></tr><tr><td><a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a></td><td><strong>설치 시점</strong></td><td>버전 핀 · <strong><code>min-release-age=2</code></strong> · <code>--ignore-scripts</code> · <code>npm audit signatures</code></td></tr><tr><td>📌 <strong>같은 위협(공급망·실행)에 대해 한쪽은 “돌 때 막고” 한쪽은 “들어올 때 막는다”.</strong> 🎯 <strong>배타적이지 않고 곱해진다</strong> — 이것이 이 축의 실용적 교훈이다.</td><td></td><td></td></tr></tbody></table></div>
+</div>
+</blockquote>
+<h3 id="관련-페이지-추가-1">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../sources/tilelang" class="internal internal-link" data-slug="sources/tilelang">TileLang</a> — 🆕 <strong>최하층</strong> · <a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a> — 🏆 <strong>OpenShell 을 직접 지목</strong> · <a href="../sources/openshell" class="internal internal-link" data-slug="sources/openshell">OpenShell</a> · <a href="../sources/ponytail" class="internal internal-link" data-slug="sources/ponytail">ponytail</a></li>
+<li><a href="../concepts/에이전트-스킬" class="internal internal-link alias" data-slug="concepts/에이전트-스킬">에이전트-스킬</a> — 오늘 3소스 동시 관측 · <a href="../sources/agspec" class="internal internal-link" data-slug="sources/agspec">AgSpec</a> — 추론 효율 축</li>
+</ul>
+<h2 id="-2026-10-05--로보틱스-사례-첫-진입--같은-날-세-논문이-점수는-모델하네스-를-전제했다">🏆 2026-10-05 — <strong>로보틱스 사례 첫 진입 + 같은 날 세 논문이 “점수는 모델×하네스” 를 전제했다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-05--로보틱스-사례-첫-진입--같은-날-세-논문이-점수는-모델하네스-를-전제했다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>① 로보틱스</strong>: <a href="../sources/motormind" class="internal internal-link" data-slug="sources/motormind">MotorMind</a> — VLA 전용 학습 0 · 코딩 에이전트 0 · SAM3류 그라운딩 0 으로 LIBERO-PRO <strong>66.7%</strong>(기존 제로샷 최대 <strong>13.3%</strong> = <strong>5배</strong>) · 교란 <strong>53.8% vs 19.2%</strong> · 실기 xArm6 <strong>95%</strong>. <strong>같은 범용 VLM 을 쓰고 하네스만 바꿨다.</strong> 구조: <code>VLM = 중간 수준 행동 제안 / 저수준 = 결정적 제어 / 피드백 = 측정값 / 메모리 = 비동기 배경</code>.
+🔴 <strong>단 “제로샷”의 분모를 봐야 한다</strong> — 학습 비용이 <strong>설계 비용</strong>(역할별 프롬프트·그라운딩 절차)으로 이동했고 사라지지 않았다.</p>
+<p><strong>② 브라우징</strong>: <a href="../sources/hyperbrowsecomp" class="internal internal-link" data-slug="sources/hyperbrowsecomp">HyperBrowseComp</a> 가 점수를 <code>모델 × 브라우징 설정 3종(built-in / Exa / OWL)</code> 으로 낸다.
+<strong>③ 공학 모델링</strong>: <a href="../sources/simuverity" class="internal internal-link" data-slug="sources/simuverity">SimuVerity</a> 가 <code>게이트 3단 × 6차원</code> 으로 낸다.
+<strong>④ 벤더 자인</strong>: <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> 카드가 <em>“SWE-bench Pro·NL2Repo·QwenSWEBench 는 <strong>Claude Code 하네스</strong>로 평가”</em> 라 적는다.
+⚖️ <strong>서로 인용하지 않는 네 소스가 같은 날 같은 전제에 도달했다</strong> ⇒ 📌 <strong>“Claude Code 하네스로 평가”는 각주가 아니라 점수의 일부다.</strong></p>
+<ul>
+<li><a href="../sources/motormind" class="internal internal-link" data-slug="sources/motormind">MotorMind</a> · <a href="../sources/hyperbrowsecomp" class="internal internal-link" data-slug="sources/hyperbrowsecomp">HyperBrowseComp</a> · <a href="../sources/simuverity" class="internal internal-link" data-slug="sources/simuverity">SimuVerity</a> · <a href="../sources/qwen3.8-27b" class="internal internal-link" data-slug="sources/qwen3.8-27b">Qwen3.8-27B</a> · <a href="../concepts/복합지표-분해" class="internal internal-link alias" data-slug="concepts/복합지표-분해">복합지표-분해</a></li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-66" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#하네스-설계-축" data-for="하네스-설계-축">하네스 설계 축</a></li><li class="depth-1"><a href="#2026-09-18--한-배치에서-4건-네-층이-전부-다르다" data-for="2026-09-18--한-배치에서-4건-네-층이-전부-다르다">2026-09-18 — 한 배치에서 4건, 네 층이 전부 다르다</a></li><li class="depth-1"><a href="#-이-배치의-가장-강한-신호--독립된-두-방법이-같은-지점을-가리킨다" data-for="-이-배치의-가장-강한-신호--독립된-두-방법이-같은-지점을-가리킨다">🎯 이 배치의 가장 강한 신호 — 독립된 두 방법이 같은 지점을 가리킨다</a></li><li class="depth-1"><a href="#-이-축의-결론이-반직관적인-방향으로-모인다" data-for="-이-축의-결론이-반직관적인-방향으로-모인다">🔴 이 축의 결론이 반직관적인 방향으로 모인다</a></li><li class="depth-1"><a href="#-그런데-구현과-근거가-반대편에-있다" data-for="-그런데-구현과-근거가-반대편에-있다">🔴 그런데 구현과 근거가 반대편에 있다</a></li><li class="depth-1"><a href="#내게-적용되는-것-즉시" data-for="내게-적용되는-것-즉시">내게 적용되는 것 (즉시)</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#-2026-09-30--하루치-논문의-60가-하네스다-그리고-두-건은-제목에-그-단어가-있다" data-for="-2026-09-30--하루치-논문의-60가-하네스다-그리고-두-건은-제목에-그-단어가-있다">🏆 2026-09-30 — 하루치 논문의 60%가 하네스다. 그리고 두 건은 제목에 그 단어가 있다</a></li><li class="depth-1"><a href="#-2026-10-01--축-비율-하락513--313이지만-파라미터-고정-순수-사례가-처음-왔다" data-for="-2026-10-01--축-비율-하락513--313이지만-파라미터-고정-순수-사례가-처음-왔다">🔄 2026-10-01 — 축 비율 하락(5/13 → 3/13)이지만 “파라미터 고정” 순수 사례가 처음 왔다</a></li><li class="depth-1"><a href="#관련-페이지-추가" data-for="관련-페이지-추가">관련 페이지 추가</a></li><li class="depth-1"><a href="#-2026-10-02--축이-아래로-한-층-더-자랐고-층들이-서로를-문서로-지목했다" data-for="-2026-10-02--축이-아래로-한-층-더-자랐고-층들이-서로를-문서로-지목했다">🏆 2026-10-02 — 축이 아래로 한 층 더 자랐고, 층들이 서로를 문서로 지목했다</a></li><li class="depth-2"><a href="#관련-페이지-추가-1" data-for="관련-페이지-추가-1">관련 페이지 추가</a></li><li class="depth-1"><a href="#-2026-10-05--로보틱스-사례-첫-진입--같은-날-세-논문이-점수는-모델하네스-를-전제했다" data-for="-2026-10-05--로보틱스-사례-첫-진입--같은-날-세-논문이-점수는-모델하네스-를-전제했다">🏆 2026-10-05 — 로보틱스 사례 첫 진입 + 같은 날 세 논문이 “점수는 모델×하네스” 를 전제했다</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/rsi-프레이밍" class="internal">RSI 프레이밍 — 두 조직이 같은 달에 &quot;재귀적 자기개선&quot;을 미래형으로 썼다</a></li><li><a href="../concepts/관련성-판단-주체" class="internal">관련성 판단의 주체</a></li><li><a href="../concepts/관심-검증-역상관" class="internal">관심-검증 역상관 — 오늘 upvote 1위는 수치 0개였고, 수치 최다는 최하위였다</a></li><li><a href="../concepts/대립레시피-동시도착" class="internal">대립 레시피 동시 도착 — 반대되는 두 방법이 같은 날 오고, 둘 다 상대를 언급하지 않는다</a></li><li><a href="../concepts/복합지표-분해" class="internal">복합지표 분해 — open_issues_count 는 이슈 수가 아니다. 5배치의 &quot;이례적&quot; 판정이 집계 착오였다</a></li><li><a href="../concepts/선발창-누락" class="internal">선발창 누락 — &quot;당일 순위&quot;는 누적형 지표를 구조적으로 놓친다</a></li><li><a href="../concepts/스키마-준수-보장" class="internal">스키마 준수 보장 — &quot;every time&quot;은 어떤 층에서 오는가</a></li><li><a href="../concepts/에이전트-스킬" class="internal">에이전트 스킬 (Agent Skills)</a></li><li><a href="../concepts/하네스형-에이전틱-rl" class="internal">하네스형 에이전틱 RL — 하네스가 루프를 소유하고 트레이너는 요청–응답만 본다</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../domains/slam-3dgs" class="internal">로봇 SLAM / 3DGS / 카메라 누적 인사이트</a></li><li><a href="../entities/builderio" class="internal">Builder.io (BuilderIO)</a></li><li><a href="../entities/nvidia" class="internal">NVIDIA</a></li><li><a href="../entities/tokenrhythm" class="internal">TokenRhythm</a></li><li><a href="../entities/dream-num" class="internal">dream-num</a></li><li><a href="../entities/earendil-works" class="internal">earendil-works — 권한 모델 부재를 README에 먼저 적는 에이전트 하네스 조직</a></li><li><a href="../entities/tile-ai" class="internal">tile-ai — 커널 DSL 조직</a></li><li><a href="../" class="internal">Ducky's Note</a></li><li><a href="../sources/arex-2" class="internal">AREX-2 — 장기지평 반성 과제로 자기개선 에이전트 고도화 (AREX 후속편)</a></li><li><a href="../sources/beyond-memory-pos" class="internal">Beyond Memory (PoS) — 이력 보존·압축 대신 &quot;명시적 belief 상태&quot;를 유지하는 장기 에이전트 프레임워크</a></li><li><a href="../sources/evoduet" class="internal">EvoDuet — 웹검색과 과제풀이의 이중수준 공진화 (파라미터 고정)</a></li><li><a href="../sources/evoontology" class="internal">EvoOntology — '자기진화 온톨로지'의 이득 절반 이상은 데이터 의미가 아니라 모델별 접근 인터페이스에서 나왔다</a></li><li><a href="../sources/feyospace-v1" class="internal">Feyospace-v1 — 초록은 '우회'라 쓰고 목차는 'Jailbreak Tech'라 쓴다</a></li><li><a href="../sources/harness-design-empirical" class="internal">Harness-Design-Empirical — 배치에서 유일하게 대조 실험을 한 하네스 연구</a></li><li><a href="../sources/hexaanything" class="internal">HexaAnything — 로봇 상태를 코드로 꺼냈다는 주장. 그런데 개선폭이 초록에 한 자리도 없다</a></li><li><a href="../sources/hyperbrowsecomp" class="internal">HyperBrowseComp — 최고 모델 31.68%, 그런데 인간과 모델이 같이 맞춘 문항은 8개뿐이었다</a></li><li><a href="../sources/maliang-harness" class="internal">MaLiang-Harness — '코드가 돌아가는 것'과 '요청대로 보이는 것'을 분리해 이름을 붙였다(P2V gap)</a></li><li><a href="../sources/modularrsi" class="internal">ModularRSI — 하네스를 5모듈로 쪼개 따로 진화시켰다. 그리고 벤치를 진화에서 뺐다</a></li><li><a href="../sources/motormind" class="internal">MotorMind — 범용 VLM이 VLA 학습·코딩에이전트·그라운딩 도구 없이 제로샷 조작 5배를 냈다</a></li><li><a href="../sources/neohorse-1-4b" class="internal">NeoHorse-1-4B — 모델은 받았고 업보트 421의 모논문은 놓쳤다</a></li><li><a href="../sources/neohorse-1-9b" class="internal">NeoHorse-1-9B — 같은 레시피가 규모를 키우자 지시수행에서 비용을 치른다</a></li><li><a href="../sources/neohorse-1-paper" class="internal">NeoHorse-1 논문 — 하네스가 데이터 공장이다. 그리고 루프는 아직 한 바퀴다</a></li><li><a href="../sources/omni-io-skills" class="internal">Omni-IO Skills — 오늘 논문 중 수치가 가장 많은데 upvote는 가장 낮다</a></li><li><a href="../sources/on-policy-or-off-policy-distillation" class="internal">On-Policy or Off-Policy Learning? — &quot;온폴리시가 본질적으로 낫다&quot;를 통제 실험으로 반박</a></li><li><a href="../sources/opencreator" class="internal">OpenCreator (구 KrillinAI) — 17일 된 제품이 1년 9개월 된 레포의 별 12k를 물려받았다</a></li><li><a href="../sources/openshell" class="internal">NVIDIA/OpenShell — 벤더가 '샌드박스'를 Rust로 내놓았는데, 위협모델은 적지 않았다</a></li><li><a href="../sources/pageindex" class="internal">PageIndex — 관련성 판단을 검색기에서 모델로 옮긴 두 번째 독립 사례</a></li><li><a href="../sources/panovln" class="internal">PanoVLN — '더 넓게 보면 낫다'는 직관을 먼저 반증하고, 세 가지를 같이 바꿔야 이득이 난다고 보였다</a></li><li><a href="../sources/qwen-planner-agent" class="internal">Qwen-Planner-Agent — 모델과 하니스를 함께 진화시킨다는 주장, 그런데 점수가 하나도 없다</a></li><li><a href="../sources/qwen3.8-27b" class="internal">Qwen/Qwen3.8-27B — Qwen3.8-27B 베이스 원본 (image-text-to-text)</a></li><li><a href="../sources/rsiagent" class="internal">RSIAgent — '오픈 모델이 GPT-6를 넘었다'의 대부분은 RSI가 아니라 하네스 몫이다</a></li><li><a href="../sources/raven" class="internal">Raven — '하네스의 하네스'가 데일리 1위인데, 초록에 숫자가 한 개도 없다</a></li><li><a href="../sources/reacthuman" class="internal">ReactHuman — MLLM이 3건 중 1건의 위험을 오처리하고, 규모로 줄지 않는다</a></li><li><a href="../sources/sharpening-tax" class="internal">Sharpening Tax in Post-Training — RL 후처리가 커버리지를 깎는 비용을 지표화 (42케이스)</a></li><li><a href="../sources/simple-wam" class="internal">Simple-WAM — 이득이 '미래를 생성하는 것'이 아니라 '첫 디노이징 스텝'에서 거의 전부 나왔다</a></li><li><a href="../sources/simuverity" class="internal">SimuVerity — 제출 94.72% · 실행 86.47% · 공학자격 76.90% 인데 최종 점수는 42.86이었다</a></li><li><a href="../sources/sol-pi" class="internal">SoL-Pi — NVIDIA가 썼다. 그리고 코드 레포가 이미 ★2,185다</a></li><li><a href="../sources/stepaudio-3-music" class="internal">StepAudio 3 Music — ABC 악보로 먼저 편곡 계획을 쓰고 음악을 만든다</a></li><li><a href="../sources/tilelang" class="internal">TileLang — 커널을 파이썬으로 쓰는 DSL, 그리고 NOASSERTION 이 두 번째로 MIT 였다</a></li><li><a href="../sources/tracedance" class="internal">TraceDance — 프런티어 9종이 26.7%에 그친다. 과제는 끝내는데 과정이 나쁘다</a></li><li><a href="../sources/x-tree" class="internal">X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization — 스킬을 문맥이 아니라 가중치에</a></li><li><a href="../sources/agent-lightning" class="internal">Agent Lightning v1.0 — 하네스를 고정하고 모델을 하네스에 맞춰 RL한다. 그리고 수치는 이미지가 아니라 본문에 있었다</a></li><li><a href="../sources/ax" class="internal">ax (google/ax) — 에이전트를 쿠버네티스처럼 선언하는 오케스트레이터, 그런데 실행 기반은 '구글 공식 아님' 레포다</a></li><li><a href="../sources/browser-harness" class="internal">browser-harness — '쓸수록 느는 하네스'의 비용은 PR 큐에 쌓인다</a></li><li><a href="../sources/buzz" class="internal">block/buzz — 에이전트 권한을 플래그가 아니라 키로 모델링하면 감사 추적이 공짜로 나온다</a></li><li><a href="../sources/claude-code-action" class="internal">anthropics/claude-code-action — 수집기가 0행 읽은 README가 배치에서 가장 짧았다 (71행)</a></li><li><a href="../sources/docling" class="internal">docling — 문서를 LLM 입력으로 바꾸는 층이 ★67,310까지 왔다</a></li><li><a href="../sources/harness-sdk" class="internal">harness-sdk — '설정 없이 기본 내장'을 주장하는데 열린 이슈가 ★의 10%다</a></li><li><a href="../sources/higgsfield-repo" class="internal">higgsfield(레포) — 볼트가 8개월 추적해 온 영상 회사의 버려진 첫 제품이었다</a></li><li><a href="../sources/json-render" class="internal">json-render — '매번 스키마를 지킨다'의 실체는 사후 검증 + 재프롬프트 도구였다</a></li><li><a href="../sources/openrig" class="internal">openrig — 설치 전에 '내가 네 머신에서 뭘 바꾸는지' 를 먼저 말하는 하네스</a></li><li><a href="../sources/paperclip" class="internal">paperclipai/paperclip — 에이전트 관리 계층이 '회사'로 모델링되기 시작했다</a></li><li><a href="../sources/pi-agent-harness" class="internal">Pi Agent Harness — 권한 모델 부재를 README에 먼저 적는 코딩 에이전트 하네스</a></li><li><a href="../sources/ponytail" class="internal">DietrichGebert/ponytail — &quot;안 쓴 코드가 최고의 코드&quot; 행동 규범 자산</a></li><li><a href="../sources/substrate" class="internal">substrate — '에이전트는 대부분 놀고 있다'에 베팅한 밀도 런타임, 자기 수치 3종은 근거표가 없다</a></li><li><a href="../sources/superpowers" class="internal">obra/superpowers — 에이전트 스킬·소프트웨어 개발 방법론 프레임워크</a></li><li><a href="../sources/tradingview-mcp" class="internal">tradingview-mcp — Claude Code를 TradingView 데스크톱에 CDP로 붙이는 MCP. 도구는 78개가 아니라 84개이고, 열린 PR이 195건 쌓여 있다</a></li><li><a href="../sources/univer" class="internal">univer — 4년 된 오피스 SDK가 'AI 에이전트용 하네스'로 재포지셔닝됐다. 코드가 아니라 포지션이 새 것이다</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

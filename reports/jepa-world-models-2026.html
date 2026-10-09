@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEPA & World Models — 2026 리서치 리포트</title>
+<style>
+  :root{
+    --bg:#0a0e14; --bg2:#111827; --card:#131a26; --card2:#182233;
+    --line:#243247; --txt:#e6edf5; --dim:#93a4bd; --dimmer:#64748b;
+    --neon:#39ff9e; --neon2:#00d4ff; --purple:#a78bfa; --amber:#fbbf24; --pink:#f472b6;
+    --grad:linear-gradient(120deg,#39ff9e,#00d4ff);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",Pretendard,Roboto,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--neon2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  code{background:#0d1420;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:.86em;color:var(--neon)}
+  .mono{font-family:"SF Mono",ui-monospace,Menlo,monospace}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:6px;align-items:center;height:56px;flex-wrap:wrap}
+  nav .brand{font-weight:800;letter-spacing:.5px;margin-right:auto;font-size:15px}
+  nav .brand span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav a.navlink{color:var(--dim);font-size:13px;padding:7px 11px;border-radius:8px;transition:.15s}
+  nav a.navlink:hover{color:var(--txt);background:var(--card2);text-decoration:none}
+
+  /* hero */
+  header{position:relative;padding:88px 0 60px;overflow:hidden;border-bottom:1px solid var(--line)}
+  .glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;z-index:0}
+  .g1{width:480px;height:480px;background:#0d9b6c;top:-160px;right:-80px}
+  .g2{width:420px;height:420px;background:#0a6ca8;bottom:-200px;left:-120px}
+  header .wrap{position:relative;z-index:1}
+  .eyebrow{color:var(--neon);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase}
+  h1{font-size:clamp(34px,6vw,62px);line-height:1.05;font-weight:850;margin:14px 0 10px;letter-spacing:-1.5px}
+  h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--dim);font-size:clamp(15px,2.4vw,20px);max-width:760px}
+  .quote{margin-top:26px;padding:16px 20px;border-left:3px solid var(--neon);background:linear-gradient(90deg,rgba(57,255,158,.06),transparent);border-radius:0 10px 10px 0;color:var(--txt);font-size:15px}
+  .quote small{display:block;color:var(--dimmer);margin-top:6px}
+  .stats{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+  .stat b{display:block;font-size:30px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:var(--dimmer);font-size:12px;letter-spacing:.5px}
+
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--neon2);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+  h2{font-size:clamp(26px,4vw,40px);font-weight:820;margin:8px 0 8px;letter-spacing:-.5px}
+  h2 .n{color:var(--dimmer);font-weight:700;font-size:.6em;margin-right:10px}
+  .lead{color:var(--dim);max-width:820px;margin-bottom:28px;font-size:16px}
+  h3{font-size:20px;font-weight:750;margin:26px 0 10px}
+  p{color:#cfd8e6;margin-bottom:12px}
+  ul{margin:8px 0 14px 6px}
+  li{color:#cfd8e6;margin:6px 0;padding-left:20px;position:relative;list-style:none}
+  li::before{content:"▹";position:absolute;left:0;color:var(--neon)}
+
+  .grid{display:grid;gap:16px}
+  .g2c{grid-template-columns:1fr 1fr}
+  .g3c{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:820px){.g2c,.g3c{grid-template-columns:1fr}}
+
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s}
+  .box:hover{border-color:#31465f;transform:translateY(-2px)}
+  .box h4{font-size:16px;font-weight:750;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .box p{font-size:14px;color:var(--dim);margin:0}
+  .ico{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:16px;flex:none}
+
+  /* JEPA vs others interactive diagram */
+  .archwrap{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px}
+  .archtabs{display:flex;gap:6px;padding:8px;flex-wrap:wrap}
+  .archtabs button{flex:1;min-width:140px;background:transparent;border:1px solid var(--line);color:var(--dim);padding:12px;border-radius:10px;cursor:pointer;font-weight:700;font-size:14px;transition:.15s}
+  .archtabs button.on{color:#04110b;background:var(--grad);border-color:transparent}
+  .archtabs button:not(.on):hover{color:var(--txt);border-color:#31465f}
+  .archview{padding:26px 22px 10px}
+  .archview .desc{color:var(--dim);font-size:14px;margin-bottom:18px;min-height:44px}
+  .flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+  .node{border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;text-align:center;background:var(--bg2);min-width:96px;transition:.3s}
+  .node .t{font-weight:750;font-size:14px}
+  .node .s{font-size:11px;color:var(--dimmer)}
+  .node.enc{border-color:var(--neon2)}
+  .node.pred{border-color:var(--amber)}
+  .node.tgt{border-color:var(--neon)}
+  .node.dec{border-color:var(--pink)}
+  .arrow{color:var(--dimmer);font-size:22px;font-weight:700}
+  .node.pulse{box-shadow:0 0 0 0 rgba(57,255,158,.5);animation:pulse 1.6s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 12px rgba(57,255,158,0)}100%{box-shadow:0 0 0 0 rgba(57,255,158,0)}}
+
+  /* timeline */
+  .tl{position:relative;margin-top:20px;padding-left:6px}
+  .tl::before{content:"";position:absolute;left:12px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--neon),var(--neon2),transparent)}
+  .tlitem{position:relative;padding:0 0 22px 40px}
+  .tlitem::before{content:"";position:absolute;left:6px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2.5px solid var(--neon);box-shadow:0 0 10px rgba(57,255,158,.5)}
+  .tlitem .yr{color:var(--neon);font-weight:800;font-size:13px;font-family:"SF Mono",monospace}
+  .tlitem .nm{font-weight:750;font-size:16px}
+  .tlitem .dc{color:var(--dim);font-size:13.5px}
+
+  /* C-JEPA feature */
+  .cjepa{background:linear-gradient(135deg,rgba(167,139,250,.08),rgba(0,212,255,.05));border:1px solid #2b3b57}
+  .badgerow{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+  .badge{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--bg2)}
+  .badge.hot{color:var(--neon);border-color:rgba(57,255,158,.4)}
+  .metric{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+  .metric .m{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;flex:1;min-width:150px}
+  .metric .m b{display:block;font-size:26px;font-weight:820;color:var(--neon)}
+  .metric .m span{font-size:12px;color:var(--dimmer)}
+
+  /* paper explorer */
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+  #search{flex:1;min-width:220px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--txt);font-size:14px;outline:none}
+  #search:focus{border-color:var(--neon2)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
+  .chip{font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:var(--card);cursor:pointer;transition:.15s;user-select:none}
+  .chip:hover{color:var(--txt);border-color:#31465f}
+  .chip.on{color:#04110b;background:var(--grad);border-color:transparent}
+  .count{color:var(--dimmer);font-size:13px;margin-bottom:14px}
+  .papers{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;transition:.2s;opacity:0;transform:translateY(8px);animation:rise .4s forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .pcard:hover{border-color:#31465f;transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .pcard .ven{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .ven .v{font-size:11px;font-weight:800;letter-spacing:.5px;padding:4px 9px;border-radius:6px}
+  .ven .yr{color:var(--dimmer);font-size:11px;font-family:"SF Mono",monospace}
+  .pcard h4{font-size:15.5px;font-weight:750;line-height:1.35;margin-bottom:6px}
+  .pcard .au{color:var(--dimmer);font-size:12px;margin-bottom:10px}
+  .pcard .su{color:var(--dim);font-size:13px;flex:1;margin-bottom:12px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .tg{font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--bg2);border:1px solid var(--line);color:var(--purple)}
+  .links{display:flex;gap:8px;flex-wrap:wrap}
+  .lk{font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px;border:1px solid var(--line);color:var(--dim);transition:.15s;display:inline-flex;gap:5px;align-items:center}
+  .lk:hover{text-decoration:none;color:var(--txt);border-color:#31465f}
+  .lk.gh:hover{border-color:var(--neon);color:var(--neon)}
+  .lk.pg:hover{border-color:var(--neon2);color:var(--neon2)}
+  .lk.na{opacity:.4;cursor:not-allowed}
+  .vICLR{background:rgba(0,212,255,.15);color:var(--neon2)}
+  .vICML{background:rgba(251,191,36,.15);color:var(--amber)}
+  .vCVPR{background:rgba(244,114,182,.15);color:var(--pink)}
+  .vECCV{background:rgba(244,114,182,.12);color:var(--pink)}
+  .vAAAI{background:rgba(167,139,250,.15);color:var(--purple)}
+  .vNeurIPS{background:rgba(148,163,184,.15);color:#94a3b8}
+  .varXiv{background:rgba(57,255,158,.13);color:var(--neon)}
+  .vLandmark{background:rgba(148,163,184,.12);color:#b8c4d6}
+  .vICCV{background:rgba(244,114,182,.12);color:var(--pink)}
+  .vIndustry{background:rgba(251,191,36,.12);color:var(--amber)}
+  .cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  @media(max-width:820px){.cmp{grid-template-columns:1fr}}
+  .cmp .col{border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .cmp .col.jc{background:linear-gradient(160deg,rgba(57,255,158,.07),transparent);border-color:rgba(57,255,158,.3)}
+  .cmp .col.dc{background:linear-gradient(160deg,rgba(167,139,250,.08),transparent);border-color:rgba(167,139,250,.35)}
+  .cmp h4{font-size:17px;font-weight:800;margin-bottom:4px}
+  .cmp .col.jc h4{color:var(--neon)} .cmp .col.dc h4{color:var(--purple)}
+  .cmp .tag{font-size:11px;color:var(--dimmer);margin-bottom:12px;display:block}
+  .cmp li{font-size:13.5px}
+
+  .note{background:var(--card2);border:1px dashed var(--line);border-radius:12px;padding:16px 18px;color:var(--dim);font-size:13.5px;margin-top:22px}
+  .note b{color:var(--amber)}
+  footer{padding:44px 0 60px;color:var(--dimmer);font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .toTop{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--neon);display:grid;place-items:center;cursor:pointer;opacity:0;transition:.2s;z-index:40;font-size:18px}
+  .toTop.show{opacity:1}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand"><span>JEPA</span> × World Models</div>
+  <a class="navlink" href="#what">JEPA란</a>
+  <a class="navlink" href="#how">작동원리</a>
+  <a class="navlink" href="#family">계보</a>
+  <a class="navlink" href="#cjepa">C-JEPA</a>
+  <a class="navlink" href="#diffusion">Diffusion</a>
+  <a class="navlink" href="#papers">2026 논문</a>
+  <a class="navlink" href="#future">Future</a>
+</div></nav>
+
+<header>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap">
+    <div class="eyebrow">World Models · Self-Supervised Learning · 2026</div>
+    <h1>왜 지금 <span class="hl">JEPA</span>이고<br>왜 <span class="hl">월드모델</span>이 미래인가</h1>
+    <p class="sub">Yann LeCun은 "생성형·자기회귀(LLM)만으로는 진짜 지능에 도달할 수 없고, 세계를 예측하는 <b>월드모델</b>이 필요하다"고 말합니다. 그 핵심 설계가 바로 <b>JEPA(Joint Embedding Predictive Architecture)</b> — 픽셀이 아니라 <b>표현(representation) 공간에서 예측</b>하는 아키텍처입니다.</p>
+    <div class="quote">
+      "AI 시스템은 관찰로부터 세계가 어떻게 작동하는지 배우고, 예측하고, 계획할 수 있어야 한다. 그러려면 픽셀을 재생성하는 대신 <b>추상적 표현 공간에서 예측</b>해야 한다."
+      <small>— Yann LeCun, <i>A Path Towards Autonomous Machine Intelligence</i> (2022) 요지</small>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>5</b><span>주요 학회 (ICLR·ICML·CVPR·AAAI·NeurIPS)</span></div>
+      <div class="stat"><b>20+</b><span>수집한 2026 논문</span></div>
+      <div class="stat"><b>1</b><span>심층 분석: C-JEPA (LeCun 공저)</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- 1. WHAT -->
+<section id="what"><div class="wrap">
+  <div class="kicker">PART 1 · 개념과 철학</div>
+  <h2><span class="n">01</span>JEPA란 무엇인가</h2>
+  <p class="lead">JEPA = <b>Joint Embedding Predictive Architecture</b>. "입력의 일부(context)를 보고, 가려진 나머지(target)의 <b>표현</b>을 예측"하는 자기지도학습(SSL) 아키텍처입니다. 핵심은 <b>"픽셀·토큰을 복원하지 않는다"</b>는 점이에요.</p>
+
+  <div class="grid g3c">
+    <div class="box"><h4><span class="ico" style="background:rgba(0,212,255,.15)">🧭</span>철학</h4>
+      <p>세상은 픽셀 단위로는 예측 불가능하다(잎사귀의 정확한 흔들림, 군중의 개별 얼굴…). 그래서 <b>예측 불가능한 디테일은 버리고</b>, 추상적 표현 공간에서 예측한다. 이것이 인간이 세계를 이해하는 방식에 가깝다.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(251,191,36,.15)">⚡</span>핵심 기여</h4>
+      <p>생성형(재구성)·대조학습(negative pair)의 한계를 우회. 손으로 만든 데이터 증강 없이, <b>표현 공간의 예측 오차</b>만으로 의미론적·물리적으로 유용한 특징을 학습한다.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(57,255,158,.15)">🎯</span>왜 미래인가</h4>
+      <p>학습된 월드모델 안에서 <b>행동을 상상하며 계획(planning)</b>할 수 있다. 로봇 제어·자율주행·에이전트가 "머릿속 시뮬레이션"으로 미래를 내다보는 길을 연다.</p></div>
+  </div>
+
+  <h3>3가지 패러다임 비교</h3>
+  <div class="grid g3c">
+    <div class="box"><h4>🎨 Generative</h4><p><b>입력 공간에서 복원.</b> 오토리그레시브 LLM, 디퓨전. 모든 디테일을 예측하려다 예측 불가능한 정보에 용량을 낭비. <span class="mono">x → 모든 픽셀/토큰 재생성</span></p></div>
+    <div class="box"><h4>🔗 Contrastive</h4><p><b>양성/음성 쌍 비교.</b> SimCLR 등. 강력하지만 대량의 negative pair·증강 트릭에 의존, 붕괴(collapse) 방지가 까다로움.</p></div>
+    <div class="box" style="border-color:var(--neon)"><h4>🧠 JEPA <span class="badge hot" style="margin-left:auto">이 리포트</span></h4><p><b>표현 공간에서 예측.</b> target 인코더(EMA)의 표현을 predictor가 맞힘. 복원도 negative pair도 불필요. <span class="mono">enc(x) → 예측 → enc(y)</span></p></div>
+  </div>
+</div></section>
+
+<!-- 2. HOW -->
+<section id="how"><div class="wrap">
+  <div class="kicker">PART 1 · 구현</div>
+  <h2><span class="n">02</span>어떻게 구현되는가 <span style="font-size:.5em;color:var(--dimmer)">— 인터랙티브</span></h2>
+  <p class="lead">아래 탭을 눌러 세 아키텍처의 데이터 흐름을 비교해 보세요. JEPA의 핵심은 <b>Predictor</b>가 context 표현으로부터 target 표현을 맞히고, 손실은 <b>임베딩 공간의 거리</b>라는 점입니다.</p>
+
+  <div class="archwrap">
+    <div class="archtabs">
+      <button class="on" data-a="jepa">🧠 JEPA</button>
+      <button data-a="gen">🎨 Generative</button>
+      <button data-a="con">🔗 Contrastive</button>
+    </div>
+    <div class="archview">
+      <div class="desc" id="archdesc"></div>
+      <div class="flow" id="archflow"></div>
+    </div>
+  </div>
+
+  <div class="grid g2c" style="margin-top:22px">
+    <div class="box"><h4>구성 요소</h4>
+      <ul>
+        <li><b>Context Encoder</b> — 보이는 부분 x를 표현으로 인코딩</li>
+        <li><b>Target Encoder</b> — 가려진 부분 y를 표현으로 인코딩 (보통 context 인코더의 <b>EMA</b> 사본, stop-gradient)</li>
+        <li><b>Predictor</b> — context 표현 + 위치/latent z → target 표현을 예측</li>
+        <li><b>Loss</b> — 예측 표현과 실제 target 표현의 <b>L2 거리</b> 최소화</li>
+      </ul>
+    </div>
+    <div class="box"><h4>붕괴(collapse) 방지</h4>
+      <p style="color:#cfd8e6">자기 표현을 예측하면 "모두 상수"로 무너질 수 있음. 이를 막는 장치:</p>
+      <ul>
+        <li><b>비대칭 + EMA target + stop-gradient</b> (BYOL·I-JEPA 방식)</li>
+        <li><b>VICReg류 정규화</b> — 분산(variance)·공분산(covariance) 제약으로 표현 다양성 유지 (MC-JEPA)</li>
+        <li><b>마스킹 설계</b> — 충분히 큰/의미 있는 블록을 가려 shortcut 차단</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- 3. FAMILY -->
+<section id="family"><div class="wrap">
+  <div class="kicker">PART 1 · 계보</div>
+  <h2><span class="n">03</span>JEPA 패밀리 타임라인</h2>
+  <p class="lead">이미지 → 비디오 → 행동조건 월드모델 → 언어·멀티모달·이론으로 빠르게 확장되어 왔습니다.</p>
+  <div class="tl">
+    <div class="tlitem"><div class="yr">2022</div><div class="nm">LeCun 포지션 페이퍼</div><div class="dc">"자율 기계지능을 향한 길" — JEPA·H-JEPA·월드모델·에너지기반 모델의 청사진 제시.</div></div>
+    <div class="tlitem"><div class="yr">2023 · CVPR</div><div class="nm">I-JEPA</div><div class="dc">이미지에서 context 블록으로 여러 target 블록의 <b>표현</b>을 예측. 증강 없이 ViT로 강한 특징 학습. <a href="https://github.com/facebookresearch/ijepa" target="_blank">GitHub</a></div></div>
+    <div class="tlitem"><div class="yr">2024</div><div class="nm">V-JEPA</div><div class="dc">비디오의 시공간 영역을 마스킹해 latent 특징 예측. 동작·물리 이해가 창발. <a href="https://github.com/facebookresearch/jepa" target="_blank">GitHub</a></div></div>
+    <div class="tlitem"><div class="yr">2025</div><div class="nm">V-JEPA 2 / 2-AC</div><div class="dc">인터넷 규모 비디오로 학습한 월드모델 + <b>행동조건(action-conditioned)</b> 버전으로 로봇 <b>제로샷 플래닝</b>. <a href="https://github.com/facebookresearch/vjepa2" target="_blank">GitHub</a></div></div>
+    <div class="tlitem"><div class="yr">2026</div><div class="nm">확장의 해 — LLM·멀티모달·이론·객체중심</div><div class="dc">LLM-JEPA, VL-JEPA(언어), LeJEPA·Var-JEPA(이론/식별가능성), 그리고 <b>C-JEPA</b>(객체중심·인과)까지. 아래 논문 탐색기에서 확인하세요.</div></div>
+  </div>
+</div></section>
+
+<!-- 4. C-JEPA -->
+<section id="cjepa"><div class="wrap">
+  <div class="kicker">PART 2 · 심층 분석</div>
+  <h2><span class="n">04</span>C-JEPA 뜯어보기</h2>
+  <p class="lead">제공해주신 논문. <b>Causal-JEPA: Learning World Models through Object-Level Latent Interventions</b> — JEPA의 마스킹을 "이미지 패치"에서 "<b>객체(object) 단위</b>"로 끌어올려, 상호작용·인과 추론을 강제합니다.</p>
+
+  <div class="box cjepa">
+    <div class="badgerow">
+      <span class="badge hot">arXiv 2602.11389</span>
+      <span class="badge">Object-centric</span>
+      <span class="badge">Causal / Counterfactual</span>
+      <span class="badge">World Model</span>
+    </div>
+    <p style="color:#cfd8e6"><b>저자:</b> Heejeong Nam(Brown) · Quentin Le Lidec(NYU) · Lucas Maes(Mila) · <b>Yann LeCun(NYU)</b> · Randall Balestriero(Brown)</p>
+    <p style="color:var(--dim);font-size:14px;font-style:italic;border-left:2px solid var(--line);padding-left:14px;margin-top:12px">
+      "World models require robust relational understanding… object-centric representations are not sufficient to capture interaction-dependent dynamics. We propose C-JEPA, which extends masked joint embedding prediction from image patches to object-centric representations… creating counterfactual-like prediction queries that discourage shortcut solutions." — Abstract
+    </p>
+    <div class="metric">
+      <div class="m"><b>+20%</b><span>반사실적(counterfactual) 추론 정확도 (CLEVRER)</span></div>
+      <div class="m"><b>1%</b><span>패치기반 월드모델 대비 latent 입력 특징만 사용</span></div>
+      <div class="m"><b>8×</b><span>Push-T 제어에서 더 빠른 플래닝</span></div>
+    </div>
+  </div>
+
+  <div class="grid g2c" style="margin-top:18px">
+    <div class="box"><h4>🧭 철학 · 동기</h4>
+      <p style="color:#cfd8e6">객체를 슬롯으로 분리해도 "객체들이 <b>어떻게 상호작용하는지</b>"는 잘 못 배운다. C-JEPA는 <b>객체 하나의 상태를 가리고(mask)</b> 나머지 객체들로부터 추론하게 만든다 → "만약 이 객체가 없었다면?"에 가까운 <b>latent intervention(잠재 개입)</b> 효과가 생겨 shortcut을 막고 인과·상호작용 학습을 강제한다.</p></div>
+    <div class="box"><h4>⚡ 핵심 기여</h4>
+      <ul>
+        <li><b>객체 단위 마스킹</b> — 패치가 아닌 객체 슬롯을 가려 인과적 귀납 편향 부여</li>
+        <li><b>효율</b> — 패치 월드모델의 1% 특징으로 유사 성능, 훨씬 빠른 플래닝</li>
+        <li><b>추론력</b> — 반사실 추론 +20% (동일 구조 대비)</li>
+        <li><b>이론</b> — 객체 마스킹이 관측성(observability) 제어를 통해 유용한 귀납 편향을 만든다는 형식적 분석</li>
+      </ul></div>
+    <div class="box"><h4>🔧 구현 방식</h4>
+      <ul>
+        <li><b>객체중심 인코더</b>: VideoSAUR 또는 SAVi로 슬롯 표현 추출 (CLEVRER 7슬롯 중 0~4개 마스킹)</li>
+        <li>가려진 history 슬롯을 다른 슬롯들로부터 예측: <span class="mono">ẑτⁱ = Φ(z₀ⁱ) + eτ</span>, history/future 창에 걸쳐 <b>L2 거리</b> 최소화</li>
+        <li><b>인프라</b>: Stable-WorldModel + Stable-Pretraining 프레임워크 기반</li>
+        <li><b>벤치마크</b>: CLEVRER(시각 추론 VQA), Push-T(로봇 제어)</li>
+      </ul></div>
+    <div class="box"><h4>📊 결과 · 추후 과제</h4>
+      <ul>
+        <li><b>Push-T</b>: 88.67% 성공(6×128 토큰 ≈ 패치의 1%) vs DINO-WM 91.33%(196×384) — 근접 성능 + 8× 빠름</li>
+        <li><b>CLEVRER</b>: 전체 83.88% / 반사실 60.19% — SlotFormer·OCVP-Seq 상회</li>
+        <li><b>최적 마스킹</b>: VideoSAUR 4/7, SAVi 2/7</li>
+        <li><b>Future work</b>: (repo 공지 '26.6.30) 최신 stable-worldmodel/pretraining으로 사용성 개선 예정. 더 복잡한 실세계 상호작용·장기 플래닝으로 확장 여지.</li>
+      </ul></div>
+  </div>
+  <div class="links" style="margin-top:16px">
+    <a class="lk pg" href="https://hazel-heejeong-nam.github.io/cjepa/" target="_blank">🌐 Project Page</a>
+    <a class="lk" href="https://arxiv.org/abs/2602.11389" target="_blank">📄 arXiv</a>
+    <a class="lk gh" href="https://github.com/galilai-group/cjepa" target="_blank">⌨ GitHub</a>
+    <a class="lk" href="https://huggingface.co/HazelNam/CJEPA/tree/main" target="_blank">🤗 HuggingFace</a>
+  </div>
+</div></section>
+
+<!-- 5. DIFFUSION -->
+<section id="diffusion"><div class="wrap">
+  <div class="kicker">PART 3 · 생성형 축</div>
+  <h2><span class="n">05</span>World Model × Diffusion</h2>
+  <p class="lead">JEPA가 "잠재 공간에서 <b>예측</b>(비생성)"이라면, <b>Diffusion 월드모델</b>은 정반대 축 — 다음 프레임의 <b>전체 분포를 학습</b>하고 반복적 디노이징으로 <b>실제 픽셀을 렌더링</b>합니다. 그래서 직접 <b>플레이하거나 운전할 수 있는 시뮬레이터</b>가 나옵니다(GameNGen·Genie·GAIA·Cosmos).</p>
+
+  <div class="cmp">
+    <div class="col jc">
+      <h4>🧠 JEPA (예측형 · 비생성)</h4><span class="tag">I-JEPA · V-JEPA 2 · C-JEPA</span>
+      <ul>
+        <li>미래의 <b>잠재 임베딩</b>을 예측 (픽셀 복원 X)</li>
+        <li>예측 불가능한 디테일은 <b>버림</b> → 효율·추상화</li>
+        <li>손실 = 표현 공간 거리 (에너지기반/회귀)</li>
+        <li><b>강점</b>: 샘플효율 RL·플래닝·견고한 표현</li>
+        <li><b>약점</b>: 렌더링 불가(사람이 볼 영상 X)</li>
+      </ul>
+    </div>
+    <div class="col dc">
+      <h4>🎨 Diffusion (생성형 · 픽셀공간)</h4><span class="tag">DIAMOND · Genie 3 · GAIA-2 · Cosmos</span>
+      <ul>
+        <li>다음 프레임의 <b>전체 분포</b>를 학습·샘플링</li>
+        <li>반복 디노이징으로 <b>실제 영상 렌더링</b></li>
+        <li>"시각 디테일이 성능을 좌우"(DIAMOND)</li>
+        <li><b>강점</b>: 인터랙티브·고충실·데이터 생성</li>
+        <li><b>약점</b>: 무거움·느린 롤아웃·오차 누적</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>디퓨전 월드모델의 5대 분야</h3>
+  <div class="grid g3c">
+    <div class="box"><h4><span class="ico" style="background:rgba(167,139,250,.15)">🧪</span>Core · Theory</h4><p><b>DIAMOND</b>(WM 안에서 RL), <b>Diffusion Forcing</b>(next-token+디퓨전 통합), <b>History Guidance</b>(장기 일관성). 오차 누적을 길들이는 기반 레시피.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(251,191,36,.15)">🎮</span>Gaming · Interactive</h4><p><b>GameNGen</b>(DOOM 20FPS), <b>Genie 1/2/3</b>, <b>Oasis</b>·<b>Matrix-Game</b>·<b>Hunyuan-GameCraft</b> — 직접 플레이 가능한 뉴럴 게임엔진.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(244,114,182,.15)">🚗</span>Autonomous Driving</h4><p><b>GAIA-2</b>(Wayve), <b>Vista</b>·<b>GenAD</b>·<b>Drive-WM</b>·<b>MagicDriveDiT</b>·<b>DriveLaW</b>(CVPR’26) — 멀티뷰 주행 시나리오 생성·플래닝.</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(0,212,255,.15)">🤖</span>Robotics · Planning</h4><p><b>iVideoGPT</b>·<b>AdaWorld</b>·<b>VPP</b>·<b>Dreamer 4</b>·<b>NWM</b> — 영상 예측을 정책·플래닝으로. (NWM은 LeCun팀의 <i>디퓨전</i>판 월드모델)</p></div>
+    <div class="box"><h4><span class="ico" style="background:rgba(57,255,158,.15)">🌍</span>Foundation Models</h4><p><b>NVIDIA Cosmos</b>, <b>UniSim</b>, <b>Sora</b>(as world simulator), <b>Pandora</b> — 범용 물리세계 시뮬레이터 파운데이션.</p></div>
+    <div class="box" style="border-color:#31465f"><h4><span class="ico" style="background:rgba(148,163,184,.15)">🔀</span>수렴하는 흐름</h4><p>두 축은 경쟁이 아니라 <b>상보적</b>. 같은 Meta팀이 JEPA와 디퓨전(NWM) 둘 다 만들고, <b>하이브리드</b>(Pandora)·<b>잠재 디퓨전 WM</b>(GAIA-2)이 그 사이를 메우는 중.</p></div>
+  </div>
+</div></section>
+
+<!-- 6. PAPERS -->
+<section id="papers"><div class="wrap">
+  <div class="kicker">PART 4 · 2026 학회 서베이 (통합)</div>
+  <h2><span class="n">06</span>논문 탐색기 <span style="font-size:.5em;color:var(--dimmer)">— JEPA + Diffusion 통합</span></h2>
+  <p class="lead">JEPA·월드모델·디퓨전 논문을 한곳에. 아래에서 <b>패러다임(JEPA/Diffusion)</b>·<b>학회</b>·<b>카테고리</b> 필터와 <b>검색</b>을 조합하세요. GitHub 아이콘이 있으면 코드 공개 확인됨.</p>
+
+  <div class="controls">
+    <input id="search" type="text" placeholder="🔍 제목·저자·키워드 검색 (예: robot, LeCun, latent, driving)">
+  </div>
+  <div class="chips" id="pdchips"></div>
+  <div class="chips" id="venchips"></div>
+  <div class="chips" id="tagchips"></div>
+  <div class="count" id="count"></div>
+  <div class="papers" id="papers"></div>
+
+  <div class="note">
+    <b>2026 학회 타이밍 (7월 기준):</b> ICLR(4월)·AAAI(초)·CVPR(6월)·ICML(7월)은 프로시딩/포스터 공개 완료. <b>NeurIPS 2026(12월 시드니)은 아직 미개최</b>라 확정 목록 없음 — 해당 표기는 'pending'. 일부 라벨(예: VLA-JEPA→ECCV 2026)과 코드 공개 여부는 저자 repo/preprint 기준이라 최종 프로시딩에서 재확인 권장.
+  </div>
+</div></section>
+
+<!-- 7. FUTURE -->
+<section id="future"><div class="wrap">
+  <div class="kicker">PART 5 · 전망</div>
+  <h2><span class="n">07</span>앞으로의 Future Work</h2>
+  <div class="grid g2c">
+    <div class="box"><h4>🏗 계층적 · 다중시간 예측 (H-JEPA)</h4><p>여러 추상화 수준·시간 스케일에서 예측하는 계층 JEPA로 장기 플래닝. LeCun의 원래 청사진에서 아직 완전히 실현되지 않은 부분.</p></div>
+    <div class="box"><h4>🤖 행동조건 월드모델 · 로봇</h4><p>V-JEPA 2-AC, DINO-WM, VLA-JEPA 흐름 — latent action·제로샷 플래닝을 실세계 조작·자율주행으로 확장.</p></div>
+    <div class="box"><h4>🎲 불확실성 · 확률적 JEPA</h4><p>latent z를 통한 다봉(multimodal) 미래 표현. Var-JEPA·VJEPA(변분) 등 생성-예측 SSL을 잇는 이론화.</p></div>
+    <div class="box"><h4>🧩 객체중심 · 인과</h4><p><b>C-JEPA</b>가 연 방향 — 개입·반사실을 통한 상호작용 추론. 더 복잡한 장면·장기 인과로 확장.</p></div>
+    <div class="box"><h4>💬 언어 · 멀티모달 통합</h4><p>LLM-JEPA·VL-JEPA — 임베딩 공간 학습을 언어/비전-언어로 이식. 토큰 생성 없이 예측만으로 표현 학습.</p></div>
+    <div class="box"><h4>📐 이론적 보장</h4><p>JEPA 월드모델의 <b>일반화 바운드·식별가능성(identifiability)</b> — LeJEPA, generalization theory 논문들이 "언제 진짜 월드모델을 배우는가"를 규명 중.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div>JEPA & World Models — 2026 리서치 리포트 · 생성일 2026-07 · 데이터: arXiv · 학회 프로시딩 · GitHub</div>
+  <div>핵심 소스: <a href="https://github.com/galilai-group/cjepa" target="_blank">C-JEPA</a> · <a href="https://github.com/facebookresearch/vjepa2" target="_blank">V-JEPA 2</a></div>
+</div></footer>
+<div class="toTop" id="toTop">↑</div>
+
+<script>
+/* ---------- Architecture interactive ---------- */
+const ARCH={
+  jepa:{desc:"JEPA — context를 인코딩하고, Predictor가 latent z와 함께 target의 '표현'을 예측한다. 손실은 임베딩 공간의 L2 거리. 복원도 negative pair도 없음.",
+    nodes:[["x","context","enc pulse"],["→","",""],["Enc","context encoder","enc"],["→","",""],["Pred","predictor +z","pred pulse"],["→","",""],["≈","L2 loss","tgt"],["←","",""],["Enc*","target enc (EMA)","tgt"],["←","",""],["y","target","enc"]]},
+  gen:{desc:"Generative — 입력 y의 '모든 디테일'을 픽셀/토큰 공간에서 복원. 예측 불가능한 정보까지 맞히려다 용량을 낭비한다. (오토리그레시브 LLM · 디퓨전)",
+    nodes:[["x","context","enc"],["→","",""],["Enc","encoder","enc"],["→","",""],["Dec","decoder","dec pulse"],["→","",""],["ŷ","재생성 픽셀","dec"],["≈","pixel loss","dec"],["y","real y","enc"]]},
+  con:{desc:"Contrastive — 같은 것(positive)은 가깝게, 다른 것(negative)은 멀게. 강력하지만 대량 negative·증강에 의존하고 collapse 방지가 까다롭다.",
+    nodes:[["x₁","view A","enc pulse"],["→","",""],["Enc","encoder","enc"],["→","",""],["z₁","embed","tgt"],["↔","attract / repel","pred pulse"],["z₂","embed","tgt"],["←","",""],["Enc","encoder","enc"],["←","",""],["x₂","view B / neg","enc"]]}
+};
+function drawArch(k){
+  const a=ARCH[k];document.getElementById('archdesc').textContent=a.desc;
+  const f=document.getElementById('archflow');f.innerHTML='';
+  a.nodes.forEach(n=>{
+    if(n[0]==='→'||n[0]==='←'||n[0]==='↔'||n[0]==='≈'){const s=document.createElement('div');s.className='arrow';s.textContent=n[0];f.appendChild(s);return;}
+    const d=document.createElement('div');d.className='node '+(n[2]||'');d.innerHTML='<div class="t">'+n[0]+'</div><div class="s">'+n[1]+'</div>';f.appendChild(d);
+  });
+}
+document.querySelectorAll('.archtabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.archtabs button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');drawArch(b.dataset.a);
+});
+drawArch('jepa');
+
+/* ---------- Papers data ---------- */
+const P=[
+ {t:"jepa-wms: What Drives Success in Physical Planning with JEPA World Models?",a:"Meta FAIR",v:"ICLR",y:"2026",tags:["World-Model","Planning","JEPA-core"],s:"순수 예측손실만으로 embedding 공간에서 dynamics를 학습하는 'JEPA-WM' 레시피를 정식화. DINO-WM·V-JEPA-2-AC를 내비게이션·조작에서 상회.",x:"https://arxiv.org/abs/2512.24497",g:"https://github.com/facebookresearch/jepa-wms",p:""},
+ {t:"LLM-JEPA: LLMs Meet Joint Embedding Predictive Architectures",a:"Hai Huang, Yann LeCun, R. Balestriero",v:"ICLR",y:"2026",tags:["Multimodal","JEPA-core"],s:"임베딩 공간 목적함수를 LLM 사전/미세학습에 도입 — 비전에서처럼 embedding-space 학습이 input-space보다 우수함을 보임.",x:"https://arxiv.org/abs/2509.14252",g:"https://github.com/rbalestr-lab/llm-jepa",p:""},
+ {t:"VL-JEPA: Joint Embedding Predictive Architecture for Vision-Language",a:"Meta / academic",v:"ICLR",y:"2026",tags:["Multimodal","Video-JEPA"],s:"토큰을 생성하는 대신 target 텍스트의 연속 임베딩을 예측하는 비전-언어 모델. 1.6B로 CLIP/SigLIP2 상회(비디오 분류·검색).",x:"https://arxiv.org/abs/2512.10942",g:"",p:"https://iclr.cc/virtual/2026/poster/10006956"},
+ {t:"Learning Latent Action World Models In The Wild",a:"Q. Garrido, N. Ballas, Y. LeCun, M. Rabbat (Meta)",v:"ICML",y:"2026",tags:["Video-JEPA","World-Model","Planning"],s:"야생(in-the-wild) 비디오로 latent-action 월드모델 학습. 연속-제약 latent action이 VQ보다 실세계 행동 복잡성을 잘 포착; 알려진 행동↔latent 매핑을 범용 플래닝 인터페이스로.",x:"https://arxiv.org/abs/2601.05230",g:"",p:"https://icml.cc/virtual/2026/poster/65056"},
+ {t:"DINO-WM: World Models on Pre-trained Visual Features → Zero-shot Planning",a:"Gaoyue Zhou, Y. LeCun, Lerrel Pinto (NYU)",v:"ICML",y:"2025",tags:["World-Model","Planning"],s:"동결된 DINOv2 패치 특징 위에 월드모델을 세워 latent 공간에서 행동열을 최적화 → 보상·데모·역동역학 없이 제로샷 플래닝. (계보 랜드마크)",x:"https://arxiv.org/abs/2411.04983",g:"https://github.com/gaoyuezhou/dino_wm",p:"https://dino-wm.github.io/"},
+ {t:"VLA-JEPA: Enhancing Vision-Language-Action with Latent World Model",a:"ginwind et al.",v:"ECCV",y:"2026",tags:["World-Model","Multimodal"],s:"JEPA식 latent 월드모델을 VLA 정책에 주입 — LIBERO·SimplerEnv·실세계 조작에서 일반화/견고성 향상.",x:"https://arxiv.org/abs/2602.10098",g:"https://github.com/ginwind/VLA-JEPA",p:"https://ginwind.github.io/VLA-JEPA/"},
+ {t:"DriveLaW: Unifying Planning & Video Generation in a Latent Driving World Model",a:"Xia et al.",v:"CVPR",y:"2026",tags:["Planning","World-Model"],s:"자율주행에서 비디오 생성과 모션 플래닝을 공유 latent 공간에서 통합(DriveLaW-Video + DriveLaW-Act 디퓨전 플래너).",x:"",g:"",p:"https://openaccess.thecvf.com/content/CVPR2026/html/Xia_DriveLaW_Unifying_Planning_and_Video_Generation_in_a_Latent_Driving_CVPR_2026_paper.html"},
+ {t:"VLA-World: Predictive Imagination + Reflective Reasoning for Driving",a:"CVPR 2026 Findings",v:"CVPR",y:"2026",tags:["World-Model","Multimodal"],s:"예측적 상상과 반성적 추론을 통합해 운전 예지(foresight)를 높이는 VLA 월드모델.",x:"",g:"",p:"https://vlaworld.github.io/"},
+ {t:"Navigation World Models",a:"Amir Bar, G. Zhou, T. Darrell, Y. LeCun",v:"CVPR",y:"2025",tags:["World-Model","Planning"],s:"과거 프레임+내비 행동으로 미래 관측을 예측하는 제어가능 비디오 월드모델(Conditional Diffusion Transformer). (계보 랜드마크)",x:"https://arxiv.org/abs/2412.03572",g:"https://github.com/facebookresearch/nwm",p:"https://www.amirbar.net/nwm/"},
+ {t:"NextLat: Next-Latent Prediction Transformers Learn Compact World Models",a:"J. Teoh, M. Tomar, A. Krishnamurthy, A. Lamb, J. Langford",v:"AAAI",y:"2026",tags:["Theory","Planning","World-Model"],s:"next-token 예측에 자기지도 latent 예측을 더해 transformer 표현과 latent dynamics를 공동 학습 → 압축된 belief state, 최대 3.3× 빠른 self-speculative 디코딩.",x:"https://arxiv.org/abs/2511.05963",g:"https://github.com/JaydenTeoh/NextLat",p:"https://jaydenteoh.github.io/blog/2026/nextlat/"},
+ {t:"WorldRFT: Latent World Model Planning with Reinforcement Fine-Tuning",a:"AAAI 2026",v:"AAAI",y:"2026",tags:["Planning","World-Model"],s:"원시 이미지에서 통합 latent 월드모델 표현을 RL 미세조정으로 학습 — 재구성 기반 latent의 약한 3D 공간인지 문제를 궤적 플래닝에서 보완.",x:"",g:"",p:"https://ojs.aaai.org/index.php/AAAI/article/download/38149/42111"},
+ {t:"C-JEPA: Learning World Models through Object-Level Latent Interventions",a:"Heejeong Nam, Q. Le Lidec, L. Maes, Y. LeCun, R. Balestriero",v:"arXiv",y:"2026",tags:["JEPA-core","Theory","World-Model"],s:"⭐ 이 리포트 심층분석. 객체 단위 마스킹으로 인과·반사실 추론을 강제. +20% counterfactual, 패치 대비 1% 특징으로 플래닝.",x:"https://arxiv.org/abs/2602.11389",g:"https://github.com/galilai-group/cjepa",p:"https://hazel-heejeong-nam.github.io/cjepa/"},
+ {t:"A Generalization Theory for JEPA-Based World Models",a:"Jingyi Cui, Yisen Wang (PKU / Univ. Sydney)",v:"arXiv",y:"2026",tags:["Theory"],s:"JEPA 월드모델 최초의 일반화 바운드 — 조건부 스펙트럴 그래프 학습으로 사전학습 오차와 플래닝 후회(regret)를 연결.",x:"https://arxiv.org/abs/2606.27014",g:"",p:""},
+ {t:"When Does LeJEPA Learn a World Model?",a:"D. Klindt, Y. LeCun, R. Balestriero",v:"arXiv",y:"2026",tags:["Theory","JEPA-core"],s:"LeJEPA가 latent 변수를 선형 복원하는 수학적 조건을 규명 — 가우시안이 복원을 보장하는 유일 latent 분포임을 증명.",x:"https://arxiv.org/abs/2605.26379",g:"",p:"https://klindtlab.github.io/lejepa-identifiability/"},
+ {t:"LeWorldModel: Stable end-to-end JEPA from pixels",a:"L. Maes, Q. Le Lidec, Y. LeCun, R. Balestriero",v:"arXiv",y:"2026",tags:["JEPA-core"],s:"픽셀로부터 안정적으로 end-to-end 학습되는 joint-embedding predictive 월드모델.",x:"https://arxiv.org/abs/2603.19312",g:"",p:""},
+ {t:"VJEPA: Variational JEPA as Probabilistic World Models",a:"—",v:"arXiv",y:"2026",tags:["Theory","JEPA-core"],s:"JEPA를 확률적 월드모델로 보는 변분(variational) 정식화.",x:"https://arxiv.org/abs/2601.14354",g:"",p:""},
+ {t:"Var-JEPA: A Variational Formulation of the JEPA",a:"—",v:"arXiv",y:"2026",tags:["Theory","JEPA-core"],s:"예측적 SSL과 생성적 SSL을 잇는 JEPA의 변분 정식화.",x:"https://arxiv.org/pdf/2603.20111",g:"",p:""},
+ {t:"JEPA-based World Models for LiDAR Occupancy Completion & Forecasting",a:"—",v:"arXiv",y:"2026",tags:["World-Model"],s:"자율주행 LiDAR 점유(occupancy) 완성·예측을 위한 자기지도 JEPA 월드모델.",x:"https://arxiv.org/pdf/2602.12540",g:"",p:""},
+ {t:"JEDI: Joint Embedding Diffusion World Model for Online Model-Based RL",a:"—",v:"arXiv",y:"2026",tags:["Planning","World-Model"],s:"온라인 모델기반 RL을 위한 joint-embedding 디퓨전 월드모델.",x:"https://arxiv.org/pdf/2605.13013",g:"",p:""},
+ {t:"I-JEPA: Image-based Joint Embedding Predictive Architecture",a:"M. Assran, Y. LeCun et al. (Meta)",v:"Landmark",y:"2023",tags:["JEPA-core"],s:"JEPA의 출발점 — 이미지에서 target 블록의 표현을 예측. 증강 없는 강력한 SSL.",x:"https://arxiv.org/abs/2301.08243",g:"https://github.com/facebookresearch/ijepa",p:""},
+ {t:"V-JEPA: Video Joint Embedding Predictive Architecture",a:"Meta FAIR",v:"Landmark",y:"2024",tags:["Video-JEPA","JEPA-core"],s:"마스킹된 시공간 영역의 latent 특징 예측으로 비디오 표현 학습.",x:"https://arxiv.org/abs/2404.08471",g:"https://github.com/facebookresearch/jepa",p:""},
+ {t:"V-JEPA 2 / 2-AC: Internet-scale Video World Model + Robot Planning",a:"Meta FAIR, Y. LeCun",v:"Landmark",y:"2025",tags:["Video-JEPA","World-Model","Planning"],s:"인터넷 규모 비디오 월드모델 + 행동조건(action-conditioned)으로 로봇 제로샷 플래닝.",x:"https://arxiv.org/abs/2506.09985",g:"https://github.com/facebookresearch/vjepa2",p:""},
+ {t:"EB-JEPA (eb_jepa): Energy-Based JEPA reference library",a:"Meta FAIR",v:"Landmark",y:"2026",tags:["JEPA-core","World-Model"],s:"이미지·비디오·행동조건·플래닝을 아우르는 에너지기반 JEPA 레퍼런스 라이브러리.",x:"https://arxiv.org/abs/2602.03604",g:"https://github.com/facebookresearch/eb_jepa",p:""},
+ {t:"JEPA Intuitive Physics: 직관 물리의 창발",a:"Meta FAIR",v:"Landmark",y:"2025",tags:["Video-JEPA","Theory"],s:"SSL 비디오 사전학습만으로 직관적 물리 이해가 창발함을 보임.",x:"",g:"https://github.com/facebookresearch/jepa-intuitive-physics",p:""},
+ {t:"DIAMOND: Diffusion for World Modeling — Visual Details Matter",a:"E. Alonso, V. Micheli, T. Pearce, F. Fleuret",v:"NeurIPS",y:"2024",tags:["Diffusion-WM","Planning","World-Model"],s:"디퓨전 월드모델 '안에서' RL 에이전트 학습 — 시각 디테일 충실도가 성능을 좌우함을 입증(Atari100k). 독립형 뉴럴 게임엔진으로도 동작.",x:"https://arxiv.org/abs/2405.12399",g:"https://github.com/eloialonso/diamond",p:"",pd:"Diffusion"},
+ {t:"Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion",a:"Boyuan Chen, Yilun Du, R. Tedrake, V. Sitzmann (MIT)",v:"NeurIPS",y:"2024",tags:["Diffusion-WM","Theory"],s:"토큰마다 독립 노이즈로 인과 디퓨전 학습 — next-token(가변 롤아웃)과 full-sequence 디퓨전을 통합. 장기 비디오 월드모델의 기반 레시피.",x:"https://arxiv.org/abs/2407.01392",g:"https://github.com/buoyancy99/diffusion-forcing",p:"https://boyuan.space/diffusion-forcing/",pd:"Diffusion"},
+ {t:"History-Guided Video Diffusion (Diffusion Forcing Transformer)",a:"Kiwhan Song, Boyuan Chen et al. (MIT)",v:"ICML",y:"2025",tags:["Video-Diffusion","Theory"],s:"가변 개수 history 프레임 조건화 + 'History Guidance'로 시간적 일관성·장기 롤아웃을 크게 개선.",x:"https://arxiv.org/abs/2502.06764",g:"https://github.com/kwsong0113/diffusion-forcing-transformer",p:"",pd:"Diffusion"},
+ {t:"GameNGen: Diffusion Models Are Real-Time Game Engines",a:"Google Research / DeepMind",v:"ICLR",y:"2025",tags:["Gaming","Video-Diffusion"],s:"단일 TPU에서 DOOM을 ~20FPS로 시뮬레이션한 최초의 뉴럴 게임엔진 — 과거 프레임+행동 조건 Stable Diffusion 파인튜닝.",x:"https://arxiv.org/abs/2408.14837",g:"",p:"https://gamengen.github.io/",pd:"Diffusion"},
+ {t:"Genie: Generative Interactive Environments",a:"Google DeepMind",v:"ICML",y:"2024",tags:["Gaming","Foundation"],s:"라벨 없는 인터넷 영상에서 잠재 행동공간을 비지도 학습한 11B 파운데이션 월드모델 → 행동조작 가능한 플레이형 세계. (ICML’24 Best Paper)",x:"https://arxiv.org/abs/2402.15391",g:"",p:"",pd:"Diffusion"},
+ {t:"Genie 3: Real-time Interactive Foundation World Model",a:"Google DeepMind",v:"Industry",y:"2026",tags:["Gaming","Foundation"],s:"720p/24fps 실시간 내비게이션 가능 세계, 수분 일관성 + 프롬프트형 'world events'. (클로즈드)",x:"",g:"",p:"https://deepmind.google/models/genie/",pd:"Diffusion"},
+ {t:"Oasis: Open-source Real-time Minecraft World Model",a:"Decart AI + Etched",v:"Industry",y:"2024",tags:["Gaming"],s:"키보드/마우스 입력으로 마인크래프트류 세계를 프레임 단위 20FPS 생성하는 최초의 플레이형 실시간 DiT 월드모델(500M 오픈).",x:"",g:"https://github.com/etched-ai/open-oasis",p:"",pd:"Diffusion"},
+ {t:"GameGen-X: Interactive Open-world Game Video Generation",a:"HKUST SmartLab",v:"ICLR",y:"2025",tags:["Gaming","Video-Diffusion"],s:"오픈월드 게임 영상을 생성+인터랙티브 제어하는 최초의 DiT. InstructNet 멀티모달 제어 + OGameData(100만+ 클립).",x:"https://arxiv.org/abs/2411.00769",g:"https://github.com/GameGen-X/GameGen-X",p:"",pd:"Diffusion"},
+ {t:"GameFactory: Creating New Games with Generative Interactive Videos",a:"Kling AI (Kuaishou) + HKU",v:"ICCV",y:"2025",tags:["Gaming"],s:"도메인 어댑터로 게임 스타일 학습과 행동 제어를 분리 → 장면 일반화 액션 제어 + 무제한 길이 자기회귀 생성.",x:"https://arxiv.org/abs/2501.08325",g:"https://github.com/KlingAIResearch/GameFactory",p:"",pd:"Diffusion"},
+ {t:"MineWorld: Real-Time Interactive World Model on Minecraft",a:"Microsoft Research",v:"arXiv",y:"2025",tags:["Gaming"],s:"시각-행동 자기회귀 Transformer + 병렬 'Diagonal Decoding'으로 4–7FPS 실시간 상호작용. 오픈소스.",x:"https://arxiv.org/abs/2504.08388",g:"https://github.com/microsoft/mineworld",p:"",pd:"Diffusion"},
+ {t:"Matrix-Game 3.0: Interactive World Foundation Model",a:"Skywork AI",v:"arXiv",y:"2026",tags:["Gaming","Foundation"],s:"17B 인터랙티브 월드모델(비라벨 사전학습→행동라벨 2단계). 3.0은 실시간 스트리밍(720p/40fps)+장기 메모리. 완전 오픈.",x:"https://arxiv.org/abs/2508.13009",g:"https://github.com/SkyworkAI/Matrix-Game",p:"",pd:"Diffusion"},
+ {t:"Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation",a:"Tencent Hunyuan",v:"arXiv",y:"2025",tags:["Gaming","Video-Diffusion"],s:"HunyuanVideo 기반, 키보드/마우스를 공유 카메라-행동 공간으로 통합. 100+ AAA 게임으로 history 조건 자기회귀 학습.",x:"https://arxiv.org/abs/2506.17201",g:"https://github.com/Tencent-Hunyuan/Hunyuan-GameCraft-1.0",p:"",pd:"Diffusion"},
+ {t:"Vista: A Generalizable Driving World Model",a:"OpenDriveLab / Shanghai AI Lab",v:"NeurIPS",y:"2024",tags:["Driving","World-Model"],s:"고해상도·장기 미래 예측 + 다양한 행동 제어의 일반화형 주행 월드모델. 일반화된 주행 보상으로도 사용.",x:"https://arxiv.org/abs/2405.17398",g:"https://github.com/OpenDriveLab/Vista",p:"",pd:"Diffusion"},
+ {t:"GAIA-2: Controllable Multi-view Driving World Model",a:"Wayve",v:"Industry",y:"2025",tags:["Driving","Foundation"],s:"잠재 디퓨전+플로우매칭 기반 멀티뷰 제어형 주행 월드모델. (테크리포트, 코드 비공개)",x:"https://arxiv.org/abs/2503.20523",g:"",p:"https://wayve.ai/thinking/gaia-2/",pd:"Diffusion"},
+ {t:"GenAD / OpenDV: Generalized Predictive Model for Driving",a:"OpenDriveLab / Shanghai AI Lab",v:"CVPR",y:"2024",tags:["Driving","Video-Diffusion"],s:"2000+시간 웹 영상(OpenDV-2K)으로 학습한 최초의 대규모 주행 비디오 월드모델 — 잠재 디퓨전+시간추론으로 제로샷 일반화·플래닝.",x:"https://arxiv.org/abs/2403.09630",g:"https://github.com/OpenDriveLab/DriveAGI",p:"",pd:"Diffusion"},
+ {t:"Drive-WM: Multiview Forecasting and Planning with World Model",a:"BraveGroup / CASIA",v:"CVPR",y:"2024",tags:["Driving","Planning"],s:"엔드투엔드 플래너와 호환되는 최초의 주행 월드모델 — 멀티뷰 영상 생성 + 이미지 보상으로 최적 궤적 선택.",x:"https://arxiv.org/abs/2311.17918",g:"https://github.com/BraveGroup/Drive-WM",p:"",pd:"Diffusion"},
+ {t:"MagicDriveDiT: High-res Long Street-view Generation",a:"CUHK",v:"ICCV",y:"2025",tags:["Driving"],s:"DiT 플로우매칭으로 3D 기하 제어(카메라·맵·3D박스) 하 최고 해상도/최장 nuScenes 영상(848×1600,241프레임) 생성.",x:"https://arxiv.org/abs/2411.13807",g:"https://github.com/flymin/MagicDriveDiT",p:"",pd:"Diffusion"},
+ {t:"DriveDreamer-2: LLM-enhanced Driving World Model",a:"GigaAI",v:"AAAI",y:"2025",tags:["Driving"],s:"텍스트를 궤적+HD맵으로 바꾸는 LLM 인터페이스로 다양·희귀 주행 영상 생성(FID 11.2/FVD 55.7).",x:"https://arxiv.org/abs/2403.06845",g:"https://github.com/f1yfisher/DriveDreamer2",p:"",pd:"Diffusion"},
+ {t:"Epona: Autoregressive Diffusion Driving World Model",a:"Tsinghua",v:"ICCV",y:"2025",tags:["Driving","Planning"],s:"시공간 분해 자기회귀 디퓨전 월드모델 — 수분 길이 영상 + 실시간 E2E 플래너.",x:"https://arxiv.org/abs/2506.24113",g:"https://github.com/Kevin-thu/Epona",p:"",pd:"Diffusion"},
+ {t:"DriveLaW: Unifying Planning & Video Generation (Latent Driving WM)",a:"Xiaomi",v:"CVPR",y:"2026",tags:["Driving","Planning"],s:"디퓨전 비디오 월드모델과 디퓨전 궤적 플래너를 latent 주입으로 통합 — FID +33.3%, NAVSIM 신기록.",x:"https://arxiv.org/abs/2512.23421",g:"https://github.com/xiaomi-research/drivelaw",p:"https://wm-research.github.io/DriveLaW/",pd:"Diffusion"},
+ {t:"Cosmos-Drive-Dreams: Driving Scenario SDG with WFMs",a:"NVIDIA Toronto AI Lab",v:"arXiv",y:"2025",tags:["Driving","Foundation"],s:"Cosmos 특화 파이프라인으로 롱테일 시나리오의 멀티뷰 일관 주행 영상 생성 → 3D/차선 검출·정책 개선.",x:"https://arxiv.org/abs/2506.09042",g:"https://github.com/nv-tlabs/Cosmos-Drive-Dreams",p:"",pd:"Diffusion"},
+ {t:"iVideoGPT: Interactive VideoGPTs are Scalable World Models",a:"Tsinghua (THUML)",v:"NeurIPS",y:"2024",tags:["Robotics","Planning"],s:"압축 토크나이제이션(관측/행동/보상)으로 수백만 조작 궤적을 사전학습한 자기회귀 Transformer 월드모델.",x:"https://arxiv.org/abs/2405.15223",g:"https://github.com/thuml/iVideoGPT",p:"",pd:"Diffusion"},
+ {t:"AdaWorld: Learning Adaptable World Models with Latent Actions",a:"HKUST / MIT-IBM / UMass",v:"ICML",y:"2025",tags:["Robotics"],s:"영상에서 잠재 행동을 비지도 추출해 자기회귀 월드모델에 조건화 → 최소 상호작용으로 새 행동에 빠른 전이.",x:"https://arxiv.org/abs/2503.18938",g:"https://github.com/little-podi/AdaWorld",p:"",pd:"Diffusion"},
+ {t:"Video Prediction Policy (VPP)",a:"Tsinghua / Shanghai AI Lab",v:"ICML",y:"2025",tags:["Robotics","Planning"],s:"비디오 디퓨전의 예측 표현에 조건화한 범용 정책 — CALVIN +18.6%. (ICML’25 Spotlight)",x:"https://arxiv.org/abs/2412.14803",g:"https://github.com/roboterax/video-prediction-policy",p:"",pd:"Diffusion"},
+ {t:"Dreamer 4: Training Agents Inside Scalable World Models",a:"Google DeepMind (Hafner et al.)",v:"arXiv",y:"2025",tags:["Planning","Foundation"],s:"'shortcut forcing'+인과 토크나이저 실시간 Transformer 월드모델 — 오프라인 데이터만으로 상상 학습해 마인크래프트 다이아 획득. (공식 코드 미공개)",x:"https://arxiv.org/abs/2509.24527",g:"",p:"https://danijar.com/project/dreamer4/",pd:"Diffusion"},
+ {t:"UniSim: Learning Interactive Real-World Simulators",a:"Berkeley / DeepMind / MIT",v:"ICLR",y:"2024",tags:["Foundation"],s:"다양한 데이터로부터 범용 행동조건 생성 시뮬레이터 학습 — VLA 플래너·RL 정책을 학습해 제로샷 실세계 전이. (ICLR’24 Outstanding)",x:"https://arxiv.org/abs/2310.06114",g:"",p:"https://universal-simulator.github.io/unisim/",pd:"Diffusion"},
+ {t:"NVIDIA Cosmos: World Foundation Model Platform for Physical AI",a:"NVIDIA",v:"arXiv",y:"2025",tags:["Foundation","Video-Diffusion"],s:"사전학습 WFM 플랫폼 — Cosmos-Predict(미래예측)/Transfer(월드투월드)/Reason(체화추론) + 토크나이저·데이터 파이프라인. 오픈 웨이트.",x:"https://arxiv.org/abs/2501.03575",g:"https://github.com/nvidia-cosmos",p:"",pd:"Diffusion"},
+ {t:"Sora: Video Generation Models as World Simulators",a:"OpenAI",v:"Industry",y:"2024",tags:["Foundation","Video-Diffusion"],s:"시공간 잠재 패치 위 텍스트조건 DiT(~1분 HD) — 비디오 생성의 스케일링이 일반 물리세계 시뮬레이터로 가는 길이라 주장. (코드 비공개)",x:"",g:"",p:"https://openai.com/index/video-generation-models-as-world-simulators/",pd:"Diffusion"},
+ {t:"Pandora: Towards General World Model with Natural Language Actions",a:"Maitrix.org",v:"arXiv",y:"2024",tags:["Foundation"],s:"자유 텍스트 행동을 생성 도중 받아들이는 하이브리드 자기회귀-디퓨전 월드모델.",x:"https://arxiv.org/abs/2406.09455",g:"https://github.com/maitrix-org/Pandora",p:"",pd:"Diffusion"},
+ {t:"Aether: Geometry-Aware Unified World Modeling",a:"Shanghai AI Lab",v:"ICCV",y:"2025",tags:["Robotics","Planning"],s:"기하 인식 통합 4D 재구성+예측+플래닝 — 합성 데이터만 학습, 실세계 제로샷. (ICCV’25 Outstanding)",x:"https://arxiv.org/abs/2503.18945",g:"https://github.com/OpenRobotLab/Aether",p:"",pd:"Diffusion"},
+ {t:"WorldMem: Long-term Consistent World Simulation with Memory",a:"NTU S-Lab",v:"NeurIPS",y:"2025",tags:["Video-Diffusion","World-Model"],s:"메모리 뱅크+메모리 어텐션을 디퓨전 Transformer에 결합 — 큰 시점/시간 격차 후에도 이전 장면을 재구성.",x:"https://arxiv.org/abs/2504.12369",g:"https://github.com/xizaoqu/WorldMem",p:"",pd:"Diffusion"}
+];
+
+/* ---------- Explorer ---------- */
+const PARADIGMS=["전체","JEPA","Diffusion"];
+const VENUES=["전체","ICLR","ICML","CVPR","ICCV","ECCV","AAAI","NeurIPS","arXiv","Industry","Landmark"];
+const TAGS=["JEPA-core","Video-JEPA","Diffusion-WM","Video-Diffusion","Gaming","Driving","Robotics","Planning","Multimodal","Theory","Foundation","World-Model"];
+let pdFilter="전체", venFilter="전체", tagFilter=new Set(), q="";
+
+const pc=document.getElementById('pdchips');
+PARADIGMS.forEach(v=>{const c=document.createElement('div');c.className='chip'+(v==="전체"?' on':'');c.textContent=v==="전체"?"전체 패러다임":(v==="JEPA"?"🧠 JEPA":"🎨 Diffusion");c.onclick=()=>{pdFilter=v;[...pc.children].forEach(x=>x.classList.remove('on'));c.classList.add('on');render();};pc.appendChild(c);});
+
+const vc=document.getElementById('venchips');
+VENUES.forEach(v=>{const c=document.createElement('div');c.className='chip'+(v==="전체"?' on':'');c.textContent=v;c.onclick=()=>{venFilter=v;[...vc.children].forEach(x=>x.classList.remove('on'));c.classList.add('on');render();};vc.appendChild(c);});
+const tc=document.getElementById('tagchips');
+TAGS.forEach(t=>{const c=document.createElement('div');c.className='chip';c.textContent='#'+t;c.onclick=()=>{if(tagFilter.has(t)){tagFilter.delete(t);c.classList.remove('on');}else{tagFilter.add(t);c.classList.add('on');}render();};tc.appendChild(c);});
+document.getElementById('search').oninput=e=>{q=e.target.value.toLowerCase();render();};
+
+function render(){
+  const box=document.getElementById('papers');box.innerHTML='';
+  const list=P.filter(p=>{
+    const para=p.pd||"JEPA";
+    if(pdFilter!=="전체" && para!==pdFilter) return false;
+    if(venFilter!=="전체" && p.v!==venFilter) return false;
+    if(tagFilter.size && ![...tagFilter].every(t=>p.tags.includes(t))) return false;
+    if(q){const blob=(p.t+' '+p.a+' '+p.s+' '+p.tags.join(' ')).toLowerCase();if(!blob.includes(q))return false;}
+    return true;
+  });
+  document.getElementById('count').textContent=`${list.length}편 표시 (전체 ${P.length}편)`;
+  list.forEach((p,i)=>{
+    const c=document.createElement('div');c.className='pcard';c.style.animationDelay=(i*30)+'ms';
+    const tags=p.tags.map(t=>`<span class="tg">${t}</span>`).join('');
+    const gh=p.g?`<a class="lk gh" href="${p.g}" target="_blank">⌨ GitHub</a>`:`<span class="lk na">코드 미공개</span>`;
+    const pg=p.p?`<a class="lk pg" href="${p.p}" target="_blank">🌐 Page</a>`:'';
+    const ax=p.x?`<a class="lk" href="${p.x}" target="_blank">📄 arXiv</a>`:'';
+    c.innerHTML=`<div class="ven"><span class="v v${p.v}">${p.v}</span><span class="yr">${p.y}</span></div>
+      <h4>${p.t}</h4><div class="au">${p.a}</div><div class="su">${p.s}</div>
+      <div class="tags">${tags}</div><div class="links">${ax}${gh}${pg}</div>`;
+    box.appendChild(c);
+  });
+  if(!list.length)box.innerHTML='<div style="color:var(--dimmer);padding:30px">조건에 맞는 논문이 없습니다.</div>';
+}
+render();
+
+/* ---------- to top ---------- */
+const tt=document.getElementById('toTop');
+tt.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+window.onscroll=()=>tt.classList.toggle('show',window.scrollY>600);
+</script>
+</body>
+</html>

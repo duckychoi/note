@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>정규명 우선 중복검사</title><meta charset="utf-8"/><link rel="preload" href="../index-02e885da.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&amp;family=Noto Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto Sans Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Ducky's Note"/><meta property="og:title" content="정규명 우선 중복검사"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="정규명 우선 중복검사"/><meta name="twitter:description" content="정규명 우선 중복검사 정의 리다이렉트를 따라가 정규명(canonical name)을 확정한 뒤에 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다. 레포 이름은 식별자가 아니다 — ID가 식별자이고, 이름은 그 ID의 별칭 중 하나다."/><meta property="og:description" content="정규명 우선 중복검사 정의 리다이렉트를 따라가 정규명(canonical name)을 확정한 뒤에 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다. 레포 이름은 식별자가 아니다 — ID가 식별자이고, 이름은 그 ID의 별칭 중 하나다."/><meta property="og:image:alt" content="정규명 우선 중복검사 정의 리다이렉트를 따라가 정규명(canonical name)을 확정한 뒤에 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다. 레포 이름은 식별자가 아니다 — ID가 식별자이고, 이름은 그 ID의 별칭 중 하나다."/><meta property="twitter:domain" content="duckychoi.github.io/note"/><meta property="og:url" content="https://duckychoi.github.io/note/concepts/정규명-우선-중복검사"/><meta property="twitter:url" content="https://duckychoi.github.io/note/concepts/정규명-우선-중복검사"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="정규명 우선 중복검사 정의 리다이렉트를 따라가 정규명(canonical name)을 확정한 뒤에 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다. 레포 이름은 식별자가 아니다 — ID가 식별자이고, 이름은 그 ID의 별칭 중 하나다."/><meta name="generator" content="Quartz"/><link href="../index-02e885da.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://duckychoi.github.io/note/concepts/정규명-우선-중복검사-og-image.webp"/><meta property="og:image:url" content="https://duckychoi.github.io/note/concepts/정규명-우선-중복검사-og-image.webp"/><meta name="twitter:image" content="https://duckychoi.github.io/note/concepts/정규명-우선-중복검사-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="concepts/정규명-우선-중복검사" data-basepath="/note"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Ducky's Note</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-53" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-53" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>정규명 우선 중복검사</a></div></nav><h1 class="article-title">정규명 우선 중복검사</h1><details class="note-properties metadata-container" open data-collapsed="false"><summary class="note-properties-header"><span class="note-properties-title">Properties</span><span class="note-properties-count">1</span></summary><table class="note-properties-table"><tbody><tr class="note-properties-row metadata-property"><td class="note-properties-key metadata-property-key">tags</td><td class="note-properties-value metadata-property-value"><span class="note-properties-tags"><a href="../tags/파생저장소-식별" class="internal internal-link tag-link">파생저장소-식별</a><span class="note-properties-separator">, </span><a href="../tags/중복-탐지" class="internal internal-link tag-link">중복-탐지</a><span class="note-properties-separator">, </span><a href="../tags/리다이렉트" class="internal internal-link tag-link">리다이렉트</a><span class="note-properties-separator">, </span><a href="../tags/수집-채널" class="internal internal-link tag-link">수집-채널</a><span class="note-properties-separator">, </span><a href="../tags/볼트-규약" class="internal internal-link tag-link">볼트-규약</a></span></td></tr></tbody></table></details><p show-comma="true" class="content-meta"><time datetime="2026-09-27T00:00:00.000Z">2026년 9월 27일</time><span>15 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="정규명-우선-중복검사">정규명 우선 중복검사<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정규명-우선-중복검사" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>정의 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>리다이렉트를 따라가 정규명(canonical name)을 확정한 <em>뒤에</em> 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다.</strong> 레포 이름은 식별자가 아니다 — ID가 식별자이고, 이름은 그 ID의 별칭 중 하나다.</p>
+</div>
+</blockquote>
+<p>🎯 <strong><a href="../concepts/파생저장소-식별" class="internal internal-link alias" data-slug="concepts/파생저장소-식별">파생저장소-식별</a> 이 “다른 것이 같아 보인다”(파생이 원본처럼 통과)를 다룬다면, 이 개념은 “같은 것이 달라 보인다”(같은 레포가 두 이름으로 두 번 들어온다)를 다룬다.</strong> 전자는 <strong>과다 포함</strong>, 후자는 <strong>중복 포함</strong>.</p>
+<h2 id="발단--2026-09-24-수집기의-본체-누락-4번째가-이미-있던-페이지였다">발단 — 2026-09-24, 수집기의 “본체 누락 4번째”가 이미 있던 페이지였다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#발단--2026-09-24-수집기의-본체-누락-4번째가-이미-있던-페이지였다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수집기 판정: <em>”🎯 볼트가 재포장본을 세 번 추적해 온 <code>Comfy-Org</code> 의 <strong>본체 레포인데 페이지가 없다</strong> — <a href="../sources/browser-use" class="internal internal-link" data-slug="sources/browser-use">browser-use</a>·<a href="../entities/huggingface" class="internal internal-link" data-slug="entities/huggingface">HuggingFace</a>·<a href="../sources/mem0" class="internal internal-link" data-slug="sources/mem0">mem0</a> 에 이은 <strong>본체 누락 4번째</strong>”</em></p>
+<p>🔴 <strong>틀렸다.</strong> <code>wiki/sources/ComfyUI.md</code> 는 <strong>2026-08-11부터 존재한다</strong>(★126,600 기록, 48행).</p>
+<h3 id="왜-통과했는가--수집기의-정직한-작업이-정확히-중복을-만들었다">왜 통과했는가 — 수집기의 정직한 작업이 정확히 중복을 만들었다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-통과했는가--수집기의-정직한-작업이-정확히-중복을-만들었다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>수집기는 <strong>09-21 요청 1을 이행했다</strong>: <em>“<code>grep -rl</code> 로 <code>vault/wiki/</code> 를 먼저 검색해 이미 소스 페이지가 있는 레포를 제외했다”</em> — 그 결과 12건을 제외했다. 그런데 ComfyUI는 통과했다.</p>
+<p><strong>순서가 원인이다:</strong></p>
+<ol>
+<li>수집기가 트렌딩에서 레포를 집었다</li>
+<li><code>comfyanonymous/ComfyUI</code> → <strong>HTTP 301</strong> → <code>Comfy-Org/ComfyUI</code> 를 <strong>스스로 발견하고 기록했다</strong>(raw.md 87행 ⚠️ 주석)</li>
+<li>API를 <strong>정규명으로</strong> 조회했다 — 올바른 판단</li>
+<li>🔴 <strong>그런데 중복 검사는 조회에 쓴 정규명 기준으로 다시 돌리지 않았다.</strong> 볼트 페이지는 <strong>구 이름</strong>(<code>comfyanonymous/ComfyUI</code>)으로 적혀 있다.</li>
+</ol>
+<p>📌 <strong>리다이렉트를 찾아낸 행위 자체가 중복 검사를 무력화했다.</strong> 수집기가 게을러서가 아니라 <strong>한 단계 더 정확해졌기 때문에</strong> 어긋났다.</p>
+<h2 id="-더-깊은-원인--레포가-자기-문서에서-구-이름으로-자칭한다">🎯 더 깊은 원인 — 레포가 자기 문서에서 구 이름으로 자칭한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-더-깊은-원인--레포가-자기-문서에서-구-이름으로-자칭한다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>볼트가 ComfyUI README 437행을 확인한 결과:</p>
+<ul>
+<li>배지·릴리스 링크(27~32행): 전부 <strong><code>comfyanonymous/ComfyUI</code></strong></li>
+<li>예제 링크(62행): <code>comfyanonymous.github.io</code></li>
+<li>🔴 <strong><code>## Release Process</code>(90행)</strong>: 3개 연결 레포를 나열하는데
+<ul>
+<li><strong>1. ComfyUI Core → <code>github.com/comfyanonymous/ComfyUI</code></strong> ← 구 이름</li>
+<li>
+<ol start="2">
+<li>Comfy Desktop → <code>github.com/Comfy-Org/Comfy-Desktop</code> ← 신 조직</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>ComfyUI Frontend → <code>github.com/Comfy-Org/ComfyUI_frontend</code> ← 신 조직</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>🎯 <strong>조직 이관이 문서에서 절반만 끝났다.</strong> 본체만 구 이름으로 남았고 위성 레포는 신 조직이다. → <strong>볼트 페이지가 “낡은” 게 아니라, 레포의 자기 표기를 따라간 것이다.</strong> 그 시점엔 그게 정답이었다.</p>
+<h2 id="선행-사례--볼트는-이-패턴을-세-번-봤고-매번-다른-얼굴이었다">선행 사례 — 볼트는 이 패턴을 세 번 봤고 매번 다른 얼굴이었다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#선행-사례--볼트는-이-패턴을-세-번-봤고-매번-다른-얼굴이었다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>사례</th><th>리다이렉트</th><th>오류 방향</th><th>결과</th></tr></thead><tbody><tr><td><a href="../entities/krillinai" class="internal internal-link" data-slug="entities/krillinai">KrillinAI</a> → OpenCreator (09-22)</td><td>개명 + 루트 커밋 교체</td><td>—</td><td>★가 레포 ID에 붙어 <strong>새 제품이 옛 별을 상속</strong>(현 ★의 80%+가 개명 전)</td></tr><tr><td><code>abenzerps/Qwen-Image-2.1-Uncensored-GGUF</code> (09-22)</td><td>HF <strong>307</strong></td><td>🔴 <strong>과소 포함</strong></td><td>DL 0으로 <strong>제외했는데 실제로는 옮겨 간 레포</strong>(개명 후 DL 33,232)</td></tr><tr><td><strong><a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a></strong> (09-24)</td><td>GitHub <strong>301</strong> (개인→조직)</td><td>🔴 <strong>중복 포함</strong></td><td>이미 가진 페이지를 <em>“본체 누락”</em> 으로 신규 배달</td></tr></tbody></table></div>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 <strong>리다이렉트는 양방향으로 오류를 만든다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>추적하지 <strong>않으면</strong> → 옮겨 간 레포를 죽은 것으로 보고 <strong>버린다</strong>(abenzerps)</li>
+<li>추적하고 <strong>중복 검사를 다시 안 돌리면</strong> → 가진 것을 <strong>또 받는다</strong>(ComfyUI)
+<strong>한 번만 추적하면 안 된다. 추적 결과를 모든 하위 판정에 되먹여야 한다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<h2 id="볼트-규약">볼트 규약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#볼트-규약" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>🔴 <strong>리다이렉트 추적 → 정규명 확정 → <em>그다음</em> 중복 검사.</strong> 순서를 바꾸지 않는다.</li>
+<li>🔴 <strong>중복 검사는 두 이름 모두로 돌린다</strong> — 구 이름과 정규명. <code>grep -rl &quot;comfyanonymous\|Comfy-Org&quot; vault/wiki</code> 처럼.</li>
+<li><strong>레포 ID로 대조한다</strong> — GitHub 301 응답은 <code>api.github.com/repositories/589831718</code> 처럼 <strong>숫자 ID를 준다.</strong> 이름보다 강한 식별자다. (ComfyUI 실측 ID <strong>589831718</strong> — 볼트 확인)</li>
+<li><strong>페이지 제목·URL에 정규명을 쓰고, 구 이름은 별칭으로 본문에 남긴다</strong> — 미래의 grep이 양쪽에 걸리게.</li>
+<li>📌 <strong>레포가 자기 문서에서 쓰는 이름과 API 정규명이 다를 수 있다.</strong> 다르면 <strong>둘 다 적는다.</strong></li>
+</ol>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 한계 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>표본 3(KrillinAI · abenzerps · ComfyUI). GitHub 2건 + HF 1건이고 <strong>셋 다 이름 변경 계열</strong>이다. <strong>포크·미러로 인한 중복은 이 규약이 못 잡는다</strong>(ID가 다르므로).</li>
+<li>⬜ <strong>볼트 기존 페이지 중 몇 건이 이미 구 이름으로 고정돼 있는지 전수 확인하지 않았다.</strong> <a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> 가 하나 걸렸으니 더 있을 수 있다 → actionable 등록.</li>
+<li>⬜ GitHub 301 응답이 항상 숫자 ID를 주는지 문서로 확인하지 않았다(1건 관측).</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="관련-페이지">관련 페이지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../concepts/파생저장소-식별" class="internal internal-link alias" data-slug="concepts/파생저장소-식별">파생저장소-식별</a> — 과다 포함 쪽</li>
+<li><a href="../concepts/컨테이너-중복" class="internal internal-link alias" data-slug="concepts/컨테이너-중복">컨테이너-중복</a> · <a href="../concepts/선택비용과-중복성" class="internal internal-link alias" data-slug="concepts/선택비용과-중복성">선택비용과-중복성</a></li>
+<li><a href="../sources/comfyui" class="internal internal-link" data-slug="sources/comfyui">ComfyUI</a> — 발단 사례</li>
+<li><a href="../entities/krillinai" class="internal internal-link" data-slug="entities/krillinai">KrillinAI</a> · <a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> — 선행 사례</li>
+<li><a href="../concepts/메타데이터-부재-추론" class="internal internal-link alias" data-slug="concepts/메타데이터-부재-추론">메타데이터-부재-추론</a> — 같은 배치의 자매 오류(API 필드를 실체로 읽음)</li>
+<li><a href="../domains/ai-news" class="internal internal-link" data-slug="domains/ai-news">ai-news</a></li>
+</ul>
+<hr/>
+<h2 id="-2026-09-27-갱신--한-배치에서-두-번-쓰였다-개명-2건">📊 2026-09-27 갱신 — <strong>한 배치에서 두 번 쓰였다 (개명 2건)</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-09-27-갱신--한-배치에서-두-번-쓰였다-개명-2건" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🎯 개념 신설 3일 만에 사용 빈도가 확인됐다 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>오늘 배치 13건 중 <strong>개명 이력이 2건</strong>이다:</p>
+<ul>
+<li><strong><a href="../sources/model-optimizer" class="internal internal-link" data-slug="sources/model-optimizer">Model-Optimizer</a></strong> — <strong>2025-12-08</strong> 에 <code>TensorRT Model Optimizer</code> → <code>Model-Optimizer</code></li>
+<li><strong><a href="../sources/teleocr" class="internal internal-link" data-slug="sources/teleocr">TeleOCR</a></strong> — <strong>2026-09-10</strong> 에 <code>NaviDC-OCR</code> → <code>TeleOCR</code>
+✅ <strong>볼트 중복검사를 양쪽 이름으로 수행했고 전부 0히트 → 신규 확정</strong>:
+<code>TensorRT-Model-Optimizer</code> 0 · <code>TensorRT Model Optimizer</code> 0 · <code>Model-Optimizer</code> 0 · <code>NaviDC</code> 0 · <code>NaviDC-OCR</code> 0 · <code>TeleOCR</code> 0 · <code>StarDoc-AI</code> 0 · <code>caipeng328</code> 0
+🎯 <strong>부수 발견</strong>: <code>TensorRT-LLM</code> 은 볼트 <strong>9개 페이지에서 언급</strong>된다 — <strong>런타임은 이미 알고 있었고 압축 툴킷만 없었다.</strong> 부재의 모양이 <em>“생태계 전체 미수록”</em> 이 아니라 <strong>“한 층 누락”</strong> 이다. 구명 검색이 <strong>부재의 형태까지 알려준다.</strong></li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>✅ 수집기 이행 확인 — GitHub 5건 전부 정규명 일치 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>수집기가 <em>“GitHub 5건은 전부 <code>full_name</code> 이 요청명과 일치해 <strong>301 리다이렉트 0건</strong>”</em> 이라 신고했고, <strong>볼트 API 재조회에서 5/5 <code>full_name</code> 완전일치 확인</strong>(HTTP 200). 09-24 요청 1 이행 <strong>2배치 연속</strong>.
+🔴 <strong>다만 오늘은 리다이렉트가 없어서 규칙이 시험되지 않았다.</strong> <em>“301 을 만나면 정규명으로 중복검사를 다시 돌린다”</em> 는 절차는 <strong>오늘 발동 조건이 없었다</strong> — 이행 확인이 아니라 <strong>미시험</strong>이다. 구분해 적는다.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="-2026-10-02--이-개념이-경고한-실패가-하루에-3건-동시-발생했고-수집기가-스스로-정정했다">🏆 2026-10-02 — <strong>이 개념이 경고한 실패가 하루에 3건 동시 발생했고, 수집기가 스스로 정정했다</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-10-02--이-개념이-경고한-실패가-하루에-3건-동시-발생했고-수집기가-스스로-정정했다" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>수집기 1차 검사가 <code>owner/repo</code> <strong>슬래시 형태로 grep</strong> 해 3건을 <em>“볼트 언급 0회 → 신규”</em> 로 판정했다. <strong>전부 기보유였다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>대상</th><th>1차 오판</th><th>실제 볼트 보유 형태</th></tr></thead><tbody><tr><td><code>earendil-works/pi</code></td><td>신규</td><td><strong>하이픈 정규명</strong> <a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a> (index 66·537행)</td></tr><tr><td><code>Qwen/Qwen-Image-2.1</code></td><td>신규(1회로 셈)</td><td><a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> (index 370·394행)</td></tr><tr><td><code>abenzerps/…-Uncensored-GGUF</code></td><td>신규</td><td>🔴 <strong><a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> 본문 내 파생 표기</strong> + <code>actionable.md</code> 410행</td></tr></tbody></table></div>
+<p>✅ <strong>수집기가 스스로 재검사해 정정하고, <a href="../concepts/선발창-누락" class="internal internal-link alias" data-slug="concepts/선발창-누락">선발창-누락</a> 주장까지 함께 철회했다.</strong> 🎯 <strong>이 개념의 원문을 수집기가 직접 인용했다</strong> — <em>“정규명을 확정한 뒤에 중복 검사를 해야 한다. 순서가 뒤바뀌면 이미 가진 것이 신규로 들어온다.”</em></p>
+<blockquote class="callout action" data-callout="action">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>⚖️ 중복검사 경로가 5개로 확정됐다 (2026-10-02) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>수집기가 자발적으로 추가한 4경로</strong>:</p>
+<ol>
+<li><strong>슬래시 형태</strong> (<code>owner/repo</code>)</li>
+<li><strong>하이픈 정규명</strong> (<code>pi-agent-harness</code>)</li>
+<li><strong>소유자명 단독</strong> (<code>abenzerps</code>)</li>
+<li><strong><code>actionable.md</code> 포함 검색</strong></li>
+</ol>
+<p>🆕 <strong>볼트가 추가하는 5번째</strong>:
+5. <strong>베이스 페이지 본문 내 파생 표기</strong> — 파생·양자화 레포가 베이스 페이지의 한 줄로만 존재하는 경우</p>
+<p>🔴 <strong>5번이 필요한 이유는 구조적이다</strong> — 1~4 를 다 돌려도, <strong>대상이 독립 페이지가 아니면 “페이지 목록”에서는 보이지 않는다.</strong> 오늘 <code>abenzerps/…-UC-GGUF</code> 가 정확히 그 경우였다.</p>
+</div>
+</blockquote>
+<blockquote class="callout insight" data-callout="insight">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🏆 <strong>볼트의 구조적 조치 — 탐지 규칙을 늘리는 대신 데이터 구조를 고쳤다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>🎯 <strong>5번째 경로는 근본 해결이 아니다.</strong> 검사 경로를 계속 늘리는 것은 <strong>증상 대응</strong>이다.
+✅ <strong>그래서 볼트는 <a href="../sources/qwen-image-2.1-uncensored-gguf" class="internal internal-link" data-slug="sources/qwen-image-2.1-uncensored-gguf">Qwen-Image-2.1-Uncensored-GGUF</a> 를 독립 페이지로 승격했다.</strong> DL <strong>1,303,476</strong>(HF 랭크 4위 · 베이스의 <strong>16.9배</strong>)인 대상을 다른 페이지의 한 줄로 두는 것은 <strong>탐지 실패를 재생산하는 구조</strong>다.
+⚖️ <strong>규칙: 파생 레포의 DL 이 베이스를 넘으면 독립 페이지를 만든다.</strong> <a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> 이 관측되는 순간이 <strong>페이지 분리의 트리거</strong>다.
+📌 <strong>이것이 이 개념의 성격을 바꾼다</strong> — 지금까지 <em>“검사 순서를 지켜라”</em> 였는데, 오늘 <em>“검사가 어려운 구조를 만들지 마라”</em> 가 추가됐다.</p>
+</div>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 같은 대상이 두 번 다른 방식으로 놓쳤다 — 09-22 와 10-02 </p></div>
+                  
+                </div>
+<div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>실패 기전</th><th>결과</th></tr></thead><tbody><tr><td>09-22</td><td><strong>307 리다이렉트 미추적</strong> → DL 을 <strong>0</strong> 으로 읽고 선발에서 제외</td><td>actionable 410행에 기록됨</td></tr><tr><td>10-02</td><td><strong>슬래시 grep</strong> → 볼트 언급 0회로 오판</td><td>수집기 자기정정</td></tr><tr><td>🎯 <strong>두 번 다 “대상이 없다”가 아니라 “내 조회가 못 찾았다”였다</strong> → <a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> 과 같은 뿌리.</td><td></td><td></td></tr><tr><td>🏆 <strong>그리고 그 사이 그 레포는 DL 0 → 1,303,476 이 됐다.</strong> 📌 <strong>09-22 의 “0” 은 실체가 아니라 리다이렉트 미추적의 결과였고, 10일 만에 HF 랭크 4위가 됐다.</strong> ⇒ <strong>중복검사 실패의 비용은 중복 페이지가 아니라 “큰 것을 놓치는 것”이다.</strong></td><td></td><td></td></tr></tbody></table></div>
+</div>
+</blockquote>
+<h3 id="관련-페이지-추가">관련 페이지 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-페이지-추가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../sources/qwen-image-2.1-uncensored-gguf" class="internal internal-link" data-slug="sources/qwen-image-2.1-uncensored-gguf">Qwen-Image-2.1-Uncensored-GGUF</a> — 🏆 <strong>5번째 경로 + 독립 페이지 승격 계기</strong></li>
+<li><a href="../sources/pi-agent-harness" class="internal internal-link" data-slug="sources/pi-agent-harness">pi-agent-harness</a> · <a href="../sources/qwen-image-2.1" class="internal internal-link" data-slug="sources/qwen-image-2.1">Qwen-Image-2.1</a> — 10-02 오판 3건</li>
+<li><a href="../concepts/원본-파생-역전" class="internal internal-link alias" data-slug="concepts/원본-파생-역전">원본-파생-역전</a> — 🎯 <strong>페이지 분리 트리거</strong> · <a href="../concepts/동일대상-분리오판" class="internal internal-link alias" data-slug="concepts/동일대상-분리오판">동일대상-분리오판</a> — 거울상(거짓 분리/병합)</li>
+<li><a href="../concepts/무응답-오귀속" class="internal internal-link alias" data-slug="concepts/무응답-오귀속">무응답-오귀속</a> — 같은 뿌리 · <a href="../concepts/선발창-누락" class="internal internal-link alias" data-slug="concepts/선발창-누락">선발창-누락</a> — 수집기가 철회한 주장</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>🔴 <strong>2026-10-02 볼트 자기정정 — 이 개념을 쓰면서 이 개념을 위반했다</strong></p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>볼트는 10-02 배치에서 <strong>수집기의 슬래시 grep 실패를 분석해 5번째 경로까지 추가</strong>했다. <strong>그리고 같은 문서 안에서 같은 실수를 했다.</strong>
+raw.md 가 적은 <em>“<a href="../mksglu/context-mode" class="internal internal-link" data-slug="mksglu/context-mode">context-mode</a>·<a href="../mvschwarz/openrig" class="internal internal-link" data-slug="mvschwarz/openrig">openrig</a> topics 가 <code>pi-agent</code>/<code>codex-cli</code> 를 명시”</em> 를 <strong>슬래시 형태 그대로 위키링크로 베꼈다.</strong> 볼트의 정규명은 <strong><a href="../sources/context-mode" class="internal internal-link" data-slug="sources/context-mode">context-mode</a></strong> 와 <strong><a href="../sources/openrig" class="internal internal-link" data-slug="sources/openrig">openrig</a></strong> 다(<code>mvschwarz</code> 는 별도 엔티티 페이지).
+✅ <strong>같은 배치의 자체 린트에서 적발·교정</strong>(깨진 링크 검사 → 6개 파일 일괄 수정 · 슬래시 잔존 0건 확인).
+📌 <strong>교훈이 한 겹 더 생긴다 — 이 실패는 “검사를 안 해서”가 아니라 “소스의 표기를 그대로 신뢰해서” 일어난다.</strong> 수집기는 <code>grep</code> 대상을 슬래시로 적었고, 볼트는 <strong>인용할 때</strong> 슬래시로 적었다. <strong>같은 원인, 다른 공정.</strong>
+⚖️ <strong>규약 추가: 외부 문서(raw.md 포함)의 저장소 표기를 위키링크로 옮길 때는 <code>owner/repo</code> 를 그대로 쓰지 않고 볼트 정규명으로 변환한다.</strong> 변환 전 <code>ls wiki/sources/ | grep -i &lt;repo></code> 1회.
+🎯 <strong>그리고 이것이 이 개념의 자체 검증 사례다</strong> — 개념이 경고한 실패 모드가 <strong>그 개념을 적용하는 작업 안에서</strong> 재현됐고, <strong>같은 배치의 린트가 잡았다.</strong> 📌 <strong>린트를 ingest 와 같은 세션에서 돌리는 것이 유효하다는 근거다.</strong></p>
+</div>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-53" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#정규명-우선-중복검사" data-for="정규명-우선-중복검사">정규명 우선 중복검사</a></li><li class="depth-1"><a href="#발단--2026-09-24-수집기의-본체-누락-4번째가-이미-있던-페이지였다" data-for="발단--2026-09-24-수집기의-본체-누락-4번째가-이미-있던-페이지였다">발단 — 2026-09-24, 수집기의 “본체 누락 4번째”가 이미 있던 페이지였다</a></li><li class="depth-2"><a href="#왜-통과했는가--수집기의-정직한-작업이-정확히-중복을-만들었다" data-for="왜-통과했는가--수집기의-정직한-작업이-정확히-중복을-만들었다">왜 통과했는가 — 수집기의 정직한 작업이 정확히 중복을 만들었다</a></li><li class="depth-1"><a href="#-더-깊은-원인--레포가-자기-문서에서-구-이름으로-자칭한다" data-for="-더-깊은-원인--레포가-자기-문서에서-구-이름으로-자칭한다">🎯 더 깊은 원인 — 레포가 자기 문서에서 구 이름으로 자칭한다</a></li><li class="depth-1"><a href="#선행-사례--볼트는-이-패턴을-세-번-봤고-매번-다른-얼굴이었다" data-for="선행-사례--볼트는-이-패턴을-세-번-봤고-매번-다른-얼굴이었다">선행 사례 — 볼트는 이 패턴을 세 번 봤고 매번 다른 얼굴이었다</a></li><li class="depth-1"><a href="#볼트-규약" data-for="볼트-규약">볼트 규약</a></li><li class="depth-1"><a href="#관련-페이지" data-for="관련-페이지">관련 페이지</a></li><li class="depth-1"><a href="#-2026-09-27-갱신--한-배치에서-두-번-쓰였다-개명-2건" data-for="-2026-09-27-갱신--한-배치에서-두-번-쓰였다-개명-2건">📊 2026-09-27 갱신 — 한 배치에서 두 번 쓰였다 (개명 2건)</a></li><li class="depth-1"><a href="#-2026-10-02--이-개념이-경고한-실패가-하루에-3건-동시-발생했고-수집기가-스스로-정정했다" data-for="-2026-10-02--이-개념이-경고한-실패가-하루에-3건-동시-발생했고-수집기가-스스로-정정했다">🏆 2026-10-02 — 이 개념이 경고한 실패가 하루에 3건 동시 발생했고, 수집기가 스스로 정정했다</a></li><li class="depth-2"><a href="#관련-페이지-추가" data-for="관련-페이지-추가">관련 페이지 추가</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../concepts/동일대상-분리오판" class="internal">동일대상 분리오판 — 백필 우회의 거울상. 같은 대상을 둘로 쪼개는 오류</a></li><li><a href="../concepts/무응답-오귀속" class="internal">무응답 오귀속 — 내 클라이언트가 못 받은 것을 세상에 없는 것으로 읽지 마라</a></li><li><a href="../concepts/선발창-누락" class="internal">선발창 누락 — &quot;당일 순위&quot;는 누적형 지표를 구조적으로 놓친다</a></li><li><a href="../concepts/원본-파생-역전" class="internal">원본-파생 역전</a></li><li><a href="../concepts/파생저장소-식별" class="internal">파생저장소 식별 — 재포장·양자화 저장소를 중복으로 볼 것인가</a></li><li><a href="../concepts/표본순위-전수순위" class="internal">표본 순위 ≠ 전수 순위 — 볼트가 2건으로 특정한 본체 누락은 199건이었고 1·2위가 둘 다 아니었다</a></li><li><a href="../domains/ai-news" class="internal">AI 뉴스 / GitHub 트렌딩 누적 인사이트</a></li><li><a href="../entities/comfy-org" class="internal">Comfy-Org</a></li><li><a href="../entities/prism-ml" class="internal">Prism ML</a></li><li><a href="../entities/stardoc-ai" class="internal">StarDoc-AI — TeleOCR 제작 조직 (구 NaviDC-OCR)</a></li><li><a href="../entities/abenzerps" class="internal">abenzerps — 양자화 재배포자</a></li><li><a href="../entities/earendil-works" class="internal">earendil-works — 권한 모델 부재를 README에 먼저 적는 에이전트 하네스 조직</a></li><li><a href="../entities/prism-ml" class="internal">prism-ml</a></li><li><a href="../sources/arex-2" class="internal">AREX-2 — 장기지평 반성 과제로 자기개선 에이전트 고도화 (AREX 후속편)</a></li><li><a href="../sources/comfy-org-qwen-image-2.1" class="internal">Comfy-Org/Qwen-Image-2.1 — ComfyUI 단일파일 재포장본 (파생에서 독립 페이지로 승격)</a></li><li><a href="../sources/comfyui" class="internal">ComfyUI — 그래프/노드 기반 디퓨전 모델 GUI·API·백엔드 (comfyanonymous)</a></li><li><a href="../sources/model-optimizer" class="internal">NVIDIA Model-Optimizer — 압축 기법을 모은 것이 아니라 배포 경로를 붙인 것이 값이다</a></li><li><a href="../sources/qwen-image-2.1-uncensored-gguf" class="internal">Qwen-Image-2.1-Uncensored-GGUF — 파생이 베이스를 16.9배. 그리고 '대조 불가'는 틀렸다</a></li><li><a href="../sources/qwen-image-2.1" class="internal">Qwen-Image-2.1 — 원본이 스스로 사용자를 파생으로 보냈다 (그리고 Apache-2.0 계보가 비상업으로 바뀌었다)</a></li><li><a href="../sources/qwen3.8-27b-gguf" class="internal">Qwen3.8-27B-GGUF — Qwen3.8-27B GGUF 양자화 재배포판 (unsloth)</a></li><li><a href="../sources/teleocr" class="internal">TeleOCR — 창 길이 3번째 점추정 ≈31.1일을 준 모델, 그리고 카드가 말한 1.2B 는 실측 1.42B 다</a></li><li><a href="../sources/ternary-bonsai-2-27b" class="internal">Ternary-Bonsai-2-27B — 1.72bit는 '이상값'이고 출하물은 1.75/2.13이다</a></li><li><a href="../sources/pi-agent-harness" class="internal">Pi Agent Harness — 권한 모델 부재를 README에 먼저 적는 코딩 에이전트 하네스</a></li><li><a href="../sources/tensorflow" class="internal">tensorflow/tensorflow — 소스 1,161개를 모으고도 없던 페이지 (본체 누락 5번째)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-9114441b.js" type="module" data-persist="true"></script></html>

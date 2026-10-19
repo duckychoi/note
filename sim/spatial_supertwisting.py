@@ -186,7 +186,10 @@ def e2_ntf_location(rng):
     print("     백색지수 = 내부 오차 e 의 대역 PSD / var(e) (백색이면 0 dB; p0: e=c−x, LP1: e=cumsum(c−x))")
     print("     '목표톤 대비' = 대역 평균 |R|² / 명목 목표 톤 전력 (amp·N/2)² — §2 의 피크 로브와는 다른 지표")
     N = 1024; Ob = 0.05; amp = 0.5; main2 = (amp*N/2)**2
-    for th in [5.0, 10.0, 19.0, float(np.rad2deg(np.arcsin(1/3))), 20.0, 25.0, 45.0, 60.0]:
+    for th in [5.0, 10.0, 19.0, float(np.rad2deg(np.arcsin(1/3))), 20.0, 25.0, 45.0, 60.0,
+               19.47, 19.48, 19.4, 19.55, 19.3, 19.2, 19.7]:
+        # 뒤 7개: asin(1/3) 근방 스윕(앞 각도 수치 불변). |6ω0−2π| 열은 '(6k+1)ω0 고조파가 대역(<Ob)에 접힘' 가설 검사용
+        # — 19.2°·19.7°(|6ω0−2π|>Ob)도 유색이라 이 가설은 반증됨. 유색 원인은 미확인.
         w0 = np.pi*np.sin(np.deg2rad(th)); acc = {"p0": 0.0, "LP1": 0.0, "BP1": 0.0}
         ve = {"p0": 0.0, "LP1": 0.0}; wi = {"p0": 0.0, "LP1": 0.0}
         for _ in range(40):
@@ -204,7 +207,7 @@ def e2_ntf_location(rng):
         ab = lambda k: 10*np.log10(acc[k]*N/main2)       # 대역 평균 |R|² = PSD·N
         pred = 20*np.log10(2*np.sin(w0/2)) + 10*np.log10(ve["LP1"]/ve["p0"])
         wix = lambda k: 10*np.log10(wi[k]/ve[k])
-        print(f"  θ0={th:6.3f}°  |NTF_LP1|² {20*np.log10(2*np.sin(w0/2)):+5.1f} | 백색예측 {pred:+5.1f} / 측정 LP1 {rel('LP1'):+5.1f}"
+        print(f"  θ0={th:6.3f}° [|6ω0−2π|={abs(6*w0-2*np.pi):.3f}{'<Ob' if abs(6*w0-2*np.pi) < Ob else '   '}]  |NTF_LP1|² {20*np.log10(2*np.sin(w0/2)):+5.1f} | 백색예측 {pred:+5.1f} / 측정 LP1 {rel('LP1'):+5.1f}"
               f" (백색지수 p0 {wix('p0'):+4.1f}, LP1 {wix('LP1'):+4.1f}) | p0 대비 BP1 {rel('BP1'):+6.1f}"
               f" | 목표톤 대비: p0 {ab('p0'):6.1f}, LP1 {ab('LP1'):6.1f}, BP1 {ab('BP1'):6.1f} dB")
 

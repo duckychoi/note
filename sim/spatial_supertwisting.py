@@ -56,8 +56,9 @@ def ntf_maxgain(B, A, M=4096):
     zi = np.exp(-1j*np.linspace(0, np.pi, M))          # z^-1
     return np.max(np.abs(np.polyval(B[::-1], zi) / np.polyval(A[::-1], zi)))
 
-def efb(x, B, A, dither=None):
-    """1-bit 오차귀환 ΔΣ. NTF=B/A (둘 다 monic). c = x + NTF·e.  반환: c, max|u|(과부하 지표)."""
+def efb(x, B, A, dither=None, elog=None):
+    """1-bit 오차귀환 ΔΣ. NTF=B/A (둘 다 monic). c = x + NTF·e.  반환: c, max|u|(과부하 지표).
+    elog 에 list 를 주면 내부 오차 e(n) 을 기록한다(백색성 확인용)."""
     N = len(x); K = max(len(B), len(A)) - 1
     B = np.pad(B, (0, K+1-len(B))); A = np.pad(A, (0, K+1-len(A))); D = B - A
     e = np.zeros(K); y = np.zeros(K); c = np.zeros(N); umax = 0.0
@@ -70,6 +71,8 @@ def efb(x, B, A, dither=None):
             e = np.roll(e, 1); e[0] = cn - u
             y = np.roll(y, 1); y[0] = yn
         c[n] = cn; umax = max(umax, abs(u))
+        if elog is not None:
+            elog.append(cn - u)
     return c, umax
 
 def stw_rev1(x, k1=1.5, k2=1.1):
@@ -125,11 +128,11 @@ def _dist(w, center):
     return np.abs(np.angle(np.exp(1j*(w - center))))
 
 def peak_quant_lobe_db(c, w0, d=0.5, guard_bins=3, Npad=1 << 14):
-    """가시영역 |ω|≤2πd 에서 메인(+ω0)·미러(-ω0) ±guard_bins·(2π/N) 밖 피크를 **조향점 메인빔** 크기 대비 dB 로.
-    분모 = ±ω0 의 반-빈 이내 |AF| 최댓값(실수 코드는 |AF(ω0)|=|AF(-ω0)|). 외부 로브가 메인보다 크면 > 0 dB."""
+    """가시영역 |ω|≤2πd 에서 메인(+ω0)·미러(-ω0) ±guard_bins·(2π/N) 밖 피크를 **정확한 조향점** |AF(ω0)| 대비 dB 로.
+    분모 = |Σ c(n) e^{-jω0 n}| (직접 합; 실수 코드는 ±ω0 에서 같은 크기). 외부 로브가 메인보다 크면 > 0 dB."""
     N = len(c); w = _grid(Npad); C = np.abs(np.fft.fft(c, Npad))
     g = guard_bins*2*np.pi/N
-    main = C[(_dist(w, w0) < np.pi/N) | (_dist(w, -w0) < np.pi/N)].max()
+    main = np.abs(c @ np.exp(-1j*w0*np.arange(N)))
     m = (np.abs(w) <= 2*np.pi*d) & (_dist(w, w0) >= g) & (_dist(w, -w0) >= g)
     return 20*np.log10(C[m].max()/main)
 
@@ -154,14 +157,14 @@ def tone(N, w0, amp, rng):
     return amp*np.cos(w0*np.arange(N) + rng.uniform(0, 2*np.pi))
 
 def e0_rev1_dsm2(rng):
-    print("[E0] rev1 dsm2_linear 구조 — 선형화 NTF=(1-q)²/(1+q-q²), q=z⁻¹")
+    print("[E0] rev1 dsm2_linear 구조 — 선형 가산오차 모델 NTF=(1-q)²/(1+q-q²), q=z⁻¹ (비선형 루프의 안정성 판정은 아님)")
     print(f"  극점 z (z² + z − 1 = 0): {np.sort(np.roots([1, 1, -1]))}  → |z|=1.618 이 단위원 밖")
     N = 64
     for th in [10.0, 23.7, 45.0]:
         w0 = np.pi*np.sin(np.deg2rad(th))
         res = [dsm2_rev1(tone(N, w0, 1.0, rng)) for _ in range(50)]
         print(f"  θ0={th:4.1f}°  피크 로브(메인 대비) {np.mean([peak_quant_lobe_db(c, w0) for c, _ in res]):+6.2f} dB"
-              f"   max|u| {max(u for _, u in res):.3g}")
+              f"   관측 max|u| {max(u for _, u in res):.3g} (50회, 일반 상한 아님)")
 
 def e1_naive_lobe(rng):
     print("\n[E1] 순진 1-bit 피크 양자화 로브 (N=64, d=λ/2, 메인 대비) — §2 예측 -9.54 dB")
@@ -178,11 +181,14 @@ def e1_naive_lobe(rng):
 def e2_ntf_location(rng):
     print("\n[E2] 메인빔 근방(|ω-ω0|<0.05) 잔차 r=c−x 의 대역 PSD (N=1024, amp=0.5, 40회)")
     print("     p0 = sign(x+U(±1)) (E[c|x]=x, 이득 1) / LP1·BP1 = 루프 내 디더 U(±0.5), STF=1 (c = x + NTF·e)")
-    print("     예측: LP1 의 메인빔 노이즈 이득 |NTF(e^{jω0})|² = (2 sin(ω0/2))², sinθ0 > 1/3 이면 > 1 ; LP1/p0 예측 = |NTF|²·σ²_e,LP1/σ²_e,p0")
-    print("     '메인 대비' = 대역 평균 |R|² / |AF(ω0)|² (=(amp·N/2)²) — §2 의 -9.5 dB(피크 로브)와는 다른 지표")
+    print("     |NTF_LP1(e^{jω0})|² = (2 sin(ω0/2))² : *같은 내부 오차*에 대한 이득 (sinθ0 > 1/3 이면 > 1)")
+    print("     백색 예측 LP1/p0 = |NTF|²·σ²_e,LP1/σ²_e,p0 (내부 오차가 백색일 때만 성립하는 조건부 근사)")
+    print("     백색지수 = 내부 오차 e 의 대역 PSD / var(e) (백색이면 0 dB; p0: e=c−x, LP1: e=cumsum(c−x))")
+    print("     '목표톤 대비' = 대역 평균 |R|² / 명목 목표 톤 전력 (amp·N/2)² — §2 의 피크 로브와는 다른 지표")
     N = 1024; Ob = 0.05; amp = 0.5; main2 = (amp*N/2)**2
-    for th in [5.0, 10.0, 19.47, 25.0, 45.0, 60.0]:
-        w0 = np.pi*np.sin(np.deg2rad(th)); acc = {"p0": 0.0, "LP1": 0.0, "BP1": 0.0}; ve = {"p0": 0.0, "LP1": 0.0}
+    for th in [5.0, 10.0, 19.0, float(np.rad2deg(np.arcsin(1/3))), 20.0, 25.0, 45.0, 60.0]:
+        w0 = np.pi*np.sin(np.deg2rad(th)); acc = {"p0": 0.0, "LP1": 0.0, "BP1": 0.0}
+        ve = {"p0": 0.0, "LP1": 0.0}; wi = {"p0": 0.0, "LP1": 0.0}
         for _ in range(40):
             x = tone(N, w0, amp, rng); dv = rng.uniform(-0.5, 0.5, N)
             c = {"p0": sgn(x + rng.uniform(-1, 1, N)),
@@ -190,14 +196,17 @@ def e2_ntf_location(rng):
                  "BP1": efb(x, *ntf_bandpass(w0, 1), dither=dv)[0]}
             for k in acc:
                 acc[k] += band_psd(c[k] - x, w0, Ob)[0]/40
-            ve["p0"] += np.var(c["p0"] - x)/40                 # p0: e = c − x
-            ve["LP1"] += np.var(np.cumsum(c["LP1"] - x))/40    # LP1: c − x = e(n) − e(n−1) ⇒ e = cumsum
+            ei = {"p0": c["p0"] - x,                           # p0: e = c − x
+                  "LP1": np.cumsum(c["LP1"] - x)}              # LP1: c − x = e(n) − e(n−1), e(−1)=0 ⇒ e = cumsum
+            for k, e in ei.items():
+                ve[k] += np.var(e)/40; wi[k] += band_psd(e, w0, Ob)[0]/40
         rel = lambda k: 10*np.log10(acc[k]/acc["p0"])
         ab = lambda k: 10*np.log10(acc[k]*N/main2)       # 대역 평균 |R|² = PSD·N
         pred = 20*np.log10(2*np.sin(w0/2)) + 10*np.log10(ve["LP1"]/ve["p0"])
-        print(f"  θ0={th:5.2f}°  |NTF_LP1|² {20*np.log10(2*np.sin(w0/2)):+5.1f} (σ²_e 보정 예측 {pred:+5.1f})"
-              f" | p0 대비: LP1 {rel('LP1'):+5.1f}, BP1 {rel('BP1'):+6.1f} dB"
-              f" | 메인 대비: p0 {ab('p0'):6.1f}, LP1 {ab('LP1'):6.1f}, BP1 {ab('BP1'):6.1f} dB")
+        wix = lambda k: 10*np.log10(wi[k]/ve[k])
+        print(f"  θ0={th:6.3f}°  |NTF_LP1|² {20*np.log10(2*np.sin(w0/2)):+5.1f} | 백색예측 {pred:+5.1f} / 측정 LP1 {rel('LP1'):+5.1f}"
+              f" (백색지수 p0 {wix('p0'):+4.1f}, LP1 {wix('LP1'):+4.1f}) | p0 대비 BP1 {rel('BP1'):+6.1f}"
+              f" | 목표톤 대비: p0 {ab('p0'):6.1f}, LP1 {ab('LP1'):6.1f}, BP1 {ab('BP1'):6.1f} dB")
 
 def e3_slope(rng):
     Obs = np.array([0.02, 0.04, 0.08, 0.16]); w0 = np.pi*np.sin(np.deg2rad(23.7)); amp = 0.5
@@ -211,19 +220,23 @@ def e3_slope(rng):
         print(f"  N={N}, {M}회")
         W = {"직사각": None, "Hann": np.hanning(N)}
         for name, BA in cases:
-            P = {k: 0.0 for k in W}; L = {k: 0.0 for k in W}; umax = 0.0
+            P = {k: 0.0 for k in W}; L = {k: 0.0 for k in W}; umax = 0.0; ac = np.zeros(2)
             for _ in range(M):
                 x = tone(N, w0, amp, rng)
                 if BA is None:
                     c = sgn(x + rng.uniform(-1, 1, N)); el = rng.standard_normal(N)
                 else:
-                    c, um = efb(x, *BA, dither=rng.uniform(-0.5, 0.5, N)); umax = max(umax, um)
+                    eg = []
+                    c, um = efb(x, *BA, dither=rng.uniform(-0.5, 0.5, N), elog=eg); umax = max(umax, um)
+                    eg = np.array(eg) - np.mean(eg)
+                    ac += np.array([eg[:-k] @ eg[k:] for k in (1, 2)])/(eg @ eg)/M
                     el = lfilter(*BA, rng.standard_normal(N + 2000))[2000:]
                 for k in W:
                     P[k] = P[k] + band_psd(c - x, w0, Obs, W[k])
                     L[k] = L[k] + band_psd(el, w0, Obs, W[k])
             ex = 1.0 if BA is None else ntf_band_slope(*BA, w0, Obs)
-            extra = "" if BA is None else f"  |NTF|max={ntf_maxgain(*BA):4.2f} max|u|={umax:.3g}"
+            extra = "" if BA is None else (f"  |NTF|max={ntf_maxgain(*BA):4.2f} max|u|={umax:.3g}"
+                                           f" 내부e 자기상관 lag1 {ac[0]:+.3f} lag2 {ac[1]:+.3f}")
             print(f"    {name:14s}: 측정 직사각 {sl(P['직사각']):4.2f} / Hann {sl(P['Hann']):4.2f}"
                   f" | 선형모델 직사각 {sl(L['직사각']):4.2f} / Hann {sl(L['Hann']):4.2f} | 정확 {ex:4.2f}{extra}")
 
@@ -258,13 +271,8 @@ def e5_peak_vs_band(rng):
         print(f"  N={N:3d}  " + " | ".join(row) + " dB")
 
 def main():
-    rng = np.random.default_rng(20261019)
-    e0_rev1_dsm2(rng)
-    e1_naive_lobe(rng)
-    e2_ntf_location(rng)
-    e3_slope(rng)
-    e4_stw(rng)
-    e5_peak_vs_band(rng)
+    for k, f in enumerate([e0_rev1_dsm2, e1_naive_lobe, e2_ntf_location, e3_slope, e4_stw, e5_peak_vs_band]):
+        f(np.random.default_rng(20261019 + k))     # 실험별 독립 시드: 한 실험을 고쳐도 다른 실험 수치가 안 바뀜
 
     try:
         import matplotlib

@@ -28,6 +28,11 @@ def vstar(X, t):
     vk = MU[None,:,:] + coef*xk          # (B,3,2)
     return (r[:,:,None]*vk).sum(1)
 
+def score_t(X, t):                        # ∇log p_t (폐형 GMM score) — rejuvenation용
+    s2 = st2(t); _, comp = p_t(X,t); r = comp/(comp.sum(1,keepdims=True)+1e-30)
+    xk = X[:,None,:] - t*MU[None,:,:]
+    return (r[:,:,None]*(-xk/s2)).sum(1)
+
 TS = None  # 스텝은 아래에서
 
 def euler(N):
@@ -37,18 +42,17 @@ def euler(N):
         X = X + h*vstar(X, global_ts[k])
     return X, np.ones(len(X))
 
-def smc(N, K=1500, tau=0.15, anneal=False):
+def smc(N, K=1500, tau=0.15, rejuv=0, eps=0.012):
     ts = np.linspace(0,1,N+1); h = 1.0/N
     X = rng.standard_normal((K,2))
     for k in range(N):
         t0, t1 = ts[k], ts[k+1]
-        tau_k = tau*(1-t0) if anneal else tau                        # 어닐: 후반 노이즈↓
         drift = vstar(X, t0)
         Xprev = X.copy()
-        X = X + h*drift + tau_k*np.sqrt(h)*rng.standard_normal((K,2))  # 노이즈 탐색
+        X = X + h*drift + tau*np.sqrt(h)*rng.standard_normal((K,2))   # 노이즈 탐색
         # bootstrap 가중: 타깃 p_{t1} / 제안(이전입자의 전이커널 KDE)
         mean = Xprev + h*drift                                        # (K,2) 전이 평균
-        var = (tau_k**2)*h + 1e-9
+        var = (tau**2)*h + 1e-9
         d2 = ((X[:,None,:]-mean[None,:,:])**2).sum(-1)               # (K,K)
         q = np.exp(-0.5*d2/var).mean(1)/(2*np.pi*var)                # 제안밀도
         pt,_ = p_t(X, t1)
@@ -56,7 +60,10 @@ def smc(N, K=1500, tau=0.15, anneal=False):
         ess = 1.0/(w**2).sum()
         if ess < 0.5*K:                                              # ESS 낮으면 리샘플
             idx = rng.choice(K, K, p=w); X = X[idx]; w = np.ones(K)/K
-    return X, w*len(X) if len(np.atleast_1d(w))==K else np.ones(len(X))
+            # rejuvenation: 알려진 p_{t1} 을 타깃으로 ULA move (중복입자 다양성 복원)
+            for _ in range(rejuv):
+                X = X + eps*score_t(X,t1) + np.sqrt(2*eps)*rng.standard_normal((K,2))
+    return X, np.ones(len(X))
 
 # ---------- 지표 ----------
 TRUE = MU[rng.choice(3,3000,p=W)] + S0*rng.standard_normal((3000,2))
@@ -76,15 +83,13 @@ print(f"{'N(스텝)':>7} | {'방법':5s} | {'모드질량':>22s} | {'평균오�
 for N in [3,5,8,12,20]:
     for name, fn in [("Euler", lambda: euler(N)),
                      ("SMC", lambda: smc(N)),
-                     ("SMC-an", lambda: smc(N, anneal=True))]:
+                     ("SMC+rej", lambda: smc(N, rejuv=4))]:
         X,_ = fn()
         mm = mode_mass(X); me = np.abs(mm-W).sum()
         ed = energy_dist(X, TRUE)
         print(f"{N:>7} | {name:5s} | {str(np.round(mm,2)):>22s} | {me:>8.3f} | {ed:>9.4f}")
     print()
-print("관측된 결과(실행 기준):")
-print(" - N=3: SMC 에너지거리 0.022 vs Euler 0.108 (≈5배↓), N=5: 0.012 vs 0.055 → 저 NFE PF 압승(가설 확인).")
-print(" - N>=8: 경로퇴화(리샘플 반복→소수모드 소멸)로 SMC 열화, Euler 우월 (크로스오버 N≈6~8).")
-print(" - naive 노이즈 어닐링(SMC-an): 제안분산→0 이 가중치 퇴화 유발 → 오히려 악화(실패).")
-print("결론: PF-flow 대체는 '소수스텝(few-step) 영역'의 방법. 고 NFE 퇴화를 막으려면")
-print("      rejuvenation(MCMC-move)·stratified 리샘플링이 핵심 enabling 기법 = 연구 to-do.")
+print("해석:")
+print(" - 저 NFE(N=3,5): SMC/SMC+rej 가 Euler보다 에너지거리 작으면 '리샘플이 이산화 바이어스 교정' 확인.")
+print(" - 고 NFE(N>=8): 순수 SMC는 경로퇴화로 열화. SMC+rej(알려진 p_t로 ULA move)가 소수모드를")
+print("   보존해 열화를 완화하면 → 'rejuvenation이 enabling 기법' 실증(저 NFE 우위 유지 + 고 NFE 안정).")

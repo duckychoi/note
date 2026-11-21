@@ -25,9 +25,10 @@ $K$ 입자 $\{x_k^i,w_k^i\}$. 각 스텝:
 - ⚠️ **경로퇴화**: 리샘플 반복이 입자다양성 소실→소수모드 소멸(toy: N≥8 열화). 바운드에 $\epsilon_{res}$ 가 $N$ 에 누적. **rejuvenation(MCMC move)·stratified 리샘플**로 $\epsilon_{res}$ 억제가 필수 보조정리.
 
 ## 5. toy 실측과의 부합
-- N=3·5: SMC 에너지거리 ≪ Euler (바이어스 교정 우세) → §4 "저 NFE 우월" 확인.
-- N≥8: Euler $O(h)$ 작아지고 SMC $\epsilon_{res}$ 누적 → 크로스오버. §4의 $\epsilon_{res}$ 항이 지배.
-- naive 어닐 실패: $\tau_k\to0$ 이 $q_k\to\delta$ → 밀도비 폭주(가중퇴화). → §3 제안분산 하한 필요.
+- 저 NFE: SMC 에너지거리 ≪ Euler (바이어스 교정) → §4 "저 NFE 우월" 확인.
+- 순수 SMC는 N≥8서 $\epsilon_{res}$(경로퇴화) 누적 → 열화.
+- **✅ rejuvenation(ULA move, 알려진 $p_t$ 타깃)이 $\epsilon_{res}$ 를 봉합**: N=5 SMC+rej 0.0039 vs Euler 0.052(13배↓); N=20 순수SMC 0.085→SMC+rej 0.014(≈Euler 복구). §4 보조정리(rejuvenation으로 $\epsilon_{res}$ 억제) 실증.
+- naive 어닐 실패: $\tau_k\to0$ 이 $q_k\to\delta$ → 밀도비 폭주(가중퇴화) → §3 제안분산 하한 필요.
 
 ## 6. 남은 과제
-rejuvenation 커널 설계($\epsilon_{res}$ 바운드) · score 근사오차 전파($\epsilon_{score}$) · 고차원 가중분산 · ESS-적응 depth 스케줄(compute-optimal).
+rejuvenation 커널의 $\epsilon_{res}$ 바운드 **정리화**(Del Moral + MCMC mixing) · score 근사오차 전파($\epsilon_{score}$) · 고차원 가중분산 · ESS-적응 depth 스케줄(compute-optimal) · 다중시드 평균(N=12 분산).

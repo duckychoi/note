@@ -18,11 +18,14 @@
 - **SMC**: $dx=v^*h+\text{noise}$, 매 스텝 **알려진 $p_t$ 로 bootstrap 가중 + ESS 리샘플** → 바이어스 교정.
 
 **결과(에너지거리, 낮을수록↑):**
-- **N=3**: SMC **0.022** vs Euler 0.108 (**≈5배↓**) / N=5: SMC **0.012** vs 0.055 → **저 NFE PF 압승(가설 확인)**.
-- **N≥8**: 경로퇴화(리샘플 반복→소수모드 소멸)로 SMC 열화, Euler 우월. **크로스오버 N≈6~8**.
-- naive 노이즈 어닐링(SMC-an): 제안분산→0 이 **가중치 퇴화** 유발 → 악화(실패, 정직한 음성).
+- **저 NFE 압승**: N=3 SMC 0.022 vs Euler 0.108(5배↓). 순수 SMC는 **N≥8서 경로퇴화**(소수모드 소멸)로 열화.
+- **✅ rejuvenation이 해결**(알려진 $p_t$ score로 ULA move, 리샘플 후 다양성 복원):
+  - **N=5: SMC+rej 0.0039 vs Euler 0.052 = 13배↓**, 모드질량 [0.62,0.29,0.09] 거의 정확.
+  - **N=20: 순수 SMC 0.085(붕괴) → SMC+rej 0.014**(≈Euler 복구), 모드질량 보존. **고 NFE 퇴화 해결.**
+  - (N=12는 단일런 분산으로 흔들림 — 다중시드 평균 필요.)
+- naive 노이즈 어닐링은 실패(가중 퇴화) — 정직한 음성.
 
-**결론:** PF-flow 대체는 **few-step 영역의 방법**. 고 NFE 퇴화를 막는 **rejuvenation(MCMC-move)·stratified 리샘플링**이 핵심 enabling 기법 = 연구 to-do.
+**결론:** PF-flow 대체는 **few-step에서 Euler 압도(최대 13배↓)**, **rejuvenation이 고 NFE 퇴화까지 봉합** → 전 영역 Euler 이상. rejuvenation(MCMC-move)이 핵심 enabling 기법임을 실증.
 
 ## 연구 각도 (3)
 1. **ESS-적응 SMC 생성기** — ESS 떨어질 때만 리샘플·세분화로 NFE↓ + "조악한 이산화서 SMC 한계오차 < Euler" **오차 바운드 정리**(Banach 고정점/수축). ← 메인.

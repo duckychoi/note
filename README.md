@@ -101,7 +101,9 @@ Gram 스타일손실 = 시간축 피처 **자기상관** ↔ (Wiener–Khinchin)
 $$\mathrm{KL}(q\|p_{data})\le\tfrac{1}{2\sigma^2}\!\int_0^1\!\mathbb E\|v^*-u_q\|^2dt\asymp\tfrac{1}{2\sigma^2}B(q)\quad(\sigma{>}0,\ \text{Girsanov+데이터처리}),$$
 $\sigma{=}0$ 이면 $W_2^2(q,p_{data})\lesssim B(q)$ (연속방정식 안정성). → FM 잔차 리워드 최대화(+max-ent)가 분포매칭을 민다.
 
-**수치검증(src/toy_fm_divergence.py):** 교란분포족에서 **base(KL=0) 잔차 최소(proper 확인)**, **Spearman corr(R, KL)=0.73**(단조·방향 확인). 큰 shift의 비단조는 비모수 $v^*$ 의 OOD 열화(§4.3, 추정 artifact). 미완: $C(q)$ 상수화(rectified/OT 결합)·주변불일치 봉합·$v^*$ 실현오차.
+**수치검증(src/toy_fm_divergence.py):** 교란분포족에서 **base(KL=0) 잔차 최소(proper 확인)**, **Spearman corr(R, KL)=0.73**(단조·방향 확인). 큰 shift의 비단조는 비모수 $v^*$ 의 OOD 열화(§4.3, 추정 artifact).
+
+**§4.1 C(q) 축소 시도 — 유용한 음성결과(src/toy_rectified_coupling.py):** OT결합이 데이터 경로는 직선화(CFM잔차 4.36→0.82)하나, eval에서 $x_0$ 독립샘플이면 **학습·평가 결합 불일치**로 corr(R,KL) 0.77→**0.25 역효과**. 교훈: C 축소엔 **train/eval 결합 일관성** 필수, 또는 **가능도/점수매칭형 리워드**(C floor 없음)가 더 유망.
 
 ## 정직한 평가 (논문 가치)
 - "더 빠른 TD"로는 **약함** (정상환경에서 짐).

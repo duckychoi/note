@@ -68,6 +68,25 @@
 
 ---
 
+## 라인 3 — Flow-Matching 프라이어 = 스타일 리워드 (위상+분포)
+
+**아이디어:** 모션 리워드를 손으로 짜지 말고, RoPE(=회전 위상)로 리듬을, flow matching(=분포)으로 flow/스타일을. AMP 판별자(적대)를 **flow-matching 잔차(수송·비적대)** 로 대체.
+```
+r_style(x, φ) = − E_{t, x0} || v_θ(x_t, t; φ) − (x − x0) ||²     (x_t=(1−t)x0+t·x)
+```
+
+**증명 스케치(docs/03):** 고정 에너지에 대한 리워드최대화는 $q$에 선형→**모드붕괴**. **max-ent(soft) RL** 과 결합해야 $q^*\propto\exp(r/\alpha)$, $r=\log p$, $\alpha=1$ → $q^*=p_{data}$ (분포매칭). 열린 과제: FM 잔차와 $-\log p$ 의 gap(경로 divergence) 특성화.
+
+**toy 검증(src/toy_fm_vs_amp.py, numpy only, 3-모드 GMM):**
+- **C1** 리워드최대화(argmax)=단일점 붕괴. soft α: 0.05→1모드, 1.0→목표가중 [0.6,0.3,0.1] 복원(H 0.82). → 이론 확인.
+- **C2** 비모수 FM 잔차 에너지 corr(logp)=**0.93**, 모드 에너지 순서=가중치 순서, 모두 OOD보다 높음 → **유효 밀도점수**.
+- **C3** 완전수렴 AMP corr 0.61 / 덜학습 AMP(실GAN) corr 0.54·표준편차 **0.07(불안정)·최저 0.37** vs **FM 0.93·분산 0** → FM이 더 정확·안정.
+
+**설계 함의:** PPO 리워드최대화 ✗ → **soft/max-ent RL ✓**. 위상조건 $v_\theta(\cdot;\phi)$ → 위상별 분포매칭=리듬.
+
+## 라인 3+ — Style/Content Loss 접목 (docs/04)
+Gram 스타일손실 = 시간축 피처 **자기상관** ↔ (Wiener–Khinchin) **파워스펙트럼**. 분해: **CONTENT=위상 민감 목표, STYLE=위상 불변 PSD(리듬 텍스처), 분포=FM**. 세 축 상보: RoPE(위상)+FM(분포)+Gram/PSD(리듬). 싸고 비적대인 리듬 매칭 항.
+
 ## 정직한 평가 (논문 가치)
 - "더 빠른 TD"로는 **약함** (정상환경에서 짐).
 - **"강인/비정상 확률근사"로 프레이밍하면 중상(中上)**: ① 외란 불변 오차 실증 ② 적응게인으로 양축 지배 ③ 응용 니치 분명(continual/robust RL, **시변 채널 빔포밍**).
@@ -79,7 +98,12 @@ src/
   spectral_credit.py     # 라인1: FIR/IIR 신용할당 필터 설계
   stsa_robust_sa.py      # 라인2: 고정 STW vs 표준 SA (A~E)
   stsa_adaptive.py       # 라인2: 적응게인 STW 하이브리드 (A,D)
-docs/                    # 개념 노트
+  toy_fm_vs_amp.py       # 라인3: FM 잔차 리워드 vs AMP (분포매칭·안정성)
+docs/
+  01-spectral-credit-assignment.md
+  02-stsa-robust-sa.md
+  03-fm-reward-divergence-proof-sketch.md
+  04-style-content-loss.md
 results/                 # 실행 로그
 references.md
 ```

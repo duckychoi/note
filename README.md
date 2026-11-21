@@ -120,6 +120,7 @@ src/
   toy_psd_style.py       # 라인3+: PSD 스타일손실 (위상불변 리듬, Wiener-Khinchin)
   toy_rope_phase_flow.py # 라인3+: RoPE 위상조건 flow 생성 (링=순환 위상)
   toy_fm_divergence.py   # 라인3++: FM 잔차 R(q) vs KL(q||p_data) 단조성 검증
+  toy_rectified_coupling.py # 라인3++: OT결합 C축소 시도(음성결과: eval 결합일관성 필요)
 docs/
   01-spectral-credit-assignment.md
   02-stsa-robust-sa.md

@@ -1,0 +1,22 @@
+정리(docs/05) 검증: FM 잔차 R(q) vs KL(q||p_data)
+
+q_λ              KL(q||p)     FM잔차 R
+base                0.000      2.973
+shift 0.5           0.404      5.723
+shift 1.0           1.560      7.393
+shift 1.5           3.645      5.407
+shift 2.0           6.006     10.257
+shift 3.0           9.178      8.157
+var x1.3            0.163      4.487
+var x1.7            0.791      5.436
+var x2.5            2.904      6.032
+wtilt균등             0.220      7.566
+wtilt1지배            0.098      4.024
+wtilt3지배            1.330      5.826
+
+Spearman corr(R, KL) = 0.727  (1에 가까울수록 '잔차가 divergence 추적')
+Pearson  corr(R, KL) = 0.672
+base R=2.973 가 최소인가: True  (교란 없을 때 잔차 최소 → proper)
+
+종합: R(q) 가 KL 과 강한 단조 양상관 → 정리 방향(잔차≳divergence·단조) 수치확인.
+      (상수 offset C(q)·주변불일치는 docs/05 §4 미완 과제.)

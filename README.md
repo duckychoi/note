@@ -96,6 +96,13 @@ Gram 스타일손실 = 시간축 피처 **자기상관** ↔ (Wiener–Khinchin)
 **toy 검증 — RoPE 위상조건 생성 (src/toy_rope_phase_flow.py):**
 링(순환 위상 다양체)에서 비모수 조건 flow. **무조건 κ=0: 각도오차 1.63rad(명령 무시) → RoPE조건 κ=8: 0.33rad(추종), 반경 2.07(링 위)**. RoPE 위상조건이 생성 리듬 위상을 제어함을 실증(비모수라 다소 coarse; NN이면 더 sharp).
 
+## 라인 3++ — FM 잔차 → divergence 상한 정리 (docs/05)
+**정리:** 잔차는 바이어스-분산 분해 $\mathcal R(q)=B(q)+C(q)$. 바이어스항 $B(q)$ 는 $=0\iff q=p_{data}$ (proper) 이고,
+$$\mathrm{KL}(q\|p_{data})\le\tfrac{1}{2\sigma^2}\!\int_0^1\!\mathbb E\|v^*-u_q\|^2dt\asymp\tfrac{1}{2\sigma^2}B(q)\quad(\sigma{>}0,\ \text{Girsanov+데이터처리}),$$
+$\sigma{=}0$ 이면 $W_2^2(q,p_{data})\lesssim B(q)$ (연속방정식 안정성). → FM 잔차 리워드 최대화(+max-ent)가 분포매칭을 민다.
+
+**수치검증(src/toy_fm_divergence.py):** 교란분포족에서 **base(KL=0) 잔차 최소(proper 확인)**, **Spearman corr(R, KL)=0.73**(단조·방향 확인). 큰 shift의 비단조는 비모수 $v^*$ 의 OOD 열화(§4.3, 추정 artifact). 미완: $C(q)$ 상수화(rectified/OT 결합)·주변불일치 봉합·$v^*$ 실현오차.
+
 ## 정직한 평가 (논문 가치)
 - "더 빠른 TD"로는 **약함** (정상환경에서 짐).
 - **"강인/비정상 확률근사"로 프레이밍하면 중상(中上)**: ① 외란 불변 오차 실증 ② 적응게인으로 양축 지배 ③ 응용 니치 분명(continual/robust RL, **시변 채널 빔포밍**).
@@ -110,11 +117,13 @@ src/
   toy_fm_vs_amp.py       # 라인3: FM 잔차 리워드 vs AMP (분포매칭·안정성)
   toy_psd_style.py       # 라인3+: PSD 스타일손실 (위상불변 리듬, Wiener-Khinchin)
   toy_rope_phase_flow.py # 라인3+: RoPE 위상조건 flow 생성 (링=순환 위상)
+  toy_fm_divergence.py   # 라인3++: FM 잔차 R(q) vs KL(q||p_data) 단조성 검증
 docs/
   01-spectral-credit-assignment.md
   02-stsa-robust-sa.md
   03-fm-reward-divergence-proof-sketch.md
   04-style-content-loss.md
+  05-fm-residual-divergence-theorem.md
 results/                 # 실행 로그
 references.md
 ```

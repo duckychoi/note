@@ -87,6 +87,15 @@ r_style(x, φ) = − E_{t, x0} || v_θ(x_t, t; φ) − (x − x0) ||²     (x_t=
 ## 라인 3+ — Style/Content Loss 접목 (docs/04)
 Gram 스타일손실 = 시간축 피처 **자기상관** ↔ (Wiener–Khinchin) **파워스펙트럼**. 분해: **CONTENT=위상 민감 목표, STYLE=위상 불변 PSD(리듬 텍스처), 분포=FM**. 세 축 상보: RoPE(위상)+FM(분포)+Gram/PSD(리듬). 싸고 비적대인 리듬 매칭 항.
 
+**toy 검증 (src/toy_psd_style.py):**
+- **S1** 같은 리듬·다른 위상 → per-frame L2 0.002→**2.08 폭발**, **PSD거리 0 유지**(위상불변 리듬 포착).
+- **S2** PSD거리가 리듬(주파수) 정확히 판별(f0=6에서 최소).
+- **S3** content 이벤트는 per-frame만 분리, PSD는 둔감 → content/style 분리 타당.
+- **W** 순환 자기상관 = IFFT(PSD) 오차 **2.84e-14** → Wiener–Khinchin(Gram=PSD) 수치확인.
+
+**toy 검증 — RoPE 위상조건 생성 (src/toy_rope_phase_flow.py):**
+링(순환 위상 다양체)에서 비모수 조건 flow. **무조건 κ=0: 각도오차 1.63rad(명령 무시) → RoPE조건 κ=8: 0.33rad(추종), 반경 2.07(링 위)**. RoPE 위상조건이 생성 리듬 위상을 제어함을 실증(비모수라 다소 coarse; NN이면 더 sharp).
+
 ## 정직한 평가 (논문 가치)
 - "더 빠른 TD"로는 **약함** (정상환경에서 짐).
 - **"강인/비정상 확률근사"로 프레이밍하면 중상(中上)**: ① 외란 불변 오차 실증 ② 적응게인으로 양축 지배 ③ 응용 니치 분명(continual/robust RL, **시변 채널 빔포밍**).
@@ -99,6 +108,8 @@ src/
   stsa_robust_sa.py      # 라인2: 고정 STW vs 표준 SA (A~E)
   stsa_adaptive.py       # 라인2: 적응게인 STW 하이브리드 (A,D)
   toy_fm_vs_amp.py       # 라인3: FM 잔차 리워드 vs AMP (분포매칭·안정성)
+  toy_psd_style.py       # 라인3+: PSD 스타일손실 (위상불변 리듬, Wiener-Khinchin)
+  toy_rope_phase_flow.py # 라인3+: RoPE 위상조건 flow 생성 (링=순환 위상)
 docs/
   01-spectral-credit-assignment.md
   02-stsa-robust-sa.md

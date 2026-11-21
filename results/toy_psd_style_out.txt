@@ -1,0 +1,28 @@
+===== (S1) 같은 리듬, 다른 위상 =====
+  위상 0.00π | per-frame L2 =  0.002 | PSD거리 =  0.0000
+  위상 0.50π | per-frame L2 =  1.360 | PSD거리 =  0.0000
+  위상 1.00π | per-frame L2 =  2.081 | PSD거리 =  0.0000
+  위상 1.50π | per-frame L2 =  1.379 | PSD거리 =  0.0000
+  → 위상 바뀌면 L2 폭발하지만 PSD거리는 ~0 (리듬 동일을 위상불변 인식)
+
+===== (S2) 다른 리듬(주파수) =====
+  f0=4 | per-frame L2 =  1.128 | PSD거리 =  0.3394
+  f0=5 | per-frame L2 =  1.204 | PSD거리 =  0.3862
+  f0=6 | per-frame L2 =  0.002 | PSD거리 =  0.0000
+  f0=7 | per-frame L2 =  1.215 | PSD거리 =  0.3869
+  f0=9 | per-frame L2 =  1.125 | PSD거리 =  0.3385
+  → f0=6(동일리듬)에서 PSD거리 최소, 다른 리듬일수록 커짐 (리듬 판별)
+
+===== (S3) content 이벤트 (리듬 같음 + 특정 시점 돌출) =====
+  이벤트 신호 vs ref | per-frame L2 =  0.354 (이벤트 잡힘) | PSD거리 =  0.1682 (상대적으로 둔감)
+  판별: 'content 이벤트'는 per-frame L2(0.35)가 위상차(2.08)와 섞여 모호
+  → content(이벤트/목표)는 per-frame·위상민감, style(리듬)은 PSD·위상불변 = 분리 필요
+
+===== (W) Wiener–Khinchin 수치확인: IFFT(PSD) == 순환 자기상관 =====
+  max|순환자기상관 - IFFT(PSD)| (앞 20 lag) = 2.84e-14  → 일치(Gram=PSD 푸리에쌍 확인)
+
+===== 종합 =====
+S1: PSD거리는 위상불변(같은 리듬 ~0), L2는 위상에 폭발 → 'style=리듬'은 PSD로 담아야
+S2: PSD거리가 리듬(주파수)을 정확히 판별
+S3: content(이벤트)는 per-frame 필요, style(리듬)은 PSD → content/style 분리 타당
+W : Gram(자기상관) ↔ PSD 푸리에쌍 수치확인 → docs/04 스펙트럴 해석 성립

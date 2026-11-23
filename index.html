@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Floor Plan → Clash-Free 3D (인터랙티브 데모)</title>
+<style>
+  :root{--bg:#0b0f14;--panel:#121923;--line:#223040;--fg:#e8eef4;--mut:#93a4b4;--acc:#4ade80;--blue:#60a5fa;--red:#f87171;--amber:#fbbf24}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;overflow:hidden}
+  #app{display:flex;height:100vh}
+  /* sidebar */
+  #side{width:340px;flex:none;background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow-y:auto}
+  .pad{padding:18px 18px}
+  h1{font-size:1.15rem;line-height:1.35}.sub{color:var(--mut);font-size:.84rem;margin-top:4px}
+  .ico{font-size:1.3rem}
+  .steps{padding:6px 12px}
+  .st{display:flex;gap:11px;padding:11px;border-radius:12px;cursor:pointer;border:1px solid transparent;transition:.15s}
+  .st:hover{background:#0c131b}
+  .st.on{background:#0c131b;border-color:var(--acc)}
+  .st .n{width:26px;height:26px;flex:none;border-radius:8px;background:#1c2938;color:var(--mut);display:grid;place-items:center;font-weight:700;font-size:.82rem}
+  .st.on .n{background:var(--acc);color:#06220f}
+  .st .t b{font-size:.95rem}.st .t p{color:var(--mut);font-size:.8rem;margin-top:2px}
+  .cc{margin:4px 12px 14px;background:#0c131b;border:1px solid var(--line);border-radius:12px;padding:12px}
+  .cc .lab{color:var(--acc);font-size:.75rem;font-weight:700;letter-spacing:.3px}
+  .cc code{display:block;color:#cbd5e1;font-family:ui-monospace,Menlo,monospace;font-size:.78rem;margin-top:6px;white-space:pre-wrap;line-height:1.5}
+  .clashbox{margin:0 12px 14px;border-radius:12px;border:1px solid var(--line);overflow:hidden}
+  .clashbox .hd{padding:10px 12px;font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;background:#0c131b}
+  .clashbox .hd .cnt{font-size:.8rem;padding:2px 9px;border-radius:999px}
+  .ci{padding:8px 12px;font-size:.82rem;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
+  .dotc{width:9px;height:9px;border-radius:50%;flex:none}
+  .ctrls{margin-top:auto;padding:14px;border-top:1px solid var(--line);display:flex;gap:8px}
+  button{flex:1;background:#1c2938;color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:11px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s}
+  button:hover{border-color:var(--acc)}
+  button.primary{background:var(--acc);color:#06220f;border-color:var(--acc)}
+  /* viewport */
+  #view{flex:1;position:relative}
+  #c{display:block;width:100%;height:100%}
+  .hud{position:absolute;left:16px;top:14px;background:rgba(10,15,20,.7);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:10px;padding:8px 13px;font-size:.85rem}
+  .hud b{color:var(--acc)}
+  .legend{position:absolute;right:16px;top:14px;background:rgba(10,15,20,.7);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:.78rem}
+  .legend div{display:flex;gap:8px;align-items:center;margin:3px 0}
+  .legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+  .foot{position:absolute;left:16px;bottom:12px;color:var(--mut);font-size:.72rem}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <div class="pad"><h1><span class="ico">🏗️</span> Floor Plan → Clash-Free 3D</h1>
+      <div class="sub">2D 도면을 3D로 올리고, MEP 충돌을 검사해 해소하는 워크플로우 (Claude Code 스타일). 인터랙티브 데모.</div></div>
+
+    <div class="steps" id="steps"></div>
+
+    <div class="cc"><span class="lab">▸ Claude Code 단계</span><code id="ccmd">claude: "도면 PNG를 읽어 벽 좌표를 추출해줘"</code></div>
+
+    <div class="clashbox"><div class="hd">충돌 검사 <span class="cnt" id="cnt" style="background:#1c2938;color:var(--mut)">미실행</span></div>
+      <div id="clist"></div></div>
+
+    <div class="ctrls">
+      <button id="prev">← 이전</button>
+      <button id="next" class="primary">다음 →</button>
+    </div>
+  </aside>
+
+  <div id="view">
+    <canvas id="c"></canvas>
+    <div class="hud" id="hud"><b>1/5</b> · 2D 플로어플랜</div>
+    <div class="legend">
+      <div><i style="background:#8aa0b4"></i> 벽/슬래브</div>
+      <div><i style="background:#fbbf24"></i> 구조 보(Beam)</div>
+      <div><i style="background:#60a5fa"></i> 배관/덕트(MEP)</div>
+      <div><i style="background:#f87171"></i> 충돌(clash)</div>
+      <div><i style="background:#4ade80"></i> 해소됨</div>
+    </div>
+    <div class="foot">드래그=회전 · 휠=줌 · 우클릭=이동</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const STEPS=[
+ {t:"2D 플로어플랜",p:"도면에서 벽 좌표 추출",cmd:'claude: "도면 PNG에서 벽 polyline과 방 경계를 좌표로 뽑아줘"'},
+ {t:"3D 변환(벽·슬래브)",p:"벽 압출 + 바닥/천장",cmd:'claude: "추출한 좌표로 벽을 3m 높이로 압출하고 슬래브를 깔아줘 (IFC/three.js)"'},
+ {t:"구조 + MEP 배치",p:"보·배관·덕트 추가",cmd:'claude: "구조 보와 급수배관·덕트를 라우팅해서 모델에 추가해줘"'},
+ {t:"충돌 검사",p:"MEP ↔ 구조 간섭 탐지",cmd:'claude: "MEP 요소와 구조 보의 AABB 간섭을 검사해 clash를 리스트업해줘"'},
+ {t:"충돌 해소",p:"배관 리라우팅 → clash-free",cmd:'claude: "충돌난 배관을 보 아래로 리라우팅하고 재검사해 clash 0으로 만들어줘"'},
+];
+let step=0;
+
+// ---------- three.js ----------
+const canvas=document.getElementById('c');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
+renderer.setPixelRatio(devicePixelRatio);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x0b0f14);
+const cam=new THREE.PerspectiveCamera(50,1,.1,200);cam.position.set(11,9,13);
+const ctrl=new THREE.OrbitControls(cam,canvas);ctrl.enableDamping=true;ctrl.target.set(5,1.5,3.5);
+scene.add(new THREE.AmbientLight(0xffffff,.55));
+const dir=new THREE.DirectionalLight(0xffffff,.9);dir.position.set(8,14,6);scene.add(dir);
+const grid=new THREE.GridHelper(40,40,0x1c2938,0x121923);grid.position.y=-0.01;scene.add(grid);
+
+function box(w,h,d,x,y,z,color,op=1){
+  const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),
+    new THREE.MeshStandardMaterial({color,transparent:op<1,opacity:op,roughness:.8,metalness:.05}));
+  m.position.set(x,y,z);scene.add(m);return m;
+}
+// 플로어플랜: 10 x 7, 벽두께 .2, 높이 3
+const W=10,D=7,H=3,T=.2;
+const COL={wall:0x8aa0b4,slab:0x6b7d8f,beam:0xfbbf24,mep:0x60a5fa};
+const walls=[],slabs=[],beams=[],mep=[];
+// 바닥
+slabs.push(box(W,.12,D,W/2,0,D/2,COL.slab));
+// 외벽 4 + 내벽 1
+walls.push(box(W,H,T,W/2,H/2,0,COL.wall));
+walls.push(box(W,H,T,W/2,H/2,D,COL.wall));
+walls.push(box(T,H,D,0,H/2,D/2,COL.wall));
+walls.push(box(T,H,D,W,H/2,D/2,COL.wall));
+walls.push(box(T,H,D*0.6,6,H/2,D*0.3,COL.wall)); // 내벽
+// 천장 슬래브
+const ceil=box(W,.12,D,W/2,H,D/2,COL.slab,.5);slabs.push(ceil);
+// 구조 보 2개 (천장 아래)
+beams.push(box(W,.4,.3,W/2,H-.35,2.2,COL.beam));
+beams.push(box(W,.4,.3,W/2,H-.35,5.0,COL.beam));
+// MEP: 급수배관(실린더) + 덕트(박스). 일부러 보와 충돌하게 배치.
+function pipe(x1,z1,x2,z2,y,r,color){
+  const a=new THREE.Vector3(x1,y,z1),b=new THREE.Vector3(x2,y,z2);
+  const len=a.distanceTo(b);
+  const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,len,16),
+     new THREE.MeshStandardMaterial({color,roughness:.5,metalness:.3}));
+  m.position.copy(a.clone().add(b).multiplyScalar(.5));
+  m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),b.clone().sub(a).normalize());
+  scene.add(m);m.userData.rebase={x1,z1,x2,z2,y,r,color};return m;
+}
+const p1=pipe(1,2.2,9,2.2,H-.35,.13,COL.mep);        // 보1 높이와 같음 → 충돌
+const duct=box(.5,.5,D*0.8,2.5,H-.35,D*0.4,COL.mep); // 덕트, 보2와 교차 → 충돌
+mep.push(p1,duct);
+
+// ---------- 레이어 가시성 ----------
+function setVis(){
+  const s=step;
+  walls.forEach(m=>m.visible=s>=1);
+  ceil.visible=s>=1;
+  beams.forEach(m=>m.visible=s>=2);
+  mep.forEach(m=>m.visible=s>=2);
+  // 2D 단계: 바닥만, 톱뷰 느낌
+}
+// ---------- 충돌 검사 ----------
+let clashes=[];
+function aabb(m){return new THREE.Box3().setFromObject(m);}
+function detect(){
+  clashes=[];
+  const names=new Map([[p1,"급수배관 P-1"],[duct,"공조덕트 D-1"]]);
+  const bn=new Map();beams.forEach((b,i)=>bn.set(b,"구조보 B-"+(i+1)));
+  mep.forEach(mm=>{
+    const mb=aabb(mm);
+    beams.forEach(bm=>{
+      if(mb.intersectsBox(aabb(bm))) clashes.push({a:names.get(mm),b:bn.get(bm),m:mm});
+    });
+  });
+  // 색칠
+  mep.forEach(mm=>mm.material.color.set(COL.mep));
+  clashes.forEach(c=>c.m.material.color.set(0xf87171));
+}
+function resolve(){
+  // 배관을 보 아래로 리라우팅, 덕트 z 이동 → 간섭 해제
+  scene.remove(p1);
+  const np=pipe(1,2.2,9,2.2,H-1.1,.13,0x4ade80);mep[0]=np; // 아래로
+  duct.position.z=6.2;duct.position.y=H-1.1;duct.material.color.set(0x4ade80);
+  // 재검사
+  mep[0]=np;
+  clashes=[];
+  const mepE=[np,duct];
+  mepE.forEach(mm=>{const mb=aabb(mm);beams.forEach(bm=>{if(mb.intersectsBox(aabb(bm)))clashes.push({a:'?',b:'?',m:mm});});});
+}
+// ---------- UI ----------
+const stepsEl=document.getElementById('steps');
+STEPS.forEach((s,i)=>{const d=document.createElement('div');d.className='st';d.innerHTML=
+  `<div class="n">${i+1}</div><div class="t"><b>${s.t}</b><p>${s.p}</p></div>`;
+  d.onclick=()=>{step=i;render();};stepsEl.appendChild(d);});
+function render(){
+  setVis();
+  document.querySelectorAll('.st').forEach((e,i)=>e.classList.toggle('on',i===step));
+  document.getElementById('hud').innerHTML=`<b>${step+1}/5</b> · ${STEPS[step].t}`;
+  document.getElementById('ccmd').textContent=STEPS[step].cmd;
+  const cnt=document.getElementById('cnt'),clist=document.getElementById('clist');
+  clist.innerHTML='';
+  if(step===3){detect();
+    cnt.textContent=clashes.length+'건 발견';cnt.style.background='#3b1414';cnt.style.color='#f87171';
+    clashes.forEach(c=>{const e=document.createElement('div');e.className='ci';
+      e.innerHTML=`<span class="dotc" style="background:#f87171"></span>${c.a} ↔ ${c.b}`;clist.appendChild(e);});
+  }else if(step===4){resolve();
+    cnt.textContent='0건 · clash-free ✓';cnt.style.background='#0f2a18';cnt.style.color='#4ade80';
+    const e=document.createElement('div');e.className='ci';
+    e.innerHTML=`<span class="dotc" style="background:#4ade80"></span>배관 리라우팅·덕트 이동 완료`;clist.appendChild(e);
+  }else{cnt.textContent='미실행';cnt.style.background='#1c2938';cnt.style.color='var(--mut)';}
+  if(step<3){mep.forEach(m=>m.material&&m.material.color.set(COL.mep));}
+}
+document.getElementById('next').onclick=()=>{if(step<4){step++;render();}};
+document.getElementById('prev').onclick=()=>{if(step>0){step--;render();}};
+
+function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;
+  if(canvas.width!==w||canvas.height!==h){renderer.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();}}
+function loop(){resize();ctrl.update();renderer.render(scene,cam);requestAnimationFrame(loop);}
+render();loop();
+</script>
+</body>
+</html>

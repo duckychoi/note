@@ -1,0 +1,13 @@
+{
+ "_note": "티어 B: RTX 5090, DiT-S. 클래스 = ImageNet-100(0..99) + UCF-101(100..200), 무조건 = 201.",
+ "model": {"in_ch": 16, "d": 384, "depth": 12, "heads": 6, "d_ctx": 384, "n_classes": 201, "shared_mod": true},
+ "t_mode": "logit_normal", "res_shift": true, "base_tokens": 256, "p_drop": 0.1, "wd": 0.001, "ema": 0.9999, "clip": 1.0, "bf16": true, "log_every": 100,
+ "stages": [
+  {"name": "img128", "image_dir": "/data/lat/img128", "steps": 200000, "batch_image": 128, "lr": 1e-4, "warmup": 2000},
+  {"name": "img256", "image_dir": "/data/lat/img256", "steps": 100000, "batch_image": 64, "lr": 1e-4, "warmup": 1000},
+  {"name": "joint_img_vid128", "image_dir": "/data/lat/img128", "video_dir": "/data/lat/ucf128_17f", "image_ratio": 0.3,
+   "steps": 100000, "batch_image": 64, "batch_video": 8, "lr": 6e-5, "warmup": 1000},
+  {"name": "anneal_hq", "image_dir": "/data/lat/img256_hq", "video_dir": "/data/lat/ucf128_17f_hq", "image_ratio": 0.3,
+   "steps": 10000, "batch_image": 32, "batch_video": 8, "lr": 3e-5, "warmup": 500, "final_lr_frac": 0.1}
+ ]
+}

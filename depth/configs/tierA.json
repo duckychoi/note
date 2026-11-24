@@ -1,0 +1,14 @@
+{
+ "_note": "티어 A: RTX A6000 x2 (torchrun --nproc_per_node 2). 배치는 GPU당. 시간은 추정 — 처리량 탐침 후 재계산.",
+ "common": {"f_c": 300.0, "workers": 8, "bf16": true, "clip": 1.0, "wd": 0.0, "enc_ratio": 0.1, "log_every": 50, "save_every": 5000},
+ "teacher": {"encoder": "vitl", "size": 518, "batch_per_gpu": 4, "accum": 4, "steps": 40000, "lr_decoder": 5e-5, "gm_weight": 2.0, "grad_ckpt": true,
+             "data_roots": ["/data/hypersim", "/data/vkitti2"]},
+ "student": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 60000, "lr_decoder": 5e-5, "trim": 0.1, "feat_align": 1.0, "feat_margin": 0.85,
+             "pseudo_root": "/data/pseudo_coco"},
+ "student_b": {"encoder": "vitb", "size": 518, "batch_per_gpu": 8, "accum": 2, "steps": 60000, "lr_decoder": 5e-5, "trim": 0.1, "feat_align": 1.0,
+               "pseudo_root": "/data/pseudo_coco"},
+ "metric": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 20000, "lr_decoder": 5e-5, "max_depth": 80.0,
+            "data_roots": ["/data/hypersim", "/data/vkitti2"]},
+ "sharpen": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 10000, "lr_decoder": 2e-5, "sharpen_space": "ssi_disp",
+             "data_roots": ["/data/hypersim", "/data/vkitti2"]}
+}

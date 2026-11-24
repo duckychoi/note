@@ -1,0 +1,86 @@
+{
+ "_note": "\ud2f0\uc5b4 B: 5090. ~125M dense, 5B \ud1a0\ud070. \ubc30\uce58\u224852\ub9cc \ud1a0\ud070/\uc2a4\ud15d. MoE \ubcc0\ud615(HL2/HL3): 8\uc804\ubb38\uac00 top-2 + \uacf5\uc720 1, \uc804\ubb38\uac00 \ud3ed = dense FFN/3 \u2192 \ud65c\uc131 FFN \u2248 dense. \ubcf4\uc870\uc190\uc2e4 \uade0\ud615 \ube44\uad50\ud314(HL2).",
+ "model": {
+  "vocab": 50304,
+  "d": 768,
+  "n_layer": 12,
+  "n_head": 12,
+  "n_kv_head": 4,
+  "max_seq": 4096,
+  "moe": true,
+  "n_experts": 8,
+  "top_k": 2,
+  "n_shared": 1,
+  "first_dense": 1,
+  "expert_ffn": 640,
+  "balance": "aux_loss",
+  "bias_gamma": 0.001,
+  "aux_alpha": 0.01
+ },
+ "val_data": [
+  [
+   "/data/tok/fineweb_edu_val/shard_*.bin",
+   1.0
+  ]
+ ],
+ "eval_every": 500,
+ "eval_iters": 40,
+ "log_every": 50,
+ "bf16": true,
+ "wd": 0.1,
+ "clip": 1.0,
+ "stages": [
+  {
+   "name": "general",
+   "data": [
+    [
+     "/data/tok/fineweb_edu/shard_*.bin",
+     1.0
+    ]
+   ],
+   "seq_len": 1024,
+   "micro_batch": 16,
+   "accum": 32,
+   "tokens": 4400000000.0,
+   "warmup": 95,
+   "lr_start": 0.001,
+   "shape": "const"
+  },
+  {
+   "name": "anneal",
+   "data": [
+    [
+     "/data/tok/fineweb_edu/shard_*.bin",
+     0.8
+    ],
+    [
+     "/data/tok/finemath/shard_*.bin",
+     0.2
+    ]
+   ],
+   "seq_len": 1024,
+   "micro_batch": 16,
+   "accum": 32,
+   "tokens": 500000000.0,
+   "lr_start": 0.001,
+   "lr_end": 0.0001,
+   "shape": "linear"
+  },
+  {
+   "name": "long_ctx",
+   "data": [
+    [
+     "/data/tok/fineweb_edu/shard_*.bin",
+     1.0
+    ]
+   ],
+   "seq_len": 4096,
+   "rope_base": 500000.0,
+   "micro_batch": 4,
+   "accum": 32,
+   "tokens": 100000000.0,
+   "lr_start": 0.0001,
+   "shape": "const"
+  }
+ ]
+}

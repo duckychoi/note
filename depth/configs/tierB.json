@@ -1,0 +1,12 @@
+{
+ "_note": "티어 B: RTX 5090 x1 (32GB). 교사 ViT-B. ViT-L 교사는 size 392 + grad_ckpt + batch 2/accum 16 으로 대체 가능.",
+ "common": {"f_c": 300.0, "workers": 8, "bf16": true, "clip": 1.0, "wd": 0.0, "enc_ratio": 0.1, "log_every": 50, "save_every": 5000},
+ "teacher": {"encoder": "vitb", "size": 518, "batch_per_gpu": 8, "accum": 4, "steps": 40000, "lr_decoder": 5e-5, "gm_weight": 2.0, "grad_ckpt": true,
+             "data_roots": ["/data/hypersim_half", "/data/vkitti2"]},
+ "student": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 60000, "lr_decoder": 5e-5, "trim": 0.1, "feat_align": 1.0, "feat_margin": 0.85,
+             "pseudo_root": "/data/pseudo_coco_120k"},
+ "metric": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 10000, "lr_decoder": 5e-5, "max_depth": 80.0,
+            "data_roots": ["/data/hypersim_half", "/data/vkitti2"]},
+ "sharpen": {"encoder": "vits", "size": 518, "batch_per_gpu": 16, "accum": 1, "steps": 5000, "lr_decoder": 2e-5, "sharpen_space": "ssi_disp",
+             "data_roots": ["/data/hypersim_half", "/data/vkitti2"]}
+}

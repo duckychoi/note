@@ -1,0 +1,58 @@
+{
+ "_note": "\ud2f0\uc5b4 A: A6000 x2 (torchrun 2). ~350M dense, 7B \ud1a0\ud070. \ubc30\uce58=micro\u00d7accum\u00d7seq\u00d72GPU\u224852\ub9cc \ud1a0\ud070/\uc2a4\ud15d. \ucf54\uc0ac\uc778 \uae30\uc900\uc120(HL1): \uc77c\ubc18+\uc5b4\ub2d0\ub9c1\uc744 \ub2e8\uc77c \ucf54\uc0ac\uc778\uc73c\ub85c, \uac19\uc740 \ucd1d \ud1a0\ud070.",
+ "model": {
+  "vocab": 50304,
+  "d": 1024,
+  "n_layer": 24,
+  "n_head": 16,
+  "n_kv_head": 4,
+  "max_seq": 4096
+ },
+ "val_data": [
+  [
+   "/data/tok/fineweb_edu_val/shard_*.bin",
+   1.0
+  ]
+ ],
+ "eval_every": 500,
+ "eval_iters": 40,
+ "log_every": 50,
+ "bf16": true,
+ "wd": 0.1,
+ "clip": 1.0,
+ "stages": [
+  {
+   "name": "cosine",
+   "data": [
+    [
+     "/data/tok/fineweb_edu/shard_*.bin",
+     1.0
+    ]
+   ],
+   "seq_len": 1024,
+   "micro_batch": 16,
+   "accum": 16,
+   "tokens": 6860000000.0,
+   "warmup": 267,
+   "lr_start": 0.0006,
+   "shape": "cosine",
+   "lr_end": 5.9999999999999995e-05
+  },
+  {
+   "name": "long_ctx",
+   "data": [
+    [
+     "/data/tok/fineweb_edu/shard_*.bin",
+     1.0
+    ]
+   ],
+   "seq_len": 4096,
+   "rope_base": 500000.0,
+   "micro_batch": 4,
+   "accum": 16,
+   "tokens": 140000000.0,
+   "lr_start": 5.9999999999999995e-05,
+   "shape": "const"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "_note": "티어 A: A6000 x2, DiT-B. 잠재는 Wan2.1 VAE(C16; 이미지=1프레임). 배치는 GPU당. 시간은 추정 — 탐침 후 재계산.",
+ "model": {"in_ch": 16, "d": 768, "depth": 12, "heads": 12, "d_ctx": 768, "n_classes": 201, "shared_mod": true},
+ "t_mode": "logit_normal", "res_shift": true, "base_tokens": 256, "p_drop": 0.1, "wd": 0.001, "ema": 0.9999, "clip": 1.0, "bf16": true, "log_every": 100,
+ "stages": [
+  {"name": "img128", "image_dir": "/data/lat/img128", "steps": 200000, "batch_image": 128, "lr": 1e-4, "warmup": 2000},
+  {"name": "img256", "image_dir": "/data/lat/img256", "steps": 150000, "batch_image": 64, "lr": 1e-4, "warmup": 1000},
+  {"name": "joint_img_vid128", "image_dir": "/data/lat/img128", "video_dir": "/data/lat/ucf128_17f", "image_ratio": 0.3,
+   "steps": 150000, "batch_image": 128, "batch_video": 16, "lr": 6e-5, "warmup": 1000},
+  {"name": "anneal_hq", "image_dir": "/data/lat/img256_hq", "video_dir": "/data/lat/ucf128_17f_hq", "image_ratio": 0.3,
+   "steps": 20000, "batch_image": 64, "batch_video": 16, "lr": 3e-5, "warmup": 500, "final_lr_frac": 0.1}
+ ]
+}

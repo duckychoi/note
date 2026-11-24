@@ -1,0 +1,18 @@
+{
+ "fm_reg_F": {
+  "sigma": 0.3,
+  "iters": 30000,
+  "q_D": 177.22561645507812,
+  "auc_window_own_vs_other": 0.9927545,
+  "rstyle_med_own": -0.3533697724342346,
+  "rstyle_med_other": -1.0
+ },
+ "fm_reg_R": {
+  "sigma": 0.3,
+  "iters": 30000,
+  "q_D": 181.7921905517578,
+  "auc_window_own_vs_other": 0.921117875,
+  "rstyle_med_own": -0.32180488109588623,
+  "rstyle_med_other": -0.6739501953125
+ }
+}

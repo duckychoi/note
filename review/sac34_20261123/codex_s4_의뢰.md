@@ -1,0 +1,7 @@
+You are an adversarial reviewer. Read the file PREREG.md in this folder, section "## S4 사전등록 · 다중 스타일 모드 붕괴" (Korean), especially "### 유도". Also skim sac34.py (reward definitions for amp_phase / fm_phase).
+Task: check the DERIVATION before the experiment runs. Answer in Korean, concise, numbered:
+1. Is each step mathematically correct? (LSGAN optimal discriminator with targets ±1 and reward 1-¼(D-1)^2; per-style reward r_k = 1 - c^2/(1+c)^2 and the numeric examples; the claim that a FIXED likelihood reward E_{p_pi}[log p_D] is linear in style weights v and optimised at a vertex (mode-seeking), and that max-ent SAC action entropy does not change this; the learner-corrected reward giving -KL(p_pi||p_D) with optimum v=w; the 'drop-one vs collapse' penalty ratios KL 2.71 / JS 2.41 for 3 equal separated modes.)
+2. Are the assumptions (A1 optimal critics, A2 separated supports, A3 within-style shape fixed) stated adequately, and which one most threatens the predictions in practice?
+3. Is the user's hypothesis ("AMP collapses to 1-2 styles, likelihood/FM covers more evenly") supported, contradicted, or undetermined by this argument? Under what concrete conditions (if any) could an FM style reward genuinely cover modes better than AMP?
+4. Design flaws in the S4 test that would make the result uninterpretable (policy class without latent, deterministic vs stochastic evaluation, classifier, KL with 3 seeds, the pass line). Suggest minimal fixes.
+End with a verdict line: READY or NOT READY (to run as preregistered), with the blocking items.

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mujoco": "4.0.1",
+  "unique_starts": 11008,
+  "replayed_scenes": 18,
+  "snapshot_checks": 198,
+  "main_action_replays": 72,
+  "model_sha256": "c5ffb3d5db9c205cedf4d58bdd7d458c8ac4511376912345c87180f516367c6f"
+}

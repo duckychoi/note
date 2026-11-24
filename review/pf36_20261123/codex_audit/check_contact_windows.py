@@ -1,0 +1,131 @@
+"""Design diagnostic on fresh development seeds; no comparison of learned methods."""
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+
+import numpy as np
+
+HERE = Path(__file__).resolve().parent
+SOURCE = HERE.parent
+sys.path.insert(0, str(SOURCE))
+os.environ.setdefault("PF_NTH", "2")
+import pf36_g6b as comparison
+
+g = comparison.g
+a6 = comparison.a6
+
+
+def inspect_prefix(case):
+    counts = dict(gaps=0, one_frame=0, eligible=0, eligible_with_earlier_bounce=0, longer=0)
+    for mask, bounces in zip(case["mask"], case["bnc"]):
+        start = 0
+        for end in np.flatnonzero(mask[:g.CUT]):
+            if end==start:
+                continue
+            gap = int(end-start)
+            counts["gaps"] += 1
+            counts["one_frame"] += int(gap==1)
+            if gap <= comparison.KMAX:
+                counts["eligible"] += 1
+                counts["eligible_with_earlier_bounce"] += int(bounces[start+1:end].any())
+            else:
+                counts["longer"] += 1
+            start = end
+    return counts
+
+
+def branch_at_bounce():
+    model = g.mk(.12, .13)
+    state = g.init_states(np.random.default_rng(61928), 1)
+    for frame in range(1, g.T):
+        children, bounce = comparison.step_eps([model,model], np.repeat(state,2,axis=0), np.array([-1.,1.]))
+        if bounce.all():
+            nxt, _ = comparison.step_eps([model,model], children.copy(), np.zeros(2))
+            assert np.array_equal(children[0,1:3],children[1,1:3])
+            assert children[0,5]!=children[1,5] and nxt[0,2]!=nxt[1,2]
+            return dict(frame=frame, z_m=children[:,2].tolist(), vz_m_s=children[:,5].tolist(),
+                        following_z_m=nxt[:,2].tolist())
+        state = children[:1]
+    raise AssertionError("No impact for the specified demonstration.")
+
+
+def run():
+    groups = []
+    for seed in range(61920,61928):
+        case = a6.cases_custom(seed,32,"shift")
+        groups.append(dict(seed=seed, online_observations=int(case["mask"][:,25:40].sum()),
+                           **inspect_prefix(case)))
+    smoke = a6.cases_custom(61929,4,"shift")
+    metrics = comparison.run_filter(smoke, "boot_prior", 32, 1, 40, 61930, None, None)
+    return dict(development_cases=len(groups)*32, groups=groups, s2_smoke_keys=sorted(metrics),
+                s2_smoke_observations=int(smoke["mask"][:,25:40].sum()), branches=branch_at_bounce(),
+                hashes={name:hashlib.sha256((SOURCE/name).read_bytes()).hexdigest()
+                        for name in ("pf36_g6a.py","pf36_g6b.py")})
+
+
+def design_note(data):
+    counts = {k:sum(r[k] for r in data["groups"]) for k in data["groups"][0] if k!="seed"}
+    active, eligible = counts["eligible_with_earlier_bounce"], counts["eligible"]
+    b=data["branches"]
+    ablation=json.loads((SOURCE/"gate6a_ablate.json").read_text(encoding="utf8"))
+    ledger=json.loads((SOURCE/"gate6a_ledger.json").read_text(encoding="utf8"))
+    # Read only the completed A2 aggregates, independent of ongoing experiments.
+    agg=ablation["aggregate"] if "aggregate" in ablation else ablation["agg"]
+    return f"""# #36 방법 검토와 다음 실험 제안
+
+‘관측을 보고 입자를 어디에 보낼지 정한다’는 직관은 타당하다. 독립적인 기여 후보는 물체에 남는 물성과 매 충돌에서 새로 생기는 불확실성을 구분하고, 관측이 단서를 줄 수 있는 곳에만 계산을 쓰는 것이다. 아래 실험은 제안이다.
+
+## 기존 방법과 현재 근거
+
+[#35 원안](https://github.com/duckychoi/note/blob/a837ba78dc9ed96de2b48797f126c3441cbcca43/README.md)은 가상 생성 시간에 알려진 중간 밀도를 쓴 최초 toy다. [FPPF 알고리즘 1과 §4.2](https://arxiv.org/html/2607.01012v2)에서는 실제 관측이 들어오면 이전 상태와 새 관측으로 다음 상태를 제안한다. 관측이 없으면 물리 전이에서 입자를 뽑는다. 논문 실험은 주어진 동역학의 상태 추정이다. 숨은 물성을 상태에 포함하는 확장은 가능하다. 2026-11-23 공식 main에서 README 한 파일, 2026-06-30의 커밋 두 개를 확인했다. [공식 트리 스냅샷](https://github.com/cnagda/fppf/tree/850b0537529460a79f93d6defcab451f1d69032d) · [커밋 기록](https://github.com/cnagda/fppf/commits/main/)
+
+#36의 기존 예측 실험은 처음 25프레임 중 보이는 위치와 누락 마스크에서 초기 상태와 물성을 함께 제안한다. 관측 구간이 끝난 뒤에는 추가 관측 없이 미래를 예측한다. 6A에서 에너지 점수(낮을수록 좋음)는 균등가중 학습 제안 {agg['npe']['energy'][0]:.4f}, 방어 혼합·중요도 가중 {agg['is']['energy'][0]:.4f}, 최종 재표집과 입자 흔들기까지 {agg['jitter']['energy'][0]:.4f}였다. 첫 두 변형은 방어 혼합 비율도 달라 가중만의 효과로 해석할 수 없다. [6A 절제 원자료](../gate6a_ablate.json)
+
+6A 시간 장부에서 학습 후 사례당 추론은 Flow {1000*ledger['flow']['warm_per_case_sec']:.1f} ms, 큰 PF {1000*ledger['ref_pf8192']['warm_per_case_sec']:.1f} ms였다. 반면 192사례의 준비 포함 비교에서는 각각 {ledger['flow']['cold_sec']:.1f}초와 {ledger['ref_pf8192']['cold_sec']:.1f}초였다. 기준 PF의 시험 시간은 48사례 측정을 192사례로 환산했다. 이 장부의 가정에서는 시간 손익분기가 약 {ledger['breakeven_cases_time']:.0f}사례라, 한 번 맞춘 물성·모델을 반복 활용하는 조건을 시험할 이유가 있다. 이는 이미 학습한 한 모델을 여러 사례에 쓰는 계산이며, 같은 재료의 사후분포를 이어받는 새 방법의 성과는 아직 없다. [시간·호출 장부](../gate6a_ledger.json)
+
+## 6B 결과를 해석하기 전 점검
+
+- 점검 당시 사례 생성 함수는 마스크를 처음 25프레임에만 생성했다. 개발 {data['development_cases']}사례의 온라인 채점 구간(25~39)에서 관측은 {counts['online_observations']}개였다. 별도 4사례 스모크가 반환한 지표는 {', '.join(data['s2_smoke_keys'])}였다. 수정안은 초반 마스크를 공유하고 온라인 구간에 별도 난수로 관측 마스크를 추가하는 것이다. 미래 좌표를 임의로 바꿔도 그 이전의 온라인 출력은 같아야 한다. [사례 생성](../pf36_g6a.py#L50) · [비교 코드](../pf36_g6b.py#L309)
+- 6B는 관측 사이의 시뮬레이터 난수를 제안한다. 원 FPPF는 다음 상태를 제안한다. 무충돌 전이는 조상과 물성이 고정되면 결정적이고, 충돌에서도 이 엔진의 난수는 수직 속도에만 들어간다. 원 논문의 전 상태 밀도식을 이 엔진에 대입하는 데에는 별도 정의가 필요하다. 알려진 전이 밀도가 있는 작은 선형·가우시안 문제에서 논문판을 먼저 점검하고, 공 과제에서는 난수 공간 적응판이라고 표시한다. [FPPF v2](https://arxiv.org/html/2607.01012v2) · [교란 변수에서의 PF](https://doi.org/10.1137/130915376)
+- 현재 Euler 적분에서 뽑힌 점들의 야코비안 행렬식이 양수인지 검사한다. 이는 전역 일대일성의 증명이 아니다. 예를 들어 x³−x는 −1과 +1에서 모두 기울기 2이고 두 점의 출력은 0이다. 정확한 이산 제안 밀도가 필요하면 양의 척도를 갖는 가역 coupling이나 1차원 단조 변환을 사용한다. 재표집 자손이 아직 쓰지 않은 미래 난수를 복제하고, 제안이 현재 관측 간격 너머의 버퍼에도 쓰는 부분도 점검해야 한다. 구간별로 실제 사용한 난수만 보정하고 다음 구간의 난수는 자손마다 새로 뽑는 쪽이 검증에 유리하다. [밀도와 난수 처리](../pf36_g6b.py#L52)
+- 현재 계획의 사전 초기화 두 팔은 입자 수·흔들기 여부도 다르다. 차이를 충돌 제안만의 효과로 읽기 어렵다. 먼저 같은 입자 수, 같은 부모 선택·재표집, 같은 온도 1, 흔들기 없이 **초기화(사전/학습) × 충격 제안(사전/학습)** 네 칸을 비교한다. 그다음 각 방법에 같은 실제 실행 시간을 주고 최선의 설정을 비교한다. 학습·은행 재생·검증·추론을 따로 기록한다. [기존 사전 계획](../PREREG.md#L179)
+
+## 제안하는 방법
+
+**같은 바닥에서 공을 여러 번 던진다.** 바닥의 마찰과 접촉 감쇠에 대한 믿음만 다음 투척으로 전달한다. 매번 달라지는 출발 위치·속도·스핀은 그 투척의 조건에 맞춰 다시 뽑는다. 시행들이 물성을 조건으로 독립이라면, 물성의 기존 사후확률에 새 투척 관측의 주변우도를 한 번 곱하는 것이 목표다. 첫 투척의 사후분포를 매번 새 사전과 함께 중복 반영하지 않는다. 마찰과 감쇠를 분리해서 알아낼 만큼 관측이 충분한지도 각각 본다. [정적 매개변수와 상태를 함께 추정하는 SMC²](https://arxiv.org/abs/1101.1528)
+
+**다음 위치에 영향을 줄 충격에만 관측 기반 제안을 쓴다.** 같은 조상 상태와 같은 물성에서 출발하면 이 엔진은 한 프레임의 위치를 계산한 뒤 수직 속도에 무작위 충격을 준다. 실제 분기 실험에서 같은 충돌 직후 높이는 두 경우 모두 {b['z_m'][0]*100:.2f} cm였고, 다음 프레임은 {b['following_z_m'][0]*100:.2f} cm와 {b['following_z_m'][1]*100:.2f} cm였다. 즉 충돌 프레임 위치는 그 순간 충격에 대한 단서를 주지 못하고 그 뒤 위치는 줄 수 있다. 이 결론은 다른 상태·물성의 조상 가운데 누구를 고를지와 별개다.
+
+개발 궤적 앞 25프레임에서 프레임 0 또는 이전 관측부터 다음 관측까지 8프레임 이하인 간격을 셌다. {eligible:,}개 중 끝 프레임 **전에** 엔진이 지정한 바운스가 있었던 간격은 {active}개({100*active/eligible:.1f}%)였다. 실제 경로의 발생률은 사후 검사용이다. 배포 시에는 모의 입자가 진행 중 만난 충돌과 그 시점까지의 상태로 판단한다. 후반 온라인 구간의 발생률과 실제 가속률은 별도로 측정해야 한다. [점검 원자료](contact_windows.json)
+
+관측 y가 도착하면 직전 관측에서 그 구간을 굴린다. 다음 관측 위치를 바꿀 수 있는 앞선 충돌마다 스칼라 충격 u를 q(u | 입자 상태, 물성, 남은 시간, y)에서 뽑는다. 나머지는 엔진의 사전 p에서 뽑는다. 앞선 충격 때문에 다음 충돌 시각이 달라질 수 있어 입자를 진행하면서 판단한다. 구간 내부 재표집을 하지 않고 조상을 유지하는 기준에서는 새 가중치가 **이전 가중치 × 끝 관측 우도 한 번 × 제안한 충격들의 p/q 곱**이다. 여러 충격 제안이 같은 y를 사용해도 우도는 한 번만 곱한다. q는 필요한 범위를 덮고 밀도를 계산할 수 있어야 한다. 구간 중간의 값은 끝 관측을 보기 전의 실시간 성적으로 채점하지 않는다.
+
+이 원칙의 짧은 근거는 조건부 가중치의 분산이다. 고정한 조상·물성에서 해당 난수 전체에 대해 관측 우도가 양의 상수 L이면 가중치는 Lp/q다. 정상화한 분산 Var_q(Lp/q)/L²는 ∫p²/q−1 ≥ 0이고 q=p일 때 0이다. 따라서 그 난수만 관측으로 바꿔 뽑아 가중치 분산을 더 줄일 수 없다. 실제 충돌 이전/이후를 구별하는 이 근거는 물성 식별, 과신 해소, 전체 계산 절약을 자동 보장하지 않는다.
+
+## 먼저 갈라볼 실험
+
+1. **연습을 반복할 이유가 있는가.** 같은 재료에서 1·2·4·8번 발사한 뒤 다음 발사를 예측한다. 매번 물성을 초기화하는 방법과 물성을 이어받는 방법을 비교한다. 둘 다 같은 관측을 받는다. 실제 물성을 알려 주는 모델은 남은 개선 여지를 확인하는 참고값이다. 시험은 재료·물체 단위로 분리하고 구간도 이 단위로 구한다.
+2. **충돌에 복잡한 Flow가 필요한가.** 엔진 사전, 1차원 조건부 가우시안·작은 혼합, 매 관측 구간의 학습 제안, 앞선 충돌에서만 쓰는 학습 제안을 비교한다. 무충돌·단일·복수 충돌을 구별하고 원래 빈도로 합산한 전체 성능도 제시한다. 독립 환경 예시는 두 재질의 경사면에서 미끄러지다 부딪히는 물체다. 충돌 밖에서도 미끄럼 잡음이 계속 들어가면 조건부 무정보 여부를 그 환경에서 다시 따진다.
+3. **논문에 남길 기준.** 새 재료에서 다음 발사의 에너지 점수, x·z의 80% 구간 포함률과 폭, 물성 추정 오차, 실제 총시간을 같이 본다. 제안 기준의 예는 상시 제안 대비 에너지 열화 2% 이내를 짝지은 구간으로 보이면서 추론 시간 25% 이상 절감, 예측구간 포함률 75~85%와 폭·구간점수 유지다. 수치는 실행 전 합의할 제안값이다. 단순 혼합이 같으면 모델을 단순화하고, 물성을 이어받아도 다음 발사가 좋아지지 않으면 반복 식별을 논문 기여에서 뺀다.
+
+**판단.** 학습 제안, 난수 공간 추론, 정적 물성 추정은 각각 선행연구가 있다. 주장 후보는 ‘접촉 위치 관측이 알려 주는 불확실성만 제안하면 작은 예산으로 다음 접촉을 얼마나 정확하고 정직하게 예측하는가’다. SOTA 우위와 이 결합의 최초성은 미확인이다. [학습형 SMC](https://proceedings.neurips.cc/paper_files/paper/2015/hash/99adff456950dd9629a5260c4de21858-Abstract.html) · [마찰 접촉에서의 식별 가능성](https://doi.org/10.1177/0278364917698749)
+"""
+
+
+if __name__=="__main__":
+    p=argparse.ArgumentParser()
+    p.add_argument("--check",action="store_true")
+    args=p.parse_args()
+    data=run()
+    path=HERE/"contact_windows.json"
+    if args.check:
+        assert json.loads(path.read_text(encoding="utf8"))==data
+        assert (HERE/"method_direction.md").read_text(encoding="utf8")==design_note(data)
+    else:
+        path.write_text(json.dumps(data,indent=2),encoding="utf8")
+        (HERE/"method_direction.md").write_text(design_note(data),encoding="utf8")
+    sums={k:sum(row[k] for row in data["groups"]) for k in data["groups"][0] if k!="seed"}
+    print(sums, data["branches"], data["s2_smoke_keys"])

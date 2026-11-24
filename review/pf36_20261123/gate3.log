@@ -1,0 +1,16 @@
+[    0.2s] cases ready; test contacts mean bounces 1.6302083333333333
+[   52.8s] libraries ready; xthr 0.1799330231536924
+[   55.3s] retrieval_train_196k val {0.5: 0.04733162705683114, 1: 0.04157269658371778, 2: 0.03641868351511827, 4: 0.030591471180588053, 8: 0.028906518657814555}
+[   55.5s] retrieval_train_1024 val {0.5: 0.07359005697091013, 1: 0.07343647913358026, 2: 0.0731265837044206, 4: 0.07153378911718027, 8: 0.06761826779988511}
+[   57.9s] retrieval_broad_196k val {0.5: 0.04847383292153921, 1: 0.04520578793529109, 2: 0.0388392372357481, 4: 0.03230942742784803, 8: 0.02825442059767298}
+[   77.2s] pf val {1: 0.08424083874534123, 2: 0.048729404460368386, 4: 0.03829525375719601}
+[   79.3s] retrieval_train_196k {'energy': 0.1106, 'brier_bounce2': 0.0722, 'brier_xpast': 0.0778, 'cover_x': 0.7708, 'cover_z': 0.4479, 'kept_mass': 1.0, 'calls_per_case': 0, 'calls_total': 196608}
+[   79.4s] retrieval_train_1024 {'energy': 0.171, 'brier_bounce2': 0.2877, 'brier_xpast': 0.1422, 'cover_x': 0.1979, 'cover_z': 0.1198, 'kept_mass': 1.0, 'calls_per_case': 0, 'calls_total': 1024}
+[   81.5s] retrieval_broad_196k {'energy': 0.0586, 'brier_bounce2': 0.0516, 'brier_xpast': 0.0698, 'cover_x': 0.7917, 'cover_z': 0.7031, 'kept_mass': 1.0, 'calls_per_case': 0, 'calls_total': 196608}
+[  109.0s] cem_map_1024 {'energy': 0.0872, 'brier_bounce2': 0.0677, 'brier_xpast': 0.1094, 'calls_per_case': 1024, 'calls_total': 196608}
+[  112.0s] extrapolation {'energy': 0.1162, 'brier_bounce2': 0.6198, 'brier_xpast': 0.125, 'calls_per_case': 0, 'calls_total': 0}
+[  114.0s] pf_N64 {'energy': 0.2433, 'brier_bounce2': 0.1677, 'brier_xpast': 0.2783, 'cover_x': 0.0729, 'cover_z': 0.3698, 'calls_per_case': 64, 'calls_total': 12288}
+[  121.3s] pf_N256 {'energy': 0.1459, 'brier_bounce2': 0.1095, 'brier_xpast': 0.1456, 'cover_x': 0.224, 'cover_z': 0.4531, 'calls_per_case': 256, 'calls_total': 49152}
+[  148.4s] pf_N1024 {'energy': 0.0886, 'brier_bounce2': 0.0511, 'brier_xpast': 0.0917, 'cover_x': 0.4688, 'cover_z': 0.6198, 'calls_per_case': 1024, 'calls_total': 196608}
+[  355.8s] pf_N8192 {'energy': 0.0435, 'brier_bounce2': 0.0314, 'brier_xpast': 0.0587, 'cover_x': 0.7969, 'cover_z': 0.8229, 'calls_per_case': 8192, 'calls_total': 1572864}
+[  355.8s] verdict headroom {64: 4.5981305903908, 256: 2.3573905961574444} ref 0.04345225010103832 best retrieval 0.05863445912574179

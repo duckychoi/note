@@ -1,0 +1,44 @@
+[  218.4s] 0 carry_cheap DD {'update_sec': 18.9412, 'sec': 21.4108, 'logmu_err': 1.0014, 'd_err': 0.0566, 'energy': 0.0327, 'x_cover': 0.6458, 'z_cover': 0.5833}
+[  220.8s] 0 carry_exact DD {'update_sec': 83.7301, 'sec': 86.1513, 'logmu_err': 1.0309, 'd_err': 0.0512, 'energy': 0.0336, 'x_cover': 0.6042, 'z_cover': 0.5521}
+[  223.2s] 0 carry_cheap DO {'update_sec': 18.8256, 'sec': 21.2148, 'logmu_err': 1.0359, 'd_err': 0.0549, 'energy': 0.0431, 'x_cover': 0.6667, 'z_cover': 0.4271}
+[  225.6s] 0 carry_exact DO {'update_sec': 84.8764, 'sec': 87.2607, 'logmu_err': 1.0728, 'd_err': 0.0442, 'energy': 0.0338, 'x_cover': 0.6354, 'z_cover': 0.5208}
+[  228.0s] 0 carry_cheap OO {'update_sec': 19.3354, 'sec': 21.7558, 'logmu_err': 0.9256, 'd_err': 0.0439, 'energy': 0.0387, 'x_cover': 0.6979, 'z_cover': 0.5208}
+[  230.4s] 0 carry_exact OO {'update_sec': 84.2204, 'sec': 86.6322, 'logmu_err': 0.8994, 'd_err': 0.0395, 'energy': 0.037, 'x_cover': 0.6667, 'z_cover': 0.5729}
+[  233.0s] 0 fresh 256 {'sec': 2.5389, 'energy': 0.0397, 'x_cover': 0.7188, 'z_cover': 0.5417}
+[  242.4s] 0 fresh 1024 {'sec': 9.4762, 'energy': 0.0296, 'x_cover': 0.7812, 'z_cover': 0.6875}
+[  285.0s] 0 fresh 4096 {'sec': 42.582, 'energy': 0.0278, 'x_cover': 0.8438, 'z_cover': 0.7292}
+[  361.1s] 0 fresh 8192 {'sec': 76.07, 'energy': 0.0291, 'x_cover': 0.8854, 'z_cover': 0.75}
+[  363.6s] 0 oracle {'sec': 2.5658, 'energy': 0.0291, 'x_cover': 0.7708, 'z_cover': 0.7188}
+[  591.9s] 1 carry_cheap DD {'update_sec': 20.0755, 'sec': 22.5882, 'logmu_err': 1.1412, 'd_err': 0.0484, 'energy': 0.035, 'x_cover': 0.7917, 'z_cover': 0.6146}
+[  594.4s] 1 carry_exact DD {'update_sec': 89.0884, 'sec': 91.5282, 'logmu_err': 1.1513, 'd_err': 0.046, 'energy': 0.0279, 'x_cover': 0.7188, 'z_cover': 0.6562}
+[  596.7s] 1 carry_cheap DO {'update_sec': 19.3928, 'sec': 21.7834, 'logmu_err': 1.0187, 'd_err': 0.0432, 'energy': 0.0321, 'x_cover': 0.7083, 'z_cover': 0.5208}
+[  599.1s] 1 carry_exact DO {'update_sec': 88.5436, 'sec': 90.897, 'logmu_err': 1.1529, 'd_err': 0.0406, 'energy': 0.0288, 'x_cover': 0.7917, 'z_cover': 0.6562}
+[  601.5s] 1 carry_cheap OO {'update_sec': 20.635, 'sec': 23.0212, 'logmu_err': 1.1191, 'd_err': 0.0476, 'energy': 0.0398, 'x_cover': 0.6354, 'z_cover': 0.5833}
+[  603.9s] 1 carry_exact OO {'update_sec': 86.3997, 'sec': 88.8023, 'logmu_err': 1.1344, 'd_err': 0.0396, 'energy': 0.0372, 'x_cover': 0.75, 'z_cover': 0.6875}
+[  606.3s] 1 fresh 256 {'sec': 2.4139, 'energy': 0.0362, 'x_cover': 0.7292, 'z_cover': 0.5729}
+[  615.8s] 1 fresh 1024 {'sec': 9.5066, 'energy': 0.0262, 'x_cover': 0.8333, 'z_cover': 0.75}
+[  653.2s] 1 fresh 4096 {'sec': 37.3664, 'energy': 0.0258, 'x_cover': 0.875, 'z_cover': 0.8438}
+[  730.7s] 1 fresh 8192 {'sec': 77.515, 'energy': 0.0249, 'x_cover': 0.875, 'z_cover': 0.8542}
+[  732.9s] 1 oracle {'sec': 2.2208, 'energy': 0.0251, 'x_cover': 0.8333, 'z_cover': 0.8021}
+[  941.7s] 2 carry_cheap DD {'update_sec': 17.4962, 'sec': 20.1122, 'logmu_err': 1.0212, 'd_err': 0.0487, 'energy': 0.0352, 'x_cover': 0.7292, 'z_cover': 0.5312}
+[  944.2s] 2 carry_exact DD {'update_sec': 78.8138, 'sec': 81.3355, 'logmu_err': 1.1519, 'd_err': 0.0441, 'energy': 0.0295, 'x_cover': 0.75, 'z_cover': 0.5729}
+[  946.8s] 2 carry_cheap DO {'update_sec': 17.5129, 'sec': 20.0695, 'logmu_err': 0.9993, 'd_err': 0.0442, 'energy': 0.0325, 'x_cover': 0.7292, 'z_cover': 0.5833}
+[  949.3s] 2 carry_exact DO {'update_sec': 81.5279, 'sec': 84.0345, 'logmu_err': 1.1048, 'd_err': 0.0409, 'energy': 0.0277, 'x_cover': 0.7604, 'z_cover': 0.6042}
+[  951.8s] 2 carry_cheap OO {'update_sec': 17.2485, 'sec': 19.7386, 'logmu_err': 1.1287, 'd_err': 0.0451, 'energy': 0.0288, 'x_cover': 0.7083, 'z_cover': 0.5521}
+[  954.4s] 2 carry_exact OO {'update_sec': 83.6915, 'sec': 86.2935, 'logmu_err': 1.0776, 'd_err': 0.0374, 'energy': 0.0318, 'x_cover': 0.7292, 'z_cover': 0.6667}
+[  957.0s] 2 fresh 256 {'sec': 2.6524, 'energy': 0.0331, 'x_cover': 0.6875, 'z_cover': 0.6562}
+[  966.9s] 2 fresh 1024 {'sec': 9.8517, 'energy': 0.0272, 'x_cover': 0.8125, 'z_cover': 0.7812}
+[ 1005.9s] 2 fresh 4096 {'sec': 39.0566, 'energy': 0.0267, 'x_cover': 0.7604, 'z_cover': 0.7917}
+[ 1086.2s] 2 fresh 8192 {'sec': 80.2974, 'energy': 0.0266, 'x_cover': 0.8542, 'z_cover': 0.8125}
+[ 1088.9s] 2 oracle {'sec': 2.6255, 'energy': 0.0258, 'x_cover': 0.7604, 'z_cover': 0.75}
+[ 1325.0s] 3 carry_cheap DD {'update_sec': 20.4839, 'sec': 22.945, 'logmu_err': 1.0735, 'd_err': 0.0455, 'energy': 0.0536, 'x_cover': 0.75, 'z_cover': 0.5104}
+[ 1327.5s] 3 carry_exact DD {'update_sec': 90.5282, 'sec': 93.0213, 'logmu_err': 0.9952, 'd_err': 0.0446, 'energy': 0.0371, 'x_cover': 0.7604, 'z_cover': 0.5833}
+[ 1330.0s] 3 carry_cheap DO {'update_sec': 20.089, 'sec': 22.6158, 'logmu_err': 1.0063, 'd_err': 0.0445, 'energy': 0.0461, 'x_cover': 0.7292, 'z_cover': 0.5417}
+[ 1332.5s] 3 carry_exact DO {'update_sec': 92.4891, 'sec': 94.9904, 'logmu_err': 0.9256, 'd_err': 0.0414, 'energy': 0.0344, 'x_cover': 0.6458, 'z_cover': 0.5417}
+[ 1335.0s] 3 carry_cheap OO {'update_sec': 20.2401, 'sec': 22.7714, 'logmu_err': 1.158, 'd_err': 0.0402, 'energy': 0.0385, 'x_cover': 0.7604, 'z_cover': 0.5104}
+[ 1337.5s] 3 carry_exact OO {'update_sec': 92.2023, 'sec': 94.6896, 'logmu_err': 0.9348, 'd_err': 0.0447, 'energy': 0.0534, 'x_cover': 0.75, 'z_cover': 0.5104}
+[ 1340.0s] 3 fresh 256 {'sec': 2.5018, 'energy': 0.0361, 'x_cover': 0.7396, 'z_cover': 0.6146}
+[ 1349.6s] 3 fresh 1024 {'sec': 9.5957, 'energy': 0.0336, 'x_cover': 0.8438, 'z_cover': 0.7812}
+[ 1390.2s] 3 fresh 4096 {'sec': 40.6352, 'energy': 0.0269, 'x_cover': 0.8646, 'z_cover': 0.7708}
+[ 1469.1s] 3 fresh 8192 {'sec': 78.8666, 'energy': 0.025, 'x_cover': 0.9167, 'z_cover': 0.7812}
+[ 1471.7s] 3 oracle {'sec': 2.5529, 'energy': 0.0254, 'x_cover': 0.8229, 'z_cover': 0.7812}

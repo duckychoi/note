@@ -1,0 +1,3414 @@
+{
+  "balanced": {
+    "10120": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9601386203577669,
+        "right_mass_error": 0.010416666666666685,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.2039420353450825,
+        "right_mass_error": 0.03645833333333337,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.5231570773353511,
+        "right_mass_error": 0.11197916666666663,
+        "near_mode": 0.7916666666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9301146536442179,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.3255208333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.18109433270569078,
+        "right_mass_error": 0.02604166666666663,
+        "near_mode": 0.9348958333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3299553099472996,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.7473958333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9643198675270531,
+        "right_mass_error": 0.05989583333333337,
+        "near_mode": 0.2526041666666667
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.1933588442637025,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.9270833333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.31569891180651877,
+        "right_mass_error": 0.01041666666666663,
+        "near_mode": 0.7421875
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9481610448085086,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.28125
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.18184732923649732,
+        "right_mass_error": 0.02604166666666663,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.4141442070362505,
+        "right_mass_error": 0.059895833333333315,
+        "near_mode": 0.734375
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.96208898931487,
+        "right_mass_error": 0.06770833333333331,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.30026171204149116,
+        "right_mass_error": 0.057291666666666685,
+        "near_mode": 0.9583333333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.378565621118856,
+        "right_mass_error": 0.046875,
+        "near_mode": 0.7239583333333334
+      }
+    ],
+    "10121": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9877240124173464,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.1916854255863798,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.9765625
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.4405799377968564,
+        "right_mass_error": 0.08333333333333337,
+        "near_mode": 0.7369791666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9387791535376879,
+        "right_mass_error": 0.033854166666666685,
+        "near_mode": 0.2864583333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.11999272452889485,
+        "right_mass_error": 0.0,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3882849343764837,
+        "right_mass_error": 0.05729166666666663,
+        "near_mode": 0.7421875
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9605529613091275,
+        "right_mass_error": 0.05989583333333337,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.1364129657671901,
+        "right_mass_error": 0.013020833333333315,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.2975124168171027,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.7552083333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9866235838859357,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.2682291666666667
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.12684777787762658,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.3906729600071089,
+        "right_mass_error": 0.05208333333333337,
+        "near_mode": 0.75
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9400610692309109,
+        "right_mass_error": 0.033854166666666685,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.15179942907638252,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.9296875
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.3957678179739561,
+        "right_mass_error": 0.07291666666666669,
+        "near_mode": 0.7604166666666666
+      }
+    ],
+    "10122": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9243660531087761,
+        "right_mass_error": 0.03645833333333337,
+        "near_mode": 0.3203125
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.12754637732209734,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.3685939296224101,
+        "right_mass_error": 0.04427083333333337,
+        "near_mode": 0.7369791666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9657412848786371,
+        "right_mass_error": 0.04166666666666663,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.197126594654571,
+        "right_mass_error": 0.03385416666666663,
+        "near_mode": 0.9401041666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.36475433348396347,
+        "right_mass_error": 0.04427083333333337,
+        "near_mode": 0.7265625
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9370585581013179,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.18376465277966064,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.38318088835541464,
+        "right_mass_error": 0.04166666666666663,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9656035456069886,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.2942708333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.10387705382071531,
+        "right_mass_error": 0.0,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.29900140572002704,
+        "right_mass_error": 0.020833333333333315,
+        "near_mode": 0.7630208333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9477127311405334,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.2578125
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.10155500056061285,
+        "right_mass_error": 0.0,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.3011440919312971,
+        "right_mass_error": 0.013020833333333315,
+        "near_mode": 0.75
+      }
+    ],
+    "10123": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9505241962933645,
+        "right_mass_error": 0.020833333333333315,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.09976421112834169,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2393926128799682,
+        "right_mass_error": 0.0,
+        "near_mode": 0.7890625
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.912194896165298,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.3229166666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.15196007106939366,
+        "right_mass_error": 0.018229166666666685,
+        "near_mode": 0.9401041666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.34859255191515204,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.7265625
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9883901209730365,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.2738677289893584,
+        "right_mass_error": 0.0546875,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.34674702662266893,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.7291666666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9241877019297274,
+        "right_mass_error": 0.026041666666666685,
+        "near_mode": 0.3072916666666667
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.11571327219788025,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.28092890223225286,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.7760416666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9874490864955386,
+        "right_mass_error": 0.041666666666666685,
+        "near_mode": 0.24739583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.2235016164621808,
+        "right_mass_error": 0.04427083333333337,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.4390842320921554,
+        "right_mass_error": 0.0859375,
+        "near_mode": 0.7760416666666666
+      }
+    ],
+    "10124": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9540798077982919,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.3229166666666667
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.13366590920584542,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.33305476402228207,
+        "right_mass_error": 0.02864583333333337,
+        "near_mode": 0.734375
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999982,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9654722731523171,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.2578125
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.09015253860491583,
+        "right_mass_error": 0.0,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.26450318972299464,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.908210186919126,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.22276164571886056,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.921875
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.40987949757550934,
+        "right_mass_error": 0.05208333333333337,
+        "near_mode": 0.6796875
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9560338390362645,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.28125
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.33333490641564184,
+        "right_mass_error": 0.07291666666666663,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.2867395071909534,
+        "right_mass_error": 0.01041666666666663,
+        "near_mode": 0.7682291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.8759859079137788,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.34375
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.20241762271222216,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.2935195667968195,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.75
+      }
+    ],
+    "10125": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.8733025641648721,
+        "right_mass_error": 0.010416666666666685,
+        "near_mode": 0.3151041666666667
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.2635715129292466,
+        "right_mass_error": 0.052083333333333315,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.28899679415926416,
+        "right_mass_error": 0.0,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999982,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.8730723019900626,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.3333333333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.19731428868679565,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.9270833333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.31111835662544274,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9380979738529905,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.1825794344899054,
+        "right_mass_error": 0.02604166666666663,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.31903969524071246,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.6953125
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9224895059219127,
+        "right_mass_error": 0.02083333333333337,
+        "near_mode": 0.3098958333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.10902893086659252,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.3533903555080277,
+        "right_mass_error": 0.041666666666666685,
+        "near_mode": 0.734375
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9315898870890839,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.09704943842241674,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.293921707462362,
+        "right_mass_error": 0.026041666666666685,
+        "near_mode": 0.8098958333333334
+      }
+    ],
+    "10126": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9609872860498524,
+        "right_mass_error": 0.0,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.21868753253754122,
+        "right_mass_error": 0.041666666666666685,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.395443057782708,
+        "right_mass_error": 0.05989583333333337,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999982,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9648377028012936,
+        "right_mass_error": 0.020833333333333315,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.24377726219383525,
+        "right_mass_error": 0.049479166666666685,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.27000869366215763,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.765625
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9750985844574841,
+        "right_mass_error": 0.01041666666666663,
+        "near_mode": 0.296875
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.16366971236890387,
+        "right_mass_error": 0.026041666666666685,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.3948125106628948,
+        "right_mass_error": 0.049479166666666685,
+        "near_mode": 0.7083333333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9792678577269028,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.2552083333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.1716821712475838,
+        "right_mass_error": 0.020833333333333315,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.38458566692341345,
+        "right_mass_error": 0.0546875,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.8936938022459311,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.3177083333333333
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.093549571841116,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.31448124468534144,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.7395833333333334
+      }
+    ],
+    "10127": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9587356589358148,
+        "right_mass_error": 0.0,
+        "near_mode": 0.28125
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.18703026020646374,
+        "right_mass_error": 0.03645833333333337,
+        "near_mode": 0.9817708333333334
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.40351904052540694,
+        "right_mass_error": 0.07552083333333337,
+        "near_mode": 0.7760416666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9340239720902908,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.2618399492820411,
+        "right_mass_error": 0.0546875,
+        "near_mode": 0.9036458333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.2968470541479158,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.7708333333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9097659368995213,
+        "right_mass_error": 0.02864583333333337,
+        "near_mode": 0.3046875
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.15638186605734988,
+        "right_mass_error": 0.01822916666666663,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.27800095501843103,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.7630208333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9194486017982703,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.19145524696529806,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.9348958333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.3389053187961065,
+        "right_mass_error": 0.03385416666666663,
+        "near_mode": 0.7213541666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.950845248116937,
+        "right_mass_error": 0.02083333333333337,
+        "near_mode": 0.2916666666666667
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.17172843599856719,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9739583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.3188132526232802,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.7369791666666666
+      }
+    ],
+    "10128": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9391020154625427,
+        "right_mass_error": 0.05729166666666663,
+        "near_mode": 0.3046875
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.37945574152326705,
+        "right_mass_error": 0.0859375,
+        "near_mode": 0.96875
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.3428626571176311,
+        "right_mass_error": 0.0390625,
+        "near_mode": 0.7265625
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999982,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.999123732758131,
+        "right_mass_error": 0.0,
+        "near_mode": 0.2604166666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.1900175129265127,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.26201878567314896,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.7838541666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9372364468717477,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.265625
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.13175660065595785,
+        "right_mass_error": 0.010416666666666685,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.31742834049709234,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9574064491462896,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.2734375
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.2025093187708162,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.9244791666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.3756846879541471,
+        "right_mass_error": 0.0546875,
+        "near_mode": 0.7552083333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.974610045203915,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.28125
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.2725597096414625,
+        "right_mass_error": 0.059895833333333315,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.32226460792814243,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.7786458333333334
+      }
+    ],
+    "10129": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9871929097208652,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.2838541666666667
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.19005372705492998,
+        "right_mass_error": 0.033854166666666685,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.30467000049765247,
+        "right_mass_error": 0.02604166666666663,
+        "near_mode": 0.7552083333333334
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999982,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9461778462935015,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.3046875
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.1494395807331774,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.29121039117701747,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.7604166666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9114544631333354,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.3072916666666667
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.23482883964384427,
+        "right_mass_error": 0.046875,
+        "near_mode": 0.9322916666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.3252348846090324,
+        "right_mass_error": 0.018229166666666685,
+        "near_mode": 0.7421875
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9553306071886045,
+        "right_mass_error": 0.02864583333333337,
+        "near_mode": 0.2760416666666667
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.31422661334998964,
+        "right_mass_error": 0.06510416666666663,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.2783402519140121,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.7786458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 2.0,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9358184809601615,
+        "right_mass_error": 0.0,
+        "near_mode": 0.296875
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.2721953995887624,
+        "right_mass_error": 0.052083333333333315,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.5433658208523277,
+        "right_mass_error": 0.11458333333333331,
+        "near_mode": 0.796875
+      }
+    ],
+    "10130": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.8932281979560571,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.2838541666666667
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.08694039058530423,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.9817708333333334
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.41026646301832753,
+        "right_mass_error": 0.06770833333333337,
+        "near_mode": 0.7708333333333334
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9907385735285049,
+        "right_mass_error": 0.0625,
+        "near_mode": 0.24739583333333334
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.18604649034065096,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.5038843810739961,
+        "right_mass_error": 0.09635416666666663,
+        "near_mode": 0.7083333333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9635381518162813,
+        "right_mass_error": 0.033854166666666685,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.18568510451363612,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.30359163331351774,
+        "right_mass_error": 0.010416666666666685,
+        "near_mode": 0.734375
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9892344712216046,
+        "right_mass_error": 0.03385416666666663,
+        "near_mode": 0.2864583333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.14215057237216483,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.921875
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.3815470367632993,
+        "right_mass_error": 0.049479166666666685,
+        "near_mode": 0.7369791666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9008544376916082,
+        "right_mass_error": 0.052083333333333315,
+        "near_mode": 0.3359375
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.1872556418497872,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.9609375
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.36712903062809504,
+        "right_mass_error": 0.052083333333333315,
+        "near_mode": 0.7526041666666666
+      }
+    ],
+    "10131": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 1.999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.9642454505802546,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.2838541666666667
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.15585483146998236,
+        "right_mass_error": 0.026041666666666685,
+        "near_mode": 0.96875
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.32092771922605906,
+        "right_mass_error": 0.03645833333333337,
+        "near_mode": 0.7682291666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.9999999999999978,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9812558317625937,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.28125
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.18987757102663355,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9322916666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.28323769764381024,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.7473958333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9079048315873854,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.3203125
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.1353136038332912,
+        "right_mass_error": 0.01041666666666663,
+        "near_mode": 0.96875
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.32152079545368795,
+        "right_mass_error": 0.028645833333333315,
+        "near_mode": 0.7369791666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.9999999999999998,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9836272051090574,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.14496904616353032,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.27368845966080557,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.7890625
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 1.9999999999999996,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.9819642603246275,
+        "right_mass_error": 0.046875,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.16503546563172553,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.38938285365292075,
+        "right_mass_error": 0.057291666666666685,
+        "near_mode": 0.7630208333333334
+      }
+    ]
+  },
+  "varying": {
+    "10120": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.2529703489753846,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4605336300683797,
+        "right_mass_error": 0.015164869910025615,
+        "near_mode": 0.5755208333333334
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.12645454568610406,
+        "right_mass_error": 0.005668463423307717,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2777620669118874,
+        "right_mass_error": 0.01868929675664105,
+        "near_mode": 0.8255208333333334
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.0367441896689011,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9574585006732904,
+        "right_mass_error": 0.07536909313550408,
+        "near_mode": 0.3072916666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.2760616390381293,
+        "right_mass_error": 0.04411909313550408,
+        "near_mode": 0.9348958333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3599987732444938,
+        "right_mass_error": 0.025889926468837393,
+        "near_mode": 0.7317708333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9731459374780886,
+        "right_mass_error": 0.06510416666666663,
+        "near_mode": 0.2526041666666667
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.2704116738369252,
+        "right_mass_error": 0.044270833333333315,
+        "near_mode": 0.9270833333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.32064755900195263,
+        "right_mass_error": 0.01302083333333337,
+        "near_mode": 0.71875
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9547792066866448,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9307527748120854,
+        "right_mass_error": 0.010264926468837254,
+        "near_mode": 0.3098958333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.1279604121960847,
+        "right_mass_error": 0.005056593135503995,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.32356476375467447,
+        "right_mass_error": 0.028494093135503995,
+        "near_mode": 0.8020833333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.2730110414228713,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.5213196086030152,
+        "right_mass_error": 0.017769036576692265,
+        "near_mode": 0.5208333333333334
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.16968895919531113,
+        "right_mass_error": 0.013480963423307735,
+        "near_mode": 0.9583333333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.4102091213956917,
+        "right_mass_error": 0.039522630089974364,
+        "near_mode": 0.7526041666666666
+      }
+    ],
+    "10121": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.27054501508890083,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.48735082625617127,
+        "right_mass_error": 0.009956536576692281,
+        "near_mode": 0.5625
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.09198868670275918,
+        "right_mass_error": 0.0021440365766922827,
+        "near_mode": 0.9765625
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.3555021525300231,
+        "right_mass_error": 0.02650179675664105,
+        "near_mode": 0.765625
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.0231307022479317,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9058068022717581,
+        "right_mass_error": 0.02068159313550408,
+        "near_mode": 0.3177083333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.29533270044489673,
+        "right_mass_error": 0.046723259802170736,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.4718163217423609,
+        "right_mass_error": 0.06755659313550408,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9714324387996864,
+        "right_mass_error": 0.0625,
+        "near_mode": 0.3151041666666667
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.13862885051512927,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.2993895914897884,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.7317708333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9670934488734807,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.8957391331451131,
+        "right_mass_error": 0.051931593135503995,
+        "near_mode": 0.3359375
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.22812237033146762,
+        "right_mass_error": 0.028494093135503995,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.35409255340377993,
+        "right_mass_error": 0.018077426468837254,
+        "near_mode": 0.7161458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.24809188832733964,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.40673942608760083,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 0.6328125
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.13394103247415276,
+        "right_mass_error": 0.009956536576692265,
+        "near_mode": 0.9296875
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.2071926073212685,
+        "right_mass_error": 0.003064296756640994,
+        "near_mode": 0.8359375
+      }
+    ],
+    "10122": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.26403035485906406,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4529202941806385,
+        "right_mass_error": 0.012560703243358949,
+        "near_mode": 0.5807291666666666
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.10587371016025751,
+        "right_mass_error": 0.004748203243358947,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2603238968795318,
+        "right_mass_error": 0.00046013008997438515,
+        "near_mode": 0.7630208333333334
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 0.9383243356929801,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 1.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.8866466281967752,
+        "right_mass_error": 0.02849409313550408,
+        "near_mode": 0.2864583333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.14113852861310064,
+        "right_mass_error": 0.010264926468837393,
+        "near_mode": 0.9401041666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.29434372960191835,
+        "right_mass_error": 0.015473259802170736,
+        "near_mode": 0.7890625
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9500459054446504,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.28125
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.21772564481433546,
+        "right_mass_error": 0.036458333333333315,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.41655302338988087,
+        "right_mass_error": 0.04427083333333337,
+        "near_mode": 0.7291666666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9750988565145823,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.8642935710916418,
+        "right_mass_error": 0.054535759802170625,
+        "near_mode": 0.3333333333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.20353381861341402,
+        "right_mass_error": 0.025889926468837254,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.26194491309216505,
+        "right_mass_error": 0.005056593135503995,
+        "near_mode": 0.78125
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.29631341304176406,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.5804463775703925,
+        "right_mass_error": 0.007352369910025636,
+        "near_mode": 0.4739583333333333
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.17053492592660977,
+        "right_mass_error": 0.018689296756640994,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.4062167659258428,
+        "right_mass_error": 0.042126796756640994,
+        "near_mode": 0.7552083333333334
+      }
+    ],
+    "10123": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.2564139009325549,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4024684475599122,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 0.6458333333333334
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.09647239454979313,
+        "right_mass_error": 0.00046013008997438515,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2497224067428791,
+        "right_mass_error": 0.007352369910025615,
+        "near_mode": 0.8229166666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.0031122982875222,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9253129736211316,
+        "right_mass_error": 0.04411909313550408,
+        "near_mode": 0.3072916666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.17413751358384041,
+        "right_mass_error": 0.018077426468837393,
+        "near_mode": 0.9401041666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3964862217871937,
+        "right_mass_error": 0.03630659313550408,
+        "near_mode": 0.7447916666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 1.006763939711804,
+        "right_mass_error": 0.013020833333333315,
+        "near_mode": 0.2630208333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.34082055363934,
+        "right_mass_error": 0.06510416666666663,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.38970005291327386,
+        "right_mass_error": 0.052083333333333315,
+        "near_mode": 0.7239583333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9875602060963834,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9124837000201869,
+        "right_mass_error": 0.038910759802170625,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.10698769326487864,
+        "right_mass_error": 0.0001517401978293753,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.24452146816562095,
+        "right_mass_error": 0.0001517401978293753,
+        "near_mode": 0.8307291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.2717633343658611,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.5095657741185202,
+        "right_mass_error": 0.015164869910025636,
+        "near_mode": 0.5390625
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.12011083914041028,
+        "right_mass_error": 0.005668463423307735,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.3461522301114517,
+        "right_mass_error": 0.036918463423307735,
+        "near_mode": 0.7682291666666666
+      }
+    ],
+    "10124": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.253560458547592,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4532110112257905,
+        "right_mass_error": 0.007352369910025615,
+        "near_mode": 0.5625
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.16191680660145275,
+        "right_mass_error": 0.016085130089974385,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2653612156838764,
+        "right_mass_error": 0.00046013008997438515,
+        "near_mode": 0.796875
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.048719964736021,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.89018369568555,
+        "right_mass_error": 0.04411909313550408,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.2259842364942224,
+        "right_mass_error": 0.038910759802170736,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.4944288731483963,
+        "right_mass_error": 0.07016075980217074,
+        "near_mode": 0.7447916666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9157255140723528,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.3020833333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.18119977487003838,
+        "right_mass_error": 0.01822916666666663,
+        "near_mode": 0.921875
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.43035010897989107,
+        "right_mass_error": 0.0546875,
+        "near_mode": 0.703125
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9697042423264545,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9001212822700811,
+        "right_mass_error": 0.07797325980217062,
+        "near_mode": 0.3255208333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.16755012723844423,
+        "right_mass_error": 0.012869093135503995,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.405874542962068,
+        "right_mass_error": 0.049327426468837254,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.25786873884578415,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.4476265595014348,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 0.5989583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.10141984502876612,
+        "right_mass_error": 0.00046013008997436433,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.25873099572428626,
+        "right_mass_error": 0.00046013008997436433,
+        "near_mode": 0.7760416666666666
+      }
+    ],
+    "10125": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.2631854929410273,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4800398457847374,
+        "right_mass_error": 0.020373203243358947,
+        "near_mode": 0.5572916666666666
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.13666642579272614,
+        "right_mass_error": 0.015164869910025615,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2709744447813534,
+        "right_mass_error": 0.003064296756641053,
+        "near_mode": 0.7734375
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 0.9589194947451077,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 1.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9349137579209519,
+        "right_mass_error": 0.02068159313550408,
+        "near_mode": 0.2734375
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.13970975713770684,
+        "right_mass_error": 0.002452426468837393,
+        "near_mode": 0.9270833333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3063061033390417,
+        "right_mass_error": 0.018077426468837393,
+        "near_mode": 0.7682291666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9521103659656474,
+        "right_mass_error": 0.03385416666666663,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.2506903282089522,
+        "right_mass_error": 0.04166666666666663,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.32810333786379237,
+        "right_mass_error": 0.0,
+        "near_mode": 0.6979166666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.0608170258273601,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9477201256808118,
+        "right_mass_error": 0.07016075980217062,
+        "near_mode": 0.3229166666666667
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.2703053007432995,
+        "right_mass_error": 0.041514926468837254,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.4328178929002882,
+        "right_mass_error": 0.054535759802170625,
+        "near_mode": 0.7239583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.24722037270720154,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.4002633393360627,
+        "right_mass_error": 0.020373203243359006,
+        "near_mode": 0.6223958333333334
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.10166163073893289,
+        "right_mass_error": 0.003064296756640994,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.2686937035585055,
+        "right_mass_error": 0.005668463423307735,
+        "near_mode": 0.7994791666666666
+      }
+    ],
+    "10126": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.24539960246501888,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.40585996638475197,
+        "right_mass_error": 0.017769036576692283,
+        "near_mode": 0.6354166666666666
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.09516248858375305,
+        "right_mass_error": 0.00046013008997438515,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2574282605990714,
+        "right_mass_error": 0.004748203243358947,
+        "near_mode": 0.7994791666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 0.9811800083491532,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.8561227765932511,
+        "right_mass_error": 0.054535759802170736,
+        "near_mode": 0.3515625
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.09031743849973506,
+        "right_mass_error": 0.0001517401978292643,
+        "near_mode": 0.9427083333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.2836488938832094,
+        "right_mass_error": 0.005056593135504078,
+        "near_mode": 0.7708333333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9861128679523088,
+        "right_mass_error": 0.00520833333333337,
+        "near_mode": 0.296875
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.13673195057620316,
+        "right_mass_error": 0.013020833333333315,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.4270691676118927,
+        "right_mass_error": 0.057291666666666685,
+        "near_mode": 0.7109375
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.0136766889350466,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9118809989948731,
+        "right_mass_error": 0.051931593135503995,
+        "near_mode": 0.296875
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.20098848849766884,
+        "right_mass_error": 0.020681593135503995,
+        "near_mode": 0.9505208333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.4319296402449388,
+        "right_mass_error": 0.059744093135503995,
+        "near_mode": 0.7421875
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.2781300016278027,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.5150040869306143,
+        "right_mass_error": 0.017769036576692265,
+        "near_mode": 0.53125
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.17301070180225223,
+        "right_mass_error": 0.023897630089974364,
+        "near_mode": 0.953125
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.30796516205709507,
+        "right_mass_error": 0.021293463423307735,
+        "near_mode": 0.8046875
+      }
+    ],
+    "10127": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.24226182320508366,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.36883084960188917,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 0.6692708333333334
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.08204892492420177,
+        "right_mass_error": 0.0021440365766922827,
+        "near_mode": 0.9817708333333334
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.25030318825419895,
+        "right_mass_error": 0.015164869910025615,
+        "near_mode": 0.8463541666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 0.9237388303839199,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 1.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9166609507493265,
+        "right_mass_error": 0.04411909313550408,
+        "near_mode": 0.3177083333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.13225545262722513,
+        "right_mass_error": 0.005056593135504078,
+        "near_mode": 0.9036458333333334
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.28746489443429196,
+        "right_mass_error": 0.015473259802170736,
+        "near_mode": 0.7760416666666666
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9190512350621656,
+        "right_mass_error": 0.01822916666666663,
+        "near_mode": 0.3203125
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.1812684866304587,
+        "right_mass_error": 0.02083333333333337,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.28040430128053595,
+        "right_mass_error": 0.0,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.0199922583590724,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9425965180285167,
+        "right_mass_error": 0.07016075980217062,
+        "near_mode": 0.2864583333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.31864735888634627,
+        "right_mass_error": 0.051931593135503995,
+        "near_mode": 0.9348958333333334
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.2867002344405305,
+        "right_mass_error": 0.0024524264688372543,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.26786801225112505,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.46042250649503413,
+        "right_mass_error": 0.017769036576692265,
+        "near_mode": 0.5729166666666666
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.13204057256018908,
+        "right_mass_error": 0.005668463423307735,
+        "near_mode": 0.9739583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.34147176215133723,
+        "right_mass_error": 0.016085130089974364,
+        "near_mode": 0.765625
+      }
+    ],
+    "10128": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.2636387168376724,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.5008043275030541,
+        "right_mass_error": 0.012560703243358949,
+        "near_mode": 0.5208333333333334
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.1337677343627735,
+        "right_mass_error": 0.01348096342330772,
+        "near_mode": 0.96875
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.3349766907579646,
+        "right_mass_error": 0.031710130089974385,
+        "near_mode": 0.7838541666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 0.996320481174909,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.8625366868222474,
+        "right_mass_error": 0.03630659313550408,
+        "near_mode": 0.328125
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.17546561622637843,
+        "right_mass_error": 0.010264926468837393,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.37512204911755426,
+        "right_mass_error": 0.038910759802170736,
+        "near_mode": 0.7578125
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9383043036302174,
+        "right_mass_error": 0.0078125,
+        "near_mode": 0.2708333333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.14857532814064156,
+        "right_mass_error": 0.015625,
+        "near_mode": 0.9635416666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.35027101315940073,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.7317708333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9601008208563467,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.859581288034908,
+        "right_mass_error": 0.031098259802170625,
+        "near_mode": 0.2994791666666667
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.325650742918907,
+        "right_mass_error": 0.049327426468837254,
+        "near_mode": 0.9244791666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.2756398522252626,
+        "right_mass_error": 0.015473259802170625,
+        "near_mode": 0.78125
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.27184625948488433,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.5038124318401609,
+        "right_mass_error": 0.009956536576692265,
+        "near_mode": 0.5494791666666666
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.09804247302246974,
+        "right_mass_error": 0.003064296756640994,
+        "near_mode": 0.9713541666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.3328872577131467,
+        "right_mass_error": 0.023897630089974364,
+        "near_mode": 0.8125
+      }
+    ],
+    "10129": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.25345809669284514,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.44260656888008965,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 0.5911458333333334
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.1385537434285189,
+        "right_mass_error": 0.01087679675664105,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.2890766732547562,
+        "right_mass_error": 0.01348096342330772,
+        "near_mode": 0.8046875
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.0766075582483097,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9283168110273157,
+        "right_mass_error": 0.08578575980217074,
+        "near_mode": 0.2916666666666667
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.3344300455408456,
+        "right_mass_error": 0.05713992646883739,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.3472726527966561,
+        "right_mass_error": 0.02068159313550408,
+        "near_mode": 0.7239583333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9296573727161693,
+        "right_mass_error": 0.005208333333333315,
+        "near_mode": 0.2942708333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.2492800844785265,
+        "right_mass_error": 0.041666666666666685,
+        "near_mode": 0.9322916666666666
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.34331977643975325,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.7239583333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.9515327059939979,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.8500941430079723,
+        "right_mass_error": 0.020681593135503995,
+        "near_mode": 0.328125
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.10003763064803237,
+        "right_mass_error": 0.0001517401978293753,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.35945093712517634,
+        "right_mass_error": 0.049327426468837254,
+        "near_mode": 0.8020833333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.26565791348142526,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.48097206093860256,
+        "right_mass_error": 0.015164869910025636,
+        "near_mode": 0.5625
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.1663609977361888,
+        "right_mass_error": 0.016085130089974364,
+        "near_mode": 0.9661458333333334
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.2257503928098922,
+        "right_mass_error": 0.00046013008997436433,
+        "near_mode": 0.8229166666666666
+      }
+    ],
+    "10130": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.26533186797460506,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.4863962859379994,
+        "right_mass_error": 0.020373203243358947,
+        "near_mode": 0.5625
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.15864655286255833,
+        "right_mass_error": 0.02129346342330772,
+        "near_mode": 0.9817708333333334
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.24085503937360772,
+        "right_mass_error": 0.00046013008997438515,
+        "near_mode": 0.8098958333333334
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.042864510864281,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9446798953742701,
+        "right_mass_error": 0.05713992646883739,
+        "near_mode": 0.2890625
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.24620817692066005,
+        "right_mass_error": 0.038910759802170736,
+        "near_mode": 0.9479166666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.44713156788743313,
+        "right_mass_error": 0.0727649264688374,
+        "near_mode": 0.8203125
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9666193753452087,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.2942708333333333
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.2007976903208169,
+        "right_mass_error": 0.0234375,
+        "near_mode": 0.9453125
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.29552147390240247,
+        "right_mass_error": 0.002604166666666685,
+        "near_mode": 0.7395833333333334
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 1.00244349912562,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.9024789863977266,
+        "right_mass_error": 0.012869093135503995,
+        "near_mode": 0.3333333333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.2542585406735991,
+        "right_mass_error": 0.036306593135503995,
+        "near_mode": 0.921875
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.30728903854476464,
+        "right_mass_error": 0.028494093135503995,
+        "near_mode": 0.7864583333333334
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.26104227755612747,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.4621582509942079,
+        "right_mass_error": 0.015164869910025636,
+        "near_mode": 0.5572916666666666
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.10387333392761637,
+        "right_mass_error": 0.004748203243359006,
+        "near_mode": 0.9609375
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.31511770574229286,
+        "right_mass_error": 0.013480963423307735,
+        "near_mode": 0.8098958333333334
+      }
+    ],
+    "10131": [
+      {
+        "context": -1.5,
+        "method": "point",
+        "w1": 0.2489500047194871,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 1.0
+      },
+      {
+        "context": -1.5,
+        "method": "gaussian",
+        "w1": 0.39601762891141046,
+        "right_mass_error": 0.022977369910025615,
+        "near_mode": 0.671875
+      },
+      {
+        "context": -1.5,
+        "method": "conditional_resample",
+        "w1": 0.10596037389207916,
+        "right_mass_error": 0.009956536576692281,
+        "near_mode": 0.96875
+      },
+      {
+        "context": -1.5,
+        "method": "original_flow",
+        "w1": 0.26615017746929726,
+        "right_mass_error": 0.003064296756641053,
+        "near_mode": 0.7604166666666666
+      },
+      {
+        "context": -0.75,
+        "method": "point",
+        "w1": 1.0335517067974413,
+        "right_mass_error": 0.13296424019782926,
+        "near_mode": 0.0
+      },
+      {
+        "context": -0.75,
+        "method": "gaussian",
+        "w1": 0.9839913487651725,
+        "right_mass_error": 0.07536909313550408,
+        "near_mode": 0.2942708333333333
+      },
+      {
+        "context": -0.75,
+        "method": "conditional_resample",
+        "w1": 0.2521420393935162,
+        "right_mass_error": 0.03370242646883739,
+        "near_mode": 0.9322916666666666
+      },
+      {
+        "context": -0.75,
+        "method": "original_flow",
+        "w1": 0.4171081066366983,
+        "right_mass_error": 0.054535759802170736,
+        "near_mode": 0.7473958333333334
+      },
+      {
+        "context": 0.0,
+        "method": "point",
+        "w1": 1.9999999999999984,
+        "right_mass_error": 0.5,
+        "near_mode": 0.0
+      },
+      {
+        "context": 0.0,
+        "method": "gaussian",
+        "w1": 0.9215114750248705,
+        "right_mass_error": 0.02864583333333337,
+        "near_mode": 0.328125
+      },
+      {
+        "context": 0.0,
+        "method": "conditional_resample",
+        "w1": 0.12602729178668828,
+        "right_mass_error": 0.0026041666666666297,
+        "near_mode": 0.96875
+      },
+      {
+        "context": 0.0,
+        "method": "original_flow",
+        "w1": 0.3353638263025229,
+        "right_mass_error": 0.03125,
+        "near_mode": 0.7369791666666666
+      },
+      {
+        "context": 0.75,
+        "method": "point",
+        "w1": 0.906081892301228,
+        "right_mass_error": 0.13296424019782938,
+        "near_mode": 1.0
+      },
+      {
+        "context": 0.75,
+        "method": "gaussian",
+        "w1": 0.8993303501401736,
+        "right_mass_error": 0.028494093135503995,
+        "near_mode": 0.3255208333333333
+      },
+      {
+        "context": 0.75,
+        "method": "conditional_resample",
+        "w1": 0.14706104873673967,
+        "right_mass_error": 0.013172573531162746,
+        "near_mode": 0.9375
+      },
+      {
+        "context": 0.75,
+        "method": "original_flow",
+        "w1": 0.28303803308434466,
+        "right_mass_error": 0.007660759802170625,
+        "near_mode": 0.7526041666666666
+      },
+      {
+        "context": 1.5,
+        "method": "point",
+        "w1": 0.2528955970561371,
+        "right_mass_error": 0.022977369910025636,
+        "near_mode": 1.0
+      },
+      {
+        "context": 1.5,
+        "method": "gaussian",
+        "w1": 0.4457091468535154,
+        "right_mass_error": 0.015164869910025636,
+        "near_mode": 0.6041666666666666
+      },
+      {
+        "context": 1.5,
+        "method": "conditional_resample",
+        "w1": 0.1208472784986018,
+        "right_mass_error": 0.009956536576692265,
+        "near_mode": 0.9557291666666666
+      },
+      {
+        "context": 1.5,
+        "method": "original_flow",
+        "w1": 0.27376223444083087,
+        "right_mass_error": 0.00046013008997436433,
+        "near_mode": 0.7864583333333334
+      }
+    ]
+  }
+}

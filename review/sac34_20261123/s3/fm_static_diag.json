@@ -1,0 +1,14 @@
+{
+ "F": {
+  "q_D": 56.981201171875,
+  "auc_window_own_vs_other": 0.7648575625,
+  "rstyle_med_own": -1.0,
+  "rstyle_med_other": -1.0
+ },
+ "R": {
+  "q_D": 109.91956329345703,
+  "auc_window_own_vs_other": 0.8391945,
+  "rstyle_med_own": -1.0,
+  "rstyle_med_other": -1.0
+ }
+}

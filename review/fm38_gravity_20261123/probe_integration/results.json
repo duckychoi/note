@@ -1,0 +1,181 @@
+{
+  "methods": {
+    "legacy": {
+      "source": {
+        "success": 0.2421875,
+        "by_seed": [
+          0.251953125,
+          0.240234375,
+          0.234375
+        ],
+        "chosen_peak_MAE_deg": 19.24560243179653
+      },
+      "shift": {
+        "success": 0.15950520833333334,
+        "by_seed": [
+          0.173828125,
+          0.142578125,
+          0.162109375
+        ],
+        "chosen_peak_MAE_deg": 26.113515776612374
+      }
+    },
+    "prior_photo": {
+      "source": {
+        "success": 0.626953125,
+        "by_seed": [
+          0.626953125
+        ],
+        "chosen_peak_MAE_deg": 6.844175501953538
+      },
+      "shift": {
+        "success": 0.177734375,
+        "by_seed": [
+          0.177734375
+        ],
+        "chosen_peak_MAE_deg": 14.233833824049412
+      }
+    },
+    "prior_probe": {
+      "source": {
+        "success": 0.826171875,
+        "by_seed": [
+          0.826171875
+        ],
+        "chosen_peak_MAE_deg": 4.722978812690041
+      },
+      "shift": {
+        "success": 0.71484375,
+        "by_seed": [
+          0.71484375
+        ],
+        "chosen_peak_MAE_deg": 6.548020583637147
+      }
+    },
+    "flow_probe": {
+      "source": {
+        "success": 0.4622395833333333,
+        "by_seed": [
+          0.4609375,
+          0.466796875,
+          0.458984375
+        ],
+        "chosen_peak_MAE_deg": 8.87905873814009
+      },
+      "shift": {
+        "success": 0.3802083333333333,
+        "by_seed": [
+          0.37109375,
+          0.3984375,
+          0.37109375
+        ],
+        "chosen_peak_MAE_deg": 11.322882747937447
+      }
+    },
+    "prior_swapped": {
+      "source": {
+        "success": 0.212890625,
+        "by_seed": [
+          0.212890625
+        ],
+        "chosen_peak_MAE_deg": 17.661499782269924
+      },
+      "shift": {
+        "success": 0.177734375,
+        "by_seed": [
+          0.177734375
+        ],
+        "chosen_peak_MAE_deg": 15.050137535231384
+      }
+    },
+    "flow_swapped": {
+      "source": {
+        "success": 0.4147135416666667,
+        "by_seed": [
+          0.423828125,
+          0.40625,
+          0.4140625
+        ],
+        "chosen_peak_MAE_deg": 11.924090852239353
+      },
+      "shift": {
+        "success": 0.11848958333333333,
+        "by_seed": [
+          0.119140625,
+          0.1171875,
+          0.119140625
+        ],
+        "chosen_peak_MAE_deg": 20.338931061106134
+      }
+    }
+  },
+  "contrasts": {
+    "flow_probe-minus-legacy_source": [
+      0.22005208333333331,
+      0.17057291666666666,
+      0.2708333333333333
+    ],
+    "flow_probe-minus-legacy_shift": [
+      0.220703125,
+      0.16861979166666669,
+      0.2740885416666667
+    ],
+    "prior_probe-minus-prior_photo_source": [
+      0.19921875,
+      0.154296875,
+      0.24609375
+    ],
+    "prior_probe-minus-prior_photo_shift": [
+      0.537109375,
+      0.478515625,
+      0.595703125
+    ],
+    "flow_probe-minus-prior_probe_source": [
+      -0.36393229166666674,
+      -0.4186197916666667,
+      -0.310546875
+    ],
+    "flow_probe-minus-prior_probe_shift": [
+      -0.3346354166666667,
+      -0.388671875,
+      -0.2805989583333333
+    ]
+  },
+  "identification": {
+    "source": {
+      "oracle": 0.828125,
+      "strength_MAE_s2": 0.2776229748901391
+    },
+    "shift": {
+      "oracle": 0.76953125,
+      "strength_MAE_s2": 1.8643953732404734
+    }
+  },
+  "paired_starts": 512,
+  "example": {
+    "index": 410,
+    "goal_deg": 59.97177622928948,
+    "source": {
+      "practice_deg": 31.15573898606219,
+      "strength": 11.600000381469727,
+      "correct_action": 2,
+      "prior_action": 2,
+      "full_actions": [
+        2,
+        2,
+        2
+      ]
+    },
+    "shift": {
+      "practice_deg": 10.611417215692043,
+      "strength": 14.800000190734863,
+      "correct_action": 3,
+      "prior_action": 3,
+      "full_actions": [
+        2,
+        2,
+        2
+      ]
+    }
+  }
+}

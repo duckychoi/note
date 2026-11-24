@@ -1,0 +1,34 @@
+C:\Users\user\OneDrive\코드\바이브연구\note\review\pf36_20261123\pf36_g5.py:57: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  tl.append(float(loss))
+[  292.7s] {
+ "traj_steps": 490,
+ "flow": {
+  "charged_in_gate5": 196608,
+  "actual_min": 196608.0,
+  "actual_with_tuning": 233472.0,
+  "actual_as_scripted": 282624.0,
+  "cold_sec": 212.74552780389786,
+  "warm_per_case_sec": 0.022622954100370407
+ },
+ "ref_pf8192": {
+  "charged_in_gate3": 1572864,
+  "actual_with_tuning": 1720320.0,
+  "actual_test_only": 1572864.0,
+  "cold_sec": 141.2867136001587,
+  "warm_per_case_sec": 0.6687037895123163
+ },
+ "retrieval": {
+  "actual": 196608.0,
+  "cold_sec": 31.085181713104248,
+  "warm_per_case_sec": 0.02888857697447141
+ },
+ "ratio_sims_ref_over_flow": {
+  "charged": 8.0,
+  "actual_min": 8.0,
+  "actual_with_tuning": 7.368421052631579,
+  "as_scripted": 6.086956521739131
+ },
+ "ratio_cold_time_ref_over_flow": 0.6641113214393505,
+ "breakeven_cases_time": 302.60351938496444
+}

@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# 대용량 바이너리(재생성 가능: demos34.py, sac34.py 등)
+*.npz
+*.pt
+*.joblib

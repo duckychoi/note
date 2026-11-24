@@ -1,0 +1,3169 @@
+{
+  "seeds": [
+    {
+      "seed": 11120,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.003959544003009796,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.4803068079168713e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 9.732532632291038e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.11970546869216143,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.00706208022184323,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 2.4579325282701978e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9073174394391202,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.7969632029288461,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6148883891440196,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.281782984457634,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.515068847824026,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007691000576283637,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.03397985769578746,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.02018229166666674
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.281782984457634,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.515068847824026,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.32239836835031127,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5696538645701701,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.322265625,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01985677083333326
+          }
+        }
+      }
+    },
+    {
+      "seed": 11121,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0027616470707235506,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 1.070021272179265e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 1.6063526053934024e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.13044839076421882,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.00863025630642383,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 3.7774056855109834e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9082329968266464,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.7988409342972055,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6179970195210859,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.2881260378010294,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5165324460853029,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007754431109717589,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.019857864859794253,
+            "second_task_true": 0.0,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.04166666666666674
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.2881260378010294,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5165324460853029,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.31753154067194733,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5568741648841893,
+            "second_task_true": 0.5,
+            "max_edge_change": 2.220446049250313e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.3173828125,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.484375,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01692708333333326
+          }
+        }
+      }
+    },
+    {
+      "seed": 11122,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0034458019115306705,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 1.793400904123668e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 4.857933191897714e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.13044839076421882,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.00863025630642383,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 3.7774056855109834e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9313225746154785,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8470329472543003,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.7006492321624085,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.2885522596814014,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5166332534065953,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007758693328521306,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.018906469344121223,
+            "second_task_true": 0.0,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.02180989583333337
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.2885522596814014,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5166332534065953,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.32240513762553513,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5628721409206197,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.322265625,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.490234375,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01041666666666663
+          }
+        }
+      }
+    },
+    {
+      "seed": 11123,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.002780914306640625,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 1.0875212410610402e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 1.6631753199735166e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.12018048984033089,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.007127642841668295,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 2.5070895637119823e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9174224687740207,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8178277991019158,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6499004857802385,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.3030747709131833,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5202518055663892,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.015424656802163142,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.01571253872167203,
+            "second_task_true": 0.0,
+            "max_edge_change": 6.661338147750939e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.01741536458333326
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.3030747709131833,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5202518055663892,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.3272928308684741,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5542610835217504,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.3271484375,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.4873046875,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01481119791666674
+          }
+        }
+      }
+    },
+    {
+      "seed": 11124,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0037201223550019434,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.1443723046953637e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 7.125020535887971e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9073174394391202,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.7969632029288461,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6148883891440196,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.3048406792071613,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5207160124727698,
+            "second_task_true": 0.0,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "event_projection": {
+            "event_p": 0.01932876646045714,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.019614508649488195,
+            "second_task_true": 0.0,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.02945963541666663
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.3048406792071613,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5207160124727698,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "event_projection": {
+            "event_p": 0.3584828894596949,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5937413993627758,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.3583984375,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.4990234375,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.02718098958333337
+          }
+        }
+      }
+    },
+    {
+      "seed": 11125,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.004183617420494556,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.8202519814216912e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 1.2816215863160556e-12,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.13323097210377455,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.009065925076363146,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 4.197840985096713e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9109833640632805,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8044968989677582,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6274111476615708,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.30661343375686556,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.521187259349972,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.023232882965006866,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0235164922657988,
+            "second_task_true": 0.0,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.02099609375
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.30661343375686556,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.521187259349972,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.34581441831180565,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5755591389739427,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.345703125,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5166015625,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01708984375
+          }
+        }
+      }
+    },
+    {
+      "seed": 11126,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.003743617795407772,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.176106638180572e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 7.352880625162448e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.12475601828622598,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.007776965622201136,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 3.0220909255683236e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9146591499447823,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8120915550920366,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6401716188366127,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.29781799111084106,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.518900894853114,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0037123687723608348,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.004006710804214608,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.01676432291666674
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.29781799111084106,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.518900894853114,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.3282622082350133,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5611090013482192,
+            "second_task_true": 0.5,
+            "max_edge_change": 2.220446049250313e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.328125,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.4775390625,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.005045572916666741
+          }
+        }
+      }
+    },
+    {
+      "seed": 11127,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.003513071651536005,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 1.876159187585189e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 5.351001073482643e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.12378326620630642,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.007636209861922436,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 2.9060942160057673e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9201913475990295,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8235987380188804,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6597672087316673,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.29369975157358025,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5178750764440607,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007810168247443092,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.00739205401910439,
+            "second_task_true": 0.0,
+            "max_edge_change": 5.551115123125783e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.00911458333333337
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.29369975157358025,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5178750764440607,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.3233849192637686,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5588644263731213,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.3232421875,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.486328125,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.02571614583333337
+          }
+        }
+      }
+    },
+    {
+      "seed": 11128,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0038385888285658986,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.3071033781557394e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 8.334085953113143e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.11758335986761033,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.006773404625398018,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 2.247653332686905e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9183448103291018,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.819747581805327,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6531739870627553,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.29369975157358025,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5178750764440607,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007810168247443092,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.00739205401910439,
+            "second_task_true": 0.0,
+            "max_edge_change": 5.551115123125783e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.00520833333333337
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.29369975157358025,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5178750764440607,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.34677613877596386,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5892300943510114,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.3466796875,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.529296875,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01432291666666663
+          }
+        }
+      }
+    },
+    {
+      "seed": 11129,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0036502262853361934,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.051537716424913e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 6.480357135108387e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.11479310129113772,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.006404277982854117,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 1.9933288179405375e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.9100659589317662,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8026077759369268,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6242583344457644,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.29781799111084106,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.518900894853114,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0037123687723608348,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.004006710804214608,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.006998697916666741
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.29781799111084106,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.518900894853114,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.34190708628379385,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5790974580551829,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.341796875,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5048828125,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.005045572916666741
+          }
+        }
+      }
+    },
+    {
+      "seed": 11130,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.0026666447520256042,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 9.860949034744227e-07,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 1.3484219582955939e-13,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.11479310129113772,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.006404277982854117,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 1.9933288179405375e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.919267769868451,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8216712259542319,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6564628723428048,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.28940596403899005,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5168360957392939,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.0007767230372097188,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.016999933732930576,
+            "second_task_true": 0.0,
+            "max_edge_change": 4.440892098500626e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.01334635416666674
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.28940596403899005,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5168360957392939,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.32338062547623403,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5632837680149643,
+            "second_task_true": 0.5,
+            "max_edge_change": 1.1102230246251565e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.3232421875,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.498046875,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.01985677083333326
+          }
+        }
+      }
+    },
+    {
+      "seed": 11131,
+      "worlds": {
+        "0.15": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.03220833333333333
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.396625
+            },
+            "learned_transition": {
+              "event_p": 0.003984035958570464,
+              "true_p": 0.0033749999999999995,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.39999829140625004
+            },
+            "learned_transition": {
+              "event_p": 2.5162526714980027e-06,
+              "true_p": 1.7085937499999996e-06,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.3999999999995621
+            },
+            "learned_transition": {
+              "event_p": 1.003728481712808e-12,
+              "true_p": 4.3789389038085913e-13,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.5": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.125,
+              "mean_regret": 0.008333333333333331
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.125,
+              "mean_regret": 0.2833333333333333
+            },
+            "learned_transition": {
+              "event_p": 0.13145570981281773,
+              "true_p": 0.125,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.0078125,
+              "mean_regret": 0.39218749999999997
+            },
+            "learned_transition": {
+              "event_p": 0.008786556930148404,
+              "true_p": 0.0078125,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.39996948242187497
+            },
+            "learned_transition": {
+              "event_p": 3.925520708225463e-05,
+              "true_p": 3.0517578125e-05,
+              "mean_regret": 0.0
+            }
+          }
+        },
+        "0.97": {
+          "4": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.5126729999999999
+            },
+            "independent": {
+              "event_p": 0.125,
+              "true_p": 0.912673,
+              "mean_regret": 0.24178199999999997
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.924818516363976,
+              "true_p": 0.912673,
+              "mean_regret": 0.0
+            }
+          },
+          "8": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "independent": {
+              "event_p": 0.0078125,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.40798284478112984
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            },
+            "learned_transition": {
+              "event_p": 0.8332945441443782,
+              "true_p": 0.8079828447811298,
+              "mean_regret": 0.0
+            }
+          },
+          "16": {
+            "point_mean": {
+              "event_p": 0.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "independent": {
+              "event_p": 3.0517578125e-05,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.2555007927578594
+            },
+            "fixed_branch": {
+              "event_p": 1.0,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.022249603621070275
+            },
+            "learned_transition": {
+              "event_p": 0.6765230251696795,
+              "true_p": 0.6332511891367891,
+              "mean_regret": 0.0
+            }
+          }
+        }
+      },
+      "matched": {
+        "regular": {
+          "markov_one": {
+            "event_p": 0.3030747709131833,
+            "true_event_p": 0.0,
+            "regret": 0.2,
+            "second_task_p": 0.5202518055663892,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.015424656802163142,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.01571253872167203,
+            "second_task_true": 0.0,
+            "max_edge_change": 6.661338147750939e-16
+          },
+          "four_frame_counts": {
+            "event_p": 0.0,
+            "true_event_p": 0.0,
+            "regret": 0.0,
+            "second_task_p": 0.0,
+            "second_task_true": 0.0,
+            "max_edge_change": 0.007649739583333259
+          }
+        },
+        "uneven": {
+          "markov_one": {
+            "event_p": 0.3030747709131833,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5202518055663892,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "event_projection": {
+            "event_p": 0.35165868452701077,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5866493288061159,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.0
+          },
+          "four_frame_counts": {
+            "event_p": 0.3515625,
+            "true_event_p": 0.3333333333333333,
+            "regret": 0.0,
+            "second_task_p": 0.5087890625,
+            "second_task_true": 0.5,
+            "max_edge_change": 0.00797526041666674
+          }
+        }
+      }
+    }
+  ],
+  "rotation_control": {
+    "shift_dot_error": 7.771561172376096e-16,
+    "rollout_error": {
+      "1": 0.019999666668333284,
+      "8": 0.15982938793834506,
+      "32": 0.6291331212322344,
+      "64": 1.1943908827247822
+    }
+  }
+}

@@ -1,0 +1,41 @@
+**판정은 NOT READY입니다.** 읽기 전용 검토에서 HIGH 3건, MED 5건을 확인했습니다.
+
+## HIGH
+
+- **C1 — 기존 SDE 증명이 틀렸고, 균등 가중 KL 상한 자체도 깨집니다.** 속도장 \(u_p\)에 \(\sigma\,dW\)만 더하면 밀도 방정식에 \((\sigma^2/2)\Delta p_t\)가 생깁니다. 같은 주변분포를 유지하는 표준 보정은 드리프트에 \((\sigma^2/2)\nabla\log p_t\)를 더하는 것입니다. 이 보정을 하면 Girsanov에서 비교하는 드리프트도 달라집니다. 실제로 \(p=N(0,1)\), \(q=N(0,\varepsilon^2)\)이면 \(0<\varepsilon\le1\)에서 균등 가중 \(B_u\le6\)이지만 \(\mathrm{KL}(q\|p)=(\varepsilon^2-1)/2-\log\varepsilon\)는 발산합니다. **수정** — 기존 KL 상한을 철회하고 C3의 가중 등식으로 교체하세요. [docs/05-fm-residual-divergence-theorem.md:23](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:23>) · [docs/v2/34-audit-20261122.md:10](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:10>)
+
+- **C4 — 유한한 \(\delta\)에서 샘플별 보상에 \(x\) 의존 오차가 남습니다.** C3을 \(q=\delta_x\)에 적용하고 \(t=1-\delta\)에서 멈추면, \(\tau=(\delta/(1-\delta))^2\), \(p_\tau=p*N(0,\tau I)\)에 대해 정확히
+  \[
+  \ell_w(x)=\mathrm{KL}\big(N(x,\tau I)\|p_\tau\big)
+  =-\tfrac d2\log(2\pi e\tau)-\mathbb E_Z\log p_\tau(x+\sqrt{\tau}Z).
+  \]
+  따라서 \(K_\delta=-\tfrac d2\log(2\pi e\tau)\)이고, 나머지는 \(\log p(x)-\mathbb E_Z\log p_\tau(x+\sqrt{\tau}Z)\)입니다. E1의 GMM에서는 고정된 \(x\)마다 이 항이 \(-\tau(\Delta\log p(x)+\tfrac12\|\nabla\log p(x)\|^2)+O_x(\tau^2)\)입니다. 표준정규 예에서도 유한 절단 후 Gibbs 분포의 분산은 \(1\to1+\tau\)로 커집니다. E1의 \(\delta=0.01\)에서 독립 재계산한 격자 KL은 \(5.95\times10^{-8}\)입니다. **수정** — 샘플별 정확식과 \(\delta\downarrow0\) 극한을 명시하고, 유한 절단의 KL은 실제 값으로 보고하세요. [docs/v2/34-audit-20261122.md:18](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:18>) · [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [results/v2/e1_reward_theory.json:47](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:47>)
+
+- **C6 — 결정론만으로 행동 엔트로피를 다음 상태 엔트로피로 바꿀 수 없습니다.** \(d=d(S,S')\)일 때 일반 결정론 MDP의 목적은 \(J=-\mathrm{KL}(d\|p)-H(S)+H(A\mid S,S')\)입니다. 상태 보정은 \(H(S)\)를 없애므로 마지막 항이 남습니다. 상태 하나에서 두 행동이 모두 자기 자신으로 돌아가면, 균등 정책의 \(J=\log 2\)이고 \(-\mathrm{KL}-H(S)=0\)입니다. E2 링에서는 상태마다 세 행동의 도착점이 달라 마지막 항이 0입니다. **수정** — 상태별로 행동에서 다음 상태로 가는 매핑이 일대일이라는 조건을 붙이세요. 일반 MDP에서는 \(H(S'\mid S)\)를 쓰고 같은 도착점의 행동 확률을 합산하세요. [src/v2/e2_occupancy.py:8](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:8>) · [src/v2/e2_occupancy.py:21](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:21>) · [src/v2/e2_occupancy.py:37](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:37>)
+
+## MED
+
+- **C2·C3 — 속도–점수 관계의 시간 범위와 KL 등식의 양끝 조건이 빠졌습니다.** C2의 후방평균 공식은 \(0<t<1\)에서 임의의 끝점 확률분포에 적용됩니다. 가우시안으로 가중한 후방분포에서는 이 구간의 평균이 유한합니다. C3에서 \(y=x_t/t\)로 바꾸면 \(y\) 좌표의 점수 차이는 \(t\Delta s_x=t^2\Delta u/(1-t)\)입니다. 상대 de Bruijn의 계수 \(-1/2\)와 \(d\tau/dt=-2(1-t)/t^3\)를 곱하면 정확히 \(t/(1-t)\)가 됩니다. 빠진 부분은 양끝의 KL입니다. **수정** — 충분조건으로 \(p,q\)의 유한한 2차 모멘트를 명시하세요. 양의 \(\tau\)에서는 가우시안 평활화 후 미분식을 적용하고, \(t\downarrow0\)에서는 \(\mathrm{KL}(q_\tau\|p_\tau)\le W_2^2(q,p)/(2\tau)\to0\), \(t\uparrow1\)에서는 데이터처리와 하반연속성으로 원래 KL에 수렴함을 보이세요. 이 조건에서 계수 1의 **정확한 등식**이며, 무한 KL도 확장값으로 포함됩니다. [docs/v2/34-audit-20261122.md:15](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:15>) · [상대 de Bruijn 미분식](https://www.mdpi.com/1099-4300/14/8/1469)
+
+- **C5 — 온도로 보정할 수 없다는 결론의 범위가 넓고, `best_alpha`는 격자 탐색값입니다.** \(p=N(0,1)\)이면 균등 가중 손실은 \(\ell_u(x)=\pi x^2/4+C\)여서 \(\alpha=\pi/2\)에서 \(p\)를 정확히 복원합니다. 반면 E1 GMM의 세 점을 독립 구적하면, \(-2.5\)와 \(2.5\)의 밀도비를 맞추는 데 \(\alpha\approx3.816\), \(-2.5\)와 \(0\)에는 \(\alpha\approx0.738\)이 필요합니다. 이 차이는 유한한 온도 탐색보다 직접적인 수치 근거입니다. 같은 격자 구간에서 온도를 연속 탐색하면 보고된 \(1.634\)보다 약간 낮은 \(1.624\)가 나옵니다. **수정** — 결론을 E1 GMM에 한정하고, 모든 온도에 대한 엄밀한 주장이 필요하면 세 점의 구적 오차를 보증하세요. 표에는 탐색 범위와 해상도를 표시하세요. [docs/v2/34-audit-20261122.md:4](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:4>) · [src/v2/e1_reward_theory.py:110](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:110>) · [results/v2/e1_reward_theory.json:59](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:59>)
+
+- **C7 — E1의 T1에서 KL과 \(B_w\)가 서로 다른 방식으로 꼬리를 처리합니다.** `kl_grid`는 \([-10,10]\)에서 \(q\)만 재정규화하고, `bias`는 시간마다 잘린 \(q_t\) 밀도를 그대로 씁니다. `gaussian-fit`에서 구간을 \([-20,20]\)으로 넓히면 KL과 \(B_w\)의 차이가 약 **천만 배** 줄었습니다. 시간 치환 \(dt=e^{-s}ds\)와 Gauss–Hermite의 \(1/\sqrt{2\pi}\) 정규화는 재계산과 일치했습니다. **수정** — 각 \(q_t\)의 혼합 성분별 가우시안 기대값을 적분하고, 공간·시간 절단과 구적 차수를 바꿔 수렴 오차를 보고하세요. [src/v2/e1_reward_theory.py:21](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:21>) · [src/v2/e1_reward_theory.py:31](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:31>) · [src/v2/gmm_flow.py:74](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:74>) · [results/v2/e1_reward_theory.json:34](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:34>)
+
+  | `gaussian-fit` | 기존 \([-10,10]\) | 재계산 \([-20,20]\) |
+  |---|---:|---:|
+  | KL | 1.342439738 | 1.345286557 |
+  | \(B_w\) | 1.345232022 | 1.345286557 |
+
+- **C2·C7 — GMM의 점수와 속도 계산이 \(t=1\) 근처에서 불안정합니다.** 표준정규, \(x=0.7\), \(t=1-10^{-8}\)에서 실제 점수는 약 \(-0.7\)인데 코드는 \(-2.22\)를 반환합니다. \(t=1\)에서는 두 함수 모두 `NaN`입니다. **수정** — 성분별 점수 \(-(x-t\mu_k)/V_k\)와 속도 \(\mu_k+[t s_k^2-(1-t)](x-t\mu_k)/V_k\)를 계산한 뒤 후방 성분확률로 평균하세요. [src/v2/gmm_flow.py:52](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:52>)
+
+- **기존 따름정리 — Gibbs 지수에 분포 전체의 손실을 넣었습니다.** \(\mathcal R(q)\)는 \(q\) 전체에 붙는 숫자 하나입니다. 이를 \(x\)별 에너지로 쓰면 모든 \(x\)에서 같은 값을 얻습니다. 또 \(C(q)\)는 점질량에서 0이고, 표준정규 끝점에서는 \(\pi/2\)라 정책에 따라 달라집니다. **수정** — 엔트로피 정규화의 Gibbs 공식을 샘플별 에너지 \(\ell(x)\)로 쓰고, \(\mathcal R(q)=\mathbb E_q\ell(x)\)에서 출발하세요. [docs/05-fm-residual-divergence-theorem.md:17](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:17>) · [docs/05-fm-residual-divergence-theorem.md:27](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:27>)
+
+## LOW
+
+- **E1의 모드 질량 비교에서 기준이 다릅니다.** 목표는 혼합 성분 가중치이고, 학습 결과는 중심에서 \(\pm1.2\) 이내의 구간 확률입니다. 같은 격자와 구간으로 계산한 실제 목표는 \([0.5826,0.2911,0.1077]\)입니다. 보정 후 \([0.5279,0.1195,0.3057]\)은 두 번째 구간이 목표의 약 41%, 세 번째가 약 2.84배입니다. **수정** — 목표에도 같은 구간을 적용하세요. [src/v2/e1_reward_theory.py:127](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:127>) · [results/v2/e1_reward_theory.json:66](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:66>)
+
+- **E2의 `0.0000 (10/10)`은 허용오차를 숨깁니다.** 코드의 정상분포 선형계와 평균보상 목적은 링에서 맞지만, 보정 후 저장 KL의 최댓값은 \(1.36\times10^{-5}\)입니다. A의 최적해를 고유벡터로 직접 풀었을 때 평균 KL은 \(0.48493\to0.48487\)로 거의 같아, 관측된 편향은 Adam 조기 종료로 설명되지 않습니다. **수정** — 보정값은 지수 표기와 성공 허용오차를 함께 보고하고, A는 최적 평균보상과의 차이도 기록하세요. [src/v2/e2_occupancy.py:26](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:26>) · [src/v2/e2_occupancy.py:49](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:49>) · [results/v2/e2_occupancy.json:68](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy.json:68>) · [docs/v2/34-audit-20261122.md:29](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:29>)
+
+- **입력 형태와 자료형에 따라 조용히 오계산하거나 예외가 납니다.** 1차원 GMM에 `logpdf(np.array([0., 1., 2.]))`를 주면 점 세 개의 밀도 대신 잘못된 값 하나가 나옵니다. `per_sample`은 정수 배열을 받으면 정수 누적기에 실수를 더하다 실패합니다. **수정** — GMM 입력의 마지막 차원을 검증하고, `per_sample` 입력과 누적기를 실수형으로 변환하세요. [src/v2/gmm_flow.py:30](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:30>) · [src/v2/e1_reward_theory.py:75](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:75>)
+
+NOT READY + 8

@@ -1,0 +1,75 @@
+members 15 [('task', '-', 0.0, 0), ('task', '-', 0.0, 1), ('task', '-', 0.0, 2), ('oracle', 'F', 0.5, 0), ('oracle', 'F', 0.5, 1), ('oracle', 'F', 0.5, 2), ('oracle', 'R', 0.5, 0), ('oracle', 'R', 0.5, 1), ('oracle', 'R', 0.5, 2), ('oracle', 'F', 1.0, 0), ('oracle', 'F', 1.0, 1), ('oracle', 'F', 1.0, 2), ('oracle', 'R', 1.0, 0), ('oracle', 'R', 1.0, 1), ('oracle', 'R', 1.0, 2)]
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+2000 sps 822  Tb_med [None, None, None, None, None] nlag [0, 0, 0, 0, 0]
+  25000 sps 167 min 2.5 | task/-/0.0: v0.58 ok0.0 s-0.34,v0.84 ok0.0 s-0.43,v0.82 ok0.0 s-0.36 | oracle/F/0.5: v0.60 ok0.0 s-0.36,v0.64 ok0.0 s-0.27,v0.88 ok0.0 s-0.39 | oracle/R/0.5: v0.87 ok0.0 s-0.37,v0.63 ok0.0 s-0.37,v0.78 ok0.0 s-0.40 | oracle/F/1.0: v0.37 ok0.0 s-0.21,v0.76 ok0.0 s-0.30,v0.26 ok0.0 s-0.22 | oracle/R/1.0: v0.34 ok0.0 s-0.45,v0.52 ok0.0 s-0.45,v0.32 ok0.0 s-0.32
+  50000 sps 46 min 18.3 | task/-/0.0: v1.00 ok1.0 s+0.08,v1.00 ok1.0 s-0.31,v0.99 ok1.0 s+0.19 | oracle/F/0.5: v1.11 ok0.5 s-0.02,v0.83 ok0.0 s-0.42,v0.92 ok1.0 s-0.13 | oracle/R/0.5: v0.91 ok0.5 s-0.33,v0.83 ok0.5 s-0.38,v0.82 ok0.0 s-0.33 | oracle/F/1.0: v1.16 ok0.5 s-0.19,v0.85 ok0.0 s-0.31,v0.68 ok0.0 s-0.41 | oracle/R/1.0: v0.94 ok0.5 s-0.43,v1.03 ok1.0 s-0.40,v0.74 ok0.0 s-0.43
+  75000 sps 57 min 21.9 | task/-/0.0: v0.97 ok1.0 s-0.07,v0.96 ok1.0 s-0.19,v0.98 ok1.0 s+0.20 | oracle/F/0.5: v1.02 ok1.0 s+0.33,v0.95 ok1.0 s+0.20,v1.08 ok1.0 s+0.29 | oracle/R/0.5: v0.97 ok1.0 s-0.43,v0.96 ok1.0 s-0.45,v0.96 ok1.0 s-0.46 | oracle/F/1.0: v0.92 ok0.5 s-0.05,v0.95 ok1.0 s+0.24,v0.86 ok0.0 s+0.08 | oracle/R/1.0: v1.00 ok1.0 s-0.48,v0.89 ok0.5 s-0.42,v0.88 ok0.5 s-0.34
+ 100000 sps 64 min 26.0 | task/-/0.0: v0.98 ok1.0 s-0.06,v0.98 ok1.0 s+0.29,v1.01 ok1.0 s+0.32 | oracle/F/0.5: v1.03 ok1.0 s+0.30,v1.01 ok1.0 s+0.33,v1.03 ok1.0 s+0.34 | oracle/R/0.5: v1.01 ok1.0 s-0.45,v0.91 ok1.0 s-0.44,v0.96 ok1.0 s-0.38 | oracle/F/1.0: v1.04 ok1.0 s+0.26,v1.00 ok1.0 s+0.47,v1.03 ok1.0 s+0.37 | oracle/R/1.0: v1.05 ok1.0 s-0.43,v1.03 ok1.0 s-0.43,v0.87 ok0.0 s-0.47
+ 125000 sps 68 min 30.6 | task/-/0.0: v0.99 ok1.0 s+0.14,v1.02 ok1.0 s+0.00,v1.01 ok1.0 s+0.32 | oracle/F/0.5: v1.00 ok1.0 s+0.35,v0.98 ok1.0 s+0.40,v0.87 ok0.0 s+0.49 | oracle/R/0.5: v1.02 ok1.0 s-0.30,v0.94 ok1.0 s-0.49,v1.00 ok1.0 s-0.40 | oracle/F/1.0: v1.11 ok0.5 s+0.41,v1.02 ok1.0 s+0.46,v1.06 ok1.0 s+0.48 | oracle/R/1.0: v1.01 ok1.0 s-0.44,v1.07 ok1.0 s-0.36,v1.00 ok1.0 s-0.29
+ 150000 sps 71 min 35.4 | task/-/0.0: v0.99 ok1.0 s-0.12,v1.01 ok1.0 s+0.12,v1.00 ok1.0 s+0.28 | oracle/F/0.5: v0.99 ok1.0 s+0.42,v1.00 ok1.0 s+0.43,v0.83 ok0.0 s+0.40 | oracle/R/0.5: v1.02 ok1.0 s-0.24,v0.99 ok1.0 s-0.49,v0.98 ok1.0 s-0.34 | oracle/F/1.0: v1.06 ok1.0 s+0.45,v1.11 ok0.0 s+0.42,v0.98 ok1.0 s+0.34 | oracle/R/1.0: v0.97 ok1.0 s-0.48,v1.00 ok1.0 s-0.47,v1.05 ok1.0 s-0.31
+ 175000 sps 64 min 45.5 | task/-/0.0: v1.00 ok1.0 s+0.06,v1.02 ok1.0 s+0.19,v0.99 ok1.0 s+0.19 | oracle/F/0.5: v1.01 ok1.0 s+0.50,v1.03 ok1.0 s+0.46,v0.93 ok1.0 s+0.37 | oracle/R/0.5: v1.01 ok1.0 s-0.34,v1.02 ok1.0 s-0.39,v1.01 ok1.0 s-0.38 | oracle/F/1.0: v1.12 ok0.0 s+0.46,v1.03 ok1.0 s+0.48,v1.07 ok1.0 s+0.43 | oracle/R/1.0: v1.00 ok1.0 s-0.46,v0.88 ok0.0 s-0.41,v1.01 ok1.0 s-0.38
+ 200000 sps 66 min 50.3 | task/-/0.0: v1.00 ok1.0 s-0.26,v1.00 ok1.0 s+0.28,v1.00 ok1.0 s+0.29 | oracle/F/0.5: v0.98 ok1.0 s+0.49,v1.01 ok1.0 s+0.46,v0.98 ok1.0 s+0.47 | oracle/R/0.5: v1.02 ok1.0 s-0.38,v1.01 ok1.0 s-0.45,v1.03 ok1.0 s-0.45 | oracle/F/1.0: v1.11 ok0.0 s+0.47,v1.02 ok1.0 s+0.43,v1.11 ok0.0 s+0.49 | oracle/R/1.0: v1.02 ok1.0 s-0.43,v0.97 ok1.0 s-0.40,v0.93 ok1.0 s-0.39
+ 225000 sps 62 min 60.2 | task/-/0.0: v1.00 ok1.0 s-0.04,v1.00 ok1.0 s+0.11,v0.99 ok1.0 s+0.19 | oracle/F/0.5: v1.00 ok1.0 s+0.46,v0.99 ok1.0 s+0.49,v1.02 ok1.0 s+0.48 | oracle/R/0.5: v1.02 ok1.0 s-0.44,v1.00 ok1.0 s-0.48,v1.02 ok1.0 s-0.46 | oracle/F/1.0: v0.98 ok1.0 s+0.47,v1.00 ok1.0 s+0.46,v1.07 ok1.0 s+0.48 | oracle/R/1.0: v1.07 ok1.0 s-0.45,v1.07 ok1.0 s-0.42,v1.10 ok0.0 s-0.41
+ 250000 sps 64 min 65.0 | task/-/0.0: v0.99 ok1.0 s-0.05,v1.00 ok1.0 s-0.02,v1.01 ok1.0 s+0.16 | oracle/F/0.5: v1.02 ok1.0 s+0.47,v0.96 ok1.0 s+0.49,v1.02 ok1.0 s+0.49 | oracle/R/0.5: v1.00 ok1.0 s-0.45,v1.02 ok1.0 s-0.50,v1.04 ok1.0 s-0.49 | oracle/F/1.0: v1.06 ok1.0 s+0.47,v0.93 ok1.0 s+0.44,v1.03 ok1.0 s+0.46 | oracle/R/1.0: v1.01 ok1.0 s-0.49,v1.04 ok1.0 s-0.43,v1.12 ok0.0 s-0.44
+ 275000 sps 57 min 80.9 | task/-/0.0: v1.01 ok1.0 s+0.03,v0.99 ok1.0 s-0.04,v1.00 ok1.0 s+0.15 | oracle/F/0.5: v1.03 ok1.0 s+0.48,v1.02 ok1.0 s+0.49,v1.01 ok1.0 s+0.49 | oracle/R/0.5: v1.00 ok1.0 s-0.47,v1.00 ok1.0 s-0.46,v1.01 ok1.0 s-0.49 | oracle/F/1.0: v1.00 ok1.0 s+0.48,v0.97 ok1.0 s+0.46,v1.03 ok1.0 s+0.48 | oracle/R/1.0: v1.07 ok1.0 s-0.46,v1.01 ok1.0 s-0.47,v1.05 ok1.0 s-0.46
+ 300000 sps 59 min 85.1 | task/-/0.0: v1.00 ok1.0 s+0.02,v1.00 ok1.0 s+0.07,v1.00 ok1.0 s+0.17 | oracle/F/0.5: v1.02 ok1.0 s+0.48,v1.00 ok1.0 s+0.49,v1.00 ok1.0 s+0.49 | oracle/R/0.5: v0.99 ok1.0 s-0.49,v0.99 ok1.0 s-0.47,v1.02 ok1.0 s-0.50 | oracle/F/1.0: v1.03 ok1.0 s+0.48,v1.03 ok1.0 s+0.43,v1.00 ok1.0 s+0.48 | oracle/R/1.0: v1.00 ok1.0 s-0.48,v1.05 ok1.0 s-0.48,v1.06 ok1.0 s-0.50
+DONE s1 85.39788336753845 min

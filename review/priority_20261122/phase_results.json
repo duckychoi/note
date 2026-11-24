@@ -1,0 +1,2772 @@
+{
+  "period": 114.49216393308112,
+  "expert": {
+    "ret": 6854.473397685157,
+    "vx": 5.853952488797069,
+    "td_phase": [
+      1.6175898971519178,
+      -1.5300568621456283
+    ],
+    "td_R": [
+      0.8410944241450626,
+      0.9072315150773506
+    ],
+    "n_td": [
+      88,
+      105
+    ],
+    "td_tol": 0.8902011875185998
+  },
+  "episodes": [
+    {
+      "episode": 760,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.8996248866446607,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": true,
+        "cycles": 0.8996248866446607,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 884,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.5502559986273167,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 1.8516551064919229,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 112,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 4.978506654247151,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 975,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.043671111002167994,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 188,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 101,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 697,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 551,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 877,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 2.602798215729212,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 151,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 552,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 961,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 1.5022862184745789,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 648,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 970,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 509,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 689,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 502,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 105,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 867,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.10481066640520317,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 883,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.07860799980390239,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 716,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 4.672808877231975,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 732,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.05240533320260159,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 734,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.05240533320260159,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 2.4455822161214074,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 169,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.38430577681907835,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 367,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.06113955540303519,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 793,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 324,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 387,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 946,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 470,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 956,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 255,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 181,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.12227911080607037,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 268,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 986,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 97,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 923,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 990,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 229,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 615,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 756,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 525,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 1.3101333300650397,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 292,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 475,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.09607644420476959,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 882,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 966,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.05240533320260159,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 364,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 2.1224159947053645,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 175,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.0,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 356,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 3.0045724369491578,
+        "prelocked": true
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": true,
+        "cycles": 0.07860799980390239,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 436,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.017468444400867197,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 417,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 77,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 565,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 143,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 851,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 759,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 534,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.08734222200433599,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 312,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 63,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 41,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.008734222200433598,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 868,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 984,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 860,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 748,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 880,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 848,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 1.2053226636598366,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 395,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 3.6421706575808104,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 619,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.13101333300650397,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 718,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 1.6769706624832508,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 325,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 791,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.06987377760346879,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 893,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.026202666601300793,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 727,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.09607644420476959,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 88,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 55,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 995,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 705,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 218,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 114,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 154,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 301,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.10481066640520317,
+        "prelocked": true
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 695,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 279,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 979,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.043671111002167994,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 777,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 478,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 724,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 548,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 362,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.026202666601300793,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 738,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 554,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.09607644420476959,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 115,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.06987377760346879,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 544,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 4.672808877231975,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 542,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.043671111002167994,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 901,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 1.1529173304572349,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 638,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 1.1267146638559342,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 959,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.5764586652286174,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 331,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.06987377760346879,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 546,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 601,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 48,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 310,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 953,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 807,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 32,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 803,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": true,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 52,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 334,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.38430577681907835,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 96,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 187,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 13,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 1.021903997450731,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 234,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 573,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.07860799980390239,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 128,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      }
+    },
+    {
+      "episode": 341,
+      "jump_time": 300,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 416,
+      "jump_time": 300,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": true,
+        "cycles": 0.08734222200433599,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 575,
+      "jump_time": 300,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 161,
+      "jump_time": 600,
+      "jump_degrees": 90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.043671111002167994,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 264,
+      "jump_time": 600,
+      "jump_degrees": -90,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.7598773314377231,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    },
+    {
+      "episode": 265,
+      "jump_time": 600,
+      "jump_degrees": 180,
+      "walking": true,
+      "fell": false,
+      "jump": {
+        "success": true,
+        "cycles": 0.3755715546186447,
+        "prelocked": false
+      },
+      "sham": {
+        "success": false,
+        "cycles": null,
+        "prelocked": false
+      },
+      "prealigned_jump": {
+        "success": false,
+        "cycles": null,
+        "prelocked": true
+      }
+    }
+  ],
+  "aggregate": {
+    "jump": {
+      "pass_count": 27,
+      "total": 120,
+      "rate": 0.225,
+      "ci95": [
+        0.15,
+        0.3
+      ],
+      "prelocked_count": 10,
+      "pass_and_prelocked": 1
+    },
+    "sham": {
+      "pass_count": 23,
+      "total": 120,
+      "rate": 0.19166666666666668,
+      "ci95": [
+        0.125,
+        0.26666666666666666
+      ],
+      "prelocked_count": 10,
+      "pass_and_prelocked": 8
+    },
+    "prealigned_jump": {
+      "pass_count": 2,
+      "total": 120,
+      "rate": 0.016666666666666666,
+      "ci95": [
+        0.0,
+        0.041666666666666664
+      ],
+      "prelocked_count": 80,
+      "pass_and_prelocked": 1
+    }
+  },
+  "steps_100k": {
+    "amp_phase4_s0": {
+      "vx": 0.47137111757977895,
+      "walk_rate": 0.0,
+      "fall_rate": 0.9583333333333334,
+      "success_rate": 0.0
+    },
+    "amp_phase4_s1": {
+      "vx": 0.6888925291596215,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    },
+    "concat4_like_state_s0": {
+      "vx": 0.2799296360955278,
+      "walk_rate": 0.0,
+      "fall_rate": 0.9583333333333334,
+      "success_rate": 0.0
+    },
+    "concat4_like_state_s1": {
+      "vx": -0.614476498194834,
+      "walk_rate": 0.0,
+      "fall_rate": 0.8333333333333334,
+      "success_rate": 0.0
+    },
+    "film4_like_state_s0": {
+      "vx": -0.16295205966449036,
+      "walk_rate": 0.0,
+      "fall_rate": 0.6666666666666666,
+      "success_rate": 0.0
+    },
+    "film4_like_state_s1": {
+      "vx": -0.36856495547388374,
+      "walk_rate": 0.0,
+      "fall_rate": 0.9583333333333334,
+      "success_rate": 0.0
+    },
+    "none_like_state_s0": {
+      "vx": 0.28838064083734577,
+      "walk_rate": 0.0,
+      "fall_rate": 0.9166666666666666,
+      "success_rate": 0.0
+    },
+    "none_like_state_s1": {
+      "vx": -1.239462992439977,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    },
+    "rope_like_cond_s0": {
+      "vx": -1.049267016408017,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    },
+    "rope_like_cond_s1": {
+      "vx": -0.5215231368909286,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    },
+    "rope_like_state_s0": {
+      "vx": -0.3939850453957661,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    },
+    "rope_like_state_s1": {
+      "vx": 0.0912508111644631,
+      "walk_rate": 0.0,
+      "fall_rate": 1.0,
+      "success_rate": 0.0
+    }
+  },
+  "source_pilot": "Walker2d-v5_pilot_amp_phase4_s0.json"
+}

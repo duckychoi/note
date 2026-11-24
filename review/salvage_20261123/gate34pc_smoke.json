@@ -1,0 +1,29 @@
+{
+ "bases": {
+  "2": {
+   "usable": false,
+   "nF": 3,
+   "nR": 2
+  }
+ },
+ "cem": [],
+ "summary": {
+  "task->F@16": "0/0",
+  "task->R@16": "0/0",
+  "oracle_F->F@16": "0/0",
+  "oracle_R->R@16": "0/0",
+  "cross_F->F@16": "0/0",
+  "cross_R->R@16": "0/0",
+  "oracle_F->R@16": "0/0",
+  "oracle_R->F@16": "0/0"
+ },
+ "auc_cross_pooled_within_base": null,
+ "verdict": {
+  "a_pass": false,
+  "b_pass": false,
+  "okF": 0,
+  "okR": 0,
+  "n": 0,
+  "usable_bases": []
+ }
+}

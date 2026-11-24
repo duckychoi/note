@@ -1,0 +1,1497 @@
+OpenAI Codex v0.166.0
+--------
+workdir: C:\Users\user\OneDrive\코드\바이브연구\note
+model: gpt-6.2-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 01a201c9-9a36-76e0-a501-3191dd14da8f
+--------
+user
+Adversarial math + code review, ROUND 2 (read-only; answer in Korean; cite file:line; why; fix). Defects only, HIGH/MED/LOW.
+For EACH round-1 finding in review/검수_fm34_theory_20261122_codex최종_sol.txt state FIXED / PARTIAL / NOT FIXED with evidence.
+Then list any NEW defects. Last line exactly: READY or NOT READY + count of HIGH/MED.
+
+Files: docs/v2/34-audit-20261122.md (rewritten), docs/05-fm-residual-divergence-theorem.md (withdrawal banner),
+src/v2/gmm_flow.py (stable component-wise velocity/score, input check), src/v2/e1_reward_theory.py (wider grid, exact per-sample
+formula check, continuous alpha search, pairwise required alpha, same-window target masses), results/v2/e1_reward_theory.json,
+src/v2/e2_occupancy.py (+ --noninj variant, next-state-entropy mode D, tolerance reporting), results/v2/e2_occupancy*.json.
+Pay special attention to: Proposition 2 error term statement, Proposition 3 'negative required alpha => ranking inversion' logic,
+Proposition 4 statement H(A|S,S') and the claim about continuous control. You may run python to recompute. Do not modify files.
+
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\user\.codex\config.toml): `projects.e:\1.benchmark.sandbox` is ignored.
+warning: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  user (C:\Users\user\.codex\config.toml): `projects.e:\1.benchmark.sandbox` is ignored.
+codex
+1차 지적을 하나씩 대조하고, 세 명제의 수식과 실험 결과에서 새 결함이 있는지 확인하겠습니다. 파일은 읽기 전용으로 검토하겠습니다.
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg --files -g 'AGENTS.md' -g '*fm34*' -g '*34-audit*' -g '*05-fm-residual*' -g 'gmm_flow.py' -g 'e1_reward_theory.*' -g 'e2_occupancy*'" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'git status --short; Get-Location; Get-Command python | Select-Object -ExpandProperty Source' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 710ms:
+warning: unable to access 'C:\Users\user/.config/git/ignore': Permission denied
+warning: unable to access 'C:\Users\user/.config/git/ignore': Permission denied
+ M docs/05-fm-residual-divergence-theorem.md
+?? docs/v2/
+?? results/v2/
+?? review/
+?? src/v2/
+
+Path                                
+----                                
+C:\Users\user\OneDrive\코드\바이브연구\note
+C:\ProgramData\miniforge3\python.exe
+
+
+
+ succeeded in 2274ms:
+src\v2\gmm_flow.py
+src\v2\e2_occupancy.py
+src\v2\e1_reward_theory.py
+review\검수_fm34_theory_r2_20261122_codex원문_sol.txt
+review\검수_fm34_theory_20261122_codex최종_sol.txt
+review\검수_fm34_theory_20261122_codex원문_sol.txt
+review\codex_prompt_fm34_theory_r2_20261122.txt
+review\codex_prompt_fm34_theory_20261122.txt
+results\v2\e2_occupancy_noninj.json
+results\v2\e2_occupancy.json
+results\v2\e1_reward_theory.json
+docs\v2\34-audit-20261122.md
+docs\05-fm-residual-divergence-theorem.md
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'review/검수_fm34_theory_20261122_codex최종_sol.txt'" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'docs/v2/34-audit-20261122.md'" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'docs/05-fm-residual-divergence-theorem.md'" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'src/v2/e1_reward_theory.py'" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'src/v2/gmm_flow.py'" in C:\Users\user\OneDrive\코드\바이브연구\note
+ exited 1 in 1038ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'docs/v2/34-audit-20261122.md'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'docs/v2/34-audit-20261122.md'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+ exited 1 in 1528ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'review/검수_fm34_theory_20261122_codex최종_sol.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'review/검수_fm34_theory_20261122_codex최종_sol.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+ exited 1 in 566ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'docs/05-fm-residual-divergence-theorem.md'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'docs/05-fm-residual-divergence-theorem.md'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+ exited 1 in 195ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/gmm_flow.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/gmm_flow.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+ exited 1 in 212ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/e1_reward_theory.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/e1_reward_theory.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n '"'^'"' -- 'src/v2/e2_occupancy.py'" in C:\Users\user\OneDrive\코드\바이브연구\note
+ exited 1 in 177ms:
+'rg.exe' 프로그램을 실행하지 못했습니다. 이 작업을 하기 위해 지정된 파일로 아무 응용 프로그램도 연결되어 있지 않습니다위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/e2_occupancy.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+위치 줄:2 문자:1
++ rg -n '^' -- 'src/v2/e2_occupancy.py'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+ 
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+foreach ($reviewFile in @('"'review/검수_fm34_theory_20261122_codex최종_sol.txt','docs/v2/34-audit-20261122.md')) { Write-Output "'$reviewFile; $reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath $reviewFile | ForEach-Object { $reviewLine++; '"'{0}:{1}' -f "'$reviewLine,$_ } }' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 452ms:
+review/검수_fm34_theory_20261122_codex최종_sol.txt
+1:**판정은 NOT READY입니다.** 읽기 전용 검토에서 HIGH 3건, MED 5건을 확인했습니다.
+2:
+3:## HIGH
+4:
+5:- **C1 — 기존 SDE 증명이 틀렸고, 균등 가중 KL 상한 자체도 깨집니다.** 속도장 \(u_p\)에 \(\sigma\,dW\)만 더하면 밀도 방정식에 \((\sigma^2/2)\Delta p_t\)가 생깁니다. 같은 주변분포를 유지하는 표준 보정은 드리프트에 \((\sigma^2/2)\nabla\log p_t\)를 더하는 것입니다. 이 보정을 하면 Girsanov에서 비교하는 드리프트도 달라집니다. 실제로 \(p=N(0,1)\), \(q=N(0,\varepsilon^2)\)이면 \(0<\varepsilon\le1\)에서 균등 가중 \(B_u\le6\)이지만 \(\mathrm{KL}(q\|p)=(\varepsilon^2-1)/2-\log\varepsilon\)는 발산합니다. **수정** — 기존 KL 상한을 철회하고 C3의 가중 등식으로 교체하세요. [docs/05-fm-residual-divergence-theorem.md:23](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:23>) · [docs/v2/34-audit-20261122.md:10](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:10>)
+6:
+7:- **C4 — 유한한 \(\delta\)에서 샘플별 보상에 \(x\) 의존 오차가 남습니다.** C3을 \(q=\delta_x\)에 적용하고 \(t=1-\delta\)에서 멈추면, \(\tau=(\delta/(1-\delta))^2\), \(p_\tau=p*N(0,\tau I)\)에 대해 정확히
+8:  \[
+9:  \ell_w(x)=\mathrm{KL}\big(N(x,\tau I)\|p_\tau\big)
+10:  =-\tfrac d2\log(2\pi e\tau)-\mathbb E_Z\log p_\tau(x+\sqrt{\tau}Z).
+11:  \]
+12:  따라서 \(K_\delta=-\tfrac d2\log(2\pi e\tau)\)이고, 나머지는 \(\log p(x)-\mathbb E_Z\log p_\tau(x+\sqrt{\tau}Z)\)입니다. E1의 GMM에서는 고정된 \(x\)마다 이 항이 \(-\tau(\Delta\log p(x)+\tfrac12\|\nabla\log p(x)\|^2)+O_x(\tau^2)\)입니다. 표준정규 예에서도 유한 절단 후 Gibbs 분포의 분산은 \(1\to1+\tau\)로 커집니다. E1의 \(\delta=0.01\)에서 독립 재계산한 격자 KL은 \(5.95\times10^{-8}\)입니다. **수정** — 샘플별 정확식과 \(\delta\downarrow0\) 극한을 명시하고, 유한 절단의 KL은 실제 값으로 보고하세요. [docs/v2/34-audit-20261122.md:18](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:18>) · [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [results/v2/e1_reward_theory.json:47](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:47>)
+13:
+14:- **C6 — 결정론만으로 행동 엔트로피를 다음 상태 엔트로피로 바꿀 수 없습니다.** \(d=d(S,S')\)일 때 일반 결정론 MDP의 목적은 \(J=-\mathrm{KL}(d\|p)-H(S)+H(A\mid S,S')\)입니다. 상태 보정은 \(H(S)\)를 없애므로 마지막 항이 남습니다. 상태 하나에서 두 행동이 모두 자기 자신으로 돌아가면, 균등 정책의 \(J=\log 2\)이고 \(-\mathrm{KL}-H(S)=0\)입니다. E2 링에서는 상태마다 세 행동의 도착점이 달라 마지막 항이 0입니다. **수정** — 상태별로 행동에서 다음 상태로 가는 매핑이 일대일이라는 조건을 붙이세요. 일반 MDP에서는 \(H(S'\mid S)\)를 쓰고 같은 도착점의 행동 확률을 합산하세요. [src/v2/e2_occupancy.py:8](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:8>) · [src/v2/e2_occupancy.py:21](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:21>) · [src/v2/e2_occupancy.py:37](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:37>)
+15:
+16:## MED
+17:
+18:- **C2·C3 — 속도–점수 관계의 시간 범위와 KL 등식의 양끝 조건이 빠졌습니다.** C2의 후방평균 공식은 \(0<t<1\)에서 임의의 끝점 확률분포에 적용됩니다. 가우시안으로 가중한 후방분포에서는 이 구간의 평균이 유한합니다. C3에서 \(y=x_t/t\)로 바꾸면 \(y\) 좌표의 점수 차이는 \(t\Delta s_x=t^2\Delta u/(1-t)\)입니다. 상대 de Bruijn의 계수 \(-1/2\)와 \(d\tau/dt=-2(1-t)/t^3\)를 곱하면 정확히 \(t/(1-t)\)가 됩니다. 빠진 부분은 양끝의 KL입니다. **수정** — 충분조건으로 \(p,q\)의 유한한 2차 모멘트를 명시하세요. 양의 \(\tau\)에서는 가우시안 평활화 후 미분식을 적용하고, \(t\downarrow0\)에서는 \(\mathrm{KL}(q_\tau\|p_\tau)\le W_2^2(q,p)/(2\tau)\to0\), \(t\uparrow1\)에서는 데이터처리와 하반연속성으로 원래 KL에 수렴함을 보이세요. 이 조건에서 계수 1의 **정확한 등식**이며, 무한 KL도 확장값으로 포함됩니다. [docs/v2/34-audit-20261122.md:15](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:15>) · [상대 de Bruijn 미분식](https://www.mdpi.com/1099-4300/14/8/1469)
+19:
+20:- **C5 — 온도로 보정할 수 없다는 결론의 범위가 넓고, `best_alpha`는 격자 탐색값입니다.** \(p=N(0,1)\)이면 균등 가중 손실은 \(\ell_u(x)=\pi x^2/4+C\)여서 \(\alpha=\pi/2\)에서 \(p\)를 정확히 복원합니다. 반면 E1 GMM의 세 점을 독립 구적하면, \(-2.5\)와 \(2.5\)의 밀도비를 맞추는 데 \(\alpha\approx3.816\), \(-2.5\)와 \(0\)에는 \(\alpha\approx0.738\)이 필요합니다. 이 차이는 유한한 온도 탐색보다 직접적인 수치 근거입니다. 같은 격자 구간에서 온도를 연속 탐색하면 보고된 \(1.634\)보다 약간 낮은 \(1.624\)가 나옵니다. **수정** — 결론을 E1 GMM에 한정하고, 모든 온도에 대한 엄밀한 주장이 필요하면 세 점의 구적 오차를 보증하세요. 표에는 탐색 범위와 해상도를 표시하세요. [docs/v2/34-audit-20261122.md:4](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:4>) · [src/v2/e1_reward_theory.py:110](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:110>) · [results/v2/e1_reward_theory.json:59](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:59>)
+21:
+22:- **C7 — E1의 T1에서 KL과 \(B_w\)가 서로 다른 방식으로 꼬리를 처리합니다.** `kl_grid`는 \([-10,10]\)에서 \(q\)만 재정규화하고, `bias`는 시간마다 잘린 \(q_t\) 밀도를 그대로 씁니다. `gaussian-fit`에서 구간을 \([-20,20]\)으로 넓히면 KL과 \(B_w\)의 차이가 약 **천만 배** 줄었습니다. 시간 치환 \(dt=e^{-s}ds\)와 Gauss–Hermite의 \(1/\sqrt{2\pi}\) 정규화는 재계산과 일치했습니다. **수정** — 각 \(q_t\)의 혼합 성분별 가우시안 기대값을 적분하고, 공간·시간 절단과 구적 차수를 바꿔 수렴 오차를 보고하세요. [src/v2/e1_reward_theory.py:21](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:21>) · [src/v2/e1_reward_theory.py:31](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:31>) · [src/v2/gmm_flow.py:74](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:74>) · [results/v2/e1_reward_theory.json:34](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:34>)
+23:
+24:  | `gaussian-fit` | 기존 \([-10,10]\) | 재계산 \([-20,20]\) |
+25:  |---|---:|---:|
+26:  | KL | 1.342439738 | 1.345286557 |
+27:  | \(B_w\) | 1.345232022 | 1.345286557 |
+28:
+29:- **C2·C7 — GMM의 점수와 속도 계산이 \(t=1\) 근처에서 불안정합니다.** 표준정규, \(x=0.7\), \(t=1-10^{-8}\)에서 실제 점수는 약 \(-0.7\)인데 코드는 \(-2.22\)를 반환합니다. \(t=1\)에서는 두 함수 모두 `NaN`입니다. **수정** — 성분별 점수 \(-(x-t\mu_k)/V_k\)와 속도 \(\mu_k+[t s_k^2-(1-t)](x-t\mu_k)/V_k\)를 계산한 뒤 후방 성분확률로 평균하세요. [src/v2/gmm_flow.py:52](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:52>)
+30:
+31:- **기존 따름정리 — Gibbs 지수에 분포 전체의 손실을 넣었습니다.** \(\mathcal R(q)\)는 \(q\) 전체에 붙는 숫자 하나입니다. 이를 \(x\)별 에너지로 쓰면 모든 \(x\)에서 같은 값을 얻습니다. 또 \(C(q)\)는 점질량에서 0이고, 표준정규 끝점에서는 \(\pi/2\)라 정책에 따라 달라집니다. **수정** — 엔트로피 정규화의 Gibbs 공식을 샘플별 에너지 \(\ell(x)\)로 쓰고, \(\mathcal R(q)=\mathbb E_q\ell(x)\)에서 출발하세요. [docs/05-fm-residual-divergence-theorem.md:17](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:17>) · [docs/05-fm-residual-divergence-theorem.md:27](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:27>)
+32:
+33:## LOW
+34:
+35:- **E1의 모드 질량 비교에서 기준이 다릅니다.** 목표는 혼합 성분 가중치이고, 학습 결과는 중심에서 \(\pm1.2\) 이내의 구간 확률입니다. 같은 격자와 구간으로 계산한 실제 목표는 \([0.5826,0.2911,0.1077]\)입니다. 보정 후 \([0.5279,0.1195,0.3057]\)은 두 번째 구간이 목표의 약 41%, 세 번째가 약 2.84배입니다. **수정** — 목표에도 같은 구간을 적용하세요. [src/v2/e1_reward_theory.py:127](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:127>) · [results/v2/e1_reward_theory.json:66](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:66>)
+36:
+37:- **E2의 `0.0000 (10/10)`은 허용오차를 숨깁니다.** 코드의 정상분포 선형계와 평균보상 목적은 링에서 맞지만, 보정 후 저장 KL의 최댓값은 \(1.36\times10^{-5}\)입니다. A의 최적해를 고유벡터로 직접 풀었을 때 평균 KL은 \(0.48493\to0.48487\)로 거의 같아, 관측된 편향은 Adam 조기 종료로 설명되지 않습니다. **수정** — 보정값은 지수 표기와 성공 허용오차를 함께 보고하고, A는 최적 평균보상과의 차이도 기록하세요. [src/v2/e2_occupancy.py:26](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:26>) · [src/v2/e2_occupancy.py:49](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:49>) · [results/v2/e2_occupancy.json:68](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy.json:68>) · [docs/v2/34-audit-20261122.md:29](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:29>)
+38:
+39:- **입력 형태와 자료형에 따라 조용히 오계산하거나 예외가 납니다.** 1차원 GMM에 `logpdf(np.array([0., 1., 2.]))`를 주면 점 세 개의 밀도 대신 잘못된 값 하나가 나옵니다. `per_sample`은 정수 배열을 받으면 정수 누적기에 실수를 더하다 실패합니다. **수정** — GMM 입력의 마지막 차원을 검증하고, `per_sample` 입력과 누적기를 실수형으로 변환하세요. [src/v2/gmm_flow.py:30](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:30>) · [src/v2/e1_reward_theory.py:75](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:75>)
+40:
+41:NOT READY + 8
+docs/v2/34-audit-20261122.md
+1:# #34 점검 (2026-11-22, codex gpt-6.2-sol 1차 검수 반영판)
+2:
+3:## 결론
+4:개념노트의 박스 리워드 $r(x)=-\mathbb E_{t\sim U[0,1]}\|v^*(x_t,t)-(x-x_0)\|^2$ 는 **max-ent RL과 합쳐도 데이터분포로 가지 않는다.** 원인은 (1) 시간 가중이 균등이라는 것, (2) RL의 엔트로피가 행동 엔트로피라 상태방문 엔트로피가 빠진다는 것. 둘 다 정확 계산으로 재현했고, 둘 다 고칠 수 있다.
+5:선행: 고정 diffusion prior 리워드로 AMP 대체 = **SMP**(TOG, arXiv 2512.03028, 균등 가중), 전문가−학습자 손실 차 = **SMILING**(ICLR 2025, 2410.13855). 기여 후보: **(가) 고정 prior 리워드의 고정점 편향 진단과 값싼 보정, (나) 위상조건 prior 로 타이밍 강제.**
+6:
+7:## 1. 철회하는 것 (docs/05)
+8:| 위치 | 문제 |
+9:|---|---|
+10:| §2 정리 | SDE $dX=v^*dt+\sigma dW$ 는 주변분포 $p_t$ 를 유지하지 않음($\tfrac{\sigma^2}{2}\nabla\log p_t$ 보정 필요). 균등가중 KL 상한 자체가 거짓: $p=N(0,1)$, $q=N(0,\varepsilon^2)$ 에서 $B_u\le6$ 인데 KL→∞ (codex 반례). |
+11:| §2 따름정리 | 분포 전체 손실 $\mathcal R(q)$ 를 Gibbs 지수에 넣음. 올바른 출발점은 샘플별 $\ell(x)$, $\mathcal R(q)=\mathbb E_q\ell$ (q에 선형). $C(q)$ 는 점질량에서 0. |
+12:
+13:## 2. 바로잡은 결과 (선형 보간 $x_t=(1-t)x_0+tx_1$, $x_0\sim N(0,I)$ 독립)
+14:**보조정리 1.** $0<t<1$, 임의 끝점분포에서 $m=\mathbb E[x_1|x_t=x]$ 일 때 $u=(m-x)/(1-t)$, $s=-(x-tm)/(1-t)^2$ ⇒ $\Delta s=\tfrac{t}{1-t}\Delta u$.
+15:
+16:**정리 1 (KL 등식).** $p,q$ 가 유한 2차 모멘트를 가지면
+17:$$\mathrm{KL}(q\|p)=\int_0^1\frac{t}{1-t}\,\mathbb E_{x\sim q_t}\|u_q(x,t)-u_p(x,t)\|^2dt\quad(\text{계수 1, 등식; KL}=\infty\text{ 포함}).$$
+18:증명: $y=x_t/t$ 는 $x_1+\sqrt\tau Z$, $\tau=((1-t)/t)^2$. 상대 de Bruijn $\tfrac{d}{d\tau}\mathrm{KL}(q_\tau\|p_\tau)=-\tfrac12\mathbb E\|\nabla\log q_\tau-\nabla\log p_\tau\|^2$, $y$-좌표 score 차 $=t^2\Delta u/(1-t)$, $|d\tau/dt|=2(1-t)/t^3$ ⇒ 피적분 $t/(1-t)\|\Delta u\|^2$. 양끝: $t\downarrow0$ 에서 $\mathrm{KL}(q_\tau\|p_\tau)\le W_2^2(q,p)/(2\tau)\to0$, $t\uparrow1$ 에서 데이터처리+하반연속성으로 원 KL 에 수렴. (Song 2021 likelihood weighting · Kingma&Gao 2023 의 FM 좌표판 — 독립 기여 아님, 도구.)
+19:
+20:**명제 2 (샘플별 리워드, 정확식).** 절단 $\delta$, $\tau_\delta=(\delta/(1-\delta))^2$, $p_\tau=p*N(0,\tau I)$:
+21:$$\ell_w(x)=\int_0^{1-\delta}\tfrac{t}{1-t}\mathbb E_{x_0}\|u_p(x_t,t)-(x-x_0)\|^2dt=\mathrm{KL}\big(N(x,\tau_\delta I)\,\|\,p_{\tau_\delta}\big)=-\tfrac d2\log(2\pi e\tau_\delta)-\mathbb E_Z\log p_{\tau_\delta}(x+\sqrt{\tau_\delta}Z).$$
+22:따라서 $\ell_w(x)=-\log p(x)+K_\delta+\varepsilon_\delta(x)$, $\varepsilon_\delta(x)=-\tau(\Delta\log p+\tfrac12\|\nabla\log p\|^2)+O(\tau^2)$ — **$x$ 의존 오차는 $\tau_\delta=O(\delta^2)$ 로 사라짐.** max-ent($\alpha$=1) 고정점 $\exp(-\ell_w)\to p$.
+23:
+24:**명제 3 (균등 가중의 실패, E1 GMM 한정).** $\ell_u$ 의 고정점은 어떤 온도에서도 $p$ 가 아님. 근거: 두 점 밀도비를 맞추는 온도가 쌍마다 3.82 / 0.74 / **−2.00** — 음수는 **모드 순위가 뒤집힘**(질량 0.3 모드보다 0.1 모드를 더 선호). 반례 주의: $p$ 가 단일 가우시안이면 $\ell_u=\pi x^2/4+C$ 라 $\alpha=\pi/2$ 에서 정확 복원 — 실패는 다봉/비가우시안에서.
+25:
+26:**명제 4 (점유분포).** 결정론 MDP, 창 $=(s,s')$, 정확 리워드 $\log p(s,s')$, 행동엔트로피 $\alpha$=1:
+27:$J=-\mathrm{KL}(d\|p)-H(S)+H(A|S,S')$. 상태보정 $-\log d_\pi(s)$ 가 $H(S)$ 를 지움. **행동→다음상태가 상태별 일대일이면** $H(A|S,S')=0$ 이라 $J=-\mathrm{KL}$. 일반 MDP 는 행동엔트로피 대신 $H(S'|S)$(같은 도착점 확률 합산). 연속 제어(행동차원≤상태차원, 동역학이 행동에 대해 단사)는 일대일 조건을 만족하나 야코비안 항이 남음(미검증).
+28:
+29:## 3. 검증 (src/v2, results/v2)
+30:**E1** (`e1_reward_theory.py`, 1-D 정확 구적, 격자 [−25,25]·10001점):
+31:- 정리 1: 7개 $q$ 에서 $\max|\mathrm{KL}-B_w|=7.4\times10^{-9}$, 시간노드 400→800 변화 $2.8\times10^{-14}$. 균등 $B_u$/KL 은 0.27–2.90, 순위 틀림.
+32:- 명제 2: 정확식과의 최대오차 $2.7\times10^{-10}$. 고정점 KL: $\delta$=1e-2 → $6.0\times10^{-8}$, 1e-3 → $5.7\times10^{-12}$.
+33:- 명제 3: 균등 고정점 KL 0.41($\alpha$=1), 연속탐색 최적 $\alpha$=1.624 에서도 0.38. 모드질량(±1.2 창, 목표도 같은 창) 목표 [0.583,0.291,0.108] → [0.529,0.119,0.305]: 중간 모드 41%, 소수 모드 2.8배.
+34:
+35:**E2** (`e2_occupancy.py`, 링 12상태, 10 seed, 허용오차 KL<1e-4):
+36:| MDP | max-ent+log p | log p − log d | 상태보정(행동엔트로피) | 상태보정(다음상태엔트로피) |
+37:|---|---|---|---|---|
+38:| 일대일 {−1,0,+1} | KL 0.485±0.254, $\Delta H_S$ −0.98, 0/10 | 2.5e-6, 10/10 | 2.5e-6, 10/10 | 2.5e-6, 10/10 |
+39:| 비일대일 {−1,0,0,+1} | 0.997±0.349, 0/10 | 1.0e-5, 10/10 | **3.6e-2, 0/10** | 1.0e-5, 10/10 |
+40:A 의 편향은 최적화 미수렴이 아님(codex: 고유벡터 직접해 0.48487).
+41:
+42:## 4. 선행연구 (백그라운드 조사; 미확인 항목은 원문 재확인 필요)
+43:SMP 2512.03028 (위상 없음) · SMILING 2410.13855 · NEAR 2501.14856 · FMP 2609.15631("OT 평균이 보행 위상을 뭉갬") · DeepPhase(2022) · FLD(ICLR 2024). RoPE 를 모션 위상에 쓴 사례는 못 찾음(미확인). 개념노트 §2 "빈 땅" 철회.
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+foreach ($reviewFile in @('"'docs/05-fm-residual-divergence-theorem.md','src/v2/gmm_flow.py')) { Write-Output "'$reviewFile; $reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath $reviewFile | ForEach-Object { $reviewLine++; '"'{0}:{1}' -f "'$reviewLine,$_ } }' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 430ms:
+docs/05-fm-residual-divergence-theorem.md
+1:# 정리 — Flow-Matching 잔차가 분포 divergence를 상한한다
+2:
+3:> **⚠️ 2026-11-22 철회:** §2 정리(SDE 증명)·따름정리는 틀렸다. 바로잡은 판은 `docs/v2/34-audit-20261122.md` §2 (KL 등식은 가중 $t/(1-t)$ 에서만 성립).
+4:
+5:목표: "FM 잔차 리워드 $-\mathcal R(q)$ 를 (max-ent로) 최대화하면 $q\to p_{data}$" 를 **엄밀히** 뒷받침.
+6:핵심 결과: **FM 잔차는 바이어스-분산 분해되고, 그 바이어스항이 $\mathrm{KL}(q\|p_{data})$(또는 $W_2^2$)을 상한한다.**
+7:
+8:## 0. 세팅 (가정)
+9:- 기저 $p_0=\mathcal N(0,I)$, 데이터 $p_1=p_{data}$. 선형 보간 $x_t=(1-t)x_0+t x_1$, 독립결합 $x_0\sim p_0,\ x_1\sim p_1$.
+10:- 주변속도장(=CFM 최적장) $u_p(x,t)=\mathbb E[x_1-x_0\mid x_t=x]$ — 연속방정식 $\partial_t p_t+\nabla\!\cdot(p_t u_p)=0$ 으로 $p_t$ 생성.
+11:- 학습장 $v^*=u_{p_{data}}$ (실현가능/잘학습 가정).
+12:- 테스트(정책) 분포 $q$ 와 그 최적장 $u_q(x,t)=\mathbb E_q[x_1-x_0\mid x_t=x]$ (단, $x_1\sim q$).
+13:- (A1) 작은 노이즈 $\sigma>0$ 의 확률보간(stochastic interpolant) SDE 사용. (A2) $v^*$ 가 $x$에 대해 Lipschitz. (A3) 2차 모멘트 유한.
+14:
+15:## 1. 잔차의 바이어스-분산 분해 (정확)
+16:정책 샘플 $x\sim q$ 에 대한 잔차 에너지:
+17:$$\mathcal R(q)=\mathbb E_{t\sim U[0,1]}\,\mathbb E_{x\sim q,\,x_0\sim p_0}\big\|v^*(x_t,t)-(x-x_0)\big\|^2.$$
+18:$y=x_t$ 고정 조건부에서 $u_q(y,t)=\mathbb E_q[(x-x_0)\mid x_t=y]$ 를 더하고 빼면(조건부평균 직교성, 교차항 0):
+19:$$\boxed{\ \mathcal R(q)=\underbrace{\mathbb E_t\,\mathbb E_{y\sim p_t^q}\|v^*(y,t)-u_q(y,t)\|^2}_{\textstyle B(q)\ (\text{바이어스: 장 불일치})}+\underbrace{\mathbb E_t\,\mathbb E\big[\mathrm{Var}_q((x-x_0)\mid x_t)\big]}_{\textstyle C(q)\ (\text{기약 결합분산})}\ }$$
+20:- $B(q)\ge0$, **$B(q)=0\iff u_q\equiv v^*$ (지지 위) $\iff q=p_{data}$** (장이 끝점주변을 결정). → **엄밀 proper discrepancy**.
+21:- $C(q)$: 결합의 기약 잡음(리워드 상수성 offset). 정책경사엔 $B(q)$ 의 $q$-의존만 유효.
+22:
+23:## 2. 주정리 — divergence 상한
+24:**정리.** (A1–A3) 하에서
+25:$$\mathrm{KL}(q\,\|\,p_{data})\ \le\ \frac{1}{2\sigma^2}\int_0^1\mathbb E_{y\sim \rho_t}\|v^*(y,t)-u_q(y,t)\|^2\,dt\ \asymp\ \frac{1}{2\sigma^2}\,B(q).$$
+26:*증명 스케치.* 확률보간 SDE $dX=v^*(X,t)dt+\sigma dW$ 는 $p_0\!\to\!p_{data}$, $dX=u_q(X,t)dt+\sigma dW$ 는 $p_0\!\to\!q$ 를 수송(초기 동일). **Girsanov**: 두 경로측도의 KL $=\frac{1}{2\sigma^2}\int_0^1\mathbb E\|v^*-u_q\|^2dt$. **데이터처리 부등식**으로 끝점 주변의 KL이 경로 KL 이하. $\square$
+27:- 결정론 극한 $\sigma\!\to\!0$: KL 상한은 발산 가능 → 대신 **연속방정식 안정성(Grönwall)** 으로 $W_2^2(q,p_{data})\lesssim \int_0^1\|v^*-u_q\|_{L^2(\rho_t)}^2dt \asymp B(q)$ (Lipschitz $v^*$). 즉 $\sigma{>}0$이면 KL, $\sigma{=}0$이면 $W_2$ 를 상한.
+28:
+29:**따름정리 (리워드 타당성).** $\mathcal R(q)=B(q)+C(q)$ 이므로, $C(q)$ 를 상수화(또는 분산축소)하면 FM 잔차 리워드 $-\mathcal R$ 최대화는 $-\tfrac12\mathrm{KL}$ 의 하한을 밀어올림. max-ent(온도 $\alpha{=}1$) 고정점 $q^*\propto\exp(-\mathcal R/\alpha)$ 는 $B(q)$ 가 지배할 때 $p_{data}$ 로 수렴.
+30:
+31:## 3. $-\log p$ 와의 gap (두 번째 질문)
+32:- 정확 CNF NLL: $-\log p_1^\theta(x)=-\log p_0(x_0)+\int_0^1\nabla\!\cdot v^*(x_t,t)dt$ (정확 궤적). 이는 **발산(divergence) 적분** = 잔차와 다른 양.
+33:- 관계: FM 잔차는 NLL이 아니라 **운동에너지($L^2$) 목적**. §2가 보이듯 **$L^2$ 장오차가 KL을 상한** → 잔차는 NLL의 **상계 대리**. gap = $C(q)$(기약분산) + 발산항과 운동항의 차. 점수매칭→KL 상한(Song 등)·stochastic interpolants(Albergo–Vanden-Eijnden)와 동형.
+34:
+35:## 4. 남은 엄밀화(정직한 구멍)
+36:1. **$C(q)$ 의 $q$-의존**: 독립결합에선 큼. **rectified/OT 결합**으로 축소 시도.
+37:   - ⚠️ **검증결과(src/toy_rectified_coupling.py) — 순진한 OT는 역효과**: OT결합이 데이터 경로는 직선화(CFM잔차 4.36→0.82)하나, **eval에서 $x_0\sim\mathcal N$ 독립샘플**이면 학습·평가 **결합 불일치**로 $v^*$ 가 안 맞아 base R 3.19→4.51↑, corr(R,KL) 0.77→**0.25↓**.
+38:   - **교훈**: $C$ 축소는 **train/eval 결합 일관성**이 필수. "OT로 학습"만으론 안 되고, eval도 일관된(결정론/매칭) 결합을 써야 함. 대안: **가능도(CNF 발산적분)·점수매칭 기반 리워드**는 $C$ floor 자체가 없음 → 더 유망.
+39:2. **주변 불일치**: §2의 $L^2(\rho_t)$ 는 한 시스템의 $\rho_t$, $B(q)$ 는 $p_t^q$ — 변수변환(밀도비 유계) 또는 단측안정으로 봉합.
+40:3. **실현가능성**: $v^*=u_{p_{data}}$ 근사오차(유한데이터·NN)의 전파.
+41:→ 특히 1의 교훈(결합 일관성 or 가능도형 리워드)이 논문의 실질 설계 포인트. 셋을 닫으면 완전 정리.
+42:
+43:## 5. 수치검증 (src/toy_fm_divergence.py)
+44:GMM 데이터 + 비모수 $v^*$. 교란분포족 $q_\lambda$ 에 대해 **FM 잔차 $\mathcal R(q_\lambda)$ 가 $\mathrm{KL}(q_\lambda\|p_{data})$ 와 단조(강양상관)** 임을 확인 → 정리 방향(잔차가 divergence 상한·단조) 실증.
+src/v2/gmm_flow.py
+1:"""
+2:Exact flow-matching quantities for isotropic Gaussian mixtures (any dim d).
+3:
+4:Interpolant (same as the notes): x_t = (1-t) x0 + t x1, x0 ~ N(0, I), x1 ~ p (GMM).
+5:Component k: x1 ~ N(mu_k, s_k^2 I)  =>  x_t | k ~ N(t mu_k, V_k(t) I),  V_k = t^2 s_k^2 + (1-t)^2.
+6:
+7:Closed forms used everywhere (no kernel estimator, no NN):
+8:  m(x,t)  = E[x1 | x_t = x] = sum_k g_k(x,t) [ mu_k + t s_k^2 / V_k (x - t mu_k) ]
+9:  u(x,t)  = E[x1 - x0 | x_t = x] = (m - x) / (1 - t)          (marginal FM velocity)
+10:  s(x,t)  = grad log p_t(x)       = -(x - t m) / (1 - t)^2      (score)
+11:"""
+12:import numpy as np
+13:
+14:
+15:def _lse(a, axis):
+16:    m = a.max(axis=axis, keepdims=True)
+17:    return (m + np.log(np.exp(a - m).sum(axis=axis, keepdims=True))).squeeze(axis)
+18:
+19:
+20:class GMM:
+21:    def __init__(self, w, mu, s):
+22:        self.w = np.asarray(w, float) / np.sum(w)
+23:        self.mu = np.atleast_2d(np.asarray(mu, float))          # (K,d)
+24:        if self.mu.shape[0] != len(self.w):
+25:            self.mu = self.mu.T
+26:        self.s = np.broadcast_to(np.asarray(s, float), self.w.shape).copy()
+27:        self.d = self.mu.shape[1]
+28:
+29:    def _X(self, X):
+30:        X = np.asarray(X, float)
+31:        if X.ndim == 1:
+32:            # 1-D model: a vector means n points; d-dim model: a vector means one point
+33:            X = X[:, None] if self.d == 1 else X[None, :]
+34:        assert X.shape[-1] == self.d, f"last dim {X.shape[-1]} != d={self.d}"
+35:        return X
+36:
+37:    # ---- marginal of the interpolant at time t (t=1 -> data) ----
+38:    def _comp_logpdf_t(self, X, t):
+39:        V = t**2 * self.s**2 + (1 - t)**2                       # (K,)
+40:        d2 = ((X[:, None, :] - t * self.mu[None]) ** 2).sum(-1)  # (n,K)
+41:        return -0.5 * d2 / V - 0.5 * self.d * np.log(2 * np.pi * V) + np.log(self.w), V
+42:
+43:    def _resp(self, X, t):
+44:        e, V = self._comp_logpdf_t(X, t)
+45:        return np.exp(e - _lse(e, 1)[:, None]), V
+46:
+47:    def logpdf_t(self, X, t):
+48:        X = self._X(X)
+49:        e, _ = self._comp_logpdf_t(X, t)
+50:        return _lse(e, 1)
+51:
+52:    def logpdf(self, X):
+53:        return self.logpdf_t(X, 1.0)
+54:
+55:    def post_mean(self, X, t):
+56:        """m(x,t) = E[x1 | x_t = x]."""
+57:        X = self._X(X)
+58:        g, V = self._resp(X, t)
+59:        gain = t * self.s**2 / V
+60:        mk = self.mu[None] + gain[None, :, None] * (X[:, None, :] - t * self.mu[None])
+61:        return (g[..., None] * mk).sum(1)
+62:
+63:    def velocity(self, X, t):
+64:        """Component-wise stable form: u_k = mu_k + (t s_k^2 - (1-t)) (x - t mu_k) / V_k (valid at t->1)."""
+65:        X = self._X(X)
+66:        g, V = self._resp(X, t)
+67:        uk = self.mu[None] + ((t * self.s**2 - (1 - t)) / V)[None, :, None] * (X[:, None, :] - t * self.mu[None])
+68:        return (g[..., None] * uk).sum(1)
+69:
+70:    def score(self, X, t):
+71:        X = self._X(X)
+72:        g, V = self._resp(X, t)
+73:        sk = -(X[:, None, :] - t * self.mu[None]) / V[None, :, None]
+74:        return (g[..., None] * sk).sum(1)
+75:
+76:    def sample(self, n, rng):
+77:        k = rng.choice(len(self.w), size=n, p=self.w)
+78:        return self.mu[k] + self.s[k][:, None] * rng.standard_normal((n, self.d))
+79:
+80:    def sample_t(self, n, t, rng):
+81:        x1 = self.sample(n, rng)
+82:        return (1 - t) * rng.standard_normal((n, self.d)) + t * x1
+83:
+84:
+85:def gl(a, b, n):
+86:    """Gauss-Legendre nodes/weights on [a,b]."""
+87:    x, w = np.polynomial.legendre.leggauss(n)
+88:    return 0.5 * (b - a) * x + 0.5 * (b + a), 0.5 * (b - a) * w
+89:
+90:
+91:def gh(n):
+92:    """Probabilists' Gauss-Hermite: E_{z~N(0,1)} f(z) ~= sum w f(z)."""
+93:    z, w = np.polynomial.hermite_e.hermegauss(n)
+94:    return z, w / np.sqrt(2 * np.pi)
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+foreach ($reviewFile in @('"'src/v2/e1_reward_theory.py','src/v2/e2_occupancy.py')) { Write-Output "'$reviewFile; $reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath $reviewFile | ForEach-Object { $reviewLine++; '"'{0}:{1}' -f "'$reviewLine,$_ } }' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 448ms:
+src/v2/e1_reward_theory.py
+1:"""
+2:E1 - exact check of the FM-residual reward theory (1-D, quadrature, no estimators).
+3:
+4:Claims tested
+5:  T1  KL(q||p) == B_w(q) := int_0^1 t/(1-t) E_{x~q_t} |u_q - u_p|^2 dt        (identity, not a bound)
+6:      vs the uniform-weight bias B_u(q) used in docs/05 (w=1).
+7:  T2  per-sample likelihood-weighted residual  l_w(x) = int_0^{1-delta} t/(1-t) E_x0 |u_p(x_t)-(x-x0)|^2 dt
+8:      satisfies  l_w(x) = -log p(x) + K_delta + o(1)   (so exp(-l_w) ~ p: max-ent alpha=1 fixed point = p)
+9:      while the uniform residual l_u(x) (= the boxed reward of the concept note) does NOT:
+10:      q*_u ∝ exp(-l_u/alpha) is biased for EVERY alpha.
+11:Outputs: results/v2/e1_reward_theory.json
+12:"""
+13:import json, os, sys
+14:import numpy as np
+15:sys.path.insert(0, os.path.dirname(__file__))
+16:from gmm_flow import GMM, gl, gh
+17:
+18:OUT = os.path.join(os.path.dirname(__file__), "..", "..", "results", "v2")
+19:os.makedirs(OUT, exist_ok=True)
+20:
+21:XG = np.linspace(-25, 25, 10001)
+22:DX = XG[1] - XG[0]
+23:
+24:
+25:def kl_grid(lq, lp):
+26:    q = np.exp(lq); q /= q.sum() * DX
+27:    lq = np.log(q + 1e-300)
+28:    return float(((lq - lp) * q).sum() * DX)
+29:
+30:
+31:def bias(q, p, weight, nt=400):
+32:    """int_0^1 weight(t) E_{q_t}|u_q-u_p|^2 dt, with t = 1-exp(-s) to resolve t->1."""
+33:    s, ws = gl(0.0, 12.0, nt)                 # t up to 1-6e-6
+34:    t = 1 - np.exp(-s); dt = np.exp(-s) * ws  # dt = (1-t) ds
+35:    tot = 0.0
+36:    X = XG[:, None]
+37:    for ti, dti in zip(t, dt):
+38:        if ti < 1e-9:
+39:            continue
+40:        qt = np.exp(q.logpdf_t(X, ti))
+41:        du = (q.velocity(X, ti) - p.velocity(X, ti))[:, 0]
+42:        tot += weight(ti) * dti * (qt * du**2).sum() * DX
+43:    return float(tot)
+44:
+45:
+46:w_like = lambda t: t / (1 - t)
+47:w_unif = lambda t: 1.0
+48:
+49:# ----------------------------------------------------------------- T1
+50:P = GMM([0.6, 0.3, 0.1], [[-2.5], [2.5], [0.0]], [0.55, 0.55, 0.4])
+51:QS = {
+52:    "shift+0.5":      GMM([0.6, 0.3, 0.1], [[-2.0], [3.0], [0.5]], [0.55, 0.55, 0.4]),
+53:    "reweight":       GMM([0.2, 0.3, 0.5], [[-2.5], [2.5], [0.0]], [0.55, 0.55, 0.4]),
+54:    "single-mode":    GMM([1.0], [[-2.5]], [0.55]),
+55:    "too-wide(x2)":   GMM([0.6, 0.3, 0.1], [[-2.5], [2.5], [0.0]], [1.1, 1.1, 0.8]),
+56:    "too-narrow(/3)": GMM([0.6, 0.3, 0.1], [[-2.5], [2.5], [0.0]], [0.18, 0.18, 0.13]),
+57:    "gaussian-fit":   GMM([1.0], [[-0.75]], [2.3]),
+58:    "point-like":     GMM([1.0], [[-2.5]], [0.05]),
+59:}
+60:lp = P.logpdf(XG[:, None])
+61:t1 = []
+62:print("T1  KL(q||p) vs likelihood-weighted bias B_w and uniform bias B_u (docs/05)")
+63:print(f"{'q':16s} {'KL':>9s} {'B_w':>9s} {'B_w/KL':>7s} {'B_u':>9s} {'B_u/KL':>7s}")
+64:for name, Q in QS.items():
+65:    kl = kl_grid(Q.logpdf(XG[:, None]), lp)
+66:    bw = bias(Q, P, w_like)
+67:    bu = bias(Q, P, w_unif)
+68:    t1.append(dict(q=name, KL=kl, B_w=bw, B_u=bu))
+69:    print(f"{name:16s} {kl:9.4f} {bw:9.4f} {bw/kl:7.3f} {bu:9.4f} {bu/kl:7.3f}")
+70:
+71:# convergence check of T1 (time nodes 400 -> 800)
+72:conv = max(abs(bias(Q, P, w_like, nt=800) - r["B_w"]) for Q, r in zip(QS.values(), t1))
+73:print(f"  T1 convergence: max |B_w(nt=800)-B_w(nt=400)| = {conv:.2e};  max |KL-B_w| = "
+74:      f"{max(abs(r['KL']-r['B_w']) for r in t1):.2e}")
+75:
+76:# ----------------------------------------------------------------- T2
+77:Z0, W0 = gh(120)
+78:
+79:
+80:def per_sample(p, x, weight, delta, ns=240):
+81:    """l(x) = int_0^{1-delta} weight(t) E_x0 |u_p(x_t,t)-(x-x0)|^2 dt  (1-D)."""
+82:    s, ws = gl(0.0, -np.log(delta), ns)
+83:    t = 1 - np.exp(-s); dt = np.exp(-s) * ws
+84:    x = np.asarray(x, float)
+85:    out = np.zeros_like(x)
+86:    for ti, dti in zip(t, dt):
+87:        Xt = (1 - ti) * Z0[None, :] + ti * x[:, None]            # (n,m)
+88:        u = p.velocity(Xt.reshape(-1, 1), ti).reshape(Xt.shape)    # stable component-wise velocity
+89:        res2 = (u - (x[:, None] - Z0[None, :])) ** 2
+90:        out += weight(ti) * dti * (res2 * W0[None, :]).sum(1)
+91:    return out
+92:
+93:
+94:xs = np.linspace(-6, 6, 1201); dxs = xs[1] - xs[0]
+95:lp_s = P.logpdf(xs[:, None]); p_s = np.exp(lp_s); p_s /= p_s.sum() * dxs
+96:
+97:
+98:def kl_s(lq):
+99:    q = np.exp(lq - lq.max()); q /= q.sum() * dxs
+100:    return float((q * (np.log(q + 1e-300) - np.log(p_s + 1e-300))).sum() * dxs)
+101:
+102:
+103:def wstd(a):  # p-weighted std of a (how far from "constant + log p")
+104:    mu = (a * p_s).sum() * dxs
+105:    return float(np.sqrt((((a - mu) ** 2) * p_s).sum() * dxs))
+106:
+107:
+108:t2 = {}
+109:print("\nT2  per-sample reward vs log p  (fixed expert flow, no learner model)")
+110:for delta in [1e-2, 1e-3, 1e-4]:
+111:    lw = per_sample(P, xs, w_like, delta)
+112:    gap = lw + lp_s                                   # should be ~constant
+113:    klw = kl_s(-lw)
+114:    # exact per-sample identity (codex C4): l_w(x) = KL(N(x,tau)||p_tau), tau=(delta/(1-delta))^2
+115:    tau = (delta / (1 - delta)) ** 2
+116:    Pt = GMM(P.w, P.mu, np.sqrt(P.s**2 + tau))
+117:    zz, ww = gh(80)
+118:    exact = np.array([-0.5*np.log(2*np.pi*np.e*tau) - (ww*Pt.logpdf((x+np.sqrt(tau)*zz)[:, None])).sum() for x in xs])
+119:    err = float(np.abs(exact - lw).max())
+120:    t2[f"like_delta={delta}"] = dict(std_gap_under_p=wstd(gap), KL_fixpoint=klw, max_abs_err_vs_exact_formula=err)
+121:    print(f"  likelihood-weight  delta={delta:.0e}: std_p[l_w+log p]={wstd(gap):.2e}  KL(exp(-l_w)||p)={klw:.2e}"
+122:          f"  |l_w - KL(N(x,tau)||p_tau)|max={err:.2e}")
+123:lu = per_sample(P, xs, w_unif, 1e-6)
+124:from scipy.optimize import minimize_scalar
+125:opt = minimize_scalar(lambda la: kl_s(-lu / np.exp(la)), bounds=(np.log(0.05), np.log(20)), method="bounded",
+126:                      options=dict(xatol=1e-6))
+127:best = (float(np.exp(opt.x)), float(opt.fun))
+128:# alpha required to reproduce the density ratio between two points: alpha = (l_u(b)-l_u(a)) / (log p(a)-log p(b))
+129:pts = np.array([-2.5, 2.5, 0.0]); lu_p = per_sample(P, pts, w_unif, 1e-6); lp_p = P.logpdf(pts[:, None])
+130:req = {f"{pts[a]}vs{pts[b]}": float((lu_p[b]-lu_p[a])/(lp_p[a]-lp_p[b])) for a, b in [(0, 1), (0, 2), (1, 2)]}
+131:t2["uniform_required_alpha_pairs"] = req
+132:print(f"  uniform: alpha needed to match density ratios of pairs (one alpha cannot fit all): {req}")
+133:# best affine fit: is -l_u an affine function of log p at all?
+134:A = np.vstack([lp_s, np.ones_like(lp_s)]).T
+135:coef, *_ = np.linalg.lstsq(A * np.sqrt(p_s)[:, None], -lu * np.sqrt(p_s), rcond=None)
+136:resid = -lu - A @ coef
+137:t2["uniform"] = dict(KL_fixpoint_alpha1=kl_s(-lu), best_alpha=best[0], KL_fixpoint_best_alpha=best[1],
+138:                     affine_fit_slope=float(coef[0]), std_resid_under_p=wstd(resid))
+139:print(f"  uniform (concept-note reward): KL(exp(-l_u)||p)={kl_s(-lu):.4f} at alpha=1;"
+140:      f" best alpha (continuous search on [0.05,20])={best[0]:.4f} -> KL={best[1]:.4f}")
+141:print(f"    -l_u ~ {coef[0]:.3f}*log p + c  with p-weighted resid std {wstd(resid):.4f}")
+142:
+143:# mode masses of fixed points (what the notes call 'mode coverage')
+144:def masses(lq):
+145:    q = np.exp(lq - lq.max()); q /= q.sum()
+146:    return [float(q[(xs > c - 1.2) & (xs < c + 1.2)].sum()) for c in (-2.5, 2.5, 0.0)]
+147:lw3 = per_sample(P, xs, w_like, 1e-4)
+148:t2["mode_mass"] = dict(target_same_window=masses(lp_s), like=masses(-lw3), unif_alpha1=masses(-lu),
+149:                       unif_best=masses(-lu / best[0]))
+150:print(f"  mode mass (+-1.2 windows) target {np.round(masses(lp_s),3)} | like {np.round(masses(-lw3),3)} | "
+151:      f"unif a=1 {np.round(masses(-lu),3)} | unif best-a {np.round(masses(-lu/best[0]),3)}")
+152:
+153:json.dump(dict(T1=t1, T2=t2), open(os.path.join(OUT, "e1_reward_theory.json"), "w"), indent=1)
+154:print("saved", os.path.abspath(os.path.join(OUT, "e1_reward_theory.json")))
+src/v2/e2_occupancy.py
+1:"""
+2:E2 - does "max-ent RL + exact log-likelihood reward" match the expert distribution in an MDP?
+3:
+4:Ergodic deterministic MDP (ring, N states, actions {-1,0,+1}); a 'motion window' = transition (s,s').
+5:Expert p(s,s') = stationary transition distribution of a random expert policy (realizable target).
+6:Exact stationary distribution d_pi(s) (differentiable linear solve), exact gradients (torch, float64).
+7:
+8:  (A) max-ent RL, reward r = log p(s,s'), alpha=1        J = E_d log p + E_d H(pi(.|s))
+9:      Claim:  J = -KL(d||p) - H(d_S)   -> biased toward LOW state-visitation entropy (not p)
+10:  (B) learner-density-corrected reward r = log p(s,s') - log d_pi(s,s')   J = -KL(d||p)
+11:      (this is what a second, learner-fitted flow supplies; GAIL/SMILING-style)
+12:  (C) (A) + state-marginal correction r = log p - log d_pi(s)   == (B) in deterministic MDPs
+13:Outputs: results/v2/e2_occupancy.json
+14:"""
+15:import json, os
+16:import numpy as np
+17:import torch
+18:torch.set_default_dtype(torch.float64)
+19:OUT = os.path.join(os.path.dirname(__file__), "..", "..", "results", "v2")
+20:
+21:import sys
+22:N = 12
+23:# injective: actions {-1,0,+1};  non-injective (codex C6 counter-case): {-1,0,0,+1} (two actions -> same s')
+24:MOVES = torch.tensor([-1, 0, 0, 1]) if "--noninj" in sys.argv else torch.tensor([-1, 0, 1])
+25:A = len(MOVES)
+26:NXT = (torch.arange(N)[:, None] + MOVES[None, :]) % N        # (N,A)
+27:ONEHOT = torch.nn.functional.one_hot(NXT, N).double()        # (N,A,N): action -> next state
+28:
+29:
+30:def stationary(logits):
+31:    pi = torch.softmax(logits, -1)                             # (N,A)
+32:    P = torch.zeros(N, N)
+33:    P = P.index_put((torch.arange(N)[:, None].expand(N, A), NXT), pi, accumulate=True)
+34:    M = P.T - torch.eye(N)
+35:    M = torch.cat([M[:-1], torch.ones(1, N)], 0)
+36:    b = torch.zeros(N); b[-1] = 1
+37:    ds = torch.linalg.solve(M, b)
+38:    return ds, pi
+39:
+40:
+41:def trans_dist(logits):
+42:    """returns d(s,s') (N,N), d(s), pi.  d(s,s') sums actions with the same destination."""
+43:    ds, pi = stationary(logits)
+44:    Pss = torch.einsum("sa,san->sn", pi, ONEHOT)
+45:    return ds[:, None] * Pss, ds, pi
+46:
+47:
+48:def run(seed, steps=4000):
+49:    g = torch.Generator().manual_seed(seed)
+50:    exp_logits = 2.0 * torch.randn(N, A, generator=g)
+51:    p, ps, _ = trans_dist(exp_logits)
+52:    p = p.detach(); logp = torch.log(p.clamp_min(1e-300))
+53:    Hps = float(-(ps * ps.log()).sum())
+54:    res = {}
+55:    for mode in MODES:
+56:        th = torch.zeros(N, A, requires_grad=True)
+57:        opt = torch.optim.Adam([th], lr=0.05)
+58:        for _ in range(steps):
+59:            d, ds, pi = trans_dist(th)
+60:            Hpi = -(pi * torch.log(pi + 1e-300)).sum(-1)
+61:            if mode == "A_maxent_logp":
+62:                J = (d * logp).sum() + (ds * Hpi).sum()
+63:            elif mode == "B_logp_minus_logd":
+64:                J = (d * (logp - torch.log(d + 1e-300))).sum()
+65:            elif mode == "C_maxent_plus_state_corr":
+66:                J = (d * logp).sum() + (ds * Hpi).sum() - (ds * torch.log(ds + 1e-300)).sum()
+67:            else:   # D: next-state entropy H(S'|S) instead of action entropy (general deterministic MDP)
+68:                Pss = d / ds[:, None]
+69:                Hn = -(Pss * torch.log(Pss + 1e-300)).sum(-1)
+70:                J = (d * logp).sum() + (ds * Hn).sum() - (ds * torch.log(ds + 1e-300)).sum()
+71:            opt.zero_grad(); (-J).backward(); opt.step()
+72:        d, ds, pi = trans_dist(th.detach())
+73:        m = d > 0
+74:        kl = float((d[m] * (torch.log(d[m]) - logp[m])).sum())
+75:        Hds = float(-(ds * ds.log()).sum())
+76:        res[mode] = dict(KL=kl, H_state=Hds)
+77:    res["H_state_expert"] = Hps
+78:    return res
+79:
+80:
+81:MODES = ["A_maxent_logp", "B_logp_minus_logd", "C_maxent_plus_state_corr", "D_nextstate_ent_plus_state_corr"]
+82:if __name__ == "__main__":
+83:    allr = [run(s) for s in range(10)]
+84:    print("non-injective" if "--noninj" in sys.argv else "injective", "MDP; success tolerance KL < 1e-4")
+85:    print(f"{'mode':28s} {'KL(d||p) mean±sd':>20s} {'H(d_S)-H(p_S) mean':>20s}")
+86:    summ = {}
+87:    for m in MODES:
+88:        kl = np.array([r[m]["KL"] for r in allr])
+89:        dh = np.array([r[m]["H_state"] - r["H_state_expert"] for r in allr])
+90:        summ[m] = dict(KL_mean=kl.mean(), KL_sd=kl.std(), dH_mean=dh.mean(), dH_sd=dh.std())
+91:        print(f"{m:32s} KL {kl.mean():.3e} ± {kl.std():.2e} (max {kl.max():.2e}, ok {int((kl<1e-4).sum())}/10)"
+92:              f"  dH {dh.mean():+.4f} ± {dh.std():.4f}")
+93:    json.dump(dict(per_seed=allr, summary=summ), open(os.path.join(OUT, "e2_occupancy" + ("_noninj" if "--noninj" in sys.argv else "") + ".json"), "w"), indent=1)
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+$reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath '"'results/v2/e1_reward_theory.json' | ForEach-Object { "'$reviewLine++; '"'{0}:{1}' -f "'$reviewLine,$_ }' in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "[Console]::OutputEncoding = [Text.Encoding]::UTF8
+Get-ChildItem -Name -LiteralPath .; Get-ChildItem -Name -LiteralPath 'src/v2'; Get-ChildItem -Name -LiteralPath 'results/v2'; python -B -c \"import sys; print(sys.executable); import numpy, scipy; print(numpy.__version__, scipy.__version__); import torch; print(torch.__version__)\"" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+foreach ($reviewFile in @('"'results/v2/e2_occupancy.json','results/v2/e2_occupancy_noninj.json')) { Write-Output "'$reviewFile; $reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath $reviewFile | ForEach-Object { $reviewLine++; if ($reviewLine -le 42 -or $reviewLine -ge 206) { '"'{0}:{1}' -f "'$reviewLine,$_ } } }' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 435ms:
+1:{
+2: "T1": [
+3:  {
+4:   "q": "shift+0.5",
+5:   "KL": 0.38519865332629516,
+6:   "B_w": 0.38519865325132946,
+7:   "B_u": 0.26255272717796596
+8:  },
+9:  {
+10:   "q": "reweight",
+11:   "KL": 0.5721889696646855,
+12:   "B_w": 0.5721889696560722,
+13:   "B_u": 0.8271282801272498
+14:  },
+15:  {
+16:   "q": "single-mode",
+17:   "KL": 0.5052602096370686,
+18:   "B_w": 0.5052602096335368,
+19:   "B_u": 1.4657070165570603
+20:  },
+21:  {
+22:   "q": "too-wide(x2)",
+23:   "KL": 0.5223907548463974,
+24:   "B_w": 0.5223907547363176,
+25:   "B_u": 0.259622630813407
+26:  },
+27:  {
+28:   "q": "too-narrow(/3)",
+29:   "KL": 0.671097672198919,
+30:   "B_w": 0.671097671691129,
+31:   "B_u": 0.18312615366079862
+32:  },
+33:  {
+34:   "q": "gaussian-fit",
+35:   "KL": 1.3452865572369144,
+36:   "B_w": 1.345286557013769,
+37:   "B_u": 0.8028308115744497
+38:  },
+39:  {
+40:   "q": "point-like",
+41:   "KL": 2.4128531269513656,
+42:   "B_w": 2.4128531195246707,
+43:   "B_u": 1.881636320502077
+44:  }
+45: ],
+46: "T2": {
+47:  "like_delta=0.01": {
+48:   "std_gap_under_p": 0.0003447579043136398,
+49:   "KL_fixpoint": 5.948230860876056e-08,
+50:   "max_abs_err_vs_exact_formula": 2.695168532795833e-10
+51:  },
+52:  "like_delta=0.001": {
+53:   "std_gap_under_p": 3.3874900236373716e-06,
+54:   "KL_fixpoint": 5.737581272568791e-12,
+55:   "max_abs_err_vs_exact_formula": 2.695212941716818e-10
+56:  },
+57:  "like_delta=0.0001": {
+58:   "std_gap_under_p": 3.381411901323861e-08,
+59:   "KL_fixpoint": 5.498414100311619e-16,
+60:   "max_abs_err_vs_exact_formula": 2.694715561801786e-10
+61:  },
+62:  "uniform_required_alpha_pairs": {
+63:   "-2.5vs2.5": 3.8159639090907294,
+64:   "-2.5vs0.0": 0.7380740788911992,
+65:   "2.5vs0.0": -1.9972860686115212
+66:  },
+67:  "uniform": {
+68:   "KL_fixpoint_alpha1": 0.4114853183721198,
+69:   "best_alpha": 1.6238562143827155,
+70:   "KL_fixpoint_best_alpha": 0.38237078251281087,
+71:   "affine_fit_slope": 1.0207588758671433,
+72:   "std_resid_under_p": 1.134480957507921
+73:  },
+74:  "mode_mass": {
+75:   "target_same_window": [
+76:    0.5825787654924638,
+77:    0.29111562172818467,
+78:    0.10766388264952184
+79:   ],
+80:   "like": [
+81:    0.5825787637766426,
+82:    0.291115620888345,
+83:    0.10766388348459072
+84:   ],
+85:   "unif_alpha1": [
+86:    0.651086798070581,
+87:    0.06107159619133242,
+88:    0.25715953111712114
+89:   ],
+90:   "unif_best": [
+91:    0.5292244979710625,
+92:    0.11875694500312825,
+93:    0.30538249364179204
+94:   ]
+95:  }
+96: }
+97:}
+
+ succeeded in 579ms:
+results/v2/e2_occupancy.json
+1:{
+2: "per_seed": [
+3:  {
+4:   "A_maxent_logp": {
+5:    "KL": 0.18194531278452153,
+6:    "H_state": 0.21404763211265979
+7:   },
+8:   "B_logp_minus_logd": {
+9:    "KL": 1.6459518364621075e-06,
+10:    "H_state": 0.6037689884262822
+11:   },
+12:   "C_maxent_plus_state_corr": {
+13:    "KL": 1.6459518361829424e-06,
+14:    "H_state": 0.603768988426283
+15:   },
+16:   "D_nextstate_ent_plus_state_corr": {
+17:    "KL": 1.645951836223102e-06,
+18:    "H_state": 0.6037689884262831
+19:   },
+20:   "H_state_expert": 0.603774191496599
+21:  },
+22:  {
+23:   "A_maxent_logp": {
+24:    "KL": 0.677393585676665,
+25:    "H_state": 0.6050674178895272
+26:   },
+27:   "B_logp_minus_logd": {
+28:    "KL": 1.4591663907657396e-09,
+29:    "H_state": 1.7514689992557628
+30:   },
+31:   "C_maxent_plus_state_corr": {
+32:    "KL": 2.0391604830243835e-09,
+33:    "H_state": 1.7514682975113478
+34:   },
+35:   "D_nextstate_ent_plus_state_corr": {
+36:    "KL": 2.08878419527087e-09,
+37:    "H_state": 1.751474314090518
+38:   },
+39:   "H_state_expert": 1.7514666220002348
+40:  },
+41:  {
+42:   "A_maxent_logp": {
+206:  },
+207:  "C_maxent_plus_state_corr": {
+208:   "KL_mean": 2.4927967977260616e-06,
+209:   "KL_sd": 3.898054859186779e-06,
+210:   "dH_mean": -5.49271901616466e-06,
+211:   "dH_sd": 2.3783252852334444e-05
+212:  },
+213:  "D_nextstate_ent_plus_state_corr": {
+214:   "KL_mean": 2.4928017600768806e-06,
+215:   "KL_sd": 3.898051688458587e-06,
+216:   "dH_mean": -4.889197066171302e-06,
+217:   "dH_sd": 2.4032163838092256e-05
+218:  }
+219: }
+220:}
+results/v2/e2_occupancy_noninj.json
+1:{
+2: "per_seed": [
+3:  {
+4:   "A_maxent_logp": {
+5:    "KL": 0.26899608735650554,
+6:    "H_state": 0.6976295324880686
+7:   },
+8:   "B_logp_minus_logd": {
+9:    "KL": 6.600882806462235e-05,
+10:    "H_state": 1.1220996338868048
+11:   },
+12:   "C_maxent_plus_state_corr": {
+13:    "KL": 0.0511408864618225,
+14:    "H_state": 1.1561432190897842
+15:   },
+16:   "D_nextstate_ent_plus_state_corr": {
+17:    "KL": 6.600882806449522e-05,
+18:    "H_state": 1.1220996338868054
+19:   },
+20:   "H_state_expert": 1.122529299119646
+21:  },
+22:  {
+23:   "A_maxent_logp": {
+24:    "KL": 0.8917791994419592,
+25:    "H_state": 0.33888357577357286
+26:   },
+27:   "B_logp_minus_logd": {
+28:    "KL": 3.0759746939615525e-08,
+29:    "H_state": 1.7364242040230333
+30:   },
+31:   "C_maxent_plus_state_corr": {
+32:    "KL": 0.044689923038508474,
+33:    "H_state": 1.621694542327532
+34:   },
+35:   "D_nextstate_ent_plus_state_corr": {
+36:    "KL": 3.0759746892719705e-08,
+37:    "H_state": 1.7364242040230509
+38:   },
+39:   "H_state_expert": 1.7364242506835834
+40:  },
+41:  {
+42:   "A_maxent_logp": {
+206:  },
+207:  "C_maxent_plus_state_corr": {
+208:   "KL_mean": 0.03593441239938022,
+209:   "KL_sd": 0.01640088277470839,
+210:   "dH_mean": -0.05246917521935386,
+211:   "dH_sd": 0.046029191856163346
+212:  },
+213:  "D_nextstate_ent_plus_state_corr": {
+214:   "KL_mean": 1.0114536347998392e-05,
+215:   "KL_sd": 1.9334894540903592e-05,
+216:   "dH_mean": -4.915141744280538e-05,
+217:   "dH_sd": 0.00013305843267442203
+218:  }
+219: }
+220:}
+
+ exited 1 in 696ms:
+docs
+results
+review
+src
+.gitignore
+README.md
+references.md
+requirements.txt
+il
+__pycache__
+e1_reward_theory.py
+e2_occupancy.py
+gmm_flow.py
+e1_reward_theory.json
+e2_occupancy.json
+e2_occupancy_noninj.json
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; print(sys.executable); import numpy, scipy; print(numpy.__version__, scipy.__version__); import torch; print(torch.__version__)
+                                                                                                         ^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\Lib\site-packages\torch\__init__.py", line 34, in <module>
+    from typing_extensions import (
+    ...<3 lines>...
+    )
+ModuleNotFoundError: No module named 'typing_extensions'
+C:\ProgramData\miniforge3\python.exe
+2.4.4 1.17.1
+
+codex
+가중 KL 등식의 양끝 조건은 보완됐습니다. 이제 명제 2의 극한에서 정규화가 필요한지, 명제 3의 두 점 비교가 모드 질량까지 뒷받침하는지, 명제 4를 연속 제어에 옮길 때 어떤 조건이 빠졌는지 확인하고 있습니다.
+web search: 
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "[Console]::OutputEncoding = [Text.Encoding]::UTF8
+Get-Command python -All | Select-Object -ExpandProperty Source
+Get-Content -LiteralPath requirements.txt
+Get-ChildItem -Directory -ErrorAction SilentlyContinue -LiteralPath 'C:/ProgramData/miniforge3/envs'
+Get-ChildItem -Directory -ErrorAction SilentlyContinue -LiteralPath 'C:/Users/user/.conda/envs'
+Get-ChildItem -Recurse -File -Filter 'typing_extensions.py' -ErrorAction SilentlyContinue -LiteralPath 'C:/ProgramData/miniforge3' | Select-Object -First 12 -ExpandProperty FullName" in C:\Users\user\OneDrive\코드\바이브연구\note
+web search: relative de Bruijn identity Gaussian heat flow relative entropy two distributions Verdú entropy diffusion primary Yoshida ...
+ succeeded in 20948ms:
+C:\ProgramData\miniforge3\python.exe
+numpy>=1.24
+
+
+    디렉터리: C:\ProgramData\miniforge3\envs
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+da----        2026-05-10  오후 12:46                mit-agent-torch                                                      
+da----        2026-05-09   오후 1:59                realsense                                                            
+d-----        2026-11-09  오전 12:21                rw02op                                                               
+d-----        2026-10-13   오전 9:22                tex                                                                  
+d-----        2026-10-06   오후 3:04                texenv                                                               
+da----        2026-04-21   오후 2:40                torch                                                                
+C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\typing_extensions.py
+C:\ProgramData\miniforge3\envs\realsense\Lib\site-packages\typing_extensions.py
+C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\typing_extensions.py
+C:\ProgramData\miniforge3\pkgs\typing-extensions-4.16.0-h69aa097_0\etc\conda\test-files\typing-extensions\1\src\typing_extensions.py
+C:\ProgramData\miniforge3\pkgs\typing_extensions-4.16.0-pyhcf101f3_0\site-packages\typing_extensions.py
+
+
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import ast, sys, json
+from pathlib import Path
+import numpy as np
+from scipy.special import logsumexp
+from scipy.integrate import quad
+path = Path('src/v2/e1_reward_theory.py')
+sys.path.insert(0, str(path.parent))
+from gmm_flow import GMM,gl,gh
+tree = ast.parse(path.read_text(encoding='utf-8'))
+names = {'P','QS','DX','XG','Z0','W0','w_unif','w_like'}
+def use(node):
+    targets = [t for t in getattr(node, 'targets', [])]
+    found = {n.id for t in targets for n in ast.walk(t) if isinstance(n, ast.Name)}
+    return isinstance(node, ast.FunctionDef) or bool(found & names)
+env = dict(np=np,GMM=GMM,gl=gl,gh=gh)
+exec(compile(ast.Module(body=[n for n in tree.body if use(n)],type_ignores=[]), str(path),'exec'), env)
+P, qs, per_sample, w_unif, w_like = [env[n] for n in ('P','QS','per_sample','w_unif','w_like')]
+def bias(Q, width, dx_nom, smax, nt):
+    x = np.linspace(-width,width,round(2*width/dx_nom)+1); dx=x[1]-x[0]
+    s, ws = gl(0,smax,nt); t=1-np.exp(-s)
+    return float(sum(w*ti*np.sum(np.exp(Q.logpdf_t(x,ti))*(Q.velocity(x,ti)-P.velocity(x,ti))[:,0]**2)*dx for ti,w in zip(t,ws)))
+for name in ('gaussian-fit','point-like'):
+    Q = qs[name]
+    vals = [bias(Q,width,dx,smax,nt) for width,dx,smax,nt in ((25,.005,12,400),(35,.005,12,400),(25,.0025,12,400),(25,.005,16,400))]
+    print(name, ['%.13g'%v for v in vals], 'deltas:', np.array(vals[1:])-vals[0], flush=True)
+x=np.array([-2.5,2.5,0])
+lp=P.logpdf(x)
+for ns, zh, delta in ((240,120,1.e-6),(480,200,1.e-9),(720,240,1.e-10)):
+    env['Z0'],env['W0']=gh(zh)
+    l=per_sample(P,x,w_unif,delta,ns)
+    print('pair',ns,zh,delta,'loss',l,'log p',lp,'alpha', [(l[b]-l[a])/(lp[a]-lp[b]) for a,b in ((0,1),(0,2),(1,2))],flush=True)
+for s in (1,2,2/np.pi):
+    A,_=quad(lambda t:(1-t)**2/(t*t*s*s+(1-t)**2)**2,0,1)
+    print('gaussian sd, A, alpha:',s,A,2*s*s*A)
+g=GMM([1],[[0]],[1])
+for t in (1-1e-8,1.0):
+    print('GMM t,u,score:', t,g.velocity([.7],t).ravel(),g.score([.7],t).ravel())
+print('GMM 1d batch output shape:', g.logpdf(np.array([0.,1.,2.])).shape)
+print('per_sample integer returns:',per_sample(g,np.array([0,1]),w_unif,1e-3))
+for bad in (0., np.zeros((2,3,1))):
+    try:
+        print('GMM input',np.shape(bad),'result',g.logpdf(bad))
+    except (IndexError,ValueError,AssertionError) as ex:
+        print('GMM input',np.shape(bad),'error',type(ex).__name__,ex)
+'@ | python -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import sys, json
+from pathlib import Path
+import numpy as np
+import torch
+torch.set_num_threads(1)
+path=Path('src/v2/e2_occupancy.py')
+code=compile(path.read_text(encoding='utf-8'),str(path),'exec')
+print('torch',torch.__version__,flush=True)
+for noninj in (False,True):
+    suffix='_noninj' if noninj else ''
+    data=json.loads(Path('results/v2/e2_occupancy'+suffix+'.json').read_text())
+    sys.argv=[str(path)]+(['--noninj'] if noninj else [])
+    env={'__file__':str(path),'__name__':'review_e2'}
+    exec(code,env)
+    rerun=env['run'](0)
+    K=env['ONEHOT'].sum(1).numpy()
+    rows=data['per_seed']
+    for mode in env['MODES']:
+        a=np.array([row[mode]['KL'] for row in rows])
+        print(suffix or 'injective',mode,'mean %.9g max %.9g successes %s rerun0 %.9g stored0 %.9g'%(a.mean(),a.max(),(a<1e-4).sum(),rerun[mode]['KL'],a[0]),flush=True)
+    gaps=[]; kls=[]; c_kls=[]
+    for i,r in enumerate(rows):
+        g=torch.Generator().manual_seed(i)
+        P=env['trans_dist'](2*torch.randn(env['N'],env['A'],generator=g))[0].numpy()
+        M=P*K
+        ev,evec=np.linalg.eig(M); i=np.argmax(ev.real); lam=ev[i].real; h=evec[:,i].real
+        el,v=np.linalg.eig(M.T); u=v[:,np.argmax(el.real)].real
+        D=(u[:,None]*M*h[None,:]); D/=D.sum()
+        m=P>0
+        kls.append((D[m]*np.log(D[m]/P[m])).sum())
+        gaps.append(np.log(lam)+r['A_maxent_logp']['KL']+r['A_maxent_logp']['H_state'])
+        C=M/M.sum(); c_kls.append((C[m]*np.log(C[m]/P[m])).sum())
+    print(suffix or 'injective','analytic A optimal mean KL %.9g; objective gap mean %.9g max %.9g; analytic C optimal mean KL %.9g'%(np.mean(kls),np.mean(gaps),max(gaps),np.mean(c_kls)),flush=True)
+'@ | & 'C:/ProgramData/miniforge3/envs/mit-agent-torch/python.exe' -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+ exited 1 in 4775ms:
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\__init__.py", line 2229, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\nn\__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\nn\modules\__init__.py", line 1, in <module>
+    from .module import Module  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\nn\modules\module.py", line 17, in <module>
+    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\__init__.py", line 8, in <module>
+    from torch.utils import (
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\__init__.py", line 1, in <module>
+    from torch.utils.data.dataloader import (
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\dataloader.py", line 26, in <module>
+    import torch.utils.data.graph_settings
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\graph_settings.py", line 8, in <module>
+    from torch.utils.data.datapipes.iter.sharding import (
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\datapipes\__init__.py", line 1, in <module>
+    from torch.utils.data.datapipes import dataframe as dataframe, iter as iter, map as map
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\datapipes\dataframe\__init__.py", line 1, in <module>
+    from torch.utils.data.datapipes.dataframe.dataframes import (
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\datapipes\dataframe\dataframes.py", line 4, in <module>
+    from torch.utils.data.datapipes._decorator import functional_datapipe
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\datapipes\_decorator.py", line 8, in <module>
+    from torch.utils.data.datapipes.datapipe import IterDataPipe, MapDataPipe
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\data\datapipes\datapipe.py", line 17, in <module>
+    dill = import_dill()
+           ^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\torch\utils\_import_utils.py", line 30, in import_dill
+    import dill
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\dill\__init__.py", line 33, in <module>
+    from .session import (
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\site-packages\dill\session.py", line 25, in <module>
+    TEMPDIR = pathlib.PurePath(tempfile.gettempdir())
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\tempfile.py", line 315, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\tempfile.py", line 308, in _gettempdir
+    tempdir = _get_default_tempdir()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\mit-agent-torch\Lib\tempfile.py", line 223, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\WINDOWS\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\tmp', 'C:\\Users\\user\\OneDrive\\�ڵ�\\���̺꿬��\\note']
+
+ succeeded in 7391ms:
+gaussian-fit ['1.345286557014', '1.345286557015', '1.345286557015', '1.345286557236'] deltas: [9.56124069e-13 9.56124069e-13 2.22628360e-10]
+point-like ['2.412853119525', '2.412853119526', '2.412853119526', '2.412853126948'] deltas: [1.71551662e-12 1.71507253e-12 7.42358175e-09]
+pair 240 120 1e-06 loss [1.95700875 4.60203337 3.04425996] log p [-0.83192716 -1.52507434 -2.3050194 ] alpha [np.float64(3.8159639090907294), np.float64(0.7380740788911992), np.float64(-1.9972860686115212)]
+pair 480 200 1e-09 loss [1.95700975 4.60203437 3.04426095] log p [-0.83192716 -1.52507434 -2.3050194 ] alpha [np.float64(3.8159639090886674), np.float64(0.7380740788904152), np.float64(-1.9972860686111698)]
+pair 720 240 1e-10 loss [1.95700975 4.60203437 3.04426096] log p [-0.83192716 -1.52507434 -2.3050194 ] alpha [np.float64(3.8159639090901853), np.float64(0.7380740788901526), np.float64(-1.9972860686130147)]
+gaussian sd, A, alpha: 1 0.7853981633974483 1.5707963267948966
+gaussian sd, A, alpha: 2 0.39269908169872414 3.141592653589793
+gaussian sd, A, alpha: 0.6366197723675814 1.2337005501361695 0.9999999999999999
+GMM t,u,score: 0.99999999 [0.7] [-0.70000001]
+GMM t,u,score: 1.0 [0.7] [-0.7]
+GMM 1d batch output shape: (3,)
+per_sample integer returns: [0.78439716 1.56979533]
+GMM input () error IndexError tuple index out of range
+GMM input (2, 3, 1) result [[-0.91893853 -0.91893853 -0.91893853]
+ [-0.91893853 -0.91893853 -0.91893853]]
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "& 'C:/ProgramData/miniforge3/envs/torch/python.exe' -B -c \"import torch; print(torch.__version__); print(torch.tensor([1.]))\"" in C:\Users\user\OneDrive\코드\바이브연구\note
+web search: 
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import ast, json, sys
+from pathlib import Path
+import numpy as np
+from scipy.optimize import minimize_scalar
+path=Path('src/v2/e1_reward_theory.py')
+sys.path.insert(0,str(path.parent))
+from gmm_flow import GMM,gh,gl
+t=ast.parse(path.read_text())
+names={'P','w_unif','w_like','Z0','W0'}
+env=dict(np=np, GMM=GMM,gh=gh,gl=gl)
+exec(compile(ast.Module(body=[n for n in t.body if isinstance(n,ast.FunctionDef) or any(isinstance(x,ast.Name) and x.id in names for target in getattr(n,'targets',[]) for x in ast.walk(target))],type_ignores=[]),str(path),'exec'),env)
+p=env['P']
+gpts=np.array([[[0.],[1.],[2.]],[[0.],[1.],[2.]]])
+print(\"GMM shape validation 2x3x1:\",p.logpdf(gpts), \"expected each row\",p.logpdf([0.,1.,2.]), flush=True)
+for width in (6,10):
+    xs=np.linspace(-width,width,round(2*width/.02)+1)
+    lu=env['per_sample'](p,xs,env['w_unif'],1e-6)
+    lp=p.logpdf(xs); pgrid=np.exp(lp); pgrid/=pgrid.sum(); lp=np.log(pgrid)
+    def loss(la):
+        lq=-lu/np.exp(la); q=np.exp(lq-lq.max()); q/=q.sum()
+        return float((q*(np.log(q)-lp)).sum())
+    best=minimize_scalar(loss,bounds=np.log([.05,20]),method='bounded')
+    lqb = -lu/np.exp(best.x); qb=np.exp(lqb-lqb.max()); qb/=qb.sum()
+    print(\"T2 width\",width,\"KL1\",loss(0),\"alpha\",np.exp(best.x),\"KL min\",best.fun,\"mass outside +-6\",qb[np.abs(xs)>6].sum(), flush=True)
+for f in Path('results/v2').glob('e2_occupancy*.json'):
+    print(f,flush=True)
+    data=json.loads(f.read_text())
+    for m in data['summary']:
+        kl=[r[m]['KL'] for r in data['per_seed']]
+        print(m, 'max/ok',max(kl),sum(k<1e-4 for k in kl), flush=True)
+'@ | python -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+ exited 1 in 1404ms:
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+  File "C:\ProgramData\miniforge3\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\Lib\pathlib\_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xe2 in position 594: illegal multibyte sequence
+
+web search: https://arxiv.org/abs/1505.03337
+ succeeded in 4486ms:
+2.11.0+cu128
+tensor([1.])
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import sys, json
+from pathlib import Path
+import numpy as np
+import torch
+torch.set_num_threads(1)
+path=Path('src/v2/e2_occupancy.py')
+code=compile(path.read_text(encoding='utf-8'),str(path),'exec')
+print('torch',torch.__version__,flush=True)
+for noninj in (False,True):
+    suffix='_noninj' if noninj else ''
+    data=json.loads(Path('results/v2/e2_occupancy'+suffix+'.json').read_text(encoding='utf-8'))
+    sys.argv=[str(path)]+(['--noninj'] if noninj else [])
+    env={'__file__':str(path),'__name__':'review_e2'}
+    exec(code,env)
+    rerun=env['run'](0)
+    K=env['ONEHOT'].sum(1).numpy()
+    rows=data['per_seed']
+    for mode in env['MODES']:
+        a=np.array([row[mode]['KL'] for row in rows])
+        print(suffix or 'injective',mode,'mean %.9g max %.9g successes %s rerun0 %.9g stored0 %.9g'%(a.mean(),a.max(),(a<1e-4).sum(),rerun[mode]['KL'],a[0]),flush=True)
+    gaps=[]; kls=[]; c_kls=[]
+    for seed,r in enumerate(rows):
+        g=torch.Generator().manual_seed(seed)
+        P=env['trans_dist'](2*torch.randn(env['N'],env['A'],generator=g))[0].numpy()
+        M=P*K
+        ev,evec=np.linalg.eig(M); ix=np.argmax(ev.real); lam=ev[ix].real; h=evec[:,ix].real
+        el,v=np.linalg.eig(M.T); u=v[:,np.argmax(el.real)].real
+        D=(u[:,None]*M*h[None,:]); D/=D.sum()
+        m=P>0
+        kls.append((D[m]*np.log(D[m]/P[m])).sum())
+        if not noninj:
+            gaps.append(np.log(lam)+r['A_maxent_logp']['KL']+r['A_maxent_logp']['H_state'])
+        C=M/M.sum(); c_kls.append((C[m]*np.log(C[m]/P[m])).sum())
+    print(suffix or 'injective','analytic A optimal mean KL %.9g; analytic C optimal mean KL %.9g'%(np.mean(kls),np.mean(c_kls)),flush=True)
+    if gaps:
+        print('A objective gap mean %.9g max %.9g'%(np.mean(gaps),max(gaps)),flush=True)
+'@ | & 'C:/ProgramData/miniforge3/envs/torch/python.exe' -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import ast, sys
+from pathlib import Path
+import numpy as np
+from scipy.optimize import minimize_scalar
+path=Path('src/v2/e1_reward_theory.py')
+sys.path.insert(0,str(path.parent))
+from gmm_flow import GMM,gh,gl
+t=ast.parse(path.read_text(encoding='utf-8'))
+names={'P','w_unif','w_like','Z0','W0'}
+env=dict(np=np, GMM=GMM,gh=gh,gl=gl)
+exec(compile(ast.Module(body=[n for n in t.body if isinstance(n,ast.FunctionDef) or any(isinstance(x,ast.Name) and x.id in names for target in getattr(n,'targets',[]) for x in ast.walk(target))],type_ignores=[]),str(path),'exec'),env)
+p=env['P']
+gpts=np.array([[[0.],[1.],[2.]],[[0.],[1.],[2.]]])
+print(\"GMM shape validation 2x3x1:\",p.logpdf(gpts), \"expected each row\",p.logpdf([0.,1.,2.]), flush=True)
+for width in (6,10):
+    xs=np.linspace(-width,width,round(2*width/.02)+1)
+    lu=env['per_sample'](p,xs,env['w_unif'],1e-6)
+    lp=p.logpdf(xs); pgrid=np.exp(lp); pgrid/=pgrid.sum(); lp=np.log(pgrid)
+    def loss(la):
+        lq=-lu/np.exp(la); q=np.exp(lq-lq.max()); q/=q.sum()
+        return float((q*(np.log(q)-lp)).sum())
+    best=minimize_scalar(loss,bounds=np.log([.05,20]),method='bounded')
+    lqb = -lu/np.exp(best.x); qb=np.exp(lqb-lqb.max()); qb/=qb.sum()
+    print(\"T2 width\",width,\"KL1\",loss(0),\"alpha\",np.exp(best.x),\"KL min\",best.fun,\"mass outside +-6\",qb[np.abs(xs)>6].sum(), flush=True)
+'@ | python -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+ exited 1 in 5026ms:
+torch 2.11.0+cu128
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+  File "src\v2\e2_occupancy.py", line 57, in run
+    opt = torch.optim.Adam([th], lr=0.05)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\optim\adam.py", line 102, in __init__
+    super().__init__(params, defaults)
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\optim\optimizer.py", line 408, in __init__
+    self.add_param_group(cast(dict, param_group))
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_compile.py", line 47, in inner
+    import torch._dynamo
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\__init__.py", line 13, in <module>
+    from . import (
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\aot_compile.py", line 17, in <module>
+    from torch._dynamo.package import SystemInfo
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py", line 1173, in <module>
+    DynamoCache = DiskDynamoCache(os.path.join(cache_dir(), "dynamo"))
+                                               ^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py", line 1170, in cache_dir
+    return cache_dir()
+           ^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_inductor\runtime\cache_dir_utils.py", line 17, in cache_dir
+    os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_dir = default_cache_dir()
+                                                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_inductor\runtime\cache_dir_utils.py", line 25, in default_cache_dir
+    tempfile.gettempdir() if not is_fbcode() else "/var/tmp",
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\tempfile.py", line 315, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\tempfile.py", line 308, in _gettempdir
+    tempdir = _get_default_tempdir()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\miniforge3\envs\torch\Lib\tempfile.py", line 223, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\Users\\user\\AppData\\Local\\Temp', 'C:\\WINDOWS\\Temp', 'c:\\temp', 'c:\\tmp', '\\temp', '\\tmp', 'C:\\Users\\user\\OneDrive\\�ڵ�\\���̺꿬��\\note']
+
+ succeeded in 10917ms:
+GMM shape validation 2x3x1: [[-11.16250567  -5.2440826  -14.80523289]
+ [-11.16250567  -5.2440826  -14.80523289]] expected each row [-2.3050194  -4.63968524 -1.9382949 ]
+T2 width 6 KL1 0.41148531837204416 alpha 1.6238505395022627 KL min 0.38237084335100235 mass outside +-6 0.0
+T2 width 10 KL1 0.41148531837596586 alpha 1.623680791691902 KL min 0.38237282497702707 mass outside +-6 2.748366358279323e-07
+
+codex
+E1을 다시 적분해 보니, 명제 3에서 두 점의 밀도 순서는 실제로 뒤집혔습니다. T1의 최대 오차는 시간 노드 수보다 적분을 끝내는 시점에 더 민감했습니다. 두 결과를 구분해 판정에 반영하겠습니다.
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "@'
+import sys,json
+from pathlib import Path
+import numpy as np
+import torch
+torch.set_num_threads(1)
+path=Path('src/v2/e2_occupancy.py')
+code=compile(path.read_text(encoding='utf-8'),str(path),'exec')
+for noninj in (False,True):
+    suffix='_noninj' if noninj else ''
+    data=json.loads(Path('results/v2/e2_occupancy'+suffix+'.json').read_text(encoding='utf-8'))
+    sys.argv=[str(path)]+(['--noninj'] if noninj else [])
+    env={'__file__':str(path),'__name__':'review_e2'}
+    exec(code,env)
+    K=env['ONEHOT'].sum(1).numpy()
+    rows=data['per_seed']
+    for mode in env['MODES']:
+        a=np.array([row[mode]['KL'] for row in rows])
+        print(suffix or 'injective',mode,'mean %.9g max %.9g successes %s'%(a.mean(),a.max(),(a<1e-4).sum()),flush=True)
+    gaps=[]; kls=[]; c_kls=[]
+    for seed,r in enumerate(rows):
+        g=torch.Generator().manual_seed(seed)
+        P=env['trans_dist'](2*torch.randn(env['N'],env['A'],generator=g))[0].numpy()
+        M=P*K
+        ev,evec=np.linalg.eig(M); ix=np.argmax(ev.real); lam=ev[ix].real; h=evec[:,ix].real
+        el,v=np.linalg.eig(M.T); u=v[:,np.argmax(el.real)].real
+        D=(u[:,None]*M*h[None,:]); D/=D.sum()
+        m=P>0
+        kls.append((D[m]*np.log(D[m]/P[m])).sum())
+        if not noninj:
+            gaps.append(np.log(lam)+r['A_maxent_logp']['KL']+r['A_maxent_logp']['H_state'])
+        C=M/M.sum(); c_kls.append((C[m]*np.log(C[m]/P[m])).sum())
+    print(suffix or 'injective','analytic A optimal mean KL %.9g; analytic C optimal mean KL %.9g'%(np.mean(kls),np.mean(c_kls)),flush=True)
+    if gaps:
+        print('A objective gap mean %.9g max %.9g'%(np.mean(gaps),max(gaps)),flush=True)
+'@ | & 'C:/ProgramData/miniforge3/envs/torch/python.exe' -B -" in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 3165ms:
+injective A_maxent_logp mean 0.484933782 max 0.910912814 successes 0
+injective B_logp_minus_logd mean 2.4927388e-06 max 1.3645512e-05 successes 10
+injective C_maxent_plus_state_corr mean 2.4927968e-06 max 1.3645512e-05 successes 10
+injective D_nextstate_ent_plus_state_corr mean 2.49280176e-06 max 1.3645512e-05 successes 10
+injective analytic A optimal mean KL 0.484865526; analytic C optimal mean KL 6.55127921e-17
+A objective gap mean 3.28576047e-05 max 7.22904585e-05
+_noninj A_maxent_logp mean 0.997093822 max 1.55535343 successes 0
+_noninj B_logp_minus_logd mean 1.02636154e-05 max 6.60088281e-05 successes 10
+_noninj C_maxent_plus_state_corr mean 0.0359344124 max 0.0587869761 successes 0
+_noninj D_nextstate_ent_plus_state_corr mean 1.01145363e-05 max 6.60088281e-05 successes 10
+<stdin>:28: RuntimeWarning: invalid value encountered in log
+_noninj analytic A optimal mean KL nan; analytic C optimal mean KL 0.035923627
+
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$reviewPath = '"'C:/ProgramData/miniforge3/envs/torch/Lib/site-packages/torch'
+Select-String -LiteralPath \""'$reviewPath/_dynamo/package.py" -Pattern '"'class DiskDynamoCache','class _Disk','DynamoCache = ' -Context 1,15
+Get-Content -LiteralPath \""'$reviewPath/_inductor/runtime/cache_dir_utils.py" -TotalCount 55' in C:\Users\user\OneDrive\코드\바이브연구\note
+exec
+"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '[Console]::OutputEncoding = [Text.Encoding]::UTF8
+foreach ($reviewFile in @('"'results/v2/e2_occupancy.json','results/v2/e2_occupancy_noninj.json')) { Write-Output "'$reviewFile; $reviewLine=0; Get-Content -Encoding UTF8 -LiteralPath $reviewFile | ForEach-Object { $reviewLine++; if (($reviewLine -ge 193 -and $reviewLine -le 218) -or $_ -match '"'1.3645512') { '{0}:{1}' -f "'$reviewLine,$_ } } }' in C:\Users\user\OneDrive\코드\바이브연구\note
+ succeeded in 611ms:
+
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1114:
+> C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1115:class DiskDynamoCache(DiskDynamo
+Store):
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1116:    """
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1117:    Special DiskDynamoStore whic
+h adds some helper functions for automatically
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1118:    tracking paths of packages
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1119:    """
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1120:
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1121:    def save(self, package: Comp
+ilePackage) -> None:
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1122:        """
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1123:        Saves a package to a giv
+en path. Grabs backends from PrecompileContext.
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1124:        """
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1125:        key = package.source_id
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1126:        logger.info("Saving Comp
+ilePackage for %s", package.source_id)
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1127:        super().save_package(pac
+kage, key)
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1128:
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1129:    def load(self, fn: Callable[
+..., Any]) -> Optional[PrecompileCacheEntry]:
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1130:        """
+  C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1172:
+> C:\ProgramData\miniforge3\envs\torch\Lib\site-packages\torch\_dynamo\package.py:1173:DynamoCache = DiskDynamoCache(os
+.path.join(cache_dir(), "dynamo"))
+import getpass
+import os
+import re
+import tempfile
+from collections.abc import Generator
+from contextlib import contextmanager
+
+from torch._environment import is_fbcode
+
+
+# Factoring out to file without torch dependencies
+
+
+def cache_dir() -> str:
+    cache_dir = os.environ.get("TORCHINDUCTOR_CACHE_DIR")
+    if cache_dir is None:
+        os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_dir = default_cache_dir()
+    os.makedirs(cache_dir, exist_ok=True)
+    return cache_dir
+
+
+def default_cache_dir() -> str:
+    sanitized_username = re.sub(r'[\\/:*?"<>|]', "_", getpass.getuser())
+    return os.path.join(
+        tempfile.gettempdir() if not is_fbcode() else "/var/tmp",
+        "torchinductor_" + sanitized_username,
+    )
+
+
+def triton_cache_dir(device: int) -> str:
+    if (directory := os.getenv("TRITON_CACHE_DIR")) is not None:
+        return directory
+    return os.path.join(
+        cache_dir(),
+        "triton",
+        str(device),
+    )
+
+
+@contextmanager
+def temporary_cache_dir(directory: str) -> Generator[None, None, None]:
+    from torch._inductor.utils import clear_caches
+
+    original = os.environ.get("TORCHINDUCTOR_CACHE_DIR")
+    os.environ["TORCHINDUCTOR_CACHE_DIR"] = directory
+    try:
+        clear_caches()
+        yield
+    finally:
+        clear_caches()
+        if original is None:
+            del os.environ["TORCHINDUCTOR_CACHE_DIR"]
+        else:
+            os.environ["TORCHINDUCTOR_CACHE_DIR"] = original
+
+
+
+ succeeded in 664ms:
+results/v2/e2_occupancy.json
+85:    "KL": 1.3645512039718284e-05,
+89:    "KL": 1.3645512039539625e-05,
+93:    "KL": 1.364551203969256e-05,
+193: ],
+194: "summary": {
+195:  "A_maxent_logp": {
+196:   "KL_mean": 0.4849337823501746,
+197:   "KL_sd": 0.2542951648144874,
+198:   "dH_mean": -0.9782940300510387,
+199:   "dH_sd": 0.4203692332216765
+200:  },
+201:  "B_logp_minus_logd": {
+202:   "KL_mean": 2.4927387983331777e-06,
+203:   "KL_sd": 3.898091923103137e-06,
+204:   "dH_mean": -5.42162816696834e-06,
+205:   "dH_sd": 2.380553310245179e-05
+206:  },
+207:  "C_maxent_plus_state_corr": {
+208:   "KL_mean": 2.4927967977260616e-06,
+209:   "KL_sd": 3.898054859186779e-06,
+210:   "dH_mean": -5.49271901616466e-06,
+211:   "dH_sd": 2.3783252852334444e-05
+212:  },
+213:  "D_nextstate_ent_plus_state_corr": {
+214:   "KL_mean": 2.4928017600768806e-06,
+215:   "KL_sd": 3.898051688458587e-06,
+216:   "dH_mean": -4.889197066171302e-06,
+217:   "dH_sd": 2.4032163838092256e-05
+218:  }
+results/v2/e2_occupancy_noninj.json
+193: ],
+194: "summary": {
+195:  "A_maxent_logp": {
+196:   "KL_mean": 0.9970938224303225,
+197:   "KL_sd": 0.34889408627042723,
+198:   "dH_mean": -1.242878430944389,
+199:   "dH_sd": 0.44707150940359913
+200:  },
+201:  "B_logp_minus_logd": {
+202:   "KL_mean": 1.0263615383105296e-05,
+203:   "KL_sd": 1.9270485328805132e-05,
+204:   "dH_mean": -6.608772170122457e-05,
+205:   "dH_sd": 0.00012747307528819795
+206:  },
+207:  "C_maxent_plus_state_corr": {
+208:   "KL_mean": 0.03593441239938022,
+209:   "KL_sd": 0.01640088277470839,
+210:   "dH_mean": -0.05246917521935386,
+211:   "dH_sd": 0.046029191856163346
+212:  },
+213:  "D_nextstate_ent_plus_state_corr": {
+214:   "KL_mean": 1.0114536347998392e-05,
+215:   "KL_sd": 1.9334894540903592e-05,
+216:   "dH_mean": -4.915141744280538e-05,
+217:   "dH_sd": 0.00013305843267442203
+218:  }
+
+codex
+NOT READY입니다. 남은 결함은 **HIGH 2건, MED 6건, LOW 4건**입니다.
+
+## 1차 지적별 판정
+
+- **C1 · PARTIAL · MED — 균등 가중 KL 상한.** 철회 배너와 새 반례는 맞습니다. 기존 문서 §3은 여전히 잔차를 NLL의 상계 대리로 설명하고, §5는 상관관계를 상한의 실증으로 해석합니다. **수정** — 철회 범위를 제목, 요약, §3·§5의 해당 주장까지 넓히세요. [docs/05-fm-residual-divergence-theorem.md:3](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:3>) · [같은 파일:33](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:33>) · [같은 파일:44](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:44>)
+- **C4 · PARTIAL · HIGH — 명제 2의 오차항과 극한.** 유한 절단의 정확식과 KL 수치는 바로잡았습니다. 오차 전개에는 밀도의 양수성과 매끄러움이 필요하며, E1 GMM에서도 \(O_x(\tau^2)\)는 고정된 \(x\)에 대한 표기입니다. 또 정확식에 따르면 원래 문장의 \(\exp(-\ell_w)\)에는 \((2\pi e\tau)^{d/2}\)가 곱해져 있어 0으로 갑니다. **수정** — 오차 전개를 E1 GMM의 고정 \(x\)에 한정하고, 극한은 정규화한 Gibbs 밀도로 쓰세요. \(g_\tau=\exp[-(\ell_w-K_\delta)]\)에 대해 Jensen으로 \(g_\tau\le p_{2\tau}\)를 얻으면, 점별 수렴과 Fatou로 \(\int g_\tau\to1\)을 보일 수 있습니다. [docs/v2/34-audit-20261122.md:20](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:20>) · [results/v2/e1_reward_theory.json:47](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:47>)
+- **C6 · PARTIAL · LOW — 이산 MDP의 행동 엔트로피.** 명제 4에 \(+H(A\mid S,S')\)와 상태별 단사 조건을 올바르게 넣었습니다. 비단사 실험에서 C의 평균 KL은 \(0.0359\), D는 \(1.01\times10^{-5}\)입니다. E2 모듈 설명은 여전히 모든 결정론 MDP에서 C와 B가 같다고 적습니다. **수정** — A와 C의 설명에 단사 조건을 붙이고 D의 \(H(S'\mid S)\) 목적식을 추가하세요. [docs/v2/34-audit-20261122.md:26](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:26>) · [src/v2/e2_occupancy.py:8](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:8>) · [results/v2/e2_occupancy_noninj.json:207](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy_noninj.json:207>)
+- **C2·C3 · FIXED — 시간 범위와 KL 양끝 조건.** \(0<t<1\), 유한 2차 모멘트, 큰 잡음에서의 \(W_2\) 상한, 작은 잡음에서의 KL 수렴이 모두 명시됐습니다. 좌표변환 후 가중치 \(t/(1-t)\)도 맞습니다. [docs/v2/34-audit-20261122.md:14](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:14>) · [Yoshida, 상대 엔트로피 미분식](https://www.mdpi.com/1099-4300/19/1/9)
+- **C5 · PARTIAL · MED — 온도 탐색과 명제 3의 증명 수준.** 연속 탐색과 쌍별 필요 온도가 추가됐습니다. 시간 절단과 구적 차수를 바꿔 재계산해도 음수 값은 \(-1.997286\)으로 유지됐습니다. 문서에는 부호를 보증하는 오차 상계가 없고, `best_alpha`는 \([0.05,20]\)에서 한 번 수행한 제한 탐색 결과입니다. **수정** — 탐색 범위와 종료 허용오차를 문서와 JSON에 저장하세요. 모든 양의 온도에 대한 명제로 유지하려면 두 점의 손실 차이 부호를 절단·구적 오차까지 포함해 보증하세요. [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [src/v2/e1_reward_theory.py:123](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:123>) · [results/v2/e1_reward_theory.json:62](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:62>)
+- **C7 · PARTIAL · MED — T1의 적분 절단.** 공간 격자를 넓혀 `gaussian-fit`의 KL–\(B_w\) 차이는 약 \(2.79\times10^{-3}\)에서 \(2.23\times10^{-10}\)으로 줄었습니다. 시간 노드 400→800 비교는 같은 절단점 안에서 수행됩니다. `point-like`에서 시간 적분 상한 \(s=12\to16\)만 바꾸자 \(B_w\)가 \(7.42\times10^{-9}\) 움직여 저장된 차이의 거의 전부를 설명했습니다. **수정** — 혼합 성분별 가우시안 기대값으로 공간 적분을 계산하고, 시간 절단점과 구적 차수의 수렴을 각각 보고하세요. [src/v2/e1_reward_theory.py:25](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:25>) · [같은 파일:71](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:71>) · [results/v2/e1_reward_theory.json:34](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:34>)
+- **C2·C7 · FIXED — \(t=1\) 부근 GMM 수치 안정성.** 성분별 식으로 교체됐습니다. 표준정규의 \(x=0.7\)에서 점수는 \(t=1-10^{-8}\)일 때 \(-0.70000001\), \(t=1\)일 때 \(-0.7\)이었고, 두 시점의 속도도 유한했습니다. [src/v2/gmm_flow.py:63](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:63>)
+- **기존 Gibbs 따름정리 · PARTIAL · MED.** 따름정리는 철회됐고 새 문서는 \(\mathcal R(q)=\mathbb E_q\ell(x)\)를 명시합니다. 기존 문서 §1에는 여전히 \(C(q)\)가 정책경사에 기여하지 않는다고 적혀 있습니다. \(C(q)\)는 점질량에서 0이고 표준정규 끝점에서는 \(\pi/2\)입니다. **수정** — 상수 오프셋과 정책경사 주장을 제거하고 샘플별 \(\ell(x)\)를 Gibbs 지수에 쓰세요. [docs/05-fm-residual-divergence-theorem.md:21](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:21>) · [docs/v2/34-audit-20261122.md:11](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:11>)
+- **E1 모드 질량 · FIXED.** 목표와 Gibbs 분포에 같은 \(\pm1.2\) 창을 적용합니다. 저장된 목표 질량은 \([0.58258,0.29112,0.10766]\)입니다. [src/v2/e1_reward_theory.py:143](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:143>) · [results/v2/e1_reward_theory.json:74](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:74>)
+- **E2 허용오차 · PARTIAL · LOW.** 콘솔과 문서는 \(\mathrm{KL}<10^{-4}\) 기준을 표시합니다. JSON 요약에는 기준과 성공 수가 없고, A의 최적 목적값과의 차이도 저장되지 않습니다. 일대일 링의 고유벡터 해로 재계산한 \(J^*-J_{\rm Adam}\)은 평균 \(3.29\times10^{-5}\), 최대 \(7.23\times10^{-5}\)입니다. **수정** — 허용오차, 성공 수, 최대 KL, A의 목적값 차이를 JSON에 기록하세요. [src/v2/e2_occupancy.py:84](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:84>) · [results/v2/e2_occupancy.json:194](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy.json:194>)
+- **입력 형태와 자료형 · PARTIAL · LOW.** 기존 1차원 점 벡터와 정수 `per_sample` 재현 사례는 통과했습니다. GMM의 마지막 축 검사만으로는 `(2,3,1)` 같은 입력이 통과해 조용히 오계산됩니다. E1 GMM에서 첫 점 \(0\)의 로그 밀도가 \(-2.3050\) 대신 \(-11.1625\)로 나왔습니다. **수정** — 지원할 입력을 `(n,d)`로 정규화한 뒤 축 수와 크기를 검사하고, 잘못된 입력에는 `ValueError`를 내세요. [src/v2/gmm_flow.py:29](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:29>) · [src/v2/e1_reward_theory.py:80](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:80>)
+
+## 이번에 새로 발견한 결함
+
+- **HIGH — 명제 4의 연속 제어 조건이 부족합니다.** 단사여도 연속 \(A\mid S,S'\)는 점질량이므로 이산식의 \(H(A\mid S,S')=0\)을 미분 엔트로피에 적용할 수 없습니다. 예를 들어 \(a\mapsto(a,0)\)는 단사지만 다음 상태는 평면에서 면적이 0인 직선에만 놓입니다. **수정** — 이산 명제에 범위를 명시하세요. 연속 동차원에서 매끄러운 가역 사상과 적분 가능성을 가정하면 상태보정 목적은 \(-\mathrm{KL}-\mathbb E\log|\det D_a f|\)이고, 리워드에 \(+\log|\det D_a f|\)를 더해야 합니다. 행동 차원이 더 작으면 공통 기준측도와 면적 야코비안을 별도로 정의하세요. [docs/v2/34-audit-20261122.md:27](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:27>) · [Koliander 외, 특이분포의 엔트로피와 변수변환](https://arxiv.org/abs/1505.03337)
+- **MED — 명제 3의 음수 온도가 보여 주는 것은 두 점의 밀도 순서입니다.** 재계산에서 \(\log p(2.5)-\log p(0)=0.7799\), Gibbs 로그 밀도 차이는 \(-1.5578/\alpha\)였습니다. 모든 양의 \(\alpha\)에서 두 점의 순서는 뒤집힙니다. 창 안의 확률질량은 밀도를 적분한 값이라 이 부호만으로 순서가 정해지지 않습니다. **수정** — 명제에는 중심점 밀도 순서를 쓰고, 모드 창 질량의 역전은 실제로 측정한 \(\alpha=1\)과 \(\alpha\approx1.624\)에 붙이세요. [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [results/v2/e1_reward_theory.json:85](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:85>)
+- **MED — 표준정규 예외를 모든 단일 가우시안으로 넓혔습니다.** \(p=N(\mu,s^2)\)이면 \(\ell_u(x)=\pi(x-\mu)^2/(4s)+C\)이고 복원 온도는 \(\pi s/2\)입니다. 예를 들어 \(N(0,4)\)의 복원 온도는 \(\pi\)이고, \(s=2/\pi\)이면 \(\alpha=1\)에서도 복원됩니다. **수정** — \(\pi/2\) 공식을 표준정규에 한정하고, 도입부의 실패 주장도 검증한 E1·E2 설정에 맞추세요. [docs/v2/34-audit-20261122.md:4](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:4>) · [같은 파일:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>)
+- **LOW — E1의 T2 격자와 KL 범위가 문서에 빠졌습니다.** 문서의 \([-25,25]\)·10,001점은 T1 격자입니다. T2의 KL과 온도 탐색은 \([-6,6]\)·1,201점에서 두 분포를 각각 재정규화해 계산합니다. **수정** — T2의 격자를 따로 표시하고 KL을 해당 구간에서 재정규화한 값으로 표기하세요. [docs/v2/34-audit-20261122.md:30](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:30>) · [src/v2/e1_reward_theory.py:94](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:94>)
+
+**검증 한계.** E1은 읽기 전용으로 재적분했습니다. E2는 저장된 10개 시드와 고유벡터 해를 대조했습니다. Adam 재실행은 읽기 전용 환경의 임시 디렉터리 초기화에서 멈췄습니다.
+
+NOT READY + 8
+tokens used
+92,149
+NOT READY입니다. 남은 결함은 **HIGH 2건, MED 6건, LOW 4건**입니다.
+
+## 1차 지적별 판정
+
+- **C1 · PARTIAL · MED — 균등 가중 KL 상한.** 철회 배너와 새 반례는 맞습니다. 기존 문서 §3은 여전히 잔차를 NLL의 상계 대리로 설명하고, §5는 상관관계를 상한의 실증으로 해석합니다. **수정** — 철회 범위를 제목, 요약, §3·§5의 해당 주장까지 넓히세요. [docs/05-fm-residual-divergence-theorem.md:3](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:3>) · [같은 파일:33](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:33>) · [같은 파일:44](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:44>)
+- **C4 · PARTIAL · HIGH — 명제 2의 오차항과 극한.** 유한 절단의 정확식과 KL 수치는 바로잡았습니다. 오차 전개에는 밀도의 양수성과 매끄러움이 필요하며, E1 GMM에서도 \(O_x(\tau^2)\)는 고정된 \(x\)에 대한 표기입니다. 또 정확식에 따르면 원래 문장의 \(\exp(-\ell_w)\)에는 \((2\pi e\tau)^{d/2}\)가 곱해져 있어 0으로 갑니다. **수정** — 오차 전개를 E1 GMM의 고정 \(x\)에 한정하고, 극한은 정규화한 Gibbs 밀도로 쓰세요. \(g_\tau=\exp[-(\ell_w-K_\delta)]\)에 대해 Jensen으로 \(g_\tau\le p_{2\tau}\)를 얻으면, 점별 수렴과 Fatou로 \(\int g_\tau\to1\)을 보일 수 있습니다. [docs/v2/34-audit-20261122.md:20](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:20>) · [results/v2/e1_reward_theory.json:47](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:47>)
+- **C6 · PARTIAL · LOW — 이산 MDP의 행동 엔트로피.** 명제 4에 \(+H(A\mid S,S')\)와 상태별 단사 조건을 올바르게 넣었습니다. 비단사 실험에서 C의 평균 KL은 \(0.0359\), D는 \(1.01\times10^{-5}\)입니다. E2 모듈 설명은 여전히 모든 결정론 MDP에서 C와 B가 같다고 적습니다. **수정** — A와 C의 설명에 단사 조건을 붙이고 D의 \(H(S'\mid S)\) 목적식을 추가하세요. [docs/v2/34-audit-20261122.md:26](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:26>) · [src/v2/e2_occupancy.py:8](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:8>) · [results/v2/e2_occupancy_noninj.json:207](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy_noninj.json:207>)
+- **C2·C3 · FIXED — 시간 범위와 KL 양끝 조건.** \(0<t<1\), 유한 2차 모멘트, 큰 잡음에서의 \(W_2\) 상한, 작은 잡음에서의 KL 수렴이 모두 명시됐습니다. 좌표변환 후 가중치 \(t/(1-t)\)도 맞습니다. [docs/v2/34-audit-20261122.md:14](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:14>) · [Yoshida, 상대 엔트로피 미분식](https://www.mdpi.com/1099-4300/19/1/9)
+- **C5 · PARTIAL · MED — 온도 탐색과 명제 3의 증명 수준.** 연속 탐색과 쌍별 필요 온도가 추가됐습니다. 시간 절단과 구적 차수를 바꿔 재계산해도 음수 값은 \(-1.997286\)으로 유지됐습니다. 문서에는 부호를 보증하는 오차 상계가 없고, `best_alpha`는 \([0.05,20]\)에서 한 번 수행한 제한 탐색 결과입니다. **수정** — 탐색 범위와 종료 허용오차를 문서와 JSON에 저장하세요. 모든 양의 온도에 대한 명제로 유지하려면 두 점의 손실 차이 부호를 절단·구적 오차까지 포함해 보증하세요. [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [src/v2/e1_reward_theory.py:123](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:123>) · [results/v2/e1_reward_theory.json:62](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:62>)
+- **C7 · PARTIAL · MED — T1의 적분 절단.** 공간 격자를 넓혀 `gaussian-fit`의 KL–\(B_w\) 차이는 약 \(2.79\times10^{-3}\)에서 \(2.23\times10^{-10}\)으로 줄었습니다. 시간 노드 400→800 비교는 같은 절단점 안에서 수행됩니다. `point-like`에서 시간 적분 상한 \(s=12\to16\)만 바꾸자 \(B_w\)가 \(7.42\times10^{-9}\) 움직여 저장된 차이의 거의 전부를 설명했습니다. **수정** — 혼합 성분별 가우시안 기대값으로 공간 적분을 계산하고, 시간 절단점과 구적 차수의 수렴을 각각 보고하세요. [src/v2/e1_reward_theory.py:25](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:25>) · [같은 파일:71](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:71>) · [results/v2/e1_reward_theory.json:34](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:34>)
+- **C2·C7 · FIXED — \(t=1\) 부근 GMM 수치 안정성.** 성분별 식으로 교체됐습니다. 표준정규의 \(x=0.7\)에서 점수는 \(t=1-10^{-8}\)일 때 \(-0.70000001\), \(t=1\)일 때 \(-0.7\)이었고, 두 시점의 속도도 유한했습니다. [src/v2/gmm_flow.py:63](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:63>)
+- **기존 Gibbs 따름정리 · PARTIAL · MED.** 따름정리는 철회됐고 새 문서는 \(\mathcal R(q)=\mathbb E_q\ell(x)\)를 명시합니다. 기존 문서 §1에는 여전히 \(C(q)\)가 정책경사에 기여하지 않는다고 적혀 있습니다. \(C(q)\)는 점질량에서 0이고 표준정규 끝점에서는 \(\pi/2\)입니다. **수정** — 상수 오프셋과 정책경사 주장을 제거하고 샘플별 \(\ell(x)\)를 Gibbs 지수에 쓰세요. [docs/05-fm-residual-divergence-theorem.md:21](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/05-fm-residual-divergence-theorem.md:21>) · [docs/v2/34-audit-20261122.md:11](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:11>)
+- **E1 모드 질량 · FIXED.** 목표와 Gibbs 분포에 같은 \(\pm1.2\) 창을 적용합니다. 저장된 목표 질량은 \([0.58258,0.29112,0.10766]\)입니다. [src/v2/e1_reward_theory.py:143](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:143>) · [results/v2/e1_reward_theory.json:74](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:74>)
+- **E2 허용오차 · PARTIAL · LOW.** 콘솔과 문서는 \(\mathrm{KL}<10^{-4}\) 기준을 표시합니다. JSON 요약에는 기준과 성공 수가 없고, A의 최적 목적값과의 차이도 저장되지 않습니다. 일대일 링의 고유벡터 해로 재계산한 \(J^*-J_{\rm Adam}\)은 평균 \(3.29\times10^{-5}\), 최대 \(7.23\times10^{-5}\)입니다. **수정** — 허용오차, 성공 수, 최대 KL, A의 목적값 차이를 JSON에 기록하세요. [src/v2/e2_occupancy.py:84](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e2_occupancy.py:84>) · [results/v2/e2_occupancy.json:194](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e2_occupancy.json:194>)
+- **입력 형태와 자료형 · PARTIAL · LOW.** 기존 1차원 점 벡터와 정수 `per_sample` 재현 사례는 통과했습니다. GMM의 마지막 축 검사만으로는 `(2,3,1)` 같은 입력이 통과해 조용히 오계산됩니다. E1 GMM에서 첫 점 \(0\)의 로그 밀도가 \(-2.3050\) 대신 \(-11.1625\)로 나왔습니다. **수정** — 지원할 입력을 `(n,d)`로 정규화한 뒤 축 수와 크기를 검사하고, 잘못된 입력에는 `ValueError`를 내세요. [src/v2/gmm_flow.py:29](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/gmm_flow.py:29>) · [src/v2/e1_reward_theory.py:80](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:80>)
+
+## 이번에 새로 발견한 결함
+
+- **HIGH — 명제 4의 연속 제어 조건이 부족합니다.** 단사여도 연속 \(A\mid S,S'\)는 점질량이므로 이산식의 \(H(A\mid S,S')=0\)을 미분 엔트로피에 적용할 수 없습니다. 예를 들어 \(a\mapsto(a,0)\)는 단사지만 다음 상태는 평면에서 면적이 0인 직선에만 놓입니다. **수정** — 이산 명제에 범위를 명시하세요. 연속 동차원에서 매끄러운 가역 사상과 적분 가능성을 가정하면 상태보정 목적은 \(-\mathrm{KL}-\mathbb E\log|\det D_a f|\)이고, 리워드에 \(+\log|\det D_a f|\)를 더해야 합니다. 행동 차원이 더 작으면 공통 기준측도와 면적 야코비안을 별도로 정의하세요. [docs/v2/34-audit-20261122.md:27](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:27>) · [Koliander 외, 특이분포의 엔트로피와 변수변환](https://arxiv.org/abs/1505.03337)
+- **MED — 명제 3의 음수 온도가 보여 주는 것은 두 점의 밀도 순서입니다.** 재계산에서 \(\log p(2.5)-\log p(0)=0.7799\), Gibbs 로그 밀도 차이는 \(-1.5578/\alpha\)였습니다. 모든 양의 \(\alpha\)에서 두 점의 순서는 뒤집힙니다. 창 안의 확률질량은 밀도를 적분한 값이라 이 부호만으로 순서가 정해지지 않습니다. **수정** — 명제에는 중심점 밀도 순서를 쓰고, 모드 창 질량의 역전은 실제로 측정한 \(\alpha=1\)과 \(\alpha\approx1.624\)에 붙이세요. [docs/v2/34-audit-20261122.md:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>) · [results/v2/e1_reward_theory.json:85](<C:/Users/user/OneDrive/코드/바이브연구/note/results/v2/e1_reward_theory.json:85>)
+- **MED — 표준정규 예외를 모든 단일 가우시안으로 넓혔습니다.** \(p=N(\mu,s^2)\)이면 \(\ell_u(x)=\pi(x-\mu)^2/(4s)+C\)이고 복원 온도는 \(\pi s/2\)입니다. 예를 들어 \(N(0,4)\)의 복원 온도는 \(\pi\)이고, \(s=2/\pi\)이면 \(\alpha=1\)에서도 복원됩니다. **수정** — \(\pi/2\) 공식을 표준정규에 한정하고, 도입부의 실패 주장도 검증한 E1·E2 설정에 맞추세요. [docs/v2/34-audit-20261122.md:4](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:4>) · [같은 파일:24](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:24>)
+- **LOW — E1의 T2 격자와 KL 범위가 문서에 빠졌습니다.** 문서의 \([-25,25]\)·10,001점은 T1 격자입니다. T2의 KL과 온도 탐색은 \([-6,6]\)·1,201점에서 두 분포를 각각 재정규화해 계산합니다. **수정** — T2의 격자를 따로 표시하고 KL을 해당 구간에서 재정규화한 값으로 표기하세요. [docs/v2/34-audit-20261122.md:30](<C:/Users/user/OneDrive/코드/바이브연구/note/docs/v2/34-audit-20261122.md:30>) · [src/v2/e1_reward_theory.py:94](<C:/Users/user/OneDrive/코드/바이브연구/note/src/v2/e1_reward_theory.py:94>)
+
+**검증 한계.** E1은 읽기 전용으로 재적분했습니다. E2는 저장된 10개 시드와 고유벡터 해를 대조했습니다. Adam 재실행은 읽기 전용 환경의 임시 디렉터리 초기화에서 멈췄습니다.
+
+NOT READY + 8

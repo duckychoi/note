@@ -1,0 +1,8 @@
+너는 깐깐한 수학/수치해석 리뷰어다. 한국어로 답하라. 읽기 전용.
+대상: docs/v2/34-audit-20261122.md, src/v2/gmm_flow.py, src/v2/e1_reward_theory.py, src/v2/e2_occupancy.py,
+results/v2/e1_reward_theory.json, results/v2/e2_occupancy.json, results/v2/e2_occupancy_noninj.json, docs/05-fm-residual-divergence-theorem.md(철회 표시만),
+docs/v2/34_FM_reward_research_note.html(수치·서술이 audit 문서와 일치하는지).
+직전 r3 검수: review/검수_fm34_theory_r3_20261122_codex최종_sol.txt (HIGH 1, MED 6, LOW 7).
+할 일: (1) r3 지적 하나하나에 FIXED / PARTIAL / NOT FIXED 판정과 근거(파일:줄). 특히 E2 비일대일 A 를 정확해(exact_A)로 교체한 것, 명제 2 의 정규화·표본분포 엔트로피, T1 수렴 한 변수씩, 온도 탐색 성공 확인, 명제 4 저차원 정칙성, 창 질량 끝점, KL 급수, main 가드, GMM 생성자 검사.
+(2) 새 결함이 있으면 심각도(HIGH/MED/LOW)와 재현 근거. 필요하면 메모리에서 재계산해도 되지만 파일은 고치지 마라.
+마지막 줄: READY 또는 NOT READY + 남은 결함 수.

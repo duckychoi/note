@@ -1,0 +1,79 @@
+{
+ "speed_mean": {
+  "expert_ho": 16.63769908061269,
+  "medium": 11.588688743117782,
+  "simple": 7.384498533403673,
+  "stand": -0.0008929957622657604,
+  "random": -0.08770194298224634
+ },
+ "unif": {
+  "median_z": {
+   "expert_ho": 0.20533746480941772,
+   "medium": -2.462308883666992,
+   "simple": -5.911342620849609,
+   "stand": -3.6077370643615723,
+   "random": -6.835879325866699
+  },
+  "spearman_speed_nonexpert": 0.7412893819730741,
+  "auc_expert_gt_medium": 0.9244535,
+  "auc_medium_gt_simple": 0.7783615,
+  "auc_medium_gt_stand": 0.627805,
+  "auc_simple_gt_stand": 0.02497925
+ },
+ "like_1e-3": {
+  "median_z": {
+   "expert_ho": 0.12287355959415436,
+   "medium": -2.9920401573181152,
+   "simple": -5.786518096923828,
+   "stand": -2.670055389404297,
+   "random": -5.860832691192627
+  },
+  "spearman_speed_nonexpert": 0.6103396313427675,
+  "auc_expert_gt_medium": 0.95062275,
+  "auc_medium_gt_simple": 0.7309025,
+  "auc_medium_gt_stand": 0.43345025,
+  "auc_simple_gt_stand": 0.01533925
+ },
+ "like_1e-2": {
+  "median_z": {
+   "expert_ho": 0.1691891849040985,
+   "medium": -3.66741943359375,
+   "simple": -7.310141563415527,
+   "stand": -3.728884696960449,
+   "random": -7.495246887207031
+  },
+  "spearman_speed_nonexpert": 0.6325559025797827,
+  "auc_expert_gt_medium": 0.9603655,
+  "auc_medium_gt_simple": 0.74734525,
+  "auc_medium_gt_stand": 0.49516375,
+  "auc_simple_gt_stand": 0.0183275
+ },
+ "like_1e-1": {
+  "median_z": {
+   "expert_ho": 0.24632716178894043,
+   "medium": -3.9398951530456543,
+   "simple": -8.658536911010742,
+   "stand": -4.5378875732421875,
+   "random": -8.576068878173828
+  },
+  "spearman_speed_nonexpert": 0.712981670789101,
+  "auc_expert_gt_medium": 0.96238475,
+  "auc_medium_gt_simple": 0.79749775,
+  "auc_medium_gt_stand": 0.5548715,
+  "auc_simple_gt_stand": 0.00862325
+ },
+ "like_0.3": {
+  "median_z": {
+   "expert_ho": 0.2698515057563782,
+   "medium": -3.1533868312835693,
+   "simple": -7.221253871917725,
+   "stand": -3.6111669540405273,
+   "random": -6.935809135437012
+  },
+  "spearman_speed_nonexpert": 0.7175061405973928,
+  "auc_expert_gt_medium": 0.94113025,
+  "auc_medium_gt_simple": 0.78429425,
+  "auc_medium_gt_stand": 0.5424295,
+  "auc_simple_gt_stand": 0.004189
+ }
+}

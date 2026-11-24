@@ -1,0 +1,39 @@
+members 6 [('oracle', 'M', 0.5, 0), ('oracle', 'M', 0.5, 1), ('oracle', 'M', 0.5, 2), ('oracle', 'M', 1.0, 0), ('oracle', 'M', 1.0, 1), ('oracle', 'M', 1.0, 2)]
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+2000 sps 880  Tb_med [None, None, None, None, None] nlag [0, 0, 0, 0, 0]
+  25000 sps 127 min 3.3 | oracle/M/0.5: v0.63 ok0.0 s-0.43,v0.77 ok0.0 s-0.28,v0.61 ok0.0 s-0.41 | oracle/M/1.0: v0.58 ok0.0 s-0.47,v0.61 ok0.0 s-0.13,v0.66 ok0.0 s-0.47
+  50000 sps 113 min 7.4 | oracle/M/0.5: v1.01 ok1.0 s-0.02,v1.08 ok1.0 s-0.24,v0.85 ok0.0 s-0.11 | oracle/M/1.0: v1.01 ok1.0 s-0.08,v0.92 ok1.0 s-0.06,v0.92 ok0.5 s-0.33
+  75000 sps 109 min 11.6 | oracle/M/0.5: v0.95 ok1.0 s-0.09,v1.00 ok1.0 s-0.30,v0.94 ok1.0 s-0.01 | oracle/M/1.0: v0.92 ok0.5 s-0.02,v0.93 ok0.5 s-0.01,v0.98 ok1.0 s-0.23
+ 100000 sps 77 min 21.7 | oracle/M/0.5: v0.93 ok1.0 s-0.02,v1.00 ok1.0 s-0.08,v1.07 ok1.0 s+0.04 | oracle/M/1.0: v0.99 ok1.0 s+0.04,v0.98 ok1.0 s+0.09,v1.02 ok1.0 s-0.12
+ 125000 sps 80 min 26.1 | oracle/M/0.5: v0.94 ok1.0 s-0.01,v1.04 ok1.0 s+0.02,v1.02 ok1.0 s+0.05 | oracle/M/1.0: v0.98 ok1.0 s-0.01,v0.98 ok1.0 s+0.01,v1.10 ok0.5 s+0.09
+ 150000 sps 70 min 35.6 | oracle/M/0.5: v0.93 ok1.0 s+0.07,v1.00 ok1.0 s-0.13,v0.98 ok1.0 s+0.08 | oracle/M/1.0: v1.00 ok1.0 s-0.10,v0.99 ok1.0 s+0.05,v1.04 ok1.0 s+0.04
+ 175000 sps 73 min 39.9 | oracle/M/0.5: v0.95 ok1.0 s+0.01,v1.01 ok1.0 s+0.05,v1.01 ok1.0 s+0.13 | oracle/M/1.0: v0.96 ok1.0 s-0.03,v0.96 ok1.0 s-0.16,v1.02 ok1.0 s+0.01
+ 200000 sps 61 min 55.1 | oracle/M/0.5: v0.97 ok1.0 s-0.00,v1.04 ok1.0 s+0.06,v1.03 ok1.0 s-0.22 | oracle/M/1.0: v0.96 ok1.0 s-0.09,v1.03 ok1.0 s-0.03,v0.96 ok1.0 s-0.02
+ 225000 sps 63 min 59.8 | oracle/M/0.5: v0.97 ok1.0 s-0.02,v1.03 ok1.0 s+0.00,v1.00 ok1.0 s-0.03 | oracle/M/1.0: v0.94 ok1.0 s-0.10,v1.04 ok1.0 s-0.05,v1.01 ok1.0 s+0.03
+ 250000 sps 66 min 63.4 | oracle/M/0.5: v0.99 ok1.0 s-0.05,v0.99 ok1.0 s+0.00,v1.01 ok1.0 s-0.13 | oracle/M/1.0: v0.97 ok1.0 s+0.00,v1.00 ok1.0 s-0.03,v1.08 ok1.0 s+0.07
+ 275000 sps 68 min 67.6 | oracle/M/0.5: v0.99 ok1.0 s-0.03,v0.99 ok1.0 s-0.03,v0.95 ok1.0 s-0.10 | oracle/M/1.0: v0.94 ok1.0 s+0.01,v1.02 ok1.0 s+0.04,v0.98 ok1.0 s+0.03
+ 300000 sps 69 min 72.6 | oracle/M/0.5: v1.00 ok1.0 s-0.11,v0.98 ok1.0 s+0.00,v1.00 ok1.0 s-0.04 | oracle/M/1.0: v0.98 ok1.0 s+0.01,v0.96 ok1.0 s+0.02,v1.04 ok1.0 s+0.03
+DONE s4prep 72.84589140017827 min

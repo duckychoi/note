@@ -1,0 +1,103 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+[    1.1s] base 2 F pass 8 / 8 v [0.97, 0.95, 1.01, 0.95, 0.94, 0.93, 0.93, 0.96] lag [0.167, 0.167, 0.007, 0.029, 0.087, 0.25, 0.102, 0.014]
+[    2.2s] base 2 R pass 6 / 8 v [1.04, 1.01, 1.02, 1.0, 1.0, 1.02] lag [0.548, 0.394, 0.583, 0.428, 0.469, 0.458]
+[    2.2s] base 2 lagF 0.101 lagR 0.479 psd_rel_diff 0.665 auc {'psd': 1.0, 'zero_lag': 1.0, 'signed_area': 1.0, 'cross_spectrum': 1.0} auc_order 1.0
+[    3.4s] base 4 F pass 8 / 8 v [0.93, 0.94, 0.96, 0.97, 0.95, 0.92, 0.95, 0.93] lag [0.083, 0.755, 0.689, 0.755, 0.0, 0.083, 0.083, 0.083]
+[    4.6s] base 4 R pass 7 / 8 v [0.96, 0.98, 0.99, 0.99, 0.99, 0.94, 0.96] lag [0.407, 0.397, 0.454, 0.421, 0.397, 0.383, 0.409]
+[    4.6s] base 4 lagF 0.965 lagR 0.41 psd_rel_diff 0.493 auc {'psd': 1.0, 'zero_lag': 1.0, 'signed_area': 1.0, 'cross_spectrum': 1.0} auc_order 1.0
+[    5.8s] base 5 F pass 8 / 8 v [1.02, 1.0, 1.05, 1.02, 0.95, 1.04, 0.95, 1.03] lag [0.794, 0.767, 0.745, 0.738, 0.76, 0.799, 0.747, 0.824]
+[    6.9s] base 5 R pass 6 / 8 v [0.98, 0.98, 1.02, 1.01, 1.04, 0.97] lag [0.5, 0.5, 0.417, 0.432, 0.413, 0.5]
+[    6.9s] base 5 lagF 0.772 lagR 0.46 psd_rel_diff 0.46 auc {'psd': 1.0, 'zero_lag': 1.0, 'signed_area': 1.0, 'cross_spectrum': 1.0} auc_order 1.0
+[    8.0s] 2 0 64 task task 4 lag 0.053 reachF True reachR False
+[   10.4s] 2 0 64 oracle_F task 3 lag 0.12 reachF False reachR False
+[   12.5s] 2 0 64 oracle_R task 1 lag 0.507 reachF False reachR False
+[   13.6s] 2 0 64 cross_F task 0 lag 0.5 reachF False reachR False
+[   14.7s] 2 0 64 cross_R task 0 lag 0.344 reachF False reachR False
+[   15.7s] 2 1 64 task task 4 lag 0.344 reachF False reachR False
+[   17.5s] 2 1 64 oracle_F task 4 lag 0.123 reachF True reachR False
+[   19.3s] 2 1 64 oracle_R task 3 lag 0.472 reachF False reachR False
+[   20.4s] 2 1 64 cross_F task 2 lag 0.208 reachF False reachR False
+[   21.7s] 2 1 64 cross_R task 0 lag 0.146 reachF False reachR False
+[   23.0s] 2 2 64 task task 2 lag 0.32 reachF False reachR False
+[   25.3s] 2 2 64 oracle_F task 3 lag 0.192 reachF False reachR False
+[   27.5s] 2 2 64 oracle_R task 1 lag 0.442 reachF False reachR False
+[   28.7s] 2 2 64 cross_F task 4 lag 0.499 reachF False reachR True
+[   29.8s] 2 2 64 cross_R task 0 lag 0.183 reachF False reachR False
+[   33.2s] 2 0 256 task task 4 lag 0.342 reachF False reachR False
+[   40.2s] 2 0 256 oracle_F task 4 lag 0.18 reachF True reachR False
+[   48.3s] 2 0 256 oracle_R task 4 lag 0.411 reachF False reachR True
+[   52.2s] 2 0 256 cross_F task 3 lag 0.23 reachF False reachR False
+[   56.0s] 2 0 256 cross_R task 0 lag 0.243 reachF False reachR False
+[   59.2s] 2 1 256 task task 4 lag 0.171 reachF True reachR False
+[   66.5s] 2 1 256 oracle_F task 4 lag 0.083 reachF True reachR False
+[   74.1s] 2 1 256 oracle_R task 1 lag 0.482 reachF False reachR False
+[   78.0s] 2 1 256 cross_F task 4 lag 0.313 reachF False reachR False
+[   82.1s] 2 1 256 cross_R task 0 lag None reachF False reachR False
+[   85.6s] 2 2 256 task task 4 lag 0.194 reachF True reachR False
+[   93.6s] 2 2 256 oracle_F task 3 lag 0.094 reachF False reachR False
+[  101.3s] 2 2 256 oracle_R task 4 lag 0.486 reachF False reachR True
+[  105.4s] 2 2 256 cross_F task 4 lag 0.349 reachF False reachR False
+[  109.5s] 2 2 256 cross_R task 1 lag 0.344 reachF False reachR False
+[  110.7s] 4 0 64 task task 4 lag 0.146 reachF False reachR False
+[  113.3s] 4 0 64 oracle_F task 1 lag 0.87 reachF False reachR False
+[  115.8s] 4 0 64 oracle_R task 4 lag 0.395 reachF False reachR True
+[  117.0s] 4 0 64 cross_F task 0 lag 0.266 reachF False reachR False
+[  118.2s] 4 0 64 cross_R task 0 lag 0.153 reachF False reachR False
+[  119.2s] 4 1 64 task task 4 lag 0.892 reachF True reachR False
+[  121.4s] 4 1 64 oracle_F task 4 lag 0.083 reachF True reachR False
+[  123.4s] 4 1 64 oracle_R task 0 lag 0.408 reachF False reachR False
+[  124.4s] 4 1 64 cross_F task 4 lag 0.348 reachF False reachR True
+[  125.5s] 4 1 64 cross_R task 1 lag 0.17 reachF False reachR False
+[  126.4s] 4 2 64 task task 4 lag 0.308 reachF False reachR True
+[  128.3s] 4 2 64 oracle_F task 4 lag 0.904 reachF True reachR False
+[  130.4s] 4 2 64 oracle_R task 4 lag 0.461 reachF False reachR True
+[  131.5s] 4 2 64 cross_F task 0 lag 0.084 reachF False reachR False
+[  132.8s] 4 2 64 cross_R task 2 lag 0.352 reachF False reachR False
+[  136.2s] 4 0 256 task task 4 lag 0.156 reachF False reachR False
+[  144.3s] 4 0 256 oracle_F task 4 lag 0.915 reachF True reachR False
+[  151.6s] 4 0 256 oracle_R task 4 lag 0.388 reachF False reachR True
+[  156.0s] 4 0 256 cross_F task 2 lag 0.263 reachF False reachR False
+[  160.9s] 4 0 256 cross_R task 4 lag 0.109 reachF False reachR False
+[  164.6s] 4 1 256 task task 4 lag 0.299 reachF False reachR True
+[  172.2s] 4 1 256 oracle_F task 4 lag 0.983 reachF True reachR False
+[  181.1s] 4 1 256 oracle_R task 3 lag 0.436 reachF False reachR False
+[  185.4s] 4 1 256 cross_F task 4 lag 0.306 reachF False reachR True
+[  189.4s] 4 1 256 cross_R task 1 lag 0.549 reachF False reachR False
+[  192.7s] 4 2 256 task task 4 lag 0.312 reachF False reachR True
+[  200.0s] 4 2 256 oracle_F task 3 lag 0.974 reachF False reachR False
+[  207.2s] 4 2 256 oracle_R task 4 lag 0.377 reachF False reachR True
+[  210.9s] 4 2 256 cross_F task 4 lag 0.342 reachF False reachR True
+[  214.5s] 4 2 256 cross_R task 2 lag 0.219 reachF False reachR False
+[  215.5s] 5 0 64 task task 4 lag 0.924 reachF False reachR False
+[  217.4s] 5 0 64 oracle_F task 4 lag 0.856 reachF True reachR False
+[  219.5s] 5 0 64 oracle_R task 1 lag 0.428 reachF False reachR False
+[  220.5s] 5 0 64 cross_F task 3 lag 0.175 reachF False reachR False
+[  221.6s] 5 0 64 cross_R task 0 lag 0.265 reachF False reachR False
+[  222.6s] 5 1 64 task task 4 lag 0.982 reachF False reachR False
+[  224.8s] 5 1 64 oracle_F task 0 lag 0.751 reachF False reachR False
+[  226.8s] 5 1 64 oracle_R task 2 lag 0.433 reachF False reachR False
+[  227.9s] 5 1 64 cross_F task 4 lag 0.412 reachF False reachR True
+[  228.9s] 5 1 64 cross_R task 4 lag 0.397 reachF False reachR True
+[  229.9s] 5 2 64 task task 4 lag 0.626 reachF False reachR False
+[  232.0s] 5 2 64 oracle_F task 3 lag 0.832 reachF False reachR False
+[  233.8s] 5 2 64 oracle_R task 3 lag 0.355 reachF False reachR False
+[  234.9s] 5 2 64 cross_F task 3 lag 0.714 reachF False reachR False
+[  235.9s] 5 2 64 cross_R task 3 lag 0.238 reachF False reachR False
+[  239.1s] 5 0 256 task task 4 lag 0.198 reachF False reachR False
+[  245.9s] 5 0 256 oracle_F task 2 lag 0.866 reachF False reachR False
+[  252.5s] 5 0 256 oracle_R task 4 lag 0.388 reachF False reachR True
+[  256.0s] 5 0 256 cross_F task 4 lag 0.821 reachF True reachR False
+[  259.5s] 5 0 256 cross_R task 0 lag 0.509 reachF False reachR False
+[  262.7s] 5 1 256 task task 4 lag 0.646 reachF False reachR False
+[  269.5s] 5 1 256 oracle_F task 4 lag 0.758 reachF True reachR False
+[  276.0s] 5 1 256 oracle_R task 0 lag 0.412 reachF False reachR False
+[  279.5s] 5 1 256 cross_F task 0 lag 0.274 reachF False reachR False
+[  283.1s] 5 1 256 cross_R task 4 lag 0.36 reachF False reachR True
+[  286.3s] 5 2 256 task task 4 lag 0.553 reachF False reachR True
+[  292.8s] 5 2 256 oracle_F task 4 lag 0.742 reachF True reachR False
+[  299.4s] 5 2 256 oracle_R task 4 lag 0.386 reachF False reachR True
+[  303.0s] 5 2 256 cross_F task 4 lag 0.001 reachF False reachR False
+[  306.6s] 5 2 256 cross_R task 4 lag 0.244 reachF False reachR False
+[  306.6s] SUMMARY {"task->F@64": "2/9", "task->R@64": "1/9", "oracle_F->F@64": "4/9", "oracle_R->R@64": "2/9", "cross_F->F@64": "0/9", "cross_R->R@64": "1/9", "oracle_F->R@64": "0/9", "oracle_R->F@64": "0/9", "task->F@256": "2/9", "task->R@256": "3/9", "oracle_F->F@256": "6/9", "oracle_R->R@256": "6/9", "cross_F->F@256": "1/9", "cross_R->R@256": "1/9", "oracle_F->R@256": "0/9", "oracle_R->F@256": "0/9"}
+[  306.6s] VERDICT {"a_pass": true, "b_pass": false, "okF": 6, "okR": 6, "n": 9, "usable_bases": [2, 4, 5]}

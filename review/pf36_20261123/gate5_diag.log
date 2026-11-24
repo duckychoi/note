@@ -1,0 +1,16 @@
+C:\Users\user\OneDrive\코드\바이브연구\note\review\pf36_20261123\pf36_g5.py:57: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  tl.append(float(loss))
+[   71.8s] 98304 7100 old epochs 31 nll -0.735 val energy 0.0251 max batch loss 10.59
+[  114.7s] 98304 7100 new epochs 40 nll -0.742 val energy 0.0261 max batch loss 10.59
+[  169.1s] 98304 7200 old epochs 51 nll -1.752 val energy 0.0222 max batch loss 10.57
+[  214.8s] 98304 7200 new epochs 40 nll -0.047 val energy 0.0316 max batch loss 10.57
+[  266.5s] 98304 7300 old epochs 44 nll -1.352 val energy 0.023 max batch loss 10.83
+[  317.9s] 98304 7300 new epochs 40 nll -0.604 val energy 0.0264 max batch loss 10.83
+[  385.5s] 147456 7100 old epochs 31 nll -1.585 val energy 0.0246 max batch loss 10.58
+[  461.1s] 147456 7100 new epochs 40 nll -1.671 val energy 0.0232 max batch loss 10.58
+[  546.8s] 147456 7200 old epochs 47 nll -2.278 val energy 0.0245 max batch loss 10.54
+[  625.4s] 147456 7200 new epochs 40 nll -0.761 val energy 0.0286 max batch loss 10.54
+[  706.9s] 147456 7300 old epochs 41 nll -1.88 val energy 0.0234 max batch loss 10.81
+[  790.3s] 147456 7300 new epochs 40 nll -1.562 val energy 0.0252 max batch loss 10.81
+[  790.3s] adopt_new False wins 2 sd old/new 0.4781041436056954 0.5616875059222192

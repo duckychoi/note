@@ -1,0 +1,198 @@
+{
+  "push": {
+    "retrieval": [
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 606,
+        "direction_correct": 31,
+        "sensitivity": 0.41333333333333333,
+        "precision": 0.05115511551155116,
+        "values": [
+          0.43916015624999993,
+          0.4602539062499999
+        ]
+      }
+    ],
+    "mixture": [
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 575,
+        "direction_correct": 27,
+        "sensitivity": 0.36,
+        "precision": 0.04695652173913043,
+        "values": [
+          0.43720703124999993,
+          0.44843749999999993
+        ]
+      },
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 645,
+        "direction_correct": 26,
+        "sensitivity": 0.3466666666666667,
+        "precision": 0.040310077519379844,
+        "values": [
+          0.43623046874999993,
+          0.45234374999999993
+        ]
+      },
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 637,
+        "direction_correct": 29,
+        "sensitivity": 0.38666666666666666,
+        "precision": 0.04552590266875981,
+        "values": [
+          0.4349609375,
+          0.4501953124999999
+        ]
+      }
+    ],
+    "flow": [
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 714,
+        "direction_correct": 27,
+        "sensitivity": 0.36,
+        "precision": 0.037815126050420166,
+        "values": [
+          0.43388671874999996,
+          0.45996093749999994
+        ]
+      },
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 511,
+        "direction_correct": 23,
+        "sensitivity": 0.30666666666666664,
+        "precision": 0.04500978473581213,
+        "values": [
+          0.4107421874999999,
+          0.44306640624999993
+        ]
+      },
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 735,
+        "direction_correct": 33,
+        "sensitivity": 0.44,
+        "precision": 0.044897959183673466,
+        "values": [
+          0.4353515624999999,
+          0.4466796874999999
+        ]
+      }
+    ],
+    "frequencies": [
+      {
+        "true_strict_pairs": 75,
+        "predicted_reversals": 512,
+        "direction_correct": 15,
+        "sensitivity": 0.2,
+        "precision": 0.029296875,
+        "values": [
+          0.4423828124999999,
+          0.4365234374999999
+        ]
+      }
+    ]
+  },
+  "press": {
+    "retrieval": [
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 476,
+        "direction_correct": 1,
+        "sensitivity": 0.2,
+        "precision": 0.0021008403361344537,
+        "values": [
+          0.4380859374999999,
+          0.39082031249999993
+        ]
+      }
+    ],
+    "mixture": [
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 356,
+        "direction_correct": 1,
+        "sensitivity": 0.2,
+        "precision": 0.0028089887640449437,
+        "values": [
+          0.42822265624999994,
+          0.3885742187499999
+        ]
+      },
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 319,
+        "direction_correct": 1,
+        "sensitivity": 0.2,
+        "precision": 0.003134796238244514,
+        "values": [
+          0.42998046874999996,
+          0.3970703124999999
+        ]
+      },
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 356,
+        "direction_correct": 0,
+        "sensitivity": 0.0,
+        "precision": 0.0,
+        "values": [
+          0.4237304687499999,
+          0.39628906249999996
+        ]
+      }
+    ],
+    "flow": [
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 0,
+        "direction_correct": 0,
+        "sensitivity": 0.0,
+        "precision": null,
+        "values": [
+          0.4394531249999999,
+          0.4013671874999999
+        ]
+      },
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 0,
+        "direction_correct": 0,
+        "sensitivity": 0.0,
+        "precision": null,
+        "values": [
+          0.4391601562499999,
+          0.4010742187499999
+        ]
+      },
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 0,
+        "direction_correct": 0,
+        "sensitivity": 0.0,
+        "precision": null,
+        "values": [
+          0.4394531249999999,
+          0.4013671874999999
+        ]
+      }
+    ],
+    "frequencies": [
+      {
+        "true_strict_pairs": 5,
+        "predicted_reversals": 0,
+        "direction_correct": 0,
+        "sensitivity": 0.0,
+        "precision": null,
+        "values": [
+          0.4394531249999999,
+          0.4013671874999999
+        ]
+      }
+    ]
+  }
+}

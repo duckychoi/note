@@ -1,0 +1,17 @@
+너는 NeurIPS/ICML/ICLR 영역의 깐깐한 시니어 리뷰어다(모방학습·확산/flow 생성모델·RL). 한국어로 답하라. 읽기 전용, 파일 수정 금지.
+연구 #34 "Phase-RoPE × Flow-Matching 모션 리워드"를 5대 AI 학회 게재 수준에서 냉정하게 평가하라.
+
+읽을 것:
+- docs/v2/34_FM_reward_research_note.html (연구노트 전체: 원래 주장, 기술별 전→후, 이론 L1·T1·P2·P3·P4, E1/E2, 선행연구, 검수이력, §7 MuJoCo 진단)
+- docs/v2/34-audit-20261122.md (이론 정본)
+- src/v2/il/common.py, vec.py, train_multi.py, phase_util.py, train_phase.py, aggregate.py (실험 코드)
+- 실험 로그: E:/0.Project/fm34_env/main/logs/Hopper-v5.log (본실험 v1, 진행/완료), E:/0.Project/fm34_env/main/*.json (있으면)
+- 이론 검수는 review/검수_fm34_theory_r9_20261122_codex최종_sol.txt 에서 READY 났다. 이론 세부를 다시 검수하지 말고 '연구로서의 가치'를 보라.
+
+평가 항목(각각 판정과 근거, 파일:줄):
+1. 기여의 독창성과 크기: SMP(2512.03028), SMILING(2410.13855), NEAR(2501.14856), DiffAIL, DRAIL, FMP(2609.15631) 대비 남는 기여(편향 진단·보정 + 위상조건 RoPE)가 학회 기여로 충분한가. 부족하면 무엇을 더해야 하나.
+2. 현재 실험의 문제: Hopper 수익에서 AMP(약 1970) > 우리(약 1000). 노트 §7의 진단(꼬리 거대→정규화 압착, HalfCheetah '고리 안쪽 빈 곳' OOD 우도)이 타당한가. 제안한 대책(우도 바닥값 log max(p,ε)−log max(d,ε), 멤버별 δ)이 AMP를 이길 가능성은? 더 나은 대안(예: annealed noise, 학습자 음성 샘플, score 기반 shaping, 리워드 변환의 이론적 정당화)을 우선순위와 함께 제시하라.
+3. 실험 설계가 학회 수준인가: 비교군(AMP, SMP, SMILING 미포함?), 지표(수익·MMD·SW2·kNN 엔트로피), seed 수, 환경, 위상 실험(PLV·π점프·템포) 설계의 빈틈. 리뷰어가 반드시 요구할 실험 목록.
+4. 코드에서 결과를 왜곡할 수 있는 결함(공정성: 학습 env 무종료, 리워드 정규화, 학습자 flow 갱신 주기, 평가 방식 등).
+5. 이 연구를 계속할 가치 판단: 계속/방향전환/중단 중 하나를 근거와 함께 추천. 방향전환이면 구체적 재정의.
+마지막에: 우선순위 TOP 5 행동 목록과, 한 줄 총평.

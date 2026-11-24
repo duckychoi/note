@@ -1,0 +1,1 @@
+Round 4 (Korean, concise). r3 NOT READY (codex_s4_r3_sol.txt). Read PREREG.md "### S4 수정 3" and the patched sac34_s4.py, agg34_s4.py, demos34.py, agg34.py (s4prep). Check only whether r3 blocking items are resolved and no new verdict-changing bug. End with READY or NOT READY + blocking items.

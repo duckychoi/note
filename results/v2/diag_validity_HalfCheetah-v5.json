@@ -1,0 +1,22 @@
+{
+ "none": {
+  "T1 reversed": 0.999998,
+  "T1 skip5": 0.9999985,
+  "T2 beat+pi/4": 0.50067325,
+  "T2 beat+pi/2": 0.5029285,
+  "T2 beat+pi": 0.507033,
+  "T3 start+half cycle": 0.50479325,
+  "T4 medium>rest": 0.4460335,
+  "T4 simple>rest": 0.02983
+ },
+ "film4": {
+  "T1 reversed": 0.99999675,
+  "T1 skip5": 0.9999995,
+  "T2 beat+pi/4": 0.9997475,
+  "T2 beat+pi/2": 0.99993375,
+  "T2 beat+pi": 0.9999765,
+  "T3 start+half cycle": 0.5025035,
+  "T4 medium>rest": 0.75299025,
+  "T4 simple>rest": 0.43853575
+ }
+}

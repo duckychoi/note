@@ -1,0 +1,8 @@
+gauss A_stationary {'sa_const': 0.071, 'pi_lin': 0.0589, 'pi_huber': 0.0572, 'stw': 0.0783} stw-pihuber ms [0.0029, 0.0003]
+gauss B_ramp {'sa_const': 0.1772, 'pi_lin': 0.0552, 'pi_huber': 0.0522, 'stw': 0.0784} stw-pihuber ms [0.0034, 0.0003]
+gauss D_const_dist {'sa_const': 0.4165, 'pi_lin': 0.0676, 'pi_huber': 0.085, 'stw': 0.0878} stw-pihuber ms [0.0005, 0.0003]
+gauss E_sine_dist {'sa_const': 0.3775, 'pi_lin': 0.2852, 'pi_huber': 0.2843, 'stw': 0.3042} stw-pihuber ms [0.0117, 0.0011]
+t1.2 A_stationary {'sa_const': 2.8203, 'pi_lin': 2.1429, 'pi_huber': 0.0593, 'stw': 0.1278} stw-pihuber ms [0.0128, 0.0012]
+t1.2 B_ramp {'sa_const': 2.8533, 'pi_lin': 2.1654, 'pi_huber': 0.0544, 'stw': 0.128} stw-pihuber ms [0.0134, 0.0012]
+t1.2 D_const_dist {'sa_const': 5.7069, 'pi_lin': 2.8101, 'pi_huber': 0.0986, 'stw': 0.1334} stw-pihuber ms [0.0081, 0.0012]
+t1.2 E_sine_dist {'sa_const': 3.7239, 'pi_lin': 3.8805, 'pi_huber': 0.3025, 'stw': 0.3975} stw-pihuber ms [0.0666, 0.0063]

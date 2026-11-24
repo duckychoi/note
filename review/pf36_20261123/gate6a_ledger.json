@@ -1,0 +1,86 @@
+{
+ "traj_steps": 490,
+ "stages": {
+  "cases(ground truth, not a method cost)": {
+   "steps": 117600,
+   "sec": 0.2628929615020752,
+   "traj_equiv": 240.0
+  },
+  "train-range bank 196,608 (xthr only, uncharged)": {
+   "steps": 96337920,
+   "sec": 18.613099336624146,
+   "traj_equiv": 196608.0
+  },
+  "broad bank 196,608 generated (flow uses first 147,456; retrieval uses all)": {
+   "steps": 96337920,
+   "sec": 19.992188215255737,
+   "traj_equiv": 196608.0
+  },
+  "flow training (seed 8100)": {
+   "steps": 0,
+   "sec": 190.15186142921448,
+   "traj_equiv": 0.0
+  },
+  "flow-PF val temperature tuning 3x48xN256": {
+   "steps": 18063360,
+   "sec": 3.255918025970459,
+   "traj_equiv": 36864.0
+  },
+  "flow-PF test inference 192xN256": {
+   "steps": 24084480,
+   "sec": 4.343607187271118,
+   "per_case_sec": 0.022622954100370407,
+   "traj_equiv": 49152.0
+  },
+  "PF-8192 ref: val temperature tuning (3x48xN1024)": {
+   "steps": 72253440,
+   "sec": 12.895586013793945,
+   "traj_equiv": 147456.0
+  },
+  "PF-8192 ref: test inference measured on 48 cases (x4 for 192)": {
+   "steps": 770703360,
+   "sec": 128.39112758636475,
+   "per_case_sec": 0.6687037895123163,
+   "traj_equiv": 1572864.0
+  },
+  "retrieval val tuning (no sims)": {
+   "steps": 0,
+   "sec": 5.54638671875,
+   "traj_equiv": 0.0
+  },
+  "retrieval test inference 192": {
+   "steps": 0,
+   "sec": 5.546606779098511,
+   "per_case_sec": 0.02888857697447141,
+   "traj_equiv": 0.0
+  }
+ },
+ "flow": {
+  "charged_in_gate5": 196608,
+  "actual_min": 196608.0,
+  "actual_with_tuning": 233472.0,
+  "actual_as_scripted": 282624.0,
+  "cold_sec": 212.74552780389786,
+  "warm_per_case_sec": 0.022622954100370407
+ },
+ "ref_pf8192": {
+  "charged_in_gate3": 1572864,
+  "actual_with_tuning": 1720320.0,
+  "actual_test_only": 1572864.0,
+  "cold_sec": 141.2867136001587,
+  "warm_per_case_sec": 0.6687037895123163
+ },
+ "retrieval": {
+  "actual": 196608.0,
+  "cold_sec": 31.085181713104248,
+  "warm_per_case_sec": 0.02888857697447141
+ },
+ "ratio_sims_ref_over_flow": {
+  "charged": 8.0,
+  "actual_min": 8.0,
+  "actual_with_tuning": 7.368421052631579,
+  "as_scripted": 6.086956521739131
+ },
+ "ratio_cold_time_ref_over_flow": 0.6641113214393505,
+ "breakeven_cases_time": 302.60351938496444
+}

@@ -1,0 +1,37 @@
+0.5 simple arms tuned 42 s
+0.5 kaleF_static ({'mode': 'static', 'lam': 0.5, 'mu': 2.0}, 3.1801872253019066) 172 s
+0.5 kaleF_forget ({'mode': 'forget', 'lam': 0.5, 'mu': 2.0, 'g': 0.995}, 3.1432597325988816) 433 s
+0.5 kaleF_restart ({'mode': 'restart', 'lam': 0.5, 'mu': 2.0, 'R': 480}, 3.1339675362631465) 640 s
+0.5 theta fixed on validation: 0.7
+0.5 resid_ucb {'lr': 0.1, 'kappa': 8.0, 'credit': 'resid', 'retain': 'w'} val 1.769 test 1.7294 rec_med 292.5 unrec 0.299
+0.5 A1_credit_target {'lr': 0.1, 'kappa': 8.0, 'credit': 'target', 'retain': 'w'} val 1.737 test 1.6404 rec_med 257.5 unrec 0.25
+0.5 A2_retain_credit {'lr': 0.01, 'kappa': 8.0, 'credit': 'resid', 'retain': 'credit'} val 2.8715 test 2.625 rec_med 316.5 unrec 0.431
+0.5 A3_no_ucb {'lr': 0.1, 'kappa': 0.0, 'credit': 'resid', 'retain': 'w'} val 2.088 test 2.0581 rec_med 359.0 unrec 0.385
+0.5 random {'lr': 0.01} val 3.2294 test 3.0107 rec_med 480.0 unrec 1.0
+0.5 kale_static {'lr': 0.05} val 2.755 test 2.6271 rec_med 480.0 unrec 0.875
+0.5 kale_forget {'lr': 0.05, 'g': 0.998} val 2.4022 test 2.3584 rec_med 480.0 unrec 0.667
+0.5 kale_restart {'lr': 0.05, 'R': 480} val 2.2824 test 2.2289 rec_med 480.0 unrec 0.615
+0.5 signed_corr {'lr': 0.05} val 2.1267 test 1.9874 rec_med 296.5 unrec 0.326
+0.5 kaleF_static {'mode': 'static', 'lam': 0.5, 'mu': 2.0} val 3.1802 test 2.9942 rec_med 480.0 unrec 0.854
+0.5 kaleF_forget {'mode': 'forget', 'lam': 0.5, 'mu': 2.0, 'g': 0.995} val 3.1433 test 2.9575 rec_med 480.0 unrec 0.656
+0.5 kaleF_restart {'mode': 'restart', 'lam': 0.5, 'mu': 2.0, 'R': 480} val 3.134 test 2.947 rec_med 480.0 unrec 0.639
+VERDICT 0.5 {"strongest": "signed_corr", "ratio": 0.8701488765464759, "diff_base_minus_new": 0.2580708948358143, "diff_ci": [0.1422526817125976, 0.36938030551584466], "rel_ci": [-0.16341820325635265, -0.04976329108386124], "theta": 0.7, "ablation": {"A1_credit_target": {"mean": -0.08899874209890755, "ci": [-0.19878556733509947, 0.01555039599606171], "call": "구분 불가"}, "A2_retain_credit": {"mean": 0.8956624118730616, "ci": [0.7642070047681486, 1.0248216507708823], "call": "기여함"}, "A3_no_ucb": {"mean": 0.32875369217785094, "ci": [0.22560515980654688, 0.435912653915037], "call": "기여함"}}}
+0.0 simple arms tuned 770 s
+0.0 kaleF_static ({'mode': 'static', 'lam': 0.5, 'mu': 2.0}, 3.1662050716959875) 883 s
+0.0 kaleF_forget ({'mode': 'forget', 'lam': 1.0, 'mu': 0.5, 'g': 0.995}, 3.1466332741613443) 1149 s
+0.0 kaleF_restart ({'mode': 'restart', 'lam': 0.5, 'mu': 2.0, 'R': 480}, 3.1334523858242935) 1358 s
+0.0 theta fixed on validation: 0.7
+0.0 resid_ucb {'lr': 0.05, 'kappa': 8.0, 'credit': 'resid', 'retain': 'w'} val 1.9236 test 1.8018 rec_med 294.5 unrec 0.274
+0.0 A1_credit_target {'lr': 0.05, 'kappa': 8.0, 'credit': 'target', 'retain': 'w'} val 1.7265 test 1.867 rec_med 307.5 unrec 0.302
+0.0 A2_retain_credit {'lr': 0.01, 'kappa': 8.0, 'credit': 'resid', 'retain': 'credit'} val 2.8257 test 2.6568 rec_med 349.5 unrec 0.431
+0.0 A3_no_ucb {'lr': 0.05, 'kappa': 0.0, 'credit': 'resid', 'retain': 'w'} val 2.1889 test 2.123 rec_med 402.5 unrec 0.444
+0.0 random {'lr': 0.01} val 3.204 test 3.0229 rec_med 480.0 unrec 1.0
+0.0 kale_static {'lr': 0.025} val 2.9001 test 2.7136 rec_med 480.0 unrec 0.858
+0.0 kale_forget {'lr': 0.05, 'g': 0.998} val 2.5318 test 2.5007 rec_med 480.0 unrec 0.67
+0.0 kale_restart {'lr': 0.05, 'R': 480} val 2.5496 test 2.3602 rec_med 480.0 unrec 0.625
+0.0 signed_corr {'lr': 0.05} val 2.3001 test 2.1041 rec_med 333.5 unrec 0.33
+0.0 kaleF_static {'mode': 'static', 'lam': 0.5, 'mu': 2.0} val 3.1662 test 3.0053 rec_med 480.0 unrec 0.858
+0.0 kaleF_forget {'mode': 'forget', 'lam': 1.0, 'mu': 0.5, 'g': 0.995} val 3.1466 test 2.9921 rec_med 480.0 unrec 0.691
+0.0 kaleF_restart {'mode': 'restart', 'lam': 0.5, 'mu': 2.0, 'R': 480} val 3.1335 test 2.9916 rec_med 480.0 unrec 0.615
+VERDICT 0.0 {"strongest": "signed_corr", "ratio": 0.8563576402200069, "diff_base_minus_new": 0.30223568723133676, "diff_ci": [0.19561139783184667, 0.40870424230372127], "rel_ci": [-0.16087742078330491, -0.06797798544940074], "theta": 0.7, "ablation": {"A1_credit_target": {"mean": 0.0651071893505216, "ci": [-0.02615558108527731, 0.1655073433541546], "call": "구분 불가"}, "A2_retain_credit": {"mean": 0.8549124025966565, "ci": [0.7415794795752526, 0.9746658764441639], "call": "기여함"}, "A3_no_ucb": {"mean": 0.321139705651097, "ci": [0.21126213664662113, 0.4333469850384733], "call": "기여함"}}}
+GATE {'main_pass': True, 'control_pass': True, 'pass_': True}

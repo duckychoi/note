@@ -1,0 +1,1066 @@
+{
+  "amplitude1/shared0": {
+    "91200": {
+      "pca": {
+        "branch_accuracy": 0.741943359375,
+        "action_probability_mae": 0.12946466463277975
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      },
+      "logged_action": {
+        "branch_accuracy": 0.510498046875,
+        "action_probability_mae": 0.18869135210244073
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0038534495172936334
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      }
+    },
+    "91201": {
+      "pca": {
+        "branch_accuracy": 0.781005859375,
+        "action_probability_mae": 0.08794505855815982
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5093994140625,
+        "action_probability_mae": 0.1952054714893944
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "supervised64": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003683758214969496
+      }
+    },
+    "91202": {
+      "pca": {
+        "branch_accuracy": 0.7760009765625,
+        "action_probability_mae": 0.09387706614550534
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5013427734375,
+        "action_probability_mae": 0.2068771379108836
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      }
+    },
+    "91203": {
+      "pca": {
+        "branch_accuracy": 0.7647705078125,
+        "action_probability_mae": 0.09318557228022287
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.002279502856799537
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4974365234375,
+        "action_probability_mae": 0.2016125825067164
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.002279502856799537
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      }
+    },
+    "91204": {
+      "pca": {
+        "branch_accuracy": 0.744140625,
+        "action_probability_mae": 0.09533407721065076
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5067138671875,
+        "action_probability_mae": 0.19289787899595634
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      }
+    },
+    "91205": {
+      "pca": {
+        "branch_accuracy": 0.7498779296875,
+        "action_probability_mae": 0.10728667477290607
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4991455078125,
+        "action_probability_mae": 0.19937808454330877
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "supervised64": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.001025439286650942
+      }
+    },
+    "91206": {
+      "pca": {
+        "branch_accuracy": 0.76416015625,
+        "action_probability_mae": 0.09618649057946216
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5301513671875,
+        "action_probability_mae": 0.20103301503900314
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.005041285122228123
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      }
+    },
+    "91207": {
+      "pca": {
+        "branch_accuracy": 0.7066650390625,
+        "action_probability_mae": 0.11558820403296749
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4964599609375,
+        "action_probability_mae": 0.2015978357563857
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      }
+    },
+    "91208": {
+      "pca": {
+        "branch_accuracy": 0.7589111328125,
+        "action_probability_mae": 0.10346716307414996
+      },
+      "two_view": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "logged_action": {
+        "branch_accuracy": 0.503173828125,
+        "action_probability_mae": 0.20216635849823625
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.00442463106218563
+      }
+    },
+    "91209": {
+      "pca": {
+        "branch_accuracy": 0.758056640625,
+        "action_probability_mae": 0.10660458233120135
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4952392578125,
+        "action_probability_mae": 0.21453777683419728
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      }
+    },
+    "91210": {
+      "pca": {
+        "branch_accuracy": 0.73193359375,
+        "action_probability_mae": 0.1009061254293612
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5076904296875,
+        "action_probability_mae": 0.19069539754565573
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.006022278352743049
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      }
+    },
+    "91211": {
+      "pca": {
+        "branch_accuracy": 0.75341796875,
+        "action_probability_mae": 0.0886515600952574
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "logged_action": {
+        "branch_accuracy": 0.500732421875,
+        "action_probability_mae": 0.18713586524454207
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      }
+    }
+  },
+  "amplitude1/shared1": {
+    "91200": {
+      "pca": {
+        "branch_accuracy": 0.741943359375,
+        "action_probability_mae": 0.12946466463277975
+      },
+      "two_view": {
+        "branch_accuracy": 0.7843017578125,
+        "action_probability_mae": 0.12464916404960291
+      },
+      "logged_action": {
+        "branch_accuracy": 0.510498046875,
+        "action_probability_mae": 0.18869135210244073
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0038534495172936334
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      }
+    },
+    "91201": {
+      "pca": {
+        "branch_accuracy": 0.781005859375,
+        "action_probability_mae": 0.08794505855815982
+      },
+      "two_view": {
+        "branch_accuracy": 0.8428955078125,
+        "action_probability_mae": 0.07190901478791392
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5093994140625,
+        "action_probability_mae": 0.1952054714893944
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "supervised64": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003683758214969496
+      }
+    },
+    "91202": {
+      "pca": {
+        "branch_accuracy": 0.7760009765625,
+        "action_probability_mae": 0.09387706614550534
+      },
+      "two_view": {
+        "branch_accuracy": 0.770751953125,
+        "action_probability_mae": 0.09619376461385098
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5013427734375,
+        "action_probability_mae": 0.2068771379108836
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      }
+    },
+    "91203": {
+      "pca": {
+        "branch_accuracy": 0.7647705078125,
+        "action_probability_mae": 0.09318557228022287
+      },
+      "two_view": {
+        "branch_accuracy": 0.6763916015625,
+        "action_probability_mae": 0.12759472357567728
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4974365234375,
+        "action_probability_mae": 0.2016125825067164
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.002279502856799537
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      }
+    },
+    "91204": {
+      "pca": {
+        "branch_accuracy": 0.744140625,
+        "action_probability_mae": 0.09533407721065076
+      },
+      "two_view": {
+        "branch_accuracy": 0.6650390625,
+        "action_probability_mae": 0.132938029297322
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5067138671875,
+        "action_probability_mae": 0.19289787899595634
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      }
+    },
+    "91205": {
+      "pca": {
+        "branch_accuracy": 0.7498779296875,
+        "action_probability_mae": 0.10728667477290607
+      },
+      "two_view": {
+        "branch_accuracy": 0.69873046875,
+        "action_probability_mae": 0.12815773788236415
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4991455078125,
+        "action_probability_mae": 0.19937808454330877
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "supervised64": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.001025439286650942
+      }
+    },
+    "91206": {
+      "pca": {
+        "branch_accuracy": 0.76416015625,
+        "action_probability_mae": 0.09618649057946216
+      },
+      "two_view": {
+        "branch_accuracy": 0.838134765625,
+        "action_probability_mae": 0.06648486341381415
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5301513671875,
+        "action_probability_mae": 0.20103301503900314
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.005041285122228123
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      }
+    },
+    "91207": {
+      "pca": {
+        "branch_accuracy": 0.7066650390625,
+        "action_probability_mae": 0.11558820403296749
+      },
+      "two_view": {
+        "branch_accuracy": 0.7606201171875,
+        "action_probability_mae": 0.09338750300965276
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4964599609375,
+        "action_probability_mae": 0.2015978357563857
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      }
+    },
+    "91208": {
+      "pca": {
+        "branch_accuracy": 0.7589111328125,
+        "action_probability_mae": 0.10346716307414996
+      },
+      "two_view": {
+        "branch_accuracy": 0.716064453125,
+        "action_probability_mae": 0.11724384169799018
+      },
+      "logged_action": {
+        "branch_accuracy": 0.503173828125,
+        "action_probability_mae": 0.20216635849823625
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.00442463106218563
+      }
+    },
+    "91209": {
+      "pca": {
+        "branch_accuracy": 0.758056640625,
+        "action_probability_mae": 0.10660458233120135
+      },
+      "two_view": {
+        "branch_accuracy": 0.7120361328125,
+        "action_probability_mae": 0.12861380537317404
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4952392578125,
+        "action_probability_mae": 0.21453777683419728
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      }
+    },
+    "91210": {
+      "pca": {
+        "branch_accuracy": 0.73193359375,
+        "action_probability_mae": 0.1009061254293612
+      },
+      "two_view": {
+        "branch_accuracy": 0.6873779296875,
+        "action_probability_mae": 0.12128856800113255
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5076904296875,
+        "action_probability_mae": 0.19069539754565573
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.006022278352743049
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      }
+    },
+    "91211": {
+      "pca": {
+        "branch_accuracy": 0.75341796875,
+        "action_probability_mae": 0.0886515600952574
+      },
+      "two_view": {
+        "branch_accuracy": 0.765625,
+        "action_probability_mae": 0.08203284407930489
+      },
+      "logged_action": {
+        "branch_accuracy": 0.500732421875,
+        "action_probability_mae": 0.18713586524454207
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      }
+    }
+  },
+  "amplitude4/shared0": {
+    "91200": {
+      "pca": {
+        "branch_accuracy": 0.5010986328125,
+        "action_probability_mae": 0.20633769706656796
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4989013671875,
+        "action_probability_mae": 0.19366230293343198
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      }
+    },
+    "91201": {
+      "pca": {
+        "branch_accuracy": 0.4913330078125,
+        "action_probability_mae": 0.20480543858033165
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5086669921875,
+        "action_probability_mae": 0.19519456141966834
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.003804037262359422
+      }
+    },
+    "91202": {
+      "pca": {
+        "branch_accuracy": 0.493896484375,
+        "action_probability_mae": 0.20971109547584857
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "logged_action": {
+        "branch_accuracy": 0.493896484375,
+        "action_probability_mae": 0.20971109547584857
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      }
+    },
+    "91203": {
+      "pca": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.19754661432777232
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.002279502856799537
+      },
+      "logged_action": {
+        "branch_accuracy": 0.494140625,
+        "action_probability_mae": 0.20245338567222768
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      }
+    },
+    "91204": {
+      "pca": {
+        "branch_accuracy": 0.4967041015625,
+        "action_probability_mae": 0.20538166628519108
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5032958984375,
+        "action_probability_mae": 0.19461833371480886
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      }
+    },
+    "91205": {
+      "pca": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.1987864482750399
+      },
+      "two_view": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "logged_action": {
+        "branch_accuracy": 0.494140625,
+        "action_probability_mae": 0.20121355172496005
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "supervised64": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.001025439286650942
+      }
+    },
+    "91206": {
+      "pca": {
+        "branch_accuracy": 0.478271484375,
+        "action_probability_mae": 0.19680754585167004
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      },
+      "logged_action": {
+        "branch_accuracy": 0.521728515625,
+        "action_probability_mae": 0.20319245414832995
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.005041285122228123
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      }
+    },
+    "91207": {
+      "pca": {
+        "branch_accuracy": 0.48779296875,
+        "action_probability_mae": 0.20436153007140126
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "logged_action": {
+        "branch_accuracy": 0.48779296875,
+        "action_probability_mae": 0.20436153007140126
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      }
+    },
+    "91208": {
+      "pca": {
+        "branch_accuracy": 0.4989013671875,
+        "action_probability_mae": 0.19722559002034984
+      },
+      "two_view": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5010986328125,
+        "action_probability_mae": 0.20277440997965016
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.00442463106218563
+      }
+    },
+    "91209": {
+      "pca": {
+        "branch_accuracy": 0.5076904296875,
+        "action_probability_mae": 0.1849350661429437
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4923095703125,
+        "action_probability_mae": 0.21506493385705625
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      }
+    },
+    "91210": {
+      "pca": {
+        "branch_accuracy": 0.4931640625,
+        "action_probability_mae": 0.20845093174180954
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5068359375,
+        "action_probability_mae": 0.19154906825819046
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.006022278352743049
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      }
+    },
+    "91211": {
+      "pca": {
+        "branch_accuracy": 0.4971923828125,
+        "action_probability_mae": 0.18892186750584772
+      },
+      "two_view": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4971923828125,
+        "action_probability_mae": 0.18892186750584772
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      }
+    }
+  },
+  "amplitude4/shared1": {
+    "91200": {
+      "pca": {
+        "branch_accuracy": 0.5010986328125,
+        "action_probability_mae": 0.20633769706656796
+      },
+      "two_view": {
+        "branch_accuracy": 0.5010986328125,
+        "action_probability_mae": 0.20633769706656796
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4989013671875,
+        "action_probability_mae": 0.19366230293343198
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.0037310205261084917
+      }
+    },
+    "91201": {
+      "pca": {
+        "branch_accuracy": 0.4913330078125,
+        "action_probability_mae": 0.20480543858033165
+      },
+      "two_view": {
+        "branch_accuracy": 0.4913330078125,
+        "action_probability_mae": 0.20480543858033165
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5086669921875,
+        "action_probability_mae": 0.19519456141966834
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.003924316309749404
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.003804037262359422
+      }
+    },
+    "91202": {
+      "pca": {
+        "branch_accuracy": 0.493896484375,
+        "action_probability_mae": 0.20971109547584857
+      },
+      "two_view": {
+        "branch_accuracy": 0.493896484375,
+        "action_probability_mae": 0.20971109547584857
+      },
+      "logged_action": {
+        "branch_accuracy": 0.493896484375,
+        "action_probability_mae": 0.20971109547584857
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004008489772718338
+      }
+    },
+    "91203": {
+      "pca": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.19754661432777232
+      },
+      "two_view": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.19754661432777232
+      },
+      "logged_action": {
+        "branch_accuracy": 0.494140625,
+        "action_probability_mae": 0.20245338567222768
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.002402172140410913
+      }
+    },
+    "91204": {
+      "pca": {
+        "branch_accuracy": 0.4967041015625,
+        "action_probability_mae": 0.20538166628519108
+      },
+      "two_view": {
+        "branch_accuracy": 0.4967041015625,
+        "action_probability_mae": 0.20538166628519108
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5032958984375,
+        "action_probability_mae": 0.19461833371480886
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006428339818417672
+      }
+    },
+    "91205": {
+      "pca": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.1987864482750399
+      },
+      "two_view": {
+        "branch_accuracy": 0.505859375,
+        "action_probability_mae": 0.1987864482750399
+      },
+      "logged_action": {
+        "branch_accuracy": 0.494140625,
+        "action_probability_mae": 0.20121355172496005
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.0009032496483322716
+      },
+      "supervised64": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.001025439286650942
+      }
+    },
+    "91206": {
+      "pca": {
+        "branch_accuracy": 0.478271484375,
+        "action_probability_mae": 0.19680754585167004
+      },
+      "two_view": {
+        "branch_accuracy": 0.478271484375,
+        "action_probability_mae": 0.19680754585167004
+      },
+      "logged_action": {
+        "branch_accuracy": 0.521728515625,
+        "action_probability_mae": 0.20319245414832995
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.005041285122228123
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.004792094990157342
+      }
+    },
+    "91207": {
+      "pca": {
+        "branch_accuracy": 0.48779296875,
+        "action_probability_mae": 0.20436153007140126
+      },
+      "two_view": {
+        "branch_accuracy": 0.48779296875,
+        "action_probability_mae": 0.20436153007140126
+      },
+      "logged_action": {
+        "branch_accuracy": 0.48779296875,
+        "action_probability_mae": 0.20436153007140126
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006656180546617929
+      }
+    },
+    "91208": {
+      "pca": {
+        "branch_accuracy": 0.4989013671875,
+        "action_probability_mae": 0.19722559002034984
+      },
+      "two_view": {
+        "branch_accuracy": 0.4989013671875,
+        "action_probability_mae": 0.19722559002034984
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5010986328125,
+        "action_probability_mae": 0.20277440997965016
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.999755859375,
+        "action_probability_mae": 0.00466723174146752
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.00442463106218563
+      }
+    },
+    "91209": {
+      "pca": {
+        "branch_accuracy": 0.5076904296875,
+        "action_probability_mae": 0.1849350661429437
+      },
+      "two_view": {
+        "branch_accuracy": 0.5076904296875,
+        "action_probability_mae": 0.1849350661429437
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4923095703125,
+        "action_probability_mae": 0.21506493385705625
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.007729551634529541
+      }
+    },
+    "91210": {
+      "pca": {
+        "branch_accuracy": 0.4931640625,
+        "action_probability_mae": 0.20845093174180954
+      },
+      "two_view": {
+        "branch_accuracy": 0.4931640625,
+        "action_probability_mae": 0.20845093174180954
+      },
+      "logged_action": {
+        "branch_accuracy": 0.5068359375,
+        "action_probability_mae": 0.19154906825819046
+      },
+      "randomized_action": {
+        "branch_accuracy": 0.9998779296875,
+        "action_probability_mae": 0.006022278352743049
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006143490473955182
+      }
+    },
+    "91211": {
+      "pca": {
+        "branch_accuracy": 0.4971923828125,
+        "action_probability_mae": 0.18892186750584772
+      },
+      "two_view": {
+        "branch_accuracy": 0.4971923828125,
+        "action_probability_mae": 0.18892186750584772
+      },
+      "logged_action": {
+        "branch_accuracy": 0.4971923828125,
+        "action_probability_mae": 0.18892186750584772
+      },
+      "randomized_action": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      },
+      "supervised64": {
+        "branch_accuracy": 1.0,
+        "action_probability_mae": 0.006772977247735179
+      }
+    }
+  }
+}

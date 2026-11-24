@@ -1,0 +1,42 @@
+{
+ "none": {
+  "T1 reversed": 0.98738,
+  "T1 skip5": 0.994167,
+  "T2 beat+pi/4": 0.48792925,
+  "T2 beat+pi/2": 0.49007925,
+  "T2 beat+pi": 0.49539475,
+  "T3 start+half cycle": 0.4966565,
+  "T4 medium>rest": 0.9705665,
+  "T4 simple>rest": 0.8801735
+ },
+ "concat4": {
+  "T1 reversed": 0.987196,
+  "T1 skip5": 0.9926025,
+  "T2 beat+pi/4": 0.97621875,
+  "T2 beat+pi/2": 0.98640025,
+  "T2 beat+pi": 0.98916025,
+  "T3 start+half cycle": 0.494375,
+  "T4 medium>rest": 0.96092775,
+  "T4 simple>rest": 0.8446365
+ },
+ "film4": {
+  "T1 reversed": 0.98682625,
+  "T1 skip5": 0.994217,
+  "T2 beat+pi/4": 0.97867275,
+  "T2 beat+pi/2": 0.98777025,
+  "T2 beat+pi": 0.990849,
+  "T3 start+half cycle": 0.48900075,
+  "T4 medium>rest": 0.9616535,
+  "T4 simple>rest": 0.861862
+ },
+ "rope": {
+  "T1 reversed": 0.9799225,
+  "T1 skip5": 0.987927,
+  "T2 beat+pi/4": 0.9819785,
+  "T2 beat+pi/2": 0.98993975,
+  "T2 beat+pi": 0.99184725,
+  "T3 start+half cycle": 0.49906625,
+  "T4 medium>rest": 0.95228025,
+  "T4 simple>rest": 0.8645965
+ }
+}

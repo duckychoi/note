@@ -1,0 +1,98 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+A_inphase 0 [(1.34, 1.0, False), (1.38, 1.0, True), (1.43, 1.0, True), (1.45, 1.0, True)]
+A_inphase 1 [(1.73, 1.0, False), (1.7, 1.0, False), (1.75, 1.0, False), (1.89, 1.0, False)]
+A_inphase 2 [(1.68, 1.0, False), (1.7, 1.0, False), (1.71, 1.0, False), (1.78, 1.0, False)]
+A_inphase 3 [(1.66, 1.0, False), (1.72, 1.0, False), (1.41, 1.0, True), (1.64, 1.0, True)]
+A_inphase 4 [(1.47, 1.0, True), (1.38, 1.0, True), (1.4, 1.0, True), (1.37, 1.0, True)]
+A_inphase 5 [(1.54, 1.0, True), (1.48, 1.0, True), (1.5, 1.0, True), (1.44, 1.0, True)]
+B_antiphase 0 [(1.38, 1.0, True), (1.38, 1.0, True), (1.34, 1.0, False), (1.33, 1.0, False)]
+B_antiphase 1 [(1.62, 1.0, True), (1.55, 1.0, True), (1.61, 1.0, True), (1.6, 1.0, True)]
+B_antiphase 2 [(1.63, 1.0, True), (1.72, 1.0, False), (1.67, 1.0, False), (1.62, 1.0, True)]
+B_antiphase 3 [(1.26, 1.0, False), (1.27, 1.0, False), (1.29, 1.0, False), (1.39, 1.0, True)]
+B_antiphase 4 [(1.74, 1.0, False), (1.47, 1.0, True), (1.71, 1.0, False), (1.72, 1.0, False)]
+B_antiphase 5 [(1.68, 1.0, False), (1.61, 1.0, True), (1.65, 1.0, True), (1.64, 1.0, True)]
+{
+ "task_pass_episodes": {
+  "A_inphase": 13,
+  "B_antiphase": 13
+ },
+ "missing_cycles": {
+  "A_inphase": 683,
+  "B_antiphase": 368
+ },
+ "cycles_per_seed": {
+  "A_inphase": [
+   8,
+   0,
+   0,
+   39,
+   55,
+   29
+  ],
+  "B_antiphase": [
+   45,
+   80,
+   48,
+   26,
+   24,
+   58
+  ]
+ },
+ "bandwidth": 16.637792326294615,
+ "floor95": 0.9138291503035527,
+ "between_median": 0.6023561722349254,
+ "between_min": 0.49932988485167484,
+ "ratio": 0.6591562241528811,
+ "gate0_pass": false,
+ "controls_vs_A_test": {
+  "common_shift_7sub": 0.1981095447127574,
+  "front_delay_P4": 0.23388721256467948
+ },
+ "fourier_auc_B_farther_than_A": {
+  "psd": 0.0,
+  "zero_lag": 0.0,
+  "signed_area": 0.23076923076923078,
+  "cross_spectrum": 0.0
+ },
+ "fourier_median_dist": {
+  "psd": {
+   "A_test": 1.6345511469519192,
+   "B": 0.9564705411611619
+  },
+  "zero_lag": {
+   "A_test": 1.2612783974243613,
+   "B": 0.9362737183357386
+  },
+  "signed_area": {
+   "A_test": 1.2731249366792834,
+   "B": 1.1559873474847835
+  },
+  "cross_spectrum": {
+   "A_test": 1.4632077590498809,
+   "B": 1.0788451152136138
+  }
+ },
+ "speed": {
+  "A_inphase": {
+   "mean": 1.4536224994160003
+  },
+  "B_antiphase": {
+   "mean": 1.5497128580721626
+  }
+ },
+ "realized_thigh_phase_rad": {
+  "A_inphase": {
+   "median": -2.394713661656514,
+   "circ_mean": -2.367271711379233
+  },
+  "B_antiphase": {
+   "median": -2.540460634139304,
+   "circ_mean": -2.5563398686550243
+  }
+ },
+ "vstar": 1.5,
+ "period_steps": 12,
+ "eval_horizon": 384,
+ "tail": 256
+}

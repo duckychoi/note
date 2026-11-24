@@ -1,0 +1,10 @@
+Adversarial math + code review, ROUND 2 (read-only; answer in Korean; cite file:line; why; fix). Defects only, HIGH/MED/LOW.
+For EACH round-1 finding in review/검수_fm34_theory_20261122_codex최종_sol.txt state FIXED / PARTIAL / NOT FIXED with evidence.
+Then list any NEW defects. Last line exactly: READY or NOT READY + count of HIGH/MED.
+
+Files: docs/v2/34-audit-20261122.md (rewritten), docs/05-fm-residual-divergence-theorem.md (withdrawal banner),
+src/v2/gmm_flow.py (stable component-wise velocity/score, input check), src/v2/e1_reward_theory.py (wider grid, exact per-sample
+formula check, continuous alpha search, pairwise required alpha, same-window target masses), results/v2/e1_reward_theory.json,
+src/v2/e2_occupancy.py (+ --noninj variant, next-state-entropy mode D, tolerance reporting), results/v2/e2_occupancy*.json.
+Pay special attention to: Proposition 2 error term statement, Proposition 3 'negative required alpha => ranking inversion' logic,
+Proposition 4 statement H(A|S,S') and the claim about continuous control. You may run python to recompute. Do not modify files.

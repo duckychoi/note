@@ -1,0 +1,50 @@
+M demonstrators: train [0, 1] held-out 2
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+ep 0 {'M0': (1.01, True, -0.12), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 1 {'M0': (1.0, True, -0.11), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 2 {'M0': (1.01, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 3 {'M0': (1.01, True, -0.11), 'M1': (0.99, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 4 {'M0': (1.01, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 5 {'M0': (1.0, True, -0.07), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 6 {'M0': (1.0, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 7 {'M0': (1.0, True, -0.06), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 8 {'M0': (1.0, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 9 {'M0': (1.01, True, -0.08), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 10 {'M0': (1.01, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 11 {'M0': (1.0, True, -0.09), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 12 {'M0': (1.01, True, -0.09), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 13 {'M0': (1.0, True, -0.11), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 14 {'M0': (1.01, True, -0.11), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 15 {'M0': (1.0, True, -0.1), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 16 {'M0': (1.0, True, -0.09), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 17 {'M0': (1.01, True, -0.09), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 18 {'M0': (1.0, True, -0.11), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+ep 19 {'M0': (1.0, True, -0.09), 'M1': (0.98, True, 0.0), 'M2': (1.0, True, -0.04)}
+{
+ "w": 0.5,
+ "counts": {
+  "M": {
+   "train": 24,
+   "heldout": 20
+  }
+ },
+ "train_seeds": [
+  0,
+  1
+ ],
+ "ho_seed": 2,
+ "lagD_M": 0.4883946992443271,
+ "auc_s_heldout": null,
+ "gap": null,
+ "s_heldout_mean": {
+  "F": null,
+  "R": null
+ },
+ "enough_demos": true,
+ "S2_pass": false
+}

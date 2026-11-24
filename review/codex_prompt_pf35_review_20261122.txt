@@ -1,0 +1,64 @@
+당신은 NeurIPS/ICML/ICLR 시니어 리뷰어이자 Monte Carlo(SMC)·diffusion/flow matching·offline RL 전문가입니다.
+아래 연구주제 #35 의 점검·전환 결과를 **반박하는 관점에서** 교차검수해 주세요. 코드와 결과 파일을 직접 읽고, 필요하면 실행해 재현하세요(읽기 전용; 파일 수정 금지).
+답은 한국어로, 결론 먼저, 근거는 파일:줄 · 실측 수치 · 논문 ID 로. 확인 못 한 것은 "미확인"으로 표기.
+
+==================================================================
+0. 배경 (한 문단)
+==================================================================
+#35 원래 아이디어(교수님): 확산/flow matching 생성모델의 샘플러(확률흐름 ODE 적분)를 파티클 필터(SMC: 예측-가중-리샘플)로 대체하면
+few-step(저 NFE)에서 이산화 편향을 교정할 수 있다. 원 결과: 2-D GMM toy 에서 "N=5 SMC+rejuvenation 0.0039 vs Euler 0.052 (13배)",
+오차한계 W2 <= C1/sqrt(K) + C2*eps_score (h 항 없음), "무조건 생성에서 ODE 를 PF 로 대체한 연구는 없다".
+원자료: note 저장소 브랜치 origin/pf-generative-flow (README.md, docs/01-method-and-error-bound.md, src/toy_pf_vs_euler.py) — `git show origin/pf-generative-flow:<path>` 로 읽을 것.
+
+==================================================================
+1. 우리가 한 일과 주장 (검수 대상)
+==================================================================
+연구노트(정본): note/docs/v2/35_PF_generative_research_note.html  (§0 철회 목록, §1 판정, §2–§5 실험, §6 다음 단계)
+코드: note/src/v2/pf/   공통 닫힌형 GMM flow: note/src/v2/gmm_flow.py   결과: note/results/v2/e35*.json
+
+[생성 버전 — "한계"라는 판정]
+ C1. e35_audit.py: 원 toy 를 10 seed 로 재현하고 모든 velocity/score 호출을 NFE 로 세면, SMC+rej 는 Euler 와 비슷하고 같은 NFE 의 Heun 보다 나쁘다
+     (예: 실제 12.4 NFE SMC+rej 0.0177 vs Heun@12 0.0066). N=20 SMC+rej 는 0.26±0.71 로 폭주.
+ C2. 원 가중은 정답 밀도 p_t 를 오라클로 쓴다 — 학습된 flow 에는 값싼 p_t 가 없다.
+ C3. e35_dim.py: 에너지가 정확하다고 가정한 최선 조건(역SDE EM 커널 + 시간역전 역커널, 1 NFE/step)에서도
+     d=2..128, NFE 6..20 전부 Heun 보다 나쁘고 d=128 NFE10 에서 ESS/K 0.04.
+ C4. e35_theory.py: Var(log w) 가 차원에 대략 비례(d=2/8/32 → 2.0/4.3/13.4), 입자 500→8000 으로도 Heun 미달,
+     2차(Heun형) 순·역 커널과 노이즈 g 조정도 역전 못 함. 이론: Var log w_step ~ d e^2/(g^2 h), 필요 입자 ~ exp(Var log w).
+ → 판정: 생성 버전은 실용적 한계, 음성 결과로 종료.
+
+[정책 버전 — "유망"이라는 판정]  목표 pi*(a) ∝ pi_FM(a) exp(Q(a)/beta)
+ C5. e35p_twist.py / e35p_twist_grid.py: 행동정책 3봉 GMM [.6,.3,.1], Q=-0.15||a-c||^2 (c=드문 모드), 정답 목표 [.316,.158,.526] 닫힌형.
+     정확 twist Q_t(a_t)=beta log E[exp(Q(a1)/beta)|a_t] 닫힌형. SDE 노이즈 g^2=2(1-t)/t (보간과 2시점 법칙 일치) 사용.
+     예산 B(행동 하나당 망 호출, 가치 기울기 1회 = 1 호출), 각 방법이 스텝×입자 최적 배분 선택, 3 seed × 1500 결정, 지표 = 모드질량 L1.
+     결과(d=8, B=512): best-of-N 0.118, 근사 Q 기울기 유도(QPILOTS류, guid_heur) 0.123(예산 늘려도 정체),
+     FK-SMC(근사 중간 potential Q(â1)) 0.026, 정확 Q_t guidance 0.024. B=32 에서 정확 Q_t guidance 0.03, best-of-N 0.43.
+     주장: (i) 근사 가치만 있어도 SMC 가중이 guidance 편향을 고치고 best-of-N 보다 ~4.5배 정확, (ii) Q_t 정확도가 핵심 레버 →
+     후보 A = "학습한 flow-시간 가치 Q_t + SMC" 를 #35 의 새 정의로 제안.
+ C6. e35p_overest.py (후보 B): Q 에 모드 사이 OOD 가짜 봉우리(H=10)를 넣으면 진짜 Q 평균이 guidance −1.19→−2.17, SMC −1.28→−1.64,
+     best-of-N −1.32→−1.33. 앙상블 LCB 로 복구. → 현상 확인, 신규성 낮음(부록).
+ C7. 후보 C(PF belief + FM 정책) 는 toy 로는 자명, 범위 과다로 보류(실행 안 함).
+ 선행(조사 에이전트, 초록 수준): FKC 2503.02819, Strasman+ 2607.04780, IDQL 2304.10573, V-GPS 2410.13816, QPILOTS 2606.14801,
+ BayesFP 2606.21014, VLS 2602.03973, FK steering 2501.06848, FK-Flow 2509.01543, TDS(Wu+2023), 2510.11711.
+
+==================================================================
+2. 검수해 줄 것 (각 항목에 판정: 동의 / 부분 동의 / 반대 + 근거)
+==================================================================
+Q1. 공정성: 생성 버전 비교(C1, C3, C4)가 SMC 에 불리하게 설계된 곳이 있는가? (커널 선택, 역커널, 리샘플 임계, t_end=0.999, 지표, 입자 수,
+    Heun 의 NFE 계산, ESS 정의). 생성 버전을 살릴 수 있는 이론/알고리즘(예: 최적/학습된 역커널, twisted proposal,
+    annealed importance, MALA 보정, 저차원 잠재공간)이 있다면 구체적으로, 그리고 그것이 "ODE 를 값싸게 대체" 동기와 양립하는지.
+Q2. C4 의 이론 서술(Var log w ~ d e^2/(g^2 h), K ~ exp(Var))이 정확한가? 2차 커널이 개선을 못 한 이유에 대한 우리 설명
+    ("역커널이 최적 L 이 아니면 평균 오차만 줄여서는 안 된다")이 맞는가?
+Q3. 정책 toy 의 정확성: Qt_exact 유도와 구현(e35p_twist.py:45 부근), g^2=2(1-t)/t 의 정당성, T0=0.02 에서 정확 표본으로 시작한 것의 영향,
+    TDS 가중식(제안/목표 커널 비)과 텔레스코핑, 최종 단계에서 true Q 로 바꾼 처리, 휴리스틱 twist 의 수치미분 기울기, NFE 계산.
+    버그나 유리/불리하게 작용한 설정이 있으면 지적.
+Q4. 비교의 의미: best-of-N 에 불리한 설정(드문 모드로 큰 이동, 지표=분포일치)이라는 우리 한계 서술이 충분한가?
+    RL 실무 지표(기대 Q·수익, argmax best-of-N)로 보면 결론이 바뀌는가? 어떤 설정에서 best-of-N 이 이길 것으로 예상하는가?
+Q5. 신규성: 후보 A(학습 flow-시간 가치 Q_t 를 twist 로 쓰는 SMC, 같은 NFE 비교)가 QPILOTS·BayesFP·VLS·TDS·2510.11711 및
+    당신이 아는 다른 연구(diffusion policy + SMC/twist/soft value, "value-guided flow policy", "Q-weighted resampling")와 얼마나 겹치는가?
+    남는 델타를 한 문장으로.
+Q6. 실험 계획(노트 §6): 학습 Q_t 의 학습 방법 제안(조건부 기대 회귀 / soft-TD along flow time / consistency),
+    OGBench·D4RL 에서 필수 비교군과 통과 기준, 예상 리스크(낮은 행동차원, Q 과대평가, 계산비용).
+Q7. 종합: (a) 생성 버전 종료 판정에 동의하는가, (b) 후보 A 로의 전환이 5대 학회 수준이 될 가능성(높음/중간/낮음)과 이유,
+    (c) 우선순위 TOP 5 액션.
+
+출력 형식: 항목별 판정 표 → 발견한 결함(심각도 높음/중간/낮음, 파일:줄) → TOP 5 → 마지막 줄에 "VERDICT: READY" 또는 "VERDICT: NOT READY (n건)".

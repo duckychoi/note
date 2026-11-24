@@ -1,0 +1,540 @@
+{
+  "observed": 12,
+  "unseen": 12,
+  "threshold_m": 0.2,
+  "library_size": 2048,
+  "temperature": {
+    "analytic_impacts": 4.0,
+    "simulator_retrieval": 4.0
+  },
+  "results": [
+    {
+      "seed": 41200,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.020906364100177332,
+          "brier": 0.12742420305242821,
+          "mean_rmse": 0.03823573581581188,
+          "map_brier": 0.28125,
+          "map_energy": 0.04013138309069008,
+          "event_rate": 0.4166666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.017039708124994113,
+          "brier": 0.09766022902191251,
+          "mean_rmse": 0.03024776019066698,
+          "map_brier": 0.125,
+          "map_energy": 0.024777009202930814,
+          "event_rate": 0.4166666666666667
+        }
+      }
+    },
+    {
+      "seed": 41201,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.022224007592909805,
+          "brier": 0.14176133347037187,
+          "mean_rmse": 0.039952471392753805,
+          "map_brier": 0.28125,
+          "map_energy": 0.04473302381499054,
+          "event_rate": 0.28125
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.016171125076810403,
+          "brier": 0.08516031283845338,
+          "mean_rmse": 0.02700067713195341,
+          "map_brier": 0.16666666666666666,
+          "map_energy": 0.028243023759619235,
+          "event_rate": 0.28125
+        }
+      }
+    },
+    {
+      "seed": 41202,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.022060426298937844,
+          "brier": 0.1215008026558043,
+          "mean_rmse": 0.040529393191928435,
+          "map_brier": 0.2604166666666667,
+          "map_energy": 0.03601585427092701,
+          "event_rate": 0.3645833333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.019107210348579342,
+          "brier": 0.1041842091499089,
+          "mean_rmse": 0.03395108853330267,
+          "map_brier": 0.17708333333333334,
+          "map_energy": 0.031331680271847746,
+          "event_rate": 0.3645833333333333
+        }
+      }
+    },
+    {
+      "seed": 41203,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02262690199415855,
+          "brier": 0.13211592505548572,
+          "mean_rmse": 0.04171610371228632,
+          "map_brier": 0.25,
+          "map_energy": 0.04511892948445678,
+          "event_rate": 0.3125
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.018728506338250045,
+          "brier": 0.08099279951281317,
+          "mean_rmse": 0.03175135813102536,
+          "map_brier": 0.10416666666666667,
+          "map_energy": 0.02978754757230555,
+          "event_rate": 0.3125
+        }
+      }
+    },
+    {
+      "seed": 41204,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02156228496305941,
+          "brier": 0.10839076213522185,
+          "mean_rmse": 0.03925533272381013,
+          "map_brier": 0.20833333333333334,
+          "map_energy": 0.038396754840150704,
+          "event_rate": 0.3229166666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.017726423014373206,
+          "brier": 0.09958980962505688,
+          "mean_rmse": 0.03286873011950719,
+          "map_brier": 0.1875,
+          "map_energy": 0.025918737269813957,
+          "event_rate": 0.3229166666666667
+        }
+      }
+    },
+    {
+      "seed": 41205,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.020914347919809517,
+          "brier": 0.10449386224244178,
+          "mean_rmse": 0.03718537668775907,
+          "map_brier": 0.19791666666666666,
+          "map_energy": 0.03675043081912407,
+          "event_rate": 0.3645833333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.019579282553558074,
+          "brier": 0.08737450142852636,
+          "mean_rmse": 0.03769212383359743,
+          "map_brier": 0.13541666666666666,
+          "map_energy": 0.029401299840753264,
+          "event_rate": 0.3645833333333333
+        }
+      }
+    },
+    {
+      "seed": 41206,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.022401804665032405,
+          "brier": 0.12092810368638694,
+          "mean_rmse": 0.03908564386075809,
+          "map_brier": 0.2604166666666667,
+          "map_energy": 0.045674027232916005,
+          "event_rate": 0.2916666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.01819114108452359,
+          "brier": 0.08974526712912952,
+          "mean_rmse": 0.030020049200298094,
+          "map_brier": 0.15625,
+          "map_energy": 0.03143807748841168,
+          "event_rate": 0.2916666666666667
+        }
+      }
+    },
+    {
+      "seed": 41207,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.020478077122409538,
+          "brier": 0.1093773759167454,
+          "mean_rmse": 0.03645949800597329,
+          "map_brier": 0.25,
+          "map_energy": 0.036484775713907125,
+          "event_rate": 0.3645833333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.017192318997809725,
+          "brier": 0.06668077753790916,
+          "mean_rmse": 0.030432524448203036,
+          "map_brier": 0.07291666666666667,
+          "map_energy": 0.024469652863017183,
+          "event_rate": 0.3645833333333333
+        }
+      }
+    },
+    {
+      "seed": 41208,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.021968927647182335,
+          "brier": 0.11525193536172608,
+          "mean_rmse": 0.03992035109247576,
+          "map_brier": 0.2708333333333333,
+          "map_energy": 0.04486465987036281,
+          "event_rate": 0.2708333333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.02021253645461757,
+          "brier": 0.10933912411894915,
+          "mean_rmse": 0.03752804291097256,
+          "map_brier": 0.21875,
+          "map_energy": 0.0321844211874579,
+          "event_rate": 0.2708333333333333
+        }
+      }
+    },
+    {
+      "seed": 41209,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.021632205211509326,
+          "brier": 0.15849176177724986,
+          "mean_rmse": 0.03922405247261486,
+          "map_brier": 0.2916666666666667,
+          "map_energy": 0.04048781166894005,
+          "event_rate": 0.4270833333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.01943418545830936,
+          "brier": 0.11547651435009286,
+          "mean_rmse": 0.033615004626556005,
+          "map_brier": 0.2604166666666667,
+          "map_energy": 0.03328397451364757,
+          "event_rate": 0.4270833333333333
+        }
+      }
+    },
+    {
+      "seed": 41210,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02229690975310415,
+          "brier": 0.11011751879385674,
+          "mean_rmse": 0.03820100707361868,
+          "map_brier": 0.2604166666666667,
+          "map_energy": 0.04432810200812748,
+          "event_rate": 0.2916666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.019726847933889593,
+          "brier": 0.09525538057253662,
+          "mean_rmse": 0.03509017692678621,
+          "map_brier": 0.19791666666666666,
+          "map_energy": 0.035918193521329994,
+          "event_rate": 0.2916666666666667
+        }
+      }
+    },
+    {
+      "seed": 41211,
+      "materials": "within_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02057883555673566,
+          "brier": 0.12193167535625077,
+          "mean_rmse": 0.03458661505293731,
+          "map_brier": 0.23958333333333334,
+          "map_energy": 0.0387828947315105,
+          "event_rate": 0.375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.016372351256949646,
+          "brier": 0.08219256226997464,
+          "mean_rmse": 0.02818518953244824,
+          "map_brier": 0.11458333333333333,
+          "map_energy": 0.024570364001781624,
+          "event_rate": 0.375
+        }
+      }
+    },
+    {
+      "seed": 41200,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02592654001114807,
+          "brier": 0.1472074303029767,
+          "mean_rmse": 0.05142831906089014,
+          "map_brier": 0.2604166666666667,
+          "map_energy": 0.04529136618234222,
+          "event_rate": 0.4791666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.023880921518358526,
+          "brier": 0.1384239226375354,
+          "mean_rmse": 0.04622224577245776,
+          "map_brier": 0.14583333333333334,
+          "map_energy": 0.029286276679062428,
+          "event_rate": 0.4791666666666667
+        }
+      }
+    },
+    {
+      "seed": 41201,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02568892916574042,
+          "brier": 0.15992255379879505,
+          "mean_rmse": 0.04892081013749492,
+          "map_brier": 0.34375,
+          "map_energy": 0.05020381221243748,
+          "event_rate": 0.34375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.020250160056448665,
+          "brier": 0.12436195886522906,
+          "mean_rmse": 0.03615700786409726,
+          "map_brier": 0.22916666666666666,
+          "map_energy": 0.03266228851148962,
+          "event_rate": 0.34375
+        }
+      }
+    },
+    {
+      "seed": 41202,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.027358704902959347,
+          "brier": 0.1517765723376671,
+          "mean_rmse": 0.053277209656874026,
+          "map_brier": 0.25,
+          "map_energy": 0.03882189335420292,
+          "event_rate": 0.4375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.026664953464246865,
+          "brier": 0.1564414700230478,
+          "mean_rmse": 0.05124993907209941,
+          "map_brier": 0.22916666666666666,
+          "map_energy": 0.03856268690516915,
+          "event_rate": 0.4375
+        }
+      }
+    },
+    {
+      "seed": 41203,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.025830707907638695,
+          "brier": 0.1468440055080985,
+          "mean_rmse": 0.049987488364962446,
+          "map_brier": 0.28125,
+          "map_energy": 0.0486547037449676,
+          "event_rate": 0.34375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.022009765036107135,
+          "brier": 0.10532010634804811,
+          "mean_rmse": 0.03988427122329926,
+          "map_brier": 0.13541666666666666,
+          "map_energy": 0.0331695735198457,
+          "event_rate": 0.34375
+        }
+      }
+    },
+    {
+      "seed": 41204,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.025129523442324275,
+          "brier": 0.1229490736267536,
+          "mean_rmse": 0.048051541700703866,
+          "map_brier": 0.22916666666666666,
+          "map_energy": 0.04132040617287105,
+          "event_rate": 0.3541666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.0223563622540227,
+          "brier": 0.1187818491761244,
+          "mean_rmse": 0.04400835747502025,
+          "map_brier": 0.19791666666666666,
+          "map_energy": 0.03153569220143194,
+          "event_rate": 0.3541666666666667
+        }
+      }
+    },
+    {
+      "seed": 41205,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.027257978716184437,
+          "brier": 0.10349666831813109,
+          "mean_rmse": 0.055723430026417116,
+          "map_brier": 0.1875,
+          "map_energy": 0.042168482592603286,
+          "event_rate": 0.3958333333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.02790336254081587,
+          "brier": 0.1085601145631997,
+          "mean_rmse": 0.05921647817995775,
+          "map_brier": 0.125,
+          "map_energy": 0.03707195968703814,
+          "event_rate": 0.3958333333333333
+        }
+      }
+    },
+    {
+      "seed": 41206,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.02623547293991385,
+          "brier": 0.14287161848327995,
+          "mean_rmse": 0.048806531658682574,
+          "map_brier": 0.25,
+          "map_energy": 0.046485334681774036,
+          "event_rate": 0.3541666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.022958793478605837,
+          "brier": 0.14826315711349114,
+          "mean_rmse": 0.04144314170424094,
+          "map_brier": 0.21875,
+          "map_energy": 0.03541428841356709,
+          "event_rate": 0.3541666666666667
+        }
+      }
+    },
+    {
+      "seed": 41207,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.023616532347610335,
+          "brier": 0.12677826678865184,
+          "mean_rmse": 0.04440535932639061,
+          "map_brier": 0.23958333333333334,
+          "map_energy": 0.039928811957353164,
+          "event_rate": 0.4166666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.02192845101420356,
+          "brier": 0.11134076552116727,
+          "mean_rmse": 0.04058919046613297,
+          "map_brier": 0.125,
+          "map_energy": 0.029073555291009006,
+          "event_rate": 0.4166666666666667
+        }
+      }
+    },
+    {
+      "seed": 41208,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.026408031420395158,
+          "brier": 0.12565793753373825,
+          "mean_rmse": 0.051410994153406116,
+          "map_brier": 0.2916666666666667,
+          "map_energy": 0.049572343210210236,
+          "event_rate": 0.2916666666666667
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.026297791788924923,
+          "brier": 0.12857476486164335,
+          "mean_rmse": 0.05205741036613494,
+          "map_brier": 0.23958333333333334,
+          "map_energy": 0.03857948596768113,
+          "event_rate": 0.2916666666666667
+        }
+      }
+    },
+    {
+      "seed": 41209,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.026537664577861553,
+          "brier": 0.16236257362506773,
+          "mean_rmse": 0.051840277787847826,
+          "map_brier": 0.3020833333333333,
+          "map_energy": 0.04516356894881219,
+          "event_rate": 0.4375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.02621243104712161,
+          "brier": 0.12528107325845003,
+          "mean_rmse": 0.049063146612880665,
+          "map_brier": 0.2708333333333333,
+          "map_energy": 0.04028901536692941,
+          "event_rate": 0.4375
+        }
+      }
+    },
+    {
+      "seed": 41210,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.026403290943658772,
+          "brier": 0.11552042911631218,
+          "mean_rmse": 0.05024299357713472,
+          "map_brier": 0.2708333333333333,
+          "map_energy": 0.049524634942542604,
+          "event_rate": 0.3020833333333333
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.025274796267863775,
+          "brier": 0.10269687320274151,
+          "mean_rmse": 0.049468286029416615,
+          "map_brier": 0.20833333333333334,
+          "map_energy": 0.04239683659455722,
+          "event_rate": 0.3020833333333333
+        }
+      }
+    },
+    {
+      "seed": 41211,
+      "materials": "new_materials",
+      "methods": {
+        "analytic_impacts": {
+          "trajectory_energy": 0.024391609250195553,
+          "brier": 0.15560735059718858,
+          "mean_rmse": 0.044668888607259045,
+          "map_brier": 0.28125,
+          "map_energy": 0.043718160189699595,
+          "event_rate": 0.4375
+        },
+        "simulator_retrieval": {
+          "trajectory_energy": 0.021266278383852994,
+          "brier": 0.12923301877639057,
+          "mean_rmse": 0.04040789052398724,
+          "map_brier": 0.17708333333333334,
+          "map_energy": 0.029814833577403832,
+          "event_rate": 0.4375
+        }
+      }
+    }
+  ]
+}

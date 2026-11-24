@@ -1,0 +1,529 @@
+{
+  "controls": {
+    "val": {
+      "n_states": 192,
+      "oracle_success": 0.8385416666666666,
+      "random_success": 0.2513020833333333,
+      "reachable": 161,
+      "per_action_success": [
+        0.171875,
+        0.296875,
+        0.3020833333333333,
+        0.234375
+      ]
+    },
+    "clean": {
+      "n_states": 512,
+      "oracle_success": 0.84375,
+      "random_success": 0.2119140625,
+      "reachable": 432,
+      "per_action_success": [
+        0.2265625,
+        0.271484375,
+        0.255859375,
+        0.09375
+      ]
+    },
+    "seen": {
+      "n_states": 512,
+      "oracle_success": 0.814453125,
+      "random_success": 0.2236328125,
+      "reachable": 417,
+      "per_action_success": [
+        0.10546875,
+        0.26171875,
+        0.267578125,
+        0.259765625
+      ]
+    },
+    "strong": {
+      "n_states": 512,
+      "oracle_success": 0.515625,
+      "random_success": 0.17822265625,
+      "reachable": 264,
+      "per_action_success": [
+        0.025390625,
+        0.16015625,
+        0.267578125,
+        0.259765625
+      ]
+    }
+  },
+  "physical_checks": {
+    "val": {
+      "known_damped_equation_max_deg": 1.6917876758620827e-06
+    },
+    "clean": {
+      "known_damped_equation_max_deg": 1.2723642978240426e-06
+    },
+    "seen": {
+      "known_damped_equation_max_deg": 1.703525423858493e-06
+    },
+    "strong": {
+      "known_damped_equation_max_deg": 1.4693151530028211e-06
+    }
+  },
+  "validation_choices": {
+    "4821": {
+      "alpha": 0.0,
+      "sweep": {
+        "0.0": {
+          "success": 0.6354166666666666,
+          "trajectory_MAE_deg": 4.3191899065721975,
+          "peak_MAE_deg": 5.269284922011735,
+          "when_reachable": 0.7577639751552795
+        },
+        "0.125": {
+          "success": 0.6302083333333334,
+          "trajectory_MAE_deg": 4.306618376439754,
+          "peak_MAE_deg": 5.532792597453134,
+          "when_reachable": 0.7515527950310559
+        },
+        "0.25": {
+          "success": 0.5833333333333334,
+          "trajectory_MAE_deg": 4.481783851341006,
+          "peak_MAE_deg": 7.109285024525359,
+          "when_reachable": 0.6956521739130435
+        },
+        "0.5": {
+          "success": 0.4270833333333333,
+          "trajectory_MAE_deg": 5.453641002261649,
+          "peak_MAE_deg": 11.847027276519151,
+          "when_reachable": 0.5093167701863354
+        },
+        "1.0": {
+          "success": 0.24479166666666666,
+          "trajectory_MAE_deg": 8.913111710699491,
+          "peak_MAE_deg": 23.967869767397932,
+          "when_reachable": 0.2919254658385093
+        }
+      }
+    },
+    "4822": {
+      "alpha": 0.125,
+      "sweep": {
+        "0.0": {
+          "success": 0.6354166666666666,
+          "trajectory_MAE_deg": 4.3191899065721975,
+          "peak_MAE_deg": 5.269284922011735,
+          "when_reachable": 0.7577639751552795
+        },
+        "0.125": {
+          "success": 0.640625,
+          "trajectory_MAE_deg": 4.221533097653409,
+          "peak_MAE_deg": 5.509734995621898,
+          "when_reachable": 0.7639751552795031
+        },
+        "0.25": {
+          "success": 0.5989583333333334,
+          "trajectory_MAE_deg": 4.292638842978255,
+          "peak_MAE_deg": 7.054831992794969,
+          "when_reachable": 0.7142857142857143
+        },
+        "0.5": {
+          "success": 0.4270833333333333,
+          "trajectory_MAE_deg": 5.030797984511023,
+          "peak_MAE_deg": 11.693253326913672,
+          "when_reachable": 0.5093167701863354
+        },
+        "1.0": {
+          "success": 0.234375,
+          "trajectory_MAE_deg": 7.981623984904132,
+          "peak_MAE_deg": 23.50287675860368,
+          "when_reachable": 0.2795031055900621
+        }
+      }
+    },
+    "4823": {
+      "alpha": 0.125,
+      "sweep": {
+        "0.0": {
+          "success": 0.6354166666666666,
+          "trajectory_MAE_deg": 4.3191899065721975,
+          "peak_MAE_deg": 5.269284922011735,
+          "when_reachable": 0.7577639751552795
+        },
+        "0.125": {
+          "success": 0.6614583333333334,
+          "trajectory_MAE_deg": 4.074060666261587,
+          "peak_MAE_deg": 5.220592143244943,
+          "when_reachable": 0.7888198757763976
+        },
+        "0.25": {
+          "success": 0.609375,
+          "trajectory_MAE_deg": 4.022110771428813,
+          "peak_MAE_deg": 6.4863214766858945,
+          "when_reachable": 0.7267080745341615
+        },
+        "0.5": {
+          "success": 0.4739583333333333,
+          "trajectory_MAE_deg": 4.764578590906459,
+          "peak_MAE_deg": 10.616668468996046,
+          "when_reachable": 0.5652173913043478
+        },
+        "1.0": {
+          "success": 0.2552083333333333,
+          "trajectory_MAE_deg": 8.106121444664222,
+          "peak_MAE_deg": 21.497075809056962,
+          "when_reachable": 0.30434782608695654
+        }
+      }
+    }
+  },
+  "metrics": {
+    "val": {
+      "prior": {
+        "success": 0.6354166666666666,
+        "trajectory_MAE_deg": 4.3191899065721975,
+        "peak_MAE_deg": 5.269284922011735,
+        "when_reachable": 0.7577639751552795
+      },
+      "drag": {
+        "success": 0.8072916666666666,
+        "trajectory_MAE_deg": 1.14758921764247,
+        "peak_MAE_deg": 1.091452667779767,
+        "when_reachable": 0.9627329192546584
+      },
+      "ridge": {
+        "success": 0.8125,
+        "trajectory_MAE_deg": 0.9575449325062163,
+        "peak_MAE_deg": 1.0389404824661348,
+        "when_reachable": 0.968944099378882
+      },
+      "flow": {
+        "success": 0.6458333333333334,
+        "trajectory_MAE_deg": 4.204927890162398,
+        "peak_MAE_deg": 5.333204020292858,
+        "when_reachable": 0.7701863354037267
+      },
+      "full": {
+        "success": 0.24479166666666666,
+        "trajectory_MAE_deg": 8.333619046755947,
+        "peak_MAE_deg": 22.98927411168619,
+        "when_reachable": 0.2919254658385093
+      }
+    },
+    "clean": {
+      "prior": {
+        "success": 0.830078125,
+        "trajectory_MAE_deg": 0.9073108557727401,
+        "peak_MAE_deg": 0.7757660508574864,
+        "when_reachable": 0.9837962962962963
+      },
+      "drag": {
+        "success": 0.6953125,
+        "trajectory_MAE_deg": 3.7944639105359825,
+        "peak_MAE_deg": 4.204786559663841,
+        "when_reachable": 0.8240740740740741
+      },
+      "ridge": {
+        "success": 0.701171875,
+        "trajectory_MAE_deg": 2.8923261495531216,
+        "peak_MAE_deg": 3.609323262772712,
+        "when_reachable": 0.8310185185185185
+      },
+      "flow": {
+        "success": 0.8248697916666666,
+        "trajectory_MAE_deg": 1.17249328051614,
+        "peak_MAE_deg": 1.112418174228907,
+        "when_reachable": 0.9776234567901234
+      },
+      "full": {
+        "success": 0.41992187499999994,
+        "trajectory_MAE_deg": 8.859271503483285,
+        "peak_MAE_deg": 17.509560131534904,
+        "when_reachable": 0.4976851851851852
+      }
+    },
+    "seen": {
+      "prior": {
+        "success": 0.6015625,
+        "trajectory_MAE_deg": 4.278005234280293,
+        "peak_MAE_deg": 5.229786579226666,
+        "when_reachable": 0.7386091127098321
+      },
+      "drag": {
+        "success": 0.7890625,
+        "trajectory_MAE_deg": 1.1161264259079737,
+        "peak_MAE_deg": 1.0546231491136422,
+        "when_reachable": 0.9688249400479616
+      },
+      "ridge": {
+        "success": 0.783203125,
+        "trajectory_MAE_deg": 0.9132876218081447,
+        "peak_MAE_deg": 1.0108607568937602,
+        "when_reachable": 0.9616306954436451
+      },
+      "flow": {
+        "success": 0.5911458333333333,
+        "trajectory_MAE_deg": 4.156896738631362,
+        "peak_MAE_deg": 5.300445679390752,
+        "when_reachable": 0.7258193445243803
+      },
+      "full": {
+        "success": 0.18229166666666663,
+        "trajectory_MAE_deg": 8.015477154110341,
+        "peak_MAE_deg": 22.60167610975281,
+        "when_reachable": 0.22382094324540366
+      }
+    },
+    "strong": {
+      "prior": {
+        "success": 0.181640625,
+        "trajectory_MAE_deg": 8.181601361682723,
+        "peak_MAE_deg": 10.371523499863741,
+        "when_reachable": 0.3522727272727273
+      },
+      "drag": {
+        "success": 0.41796875,
+        "trajectory_MAE_deg": 4.2019432982412965,
+        "peak_MAE_deg": 4.859627084416431,
+        "when_reachable": 0.8106060606060606
+      },
+      "ridge": {
+        "success": 0.455078125,
+        "trajectory_MAE_deg": 3.5789157600830594,
+        "peak_MAE_deg": 3.8733651388362365,
+        "when_reachable": 0.8825757575757576
+      },
+      "flow": {
+        "success": 0.16536458333333331,
+        "trajectory_MAE_deg": 8.202332606343795,
+        "peak_MAE_deg": 10.930308272526398,
+        "when_reachable": 0.3207070707070707
+      },
+      "full": {
+        "success": 0.034505208333333336,
+        "trajectory_MAE_deg": 11.220195357498286,
+        "peak_MAE_deg": 30.612064488159643,
+        "when_reachable": 0.0669191919191919
+      }
+    }
+  },
+  "seed_performance": {
+    "val": {
+      "4821": {
+        "flow": {
+          "success": 0.6354166666666666,
+          "trajectory_MAE_deg": 4.3191899065721975,
+          "peak_MAE_deg": 5.269284922011735,
+          "when_reachable": 0.7577639751552795
+        },
+        "full": {
+          "success": 0.24479166666666666,
+          "trajectory_MAE_deg": 8.913111710699491,
+          "peak_MAE_deg": 23.967869767397932,
+          "when_reachable": 0.2919254658385093
+        }
+      },
+      "4822": {
+        "flow": {
+          "success": 0.640625,
+          "trajectory_MAE_deg": 4.221533097653409,
+          "peak_MAE_deg": 5.509734995621898,
+          "when_reachable": 0.7639751552795031
+        },
+        "full": {
+          "success": 0.234375,
+          "trajectory_MAE_deg": 7.981623984904132,
+          "peak_MAE_deg": 23.50287675860368,
+          "when_reachable": 0.2795031055900621
+        }
+      },
+      "4823": {
+        "flow": {
+          "success": 0.6614583333333334,
+          "trajectory_MAE_deg": 4.074060666261587,
+          "peak_MAE_deg": 5.220592143244943,
+          "when_reachable": 0.7888198757763976
+        },
+        "full": {
+          "success": 0.2552083333333333,
+          "trajectory_MAE_deg": 8.106121444664222,
+          "peak_MAE_deg": 21.497075809056962,
+          "when_reachable": 0.30434782608695654
+        }
+      }
+    },
+    "clean": {
+      "4821": {
+        "flow": {
+          "success": 0.830078125,
+          "trajectory_MAE_deg": 0.9073108557727401,
+          "peak_MAE_deg": 0.7757660508574864,
+          "when_reachable": 0.9837962962962963
+        },
+        "full": {
+          "success": 0.384765625,
+          "trajectory_MAE_deg": 8.975203129279514,
+          "peak_MAE_deg": 18.460465800733047,
+          "when_reachable": 0.45601851851851855
+        }
+      },
+      "4822": {
+        "flow": {
+          "success": 0.8203125,
+          "trajectory_MAE_deg": 1.3012476450900006,
+          "peak_MAE_deg": 1.3822559486834078,
+          "when_reachable": 0.9722222222222222
+        },
+        "full": {
+          "success": 0.443359375,
+          "trajectory_MAE_deg": 8.270402147398126,
+          "peak_MAE_deg": 18.365531966073753,
+          "when_reachable": 0.5254629629629629
+        }
+      },
+      "4823": {
+        "flow": {
+          "success": 0.82421875,
+          "trajectory_MAE_deg": 1.3089213406856794,
+          "peak_MAE_deg": 1.1792325231458267,
+          "when_reachable": 0.9768518518518519
+        },
+        "full": {
+          "success": 0.431640625,
+          "trajectory_MAE_deg": 9.332209233772215,
+          "peak_MAE_deg": 15.70268262779792,
+          "when_reachable": 0.5115740740740741
+        }
+      }
+    },
+    "seen": {
+      "4821": {
+        "flow": {
+          "success": 0.6015625,
+          "trajectory_MAE_deg": 4.278005234280293,
+          "peak_MAE_deg": 5.229786579226666,
+          "when_reachable": 0.7386091127098321
+        },
+        "full": {
+          "success": 0.17578125,
+          "trajectory_MAE_deg": 8.609964341543186,
+          "peak_MAE_deg": 23.53778956019302,
+          "when_reachable": 0.2158273381294964
+        }
+      },
+      "4822": {
+        "flow": {
+          "success": 0.5859375,
+          "trajectory_MAE_deg": 4.168801479969993,
+          "peak_MAE_deg": 5.482680553478027,
+          "when_reachable": 0.7194244604316546
+        },
+        "full": {
+          "success": 0.169921875,
+          "trajectory_MAE_deg": 7.639288439450773,
+          "peak_MAE_deg": 23.1252225504948,
+          "when_reachable": 0.20863309352517986
+        }
+      },
+      "4823": {
+        "flow": {
+          "success": 0.5859375,
+          "trajectory_MAE_deg": 4.023883501643802,
+          "peak_MAE_deg": 5.188869905467564,
+          "when_reachable": 0.7194244604316546
+        },
+        "full": {
+          "success": 0.201171875,
+          "trajectory_MAE_deg": 7.797178681337062,
+          "peak_MAE_deg": 21.142016218570603,
+          "when_reachable": 0.24700239808153476
+        }
+      }
+    },
+    "strong": {
+      "4821": {
+        "flow": {
+          "success": 0.181640625,
+          "trajectory_MAE_deg": 8.181601361682723,
+          "peak_MAE_deg": 10.371523499863741,
+          "when_reachable": 0.3522727272727273
+        },
+        "full": {
+          "success": 0.03125,
+          "trajectory_MAE_deg": 12.313155403250201,
+          "peak_MAE_deg": 31.84494257660706,
+          "when_reachable": 0.06060606060606061
+        }
+      },
+      "4822": {
+        "flow": {
+          "success": 0.1484375,
+          "trajectory_MAE_deg": 8.241962673012393,
+          "peak_MAE_deg": 11.279438276415085,
+          "when_reachable": 0.2878787878787879
+        },
+        "full": {
+          "success": 0.03125,
+          "trajectory_MAE_deg": 10.878959894696006,
+          "peak_MAE_deg": 30.592035878893295,
+          "when_reachable": 0.06060606060606061
+        }
+      },
+      "4823": {
+        "flow": {
+          "success": 0.166015625,
+          "trajectory_MAE_deg": 8.183433784336266,
+          "peak_MAE_deg": 11.139963041300366,
+          "when_reachable": 0.32196969696969696
+        },
+        "full": {
+          "success": 0.041015625,
+          "trajectory_MAE_deg": 10.468470774548653,
+          "peak_MAE_deg": 29.399215008978583,
+          "when_reachable": 0.07954545454545454
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "seen_flow_over_prior_mae": [
+      0.12110849564893056,
+      0.095832666653017,
+      0.1471381589407718
+    ],
+    "seen_flow_over_prior_success": [
+      -0.010416666666666668,
+      -0.024088541666666668,
+      0.001302083333333333
+    ],
+    "strong_flow_over_prior_mae": [
+      -0.020731244661071443,
+      -0.042718728380248046,
+      0.0016944141010316696
+    ],
+    "strong_flow_over_prior_success": [
+      -0.016276041666666668,
+      -0.032552083333333336,
+      -0.001953125000000002
+    ],
+    "strong_flow_over_drag_mae": [
+      -4.000389308102498,
+      -4.049209466504278,
+      -3.944253256963339
+    ],
+    "strong_flow_over_drag_success": [
+      -0.2526041666666667,
+      -0.3046875,
+      -0.20247395833333337
+    ],
+    "strong_flow_over_ridge_mae": [
+      -4.623416846260735,
+      -4.737128284599834,
+      -4.492115239375648
+    ],
+    "strong_flow_over_ridge_success": [
+      -0.2897135416666667,
+      -0.34309895833333337,
+      -0.236328125
+    ]
+  },
+  "real_action_reversal_states": 205,
+  "gate": {
+    "misspecification_observed": true,
+    "passes": false,
+    "above_both_simple": false
+  }
+}

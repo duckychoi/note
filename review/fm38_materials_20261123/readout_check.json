@@ -1,0 +1,249 @@
+{
+  "fit": {
+    "threshold": 0.0,
+    "update": 1000,
+    "val_balanced_accuracy": 0.7451162040233612
+  },
+  "readers": {
+    "source": {
+      "frames": {
+        "recall": 0.3913043439388275,
+        "specificity": 0.8912711143493652,
+        "balanced": 0.6412877291440964,
+        "accuracy": 0.81640625
+      },
+      "sequence": {
+        "recall": 0.8739129900932312,
+        "specificity": 0.6431853175163269,
+        "balanced": 0.758549153804779,
+        "accuracy": 0.677734375
+      }
+    },
+    "shift": {
+      "frames": {
+        "recall": 0.032608695328235626,
+        "specificity": 0.9806094169616699,
+        "balanced": 0.5066090561449528,
+        "accuracy": 0.923828125
+      },
+      "sequence": {
+        "recall": 0.30434784293174744,
+        "specificity": 0.7991689443588257,
+        "balanced": 0.5517583936452866,
+        "accuracy": 0.76953125
+      }
+    }
+  },
+  "methods": {
+    "flow": [
+      {
+        "frames": {
+          "source": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.046875
+          },
+          "shift": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.0
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.35703124999999997,
+            "attempt_rate": 0.5325520833333334,
+            "forced_success": 0.140625
+          },
+          "shift": {
+            "value": 0.33229166666666665,
+            "attempt_rate": 0.5325520833333334,
+            "forced_success": 0.08854166666666667
+          }
+        }
+      },
+      {
+        "frames": {
+          "source": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.046875
+          },
+          "shift": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.0
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.3551432291666667,
+            "attempt_rate": 0.4915364583333333,
+            "forced_success": 0.11197916666666667
+          },
+          "shift": {
+            "value": 0.3421223958333333,
+            "attempt_rate": 0.4915364583333333,
+            "forced_success": 0.08333333333333333
+          }
+        }
+      },
+      {
+        "frames": {
+          "source": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.046875
+          },
+          "shift": {
+            "value": 0.39999999999999997,
+            "attempt_rate": 0.0,
+            "forced_success": 0.0
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.3777994791666666,
+            "attempt_rate": 0.4537760416666667,
+            "forced_success": 0.13802083333333334
+          },
+          "shift": {
+            "value": 0.3524088541666666,
+            "attempt_rate": 0.4537760416666667,
+            "forced_success": 0.08333333333333333
+          }
+        }
+      }
+    ],
+    "mixture": [
+      {
+        "frames": {
+          "source": {
+            "value": 0.4149739583333334,
+            "attempt_rate": 0.052083333333333336,
+            "forced_success": 0.2109375
+          },
+          "shift": {
+            "value": 0.4000000000000001,
+            "attempt_rate": 0.052083333333333336,
+            "forced_success": 0.09635416666666667
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.3512369791666667,
+            "attempt_rate": 0.646484375,
+            "forced_success": 0.18489583333333334
+          },
+          "shift": {
+            "value": 0.24186197916666666,
+            "attempt_rate": 0.646484375,
+            "forced_success": 0.0625
+          }
+        }
+      },
+      {
+        "frames": {
+          "source": {
+            "value": 0.41328125000000004,
+            "attempt_rate": 0.0625,
+            "forced_success": 0.22135416666666666
+          },
+          "shift": {
+            "value": 0.40091145833333336,
+            "attempt_rate": 0.0625,
+            "forced_success": 0.10416666666666667
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.3634765625,
+            "attempt_rate": 0.6829427083333334,
+            "forced_success": 0.22395833333333334
+          },
+          "shift": {
+            "value": 0.22415364583333333,
+            "attempt_rate": 0.6829427083333334,
+            "forced_success": 0.07291666666666667
+          }
+        }
+      },
+      {
+        "frames": {
+          "source": {
+            "value": 0.4138671875,
+            "attempt_rate": 0.068359375,
+            "forced_success": 0.17447916666666666
+          },
+          "shift": {
+            "value": 0.3988932291666667,
+            "attempt_rate": 0.068359375,
+            "forced_success": 0.09635416666666667
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.3360677083333334,
+            "attempt_rate": 0.6927083333333334,
+            "forced_success": 0.19791666666666666
+          },
+          "shift": {
+            "value": 0.2065104166666667,
+            "attempt_rate": 0.6927083333333334,
+            "forced_success": 0.046875
+          }
+        }
+      }
+    ],
+    "retrieval": [
+      {
+        "frames": {
+          "source": {
+            "value": 0.4242838541666667,
+            "attempt_rate": 0.513671875,
+            "forced_success": 0.2552083333333333
+          },
+          "shift": {
+            "value": 0.3350911458333334,
+            "attempt_rate": 0.513671875,
+            "forced_success": 0.1171875
+          }
+        },
+        "sequence": {
+          "source": {
+            "value": 0.31640625000000006,
+            "attempt_rate": 0.90625,
+            "forced_success": 0.2682291666666667
+          },
+          "shift": {
+            "value": 0.16080729166666669,
+            "attempt_rate": 0.90625,
+            "forced_success": 0.11197916666666667
+          }
+        }
+      }
+    ]
+  },
+  "flow_minus_retrieval": {
+    "frames_source": [
+      -0.024283854166666577,
+      -0.056315511067708275,
+      0.007096354166666748
+    ],
+    "frames_shift": [
+      0.06490885416666675,
+      0.041015625000000076,
+      0.08736979166666674
+    ],
+    "sequence_source": [
+      0.04691840277777779,
+      -0.004904513888888878,
+      0.09756958007812497
+    ],
+    "sequence_shift": [
+      0.1814670138888889,
+      0.14887139214409728,
+      0.2123480902777778
+    ]
+  }
+}

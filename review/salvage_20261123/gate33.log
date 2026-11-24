@@ -1,0 +1,17 @@
+0.5 random {'lr': 0.01} val 3.2294 test 3.13 recall 0.06 recov_med 480.0
+0.5 kale_static {'lr': 0.05} val 2.755 test 2.7036 recall 0.145 recov_med 480.0
+0.5 kale_forget {'lr': 0.05, 'g': 0.998} val 2.4022 test 2.4452 recall 0.202 recov_med 480.0
+0.5 kale_restart {'lr': 0.05, 'R': 480} val 2.2824 test 2.2761 recall 0.234 recov_med 480.0
+0.5 signed_corr {'lr': 0.05} val 2.1267 test 2.045 recall 0.258 recov_med 480.0
+0.5 resid_ucb {'lr': 0.1, 'kappa': 1.0} val 1.9847 test 1.8513 recall 0.396 recov_med 480.0
+0.5 oracle_support {'lr': 0.2} val 0.2975 test 0.2924 recall 1.0 recov_med 0.0
+VERDICT 0.5 {"strongest_baseline": "signed_corr", "ratio_new_over_base": 0.9052992384292512, "paired_base_minus_new": 0.19366248704149727, "paired_ci95": [0.06737920762565429, 0.3164707147398797], "rel_degradation_mean": -0.07476147793291134, "rel_degradation_ci95": [-0.12298497838824346, -0.025765953953837607]}
+0.0 random {'lr': 0.01} val 3.204 test 3.1335 recall 0.06 recov_med 480.0
+0.0 kale_static {'lr': 0.025} val 2.9001 test 2.8339 recall 0.144 recov_med 480.0
+0.0 kale_forget {'lr': 0.05, 'g': 0.998} val 2.5318 test 2.6053 recall 0.196 recov_med 480.0
+0.0 kale_restart {'lr': 0.05, 'R': 480} val 2.5496 test 2.461 recall 0.233 recov_med 480.0
+0.0 signed_corr {'lr': 0.05} val 2.3001 test 2.1286 recall 0.259 recov_med 480.0
+0.0 resid_ucb {'lr': 0.1, 'kappa': 1.0} val 2.0223 test 1.9866 recall 0.422 recov_med 480.0
+0.0 oracle_support {'lr': 0.2} val 0.2971 test 0.2915 recall 1.0 recov_med 0.0
+VERDICT 0.0 {"strongest_baseline": "signed_corr", "ratio_new_over_base": 0.9333240162633152, "paired_base_minus_new": 0.1419242207833643, "paired_ci95": [0.01308902940952406, 0.2691882688745328], "rel_degradation_mean": -0.05035651023593581, "rel_degradation_ci95": [-0.10033405308815296, 0.003048061807145897]}
+GATE {'main_pass': True, 'control_pass': True, 'pass_': True}

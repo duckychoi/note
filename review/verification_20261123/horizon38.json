@@ -1,0 +1,1286 @@
+{
+  "k2/noise0.1": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.6875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.8125,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.5,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.625,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -0.75,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 1.0,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.8125,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.9375,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.75,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 1.0,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -1.0,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -1.0,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ]
+    }
+  },
+  "k2/noise0.35": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.1875,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.1875,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.4375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.0625,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.4375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.5,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.4375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.1875,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.5625,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -0.1875,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.1875,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -0.375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.0625,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ]
+    }
+  },
+  "k4/noise0.1": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.9375,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.9375,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -1.0,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.9375,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.8125,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.8125,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ]
+    }
+  },
+  "k4/noise0.35": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.4375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.3125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.5,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.1875,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -0.5,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.1875,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.1875,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.25,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.0625,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.4375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.3125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.1875,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.5625,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.25,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -0.3125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.5625,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -0.375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.25,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ]
+    }
+  },
+  "k8/noise0.1": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.1
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.9
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.9375,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.9375,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.9375,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.625,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.8125,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.75,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.9375,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.6875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.9375,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.75,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.75,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.8125,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.6875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -0.875,
+          "chosen_action": -1,
+          "achieved": 0.9,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.875,
+          "chosen_action": 1,
+          "achieved": 0.9,
+          "regret": 0.0
+        }
+      ]
+    }
+  },
+  "k8/noise0.35": {
+    "exact": {
+      "-1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      },
+      "-1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/-1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.35
+      },
+      "1/1": {
+        "max_k_window_error": 0.0,
+        "path_success": 0.65
+      }
+    },
+    "seeds": {
+      "61200": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.0,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61201": [
+        {
+          "world": -1,
+          "estimate": -0.4375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61202": [
+        {
+          "world": -1,
+          "estimate": -0.4375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61203": [
+        {
+          "world": -1,
+          "estimate": -0.4375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61204": [
+        {
+          "world": -1,
+          "estimate": -0.1875,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61205": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61206": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61207": [
+        {
+          "world": -1,
+          "estimate": -0.375,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.4375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61208": [
+        {
+          "world": -1,
+          "estimate": -0.25,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61209": [
+        {
+          "world": -1,
+          "estimate": -0.0625,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.3125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61210": [
+        {
+          "world": -1,
+          "estimate": -0.3125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.125,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ],
+      "61211": [
+        {
+          "world": -1,
+          "estimate": -0.125,
+          "chosen_action": -1,
+          "achieved": 0.65,
+          "regret": 0.0
+        },
+        {
+          "world": 1,
+          "estimate": 0.4375,
+          "chosen_action": 1,
+          "achieved": 0.65,
+          "regret": 0.0
+        }
+      ]
+    }
+  }
+}

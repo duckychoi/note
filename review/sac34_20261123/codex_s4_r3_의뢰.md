@@ -1,0 +1,2 @@
+Round 3 (Korean, concise). r2 verdict NOT READY (codex_s4_r2_sol.txt). Read PREREG.md "### S4 수정 2" and the patched agg34_s4.py, demos34.py (--train_seeds/--ho_seed, per-touchdown lags in segs), sac34_s4.py (segs now include individual lags).
+Check only whether the four r2 blocking items are resolved and whether the patches introduced verdict-changing bugs. End with READY or NOT READY + blocking items.

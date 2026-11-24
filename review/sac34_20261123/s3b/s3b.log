@@ -1,0 +1,63 @@
+members 12 [('fm_reg', 'F', 0.5, 0), ('fm_reg', 'F', 0.5, 1), ('fm_reg', 'F', 0.5, 2), ('fm_reg', 'R', 0.5, 0), ('fm_reg', 'R', 0.5, 1), ('fm_reg', 'R', 0.5, 2), ('amp_phase_reg', 'F', 0.5, 0), ('amp_phase_reg', 'F', 0.5, 1), ('amp_phase_reg', 'F', 0.5, 2), ('amp_phase_reg', 'R', 0.5, 0), ('amp_phase_reg', 'R', 0.5, 1), ('amp_phase_reg', 'R', 0.5, 2)]
+FM prior fm_reg F {'sigma': 0.3, 'iters': 30000, 'q_D': 177.22561645507812, 'auc_window_own_vs_other': 0.9927545, 'rstyle_med_own': -0.3533697724342346, 'rstyle_med_other': -1.0}
+FM prior fm_reg R {'sigma': 0.3, 'iters': 30000, 'q_D': 181.7921905517578, 'auc_window_own_vs_other': 0.921117875, 'rstyle_med_own': -0.32180488109588623, 'rstyle_med_other': -0.6739501953125}
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+2000 sps 335  Tb_med [None, None, None, None, None] nlag [0, 0, 0, 0, 0]
+  25000 sps 61 min 6.9 | fm_reg/F/0.5: v0.62 ok0.0 s-0.14,v0.80 ok0.0 s-0.15,v0.48 ok0.0 s-0.36 | fm_reg/R/0.5: v0.81 ok0.0 s-0.44,v0.84 ok0.0 s-0.27,v0.71 ok0.0 s-0.47 | amp_phase_reg/F/0.5: v0.73 ok0.0 s-0.29,v0.77 ok0.0 s-0.33,v0.76 ok0.0 s-0.39 | amp_phase_reg/R/0.5: v0.70 ok0.0 s-0.47,v0.80 ok0.0 s-0.20,v0.81 ok0.0 s-0.47
+  50000 sps 47 min 17.8 | fm_reg/F/0.5: v0.99 ok1.0 s+0.09,v0.97 ok1.0 s-0.21,v0.97 ok1.0 s-0.17 | fm_reg/R/0.5: v1.02 ok1.0 s-0.36,v1.05 ok1.0 s-0.30,v1.05 ok1.0 s-0.31 | amp_phase_reg/F/0.5: v1.01 ok1.0 s-0.09,v0.99 ok1.0 s-0.31,v1.09 ok0.5 s+0.09 | amp_phase_reg/R/0.5: v1.04 ok1.0 s-0.37,v0.90 ok0.5 s-0.26,v0.95 ok1.0 s-0.46
+  75000 sps 48 min 25.9 | fm_reg/F/0.5: v1.02 ok1.0 s+0.10,v0.98 ok1.0 s+0.28,v1.03 ok1.0 s+0.04 | fm_reg/R/0.5: v1.00 ok1.0 s-0.39,v0.99 ok1.0 s-0.32,v0.93 ok1.0 s-0.41 | amp_phase_reg/F/0.5: v1.03 ok1.0 s+0.12,v1.02 ok1.0 s-0.37,v1.02 ok1.0 s-0.16 | amp_phase_reg/R/0.5: v1.03 ok1.0 s-0.37,v0.98 ok1.0 s+0.20,v0.98 ok1.0 s-0.10
+ 100000 sps 49 min 34.3 | fm_reg/F/0.5: v1.04 ok1.0 s+0.23,v1.00 ok1.0 s+0.30,v0.98 ok1.0 s+0.09 | fm_reg/R/0.5: v0.98 ok1.0 s-0.38,v1.00 ok1.0 s-0.41,v1.00 ok1.0 s-0.48 | amp_phase_reg/F/0.5: v1.02 ok1.0 s+0.40,v0.98 ok1.0 s-0.46,v1.01 ok1.0 s-0.13 | amp_phase_reg/R/0.5: v0.99 ok1.0 s-0.47,v1.02 ok1.0 s-0.34,v0.99 ok1.0 s-0.41
+ 125000 sps 48 min 43.3 | fm_reg/F/0.5: v0.99 ok1.0 s+0.36,v0.99 ok1.0 s+0.32,v1.02 ok1.0 s+0.07 | fm_reg/R/0.5: v0.98 ok1.0 s-0.29,v1.01 ok1.0 s-0.45,v1.02 ok1.0 s-0.42 | amp_phase_reg/F/0.5: v1.02 ok1.0 s+0.40,v1.02 ok1.0 s-0.06,v1.01 ok1.0 s+0.24 | amp_phase_reg/R/0.5: v1.00 ok1.0 s-0.43,v1.00 ok1.0 s-0.49,v1.01 ok1.0 s-0.08
+ 150000 sps 46 min 54.6 | fm_reg/F/0.5: v1.01 ok1.0 s+0.25,v1.00 ok1.0 s+0.20,v0.99 ok1.0 s+0.20 | fm_reg/R/0.5: v1.01 ok1.0 s-0.42,v0.99 ok1.0 s-0.45,v0.99 ok1.0 s-0.42 | amp_phase_reg/F/0.5: v1.03 ok1.0 s+0.40,v1.01 ok1.0 s+0.34,v1.02 ok1.0 s+0.27 | amp_phase_reg/R/0.5: v1.01 ok1.0 s-0.45,v0.96 ok1.0 s-0.45,v1.00 ok1.0 s-0.47
+ 175000 sps 47 min 62.2 | fm_reg/F/0.5: v1.00 ok1.0 s+0.25,v1.00 ok1.0 s+0.19,v1.00 ok1.0 s+0.00 | fm_reg/R/0.5: v0.98 ok1.0 s-0.47,v0.99 ok1.0 s-0.47,v0.98 ok1.0 s-0.27 | amp_phase_reg/F/0.5: v1.02 ok1.0 s+0.50,v1.02 ok1.0 s+0.33,v1.03 ok1.0 s+0.39 | amp_phase_reg/R/0.5: v1.00 ok1.0 s-0.50,v1.00 ok1.0 s-0.49,v1.00 ok1.0 s-0.46
+ 200000 sps 48 min 69.9 | fm_reg/F/0.5: v1.00 ok1.0 s+0.20,v0.99 ok1.0 s+0.37,v1.00 ok1.0 s+0.17 | fm_reg/R/0.5: v0.99 ok1.0 s-0.43,v1.00 ok1.0 s-0.49,v0.99 ok1.0 s-0.37 | amp_phase_reg/F/0.5: v1.00 ok1.0 s+0.47,v1.01 ok1.0 s+0.47,v1.00 ok1.0 s+0.44 | amp_phase_reg/R/0.5: v0.99 ok1.0 s-0.50,v0.99 ok1.0 s-0.47,v1.00 ok1.0 s-0.40
+ 225000 sps 49 min 77.3 | fm_reg/F/0.5: v1.01 ok1.0 s+0.27,v1.00 ok1.0 s+0.45,v1.02 ok1.0 s+0.16 | fm_reg/R/0.5: v1.00 ok1.0 s-0.47,v1.00 ok1.0 s-0.40,v0.98 ok1.0 s-0.47 | amp_phase_reg/F/0.5: v0.99 ok1.0 s+0.47,v1.00 ok1.0 s+0.50,v1.00 ok1.0 s+0.47 | amp_phase_reg/R/0.5: v0.98 ok1.0 s-0.43,v1.00 ok1.0 s-0.45,v0.99 ok1.0 s-0.49
+ 250000 sps 38 min 108.7 | fm_reg/F/0.5: v1.03 ok1.0 s+0.27,v1.00 ok1.0 s+0.40,v1.01 ok1.0 s+0.10 | fm_reg/R/0.5: v0.98 ok1.0 s-0.43,v1.00 ok1.0 s-0.47,v1.00 ok1.0 s-0.32 | amp_phase_reg/F/0.5: v0.99 ok1.0 s+0.47,v1.02 ok1.0 s+0.44,v1.02 ok1.0 s+0.40 | amp_phase_reg/R/0.5: v1.04 ok1.0 s-0.44,v1.00 ok1.0 s-0.45,v1.00 ok1.0 s-0.45
+ 275000 sps 7 min 676.2 | fm_reg/F/0.5: v0.99 ok1.0 s+0.32,v1.00 ok1.0 s+0.47,v1.00 ok1.0 s+0.07 | fm_reg/R/0.5: v1.00 ok1.0 s-0.38,v0.99 ok1.0 s-0.47,v1.00 ok1.0 s-0.39 | amp_phase_reg/F/0.5: v1.01 ok1.0 s+0.49,v1.00 ok1.0 s+0.47,v1.01 ok1.0 s+0.40 | amp_phase_reg/R/0.5: v0.98 ok1.0 s-0.46,v1.00 ok1.0 s-0.45,v1.00 ok1.0 s-0.47

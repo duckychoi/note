@@ -1,0 +1,1 @@
+Round 5 (Korean, concise). r4 NOT READY (codex_s4_r4_sol.txt): M demonstrator qualification and held-out seed selection not enforced. Check demos34.py (lines ~36-50) now enforces PREREG rule. Check only that item and no new verdict-changing bug. End with READY or NOT READY.

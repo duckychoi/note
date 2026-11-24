@@ -1,0 +1,15 @@
+{
+ "exact_rows": 442368,
+ "exact_flow_sec": 2.688337564468384,
+ "exact_sim_sec": 41.04870653152466,
+ "cheap_rows": 98304,
+ "cheap": {
+  "zero_estimate_classes": 0.5208333333333334,
+  "only_min_classes": 0.4166666666666667,
+  "mass_in_only_min": 1.4857678858955768e-28,
+  "t_prop": 0.42475008964538574,
+  "t_sim": 8.920522212982178,
+  "sec": 9.372838973999023
+ },
+ "fresh4096_one_type_sec": 18.442353010177612
+}

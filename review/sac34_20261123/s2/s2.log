@@ -1,0 +1,76 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+ep 0 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.0, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.5)}
+ep 1 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 2 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 3 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.0, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.5)}
+ep 4 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 5 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 6 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.47), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 7 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.0, True, 0.49), 'R0': (0.99, True, -0.47), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.5)}
+ep 8 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 9 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 10 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.0, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 11 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 12 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.48), 'R2': (1.02, True, -0.5)}
+ep 13 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.47), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 14 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.48), 'R2': (1.02, True, -0.5)}
+ep 15 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (1.0, True, -0.47), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.5)}
+ep 16 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.48), 'R2': (1.02, True, -0.5)}
+ep 17 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.0, True, 0.49), 'R0': (0.99, True, -0.47), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+ep 18 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.49), 'R1': (0.99, True, -0.48), 'R2': (1.02, True, -0.49)}
+ep 19 {'F0': (1.02, True, 0.48), 'F1': (1.0, True, 0.49), 'F2': (1.01, True, 0.49), 'R0': (0.99, True, -0.48), 'R1': (0.99, True, -0.47), 'R2': (1.02, True, -0.49)}
+{
+ "w": 0.5,
+ "counts": {
+  "F": {
+   "train": 24,
+   "heldout": 20
+  },
+  "R": {
+   "train": 24,
+   "heldout": 20
+  }
+ },
+ "train_seeds": [
+  0,
+  1
+ ],
+ "ho_seed": 2,
+ "lagD_F": 0.7420492668611908,
+ "lagD_R": 0.2541562250623918,
+ "auc_s_heldout": 1.0,
+ "gap": 0.9823656379922434,
+ "s_heldout_mean": {
+  "F": 0.4884151984450293,
+  "R": -0.49395043954721407
+ },
+ "enough_demos": true,
+ "S2_pass": true,
+ "psd_rel_F_vs_R": [
+  1.5344743728637695,
+  1.5590291023254395,
+  1.416580080986023,
+  1.5498977899551392,
+  1.6044331789016724,
+  1.3895692825317383
+ ],
+ "psd_rel_within_label_demonstrators": [
+  1.4530805945396423,
+  1.4401179254055023,
+  1.1235103532671928,
+  1.209411087135474,
+  1.5203465620676677,
+  1.1052844325701396
+ ]
+}

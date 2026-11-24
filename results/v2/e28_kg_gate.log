@@ -1,0 +1,2 @@
+bits 2 D 16384 bytes 12288 C 2048 facts (stream 7200) | holo_raw 0.009±0.008 holo 0.067±0.019 fifo 0.007±0.010 resv 0.223±0.032
+bits 2 D 32768 bytes 24576 C 4096 facts (stream 7200) | holo_raw 0.008±0.005 holo 0.387±0.024 fifo 0.065±0.014 resv 0.499±0.048

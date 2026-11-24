@@ -1,0 +1,423 @@
+<title>PF 생성 점검 노트</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']],
+      // the manuscript's own preamble: \newcommand{\mat}[1]{\boldsymbol{#1}} etc.
+      macros: {
+        mat:  ['\\boldsymbol{#1}', 1],
+        vect: ['\\boldsymbol{#1}', 1]
+      }
+    },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+  };
+</script>
+<script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js"></script>
+<style>
+:root{
+  --ground:#f1f2ee; --surface:#ffffff; --surface-2:#e8eae3; --surface-3:#dee1d8;
+  --ink:#16191c; --ink-2:#49535e; --ink-3:#7a848e;
+  --rule:#d9ddd3; --rule-strong:#bcc2b4;
+  --accent:#0b6ca8; --accent-soft:#dceaf4;
+  --warm:#b8480f; --warm-soft:#f8e5da;
+  --src-p:#33478f; --src-p-bg:#dfe3f4;   /* 논문 */
+  --src-c:#1a6249; --src-c-bg:#d9ebe2;   /* 코드 */
+  --src-d:#845410; --src-d-bg:#f5e8d2;   /* 유도 */
+  --src-u:#96313d; --src-u-bg:#f6dee1;   /* 미확인 */
+  --shadow:0 1px 2px rgba(22,25,28,.05), 0 10px 26px -18px rgba(22,25,28,.30);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101310; --surface:#181c1a; --surface-2:#1f2422; --surface-3:#262d2a;
+    --ink:#e8ebe5; --ink-2:#a6b0a8; --ink-3:#76807a;
+    --rule:#2b322e; --rule-strong:#3d4641;
+    --accent:#6fb6e0; --accent-soft:#122734;
+    --warm:#e58a55; --warm-soft:#331c10;
+    --src-p:#9aa6ea; --src-p-bg:#1b1f3d;
+    --src-c:#5cc39c; --src-c-bg:#102a20;
+    --src-d:#dda954; --src-d-bg:#30240e;
+    --src-u:#e5868f; --src-u-bg:#371b1f;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.85);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101310; --surface:#181c1a; --surface-2:#1f2422; --surface-3:#262d2a;
+  --ink:#e8ebe5; --ink-2:#a6b0a8; --ink-3:#76807a;
+  --rule:#2b322e; --rule-strong:#3d4641;
+  --accent:#6fb6e0; --accent-soft:#122734;
+  --warm:#e58a55; --warm-soft:#331c10;
+  --src-p:#9aa6ea; --src-p-bg:#1b1f3d;
+  --src-c:#5cc39c; --src-c-bg:#102a20;
+  --src-d:#dda954; --src-d-bg:#30240e;
+  --src-u:#e5868f; --src-u-bg:#371b1f;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.85);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans KR","Malgun Gothic",system-ui,sans-serif;
+  font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace}
+h1,h2,h3,h4{font-family:"Noto Serif KR",Georgia,serif;text-wrap:pretty;line-height:1.3;margin:0}
+a{color:var(--accent)}
+p{margin:0}
+
+.wrap{max-width:1440px;margin:0 auto;padding-inline:24px;padding-block:0 88px}
+.prose{max-width:none}
+
+/* masthead */
+header.top{border-bottom:1px solid var(--rule);background:var(--surface);}
+.top-inner{max-width:1440px;margin:0 auto;padding-inline:24px;padding-block:48px 30px;display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:clamp(26px,4.2vw,38px);font-weight:700;letter-spacing:-.015em}
+.standfirst{max-width:none;color:var(--ink-2);font-size:15.5px;font-weight:300}
+.meta-row{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+
+/* badges */
+.badge{display:inline-flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.05em;padding:2px 7px;border-radius:3px;white-space:nowrap;vertical-align:1px}
+.badge::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.b-p{color:var(--src-p);background:var(--src-p-bg)}
+.b-c{color:var(--src-c);background:var(--src-c-bg)}
+.b-d{color:var(--src-d);background:var(--src-d-bg)}
+.b-u{color:var(--src-u);background:var(--src-u-bg)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;padding:14px 16px;background:var(--surface-2);border-radius:6px}
+.legend div{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2)}
+
+/* sections */
+section{margin-top:54px;display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:7px}
+.sec-num{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--accent)}
+.sec-head h2{font-size:20px;font-weight:600;letter-spacing:-.01em}
+
+/* spec cards */
+.spec{background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+.spec-head{display:flex;flex-wrap:wrap;align-items:center;gap:9px;padding:13px 20px;background:var(--surface-2);border-bottom:1px solid var(--rule)}
+.spec-id{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink-3)}
+.spec-head h3{font-size:15.5px;font-weight:600;flex:1;min-width:170px;font-family:"IBM Plex Sans KR",sans-serif}
+.spec-src{width:100%;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);margin-top:-2px}
+.spec-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:14px}
+.spec-body p{max-width:none;color:var(--ink-2)}
+.spec-body p strong,.spec-body li strong{color:var(--ink);font-weight:600}
+.spec-body ul{margin:0;padding-left:20px;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+
+.mathrow{overflow-x:auto;padding-block:4px 8px}
+blockquote.quote{margin:0;padding:12px 18px;border-left:3px solid var(--rule-strong);background:var(--surface-2);font-size:13.5px;color:var(--ink-2);border-radius:0 4px 4px 0}
+.warn{border-left:3px solid var(--src-u);background:var(--src-u-bg);padding:13px 18px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink)}
+.warn b{color:var(--src-u)}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:13px 18px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink)}
+.plain{border-left:3px solid var(--warm);background:var(--warm-soft);padding:14px 18px;border-radius:0 4px 4px 0;font-size:14px;color:var(--ink)}
+.plain b{color:var(--warm)}
+
+/* tables */
+.tscroll{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:9px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+thead th{background:var(--surface-2);font-weight:600;font-size:12px;border-bottom:2px solid var(--rule-strong);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody th{font-weight:500;color:var(--ink-2);background:var(--surface-2);white-space:nowrap;font-size:12.5px}
+td.num,th.num{font-variant-numeric:tabular-nums;text-align:right}
+.col-ours{background:var(--accent-soft)}
+thead th.col-ours{background:var(--accent-soft)}
+td em{font-style:normal;color:var(--src-u);font-weight:600}
+td b{font-weight:600}
+.win{color:var(--src-c);font-weight:600}
+
+/* cascade */
+.chain{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.chain-step{display:grid;grid-template-columns:34px 1fr;gap:0 16px;background:var(--surface);padding:14px 18px}
+.chain-n{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--accent);padding-top:3px}
+.chain-b{display:flex;flex-direction:column;gap:7px;min-width:0}
+.chain-t{font-size:13.5px;font-weight:600}
+.chain-d{font-size:13px;color:var(--ink-2)}
+.chain-src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+/* verdict */
+.verdict{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:18px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.verdict h3{font-size:15px;font-weight:600;font-family:"IBM Plex Sans KR",sans-serif}
+.verdict ul{margin:0;padding-left:20px;color:var(--ink-2);font-size:14px;display:flex;flex-direction:column;gap:6px}
+.verdict li b{color:var(--ink)}
+
+/* two-col lists */
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.pane{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:17px 19px;display:flex;flex-direction:column;gap:9px}
+.pane h4{font-size:14px;font-weight:600;font-family:"IBM Plex Sans KR",sans-serif}
+.pane ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.pane.good{border-top:3px solid var(--src-c)}
+.pane.bad{border-top:3px solid var(--src-u)}
+.pane.next{border-top:3px solid var(--accent)}
+
+/* refs */
+.refs{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.ref{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:0 18px;background:var(--surface);padding:13px 18px}
+.ref-k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent);padding-top:2px}
+.ref-b{font-size:13px;color:var(--ink-2)}
+.ref-b b{color:var(--ink);font-weight:600}
+.ref-why{display:block;margin-top:4px;color:var(--ink-3);font-size:12.5px}
+
+/* option cards */
+.opts{display:flex;flex-direction:column;gap:14px}
+.opt{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px 19px;display:flex;flex-direction:column;gap:9px}
+.opt.pick{border-left:4px solid var(--warm)}
+.opt-h{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.opt-t{font-size:14px;font-weight:600}
+.opt-q{font-size:13.5px;color:var(--ink);background:var(--surface-2);padding:11px 15px;border-radius:4px;font-style:italic}
+.opt-n{font-size:13px;color:var(--ink-2)}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--surface-3);color:var(--ink-2)}
+.tag.pickt{background:var(--warm-soft);color:var(--warm)}
+
+footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);max-width:none;display:flex;flex-direction:column;gap:10px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:520px){
+  .chain-step{grid-template-columns:1fr;gap:6px}
+  .ref{grid-template-columns:1fr;gap:6px}
+}
+details.fold{border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface-2)}
+details.fold summary{cursor:pointer;padding:10px 14px;font-size:14px;font-weight:600;list-style-position:inside}
+details.fold summary .tag{margin-right:8px}
+details.fold .fold-body{padding:0 16px 12px 16px;font-size:13px;line-height:1.6;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+tr.col-ours th,tr.col-ours td{background:var(--accent-soft)}
+.ba{background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+.ba-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;padding:12px 18px;background:var(--surface-2);border-bottom:1px solid var(--rule);font-size:15px}
+.ba-k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent)}
+.ba-q{width:100%;font-size:12.5px;color:var(--ink-3)}
+.ba-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.ba-b,.ba-a{padding:14px 18px;font-size:13.5px;color:var(--ink-2);min-width:0}
+.ba-b{border-right:1px solid var(--rule)}
+.ba-a{background:var(--accent-soft);color:var(--ink)}
+.ba-t{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.08em;color:var(--ink-3);margin-bottom:5px}
+.ba-a .ba-t{color:var(--accent)}
+.ba-i{padding:10px 18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-2)}
+@media (max-width:620px){.ba-b{border-right:none;border-bottom:1px solid var(--rule)}}
+.wrap,.top-inner{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+</style>
+
+<header class="top"><div class="top-inner">
+  <div class="eyebrow">연구주제 원장 #35 · Particle Filter × Flow Matching · 점검·전환 노트</div>
+  <h1>PF(SMC)는 생성 샘플러로는 한계, 가치(Q)로 기울인 FM 정책 샘플러로는 유망하다</h1>
+  <p class="standfirst">원래 주장("확산·flow ODE를 PF로 대체해 few-step에서 Euler보다 13배")은 NFE를 정직하게 세면 성립하지 않습니다. 정답 에너지를 줘도 가중치가 차원에 비례해 흔들려 무너집니다. 반면 FM 정책을 Q로 기울이는 문제 \(\pi^*\propto\pi_{FM}e^{Q/\beta}\)에서는 가중치에 쓸 진짜 신호(Q)가 있습니다. toy에서 SMC가 같은 예산의 best-of-N보다 약 4.5배 정확했고, 근사 Q 기울기 유도의 편향도 고쳤습니다.</p>
+  <div class="meta-row"><span>원자료 note:origin/pf-generative-flow (a837ba7)</span><span>재현·신규 note/src/v2/pf/ (미커밋)</span><span>교차검수 전</span><span>2026-11-22</span></div>
+</div></header>
+
+<main class="wrap">
+
+<section id="s0">
+  <div class="sec-head"><span class="sec-num">§0</span><h2>출처 등급과 철회한 주장</h2></div>
+  <div class="legend">
+    <div><span class="badge b-p">논문</span>조사 에이전트가 arXiv 초록에서 확인</div>
+    <div><span class="badge b-c">코드</span>이 저장소 코드를 실행해 얻은 값</div>
+    <div><span class="badge b-d">유도</span>손으로 유도</div>
+    <div><span class="badge b-u">미확인</span>재지 않았거나 원문을 못 본 것</div>
+  </div>
+  <div class="tscroll"><table style="min-width:700px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">왼쪽 두 열은 원 README·docs/01에 쓰인 그대로입니다. 오른쪽은 이번 점검의 판정입니다.</caption>
+    <thead><tr><th>원래 주장</th><th>출처</th><th>지금 판정</th></tr></thead>
+    <tbody>
+      <tr><td>N=5에서 SMC+rejuvenation 0.0039 vs Euler 0.052, <b>13배</b> 좋다</td><td>README "핵심 가설"</td><td><em>철회.</em> 스텝 수만 셌고 rejuvenation의 score 호출(스텝당 4회)을 빼먹었습니다. 정직한 NFE로 맞추면 Euler와 비슷하고 Heun보다 나쁩니다(§2). 원 결과는 단일 seed였습니다. <span class="badge b-c">코드</span></td></tr>
+      <tr><td>rejuvenation이 고 NFE 퇴화까지 봉합한다</td><td>README "결론"</td><td><em>철회.</em> 10 seed에서 N=20 SMC+rej는 0.26±0.71로 폭주했습니다(Euler 0.009). <span class="badge b-c">코드</span></td></tr>
+      <tr><td>가중 = "알려진 \(p_t\)"로 bootstrap</td><td>README·toy_pf_vs_euler.py</td><td><em>핵심 결함.</em> 학습된 flow는 \(p_t\)를 값싸게 주지 않습니다. ODE 우도 적분이 필요하고, 그 비용이 아끼려던 NFE보다 큽니다. <span class="badge b-d">유도</span></td></tr>
+      <tr><td>\(\mathcal W_2 \le C_1/\sqrt K + C_2\epsilon_{score}\) (h 항 없음), 새로운 bound</td><td>docs/01:22</td><td><em>철회.</em> 유한 스텝의 가중 분산(§3에서 \(d\)·\(h\)에 의존함을 실측)이 빠졌습니다. 비점근 bound는 Strasman+ 2607.04780에 이미 있습니다. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>무조건 생성에서 ODE를 PF로 대체한 연구는 없다</td><td>README "문헌 확인"</td><td><b>부분만 맞음.</b> 드물기는 한데 이유가 있습니다. FKC는 β=1에서 보정이 0이고, 정확한 가중에는 에너지가 필요합니다. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>(내 판단, 11-22) "같은 예산에서 SMC가 best-of-N보다 4.5배 정확"</td><td>§1·§5 E4</td><td><em>철회.</em> 예산이 실제 호출 수가 아니었고(FK 1,568 vs 544), 후보를 만드는 방식(Euler vs SDE)과 고르는 방식이 동시에 달랐습니다. 같은 SDE 경로에서 마지막에만 추첨하면 호출 약 1/3로 오차가 같습니다(0.036 vs 0.039). codex와 GPT 두 검수가 독립적으로 확인했습니다. <span class="badge b-c">코드</span></td></tr>
+      <tr><td>(내 판단, 11-22 중간) "정확 twist guidance가 정답을 못 낸다"</td><td>e35p_twist.py 1차 실행</td><td><em>내 버그.</em> SDE 노이즈를 상수로 둬서 \(E[\cdot\mid a_t]\)가 보간 사후분포와 달랐습니다. \(g^2=2(1-t)/t\)로 맞춘 뒤 정답(0.317/0.157/0.526 vs 0.316/0.158/0.526)을 재현했습니다. <span class="badge b-c">코드</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="s0b">
+  <div class="sec-head"><span class="sec-num">§0″</span><h2>기술별: 무엇을 풀려 했고, 점검 후 어떻게 됐나</h2></div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 1</span><b>예측–보정–리샘플(SMC) = 샘플러 교체</b><span class="ba-q">풀려던 문제: 적은 스텝의 ODE 적분(Euler)은 휘어진 길을 놓쳐 분포가 틀어진다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">작업 전</span>입자를 굵은 스텝으로 움직이고(예측), 정답 분포에 맞는 정도로 가중해(보정), 맞는 입자를 복제합니다(리샘플). 스텝이 굵어도 오차가 교정된다고 봤습니다.</div>
+      <div class="ba-a"><span class="ba-t">작업 후</span>교정은 되지만, 같은 계산량이면 <b>더 좋은 적분기(Heun)가 더 싸게 같은 일을 합니다.</b> 가중의 흔들림이 차원에 비례해 커져서 고차원에서는 무너집니다(§3).</div>
+    </div>
+    <div class="ba-i"><b>구현:</b> 원본 <code>src/toy_pf_vs_euler.py</code>, 재현 <code>note/src/v2/pf/e35_audit.py:51</code>. · <b>철학:</b> "길을 정확히 계산하는 대신, 여러 명을 보내고 잘 간 사람을 따라간다."</div>
+  </div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 2</span><b>가중치의 근거</b><span class="ba-q">풀려던 문제: 어느 입자가 "맞는 곳"에 있는지 판정할 기준이 필요하다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">작업 전</span>toy GMM의 정답 밀도 \(p_t\)를 그대로 썼습니다. 시험 보면서 정답지를 본 셈입니다.</div>
+      <div class="ba-a"><span class="ba-t">작업 후</span><b>근거를 바꿨습니다.</b> 정책 문제에서는 가치 \(Q\)가 "얼마나 좋은 행동인가"라는 진짜 신호입니다. 목표는 \(\pi_{FM}e^{Q/\beta}\)이고, 가중에는 \(p_t\)가 필요 없고 \(Q\)(와 중간 가치 \(Q_t\))만 있으면 됩니다(§5).</div>
+    </div>
+    <div class="ba-i"><b>구현:</b> <code>note/src/v2/pf/e35p_twist.py</code> · <b>철학:</b> "정답지를 훔쳐보지 말고, 실제로 받을 점수로 고른다."</div>
+  </div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 3</span><b>중간 가치 twist \(Q_t\)</b><span class="ba-q">풀려던 문제: 결승선에서만 고르면(best-of-N) 드문 좋은 행동을 찾으려고 입자가 많이 든다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">작업 전</span>없었습니다. 원 연구는 rejuvenation(score 방향으로 흔들기)으로 다양성만 되살렸습니다.</div>
+      <div class="ba-a"><span class="ba-t">작업 후</span>flow 시간 \(t\)마다 "이 중간 행동이 결국 얼마나 좋을지"를 \(Q_t\)로 매기고, 그 차이로 중간 가중을 줍니다. 구간마다 중간 기록으로 유망한 선수를 남기는 방식입니다. \(Q_t\)가 정확할수록 적은 예산으로 정답에 갑니다(§5 E4).</div>
+    </div>
+    <div class="ba-i"><b>구현:</b> 정확 \(Q_t\)는 닫힌형(<code>e35p_twist.py:45</code> <code>Qt_exact</code>), 근사는 Tweedie 추정 \(Q(\hat a_1(a_t))\). 학습 \(Q_t\)는 아직 안 했습니다 <span class="badge b-u">미확인</span>.</div>
+  </div>
+</section>
+
+<section id="s1">
+  <div class="sec-head"><span class="sec-num">§1</span><h2>판정</h2></div>
+  <div class="verdict"><h3>생성 샘플러 버전은 종료하고, 가치로 기울인 FM 정책 샘플러(후보 A)로 전환을 제안합니다</h3><ul>
+    <li><b>생성 버전은 한계입니다.</b> 같은 NFE에서 Heun을 이기지 못하고(§2), 정확한 에너지를 줘도 \(\mathrm{Var}\log w\)가 차원에 비례해 커집니다. 입자를 늘리거나 2차 커널, 노이즈 조정을 써도 역전되지 않았습니다(§3). <span class="badge b-c">코드</span></li>
+    <li><b>정책 버전(후보 A)은 유망합니다.</b> 같은 예산 512, d=8에서 SMC(근사 중간 가치)의 오차는 0.026입니다. best-of-N은 0.118, 근사 Q 기울기 유도(QPILOTS류)는 0.123에서 멈췄습니다. 정확한 \(Q_t\)를 쓰면 예산 32에서 이미 0.03입니다(§5). <span class="badge b-c">코드</span></li>
+    <li><b>후보 B</b>(Q 과대평가 증폭)는 현상을 확인했지만 새롭지 않아서 A의 부록으로 둡니다. <b>후보 C</b>(PF belief + FM 정책)는 범위가 커서 보류합니다.</li>
+    <li><b>아직 증명되지 않은 것:</b> 학습한 \(Q_t\)로 같은 우위가 나오는지, 실제 offline RL 벤치마크에서 나오는지. <span class="badge b-u">미확인</span></li>
+  </ul></div>
+</section>
+
+<section id="s2">
+  <div class="sec-head"><span class="sec-num">§2</span><h2>E1 공정 재현: 정직한 NFE로 세면 Heun이 이긴다</h2></div>
+  <article class="spec"><div class="spec-head"><span class="spec-id">E1</span><h3>원 toy(2-D GMM 3봉, 입자 1500) 그대로, 10 seed, Heun·PC 추가</h3><span class="badge b-c">코드</span><div class="spec-src">note/src/v2/pf/e35_audit.py → results/v2/e35_audit.json</div></div>
+  <div class="spec-body"><div class="tscroll"><table style="min-width:700px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">에너지거리(낮을수록 좋음). 정답끼리 비교한 지표 바닥은 0.0046. 괄호는 실제 NFE. SMC의 밀도 평가는 0으로 쳐서 SMC에 유리하게 했습니다.</caption>
+    <thead><tr><th>방법</th><th class="num">예산 4</th><th class="num">6</th><th class="num">8</th><th class="num">12</th><th class="num">20</th></tr></thead>
+    <tbody>
+      <tr><th>Euler</th><td class="num">0.079</td><td class="num">0.038</td><td class="num">0.025</td><td class="num">0.014</td><td class="num">0.009</td></tr>
+      <tr><th>Heun (2차)</th><td class="num">0.119</td><td class="num">0.017</td><td class="num win">0.009</td><td class="num win">0.007</td><td class="num win">0.006</td></tr>
+      <tr><th>SMC (원 방식)</th><td class="num">0.080±0.207</td><td class="num win">0.015</td><td class="num">0.027</td><td class="num"><em>0.064</em></td><td class="num"><em>0.093</em></td></tr>
+      <tr><th>SMC+rej4</th><td class="num">0.018 (12.4)</td><td class="num">0.023 (13.6)</td><td class="num">0.010 (18.4)</td><td class="num">0.007 (38.4)</td><td class="num"><em>0.26±0.71 (90)</em></td></tr>
+      <tr><th>SMC, velocity 없음</th><td class="num"><em>0.152</em></td><td class="num"><em>0.329</em></td><td class="num"><em>0.309</em></td><td class="num"><em>0.296</em></td><td class="num"><em>0.444</em></td></tr>
+    </tbody></table></div>
+  <div class="note">읽는 법: SMC+rej "예산 4"는 실제로 NFE 12.4를 씁니다. 그러니 Heun 예산 12(0.007)와 비교해야 하고, 그러면 SMC+rej가 약 2.5배 나쁩니다.</div></div></article>
+</section>
+
+<section id="s3">
+  <div class="sec-head"><span class="sec-num">§3</span><h2>E2·E3 생성 버전의 이론적 한계: 정확한 에너지를 줘도 차원이 이긴다</h2></div>
+  <article class="spec"><div class="spec-head"><span class="spec-id">이론</span><h3>가중의 흔들림은 차원에 비례하고, 필요한 입자 수는 그 지수로 늘어난다</h3><span class="badge b-d">유도</span><div class="spec-src">e35_theory.py 머리말</div></div>
+  <div class="spec-body">
+  <div class="mathrow">\[ w=\frac{p_{t'}(x')\,L(x\mid x')}{p_t(x)\,q(x'\mid x)},\qquad \mathrm{Var}\log w_{\text{step}}\sim \frac{d\,e^2}{g^2h},\qquad K_{\text{필요}}\sim e^{\mathrm{Var}\log w} \]</div>
+  <p>\(e\)는 커널 평균의 한 스텝 오차, \(g\)는 노이즈 크기입니다. 정규화 상수는 약분되므로 에너지만 있으면 가중은 정확합니다. 그래도 \(d\)가 크면 입자가 지수적으로 필요합니다(중요도 샘플링의 차원의 저주).</p>
+  </div></article>
+  <article class="spec"><div class="spec-head"><span class="spec-id">E2</span><h3>정확한 에너지 SMC도 d=2–128, NFE 6–20 전 구간에서 Heun보다 나쁘다</h3><span class="badge b-c">코드</span><div class="spec-src">e35_dim.py → results/v2/e35_dim.json · 5 seed, 입자 2000</div></div>
+  <div class="spec-body"><div class="tscroll"><table style="min-width:640px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">모드 질량 L1 오차(정답 [0.6,0.3,0.1] 대비, 낮을수록 좋음). ESS/K는 SMC 스텝 평균.</caption>
+    <thead><tr><th>차원 · NFE</th><th class="num">Euler</th><th class="num">Heun</th><th class="num col-ours">SMC(정확 에너지)</th><th class="num">ESS/K</th></tr></thead>
+    <tbody>
+      <tr><th>d=2 · 10</th><td class="num">0.055</td><td class="num win">0.039</td><td class="num col-ours"><em>0.138</em></td><td class="num">0.64</td></tr>
+      <tr><th>d=32 · 10</th><td class="num">0.039</td><td class="num win">0.028</td><td class="num col-ours"><em>0.146</em></td><td class="num">0.31</td></tr>
+      <tr><th>d=128 · 10</th><td class="num">0.040</td><td class="num win">0.021</td><td class="num col-ours"><em>0.647</em></td><td class="num"><em>0.04</em></td></tr>
+      <tr><th>d=128 · 20</th><td class="num">0.020</td><td class="num win">0.012</td><td class="num col-ours"><em>0.166</em></td><td class="num">0.41</td></tr>
+    </tbody></table></div></div></article>
+  <article class="spec"><div class="spec-head"><span class="spec-id">E3</span><h3>이론적 개선 3가지(입자 수·2차 커널·노이즈 조정)로도 역전되지 않는다</h3><span class="badge b-c">코드</span><div class="spec-src">e35_theory.py → results/v2/e35_theory.json</div></div>
+  <div class="spec-body"><div class="tscroll"><table style="min-width:640px">
+    <thead><tr><th>시도</th><th>결과</th></tr></thead><tbody>
+      <tr><td>\(\mathrm{Var}\log w\) vs 차원(NFE 10)</td><td>d=2/8/32에서 2.0 → 4.3 → 13.4. 이론대로 대략 차원에 비례합니다.</td></tr>
+      <tr><td>입자 수 500 → 8000 (NFE 10)</td><td>SMC 0.161 → 0.044(d=2)로 줄지만, Heun은 이미 0.020입니다. d=32에서는 0.347 → 0.070 vs Heun 0.019입니다.</td></tr>
+      <tr><td>2차(Heun형) 순방향·역방향 커널</td><td>개선되지 않았고, 고차원에서는 오히려 악화됐습니다(d=128: 1차 0.119 vs 2차 0.682, g=1). 역방향 커널이 최적 \(L\)이 아니면 평균 오차만 줄여서는 가중 분산이 안 줄어듭니다.</td></tr>
+      <tr><td>노이즈 \(g\) 0.25 / 0.5 / 1</td><td>클수록 조금 낫지만 최선(d=128, 0.119)도 Heun(0.017)의 약 7배입니다.</td></tr>
+    </tbody></table></div>
+  <div class="plain">쉬운 말로: 정답지를 줘도 차원이 높으면 "맞는 입자" 점수가 극소수에게 몰립니다. 이건 계산을 다듬어서 넘을 수 있는 벽이 아닙니다. 가중의 근거 자체를 바꿔야 합니다 → §5.</div>
+  <div class="warn">⚠ 남은 여지: 학습한 최적 역방향 커널이나 twisted proposal은 시험하지 않았습니다 <span class="badge b-u">미확인</span>. 다만 이 방법들은 추가 학습이 필요해서 "ODE를 값싸게 대체한다"는 원래 동기와 맞지 않습니다.</div></div></article>
+</section>
+
+<section id="s4">
+  <div class="sec-head"><span class="sec-num">§4</span><h2>선행연구: 생성 버전과 정책 버전</h2></div>
+  <div class="tscroll"><table style="min-width:760px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">조사 에이전트가 초록 수준에서 확인했습니다. 대부분 arXiv 단계라 출판 여부와 무관하게 비교군으로 다룹니다.</caption>
+    <thead><tr><th>논문</th><th>하는 일</th><th>우리와의 차이</th></tr></thead>
+    <tbody>
+      <tr><td>FKC 2503.02819</td><td>annealing·product 목표에 SMC</td><td>β=1(무조건 생성)이면 가중이 0입니다. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>Strasman+ 2607.04780</td><td>SMC 유도 확산의 비점근 bound</td><td>원 #35 bound를 대체합니다. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>IDQL 2304.10573 · V-GPS 2410.13816</td><td>N개 뽑아 Q로 고르기</td><td>결승선 가중만 씁니다 = E4의 <code>bon</code>. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>QPILOTS 2606.14801</td><td>목표 \(\pi e^{\tau Q}\)를 Q 기울기로 유도</td><td>목표는 같지만 가중이 없습니다 = E4의 <code>guid_heur</code>. 근사 Q면 편향이 남습니다. SMC 비교군도 없습니다. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>BayesFP 2606.21014 · VLS 2602.03973</td><td>denoising 축 FK/SMC + 손으로 만든 비용·VLM 보상</td><td>가장 가깝습니다. 중간 potential이 학습한 \(Q_t\)가 아닙니다. 세부는 <span class="badge b-u">미확인</span></td></tr>
+      <tr><td>FK steering 2501.06848 · FK-Flow 2509.01543</td><td>휴리스틱 중간 potential</td><td>= E4의 <code>fk_heur</code>. <span class="badge b-p">논문</span></td></tr>
+      <tr><td>TDS (Wu+ 2023) · 2510.11711</td><td>twisted SMC (이미지 조건부, max-ent RL twist)</td><td>방법 틀의 원조입니다. 정책 + 학습 \(Q_t\) + 같은 NFE 비교는 찾지 못했습니다 <span class="badge b-u">미확인</span></td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="s5">
+  <div class="sec-head"><span class="sec-num">§5</span><h2>정책 버전: \(\pi^*\propto\pi_{FM}\,e^{Q/\beta}\) 샘플링</h2></div>
+  <div class="mathrow">\[ Q_t(a_t)=\beta\log\mathbb E\big[e^{Q(a_1)/\beta}\,\big|\,a_t\big],\qquad \text{guidance drift } +g^2\nabla Q_t/\beta,\qquad w\ \propto\ e^{(Q_{t'}-Q_t)/\beta}\cdot\frac{p(a'\mid a)}{q(a'\mid a)} \]</div>
+  <article class="spec"><div class="spec-head"><span class="spec-id">E4</span><h3>(후보 A) 근사 가치만 있어도 SMC 가중이 guidance의 편향을 고치고, best-of-N보다 약 4.5배 정확하다</h3><span class="badge b-c">코드</span><div class="spec-src">e35p_twist.py · e35p_twist_grid.py → results/v2/e35p_twist_grid.json · 3 seed × 1500 결정</div></div>
+  <div class="spec-body">
+  <p>설정: 행동 정책은 3봉 GMM [0.6,0.3,0.1]이고, \(Q=-0.15\lVert a-c\rVert^2\)로 \(c\)는 드문 모드입니다. 정답 목표는 닫힌형으로 [0.316,0.158,0.526]입니다. 예산 \(B\)는 행동 하나당 신경망 호출 수이고, 가치 기울기는 1회로 셉니다. <b>각 방법이 스텝 수 × 입자 수의 최적 배분을 고르게 했습니다.</b></p>
+  <div class="tscroll"><table style="min-width:760px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">모드 질량 L1 오차(낮을수록 좋음). 괄호는 최적 배분(스텝×입자).</caption>
+    <thead><tr><th>d · B</th><th class="num">best-of-N</th><th class="num">guid_heur (QPILOTS류)</th><th class="num col-ours">fk_heur (SMC)</th><th class="num col-ours">tds_heur</th><th class="num">guid_exact (A의 상한)</th><th class="num">tds_exact</th></tr></thead>
+    <tbody>
+      <tr><th>2 · 32</th><td class="num">0.419</td><td class="num">0.079</td><td class="num col-ours">0.291</td><td class="num col-ours">0.052</td><td class="num win">0.019</td><td class="num">0.058</td></tr>
+      <tr><th>2 · 512</th><td class="num">0.092</td><td class="num"><em>0.100</em></td><td class="num col-ours">0.025 (16×32)</td><td class="num col-ours">0.031</td><td class="num">0.033</td><td class="num win">0.014</td></tr>
+      <tr><th>8 · 32</th><td class="num">0.425</td><td class="num">0.054</td><td class="num col-ours">0.257</td><td class="num col-ours">0.056</td><td class="num win">0.029</td><td class="num">0.059</td></tr>
+      <tr><th>8 · 128</th><td class="num">0.224</td><td class="num"><em>0.086</em></td><td class="num col-ours">0.099</td><td class="num col-ours">0.081</td><td class="num win">0.012</td><td class="num">0.023</td></tr>
+      <tr><th>8 · 512</th><td class="num">0.118</td><td class="num"><em>0.123</em></td><td class="num col-ours win">0.026 (16×32)</td><td class="num col-ours">0.051</td><td class="num">0.024</td><td class="num">0.032</td></tr>
+      <tr><th>32 · 128</th><td class="num">0.247</td><td class="num"><em>0.117</em></td><td class="num col-ours">0.072</td><td class="num col-ours">0.057</td><td class="num win">0.015</td><td class="num">0.024</td></tr>
+      <tr><th>32 · 512</th><td class="num">0.107</td><td class="num"><em>0.101</em></td><td class="num col-ours">0.047</td><td class="num col-ours">0.032</td><td class="num">0.032</td><td class="num win">0.015</td></tr>
+    </tbody></table></div>
+  <div class="plain">쉬운 말로: 결승선에서만 고르는 방식(best-of-N)은 드문 좋은 행동을 찾느라 입자가 많이 듭니다. 근사 나침반만 따라가는 방식(guid_heur)은 나침반이 틀린 만큼 영원히 빗나갑니다. 중간 점수로 거르는 방식(SMC)은 예산이 늘수록 그 빗나감을 고칩니다. 나침반이 정확하면(\(Q_t\) 정확) 적은 예산으로 바로 도착합니다.</div>
+  <div class="note">연구 핵심 = <b>\(Q_t\)를 어떻게 잘 배우나 + 근사 \(Q_t\)의 오차를 SMC 가중으로 보정.</b> 정확 \(Q_t\)와 근사 \(Q_t\) 사이를 학습 \(Q_t\)가 얼마나 메우는지가 다음 관문입니다.</div>
+  <div class="warn">⚠ 한계: (1) 목표가 드문 모드로 크게 옮겨 가는 어려운 설정이라 best-of-N에 불리합니다. 기울기가 약하면 격차가 줄 수 있습니다. (2) 지표가 분포 일치입니다. RL에서는 기대 Q·수익이 최종 기준입니다. (3) 정확 twist는 SDE 노이즈를 보간과 맞춘 \(g^2=2(1-t)/t\)에서만 정확합니다. (4) 학습 \(Q_t\)와 실제 벤치마크는 아직입니다 <span class="badge b-u">미확인</span>.</div>
+  </div></article>
+
+  <article class="spec"><div class="spec-head"><span class="spec-id">E5</span><h3>(후보 B) 목표를 정확히 쫓는 샘플러일수록 Q의 과대평가를 더 이용한다. LCB로 복구된다</h3><span class="badge b-c">코드</span><div class="spec-src">e35p_overest.py · d=8, 모드 사이 틈에 높이 10짜리 가짜 Q 봉우리</div></div>
+  <div class="spec-body"><div class="tscroll"><table style="min-width:560px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">진짜 Q의 평균(높을수록 좋음), 예산 512.</caption>
+    <thead><tr><th>방법</th><th class="num">정확한 Q</th><th class="num">과대평가 Q</th><th class="num">LCB(앙상블 평균−표준편차)</th></tr></thead>
+    <tbody>
+      <tr><th>guidance</th><td class="num">−1.19</td><td class="num"><em>−2.17</em></td><td class="num">−1.20</td></tr>
+      <tr><th>SMC (fk)</th><td class="num">−1.28</td><td class="num"><em>−1.64</em></td><td class="num">−1.28</td></tr>
+      <tr><th>best-of-N</th><td class="num">−1.32</td><td class="num">−1.33</td><td class="num">−1.32</td></tr>
+    </tbody></table></div>
+  <div class="note">best-of-N이 버티는 이유: 원래 정책에서 멀리 못 갑니다(KL ≤ \(\log N\)). "보상 과최적화·비관주의"로 이미 알려진 현상이라 단독 기여로는 약하고, A의 부록(안전장치)으로 둡니다.</div></div></article>
+
+  <article class="spec"><div class="spec-head"><span class="spec-id">C</span><h3>(후보 C) PF belief + FM 정책: toy로는 너무 뻔하고, 논문이 되려면 범위가 크다</h3><span class="badge b-d">유도</span><div class="spec-src">실행 안 함</div></div>
+  <div class="spec-body"><p>상태가 −2와 +2 중 어디인지 반반으로 모를 때, 평균 0을 보고 행동하면 둘 다 놓칩니다(성공 0). belief 입자에서 상태를 뽑아 행동하면 절반은 맞힙니다(성공 0.5). 논문이 되려면 정보 수집 행동과 POMDP 벤치마크까지 필요합니다. 보류합니다.</p></div></article>
+</section>
+
+<section id="s6">
+  <div class="sec-head"><span class="sec-num">§6</span><h2>다음 단계와 판정 기준(미리 고정)</h2></div>
+  <div class="tscroll"><table style="min-width:640px">
+    <thead><tr><th>단계</th><th>할 일</th><th>통과 기준</th></tr></thead><tbody>
+      <tr><td>1. 학습 \(Q_t\) toy</td><td>E4와 같은 설정에서 \(Q_t\)를 회귀(\(e^{Q(a_1)/\beta}\)의 조건부 기대)나 soft-TD로 학습</td><td>같은 예산에서 best-of-N·guid_heur보다 작은 오차, 정확 \(Q_t\)와의 격차를 보고</td></tr>
+      <tr><td>2. offline RL</td><td>OGBench 5과제, FM 행동정책 + 학습 Q</td><td>같은 NFE에서 IDQL best-of-N·QPILOTS 대비 수익 우위. 못 이기면 접습니다</td></tr>
+      <tr><td>3. 안전장치</td><td>LCB Q(후보 B)</td><td>과대평가가 큰 과제에서 수익 하락 방지</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="s7">
+  <div class="sec-head"><span class="sec-num">§7</span><h2>codex(gpt-6.2-sol) 교차검수: NOT READY 8건. 후보 A는 현 상태로 가능성 낮음</h2></div>
+  <div class="warn"><b>핵심 반박 3개.</b> ① <b>같은 EM 궁적에서 중간 리샘플링을 끄면 오히려 나았습니다</b>(d=8, n=16, K=32: FK 0.035 vs 끝점 SIR 0.030). §5에서 "SMC 가중이 편향을 고친다"고 본 이득은 리샘플링이 아니라 SDE 기준 커널 때문일 수 있습니다. ② <b>예산 B가 같은 호출 수가 아닙니다.</b> B=512에서 FK는 velocity 1,024 + Q 544를 불렀고, best-of-N은 512 + 32였습니다. ③ <b>학습 Q<sub>t</sub>는 이미 있습니다.</b> CGQL-Linex 2601.14234가 같은 선형 FM 보간에서 같은 log-expectation Q<sub>t</sub>를 학습하고, CEP 2304.12824도 비슷합니다. <span class="badge b-p">논문</span></div>
+  <div class="tscroll"><table style="min-width:680px"><thead><tr><th>지적</th><th>내용</th><th>반영</th></tr></thead><tbody>
+    <tr><td>argmax best-of-N</td><td>후보 102개에서 argmax로 고르면 기대 Q가 −1.35 → −0.13으로 좋아집니다(SMC −1.26). 다만 분포 일치는 사라집니다(L1 0.95). RL 수익 기준이면 순위가 뒤집힌다는 뜻입니다.</td><td>§5 결론을 "분포 재현 기준에서만"으로 한정</td></tr>
+    <tr><td>TDS 보정 대상</td><td>가중은 <b>이산화된 EM 정책</b>×e<sup>Q/β</sup>을 정확히 보정합니다. 연속 FM 정책 기준이 아닙니다(첫 스텝 분산 정확 0.85 vs EM 10.6).</td><td>입자를 늘려도 오차가 멈춘 이유를 설명합니다</td></tr>
+    <tr><td>생성 차원 법칙</td><td>d=128 실패의 상당 부분은 이미 풀 수 있는 가우시안 126축을 근사해서 생긴 것입니다. 분리 커널을 쓰면 L1이 0.647에서 0.099로, ESS가 0.04에서 0.59로 좋아집니다. 그래도 Heun 0.021에는 못 미칩니다. \(d e^2/(g^2h)\)는 평균만 다른 가우시안의 특수해이고, 기록한 2.0/4.3/13.4는 스텝별 분산의 합이지 경로 전체 분산이 아닙니다.</td><td>§3 이론 카드 정정 대상. <b>생성 종료 판정에는 동의</b></td></tr>
+    <tr><td>2차 커널 비교</td><td>실제 호출은 38 대 24회이고 스텝은 19 대 6개입니다. 공정한 비교가 아니었습니다.</td><td>E3의 2차 행은 판정 근거에서 제외</td></tr>
+    <tr><td>후보 B의 LCB</td><td>봉우리 높이만 낮춘 인위적 대조입니다.</td><td>스트레스 테스트로만 표현</td></tr>
+    <tr><td>d=32 · B=512 빈칸</td><td>codex가 별도 계산했습니다(닫힌식 기울기). bon 0.107, guid_heur 0.101, fk 0.047, tds_heur 0.032, guid_exact 0.032, tds_exact 0.015</td><td>우리 그리드(수치미분)가 소수 셋째 자리까지 같은 값으로 완료됨 <span class="badge b-c">코드</span></td></tr>
+  </tbody></table></div>
+  <div class="verdict"><h3>검수 후 판정</h3><ul>
+    <li><b>생성 버전 종료:</b> 유지합니다. 다만 "SMC 일반의 한계"가 아니라 "시험한 커널·조건에서의 실패"로 범위를 좁힙니다.</li>
+    <li><b>후보 A:</b> "유망"에서 <b>"미검증, 관문 통과 전까지 보류"</b>로 낮춥니다. 남는 차이는 하나입니다. 같은 critic과 같은 지연시간에서, 학습 Q<sub>t</sub>의 남은 오차를 중간 보정으로 고쳐 <b>환경 수익</b>이 오르는가입니다.</li>
+    <li>관문(codex TOP 1–2): 고정된 n·K에서 끝점 SIR·FK·guidance·TDS를 실제 호출 수 기준으로 다시 비교합니다. argmax와 기대 Q도 함께 봅니다. 중간 리샘플링이 독립적으로 이득을 내지 못하면 접습니다.</li>
+  </ul></div>
+  <div class="note">전문: <code>review/검수_pf35_20261122_codex최종_sol.txt</code> · 프롬프트: <code>review/codex_prompt_pf35_review_20261122.txt</code></div>
+</section>
+
+<section id="s8">
+  <div class="sec-head"><span class="sec-num">§8</span><h2>관문 실험 불통과: 중간 재표집은 어느 조건에서도 독립적 이득이 없다. #35 정책판 종료</h2></div>
+  <div class="plain">한 문장: 같은 경로·같은 실제 비용으로 맞추면, 중간에 후보를 다시 뽑는 것(FK·TDS)은 끝에서 최고점을 고르거나 기울기로 유도하는 것보다 확실히 나은 경우가 한 번도 없었습니다.</div>
+  <div class="note">설계(사전 등록, <code>src/v2/pf/e35p_gate.py</code>): 모든 방법 같은 SDE 경로·같은 시작, 비용 = velocity + Q 순전파 + 2×역전파(실측 계수기와 일치), 설정(스텝·온도·최종규칙)은 검증 critic 2개에서 고르고 별도 평가 critic 5개에서 보고. 주지표 = 고른 행동의 참 Q 평균(높을수록 좋음, 행동정책 그대로는 −2.53).</div>
+  <div class="tscroll"><table style="min-width:640px"><caption>참 E[Q] ± 95% CI (평가 critic 5개). 굵은 값이 그 줄의 최선</caption><thead><tr><th>critic 오차</th><th>비용</th><th>끝에서 고르기</th><th>기울기 유도</th><th class="col-ours">FK 재표집</th><th class="col-ours">TDS(유도+재표집)</th></tr></thead><tbody>
+  <tr><td>없음</td><td class="num">64</td><td class="num win">−0.270±0.008</td><td class="num">−0.289</td><td class="num">−0.457</td><td class="num">−0.925</td></tr>
+  <tr><td>없음</td><td class="num">256</td><td class="num">−0.139</td><td class="num win">−0.102±0.001</td><td class="num">−0.109</td><td class="num">−0.108</td></tr>
+  <tr><td>없음</td><td class="num">1024</td><td class="num">−0.088</td><td class="num win">−0.061±0.001</td><td class="num">−0.066</td><td class="num">−0.067</td></tr>
+  <tr><td>강함(σ=3, 폭 1.5)</td><td class="num">256</td><td class="num">−0.310±0.085</td><td class="num"><em>−0.442±0.229</em></td><td class="num">−0.301±0.100</td><td class="num">−0.407</td></tr>
+  <tr><td>강함(σ=3)</td><td class="num">1024</td><td class="num win">−0.343±0.117</td><td class="num"><em>−0.590</em></td><td class="num">−0.374</td><td class="num">−0.488</td></tr>
+  <tr><td>매우 강함(σ=10)</td><td class="num">256 / 1024</td><td class="num">−1.08 / −1.13</td><td class="num">−1.22 / −1.09</td><td class="num">−1.47 / −1.10</td><td class="num">−1.39 / −1.13</td></tr>
+  </tbody></table></div>
+  <div class="verdict"><h3>판정</h3><ul>
+    <li>Q가 정확하면 <b>기울기 유도가 최선</b>이고, 재표집을 더한 TDS는 유도보다 조금 나쁩니다(−0.067 vs −0.061). 비용이 작으면 끝에서 고르기가 최선입니다.</li>
+    <li>Q가 틀리면 유도는 틀린 기울기를 따라가 무너지고, FK는 끝에서 고르기와 오차 범위 안에서 같습니다(−0.301 vs −0.310, CI ±0.1). <b>재표집 고유의 이득은 없습니다.</b></li>
+    <li>사전 등록한 기준(재표집이 같은 비용의 최선 대조군을 확실히 이김) 불통과 → <b>#35 정책판도 음성 결과로 종료</b>합니다. <span class="badge b-c">코드</span> <code>results/v2/e35p_gate.json</code>, <code>e35p_gate_strong.json</code></li>
+  </ul></div>
+  <div class="warn">한계: 8차원 장난감 문제이고 참 Q가 매끄러운 2차식입니다. Q가 미분 불가능하거나 여러 봉우리가 멀리 떨어진 실제 과제에서는 <span class="badge b-u">미확인</span>. 학습된 Q<sub>t</sub>는 쓰지 않았습니다(두 검수 모두 선행연구에 이미 있다고 지적).</div>
+</section>
+
+<footer>
+  <div><b>확인된 것:</b> 원 13배 주장은 NFE 계산 누락(10 seed). 생성 버전은 정확 에너지에서도 \(\mathrm{Var}\log w\propto d\)로 Heun에 패배, 개선 3종 실패. 정책 toy에서 SMC(근사 가치)가 best-of-N 대비 약 4.5배, 근사 guidance의 편향 정체를 고침. 과대평가 증폭 현상과 LCB 복구.</div>
+  <div><b>미확인:</b> 학습 \(Q_t\)의 성능, 실제 RL 수익, BayesFP·VLS 세부 방식, 학습한 역방향 커널로 생성 버전이 살아나는지.</div>
+  <div><b>다음 할 일:</b> 외부 교차검수(<code>review/codex_prompt_pf35_review_20261122.txt</code>) → 반영 → 학습 \(Q_t\) toy.</div>
+</footer>
+</main>

@@ -1,0 +1,84 @@
+classifier qualification (pre-training) (True, 1.0, 60, {'F': [20, 20], 'R': [20, 20], 'M': [20, 20]})
+demo windows per style {'F': 21600, 'R': 21600, 'M': 21600} -> using 21600 centers [0.7420492668611908, 0.2541562250623918, 0.4883946992443271]
+members 18
+FM prior {'fm_q_D': 106.48664855957031, 'fm_rstyle_mean_per_style': {'F': 0.15993455052375793, 'R': -0.13163840770721436, 'M': -0.050056785345077515}}
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+  25000 sps 46 min 9.2 | amp_phase: ok0.3 l[0.16, 0.11, 0.36],ok0.7 l[0.29, 0.42, 0.36],ok1.0 l[0.7, 0.36, 0.84] | fm_phase: ok0.0 l[0.19, 0.21, 0.17],ok0.0 l[0.3, 0.41, 0.54],ok0.0 l[0.17, 0.52, 0.34] | fm_contrast: ok0.0 l[0.17, 0.61, 0.37],ok0.0 l[0.25, 0.24, 0.24],ok0.0 l[0.23, 0.24, 0.27] | template_any: ok0.0 l[0.35, 0.41, 0.31],ok0.3 l[0.34, 0.38, 0.47],ok0.0 l[0.21, 0.35, 0.32] | amp_latent: ok0.0 l[0.08, 0.19, 0.22],ok0.3 l[0.27, 0.26, 0.37],ok0.0 l[0.32, 0.26, 0.42] | oracle_mix: ok0.0 l[0.22, 0.35, 0.28],ok0.0 l[0.25, 0.3, 0.27],ok0.0 l[0.22, 0.78, 0.37]
+  50000 sps 38 min 22.4 | amp_phase: ok1.0 l[0.56, 0.55, 0.6],ok1.0 l[0.3, 0.4, 0.4],ok1.0 l[0.66, 0.66, 0.65] | fm_phase: ok1.0 l[0.29, 0.56, 0.36],ok1.0 l[0.47, 0.52, 0.54],ok0.7 l[0.39, 0.41, 0.39] | fm_contrast: ok1.0 l[0.33, 0.48, 0.45],ok0.7 l[0.34, 0.31, 0.28],ok1.0 l[0.3, 0.4, 0.32] | template_any: ok1.0 l[0.38, 0.4, 0.43],ok1.0 l[0.52, 0.52, 0.38],ok1.0 l[0.44, 0.46, 0.35] | amp_latent: ok1.0 l[0.36, 0.48, 0.42],ok1.0 l[0.5, 0.38, 0.48],ok1.0 l[0.51, 0.47, 0.53] | oracle_mix: ok1.0 l[0.44, 0.45, 0.41],ok1.0 l[0.42, 0.35, 0.36],ok1.0 l[0.48, 0.43, 0.48]
+  75000 sps 38 min 33.3 | amp_phase: ok1.0 l[0.51, 0.46, 0.53],ok1.0 l[0.5, 0.48, 0.49],ok1.0 l[0.62, 0.62, 0.61] | fm_phase: ok1.0 l[0.78, 0.58, 0.69],ok1.0 l[0.6, 0.52, 0.62],ok1.0 l[0.35, 0.33, 0.3] | fm_contrast: ok1.0 l[0.6, 0.61, 0.61],ok1.0 l[0.34, 0.3, 0.32],ok1.0 l[0.51, 0.47, 0.43] | template_any: ok1.0 l[0.44, 0.41, 0.44],ok1.0 l[0.45, 0.51, 0.5],ok1.0 l[0.52, 0.51, 0.49] | amp_latent: ok1.0 l[0.63, 0.58, 0.53],ok1.0 l[0.49, 0.43, 0.45],ok1.0 l[0.62, 0.64, 0.62] | oracle_mix: ok1.0 l[0.48, 0.44, 0.5],ok1.0 l[0.45, 0.45, 0.44],ok1.0 l[0.54, 0.49, 0.57]
+ 100000 sps 37 min 44.8 | amp_phase: ok1.0 l[0.47, 0.49, 0.49],ok1.0 l[0.42, 0.43, 0.44],ok1.0 l[0.64, 0.64, 0.63] | fm_phase: ok1.0 l[0.63, 0.66, 0.65],ok1.0 l[0.64, 0.65, 0.62],ok1.0 l[0.41, 0.43, 0.41] | fm_contrast: ok1.0 l[0.65, 0.67, 0.65],ok1.0 l[0.36, 0.4, 0.37],ok1.0 l[0.54, 0.54, 0.51] | template_any: ok1.0 l[0.5, 0.51, 0.49],ok1.0 l[0.49, 0.47, 0.49],ok1.0 l[0.43, 0.42, 0.5] | amp_latent: ok1.0 l[0.5, 0.52, 0.56],ok1.0 l[0.51, 0.49, 0.47],ok1.0 l[0.61, 0.56, 0.57] | oracle_mix: ok1.0 l[0.5, 0.5, 0.48],ok1.0 l[0.48, 0.51, 0.51],ok1.0 l[0.6, 0.61, 0.62]
+ 125000 sps 36 min 58.3 | amp_phase: ok1.0 l[0.45, 0.43, 0.44],ok1.0 l[0.43, 0.45, 0.43],ok1.0 l[0.57, 0.55, 0.56] | fm_phase: ok1.0 l[0.6, 0.64, 0.67],ok1.0 l[0.61, 0.59, 0.6],ok1.0 l[0.5, 0.51, 0.47] | fm_contrast: ok1.0 l[0.67, 0.68, 0.69],ok1.0 l[0.33, 0.36, 0.38],ok1.0 l[0.58, 0.56, 0.54] | template_any: ok1.0 l[0.51, 0.5, 0.5],ok1.0 l[0.5, 0.48, 0.52],ok1.0 l[0.52, 0.46, 0.55] | amp_latent: ok1.0 l[0.46, 0.48, 0.46],ok1.0 l[0.54, 0.51, 0.49],ok1.0 l[0.62, 0.52, 0.56] | oracle_mix: ok1.0 l[0.49, 0.47, 0.5],ok1.0 l[0.55, 0.56, 0.53],ok1.0 l[0.59, 0.57, 0.56]
+ 150000 sps 37 min 68.3 | amp_phase: ok1.0 l[0.54, 0.53, 0.54],ok1.0 l[0.41, 0.42, 0.4],ok1.0 l[0.59, 0.61, 0.59] | fm_phase: ok1.0 l[0.58, 0.59, 0.59],ok1.0 l[0.6, 0.59, 0.59],ok1.0 l[0.56, 0.52, 0.54] | fm_contrast: ok1.0 l[0.7, 0.7, 0.66],ok1.0 l[0.43, 0.41, 0.55],ok1.0 l[0.56, 0.55, 0.56] | template_any: ok1.0 l[0.49, 0.48, 0.49],ok1.0 l[0.48, 0.49, 0.48],ok1.0 l[0.42, 0.46, 0.49] | amp_latent: ok1.0 l[0.5, 0.5, 0.49],ok1.0 l[0.57, 0.55, 0.46],ok1.0 l[0.58, 0.44, 0.48] | oracle_mix: ok1.0 l[0.52, 0.54, 0.55],ok1.0 l[0.56, 0.6, 0.59],ok1.0 l[0.62, 0.59, 0.58]
+ 175000 sps 37 min 78.1 | amp_phase: ok1.0 l[0.61, 0.62, 0.64],ok1.0 l[0.44, 0.42, 0.42],ok1.0 l[0.57, 0.59, 0.59] | fm_phase: ok1.0 l[0.58, 0.59, 0.59],ok1.0 l[0.61, 0.65, 0.63],ok1.0 l[0.56, 0.54, 0.51] | fm_contrast: ok1.0 l[0.7, 0.69, 0.7],ok1.0 l[0.39, 0.48, 0.36],ok1.0 l[0.51, 0.52, 0.52] | template_any: ok1.0 l[0.49, 0.47, 0.49],ok1.0 l[0.47, 0.49, 0.47],ok1.0 l[0.54, 0.55, 0.56] | amp_latent: ok1.0 l[0.56, 0.53, 0.5],ok1.0 l[0.58, 0.39, 0.44],ok1.0 l[0.56, 0.44, 0.49] | oracle_mix: ok1.0 l[0.58, 0.59, 0.6],ok1.0 l[0.55, 0.55, 0.56],ok1.0 l[0.58, 0.57, 0.6]
+ 200000 sps 5 min 672.5 | amp_phase: ok1.0 l[0.54, 0.58, 0.56],ok1.0 l[0.45, 0.42, 0.44],ok1.0 l[0.53, 0.54, 0.55] | fm_phase: ok1.0 l[0.55, 0.59, 0.57],ok1.0 l[0.6, 0.59, 0.6],ok1.0 l[0.54, 0.55, 0.57] | fm_contrast: ok1.0 l[0.69, 0.69, 0.69],ok1.0 l[0.38, 0.39, 0.36],ok1.0 l[0.55, 0.54, 0.54] | template_any: ok1.0 l[0.48, 0.47, 0.46],ok1.0 l[0.53, 0.53, 0.54],ok1.0 l[0.57, 0.52, 0.54] | amp_latent: ok1.0 l[0.6, 0.48, 0.51],ok1.0 l[0.51, 0.31, 0.41],ok1.0 l[0.58, 0.4, 0.48] | oracle_mix: ok1.0 l[0.57, 0.57, 0.56],ok1.0 l[0.53, 0.53, 0.54],ok1.0 l[0.57, 0.58, 0.57]

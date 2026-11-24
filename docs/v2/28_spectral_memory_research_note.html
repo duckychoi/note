@@ -1,0 +1,365 @@
+<title>스펙트럼 기억 점검 노트</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']],
+      // the manuscript's own preamble: \newcommand{\mat}[1]{\boldsymbol{#1}} etc.
+      macros: {
+        mat:  ['\\boldsymbol{#1}', 1],
+        vect: ['\\boldsymbol{#1}', 1]
+      }
+    },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+  };
+</script>
+<script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js"></script>
+<style>
+:root{
+  --ground:#f1f2ee; --surface:#ffffff; --surface-2:#e8eae3; --surface-3:#dee1d8;
+  --ink:#16191c; --ink-2:#49535e; --ink-3:#7a848e;
+  --rule:#d9ddd3; --rule-strong:#bcc2b4;
+  --accent:#0b6ca8; --accent-soft:#dceaf4;
+  --warm:#b8480f; --warm-soft:#f8e5da;
+  --src-p:#33478f; --src-p-bg:#dfe3f4;   /* 논문 */
+  --src-c:#1a6249; --src-c-bg:#d9ebe2;   /* 코드 */
+  --src-d:#845410; --src-d-bg:#f5e8d2;   /* 유도 */
+  --src-u:#96313d; --src-u-bg:#f6dee1;   /* 미확인 */
+  --shadow:0 1px 2px rgba(22,25,28,.05), 0 10px 26px -18px rgba(22,25,28,.30);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101310; --surface:#181c1a; --surface-2:#1f2422; --surface-3:#262d2a;
+    --ink:#e8ebe5; --ink-2:#a6b0a8; --ink-3:#76807a;
+    --rule:#2b322e; --rule-strong:#3d4641;
+    --accent:#6fb6e0; --accent-soft:#122734;
+    --warm:#e58a55; --warm-soft:#331c10;
+    --src-p:#9aa6ea; --src-p-bg:#1b1f3d;
+    --src-c:#5cc39c; --src-c-bg:#102a20;
+    --src-d:#dda954; --src-d-bg:#30240e;
+    --src-u:#e5868f; --src-u-bg:#371b1f;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.85);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101310; --surface:#181c1a; --surface-2:#1f2422; --surface-3:#262d2a;
+  --ink:#e8ebe5; --ink-2:#a6b0a8; --ink-3:#76807a;
+  --rule:#2b322e; --rule-strong:#3d4641;
+  --accent:#6fb6e0; --accent-soft:#122734;
+  --warm:#e58a55; --warm-soft:#331c10;
+  --src-p:#9aa6ea; --src-p-bg:#1b1f3d;
+  --src-c:#5cc39c; --src-c-bg:#102a20;
+  --src-d:#dda954; --src-d-bg:#30240e;
+  --src-u:#e5868f; --src-u-bg:#371b1f;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.85);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans KR","Malgun Gothic",system-ui,sans-serif;
+  font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace}
+h1,h2,h3,h4{font-family:"Noto Serif KR",Georgia,serif;text-wrap:pretty;line-height:1.3;margin:0}
+a{color:var(--accent)}
+p{margin:0}
+
+.wrap{max-width:1440px;margin:0 auto;padding-inline:24px;padding-block:0 88px}
+.prose{max-width:none}
+
+/* masthead */
+header.top{border-bottom:1px solid var(--rule);background:var(--surface);}
+.top-inner{max-width:1440px;margin:0 auto;padding-inline:24px;padding-block:48px 30px;display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:clamp(26px,4.2vw,38px);font-weight:700;letter-spacing:-.015em}
+.standfirst{max-width:none;color:var(--ink-2);font-size:15.5px;font-weight:300}
+.meta-row{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+
+/* badges */
+.badge{display:inline-flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.05em;padding:2px 7px;border-radius:3px;white-space:nowrap;vertical-align:1px}
+.badge::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.b-p{color:var(--src-p);background:var(--src-p-bg)}
+.b-c{color:var(--src-c);background:var(--src-c-bg)}
+.b-d{color:var(--src-d);background:var(--src-d-bg)}
+.b-u{color:var(--src-u);background:var(--src-u-bg)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;padding:14px 16px;background:var(--surface-2);border-radius:6px}
+.legend div{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2)}
+
+/* sections */
+section{margin-top:54px;display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:7px}
+.sec-num{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--accent)}
+.sec-head h2{font-size:20px;font-weight:600;letter-spacing:-.01em}
+
+/* spec cards */
+.spec{background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+.spec-head{display:flex;flex-wrap:wrap;align-items:center;gap:9px;padding:13px 20px;background:var(--surface-2);border-bottom:1px solid var(--rule)}
+.spec-id{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink-3)}
+.spec-head h3{font-size:15.5px;font-weight:600;flex:1;min-width:170px;font-family:"IBM Plex Sans KR",sans-serif}
+.spec-src{width:100%;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);margin-top:-2px}
+.spec-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:14px}
+.spec-body p{max-width:none;color:var(--ink-2)}
+.spec-body p strong,.spec-body li strong{color:var(--ink);font-weight:600}
+.spec-body ul{margin:0;padding-left:20px;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+
+.mathrow{overflow-x:auto;padding-block:4px 8px}
+blockquote.quote{margin:0;padding:12px 18px;border-left:3px solid var(--rule-strong);background:var(--surface-2);font-size:13.5px;color:var(--ink-2);border-radius:0 4px 4px 0}
+.warn{border-left:3px solid var(--src-u);background:var(--src-u-bg);padding:13px 18px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink)}
+.warn b{color:var(--src-u)}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:13px 18px;border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink)}
+.plain{border-left:3px solid var(--warm);background:var(--warm-soft);padding:14px 18px;border-radius:0 4px 4px 0;font-size:14px;color:var(--ink)}
+.plain b{color:var(--warm)}
+
+/* tables */
+.tscroll{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:9px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+thead th{background:var(--surface-2);font-weight:600;font-size:12px;border-bottom:2px solid var(--rule-strong);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody th{font-weight:500;color:var(--ink-2);background:var(--surface-2);white-space:nowrap;font-size:12.5px}
+td.num,th.num{font-variant-numeric:tabular-nums;text-align:right}
+.col-ours{background:var(--accent-soft)}
+thead th.col-ours{background:var(--accent-soft)}
+td em{font-style:normal;color:var(--src-u);font-weight:600}
+td b{font-weight:600}
+.win{color:var(--src-c);font-weight:600}
+
+/* cascade */
+.chain{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.chain-step{display:grid;grid-template-columns:34px 1fr;gap:0 16px;background:var(--surface);padding:14px 18px}
+.chain-n{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--accent);padding-top:3px}
+.chain-b{display:flex;flex-direction:column;gap:7px;min-width:0}
+.chain-t{font-size:13.5px;font-weight:600}
+.chain-d{font-size:13px;color:var(--ink-2)}
+.chain-src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+
+/* verdict */
+.verdict{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:18px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.verdict h3{font-size:15px;font-weight:600;font-family:"IBM Plex Sans KR",sans-serif}
+.verdict ul{margin:0;padding-left:20px;color:var(--ink-2);font-size:14px;display:flex;flex-direction:column;gap:6px}
+.verdict li b{color:var(--ink)}
+
+/* two-col lists */
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.pane{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:17px 19px;display:flex;flex-direction:column;gap:9px}
+.pane h4{font-size:14px;font-weight:600;font-family:"IBM Plex Sans KR",sans-serif}
+.pane ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2);display:flex;flex-direction:column;gap:7px}
+.pane.good{border-top:3px solid var(--src-c)}
+.pane.bad{border-top:3px solid var(--src-u)}
+.pane.next{border-top:3px solid var(--accent)}
+
+/* refs */
+.refs{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.ref{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:0 18px;background:var(--surface);padding:13px 18px}
+.ref-k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent);padding-top:2px}
+.ref-b{font-size:13px;color:var(--ink-2)}
+.ref-b b{color:var(--ink);font-weight:600}
+.ref-why{display:block;margin-top:4px;color:var(--ink-3);font-size:12.5px}
+
+/* option cards */
+.opts{display:flex;flex-direction:column;gap:14px}
+.opt{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px 19px;display:flex;flex-direction:column;gap:9px}
+.opt.pick{border-left:4px solid var(--warm)}
+.opt-h{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.opt-t{font-size:14px;font-weight:600}
+.opt-q{font-size:13.5px;color:var(--ink);background:var(--surface-2);padding:11px 15px;border-radius:4px;font-style:italic}
+.opt-n{font-size:13px;color:var(--ink-2)}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--surface-3);color:var(--ink-2)}
+.tag.pickt{background:var(--warm-soft);color:var(--warm)}
+
+footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);max-width:none;display:flex;flex-direction:column;gap:10px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:520px){
+  .chain-step{grid-template-columns:1fr;gap:6px}
+  .ref{grid-template-columns:1fr;gap:6px}
+}
+details.fold{border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface-2)}
+details.fold summary{cursor:pointer;padding:10px 14px;font-size:14px;font-weight:600;list-style-position:inside}
+details.fold summary .tag{margin-right:8px}
+details.fold .fold-body{padding:0 16px 12px 16px;font-size:13px;line-height:1.6;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+tr.col-ours th,tr.col-ours td{background:var(--accent-soft)}
+.ba{background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+.ba-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;padding:12px 18px;background:var(--surface-2);border-bottom:1px solid var(--rule);font-size:15px}
+.ba-k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent)}
+.ba-q{width:100%;font-size:12.5px;color:var(--ink-3)}
+.ba-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.ba-b,.ba-a{padding:14px 18px;font-size:13.5px;color:var(--ink-2);min-width:0}
+.ba-b{border-right:1px solid var(--rule)}
+.ba-a{background:var(--accent-soft);color:var(--ink)}
+.ba-t{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.08em;color:var(--ink-3);margin-bottom:5px}
+.ba-a .ba-t{color:var(--accent)}
+.ba-i{padding:10px 18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-2)}
+@media (max-width:620px){.ba-b{border-right:none;border-bottom:1px solid var(--rule)}}
+.wrap,.top-inner{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+</style>
+
+<header class="top"><div class="top-inner">
+  <div class="eyebrow">연구주제 원장 #28 · 스펙트럼 기억 × 창의 · 점검·전환 노트</div>
+  <h1>원래 toy는 알려진 기억 성질을 재현했을 뿐이다. 창의는 "위상 간섭으로 새 연결을 만드는 지식그래프 기억"으로 다시 세운다</h1>
+  <p class="standfirst">교수님 발상 "창의력 = 아주 긴 기억력 + 위상 보강간섭"을 점검했습니다. 원 toy의 '창의' 실험은 실험자가 써 넣은 조합을 다시 꺼낸 것이라 평범한 회상과 정확도가 같았습니다. 위상 중첩만으로는 저장된 적 없는 조합이 만들어지지도 않았습니다. 그래서 방향을 바꿉니다. 사실(A–관계–B)을 위상 회전으로 한 기억에 쌓고, 아직 없는 연결을 여러 경로의 위상 합으로 채점합니다. 경로들이 같은 방향을 가리키면 커지고(보강간섭) 엇갈리면 상쇄됩니다. 이렇게 숨은 참 연결을 찾아내는 능력을 창의로 정의합니다.</p>
+  <div class="meta-row"><span>원자료 note:origin/spectral-memory-fhrr (6139946)</span><span>점검 note/src/v2/mem/ (미커밋)</span><span>방향 확정 2026-11-22 (사용자) · codex 검수 반영 v2</span><span>관문 실험 대기(#34 GPU 실험 종료 후)</span></div>
+</div></header>
+
+<main class="wrap">
+
+<section id="s0">
+  <div class="sec-head"><span class="sec-num">§0</span><h2>출처 등급과 원래 주장 판정</h2></div>
+  <div class="legend">
+    <div><span class="badge b-p">논문</span>웹 검색으로 초록·요약 확인</div>
+    <div><span class="badge b-c">코드</span>이 저장소 코드를 실행해 얻은 값</div>
+    <div><span class="badge b-d">유도</span>손으로 유도</div>
+    <div><span class="badge b-u">미확인</span>재지 않았거나 원문을 못 본 것</div>
+  </div>
+  <div class="tscroll"><table style="min-width:700px">
+    <caption style="caption-side:top;text-align:left;padding:8px 13px;font-size:12px;color:var(--ink-3)">왼쪽은 원 toy(<code>src/toy_fhrr_creativity.py</code>)와 개념노트에 쓰인 그대로입니다. 원 수치는 그대로 재현됩니다.</caption>
+    <thead><tr><th>원래 주장</th><th>출처</th><th>지금 판정</th></tr></thead>
+    <tbody>
+      <tr><td>T2: 새 조합을 coherent하게 판독 = <b>창의 성립</b></td><td>toy T2</td><td><em>철회.</em> '창의 아이템'은 실험자가 기억에 써 넣은 무작위 조합입니다. 평범한 저장 아이템을 꺼낼 때와 정확도가 같습니다(부하 60: 0.75 vs 0.78). 회상 용량을 잰 것입니다. <span class="badge b-c">코드</span></td></tr>
+      <tr><td>위상 보강간섭이 새 조합을 만든다</td><td>개념노트 "논제"</td><td><em>현 구성에선 불성립.</em> 저장된 적 없는 조합을 위상 중첩만으로 만들면 0.01–0.05로 실패합니다. 조각마다 사전 최근접 정리(clean-up)를 넣어야 0.99가 됩니다. <span class="badge b-c">코드</span></td></tr>
+      <tr><td>T1: 용량 천장 N=150에서 0.85</td><td>toy T1</td><td><b>맞지만 교과서 내용.</b> 누화 이론 예측 0.84와 일치합니다. 원 코드는 사전 100개에 150쌍이라 중복 쌍이 섞여 있었습니다. <span class="badge b-c">코드</span> <span class="badge b-d">유도</span></td></tr>
+      <tr><td>T3: 기억이 길수록(α↓) 먼 과거까지 회상 = 재료↑</td><td>toy T3</td><td><b>짧은 스트림(40개)에서만 참.</b> 400개 스트림에서는 가장 긴 기억(α=.003)이 직전 회상을 1.00→0.85로 떨어뜨립니다. 최적 α가 묻는 거리마다 다릅니다(Frady 2018의 망각 이론과 같은 내용). <span class="badge b-c">코드</span> <span class="badge b-p">논문</span></td></tr>
+      <tr><td>(내 판단, 11-22 v1) 위상 합 크기 \(|\sum_p z_p|\)로 새 연결 채점</td><td>§3 v1</td><td><em>철회.</em> 참·반대·무관 방향을 구별하지 못합니다([+1,+1,+1]과 [−1,−1,−1]이 같은 3점). 목표 방향으로 투영하면 부호 있는 경로 합과 같아집니다. 성분별 곱은 관계 순서도 잃습니다. codex 검수가 지적했고 직접 검산했습니다. <span class="badge b-d">유도</span></td></tr>
+      <tr><td>빈 땅: 생성형 홀로그래픽 기억</td><td>개념노트</td><td><b>부분 점유.</b> VSA를 생성모델로 보는 연구(Furlong &amp; Eliasmith 2023), 행렬 상태로 용량을 올린 위상 연상기억(2026)이 있습니다. <span class="badge b-p">논문</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="s0b">
+  <div class="sec-head"><span class="sec-num">§0″</span><h2>기술별: 무엇을 풀려 했고, 점검 후 어떻게 됐나</h2></div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 1</span><b>FHRR 홀로그래픽 기억</b><span class="ba-q">풀려던 문제: 많은 것을 한 벡터에 겹쳐 담고 열쇠로 다시 꺼낸다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">작업 전</span>각 항목을 단위 위상 벡터로 두고, 묶기(성분별 복소곱)·겹치기(합)로 저장합니다. 이것이 창의의 그릇이라고 봤습니다.</div>
+      <div class="ba-a"><span class="ba-t">작업 후</span>저장·회상은 이론대로 잘 됩니다. 하지만 <b>회상은 창의가 아닙니다.</b> 새 조합을 만들려면 조각을 사전 단어로 정리하는 단계가 따로 필요합니다.</div>
+    </div>
+    <div class="ba-i"><b>구현:</b> 점검 <code>note/src/v2/mem/e28_audit.py</code> A·B·C. · <b>철학:</b> "도서관에 책을 많이 꽂는 능력과 그 책으로 새 이야기를 쓰는 능력은 다르다."</div>
+  </div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 2</span><b>복소 SSM = 감쇠 진동자 기억</b><span class="ba-q">풀려던 문제: 기억 길이를 늘려 먼 과거를 재료로 쓴다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">작업 전</span>\(x_t=\lambda x_{t-1}+\text{bind}(\text{TIME}_t,\text{item}_t)\), \(\lambda=e^{-\alpha+j\omega}\). α가 작을수록 오래 기억한다고 보고, 긴 기억이 곧 창의 재료라고 봤습니다.</div>
+      <div class="ba-a"><span class="ba-t">작업 후</span>오래 기억하면 그만큼 많은 것이 겹쳐 최근 기억이 흐려집니다. <b>긴 기억은 공짜가 아니고, 과제마다 맞는 길이가 있습니다.</b></div>
+    </div>
+    <div class="ba-i"><b>구현:</b> <code>e28_audit.py</code> D. · <b>철학:</b> "다 기억하려는 사람은 어제 일을 헷갈린다."</div>
+  </div>
+  <div class="ba">
+    <div class="ba-h"><span class="ba-k">기술 3 (새로)</span><b>위상 간섭 지식그래프 기억</b><span class="ba-q">풀려던 문제: 기억들을 서로 연결해 아직 없는 참 연결을 만들어 낸다</span></div>
+    <div class="ba-g">
+      <div class="ba-b"><span class="ba-t">이전</span>창의를 측정하는 정의가 없었습니다.</div>
+      <div class="ba-a"><span class="ba-t">새 정의(v2)</span>창의 = <b>한 번도 저장된 적 없는 답을, 제한된 기억에 남은 오래된 사실 여러 개를 엮어 찾아내는 능력.</b> 중첩 기억에 관계를 연달아 걸어 모든 경로를 한 번에 더합니다.</div>
+    </div>
+    <div class="ba-i"><b>구현:</b> 관문 실험 예정(§3). · <b>철학:</b> "여러 갈래 길이 같은 곳을 가리키면 그곳에 길이 있을 가능성이 높다."</div>
+  </div>
+</section>
+
+<section id="s1">
+  <div class="sec-head"><span class="sec-num">§1</span><h2>점검 실험: 대조군을 넣으니 '창의'는 회상과 구별되지 않았다</h2></div>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">A·B</span><h3>저장된 '창의 아이템'은 평범한 아이템과 같고, 저장된 적 없는 조합은 정리 단계 없이는 안 된다</h3><span class="badge b-c">코드</span><div class="spec-src">e28_audit.py · D=1024, 역할 3, 어휘 20, 200회</div></div>
+    <div class="spec-body">
+      <div class="tscroll"><table style="min-width:600px"><caption>완전 정확 판독률(높을수록 좋음)</caption><thead><tr><th>부하 L</th><th>원 T2 '창의'</th><th>평범한 저장 아이템</th><th>새 조합: 위상 중첩만</th><th>새 조합: + 정리 단계</th></tr></thead><tbody>
+        <tr><td class="num">10</td><td class="num">1.00</td><td class="num">1.00</td><td class="num"><em>0.05</em></td><td class="num">1.00</td></tr>
+        <tr><td class="num">30</td><td class="num">0.98</td><td class="num">0.99</td><td class="num"><em>0.04</em></td><td class="num">0.99</td></tr>
+        <tr><td class="num">60</td><td class="num">0.75</td><td class="num">0.78</td><td class="num"><em>0.03</em></td><td class="num">0.71</td></tr>
+        <tr><td class="num">100</td><td class="num">0.43</td><td class="num">0.39</td><td class="num"><em>0.01</em></td><td class="num">0.43</td></tr>
+        <tr><td class="num">150</td><td class="num">0.23</td><td class="num">0.25</td><td class="num"><em>0.02</em></td><td class="num">0.24</td></tr>
+      </tbody></table></div>
+      <div class="note">위상 중첩만으로 실패하는 이유: 역할 \(r\)로 풀었다가 다시 \(r\)로 묶으면 \(\bar r\odot r=1\)이라 역할 정보가 사라집니다. 결국 아이템 a·b·c 전체가 섞인 벡터가 남고, 역할마다 3개 후보 중 하나를 고르게 되어 \((1/3)^3\approx0.04\)가 나옵니다. <span class="badge b-d">유도</span></div>
+    </div>
+  </article>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">C</span><h3>용량 천장은 교과서 누화 이론과 일치한다</h3><span class="badge b-c">코드</span><span class="badge b-d">유도</span><div class="spec-src">e28_audit.py C · 중복 없는 사전</div></div>
+    <div class="spec-body">
+      <div class="mathrow">\[ P(\text{정답})=\mathbb E_z\!\left[\Phi\!\left(\tfrac{1+sz}{s}\right)^{M-1}\right],\qquad s^2=\frac{N-1}{2D} \]</div>
+      <div class="tscroll"><table style="min-width:420px"><thead><tr><th>N쌍</th><th>실측</th><th>이론</th></tr></thead><tbody>
+        <tr><td class="num">100</td><td class="num">0.94</td><td class="num">0.97</td></tr><tr><td class="num">150</td><td class="num">0.85</td><td class="num">0.84</td></tr>
+        <tr><td class="num">200</td><td class="num">0.64</td><td class="num">0.67</td></tr><tr><td class="num">300</td><td class="num">0.34</td><td class="num">0.41</td></tr></tbody></table></div>
+    </div>
+  </article>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">D</span><h3>긴 기억은 최근 기억을 흐린다. 최적 길이는 묻는 거리마다 다르다</h3><span class="badge b-c">코드</span><div class="spec-src">e28_audit.py D · 스트림 400개, 회상률</div></div>
+    <div class="spec-body">
+      <div class="tscroll"><table style="min-width:480px"><thead><tr><th>α (기억 길이)</th><th>5칸 전</th><th>25칸 전</th><th>100칸 전</th></tr></thead><tbody>
+        <tr><td>0.003 (333)</td><td class="num"><em>0.85</em></td><td class="num">0.77</td><td class="num win">0.46</td></tr>
+        <tr><td>0.010 (100)</td><td class="num win">1.00</td><td class="num win">0.98</td><td class="num">0.28</td></tr>
+        <tr><td>0.040 (25)</td><td class="num win">1.00</td><td class="num">0.95</td><td class="num">0.00</td></tr>
+        <tr><td>0.120 (8)</td><td class="num win">1.00</td><td class="num">0.04</td><td class="num">0.00</td></tr>
+      </tbody></table></div>
+    </div>
+  </article>
+</section>
+
+<section id="s2">
+  <div class="sec-head"><span class="sec-num">§2</span><h2>선행연구: 부품은 모두 있다. 남는 것은 "다중 경로 위상 간섭으로 새 연결 만들기"</h2></div>
+  <div class="tscroll"><table style="min-width:640px"><thead><tr><th>선행</th><th>무엇을 했나</th><th>우리와 겹치는 부분</th></tr></thead><tbody>
+    <tr><td>Plate 1995 HRR · Frady·Kleyko·Sommer 2018</td><td>홀로그래픽 기억, 순환망 시퀀스 기억의 용량·망각 이론</td><td>T1·T3 전체 <span class="badge b-p">논문</span></td></tr>
+    <tr><td>RotatE 2019</td><td>관계 = 복소 위상 회전, 경로 합성 = 위상 덧셈</td><td>"관계를 위상으로" <span class="badge b-p">논문</span></td></tr>
+    <tr><td>HolE 2016 · Holistic Representations 2018</td><td>홀로그래픽(순환 상관) 지식그래프 임베딩, 한 흔적에 여러 사실 중첩</td><td>"홀로그래픽 KG" <span class="badge b-p">논문</span></td></tr>
+    <tr><td>Harmonic Memory Networks 2021</td><td>개체 = 이웃·관계 묶음의 중첩, 재학습 없이 사실 추가</td><td>"계속 쌓는 KG 기억" <span class="badge b-p">논문</span></td></tr>
+    <tr><td>Furlong &amp; Eliasmith 2023</td><td>VSA를 생성모델로 해석, 창의적 출력을 동기로 제시</td><td>"생성형 홀로그래픽 기억" <span class="badge b-p">논문</span></td></tr>
+  </tbody></table></div>
+  <div class="warn">"여러 경로의 위상을 복소수로 더해 보강·상쇄로 새 연결을 채점"하는 연구는 짧은 검색으로는 찾지 못했습니다. 경로 집계(path ranking, attention 경로 선택)는 많지만 크기만 더하거나 학습 가중을 씁니다. <span class="badge b-u">미확인</span> 관문 실험 전에 본격 문헌 조사를 한 번 더 합니다.</div>
+</section>
+
+<section id="s3">
+  <div class="sec-head"><span class="sec-num">§3</span><h2>새 방향(v2, codex 검수 반영): 위상 간섭의 가치는 "채점식"이 아니라 "제한된 기억 안에서 모든 경로를 한 번에 더하는 것"이다</h2></div>
+  <div class="plain">한 문장: 기억 하나에 사실들을 겹쳐 두고, 관계를 한 번 걸 때마다 "갈 수 있는 모든 곳"이 겹친 채로 나옵니다. 두세 번 걸면 모든 경로가 저절로 더해지고, 맞는 답은 쌓이며 잡음은 서로 지워집니다.</div>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">R1</span><h3>v1 채점식 \(|\sum_p z_p|\)는 철회한다. 경로들이 서로 맞는지만 읽고, 어느 답을 지지하는지는 읽지 못한다</h3><span class="badge b-d">유도</span><div class="spec-src">codex 검수(review/SM28_독립검수_20261122.txt:15) · 직접 검산</div></div>
+    <div class="spec-body">
+      <p>목표 방향이 +1일 때 경로 화살표 [+1,+1,+1], [−1,−1,−1], [i,i,i]는 모두 \(|\sum z|=3\)입니다. 참·반대·무관을 구별하지 못합니다. 목표 방향으로 투영하면 각각 3, −3, 0으로 구별됩니다. 그런데 투영하면 선형성 때문에 아래 등식이 성립합니다.</p>
+      <div class="mathrow">\[ \mathrm{Re}\Big\langle \sum_p \hat t_p,\; t\Big\rangle=\sum_p \mathrm{Re}\langle \hat t_p,\,t\rangle \]</div>
+      <p>즉 경로를 하나씩 나열해 채점하는 한, <b>"위상 간섭" = "부호 있는 경로 합"</b>이고 둘은 같은 점수입니다. 경로를 원본 그래프에서 읽는 실험에서는 간섭에 고유한 이점이 없습니다.</p>
+      <p>또 하나: 성분별 복소곱은 순서를 바꿔도 같습니다("부모의 배우자" = "배우자의 부모"). 그래서 관계를 <b>순서가 남는 연산</b>으로 바꿉니다. \(R_r(x)=\Pi(x)\odot\theta_r\)에서 \(\Pi\)는 고정 순환이동입니다. 이렇게 하면 \(R_aR_b\neq R_bR_a\)가 됩니다(DihEdral 등의 비가환 합성과 같은 목적).</p>
+    </div>
+  </article>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">M2</span><h3>남는 주장: 중첩 기억에 관계를 연달아 걸면 경로를 나열하지 않고도 모든 경로가 더해진다</h3><span class="badge b-d">유도</span></div>
+    <div class="spec-body">
+      <p>관계 \(r\)의 사실들을 한 벡터에 겹쳐 둡니다: \(M_r=\sum_{(h,r,t)}\overline{h}\odot \Pi^{-1}(t\odot\overline{\theta_r})\). 질의 개체 \(q\)에 이 기억을 걸면 \(q\)의 \(r\)-이웃 전체가 겹친 벡터가 나오고, 누화는 무작위 위상이라 작게 남습니다. 여기에 관계를 두세 번 연달아 걸면 다단 경로가 <b>모두 겹친 채로 한 번에</b> 계산됩니다. 경로 수가 늘어도 계산량은 같습니다. 답 쪽 신호는 경로 수만큼 쌓이고, 누화는 \(\sqrt{\cdot}\)으로만 자랍니다(보강 vs 상쇄).</p>
+      <p>이것이 교수님 발상의 구체형입니다. <b>긴 기억</b>(감쇠 α, 오래된 사실까지 중첩 유지) + <b>위상 보강간섭</b>(경로들이 같은 답에서 쌓임) → <b>저장된 적 없는 답</b>.</p>
+    </div>
+  </article>
+  <article class="spec">
+    <div class="spec-head"><span class="spec-id">G</span><h3>관문 실험(사전 등록, v2): 두 단계. 2단계를 통과하지 못하면 #28은 접는다</h3><span class="badge b-u">미확인</span><div class="spec-src">CPU · #34 GPU 실험 종료 후 · 예정 note/src/v2/mem/e28_kg_gate.py</div></div>
+    <div class="spec-body">
+      <div class="tscroll"><table style="min-width:680px"><tbody>
+        <tr><th>1단계 채점 점검</th><td>규칙 합성 KG(가족 관계류, 비가환 규칙). 참·거짓 후보의 경로 수와 길이를 맞춥니다. 비교: 최선 경로 하나 · 부호 없는 경로 개수 · <b>부호 있는 경로 합</b> · 학습 가중 경로 합 · RotatE. 잡음은 무작위 오류와 <b>같은 틀린 간선을 공유하는 오류</b>(경로끼리 틀린 쪽으로 보강됨)로 나눕니다. 목적: 유도한 등식(간섭 = 부호 있는 합)을 실측으로 확인하고 비교군 수준을 잡는 것. 이 단계는 탈락 기준이 아닙니다.</td></tr>
+        <tr><th>2단계 핵심(탈락 기준)</th><td>사실이 시간 순서로 들어오고, 기억은 크기 D·감쇠 α로 제한됩니다. 질의는 <b>답이 한 번도 저장된 적 없고, 오래전에 들어온 사실 2–3개를 엮어야 풀리는 것</b>만 씁니다. 비교: ① 같은 비트 예산의 슬롯 버퍼(최근 사실만 보관) ② 같은 예산의 키-값 기억 + 명시적 경로 탐색 ③ 원본 그래프 오라클(상한) ④ <b>중첩 기억 + 연쇄 관계 적용(우리)</b>. 사실의 나이와 기억 예산을 축으로 정확도를 봅니다.</td></tr>
+        <tr><th>통과 기준</th><td>④가 같은 기억 예산에서 ①·②보다 오래된 사실 질의의 정확도(Hits@1)가 5개 시드 95% 구간에서 확실히 높을 것. 설정(α, D 분배)은 검증 스트림에서 고르고 별도 평가 스트림에서 보고합니다. 못 지키면 음성 결과로 기록하고 #33으로 넘어갑니다.</td></tr>
+        <tr><th>검증 가설(탈락 기준 아님)</th><td>잡음이 늘수록 ④의 격차가 커지는가. 공유 오류에서는 오히려 줄어들 수 있으므로 두 잡음을 따로 보고합니다.</td></tr>
+      </tbody></table></div>
+      <div class="warn">신규성은 아직 미확인입니다. 복소 회전과 경로·규칙 결합(TP-RotatE), 다중 경로 집계(NBFNet), 사실 중첩 기억(HMem), 가족 관계 합성과 잡음 시험(CLUTRR)이 있습니다. 남는 주장은 "같은 경로·기억 예산에서 중첩 연쇄 적용이 오래된 사실을 엮는 데 추가 이점을 준다"입니다. 본회의 후보가 되려면 이 주장이 강한 비교군(NBFNet류)과 실제 데이터에서도 살아남아야 합니다. <span class="badge b-p">논문</span></div>
+    </div>
+  </article>
+</section>
+
+<section id="s4">
+  <div class="sec-head"><span class="sec-num">§4</span><h2>관문 2단계 결과: 불통과. 같은 용량이면 사실을 무작위로 골라 적어 두는 쪽이 더 잘 답한다. #28 종료</h2></div>
+  <div class="plain">한 문장: 격쳐 저장하는 기억은 “최근 것만 기억하는 메모장”은 이기지만, “아무 때나 골라 적어 둔 메모장”에는 집니다.</div>
+  <div class="note">설계(<code>src/v2/mem/e28_kg_gate.py</code>): 합성 KG 사실 3,600개를 먼저 넣고 무관한 사실 3,600개를 이어 넣습니다. 질의는 모두 오래된 사실 2홉 결합이고, 답(경로가 가장 많은 개체)은 저장된 적이 없습니다. 같은 바이트 예산에서 비교했고, 사실 하나는 6바이트로 셈니다.</div>
+  <div class="tscroll"><table style="min-width:640px"><caption>Hits@1, 5 seed 평균 ± 95% 구간(아래 두 줄은 seed 1개)</caption><thead><tr><th>예산</th><th>격친 기억, 정리 없음</th><th class="col-ours">격친 기억 + 홉마다 정리</th><th>최근 사실 버퍼</th><th>무작위 표본 버퍼</th></tr></thead><tbody>
+    <tr><td>12 KB (2비트, D=16k)</td><td class="num">0.009</td><td class="num">0.067±0.019</td><td class="num">0.007</td><td class="num win">0.223±0.032</td></tr>
+    <tr><td>25 KB (2비트, D=33k)</td><td class="num">0.008</td><td class="num">0.387±0.024</td><td class="num">0.065</td><td class="num win">0.499±0.048</td></tr>
+    <tr><td>49 KB (2비트, D=65k)</td><td class="num">0.017</td><td class="num">0.927</td><td class="num win">1.000</td><td class="num win">1.000</td></tr>
+    <tr><td>786 KB (fp16, D=65k)</td><td class="num">0.017</td><td class="num">0.983</td><td class="num win">1.000</td><td class="num win">1.000</td></tr>
+  </tbody></table></div>
+  <div class="verdict"><h3>판정</h3><ul>
+    <li><b>정리 없이 관계를 연달아 걸면 어느 예산에서도 실패합니다(0.01–0.02).</b> 누화가 홉마다 곱해집니다. §1-B의 “재조합에는 정리 단계가 필요하다”가 다시 확인됐습니다.</li>
+    <li>정리를 넣으면 “최근만 기억”은 이깁니다(0.387 vs 0.065). 하지만 <b>같은 예산의 무작위 표본 버퍼에는 모든 예산에서 집니다</b>(0.387 vs 0.499, 0.067 vs 0.223).</li>
+    <li>이유: 무작위 위상 부호로 격쳐 저장하면 누화를 누르려고 차원을 사실 수보다 훨씬 크게 잡아야 합니다. 그래서 이산 사실을 ID로 적는 것보다 바이트 효율이 낮습니다. <span class="badge b-c">코드</span> <span class="badge b-d">유도</span></li>
+    <li>사전 등록 기준(두 버퍼를 모두 이김) 불통과 → <b>#28을 음성 결과로 종료</b>하고 #33으로 넘어갑니다. <code>results/v2/e28_kg_gate.json</code></li>
+  </ul></div>
+  <div class="warn">한계: 합성 그래프 하나입니다. 개체 부호책은 예산에서 뺐고(격친 기억에 유리), 양자화는 마지막 상태에만 걸었습니다(격친 기억에 유리). 두 편향 모두 우리 쪽에 유리한데도 졌습니다. 학습한 부호(임베딩)를 쓰거나 근사 답을 허용하는 과제는 시험하지 않았습니다 <span class="badge b-u">미확인</span>. 1단계(채점 점검)는 등식을 수치로만 확인했고 따로 돌리지 않았습니다.</div>
+</section>
+
+<footer>
+  <div><b>확인된 것:</b> 원 수치 재현. 원 T2 '창의'는 평범한 회상과 같은 정확도. 위상 중첩만으로는 새 조합 불가(0.01–0.05), 정리 단계를 넣으면 회상과 같은 수준. 용량은 누화 이론과 일치. 긴 기억은 최근 기억을 흐리는 맞교환이 있음.</div>
+  <div><b>미확인:</b> 중첩 연쇄 적용의 신규성(TP-RotatE·NBFNet·HMem·CLUTRR와의 차이), 같은 기억 예산에서 슬롯 버퍼·키-값 기억을 이기는지(관문 2단계 전).</div>
+  <div><b>다음 할 일:</b> #34 GPU 실험 종료 → 문헌 조사 보강 → 관문 실험 <code>note/src/v2/mem/e28_kg_gate.py</code>(예정) → 결과로 계속/종료 결정.</div>
+</footer>
+</main>

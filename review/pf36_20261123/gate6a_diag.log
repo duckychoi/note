@@ -1,0 +1,12 @@
+[  128.9s] in 8100 done
+[  236.6s] in 8200 done
+[  335.1s] in 8300 done
+[  443.7s] shift 8100 done
+[  558.3s] shift 8200 done
+[  657.4s] shift 8300 done
+[  725.0s] ref grid 8100 {'energy': 0.029, 'brier_bounce2': 0.034, 'brier_xpast': 0.033, 'cover_x': 0.875, 'cover_z': 0.854, 'ess': 449.103, 'ncls': 60.0, 'x_cover': 0.875, 'x_width': 0.171, 'x_miss_low': 0.062, 'x_miss_high': 0.062, 'x_iscore': 0.195, 'z_cover': 0.854, 'z_width': 0.077, 'z_miss_low': 0.042, 'z_miss_high': 0.104, 'z_iscore': 0.32}
+[  797.3s] ref grid 8200 {'energy': 0.029, 'brier_bounce2': 0.035, 'brier_xpast': 0.043, 'cover_x': 0.875, 'cover_z': 0.833, 'ess': 441.771, 'ncls': 60.0, 'x_cover': 0.875, 'x_width': 0.174, 'x_miss_low': 0.062, 'x_miss_high': 0.062, 'x_iscore': 0.204, 'z_cover': 0.833, 'z_width': 0.062, 'z_miss_low': 0.083, 'z_miss_high': 0.083, 'z_iscore': 0.305}
+[  872.0s] ref grid 8300 {'energy': 0.028, 'brier_bounce2': 0.04, 'brier_xpast': 0.032, 'cover_x': 0.896, 'cover_z': 0.854, 'ess': 371.432, 'ncls': 60.5, 'x_cover': 0.896, 'x_width': 0.172, 'x_miss_low': 0.021, 'x_miss_high': 0.083, 'x_iscore': 0.197, 'z_cover': 0.854, 'z_width': 0.07, 'z_miss_low': 0.062, 'z_miss_high': 0.083, 'z_iscore': 0.244}
+[  943.9s] ref shift 8100 {'energy': 0.024, 'brier_bounce2': 0.035, 'brier_xpast': 0.044, 'cover_x': 0.771, 'cover_z': 0.812, 'ess': 516.803, 'ncls': 58.5, 'x_cover': 0.771, 'x_width': 0.173, 'x_miss_low': 0.104, 'x_miss_high': 0.125, 'x_iscore': 0.22, 'z_cover': 0.812, 'z_width': 0.105, 'z_miss_low': 0.042, 'z_miss_high': 0.146, 'z_iscore': 0.188}
+[ 1012.5s] ref shift 8200 {'energy': 0.022, 'brier_bounce2': 0.035, 'brier_xpast': 0.042, 'cover_x': 0.812, 'cover_z': 0.833, 'ess': 379.816, 'ncls': 59.5, 'x_cover': 0.812, 'x_width': 0.172, 'x_miss_low': 0.104, 'x_miss_high': 0.083, 'x_iscore': 0.214, 'z_cover': 0.833, 'z_width': 0.124, 'z_miss_low': 0.042, 'z_miss_high': 0.125, 'z_iscore': 0.183}
+[ 1083.2s] ref shift 8300 {'energy': 0.024, 'brier_bounce2': 0.035, 'brier_xpast': 0.043, 'cover_x': 0.812, 'cover_z': 0.854, 'ess': 367.59, 'ncls': 60.0, 'x_cover': 0.812, 'x_width': 0.174, 'x_miss_low': 0.104, 'x_miss_high': 0.083, 'x_iscore': 0.219, 'z_cover': 0.854, 'z_width': 0.138, 'z_miss_low': 0.042, 'z_miss_high': 0.104, 'z_iscore': 0.225}

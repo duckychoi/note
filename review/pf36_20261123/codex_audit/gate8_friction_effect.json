@@ -1,0 +1,101 @@
+{
+  "development_seed": 67238,
+  "frame": 49,
+  "observation_sd_mm": 15.0,
+  "paired_interventions": {
+    "drop": [
+      {
+        "frictions": [
+          0.12,
+          1.05
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_p90_mm": 0.0,
+        "endpoint_above_15mm_count": 0,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      {
+        "frictions": [
+          0.1,
+          0.2
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_p90_mm": 0.0,
+        "endpoint_above_15mm_count": 0,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      {
+        "frictions": [
+          0.9,
+          1.2
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_median_mm": 0.0,
+        "endpoint_abs_x_p90_mm": 0.0,
+        "endpoint_above_15mm_count": 0,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      }
+    ],
+    "oblique": [
+      {
+        "frictions": [
+          0.12,
+          1.05
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.06476308894803884,
+        "endpoint_abs_x_median_mm": 0.34572184041775644,
+        "endpoint_abs_x_p90_mm": 5.401410292700359,
+        "endpoint_above_15mm_count": 9,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.4887153975661196,
+          "high": 0.33147796127130924
+        }
+      },
+      {
+        "frictions": [
+          0.1,
+          0.2
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.02388963555555179,
+        "endpoint_abs_x_median_mm": 0.10629950581747538,
+        "endpoint_abs_x_p90_mm": 5.224169430906533,
+        "endpoint_above_15mm_count": 6,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.00652383848459559,
+          "high": 0.24582221293778517
+        }
+      },
+      {
+        "frictions": [
+          0.9,
+          1.2
+        ],
+        "n": 256,
+        "early_peak_abs_x_median_mm": 0.027543126495249703,
+        "endpoint_abs_x_median_mm": 0.18355320011170795,
+        "endpoint_abs_x_p90_mm": 3.1828692692933425,
+        "endpoint_above_15mm_count": 2,
+        "endpoint_abs_x_median_by_damping_band_mm": {
+          "low": 0.2811003243897714,
+          "high": 0.170990708448171
+        }
+      }
+    ]
+  }
+}

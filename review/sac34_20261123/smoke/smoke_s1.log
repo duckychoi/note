@@ -1,0 +1,65 @@
+members 15 [('task', '-', 0.0, 0), ('task', '-', 0.0, 1), ('task', '-', 0.0, 2), ('oracle', 'F', 0.5, 0), ('oracle', 'F', 0.5, 1), ('oracle', 'F', 0.5, 2), ('oracle', 'R', 0.5, 0), ('oracle', 'R', 0.5, 1), ('oracle', 'R', 0.5, 2), ('oracle', 'F', 1.0, 0), ('oracle', 'F', 1.0, 1), ('oracle', 'F', 1.0, 2), ('oracle', 'R', 1.0, 0), ('oracle', 'R', 1.0, 1), ('oracle', 'R', 1.0, 2)]
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+2000 sps 615  Tb_med [None, None, None, None, None] nlag [0, 0, 0, 0, 0]
+   4000 sps 674 min 0.3 | task/-/0.0: v0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/F/0.5: v0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/R/0.5: v0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/F/1.0: v0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/R/1.0: v0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00
+   8000 sps 140 min 1.0 | task/-/0.0: v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/F/0.5: v-0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/R/0.5: v0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/F/1.0: v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00 | oracle/R/1.0: v-0.00 ok0.0 s+0.00,v-0.00 ok0.0 s+0.00,v0.00 ok0.0 s+0.00
+DONE s1 1.05483345190684 min

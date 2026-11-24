@@ -1,0 +1,31 @@
+{
+  "chosen": 3,
+  "n": 2048,
+  "reachable": 1060,
+  "rates": {
+    "3": 0.5128580729166666,
+    "6": 0.4371744791666667,
+    "5": 0.4899088541666667
+  },
+  "conditional": 0.990880503144654,
+  "comparisons": {
+    "original": {
+      "delta": 0.07568359374999999,
+      "ci": [
+        0.06233723958333333,
+        0.08951822916666666
+      ],
+      "improvement": true,
+      "faster_noninferior": true
+    },
+    "source_selected": {
+      "delta": 0.02294921875,
+      "ci": [
+        0.014648437500000002,
+        0.031575520833333336
+      ],
+      "improvement": false,
+      "faster_noninferior": true
+    }
+  }
+}

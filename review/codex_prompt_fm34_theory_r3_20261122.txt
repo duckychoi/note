@@ -1,0 +1,6 @@
+Adversarial math + code review, ROUND 3 (read-only; answer in Korean; cite file:line; why; fix). Defects only, HIGH/MED/LOW.
+For EACH finding in review/검수_fm34_theory_r2_20261122_codex최종_sol.txt state FIXED / PARTIAL / NOT FIXED with evidence, then NEW defects.
+Last line exactly: READY or NOT READY + count of HIGH/MED.
+Files: docs/v2/34-audit-20261122.md, docs/05-fm-residual-divergence-theorem.md, src/v2/gmm_flow.py, src/v2/e1_reward_theory.py,
+src/v2/e2_occupancy.py, results/v2/*.json. Scope note: the continuous-control Jacobian issue is now stated as an explicit
+limitation (Prop. 4) — judge whether the statement is correct, not whether it is proven. Do not modify files.

@@ -1,0 +1,20 @@
+Adversarial math + code review (read-only; answer in Korean; cite file:line; why; fix). Defects only, rank HIGH/MED/LOW.
+Last line must be exactly: READY or NOT READY + count of HIGH/MED defects.
+
+Repo root = current dir. Files:
+- docs/v2/34-audit-20261122.md   (claims to attack)
+- src/v2/gmm_flow.py              (closed-form GMM flow quantities)
+- src/v2/e1_reward_theory.py      (exact quadrature checks)  -> results/v2/e1_reward_theory.json
+- src/v2/e2_occupancy.py          (ring MDP, exact gradients)  -> results/v2/e2_occupancy.json
+- docs/05-fm-residual-divergence-theorem.md (old claims being declared wrong)
+
+Claims to attack:
+C1. docs/05 sec.2 proof is invalid because dX = v* dt + sigma dW does not have marginals p_t (needs score-corrected drift).
+C2. For x_t=(1-t)x0+t x1, x0~N(0,I) independent of x1: u=(m-x)/(1-t), s=-(x-t m)/(1-t)^2 with m=E[x1|x_t=x], hence Delta s = t/(1-t) Delta u for ANY two data distributions q,p.
+C3. EXACT identity KL(q||p) = int_0^1 t/(1-t) E_{x~q_t} ||u_q(x,t)-u_p(x,t)||^2 dt (via de Bruijn with tau=((1-t)/t)^2). Check the change of variables, the factor (must be exactly 1), the boundary terms (t->0, t->1), and the regularity conditions needed. Is it an identity or only a bound?
+C4. Per-sample l_w(x)=int_0^{1-delta} t/(1-t) E_x0 ||u_p(x_t,t)-(x-x0)||^2 dt equals -log p(x) + K_delta + o(1) with K_delta independent of x. Is this true per-sample (not just in expectation)? What is the o(1) term and does it depend on x?
+C5. The uniform-weight reward (w=1) has a max-ent fixed point exp(-l_u/alpha) != p for every alpha (E1 numbers).
+C6. Max-ent RL with exact reward log p(s,s') and alpha=1 in a deterministic MDP optimises -KL(d||p) - H(d_S); adding -log d_pi(s) restores -KL. Check derivation and whether E2 code actually implements the stationary/average-reward objective correctly.
+C7. Numerical code correctness: quadrature substitutions (t=1-exp(-s), dt=(1-t)ds), Gauss-Hermite normalisation, grid KL normalisation, whether results could be an artefact.
+
+You may run python (numpy/scipy/torch available) to recompute anything. Do not modify files.

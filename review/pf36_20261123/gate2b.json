@@ -1,0 +1,2417 @@
+{
+ "temperatures": {
+  "retrieval_train_materials": 2.0,
+  "retrieval_prior_materials": 2.0,
+  "analytic_grid_full": 2.0,
+  "analytic_random_2048": 4.0,
+  "pf_analytic": 0.5
+ },
+ "table": {
+  "new_materials|retrieval_train_materials": {
+   "energy": 0.025335580733578552,
+   "brier": 0.12659001773240508,
+   "cover": 0.6015625,
+   "energy_seed_sd": 0.002714805415048866,
+   "calls_per_case": 0.0,
+   "temp": 2.0,
+   "seconds": 0.9254922866821289,
+   "per_seed_energy": [
+    0.02636233522816184,
+    0.0216664202014601,
+    0.027208318621342004,
+    0.02362648901810414,
+    0.02409726053356109,
+    0.029621781725057663,
+    0.023558441232360724,
+    0.02237692771941588,
+    0.0281399385000828,
+    0.028382830209394055,
+    0.02669995262891316,
+    0.02228627318508915
+   ]
+  },
+  "new_materials|retrieval_prior_materials": {
+   "energy": 0.025060120288144545,
+   "brier": 0.14072511263307377,
+   "cover": 0.6579861111111112,
+   "map_energy": 0.03643738857678464,
+   "map_brier": 0.18229166666666666,
+   "energy_seed_sd": 0.003411554738546412,
+   "calls_per_case": 0.0,
+   "temp": 2.0,
+   "seconds": 1.0789642333984375,
+   "per_seed_energy": [
+    0.028798303415866727,
+    0.019388823932484263,
+    0.029428442972474395,
+    0.021308671962039186,
+    0.023926313800347283,
+    0.030508885119677493,
+    0.022847277405093944,
+    0.023068408242083515,
+    0.02622271838099048,
+    0.027312940374657323,
+    0.024070293248973588,
+    0.02384036460304639
+   ]
+  },
+  "new_materials|analytic_grid_full": {
+   "energy": 0.025494162683332114,
+   "brier": 0.12609504227493545,
+   "cover": 0.6796875,
+   "energy_seed_sd": 0.0014299772062820598,
+   "calls_per_case": 0.0,
+   "temp": 2.0,
+   "seconds": 4.704147815704346,
+   "per_seed_energy": [
+    0.02644941993192138,
+    0.02411474199681894,
+    0.026559244290055104,
+    0.024762519898662433,
+    0.025152427602520778,
+    0.026271160971817867,
+    0.025399349782385467,
+    0.022964777190807407,
+    0.02621461836924789,
+    0.025771282126909923,
+    0.028310423776718097,
+    0.023959986262120102
+   ]
+  },
+  "new_materials|analytic_random_2048": {
+   "energy": 0.027248025376638608,
+   "brier": 0.1373785431901918,
+   "cover": 0.6458333333333334,
+   "energy_seed_sd": 0.0012781319355097394,
+   "calls_per_case": 0.0,
+   "temp": 4.0,
+   "seconds": 0.7443833351135254,
+   "per_seed_energy": [
+    0.02865808294808038,
+    0.026738893518811205,
+    0.028533200942430215,
+    0.02714720264320325,
+    0.026064024281060073,
+    0.02830440633266984,
+    0.027256720348673658,
+    0.024329404924619658,
+    0.027291059021043923,
+    0.028276492582604156,
+    0.028177749008278585,
+    0.026199067968188407
+   ]
+  },
+  "new_materials|pf_analytic|N=64": {
+   "energy": 0.05918910967212889,
+   "brier": 0.234795608027672,
+   "cover": 0.2682291666666667,
+   "energy_seed_sd": 0.003215925574539072,
+   "calls_per_case": 793.6666666666666,
+   "temp": 0.5,
+   "seconds": 1.0241265296936035,
+   "per_seed_energy": [
+    0.06285973198911293,
+    0.060204288926003165,
+    0.053476025872132904,
+    0.06082605666306895,
+    0.05851055239807374,
+    0.05695875819451613,
+    0.057487039017373946,
+    0.05663065365140627,
+    0.06259099797935261,
+    0.05682500246402048,
+    0.06483587042805872,
+    0.0590643384824269
+   ]
+  },
+  "new_materials|pf_analytic|N=256": {
+   "energy": 0.026000455510502216,
+   "brier": 0.12845055095214486,
+   "cover": 0.5338541666666666,
+   "energy_seed_sd": 0.0015364187250723595,
+   "calls_per_case": 3570.0,
+   "temp": 0.5,
+   "seconds": 6.449683904647827,
+   "per_seed_energy": [
+    0.02545762652500035,
+    0.024981425424682607,
+    0.027146135484109487,
+    0.024646497353061708,
+    0.02711927029542971,
+    0.025868133690396016,
+    0.026501520405646368,
+    0.02346270723790587,
+    0.027031131641965803,
+    0.026993535993403803,
+    0.0287610792647562,
+    0.024036402809668688
+   ]
+  },
+  "new_materials|pf_analytic|N=1024": {
+   "energy": 0.025456183369591583,
+   "brier": 0.1243974265042701,
+   "cover": 0.5546875,
+   "energy_seed_sd": 0.0017066436770162966,
+   "calls_per_case": 14309.333333333334,
+   "temp": 0.5,
+   "seconds": 33.1877076625824,
+   "per_seed_energy": [
+    0.02497178705216847,
+    0.025366033997222332,
+    0.025728818345497107,
+    0.02448893802440331,
+    0.024937298971727407,
+    0.026251621902545468,
+    0.025487887252725216,
+    0.02201215080273321,
+    0.02694790475321518,
+    0.02708773846433515,
+    0.028578284970739606,
+    0.02361573589778654
+   ]
+  },
+  "new_materials|pf_analytic|N=8192": {
+   "energy": 0.025636163507605222,
+   "brier": 0.1247542467335902,
+   "cover": 0.5607638888888888,
+   "energy_seed_sd": 0.0014620280625213399,
+   "calls_per_case": 114730.66666666667,
+   "temp": 0.5,
+   "seconds": 225.00666546821594,
+   "per_seed_energy": [
+    0.025075387769749977,
+    0.025530931698835014,
+    0.02630355670006529,
+    0.02486986240324685,
+    0.025763095697610316,
+    0.025721168195061633,
+    0.025415459704540445,
+    0.02318287582055858,
+    0.02652845492254413,
+    0.027289405782515336,
+    0.028457040202526974,
+    0.023496723194008088
+   ]
+  }
+ },
+ "val_raw": [
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02105570289780077,
+    "brier": 0.1069568031019099,
+    "cover": 0.4270833333333333
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.014855623245239258
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.01931128978843696,
+    "brier": 0.09840326281000067,
+    "cover": 0.59375
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.014524459838867188
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.018612990195020197,
+    "brier": 0.09387022869005852,
+    "cover": 0.7604166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.01656627655029297
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.01963922558900644,
+    "brier": 0.09278667606719604,
+    "cover": 0.8333333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.025579452514648438
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02168824240033142,
+    "brier": 0.14057391482395776,
+    "cover": 0.5104166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.021587848663330078
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.01912552809643126,
+    "brier": 0.1314283328044504,
+    "cover": 0.8125
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.020641088485717773
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.018092080591810555,
+    "brier": 0.12706058533724862,
+    "cover": 0.875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.015084266662597656
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.018732878623551136,
+    "brier": 0.12685191150374406,
+    "cover": 0.8958333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.06103944778442383
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.022351521874208413,
+    "brier": 0.11929414181791681,
+    "cover": 0.4375,
+    "map_energy": 0.03245975882968402,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.06804156303405762
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020521785358733845,
+    "brier": 0.11009896673464885,
+    "cover": 0.5833333333333334,
+    "map_energy": 0.03245975882968402,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.05952763557434082
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020014765393645457,
+    "brier": 0.10261431650933206,
+    "cover": 0.6979166666666666,
+    "map_energy": 0.03245975882968402,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.07254338264465332
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02020700638798137,
+    "brier": 0.09938570941773157,
+    "cover": 0.7708333333333334,
+    "map_energy": 0.03245975882968402,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.06853580474853516
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024217444346799316,
+    "brier": 0.17515141970731377,
+    "cover": 0.4791666666666667,
+    "map_energy": 0.03311098480527156,
+    "map_brier": 0.19791666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03851938247680664
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02189763495596912,
+    "brier": 0.16301476971197548,
+    "cover": 0.6041666666666666,
+    "map_energy": 0.03311098480527156,
+    "map_brier": 0.19791666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.05903744697570801
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020862131598080116,
+    "brier": 0.1544874676546433,
+    "cover": 0.7708333333333334,
+    "map_energy": 0.03311098480527156,
+    "map_brier": 0.19791666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.16583490371704102
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02121885448877961,
+    "brier": 0.15109716341172788,
+    "cover": 0.8229166666666666,
+    "map_energy": 0.03311098480527156,
+    "map_brier": 0.19791666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.029195547103881836
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021168126051830022,
+    "brier": 0.1093848005295036,
+    "cover": 0.625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.4547157287597656
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020555489029306585,
+    "brier": 0.10783851919271285,
+    "cover": 0.7083333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.3930521011352539
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02040035825374058,
+    "brier": 0.1071921807156696,
+    "cover": 0.7604166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.374340295791626
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021583203125144307,
+    "brier": 0.10727423201461932,
+    "cover": 0.7708333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.448214054107666
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02152973802634923,
+    "brier": 0.13252402177951006,
+    "cover": 0.7708333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.36217761039733887
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021476781825767743,
+    "brier": 0.13186241374472218,
+    "cover": 0.8125
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.348529577255249
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020708184229665867,
+    "brier": 0.1332409456377668,
+    "cover": 0.8541666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.3883476257324219
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021325827307429556,
+    "brier": 0.1360117274257939,
+    "cover": 0.875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.26713037490844727
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027944156917202288,
+    "brier": 0.14324147400497397,
+    "cover": 0.3958333333333333
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03179478645324707
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02408711796556105,
+    "brier": 0.12411057527971858,
+    "cover": 0.5729166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03650355339050293
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02249269454528487,
+    "brier": 0.11482407030084862,
+    "cover": 0.71875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.030547618865966797
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021128940239260985,
+    "brier": 0.1096280386867653,
+    "cover": 0.7708333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.027793407440185547
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02929091622471823,
+    "brier": 0.18650593177444,
+    "cover": 0.5416666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.0225069522857666
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.0257040577743908,
+    "brier": 0.15556393023842272,
+    "cover": 0.71875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03079509735107422
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02397010485437485,
+    "brier": 0.14397689161705238,
+    "cover": 0.8020833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.02378535270690918
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023060020112238844,
+    "brier": 0.14169373821913556,
+    "cover": 0.84375
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.030794858932495117
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020281195194474994,
+    "brier": 0.10511043879065964,
+    "cover": 0.6666666666666666
+   },
+   "calls_per_case": 13984.0,
+   "seconds": 1.7371010780334473
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020618408312534173,
+    "brier": 0.10728001300596231,
+    "cover": 0.6666666666666666
+   },
+   "calls_per_case": 12160.0,
+   "seconds": 1.5860419273376465
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02039784591471648,
+    "brier": 0.10630874734813782,
+    "cover": 0.75
+   },
+   "calls_per_case": 10368.0,
+   "seconds": 1.2684741020202637
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41100,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02146587925845242,
+    "brier": 0.10648211905801612,
+    "cover": 0.7604166666666666
+   },
+   "calls_per_case": 9216.0,
+   "seconds": 1.0856564044952393
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020177751754911117,
+    "brier": 0.12716657595091288,
+    "cover": 0.7395833333333334
+   },
+   "calls_per_case": 14432.0,
+   "seconds": 1.76515793800354
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 1.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020618019494151766,
+    "brier": 0.13345132983397268,
+    "cover": 0.8229166666666666
+   },
+   "calls_per_case": 12096.0,
+   "seconds": 1.5622355937957764
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.020221020799181224,
+    "brier": 0.1312711962614899,
+    "cover": 0.84375
+   },
+   "calls_per_case": 10368.0,
+   "seconds": 1.4226970672607422
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41101,
+   "materials": "within_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021595559831124784,
+    "brier": 0.13175651718725115,
+    "cover": 0.8645833333333334
+   },
+   "calls_per_case": 9056.0,
+   "seconds": 1.1723802089691162
+  }
+ ],
+ "test_raw": [
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02636233522816184,
+    "brier": 0.14543173216748512,
+    "cover": 0.6458333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.15203642845153809
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.0216664202014601,
+    "brier": 0.12488997375223367,
+    "cover": 0.625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.022083282470703125
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027208318621342004,
+    "brier": 0.1483723831592327,
+    "cover": 0.5833333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.18005728721618652
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02362648901810414,
+    "brier": 0.1101530190397519,
+    "cover": 0.65625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.040679216384887695
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02409726053356109,
+    "brier": 0.11771410478025497,
+    "cover": 0.59375
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.13653254508972168
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.029621781725057663,
+    "brier": 0.10787401122196372,
+    "cover": 0.6354166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03229260444641113
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023558441232360724,
+    "brier": 0.14548790628493982,
+    "cover": 0.53125
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.18655180931091309
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02237692771941588,
+    "brier": 0.1144417753320679,
+    "cover": 0.53125
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.016506433486938477
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.0281399385000828,
+    "brier": 0.13502128138485603,
+    "cover": 0.6145833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.08004474639892578
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028382830209394055,
+    "brier": 0.13443199350462076,
+    "cover": 0.5416666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.0195159912109375
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02669995262891316,
+    "brier": 0.10426472119563772,
+    "cover": 0.5520833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.020503997802734375
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_train_materials",
+   "N": 0,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02228627318508915,
+    "brier": 0.1309973109658165,
+    "cover": 0.7083333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.038687944412231445
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028798303415866727,
+    "brier": 0.17561431035710484,
+    "cover": 0.6458333333333334,
+    "map_energy": 0.043856232374287825,
+    "map_brier": 0.23958333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.11702108383178711
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.019388823932484263,
+    "brier": 0.13342728843099735,
+    "cover": 0.6875,
+    "map_energy": 0.030361207148040387,
+    "map_brier": 0.17708333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.07902240753173828
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.029428442972474395,
+    "brier": 0.1905412593102508,
+    "cover": 0.6145833333333334,
+    "map_energy": 0.03988635268462727,
+    "map_brier": 0.22916666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.11353087425231934
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.021308671962039186,
+    "brier": 0.11059841325047469,
+    "cover": 0.6770833333333334,
+    "map_energy": 0.027810778038551708,
+    "map_brier": 0.09375
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.061814069747924805
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023926313800347283,
+    "brier": 0.13339329125205876,
+    "cover": 0.65625,
+    "map_energy": 0.03976347573540121,
+    "map_brier": 0.1875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.16806769371032715
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.030508885119677493,
+    "brier": 0.13150121624517017,
+    "cover": 0.6145833333333334,
+    "map_energy": 0.04192413574880801,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.04133963584899902
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.022847277405093944,
+    "brier": 0.13617579265483967,
+    "cover": 0.6354166666666666,
+    "map_energy": 0.03336979248393793,
+    "map_brier": 0.16666666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.22607707977294922
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023068408242083515,
+    "brier": 0.1337451289383028,
+    "cover": 0.6041666666666666,
+    "map_energy": 0.03411165297523577,
+    "map_brier": 0.1875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.027348995208740234
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02622271838099048,
+    "brier": 0.12124415673805555,
+    "cover": 0.71875,
+    "map_energy": 0.03945900016379624,
+    "map_brier": 0.17708333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.02503204345703125
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027312940374657323,
+    "brier": 0.16291388209518232,
+    "cover": 0.6458333333333334,
+    "map_energy": 0.03737018465296432,
+    "map_brier": 0.19791666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.05530667304992676
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024070293248973588,
+    "brier": 0.11274482710524188,
+    "cover": 0.6666666666666666,
+    "map_energy": 0.03506142252730479,
+    "map_brier": 0.14583333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.12553024291992188
+  },
+  {
+   "kind": "lib",
+   "name": "retrieval_prior_materials",
+   "N": 0,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02384036460304639,
+    "brier": 0.14680178521920664,
+    "cover": 0.7291666666666666,
+    "map_energy": 0.03427442838846031,
+    "map_brier": 0.21875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03887343406677246
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02644941993192138,
+    "brier": 0.13417457664737686,
+    "cover": 0.7604166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.3360717296600342
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02411474199681894,
+    "brier": 0.13317144978013754,
+    "cover": 0.7083333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.4161231517791748
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026559244290055104,
+    "brier": 0.13653243678744068,
+    "cover": 0.6770833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.42209649085998535
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024762519898662433,
+    "brier": 0.12046441479852799,
+    "cover": 0.65625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.35854005813598633
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025152427602520778,
+    "brier": 0.12244242732179705,
+    "cover": 0.6041666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.377103328704834
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026271160971817867,
+    "brier": 0.09782167823985473,
+    "cover": 0.7395833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.3717348575592041
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025399349782385467,
+    "brier": 0.14135127406984413,
+    "cover": 0.6354166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.367081880569458
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.022964777190807407,
+    "brier": 0.11028445388515966,
+    "cover": 0.6458333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.4141261577606201
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02621461836924789,
+    "brier": 0.1255592649929589,
+    "cover": 0.65625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.38860082626342773
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025771282126909923,
+    "brier": 0.13473468453042123,
+    "cover": 0.65625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.38749122619628906
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028310423776718097,
+    "brier": 0.1233644218825085,
+    "cover": 0.6354166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.403594970703125
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_grid_full",
+   "N": 0,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 2.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023959986262120102,
+    "brier": 0.13323942436319824,
+    "cover": 0.78125
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.46158313751220703
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02865808294808038,
+    "brier": 0.15196132480963373,
+    "cover": 0.7291666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.10552835464477539
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026738893518811205,
+    "brier": 0.1477919638034563,
+    "cover": 0.6458333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.04616737365722656
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028533200942430215,
+    "brier": 0.14991786073094623,
+    "cover": 0.6875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.09802055358886719
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02714720264320325,
+    "brier": 0.14398850986769307,
+    "cover": 0.6354166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.06602668762207031
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026064024281060073,
+    "brier": 0.12360501264968111,
+    "cover": 0.5729166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.13553118705749512
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02830440633266984,
+    "brier": 0.10886149060821652,
+    "cover": 0.6875
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03679394721984863
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027256720348673658,
+    "brier": 0.13882593927114983,
+    "cover": 0.6145833333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.09201431274414062
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024329404924619658,
+    "brier": 0.12155352470570448,
+    "cover": 0.6041666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.03499722480773926
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027291059021043923,
+    "brier": 0.12663807072325142,
+    "cover": 0.625
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.015759706497192383
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028276492582604156,
+    "brier": 0.1533573789372703,
+    "cover": 0.6354166666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.02702927589416504
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028177749008278585,
+    "brier": 0.12607284295048646,
+    "cover": 0.6041666666666666
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.018024921417236328
+  },
+  {
+   "kind": "lib",
+   "name": "analytic_random_2048",
+   "N": 0,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 4.0,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026199067968188407,
+    "brier": 0.15596859922481215,
+    "cover": 0.7083333333333334
+   },
+   "calls_per_case": 0.0,
+   "seconds": 0.06848978996276855
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.06285973198911293,
+    "brier": 0.259123617514321,
+    "cover": 0.28125
+   },
+   "calls_per_case": 820.0,
+   "seconds": 0.0550234317779541
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.060204288926003165,
+    "brier": 0.23243458171561912,
+    "cover": 0.3333333333333333
+   },
+   "calls_per_case": 750.0,
+   "seconds": 0.11488103866577148
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.053476025872132904,
+    "brier": 0.2552462222840723,
+    "cover": 0.2916666666666667
+   },
+   "calls_per_case": 794.0,
+   "seconds": 0.06454753875732422
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.06082605666306895,
+    "brier": 0.2653842324894929,
+    "cover": 0.2604166666666667
+   },
+   "calls_per_case": 828.0,
+   "seconds": 0.10715055465698242
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.05851055239807374,
+    "brier": 0.23345269438786412,
+    "cover": 0.19791666666666666
+   },
+   "calls_per_case": 764.0,
+   "seconds": 0.04657316207885742
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.05695875819451613,
+    "brier": 0.19531876908887236,
+    "cover": 0.28125
+   },
+   "calls_per_case": 800.0,
+   "seconds": 0.15716767311096191
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.057487039017373946,
+    "brier": 0.2338970589603306,
+    "cover": 0.2916666666666667
+   },
+   "calls_per_case": 818.0,
+   "seconds": 0.06505703926086426
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.05663065365140627,
+    "brier": 0.200877974379847,
+    "cover": 0.25
+   },
+   "calls_per_case": 772.0,
+   "seconds": 0.10115528106689453
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.06259099797935261,
+    "brier": 0.2429852148091781,
+    "cover": 0.2604166666666667
+   },
+   "calls_per_case": 772.0,
+   "seconds": 0.05702543258666992
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.05682500246402048,
+    "brier": 0.19541402464902602,
+    "cover": 0.3020833333333333
+   },
+   "calls_per_case": 860.0,
+   "seconds": 0.09564614295959473
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.06483587042805872,
+    "brier": 0.2631858135695478,
+    "cover": 0.23958333333333334
+   },
+   "calls_per_case": 768.0,
+   "seconds": 0.0490262508392334
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 64,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.0590643384824269,
+    "brier": 0.24022709248389276,
+    "cover": 0.22916666666666666
+   },
+   "calls_per_case": 778.0,
+   "seconds": 0.11087298393249512
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02545762652500035,
+    "brier": 0.13890761344371116,
+    "cover": 0.5833333333333334
+   },
+   "calls_per_case": 3552.0,
+   "seconds": 0.5121161937713623
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024981425424682607,
+    "brier": 0.1297802941980585,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 3520.0,
+   "seconds": 0.5053849220275879
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027146135484109487,
+    "brier": 0.14747154030562304,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 3536.0,
+   "seconds": 0.5850260257720947
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024646497353061708,
+    "brier": 0.11231799488252216,
+    "cover": 0.5625
+   },
+   "calls_per_case": 3472.0,
+   "seconds": 0.5560827255249023
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02711927029542971,
+    "brier": 0.13965857641764,
+    "cover": 0.46875
+   },
+   "calls_per_case": 3552.0,
+   "seconds": 0.5096890926361084
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025868133690396016,
+    "brier": 0.09395956271757122,
+    "cover": 0.53125
+   },
+   "calls_per_case": 3576.0,
+   "seconds": 0.41198086738586426
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026501520405646368,
+    "brier": 0.15097288338992546,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 3576.0,
+   "seconds": 0.6105592250823975
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02346270723790587,
+    "brier": 0.1120586874958149,
+    "cover": 0.4791666666666667
+   },
+   "calls_per_case": 3544.0,
+   "seconds": 0.4300565719604492
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027031131641965803,
+    "brier": 0.1192500351998057,
+    "cover": 0.53125
+   },
+   "calls_per_case": 3560.0,
+   "seconds": 0.5402822494506836
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026993535993403803,
+    "brier": 0.14238541668332327,
+    "cover": 0.53125
+   },
+   "calls_per_case": 3640.0,
+   "seconds": 0.5831007957458496
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.0287610792647562,
+    "brier": 0.12217542632293961,
+    "cover": 0.53125
+   },
+   "calls_per_case": 3680.0,
+   "seconds": 0.641838550567627
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 256,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024036402809668688,
+    "brier": 0.13246858036880294,
+    "cover": 0.625
+   },
+   "calls_per_case": 3632.0,
+   "seconds": 0.5635666847229004
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02497178705216847,
+    "brier": 0.1351616901443293,
+    "cover": 0.6145833333333334
+   },
+   "calls_per_case": 14272.0,
+   "seconds": 2.945063591003418
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025366033997222332,
+    "brier": 0.13076745774805543,
+    "cover": 0.5416666666666666
+   },
+   "calls_per_case": 14208.0,
+   "seconds": 2.7624638080596924
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025728818345497107,
+    "brier": 0.13180636147370706,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 13984.0,
+   "seconds": 2.7885961532592773
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02448893802440331,
+    "brier": 0.11276048358116035,
+    "cover": 0.5729166666666666
+   },
+   "calls_per_case": 14016.0,
+   "seconds": 2.674779176712036
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.024937298971727407,
+    "brier": 0.1215684318528047,
+    "cover": 0.5
+   },
+   "calls_per_case": 14368.0,
+   "seconds": 2.9497287273406982
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.026251621902545468,
+    "brier": 0.09642077337577844,
+    "cover": 0.5520833333333334
+   },
+   "calls_per_case": 14272.0,
+   "seconds": 2.565778970718384
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025487887252725216,
+    "brier": 0.14068680067117076,
+    "cover": 0.5520833333333334
+   },
+   "calls_per_case": 14272.0,
+   "seconds": 2.8645431995391846
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02201215080273321,
+    "brier": 0.10762816259859943,
+    "cover": 0.5
+   },
+   "calls_per_case": 14112.0,
+   "seconds": 2.6863110065460205
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02694790475321518,
+    "brier": 0.12262534564637484,
+    "cover": 0.5625
+   },
+   "calls_per_case": 14464.0,
+   "seconds": 2.875779390335083
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02708773846433515,
+    "brier": 0.14076667318768019,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 14880.0,
+   "seconds": 2.72353196144104
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028578284970739606,
+    "brier": 0.11903986822382225,
+    "cover": 0.5625
+   },
+   "calls_per_case": 14208.0,
+   "seconds": 2.6604857444763184
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 1024,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02361573589778654,
+    "brier": 0.13353706954775849,
+    "cover": 0.65625
+   },
+   "calls_per_case": 14656.0,
+   "seconds": 2.690645933151245
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41200,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025075387769749977,
+    "brier": 0.13502462296152615,
+    "cover": 0.6145833333333334
+   },
+   "calls_per_case": 115200.0,
+   "seconds": 18.951356649398804
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41201,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025530931698835014,
+    "brier": 0.13144530744234573,
+    "cover": 0.5520833333333334
+   },
+   "calls_per_case": 112896.0,
+   "seconds": 18.640246152877808
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41202,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02630355670006529,
+    "brier": 0.13961107520751181,
+    "cover": 0.5416666666666666
+   },
+   "calls_per_case": 114432.0,
+   "seconds": 18.735947370529175
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41203,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02486986240324685,
+    "brier": 0.1141960778340047,
+    "cover": 0.5625
+   },
+   "calls_per_case": 110848.0,
+   "seconds": 18.000704288482666
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41204,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025763095697610316,
+    "brier": 0.1225734472456063,
+    "cover": 0.5104166666666666
+   },
+   "calls_per_case": 114688.0,
+   "seconds": 18.640594244003296
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41205,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025721168195061633,
+    "brier": 0.09384823395809545,
+    "cover": 0.5625
+   },
+   "calls_per_case": 115968.0,
+   "seconds": 18.836978912353516
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41206,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.025415459704540445,
+    "brier": 0.13703643536407673,
+    "cover": 0.5729166666666666
+   },
+   "calls_per_case": 114688.0,
+   "seconds": 19.018028736114502
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41207,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02318287582055858,
+    "brier": 0.10889363639462617,
+    "cover": 0.5416666666666666
+   },
+   "calls_per_case": 111872.0,
+   "seconds": 18.52405047416687
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41208,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.02652845492254413,
+    "brier": 0.12216706495421799,
+    "cover": 0.5729166666666666
+   },
+   "calls_per_case": 115712.0,
+   "seconds": 19.061288118362427
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41209,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.027289405782515336,
+    "brier": 0.14105882925772303,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 119296.0,
+   "seconds": 18.8060781955719
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41210,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.028457040202526974,
+    "brier": 0.11942996867726274,
+    "cover": 0.5208333333333334
+   },
+   "calls_per_case": 114432.0,
+   "seconds": 18.840194940567017
+  },
+  {
+   "kind": "pf",
+   "name": "pf_analytic",
+   "N": 8192,
+   "seed": 41211,
+   "materials": "new_materials",
+   "temp": 0.5,
+   "intermittent": true,
+   "metrics": {
+    "energy": 0.023496723194008088,
+    "brier": 0.13176626150608564,
+    "cover": 0.65625
+   },
+   "calls_per_case": 116736.0,
+   "seconds": 18.951197385787964
+  }
+ ]
+}

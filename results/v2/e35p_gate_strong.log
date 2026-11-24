@@ -1,0 +1,4 @@
+sigma= 3.0 w=1.5 cost=  256 | end -0.310±0.085 (4x51,argmax,b0.25) | guid -0.442±0.229 (8x7,argmax,b0.25) | fk -0.301±0.100 (8x15,argmax,b0.25) | tds -0.407±0.212 (8x6,argmax,b0.25)
+sigma= 3.0 w=1.5 cost= 1024 | end -0.343±0.117 (4x204,argmax,b0.25) | guid -0.590±0.344 (8x31,argmax,b0.25) | fk -0.374±0.168 (8x60,argmax,b0.25) | tds -0.488±0.278 (8x24,argmax,b0.25)
+sigma=10.0 w=1.5 cost=  256 | end -1.080±0.919 (8x28,argmax,b0.25) | guid -1.222±0.669 (8x7,argmax,b1.0) | fk -1.472±1.051 (16x7,argmax,b0.25) | tds -1.386±0.437 (8x6,sir,b0.25)
+sigma=10.0 w=1.5 cost= 1024 | end -1.133±1.101 (16x60,argmax,b0.25) | guid -1.092±1.021 (8x31,argmax,b4.0) | fk -1.097±1.040 (8x60,argmax,b4.0) | tds -1.128±0.947 (8x24,argmax,b4.0)

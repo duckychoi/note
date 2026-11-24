@@ -1,0 +1,10 @@
+[   34.1s] libs ready
+[   89.6s] trained M=98304 epochs=46 val_nll=-2.448
+[  106.7s] flowpf_train_range_M98304_N512 {'energy': 0.106, 'brier_bounce2': 0.052, 'brier_xpast': 0.0849, 'cover_x': 0.401, 'cover_z': 0.474, 'train_sims': 98304, 'calls_per_case': 512, 'calls_total': 196608, 'pf_temp': 1} {'vs_ref': 1.4385059443808914, 'vs_retrieval': 0.9901248431940792, 'vs_4a_best': 1.0771907655021327, 'all_seeds_beat_retrieval': False, 'passed': False}
+[  146.7s] trained M=147456 epochs=22 val_nll=-1.916
+[  155.5s] flowpf_train_range_M147456_N256 {'energy': 0.1067, 'brier_bounce2': 0.057, 'brier_xpast': 0.0975, 'cover_x': 0.2135, 'cover_z': 0.4271, 'train_sims': 147456, 'calls_per_case': 256, 'calls_total': 196608, 'pf_temp': 1} {'vs_ref': 1.45474525503395, 'vs_retrieval': 1.003378145135569, 'vs_4a_best': 1.0910238858209014, 'all_seeds_beat_retrieval': False, 'passed': False}
+[  173.6s] trained M=98304 epochs=14 val_nll=1.077
+[  190.1s] flowpf_broad_M98304_N512 {'energy': 0.0573, 'brier_bounce2': 0.0336, 'brier_xpast': 0.0816, 'cover_x': 0.651, 'cover_z': 0.7292, 'train_sims': 98304, 'calls_per_case': 512, 'calls_total': 196608, 'pf_temp': 4} {'vs_ref': 0.3184641009961935, 'vs_retrieval': 0.07603107070475179, 'vs_4a_best': 0.12310632727642945, 'all_seeds_beat_retrieval': False, 'passed': False}
+[  263.4s] trained M=147456 epochs=41 val_nll=-2.036
+[  271.5s] flowpf_broad_M147456_N256 {'energy': 0.0426, 'brier_bounce2': 0.0267, 'brier_xpast': 0.0663, 'cover_x': 0.5729, 'cover_z': 0.7188, 'train_sims': 147456, 'calls_per_case': 256, 'calls_total': 196608, 'pf_temp': 1} {'vs_ref': -0.01877000943165863, 'vs_retrieval': -0.199194004174169, 'vs_4a_best': -0.1641595625637159, 'all_seeds_beat_retrieval': True, 'passed': True}
+[  271.5s] done passed True

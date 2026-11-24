@@ -1,0 +1,49 @@
+0.5 val ucb_resid {'lr': 0.05, 'explore': 'ucb_resid', 'kappa': 8} 1.4774 12 s
+0.5 val ucb_target {'lr': 0.1, 'explore': 'ucb_target', 'kappa': 4} 1.4668 30 s
+0.5 val count2rand2 {'lr': 0.1, 'explore': 'count2rand2'} 1.4587 32 s
+0.5 val rand4 {'lr': 0.1, 'explore': 'rand4'} 1.4885 33 s
+0.5 val random {'lr': 0.01} 3.1144 34 s
+0.5 val signed_corr {'lr': 0.05, 'decay': 0.99, 'eta': 0.05} 1.7032 53 s
+0.5 val kale_forget {'lr': 0.05, 'g': 0.998} 2.251 59 s
+0.5 val kale_restart {'lr': 0.05, 'R': 960} 2.476 65 s
+0.5 val kaleIPWLasso_forget {'mode': 'forget', 'g': 0.995, 'lam': 0.5, 'mu': 2.0} 2.9899 169 s
+0.5 val kaleIPWLasso_restart {'mode': 'restart', 'R': 480, 'lam': 1.0, 'mu': 0.5} 3.0558 269 s
+0.5 rep count2rand2 strongest signed_corr val censored by theta {0.9: 0.7450980392156863, 0.8: 0.6274509803921569, 0.7: 0.5098039215686274} theta 0.7
+0.5 ucb_resid mse 1.6663 rmst 194.2 cens 0.646
+0.5 ucb_target mse 1.7002 rmst 192.5 cens 0.595
+0.5 count2rand2 mse 1.5693 rmst 186.3 cens 0.544
+0.5 rand4 mse 1.6168 rmst 184.4 cens 0.559
+0.5 random mse 2.9795 rmst 240.0 cens 1.0
+0.5 signed_corr mse 1.7038 rmst 194.1 cens 0.631
+0.5 kale_forget mse 2.1954 rmst 225.6 cens 0.862
+0.5 kale_restart mse 2.3365 rmst 229.7 cens 0.908
+0.5 kaleIPWLasso_forget mse 2.8669 rmst 230.2 cens 0.851
+0.5 kaleIPWLasso_restart mse 2.936 rmst 232.6 cens 0.903
+0.5 ucb_resid_fixed mse 1.7349 rmst 200.1 cens 0.641
+0.5 ucb_target_fixed mse 1.7002 rmst 192.5 cens 0.595
+VERDICT 0.5 {"rep": "count2rand2", "strongest": "signed_corr", "theta": 0.7, "val_censored": {"0.9": 0.7450980392156863, "0.8": 0.6274509803921569, "0.7": 0.5098039215686274}, "mse_improvement": 0.07894765083616528, "mse_improvement_ci": [0.025022113812398213, 0.1339503322534341], "five_pct_margin_ci": [-0.04200688300841607, 0.142939023194331], "rmst_diff_base_minus_new": 7.825520833333333, "rmst_diff_ci": [-5.763281250000001, 21.182595486111108], "n_seeds_rmst": 96, "rel_degradation_ci": [-0.12404799791092928, -0.019227575133577167], "resid_minus_target_fixed": {"mse": [-0.06616065736345306, 0.12823230710184835], "mean": 0.0346661621067687}}
+0.0 val ucb_resid {'lr': 0.1, 'explore': 'ucb_resid', 'kappa': 8} 1.4983 374 s
+0.0 val ucb_target {'lr': 0.1, 'explore': 'ucb_target', 'kappa': 32} 1.5291 390 s
+0.0 val count2rand2 {'lr': 0.05, 'explore': 'count2rand2'} 1.5689 393 s
+0.0 val rand4 {'lr': 0.1, 'explore': 'rand4'} 1.5303 395 s
+0.0 val random {'lr': 0.01} 3.1031 396 s
+0.0 val signed_corr {'lr': 0.05, 'decay': 0.99, 'eta': 0.05} 1.6257 418 s
+0.0 val kale_forget {'lr': 0.05, 'g': 0.998} 2.1573 427 s
+0.0 val kale_restart {'lr': 0.05, 'R': 960} 2.4545 435 s
+0.0 val kaleIPWLasso_forget {'mode': 'forget', 'g': 0.995, 'lam': 0.5, 'mu': 2.0} 2.9833 550 s
+0.0 val kaleIPWLasso_restart {'mode': 'restart', 'R': 480, 'lam': 0.5, 'mu': 2.0} 3.044 638 s
+0.0 rep ucb_resid strongest signed_corr val censored by theta {0.9: 0.803921568627451, 0.8: 0.5686274509803921, 0.7: 0.49019607843137253} theta 0.7
+0.0 ucb_resid mse 1.6823 rmst 187.7 cens 0.503
+0.0 ucb_target mse 1.6252 rmst 183.4 cens 0.518
+0.0 count2rand2 mse 1.7267 rmst 193.8 cens 0.59
+0.0 rand4 mse 1.6341 rmst 183.5 cens 0.497
+0.0 random mse 3.0044 rmst 240.0 cens 1.0
+0.0 signed_corr mse 1.7304 rmst 184.0 cens 0.533
+0.0 kale_forget mse 2.2882 rmst 227.1 cens 0.892
+0.0 kale_restart mse 2.4045 rmst 227.9 cens 0.892
+0.0 kaleIPWLasso_forget mse 2.9218 rmst 225.5 cens 0.841
+0.0 kaleIPWLasso_restart mse 3.0067 rmst 227.1 cens 0.897
+0.0 ucb_resid_fixed mse 1.6823 rmst 187.7 cens 0.503
+0.0 ucb_target_fixed mse 1.6118 rmst 179.2 cens 0.492
+VERDICT 0.0 {"rep": "ucb_resid", "strongest": "signed_corr", "theta": 0.7, "val_censored": {"0.9": 0.803921568627451, "0.8": 0.5686274509803921, "0.7": 0.49019607843137253}, "mse_improvement": 0.02782324760936583, "mse_improvement_ci": [-0.027470838458433997, 0.08584594211777284], "five_pct_margin_ci": [-0.13655574918404723, 0.06414470807165654], "rmst_diff_base_minus_new": -3.7170138888888893, "rmst_diff_ci": [-15.291861979166667, 7.365039062499993], "n_seeds_rmst": 96, "rel_degradation_ci": [-0.07920855208949767, 0.018856027465503612], "resid_minus_target_fixed": {"mse": [-0.013687840737800435, 0.1596109607159318], "mean": 0.07044215337870081}}
+GATE {'mse_pass': False, 'recovery_pass': False, 'control_pass': True, 'pass_': False}

@@ -1,0 +1,2886 @@
+{
+  "train_ids": [
+    813,
+    25,
+    973,
+    476,
+    945,
+    819,
+    74,
+    368,
+    613,
+    703
+  ],
+  "farama_sha256": "b7c5ca415c5da9538c3a6b50ee4de44350f120ddc41697c41a622f9bb5b2ce3b",
+  "trials": {
+    "31": [
+      {
+        "reset": 20000,
+        "speed": 0.7033000682257519,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.73566047215154,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20001,
+        "speed": 0.7014152174574934,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.87442605093652,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20002,
+        "speed": 0.6987760634368257,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.74304280245957,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20003,
+        "speed": 0.6911028843684857,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.29725088271894,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20004,
+        "speed": 0.6985311839660384,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.41092336022918,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20005,
+        "speed": 0.6981902092927713,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.37853453086967,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20006,
+        "speed": 0.6954399351170993,
+        "length": 62,
+        "fell": true,
+        "walking": false,
+        "env_return": 102.96747513817402,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20007,
+        "speed": 0.6823037967245145,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 98.81499965094187,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20008,
+        "speed": 0.7052698208310068,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 100.14378386381212,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20009,
+        "speed": 0.6882281867810062,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.1568634733623,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20010,
+        "speed": 0.6997592029373799,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.53067116334077,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20011,
+        "speed": 0.6957608527010606,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.25817557130213,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20012,
+        "speed": 0.6830093757227444,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 100.48744469990855,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20013,
+        "speed": 0.7123091153834755,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 102.28597827404414,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20014,
+        "speed": 0.6762521474037234,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 98.39324137880297,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20015,
+        "speed": 0.6990335927894408,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.75513830114777,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20016,
+        "speed": 0.7003581536162051,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.55568460677557,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20017,
+        "speed": 0.7041790688939086,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 100.0587063507429,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20018,
+        "speed": 0.7020803794573436,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.61535046902378,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20019,
+        "speed": 0.6896645574763808,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 100.90491458833556,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20020,
+        "speed": 0.6896188844712396,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 100.88711975590483,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20021,
+        "speed": 0.6942627288231762,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.1586311697503,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20022,
+        "speed": 0.6969537773546082,
+        "length": 61,
+        "fell": true,
+        "walking": false,
+        "env_return": 101.34076452997202,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20023,
+        "speed": 0.6942345113032931,
+        "length": 60,
+        "fell": true,
+        "walking": false,
+        "env_return": 99.49237175861147,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      }
+    ],
+    "32": [
+      {
+        "reset": 20000,
+        "speed": 0.8037270797461034,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 122.10919172788161,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20001,
+        "speed": 0.8254822623630411,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 121.72732594056517,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20002,
+        "speed": 0.7401155652115267,
+        "length": 67,
+        "fell": true,
+        "walking": false,
+        "env_return": 114.29618703740772,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20003,
+        "speed": 0.8193233119906626,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 123.17725921305097,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20004,
+        "speed": 0.7926341294203194,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 119.53243607693807,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20005,
+        "speed": 0.8480832319779933,
+        "length": 70,
+        "fell": true,
+        "walking": false,
+        "env_return": 126.9576832994289,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20006,
+        "speed": 0.7759562071574694,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 120.24963839565139,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20007,
+        "speed": 0.8340445563167789,
+        "length": 70,
+        "fell": true,
+        "walking": false,
+        "env_return": 126.02933613135048,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20008,
+        "speed": 0.8374436830534248,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 124.40825003036538,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20009,
+        "speed": 0.8319299649494352,
+        "length": 70,
+        "fell": true,
+        "walking": false,
+        "env_return": 125.9028467354931,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20010,
+        "speed": 0.8287737430815066,
+        "length": 70,
+        "fell": true,
+        "walking": false,
+        "env_return": 125.67638232699352,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20011,
+        "speed": 0.7839660852473102,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 118.97765898073845,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20012,
+        "speed": 0.7800620298396983,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 118.70015170004056,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20013,
+        "speed": 0.8082238807268302,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 122.43777176849149,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20014,
+        "speed": 0.7812020702407958,
+        "length": 67,
+        "fell": true,
+        "walking": false,
+        "env_return": 117.00086588189818,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20015,
+        "speed": 0.7694905475230283,
+        "length": 66,
+        "fell": true,
+        "walking": false,
+        "env_return": 114.46898693992567,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20016,
+        "speed": 0.7157574101720232,
+        "length": 67,
+        "fell": true,
+        "walking": false,
+        "env_return": 112.73610819260311,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20017,
+        "speed": 0.8290190078899038,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 121.95629381614474,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20018,
+        "speed": 0.8223259010363064,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 123.34167351206871,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20019,
+        "speed": 0.7800469023401436,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 118.72318451139232,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20020,
+        "speed": 0.791981686622588,
+        "length": 68,
+        "fell": true,
+        "walking": false,
+        "env_return": 119.49189162644215,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20021,
+        "speed": 0.815886587777743,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 122.90114668217782,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20022,
+        "speed": 0.80523467098205,
+        "length": 69,
+        "fell": true,
+        "walking": false,
+        "env_return": 122.19465483021085,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20023,
+        "speed": 0.8499795376414929,
+        "length": 70,
+        "fell": true,
+        "walking": false,
+        "env_return": 127.105086071656,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      }
+    ],
+    "33": [
+      {
+        "reset": 20000,
+        "speed": -0.8963492164570483,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.5036234132330468,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20001,
+        "speed": -0.8434374310769337,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.1168800023342307,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20002,
+        "speed": 0.6988450148842813,
+        "length": 62,
+        "fell": true,
+        "walking": false,
+        "env_return": 103.12659853119204,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20003,
+        "speed": -0.8294823381370898,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.308185487948251,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20004,
+        "speed": -0.8966444123305461,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.4742289311202864,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20005,
+        "speed": -0.8253282206124378,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.3582461154639038,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20006,
+        "speed": -0.8001508730630367,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.7407614031326435,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20007,
+        "speed": -0.8191365444504466,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.464503549015636,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20008,
+        "speed": -0.830501293899254,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.3092909319173522,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20009,
+        "speed": -0.8213693028250724,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.450629008098385,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20010,
+        "speed": 0.6907649985470166,
+        "length": 63,
+        "fell": true,
+        "walking": false,
+        "env_return": 104.36283620215728,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20011,
+        "speed": -0.815445934917326,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.4920409347592989,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20012,
+        "speed": -0.8280983277156607,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.3141984225805654,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20013,
+        "speed": -0.8237005782573729,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.4773358444827307,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20014,
+        "speed": -0.894458342312589,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.49755303815564444,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20015,
+        "speed": -0.905133108886523,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.3746382490839876,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20016,
+        "speed": -0.8032000017142842,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.6838517403098567,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20017,
+        "speed": -0.8346287578840786,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.2244432938755547,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20018,
+        "speed": -0.8250532952396493,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.3572476490330472,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20019,
+        "speed": -0.892236898809013,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.5489070195610022,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20020,
+        "speed": -0.827544719050444,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.3157057938894812,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20021,
+        "speed": -0.8194177614439149,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.4265318058691314,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20022,
+        "speed": -0.9029037892034574,
+        "length": 13,
+        "fell": true,
+        "walking": false,
+        "env_return": 0.41038371758040604,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      },
+      {
+        "reset": 20023,
+        "speed": -0.8391980938898691,
+        "length": 14,
+        "fell": true,
+        "walking": false,
+        "env_return": 1.1889153551128253,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": null
+      }
+    ],
+    "farama_20000": [
+      {
+        "reset": 20000,
+        "speed": 5.932512837871467,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6926.567920396683,
+        "sham": {
+          "success": true,
+          "cycles": 0.06113955540303519,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": 0.14634410332799877
+      },
+      {
+        "reset": 20001,
+        "speed": 5.964937897965956,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6959.1772178415,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.07860799980390239,
+          "prelocked": false
+        },
+        "agreement": 0.5176037541292545
+      },
+      {
+        "reset": 20002,
+        "speed": 5.979509721155812,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6973.5126549320985,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.2618344461463007
+      },
+      {
+        "reset": 20003,
+        "speed": 5.976028641135058,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6970.603196420394,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.7829744922997066
+      },
+      {
+        "reset": 20004,
+        "speed": 5.981418517341411,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6975.528245150267,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.5111376861542704
+      },
+      {
+        "reset": 20005,
+        "speed": 5.966595889278726,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6961.084924209358,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.7338330871378337
+      },
+      {
+        "reset": 20006,
+        "speed": 5.94540231360458,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6939.895925953257,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.9739385572872723
+      },
+      {
+        "reset": 20007,
+        "speed": 5.954815392318889,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6949.270275075192,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.46385236240677474
+      },
+      {
+        "reset": 20008,
+        "speed": 5.976872039458147,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6971.112056603917,
+        "sham": {
+          "success": true,
+          "cycles": 0.09607644420476959,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": -0.8035885082831602
+      },
+      {
+        "reset": 20009,
+        "speed": 5.980538688404749,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6974.720681685597,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.2704187648620313
+      },
+      {
+        "reset": 20010,
+        "speed": 5.9482457539576,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6942.729455567457,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.6266764817202626
+      },
+      {
+        "reset": 20011,
+        "speed": 5.942003173883308,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6936.228238937207,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.26883543633917184
+      },
+      {
+        "reset": 20012,
+        "speed": 5.947506914799242,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6941.841092095805,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.14157453957617208
+      },
+      {
+        "reset": 20013,
+        "speed": 5.9778707228555215,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6972.276711956437,
+        "sham": {
+          "success": true,
+          "cycles": 4.760151099236311,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.6645689296444979
+      },
+      {
+        "reset": 20014,
+        "speed": 5.969209252257274,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6963.488121529403,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.2391676870932726
+      },
+      {
+        "reset": 20015,
+        "speed": 5.973092995581259,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6967.232929092622,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.6932280260172268
+      },
+      {
+        "reset": 20016,
+        "speed": 5.990972313174139,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6985.437308946278,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.4715637649403346
+      },
+      {
+        "reset": 20017,
+        "speed": 5.976178278319436,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6970.456892261228,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.6248121680720242
+      },
+      {
+        "reset": 20018,
+        "speed": 5.959646235743393,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6953.953990972389,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.11354488860563677,
+          "prelocked": false
+        },
+        "agreement": 0.8432492148103949
+      },
+      {
+        "reset": 20019,
+        "speed": 5.9602135159844,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6954.686227467129,
+        "sham": {
+          "success": true,
+          "cycles": 0.11354488860563677,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.42592309558066344
+      },
+      {
+        "reset": 20020,
+        "speed": 5.97446534171975,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6968.705963020034,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.12227911080607037,
+          "prelocked": false
+        },
+        "agreement": 0.8485238301943788
+      },
+      {
+        "reset": 20021,
+        "speed": 5.961538355524129,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6955.800501610374,
+        "sham": {
+          "success": true,
+          "cycles": 0.8821564422437934,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.3072249856944511
+      },
+      {
+        "reset": 20022,
+        "speed": 5.951024029258864,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6945.304211676698,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.7267928948175926
+      },
+      {
+        "reset": 20023,
+        "speed": 5.9648188898434205,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6958.764528776705,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.686225848430954
+      }
+    ],
+    "farama_21000": [
+      {
+        "reset": 21000,
+        "speed": 5.952837092058774,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6947.230809330902,
+        "sham": {
+          "success": true,
+          "cycles": 0.12227911080607037,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": -0.17194373725865508
+      },
+      {
+        "reset": 21001,
+        "speed": 5.982665747427136,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6977.212162298607,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.6680326844509163
+      },
+      {
+        "reset": 21002,
+        "speed": 5.984210733695721,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6978.507047581322,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.21637211622484534
+      },
+      {
+        "reset": 21003,
+        "speed": 5.949527312502127,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6943.942764384826,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.8185964448549576
+      },
+      {
+        "reset": 21004,
+        "speed": 5.970869575764511,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6965.199338185827,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.35200869565993764
+      },
+      {
+        "reset": 21005,
+        "speed": 5.974211071479456,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6968.705588424451,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.7297674325816315
+      },
+      {
+        "reset": 21006,
+        "speed": 5.962641311700356,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6957.001365319011,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.9344067940488707
+      },
+      {
+        "reset": 21007,
+        "speed": 5.951996337433638,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6946.125048259886,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.4427259417547629
+      },
+      {
+        "reset": 21008,
+        "speed": 5.98093744098135,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6975.0675237935075,
+        "sham": {
+          "success": true,
+          "cycles": 0.09607644420476959,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": -0.8075518253964207
+      },
+      {
+        "reset": 21009,
+        "speed": 5.9550319340040625,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6949.359444240845,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.3035089971077517
+      },
+      {
+        "reset": 21010,
+        "speed": 5.942371008207386,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6936.626641277396,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.6660452895680922
+      },
+      {
+        "reset": 21011,
+        "speed": 5.949483867335302,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6943.851794475528,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.41817176427082364
+      },
+      {
+        "reset": 21012,
+        "speed": 5.940125424497019,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6934.304178174864,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.11388688677036096
+      },
+      {
+        "reset": 21013,
+        "speed": 5.927688638536034,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6921.619908359985,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.9609615442558883
+      },
+      {
+        "reset": 21014,
+        "speed": 5.970058755213862,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6964.577654517415,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.05350034568569096
+      },
+      {
+        "reset": 21015,
+        "speed": 5.9729988040304525,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6967.338911461912,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.7017311652227112
+      },
+      {
+        "reset": 21016,
+        "speed": 5.956946706415203,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6951.284613156954,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.25650115890104214
+      },
+      {
+        "reset": 21017,
+        "speed": 5.964429084160567,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6958.539021421352,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.6858546823991245
+      },
+      {
+        "reset": 21018,
+        "speed": 5.9619859265228445,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6956.388449223281,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.13974755520693757,
+          "prelocked": false
+        },
+        "agreement": 0.9348878188371118
+      },
+      {
+        "reset": 21019,
+        "speed": 5.949110010930658,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6943.723673780225,
+        "sham": {
+          "success": true,
+          "cycles": 0.08734222200433599,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.16693702296400376
+      },
+      {
+        "reset": 21020,
+        "speed": 5.941383869919857,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6935.614769227446,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 3.7120444351842794,
+          "prelocked": false
+        },
+        "agreement": 0.6692180201408839
+      },
+      {
+        "reset": 21021,
+        "speed": 5.957874355652252,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6951.984290554987,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.4580034282341037
+      },
+      {
+        "reset": 21022,
+        "speed": 5.935266362896261,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6929.423819916925,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.7460994207811887
+      },
+      {
+        "reset": 21023,
+        "speed": 5.967129972576745,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6961.288244145142,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.08734222200433599,
+          "prelocked": false
+        },
+        "agreement": 0.5852795860933824
+      }
+    ],
+    "farama_22000": [
+      {
+        "reset": 22000,
+        "speed": 5.9657063100815595,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6959.98462244356,
+        "sham": {
+          "success": true,
+          "cycles": 0.13974755520693757,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.2639390934277252
+      },
+      {
+        "reset": 22001,
+        "speed": 5.9685460496971485,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6962.918954151071,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.4455785269029066
+      },
+      {
+        "reset": 22002,
+        "speed": 5.983231645362186,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6977.412450241237,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.5010244582812314
+      },
+      {
+        "reset": 22003,
+        "speed": 5.930156699570722,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6923.829125554332,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.6939474779004113
+      },
+      {
+        "reset": 22004,
+        "speed": 5.97779282560158,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6972.0172352330965,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.5810204194191855
+      },
+      {
+        "reset": 22005,
+        "speed": 5.948169417118477,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6942.3737251188995,
+        "sham": {
+          "success": true,
+          "cycles": 2.131150216905798,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.7302876758230523
+      },
+      {
+        "reset": 22006,
+        "speed": 5.95277331470815,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6947.082078816295,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.9610038480886524
+      },
+      {
+        "reset": 22007,
+        "speed": 5.9694997149051465,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6964.082557119686,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.5829663141065163
+      },
+      {
+        "reset": 22008,
+        "speed": 5.948249070796537,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6942.324562822695,
+        "sham": {
+          "success": true,
+          "cycles": 0.12227911080607037,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": -0.9725787475240294
+      },
+      {
+        "reset": 22009,
+        "speed": 5.945691337273565,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6939.975321744314,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.343096044586712
+      },
+      {
+        "reset": 22010,
+        "speed": 5.973116062351554,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6967.70672479166,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.792648523585468
+      },
+      {
+        "reset": 22011,
+        "speed": 5.965058172066507,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6959.403616419764,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.11037460918816784
+      },
+      {
+        "reset": 22012,
+        "speed": 5.976976669068228,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6971.102078509033,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.019016713692111817
+      },
+      {
+        "reset": 22013,
+        "speed": 5.962505572011484,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6956.708617862875,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.9344916386228594
+      },
+      {
+        "reset": 22014,
+        "speed": 5.961284606533845,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6955.700222147343,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": -0.3567163580623666
+      },
+      {
+        "reset": 22015,
+        "speed": 5.94542026349586,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6939.636521928782,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.5944430977954316
+      },
+      {
+        "reset": 22016,
+        "speed": 5.977417759242751,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6971.681945260891,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": true
+        },
+        "agreement": 0.17250621186079632
+      },
+      {
+        "reset": 22017,
+        "speed": 5.933098157230041,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6927.248778304463,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.6410812532856457
+      },
+      {
+        "reset": 22018,
+        "speed": 5.953422983241297,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6947.6249107053545,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.10481066640520317,
+          "prelocked": false
+        },
+        "agreement": 0.8336812529309267
+      },
+      {
+        "reset": 22019,
+        "speed": 5.982879072347313,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6977.266523914662,
+        "sham": {
+          "success": true,
+          "cycles": 0.07860799980390239,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.26295169489613995
+      },
+      {
+        "reset": 22020,
+        "speed": 5.97186306443296,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6966.17402481951,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": true,
+          "cycles": 0.13101333300650397,
+          "prelocked": false
+        },
+        "agreement": 0.9085616483185422
+      },
+      {
+        "reset": 22021,
+        "speed": 5.960665025750818,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6954.786670522632,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.2038337402387222
+      },
+      {
+        "reset": 22022,
+        "speed": 5.962656706625387,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6956.969600373916,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.7013698415071059
+      },
+      {
+        "reset": 22023,
+        "speed": 5.954598628484491,
+        "length": 1000,
+        "fell": false,
+        "walking": true,
+        "env_return": 6948.793222706524,
+        "sham": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "jump": {
+          "success": false,
+          "cycles": null,
+          "prelocked": false
+        },
+        "agreement": 0.5529603087290031
+      }
+    ]
+  },
+  "means": {
+    "31": {
+      "speed": 0.6958347381056239,
+      "walking": 0.0,
+      "fell": 1.0,
+      "success": 0.0
+    },
+    "32": {
+      "speed": 0.8029454188878405,
+      "walking": 0.0,
+      "fell": 1.0,
+      "success": 0.0
+    },
+    "33": {
+      "speed": -0.7159920511976979,
+      "walking": 0.0,
+      "fell": 1.0,
+      "success": 0.0
+    },
+    "farama_20000": {
+      "speed": 5.964809071309855,
+      "walking": 1.0,
+      "fell": 0.0,
+      "success": 0.125
+    },
+    "farama_21000": {
+      "speed": 5.958407555997565,
+      "walking": 1.0,
+      "fell": 0.0,
+      "success": 0.125
+    },
+    "farama_22000": {
+      "speed": 5.961282463666567,
+      "walking": 1.0,
+      "fell": 0.0,
+      "success": 0.08333333333333333
+    }
+  },
+  "paired": {
+    "farama_20000": {
+      "total": 24,
+      "eligible": 24,
+      "prelocked_eligible": 2,
+      "mean_change": 0.0,
+      "prelocked_change": 0.0,
+      "jump_success": 3,
+      "jump_walk": 24
+    },
+    "farama_21000": {
+      "total": 24,
+      "eligible": 24,
+      "prelocked_eligible": 2,
+      "mean_change": 0.0,
+      "prelocked_change": 0.0,
+      "jump_success": 3,
+      "jump_walk": 24
+    },
+    "farama_22000": {
+      "total": 24,
+      "eligible": 24,
+      "prelocked_eligible": 2,
+      "mean_change": 0.0,
+      "prelocked_change": 0.0,
+      "jump_success": 2,
+      "jump_walk": 24
+    },
+    "concat4_like_state_s0": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    },
+    "concat4_like_state_s1": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    },
+    "rope_like_state_s0": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    },
+    "rope_like_state_s1": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    },
+    "amp_phase4_s0": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    },
+    "amp_phase4_s1": {
+      "total": 24,
+      "eligible": 0,
+      "prelocked_eligible": 0,
+      "mean_change": null,
+      "prelocked_change": null,
+      "jump_success": 0,
+      "jump_walk": 0
+    }
+  }
+}

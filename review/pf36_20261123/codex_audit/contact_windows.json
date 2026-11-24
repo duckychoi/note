@@ -1,0 +1,103 @@
+{
+  "development_cases": 256,
+  "groups": [
+    {
+      "seed": 61920,
+      "online_observations": 0,
+      "gaps": 477,
+      "one_frame": 313,
+      "eligible": 477,
+      "eligible_with_earlier_bounce": 12,
+      "longer": 0
+    },
+    {
+      "seed": 61921,
+      "online_observations": 0,
+      "gaps": 470,
+      "one_frame": 298,
+      "eligible": 470,
+      "eligible_with_earlier_bounce": 13,
+      "longer": 0
+    },
+    {
+      "seed": 61922,
+      "online_observations": 0,
+      "gaps": 461,
+      "one_frame": 279,
+      "eligible": 461,
+      "eligible_with_earlier_bounce": 15,
+      "longer": 0
+    },
+    {
+      "seed": 61923,
+      "online_observations": 0,
+      "gaps": 467,
+      "one_frame": 280,
+      "eligible": 467,
+      "eligible_with_earlier_bounce": 13,
+      "longer": 0
+    },
+    {
+      "seed": 61924,
+      "online_observations": 0,
+      "gaps": 464,
+      "one_frame": 294,
+      "eligible": 464,
+      "eligible_with_earlier_bounce": 10,
+      "longer": 0
+    },
+    {
+      "seed": 61925,
+      "online_observations": 0,
+      "gaps": 486,
+      "one_frame": 304,
+      "eligible": 486,
+      "eligible_with_earlier_bounce": 11,
+      "longer": 0
+    },
+    {
+      "seed": 61926,
+      "online_observations": 0,
+      "gaps": 475,
+      "one_frame": 298,
+      "eligible": 475,
+      "eligible_with_earlier_bounce": 13,
+      "longer": 0
+    },
+    {
+      "seed": 61927,
+      "online_observations": 0,
+      "gaps": 473,
+      "one_frame": 295,
+      "eligible": 472,
+      "eligible_with_earlier_bounce": 10,
+      "longer": 1
+    }
+  ],
+  "s2_smoke_keys": [
+    "cover_x",
+    "cover_z",
+    "forecast_energy",
+    "sec"
+  ],
+  "s2_smoke_observations": 0,
+  "branches": {
+    "frame": 18,
+    "z_m": [
+      0.06658806416603583,
+      0.06658806416603583
+    ],
+    "vz_m_s": [
+      2.0163071865486026,
+      2.7217300145414223
+    ],
+    "following_z_m": [
+      0.10475600789700788,
+      0.11886446445686424
+    ]
+  },
+  "hashes": {
+    "pf36_g6a.py": "0186017d99cecf3f8229efde00d204493c2af4f50bb3bca7b07feb22e58b8d5a",
+    "pf36_g6b.py": "29003a9e558dd55abfa39afca6d8e55124908ecac7f3c4a5cbcc849c17c19c01"
+  }
+}

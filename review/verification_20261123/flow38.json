@@ -1,0 +1,212 @@
+{
+  "51200": [
+    {
+      "method": "one_step",
+      "world": 0,
+      "event_p": 0.208740234375,
+      "regret": 0.2,
+      "end_sign_match": 0.513427734375,
+      "stay": 0.5860188802083334,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "one_step",
+      "world": 1,
+      "event_p": 0.202880859375,
+      "regret": 0.0,
+      "end_sign_match": 0.490234375,
+      "stay": 0.59033203125,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "joint_four",
+      "world": 0,
+      "event_p": 0.071533203125,
+      "regret": 0.0,
+      "end_sign_match": 0.228515625,
+      "stay": 0.5887044270833334,
+      "parameters": 4868,
+      "nfe": 32
+    },
+    {
+      "method": "joint_four",
+      "world": 1,
+      "event_p": 0.223876953125,
+      "regret": 0.0,
+      "end_sign_match": 0.487548828125,
+      "stay": 0.5894368489583334,
+      "parameters": 4868,
+      "nfe": 32
+    }
+  ],
+  "51201": [
+    {
+      "method": "one_step",
+      "world": 0,
+      "event_p": 0.177490234375,
+      "regret": 0.0,
+      "end_sign_match": 0.493896484375,
+      "stay": 0.565185546875,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "one_step",
+      "world": 1,
+      "event_p": 0.20947265625,
+      "regret": 0.0,
+      "end_sign_match": 0.515380859375,
+      "stay": 0.5878092447916666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "joint_four",
+      "world": 0,
+      "event_p": 0.08203125,
+      "regret": 0.0,
+      "end_sign_match": 0.264892578125,
+      "stay": 0.587646484375,
+      "parameters": 4868,
+      "nfe": 32
+    },
+    {
+      "method": "joint_four",
+      "world": 1,
+      "event_p": 0.242919921875,
+      "regret": 0.0,
+      "end_sign_match": 0.51220703125,
+      "stay": 0.6031901041666666,
+      "parameters": 4868,
+      "nfe": 32
+    }
+  ],
+  "51202": [
+    {
+      "method": "one_step",
+      "world": 0,
+      "event_p": 0.18310546875,
+      "regret": 0.0,
+      "end_sign_match": 0.5146484375,
+      "stay": 0.5641276041666666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "one_step",
+      "world": 1,
+      "event_p": 0.203857421875,
+      "regret": 0.0,
+      "end_sign_match": 0.51025390625,
+      "stay": 0.5880533854166666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "joint_four",
+      "world": 0,
+      "event_p": 0.073974609375,
+      "regret": 0.0,
+      "end_sign_match": 0.23974609375,
+      "stay": 0.58642578125,
+      "parameters": 4868,
+      "nfe": 32
+    },
+    {
+      "method": "joint_four",
+      "world": 1,
+      "event_p": 0.256591796875,
+      "regret": 0.0,
+      "end_sign_match": 0.53515625,
+      "stay": 0.6031901041666666,
+      "parameters": 4868,
+      "nfe": 32
+    }
+  ],
+  "51203": [
+    {
+      "method": "one_step",
+      "world": 0,
+      "event_p": 0.257568359375,
+      "regret": 0.2,
+      "end_sign_match": 0.514404296875,
+      "stay": 0.6337076822916666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "one_step",
+      "world": 1,
+      "event_p": 0.220947265625,
+      "regret": 0.0,
+      "end_sign_match": 0.50830078125,
+      "stay": 0.6031901041666666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "joint_four",
+      "world": 0,
+      "event_p": 0.0869140625,
+      "regret": 0.0,
+      "end_sign_match": 0.24267578125,
+      "stay": 0.58447265625,
+      "parameters": 4868,
+      "nfe": 32
+    },
+    {
+      "method": "joint_four",
+      "world": 1,
+      "event_p": 0.21875,
+      "regret": 0.0,
+      "end_sign_match": 0.478271484375,
+      "stay": 0.5721842447916666,
+      "parameters": 4868,
+      "nfe": 32
+    }
+  ],
+  "51204": [
+    {
+      "method": "one_step",
+      "world": 0,
+      "event_p": 0.20849609375,
+      "regret": 0.2,
+      "end_sign_match": 0.507080078125,
+      "stay": 0.5926920572916666,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "one_step",
+      "world": 1,
+      "event_p": 0.213623046875,
+      "regret": 0.0,
+      "end_sign_match": 0.505859375,
+      "stay": 0.5955403645833334,
+      "parameters": 4545,
+      "nfe": 96
+    },
+    {
+      "method": "joint_four",
+      "world": 0,
+      "event_p": 0.08544921875,
+      "regret": 0.0,
+      "end_sign_match": 0.268798828125,
+      "stay": 0.5816243489583334,
+      "parameters": 4868,
+      "nfe": 32
+    },
+    {
+      "method": "joint_four",
+      "world": 1,
+      "event_p": 0.2265625,
+      "regret": 0.0,
+      "end_sign_match": 0.4951171875,
+      "stay": 0.5885416666666666,
+      "parameters": 4868,
+      "nfe": 32
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # 최신 학습법 정리 + 축소 재현 (깊이 · 이미지/영상 생성 · LLM · VLM)
 
 - `docs/TRAINING_RECIPES.md` — 25편 남짓의 1차 기술보고서(arXiv TeX)로 정리한 분야별 학습 절차, 수치, arXiv 번호, 논문 간 불일치. ✔ 표시는 원문에서 다시 대조한 수치.
+- `docs/WORLD_MODELS.md` — 생성형 WM · 잠재(JEPA) WM · WAM의 2026-11 SOTA와 구현 수준 학습 절차(의사코드), VLA 대비, 붙여넣은 정리 정정.
 - `docs/REPRO_PLAN.md` — **사전등록** 축소 재현 계획. 티어 A(RTX A6000 ×2) / 티어 B(RTX 5090). 트랙별 데이터·모델·예산·양성 대조·가설·관문·중단조건.
 - 코드: `depth/`(전 과정) · `gen/`(rectified-flow DiT 커리큘럼) · `llm/`(사전학습 3단계 + SFT→GRPO→증류) · `vlm/`(LLaVA식 2단계).
 

@@ -1,0 +1,114 @@
+{
+  "hapt.zip": {
+    "url": "https://archive.ics.uci.edu/static/public/341/smartphone+based+recognition+of+human+activities+and+postural+transitions.zip",
+    "sha256": "4ac4ae064227c07045a99551876b54d204837e995e298b6488559e209b3deb09"
+  },
+  "Art.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Art-7views.zip",
+    "sha256": "34a7edff8ac2f5ff1477bef450bafbbe4d14cbc17a0ba07eb27307c10b4ca304"
+  },
+  "Books.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Books-7views.zip",
+    "sha256": "0b0758b31c87a06689e1ea4d2be2137a7c2a6c3b7b1b18a7ecc80a7bf5d0925b"
+  },
+  "Dolls.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Dolls-7views.zip",
+    "sha256": "77467b6b9321c7b156ddceeaa7c0031e13a2705d369dbc3df2ac3464114d7905"
+  },
+  "Laundry.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Laundry-7views.zip",
+    "sha256": "8b708cb1e9994c312e96c18ec0b38cbbead9cc249b06607d8ec3f7180738b89b"
+  },
+  "Moebius.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Moebius-7views.zip",
+    "sha256": "0dc40ff56992c768342fd0364ea552670ca3549d2039e520e14177e905f1b2e4"
+  },
+  "Reindeer.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2005/ThirdSize/zip-7views/Reindeer-7views.zip",
+    "sha256": "328689f074e5d74123ec2713ce386c012a2a1bdc830e4f4ab5caf1b9cf9de10b"
+  },
+  "Aloe.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Aloe-7views.zip",
+    "sha256": "31ad55f4dd526876cbd138a7e4ea629190810146fc1991c23bd605f1ec3d4da8"
+  },
+  "Baby1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Baby1-7views.zip",
+    "sha256": "e37e0160f1e0b7ce5bb0bc96bcefcbe75294a028156552de3ec504082edd9dbd"
+  },
+  "Baby2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Baby2-7views.zip",
+    "sha256": "2a2757463f2b7c3e6db23616474bb7c0071e1255c30a9319611c4ad015fb1380"
+  },
+  "Baby3.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Baby3-7views.zip",
+    "sha256": "4370ace85b19d3a17e429660a85fc9933d7b10c259a249687d005b91f0189df3"
+  },
+  "Bowling1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Bowling1-7views.zip",
+    "sha256": "af14c116abc4c10df2639588128a189173fa714e3a087ad4615edb37ce3e1ca3"
+  },
+  "Bowling2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Bowling2-7views.zip",
+    "sha256": "d00986482286006707341f623820ab414fc96583c72c650b486f78b24634e1ed"
+  },
+  "Cloth1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Cloth1-7views.zip",
+    "sha256": "13ea80b7f0335ac8a9a21f34d15a4149cb75e3222d330418449fa79e18ffdc83"
+  },
+  "Cloth2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Cloth2-7views.zip",
+    "sha256": "dbf8cd643d5cea65e6856c7dbb89f75e8984b366360be2be85061d956c8e2ebb"
+  },
+  "Cloth3.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Cloth3-7views.zip",
+    "sha256": "fbed8549c7900ceac5a8683f099a78f52998900ab8ff9c2857d3747a47df547d"
+  },
+  "Cloth4.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Cloth4-7views.zip",
+    "sha256": "11e8ed615bcb691f896e7c1938ada4977f738802543316ecbea42b6ce89ec9f8"
+  },
+  "Flowerpots.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Flowerpots-7views.zip",
+    "sha256": "c1b01791b87b36ff879b15d69614b2badbf1621155cfe919b85dd49d7ae4ebe9"
+  },
+  "Lampshade1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Lampshade1-7views.zip",
+    "sha256": "b2e48701f6f2d4adf7b11098c56f2884568aa0391c1e480fdb6e5f3ea201d215"
+  },
+  "Lampshade2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Lampshade2-7views.zip",
+    "sha256": "2502d14e314f2224a83e0220e3144f0e8e239677848693ea350373336a46ef97"
+  },
+  "Midd1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Midd1-7views.zip",
+    "sha256": "888065ca5d0d461c9e308fe51221a5858a589a070a81461a2ed60845e1dac65b"
+  },
+  "Midd2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Midd2-7views.zip",
+    "sha256": "e690fcb71740646cf6f2538ed5bec2e2ed37316cc96a5c4f92e32a67574a567f"
+  },
+  "Monopoly.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Monopoly-7views.zip",
+    "sha256": "f2019283a7b7d47227b8469888df8ba30fa71ee37091af3c24843afac70658ac"
+  },
+  "Plastic.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Plastic-7views.zip",
+    "sha256": "90659507d19f4fa6b043e7010de4c06d8ab22a57d1d6267b321ca6779960eadd"
+  },
+  "Rocks1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Rocks1-7views.zip",
+    "sha256": "183c59fa0b0ed134e5321e909c9dc7db988eb7cb755490b486aa688fbba0c326"
+  },
+  "Rocks2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Rocks2-7views.zip",
+    "sha256": "d899b335f768c3c2b78c87b890db51649b984141d8b9ed7402e2751adbcf7c7e"
+  },
+  "Wood1.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Wood1-7views.zip",
+    "sha256": "7398a4e8e7cccd66b73343a898f304b54c475dc33bd4a376456ab5d5cc1d0b0a"
+  },
+  "Wood2.zip": {
+    "url": "https://vision.middlebury.edu/stereo/data/scenes2006/ThirdSize/zip-7views/Wood2-7views.zip",
+    "sha256": "e844bab3655302d090a4fa9cdc11fdb09b62b3c08a9a7e2e2089f94297b05b37"
+  }
+}

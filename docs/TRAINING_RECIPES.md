@@ -63,6 +63,25 @@
 
 ---
 
+## 2b. 이미지 생성(T2I) — 2025~2026 보고서 (2026-11-24 추가)
+출처(TeX 정독, 핵심 수치 원문 재대조 ✔): Qwen-Image 2508.02324 · Qwen-Image-2.0 2605.10730 · Qwen-Image-2.0-RL 2606.27608 · Seedream 4.0 2509.20427(+3.0 2504.11346) · Z-Image 2511.22699 · FLUX.2(블로그·HF 카드) · Nano Banana(모델카드만).
+
+- **공개 수준**: 절차를 재구성할 만큼 쓴 건 Qwen-Image·Qwen-Image-2.0·Z-Image. Seedream 4.0은 대부분 정성적. FLUX.2는 학습 정보가 거의 없음. **Nano Banana(Gemini 2.5 Flash Image / Gemini 3 Pro Image)는 이미지 생성 기술보고서 없음 — 확산인지 자기회귀인지조차 비공개.**
+- **조건 인코더**: 문서화된 모든 경우 동결 VLM/LLM — Qwen2.5-VL 7B(QI), Qwen3-VL(QI2), Qwen3-4B 텍스트 전용(Z-Image ✔), Mistral-3 24B(FLUX.2). + 별도 프롬프트 인핸서(QI2: Qwen3.5-9B SFT→GRPO, Seedream: Seed1.5-VL, Z-Image).
+- **백본**: 이중 스트림 MMDiT(QI 20B ✔ 60층) vs 단일 스트림(Z-Image 6.15B ✔). QK-Norm, 텍스트를 별도 축/대각선에 두는 RoPE(MSRoPE, 3D Unified RoPE).
+- **VAE 3갈래**: 기존 재사용(Z-Image: Flux VAE) / 인코더 동결·**디코더만** 텍스트 많은 데이터로 미세조정(QI ✔, 텍스트 PSNR 36.63) / 고압축 새로 학습(QI2 f16c64 ✔ + 의미 정렬 손실, 단 텍스트 PSNR 32.81로 하락 · Seedream 4.0 · FLUX.2). 두 Qwen 모두 적대 손실 제거.
+- **데이터**: 수십억 쌍(QI·Seedream). QI 구성 자연 55%·디자인 27%·인물 13%·**합성 5%** ✔ — 합성 = 프로그램 렌더링 글자이고 **다른 AI 생성 이미지 아님** ✔(Z-Image는 AIGC 탐지기로 제거). **필터는 단계별 커리큘럼**: QI 7단계(256p에선 깨진 파일·해상도·중복·NSFW → 화질 → 캡션·CLIP → 글자 분할·합성 도입(4단계) → 640p 미학·워터마크 → 재균형 → 640p+1328p 분류체계 균형). Seedream 3.0은 결함 영역을 손실에서 마스킹해 쓸 데이터 +21.7%. 분류체계 균형: WordNet(QI) · 위키 지식그래프+BM25(Z-Image) · TF-IDF+군집(Seedream 3.0).
+- **캡션**: 자체 VLM 캡셔너, 글자는 번역 없이 그대로(Z-Image: OCR 먼저). 길이 여러 종 + 사용자식 짧은 프롬프트, 원본 alt-text 일부 유지(세계지식).
+- **사전학습**: rectified flow, logit-normal + 해상도 시프트(Seedream 3.0·Z-Image). 해상도 256→640→1328 ✔(QI) / 256·512→512·1024·2048(QI2) / 512→1K~4K(Seedream 4.0). **저해상도에 연산 절반**: Z-Image 256² 단계 147.5K / 전체 사전학습 290K H800 GPU시간 ✔. 편집 데이터를 일찍 혼합(QI2 T2I:편집 0.9:0.1 → 0.7:0.3). REPA(DINOv2-L, λ=0.5 ✔, Seedream 3.0). 유일한 공개 하이퍼파라미터(QI2 ✔): Adam, wd 0.001, clip 1.0, 무조건 드롭 0.1, 사전학습 700K 스텝·LR 1e-4·배치 32K/16K → 연속학습 250K·2e-5 → SFT 10K·1e-5. 인프라: Megatron TP4(QI, activation checkpointing 끔: 메모리 −11% 대신 3.75배 느림) / HSDP(Seedream) / FSDP2(Z-Image).
+- **SFT**: 작고 엄격(QI2 10K 스텝), 개념 균형, 여러 SFT 변형 **선형 병합**(Z-Image).
+- **선호·RL**: DPO 먼저(QI 사람 선택 / Z-Image는 텍스트·개수 같은 객관 차원만) → Flow-GRPO 다중 보상. QI2-RL 교훈 ✔: **전 40 타임스텝에서 학습하면 몇 반복 만에 보상 해킹** → 고잡음 타임스텝만 학습 / **CFG는 롤아웃에만**(양쪽 다 쓰면 붕괴, 아예 안 쓰면 스타일·지식 손실) / 보상별·그룹별 정규화 / 점수형(pointwise) VLM 보상모델이 쌍비교보다 나음(정성) / 그룹 내 보상 범위가 작은 프롬프트 제거 / 범주별 보상 가중 / 과제별 RL 정책을 온폴리시 증류(OPD)로 통합.
+- **증류**: DMD 4 NFE(QI2) · Decoupled-DMD + DMDR 8 NFE ✔(Z-Image, 일반 DMD는 블러·색 틀어짐) · 적대 ADP→ADM(Seedream 4.0, 2K 1.4초) · 가이던스 증류(FLUX.2-dev).
+- **평가**: 아레나(Artificial Analysis, LMArena, 자체) + 프롬프트 충실도(GenEval·DPG·OneIG·TIIF) + 글자(CVTG-2K·LongText·ChineseWord). 최신 보고서(QI2·Seedream 4.0)는 포화된 GenEval·DPG를 아예 안 씀. 전부 자체 보고.
+- **비용 기준점**: Z-Image 6B 전 과정 **314K H800 GPU시간 ≈ 63만 달러** ✔ (흔히 말하는 '수천만 달러'는 수십B 급 이상 추정치이며 출처 없음).
+- **흔한 오해(원문이 지지하지 않음)**: Nano Banana가 DiT/확산이다 · Qwen-Image가 VAE를 처음부터 학습 · Z-Image 텍스트 인코더가 Qwen3-VL · Seedream 4.0의 REPA/MMDiT/20B(3.0 얘기) · 전 타임스텝 RL이 된다 · 쌍비교 보상모델이 표준.
+
+---
+
 ## 3. 거대 LLM
 
 | 모델 | arXiv | 핵심 |

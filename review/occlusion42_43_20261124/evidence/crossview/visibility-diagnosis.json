@@ -1,0 +1,46 @@
+{
+  "pipes": {
+    "recovered": 2,
+    "outside": 0,
+    "unknown": 45,
+    "bad_depth": 0,
+    "not_enough_camera_pairs": 0,
+    "not_enough_valid_costs": 20,
+    "disagreeing_depths": 25,
+    "bad_depth_has_lidar": 0,
+    "overestimated_front": 0
+  },
+  "office": {
+    "recovered": 14,
+    "outside": 0,
+    "unknown": 103,
+    "bad_depth": 2,
+    "not_enough_camera_pairs": 0,
+    "not_enough_valid_costs": 54,
+    "disagreeing_depths": 49,
+    "bad_depth_has_lidar": 2,
+    "overestimated_front": 2
+  },
+  "courtyard": {
+    "recovered": 3,
+    "outside": 0,
+    "unknown": 81,
+    "bad_depth": 10,
+    "not_enough_camera_pairs": 3,
+    "not_enough_valid_costs": 1,
+    "disagreeing_depths": 77,
+    "bad_depth_has_lidar": 10,
+    "overestimated_front": 7
+  },
+  "kicker": {
+    "recovered": 18,
+    "outside": 0,
+    "unknown": 343,
+    "bad_depth": 3,
+    "not_enough_camera_pairs": 0,
+    "not_enough_valid_costs": 183,
+    "disagreeing_depths": 160,
+    "bad_depth_has_lidar": 3,
+    "overestimated_front": 2
+  }
+}

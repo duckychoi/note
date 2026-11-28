@@ -1,0 +1,1003 @@
+{
+ "groups": {
+  "Baby": {
+   "half": 0.5747726994453174,
+   "conditional": 0.5496912031758101,
+   "full_candidate": 0.534485875885059,
+   "common": 0.5508399214958724,
+   "best_endpoint": 0.49671101436854537
+  },
+  "Books": {
+   "half": 0.1849029535911375,
+   "conditional": 0.1972680191988193,
+   "full_candidate": 0.2069866413808819,
+   "common": 0.1971867169055203,
+   "best_endpoint": 0.11596044229730917
+  },
+  "Bowling": {
+   "half": 0.9650072322197498,
+   "conditional": 0.9383974480775443,
+   "full_candidate": 0.9219578457787656,
+   "common": 0.9397220645774991,
+   "best_endpoint": 0.8259935400565532
+  },
+  "Cloth": {
+   "half": 1.4346183351330528,
+   "conditional": 1.3857442697794207,
+   "full_candidate": 1.3552201010815599,
+   "common": 1.3879835785322159,
+   "best_endpoint": 1.3211609245843197
+  },
+  "Dolls": {
+   "half": 0.8189539303061535,
+   "conditional": 0.8043006766554104,
+   "full_candidate": 0.796486336568668,
+   "common": 0.8057575314457633,
+   "best_endpoint": 0.6812300017752247
+  },
+  "Lampshade": {
+   "half": 2.341818300744812,
+   "conditional": 2.336115666902463,
+   "full_candidate": 2.3371579700718152,
+   "common": 2.3390810435600535,
+   "best_endpoint": 2.213419633284745
+  },
+  "Laundry": {
+   "half": 1.2018792118778032,
+   "conditional": 1.2013697270733241,
+   "full_candidate": 1.200424338848278,
+   "common": 1.2010215017867054,
+   "best_endpoint": 1.1343664906196764
+  },
+  "Moebius": {
+   "half": 1.5552571392801433,
+   "conditional": 1.5539214816040223,
+   "full_candidate": 1.574596602474071,
+   "common": 1.566616222635256,
+   "best_endpoint": 1.3612574163743798
+  },
+  "Monopoly": {
+   "half": 2.3559844101740524,
+   "conditional": 2.338505602023965,
+   "full_candidate": 2.3231847090648374,
+   "common": 2.33671942152435,
+   "best_endpoint": 2.2951331193387117
+  },
+  "Plastic": {
+   "half": 1.24684677475738,
+   "conditional": 1.2361053410457543,
+   "full_candidate": 1.2295653167075482,
+   "common": 1.236696466006951,
+   "best_endpoint": 1.1852366598161432
+  },
+  "Reindeer": {
+   "half": 0.2723294470660167,
+   "conditional": 0.2598108638422512,
+   "full_candidate": 0.2552889203926824,
+   "common": 0.261960961504226,
+   "best_endpoint": 0.20019074124134667
+  }
+ },
+ "means": {
+  "half": 1.1774882213268745,
+  "conditional": 1.1637482090344349,
+  "full_candidate": 1.1577595143867423,
+  "common": 1.1657804936340375,
+  "best_endpoint": 1.0755145439779048
+ },
+ "shape": {
+  "half": 0.0027743499106007426,
+  "conditional": 0.00303213248880365
+ },
+ "gain": 1.1668916973926469,
+ "ci": [
+  0.4551237242675443,
+  2.138382295504955
+ ],
+ "wins": 10,
+ "regions": {
+  "both": {
+   "fraction": 0.07577092284736595,
+   "half": 2.1358052520850896,
+   "conditional": 2.1221946400910916,
+   "full_candidate": 2.1096406512973616,
+   "opposite": 2.166218957277724,
+   "candidate_wins": 0.64481924681391,
+   "gain": 0.01361061199399791,
+   "directional": 0.013635624335623025,
+   "overshoot": 2.5012341625116678e-05,
+   "tie_cost": 0.0
+  },
+  "highlight": {
+   "fraction": 0.0559062606487935,
+   "half": 1.1084607163900124,
+   "conditional": 1.1263947254375062,
+   "full_candidate": 1.1875174606508583,
+   "opposite": 1.0330803718985109,
+   "candidate_wins": 0.2694456192277306,
+   "gain": -0.01793400904749376,
+   "directional": -0.017889231238333487,
+   "overshoot": 4.4777809160269585e-05,
+   "tie_cost": 0.0
+  },
+  "quiet": {
+   "fraction": 0.6127228363550131,
+   "half": 1.037759755794492,
+   "conditional": 1.037759755794492,
+   "full_candidate": 1.037759755794492,
+   "opposite": 1.037759755794492,
+   "candidate_wins": 0.5,
+   "gain": 0.0,
+   "directional": 0.0,
+   "overshoot": 0.0,
+   "tie_cost": 0.0
+  },
+  "shadow": {
+   "fraction": 0.2555999801488274,
+   "half": 1.2434558540033551,
+   "conditional": 1.1898120820537634,
+   "full_candidate": 1.1567345720599909,
+   "opposite": 1.3326135794934622,
+   "candidate_wins": 0.7816308373382193,
+   "gain": 0.05364377194959189,
+   "directional": 0.05390058968898343,
+   "overshoot": 0.00025681773939154176,
+   "tie_cost": 0.0
+  }
+ },
+ "physical": {},
+ "rows": [
+  {
+   "scene": "Baby2",
+   "group": "Baby",
+   "scores": {
+    "half": 0.45737395806086883,
+    "conditional": 0.40355620625878313,
+    "full_candidate": 0.37086298141248164,
+    "common": 0.40602109642150574,
+    "best_endpoint": 0.321406287001265
+   },
+   "regions": {
+    "quiet": {
+     "n": 110145,
+     "mass": 0.7207970682546954,
+     "half": 0.3549985059824256,
+     "conditional": 0.3549985059824256,
+     "full_candidate": 0.3549985059824256,
+     "opposite": 0.3549985059824256,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 39452,
+     "mass": 0.2581768208886853,
+     "half": 0.7431932870981833,
+     "conditional": 0.5391231711006009,
+     "full_candidate": 0.41515459264241983,
+     "opposite": 1.0747382405996897,
+     "candidate_wins": 1.0,
+     "gain": 0.20407011599758246,
+     "directional": 0.20408451042614603,
+     "overshoot": 1.4394428563588614e-05,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0018197864126856202,
+    "conditional": 0.0029788853796230475
+   },
+   "n": 149597
+  },
+  {
+   "scene": "Baby3",
+   "group": "Baby",
+   "scores": {
+    "half": 0.692171440829766,
+    "conditional": 0.6958262000928371,
+    "full_candidate": 0.6981087703576364,
+    "common": 0.6956587465702391,
+    "best_endpoint": 0.6720157417358257
+   },
+   "regions": {
+    "quiet": {
+     "n": 84182,
+     "mass": 0.5206382583956954,
+     "half": 0.5593976226303178,
+     "conditional": 0.5593976226303178,
+     "full_candidate": 0.5593976226303178,
+     "opposite": 0.5593976226303178,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 67525,
+     "mass": 0.41762013729977115,
+     "half": 0.8576977727611389,
+     "conditional": 0.8659088436759516,
+     "full_candidate": 0.871037046373647,
+     "opposite": 0.8443584991486307,
+     "candidate_wins": 0.17946686412439838,
+     "gain": -0.00821107091481267,
+     "directional": -0.00821107091481267,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.001419283276353216,
+    "conditional": 0.0014451438362449406
+   },
+   "n": 151707
+  },
+  {
+   "scene": "Books",
+   "group": "Books",
+   "scores": {
+    "half": 0.1849029535911375,
+    "conditional": 0.1972680191988193,
+    "full_candidate": 0.2069866413808819,
+    "common": 0.1971867169055203,
+    "best_endpoint": 0.11596044229730917
+   },
+   "regions": {
+    "quiet": {
+     "n": 81260,
+     "mass": 0.4743447551222929,
+     "half": 0.21134766264739704,
+     "conditional": 0.21134766264739704,
+     "full_candidate": 0.21134766264739704,
+     "opposite": 0.21134766264739704,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 30880,
+     "mass": 0.18025801179148912,
+     "half": 0.156614057791699,
+     "conditional": 0.15456275529032623,
+     "full_candidate": 0.15499374172343647,
+     "opposite": 0.17040150915986133,
+     "candidate_wins": 0.5054727979274611,
+     "gain": 0.0020513025013727867,
+     "directional": 0.002190989213091798,
+     "overshoot": 0.00013968671171901034,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 41184,
+     "mass": 0.24040628101103262,
+     "half": 0.17545546944467155,
+     "conditional": 0.20739442342306375,
+     "full_candidate": 0.22800636021945064,
+     "opposite": 0.13865168654194573,
+     "candidate_wins": 0.18271658896658896,
+     "gain": -0.03193895397839217,
+     "directional": -0.03080835957922026,
+     "overshoot": 0.0011305943991719186,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 17387,
+     "mass": 0.10149436693713151,
+     "half": 0.13393091882165792,
+     "conditional": 0.18332546966707466,
+     "full_candidate": 0.22915769174363984,
+     "opposite": 0.0734732313496866,
+     "candidate_wins": 0.012193017771898546,
+     "gain": -0.04939455084541672,
+     "directional": -0.04918986563396954,
+     "overshoot": 0.00020468521144718173,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0016590345322172208,
+    "conditional": 0.002502629947424393
+   },
+   "n": 170711
+  },
+  {
+   "scene": "Bowling1",
+   "group": "Bowling",
+   "scores": {
+    "half": 0.7833982272557977,
+    "conditional": 0.7840591695581586,
+    "full_candidate": 0.7849375256570879,
+    "common": 0.7843023381234736,
+    "best_endpoint": 0.7257530332196112
+   },
+   "regions": {
+    "quiet": {
+     "n": 147071,
+     "mass": 0.9532114848661611,
+     "half": 0.7852841454118948,
+     "conditional": 0.7852841454118948,
+     "full_candidate": 0.7852841454118948,
+     "opposite": 0.7852841454118948,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 1761,
+     "mass": 0.011413571845226522,
+     "half": 0.5223892226192752,
+     "conditional": 0.5373699785047878,
+     "full_candidate": 0.5866490774132597,
+     "opposite": 0.4581293678252908,
+     "candidate_wins": 0.0005678591709256105,
+     "gain": -0.014980755885512632,
+     "directional": -0.014980755885512636,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 2176,
+     "mass": 0.014103311945038563,
+     "half": 0.8671633871958483,
+     "conditional": 0.9009071666446189,
+     "full_candidate": 0.9219817551599191,
+     "opposite": 0.8123450192317775,
+     "candidate_wins": 0.0059742647058823525,
+     "gain": -0.03374377944877056,
+     "directional": -0.03374377944877056,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0037397257955118796,
+    "conditional": 0.0037519478244681594
+   },
+   "n": 151008
+  },
+  {
+   "scene": "Bowling2",
+   "group": "Bowling",
+   "scores": {
+    "half": 1.146616237183702,
+    "conditional": 1.09273572659693,
+    "full_candidate": 1.0589781659004434,
+    "common": 1.0951417910315246,
+    "best_endpoint": 0.9262340468934952
+   },
+   "regions": {
+    "quiet": {
+     "n": 82780,
+     "mass": 0.5050332499542431,
+     "half": 1.2137705447932503,
+     "conditional": 1.2137705447932503,
+     "full_candidate": 1.2137705447932503,
+     "opposite": 1.2137705447932503,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 6,
+     "mass": 3.660545421267769e-05,
+     "half": 1.843055219863637,
+     "conditional": 1.94822318509919,
+     "full_candidate": 2.2941725217316247,
+     "opposite": 1.39193791799565,
+     "candidate_wins": 0.0,
+     "gain": -0.10516796523555279,
+     "directional": -0.1051679652355529,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 72759,
+     "mass": 0.443896040510036,
+     "half": 1.0666981618600713,
+     "conditional": 0.9522037647628089,
+     "full_candidate": 0.8806965908318191,
+     "opposite": 1.2526997328883238,
+     "candidate_wins": 0.9995739358704765,
+     "gain": 0.11449439709726256,
+     "directional": 0.11449439709726256,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 187,
+     "mass": 0.0011408699896284546,
+     "half": 2.4917874920372327,
+     "conditional": 2.165301694759626,
+     "full_candidate": 1.8636029227801096,
+     "opposite": 3.1199720612943564,
+     "candidate_wins": 1.0,
+     "gain": 0.32648579727760696,
+     "directional": 0.326485797277607,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0028244240103237044,
+    "conditional": 0.0035052764048884894
+   },
+   "n": 155732
+  },
+  {
+   "scene": "Cloth1",
+   "group": "Cloth",
+   "scores": {
+    "half": 1.4346183351330528,
+    "conditional": 1.3857442697794207,
+    "full_candidate": 1.3552201010815599,
+    "common": 1.3879835785322159,
+    "best_endpoint": 1.3211609245843197
+   },
+   "regions": {
+    "quiet": {
+     "n": 36231,
+     "mass": 0.2348240326657593,
+     "half": 1.3844018646017038,
+     "conditional": 1.3844018646017038,
+     "full_candidate": 1.3844018646017038,
+     "opposite": 1.3844018646017038,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 118050,
+     "mass": 0.7651176356212327,
+     "half": 1.4500303888714796,
+     "conditional": 1.3861562704739898,
+     "full_candidate": 1.3462638581836492,
+     "opposite": 1.5537969195593104,
+     "candidate_wins": 1.0,
+     "gain": 0.06387411839748999,
+     "directional": 0.06387411839748999,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0006809735746964289,
+    "conditional": 0.0007544916455296033
+   },
+   "n": 154281
+  },
+  {
+   "scene": "Dolls",
+   "group": "Dolls",
+   "scores": {
+    "half": 0.8189539303061535,
+    "conditional": 0.8043006766554104,
+    "full_candidate": 0.796486336568668,
+    "common": 0.8057575314457633,
+    "best_endpoint": 0.6812300017752247
+   },
+   "regions": {
+    "quiet": {
+     "n": 140293,
+     "mass": 0.8189422684023115,
+     "half": 0.7815127700546957,
+     "conditional": 0.7815127700546957,
+     "full_candidate": 0.7815127700546957,
+     "opposite": 0.7815127700546957,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 3217,
+     "mass": 0.01877882201856284,
+     "half": 0.81360729871872,
+     "conditional": 0.8415587240552485,
+     "full_candidate": 0.9335047556385823,
+     "opposite": 0.6937098417988575,
+     "candidate_wins": 0.08859185576624184,
+     "gain": -0.027951425336528616,
+     "directional": -0.027951425336528612,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 26598,
+     "mass": 0.15526238981962523,
+     "half": 1.0080286455162926,
+     "conditional": 0.9120890780676761,
+     "full_candidate": 0.8521702740882613,
+     "opposite": 1.1638870169443238,
+     "candidate_wins": 1.0,
+     "gain": 0.09593956744861652,
+     "directional": 0.09593956744861648,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 512,
+     "mass": 0.002988733874263032,
+     "half": 1.2895077072891554,
+     "conditional": 1.2147864998689926,
+     "full_candidate": 1.14573817768326,
+     "opposite": 1.433277236895051,
+     "candidate_wins": 1.0,
+     "gain": 0.07472120742016308,
+     "directional": 0.07472120742016307,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0032066268897425355,
+    "conditional": 0.0032538789057595485
+   },
+   "n": 170620
+  },
+  {
+   "scene": "Lampshade1",
+   "group": "Lampshade",
+   "scores": {
+    "half": 1.927635701386794,
+    "conditional": 1.9171135252401166,
+    "full_candidate": 1.9105419278613045,
+    "common": 1.9175956296235606,
+    "best_endpoint": 1.784736103927971
+   },
+   "regions": {
+    "quiet": {
+     "n": 133640,
+     "mass": 0.8341551713376194,
+     "half": 1.866408778269898,
+     "conditional": 1.866408778269898,
+     "full_candidate": 1.866408778269898,
+     "opposite": 1.866408778269898,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 21710,
+     "mass": 0.13550964359278447,
+     "half": 2.3045295754237336,
+     "conditional": 2.229236159284334,
+     "full_candidate": 2.182211854687449,
+     "opposite": 2.426847296160018,
+     "candidate_wins": 0.9740211883924459,
+     "gain": 0.07529341613939916,
+     "directional": 0.07529341613939916,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0019078802233057047,
+    "conditional": 0.001949998064170452
+   },
+   "n": 155350
+  },
+  {
+   "scene": "Lampshade2",
+   "group": "Lampshade",
+   "scores": {
+    "half": 2.7560009001028307,
+    "conditional": 2.755117808564809,
+    "full_candidate": 2.7637740122823264,
+    "common": 2.7605664574965467,
+    "best_endpoint": 2.6421031626415195
+   },
+   "regions": {
+    "quiet": {
+     "n": 130553,
+     "mass": 0.8148867111915611,
+     "half": 2.547608111258522,
+     "conditional": 2.547608111258522,
+     "full_candidate": 2.547608111258522,
+     "opposite": 2.547608111258522,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 13779,
+     "mass": 0.08600586729916984,
+     "half": 4.3675657530870815,
+     "conditional": 4.406719881981663,
+     "full_candidate": 4.535517133950571,
+     "opposite": 4.199614372223593,
+     "candidate_wins": 0.1760650264895856,
+     "gain": -0.03915412889458043,
+     "directional": -0.03915412889458043,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 11617,
+     "mass": 0.07251107920853879,
+     "half": 3.0539551317153,
+     "conditional": 2.9935292233185136,
+     "full_candidate": 2.9557903814955684,
+     "opposite": 3.152119881935031,
+     "candidate_wins": 0.7960747180855643,
+     "gain": 0.06042590839678638,
+     "directional": 0.06042590839678635,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 974,
+     "mass": 0.006079520629174209,
+     "half": 4.33630618149806,
+     "conditional": 4.360829448834918,
+     "full_candidate": 4.383490892922682,
+     "opposite": 4.289121470073438,
+     "candidate_wins": 0.34496919917864477,
+     "gain": -0.024523267336858456,
+     "directional": -0.024523267336858456,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.001851439951198655,
+    "conditional": 0.0018447145104972674
+   },
+   "n": 156923
+  },
+  {
+   "scene": "Laundry",
+   "group": "Laundry",
+   "scores": {
+    "half": 1.2018792118778032,
+    "conditional": 1.2013697270733241,
+    "full_candidate": 1.200424338848278,
+    "common": 1.2010215017867054,
+    "best_endpoint": 1.1343664906196764
+   },
+   "regions": {
+    "quiet": {
+     "n": 152205,
+     "mass": 0.920279339742427,
+     "half": 1.2004434427331943,
+     "conditional": 1.2004434427331943,
+     "full_candidate": 1.2004434427331943,
+     "opposite": 1.2004434427331943,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 12400,
+     "mass": 0.07497430316222263,
+     "half": 1.2398655662769538,
+     "conditional": 1.2367615672714252,
+     "full_candidate": 1.2266662073492154,
+     "opposite": 1.2537545220902417,
+     "candidate_wins": 0.7662096774193549,
+     "gain": 0.0031039990055285217,
+     "directional": 0.003132433645875205,
+     "overshoot": 2.843464034668406e-05,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 328,
+     "mass": 0.0019831912449362115,
+     "half": 0.5729660652087144,
+     "conditional": 0.4622999322247224,
+     "full_candidate": 0.39437336794429645,
+     "opposite": 0.7550390438455199,
+     "candidate_wins": 0.875,
+     "gain": 0.11066613298399204,
+     "directional": 0.1114540457751182,
+     "overshoot": 0.0007879127911261416,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 61,
+     "mass": 0.0003688252010399661,
+     "half": 0.4442392153721442,
+     "conditional": 0.2922087802423332,
+     "full_candidate": 0.15252011329345885,
+     "opposite": 0.73675783089032,
+     "candidate_wins": 0.9836065573770492,
+     "gain": 0.15203043512981104,
+     "directional": 0.15203043512981107,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.006514002500324845,
+    "conditional": 0.006603132447657697
+   },
+   "n": 164994
+  },
+  {
+   "scene": "Moebius",
+   "group": "Moebius",
+   "scores": {
+    "half": 1.5552571392801433,
+    "conditional": 1.5539214816040223,
+    "full_candidate": 1.574596602474071,
+    "common": 1.566616222635256,
+    "best_endpoint": 1.3612574163743798
+   },
+   "regions": {
+    "quiet": {
+     "n": 129110,
+     "mass": 0.7536629502072266,
+     "half": 1.5441941068524385,
+     "conditional": 1.5441941068524385,
+     "full_candidate": 1.5441941068524385,
+     "opposite": 1.5441941068524385,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 27032,
+     "mass": 0.15779580876773103,
+     "half": 1.5544911705819073,
+     "conditional": 1.6053961665382592,
+     "full_candidate": 1.772847819167775,
+     "opposite": 1.3361345219960397,
+     "candidate_wins": 0.0,
+     "gain": -0.05090499595635212,
+     "directional": -0.05090499595635211,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 14268,
+     "mass": 0.08328760726168934,
+     "half": 1.6574529396528197,
+     "conditional": 1.5452882952823441,
+     "full_candidate": 1.4752361622762744,
+     "opposite": 1.8396697170293648,
+     "candidate_wins": 1.0,
+     "gain": 0.1121646443704755,
+     "directional": 0.11216464437047552,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 34,
+     "mass": 0.00019847060883777947,
+     "half": 1.288318988524503,
+     "conditional": 1.1896854072623122,
+     "full_candidate": 1.0985401550311955,
+     "opposite": 1.4780978220178103,
+     "candidate_wins": 1.0,
+     "gain": 0.09863358126219059,
+     "directional": 0.09863358126219061,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.00123738303702529,
+    "conditional": 0.0013424996884569015
+   },
+   "n": 170444
+  },
+  {
+   "scene": "Monopoly",
+   "group": "Monopoly",
+   "scores": {
+    "half": 2.3559844101740524,
+    "conditional": 2.338505602023965,
+    "full_candidate": 2.3231847090648374,
+    "common": 2.33671942152435,
+    "best_endpoint": 2.2951331193387117
+   },
+   "regions": {
+    "quiet": {
+     "n": 357,
+     "mass": 0.0021780245256543223,
+     "half": 2.4462535083519894,
+     "conditional": 2.4462535083519894,
+     "full_candidate": 2.4462535083519894,
+     "opposite": 2.4462535083519894,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 4225,
+     "mass": 0.02577634067476054,
+     "half": 2.606987179588464,
+     "conditional": 2.6123981768394153,
+     "full_candidate": 2.630197617051974,
+     "opposite": 2.583776742124954,
+     "candidate_wins": 0.18840236686390532,
+     "gain": -0.005410997250951622,
+     "directional": -0.005410997250951629,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 40262,
+     "mass": 0.24563479958513817,
+     "half": 2.1644065774535743,
+     "conditional": 2.157681515736089,
+     "full_candidate": 2.153481396165868,
+     "opposite": 2.1753317587412813,
+     "candidate_wins": 0.5487556504892951,
+     "gain": 0.006725061717485436,
+     "directional": 0.006725061717485434,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "both": {
+     "n": 117844,
+     "mass": 0.7189555243731316,
+     "half": 2.412165411601079,
+     "conditional": 2.390138924305694,
+     "full_candidate": 2.369784703008926,
+     "opposite": 2.4545461201932324,
+     "candidate_wins": 0.7330199246461424,
+     "gain": 0.022026487295385328,
+     "directional": 0.022026487295385328,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.000874644417034311,
+    "conditional": 0.0009385852869696949
+   },
+   "n": 162688
+  },
+  {
+   "scene": "Plastic",
+   "group": "Plastic",
+   "scores": {
+    "half": 1.24684677475738,
+    "conditional": 1.2361053410457543,
+    "full_candidate": 1.2295653167075482,
+    "common": 1.236696466006951,
+    "best_endpoint": 1.1852366598161432
+   },
+   "regions": {
+    "quiet": {
+     "n": 105312,
+     "mass": 0.6728771324516005,
+     "half": 0.9558110185264183,
+     "conditional": 0.9558110185264183,
+     "full_candidate": 0.9558110185264183,
+     "opposite": 0.9558110185264183,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 2190,
+     "mass": 0.013992716120375694,
+     "half": 0.5621871586984128,
+     "conditional": 0.5666990624332255,
+     "full_candidate": 0.5815409403806767,
+     "opposite": 0.5428333770161491,
+     "candidate_wins": 0.0908675799086758,
+     "gain": -0.004511903734812696,
+     "directional": -0.004511903734812696,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 48765,
+     "mass": 0.3115775349817903,
+     "half": 1.9061098142193749,
+     "conditional": 1.871486361107638,
+     "full_candidate": 1.8498623747247127,
+     "opposite": 1.9623572537140368,
+     "candidate_wins": 0.7777504357633549,
+     "gain": 0.03462345311173686,
+     "directional": 0.03462345311173686,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.0013829088350128345,
+    "conditional": 0.0014246833786533185
+   },
+   "n": 156267
+  },
+  {
+   "scene": "Reindeer",
+   "group": "Reindeer",
+   "scores": {
+    "half": 0.2723294470660167,
+    "conditional": 0.2598108638422512,
+    "full_candidate": 0.2552889203926824,
+    "common": 0.261960961504226,
+    "best_endpoint": 0.20019074124134667
+   },
+   "regions": {
+    "quiet": {
+     "n": 99811,
+     "mass": 0.6034887236229518,
+     "half": 0.24093553620069685,
+     "conditional": 0.24093553620069685,
+     "full_candidate": 0.24093553620069685,
+     "opposite": 0.24093553620069685,
+     "candidate_wins": 0.5,
+     "gain": 0.0,
+     "directional": 0.0,
+     "overshoot": 0.0,
+     "tie_cost": 0.0
+    },
+    "highlight": {
+     "n": 15101,
+     "mass": 0.09130539935909063,
+     "half": 0.30373788597574336,
+     "conditional": 0.31486390640416,
+     "full_candidate": 0.35148469112838654,
+     "opposite": 0.25607966283364436,
+     "candidate_wins": 0.01211840275478445,
+     "gain": -0.011126020428416655,
+     "directional": -0.011124581763297777,
+     "overshoot": 1.4386651188759148e-06,
+     "tie_cost": 0.0
+    },
+    "shadow": {
+     "n": 49706,
+     "mass": 0.3005381220146321,
+     "half": 0.3258271898214721,
+     "conditional": 0.28098756950160425,
+     "full_candidate": 0.25488601723625043,
+     "opposite": 0.4053197147733488,
+     "candidate_wins": 0.8798334205126142,
+     "gain": 0.04483962031986783,
+     "directional": 0.0463161966747911,
+     "overshoot": 0.0014765763549232712,
+     "tie_cost": 0.0
+    }
+   },
+   "physical": {},
+   "shape": {
+    "half": 0.008181005395865314,
+    "conditional": 0.008795573066442816
+   },
+   "n": 164618
+  }
+ ],
+ "gain_lock": "09b4f63573617a78d8f4fd6a01227c405a30ef172c76ea3ce3fa04bc89b8a0af"
+}

@@ -1,0 +1,1937 @@
+{
+  "settings": {
+    "visibility": [
+      0.1,
+      0.3
+    ],
+    "balanced": [
+      0.05,
+      0.05
+    ],
+    "shared": [
+      0.2,
+      0.05
+    ]
+  },
+  "calibration": {
+    "visibility": {
+      "0.05,0.05": {
+        "delivery_area": 0.2275563094699633,
+        "relief": 0.26907322985050575
+      },
+      "0.05,0.15": {
+        "delivery_area": 0.2262718788790549,
+        "relief": 0.26531980614555
+      },
+      "0.05,0.3": {
+        "delivery_area": 0.22730256077418148,
+        "relief": 0.2717295222335684
+      },
+      "0.1,0.05": {
+        "delivery_area": 0.2110999496960297,
+        "relief": 0.25684164243552193
+      },
+      "0.1,0.15": {
+        "delivery_area": 0.20991914607888384,
+        "relief": 0.25086075247940187
+      },
+      "0.1,0.3": {
+        "delivery_area": 0.2121190708893494,
+        "relief": 0.2411859199749488
+      },
+      "0.2,0.05": {
+        "delivery_area": 0.20817422144050535,
+        "relief": 0.256649906150359
+      },
+      "0.2,0.15": {
+        "delivery_area": 0.21654190332165588,
+        "relief": 0.2550003227641189
+      },
+      "0.2,0.3": {
+        "delivery_area": 0.23416837181668232,
+        "relief": 0.2701487669628981
+      }
+    },
+    "balanced": {
+      "0.05,0.05": {
+        "delivery_area": 0.4248431471557977,
+        "relief": 0.5516059642671196
+      },
+      "0.05,0.15": {
+        "delivery_area": 0.43919454708536787,
+        "relief": 0.5759807575413605
+      },
+      "0.05,0.3": {
+        "delivery_area": 0.46156977134937954,
+        "relief": 0.6040968154006832
+      },
+      "0.1,0.05": {
+        "delivery_area": 0.42622926403203437,
+        "relief": 0.5659330155543693
+      },
+      "0.1,0.15": {
+        "delivery_area": 0.447248408750739,
+        "relief": 0.5951793611286343
+      },
+      "0.1,0.3": {
+        "delivery_area": 0.477437407730062,
+        "relief": 0.6306985488980571
+      },
+      "0.2,0.05": {
+        "delivery_area": 0.490976800762827,
+        "relief": 0.6575962906882757
+      },
+      "0.2,0.15": {
+        "delivery_area": 0.5100998731928758,
+        "relief": 0.6749995352740604
+      },
+      "0.2,0.3": {
+        "delivery_area": 0.531548447212767,
+        "relief": 0.7002252045025873
+      }
+    },
+    "shared": {
+      "0.05,0.05": {
+        "delivery_area": 0.22429242221281562,
+        "relief": 0.28342379637185944
+      },
+      "0.05,0.15": {
+        "delivery_area": 0.22800415126992313,
+        "relief": 0.28428594214181907
+      },
+      "0.05,0.3": {
+        "delivery_area": 0.24107947458755635,
+        "relief": 0.302846665108231
+      },
+      "0.1,0.05": {
+        "delivery_area": 0.20594461271644096,
+        "relief": 0.25694957435141363
+      },
+      "0.1,0.15": {
+        "delivery_area": 0.20568470144168804,
+        "relief": 0.2578026276990808
+      },
+      "0.1,0.3": {
+        "delivery_area": 0.21466640094354367,
+        "relief": 0.27019276557943245
+      },
+      "0.2,0.05": {
+        "delivery_area": 0.20717105395536622,
+        "relief": 0.24908087096041154
+      },
+      "0.2,0.15": {
+        "delivery_area": 0.21171297024820537,
+        "relief": 0.2607196778679882
+      },
+      "0.2,0.3": {
+        "delivery_area": 0.23144577597390983,
+        "relief": 0.2930115798075298
+      }
+    }
+  },
+  "rows": [
+    {
+      "scene": "pipes",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\pipes\\images\\dslr_images\\DSC_0643.JPG",
+      "count": {
+        "all": 215,
+        "hard": 193,
+        "lidar_occluded": 13,
+        "disagreement": 193,
+        "only_lidar": 0,
+        "only_disagreement": 180,
+        "both": 13,
+        "no_lidar_state": 11,
+        "valid_reference": 394
+      },
+      "scores": {
+        "all": {
+          "median": 0.4412214457988739,
+          "visibility": 0.2506942542526587,
+          "balanced": 0.4256601065726289,
+          "shared": 0.22179347688517378,
+          "same_params_visibility": 0.2201168730373669
+        },
+        "hard": {
+          "median": 0.46658775210380554,
+          "visibility": 0.2610369629708787,
+          "balanced": 0.4482021998470772,
+          "shared": 0.22805512461382343,
+          "same_params_visibility": 0.22636816530545842
+        },
+        "lidar_occluded": {
+          "median": 0.2896121144294739,
+          "visibility": 0.13506045731161592,
+          "balanced": 0.3921029676406424,
+          "shared": 0.1098932995552678,
+          "same_params_visibility": 0.11956298256536071
+        },
+        "disagreement": {
+          "median": 0.46658775210380554,
+          "visibility": 0.2610369629708787,
+          "balanced": 0.4482021998470772,
+          "shared": 0.22805512461382343,
+          "same_params_visibility": 0.22636816530545842
+        },
+        "only_disagreement": {
+          "median": 0.4793693423271179,
+          "visibility": 0.270135266157381,
+          "balanced": 0.4522538110619863,
+          "shared": 0.23658903420138577,
+          "same_params_visibility": 0.23408187294779878
+        },
+        "both": {
+          "median": 0.2896121144294739,
+          "visibility": 0.13506045731161592,
+          "balanced": 0.3921029676406424,
+          "shared": 0.1098932995552678,
+          "same_params_visibility": 0.11956298256536071
+        },
+        "no_lidar_state": {
+          "median": 0.4226170480251312,
+          "visibility": 0.37616527999438315,
+          "balanced": 0.7829456571321823,
+          "shared": 0.4295319848609431,
+          "same_params_visibility": 0.4264501269786615
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 2,
+      "min_baseline": 0.22347654402256012,
+      "max_baseline": 2.1522061824798584,
+      "direction": 89.9323970786284
+    },
+    {
+      "scene": "pipes",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\pipes\\images\\dslr_images\\DSC_0645.JPG",
+      "count": {
+        "all": 220,
+        "hard": 158,
+        "lidar_occluded": 24,
+        "disagreement": 156,
+        "only_lidar": 2,
+        "only_disagreement": 134,
+        "both": 22,
+        "no_lidar_state": 8,
+        "valid_reference": 404
+      },
+      "scores": {
+        "all": {
+          "median": 0.5757642388343811,
+          "visibility": 0.4077739406395255,
+          "balanced": 0.5843899677065327,
+          "shared": 0.4127087180000241,
+          "same_params_visibility": 0.4152461251742681
+        },
+        "hard": {
+          "median": 0.4252714216709137,
+          "visibility": 0.2718399707675173,
+          "balanced": 0.4740569401395905,
+          "shared": 0.2773655305397643,
+          "same_params_visibility": 0.28107012335629034
+        },
+        "lidar_occluded": {
+          "median": 0.2468234896659851,
+          "visibility": 0.1387401011751481,
+          "balanced": 0.49984199985473127,
+          "shared": 0.1335852693515783,
+          "same_params_visibility": 0.13358645253402038
+        },
+        "disagreement": {
+          "median": 0.4306521713733673,
+          "visibility": 0.2752468209955552,
+          "balanced": 0.47572154564583524,
+          "shared": 0.2807330714784487,
+          "same_params_visibility": 0.28448678158782714
+        },
+        "only_lidar": {
+          "median": 0.005574047565460205,
+          "visibility": 0.006105652980561038,
+          "balanced": 0.3442177106524964,
+          "shared": 0.014697337322383874,
+          "same_params_visibility": 0.014570781296421143
+        },
+        "only_disagreement": {
+          "median": 0.457232266664505,
+          "visibility": 0.295678753381076,
+          "balanced": 0.4694387204891175,
+          "shared": 0.30311721911078277,
+          "same_params_visibility": 0.3074851091752044
+        },
+        "both": {
+          "median": 0.2687552571296692,
+          "visibility": 0.15079777828374694,
+          "balanced": 0.5139896625094799,
+          "shared": 0.14439326317241416,
+          "same_params_visibility": 0.1444060590101657
+        },
+        "no_lidar_state": {
+          "median": 0.44308510422706604,
+          "visibility": 0.6522698959798521,
+          "balanced": 0.5914450402719953,
+          "shared": 1.0869618954919757,
+          "same_params_visibility": 1.085146406709651
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.2307271808385849,
+      "max_baseline": 1.7459537982940674,
+      "direction": 66.12691369527087
+    },
+    {
+      "scene": "office",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\office\\images\\dslr_images\\DSC_0219.JPG",
+      "count": {
+        "all": 147,
+        "hard": 105,
+        "lidar_occluded": 18,
+        "disagreement": 104,
+        "only_lidar": 1,
+        "only_disagreement": 87,
+        "both": 17,
+        "no_lidar_state": 2,
+        "valid_reference": 576
+      },
+      "scores": {
+        "all": {
+          "median": 0.1764628291130066,
+          "visibility": 0.12087588488512295,
+          "balanced": 0.29103854683809816,
+          "shared": 0.1367047988583981,
+          "same_params_visibility": 0.13963338473864187
+        },
+        "hard": {
+          "median": 0.2425246685743332,
+          "visibility": 0.16415098788446866,
+          "balanced": 0.3768815307371073,
+          "shared": 0.18611590579785076,
+          "same_params_visibility": 0.19008283103422485
+        },
+        "lidar_occluded": {
+          "median": 0.13264982402324677,
+          "visibility": 0.1546256677857284,
+          "balanced": 0.23232180927036505,
+          "shared": 0.20210110807054502,
+          "same_params_visibility": 0.2091240560932474
+        },
+        "disagreement": {
+          "median": 0.24485203623771667,
+          "visibility": 0.16560575239757294,
+          "balanced": 0.3804258448691965,
+          "shared": 0.1877758179272537,
+          "same_params_visibility": 0.1917829746571113
+        },
+        "only_lidar": {
+          "median": 0.00047856569290161133,
+          "visibility": 0.012855478521621055,
+          "balanced": 0.008272860999832377,
+          "shared": 0.013485044339945684,
+          "same_params_visibility": 0.013267894254040957
+        },
+        "only_disagreement": {
+          "median": 0.2652573883533478,
+          "visibility": 0.16612174376696665,
+          "balanced": 0.4067904386267782,
+          "shared": 0.18280862256901742,
+          "same_params_visibility": 0.1861432672289099
+        },
+        "both": {
+          "median": 0.14042459428310394,
+          "visibility": 0.1629650906836171,
+          "balanced": 0.24550115916863172,
+          "shared": 0.21319617064293325,
+          "same_params_visibility": 0.22064500678967133
+        },
+        "no_lidar_state": {
+          "median": 0.5553520321846008,
+          "visibility": 0.7472458471405197,
+          "balanced": 0.6897184933183585,
+          "shared": 0.7471776509202358,
+          "same_params_visibility": 0.7472678811479819
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.3385826349258423,
+      "max_baseline": 0.8810399174690247,
+      "direction": 70.2960359783241
+    },
+    {
+      "scene": "office",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\office\\images\\dslr_images\\DSC_0229.JPG",
+      "count": {
+        "all": 167,
+        "hard": 104,
+        "lidar_occluded": 8,
+        "disagreement": 103,
+        "only_lidar": 1,
+        "only_disagreement": 96,
+        "both": 7,
+        "no_lidar_state": 3,
+        "valid_reference": 680
+      },
+      "scores": {
+        "all": {
+          "median": 0.15443845093250275,
+          "visibility": 0.054814239860780045,
+          "balanced": 0.46222518158506987,
+          "shared": 0.058390672810130544,
+          "same_params_visibility": 0.058403699413250354
+        },
+        "hard": {
+          "median": 0.23190777003765106,
+          "visibility": 0.08089912412021039,
+          "balanced": 0.5457030352055979,
+          "shared": 0.08526527078846796,
+          "same_params_visibility": 0.08537213810049607
+        },
+        "lidar_occluded": {
+          "median": 0.3139214813709259,
+          "visibility": 0.2979300430910472,
+          "balanced": 0.7359890337288467,
+          "shared": 0.32529640386123293,
+          "same_params_visibility": 0.32347137696921313
+        },
+        "disagreement": {
+          "median": 0.23377403616905212,
+          "visibility": 0.08133357180202765,
+          "balanced": 0.5442703485659632,
+          "shared": 0.08571253456225321,
+          "same_params_visibility": 0.08583791243433239
+        },
+        "only_lidar": {
+          "median": 0.03968179225921631,
+          "visibility": 0.0361510128930318,
+          "balanced": 0.6932697590879591,
+          "shared": 0.03919710208859084,
+          "same_params_visibility": 0.037397381715357114
+        },
+        "only_disagreement": {
+          "median": 0.22507329285144806,
+          "visibility": 0.06281321420597398,
+          "balanced": 0.5298458686619939,
+          "shared": 0.06526267636573757,
+          "same_params_visibility": 0.0655305348614363
+        },
+        "both": {
+          "median": 0.353098601102829,
+          "visibility": 0.3353270474050494,
+          "balanced": 0.7420917872489735,
+          "shared": 0.36616773268589603,
+          "same_params_visibility": 0.3643390905769069
+        },
+        "no_lidar_state": {
+          "median": 0.009565134532749653,
+          "visibility": 0.004873176530545346,
+          "balanced": 0.6325249956704596,
+          "shared": 0.02811096472466808,
+          "same_params_visibility": 0.030659149487783994
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 2,
+      "min_baseline": 0.0939595028758049,
+      "max_baseline": 0.7374746799468994,
+      "direction": 53.85534333239346
+    },
+    {
+      "scene": "office",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\office\\images\\dslr_images\\DSC_0237.JPG",
+      "count": {
+        "all": 382,
+        "hard": 378,
+        "lidar_occluded": 23,
+        "disagreement": 378,
+        "only_lidar": 0,
+        "only_disagreement": 355,
+        "both": 23,
+        "no_lidar_state": 6,
+        "valid_reference": 778
+      },
+      "scores": {
+        "all": {
+          "median": 0.4357798993587494,
+          "visibility": 0.24891619693033154,
+          "balanced": 0.45374629540664674,
+          "shared": 0.2533602670899694,
+          "same_params_visibility": 0.2524753894736036
+        },
+        "hard": {
+          "median": 0.43840301036834717,
+          "visibility": 0.24946067295326382,
+          "balanced": 0.45661443588673484,
+          "shared": 0.2559107168081808,
+          "same_params_visibility": 0.2550020262939041
+        },
+        "lidar_occluded": {
+          "median": 0.3735947012901306,
+          "visibility": 0.2458711913629639,
+          "balanced": 0.6038779790518687,
+          "shared": 0.276289382850434,
+          "same_params_visibility": 0.28107719871355696
+        },
+        "disagreement": {
+          "median": 0.43840301036834717,
+          "visibility": 0.24946067295326382,
+          "balanced": 0.45661443588673484,
+          "shared": 0.2559107168081808,
+          "same_params_visibility": 0.2550020262939041
+        },
+        "only_disagreement": {
+          "median": 0.44260185956954956,
+          "visibility": 0.24969323091545223,
+          "balanced": 0.44707341759716274,
+          "shared": 0.2545904088674151,
+          "same_params_visibility": 0.2533126489258703
+        },
+        "both": {
+          "median": 0.3735947012901306,
+          "visibility": 0.2458711913629639,
+          "balanced": 0.6038779790518687,
+          "shared": 0.276289382850434,
+          "same_params_visibility": 0.28107719871355696
+        },
+        "no_lidar_state": {
+          "median": 0.3930598795413971,
+          "visibility": 0.2390027233614973,
+          "balanced": 0.5926314411627324,
+          "shared": 0.2453683030816108,
+          "same_params_visibility": 0.24775064022131424
+        }
+      },
+      "cameras": 7,
+      "direction_groups": 3,
+      "min_baseline": 0.21014802157878876,
+      "max_baseline": 0.7286829352378845,
+      "direction": 88.35065525389275
+    },
+    {
+      "scene": "office",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\office\\images\\dslr_images\\DSC_0242.JPG",
+      "count": {
+        "all": 173,
+        "hard": 133,
+        "lidar_occluded": 26,
+        "disagreement": 130,
+        "only_lidar": 3,
+        "only_disagreement": 107,
+        "both": 23,
+        "no_lidar_state": 9,
+        "valid_reference": 480
+      },
+      "scores": {
+        "all": {
+          "median": 0.49062225222587585,
+          "visibility": 0.23530747436127933,
+          "balanced": 0.27682826324142923,
+          "shared": 0.2241099348818538,
+          "same_params_visibility": 0.22329920645715012
+        },
+        "hard": {
+          "median": 0.5709465146064758,
+          "visibility": 0.19402068078935222,
+          "balanced": 0.23574181928116505,
+          "shared": 0.19141272798854267,
+          "same_params_visibility": 0.19037934485376168
+        },
+        "lidar_occluded": {
+          "median": 0.21958032250404358,
+          "visibility": 0.25449581422065487,
+          "balanced": 0.31353786656701416,
+          "shared": 0.275188697215579,
+          "same_params_visibility": 0.2702618205314946
+        },
+        "disagreement": {
+          "median": 0.5837339162826538,
+          "visibility": 0.19812841774654544,
+          "balanced": 0.24080970120146414,
+          "shared": 0.19542020018919548,
+          "same_params_visibility": 0.19436742170152066
+        },
+        "only_lidar": {
+          "median": 0.01682613231241703,
+          "visibility": 0.01601874597764848,
+          "balanced": 0.016133602734873336,
+          "shared": 0.01775559929358998,
+          "same_params_visibility": 0.017562681450871993
+        },
+        "only_disagreement": {
+          "median": 0.6563252210617065,
+          "visibility": 0.17932578855370862,
+          "balanced": 0.21683810685656624,
+          "shared": 0.1710559504193563,
+          "same_params_visibility": 0.17096864982926582
+        },
+        "both": {
+          "median": 0.24602650105953217,
+          "visibility": 0.28560151877409057,
+          "balanced": 0.35232972706685856,
+          "shared": 0.3087669273793167,
+          "same_params_visibility": 0.30322257780288014
+        },
+        "no_lidar_state": {
+          "median": 1.070340633392334,
+          "visibility": 0.38137351560020416,
+          "balanced": 0.4629675864701938,
+          "shared": 0.36388176727959776,
+          "same_params_visibility": 0.3641258388199394
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 4,
+      "min_baseline": 0.195460706949234,
+      "max_baseline": 1.3054853677749634,
+      "direction": 84.45738595528283
+    },
+    {
+      "scene": "office",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\office\\images\\dslr_images\\DSC_0255.JPG",
+      "count": {
+        "all": 77,
+        "hard": 67,
+        "lidar_occluded": 12,
+        "disagreement": 66,
+        "only_lidar": 1,
+        "only_disagreement": 55,
+        "both": 11,
+        "no_lidar_state": 0,
+        "valid_reference": 309
+      },
+      "scores": {
+        "all": {
+          "median": 0.18720658123493195,
+          "visibility": 0.11783778704822434,
+          "balanced": 0.13488154730583382,
+          "shared": 0.0989760488829032,
+          "same_params_visibility": 0.10031883723291073
+        },
+        "hard": {
+          "median": 0.2125539928674698,
+          "visibility": 0.13470020678078515,
+          "balanced": 0.15173120322085223,
+          "shared": 0.11307029873175663,
+          "same_params_visibility": 0.11461456856786807
+        },
+        "lidar_occluded": {
+          "median": 0.2905258536338806,
+          "visibility": 0.2978814820211622,
+          "balanced": 0.18239744067549765,
+          "shared": 0.2154584995965938,
+          "same_params_visibility": 0.2210332533672538
+        },
+        "disagreement": {
+          "median": 0.2157575488090515,
+          "visibility": 0.13670078954517503,
+          "balanced": 0.15396359656649208,
+          "shared": 0.11474158462261927,
+          "same_params_visibility": 0.11630945712826216
+        },
+        "only_lidar": {
+          "median": 0.001119375228881836,
+          "visibility": 0.0026617443310527067,
+          "balanced": 0.004393242408620601,
+          "shared": 0.0027654299348219835,
+          "same_params_visibility": 0.0027519235818589394
+        },
+        "only_disagreement": {
+          "median": 0.19554193317890167,
+          "visibility": 0.09909701945561196,
+          "balanced": 0.14504038777620235,
+          "shared": 0.0907310549067012,
+          "same_params_visibility": 0.09139594642982027
+        },
+        "both": {
+          "median": 0.31683552265167236,
+          "visibility": 0.32471963999299036,
+          "balanced": 0.198579640517941,
+          "shared": 0.2347942332022094,
+          "same_params_visibility": 0.2408770106204715
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 2,
+      "min_baseline": 0.5095533728599548,
+      "max_baseline": 1.2641422748565674,
+      "direction": 55.908721999280154
+    },
+    {
+      "scene": "courtyard",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\courtyard\\images\\dslr_images\\DSC_0286.JPG",
+      "count": {
+        "all": 400,
+        "hard": 364,
+        "lidar_occluded": 7,
+        "disagreement": 364,
+        "only_lidar": 0,
+        "only_disagreement": 357,
+        "both": 7,
+        "no_lidar_state": 5,
+        "valid_reference": 487
+      },
+      "scores": {
+        "all": {
+          "median": 0.26553717255592346,
+          "visibility": 0.213263547842293,
+          "balanced": 0.3089106686999858,
+          "shared": 0.21601153326334757,
+          "same_params_visibility": 0.21688898420007405
+        },
+        "hard": {
+          "median": 0.2900216579437256,
+          "visibility": 0.23248154100239976,
+          "balanced": 0.33765264735467343,
+          "shared": 0.23541818396855893,
+          "same_params_visibility": 0.23638011321130403
+        },
+        "lidar_occluded": {
+          "median": 0.3846626579761505,
+          "visibility": 0.34429103103485514,
+          "balanced": 0.5725515937989266,
+          "shared": 0.2918070112181899,
+          "same_params_visibility": 0.2985142791231735
+        },
+        "disagreement": {
+          "median": 0.2900216579437256,
+          "visibility": 0.23248154100239976,
+          "balanced": 0.33765264735467343,
+          "shared": 0.23541818396855893,
+          "same_params_visibility": 0.23638011321130403
+        },
+        "only_disagreement": {
+          "median": 0.28816598653793335,
+          "visibility": 0.23028919806058687,
+          "balanced": 0.33304678565968804,
+          "shared": 0.23431252068915442,
+          "same_params_visibility": 0.2351617962326399
+        },
+        "both": {
+          "median": 0.3846626579761505,
+          "visibility": 0.34429103103485514,
+          "balanced": 0.5725515937989266,
+          "shared": 0.2918070112181899,
+          "same_params_visibility": 0.2985142791231735
+        },
+        "no_lidar_state": {
+          "median": 0.140222430229187,
+          "visibility": 0.21782320722195356,
+          "balanced": 0.4219177135859641,
+          "shared": 0.14798833471236075,
+          "same_params_visibility": 0.14762597259006355
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.28199103474617004,
+      "max_baseline": 11.463506698608398,
+      "direction": 88.2387426043419
+    },
+    {
+      "scene": "courtyard",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\courtyard\\images\\dslr_images\\DSC_0291.JPG",
+      "count": {
+        "all": 258,
+        "hard": 237,
+        "lidar_occluded": 15,
+        "disagreement": 237,
+        "only_lidar": 0,
+        "only_disagreement": 222,
+        "both": 15,
+        "no_lidar_state": 3,
+        "valid_reference": 284
+      },
+      "scores": {
+        "all": {
+          "median": 0.1336224377155304,
+          "visibility": 0.1535936126163912,
+          "balanced": 0.459071945112145,
+          "shared": 0.1401891150162169,
+          "same_params_visibility": 0.1448139393284138
+        },
+        "hard": {
+          "median": 0.14493893086910248,
+          "visibility": 0.16674442830750358,
+          "balanced": 0.49921406416743086,
+          "shared": 0.15205679193691196,
+          "same_params_visibility": 0.1570908338282707
+        },
+        "lidar_occluded": {
+          "median": 0.15309539437294006,
+          "visibility": 0.26046407562542045,
+          "balanced": 0.45934963471571744,
+          "shared": 0.32322018637859895,
+          "same_params_visibility": 0.3278065457092988
+        },
+        "disagreement": {
+          "median": 0.14493893086910248,
+          "visibility": 0.16674442830750358,
+          "balanced": 0.49921406416743086,
+          "shared": 0.15205679193691196,
+          "same_params_visibility": 0.1570908338282707
+        },
+        "only_disagreement": {
+          "median": 0.14438782632350922,
+          "visibility": 0.1604120197049416,
+          "balanced": 0.501907606697952,
+          "shared": 0.14049169771787906,
+          "same_params_visibility": 0.1455559884309039
+        },
+        "both": {
+          "median": 0.15309539437294006,
+          "visibility": 0.26046407562542045,
+          "balanced": 0.45934963471571744,
+          "shared": 0.32322018637859895,
+          "same_params_visibility": 0.3278065457092988
+        },
+        "no_lidar_state": {
+          "median": 0.011581460945308208,
+          "visibility": 0.06936894604023787,
+          "balanced": 0.5536733583831707,
+          "shared": 0.030096050629926856,
+          "same_params_visibility": 0.02811380898119305
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.5086609125137329,
+      "max_baseline": 10.05559253692627,
+      "direction": 73.55452072896443
+    },
+    {
+      "scene": "courtyard",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\courtyard\\images\\dslr_images\\DSC_0296.JPG",
+      "count": {
+        "all": 309,
+        "hard": 299,
+        "lidar_occluded": 11,
+        "disagreement": 299,
+        "only_lidar": 0,
+        "only_disagreement": 288,
+        "both": 11,
+        "no_lidar_state": 3,
+        "valid_reference": 370
+      },
+      "scores": {
+        "all": {
+          "median": 0.26921531558036804,
+          "visibility": 0.265666171103713,
+          "balanced": 0.3718375646651771,
+          "shared": 0.2693980877525173,
+          "same_params_visibility": 0.26271378810519114
+        },
+        "hard": {
+          "median": 0.27766507863998413,
+          "visibility": 0.2739997027351758,
+          "balanced": 0.38354695102984115,
+          "shared": 0.2778630214767284,
+          "same_params_visibility": 0.27095455042903016
+        },
+        "lidar_occluded": {
+          "median": 0.1406843662261963,
+          "visibility": 0.13606223835120207,
+          "balanced": 0.3799155000327268,
+          "shared": 0.19854776312702604,
+          "same_params_visibility": 0.1916823816588573
+        },
+        "disagreement": {
+          "median": 0.27766507863998413,
+          "visibility": 0.2739997027351758,
+          "balanced": 0.38354695102984115,
+          "shared": 0.2778630214767284,
+          "same_params_visibility": 0.27095455042903016
+        },
+        "only_disagreement": {
+          "median": 0.2828969955444336,
+          "visibility": 0.27926814755539703,
+          "balanced": 0.38368565228320306,
+          "shared": 0.2808924237053628,
+          "same_params_visibility": 0.27398230687511316
+        },
+        "both": {
+          "median": 0.1406843662261963,
+          "visibility": 0.13606223835120207,
+          "balanced": 0.3799155000327268,
+          "shared": 0.19854776312702604,
+          "same_params_visibility": 0.1916823816588573
+        },
+        "no_lidar_state": {
+          "median": 0.15839587152004242,
+          "visibility": 0.005495927741472895,
+          "balanced": 0.14440576448285472,
+          "shared": 0.006030509321050352,
+          "same_params_visibility": 0.005904605597576477
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.6363867521286011,
+      "max_baseline": 10.47431755065918,
+      "direction": 79.92611050753501
+    },
+    {
+      "scene": "courtyard",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\courtyard\\images\\dslr_images\\DSC_0310.JPG",
+      "count": {
+        "all": 392,
+        "hard": 373,
+        "lidar_occluded": 10,
+        "disagreement": 373,
+        "only_lidar": 0,
+        "only_disagreement": 363,
+        "both": 10,
+        "no_lidar_state": 4,
+        "valid_reference": 471
+      },
+      "scores": {
+        "all": {
+          "median": 0.2551265358924866,
+          "visibility": 0.14197157124313328,
+          "balanced": 0.23579784161113054,
+          "shared": 0.1294481615702678,
+          "same_params_visibility": 0.13107334596170359
+        },
+        "hard": {
+          "median": 0.26760658621788025,
+          "visibility": 0.14880013221618885,
+          "balanced": 0.24741053526835188,
+          "shared": 0.13566584212046928,
+          "same_params_visibility": 0.13737393592401542
+        },
+        "lidar_occluded": {
+          "median": 0.3536081314086914,
+          "visibility": 0.3700660066468663,
+          "balanced": 0.24036377299708872,
+          "shared": 0.3247550164556085,
+          "same_params_visibility": 0.3047557842145087
+        },
+        "disagreement": {
+          "median": 0.26760658621788025,
+          "visibility": 0.14880013221618885,
+          "balanced": 0.24741053526835188,
+          "shared": 0.13566584212046928,
+          "same_params_visibility": 0.13737393592401542
+        },
+        "only_disagreement": {
+          "median": 0.26523739099502563,
+          "visibility": 0.14270465358173495,
+          "balanced": 0.24760466095075584,
+          "shared": 0.13045677395696684,
+          "same_params_visibility": 0.1327628657231754
+        },
+        "both": {
+          "median": 0.3536081314086914,
+          "visibility": 0.3700660066468663,
+          "balanced": 0.24036377299708872,
+          "shared": 0.3247550164556085,
+          "same_params_visibility": 0.3047557842145087
+        },
+        "no_lidar_state": {
+          "median": 0.32151514291763306,
+          "visibility": 0.13507322030643978,
+          "balanced": 0.4781505281262438,
+          "shared": 0.14912290646202717,
+          "same_params_visibility": 0.1475366983903028
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.28199103474617004,
+      "max_baseline": 11.429926872253418,
+      "direction": 84.38992204241653
+    },
+    {
+      "scene": "courtyard",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\courtyard\\images\\dslr_images\\DSC_0318.JPG",
+      "count": {
+        "all": 537,
+        "hard": 515,
+        "lidar_occluded": 8,
+        "disagreement": 515,
+        "only_lidar": 0,
+        "only_disagreement": 507,
+        "both": 8,
+        "no_lidar_state": 2,
+        "valid_reference": 694
+      },
+      "scores": {
+        "all": {
+          "median": 0.41862642765045166,
+          "visibility": 0.4164676481466468,
+          "balanced": 0.5720828984852165,
+          "shared": 0.4247250513808035,
+          "same_params_visibility": 0.4163764963055251
+        },
+        "hard": {
+          "median": 0.4362317621707916,
+          "visibility": 0.43398648339075246,
+          "balanced": 0.5944494865703364,
+          "shared": 0.44261092703463767,
+          "same_params_visibility": 0.433910010874276
+        },
+        "lidar_occluded": {
+          "median": 0.20737063884735107,
+          "visibility": 0.6837656638530467,
+          "balanced": 0.7721936312488054,
+          "shared": 0.6841598036778596,
+          "same_params_visibility": 0.6834122482338074
+        },
+        "disagreement": {
+          "median": 0.4362317621707916,
+          "visibility": 0.43398648339075246,
+          "balanced": 0.5944494865703364,
+          "shared": 0.44261092703463767,
+          "same_params_visibility": 0.433910010874276
+        },
+        "only_disagreement": {
+          "median": 0.4398430287837982,
+          "visibility": 0.430045194547166,
+          "balanced": 0.5916448452341871,
+          "shared": 0.4387995049179793,
+          "same_params_visibility": 0.4299730919415812
+        },
+        "both": {
+          "median": 0.20737063884735107,
+          "visibility": 0.6837656638530467,
+          "balanced": 0.7721936312488054,
+          "shared": 0.6841598036778596,
+          "same_params_visibility": 0.6834122482338074
+        },
+        "no_lidar_state": {
+          "median": 0.4080544710159302,
+          "visibility": 0.014807329945987824,
+          "balanced": 0.7900388803314861,
+          "shared": 0.02763372431517036,
+          "same_params_visibility": 0.023541897508439602
+        }
+      },
+      "cameras": 7,
+      "direction_groups": 3,
+      "min_baseline": 1.693929672241211,
+      "max_baseline": 5.617485046386719,
+      "direction": 64.43171026214519
+    },
+    {
+      "scene": "kicker",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\kicker\\images\\dslr_images\\DSC_6489.JPG",
+      "count": {
+        "all": 301,
+        "hard": 250,
+        "lidar_occluded": 34,
+        "disagreement": 249,
+        "only_lidar": 1,
+        "only_disagreement": 216,
+        "both": 33,
+        "no_lidar_state": 35,
+        "valid_reference": 592
+      },
+      "scores": {
+        "all": {
+          "median": 1.1736161708831787,
+          "visibility": 0.7168540169577031,
+          "balanced": 0.6443931696343028,
+          "shared": 0.7114316771804198,
+          "same_params_visibility": 0.714073540168293
+        },
+        "hard": {
+          "median": 1.0744061470031738,
+          "visibility": 0.4740966265734071,
+          "balanced": 0.3808845362699448,
+          "shared": 0.46530325000656353,
+          "same_params_visibility": 0.4684865133049087
+        },
+        "lidar_occluded": {
+          "median": 0.5076521039009094,
+          "visibility": 0.33572793288991043,
+          "balanced": 0.2335115989296885,
+          "shared": 0.31136948673872467,
+          "same_params_visibility": 0.31926654373162466
+        },
+        "disagreement": {
+          "median": 1.0747523307800293,
+          "visibility": 0.47259273327063284,
+          "balanced": 0.38226810728623717,
+          "shared": 0.4631685044763889,
+          "same_params_visibility": 0.46636541424906836
+        },
+        "only_lidar": {
+          "median": 0.9881846904754639,
+          "visibility": 0.8485660589642132,
+          "balanced": 0.03637535321312524,
+          "shared": 0.9968548870200404,
+          "same_params_visibility": 0.9966401782091745
+        },
+        "only_disagreement": {
+          "median": 1.1636173725128174,
+          "visibility": 0.49587688391247614,
+          "balanced": 0.4040821282586887,
+          "shared": 0.4895335645950196,
+          "same_params_visibility": 0.4919748418488515
+        },
+        "both": {
+          "median": 0.49309054017066956,
+          "visibility": 0.3201873836149316,
+          "balanced": 0.23948542455746316,
+          "shared": 0.2905972018817151,
+          "same_params_visibility": 0.2987400699595777
+        },
+        "no_lidar_state": {
+          "median": 2.7795279026031494,
+          "visibility": 3.0864162660298047,
+          "balanced": 3.0177511924854357,
+          "shared": 3.1487871154817384,
+          "same_params_visibility": 3.148926878474188
+        }
+      },
+      "cameras": 5,
+      "direction_groups": 2,
+      "min_baseline": 0.2279743105173111,
+      "max_baseline": 3.143209218978882,
+      "direction": 37.3252610125871
+    },
+    {
+      "scene": "kicker",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\kicker\\images\\dslr_images\\DSC_6493.JPG",
+      "count": {
+        "all": 279,
+        "hard": 263,
+        "lidar_occluded": 47,
+        "disagreement": 262,
+        "only_lidar": 1,
+        "only_disagreement": 216,
+        "both": 46,
+        "no_lidar_state": 0,
+        "valid_reference": 373
+      },
+      "scores": {
+        "all": {
+          "median": 0.40980368852615356,
+          "visibility": 0.2929742942381463,
+          "balanced": 0.4453040377869703,
+          "shared": 0.28938255598647666,
+          "same_params_visibility": 0.29276904542541465
+        },
+        "hard": {
+          "median": 0.43365177512168884,
+          "visibility": 0.30978164492612964,
+          "balanced": 0.4703251472707657,
+          "shared": 0.3059752938556406,
+          "same_params_visibility": 0.3095683014999892
+        },
+        "lidar_occluded": {
+          "median": 0.2871119976043701,
+          "visibility": 0.34305703774035506,
+          "balanced": 0.5247427813302538,
+          "shared": 0.29661126938236393,
+          "same_params_visibility": 0.28438625775021786
+        },
+        "disagreement": {
+          "median": 0.4353027045726776,
+          "visibility": 0.31094340969577056,
+          "balanced": 0.4721151595506442,
+          "shared": 0.3071234063903055,
+          "same_params_visibility": 0.31072928258777144
+        },
+        "only_lidar": {
+          "median": 0.001109480857849121,
+          "visibility": 0.005399275280203675,
+          "balanced": 0.0013419299425916353,
+          "shared": 0.005169809773427847,
+          "same_params_visibility": 0.005391256501049879
+        },
+        "only_disagreement": {
+          "median": 0.46553775668144226,
+          "visibility": 0.3025411659341453,
+          "balanced": 0.4584842731930067,
+          "shared": 0.3080128362178812,
+          "same_params_visibility": 0.31504772768628214
+        },
+        "both": {
+          "median": 0.2933294475078583,
+          "visibility": 0.35039742388079315,
+          "balanced": 0.5361210607082464,
+          "shared": 0.302946953286906,
+          "same_params_visibility": 0.2904513664730258
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.24700164794921875,
+      "max_baseline": 4.288841247558594,
+      "direction": 84.2892403582955
+    },
+    {
+      "scene": "kicker",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\kicker\\images\\dslr_images\\DSC_6506.JPG",
+      "count": {
+        "all": 243,
+        "hard": 220,
+        "lidar_occluded": 56,
+        "disagreement": 220,
+        "only_lidar": 0,
+        "only_disagreement": 164,
+        "both": 56,
+        "no_lidar_state": 2,
+        "valid_reference": 512
+      },
+      "scores": {
+        "all": {
+          "median": 0.25542810559272766,
+          "visibility": 0.28540883863976624,
+          "balanced": 0.5978329012945873,
+          "shared": 0.2718305687824068,
+          "same_params_visibility": 0.2685075406999629
+        },
+        "hard": {
+          "median": 0.28062769770622253,
+          "visibility": 0.3136700296559709,
+          "balanced": 0.6228580673129577,
+          "shared": 0.29852482040957107,
+          "same_params_visibility": 0.29488328384437984
+        },
+        "lidar_occluded": {
+          "median": 0.3959546685218811,
+          "visibility": 0.47604424796255745,
+          "balanced": 0.6244160111200117,
+          "shared": 0.4980481782588838,
+          "same_params_visibility": 0.4932426765345777
+        },
+        "disagreement": {
+          "median": 0.28062769770622253,
+          "visibility": 0.3136700296559709,
+          "balanced": 0.6228580673129577,
+          "shared": 0.29852482040957107,
+          "same_params_visibility": 0.29488328384437984
+        },
+        "only_disagreement": {
+          "median": 0.2412477284669876,
+          "visibility": 0.25822517462445366,
+          "balanced": 0.6223260865007929,
+          "shared": 0.230394893339074,
+          "same_params_visibility": 0.22715080829162945
+        },
+        "both": {
+          "median": 0.3959546685218811,
+          "visibility": 0.47604424796255745,
+          "balanced": 0.6244160111200117,
+          "shared": 0.4980481782588838,
+          "same_params_visibility": 0.4932426765345777
+        },
+        "no_lidar_state": {
+          "median": 0.5179151296615601,
+          "visibility": 0.021116191640542403,
+          "balanced": 0.6544917740459977,
+          "shared": 0.020358429663205946,
+          "same_params_visibility": 0.020775744132865703
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 2,
+      "min_baseline": 0.40494605898857117,
+      "max_baseline": 3.6778297424316406,
+      "direction": 32.40935006454805
+    },
+    {
+      "scene": "kicker",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\kicker\\images\\dslr_images\\DSC_6514.JPG",
+      "count": {
+        "all": 298,
+        "hard": 279,
+        "lidar_occluded": 74,
+        "disagreement": 277,
+        "only_lidar": 2,
+        "only_disagreement": 205,
+        "both": 72,
+        "no_lidar_state": 1,
+        "valid_reference": 466
+      },
+      "scores": {
+        "all": {
+          "median": 0.28537678718566895,
+          "visibility": 0.33801589146591515,
+          "balanced": 0.6516398773864548,
+          "shared": 0.34025899537505316,
+          "same_params_visibility": 0.33804586519365476
+        },
+        "hard": {
+          "median": 0.3038870394229889,
+          "visibility": 0.3600918364449083,
+          "balanced": 0.6744148447707699,
+          "shared": 0.3602653230442036,
+          "same_params_visibility": 0.3579338223987743
+        },
+        "lidar_occluded": {
+          "median": 0.40571147203445435,
+          "visibility": 0.4518914100776659,
+          "balanced": 0.7419591312214137,
+          "shared": 0.43751106639335036,
+          "same_params_visibility": 0.4342866535699595
+        },
+        "disagreement": {
+          "median": 0.3056579828262329,
+          "visibility": 0.3597528042807457,
+          "balanced": 0.6760015576994831,
+          "shared": 0.3599246460665827,
+          "same_params_visibility": 0.35757634587968884
+        },
+        "only_lidar": {
+          "median": 0.058612704277038574,
+          "visibility": 0.40704779118143236,
+          "balanced": 0.4546551041439942,
+          "shared": 0.40744908444469796,
+          "same_params_visibility": 0.407444320292108
+        },
+        "only_disagreement": {
+          "median": 0.26713091135025024,
+          "visibility": 0.3269544293774738,
+          "balanced": 0.6500330047837083,
+          "shared": 0.3323814937376824,
+          "same_params_visibility": 0.3303723126101513
+        },
+        "both": {
+          "median": 0.41535311937332153,
+          "visibility": 0.45313706615811683,
+          "balanced": 0.7499397986402309,
+          "shared": 0.43834612144747964,
+          "same_params_visibility": 0.4350322739387888
+        },
+        "no_lidar_state": {
+          "median": 2.3044674396514893,
+          "visibility": 0.11252464262233575,
+          "balanced": 0.294116757283442,
+          "shared": 0.25334232927521794,
+          "same_params_visibility": 0.25110162721653106
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 3,
+      "min_baseline": 0.8194671273231506,
+      "max_baseline": 2.8840062618255615,
+      "direction": 86.7265802438086
+    },
+    {
+      "scene": "kicker",
+      "ref": "C:\\Users\\user\\OneDrive\\\ucf54\ub4dc\\\ubc14\uc774\ube0c\uc5f0\uad6c\\research-sources\\encoder42_eval\\pf42-trials\\crossview-b\\eth3d\\kicker\\images\\dslr_images\\DSC_6519.JPG",
+      "count": {
+        "all": 184,
+        "hard": 181,
+        "lidar_occluded": 71,
+        "disagreement": 180,
+        "only_lidar": 1,
+        "only_disagreement": 110,
+        "both": 70,
+        "no_lidar_state": 1,
+        "valid_reference": 266
+      },
+      "scores": {
+        "all": {
+          "median": 0.2849353551864624,
+          "visibility": 0.3267852450395355,
+          "balanced": 0.42138154394780114,
+          "shared": 0.2451919540135517,
+          "same_params_visibility": 0.2442036076618182
+        },
+        "hard": {
+          "median": 0.28948888182640076,
+          "visibility": 0.332064956827871,
+          "balanced": 0.42820149712597316,
+          "shared": 0.24914864115391774,
+          "same_params_visibility": 0.24814278915219187
+        },
+        "lidar_occluded": {
+          "median": 0.33500900864601135,
+          "visibility": 0.5744702050897683,
+          "balanced": 0.5199387896318086,
+          "shared": 0.3646032148283608,
+          "same_params_visibility": 0.34856158344473664
+        },
+        "disagreement": {
+          "median": 0.2907898724079132,
+          "visibility": 0.33358688392133656,
+          "balanced": 0.430246717751548,
+          "shared": 0.2502004355638768,
+          "same_params_visibility": 0.24918844704133558
+        },
+        "only_lidar": {
+          "median": 0.05531388521194458,
+          "visibility": 0.05811808000407637,
+          "balanced": 0.060061784522499106,
+          "shared": 0.05982564736129503,
+          "same_params_visibility": 0.05992436910632282
+        },
+        "only_disagreement": {
+          "median": 0.26010772585868835,
+          "visibility": 0.1756033874951919,
+          "balanced": 0.3689892446903882,
+          "shared": 0.17462796178223172,
+          "same_params_visibility": 0.18332702192700384
+        },
+        "both": {
+          "median": 0.33900466561317444,
+          "visibility": 0.5818466640195639,
+          "balanced": 0.5265084611333704,
+          "shared": 0.3689571800778903,
+          "same_params_visibility": 0.3526849722209997
+        },
+        "no_lidar_state": {
+          "median": 0.13743078708648682,
+          "visibility": 0.07230729215680642,
+          "balanced": 0.07529825786282163,
+          "shared": 0.0967898778152636,
+          "same_params_visibility": 0.09641001420261386
+        }
+      },
+      "cameras": 8,
+      "direction_groups": 2,
+      "min_baseline": 0.7094888091087341,
+      "max_baseline": 3.8657994270324707,
+      "direction": 40.810383933291874
+    }
+  ],
+  "counts": {
+    "all": 4582,
+    "hard": 4119,
+    "lidar_occluded": 457,
+    "disagreement": 4106,
+    "only_lidar": 13,
+    "only_disagreement": 3662,
+    "both": 444,
+    "no_lidar_state": 95,
+    "valid_reference": 8136
+  },
+  "means": {
+    "all": {
+      "median": 0.3869131110608578,
+      "visibility": 0.27874614538047215,
+      "balanced": 0.4426048734349377,
+      "shared": 0.2697832455028656,
+      "same_params_visibility": 0.26960020829473474
+    },
+    "hard": {
+      "median": 0.3862254723906517,
+      "visibility": 0.2600570694477189,
+      "balanced": 0.43556388257195866,
+      "shared": 0.25090793265029854,
+      "same_params_visibility": 0.25093853924858833
+    },
+    "lidar_occluded": {
+      "median": 0.29211108162999155,
+      "visibility": 0.29555727219850575,
+      "balanced": 0.4683464496529234,
+      "shared": 0.28168317551602334,
+      "same_params_visibility": 0.28118781236969903
+    },
+    "disagreement": {
+      "median": 0.3881607480347157,
+      "visibility": 0.2609248406418573,
+      "balanced": 0.43658282924068176,
+      "shared": 0.2517043961892107,
+      "same_params_visibility": 0.2517444688658742
+    },
+    "only_lidar": {
+      "median": 0.09863523471479614,
+      "visibility": 0.11760339992296032,
+      "balanced": 0.2209478733052901,
+      "shared": 0.1334409961288288,
+      "same_params_visibility": 0.1332219275247057
+    },
+    "only_disagreement": {
+      "median": 0.3972238220274449,
+      "visibility": 0.24867531502687115,
+      "balanced": 0.4305811918324417,
+      "shared": 0.24368090085339403,
+      "same_params_visibility": 0.24432886320750713
+    },
+    "both": {
+      "median": 0.300102598965168,
+      "visibility": 0.30226959391772357,
+      "balanced": 0.47542283786910833,
+      "shared": 0.28781581346950763,
+      "same_params_visibility": 0.287320304325446
+    },
+    "no_lidar_state": {
+      "median": 0.6456799215287902,
+      "visibility": 0.442236557002225,
+      "balanced": 0.6924269305647233,
+      "shared": 0.5140938387062377,
+      "same_params_visibility": 0.513274326720869
+    }
+  },
+  "scenes": {
+    "all": {
+      "pipes": {
+        "median": 0.5084928423166275,
+        "visibility": 0.3292340974460921,
+        "balanced": 0.5050250371395808,
+        "shared": 0.31725109744259894,
+        "same_params_visibility": 0.3176814991058175
+      },
+      "office": {
+        "median": 0.2889020025730133,
+        "visibility": 0.15555031661714763,
+        "balanced": 0.3237439668754155,
+        "shared": 0.154308344504651,
+        "same_params_visibility": 0.15482610346311132
+      },
+      "courtyard": {
+        "median": 0.26842557787895205,
+        "visibility": 0.23819251019043547,
+        "balanced": 0.38954018371473104,
+        "shared": 0.2359543897966306,
+        "same_params_visibility": 0.23437331078018153
+      },
+      "kicker": {
+        "median": 0.4818320214748383,
+        "visibility": 0.3920076572682133,
+        "balanced": 0.5521103060100233,
+        "shared": 0.37161915026758163,
+        "same_params_visibility": 0.3715199198298287
+      }
+    },
+    "hard": {
+      "pipes": {
+        "median": 0.4459295868873596,
+        "visibility": 0.26643846686919803,
+        "balanced": 0.4611295699933339,
+        "shared": 0.2527103275767939,
+        "same_params_visibility": 0.2537191443308744
+      },
+      "office": {
+        "median": 0.3392671912908554,
+        "visibility": 0.16464633450561603,
+        "balanced": 0.3533344048662915,
+        "shared": 0.16635498402295976,
+        "same_params_visibility": 0.16709018177005097
+      },
+      "courtyard": {
+        "median": 0.2832928031682968,
+        "visibility": 0.25120245753040404,
+        "balanced": 0.4124547368781267,
+        "shared": 0.24872295330746125,
+        "same_params_visibility": 0.24714188885337926
+      },
+      "kicker": {
+        "median": 0.476412308216095,
+        "visibility": 0.35794101888565744,
+        "balanced": 0.5153368185500823,
+        "shared": 0.3358434656939793,
+        "same_params_visibility": 0.3358029420400488
+      }
+    },
+    "lidar_occluded": {
+      "pipes": {
+        "median": 0.2682178020477295,
+        "visibility": 0.136900279243382,
+        "balanced": 0.44597248374768683,
+        "shared": 0.12173928445342305,
+        "same_params_visibility": 0.12657471754969055
+      },
+      "office": {
+        "median": 0.2660544365644455,
+        "visibility": 0.2501608396963113,
+        "balanced": 0.41362482585871846,
+        "shared": 0.258866818318877,
+        "same_params_visibility": 0.2609935411349532
+      },
+      "courtyard": {
+        "median": 0.24788423776626586,
+        "visibility": 0.3589298031022782,
+        "balanced": 0.48487482655865294,
+        "shared": 0.36449795617145664,
+        "same_params_visibility": 0.3612342477879292
+      },
+      "kicker": {
+        "median": 0.3862878501415253,
+        "visibility": 0.43623816675205146,
+        "balanced": 0.5289136624466353,
+        "shared": 0.38162864312033673,
+        "same_params_visibility": 0.3759487430062233
+      }
+    },
+    "disagreement": {
+      "pipes": {
+        "median": 0.4486199617385864,
+        "visibility": 0.2681418919832169,
+        "balanced": 0.4619618727464562,
+        "shared": 0.2543940980461361,
+        "same_params_visibility": 0.2554274734466428
+      },
+      "office": {
+        "median": 0.34330410957336427,
+        "visibility": 0.16624584088891697,
+        "balanced": 0.35521678541797014,
+        "shared": 0.16791217082190052,
+        "same_params_visibility": 0.16865995844302611
+      },
+      "courtyard": {
+        "median": 0.2832928031682968,
+        "visibility": 0.25120245753040404,
+        "balanced": 0.4124547368781267,
+        "shared": 0.24872295330746125,
+        "same_params_visibility": 0.24714188885337926
+      },
+      "kicker": {
+        "median": 0.4774261176586151,
+        "visibility": 0.3581091721648913,
+        "balanced": 0.5166979219201739,
+        "shared": 0.335788362581345,
+        "same_params_visibility": 0.33574855472044873
+      }
+    },
+    "only_lidar": {
+      "pipes": {
+        "median": 0.005574047565460205,
+        "visibility": 0.006105652980561038,
+        "balanced": 0.3442177106524964,
+        "shared": 0.014697337322383874,
+        "same_params_visibility": 0.014570781296421143
+      },
+      "office": {
+        "median": 0.014526466373354197,
+        "visibility": 0.01692174543083851,
+        "balanced": 0.18051736630782134,
+        "shared": 0.018300793914237123,
+        "same_params_visibility": 0.01774497025053225
+      },
+      "kicker": {
+        "median": 0.27580519020557404,
+        "visibility": 0.3297828013574814,
+        "balanced": 0.13810854295555253,
+        "shared": 0.36732485714986535,
+        "same_params_visibility": 0.3673500310271638
+      }
+    },
+    "only_disagreement": {
+      "pipes": {
+        "median": 0.46830080449581146,
+        "visibility": 0.2829070097692285,
+        "balanced": 0.4608462657755519,
+        "shared": 0.2698531266560843,
+        "same_params_visibility": 0.27078349106150157
+      },
+      "office": {
+        "median": 0.3569599390029907,
+        "visibility": 0.1514101993795427,
+        "balanced": 0.3491176439037407,
+        "shared": 0.1528897426256455,
+        "same_params_visibility": 0.15347020945506054
+      },
+      "courtyard": {
+        "median": 0.28410624563694,
+        "visibility": 0.24854384268996527,
+        "balanced": 0.4115779101651572,
+        "shared": 0.2449905841974685,
+        "same_params_visibility": 0.2434872098406827
+      },
+      "kicker": {
+        "median": 0.47952829897403715,
+        "visibility": 0.31184020826874814,
+        "balanced": 0.5007829474853169,
+        "shared": 0.3069901499343778,
+        "same_params_visibility": 0.30957454247278365
+      }
+    },
+    "both": {
+      "pipes": {
+        "median": 0.27918368577957153,
+        "visibility": 0.14292911779768142,
+        "balanced": 0.4530463150750611,
+        "shared": 0.12714328136384098,
+        "same_params_visibility": 0.1319845207877632
+      },
+      "office": {
+        "median": 0.28599598407745364,
+        "visibility": 0.27089689764374225,
+        "balanced": 0.4284760586108547,
+        "shared": 0.2798428893521579,
+        "same_params_visibility": 0.2820321769006974
+      },
+      "courtyard": {
+        "median": 0.24788423776626586,
+        "visibility": 0.3589298031022782,
+        "balanced": 0.48487482655865294,
+        "shared": 0.36449795617145664,
+        "same_params_visibility": 0.3612342477879292
+      },
+      "kicker": {
+        "median": 0.387346488237381,
+        "visibility": 0.4363225571271926,
+        "balanced": 0.5352941512318645,
+        "shared": 0.37977912699057503,
+        "same_params_visibility": 0.37403027182539395
+      }
+    },
+    "no_lidar_state": {
+      "pipes": {
+        "median": 0.43285107612609863,
+        "visibility": 0.5142175879871176,
+        "balanced": 0.6871953487020888,
+        "shared": 0.7582469401764594,
+        "same_params_visibility": 0.7557982668441563
+      },
+      "office": {
+        "median": 0.5070794199127704,
+        "visibility": 0.3431238156581916,
+        "balanced": 0.5944606291554361,
+        "shared": 0.3461346715015281,
+        "same_params_visibility": 0.3474508774192549
+      },
+      "courtyard": {
+        "median": 0.20795387532562018,
+        "visibility": 0.0885137262512184,
+        "balanced": 0.4776372489819439,
+        "shared": 0.0721743050881071,
+        "same_params_visibility": 0.0705445966135151
+      },
+      "kicker": {
+        "median": 1.4348353147506714,
+        "visibility": 0.8230910981123722,
+        "balanced": 1.0104144954194243,
+        "shared": 0.8798194380588564,
+        "same_params_visibility": 0.8793035660065496
+      }
+    }
+  },
+  "comparisons": {
+    "all": {
+      "median": {
+        "relative": 30.27291198192784,
+        "ci": [
+          19.018009202769058,
+          40.86249177940026
+        ]
+      },
+      "visibility": {
+        "relative": 3.2154345543945473,
+        "ci": [
+          0.8838491191109799,
+          4.686748649663763
+        ]
+      },
+      "balanced": {
+        "relative": 39.046481027389014,
+        "ci": [
+          33.97375624264163,
+          47.151738224019915
+        ]
+      },
+      "same_params_visibility": {
+        "relative": -0.06789208706052818,
+        "ci": [
+          -0.450613056766902,
+          0.20066568591148304
+        ]
+      }
+    },
+    "hard": {
+      "median": {
+        "relative": 35.03589209245237,
+        "ci": [
+          22.91456834035387,
+          46.62926246691259
+        ]
+      },
+      "visibility": {
+        "relative": 3.518126546934608,
+        "ci": [
+          0.1853689899698696,
+          5.7378074234405885
+        ]
+      },
+      "balanced": {
+        "relative": 42.39468819849943,
+        "ci": [
+          36.99377671834464,
+          49.214990850757715
+        ]
+      },
+      "same_params_visibility": {
+        "relative": 0.01219685042458396,
+        "ci": [
+          -0.4411585799544593,
+          0.41444293008691124
+        ]
+      }
+    },
+    "lidar_occluded": {
+      "median": {
+        "relative": 3.569842696750869,
+        "ci": [
+          -30.548681883178965,
+          37.28939252549832
+        ]
+      },
+      "visibility": {
+        "relative": 4.694215973533589,
+        "ci": [
+          -2.343515182922329,
+          12.173414453203424
+        ]
+      },
+      "balanced": {
+        "relative": 39.855810645138924,
+        "ci": [
+          26.402143308622495,
+          59.993890662958684
+        ]
+      },
+      "same_params_visibility": {
+        "relative": -0.17616807149272162,
+        "ci": [
+          -1.2132141692534404,
+          1.7963689637465086
+        ]
+      }
+    },
+    "disagreement": {
+      "median": {
+        "relative": 35.154598329788044,
+        "ci": [
+          22.944612012847276,
+          46.673389007052435
+        ]
+      },
+      "visibility": {
+        "relative": 3.533754942597611,
+        "ci": [
+          0.19479640785177166,
+          5.759447861328826
+        ]
+      },
+      "balanced": {
+        "relative": 42.34670277184682,
+        "ci": [
+          37.09200416594931,
+          49.09296576613944
+        ]
+      },
+      "same_params_visibility": {
+        "relative": 0.015917996865666417,
+        "ci": [
+          -0.4390142675978037,
+          0.4199990114528429
+        ]
+      }
+    },
+    "only_lidar": {
+      "median": {
+        "relative": -35.287350929587724,
+        "ci": [
+          -163.6744152212923,
+          -25.98242025194888
+        ]
+      },
+      "visibility": {
+        "relative": -13.466954370573792,
+        "ci": [
+          -140.7168794095691,
+          -8.149564056704284
+        ]
+      },
+      "balanced": {
+        "relative": 39.605213604183696,
+        "ci": [
+          -165.96823722054722,
+          95.7302204774636
+        ]
+      },
+      "same_params_visibility": {
+        "relative": -0.1644388489143056,
+        "ci": [
+          -3.1322885068697293,
+          0.0068528311343962756
+        ]
+      }
+    },
+    "only_disagreement": {
+      "median": {
+        "relative": 38.65400629558473,
+        "ci": [
+          23.912614667338573,
+          50.61562372395986
+        ]
+      },
+      "visibility": {
+        "relative": 2.0084076993880484,
+        "ci": [
+          0.05370634053938339,
+          3.792277929746435
+        ]
+      },
+      "balanced": {
+        "relative": 43.40651531564781,
+        "ci": [
+          39.34257621842067,
+          51.695879712241435
+        ]
+      },
+      "same_params_visibility": {
+        "relative": 0.2652009040629677,
+        "ci": [
+          -0.35753069766308876,
+          0.7239258431112616
+        ]
+      }
+    },
+    "both": {
+      "median": {
+        "relative": 4.094194964664888,
+        "ci": [
+          -30.262956287137357,
+          37.85529460555126
+        ]
+      },
+      "visibility": {
+        "relative": 4.781751369987363,
+        "ci": [
+          -2.3044664128088588,
+          12.486673703591556
+        ]
+      },
+      "balanced": {
+        "relative": 39.46108799494651,
+        "ci": [
+          27.043744775107005,
+          59.81864059988688
+        ]
+      },
+      "same_params_visibility": {
+        "relative": -0.17245879828262645,
+        "ci": [
+          -1.2257579834599408,
+          1.6981264310629407
+        ]
+      }
+    },
+    "no_lidar_state": {
+      "median": {
+        "relative": 20.379460230231906,
+        "ci": [
+          -45.14998355348878,
+          46.74581131228881
+        ]
+      },
+      "visibility": {
+        "relative": -16.248607349674927,
+        "ci": [
+          -38.981230351247056,
+          3.087906872236834
+        ]
+      },
+      "balanced": {
+        "relative": 25.754788554085007,
+        "ci": [
+          1.3241929653713846,
+          60.982202733542536
+        ]
+      },
+      "same_params_visibility": {
+        "relative": -0.15966354495156043,
+        "ci": [
+          -0.6390659081317418,
+          0.17863474767100262
+        ]
+      }
+    }
+  },
+  "student_gate": true
+}

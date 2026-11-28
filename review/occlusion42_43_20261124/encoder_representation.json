@@ -1,0 +1,1090 @@
+{
+ "blocks": [
+  2,
+  5,
+  8,
+  11
+ ],
+ "rows": [
+  {
+   "domain": "synthetic",
+   "group": "4/0000",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0026870369911193848,
+     "phase_distance": 0.01540334988385439,
+     "same_minus_shifted": 0.07955944538116455
+    },
+    {
+     "cosine_distance": 0.0028362274169921875,
+     "phase_distance": 0.014846285805106163,
+     "same_minus_shifted": 0.15478992462158203
+    },
+    {
+     "cosine_distance": 0.00501859188079834,
+     "phase_distance": 0.014908638782799244,
+     "same_minus_shifted": 0.23695343732833862
+    },
+    {
+     "cosine_distance": 0.00446319580078125,
+     "phase_distance": 0.013683514669537544,
+     "same_minus_shifted": 0.05332505702972412
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0000",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.02249211072921753,
+     "phase_distance": 0.13815143704414368,
+     "same_minus_shifted": 0.0698617696762085
+    },
+    {
+     "cosine_distance": 0.028521060943603516,
+     "phase_distance": 0.16074779629707336,
+     "same_minus_shifted": 0.1336929202079773
+    },
+    {
+     "cosine_distance": 0.046613097190856934,
+     "phase_distance": 0.16000978648662567,
+     "same_minus_shifted": 0.20208990573883057
+    },
+    {
+     "cosine_distance": 0.0355457067489624,
+     "phase_distance": 0.13252080976963043,
+     "same_minus_shifted": 0.04913705587387085
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0011",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.003500819206237793,
+     "phase_distance": 0.01935403421521187,
+     "same_minus_shifted": 0.0985112190246582
+    },
+    {
+     "cosine_distance": 0.0032949447631835938,
+     "phase_distance": 0.018537703901529312,
+     "same_minus_shifted": 0.17850303649902344
+    },
+    {
+     "cosine_distance": 0.006204485893249512,
+     "phase_distance": 0.019794026389718056,
+     "same_minus_shifted": 0.25895655155181885
+    },
+    {
+     "cosine_distance": 0.003337562084197998,
+     "phase_distance": 0.019086893647909164,
+     "same_minus_shifted": 0.07977694272994995
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0011",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.022630751132965088,
+     "phase_distance": 0.20939217507839203,
+     "same_minus_shifted": 0.08572667837142944
+    },
+    {
+     "cosine_distance": 0.03125190734863281,
+     "phase_distance": 0.26809030771255493,
+     "same_minus_shifted": 0.1562393307685852
+    },
+    {
+     "cosine_distance": 0.05283772945404053,
+     "phase_distance": 0.24614891409873962,
+     "same_minus_shifted": 0.22371333837509155
+    },
+    {
+     "cosine_distance": 0.03305310010910034,
+     "phase_distance": 0.19684931635856628,
+     "same_minus_shifted": 0.06165856122970581
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0022",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0024473071098327637,
+     "phase_distance": 0.012909152545034885,
+     "same_minus_shifted": 0.08538639545440674
+    },
+    {
+     "cosine_distance": 0.0025258660316467285,
+     "phase_distance": 0.011772604659199715,
+     "same_minus_shifted": 0.15578186511993408
+    },
+    {
+     "cosine_distance": 0.0038427114486694336,
+     "phase_distance": 0.012731336988508701,
+     "same_minus_shifted": 0.2255415916442871
+    },
+    {
+     "cosine_distance": 0.0020494461059570312,
+     "phase_distance": 0.009692697785794735,
+     "same_minus_shifted": 0.057116568088531494
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0022",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.020180106163024902,
+     "phase_distance": 0.17496784031391144,
+     "same_minus_shifted": 0.07561838626861572
+    },
+    {
+     "cosine_distance": 0.027601778507232666,
+     "phase_distance": 0.21351537108421326,
+     "same_minus_shifted": 0.13733845949172974
+    },
+    {
+     "cosine_distance": 0.04648560285568237,
+     "phase_distance": 0.21504245698451996,
+     "same_minus_shifted": 0.19683682918548584
+    },
+    {
+     "cosine_distance": 0.03204160928726196,
+     "phase_distance": 0.16889767348766327,
+     "same_minus_shifted": 0.05161118507385254
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0033",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.002685844898223877,
+     "phase_distance": 0.015506595373153687,
+     "same_minus_shifted": 0.08805036544799805
+    },
+    {
+     "cosine_distance": 0.0026108622550964355,
+     "phase_distance": 0.015583784319460392,
+     "same_minus_shifted": 0.15986430644989014
+    },
+    {
+     "cosine_distance": 0.003967642784118652,
+     "phase_distance": 0.015516259707510471,
+     "same_minus_shifted": 0.2366744875907898
+    },
+    {
+     "cosine_distance": 0.0016460418701171875,
+     "phase_distance": 0.010818957351148129,
+     "same_minus_shifted": 0.08210164308547974
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0033",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.020845890045166016,
+     "phase_distance": 0.13853290677070618,
+     "same_minus_shifted": 0.0769464373588562
+    },
+    {
+     "cosine_distance": 0.027645885944366455,
+     "phase_distance": 0.17576877772808075,
+     "same_minus_shifted": 0.14040851593017578
+    },
+    {
+     "cosine_distance": 0.04153257608413696,
+     "phase_distance": 0.16936147212982178,
+     "same_minus_shifted": 0.2095186710357666
+    },
+    {
+     "cosine_distance": 0.02137690782546997,
+     "phase_distance": 0.12589851021766663,
+     "same_minus_shifted": 0.07739710807800293
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0044",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0038733482360839844,
+     "phase_distance": 0.019916219636797905,
+     "same_minus_shifted": 0.10238885879516602
+    },
+    {
+     "cosine_distance": 0.0035004615783691406,
+     "phase_distance": 0.017908846959471703,
+     "same_minus_shifted": 0.17214876413345337
+    },
+    {
+     "cosine_distance": 0.00564342737197876,
+     "phase_distance": 0.018162325024604797,
+     "same_minus_shifted": 0.248512864112854
+    },
+    {
+     "cosine_distance": 0.002330005168914795,
+     "phase_distance": 0.012718507088720798,
+     "same_minus_shifted": 0.09889096021652222
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0044",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.02105426788330078,
+     "phase_distance": 0.15738485753536224,
+     "same_minus_shifted": 0.0894169807434082
+    },
+    {
+     "cosine_distance": 0.028415203094482422,
+     "phase_distance": 0.21991857886314392,
+     "same_minus_shifted": 0.15089845657348633
+    },
+    {
+     "cosine_distance": 0.04406458139419556,
+     "phase_distance": 0.21145695447921753,
+     "same_minus_shifted": 0.22239667177200317
+    },
+    {
+     "cosine_distance": 0.020620346069335938,
+     "phase_distance": 0.1264612078666687,
+     "same_minus_shifted": 0.0898599624633789
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0055",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0033663511276245117,
+     "phase_distance": 0.018817046657204628,
+     "same_minus_shifted": 0.09953492879867554
+    },
+    {
+     "cosine_distance": 0.0034456849098205566,
+     "phase_distance": 0.01790633052587509,
+     "same_minus_shifted": 0.18600761890411377
+    },
+    {
+     "cosine_distance": 0.006234467029571533,
+     "phase_distance": 0.021165095269680023,
+     "same_minus_shifted": 0.2823486328125
+    },
+    {
+     "cosine_distance": 0.0025754570960998535,
+     "phase_distance": 0.014832234010100365,
+     "same_minus_shifted": 0.06903278827667236
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0055",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.02098327875137329,
+     "phase_distance": 0.18685773015022278,
+     "same_minus_shifted": 0.08750611543655396
+    },
+    {
+     "cosine_distance": 0.02993333339691162,
+     "phase_distance": 0.23755380511283875,
+     "same_minus_shifted": 0.16370069980621338
+    },
+    {
+     "cosine_distance": 0.0524478554725647,
+     "phase_distance": 0.24289590120315552,
+     "same_minus_shifted": 0.24366360902786255
+    },
+    {
+     "cosine_distance": 0.030015945434570312,
+     "phase_distance": 0.1863134354352951,
+     "same_minus_shifted": 0.06586796045303345
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0066",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.004815459251403809,
+     "phase_distance": 0.023350121453404427,
+     "same_minus_shifted": 0.09459441900253296
+    },
+    {
+     "cosine_distance": 0.004788696765899658,
+     "phase_distance": 0.024601859971880913,
+     "same_minus_shifted": 0.1741921305656433
+    },
+    {
+     "cosine_distance": 0.008955180644989014,
+     "phase_distance": 0.02870725281536579,
+     "same_minus_shifted": 0.25766152143478394
+    },
+    {
+     "cosine_distance": 0.003999590873718262,
+     "phase_distance": 0.02109427936375141,
+     "same_minus_shifted": 0.11724084615707397
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0066",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.026397705078125,
+     "phase_distance": 0.20251324772834778,
+     "same_minus_shifted": 0.08083659410476685
+    },
+    {
+     "cosine_distance": 0.03532522916793823,
+     "phase_distance": 0.20273004472255707,
+     "same_minus_shifted": 0.14693939685821533
+    },
+    {
+     "cosine_distance": 0.05722999572753906,
+     "phase_distance": 0.20332428812980652,
+     "same_minus_shifted": 0.22353941202163696
+    },
+    {
+     "cosine_distance": 0.03024005889892578,
+     "phase_distance": 0.17442010343074799,
+     "same_minus_shifted": 0.10202252864837646
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0077",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.003773510456085205,
+     "phase_distance": 0.0194125697016716,
+     "same_minus_shifted": 0.09755492210388184
+    },
+    {
+     "cosine_distance": 0.00378495454788208,
+     "phase_distance": 0.01779387705028057,
+     "same_minus_shifted": 0.161543607711792
+    },
+    {
+     "cosine_distance": 0.006084024906158447,
+     "phase_distance": 0.01885533146560192,
+     "same_minus_shifted": 0.23186367750167847
+    },
+    {
+     "cosine_distance": 0.0030422210693359375,
+     "phase_distance": 0.017943814396858215,
+     "same_minus_shifted": 0.05558192729949951
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "4/0077",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.02010136842727661,
+     "phase_distance": 0.15434607863426208,
+     "same_minus_shifted": 0.08774524927139282
+    },
+    {
+     "cosine_distance": 0.026906311511993408,
+     "phase_distance": 0.20907087624073029,
+     "same_minus_shifted": 0.14493894577026367
+    },
+    {
+     "cosine_distance": 0.046561241149902344,
+     "phase_distance": 0.22288778424263,
+     "same_minus_shifted": 0.21084165573120117
+    },
+    {
+     "cosine_distance": 0.03045213222503662,
+     "phase_distance": 0.2042475789785385,
+     "same_minus_shifted": 0.05342048406600952
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0000",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.007871508598327637,
+     "phase_distance": 0.029132073745131493,
+     "same_minus_shifted": 0.13725340366363525
+    },
+    {
+     "cosine_distance": 0.006903648376464844,
+     "phase_distance": 0.029031259939074516,
+     "same_minus_shifted": 0.20296841859817505
+    },
+    {
+     "cosine_distance": 0.010822474956512451,
+     "phase_distance": 0.024355757981538773,
+     "same_minus_shifted": 0.2903744578361511
+    },
+    {
+     "cosine_distance": 0.007198035717010498,
+     "phase_distance": 0.03393092006444931,
+     "same_minus_shifted": 0.09191465377807617
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0000",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.017074167728424072,
+     "phase_distance": 0.04373656585812569,
+     "same_minus_shifted": 0.13097935914993286
+    },
+    {
+     "cosine_distance": 0.019071877002716064,
+     "phase_distance": 0.06127030774950981,
+     "same_minus_shifted": 0.19344186782836914
+    },
+    {
+     "cosine_distance": 0.03015267848968506,
+     "phase_distance": 0.05993245914578438,
+     "same_minus_shifted": 0.2803390622138977
+    },
+    {
+     "cosine_distance": 0.026150763034820557,
+     "phase_distance": 0.09165753424167633,
+     "same_minus_shifted": 0.07496875524520874
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0011",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0073035359382629395,
+     "phase_distance": 0.020221056416630745,
+     "same_minus_shifted": 0.12375950813293457
+    },
+    {
+     "cosine_distance": 0.005237579345703125,
+     "phase_distance": 0.023072142153978348,
+     "same_minus_shifted": 0.17914539575576782
+    },
+    {
+     "cosine_distance": 0.00983273983001709,
+     "phase_distance": 0.022140100598335266,
+     "same_minus_shifted": 0.3014405369758606
+    },
+    {
+     "cosine_distance": 0.004740595817565918,
+     "phase_distance": 0.0305023230612278,
+     "same_minus_shifted": 0.04462432861328125
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0011",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.016613006591796875,
+     "phase_distance": 0.0732560083270073,
+     "same_minus_shifted": 0.11985480785369873
+    },
+    {
+     "cosine_distance": 0.01900613307952881,
+     "phase_distance": 0.11735912412405014,
+     "same_minus_shifted": 0.16959315538406372
+    },
+    {
+     "cosine_distance": 0.035404741764068604,
+     "phase_distance": 0.11669018119573593,
+     "same_minus_shifted": 0.2799604535102844
+    },
+    {
+     "cosine_distance": 0.026234805583953857,
+     "phase_distance": 0.21486319601535797,
+     "same_minus_shifted": 0.04037284851074219
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0022",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.0070555806159973145,
+     "phase_distance": 0.023267367854714394,
+     "same_minus_shifted": 0.14233165979385376
+    },
+    {
+     "cosine_distance": 0.00567394495010376,
+     "phase_distance": 0.02494470402598381,
+     "same_minus_shifted": 0.20187783241271973
+    },
+    {
+     "cosine_distance": 0.009846210479736328,
+     "phase_distance": 0.02256552316248417,
+     "same_minus_shifted": 0.3326966166496277
+    },
+    {
+     "cosine_distance": 0.005418300628662109,
+     "phase_distance": 0.021439647302031517,
+     "same_minus_shifted": 0.11976802349090576
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0022",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.014973640441894531,
+     "phase_distance": 0.033271778374910355,
+     "same_minus_shifted": 0.1376773715019226
+    },
+    {
+     "cosine_distance": 0.016180336475372314,
+     "phase_distance": 0.0572594553232193,
+     "same_minus_shifted": 0.19461917877197266
+    },
+    {
+     "cosine_distance": 0.02848917245864868,
+     "phase_distance": 0.055819764733314514,
+     "same_minus_shifted": 0.3181989789009094
+    },
+    {
+     "cosine_distance": 0.0193060040473938,
+     "phase_distance": 0.06694789230823517,
+     "same_minus_shifted": 0.11274069547653198
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0033",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.007124900817871094,
+     "phase_distance": 0.027033140882849693,
+     "same_minus_shifted": 0.13981419801712036
+    },
+    {
+     "cosine_distance": 0.00565415620803833,
+     "phase_distance": 0.02642921358346939,
+     "same_minus_shifted": 0.2057477831840515
+    },
+    {
+     "cosine_distance": 0.009601771831512451,
+     "phase_distance": 0.02227424643933773,
+     "same_minus_shifted": 0.32530295848846436
+    },
+    {
+     "cosine_distance": 0.0049790143966674805,
+     "phase_distance": 0.021226508542895317,
+     "same_minus_shifted": 0.10766756534576416
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0033",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.014616012573242188,
+     "phase_distance": 0.03778507187962532,
+     "same_minus_shifted": 0.1345239281654358
+    },
+    {
+     "cosine_distance": 0.01598489284515381,
+     "phase_distance": 0.07135091722011566,
+     "same_minus_shifted": 0.19828546047210693
+    },
+    {
+     "cosine_distance": 0.028847992420196533,
+     "phase_distance": 0.07110829651355743,
+     "same_minus_shifted": 0.31256866455078125
+    },
+    {
+     "cosine_distance": 0.023308753967285156,
+     "phase_distance": 0.07482968270778656,
+     "same_minus_shifted": 0.09297806024551392
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0044",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.004551708698272705,
+     "phase_distance": 0.021312706172466278,
+     "same_minus_shifted": 0.11890274286270142
+    },
+    {
+     "cosine_distance": 0.00389862060546875,
+     "phase_distance": 0.020572688430547714,
+     "same_minus_shifted": 0.20173317193984985
+    },
+    {
+     "cosine_distance": 0.00663524866104126,
+     "phase_distance": 0.0192792396992445,
+     "same_minus_shifted": 0.34280484914779663
+    },
+    {
+     "cosine_distance": 0.004864215850830078,
+     "phase_distance": 0.03636355325579643,
+     "same_minus_shifted": 0.12763679027557373
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0044",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.01991593837738037,
+     "phase_distance": 0.08145029842853546,
+     "same_minus_shifted": 0.11300939321517944
+    },
+    {
+     "cosine_distance": 0.02194148302078247,
+     "phase_distance": 0.14819124341011047,
+     "same_minus_shifted": 0.18826794624328613
+    },
+    {
+     "cosine_distance": 0.0384368896484375,
+     "phase_distance": 0.14473070204257965,
+     "same_minus_shifted": 0.31471019983291626
+    },
+    {
+     "cosine_distance": 0.040852129459381104,
+     "phase_distance": 0.2759687304496765,
+     "same_minus_shifted": 0.10449755191802979
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0055",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.004957258701324463,
+     "phase_distance": 0.02286337874829769,
+     "same_minus_shifted": 0.1240127682685852
+    },
+    {
+     "cosine_distance": 0.0041828155517578125,
+     "phase_distance": 0.022585825994610786,
+     "same_minus_shifted": 0.2032812237739563
+    },
+    {
+     "cosine_distance": 0.006357967853546143,
+     "phase_distance": 0.019941920414566994,
+     "same_minus_shifted": 0.34230542182922363
+    },
+    {
+     "cosine_distance": 0.0022677183151245117,
+     "phase_distance": 0.01390580553561449,
+     "same_minus_shifted": 0.10858863592147827
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0055",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.016275107860565186,
+     "phase_distance": 0.08399462699890137,
+     "same_minus_shifted": 0.1168900728225708
+    },
+    {
+     "cosine_distance": 0.0179595947265625,
+     "phase_distance": 0.12902627885341644,
+     "same_minus_shifted": 0.1895168423652649
+    },
+    {
+     "cosine_distance": 0.030136466026306152,
+     "phase_distance": 0.11569053679704666,
+     "same_minus_shifted": 0.31721729040145874
+    },
+    {
+     "cosine_distance": 0.01572781801223755,
+     "phase_distance": 0.10383754223585129,
+     "same_minus_shifted": 0.09768348932266235
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0066",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.006477832794189453,
+     "phase_distance": 0.027193032205104828,
+     "same_minus_shifted": 0.1332417130470276
+    },
+    {
+     "cosine_distance": 0.00534820556640625,
+     "phase_distance": 0.02474850043654442,
+     "same_minus_shifted": 0.2033456563949585
+    },
+    {
+     "cosine_distance": 0.00904303789138794,
+     "phase_distance": 0.021898359060287476,
+     "same_minus_shifted": 0.32497233152389526
+    },
+    {
+     "cosine_distance": 0.00476604700088501,
+     "phase_distance": 0.025984516367316246,
+     "same_minus_shifted": 0.10442948341369629
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0066",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.01611042022705078,
+     "phase_distance": 0.06620968878269196,
+     "same_minus_shifted": 0.12536907196044922
+    },
+    {
+     "cosine_distance": 0.01832371950149536,
+     "phase_distance": 0.1048077717423439,
+     "same_minus_shifted": 0.1918867826461792
+    },
+    {
+     "cosine_distance": 0.028518378734588623,
+     "phase_distance": 0.09445469826459885,
+     "same_minus_shifted": 0.3110765218734741
+    },
+    {
+     "cosine_distance": 0.018412113189697266,
+     "phase_distance": 0.12297719717025757,
+     "same_minus_shifted": 0.09286296367645264
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0077",
+   "label": "global",
+   "layers": [
+    {
+     "cosine_distance": 0.007033228874206543,
+     "phase_distance": 0.0235136765986681,
+     "same_minus_shifted": 0.1310739517211914
+    },
+    {
+     "cosine_distance": 0.005376040935516357,
+     "phase_distance": 0.02211694046854973,
+     "same_minus_shifted": 0.20160657167434692
+    },
+    {
+     "cosine_distance": 0.010112345218658447,
+     "phase_distance": 0.020498575642704964,
+     "same_minus_shifted": 0.33016204833984375
+    },
+    {
+     "cosine_distance": 0.010499000549316406,
+     "phase_distance": 0.05667031556367874,
+     "same_minus_shifted": 0.10992181301116943
+    }
+   ]
+  },
+  {
+   "domain": "synthetic",
+   "group": "5/0077",
+   "label": "beam",
+   "layers": [
+    {
+     "cosine_distance": 0.017212271690368652,
+     "phase_distance": 0.05723574012517929,
+     "same_minus_shifted": 0.1233556866645813
+    },
+    {
+     "cosine_distance": 0.018872320652008057,
+     "phase_distance": 0.08609552681446075,
+     "same_minus_shifted": 0.19031387567520142
+    },
+    {
+     "cosine_distance": 0.03584134578704834,
+     "phase_distance": 0.0840856209397316,
+     "same_minus_shifted": 0.31380462646484375
+    },
+    {
+     "cosine_distance": 0.0315852165222168,
+     "phase_distance": 0.15952372550964355,
+     "same_minus_shifted": 0.10123687982559204
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates1/0",
+   "label": "L0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.033187925815582275,
+     "phase_distance": 0.12694939970970154,
+     "same_minus_shifted": 0.13823121786117554
+    },
+    {
+     "cosine_distance": 0.029795169830322266,
+     "phase_distance": 0.14459675550460815,
+     "same_minus_shifted": 0.20080041885375977
+    },
+    {
+     "cosine_distance": 0.051081180572509766,
+     "phase_distance": 0.1268194168806076,
+     "same_minus_shifted": 0.3179311156272888
+    },
+    {
+     "cosine_distance": 0.03469270467758179,
+     "phase_distance": 0.11292952299118042,
+     "same_minus_shifted": 0.13061636686325073
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates1/0",
+   "label": "T0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.2620985507965088,
+     "phase_distance": 0.6248074173927307,
+     "same_minus_shifted": 0.04057234525680542
+    },
+    {
+     "cosine_distance": 0.2286854386329651,
+     "phase_distance": 0.6509563326835632,
+     "same_minus_shifted": 0.07415401935577393
+    },
+    {
+     "cosine_distance": 0.32757389545440674,
+     "phase_distance": 0.6313097476959229,
+     "same_minus_shifted": 0.10311079025268555
+    },
+    {
+     "cosine_distance": 0.32127344608306885,
+     "phase_distance": 0.7014130353927612,
+     "same_minus_shifted": 0.023163139820098877
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates1/1",
+   "label": "L0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.030849039554595947,
+     "phase_distance": 0.09944357722997665,
+     "same_minus_shifted": 0.12843728065490723
+    },
+    {
+     "cosine_distance": 0.02938932180404663,
+     "phase_distance": 0.10900355130434036,
+     "same_minus_shifted": 0.19392502307891846
+    },
+    {
+     "cosine_distance": 0.051816463470458984,
+     "phase_distance": 0.11514364928007126,
+     "same_minus_shifted": 0.2950221300125122
+    },
+    {
+     "cosine_distance": 0.037124693393707275,
+     "phase_distance": 0.13415922224521637,
+     "same_minus_shifted": 0.11359882354736328
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates1/1",
+   "label": "T0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.24906539916992188,
+     "phase_distance": 0.5921820402145386,
+     "same_minus_shifted": 0.036114633083343506
+    },
+    {
+     "cosine_distance": 0.2129250168800354,
+     "phase_distance": 0.6549822688102722,
+     "same_minus_shifted": 0.07038617134094238
+    },
+    {
+     "cosine_distance": 0.3008456826210022,
+     "phase_distance": 0.6215260028839111,
+     "same_minus_shifted": 0.09671592712402344
+    },
+    {
+     "cosine_distance": 0.2897145748138428,
+     "phase_distance": 0.6284268498420715,
+     "same_minus_shifted": 0.015739619731903076
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates2/0",
+   "label": "L0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.03128331899642944,
+     "phase_distance": 0.10407785326242447,
+     "same_minus_shifted": 0.1411219835281372
+    },
+    {
+     "cosine_distance": 0.030000150203704834,
+     "phase_distance": 0.11663506180047989,
+     "same_minus_shifted": 0.19305795431137085
+    },
+    {
+     "cosine_distance": 0.04903656244277954,
+     "phase_distance": 0.10892388969659805,
+     "same_minus_shifted": 0.3071669936180115
+    },
+    {
+     "cosine_distance": 0.02897411584854126,
+     "phase_distance": 0.09778602421283722,
+     "same_minus_shifted": 0.11595332622528076
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates2/0",
+   "label": "T0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.24443823099136353,
+     "phase_distance": 0.6001662015914917,
+     "same_minus_shifted": 0.04797452688217163
+    },
+    {
+     "cosine_distance": 0.2195172905921936,
+     "phase_distance": 0.6707289218902588,
+     "same_minus_shifted": 0.07545340061187744
+    },
+    {
+     "cosine_distance": 0.32277339696884155,
+     "phase_distance": 0.6881169676780701,
+     "same_minus_shifted": 0.10262662172317505
+    },
+    {
+     "cosine_distance": 0.2544926404953003,
+     "phase_distance": 0.6581266522407532,
+     "same_minus_shifted": 0.03251028060913086
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates2/1",
+   "label": "L0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.0328252911567688,
+     "phase_distance": 0.11270040273666382,
+     "same_minus_shifted": 0.14176112413406372
+    },
+    {
+     "cosine_distance": 0.03150147199630737,
+     "phase_distance": 0.1308499276638031,
+     "same_minus_shifted": 0.1978633999824524
+    },
+    {
+     "cosine_distance": 0.054414570331573486,
+     "phase_distance": 0.1301502287387848,
+     "same_minus_shifted": 0.3172990083694458
+    },
+    {
+     "cosine_distance": 0.032628655433654785,
+     "phase_distance": 0.1382506936788559,
+     "same_minus_shifted": 0.10589605569839478
+    }
+   ]
+  },
+  {
+   "domain": "real",
+   "group": "skates2/1",
+   "label": "T0e0",
+   "layers": [
+    {
+     "cosine_distance": 0.24408048391342163,
+     "phase_distance": 0.5879159569740295,
+     "same_minus_shifted": 0.04461860656738281
+    },
+    {
+     "cosine_distance": 0.2150089144706726,
+     "phase_distance": 0.6593776941299438,
+     "same_minus_shifted": 0.07608920335769653
+    },
+    {
+     "cosine_distance": 0.3343862295150757,
+     "phase_distance": 0.6900404095649719,
+     "same_minus_shifted": 0.10316348075866699
+    },
+    {
+     "cosine_distance": 0.24483239650726318,
+     "phase_distance": 0.7060767412185669,
+     "same_minus_shifted": 0.029955387115478516
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3264 @@
+{
+  "summary": {
+    "same": {
+      "means": {
+        "direct": 0.6867720065583853,
+        "always_scale": 0.6827145452429398,
+        "selected_scale": 0.6828263351488278
+      },
+      "group": {
+        "scene10": {
+          "direct": 1.3911201712073875,
+          "always_scale": 1.3865552805490675,
+          "selected_scale": 1.3800521501289726
+        },
+        "scene2": {
+          "direct": 0.42451700086663247,
+          "always_scale": 0.4184597393851998,
+          "selected_scale": 0.4230549398970176
+        },
+        "scene3": {
+          "direct": 0.7143117399871249,
+          "always_scale": 0.7284759039191535,
+          "selected_scale": 0.7121164512901205
+        },
+        "scene4": {
+          "direct": 0.15832636486381807,
+          "always_scale": 0.17200056214881845,
+          "selected_scale": 0.15665359979264457
+        },
+        "scene5": {
+          "direct": 1.4143891591366697,
+          "always_scale": 1.3588051219864572,
+          "selected_scale": 1.4050108027446595
+        },
+        "scene8": {
+          "direct": 0.18187608125764315,
+          "always_scale": 0.19063663410083265,
+          "selected_scale": 0.1816565370127287
+        },
+        "scene9": {
+          "direct": 0.5228635285894212,
+          "always_scale": 0.5240685746110499,
+          "selected_scale": 0.5212398651756516
+        }
+      },
+      "relative": {
+        "selected_scale_vs_direct": {
+          "relative": 0.5745242048129429,
+          "ci": [
+            0.3253792288279267,
+            0.7153679977455973
+          ]
+        },
+        "always_scale_vs_direct": {
+          "relative": 0.5908017910891017,
+          "ci": [
+            -2.1689620552184374,
+            2.4751618131959807
+          ]
+        }
+      },
+      "n": 56
+    },
+    "extra": {
+      "means": {
+        "direct": 0.7610633041751275,
+        "always_scale": 0.7555564114085905,
+        "selected_scale": 0.756507056520725
+      },
+      "group": {
+        "scene10": {
+          "direct": 1.9204190818725089,
+          "always_scale": 1.8878583017718775,
+          "selected_scale": 1.9068955473704952
+        },
+        "scene2": {
+          "direct": 0.5800025180785173,
+          "always_scale": 0.570563487160667,
+          "selected_scale": 0.5774453676896838
+        },
+        "scene3": {
+          "direct": 0.7893701440022569,
+          "always_scale": 0.788667075506654,
+          "selected_scale": 0.783822456158277
+        },
+        "scene4": {
+          "direct": 0.17172505880172434,
+          "always_scale": 0.1876131783061585,
+          "selected_scale": 0.17038891088852448
+        },
+        "scene5": {
+          "direct": 0.8574191269394231,
+          "always_scale": 0.8488876616380396,
+          "selected_scale": 0.850066927938661
+        },
+        "scene8": {
+          "direct": 0.24794015915376832,
+          "always_scale": 0.2566070320458048,
+          "selected_scale": 0.24777373712768277
+        },
+        "scene9": {
+          "direct": 0.7605670403776928,
+          "always_scale": 0.7486981434309326,
+          "selected_scale": 0.7591564484717507
+        }
+      },
+      "relative": {
+        "selected_scale_vs_direct": {
+          "relative": 0.5986686822774479,
+          "ci": [
+            0.3573326575559199,
+            0.7367243370212995
+          ]
+        },
+        "always_scale_vs_direct": {
+          "relative": 0.7235788056429215,
+          "ci": [
+            -1.1111217694149023,
+            1.46323244970199
+          ]
+        }
+      },
+      "n": 56
+    }
+  },
+  "rows": [
+    {
+      "key": "HAMMER/scene10_traj1_1/000000",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.1714810858476647,
+        "always_scale": 1.201400921409719,
+        "selected_scale": 1.163213617094618
+      },
+      "seeds": [
+        {
+          "direct": 1.1920931139123834,
+          "always_scale": 1.2278373537920382,
+          "selected_scale": 1.1962928792840213
+        },
+        {
+          "direct": 1.187365118395701,
+          "always_scale": 1.2185155148668985,
+          "selected_scale": 1.1681811930431536
+        },
+        {
+          "direct": 1.13498502523491,
+          "always_scale": 1.1578498955702206,
+          "selected_scale": 1.1251667789566788
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_1/000010",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.7961276141321555,
+        "always_scale": 0.831724967236867,
+        "selected_scale": 0.7903149200768285
+      },
+      "seeds": [
+        {
+          "direct": 0.8098722910909392,
+          "always_scale": 0.8510871299142618,
+          "selected_scale": 0.8121864298553055
+        },
+        {
+          "direct": 0.8039920802759882,
+          "always_scale": 0.8481993314576086,
+          "selected_scale": 0.7930113566723525
+        },
+        {
+          "direct": 0.774518471029539,
+          "always_scale": 0.7958884403387305,
+          "selected_scale": 0.7657469737028272
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_1/000160",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.43449941292342986,
+        "always_scale": 0.4686592289288252,
+        "selected_scale": 0.4290866221861422
+      },
+      "seeds": [
+        {
+          "direct": 0.44021704130358197,
+          "always_scale": 0.48229450202634644,
+          "selected_scale": 0.4408389576091474
+        },
+        {
+          "direct": 0.4469524762433328,
+          "always_scale": 0.49670026354308305,
+          "selected_scale": 0.43686632889363297
+        },
+        {
+          "direct": 0.4163287212233749,
+          "always_scale": 0.42698292121704623,
+          "selected_scale": 0.40955458005564616
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_1/000170",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.5624690963211769,
+        "always_scale": 0.6011884397054291,
+        "selected_scale": 0.5566230271813287
+      },
+      "seeds": [
+        {
+          "direct": 0.5780687601648914,
+          "always_scale": 0.6217219820403804,
+          "selected_scale": 0.5743104535664251
+        },
+        {
+          "direct": 0.5678641764455278,
+          "always_scale": 0.6194917001177102,
+          "selected_scale": 0.5599917520244562
+        },
+        {
+          "direct": 0.5414743523531117,
+          "always_scale": 0.5623516369581969,
+          "selected_scale": 0.535566875953105
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_naked_1/000020",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.7601346327185363,
+        "always_scale": 1.7664838465553228,
+        "selected_scale": 1.7408294144266139
+      },
+      "seeds": [
+        {
+          "direct": 1.734067183480728,
+          "always_scale": 1.7230262290227278,
+          "selected_scale": 1.7194676011958687
+        },
+        {
+          "direct": 1.7867105547714213,
+          "always_scale": 1.7451304410076298,
+          "selected_scale": 1.7609016724419275
+        },
+        {
+          "direct": 1.7596261599034602,
+          "always_scale": 1.8312948696356102,
+          "selected_scale": 1.7421189696420456
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_naked_1/000030",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.6810518126456815,
+        "always_scale": 1.7083524727906394,
+        "selected_scale": 1.6658826294062674
+      },
+      "seeds": [
+        {
+          "direct": 1.6582696404256942,
+          "always_scale": 1.672832155850605,
+          "selected_scale": 1.652104228618039
+        },
+        {
+          "direct": 1.7058151433196758,
+          "always_scale": 1.69960998293626,
+          "selected_scale": 1.686141718684162
+        },
+        {
+          "direct": 1.6790706541916744,
+          "always_scale": 1.7526152795850536,
+          "selected_scale": 1.6594019409166016
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_naked_1/000190",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.3890513557802235,
+        "always_scale": 1.4172196538274973,
+        "selected_scale": 1.374704100051926
+      },
+      "seeds": [
+        {
+          "direct": 1.3774937174936082,
+          "always_scale": 1.3994811020509061,
+          "selected_scale": 1.3708227993405846
+        },
+        {
+          "direct": 1.4234567130077556,
+          "always_scale": 1.4264704062147189,
+          "selected_scale": 1.4008462398841235
+        },
+        {
+          "direct": 1.3662036368393073,
+          "always_scale": 1.4257074532168665,
+          "selected_scale": 1.3524432609310695
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj1_naked_1/000200",
+      "group": "scene10",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 1.4555872954753994,
+        "always_scale": 1.4920407333606895,
+        "selected_scale": 1.4460197179593095
+      },
+      "seeds": [
+        {
+          "direct": 1.4506671192765357,
+          "always_scale": 1.4819773368699616,
+          "selected_scale": 1.4469554634610002
+        },
+        {
+          "direct": 1.4805325234895197,
+          "always_scale": 1.4966817957103367,
+          "selected_scale": 1.4666924574504452
+        },
+        {
+          "direct": 1.4355622436601427,
+          "always_scale": 1.4974630675017704,
+          "selected_scale": 1.4244112329664835
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_1/000050",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.2761683745298684,
+        "always_scale": 1.3292484656075712,
+        "selected_scale": 1.2717647326712753
+      },
+      "seeds": [
+        {
+          "direct": 1.2741496240210777,
+          "always_scale": 1.3255056332849995,
+          "selected_scale": 1.2762853623752248
+        },
+        {
+          "direct": 1.2904126597178114,
+          "always_scale": 1.3746646040007422,
+          "selected_scale": 1.2769020759664163
+        },
+        {
+          "direct": 1.2639428398507164,
+          "always_scale": 1.2875751595369722,
+          "selected_scale": 1.2621067596721849
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_1/000060",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.9775196582103112,
+        "always_scale": 1.0239068542391332,
+        "selected_scale": 0.9736339322697853
+      },
+      "seeds": [
+        {
+          "direct": 0.9767004808282952,
+          "always_scale": 1.0219679419976309,
+          "selected_scale": 0.978581737385778
+        },
+        {
+          "direct": 0.9903347043789811,
+          "always_scale": 1.0625722370375936,
+          "selected_scale": 0.9831386522233895
+        },
+        {
+          "direct": 0.9655237894236572,
+          "always_scale": 0.987180383682175,
+          "selected_scale": 0.9591814072001883
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_1/000220",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.2912037815900739,
+        "always_scale": 1.3379322173772517,
+        "selected_scale": 1.28826051514094
+      },
+      "seeds": [
+        {
+          "direct": 1.300001141729388,
+          "always_scale": 1.3526846693035497,
+          "selected_scale": 1.30469209591722
+        },
+        {
+          "direct": 1.295464478994625,
+          "always_scale": 1.3635235686451412,
+          "selected_scale": 1.2863799482777554
+        },
+        {
+          "direct": 1.2781457240462084,
+          "always_scale": 1.2975884141830643,
+          "selected_scale": 1.273709501227845
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_1/000230",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.7456927105162138,
+        "always_scale": 0.7892314933353269,
+        "selected_scale": 0.7415622841747863
+      },
+      "seeds": [
+        {
+          "direct": 0.7526205448605013,
+          "always_scale": 0.796136097170281,
+          "selected_scale": 0.7524682324101682
+        },
+        {
+          "direct": 0.7519347384871399,
+          "always_scale": 0.8163095947867501,
+          "selected_scale": 0.743764654542951
+        },
+        {
+          "direct": 0.7325228482009999,
+          "always_scale": 0.7552487880489499,
+          "selected_scale": 0.7284539655712393
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_naked_1/000100",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 3.8951026253204843,
+        "always_scale": 3.716051518622889,
+        "selected_scale": 3.856486270423106
+      },
+      "seeds": [
+        {
+          "direct": 3.9294311243942475,
+          "always_scale": 3.6614876133832,
+          "selected_scale": 3.8901180619832494
+        },
+        {
+          "direct": 3.8064267226830695,
+          "always_scale": 3.625804197563431,
+          "selected_scale": 3.763930442286004
+        },
+        {
+          "direct": 3.949450028884135,
+          "always_scale": 3.8608627449220365,
+          "selected_scale": 3.9154103070000645
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_naked_1/000110",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 3.0156801563569444,
+        "always_scale": 2.8325126604120867,
+        "selected_scale": 2.983039717614415
+      },
+      "seeds": [
+        {
+          "direct": 3.1017799142759626,
+          "always_scale": 2.8379371776136573,
+          "selected_scale": 3.0589576854613276
+        },
+        {
+          "direct": 2.921753378449401,
+          "always_scale": 2.7429616832995563,
+          "selected_scale": 2.8969497005934293
+        },
+        {
+          "direct": 3.0235071763454684,
+          "always_scale": 2.9166391203230457,
+          "selected_scale": 2.993211766788488
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_naked_1/000270",
+      "group": "scene10",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 4.521064857985299,
+        "always_scale": 4.235546516018797,
+        "selected_scale": 4.503717803987129
+      },
+      "seeds": [
+        {
+          "direct": 4.5189435708207,
+          "always_scale": 4.181296611932175,
+          "selected_scale": 4.49675855492657
+        },
+        {
+          "direct": 4.5210679344002305,
+          "always_scale": 4.178817883437309,
+          "selected_scale": 4.497080122865911
+        },
+        {
+          "direct": 4.523183068734965,
+          "always_scale": 4.346525052686907,
+          "selected_scale": 4.517314734168906
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene10_traj2_naked_1/000280",
+      "group": "scene10",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.5194795542857085,
+        "always_scale": 1.4438086691395176,
+        "selected_scale": 1.5104422753312707
+      },
+      "seeds": [
+        {
+          "direct": 1.5196883923195514,
+          "always_scale": 1.42046409877603,
+          "selected_scale": 1.5086167039934277
+        },
+        {
+          "direct": 1.521762837789213,
+          "always_scale": 1.441417286642677,
+          "selected_scale": 1.5084810984836114
+        },
+        {
+          "direct": 1.516987432748361,
+          "always_scale": 1.4695446219998456,
+          "selected_scale": 1.514229023516773
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_1/000000",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.08504766545480448,
+        "always_scale": 0.09669930915382624,
+        "selected_scale": 0.08366763334898443
+      },
+      "seeds": [
+        {
+          "direct": 0.09282761377618792,
+          "always_scale": 0.10889524506428085,
+          "selected_scale": 0.09196510227308703
+        },
+        {
+          "direct": 0.07865835479987512,
+          "always_scale": 0.09614878393912955,
+          "selected_scale": 0.07594951999626302
+        },
+        {
+          "direct": 0.0836570277883504,
+          "always_scale": 0.08505389845806832,
+          "selected_scale": 0.08308827777760326
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_1/000010",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.055410263496067015,
+        "always_scale": 0.05839293024593423,
+        "selected_scale": 0.05485859377151292
+      },
+      "seeds": [
+        {
+          "direct": 0.06104426274046332,
+          "always_scale": 0.06712946984898589,
+          "selected_scale": 0.060681006091702266
+        },
+        {
+          "direct": 0.04924209481526478,
+          "always_scale": 0.05400671544060252,
+          "selected_scale": 0.04861629032554957
+        },
+        {
+          "direct": 0.05594443293247294,
+          "always_scale": 0.054042605448214265,
+          "selected_scale": 0.05527848489728692
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_1/000150",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.0751195383290958,
+        "always_scale": 0.07690316895735937,
+        "selected_scale": 0.07490610960506365
+      },
+      "seeds": [
+        {
+          "direct": 0.08013404083349718,
+          "always_scale": 0.08730523709181053,
+          "selected_scale": 0.07948022289650143
+        },
+        {
+          "direct": 0.06951157454729733,
+          "always_scale": 0.0693878018600841,
+          "selected_scale": 0.06995685995446561
+        },
+        {
+          "direct": 0.07571299960649289,
+          "always_scale": 0.07401646792018349,
+          "selected_scale": 0.0752812459642239
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_2/000000",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.10324311244299872,
+        "always_scale": 0.08912205692844087,
+        "selected_scale": 0.10392386777856354
+      },
+      "seeds": [
+        {
+          "direct": 0.09748173819634746,
+          "always_scale": 0.0839918466631362,
+          "selected_scale": 0.09687164802805082
+        },
+        {
+          "direct": 0.10571273972305995,
+          "always_scale": 0.08045218675770581,
+          "selected_scale": 0.10881834131206199
+        },
+        {
+          "direct": 0.10653485940958873,
+          "always_scale": 0.10292213736448058,
+          "selected_scale": 0.10608161399557779
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_naked_1/000060",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.2219527239061063,
+        "always_scale": 1.2246701629227883,
+        "selected_scale": 1.2105991425086187
+      },
+      "seeds": [
+        {
+          "direct": 1.223891309353964,
+          "always_scale": 1.217424387551375,
+          "selected_scale": 1.2233086150148258
+        },
+        {
+          "direct": 1.222373160787506,
+          "always_scale": 1.2039576594828085,
+          "selected_scale": 1.2069067941702702
+        },
+        {
+          "direct": 1.219593701576849,
+          "always_scale": 1.2526284417341813,
+          "selected_scale": 1.2015820183407602
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_naked_1/000070",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.517390494646662,
+        "always_scale": 1.4894411978729372,
+        "selected_scale": 1.5085485814829653
+      },
+      "seeds": [
+        {
+          "direct": 1.535452060954066,
+          "always_scale": 1.4861516680919065,
+          "selected_scale": 1.5294107423464827
+        },
+        {
+          "direct": 1.5194897315912483,
+          "always_scale": 1.4580810830625364,
+          "selected_scale": 1.5042131939650931
+        },
+        {
+          "direct": 1.497229691394672,
+          "always_scale": 1.5240908424643684,
+          "selected_scale": 1.4920218081373207
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_naked_2/000060",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2115286800197608,
+        "always_scale": 0.21450786154566534,
+        "selected_scale": 0.20971329896205695
+      },
+      "seeds": [
+        {
+          "direct": 0.22272260102389976,
+          "always_scale": 0.22317011900377,
+          "selected_scale": 0.22250655804744346
+        },
+        {
+          "direct": 0.20572186861364772,
+          "always_scale": 0.2124311439241794,
+          "selected_scale": 0.2011286526705451
+        },
+        {
+          "direct": 0.20614157042173495,
+          "always_scale": 0.20792232170904654,
+          "selected_scale": 0.20550468616818227
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj1_naked_2/000070",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.7543300119032503,
+        "always_scale": 0.7721875057205213,
+        "selected_scale": 0.7535562082670865
+      },
+      "seeds": [
+        {
+          "direct": 0.776340992297374,
+          "always_scale": 0.7867726711687143,
+          "selected_scale": 0.7742836213486792
+        },
+        {
+          "direct": 0.744027914225474,
+          "always_scale": 0.7643899491075749,
+          "selected_scale": 0.7384375673663537
+        },
+        {
+          "direct": 0.7426211291869033,
+          "always_scale": 0.765399896885275,
+          "selected_scale": 0.7479474360862265
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_1/000130",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.07297613058495728,
+        "always_scale": 0.06908924664821747,
+        "selected_scale": 0.07366543396780235
+      },
+      "seeds": [
+        {
+          "direct": 0.07333123008676688,
+          "always_scale": 0.07296710242357174,
+          "selected_scale": 0.0730384835609807
+        },
+        {
+          "direct": 0.0728690805641528,
+          "always_scale": 0.06546687427876093,
+          "selected_scale": 0.07542986996877513
+        },
+        {
+          "direct": 0.07272808110395214,
+          "always_scale": 0.06883376324231977,
+          "selected_scale": 0.07252794837365127
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_1/000140",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.039047980551397514,
+        "always_scale": 0.02970325546029895,
+        "selected_scale": 0.040749995553303324
+      },
+      "seeds": [
+        {
+          "direct": 0.034072857311617084,
+          "always_scale": 0.026546128736139974,
+          "selected_scale": 0.034106084196001085
+        },
+        {
+          "direct": 0.04398928753946322,
+          "always_scale": 0.027697185613154096,
+          "selected_scale": 0.0475192863456663
+        },
+        {
+          "direct": 0.039081796803112225,
+          "always_scale": 0.034866452031602775,
+          "selected_scale": 0.04062461611824258
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_2/000090",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.134550994576535,
+        "always_scale": 0.15631147150084376,
+        "selected_scale": 0.13339233543957676
+      },
+      "seeds": [
+        {
+          "direct": 0.1415451120657354,
+          "always_scale": 0.16312055005664197,
+          "selected_scale": 0.14173221197931943
+        },
+        {
+          "direct": 0.1302638699101198,
+          "always_scale": 0.16790959562901545,
+          "selected_scale": 0.12647740360876145
+        },
+        {
+          "direct": 0.1318440017537498,
+          "always_scale": 0.13790426881687382,
+          "selected_scale": 0.13196739073064942
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_2/000100",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.0909710736773528,
+        "always_scale": 0.0830220676076285,
+        "selected_scale": 0.09165968317590041
+      },
+      "seeds": [
+        {
+          "direct": 0.08519787169009314,
+          "always_scale": 0.07690162434160926,
+          "selected_scale": 0.08550495331423895
+        },
+        {
+          "direct": 0.09539162993074614,
+          "always_scale": 0.0824163271055431,
+          "selected_scale": 0.09639507200728327
+        },
+        {
+          "direct": 0.09232371941121909,
+          "always_scale": 0.08974825137573313,
+          "selected_scale": 0.09307902420617901
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_naked_1/000130",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.4204319315485683,
+        "always_scale": 0.4200502117296796,
+        "selected_scale": 0.4193691766186405
+      },
+      "seeds": [
+        {
+          "direct": 0.43829199842981276,
+          "always_scale": 0.43119364439557417,
+          "selected_scale": 0.43908818633904906
+        },
+        {
+          "direct": 0.4064663084252335,
+          "always_scale": 0.4083104069448291,
+          "selected_scale": 0.40535691823693015
+        },
+        {
+          "direct": 0.41653748779065863,
+          "always_scale": 0.42064658384863557,
+          "selected_scale": 0.4136624252799423
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_naked_1/000140",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.8333310265566909,
+        "always_scale": 0.7935298346053288,
+        "selected_scale": 0.8332131394367531
+      },
+      "seeds": [
+        {
+          "direct": 0.8449867755084584,
+          "always_scale": 0.7906577740078173,
+          "selected_scale": 0.8449858685154572
+        },
+        {
+          "direct": 0.8265460249814929,
+          "always_scale": 0.7738684834244856,
+          "selected_scale": 0.8250052251993791
+        },
+        {
+          "direct": 0.8284602791801216,
+          "always_scale": 0.8160632463836833,
+          "selected_scale": 0.829648324595423
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_naked_2/000090",
+      "group": "scene2",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.9207048970688376,
+        "always_scale": 1.8479737154821254,
+        "selected_scale": 1.911930835429346
+      },
+      "seeds": [
+        {
+          "direct": 1.9422355472607442,
+          "always_scale": 1.8353740007842576,
+          "selected_scale": 1.930746734208208
+        },
+        {
+          "direct": 1.8910083758037715,
+          "always_scale": 1.828462223598919,
+          "selected_scale": 1.8877582999457256
+        },
+        {
+          "direct": 1.9288707681419972,
+          "always_scale": 1.880084922063199,
+          "selected_scale": 1.9172874721341042
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene2_traj2_naked_2/000100",
+      "group": "scene2",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.5001196267981128,
+        "always_scale": 0.490581815985339,
+        "selected_scale": 0.5002484253474371
+      },
+      "seeds": [
+        {
+          "direct": 0.5171663813263906,
+          "always_scale": 0.5070044087478344,
+          "selected_scale": 0.5220453136676247
+        },
+        {
+          "direct": 0.486240810293556,
+          "always_scale": 0.46971594527504057,
+          "selected_scale": 0.4821014761468477
+        },
+        {
+          "direct": 0.49695168877439183,
+          "always_scale": 0.4950250939331422,
+          "selected_scale": 0.4965984862278388
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_1/000000",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.256491103226933,
+        "always_scale": 1.2968866289266907,
+        "selected_scale": 1.2555297916599448
+      },
+      "seeds": [
+        {
+          "direct": 1.2617062642837975,
+          "always_scale": 1.3032430440213723,
+          "selected_scale": 1.2657465401809136
+        },
+        {
+          "direct": 1.2668439068624806,
+          "always_scale": 1.3269997125442192,
+          "selected_scale": 1.259764943989291
+        },
+        {
+          "direct": 1.2409231385345205,
+          "always_scale": 1.2604171302144802,
+          "selected_scale": 1.2410778908096296
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_1/000010",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.6210769177598995,
+        "always_scale": 0.6503342631466129,
+        "selected_scale": 0.6197811391319425
+      },
+      "seeds": [
+        {
+          "direct": 0.6298946829523676,
+          "always_scale": 0.6516344600185825,
+          "selected_scale": 0.6314663312788747
+        },
+        {
+          "direct": 0.6250416725207426,
+          "always_scale": 0.6777108183127943,
+          "selected_scale": 0.6218148109617558
+        },
+        {
+          "direct": 0.608294397806588,
+          "always_scale": 0.6216575111084619,
+          "selected_scale": 0.606062275155197
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_1/000170",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.7508931971754288,
+        "always_scale": 0.7762272884360525,
+        "selected_scale": 0.7484691142068348
+      },
+      "seeds": [
+        {
+          "direct": 0.7613769690133897,
+          "always_scale": 0.794829958680674,
+          "selected_scale": 0.7653922225296356
+        },
+        {
+          "direct": 0.754934160220636,
+          "always_scale": 0.796718210972855,
+          "selected_scale": 0.747940687734595
+        },
+        {
+          "direct": 0.7363684622922607,
+          "always_scale": 0.7371336956546287,
+          "selected_scale": 0.7320744323562741
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_1/000180",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.6292336214081381,
+        "always_scale": 0.649244636443944,
+        "selected_scale": 0.6222287682032316
+      },
+      "seeds": [
+        {
+          "direct": 0.6350819011014378,
+          "always_scale": 0.6574573175353896,
+          "selected_scale": 0.6319449499957052
+        },
+        {
+          "direct": 0.6439915832083905,
+          "always_scale": 0.680137611576146,
+          "selected_scale": 0.6314480076084524
+        },
+        {
+          "direct": 0.6086273799145864,
+          "always_scale": 0.6101389802202966,
+          "selected_scale": 0.6032933470055374
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_naked_1/000030",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2489466992935835,
+        "always_scale": 0.25054455130763137,
+        "selected_scale": 0.24689264607988956
+      },
+      "seeds": [
+        {
+          "direct": 0.2616569963771866,
+          "always_scale": 0.2569206618103224,
+          "selected_scale": 0.26226038938145213
+        },
+        {
+          "direct": 0.2467955531688318,
+          "always_scale": 0.26152123234629404,
+          "selected_scale": 0.2431217724392166
+        },
+        {
+          "direct": 0.2383875483347322,
+          "always_scale": 0.23319175976627757,
+          "selected_scale": 0.23529577641899993
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_naked_1/000040",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.48891663454833106,
+        "always_scale": 0.48176198336054793,
+        "selected_scale": 0.48632306827134825
+      },
+      "seeds": [
+        {
+          "direct": 0.49785605843451647,
+          "always_scale": 0.48169641391126117,
+          "selected_scale": 0.49803688918864514
+        },
+        {
+          "direct": 0.4874441632550715,
+          "always_scale": 0.49154588560487467,
+          "selected_scale": 0.4821691857785259
+        },
+        {
+          "direct": 0.48144968195540505,
+          "always_scale": 0.4720436505655079,
+          "selected_scale": 0.4787631298468738
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_naked_1/000210",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.9898455768144606,
+        "always_scale": 1.0000484560115914,
+        "selected_scale": 0.9859933957963306
+      },
+      "seeds": [
+        {
+          "direct": 0.9874511362849159,
+          "always_scale": 0.9896962123130993,
+          "selected_scale": 0.9888712344335465
+        },
+        {
+          "direct": 1.0162693821161388,
+          "always_scale": 1.0249948913574107,
+          "selected_scale": 1.0095357829462925
+        },
+        {
+          "direct": 0.965816212042327,
+          "always_scale": 0.9854542643642645,
+          "selected_scale": 0.9595731700091528
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj1_naked_1/000220",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.9685007511617867,
+        "always_scale": 1.887044311232099,
+        "selected_scale": 1.9527822021584065
+      },
+      "seeds": [
+        {
+          "direct": 1.944230496819136,
+          "always_scale": 1.8423554619791904,
+          "selected_scale": 1.9380015474666221
+        },
+        {
+          "direct": 2.0075907314401755,
+          "always_scale": 1.8709038999787933,
+          "selected_scale": 1.9841662181335176
+        },
+        {
+          "direct": 1.9536810252260481,
+          "always_scale": 1.9478735717383129,
+          "selected_scale": 1.9361788408750797
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_1/000060",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.6150475817258528,
+        "always_scale": 0.6421061694241138,
+        "selected_scale": 0.6121223591588351
+      },
+      "seeds": [
+        {
+          "direct": 0.6299606964500387,
+          "always_scale": 0.6578570541760062,
+          "selected_scale": 0.6296957302953666
+        },
+        {
+          "direct": 0.613773734155573,
+          "always_scale": 0.6567519821818056,
+          "selected_scale": 0.6065450053472078
+        },
+        {
+          "direct": 0.6014083145719469,
+          "always_scale": 0.6117094719145296,
+          "selected_scale": 0.6001263418339308
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_1/000070",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.7697031996621506,
+        "always_scale": 0.7975692270584402,
+        "selected_scale": 0.7700738473042056
+      },
+      "seeds": [
+        {
+          "direct": 0.7859083252536191,
+          "always_scale": 0.8156512900135414,
+          "selected_scale": 0.7896147027371696
+        },
+        {
+          "direct": 0.7716275132914768,
+          "always_scale": 0.8128609260879022,
+          "selected_scale": 0.7663809928624472
+        },
+        {
+          "direct": 0.7515737604413558,
+          "always_scale": 0.7641954650738771,
+          "selected_scale": 0.754225846313
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_1/000240",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.0407588148116391,
+        "always_scale": 1.0731531718825924,
+        "selected_scale": 1.033628555727918
+      },
+      "seeds": [
+        {
+          "direct": 1.0513631579460836,
+          "always_scale": 1.0876052536414706,
+          "selected_scale": 1.0498455338539852
+        },
+        {
+          "direct": 1.0441118221140224,
+          "always_scale": 1.1007360203839227,
+          "selected_scale": 1.0328112628486517
+        },
+        {
+          "direct": 1.026801464374811,
+          "always_scale": 1.0311182416223836,
+          "selected_scale": 1.0182288704811169
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_1/000250",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.7496758582025812,
+        "always_scale": 0.7783956434947409,
+        "selected_scale": 0.7477491753425699
+      },
+      "seeds": [
+        {
+          "direct": 0.7599458623939418,
+          "always_scale": 0.7915600740806629,
+          "selected_scale": 0.7652485165213728
+        },
+        {
+          "direct": 0.7450551832555146,
+          "always_scale": 0.7951014393775905,
+          "selected_scale": 0.736944694233019
+        },
+        {
+          "direct": 0.7440265289582871,
+          "always_scale": 0.7485254170259695,
+          "selected_scale": 0.7410543152733178
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_naked_1/000110",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.29177171957428055,
+        "always_scale": 0.3124068230520196,
+        "selected_scale": 0.2902919580637298
+      },
+      "seeds": [
+        {
+          "direct": 0.3023013732660083,
+          "always_scale": 0.31882283994205984,
+          "selected_scale": 0.3031942257036711
+        },
+        {
+          "direct": 0.3031068591479727,
+          "always_scale": 0.32999876068329054,
+          "selected_scale": 0.29885412835844766
+        },
+        {
+          "direct": 0.26990692630886065,
+          "always_scale": 0.28839886853070845,
+          "selected_scale": 0.2688275201290708
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_naked_1/000120",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2116884573648172,
+        "always_scale": 0.22791015471486553,
+        "selected_scale": 0.21094331391412913
+      },
+      "seeds": [
+        {
+          "direct": 0.21985176083338787,
+          "always_scale": 0.23057156679254412,
+          "selected_scale": 0.2201813740725528
+        },
+        {
+          "direct": 0.22536963306576993,
+          "always_scale": 0.24523975095689424,
+          "selected_scale": 0.22368467430062777
+        },
+        {
+          "direct": 0.18984397819529372,
+          "always_scale": 0.20791914639515827,
+          "selected_scale": 0.18896389336920685
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_naked_1/000290",
+      "group": "scene3",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.659655111028127,
+        "always_scale": 0.6132852455113033,
+        "selected_scale": 0.6534215985508042
+      },
+      "seeds": [
+        {
+          "direct": 0.6679590737193934,
+          "always_scale": 0.6091363056650368,
+          "selected_scale": 0.6681975433242308
+        },
+        {
+          "direct": 0.6552196881190715,
+          "always_scale": 0.6093735456224211,
+          "selected_scale": 0.644885251582336
+        },
+        {
+          "direct": 0.655786571245916,
+          "always_scale": 0.621345885246452,
+          "selected_scale": 0.6471820007458454
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene3_traj2_naked_1/000300",
+      "group": "scene3",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.7372498281570447,
+        "always_scale": 0.7002252814032159,
+        "selected_scale": 0.7312803260170598
+      },
+      "seeds": [
+        {
+          "direct": 0.7568213089472678,
+          "always_scale": 0.701219959383581,
+          "selected_scale": 0.7508014293871508
+        },
+        {
+          "direct": 0.7271264139637884,
+          "always_scale": 0.6959217867809885,
+          "selected_scale": 0.7217986098750219
+        },
+        {
+          "direct": 0.7278017615600777,
+          "always_scale": 0.7035340980450785,
+          "selected_scale": 0.7212409387890067
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000000",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.21181583578067018,
+        "always_scale": 0.23121589872760104,
+        "selected_scale": 0.21069905991638946
+      },
+      "seeds": [
+        {
+          "direct": 0.2198691824879991,
+          "always_scale": 0.23586747601671418,
+          "selected_scale": 0.21971445524047373
+        },
+        {
+          "direct": 0.20917908059773682,
+          "always_scale": 0.23462755008317568,
+          "selected_scale": 0.20669514823541055
+        },
+        {
+          "direct": 0.20639924425627454,
+          "always_scale": 0.22315267008291317,
+          "selected_scale": 0.20568757627328402
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000010",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.16859423348348612,
+        "always_scale": 0.18779353975381854,
+        "selected_scale": 0.16822202602676484
+      },
+      "seeds": [
+        {
+          "direct": 0.17568708367931762,
+          "always_scale": 0.1906328676066665,
+          "selected_scale": 0.17642713722157757
+        },
+        {
+          "direct": 0.1653870966957384,
+          "always_scale": 0.1903148175713266,
+          "selected_scale": 0.16337652751522358
+        },
+        {
+          "direct": 0.1647085200754024,
+          "always_scale": 0.18243293408346262,
+          "selected_scale": 0.1648624133434934
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000040",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.08424396978762229,
+        "always_scale": 0.10172323302458797,
+        "selected_scale": 0.08384658282575413
+      },
+      "seeds": [
+        {
+          "direct": 0.09012576777718678,
+          "always_scale": 0.10606050630066455,
+          "selected_scale": 0.09172223737279728
+        },
+        {
+          "direct": 0.08283300167223757,
+          "always_scale": 0.10392812551807866,
+          "selected_scale": 0.079609521275553
+        },
+        {
+          "direct": 0.07977313991344252,
+          "always_scale": 0.0951810672550207,
+          "selected_scale": 0.08020798982891214
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000050",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.13574146559934527,
+        "always_scale": 0.15383347244937354,
+        "selected_scale": 0.13476845953031977
+      },
+      "seeds": [
+        {
+          "direct": 0.14290882672462482,
+          "always_scale": 0.15854050084317559,
+          "selected_scale": 0.14277373899705995
+        },
+        {
+          "direct": 0.13608249458358945,
+          "always_scale": 0.15899752629239003,
+          "selected_scale": 0.13307579033762285
+        },
+        {
+          "direct": 0.12823307548982152,
+          "always_scale": 0.14396239021255505,
+          "selected_scale": 0.12845584925627648
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000080",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.10511209344564794,
+        "always_scale": 0.1223260753280187,
+        "selected_scale": 0.10413281045898003
+      },
+      "seeds": [
+        {
+          "direct": 0.11019350352652191,
+          "always_scale": 0.1265055434634281,
+          "selected_scale": 0.11076482162862337
+        },
+        {
+          "direct": 0.10789689014565813,
+          "always_scale": 0.12859266407572614,
+          "selected_scale": 0.10392809051506091
+        },
+        {
+          "direct": 0.09724588666476379,
+          "always_scale": 0.11188001844490188,
+          "selected_scale": 0.09770551923325575
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000090",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.05941835596043175,
+        "always_scale": 0.05689542940506495,
+        "selected_scale": 0.060086473313948084
+      },
+      "seeds": [
+        {
+          "direct": 0.05666978949679286,
+          "always_scale": 0.05385892481621662,
+          "selected_scale": 0.05672324744329913
+        },
+        {
+          "direct": 0.05978746294629087,
+          "always_scale": 0.05770007135275836,
+          "selected_scale": 0.061038118901566796
+        },
+        {
+          "direct": 0.06179781543821152,
+          "always_scale": 0.05912729204621988,
+          "selected_scale": 0.06249805359697832
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000130",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.19814514281553852,
+        "always_scale": 0.21300974910402828,
+        "selected_scale": 0.19632588761830524
+      },
+      "seeds": [
+        {
+          "direct": 0.20469001456529823,
+          "always_scale": 0.21885674229297244,
+          "selected_scale": 0.20465056527302647
+        },
+        {
+          "direct": 0.20436450304695222,
+          "always_scale": 0.22644003408125166,
+          "selected_scale": 0.19907937404740114
+        },
+        {
+          "direct": 0.18538091083436514,
+          "always_scale": 0.19373247093786072,
+          "selected_scale": 0.18524772353448804
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000140",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.2854739528202381,
+        "always_scale": 0.3024554891448637,
+        "selected_scale": 0.28422833534334707
+      },
+      "seeds": [
+        {
+          "direct": 0.2915251409984576,
+          "always_scale": 0.3063359275917722,
+          "selected_scale": 0.292512815801369
+        },
+        {
+          "direct": 0.2954625842921905,
+          "always_scale": 0.32088443562814667,
+          "selected_scale": 0.2904275263818652
+        },
+        {
+          "direct": 0.2694341331700661,
+          "always_scale": 0.2801461042146721,
+          "selected_scale": 0.2697446638468071
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000170",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.15579397618367066,
+        "always_scale": 0.16629105407727404,
+        "selected_scale": 0.15287191207204268
+      },
+      "seeds": [
+        {
+          "direct": 0.16539462070523847,
+          "always_scale": 0.17102797402998074,
+          "selected_scale": 0.16304070715839913
+        },
+        {
+          "direct": 0.15987323864470243,
+          "always_scale": 0.17868158972656964,
+          "selected_scale": 0.15597264133643185
+        },
+        {
+          "direct": 0.1421140692010711,
+          "always_scale": 0.1491635984752717,
+          "selected_scale": 0.13960238772129707
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000180",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.14517011672277536,
+        "always_scale": 0.1565598599317498,
+        "selected_scale": 0.14289558116011078
+      },
+      "seeds": [
+        {
+          "direct": 0.15197562316154728,
+          "always_scale": 0.16110783879694962,
+          "selected_scale": 0.15122369313774667
+        },
+        {
+          "direct": 0.1551518281183967,
+          "always_scale": 0.17149090420480792,
+          "selected_scale": 0.15020847700555212
+        },
+        {
+          "direct": 0.12838289888838203,
+          "always_scale": 0.13708083679349195,
+          "selected_scale": 0.12725457333703355
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000220",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.08910056682001825,
+        "always_scale": 0.10971255436718741,
+        "selected_scale": 0.08812670273199485
+      },
+      "seeds": [
+        {
+          "direct": 0.0935840973487716,
+          "always_scale": 0.11317893095310128,
+          "selected_scale": 0.09571914605544611
+        },
+        {
+          "direct": 0.09018552896536931,
+          "always_scale": 0.11693247284161616,
+          "selected_scale": 0.08508811500036388
+        },
+        {
+          "direct": 0.08353207414591386,
+          "always_scale": 0.09902625930684479,
+          "selected_scale": 0.08357284714017454
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000230",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.18359039316852155,
+        "always_scale": 0.20637998166243043,
+        "selected_scale": 0.18242093198485296
+      },
+      "seeds": [
+        {
+          "direct": 0.19012154602011447,
+          "always_scale": 0.20825704746833837,
+          "selected_scale": 0.18963886640520933
+        },
+        {
+          "direct": 0.18528483930042242,
+          "always_scale": 0.2152551056852113,
+          "selected_scale": 0.18089867156817915
+        },
+        {
+          "direct": 0.17536479418502773,
+          "always_scale": 0.1956277918337416,
+          "selected_scale": 0.17672525798117036
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000260",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.23442350318612368,
+        "always_scale": 0.2496341470581288,
+        "selected_scale": 0.2319017283608339
+      },
+      "seeds": [
+        {
+          "direct": 0.24481923084862944,
+          "always_scale": 0.25230213697815645,
+          "selected_scale": 0.24471092791967272
+        },
+        {
+          "direct": 0.23866288240703581,
+          "always_scale": 0.2634013842095353,
+          "selected_scale": 0.23299117132683164
+        },
+        {
+          "direct": 0.21978839630270577,
+          "always_scale": 0.23319891998669476,
+          "selected_scale": 0.21800308583599734
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000270",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.09879057166388151,
+        "always_scale": 0.11204988140412296,
+        "selected_scale": 0.09604413358893371
+      },
+      "seeds": [
+        {
+          "direct": 0.10934386479244686,
+          "always_scale": 0.11379898267548483,
+          "selected_scale": 0.10686706122369716
+        },
+        {
+          "direct": 0.1044427038967451,
+          "always_scale": 0.12627002511351879,
+          "selected_scale": 0.09931706408250558
+        },
+        {
+          "direct": 0.08258514630245258,
+          "always_scale": 0.09608063642336527,
+          "selected_scale": 0.08194827546059838
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000310",
+      "group": "scene4",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.10507085252676131,
+        "always_scale": 0.1121916669753603,
+        "selected_scale": 0.10456508333105463
+      },
+      "seeds": [
+        {
+          "direct": 0.1076343221627482,
+          "always_scale": 0.11223679755348266,
+          "selected_scale": 0.10729604620081346
+        },
+        {
+          "direct": 0.1089185138344866,
+          "always_scale": 0.12166797454509576,
+          "selected_scale": 0.10765102669824479
+        },
+        {
+          "direct": 0.09865972158304913,
+          "always_scale": 0.1026702288275025,
+          "selected_scale": 0.09874817709410566
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene4_traj1_1/000320",
+      "group": "scene4",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.37992635935960656,
+        "always_scale": 0.39483789122620516,
+        "selected_scale": 0.3752043771857203
+      },
+      "seeds": [
+        {
+          "direct": 0.38876853201413347,
+          "always_scale": 0.3968991863384775,
+          "selected_scale": 0.3858958392948215
+        },
+        {
+          "direct": 0.38524812284129006,
+          "always_scale": 0.4115069394376889,
+          "selected_scale": 0.3762410409496084
+        },
+        {
+          "direct": 0.3657624232233963,
+          "always_scale": 0.3761075479024491,
+          "selected_scale": 0.36347625131273104
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_1/000000",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.8678592064841762,
+        "always_scale": 0.9011141500163501,
+        "selected_scale": 0.8642829302982592
+      },
+      "seeds": [
+        {
+          "direct": 0.896986528674157,
+          "always_scale": 0.9256578643477745,
+          "selected_scale": 0.8951016788238526
+        },
+        {
+          "direct": 0.8338421982337244,
+          "always_scale": 0.892369208519936,
+          "selected_scale": 0.8296044298165053
+        },
+        {
+          "direct": 0.8727488925446476,
+          "always_scale": 0.8853153771813398,
+          "selected_scale": 0.8681426822544198
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_1/000010",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.4355650952633765,
+        "always_scale": 0.4639553992369556,
+        "selected_scale": 0.43340294273221364
+      },
+      "seeds": [
+        {
+          "direct": 0.4557207260856508,
+          "always_scale": 0.48206045081260357,
+          "selected_scale": 0.45710441471204405
+        },
+        {
+          "direct": 0.41386252581410415,
+          "always_scale": 0.45798934475297265,
+          "selected_scale": 0.40653810379455096
+        },
+        {
+          "direct": 0.4371120338903746,
+          "always_scale": 0.45181640214529056,
+          "selected_scale": 0.4365663096900458
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_1/000170",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.5903030431976433,
+        "always_scale": 0.6211326756894668,
+        "selected_scale": 0.5879350336801569
+      },
+      "seeds": [
+        {
+          "direct": 0.6099946394189146,
+          "always_scale": 0.6366041381317803,
+          "selected_scale": 0.6103034777132679
+        },
+        {
+          "direct": 0.5686592716076965,
+          "always_scale": 0.6189865524608846,
+          "selected_scale": 0.5614310848554487
+        },
+        {
+          "direct": 0.5922552185663187,
+          "always_scale": 0.6078073364757356,
+          "selected_scale": 0.5920705384717541
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_1/000180",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.707626704191512,
+        "always_scale": 0.7438975251721409,
+        "selected_scale": 0.7041920003404374
+      },
+      "seeds": [
+        {
+          "direct": 0.7287399729726488,
+          "always_scale": 0.7619016746994518,
+          "selected_scale": 0.7280391954479697
+        },
+        {
+          "direct": 0.6798414065858652,
+          "always_scale": 0.740923413616104,
+          "selected_scale": 0.6724421459079175
+        },
+        {
+          "direct": 0.7142987330160215,
+          "always_scale": 0.728867487200867,
+          "selected_scale": 0.712094659665425
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_naked_1/000010",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.4871434318599652,
+        "always_scale": 1.423250450555492,
+        "selected_scale": 1.474680863587655
+      },
+      "seeds": [
+        {
+          "direct": 1.512763255040024,
+          "always_scale": 1.4139352736786357,
+          "selected_scale": 1.5003349027651833
+        },
+        {
+          "direct": 1.4619049131624742,
+          "always_scale": 1.3788948305830289,
+          "selected_scale": 1.4500488339313788
+        },
+        {
+          "direct": 1.4867621273773972,
+          "always_scale": 1.476921247404811,
+          "selected_scale": 1.4736588540664026
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_naked_1/000020",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.4362692011892717,
+        "always_scale": 1.3974887993377092,
+        "selected_scale": 1.4267835856633908
+      },
+      "seeds": [
+        {
+          "direct": 1.4600042151976071,
+          "always_scale": 1.386750398977491,
+          "selected_scale": 1.450795005883377
+        },
+        {
+          "direct": 1.414627951718633,
+          "always_scale": 1.3572848928266783,
+          "selected_scale": 1.402115378862901
+        },
+        {
+          "direct": 1.434175436651575,
+          "always_scale": 1.448431106208958,
+          "selected_scale": 1.427440372243894
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_naked_1/000180",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.3780551812646314,
+        "always_scale": 0.38615641387376987,
+        "selected_scale": 0.37618393435910913
+      },
+      "seeds": [
+        {
+          "direct": 0.39972149838722637,
+          "always_scale": 0.39526884227431064,
+          "selected_scale": 0.3978730411361222
+        },
+        {
+          "direct": 0.35671028361566054,
+          "always_scale": 0.3754615876050189,
+          "selected_scale": 0.3552701571418666
+        },
+        {
+          "direct": 0.3777337617910073,
+          "always_scale": 0.38773881174198005,
+          "selected_scale": 0.3754086047993385
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj1_naked_1/000190",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.1267796555603509,
+        "always_scale": 1.0723588042261385,
+        "selected_scale": 1.119977220726618
+      },
+      "seeds": [
+        {
+          "direct": 1.140402050407687,
+          "always_scale": 1.0698181012835997,
+          "selected_scale": 1.1394496414666226
+        },
+        {
+          "direct": 1.100955278643248,
+          "always_scale": 1.0241169226658082,
+          "selected_scale": 1.0952875686378485
+        },
+        {
+          "direct": 1.1389816376301178,
+          "always_scale": 1.1231413887290078,
+          "selected_scale": 1.1251944520753832
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_1/000020",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.38108614342693964,
+        "always_scale": 0.4042464555674136,
+        "selected_scale": 0.37771674221714263
+      },
+      "seeds": [
+        {
+          "direct": 0.3886567230857744,
+          "always_scale": 0.4079581204582694,
+          "selected_scale": 0.3864411192975246
+        },
+        {
+          "direct": 0.37730565269954797,
+          "always_scale": 0.41957398390871714,
+          "selected_scale": 0.3718290968048046
+        },
+        {
+          "direct": 0.37729605449549647,
+          "always_scale": 0.38520726233525426,
+          "selected_scale": 0.37488001054909886
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_1/000030",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.5079988169751114,
+        "always_scale": 0.5339934240194353,
+        "selected_scale": 0.5053190566917481
+      },
+      "seeds": [
+        {
+          "direct": 0.5175530653183219,
+          "always_scale": 0.5372128826860166,
+          "selected_scale": 0.5168465575493372
+        },
+        {
+          "direct": 0.5045817578661981,
+          "always_scale": 0.5482108350518848,
+          "selected_scale": 0.4983939771544323
+        },
+        {
+          "direct": 0.5018616277408142,
+          "always_scale": 0.5165565543204044,
+          "selected_scale": 0.500716635371475
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_1/000190",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.632945639766362,
+        "always_scale": 0.660880347217356,
+        "selected_scale": 0.6298993021269936
+      },
+      "seeds": [
+        {
+          "direct": 0.6422083004934517,
+          "always_scale": 0.665291974388299,
+          "selected_scale": 0.6407683908570506
+        },
+        {
+          "direct": 0.6290721340100852,
+          "always_scale": 0.679139277679635,
+          "selected_scale": 0.6228972949105779
+        },
+        {
+          "direct": 0.6275564847955492,
+          "always_scale": 0.6382097895841342,
+          "selected_scale": 0.6260322206133523
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_1/000200",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.5980426770552062,
+        "always_scale": 0.6302771804358773,
+        "selected_scale": 0.5947125769096994
+      },
+      "seeds": [
+        {
+          "direct": 0.6091600305515917,
+          "always_scale": 0.6333159757676575,
+          "selected_scale": 0.6074636339789943
+        },
+        {
+          "direct": 0.5951022782651331,
+          "always_scale": 0.6493786791291308,
+          "selected_scale": 0.5894947020376132
+        },
+        {
+          "direct": 0.5898657223488938,
+          "always_scale": 0.6081368864108437,
+          "selected_scale": 0.5871793947124907
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_naked_1/000080",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 1.3556857247124177,
+        "always_scale": 1.3245316249790824,
+        "selected_scale": 1.339773400601853
+      },
+      "seeds": [
+        {
+          "direct": 1.3367282138891945,
+          "always_scale": 1.273488285799241,
+          "selected_scale": 1.3236858165652294
+        },
+        {
+          "direct": 1.3752697335890014,
+          "always_scale": 1.3331374314380968,
+          "selected_scale": 1.3615420501384599
+        },
+        {
+          "direct": 1.3550592266590573,
+          "always_scale": 1.3669691576999095,
+          "selected_scale": 1.3340923351018692
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_naked_1/000090",
+      "group": "scene5",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 3.4602343569364584,
+        "always_scale": 3.2921791709365817,
+        "selected_scale": 3.4303486856670546
+      },
+      "seeds": [
+        {
+          "direct": 3.371832707644805,
+          "always_scale": 3.148387530713356,
+          "selected_scale": 3.3446056093029575
+        },
+        {
+          "direct": 3.5055661734514723,
+          "always_scale": 3.2421493072695653,
+          "selected_scale": 3.4718891114229566
+        },
+        {
+          "direct": 3.503304189713097,
+          "always_scale": 3.486000674826825,
+          "selected_scale": 3.474551336275251
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_naked_1/000260",
+      "group": "scene5",
+      "fold": "extra",
+      "points": 378,
+      "scores": {
+        "direct": 0.783394851405154,
+        "always_scale": 0.7237423373675207,
+        "selected_scale": 0.7687902291006387
+      },
+      "seeds": [
+        {
+          "direct": 0.7846703082920435,
+          "always_scale": 0.6912923811883565,
+          "selected_scale": 0.7690116615405068
+        },
+        {
+          "direct": 0.7883199035305812,
+          "always_scale": 0.718117792896017,
+          "selected_scale": 0.7738993622883346
+        },
+        {
+          "direct": 0.7771943423928374,
+          "always_scale": 0.7618168380181887,
+          "selected_scale": 0.763459663473075
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene5_traj2_naked_1/000270",
+      "group": "scene5",
+      "fold": "same",
+      "points": 374,
+      "scores": {
+        "direct": 3.4254765593201664,
+        "always_scale": 3.082337510364684,
+        "selected_scale": 3.406623340763595
+      },
+      "seeds": [
+        {
+          "direct": 3.3888871463558496,
+          "always_scale": 2.936387991047663,
+          "selected_scale": 3.3633297990107325
+        },
+        {
+          "direct": 3.473702464710811,
+          "always_scale": 2.991000869418827,
+          "selected_scale": 3.440069705190441
+        },
+        {
+          "direct": 3.4138400668938385,
+          "always_scale": 3.319623670627562,
+          "selected_scale": 3.4164705180896098
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_1/000000",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.11281363817571488,
+        "always_scale": 0.10758494677461748,
+        "selected_scale": 0.11378210402011107
+      },
+      "seeds": [
+        {
+          "direct": 0.10540154818444498,
+          "always_scale": 0.10237362507843124,
+          "selected_scale": 0.10608944234571376
+        },
+        {
+          "direct": 0.11685752008913408,
+          "always_scale": 0.10872516299743318,
+          "selected_scale": 0.11875381863319028
+        },
+        {
+          "direct": 0.1161818462535656,
+          "always_scale": 0.11165605224798801,
+          "selected_scale": 0.11650305108142918
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_1/000010",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.1125327639968327,
+        "always_scale": 0.10748899753347457,
+        "selected_scale": 0.11341061597405065
+      },
+      "seeds": [
+        {
+          "direct": 0.10531851302873706,
+          "always_scale": 0.10261519668577501,
+          "selected_scale": 0.10601661888461773
+        },
+        {
+          "direct": 0.11667247036487133,
+          "always_scale": 0.10893443666303403,
+          "selected_scale": 0.11813509774524378
+        },
+        {
+          "direct": 0.11560730859688965,
+          "always_scale": 0.11091735925161465,
+          "selected_scale": 0.11608013129229046
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_1/000170",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.07340528478249539,
+        "always_scale": 0.07633332167236184,
+        "selected_scale": 0.0734012803226809
+      },
+      "seeds": [
+        {
+          "direct": 0.07184352959279,
+          "always_scale": 0.07464891078704926,
+          "selected_scale": 0.07160364877861174
+        },
+        {
+          "direct": 0.0752184289251788,
+          "always_scale": 0.08044646846847764,
+          "selected_scale": 0.07544019322533384
+        },
+        {
+          "direct": 0.07315389582951737,
+          "always_scale": 0.07390458576155862,
+          "selected_scale": 0.0731599989640971
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_1/000180",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.07185312524894139,
+        "always_scale": 0.0789565240212552,
+        "selected_scale": 0.0717441758654018
+      },
+      "seeds": [
+        {
+          "direct": 0.07247634901439742,
+          "always_scale": 0.07926117715136255,
+          "selected_scale": 0.07243601506514435
+        },
+        {
+          "direct": 0.07264967429084664,
+          "always_scale": 0.08470151196779914,
+          "selected_scale": 0.07192657087218132
+        },
+        {
+          "direct": 0.0704333524415801,
+          "always_scale": 0.07290688294460396,
+          "selected_scale": 0.07086994165887972
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_naked_1/000020",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.11487844743413413,
+        "always_scale": 0.12742437558980918,
+        "selected_scale": 0.1136355263721678
+      },
+      "seeds": [
+        {
+          "direct": 0.12448980398639449,
+          "always_scale": 0.12930604917193814,
+          "selected_scale": 0.12395838153824919
+        },
+        {
+          "direct": 0.10787932390985273,
+          "always_scale": 0.12962276717017443,
+          "selected_scale": 0.10588665212052721
+        },
+        {
+          "direct": 0.11226621440615518,
+          "always_scale": 0.12334431042731497,
+          "selected_scale": 0.11106154545772699
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_naked_1/000030",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.12110532552857513,
+        "always_scale": 0.11052558580694812,
+        "selected_scale": 0.12113229701314866
+      },
+      "seeds": [
+        {
+          "direct": 0.11334530377454906,
+          "always_scale": 0.10922627119657206,
+          "selected_scale": 0.11301349576612801
+        },
+        {
+          "direct": 0.12651453467167537,
+          "always_scale": 0.10910717572396067,
+          "selected_scale": 0.12742201787464227
+        },
+        {
+          "direct": 0.12345613813950096,
+          "always_scale": 0.11324331050031163,
+          "selected_scale": 0.12296137739867573
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_naked_1/000190",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.24204438844535123,
+        "always_scale": 0.22337948848381894,
+        "selected_scale": 0.24383677422212158
+      },
+      "seeds": [
+        {
+          "direct": 0.2289917408309885,
+          "always_scale": 0.21898561848764353,
+          "selected_scale": 0.23011154827513744
+        },
+        {
+          "direct": 0.25116341857923186,
+          "always_scale": 0.2184041886228345,
+          "selected_scale": 0.25398630392405314
+        },
+        {
+          "direct": 0.24597800592583327,
+          "always_scale": 0.2327486583409788,
+          "selected_scale": 0.24741247046717416
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj1_naked_1/000200",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.1294232318309332,
+        "always_scale": 0.11018246874173825,
+        "selected_scale": 0.13168491448903838
+      },
+      "seeds": [
+        {
+          "direct": 0.11652319379542182,
+          "always_scale": 0.10744190412604611,
+          "selected_scale": 0.11844851057151613
+        },
+        {
+          "direct": 0.13753991196263246,
+          "always_scale": 0.10419949551618658,
+          "selected_scale": 0.1407648778750069
+        },
+        {
+          "direct": 0.1342065897347454,
+          "always_scale": 0.11890600658298205,
+          "selected_scale": 0.13584135502059214
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_1/000040",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.5422173103478649,
+        "always_scale": 0.5765534225471894,
+        "selected_scale": 0.5399904546496108
+      },
+      "seeds": [
+        {
+          "direct": 0.5536594463087736,
+          "always_scale": 0.5788712107563846,
+          "selected_scale": 0.5536344925172224
+        },
+        {
+          "direct": 0.5390311178662843,
+          "always_scale": 0.597641329995,
+          "selected_scale": 0.5334871022845169
+        },
+        {
+          "direct": 0.5339613668685368,
+          "always_scale": 0.553147726890184,
+          "selected_scale": 0.5328497691470933
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_1/000050",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.18697527823844465,
+        "always_scale": 0.2093668607827209,
+        "selected_scale": 0.18531022544308437
+      },
+      "seeds": [
+        {
+          "direct": 0.19568453859252954,
+          "always_scale": 0.2115867824253741,
+          "selected_scale": 0.19600565702061215
+        },
+        {
+          "direct": 0.18657943872760063,
+          "always_scale": 0.22599260444793198,
+          "selected_scale": 0.18143588415633505
+        },
+        {
+          "direct": 0.17866185739520377,
+          "always_scale": 0.19052119547485655,
+          "selected_scale": 0.1784891351523059
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_1/000210",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.36326307515402984,
+        "always_scale": 0.38737331159568167,
+        "selected_scale": 0.3626308020740969
+      },
+      "seeds": [
+        {
+          "direct": 0.3765915637464378,
+          "always_scale": 0.3939678662872672,
+          "selected_scale": 0.3773535198616445
+        },
+        {
+          "direct": 0.35640508390461534,
+          "always_scale": 0.3997691042118765,
+          "selected_scale": 0.35362893053511835
+        },
+        {
+          "direct": 0.35679257781103635,
+          "always_scale": 0.36838296428790124,
+          "selected_scale": 0.356909955825528
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_1/000220",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.23247066029547558,
+        "always_scale": 0.2519098050485467,
+        "selected_scale": 0.23195786498640236
+      },
+      "seeds": [
+        {
+          "direct": 0.24428750663111112,
+          "always_scale": 0.25749078525427627,
+          "selected_scale": 0.2441499954311943
+        },
+        {
+          "direct": 0.22499611364366823,
+          "always_scale": 0.26267074113454497,
+          "selected_scale": 0.22325485302181947
+        },
+        {
+          "direct": 0.2281283606116474,
+          "always_scale": 0.2355678887568188,
+          "selected_scale": 0.22846874650619328
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_naked_1/000090",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.2368438543858711,
+        "always_scale": 0.2530689524407713,
+        "selected_scale": 0.23562050216518268
+      },
+      "seeds": [
+        {
+          "direct": 0.24645252818224606,
+          "always_scale": 0.25230242798453634,
+          "selected_scale": 0.24494390922646536
+        },
+        {
+          "direct": 0.2336883524048603,
+          "always_scale": 0.26653124286439145,
+          "selected_scale": 0.23191624680812728
+        },
+        {
+          "direct": 0.230390682570507,
+          "always_scale": 0.2403731864733861,
+          "selected_scale": 0.2300013504609554
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_naked_1/000100",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.21431508498043772,
+        "always_scale": 0.2295471830274141,
+        "selected_scale": 0.21390756786628884
+      },
+      "seeds": [
+        {
+          "direct": 0.22476413285189714,
+          "always_scale": 0.2279855197945749,
+          "selected_scale": 0.22563983789963546
+        },
+        {
+          "direct": 0.21058080008508662,
+          "always_scale": 0.24321394999955678,
+          "selected_scale": 0.20805466680029538
+        },
+        {
+          "direct": 0.2076003220043294,
+          "always_scale": 0.21744207928811057,
+          "selected_scale": 0.20802819889893562
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_naked_1/000270",
+      "group": "scene8",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.4062825867370983,
+        "always_scale": 0.42870699367938014,
+        "selected_scale": 0.40597613479093225
+      },
+      "seeds": [
+        {
+          "direct": 0.4223423513410422,
+          "always_scale": 0.43450214994137254,
+          "selected_scale": 0.422868056750547
+        },
+        {
+          "direct": 0.3935377336567873,
+          "always_scale": 0.4366544624888031,
+          "selected_scale": 0.3910576168243621
+        },
+        {
+          "direct": 0.40296767521346527,
+          "always_scale": 0.4149643686079647,
+          "selected_scale": 0.40400273079788757
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene8_traj2_naked_1/000280",
+      "group": "scene8",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2781058677090917,
+        "always_scale": 0.29954709142737196,
+        "selected_scale": 0.2774209528689728
+      },
+      "seeds": [
+        {
+          "direct": 0.28937963457719956,
+          "always_scale": 0.30139666188659037,
+          "selected_scale": 0.28949131045654847
+        },
+        {
+          "direct": 0.269500932624689,
+          "always_scale": 0.31031492199515426,
+          "selected_scale": 0.2677826205049098
+        },
+        {
+          "direct": 0.27543703592538643,
+          "always_scale": 0.28692969040037125,
+          "selected_scale": 0.27498892764546007
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_1/000000",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2192914620456712,
+        "always_scale": 0.24178735131107523,
+        "selected_scale": 0.21751412415847826
+      },
+      "seeds": [
+        {
+          "direct": 0.2276356994677029,
+          "always_scale": 0.24562528861343677,
+          "selected_scale": 0.22739777692640337
+        },
+        {
+          "direct": 0.21571688730289804,
+          "always_scale": 0.2543161132166402,
+          "selected_scale": 0.21139539791349035
+        },
+        {
+          "direct": 0.21452179936641272,
+          "always_scale": 0.22542065210314874,
+          "selected_scale": 0.21374919763554104
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_1/000010",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.16066951093187468,
+        "always_scale": 0.17405747134797053,
+        "selected_scale": 0.15892230311304711
+      },
+      "seeds": [
+        {
+          "direct": 0.16583385438011458,
+          "always_scale": 0.17556106285933573,
+          "selected_scale": 0.16420160329883834
+        },
+        {
+          "direct": 0.15984553771763524,
+          "always_scale": 0.1838611609924383,
+          "selected_scale": 0.15673418254986396
+        },
+        {
+          "direct": 0.15632914069787426,
+          "always_scale": 0.16275019019213752,
+          "selected_scale": 0.15583112349043907
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_1/000200",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.0999433681538177,
+        "always_scale": 0.11217371355432425,
+        "selected_scale": 0.09961384042953109
+      },
+      "seeds": [
+        {
+          "direct": 0.10321071275917833,
+          "always_scale": 0.1134650682675958,
+          "selected_scale": 0.10378158215543964
+        },
+        {
+          "direct": 0.09912047019514292,
+          "always_scale": 0.12071552544780924,
+          "selected_scale": 0.09765498253495863
+        },
+        {
+          "direct": 0.09749892150713184,
+          "always_scale": 0.10234054694756771,
+          "selected_scale": 0.09740495659819497
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_1/000210",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.29000631286081346,
+        "always_scale": 0.31417388285512365,
+        "selected_scale": 0.2880113958263926
+      },
+      "seeds": [
+        {
+          "direct": 0.2977470811074851,
+          "always_scale": 0.319095162006289,
+          "selected_scale": 0.2976784114462548
+        },
+        {
+          "direct": 0.28725821344187535,
+          "always_scale": 0.32986778632533414,
+          "selected_scale": 0.28266450736948284
+        },
+        {
+          "direct": 0.2850136440330799,
+          "always_scale": 0.29355870023374775,
+          "selected_scale": 0.2836912686634402
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_naked_1/000040",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.10331031545401591,
+        "always_scale": 0.11822060394695266,
+        "selected_scale": 0.1040081341017099
+      },
+      "seeds": [
+        {
+          "direct": 0.11958287638198202,
+          "always_scale": 0.12497594918099941,
+          "selected_scale": 0.11968647752284016
+        },
+        {
+          "direct": 0.08990313748989993,
+          "always_scale": 0.11828137767850133,
+          "selected_scale": 0.09032024917951242
+        },
+        {
+          "direct": 0.10044493249016577,
+          "always_scale": 0.11140448498135723,
+          "selected_scale": 0.10201767560277712
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_naked_1/000050",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.15854741560467897,
+        "always_scale": 0.17677862339209574,
+        "selected_scale": 0.15890069970080814
+      },
+      "seeds": [
+        {
+          "direct": 0.17619424326809607,
+          "always_scale": 0.18593115795862905,
+          "selected_scale": 0.17663500705449256
+        },
+        {
+          "direct": 0.1454974004399546,
+          "always_scale": 0.1798193358462056,
+          "selected_scale": 0.14609960089703664
+        },
+        {
+          "direct": 0.1539506031059862,
+          "always_scale": 0.16458537637145257,
+          "selected_scale": 0.15396749115089528
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_naked_1/000240",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 2.5827799425046156,
+        "always_scale": 2.488933975915666,
+        "selected_scale": 2.580194805182946
+      },
+      "seeds": [
+        {
+          "direct": 2.6052854970653017,
+          "always_scale": 2.4531966222620794,
+          "selected_scale": 2.5990070304595054
+        },
+        {
+          "direct": 2.5606133144970564,
+          "always_scale": 2.4375978957572166,
+          "selected_scale": 2.5547360634623977
+        },
+        {
+          "direct": 2.5824410159514897,
+          "always_scale": 2.576007409727701,
+          "selected_scale": 2.5868413216269355
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj1_naked_1/000250",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 4.0845619231791375,
+        "always_scale": 3.916930154656459,
+        "selected_scale": 4.081544661185645
+      },
+      "seeds": [
+        {
+          "direct": 4.112251888012533,
+          "always_scale": 3.8653922332769333,
+          "selected_scale": 4.102780671285678
+        },
+        {
+          "direct": 4.045846314440653,
+          "always_scale": 3.816325550408411,
+          "selected_scale": 4.0453079098751035
+        },
+        {
+          "direct": 4.095587567084228,
+          "always_scale": 4.069072680284032,
+          "selected_scale": 4.096545402396153
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_1/000080",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2798938145298115,
+        "always_scale": 0.30300706897760826,
+        "selected_scale": 0.2765140686376032
+      },
+      "seeds": [
+        {
+          "direct": 0.2922946249815175,
+          "always_scale": 0.3095206261742006,
+          "selected_scale": 0.29179539147099326
+        },
+        {
+          "direct": 0.27448440917149036,
+          "always_scale": 0.3153087709297424,
+          "selected_scale": 0.26813292874264844
+        },
+        {
+          "direct": 0.2729024094364266,
+          "always_scale": 0.2841918098288818,
+          "selected_scale": 0.2696138856991679
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_1/000090",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.42602324711239065,
+        "always_scale": 0.45226296676071925,
+        "selected_scale": 0.4215629895714011
+      },
+      "seeds": [
+        {
+          "direct": 0.4434441665706606,
+          "always_scale": 0.46143140492765716,
+          "selected_scale": 0.44088545724374334
+        },
+        {
+          "direct": 0.41651375426294796,
+          "always_scale": 0.4656248320894722,
+          "selected_scale": 0.41199088634647446
+        },
+        {
+          "direct": 0.4181118205035634,
+          "always_scale": 0.42973266326502846,
+          "selected_scale": 0.41181262512398553
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_1/000280",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.16866297645510298,
+        "always_scale": 0.192207900406465,
+        "selected_scale": 0.1647092194962417
+      },
+      "seeds": [
+        {
+          "direct": 0.17767925414318353,
+          "always_scale": 0.1979659922408319,
+          "selected_scale": 0.17576013062388252
+        },
+        {
+          "direct": 0.16678706412404365,
+          "always_scale": 0.20555975307238192,
+          "selected_scale": 0.1602085641970057
+        },
+        {
+          "direct": 0.16152261109808172,
+          "always_scale": 0.17309795590618118,
+          "selected_scale": 0.15815896366783685
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_1/000290",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.08367747754995462,
+        "always_scale": 0.09666021323673281,
+        "selected_scale": 0.08407023241771006
+      },
+      "seeds": [
+        {
+          "direct": 0.09333117003566214,
+          "always_scale": 0.10109746160476817,
+          "selected_scale": 0.09489080853777299
+        },
+        {
+          "direct": 0.07907802278721368,
+          "always_scale": 0.10262460133511209,
+          "selected_scale": 0.07733706876671353
+        },
+        {
+          "direct": 0.07862323982698802,
+          "always_scale": 0.08625857677031817,
+          "selected_scale": 0.07998281994864362
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_naked_1/000130",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.6388932175382381,
+        "always_scale": 0.6487379264037568,
+        "selected_scale": 0.6369330635859716
+      },
+      "seeds": [
+        {
+          "direct": 0.6505359614220189,
+          "always_scale": 0.6486746994645826,
+          "selected_scale": 0.647925939244872
+        },
+        {
+          "direct": 0.6338179832760993,
+          "always_scale": 0.6549158201264027,
+          "selected_scale": 0.6299110826198566
+        },
+        {
+          "direct": 0.6323257079165963,
+          "always_scale": 0.6426232596202853,
+          "selected_scale": 0.6329621688931862
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_naked_1/000140",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.4985001044118706,
+        "always_scale": 0.5221014473087506,
+        "selected_scale": 0.49934514734718344
+      },
+      "seeds": [
+        {
+          "direct": 0.5160303909313388,
+          "always_scale": 0.5304149788498221,
+          "selected_scale": 0.5179845705898639
+        },
+        {
+          "direct": 0.4845409578004583,
+          "always_scale": 0.5239120352096714,
+          "selected_scale": 0.48459910531280537
+        },
+        {
+          "direct": 0.4949289645038147,
+          "always_scale": 0.5119773278667584,
+          "selected_scale": 0.49545176613888087
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_naked_1/000330",
+      "group": "scene9",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.38255033137082245,
+        "always_scale": 0.3366203878896086,
+        "selected_scale": 0.3808941586118171
+      },
+      "seeds": [
+        {
+          "direct": 0.38455174676389525,
+          "always_scale": 0.3189155147453475,
+          "selected_scale": 0.3839009237631183
+        },
+        {
+          "direct": 0.3823363965058895,
+          "always_scale": 0.34283369952967546,
+          "selected_scale": 0.3785883862679073
+        },
+        {
+          "direct": 0.3807628508426826,
+          "always_scale": 0.34811194939380274,
+          "selected_scale": 0.3801931658044255
+        }
+      ]
+    },
+    {
+      "key": "HAMMER/scene9_traj2_naked_1/000340",
+      "group": "scene9",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.09013313203409658,
+        "always_scale": 0.08748005637255137,
+        "selected_scale": 0.09043166581273072
+      },
+      "seeds": [
+        {
+          "direct": 0.08661365665403514,
+          "always_scale": 0.08347949439855708,
+          "selected_scale": 0.0867184317177555
+        },
+        {
+          "direct": 0.09349113145509298,
+          "always_scale": 0.0896784961472129,
+          "selected_scale": 0.09349759554251647
+        },
+        {
+          "direct": 0.09029460799316162,
+          "always_scale": 0.08928217857188414,
+          "selected_scale": 0.09107897017792022
+        }
+      ]
+    }
+  ]
+}

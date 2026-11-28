@@ -1,0 +1,275 @@
+{
+  "cut": 1,
+  "rows": [
+    {
+      "scene": 4,
+      "initial": 26,
+      "options": {
+        "1": {
+          "distance_mm": 116.81387450502365,
+          "rotation_deg": 16.908506962992703,
+          "coverage": 0.8369831250805101,
+          "loss_mm": 17.131858038707186
+        },
+        "2": {
+          "distance_mm": 73.19312811248382,
+          "rotation_deg": 10.76720107720762,
+          "coverage": 0.8161149040319464,
+          "loss_mm": 18.772699487503548
+        },
+        "3": {
+          "distance_mm": 139.41007086328324,
+          "rotation_deg": 20.59256874421677,
+          "coverage": 0.8315084374597449,
+          "loss_mm": 17.900619170404
+        }
+      }
+    },
+    {
+      "scene": 4,
+      "initial": 53,
+      "options": {
+        "1": {
+          "distance_mm": 85.78562791507906,
+          "rotation_deg": 12.712891922865701,
+          "coverage": 0.7734069473199908,
+          "loss_mm": 23.473752982487774
+        },
+        "2": {
+          "distance_mm": 174.8777796320131,
+          "rotation_deg": 25.9500028718173,
+          "coverage": 0.7882831071236869,
+          "loss_mm": 22.050270754772793
+        },
+        "3": {
+          "distance_mm": 257.79355605817824,
+          "rotation_deg": 38.456767651646544,
+          "coverage": 0.7838355954297983,
+          "loss_mm": 22.287604109839066
+        }
+      }
+    },
+    {
+      "scene": 5,
+      "initial": 26,
+      "options": {
+        "1": {
+          "distance_mm": 116.81544928737891,
+          "rotation_deg": 16.906218700208903,
+          "coverage": 0.9077231695085256,
+          "loss_mm": 9.80068845126552
+        },
+        "2": {
+          "distance_mm": 73.1956450527055,
+          "rotation_deg": 10.76716653198568,
+          "coverage": 0.8807673019057172,
+          "loss_mm": 12.347384791704306
+        },
+        "3": {
+          "distance_mm": 139.42495300938668,
+          "rotation_deg": 20.593571699861304,
+          "coverage": 0.8785105315947843,
+          "loss_mm": 12.769017430734946
+        }
+      }
+    },
+    {
+      "scene": 5,
+      "initial": 53,
+      "options": {
+        "1": {
+          "distance_mm": 85.79375356255352,
+          "rotation_deg": 12.715207842854504,
+          "coverage": 0.8326149425287356,
+          "loss_mm": 17.252623082567958
+        },
+        "2": {
+          "distance_mm": 174.8988524296323,
+          "rotation_deg": 25.953484123120592,
+          "coverage": 0.8209051724137931,
+          "loss_mm": 18.514057925828595
+        },
+        "3": {
+          "distance_mm": 257.8019017257216,
+          "rotation_deg": 38.46043053671973,
+          "coverage": 0.8064655172413793,
+          "loss_mm": 19.88828191088404
+        }
+      }
+    },
+    {
+      "scene": 8,
+      "initial": 17,
+      "options": {
+        "1": {
+          "distance_mm": 66.74200668241603,
+          "rotation_deg": 9.829567947162426,
+          "coverage": 0.962603519668737,
+          "loss_mm": 4.188703016451444
+        },
+        "2": {
+          "distance_mm": 248.47454424235497,
+          "rotation_deg": 36.19376593077589,
+          "coverage": 0.9599508281573499,
+          "loss_mm": 4.6419670522771055
+        },
+        "3": {
+          "distance_mm": 210.92164966727717,
+          "rotation_deg": 30.675271555577947,
+          "coverage": 0.959756728778468,
+          "loss_mm": 4.615691822216438
+        }
+      }
+    },
+    {
+      "scene": 8,
+      "initial": 34,
+      "options": {
+        "1": {
+          "distance_mm": 350.0174818862064,
+          "rotation_deg": 50.65894377434352,
+          "coverage": 0.9412338454035601,
+          "loss_mm": 6.869617560401631
+        },
+        "2": {
+          "distance_mm": 291.6795726285876,
+          "rotation_deg": 42.67626393160445,
+          "coverage": 0.943509713078111,
+          "loss_mm": 6.53543951105941
+        },
+        "3": {
+          "distance_mm": 227.56524854914025,
+          "rotation_deg": 31.798093129396857,
+          "coverage": 0.8889701698772657,
+          "loss_mm": 12.197674668556655
+        }
+      }
+    },
+    {
+      "scene": 9,
+      "initial": 17,
+      "options": {
+        "1": {
+          "distance_mm": 66.74611679775076,
+          "rotation_deg": 9.8299518460649,
+          "coverage": 0.9559383136390948,
+          "loss_mm": 4.761473437501435
+        },
+        "2": {
+          "distance_mm": 248.47382646420033,
+          "rotation_deg": 36.194236024643246,
+          "coverage": 0.9565391548167435,
+          "loss_mm": 4.772178714888154
+        },
+        "3": {
+          "distance_mm": 210.91288124400634,
+          "rotation_deg": 30.673469222881245,
+          "coverage": 0.9571399959943921,
+          "loss_mm": 4.781519177972568
+        }
+      }
+    },
+    {
+      "scene": 9,
+      "initial": 34,
+      "options": {
+        "1": {
+          "distance_mm": 350.0260777505927,
+          "rotation_deg": 50.66035962087559,
+          "coverage": 0.9406574394463668,
+          "loss_mm": 6.76885755296015
+        },
+        "2": {
+          "distance_mm": 291.6747563211138,
+          "rotation_deg": 42.674330624687585,
+          "coverage": 0.9397923875432526,
+          "loss_mm": 6.8723795274618205
+        },
+        "3": {
+          "distance_mm": 227.5721035715145,
+          "rotation_deg": 31.800200771239865,
+          "coverage": 0.9038062283737024,
+          "loss_mm": 10.22946140433239
+        }
+      }
+    }
+  ],
+  "reference": {
+    "distance_mm": 208.9252955860635,
+    "rotation_deg": 30.381296663942532,
+    "coverage": 0.8762491505936918,
+    "loss_mm": 13.083733711867513
+  },
+  "candidate": {
+    "distance_mm": 154.84254854837513,
+    "rotation_deg": 22.52770607717103,
+    "coverage": 0.89389516282444,
+    "loss_mm": 11.280946765292887
+  },
+  "oracle_choices": [
+    1,
+    2,
+    2,
+    1,
+    1,
+    3,
+    3,
+    3
+  ],
+  "oracle": {
+    "distance_mm": 147.9341615999216,
+    "rotation_deg": 21.305276910041325,
+    "coverage": 0.8813960488190934,
+    "loss_mm": 12.522436866883162
+  },
+  "sha256": {
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_27.json": "5a11528262d63814c6a6a9a5223b53edf40556a890f7367f66f4f71b7888598e",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_27.png": "e32a3ceb4471cf46ccc33a4bc8981c710635f5928371d96df727b97c25c88d0c",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_28.json": "b5efd2d5eae55089f07ceb33163361bc2405a19f2a9f5d02b51b0caa11261eef",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_28.png": "ae7a08346ec07956cbe43ff2417ccb306083a281405d1d1eac40b033c498f3c8",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_29.json": "cb998e6d4ab8388ddaa3fd1d227abb429e8b180a11c16b09b329d7b19c516bc3",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_29.png": "e12ac37be6260bb49865c29b0a0662bc9deaebb55a496c49fa3b012862c85fc3",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_54.json": "7c208150f62ffcb7643973b21206eefadea580c860a1ab847bb2f63d06def351",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_54.png": "ae56fe59cb75cb243078278bcb4222a777d44990c4eee048041a4011c0fe30d1",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_55.json": "b02f99551f46de3b1a9ea4b810eb3daddcfde72953abf3b2ed1cc94c5841ba80",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_55.png": "32710026c401d987e0d661c969104e71e110fcb9f3004019d325d599d880c879",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_56.json": "0fcc67cb385b05af07150d6b1c83c3f4d1bd9e20fff006681fe0ffcdf9553a64",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_56.png": "d791971800ea327f7d2f37db48096adce988464f20643bdc950603fce7e0291b",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_27.json": "3cffb5410ea9fb0b41a0c21e79bae74d81ec93028fa35850d63e2be28153197f",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_27.png": "1c17f4484311099f3c997e9bf753c61808b2f156370cc0e5ffd84875a7ecddf1",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_28.json": "125c51a4d3fccf9e3593affb43ad0da226035f8a8abf15edbc39c958920c7740",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_28.png": "f95674162224c3cb10f791df534374b94a5ed4bb539a8332cb254248e7f10a2e",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_29.json": "afc35ed97d01dd4e722637a2dd62c93b5c60f793ff76a9f0e4f83f595cd3e8cb",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_29.png": "7247cbfa460a6ae73b162f04a7d372c7036a819ac6093be73159445711001b48",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_54.json": "64f165cfc39e99e1d20023daa85f5e324df5a1f45b22077ac92eceeffd069a50",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_54.png": "4d6c7ee47d84a315f428bf50ac85a194ee550c5a2aec64cb995a753e4f541d74",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_55.json": "ebd1d1ece9a02c548ff727a45291cc9101de480c37b6153167957891f31e9446",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_55.png": "472105cb36f52d9793074d89c36366d52d4279887da954235d145bb9e480efcb",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_56.json": "9a0f2cdf32d7f330e36a46b4bea2618376b320871581fc68e4fc90d47ebcfff7",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_56.png": "5420dc393e855bd0c4dc8769fa242b0b8f0220473ff19cccd7b5ca73a86c4fcc",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_18.json": "77a9a93659022d3564e5979c85f87400c9108eed43cb15c6801494ff897f9569",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_18.png": "77ec1c26284db6ccd7fa421c41435d925890d0313109f4f38fccd7c6f4730298",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_19.json": "fa0ec5e465ecbe3c950e3740cd67672d46e872a34c0fd475ff30b40b8315c8b4",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_19.png": "2c89a81bb69bc9d034bc9d435dcce1f14b1ccdf7f8bc96b9eaba68cc09e591f1",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_20.json": "181c73e0fee163f3884e3a98eabc965a1153e75448239318c9789d4dda21f181",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_20.png": "07bda2b3ae98854707f553d5cf563a8596548754c9c0a43c314a7bd42cd137dd",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_35.json": "18124188133febcf091443d1fd49bafe120dab1e804922e776d269d74d259f5d",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_35.png": "0d4b0823362a53875b7e3643a092a09f6651bf443a155b230f9bb5c526dd2cc0",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_36.json": "e3fa1cdd9db085958b41613c68aab4187e80d3eab74578dd9e4b8b9b4b31ed85",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_36.png": "0337c6869d0c9ada29835f32693f3b591b39055c908ad792e70eac4ed1dd3b16",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_37.json": "b25df1591f8e9e0e45ea413238f80dcb75f24054ff93dfaaf7e05097fd01b5b3",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_37.png": "02c5fa3cd3694a2c8841093e7ebf7b9173444e56d492a4f9a628f9c1f3e1838e",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_18.json": "77ee583c75ba1488d7ff3103fc766cce4a78f9b7da359a37f7d0adcec9416a83",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_18.png": "06bb7dffe5058e69c3be55d4e56562e7100081aa46643cafcaf7cd3107d42cbf",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_19.json": "6794a12458ea2d3bf16074f9229ba43c1dc78f6072d6a0072658f7f4d9f8758d",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_19.png": "92017af9214d5007b1149a47c816c7651e0bc5881a0934da6493d528acf6ee2d",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_20.json": "46ef2d6978b2467c4fa2240f87a55e251c9bc42b1a6b6ec8b2d0db753f270613",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_20.png": "aac427885065d3c18558ef6e2b4c7f7f8373ac114a8de68dadaefddcf0210716",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_35.json": "84c954dfbfba4afd38369fa6241ce160f7b97ea39c5255a5c4cb411253009b5d",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_35.png": "e5d919b7393b964649533dad2c0acea59fd867ccfaf153e67901018039f7d5db",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_36.json": "9877e9c339d4b1751283db07169d2c6e4cc1e7fbe6a1c06416c86c6d9775d03f",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_36.png": "356fbe3bdaf873821531f923a75766e2e50b289d0554fa031e01fd63a5dd35fe",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_37.json": "71a4971f579b6d88444573b1f14b5c17d1d3514318703a62120b3e288700a81b",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_37.png": "944269f41d9f3f0ff372c0b66a5e286c036bbb5bec15edeffa1e2ca883b6405c"
+  }
+}

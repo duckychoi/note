@@ -1,0 +1,54 @@
+{
+ "zero": {
+  "replay": {
+   "jump_magnitude_mm": 531.9011825089419,
+   "overlap_credit_mm": 233.06010792654772,
+   "excess_over_constant_mm": 298.84107455378927,
+   "order_accuracy": 0.4781910334965843
+  },
+  "utility": {
+   "jump_magnitude_mm": 548.3035711671104,
+   "overlap_credit_mm": 249.2666618956526,
+   "excess_over_constant_mm": 299.03690968672566,
+   "order_accuracy": 0.4865943377385183
+  },
+  "pair_uniform": {
+   "jump_magnitude_mm": 405.8727336654579,
+   "overlap_credit_mm": 238.14640156277747,
+   "excess_over_constant_mm": 167.72633255988862,
+   "order_accuracy": 0.49911745606725066
+  },
+  "pair_utility": {
+   "jump_magnitude_mm": 416.774348958903,
+   "overlap_credit_mm": 231.63451788453844,
+   "excess_over_constant_mm": 185.13983112328137,
+   "order_accuracy": 0.49673910688185724
+  }
+ },
+ "few": {
+  "replay": {
+   "jump_magnitude_mm": 583.4820200870392,
+   "overlap_credit_mm": 240.87027314719828,
+   "excess_over_constant_mm": 342.61174707040095,
+   "order_accuracy": 0.4781910334965843
+  },
+  "utility": {
+   "jump_magnitude_mm": 616.7112081621134,
+   "overlap_credit_mm": 260.6329556111826,
+   "excess_over_constant_mm": 356.07825250084267,
+   "order_accuracy": 0.4865943377385183
+  },
+  "pair_uniform": {
+   "jump_magnitude_mm": 468.9627733562002,
+   "overlap_credit_mm": 253.75727909684994,
+   "excess_over_constant_mm": 215.20549394245236,
+   "order_accuracy": 0.49911745606725066
+  },
+  "pair_utility": {
+   "jump_magnitude_mm": 462.43071915939225,
+   "overlap_credit_mm": 243.00319206315413,
+   "excess_over_constant_mm": 219.427527265208,
+   "order_accuracy": 0.49673910688185724
+  }
+ }
+}

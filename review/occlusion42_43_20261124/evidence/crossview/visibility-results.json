@@ -1,0 +1,673 @@
+{
+  "summaries": {
+    "all": {
+      "n": 2318,
+      "means": {
+        "median": 0.36757805570960045,
+        "old_ind": 0.2938144733991004,
+        "old_shared": 0.29508196368106976,
+        "geo_ind": 0.29091107699557234,
+        "geo_shared": 0.27658114224733166,
+        "geo_occlusion_only": 0.30555997636337434,
+        "lidar_ind": 0.2318932616113941,
+        "lidar_shared": 0.2223658320939801,
+        "lidar_occlusion_only": 0.28207648413601055
+      },
+      "scenes": {
+        "playground": {
+          "median": 0.37591779232025146,
+          "old_ind": 0.3143476417298345,
+          "old_shared": 0.31355624271777544,
+          "geo_ind": 0.2833405402693514,
+          "geo_shared": 0.2658969252618784,
+          "geo_occlusion_only": 0.3274632406166602,
+          "lidar_ind": 0.24228532680890064,
+          "lidar_shared": 0.23250997921297417,
+          "lidar_occlusion_only": 0.30824152719974474
+        },
+        "terrace": {
+          "median": 0.35923831909894943,
+          "old_ind": 0.27328130506836623,
+          "old_shared": 0.27660768464436414,
+          "geo_ind": 0.29848161372179327,
+          "geo_shared": 0.28726535923278484,
+          "geo_occlusion_only": 0.28365671211008847,
+          "lidar_ind": 0.22150119641388755,
+          "lidar_shared": 0.212221684974986,
+          "lidar_occlusion_only": 0.25591144107227637
+        }
+      },
+      "vs": {
+        "old_ind": {
+          "relative": 5.8653785677739485,
+          "ci": [
+            -5.117091401814067,
+            15.413100031969362
+          ]
+        },
+        "geo_ind": {
+          "relative": 4.925881439866508,
+          "ci": [
+            3.7577706543300837,
+            6.156413406599215
+          ]
+        }
+      }
+    },
+    "hard": {
+      "n": 2173,
+      "means": {
+        "median": 0.3855868123471737,
+        "old_ind": 0.308878531841338,
+        "old_shared": 0.3101064808494004,
+        "geo_ind": 0.30539801305032444,
+        "geo_shared": 0.290406110420811,
+        "geo_occlusion_only": 0.3211171892116035,
+        "lidar_ind": 0.24274479084482165,
+        "lidar_shared": 0.23289410756956086,
+        "lidar_occlusion_only": 0.2966100959337148
+      },
+      "scenes": {
+        "playground": {
+          "median": 0.39369854927062986,
+          "old_ind": 0.3299678206551988,
+          "old_shared": 0.3291367086153376,
+          "geo_ind": 0.2969170604684198,
+          "geo_shared": 0.2784851859611625,
+          "geo_occlusion_only": 0.3436169856640135,
+          "lidar_ind": 0.2540018519871813,
+          "lidar_shared": 0.24402765782579916,
+          "lidar_occlusion_only": 0.3235421608268944
+        },
+        "terrace": {
+          "median": 0.3774750754237175,
+          "old_ind": 0.2877892430274772,
+          "old_shared": 0.29107625308346324,
+          "geo_ind": 0.313878965632229,
+          "geo_shared": 0.30232703488045953,
+          "geo_occlusion_only": 0.2986173927591934,
+          "lidar_ind": 0.231487729702462,
+          "lidar_shared": 0.22176055731332256,
+          "lidar_occlusion_only": 0.2696780310405351
+        }
+      },
+      "vs": {
+        "old_ind": {
+          "relative": 5.980480841580715,
+          "ci": [
+            -5.0515410861253995,
+            15.602319823736167
+          ]
+        },
+        "geo_ind": {
+          "relative": 4.90897189532239,
+          "ci": [
+            3.6803774755982954,
+            6.207751915022652
+          ]
+        }
+      }
+    },
+    "lidar_occluded": {
+      "n": 294,
+      "means": {
+        "median": 0.41165005788207054,
+        "old_ind": 0.4382481579549406,
+        "old_shared": 0.43980937132865644,
+        "geo_ind": 0.28254706428907445,
+        "geo_shared": 0.278213788235961,
+        "geo_occlusion_only": 0.46260241432100135,
+        "lidar_ind": 0.21699881257564746,
+        "lidar_shared": 0.2108441537290655,
+        "lidar_occlusion_only": 0.4172901412865732
+      },
+      "scenes": {
+        "playground": {
+          "median": 0.40929868817329407,
+          "old_ind": 0.40052133651369815,
+          "old_shared": 0.40360572908238934,
+          "geo_ind": 0.33900822751004733,
+          "geo_shared": 0.33004658102268847,
+          "geo_occlusion_only": 0.41605437483861607,
+          "lidar_ind": 0.28817303732481453,
+          "lidar_shared": 0.2774487246811336,
+          "lidar_occlusion_only": 0.37460245275552373
+        },
+        "terrace": {
+          "median": 0.414001427590847,
+          "old_ind": 0.47597497939618305,
+          "old_shared": 0.47601301357492354,
+          "geo_ind": 0.22608590106810156,
+          "geo_shared": 0.22638099544923354,
+          "geo_occlusion_only": 0.5091504538033866,
+          "lidar_ind": 0.1458245878264804,
+          "lidar_shared": 0.14423958277699742,
+          "lidar_occlusion_only": 0.4599778298176227
+        }
+      },
+      "vs": {
+        "old_ind": {
+          "relative": 36.51683796362559,
+          "ci": [
+            17.595755598053987,
+            52.43846730422298
+          ]
+        },
+        "geo_ind": {
+          "relative": 1.5336475231185087,
+          "ci": [
+            -0.130523124059434,
+            2.6434893787624314
+          ]
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "scene": "playground",
+      "frame": "playground-0",
+      "scores": {
+        "all": {
+          "n": 273,
+          "absrel": {
+            "median": 0.4661576747894287,
+            "old_ind": 0.2739673943138041,
+            "old_shared": 0.27390955752949847,
+            "geo_ind": 0.2948745939148275,
+            "geo_shared": 0.24429986742293,
+            "geo_occlusion_only": 0.28564260580099776,
+            "lidar_ind": 0.22474871461877086,
+            "lidar_shared": 0.18313424922074398,
+            "lidar_occlusion_only": 0.2677152271857295
+          }
+        },
+        "hard": {
+          "n": 269,
+          "absrel": {
+            "median": 0.4730238914489746,
+            "old_ind": 0.2779881604806693,
+            "old_shared": 0.27792667109637575,
+            "geo_ind": 0.2992063334131206,
+            "geo_shared": 0.24787792975005868,
+            "geo_occlusion_only": 0.28983698895243437,
+            "lidar_ind": 0.22803861031215206,
+            "lidar_shared": 0.1857972432325727,
+            "lidar_occlusion_only": 0.27164303315597266
+          }
+        },
+        "lidar_occluded": {
+          "n": 85,
+          "absrel": {
+            "median": 0.5615759491920471,
+            "old_ind": 0.3807112730620839,
+            "old_shared": 0.3951116462318196,
+            "geo_ind": 0.4017526883776724,
+            "geo_shared": 0.39466645627437813,
+            "geo_occlusion_only": 0.42406841188160793,
+            "lidar_ind": 0.31038406198260166,
+            "lidar_shared": 0.26035025778024345,
+            "lidar_occlusion_only": 0.3749734911049063
+          }
+        }
+      },
+      "occlusion": {
+        "label": 131,
+        "clear": 1299,
+        "old": 3,
+        "geo": 51,
+        "old_fp": 4,
+        "geo_fp": 35
+      }
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-1",
+      "scores": {
+        "all": {
+          "n": 158,
+          "absrel": {
+            "median": 0.4813932180404663,
+            "old_ind": 0.3503871612443336,
+            "old_shared": 0.34466438648680214,
+            "geo_ind": 0.3714748498699875,
+            "geo_shared": 0.3427622143612515,
+            "geo_occlusion_only": 0.37547959004028786,
+            "lidar_ind": 0.3362003321833982,
+            "lidar_shared": 0.33565821693174264,
+            "lidar_occlusion_only": 0.35529328543951144
+          }
+        },
+        "hard": {
+          "n": 151,
+          "absrel": {
+            "median": 0.5033825635910034,
+            "old_ind": 0.36621395261537687,
+            "old_shared": 0.3602256427017171,
+            "geo_ind": 0.3880966269823176,
+            "geo_shared": 0.35805302264225236,
+            "geo_occlusion_only": 0.39244585692203565,
+            "lidar_ind": 0.35134655111353746,
+            "lidar_shared": 0.35077854205469755,
+            "lidar_occlusion_only": 0.3713244983504759
+          }
+        },
+        "lidar_occluded": {
+          "n": 27,
+          "absrel": {
+            "median": 0.3299418091773987,
+            "old_ind": 0.31958202365561966,
+            "old_shared": 0.30738933996141,
+            "geo_ind": 0.21739608481998116,
+            "geo_shared": 0.20073133444440258,
+            "geo_occlusion_only": 0.2924989283789906,
+            "lidar_ind": 0.2181696542125224,
+            "lidar_shared": 0.21780177118766203,
+            "lidar_occlusion_only": 0.2787436965310763
+          }
+        }
+      },
+      "occlusion": {
+        "label": 27,
+        "clear": 582,
+        "old": 2,
+        "geo": 13,
+        "old_fp": 4,
+        "geo_fp": 16
+      }
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-2",
+      "scores": {
+        "all": {
+          "n": 208,
+          "absrel": {
+            "median": 0.39301827549934387,
+            "old_ind": 0.36484263535538436,
+            "old_shared": 0.3641804907190375,
+            "geo_ind": 0.26255919825082635,
+            "geo_shared": 0.258874636251372,
+            "geo_occlusion_only": 0.37308968326430036,
+            "lidar_ind": 0.1920708601037243,
+            "lidar_shared": 0.1924453624739338,
+            "lidar_occlusion_only": 0.3601877654558958
+          }
+        },
+        "hard": {
+          "n": 193,
+          "absrel": {
+            "median": 0.42266255617141724,
+            "old_ind": 0.3925268552210052,
+            "old_shared": 0.3918097652782732,
+            "geo_ind": 0.281914817764823,
+            "geo_shared": 0.27794193379815924,
+            "geo_occlusion_only": 0.4009085309823424,
+            "lidar_ind": 0.2063305574079916,
+            "lidar_shared": 0.20673037830283308,
+            "lidar_occlusion_only": 0.38747292005333517
+          }
+        },
+        "lidar_occluded": {
+          "n": 29,
+          "absrel": {
+            "median": 0.5551791787147522,
+            "old_ind": 0.4529180122063426,
+            "old_shared": 0.4514498890244743,
+            "geo_ind": 0.39008438786117644,
+            "geo_shared": 0.37991051584768176,
+            "geo_occlusion_only": 0.4728101949642984,
+            "lidar_ind": 0.25407689555343926,
+            "lidar_shared": 0.2647388489173956,
+            "lidar_occlusion_only": 0.4296628535672168
+          }
+        }
+      },
+      "occlusion": {
+        "label": 43,
+        "clear": 650,
+        "old": 4,
+        "geo": 11,
+        "old_fp": 12,
+        "geo_fp": 13
+      }
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-3",
+      "scores": {
+        "all": {
+          "n": 341,
+          "absrel": {
+            "median": 0.25163012742996216,
+            "old_ind": 0.2225841131701981,
+            "old_shared": 0.22410544874271865,
+            "geo_ind": 0.217528074900289,
+            "geo_shared": 0.2161939982382791,
+            "geo_occlusion_only": 0.23083468350990333,
+            "lidar_ind": 0.20098480775495992,
+            "lidar_shared": 0.1944786371885838,
+            "lidar_occlusion_only": 0.20419078512819236
+          }
+        },
+        "hard": {
+          "n": 325,
+          "absrel": {
+            "median": 0.2637062668800354,
+            "old_ind": 0.2331223056665443,
+            "old_shared": 0.23470840044005356,
+            "geo_ind": 0.22782371069613688,
+            "geo_shared": 0.22411090674250253,
+            "geo_occlusion_only": 0.24177345539039516,
+            "lidar_ind": 0.21045436404503082,
+            "lidar_shared": 0.20362418564227508,
+            "lidar_occlusion_only": 0.21381730783633815
+          }
+        },
+        "lidar_occluded": {
+          "n": 76,
+          "absrel": {
+            "median": 0.2897634208202362,
+            "old_ind": 0.37542896712241963,
+            "old_shared": 0.38646723676838757,
+            "geo_ind": 0.2914879901442832,
+            "geo_shared": 0.2878233625625015,
+            "geo_occlusion_only": 0.40749779196912644,
+            "lidar_ind": 0.27672511949247997,
+            "lidar_shared": 0.2626959246473824,
+            "lidar_occlusion_only": 0.33875213946217725
+          }
+        }
+      },
+      "occlusion": {
+        "label": 125,
+        "clear": 1773,
+        "old": 5,
+        "geo": 51,
+        "old_fp": 6,
+        "geo_fp": 60
+      }
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-4",
+      "scores": {
+        "all": {
+          "n": 279,
+          "absrel": {
+            "median": 0.2873896658420563,
+            "old_ind": 0.3599569045654524,
+            "old_shared": 0.36092133011082056,
+            "geo_ind": 0.2702659844108265,
+            "geo_shared": 0.26735391003555947,
+            "geo_occlusion_only": 0.3722696404678115,
+            "lidar_ind": 0.25742191938365006,
+            "lidar_shared": 0.2568334302498665,
+            "lidar_occlusion_only": 0.35382057278939466
+          }
+        },
+        "hard": {
+          "n": 262,
+          "absrel": {
+            "median": 0.30571746826171875,
+            "old_ind": 0.37998782929239827,
+            "old_shared": 0.3810130635602685,
+            "geo_ind": 0.28754381348570096,
+            "geo_shared": 0.2844421368728399,
+            "geo_occlusion_only": 0.39312009607285975,
+            "lidar_ind": 0.27383917705719457,
+            "lidar_shared": 0.27320793989661735,
+            "lidar_occlusion_only": 0.3734530447383503
+          }
+        },
+        "lidar_occluded": {
+          "n": 68,
+          "absrel": {
+            "median": 0.31003308296203613,
+            "old_ind": 0.4739664065220251,
+            "old_shared": 0.47761053342585535,
+            "geo_ind": 0.3943199863471234,
+            "geo_shared": 0.38710123598447826,
+            "geo_occlusion_only": 0.48339654699905676,
+            "lidar_ind": 0.3815094553830295,
+            "lidar_shared": 0.3816568208729845,
+            "lidar_occlusion_only": 0.450880083112242
+          }
+        }
+      },
+      "occlusion": {
+        "label": 85,
+        "clear": 978,
+        "old": 8,
+        "geo": 47,
+        "old_fp": 10,
+        "geo_fp": 28
+      }
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-0",
+      "scores": {
+        "all": {
+          "n": 369,
+          "absrel": {
+            "median": 0.254190057516098,
+            "old_ind": 0.23018517437922253,
+            "old_shared": 0.2295219669438552,
+            "geo_ind": 0.18697426219690066,
+            "geo_shared": 0.1928565278077384,
+            "geo_occlusion_only": 0.23525862080025156,
+            "lidar_ind": 0.14170748192021096,
+            "lidar_shared": 0.14205300028690082,
+            "lidar_occlusion_only": 0.22196570893114453
+          }
+        },
+        "hard": {
+          "n": 318,
+          "absrel": {
+            "median": 0.27272945642471313,
+            "old_ind": 0.24848355486285292,
+            "old_shared": 0.24772863603930861,
+            "geo_ind": 0.2012794038120375,
+            "geo_shared": 0.20818361933555188,
+            "geo_occlusion_only": 0.253411079992812,
+            "lidar_ind": 0.1477460843977851,
+            "lidar_shared": 0.14848822798508063,
+            "lidar_occlusion_only": 0.24044265197289144
+          }
+        },
+        "lidar_occluded": {
+          "n": 2,
+          "absrel": {
+            "median": 0.30246368050575256,
+            "old_ind": 0.44729434055666994,
+            "old_shared": 0.4470480062821922,
+            "geo_ind": 0.43954027983700944,
+            "geo_shared": 0.43980598278010413,
+            "geo_occlusion_only": 0.447272319572493,
+            "lidar_ind": 0.023728344202907703,
+            "lidar_shared": 0.015063028973729797,
+            "lidar_occlusion_only": 0.45609985120675534
+          }
+        }
+      },
+      "occlusion": {
+        "label": 2,
+        "clear": 1380,
+        "old": 0,
+        "geo": 0,
+        "old_fp": 17,
+        "geo_fp": 29
+      }
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-1",
+      "scores": {
+        "all": {
+          "n": 397,
+          "absrel": {
+            "median": 0.282059907913208,
+            "old_ind": 0.27474228668067974,
+            "old_shared": 0.28691896139532846,
+            "geo_ind": 0.20328908674165388,
+            "geo_shared": 0.2122406330531351,
+            "geo_occlusion_only": 0.28100884295931,
+            "lidar_ind": 0.1314045851598011,
+            "lidar_shared": 0.13689953304254482,
+            "lidar_occlusion_only": 0.2728516736851821
+          }
+        },
+        "hard": {
+          "n": 374,
+          "absrel": {
+            "median": 0.2984781563282013,
+            "old_ind": 0.2908596189287633,
+            "old_shared": 0.3029007848841689,
+            "geo_ind": 0.215113536174537,
+            "geo_shared": 0.2245650928363748,
+            "geo_occlusion_only": 0.2975067743964422,
+            "lidar_ind": 0.1388944982826252,
+            "lidar_shared": 0.14469345259302702,
+            "lidar_occlusion_only": 0.2888925948853112
+          }
+        },
+        "lidar_occluded": {
+          "n": 1,
+          "absrel": {
+            "median": 0.1675490140914917,
+            "old_ind": 0.9062739760497005,
+            "old_shared": 0.906336788513534,
+            "geo_ind": 0.03464995375278812,
+            "geo_shared": 0.035125867339107386,
+            "geo_occlusion_only": 0.9057745970392612,
+            "lidar_ind": 0.0001637374048752971,
+            "lidar_shared": 0.0025103299036772775,
+            "lidar_occlusion_only": 0.9060436985272876
+          }
+        }
+      },
+      "occlusion": {
+        "label": 1,
+        "clear": 1723,
+        "old": 0,
+        "geo": 1,
+        "old_fp": 9,
+        "geo_fp": 30
+      }
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-2",
+      "scores": {
+        "all": {
+          "n": 173,
+          "absrel": {
+            "median": 0.533356249332428,
+            "old_ind": 0.31193641586587983,
+            "old_shared": 0.31274613339567525,
+            "geo_ind": 0.5269476000470501,
+            "geo_shared": 0.48131965512877944,
+            "geo_occlusion_only": 0.3396070200884613,
+            "lidar_ind": 0.3864597330662204,
+            "lidar_shared": 0.33892246644658924,
+            "lidar_occlusion_only": 0.25944532557051453
+          }
+        },
+        "hard": {
+          "n": 164,
+          "absrel": {
+            "median": 0.5619860291481018,
+            "old_ind": 0.32857610948048654,
+            "old_shared": 0.32943059169335814,
+            "geo_ind": 0.555419635079692,
+            "geo_shared": 0.507288018814567,
+            "geo_occlusion_only": 0.3577600209670674,
+            "lidar_ind": 0.40717863070846455,
+            "lidar_shared": 0.35703289143472583,
+            "lidar_occlusion_only": 0.27319384063611085
+          }
+        },
+        "lidar_occluded": {
+          "n": 1,
+          "absrel": {
+            "median": 0.7372481822967529,
+            "old_ind": 0.02477667140470663,
+            "old_shared": 0.024505572241425577,
+            "geo_ind": 0.021231726138423168,
+            "geo_shared": 0.01961423949711616,
+            "geo_occlusion_only": 0.19571504752222646,
+            "lidar_ind": 0.02904983047814791,
+            "lidar_shared": 0.028877136639555046,
+            "lidar_occlusion_only": 0.027528265676787234
+          }
+        }
+      },
+      "occlusion": {
+        "label": 1,
+        "clear": 1136,
+        "old": 0,
+        "geo": 0,
+        "old_fp": 10,
+        "geo_fp": 33
+      }
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-3",
+      "scores": {
+        "all": {
+          "n": 120,
+          "absrel": {
+            "median": 0.3673470616340637,
+            "old_ind": 0.27626134334768293,
+            "old_shared": 0.27724367684259776,
+            "geo_ind": 0.27671550590156857,
+            "geo_shared": 0.2626446209414864,
+            "geo_occlusion_only": 0.2787523645923312,
+            "lidar_ind": 0.22643298550931762,
+            "lidar_shared": 0.2310117401239091,
+            "lidar_occlusion_only": 0.26938305610226426
+          }
+        },
+        "hard": {
+          "n": 117,
+          "absrel": {
+            "median": 0.37670665979385376,
+            "old_ind": 0.2832376888378061,
+            "old_shared": 0.2842449997170173,
+            "geo_ind": 0.28370328746264944,
+            "geo_shared": 0.26927140853534454,
+            "geo_occlusion_only": 0.28579169568045215,
+            "lidar_ind": 0.23213170542097317,
+            "lidar_shared": 0.23682765724045676,
+            "lidar_occlusion_only": 0.27618303666782695
+          }
+        },
+        "lidar_occluded": {
+          "n": 5,
+          "absrel": {
+            "median": 0.44874483346939087,
+            "old_ind": 0.5255549295736551,
+            "old_shared": 0.5261616872625424,
+            "geo_ind": 0.40892164454418545,
+            "geo_shared": 0.4109778921806065,
+            "geo_occlusion_only": 0.4878398510795658,
+            "lidar_ind": 0.5303564392199906,
+            "lidar_shared": 0.5305078355910275,
+            "lidar_occlusion_only": 0.4502395038596608
+          }
+        }
+      },
+      "occlusion": {
+        "label": 14,
+        "clear": 661,
+        "old": 0,
+        "geo": 6,
+        "old_fp": 6,
+        "geo_fp": 28
+      }
+    }
+  ],
+  "encoder_gate": true
+}

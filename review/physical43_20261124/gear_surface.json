@@ -1,0 +1,275 @@
+{
+  "cad_url": "https://drive.usercontent.google.com/download?id=1WkL4DHY-HpwsOIJ3f0Ef4EZg2V4fLpT2&export=download&confirm=t",
+  "sha256": "7b7c2e7ba736de9957db1ad94481b0cf0b631ceb391e5570bbd798f017886d12",
+  "pose_sha256": {
+    "Gear/Scene_4": "8be3290143b9dec9d67590dccc84ce3bfb28199d544258b08d67e59e9849fa7b",
+    "Gear/Scene_5": "0a9d994989de7c8d5aa6350116e57d17d08bc44c756d96b3f1954808e72ac73a",
+    "Gear/Scene_8": "f601b2c90ad71da9cb5f41380a74cc50ae2e5cd0778511f3e0f6812bc1c2562c",
+    "Gear/Scene_9": "745fe0d89f4680dfc18dbce8a43198b5a3313bd8ab91125ca21d9f0fe844c069"
+  },
+  "rows": [
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "initial": 26,
+      "cad_points": 4652,
+      "valid": 1649,
+      "gross": 12,
+      "smooth_valid": 1456,
+      "smooth_gross": 3,
+      "persistent_eligible": 3685,
+      "persistent_hidden": 142,
+      "example": {
+        "x": 732,
+        "y": 596,
+        "reference_mm": 362.375,
+        "native_mm": 375.8125
+      }
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "initial": 53,
+      "cad_points": 4032,
+      "valid": 1177,
+      "gross": 4,
+      "smooth_valid": 1026,
+      "smooth_gross": 0,
+      "persistent_eligible": 3142,
+      "persistent_hidden": 159,
+      "example": null
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "initial": 31,
+      "cad_points": 2360,
+      "valid": 1734,
+      "gross": 46,
+      "smooth_valid": 885,
+      "smooth_gross": 27,
+      "persistent_eligible": 2803,
+      "persistent_hidden": 19,
+      "example": {
+        "x": 796,
+        "y": 240,
+        "reference_mm": 362.03186426897753,
+        "native_mm": 373.375
+      }
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "initial": 62,
+      "cad_points": 1227,
+      "valid": 875,
+      "gross": 58,
+      "smooth_valid": 206,
+      "smooth_gross": 7,
+      "persistent_eligible": 1291,
+      "persistent_hidden": 4,
+      "example": {
+        "x": 724,
+        "y": 364,
+        "reference_mm": 371.9644584316451,
+        "native_mm": 383.4375
+      }
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "initial": 26,
+      "cad_points": 3992,
+      "valid": 1987,
+      "gross": 10,
+      "smooth_valid": 1739,
+      "smooth_gross": 0,
+      "persistent_eligible": 2978,
+      "persistent_hidden": 157,
+      "example": null
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "initial": 53,
+      "cad_points": 3550,
+      "valid": 1570,
+      "gross": 11,
+      "smooth_valid": 1343,
+      "smooth_gross": 0,
+      "persistent_eligible": 2964,
+      "persistent_hidden": 181,
+      "example": null
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "initial": 31,
+      "cad_points": 2272,
+      "valid": 1815,
+      "gross": 20,
+      "smooth_valid": 1023,
+      "smooth_gross": 6,
+      "persistent_eligible": 2626,
+      "persistent_hidden": 36,
+      "example": {
+        "x": 808,
+        "y": 224,
+        "reference_mm": 357.5262867353373,
+        "native_mm": 368.53125
+      }
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "initial": 62,
+      "cad_points": 1350,
+      "valid": 1001,
+      "gross": 57,
+      "smooth_valid": 383,
+      "smooth_gross": 13,
+      "persistent_eligible": 1394,
+      "persistent_hidden": 16,
+      "example": {
+        "x": 724,
+        "y": 316,
+        "reference_mm": 398.6053812974577,
+        "native_mm": 409.6875
+      }
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "initial": 17,
+      "cad_points": 1902,
+      "valid": 1190,
+      "gross": 34,
+      "smooth_valid": 1011,
+      "smooth_gross": 3,
+      "persistent_eligible": 1439,
+      "persistent_hidden": 0,
+      "example": {
+        "x": 700,
+        "y": 428,
+        "reference_mm": 393.96875,
+        "native_mm": 382.6875
+      }
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "initial": 34,
+      "cad_points": 1614,
+      "valid": 424,
+      "gross": 13,
+      "smooth_valid": 324,
+      "smooth_gross": 0,
+      "persistent_eligible": 1313,
+      "persistent_hidden": 65,
+      "example": null
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "initial": 23,
+      "cad_points": 1123,
+      "valid": 893,
+      "gross": 17,
+      "smooth_valid": 529,
+      "smooth_gross": 4,
+      "persistent_eligible": 1121,
+      "persistent_hidden": 9,
+      "example": {
+        "x": 700,
+        "y": 416,
+        "reference_mm": 386.2409966351086,
+        "native_mm": 403.25
+      }
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "initial": 46,
+      "cad_points": 1217,
+      "valid": 983,
+      "gross": 17,
+      "smooth_valid": 731,
+      "smooth_gross": 6,
+      "persistent_eligible": 1195,
+      "persistent_hidden": 6,
+      "example": {
+        "x": 700,
+        "y": 300,
+        "reference_mm": 392.304422363508,
+        "native_mm": 409.6875
+      }
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "initial": 17,
+      "cad_points": 1772,
+      "valid": 1040,
+      "gross": 18,
+      "smooth_valid": 889,
+      "smooth_gross": 0,
+      "persistent_eligible": 1210,
+      "persistent_hidden": 0,
+      "example": null
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "initial": 34,
+      "cad_points": 1651,
+      "valid": 508,
+      "gross": 13,
+      "smooth_valid": 443,
+      "smooth_gross": 1,
+      "persistent_eligible": 1237,
+      "persistent_hidden": 92,
+      "example": {
+        "x": 524,
+        "y": 488,
+        "reference_mm": 406.5625,
+        "native_mm": 417.40625
+      }
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "initial": 23,
+      "cad_points": 917,
+      "valid": 575,
+      "gross": 24,
+      "smooth_valid": 406,
+      "smooth_gross": 7,
+      "persistent_eligible": 645,
+      "persistent_hidden": 5,
+      "example": {
+        "x": 700,
+        "y": 364,
+        "reference_mm": 384.2329099842336,
+        "native_mm": 416.75
+      }
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "initial": 47,
+      "cad_points": 1211,
+      "valid": 892,
+      "gross": 26,
+      "smooth_valid": 639,
+      "smooth_gross": 7,
+      "persistent_eligible": 1236,
+      "persistent_hidden": 20,
+      "example": {
+        "x": 776,
+        "y": 312,
+        "reference_mm": 406.86767878328044,
+        "native_mm": 391.5625
+      }
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+ "region_sha256": "1bdaad11d3e6e218e84f31cd6e3e07baa30b29a24042f3b94cd58c76fa3de2c6",
+ "scenes": {
+  "Adirondack": {
+   "output": [
+    221,
+    320
+   ],
+   "valid": 29,
+   "sampled": 32
+  },
+  "Backpack": {
+   "output": [
+    219,
+    320
+   ],
+   "valid": 20,
+   "sampled": 32
+  },
+  "Bicycle1": {
+   "output": [
+    215,
+    320
+   ],
+   "valid": 50407,
+   "sampled": 68800,
+   "stable": 43925,
+   "fronts": 836,
+   "pairs": 1672,
+   "thin_eligible": true,
+   "roi": "wheel spokes, fork and frame tubes",
+   "max_native_sigma_px": 0.2436762899160385,
+   "max_depth_sensitivity_mm": 4.362030104257531,
+   "min_jump_mm": 50.04262924194336,
+   "mean_jump_mm": 371.243896484375
+  },
+  "Cable": {
+   "output": [
+    227,
+    320
+   ],
+   "valid": 12188,
+   "sampled": 72640,
+   "stable": 7278,
+   "fronts": 5,
+   "pairs": 10,
+   "thin_eligible": false,
+   "roi": "looping white cable and red lattice",
+   "max_native_sigma_px": 0.20936498045921326,
+   "max_depth_sensitivity_mm": 0.9739580404724489,
+   "min_jump_mm": 112.90251922607422,
+   "mean_jump_mm": 113.39874267578125
+  },
+  "Classroom1": {
+   "output": [
+    205,
+    320
+   ],
+   "valid": 3743,
+   "sampled": 65600,
+   "stable": 3154,
+   "fronts": 21,
+   "pairs": 42,
+   "thin_eligible": true,
+   "roi": "desk rails and chair supports",
+   "max_native_sigma_px": 0.22150109708309174,
+   "max_depth_sensitivity_mm": 4.1311483932109585,
+   "min_jump_mm": 663.5958862304688,
+   "mean_jump_mm": 727.1473388671875
+  },
+  "Couch": {
+   "output": [
+    277,
+    320
+   ],
+   "valid": 68470,
+   "sampled": 88640,
+   "stable": 59559,
+   "fronts": 156,
+   "pairs": 312,
+   "thin_eligible": true,
+   "roi": "foreground pole, lattice, table leg",
+   "max_native_sigma_px": 0.23446038365364075,
+   "max_depth_sensitivity_mm": 2.0421154555993515,
+   "min_jump_mm": 50.249576568603516,
+   "mean_jump_mm": 875.5039672851562
+  },
+  "Flowers": {
+   "output": [
+    220,
+    320
+   ],
+   "valid": 56391,
+   "sampled": 70400,
+   "stable": 51481,
+   "fronts": 73,
+   "pairs": 146,
+   "thin_eligible": true,
+   "roi": "flower stalks and toy basket lattice",
+   "max_native_sigma_px": 0.23235604166984558,
+   "max_depth_sensitivity_mm": 3.0724687383310294,
+   "min_jump_mm": 147.7284393310547,
+   "mean_jump_mm": 584.831787109375
+  },
+  "Jadeplant": {
+   "output": [
+    242,
+    320
+   ],
+   "valid": 45236,
+   "sampled": 77440,
+   "stable": 32802,
+   "fronts": 77,
+   "pairs": 154,
+   "thin_eligible": true,
+   "roi": "plant branches and foreground lattice",
+   "max_native_sigma_px": 0.24754521250724792,
+   "max_depth_sensitivity_mm": 0.6576274807891118,
+   "min_jump_mm": 86.20405578613281,
+   "mean_jump_mm": 323.4722900390625
+  },
+  "Mask": {
+   "output": [
+    230,
+    320
+   ],
+   "valid": 10199,
+   "sampled": 73600,
+   "stable": 5272,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "mask display rod, basket handle and vertical stick",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  },
+  "Motorcycle": {
+   "output": [
+    216,
+    320
+   ],
+   "valid": 40085,
+   "sampled": 69120,
+   "stable": 31921,
+   "fronts": 121,
+   "pairs": 242,
+   "thin_eligible": true,
+   "roi": "fork, kickstand and fence slats",
+   "max_native_sigma_px": 0.242914617061615,
+   "max_depth_sensitivity_mm": 4.929739987946449,
+   "min_jump_mm": 53.094146728515625,
+   "mean_jump_mm": 1431.0633544921875
+  },
+  "Piano": {
+   "output": [
+    218,
+    320
+   ],
+   "valid": 49936,
+   "sampled": 69760,
+   "stable": 43943,
+   "fronts": 276,
+   "pairs": 552,
+   "thin_eligible": true,
+   "roi": "bench legs, guitar neck and lamp stem",
+   "max_native_sigma_px": 0.24806660413742065,
+   "max_depth_sensitivity_mm": 3.872059224147183,
+   "min_jump_mm": 50.70758056640625,
+   "mean_jump_mm": 204.40415954589844
+  },
+  "Pipes": {
+   "output": [
+    208,
+    320
+   ],
+   "valid": 17327,
+   "sampled": 66560,
+   "stable": 14183,
+   "fronts": 69,
+   "pairs": 138,
+   "thin_eligible": true,
+   "roi": "metal support rods in front of pipework",
+   "max_native_sigma_px": 0.2402605563402176,
+   "max_depth_sensitivity_mm": 3.75406606915055,
+   "min_jump_mm": 57.86061096191406,
+   "mean_jump_mm": 711.3023071289062
+  },
+  "Playroom": {
+   "output": [
+    218,
+    320
+   ],
+   "valid": 44488,
+   "sampled": 69760,
+   "stable": 39552,
+   "fronts": 43,
+   "pairs": 86,
+   "thin_eligible": true,
+   "roi": "painted chair-back rails and red chair",
+   "max_native_sigma_px": 0.2475235015153885,
+   "max_depth_sensitivity_mm": 2.6428515765517537,
+   "min_jump_mm": 602.2913208007812,
+   "mean_jump_mm": 788.0513916015625
+  },
+  "Playtable": {
+   "output": [
+    217,
+    320
+   ],
+   "valid": 52961,
+   "sampled": 69440,
+   "stable": 48041,
+   "fronts": 799,
+   "pairs": 1598,
+   "thin_eligible": true,
+   "roi": "chair and table legs, basket",
+   "max_native_sigma_px": 0.24821017682552338,
+   "max_depth_sensitivity_mm": 2.8606601483479452,
+   "min_jump_mm": 50.02593994140625,
+   "mean_jump_mm": 275.1658630371094
+  },
+  "Recycle": {
+   "output": [
+    215,
+    320
+   ],
+   "valid": 55352,
+   "sampled": 68800,
+   "stable": 50678,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "no selected slender foreground",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  },
+  "Shelves": {
+   "output": [
+    217,
+    320
+   ],
+   "valid": 51588,
+   "sampled": 69440,
+   "stable": 46929,
+   "fronts": 109,
+   "pairs": 218,
+   "thin_eligible": true,
+   "roi": "coat hanger and curved handle",
+   "max_native_sigma_px": 0.24695637822151184,
+   "max_depth_sensitivity_mm": 3.8290711519814002,
+   "min_jump_mm": 192.4457550048828,
+   "mean_jump_mm": 407.736328125
+  },
+  "Shopvac": {
+   "output": [
+    271,
+    320
+   ],
+   "valid": 51514,
+   "sampled": 86720,
+   "stable": 46211,
+   "fronts": 143,
+   "pairs": 286,
+   "thin_eligible": true,
+   "roi": "leaning narrow tool and vacuum handle",
+   "max_native_sigma_px": 0.23828311264514923,
+   "max_depth_sensitivity_mm": 2.2956197456292426,
+   "min_jump_mm": 122.18618774414062,
+   "mean_jump_mm": 160.76222229003906
+  },
+  "Sticks": {
+   "output": [
+    224,
+    320
+   ],
+   "valid": 58395,
+   "sampled": 71680,
+   "stable": 48677,
+   "fronts": 535,
+   "pairs": 1070,
+   "thin_eligible": true,
+   "roi": "individual branches and twigs",
+   "max_native_sigma_px": 0.24933664500713348,
+   "max_depth_sensitivity_mm": 0.6771796476409865,
+   "min_jump_mm": 50.01771545410156,
+   "mean_jump_mm": 92.28194427490234
+  },
+  "Storage": {
+   "output": [
+    229,
+    320
+   ],
+   "valid": 32804,
+   "sampled": 73280,
+   "stable": 28585,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "upright handles and crossbar",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  },
+  "Sword1": {
+   "output": [
+    222,
+    320
+   ],
+   "valid": 56419,
+   "sampled": 71040,
+   "stable": 49448,
+   "fronts": 408,
+   "pairs": 816,
+   "thin_eligible": true,
+   "roi": "crossed blades and pot branches",
+   "max_native_sigma_px": 0.2410159707069397,
+   "max_depth_sensitivity_mm": 2.7463633655309403,
+   "min_jump_mm": 51.20992660522461,
+   "mean_jump_mm": 331.28656005859375
+  },
+  "Sword2": {
+   "output": [
+    224,
+    320
+   ],
+   "valid": 7740,
+   "sampled": 71680,
+   "stable": 3239,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "red lattice and exposed blades",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  },
+  "Umbrella": {
+   "output": [
+    218,
+    320
+   ],
+   "valid": 16691,
+   "sampled": 69760,
+   "stable": 12109,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "umbrella stand shafts",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  },
+  "Vintage": {
+   "output": [
+    211,
+    320
+   ],
+   "valid": 40495,
+   "sampled": 67520,
+   "stable": 36661,
+   "fronts": 0,
+   "pairs": 0,
+   "thin_eligible": false,
+   "roi": "no selected slender foreground",
+   "max_native_sigma_px": null,
+   "max_depth_sensitivity_mm": null
+  }
+ }
+}

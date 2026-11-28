@@ -1,0 +1,355 @@
+{
+  "held": [
+    {
+      "scene": "playground",
+      "frame": "playground-0",
+      "covered": true,
+      "optimum": 0.8909786766633843,
+      "scores": {
+        "direct": 0.5583943562465797,
+        "teacher": 0.17209541633970732,
+        "selected": 0.2978243316438884
+      },
+      "direct": 0.4028743727710616,
+      "teacher": 0.7729120687866612,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 1.9184940046456571,
+      "selected_factor": 1.6054502602535041
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-1",
+      "covered": false,
+      "optimum": 0.5992331754305842,
+      "scores": {
+        "direct": 0.743244280956553,
+        "teacher": 0.40594687783845984,
+        "selected": 0.40594687783845984
+      },
+      "direct": 0.15386868947280372,
+      "teacher": 0.3560044376996183,
+      "selected": 0.3560044376996183,
+      "accepted": true,
+      "always_factor": 2.3136899321063114,
+      "selected_factor": 2.3136899321063114
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-2",
+      "covered": true,
+      "optimum": 0.6877804753684388,
+      "scores": {
+        "direct": 0.6855542629490838,
+        "teacher": 0.7310136352370804,
+        "selected": 0.6855542629490838
+      },
+      "direct": 0.2237829219725471,
+      "teacher": 0.19143065904459255,
+      "selected": 0.2237829219725471,
+      "accepted": false,
+      "always_factor": 0.8554301523870378,
+      "selected_factor": 1.0
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-3",
+      "covered": true,
+      "optimum": 1.276286778595285,
+      "scores": {
+        "direct": 0.6176009747644893,
+        "teacher": 0.26346479783129784,
+        "selected": 0.492257929444775
+      },
+      "direct": 0.48525871111295554,
+      "teacher": 0.9649557913518002,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 1.9885388335196392,
+      "selected_factor": 1.3328864620097693
+    },
+    {
+      "scene": "playground",
+      "frame": "playground-4",
+      "covered": true,
+      "optimum": 0.8657648638537709,
+      "scores": {
+        "direct": 0.6191268523669374,
+        "teacher": 0.8884478847372375,
+        "selected": 0.6191268523669374
+      },
+      "direct": 0.3519294222388451,
+      "teacher": 0.1030749259114668,
+      "selected": 0.3519294222388451,
+      "accepted": false,
+      "always_factor": 0.2928852190184673,
+      "selected_factor": 1.0
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-0",
+      "covered": true,
+      "optimum": 1.2400571424312539,
+      "scores": {
+        "direct": 0.6268440450473134,
+        "teacher": 0.8724667006912352,
+        "selected": 0.6268440450473134
+      },
+      "direct": 0.46981458428868633,
+      "teacher": 0.1605682642939706,
+      "selected": 0.46981458428868633,
+      "accepted": false,
+      "always_factor": 0.34176943343952565,
+      "selected_factor": 1.0
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-1",
+      "covered": true,
+      "optimum": 1.275283820295429,
+      "scores": {
+        "direct": 0.6385233639644684,
+        "teacher": 0.9260436044403273,
+        "selected": 0.6385233639644684
+      },
+      "direct": 0.46343073828940207,
+      "teacher": 0.09481571857959117,
+      "selected": 0.46343073828940207,
+      "accepted": false,
+      "always_factor": 0.20459523019463782,
+      "selected_factor": 1.0
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-2",
+      "covered": true,
+      "optimum": 1.209940733705695,
+      "scores": {
+        "direct": 0.5734542795657239,
+        "teacher": 0.05672582301751408,
+        "selected": 0.4798350055595759
+      },
+      "direct": 0.5303846714937176,
+      "teacher": 1.1866130468386298,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 2.237268742131597,
+      "selected_factor": 1.219482389627147
+    },
+    {
+      "scene": "terrace",
+      "frame": "terrace-3",
+      "covered": true,
+      "optimum": 1.3686787855577625,
+      "scores": {
+        "direct": 0.8098794077359038,
+        "teacher": 0.37438092469942946,
+        "selected": 0.533940379186333
+      },
+      "direct": 0.2638482258716878,
+      "teacher": 0.8682304274554596,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 3.2906434166348695,
+      "selected_factor": 2.4513894852918634
+    }
+  ],
+  "oracle": {
+    "hammer": {
+      "same": {
+        "means": {
+          "direct": 0.686626240517682,
+          "oracle": 0.6853307255818645
+        },
+        "group": {
+          "scene10": {
+            "direct": 1.3903455863142453,
+            "oracle": 1.3894019286059753
+          },
+          "scene2": {
+            "direct": 0.42407189790548044,
+            "oracle": 0.422941067739373
+          },
+          "scene3": {
+            "direct": 0.7144804036265359,
+            "oracle": 0.7109217740148582
+          },
+          "scene4": {
+            "direct": 0.15834342481474617,
+            "oracle": 0.15794314048411107
+          },
+          "scene5": {
+            "direct": 1.414317393343477,
+            "oracle": 1.414317393343477
+          },
+          "scene8": {
+            "direct": 0.1818101294116522,
+            "oracle": 0.18129075762022545
+          },
+          "scene9": {
+            "direct": 0.5230148482076371,
+            "oracle": 0.5204990172650308
+          }
+        },
+        "relative": {
+          "oracle_vs_direct": {
+            "relative": 0.18867833172829807,
+            "ci": [
+              0.06321398195817673,
+              0.4316826183016875
+            ]
+          }
+        },
+        "n": 56
+      },
+      "extra": {
+        "means": {
+          "direct": 0.7612360272619603,
+          "oracle": 0.7594097818696703
+        },
+        "group": {
+          "scene10": {
+            "direct": 1.9216508745278695,
+            "oracle": 1.9201157938055957
+          },
+          "scene2": {
+            "direct": 0.5801814748748302,
+            "oracle": 0.5778863346579299
+          },
+          "scene3": {
+            "direct": 0.788932642413739,
+            "oracle": 0.7867454411541415
+          },
+          "scene4": {
+            "direct": 0.17165257670617412,
+            "oracle": 0.17165257670617412
+          },
+          "scene5": {
+            "direct": 0.8570697188460628,
+            "oracle": 0.8570697188460628
+          },
+          "scene8": {
+            "direct": 0.247778978403971,
+            "oracle": 0.2467851923226403
+          },
+          "scene9": {
+            "direct": 0.7613859250610755,
+            "oracle": 0.7556134155951482
+          }
+        },
+        "relative": {
+          "oracle_vs_direct": {
+            "relative": 0.23990527600994405,
+            "ci": [
+              0.08858429093029363,
+              0.5061658925609835
+            ]
+          }
+        },
+        "n": 56
+      }
+    },
+    "ibims": {
+      "same": {
+        "means": {
+          "direct": 0.21828027410664916,
+          "oracle": 0.2057449796413409
+        },
+        "group": {
+          "corridor": {
+            "direct": 0.21617967161827056,
+            "oracle": 0.20476451302591414
+          },
+          "factory": {
+            "direct": 0.15859657742941036,
+            "oracle": 0.15370478978484797
+          },
+          "kitchen": {
+            "direct": 0.11939569967177467,
+            "oracle": 0.11004954840261219
+          },
+          "lab": {
+            "direct": 0.18809287732628777,
+            "oracle": 0.1818771788257974
+          },
+          "lectureroom": {
+            "direct": 0.38065648277213326,
+            "oracle": 0.3727134229428556
+          },
+          "livingroom": {
+            "direct": 0.1562722423338817,
+            "oracle": 0.14032543768218309
+          },
+          "meetingroom": {
+            "direct": 0.17531936171530005,
+            "oracle": 0.16888416533663686
+          },
+          "office": {
+            "direct": 0.14180417672400472,
+            "oracle": 0.13667762801223862
+          },
+          "restaurant": {
+            "direct": 0.277043979100316,
+            "oracle": 0.26024577205450733
+          },
+          "restroom": {
+            "direct": 0.34328876747128484,
+            "oracle": 0.3045170095990522
+          },
+          "storageroom": {
+            "direct": 0.24443317901047712,
+            "oracle": 0.22943531038810427
+          }
+        },
+        "relative": {
+          "oracle_vs_direct": {
+            "relative": 5.742751843523742,
+            "ci": [
+              3.8243303745293806,
+              7.902197780562072
+            ]
+          }
+        },
+        "n": 82
+      },
+      "extra": {
+        "means": {
+          "direct": 0.23971518290430058,
+          "oracle": 0.22467226870839685
+        },
+        "group": {
+          "corridor": {
+            "direct": 0.16828731882681397,
+            "oracle": 0.14254553734657444
+          },
+          "lab": {
+            "direct": 0.2749349655884991,
+            "oracle": 0.26768557332883375
+          },
+          "lectureroom": {
+            "direct": 0.2161265132957288,
+            "oracle": 0.20185414525614234
+          },
+          "livingroom": {
+            "direct": 0.15047041430332028,
+            "oracle": 0.14485025194409723
+          },
+          "restaurant": {
+            "direct": 0.3887567025071406,
+            "oracle": 0.3664258356663366
+          }
+        },
+        "relative": {
+          "oracle_vs_direct": {
+            "relative": 6.275328084624987,
+            "ci": [
+              3.6435512865076736,
+              10.257181753438537
+            ]
+          }
+        },
+        "n": 18
+      }
+    }
+  }
+}

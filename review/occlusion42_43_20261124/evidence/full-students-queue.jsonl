@@ -1,0 +1,67 @@
+{"time": "2026-11-25 09:53:50", "event": "waiting for official 59543-anchor geometry manifest and calibration"}
+{"time": "2026-11-25 10:22:24", "event": "launch d2"}
+{"time": "2026-11-25 10:34:39", "event": "d2 failed with exit 1"}
+{"time": "2026-11-25 10:38:38", "event": "waiting for official 59543-anchor geometry manifest and calibration"}
+{"time": "2026-11-25 10:38:42", "event": "resume d2"}
+{"time": "2026-11-25 13:36:34", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 13:37:08", "event": "resume d2"}
+{"time": "2026-11-25 13:45:21", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 14:01:57", "event": "resume d2"}
+{"time": "2026-11-25 14:02:02", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 14:15:38", "event": "resume d2"}
+{"time": "2026-11-25 14:15:42", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 14:16:17", "event": "resume d2"}
+{"time": "2026-11-25 14:16:22", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 14:16:56", "event": "resume d2"}
+{"time": "2026-11-25 14:32:41", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 14:36:20", "event": "resume d2"}
+{"time": "2026-11-25 16:02:12", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 16:05:51", "event": "resume d2"}
+{"time": "2026-11-25 16:15:59", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 16:25:36", "event": "resume d2"}
+{"time": "2026-11-25 17:09:05", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 17:27:43", "event": "resume d2"}
+{"time": "2026-11-25 17:27:50", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 17:31:48", "event": "resume d2"}
+{"time": "2026-11-25 17:31:53", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 17:32:57", "event": "resume d2"}
+{"time": "2026-11-25 17:48:48", "event": "d2 waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 18:09:25", "event": "resume d2"}
+{"time": "2026-11-25 20:07:25", "event": "d2 completed"}
+{"time": "2026-11-25 20:07:29", "event": "launch silog"}
+{"time": "2026-11-25 20:07:33", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 20:08:07", "event": "launch silog"}
+{"time": "2026-11-25 21:40:54", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 22:52:08", "event": "resume silog"}
+{"time": "2026-11-25 22:52:17", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 22:52:51", "event": "resume silog"}
+{"time": "2026-11-25 22:54:36", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 22:55:10", "event": "resume silog"}
+{"time": "2026-11-25 22:57:16", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 22:57:50", "event": "resume silog"}
+{"time": "2026-11-25 23:02:46", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:03:20", "event": "resume silog"}
+{"time": "2026-11-25 23:03:24", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:03:58", "event": "resume silog"}
+{"time": "2026-11-25 23:05:06", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:05:40", "event": "resume silog"}
+{"time": "2026-11-25 23:07:18", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:07:52", "event": "resume silog"}
+{"time": "2026-11-25 23:10:01", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:10:37", "event": "resume silog"}
+{"time": "2026-11-25 23:16:24", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:20:59", "event": "resume silog"}
+{"time": "2026-11-25 23:22:33", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-25 23:27:42", "event": "resume silog"}
+{"time": "2026-11-25 23:31:24", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-26 09:23:52", "event": "resume silog"}
+{"time": "2026-11-26 09:28:15", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-26 09:29:19", "event": "resume silog"}
+{"time": "2026-11-26 09:29:22", "event": "silog waiting for RAM or GPU capacity"}
+{"time": "2026-11-26 10:16:15", "event": "waiting for official 59543-anchor geometry manifest and calibration"}
+{"time": "2026-11-26 10:16:19", "event": "resume silog"}
+{"time": "2026-11-26 11:03:30", "event": "silog completed"}
+{"time": "2026-11-26 11:03:34", "event": "launch fixed"}
+{"time": "2026-11-26 14:49:40", "event": "fixed completed"}
+{"time": "2026-11-26 14:49:44", "event": "launch adaptive"}
+{"time": "2026-11-26 14:49:47", "event": "adaptive failed with exit 76"}

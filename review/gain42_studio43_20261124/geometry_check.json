@@ -1,0 +1,152 @@
+{
+ "4211": {
+  "thin_surface": {
+   "pixels": 19970,
+   "visible": 0.8576865297946921,
+   "accepted": 0.4383074611917877,
+   "bad_disparity_among_accepted": 0.22746486918770706,
+   "mean_pixel_disparity_error_among_accepted": 2.1673180784863715
+  },
+  "thin_boundary": {
+   "pixels": 48129,
+   "visible": 0.7611419310602755,
+   "accepted": 0.3384445968127324,
+   "bad_disparity_among_accepted": 0.36429492295414084,
+   "mean_pixel_disparity_error_among_accepted": 2.6227953314407952
+  },
+  "away_from_boundary": {
+   "pixels": 566271,
+   "visible": 0.8634328793104362,
+   "accepted": 0.33856227848503634,
+   "bad_disparity_among_accepted": 0.1988337036689304,
+   "mean_pixel_disparity_error_among_accepted": 1.1406368875261288
+  },
+  "all": {
+   "pixels": 614400,
+   "visible": 0.855419921875,
+   "accepted": 0.33855305989583334,
+   "bad_disparity_among_accepted": 0.21179094934305095,
+   "mean_pixel_disparity_error_among_accepted": 1.2567045121040097
+  }
+ },
+ "4217": {
+  "thin_surface": {
+   "pixels": 22302,
+   "visible": 0.873015873015873,
+   "accepted": 0.3249035960900368,
+   "bad_disparity_among_accepted": 0.19624620480264973,
+   "mean_pixel_disparity_error_among_accepted": 1.1168416568399167
+  },
+  "thin_boundary": {
+   "pixels": 48692,
+   "visible": 0.7709685369259838,
+   "accepted": 0.28027191325063666,
+   "bad_disparity_among_accepted": 0.39349307540118705,
+   "mean_pixel_disparity_error_among_accepted": 1.844440430575276
+  },
+  "away_from_boundary": {
+   "pixels": 565708,
+   "visible": 0.8683773254046258,
+   "accepted": 0.3465727902027194,
+   "bad_disparity_among_accepted": 0.2749223448043701,
+   "mean_pixel_disparity_error_among_accepted": 1.151131490228826
+  },
+  "all": {
+   "pixels": 614400,
+   "visible": 0.8606575520833334,
+   "accepted": 0.341318359375,
+   "bad_disparity_among_accepted": 0.2826385511144173,
+   "mean_pixel_disparity_error_among_accepted": 1.1962498183375625
+  }
+ },
+ "4229": {
+  "thin_surface": {
+   "pixels": 20442,
+   "visible": 0.8745719596908326,
+   "accepted": 0.41302220917718424,
+   "bad_disparity_among_accepted": 0.2587942674404832,
+   "mean_pixel_disparity_error_among_accepted": 1.4467628647983746
+  },
+  "thin_boundary": {
+   "pixels": 48025,
+   "visible": 0.7653097345132743,
+   "accepted": 0.33757418011452367,
+   "bad_disparity_among_accepted": 0.38594867999013077,
+   "mean_pixel_disparity_error_among_accepted": 1.9721064404031832
+  },
+  "away_from_boundary": {
+   "pixels": 566375,
+   "visible": 0.8714756124475833,
+   "accepted": 0.338579563010373,
+   "bad_disparity_among_accepted": 0.1804832006174288,
+   "mean_pixel_disparity_error_among_accepted": 0.7776608031972572
+  },
+  "all": {
+   "pixels": 614400,
+   "visible": 0.8631770833333333,
+   "accepted": 0.3385009765625,
+   "bad_disparity_among_accepted": 0.19649957927635534,
+   "mean_pixel_disparity_error_among_accepted": 0.8707698632272509
+  }
+ },
+ "4231": {
+  "thin_surface": {
+   "pixels": 20756,
+   "visible": 0.8065137791481981,
+   "accepted": 0.3279533628830218,
+   "bad_disparity_among_accepted": 0.15675040399588658,
+   "mean_pixel_disparity_error_among_accepted": 1.537455831765603
+  },
+  "thin_boundary": {
+   "pixels": 47353,
+   "visible": 0.7592549574472578,
+   "accepted": 0.28334002069562647,
+   "bad_disparity_among_accepted": 0.4074681374375792,
+   "mean_pixel_disparity_error_among_accepted": 2.367699264511583
+  },
+  "away_from_boundary": {
+   "pixels": 567047,
+   "visible": 0.8654644147663245,
+   "accepted": 0.3513994430796742,
+   "bad_disparity_among_accepted": 0.22657833985747264,
+   "mean_pixel_disparity_error_among_accepted": 1.013854135055565
+  },
+  "all": {
+   "pixels": 614400,
+   "visible": 0.8572786458333334,
+   "accepted": 0.34615397135416665,
+   "bad_disparity_among_accepted": 0.23799000362051373,
+   "mean_pixel_disparity_error_among_accepted": 1.0992631789859153
+  }
+ },
+ "4241": {
+  "thin_surface": {
+   "pixels": 23308,
+   "visible": 0.8681139522910588,
+   "accepted": 0.38802128024712546,
+   "bad_disparity_among_accepted": 0.10415745245466608,
+   "mean_pixel_disparity_error_among_accepted": 1.3028059613119443
+  },
+  "thin_boundary": {
+   "pixels": 50654,
+   "visible": 0.7864334504678802,
+   "accepted": 0.31922454297784975,
+   "bad_disparity_among_accepted": 0.35813234384662956,
+   "mean_pixel_disparity_error_among_accepted": 2.8231433342324412
+  },
+  "away_from_boundary": {
+   "pixels": 563746,
+   "visible": 0.8649959378869208,
+   "accepted": 0.3305034536830416,
+   "bad_disparity_among_accepted": 0.23610455130957492,
+   "mean_pixel_disparity_error_among_accepted": 1.5557295842250563
+  },
+  "all": {
+   "pixels": 614400,
+   "visible": 0.8585188802083333,
+   "accepted": 0.32957356770833335,
+   "bad_disparity_among_accepted": 0.24584917773717221,
+   "mean_pixel_disparity_error_among_accepted": 1.6569399157973466
+  }
+ }
+}

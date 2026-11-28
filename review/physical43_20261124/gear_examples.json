@@ -1,0 +1,38 @@
+{
+  "anchor": {
+    "x": 732,
+    "y": 596,
+    "reference_mm": 362.375,
+    "native_mm": 375.8125
+  },
+  "third_xy": [
+    700,
+    472
+  ],
+  "third_mm": 357.78125,
+  "views": [
+    {
+      "view": 26,
+      "xy": [
+        743,
+        469
+      ],
+      "target_mm": 381.4912801326354,
+      "front_mm": 364.3125
+    },
+    {
+      "view": 29,
+      "xy": [
+        744,
+        477
+      ],
+      "target_mm": 383.0549197611979,
+      "front_mm": 365.46875
+    }
+  ],
+  "image_sha256": {
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_26.bmp": "f9111a90d8ade5fd291d15a4602508ff13a44ce06995891ed35f65f2316d4997",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_79.bmp": "324c643891dc15d9c3bdded28ea50a33772bfbe62788a6caade0ce653035ea6f",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_29.bmp": "7797bb91756dc10c4e6053f627185a5d6872cfe30eec6e07003fc7bf55e85ee8"
+  }
+}

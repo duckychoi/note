@@ -1,0 +1,570 @@
+{
+  "pairs": [
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "views": [
+        26,
+        29,
+        79
+      ],
+      "translation_mm": 139.41589786753158,
+      "sampled": 20480,
+      "known": 16146,
+      "missing": 4664,
+      "valid": 11482,
+      "gross": 13,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 15165,
+      "occluded_after_move": 1565,
+      "missing_in_view": 4664,
+      "missing_unrecovered": 3311,
+      "third_known": 17687,
+      "both_comparable": 14747,
+      "hidden_at_both": 1439
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "views": [
+        53,
+        56,
+        79
+      ],
+      "translation_mm": 257.7334328205986,
+      "sampled": 20480,
+      "known": 13742,
+      "missing": 3963,
+      "valid": 9779,
+      "gross": 14,
+      "median_absolute_mm": 0.15625,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 11282,
+      "occluded_after_move": 2254,
+      "missing_in_view": 3963,
+      "missing_unrecovered": 3439,
+      "third_known": 17687,
+      "both_comparable": 11667,
+      "hidden_at_both": 1905
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "views": [
+        26,
+        29,
+        79
+      ],
+      "translation_mm": 139.4113103547915,
+      "sampled": 20480,
+      "known": 14661,
+      "missing": 3415,
+      "valid": 11246,
+      "gross": 11,
+      "median_absolute_mm": 0.15625,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 13467,
+      "occluded_after_move": 1574,
+      "missing_in_view": 3415,
+      "missing_unrecovered": 2176,
+      "third_known": 17951,
+      "both_comparable": 12725,
+      "hidden_at_both": 1426
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "views": [
+        53,
+        56,
+        79
+      ],
+      "translation_mm": 257.7409102301185,
+      "sampled": 20480,
+      "known": 12294,
+      "missing": 2757,
+      "valid": 9537,
+      "gross": 23,
+      "median_absolute_mm": 0.1875,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 10435,
+      "occluded_after_move": 2007,
+      "missing_in_view": 2757,
+      "missing_unrecovered": 2337,
+      "third_known": 17951,
+      "both_comparable": 10132,
+      "hidden_at_both": 1953
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "views": [
+        17,
+        20,
+        51
+      ],
+      "translation_mm": 210.91819519901867,
+      "sampled": 20480,
+      "known": 15404,
+      "missing": 860,
+      "valid": 14544,
+      "gross": 19,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 12317,
+      "occluded_after_move": 2003,
+      "missing_in_view": 860,
+      "missing_unrecovered": 652,
+      "third_known": 18639,
+      "both_comparable": 13628,
+      "hidden_at_both": 2
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "views": [
+        34,
+        37,
+        51
+      ],
+      "translation_mm": 227.5587895056675,
+      "sampled": 20480,
+      "known": 11754,
+      "missing": 760,
+      "valid": 10994,
+      "gross": 20,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 8403,
+      "occluded_after_move": 1117,
+      "missing_in_view": 760,
+      "missing_unrecovered": 666,
+      "third_known": 18639,
+      "both_comparable": 9233,
+      "hidden_at_both": 1868
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "views": [
+        17,
+        20,
+        51
+      ],
+      "translation_mm": 210.92115461771135,
+      "sampled": 20480,
+      "known": 15815,
+      "missing": 1253,
+      "valid": 14562,
+      "gross": 39,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 12657,
+      "occluded_after_move": 2076,
+      "missing_in_view": 1253,
+      "missing_unrecovered": 806,
+      "third_known": 18466,
+      "both_comparable": 13542,
+      "hidden_at_both": 4
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "views": [
+        34,
+        37,
+        51
+      ],
+      "translation_mm": 227.5765195847563,
+      "sampled": 20480,
+      "known": 13587,
+      "missing": 2760,
+      "valid": 10827,
+      "gross": 36,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 10156,
+      "occluded_after_move": 1548,
+      "missing_in_view": 2760,
+      "missing_unrecovered": 2223,
+      "third_known": 18466,
+      "both_comparable": 10406,
+      "hidden_at_both": 1879
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "views": [
+        31,
+        34,
+        79
+      ],
+      "translation_mm": 163.6804320367282,
+      "sampled": 14400,
+      "known": 7744,
+      "missing": 505,
+      "valid": 7239,
+      "gross": 349,
+      "median_absolute_mm": 1.327304116571554,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 7409,
+      "occluded_after_move": 1150,
+      "missing_in_view": 505,
+      "missing_unrecovered": 235,
+      "third_known": 17687,
+      "both_comparable": 13352,
+      "hidden_at_both": 284
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "views": [
+        62,
+        65,
+        79
+      ],
+      "translation_mm": 291.8246872096327,
+      "sampled": 14400,
+      "known": 9923,
+      "missing": 435,
+      "valid": 9488,
+      "gross": 501,
+      "median_absolute_mm": 1.0166580779795993,
+      "moved_out_of_view": 301,
+      "moved_gt_comparable": 2383,
+      "occluded_after_move": 8,
+      "missing_in_view": 429,
+      "missing_unrecovered": 90,
+      "third_known": 17687,
+      "both_comparable": 2648,
+      "hidden_at_both": 34
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "views": [
+        31,
+        34,
+        79
+      ],
+      "translation_mm": 163.7294332733733,
+      "sampled": 14400,
+      "known": 8339,
+      "missing": 413,
+      "valid": 7926,
+      "gross": 398,
+      "median_absolute_mm": 1.4491209805624123,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 7961,
+      "occluded_after_move": 1197,
+      "missing_in_view": 413,
+      "missing_unrecovered": 187,
+      "third_known": 17951,
+      "both_comparable": 13430,
+      "hidden_at_both": 265
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "views": [
+        62,
+        65,
+        79
+      ],
+      "translation_mm": 291.80381905143054,
+      "sampled": 14400,
+      "known": 9738,
+      "missing": 425,
+      "valid": 9313,
+      "gross": 446,
+      "median_absolute_mm": 1.0091947013906974,
+      "moved_out_of_view": 301,
+      "moved_gt_comparable": 2536,
+      "occluded_after_move": 16,
+      "missing_in_view": 420,
+      "missing_unrecovered": 97,
+      "third_known": 17951,
+      "both_comparable": 2408,
+      "hidden_at_both": 81
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "views": [
+        23,
+        26,
+        51
+      ],
+      "translation_mm": 169.8814161458191,
+      "sampled": 14400,
+      "known": 11756,
+      "missing": 543,
+      "valid": 11213,
+      "gross": 1010,
+      "median_absolute_mm": 1.261335954107551,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 9567,
+      "occluded_after_move": 551,
+      "missing_in_view": 543,
+      "missing_unrecovered": 218,
+      "third_known": 18639,
+      "both_comparable": 6256,
+      "hidden_at_both": 12
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "views": [
+        47,
+        50,
+        51
+      ],
+      "translation_mm": 211.34921291131138,
+      "sampled": 14400,
+      "known": 12033,
+      "missing": 490,
+      "valid": 11543,
+      "gross": 58,
+      "median_absolute_mm": 0.9804401979406521,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 8589,
+      "occluded_after_move": 837,
+      "missing_in_view": 490,
+      "missing_unrecovered": 262,
+      "third_known": 18639,
+      "both_comparable": 10457,
+      "hidden_at_both": 130
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "views": [
+        23,
+        26,
+        51
+      ],
+      "translation_mm": 169.94341063364791,
+      "sampled": 14400,
+      "known": 11710,
+      "missing": 502,
+      "valid": 11208,
+      "gross": 921,
+      "median_absolute_mm": 1.3263002014589347,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 9477,
+      "occluded_after_move": 395,
+      "missing_in_view": 502,
+      "missing_unrecovered": 207,
+      "third_known": 18466,
+      "both_comparable": 6020,
+      "hidden_at_both": 18
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "views": [
+        47,
+        50,
+        51
+      ],
+      "translation_mm": 211.20075674038486,
+      "sampled": 14400,
+      "known": 12082,
+      "missing": 476,
+      "valid": 11606,
+      "gross": 64,
+      "median_absolute_mm": 1.0308498683343998,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 8520,
+      "occluded_after_move": 977,
+      "missing_in_view": 476,
+      "missing_unrecovered": 239,
+      "third_known": 18466,
+      "both_comparable": 10356,
+      "hidden_at_both": 151
+    }
+  ],
+  "quality": {
+    "Ensenso": {
+      "coverage": {
+        "model": {
+          "coef": [
+            -7.036450467493483
+          ],
+          "intercept": -0.2650742781000295
+        },
+        "pooled": {
+          "n": 46172,
+          "positives": 109,
+          "prevalence": 0.0023607381096768603,
+          "auc": 0.8413578770359781,
+          "ap": 0.026452520183313018
+        },
+        "scene5": {
+          "n": 20783,
+          "positives": 34,
+          "prevalence": 0.001635952461146129,
+          "auc": 0.7199517765562053,
+          "ap": 0.011164782753678257
+        },
+        "scene9": {
+          "n": 25389,
+          "positives": 75,
+          "prevalence": 0.0029540352120997282,
+          "auc": 0.8996004845803377,
+          "ap": 0.055737787487202525
+        }
+      },
+      "scatter": {
+        "model": {
+          "coef": [
+            0.14233986047474081
+          ],
+          "intercept": -7.159141889943806
+        },
+        "pooled": {
+          "n": 46172,
+          "positives": 109,
+          "prevalence": 0.0023607381096768603,
+          "auc": 0.8051330576970073,
+          "ap": 0.07870076841498076
+        },
+        "scene5": {
+          "n": 20783,
+          "positives": 34,
+          "prevalence": 0.001635952461146129,
+          "auc": 0.9297896709409099,
+          "ap": 0.16209746481391543
+        },
+        "scene9": {
+          "n": 25389,
+          "positives": 75,
+          "prevalence": 0.0029540352120997282,
+          "auc": 0.7451789523583787,
+          "ap": 0.04020118921595773
+        }
+      },
+      "both": {
+        "model": {
+          "coef": [
+            -8.90626990002812,
+            0.17767572339973547
+          ],
+          "intercept": 0.34868798430922254
+        },
+        "pooled": {
+          "n": 46172,
+          "positives": 109,
+          "prevalence": 0.0023607381096768603,
+          "auc": 0.9727517179801816,
+          "ap": 0.06448903695792955
+        },
+        "scene5": {
+          "n": 20783,
+          "positives": 34,
+          "prevalence": 0.001635952461146129,
+          "auc": 0.9730093300031468,
+          "ap": 0.06965621915825568
+        },
+        "scene9": {
+          "n": 25389,
+          "positives": 75,
+          "prevalence": 0.0029540352120997282,
+          "auc": 0.9761649680018962,
+          "ap": 0.08027620410507094
+        }
+      }
+    },
+    "RealSense": {
+      "coverage": {
+        "model": {
+          "coef": [
+            -5.0548544641476125
+          ],
+          "intercept": 1.926475084578147
+        },
+        "pooled": {
+          "n": 40053,
+          "positives": 1829,
+          "prevalence": 0.045664494544728235,
+          "auc": 0.5723400917065437,
+          "ap": 0.07335870269722643
+        },
+        "scene5": {
+          "n": 17239,
+          "positives": 844,
+          "prevalence": 0.04895875630837056,
+          "auc": 0.5765756956880567,
+          "ap": 0.07374291366354223
+        },
+        "scene9": {
+          "n": 22814,
+          "positives": 985,
+          "prevalence": 0.04317524327167529,
+          "auc": 0.5683636051608336,
+          "ap": 0.07619991988575406
+        }
+      },
+      "scatter": {
+        "model": {
+          "coef": [
+            0.12888090127418794
+          ],
+          "intercept": -3.0572042636215944
+        },
+        "pooled": {
+          "n": 40053,
+          "positives": 1829,
+          "prevalence": 0.045664494544728235,
+          "auc": 0.7949136793935023,
+          "ap": 0.20222956244682283
+        },
+        "scene5": {
+          "n": 17239,
+          "positives": 844,
+          "prevalence": 0.04895875630837056,
+          "auc": 0.6859695982910059,
+          "ap": 0.12197032575824623
+        },
+        "scene9": {
+          "n": 22814,
+          "positives": 985,
+          "prevalence": 0.04317524327167529,
+          "auc": 0.8645019792745319,
+          "ap": 0.26640508641457156
+        }
+      },
+      "both": {
+        "model": {
+          "coef": [
+            -4.6774284913390005,
+            0.08690259267053416
+          ],
+          "intercept": 1.504513066052565
+        },
+        "pooled": {
+          "n": 40053,
+          "positives": 1829,
+          "prevalence": 0.045664494544728235,
+          "auc": 0.8072659616210712,
+          "ap": 0.15808965552884627
+        },
+        "scene5": {
+          "n": 17239,
+          "positives": 844,
+          "prevalence": 0.04895875630837056,
+          "auc": 0.705876040117421,
+          "ap": 0.11704582319773185
+        },
+        "scene9": {
+          "n": 22814,
+          "positives": 985,
+          "prevalence": 0.04317524327167529,
+          "auc": 0.8728648356526607,
+          "ap": 0.19591280159324342
+        }
+      }
+    }
+  }
+}

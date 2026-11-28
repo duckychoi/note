@@ -1,0 +1,308 @@
+{
+  "interval": [
+    0.6467947666147681,
+    1.5460854843242748
+  ],
+  "calibration": {
+    "delivery_area": [
+      {
+        "image": "delivery_area-0",
+        "scale": 0.9484125556938416,
+        "points": 139
+      },
+      {
+        "image": "delivery_area-1",
+        "scale": 1.5163107600833934,
+        "points": 164
+      },
+      {
+        "image": "delivery_area-2",
+        "scale": 1.1757970668976128,
+        "points": 157
+      },
+      {
+        "image": "delivery_area-3",
+        "scale": 0.8726959992770822,
+        "points": 283
+      },
+      {
+        "image": "delivery_area-4",
+        "scale": 0.7997143637291965,
+        "points": 232
+      }
+    ],
+    "relief": [
+      {
+        "image": "relief-0",
+        "scale": 1.5460854843242748,
+        "points": 513
+      },
+      {
+        "image": "relief-1",
+        "scale": 0.8093868399067348,
+        "points": 482
+      },
+      {
+        "image": "relief-2",
+        "scale": 0.9439919247186754,
+        "points": 499
+      },
+      {
+        "image": "relief-3",
+        "scale": 1.148884061829878,
+        "points": 572
+      },
+      {
+        "image": "relief-4",
+        "scale": 0.7873858617178788,
+        "points": 367
+      }
+    ],
+    "pipes": [
+      {
+        "image": "pipes-0",
+        "scale": 0.82917246288568,
+        "points": 200
+      },
+      {
+        "image": "pipes-1",
+        "scale": 0.6821502725332231,
+        "points": 179
+      }
+    ],
+    "office": [
+      {
+        "image": "office-0",
+        "scale": 0.8901073439128881,
+        "points": 147
+      },
+      {
+        "image": "office-1",
+        "scale": 0.8435945745094714,
+        "points": 160
+      },
+      {
+        "image": "office-2",
+        "scale": 0.8117648479391825,
+        "points": 382
+      },
+      {
+        "image": "office-3",
+        "scale": 0.8124520778879633,
+        "points": 146
+      },
+      {
+        "image": "office-4",
+        "scale": 0.6845665472366086,
+        "points": 77
+      }
+    ],
+    "courtyard": [
+      {
+        "image": "courtyard-0",
+        "scale": 1.06729984244441,
+        "points": 400
+      },
+      {
+        "image": "courtyard-1",
+        "scale": 0.9729064849219582,
+        "points": 258
+      },
+      {
+        "image": "courtyard-2",
+        "scale": 1.204658691543777,
+        "points": 309
+      },
+      {
+        "image": "courtyard-3",
+        "scale": 1.137256863692808,
+        "points": 392
+      },
+      {
+        "image": "courtyard-4",
+        "scale": 1.2490656086210077,
+        "points": 537
+      }
+    ],
+    "kicker": [
+      {
+        "image": "kicker-0",
+        "scale": 0.8085985185082843,
+        "points": 272
+      },
+      {
+        "image": "kicker-1",
+        "scale": 0.7295835096676265,
+        "points": 279
+      },
+      {
+        "image": "kicker-2",
+        "scale": 0.7488619839397805,
+        "points": 243
+      },
+      {
+        "image": "kicker-3",
+        "scale": 0.8204622053323036,
+        "points": 298
+      },
+      {
+        "image": "kicker-4",
+        "scale": 0.7075826165807547,
+        "points": 184
+      }
+    ]
+  },
+  "maxima": {
+    "delivery_area": 0.4162802530756404,
+    "relief": 0.43572624250739217,
+    "pipes": 0.38250530445237335,
+    "office": 0.37896941876502876,
+    "courtyard": 0.22239575868378733,
+    "kicker": 0.34590088372982464
+  },
+  "fit": [
+    {
+      "frame": "terrains-0",
+      "scene": "terrains",
+      "points": 359,
+      "direct": 0.6016664342210375,
+      "teacher": 0.6169166714726737,
+      "selected": 0.6169166714726737,
+      "accepted": true,
+      "always_factor": 1.0253466645041955,
+      "selected_factor": 1.0253466645041955
+    },
+    {
+      "frame": "terrains-1",
+      "scene": "terrains",
+      "points": 426,
+      "direct": 0.7031709783725438,
+      "teacher": 0.7067168743969027,
+      "selected": 0.7031709783725438,
+      "accepted": false,
+      "always_factor": 1.0050427223725382,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "terrains-2",
+      "scene": "terrains",
+      "points": 489,
+      "direct": 0.8164232293057057,
+      "teacher": 0.8129766187017542,
+      "selected": 0.8164232293057057,
+      "accepted": false,
+      "always_factor": 0.995778402083338,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "electro-0",
+      "scene": "electro",
+      "points": 545,
+      "direct": 0.7636125069217582,
+      "teacher": 0.9967945603159949,
+      "selected": 0.7636125069217582,
+      "accepted": false,
+      "always_factor": 1.3053669908239587,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "electro-1",
+      "scene": "electro",
+      "points": 637,
+      "direct": 0.7778400113419505,
+      "teacher": 0.17172672999947725,
+      "selected": 0.7778400113419505,
+      "accepted": false,
+      "always_factor": 0.2207738448723018,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "electro-2",
+      "scene": "electro",
+      "points": 652,
+      "direct": 1.027725491027398,
+      "teacher": 1.0318657626036993,
+      "selected": 1.027725491027398,
+      "accepted": false,
+      "always_factor": 1.0040285772927189,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "electro-3",
+      "scene": "electro",
+      "points": 437,
+      "direct": 0.35704401334905844,
+      "teacher": 0.23230457883908032,
+      "selected": 0.35704401334905844,
+      "accepted": false,
+      "always_factor": 0.6506328916148817,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "electro-4",
+      "scene": "electro",
+      "points": 557,
+      "direct": 0.5153908420621657,
+      "teacher": 0.10709912429343889,
+      "selected": 0.5153908420621657,
+      "accepted": false,
+      "always_factor": 0.20780176043663723,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "facade-0",
+      "scene": "facade",
+      "points": 744,
+      "direct": 0.4680688823609932,
+      "teacher": 0.11500005980469137,
+      "selected": 0.4680688823609932,
+      "accepted": false,
+      "always_factor": 0.24569046167866973,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "facade-1",
+      "scene": "facade",
+      "points": 878,
+      "direct": 0.91148258708137,
+      "teacher": 0.07664958690911848,
+      "selected": 0.91148258708137,
+      "accepted": false,
+      "always_factor": 0.08409330907193273,
+      "selected_factor": 1.0
+    },
+    {
+      "frame": "facade-2",
+      "scene": "facade",
+      "points": 969,
+      "direct": 0.6027751688832959,
+      "teacher": 1.728688747719941,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 2.8678831460866547,
+      "selected_factor": 1.0730282201455363
+    },
+    {
+      "frame": "facade-3",
+      "scene": "facade",
+      "points": 966,
+      "direct": 0.5562623906551141,
+      "teacher": 1.079160307796607,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 1.9400202600892582,
+      "selected_factor": 1.1627512078482125
+    },
+    {
+      "frame": "facade-4",
+      "scene": "facade",
+      "points": 781,
+      "direct": 0.4500173535510221,
+      "teacher": 0.8341127897790773,
+      "selected": 0.6467947666147681,
+      "accepted": true,
+      "always_factor": 1.8535124994563286,
+      "selected_factor": 1.437266277646859
+    }
+  ]
+}

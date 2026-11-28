@@ -1,0 +1,6142 @@
+[
+ {
+  "seed": 6211,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7869235001543162,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7869235001543162,
+  "exact_ratio": 0.7052849363534375,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 890.8649817132299,
+   "order": 0.5004258943781942,
+   "strict": 0.5004258943781942,
+   "tie": 0.0,
+   "amplitude": 270.4610477070574
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0632813299273431,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0632813299273431,
+  "exact_ratio": 0.9529723091972034,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 862.2788234525456,
+   "order": 0.5004258943781942,
+   "strict": 0.5004258943781942,
+   "tie": 0.0,
+   "amplitude": 177.52240992717086
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6604760677903652,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6604760677903652,
+  "exact_ratio": 0.6405958383536247,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 266.97621197823264,
+   "order": 0.3590179873602333,
+   "strict": 0.3590179873602333,
+   "tie": 0.0,
+   "amplitude": 181.96509640078534
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8924271185288096,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8924271185288096,
+  "exact_ratio": 0.8655651976551628,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 210.63027135212735,
+   "order": 0.3590179873602333,
+   "strict": 0.3590179873602333,
+   "tie": 0.0,
+   "amplitude": 119.43635769201552
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8876191965738122,
+  "exact_ratio": 1.234985757760016,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 400.9788408097351,
+   "order": 0.5598290598290598,
+   "strict": 0.5598290598290598,
+   "tie": 0.0,
+   "amplitude": 344.4379184089098
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8876191965738122,
+  "exact_ratio": 0.7232040092015027,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 751.4248488203538,
+   "order": 0.23822714681440443,
+   "strict": 0.23822714681440443,
+   "tie": 0.0,
+   "amplitude": 300.7371560555547
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1993401132600123,
+  "exact_ratio": 1.6686975273897535,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 292.09209300812773,
+   "order": 0.5598290598290598,
+   "strict": 0.5598290598290598,
+   "tie": 0.0,
+   "amplitude": 226.07857902139006
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1993401132600123,
+  "exact_ratio": 0.9771843394710729,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 657.4275655382207,
+   "order": 0.23822714681440443,
+   "strict": 0.23822714681440443,
+   "tie": 0.0,
+   "amplitude": 197.3947270789657
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7641068969197514,
+  "exact_ratio": 1.005150402544737,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 335.7245042956038,
+   "order": 0.7050898203592815,
+   "strict": 0.7050898203592815,
+   "tie": 0.0,
+   "amplitude": 364.6561359285084
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7641068969197514,
+  "exact_ratio": 0.6605658702055779,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 484.7936051913974,
+   "order": 0.4906176700547303,
+   "strict": 0.4906176700547303,
+   "tie": 0.0,
+   "amplitude": 245.8840332288468
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.032451816986231,
+  "exact_ratio": 1.358146829501455,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 236.75347609432487,
+   "order": 0.7050898203592815,
+   "strict": 0.7050898203592815,
+   "tie": 0.0,
+   "amplitude": 239.34920238449413
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.032451816986231,
+  "exact_ratio": 0.8925484584448994,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 427.9295316520652,
+   "order": 0.4906176700547303,
+   "strict": 0.4906176700547303,
+   "tie": 0.0,
+   "amplitude": 161.3908047441851
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.865210926949533,
+  "exact_ratio": 0.624681357724951,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 331.4943855848297,
+   "order": 0.4819277108433735,
+   "strict": 0.4819277108433735,
+   "tie": 0.0,
+   "amplitude": 283.1957764563469
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.865210926949533,
+  "exact_ratio": 0.8313894402183698,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 690.7127984980393,
+   "order": 0.36103151862464183,
+   "strict": 0.36103151862464183,
+   "tie": 0.0,
+   "amplitude": 394.9158288604621
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.169062335657994,
+  "exact_ratio": 0.8440617476696934,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 243.21911221281783,
+   "order": 0.4819277108433735,
+   "strict": 0.4819277108433735,
+   "tie": 0.0,
+   "amplitude": 185.88109875319103
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.169062335657994,
+  "exact_ratio": 1.1233631598364826,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 567.1234191364791,
+   "order": 0.36103151862464183,
+   "strict": 0.36103151862464183,
+   "tie": 0.0,
+   "amplitude": 259.21074495588465
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8322132208914844,
+  "exact_ratio": 0.7125940894955204,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 576.4443459827542,
+   "order": 0.2527322404371585,
+   "strict": 0.2527322404371585,
+   "tie": 0.0,
+   "amplitude": 396.59396425690034
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8322132208914844,
+  "exact_ratio": 0.7371546704425571,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 518.9045088935623,
+   "order": 0.2837653478854025,
+   "strict": 0.2837653478854025,
+   "tie": 0.0,
+   "amplitude": 348.2722266486464
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1244762421240317,
+  "exact_ratio": 0.9628483467942919,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 445.65711781367776,
+   "order": 0.2527322404371585,
+   "strict": 0.2527322404371585,
+   "tie": 0.0,
+   "amplitude": 260.312222016206
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1244762421240317,
+  "exact_ratio": 0.9960343009156674,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 411.3752006680225,
+   "order": 0.2837653478854025,
+   "strict": 0.2837653478854025,
+   "tie": 0.0,
+   "amplitude": 228.5953023902165
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8301864218107086,
+  "exact_ratio": 0.6730378418014887,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 538.9733617747341,
+   "order": 0.22058823529411764,
+   "strict": 0.22058823529411764,
+   "tie": 0.0,
+   "amplitude": 328.86519210447705
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8301864218107086,
+  "exact_ratio": 0.742248229342097,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 532.8377273518463,
+   "order": 0.2970863683662851,
+   "strict": 0.2970863683662851,
+   "tie": 0.0,
+   "amplitude": 344.73979225361876
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1217376561983605,
+  "exact_ratio": 0.909400432674562,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 431.8038616938446,
+   "order": 0.22058823529411764,
+   "strict": 0.22058823529411764,
+   "tie": 0.0,
+   "amplitude": 215.8571148729059
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1217376561983605,
+  "exact_ratio": 1.00291665489252,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 428.11489491874966,
+   "order": 0.2970863683662851,
+   "strict": 0.2970863683662851,
+   "tie": 0.0,
+   "amplitude": 226.2767198363467
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7788917158726674,
+  "exact_ratio": 0.7689553890511628,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 544.3538002349965,
+   "order": 0.44753086419753085,
+   "strict": 0.44753086419753085,
+   "tie": 0.0,
+   "amplitude": 401.4293495956013
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7788917158726674,
+  "exact_ratio": 0.7793087097283014,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 436.6340177218815,
+   "order": 0.525,
+   "strict": 0.525,
+   "tie": 0.0,
+   "amplitude": 352.6766561248837
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.052428882045171,
+  "exact_ratio": 1.0390030397678844,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 414.53330531175123,
+   "order": 0.44753086419753085,
+   "strict": 0.44753086419753085,
+   "tie": 0.0,
+   "amplitude": 263.48602196089314
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.052428882045171,
+  "exact_ratio": 1.052992319000991,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 337.8019830555974,
+   "order": 0.525,
+   "strict": 0.525,
+   "tie": 0.0,
+   "amplitude": 231.4862360074774
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7975276387106519,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7975276387106519,
+  "exact_ratio": 0.8284635915087956,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1672.0646077170484,
+   "order": 0.328813855843247,
+   "strict": 0.328813855843247,
+   "tie": 0.0,
+   "amplitude": 293.3429809791015
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0776095111860087,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0776095111860087,
+  "exact_ratio": 1.1194097891384767,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1606.870730190396,
+   "order": 0.328813855843247,
+   "strict": 0.328813855843247,
+   "tie": 0.0,
+   "amplitude": 192.54141533546792
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7818273300380059,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7818273300380059,
+  "exact_ratio": 0.7950575028520306,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1481.2921099095545,
+   "order": 0.35722809410160244,
+   "strict": 0.35722809410160244,
+   "tie": 0.0,
+   "amplitude": 261.2601896377799
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0563954477065887,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0563954477065887,
+  "exact_ratio": 1.074271894072857,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1430.05166693167,
+   "order": 0.35722809410160244,
+   "strict": 0.35722809410160244,
+   "tie": 0.0,
+   "amplitude": 171.48324638882238
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6690557172207815,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6690557172207815,
+  "exact_ratio": 0.6887466360661357,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1627.1947865203085,
+   "order": 0.5673913043478261,
+   "strict": 0.5673913043478261,
+   "tie": 0.0,
+   "amplitude": 290.2703607165859
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9040198350443215,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9040198350443215,
+  "exact_ratio": 0.9306259617812582,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1662.9946187976495,
+   "order": 0.5673913043478261,
+   "strict": 0.5673913043478261,
+   "tie": 0.0,
+   "amplitude": 190.52464080021718
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6431371848209331,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6431371848209331,
+  "exact_ratio": 0.8560166513739648,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1388.7091691503078,
+   "order": 0.7401055408970977,
+   "strict": 0.7401055408970977,
+   "tie": 0.0,
+   "amplitude": 278.40111414227533
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8689990336646808,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8689990336646808,
+  "exact_ratio": 1.1566391438740515,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1444.6758233977723,
+   "order": 0.7401055408970977,
+   "strict": 0.7401055408970977,
+   "tie": 0.0,
+   "amplitude": 182.734028163925
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9147308733865873,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9147308733865873,
+  "exact_ratio": 0.707294910999967,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 1062.4706084633433,
+   "order": 0.47146739130434784,
+   "strict": 0.47146739130434784,
+   "tie": 0.0,
+   "amplitude": 343.39040012508724
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.2359730766578454,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.2359730766578454,
+  "exact_ratio": 0.9556881621547818,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 1018.542186004815,
+   "order": 0.47146739130434784,
+   "strict": 0.47146739130434784,
+   "tie": 0.0,
+   "amplitude": 225.39101986356127
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9722470897459942,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9722470897459942,
+  "exact_ratio": 0.7827052389335247,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1209.6496936819876,
+   "order": 0.5449050086355786,
+   "strict": 0.5449050086355786,
+   "tie": 0.0,
+   "amplitude": 371.25142075346616
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.3136882789755118,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.3136882789755118,
+  "exact_ratio": 1.0575816673808,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1146.8543801068533,
+   "order": 0.5449050086355786,
+   "strict": 0.5449050086355786,
+   "tie": 0.0,
+   "amplitude": 243.67814685250028
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.49195927047683236,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.49195927047683236,
+  "exact_ratio": 0.5315503010729534,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1903.2360004776338,
+   "order": 0.6408730158730159,
+   "strict": 0.6408730158730159,
+   "tie": 0.0,
+   "amplitude": 432.4171142906675
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6647292999638638,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6647292999638638,
+  "exact_ratio": 0.7182242123119921,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1880.6691631854073,
+   "order": 0.6408730158730159,
+   "strict": 0.6408730158730159,
+   "tie": 0.0,
+   "amplitude": 283.82544870482326
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6973470750575628,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6973470750575628,
+  "exact_ratio": 0.9870471491696235,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 407.33810612768707,
+   "order": 0.4025157232704403,
+   "strict": 0.4025157232704403,
+   "tie": 0.0,
+   "amplitude": 316.46001590653833
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9422467688952535,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9422467688952535,
+  "exact_ratio": 1.333685936770551,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 319.1776046077019,
+   "order": 0.4025157232704403,
+   "strict": 0.4025157232704403,
+   "tie": 0.0,
+   "amplitude": 207.71473432347273
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8781120174367276,
+  "exact_ratio": 0.5743500971004829,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 467.28464945633255,
+   "order": 0.275,
+   "strict": 0.275,
+   "tie": 0.0,
+   "amplitude": 432.38233104889423
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8781120174367276,
+  "exact_ratio": 0.7469437942340159,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 446.3850857315106,
+   "order": 0.27898550724637683,
+   "strict": 0.27898550724637683,
+   "tie": 0.0,
+   "amplitude": 378.61896814016075
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1864941300421334,
+  "exact_ratio": 0.7760547689440488,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 318.9286192416299,
+   "order": 0.275,
+   "strict": 0.275,
+   "tie": 0.0,
+   "amplitude": 283.80261804230446
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1864941300421334,
+  "exact_ratio": 1.0092612442739033,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 318.52524999380455,
+   "order": 0.27898550724637683,
+   "strict": 0.27898550724637683,
+   "tie": 0.0,
+   "amplitude": 248.5139809898999
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6115484702614032,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6115484702614032,
+  "exact_ratio": 0.4430609193199558,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1642.9995427409397,
+   "order": 0.5345257903494176,
+   "strict": 0.5345257903494176,
+   "tie": 0.0,
+   "amplitude": 218.4796136470526
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8263167520693728,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8263167520693728,
+  "exact_ratio": 0.5986584508417542,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1605.4571622308551,
+   "order": 0.5345257903494176,
+   "strict": 0.5345257903494176,
+   "tie": 0.0,
+   "amplitude": 143.40337680193764
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8352360293118181,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8352360293118181,
+  "exact_ratio": 0.7229978278780131,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1449.838256832375,
+   "order": 0.5832583258325833,
+   "strict": 0.5832583258325833,
+   "tie": 0.0,
+   "amplitude": 321.4710373056019
+  }
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1285606235876144,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6211,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1285606235876144,
+  "exact_ratio": 0.9769057498091767,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1376.7998453945545,
+   "order": 0.5832583258325833,
+   "strict": 0.5832583258325833,
+   "tie": 0.0,
+   "amplitude": 211.00381643899382
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6260927951417726,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6260927951417726,
+  "exact_ratio": 0.6559136882411782,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 914.7589544809531,
+   "order": 0.38160136286201024,
+   "strict": 0.38160136286201024,
+   "tie": 0.0,
+   "amplitude": 182.87659153600165
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6312045180780527,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6312045180780527,
+  "exact_ratio": 0.6612688833023884,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 871.2698074152498,
+   "order": 0.38160136286201024,
+   "strict": 0.38160136286201024,
+   "tie": 0.0,
+   "amplitude": 107.54887846618959
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6427810066767279,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6427810066767279,
+  "exact_ratio": 0.6294668957194333,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 262.60709482492643,
+   "order": 0.48541565386485175,
+   "strict": 0.48541565386485175,
+   "tie": 0.0,
+   "amplitude": 180.12569394094984
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6480289802045028,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6480289802045028,
+  "exact_ratio": 0.6346061664368825,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 198.4043569014609,
+   "order": 0.48541565386485175,
+   "strict": 0.48541565386485175,
+   "tie": 0.0,
+   "amplitude": 105.93108830158609
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9257047547729407,
+  "exact_ratio": 0.814304574911541,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 237.78644571677336,
+   "order": 0.4594017094017094,
+   "strict": 0.4594017094017094,
+   "tie": 0.0,
+   "amplitude": 174.5586511650043
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9257047547729407,
+  "exact_ratio": 0.8636003636214515,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 825.8831175416625,
+   "order": 0.16759002770083103,
+   "strict": 0.16759002770083103,
+   "tie": 0.0,
+   "amplitude": 366.63160660419027
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9332626539596337,
+  "exact_ratio": 0.8209529494096863,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 174.88215073961106,
+   "order": 0.4594017094017094,
+   "strict": 0.4594017094017094,
+   "tie": 0.0,
+   "amplitude": 102.65713616863427
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9332626539596337,
+  "exact_ratio": 0.8706512126661272,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 682.6260358458804,
+   "order": 0.16759002770083103,
+   "strict": 0.16759002770083103,
+   "tie": 0.0,
+   "amplitude": 215.614353752735
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9398097838823556,
+  "exact_ratio": 1.057491186004278,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 225.501961817207,
+   "order": 0.7088323353293413,
+   "strict": 0.7088323353293413,
+   "tie": 0.0,
+   "amplitude": 255.7093225671233
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9398097838823556,
+  "exact_ratio": 0.9707871181613074,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 591.5481354568082,
+   "order": 0.43666927286942925,
+   "strict": 0.43666927286942925,
+   "tie": 0.0,
+   "amplitude": 330.6528213523388
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9474828433158599,
+  "exact_ratio": 1.0661250530482007,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 151.7270723326017,
+   "order": 0.7088323353293413,
+   "strict": 0.7088323353293413,
+   "tie": 0.0,
+   "amplitude": 150.38147104808235
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9474828433158599,
+  "exact_ratio": 0.9787130914621608,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 479.30889974208617,
+   "order": 0.43666927286942925,
+   "strict": 0.43666927286942925,
+   "tie": 0.0,
+   "amplitude": 194.45539639295313
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.1017174446192186,
+  "exact_ratio": 1.1608389777726402,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 226.61543253937626,
+   "order": 0.5218373493975904,
+   "strict": 0.5218373493975904,
+   "tie": 0.0,
+   "amplitude": 185.562736552904
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.1017174446192186,
+  "exact_ratio": 1.1742655728133458,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 638.809543534604,
+   "order": 0.2933381088825215,
+   "strict": 0.2933381088825215,
+   "tie": 0.0,
+   "amplitude": 322.13994653399004
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1107123961258634,
+  "exact_ratio": 1.1703166259328694,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 165.93021108570449,
+   "order": 0.5218373493975904,
+   "strict": 0.5218373493975904,
+   "tie": 0.0,
+   "amplitude": 109.12858793878505
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1107123961258634,
+  "exact_ratio": 1.1838528421581,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 516.239425415381,
+   "order": 0.2933381088825215,
+   "strict": 0.2933381088825215,
+   "tie": 0.0,
+   "amplitude": 189.44901404764227
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0217347412785476,
+  "exact_ratio": 0.8651226102550192,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 454.64964550187926,
+   "order": 0.337431693989071,
+   "strict": 0.337431693989071,
+   "tie": 0.0,
+   "amplitude": 300.30232369543324
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0217347412785476,
+  "exact_ratio": 0.9081510031779372,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 407.96314734006785,
+   "order": 0.3519781718963165,
+   "strict": 0.3519781718963165,
+   "tie": 0.0,
+   "amplitude": 261.55877711518275
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0300766754971082,
+  "exact_ratio": 0.8721858876539131,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 345.63291373345066,
+   "order": 0.337431693989071,
+   "strict": 0.337431693989071,
+   "tie": 0.0,
+   "amplitude": 176.60640896118383
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0300766754971082,
+  "exact_ratio": 0.9155655850874753,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 324.07690778911507,
+   "order": 0.3519781718963165,
+   "strict": 0.3519781718963165,
+   "tie": 0.0,
+   "amplitude": 153.82150823927697
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8942203590827659,
+  "exact_ratio": 0.9773957121714577,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 518.8942418443993,
+   "order": 0.2977941176470588,
+   "strict": 0.2977941176470588,
+   "tie": 0.0,
+   "amplitude": 336.31398601172873
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8942203590827659,
+  "exact_ratio": 0.9497777822440362,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 458.6119713710091,
+   "order": 0.3834547346514048,
+   "strict": 0.3834547346514048,
+   "tie": 0.0,
+   "amplitude": 316.1118827507645
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9015212045086858,
+  "exact_ratio": 0.9853756412147192,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 390.359192451737,
+   "order": 0.2977941176470588,
+   "strict": 0.2977941176470588,
+   "tie": 0.0,
+   "amplitude": 197.78470117065052
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9015212045086858,
+  "exact_ratio": 0.9575322252140541,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 355.46138885653977,
+   "order": 0.3834547346514048,
+   "strict": 0.3834547346514048,
+   "tie": 0.0,
+   "amplitude": 185.90393759054447
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.043439815583982,
+  "exact_ratio": 0.9390227201229587,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 492.7258145958793,
+   "order": 0.27469135802469136,
+   "strict": 0.27469135802469136,
+   "tie": 0.0,
+   "amplitude": 355.8628494735193
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.043439815583982,
+  "exact_ratio": 0.8973835319748049,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 413.21318679509625,
+   "order": 0.4214788732394366,
+   "strict": 0.4214788732394366,
+   "tie": 0.0,
+   "amplitude": 326.3766049012644
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0519589604764585,
+  "exact_ratio": 0.9466893535890948,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 355.26121782935826,
+   "order": 0.27469135802469136,
+   "strict": 0.27469135802469136,
+   "tie": 0.0,
+   "amplitude": 209.28129744328143
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0519589604764585,
+  "exact_ratio": 0.9047102030667425,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 302.4466177240419,
+   "order": 0.4214788732394366,
+   "strict": 0.4214788732394366,
+   "tie": 0.0,
+   "amplitude": 191.94057325714914
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7774403677373362,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7774403677373362,
+  "exact_ratio": 0.6725320651997684,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1540.4813142265111,
+   "order": 0.40307907627711687,
+   "strict": 0.40307907627711687,
+   "tie": 0.0,
+   "amplitude": 167.46530649835907
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.783787765104292,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.783787765104292,
+  "exact_ratio": 0.6780229406893783,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1528.8725112841475,
+   "order": 0.40307907627711687,
+   "strict": 0.40307907627711687,
+   "tie": 0.0,
+   "amplitude": 98.48557294633066
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8039705139254257,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8039705139254257,
+  "exact_ratio": 0.654217811408132,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1387.9653766379474,
+   "order": 0.3945618820320491,
+   "strict": 0.3945618820320491,
+   "tie": 0.0,
+   "amplitude": 140.69395747594012
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.810534516175595,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.810534516175595,
+  "exact_ratio": 0.6595591605146022,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1378.6584243488012,
+   "order": 0.3945618820320491,
+   "strict": 0.3945618820320491,
+   "tie": 0.0,
+   "amplitude": 82.74146628836476
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.639850838825025,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.639850838825025,
+  "exact_ratio": 0.500244490093954,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1718.5662804189517,
+   "order": 0.5304347826086957,
+   "strict": 0.5304347826086957,
+   "tie": 0.0,
+   "amplitude": 157.64610022900143
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6450748890520833,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6450748890520833,
+  "exact_ratio": 0.5043287268933601,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1727.2060891854637,
+   "order": 0.5304347826086957,
+   "strict": 0.5304347826086957,
+   "tie": 0.0,
+   "amplitude": 92.71094311083479
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6028608452903136,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6028608452903136,
+  "exact_ratio": 0.42013862911722416,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1525.5316195883447,
+   "order": 0.6240105540897097,
+   "strict": 0.6240105540897097,
+   "tie": 0.0,
+   "amplitude": 123.30451093859465
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6077828914057907,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6077828914057907,
+  "exact_ratio": 0.42356884311032633,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1538.1925295973808,
+   "order": 0.6240105540897097,
+   "strict": 0.6240105540897097,
+   "tie": 0.0,
+   "amplitude": 72.51481313100265
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9076816929436891,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9076816929436891,
+  "exact_ratio": 0.9566742604818627,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 986.0000147476959,
+   "order": 0.5135869565217391,
+   "strict": 0.5135869565217391,
+   "tie": 0.0,
+   "amplitude": 260.51488790250437
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9150924431785822,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9150924431785822,
+  "exact_ratio": 0.9644850096196905,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 966.8319842330937,
+   "order": 0.5135869565217391,
+   "strict": 0.5135869565217391,
+   "tie": 0.0,
+   "amplitude": 153.20760181678978
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0279438296968417,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0279438296968417,
+  "exact_ratio": 0.9226461124705788,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1140.5322840129506,
+   "order": 0.540587219343696,
+   "strict": 0.540587219343696,
+   "tie": 0.0,
+   "amplitude": 287.1142053061656
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.036336457901865,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.036336457901865,
+  "exact_ratio": 0.9301790394293015,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1099.9840013822914,
+   "order": 0.540587219343696,
+   "strict": 0.540587219343696,
+   "tie": 0.0,
+   "amplitude": 168.85053747466915
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.627239168111699,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.627239168111699,
+  "exact_ratio": 0.7482125199484569,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1854.5617192461084,
+   "order": 0.6468253968253969,
+   "strict": 0.6468253968253969,
+   "tie": 0.0,
+   "amplitude": 416.75904957203903
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6323602505886885,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6323602505886885,
+  "exact_ratio": 0.754321287097848,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1839.0343730528969,
+   "order": 0.6468253968253969,
+   "strict": 0.6468253968253969,
+   "tie": 0.0,
+   "amplitude": 245.09407133872634
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8244007718050157,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8244007718050157,
+  "exact_ratio": 0.6663132906749496,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 312.09355172859654,
+   "order": 0.5125786163522013,
+   "strict": 0.5125786163522013,
+   "tie": 0.0,
+   "amplitude": 221.1694248665481
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8311315765141938,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8311315765141938,
+  "exact_ratio": 0.6717533930960613,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 242.9385145400339,
+   "order": 0.5125786163522013,
+   "strict": 0.5125786163522013,
+   "tie": 0.0,
+   "amplitude": 130.06871680855198
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9020894933901447,
+  "exact_ratio": 0.8913836092363172,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 332.35968816450554,
+   "order": 0.3375,
+   "strict": 0.3375,
+   "tie": 0.0,
+   "amplitude": 307.2236495558197
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9020894933901447,
+  "exact_ratio": 0.7684112092058851,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 270.4724994360088,
+   "order": 0.42391304347826086,
+   "strict": 0.42391304347826086,
+   "tie": 0.0,
+   "amplitude": 212.65561772115137
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9094545862161937,
+  "exact_ratio": 0.8986612940710799,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 207.30057520829453,
+   "order": 0.3375,
+   "strict": 0.3375,
+   "tie": 0.0,
+   "amplitude": 180.67680871837234
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9094545862161937,
+  "exact_ratio": 0.7746848881765925,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 193.67836346402078,
+   "order": 0.42391304347826086,
+   "strict": 0.42391304347826086,
+   "tie": 0.0,
+   "amplitude": 125.06178616601213
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7061128619212145,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7061128619212145,
+  "exact_ratio": 0.7667897925379109,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1720.8254769888422,
+   "order": 0.641846921797005,
+   "strict": 0.641846921797005,
+   "tie": 0.0,
+   "amplitude": 290.13246599755735
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7118779071986765,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7118779071986765,
+  "exact_ratio": 0.7730502334825059,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1626.605256396506,
+   "order": 0.641846921797005,
+   "strict": 0.641846921797005,
+   "tie": 0.0,
+   "amplitude": 170.62556264082804
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7914697178828992,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7914697178828992,
+  "exact_ratio": 0.8497462294590763,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1354.3990571999034,
+   "order": 0.7245724572457246,
+   "strict": 0.7245724572457246,
+   "tie": 0.0,
+   "amplitude": 269.7580953352647
+  }
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7979316576171795,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6221,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7979316576171795,
+  "exact_ratio": 0.8566839666840509,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1299.4548917437592,
+   "order": 0.7245724572457246,
+   "strict": 0.7245724572457246,
+   "tie": 0.0,
+   "amplitude": 158.64348939799518
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6621593398504745,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6621593398504745,
+  "exact_ratio": 0.6665556368241043,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 841.963306983338,
+   "order": 0.5724020442930153,
+   "strict": 0.5724020442930153,
+   "tie": 0.0,
+   "amplitude": 155.1346901058305
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.694855265886098,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.694855265886098,
+  "exact_ratio": 0.6994686420309028,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 834.6151435264037,
+   "order": 0.5724020442930153,
+   "strict": 0.5724020442930153,
+   "tie": 0.0,
+   "amplitude": 111.59739708110294
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.86454390845648,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.86454390845648,
+  "exact_ratio": 0.7337047441638667,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 204.35684923639116,
+   "order": 0.4939231891103549,
+   "strict": 0.4939231891103549,
+   "tie": 0.0,
+   "amplitude": 138.9905081301729
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.907233125362829,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.907233125362829,
+  "exact_ratio": 0.769933419957498,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 172.51017429682082,
+   "order": 0.4939231891103549,
+   "strict": 0.4939231891103549,
+   "tie": 0.0,
+   "amplitude": 99.98394888806509
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6596542993844006,
+  "exact_ratio": 0.5886348619242789,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 158.2375697035144,
+   "order": 0.4722222222222222,
+   "strict": 0.4722222222222222,
+   "tie": 0.0,
+   "amplitude": 75.9223559495205
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6596542993844006,
+  "exact_ratio": 0.601718182103605,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 718.2691120741393,
+   "order": 0.1786703601108033,
+   "strict": 0.1786703601108033,
+   "tie": 0.0,
+   "amplitude": 257.83530687544356
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.692226532204712,
+  "exact_ratio": 0.6177003160365955,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 143.89172385741455,
+   "order": 0.4722222222222222,
+   "strict": 0.4722222222222222,
+   "tie": 0.0,
+   "amplitude": 54.61536229228618
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.692226532204712,
+  "exact_ratio": 0.6314296608857238,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 652.2222399702107,
+   "order": 0.1786703601108033,
+   "strict": 0.1786703601108033,
+   "tie": 0.0,
+   "amplitude": 185.47591839889515
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6232940589696542,
+  "exact_ratio": 0.5320504569482694,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 149.17266011179566,
+   "order": 0.5247005988023952,
+   "strict": 0.5247005988023952,
+   "tie": 0.0,
+   "amplitude": 61.27224716894208
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6232940589696542,
+  "exact_ratio": 0.589618146172119,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 486.2611246815211,
+   "order": 0.364347146207975,
+   "strict": 0.364347146207975,
+   "tie": 0.0,
+   "amplitude": 170.2897254386863
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6540709056046609,
+  "exact_ratio": 0.5583219015095264,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 142.15204348925647,
+   "order": 0.5247005988023952,
+   "strict": 0.5247005988023952,
+   "tie": 0.0,
+   "amplitude": 44.07668776531707
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6540709056046609,
+  "exact_ratio": 0.6187321526299279,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 450.7352082381351,
+   "order": 0.364347146207975,
+   "strict": 0.364347146207975,
+   "tie": 0.0,
+   "amplitude": 122.49929461714149
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6214227558573329,
+  "exact_ratio": 0.3685970931812388,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 146.5248836211183,
+   "order": 0.44126506024096385,
+   "strict": 0.44126506024096385,
+   "tie": 0.0,
+   "amplitude": 69.85910496036635
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6214227558573329,
+  "exact_ratio": 0.5076105428365375,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 522.6889812857555,
+   "order": 0.28939828080229224,
+   "strict": 0.28939828080229224,
+   "tie": 0.0,
+   "amplitude": 194.65804697344024
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6521072017898674,
+  "exact_ratio": 0.3867975814478863,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 133.79754381903143,
+   "order": 0.44126506024096385,
+   "strict": 0.44126506024096385,
+   "tie": 0.0,
+   "amplitude": 50.25371353547086
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6521072017898674,
+  "exact_ratio": 0.5326751998830331,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 475.83558504432733,
+   "order": 0.28939828080229224,
+   "strict": 0.28939828080229224,
+   "tie": 0.0,
+   "amplitude": 140.02884427917235
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6073611318048909,
+  "exact_ratio": 0.6866567795061005,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 472.58613102156943,
+   "order": 0.29098360655737704,
+   "strict": 0.29098360655737704,
+   "tie": 0.0,
+   "amplitude": 315.88671524699555
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6073611318048909,
+  "exact_ratio": 0.6469779915422668,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 408.62712346804256,
+   "order": 0.2660300136425648,
+   "strict": 0.2660300136425648,
+   "tie": 0.0,
+   "amplitude": 236.15440718423815
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6373512466417358,
+  "exact_ratio": 0.7205623335373409,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 388.14727980274745,
+   "order": 0.29098360655737704,
+   "strict": 0.29098360655737704,
+   "tie": 0.0,
+   "amplitude": 227.23566966238042
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6373512466417358,
+  "exact_ratio": 0.6789242970386433,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 349.80774042334144,
+   "order": 0.2660300136425648,
+   "strict": 0.2660300136425648,
+   "tie": 0.0,
+   "amplitude": 169.87958742827576
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.5888717705755669,
+  "exact_ratio": 0.5173894132636055,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 379.10846999433215,
+   "order": 0.25441176470588234,
+   "strict": 0.25441176470588234,
+   "tie": 0.0,
+   "amplitude": 177.3102934609663
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.5888717705755669,
+  "exact_ratio": 0.5031995476492913,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 378.25568701947253,
+   "order": 0.21644120707596254,
+   "strict": 0.21644120707596254,
+   "tie": 0.0,
+   "amplitude": 167.48606616303147
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.617948922699636,
+  "exact_ratio": 0.5429369287475697,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 336.65379897608216,
+   "order": 0.25441176470588234,
+   "strict": 0.25441176470588234,
+   "tie": 0.0,
+   "amplitude": 127.54959714317738
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.617948922699636,
+  "exact_ratio": 0.5280463997601679,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 338.43810973796195,
+   "order": 0.21644120707596254,
+   "strict": 0.21644120707596254,
+   "tie": 0.0,
+   "amplitude": 120.48245958655012
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.5933200743146356,
+  "exact_ratio": 0.5051663610660013,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 327.4445879050973,
+   "order": 0.31790123456790126,
+   "strict": 0.31790123456790126,
+   "tie": 0.0,
+   "amplitude": 168.2252872325111
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.5933200743146356,
+  "exact_ratio": 0.4778248134472541,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 321.0236070088578,
+   "order": 0.3246478873239437,
+   "strict": 0.3246478873239437,
+   "tie": 0.0,
+   "amplitude": 158.9684264391806
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6226168735859751,
+  "exact_ratio": 0.5301103299615073,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 285.3954816578789,
+   "order": 0.31790123456790126,
+   "strict": 0.31790123456790126,
+   "tie": 0.0,
+   "amplitude": 121.01422425611023
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6226168735859751,
+  "exact_ratio": 0.501418718748031,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 287.0351450409695,
+   "order": 0.3246478873239437,
+   "strict": 0.3246478873239437,
+   "tie": 0.0,
+   "amplitude": 114.3552263944903
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.684671326197761,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.684671326197761,
+  "exact_ratio": 0.6199511398309462,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1557.082124567161,
+   "order": 0.366777466759972,
+   "strict": 0.366777466759972,
+   "tie": 0.0,
+   "amplitude": 139.92668481044626
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7184788430488099,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7184788430488099,
+  "exact_ratio": 0.650562920702587,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1545.2837578471142,
+   "order": 0.366777466759972,
+   "strict": 0.366777466759972,
+   "tie": 0.0,
+   "amplitude": 100.65739517306596
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6947205906425358,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6947205906425358,
+  "exact_ratio": 0.6494512931298947,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1400.7185291612234,
+   "order": 0.3939652233208319,
+   "strict": 0.3939652233208319,
+   "tie": 0.0,
+   "amplitude": 133.29426165088952
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7290243173742349,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7290243173742349,
+  "exact_ratio": 0.681519724647768,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1392.374197243325,
+   "order": 0.3939652233208319,
+   "strict": 0.3939652233208319,
+   "tie": 0.0,
+   "amplitude": 95.88630780091194
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6476666771129824,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6476666771129824,
+  "exact_ratio": 0.6310513486349282,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1739.9487948370668,
+   "order": 0.4782608695652174,
+   "strict": 0.4782608695652174,
+   "tie": 0.0,
+   "amplitude": 140.3296136380112
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6796469883404976,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6796469883404976,
+  "exact_ratio": 0.6622112326355182,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1736.8957243559385,
+   "order": 0.4782608695652174,
+   "strict": 0.4782608695652174,
+   "tie": 0.0,
+   "amplitude": 100.94724529191762
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6306529138927299,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6306529138927299,
+  "exact_ratio": 0.5449437964533212,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1509.6066253221284,
+   "order": 0.5593667546174143,
+   "strict": 0.5593667546174143,
+   "tie": 0.0,
+   "amplitude": 154.14948330513158
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6617931240896342,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6617931240896342,
+  "exact_ratio": 0.571851884869673,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1522.1660344852269,
+   "order": 0.5593667546174143,
+   "strict": 0.5593667546174143,
+   "tie": 0.0,
+   "amplitude": 110.88868058146255
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.5102831507011377,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.5102831507011377,
+  "exact_ratio": 0.4475661150238243,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 995.2979068872507,
+   "order": 0.4857336956521739,
+   "strict": 0.4857336956521739,
+   "tie": 0.0,
+   "amplitude": 138.29814508397635
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.5354797750609434,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.5354797750609434,
+  "exact_ratio": 0.4696659144409477,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 983.9588836767653,
+   "order": 0.4857336956521739,
+   "strict": 0.4857336956521739,
+   "tie": 0.0,
+   "amplitude": 99.48589191745478
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.5400000517946332,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.5400000517946332,
+  "exact_ratio": 0.5324569245095815,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1120.2937664021094,
+   "order": 0.5708117443868739,
+   "strict": 0.5708117443868739,
+   "tie": 0.0,
+   "amplitude": 162.07526884588214
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.5666640293150546,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.5666640293150546,
+  "exact_ratio": 0.5587484395169091,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1110.9542666739487,
+   "order": 0.5708117443868739,
+   "strict": 0.5708117443868739,
+   "tie": 0.0,
+   "amplitude": 116.5901586684553
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7017096503784086,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7017096503784086,
+  "exact_ratio": 0.6296324145693567,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1790.2157856825165,
+   "order": 0.7321428571428571,
+   "strict": 0.7321428571428571,
+   "tie": 0.0,
+   "amplitude": 239.27019994428468
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7363584810245737,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7363584810245737,
+  "exact_ratio": 0.6607222348247644,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1815.1062216210955,
+   "order": 0.7321428571428571,
+   "strict": 0.7321428571428571,
+   "tie": 0.0,
+   "amplitude": 172.1209582114844
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7412587674112309,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7412587674112309,
+  "exact_ratio": 0.5392726339114206,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 223.51744443933285,
+   "order": 0.6698113207547169,
+   "strict": 0.6698113207547169,
+   "tie": 0.0,
+   "amplitude": 147.5593068787605
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7778604437358568,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7778604437358568,
+  "exact_ratio": 0.5659006931869798,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 203.20089844032393,
+   "order": 0.6698113207547169,
+   "strict": 0.6698113207547169,
+   "tie": 0.0,
+   "amplitude": 106.14798373934073
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6688085986963105,
+  "exact_ratio": 0.45961773707753567,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 137.53809157232305,
+   "order": 0.525,
+   "strict": 0.525,
+   "tie": 0.0,
+   "amplitude": 129.16044935891603
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6688085986963105,
+  "exact_ratio": 0.4950287144837811,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 197.05924317194683,
+   "order": 0.4528985507246377,
+   "strict": 0.4528985507246377,
+   "tie": 0.0,
+   "amplitude": 141.4915725111286
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7018328500493181,
+  "exact_ratio": 0.48231261825151595,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 102.45384355011247,
+   "order": 0.525,
+   "strict": 0.525,
+   "tie": 0.0,
+   "amplitude": 92.91261641382498
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7018328500493181,
+  "exact_ratio": 0.5194721093891923,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 165.08703410802494,
+   "order": 0.4528985507246377,
+   "strict": 0.4528985507246377,
+   "tie": 0.0,
+   "amplitude": 101.78310982786847
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7205091265710568,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7205091265710568,
+  "exact_ratio": 0.7856793839399681,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1680.3293403812634,
+   "order": 0.5636439267886856,
+   "strict": 0.5636439267886856,
+   "tie": 0.0,
+   "amplitude": 201.2324972330283
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7560862327033643,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7560862327033643,
+  "exact_ratio": 0.8244744495367415,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1638.7467053185214,
+   "order": 0.5636439267886856,
+   "strict": 0.5636439267886856,
+   "tie": 0.0,
+   "amplitude": 144.758228375719
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.640181927824545,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.640181927824545,
+  "exact_ratio": 0.6845165496604028,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1347.2188123348405,
+   "order": 0.5283528352835284,
+   "strict": 0.5283528352835284,
+   "tie": 0.0,
+   "amplitude": 164.78466753129874
+  }
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6717926591120034,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6229,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6717926591120034,
+  "exact_ratio": 0.7183164239971608,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1326.4758687745837,
+   "order": 0.5283528352835284,
+   "strict": 0.5283528352835284,
+   "tie": 0.0,
+   "amplitude": 118.53918657924164
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7467734760624359,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7467734760624359,
+  "exact_ratio": 0.7476186818779762,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 896.6121709289956,
+   "order": 0.6281942078364565,
+   "strict": 0.6281942078364565,
+   "tie": 0.0,
+   "amplitude": 296.9207536615229
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8342411951266583,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8342411951266583,
+  "exact_ratio": 0.8351853977962579,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 865.051417744203,
+   "order": 0.6281942078364565,
+   "strict": 0.6281942078364565,
+   "tie": 0.0,
+   "amplitude": 186.5108986324373
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6852856144472091,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6852856144472091,
+  "exact_ratio": 0.6334422349487393,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 278.4732476400968,
+   "order": 0.40155566358774913,
+   "strict": 0.40155566358774913,
+   "tie": 0.0,
+   "amplitude": 192.43556192499048
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7655514132799064,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7655514132799064,
+  "exact_ratio": 0.7076357477420048,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 216.18585826904894,
+   "order": 0.40155566358774913,
+   "strict": 0.40155566358774913,
+   "tie": 0.0,
+   "amplitude": 120.87848067495683
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7665121703528436,
+  "exact_ratio": 0.6932115318673016,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 220.40170000634265,
+   "order": 0.5363247863247863,
+   "strict": 0.5363247863247863,
+   "tie": 0.0,
+   "amplitude": 181.25229793659406
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7665121703528436,
+  "exact_ratio": 1.2171333484518003,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 293.44155801124185,
+   "order": 0.8421052631578947,
+   "strict": 0.8421052631578947,
+   "tie": 0.0,
+   "amplitude": 309.53908013311303
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8562918335637587,
+  "exact_ratio": 0.7744056736854543,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 167.72887589148968,
+   "order": 0.5363247863247863,
+   "strict": 0.5363247863247863,
+   "tie": 0.0,
+   "amplitude": 113.8537086090159
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8562918335637587,
+  "exact_ratio": 1.359693148978483,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 352.7554761359963,
+   "order": 0.8421052631578947,
+   "strict": 0.8421052631578947,
+   "tie": 0.0,
+   "amplitude": 194.43710581206943
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6740764305837653,
+  "exact_ratio": 0.48921206418023633,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 283.1242348615327,
+   "order": 0.6796407185628742,
+   "strict": 0.6796407185628742,
+   "tie": 0.0,
+   "amplitude": 337.8951350608323
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6740764305837653,
+  "exact_ratio": 0.6578676420563845,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 333.2839443797349,
+   "order": 0.7971071149335418,
+   "strict": 0.7971071149335418,
+   "tie": 0.0,
+   "amplitude": 363.5094253595834
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7530293256022075,
+  "exact_ratio": 0.5465122559574916,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 172.7585349593345,
+   "order": 0.6796407185628742,
+   "strict": 0.6796407185628742,
+   "tie": 0.0,
+   "amplitude": 212.24897386447435
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7530293256022075,
+  "exact_ratio": 0.7349220420067375,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 280.99544649056867,
+   "order": 0.7971071149335418,
+   "strict": 0.7971071149335418,
+   "tie": 0.0,
+   "amplitude": 228.33860129044461
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7352017233684442,
+  "exact_ratio": 0.557194198325454,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 321.3630433955638,
+   "order": 0.7454819277108434,
+   "strict": 0.7454819277108434,
+   "tie": 0.0,
+   "amplitude": 357.64456812265354
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7352017233684442,
+  "exact_ratio": 0.7639901185176344,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 526.4423058601135,
+   "order": 0.6217765042979942,
+   "strict": 0.6217765042979942,
+   "tie": 0.0,
+   "amplitude": 363.9763786880288
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8213140718334647,
+  "exact_ratio": 0.6224569683160563,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 202.97786898372658,
+   "order": 0.7454819277108434,
+   "strict": 0.7454819277108434,
+   "tie": 0.0,
+   "amplitude": 224.654588704185
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8213140718334647,
+  "exact_ratio": 0.8534743800726811,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 436.40017197111877,
+   "order": 0.6217765042979942,
+   "strict": 0.6217765042979942,
+   "tie": 0.0,
+   "amplitude": 228.6319182237804
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6887873048485978,
+  "exact_ratio": 1.0046466523369333,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 708.2208136755315,
+   "order": 0.2827868852459016,
+   "strict": 0.2827868852459016,
+   "tie": 0.0,
+   "amplitude": 545.4924562800746
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6887873048485978,
+  "exact_ratio": 0.8669476628816586,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 534.3935851918945,
+   "order": 0.3567530695770805,
+   "strict": 0.3567530695770805,
+   "tie": 0.0,
+   "amplitude": 356.62123151901176
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7694632479647979,
+  "exact_ratio": 1.1223184148756333,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 510.43165183543215,
+   "order": 0.2827868852459016,
+   "strict": 0.2827868852459016,
+   "tie": 0.0,
+   "amplitude": 342.65132013638856
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7694632479647979,
+  "exact_ratio": 0.9684910854201113,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 411.34922646793484,
+   "order": 0.3567530695770805,
+   "strict": 0.3567530695770805,
+   "tie": 0.0,
+   "amplitude": 224.01177937814415
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6944686269640176,
+  "exact_ratio": 0.696458403479389,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 573.5817097874108,
+   "order": 0.33676470588235297,
+   "strict": 0.33676470588235297,
+   "tie": 0.0,
+   "amplitude": 381.70958492785394
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6944686269640176,
+  "exact_ratio": 0.6854819072312892,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 486.72232214837135,
+   "order": 0.413111342351717,
+   "strict": 0.413111342351717,
+   "tie": 0.0,
+   "amplitude": 302.1252821851791
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7758100092028348,
+  "exact_ratio": 0.7780328432903162,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 443.41920354686994,
+   "order": 0.33676470588235297,
+   "strict": 0.33676470588235297,
+   "tie": 0.0,
+   "amplitude": 239.7710393213729
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7758100092028348,
+  "exact_ratio": 0.7657706973493528,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 392.36071201962994,
+   "order": 0.413111342351717,
+   "strict": 0.413111342351717,
+   "tie": 0.0,
+   "amplitude": 189.78012545452674
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7070621188372098,
+  "exact_ratio": 1.0792572856645075,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 506.6135626976006,
+   "order": 0.4243827160493827,
+   "strict": 0.4243827160493827,
+   "tie": 0.0,
+   "amplitude": 373.64350462452336
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7070621188372098,
+  "exact_ratio": 0.8240666763568517,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 460.23746885154287,
+   "order": 0.4507042253521127,
+   "strict": 0.4507042253521127,
+   "tie": 0.0,
+   "amplitude": 323.63738518616657
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7898785454429078,
+  "exact_ratio": 1.2056680060321736,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 380.0801246664207,
+   "order": 0.4243827160493827,
+   "strict": 0.4243827160493827,
+   "tie": 0.0,
+   "amplitude": 234.70432752280811
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7898785454429078,
+  "exact_ratio": 0.9205875556438691,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 359.289040110026,
+   "order": 0.4507042253521127,
+   "strict": 0.4507042253521127,
+   "tie": 0.0,
+   "amplitude": 203.29296217176588
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6595031469154746,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6595031469154746,
+  "exact_ratio": 0.6282968565796173,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1501.1100596125525,
+   "order": 0.5393631910426872,
+   "strict": 0.5393631910426872,
+   "tie": 0.0,
+   "amplitude": 261.5047647352767
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7367491094803668,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7367491094803668,
+  "exact_ratio": 0.7018877040076871,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1490.9139762221157,
+   "order": 0.5393631910426872,
+   "strict": 0.5393631910426872,
+   "tie": 0.0,
+   "amplitude": 164.26433001392778
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6767864554831937,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6767864554831937,
+  "exact_ratio": 0.6550391512070429,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1363.478080343566,
+   "order": 0.539890896692806,
+   "strict": 0.539890896692806,
+   "tie": 0.0,
+   "amplitude": 252.06716254896534
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7560567689747854,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7560567689747854,
+  "exact_ratio": 0.7317622570623105,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1345.9753501231128,
+   "order": 0.539890896692806,
+   "strict": 0.539890896692806,
+   "tie": 0.0,
+   "amplitude": 158.33609615692043
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7902330132822384,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7902330132822384,
+  "exact_ratio": 0.7314253442994951,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1620.9484808136967,
+   "order": 0.5445652173913044,
+   "strict": 0.5445652173913044,
+   "tie": 0.0,
+   "amplitude": 261.60729564113535
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.8827910398012009,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.8827910398012009,
+  "exact_ratio": 0.8170953748808859,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1663.9401960968135,
+   "order": 0.5445652173913044,
+   "strict": 0.5445652173913044,
+   "tie": 0.0,
+   "amplitude": 164.32873484637372
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7111533140945461,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7111533140945461,
+  "exact_ratio": 0.6994477199235659,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1439.3772223411775,
+   "order": 0.6160949868073878,
+   "strict": 0.6160949868073878,
+   "tie": 0.0,
+   "amplitude": 211.0663801383915
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7944489322206667,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7944489322206667,
+  "exact_ratio": 0.7813722909313213,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1481.6239013986597,
+   "order": 0.6160949868073878,
+   "strict": 0.6160949868073878,
+   "tie": 0.0,
+   "amplitude": 132.58143711834572
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6258805938004385,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6258805938004385,
+  "exact_ratio": 0.6795379127775804,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 902.6988707718899,
+   "order": 0.5686141304347826,
+   "strict": 0.5686141304347826,
+   "tie": 0.0,
+   "amplitude": 255.03684322179603
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.6991884303815391,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.6991884303815391,
+  "exact_ratio": 0.7591304976156472,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 913.1868122082077,
+   "order": 0.5686141304347826,
+   "strict": 0.5686141304347826,
+   "tie": 0.0,
+   "amplitude": 160.20150234396127
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6663872747133943,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6663872747133943,
+  "exact_ratio": 0.6260040769967862,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1103.5069798207924,
+   "order": 0.5639032815198618,
+   "strict": 0.5639032815198618,
+   "tie": 0.0,
+   "amplitude": 284.0955137137083
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7444395580375691,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7444395580375691,
+  "exact_ratio": 0.6993263768574133,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1078.1930865781862,
+   "order": 0.5639032815198618,
+   "strict": 0.5639032815198618,
+   "tie": 0.0,
+   "amplitude": 178.45471866405973
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6887920414037738,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6887920414037738,
+  "exact_ratio": 0.5218140863041588,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1774.8990373842332,
+   "order": 0.6448412698412699,
+   "strict": 0.6448412698412699,
+   "tie": 0.0,
+   "amplitude": 323.6882495169189
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7694685393008956,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7694685393008956,
+  "exact_ratio": 0.582932871809591,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1812.2703599762901,
+   "order": 0.6448412698412699,
+   "strict": 0.6448412698412699,
+   "tie": 0.0,
+   "amplitude": 203.3249126229215
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.70352436287835,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.70352436287835,
+  "exact_ratio": 0.692716534870562,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 298.2300782353933,
+   "order": 0.3710691823899371,
+   "strict": 0.3710691823899371,
+   "tie": 0.0,
+   "amplitude": 184.10746566781148
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7859264209315402,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7859264209315402,
+  "exact_ratio": 0.7738526989221813,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 247.6970268497499,
+   "order": 0.3710691823899371,
+   "strict": 0.3710691823899371,
+   "tie": 0.0,
+   "amplitude": 115.64718344271765
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7106502658609029,
+  "exact_ratio": 0.8616957282455379,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 503.64175341123774,
+   "order": 0.7375,
+   "strict": 0.7375,
+   "tie": 0.0,
+   "amplitude": 534.3958832056235
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7106502658609029,
+  "exact_ratio": 0.4869969306978889,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 450.9389300871684,
+   "order": 0.39492753623188404,
+   "strict": 0.39492753623188404,
+   "tie": 0.0,
+   "amplitude": 392.6301537228792
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7938869631991455,
+  "exact_ratio": 0.962624004748384,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 307.3803738795677,
+   "order": 0.7375,
+   "strict": 0.7375,
+   "tie": 0.0,
+   "amplitude": 335.68100300518626
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7938869631991455,
+  "exact_ratio": 0.5440376694022455,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 310.0997380155984,
+   "order": 0.39492753623188404,
+   "strict": 0.39492753623188404,
+   "tie": 0.0,
+   "amplitude": 246.6307992890422
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.7027101754135564,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.7027101754135564,
+  "exact_ratio": 0.8691297815940072,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1771.166403003146,
+   "order": 0.3951747088186356,
+   "strict": 0.3951747088186356,
+   "tie": 0.0,
+   "amplitude": 311.03016830796173
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7850168697149277,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7850168697149277,
+  "exact_ratio": 0.9709287902674991,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1673.2927945326062,
+   "order": 0.3951747088186356,
+   "strict": 0.3951747088186356,
+   "tie": 0.0,
+   "amplitude": 195.37373348797874
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.6830637639720115,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.6830637639720115,
+  "exact_ratio": 0.7380030789236183,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1515.5151502377532,
+   "order": 0.5432043204320433,
+   "strict": 0.5432043204320433,
+   "tie": 0.0,
+   "amplitude": 364.39346561456335
+  }
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.7630693229871511,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6247,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.7630693229871511,
+  "exact_ratio": 0.8244435431942391,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1412.3028722010974,
+   "order": 0.5432043204320433,
+   "strict": 0.5432043204320433,
+   "tie": 0.0,
+   "amplitude": 228.89391155539
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0585247649044307,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0585247649044307,
+  "exact_ratio": 1.0984427724307686,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 909.5090877866126,
+   "order": 0.5421635434412265,
+   "strict": 0.5421635434412265,
+   "tie": 0.0,
+   "amplitude": 312.1698838225964
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.1717277369943626,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.1717277369943626,
+  "exact_ratio": 1.2159147396748171,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2348,
+  "pair_exact_non_ties": {
+   "jump": 877.8482142691666,
+   "order": 0.5421635434412265,
+   "strict": 0.5421635434412265,
+   "tie": 0.0,
+   "amplitude": 236.11797678777486
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9476426783202404,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9476426783202404,
+  "exact_ratio": 0.7896443833337664,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 288.00194525068486,
+   "order": 0.594555177442878,
+   "strict": 0.594555177442878,
+   "tie": 0.0,
+   "amplitude": 228.38399783333784
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0489874661059093,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "bandsaw2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0489874661059093,
+  "exact_ratio": 0.8740921865890585,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 4114,
+  "pair_exact_non_ties": {
+   "jump": 242.78231900054305,
+   "order": 0.594555177442878,
+   "strict": 0.594555177442878,
+   "tie": 0.0,
+   "amplitude": 172.74429819680094
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.063474841018455,
+  "exact_ratio": 1.3945657130698568,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 371.08361536773197,
+   "order": 0.5512820512820513,
+   "strict": 0.5512820512820513,
+   "tie": 0.0,
+   "amplitude": 331.1179683548933
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.063474841018455,
+  "exact_ratio": 1.3317464299139106,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 893.2051571100129,
+   "order": 0.2894736842105263,
+   "strict": 0.2894736842105263,
+   "tie": 0.0,
+   "amplitude": 529.4307408332231
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.177207194514243,
+  "exact_ratio": 1.5437062799497225,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 468,
+  "pair_exact_non_ties": {
+   "jump": 296.4130660964365,
+   "order": 0.5512820512820513,
+   "strict": 0.5512820512820513,
+   "tie": 0.0,
+   "amplitude": 250.44986341624997
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.177207194514243,
+  "exact_ratio": 1.4741688454631794,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2166,
+  "pair_exact_non_ties": {
+   "jump": 789.8955759569822,
+   "order": 0.2894736842105263,
+   "strict": 0.2894736842105263,
+   "tie": 0.0,
+   "amplitude": 400.44899220910935
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0915550400774006,
+  "exact_ratio": 0.7167942346111293,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 351.5211586875666,
+   "order": 0.749251497005988,
+   "strict": 0.749251497005988,
+   "tie": 0.0,
+   "amplitude": 429.11817828521725
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0915550400774006,
+  "exact_ratio": 0.9367901949544745,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 630.9845830957169,
+   "order": 0.5086004691164973,
+   "strict": 0.5086004691164973,
+   "tie": 0.0,
+   "amplitude": 464.4865270789483
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.208290405024354,
+  "exact_ratio": 0.7934511447045215,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1336,
+  "pair_exact_non_ties": {
+   "jump": 256.8272237280725,
+   "order": 0.749251497005988,
+   "strict": 0.749251497005988,
+   "tie": 0.0,
+   "amplitude": 324.5749231759395
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.208290405024354,
+  "exact_ratio": 1.036974373737602,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2558,
+  "pair_exact_non_ties": {
+   "jump": 531.9701396362102,
+   "order": 0.5086004691164973,
+   "strict": 0.5086004691164973,
+   "tie": 0.0,
+   "amplitude": 351.3267124812973
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9817497509454015,
+  "exact_ratio": 0.8310843410760113,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 413.061138316537,
+   "order": 0.6686746987951807,
+   "strict": 0.6686746987951807,
+   "tie": 0.0,
+   "amplitude": 444.8395720387533
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9817497509454015,
+  "exact_ratio": 1.0749919150052922,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 799.6333179643362,
+   "order": 0.4348137535816619,
+   "strict": 0.4348137535816619,
+   "tie": 0.0,
+   "amplitude": 554.7425329900328
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0867420887161705,
+  "exact_ratio": 0.9199639030725617,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1328,
+  "pair_exact_non_ties": {
+   "jump": 313.34613443730393,
+   "order": 0.6686746987951807,
+   "strict": 0.6686746987951807,
+   "tie": 0.0,
+   "amplitude": 336.46621659577
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "chess3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0867420887161705,
+  "exact_ratio": 1.189955951545556,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2792,
+  "pair_exact_non_ties": {
+   "jump": 677.2763844133513,
+   "order": 0.4348137535816619,
+   "strict": 0.4348137535816619,
+   "tie": 0.0,
+   "amplitude": 419.5942379956473
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9396678263455717,
+  "exact_ratio": 1.2300807781245293,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 515.4402476281764,
+   "order": 0.3879781420765027,
+   "strict": 0.3879781420765027,
+   "tie": 0.0,
+   "amplitude": 439.0586687935266
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9396678263455717,
+  "exact_ratio": 1.1841530708831678,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 548.1293220477236,
+   "order": 0.3417462482946794,
+   "strict": 0.3417462482946794,
+   "tie": 0.0,
+   "amplitude": 432.3135359068832
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0401597508110414,
+  "exact_ratio": 1.3616306526397135,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 732,
+  "pair_exact_non_ties": {
+   "jump": 427.83968734144383,
+   "order": 0.3879781420765027,
+   "strict": 0.3879781420765027,
+   "tie": 0.0,
+   "amplitude": 332.09367699792546
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0401597508110414,
+  "exact_ratio": 1.310791248352258,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1466,
+  "pair_exact_non_ties": {
+   "jump": 459.3677328188297,
+   "order": 0.3417462482946794,
+   "strict": 0.3417462482946794,
+   "tie": 0.0,
+   "amplitude": 326.9918167196163
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0266581891728,
+  "exact_ratio": 1.2279256294338445,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 696.209848269578,
+   "order": 0.2801470588235294,
+   "strict": 0.2801470588235294,
+   "tie": 0.0,
+   "amplitude": 504.4356627361215
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0266581891728,
+  "exact_ratio": 1.2421992315261898,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 641.2921327824376,
+   "order": 0.3012486992715921,
+   "strict": 0.3012486992715921,
+   "tie": 0.0,
+   "amplitude": 459.84606521481663
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.136453219188297,
+  "exact_ratio": 1.3592450235246025,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1360,
+  "pair_exact_non_ties": {
+   "jump": 578.3939823491088,
+   "order": 0.2801470588235294,
+   "strict": 0.2801470588235294,
+   "tie": 0.0,
+   "amplitude": 381.5433015073951
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.136453219188297,
+  "exact_ratio": 1.3750451030625916,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1922,
+  "pair_exact_non_ties": {
+   "jump": 538.3974478228195,
+   "order": 0.3012486992715921,
+   "strict": 0.3012486992715921,
+   "tie": 0.0,
+   "amplitude": 347.81677598997874
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9209179417241762,
+  "exact_ratio": 1.1410243880083453,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 569.5051384893732,
+   "order": 0.41512345679012347,
+   "strict": 0.41512345679012347,
+   "tie": 0.0,
+   "amplitude": 452.84812654572266
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule3",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9209179417241762,
+  "exact_ratio": 1.0186131209824154,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 499.3325319093451,
+   "order": 0.36056338028169016,
+   "strict": 0.36056338028169016,
+   "tie": 0.0,
+   "amplitude": 360.53749770919063
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0194046767638913,
+  "exact_ratio": 1.2630502075566505,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 648,
+  "pair_exact_non_ties": {
+   "jump": 462.91006156883276,
+   "order": 0.41512345679012347,
+   "strict": 0.41512345679012347,
+   "tie": 0.0,
+   "amplitude": 342.52369934851
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "curule3",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0194046767638913,
+  "exact_ratio": 1.12754777846813,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2840,
+  "pair_exact_non_ties": {
+   "jump": 421.6545986720966,
+   "order": 0.36056338028169016,
+   "strict": 0.36056338028169016,
+   "tie": 0.0,
+   "amplitude": 272.7021052536876
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9224556240407504,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9224556240407504,
+  "exact_ratio": 0.8359000207941867,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1551.415818973814,
+   "order": 0.4892407277816655,
+   "strict": 0.4892407277816655,
+   "tie": 0.0,
+   "amplitude": 267.7825262095766
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0211068051228611,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0211068051228611,
+  "exact_ratio": 0.9252945912957858,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11432,
+  "pair_exact_non_ties": {
+   "jump": 1533.5607711095913,
+   "order": 0.4892407277816655,
+   "strict": 0.4892407277816655,
+   "tie": 0.0,
+   "amplitude": 202.54442079254719
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.8691129045029301,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.8691129045029301,
+  "exact_ratio": 0.8464161629844182,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1403.4056390504154,
+   "order": 0.4665871121718377,
+   "strict": 0.4665871121718377,
+   "tie": 0.0,
+   "amplitude": 251.01326320021604
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9620593967659883,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "ladder2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9620593967659883,
+  "exact_ratio": 0.9369353727862252,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 11732,
+  "pair_exact_non_ties": {
+   "jump": 1383.815229423993,
+   "order": 0.4665871121718377,
+   "strict": 0.4665871121718377,
+   "tie": 0.0,
+   "amplitude": 189.8605436500537
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9645645270824397,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9645645270824397,
+  "exact_ratio": 1.0391999155645915,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1779.1975028576176,
+   "order": 0.4108695652173913,
+   "strict": 0.4108695652173913,
+   "tie": 0.0,
+   "amplitude": 272.41204736742225
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0677190066548763,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0677190066548763,
+  "exact_ratio": 1.1503362091478027,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 920,
+  "pair_exact_non_ties": {
+   "jump": 1763.4829137438862,
+   "order": 0.4108695652173913,
+   "strict": 0.4108695652173913,
+   "tie": 0.0,
+   "amplitude": 206.04608199029403
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9344313384061846,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9344313384061846,
+  "exact_ratio": 0.9736718995388477,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1540.2167559496747,
+   "order": 0.4868073878627968,
+   "strict": 0.4868073878627968,
+   "tie": 0.0,
+   "amplitude": 235.94404242279575
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0343632514125882,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "octogons2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0343632514125882,
+  "exact_ratio": 1.0778003588084792,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 758,
+  "pair_exact_non_ties": {
+   "jump": 1535.8479316339938,
+   "order": 0.4868073878627968,
+   "strict": 0.4868073878627968,
+   "tie": 0.0,
+   "amplitude": 178.4625385697339
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9323083695922414,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9323083695922414,
+  "exact_ratio": 1.0423580241408277,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 936.8060507553805,
+   "order": 0.499320652173913,
+   "strict": 0.499320652173913,
+   "tie": 0.0,
+   "amplitude": 316.57610641939414
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.032013243621985,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.032013243621985,
+  "exact_ratio": 1.1538320587848676,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1472,
+  "pair_exact_non_ties": {
+   "jump": 925.7888970016282,
+   "order": 0.499320652173913,
+   "strict": 0.499320652173913,
+   "tie": 0.0,
+   "amplitude": 239.45074019240784
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9729502165504456,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9729502165504456,
+  "exact_ratio": 1.0575266530332468,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1118.457229518317,
+   "order": 0.5492227979274611,
+   "strict": 0.5492227979274611,
+   "tie": 0.0,
+   "amplitude": 352.67641774382315
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.077001496086638,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "pendulum2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.077001496086638,
+  "exact_ratio": 1.170622882953281,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 1158,
+  "pair_exact_non_ties": {
+   "jump": 1088.0039589135647,
+   "order": 0.5492227979274611,
+   "strict": 0.5492227979274611,
+   "tie": 0.0,
+   "amplitude": 266.75616878454275
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9079097796981994,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "podium1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9079097796981994,
+  "exact_ratio": 0.7456496106645295,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1673.0737670183184,
+   "order": 0.7182539682539683,
+   "strict": 0.7182539682539683,
+   "tie": 0.0,
+   "amplitude": 391.3328320669168
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0050053686338358,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "podium1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0050053686338358,
+  "exact_ratio": 0.8253924328105438,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 504,
+  "pair_exact_non_ties": {
+   "jump": 1712.135005090363,
+   "order": 0.7182539682539683,
+   "strict": 0.7182539682539683,
+   "tie": 0.0,
+   "amplitude": 295.99497372008204
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9279346358068384,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "skates1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9279346358068384,
+  "exact_ratio": 0.8175084778072537,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 279.11661696797216,
+   "order": 0.4308176100628931,
+   "strict": 0.4308176100628931,
+   "tie": 0.0,
+   "amplitude": 139.9468378711815
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0271717648389653,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "skates1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0271717648389653,
+  "exact_ratio": 0.904936181404583,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 318,
+  "pair_exact_non_ties": {
+   "jump": 253.57165649960876,
+   "order": 0.4308176100628931,
+   "strict": 0.4308176100628931,
+   "tie": 0.0,
+   "amplitude": 105.85250508908393
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.9148011104650109,
+  "exact_ratio": 0.9667426805043703,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 387.1815023172928,
+   "order": 0.5,
+   "strict": 0.5,
+   "tie": 0.0,
+   "amplitude": 380.3034100881746
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.9148011104650109,
+  "exact_ratio": 0.8420184075267009,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 469.1125765759486,
+   "order": 0.36594202898550726,
+   "strict": 0.36594202898550726,
+   "tie": 0.0,
+   "amplitude": 411.84348443334534
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.0126336865268086,
+  "exact_ratio": 1.0701301007213768,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 80,
+  "pair_exact_non_ties": {
+   "jump": 295.3834342411465,
+   "order": 0.5,
+   "strict": 0.5,
+   "tie": 0.0,
+   "amplitude": 287.6525776796004
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "skates2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.0126336865268086,
+  "exact_ratio": 0.9320673033549057,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 276,
+  "pair_exact_non_ties": {
+   "jump": 371.7876825431968,
+   "order": 0.36594202898550726,
+   "strict": 0.36594202898550726,
+   "tie": 0.0,
+   "amplitude": 311.508750001303
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 0.857195600083078,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom1",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 0.857195600083078,
+  "exact_ratio": 0.8213067320262466,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1791.416515333388,
+   "order": 0.4480033277870216,
+   "strict": 0.4480033277870216,
+   "tie": 0.0,
+   "amplitude": 332.45336014524946
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 0.9488676070205618,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom1",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 0.9488676070205618,
+  "exact_ratio": 0.909140636480277,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2404,
+  "pair_exact_non_ties": {
+   "jump": 1720.39519501247,
+   "order": 0.4480033277870216,
+   "strict": 0.4480033277870216,
+   "tie": 0.0,
+   "amplitude": 251.45992243891052
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "strict",
+  "grid_ratio": 1.0712434624111498,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom2",
+  "budget": "zero",
+  "subset": "wide",
+  "grid_ratio": 1.0712434624111498,
+  "exact_ratio": 1.120907379621007,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1597.3010108016254,
+   "order": 0.5697569756975698,
+   "strict": 0.5697569756975698,
+   "tie": 0.0,
+   "amplitude": 520.0215250675849
+  }
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "strict",
+  "grid_ratio": 1.185806624084368,
+  "exact_ratio": null,
+  "eligible": false,
+  "impossible": false
+ },
+ {
+  "seed": 6257,
+  "scene": "traproom2",
+  "budget": "few",
+  "subset": "wide",
+  "grid_ratio": 1.185806624084368,
+  "exact_ratio": 1.240781803930855,
+  "eligible": true,
+  "impossible": false,
+  "old_ties": 0,
+  "pair_count": 2222,
+  "pair_exact_non_ties": {
+   "jump": 1497.0461703856563,
+   "order": 0.5697569756975698,
+   "strict": 0.5697569756975698,
+   "tie": 0.0,
+   "amplitude": 393.3320821390633
+  }
+ }
+]

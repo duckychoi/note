@@ -1,0 +1,173 @@
+{
+ "bandsaw1": {
+  "valid": 55630,
+  "total": 57600,
+  "pairs": 2348,
+  "stable": 46801,
+  "eligible": true,
+  "unwarped_rgb": 34.13762520942502,
+  "warped_rgb": 2.1864755997576015
+ },
+ "bandsaw2": {
+  "valid": 55657,
+  "total": 57600,
+  "pairs": 4114,
+  "stable": 48176,
+  "eligible": true,
+  "unwarped_rgb": 28.117632800055407,
+  "warped_rgb": 2.316171480019392
+ },
+ "chess1": {
+  "valid": 49093,
+  "total": 57600,
+  "pairs": 2166,
+  "stable": 40432,
+  "eligible": true,
+  "unwarped_rgb": 34.09425327165228,
+  "warped_rgb": 2.9869546215438407
+ },
+ "chess2": {
+  "valid": 52647,
+  "total": 57600,
+  "pairs": 2558,
+  "stable": 43322,
+  "eligible": true,
+  "unwarped_rgb": 34.314636135604694,
+  "warped_rgb": 2.75860609697921
+ },
+ "chess3": {
+  "valid": 50979,
+  "total": 57600,
+  "pairs": 2792,
+  "stable": 41035,
+  "eligible": true,
+  "unwarped_rgb": 38.0942285041225,
+  "warped_rgb": 2.908825799114577
+ },
+ "curule1": {
+  "valid": 52540,
+  "total": 57600,
+  "pairs": 1466,
+  "stable": 44673,
+  "eligible": true,
+  "unwarped_rgb": 27.366985278206823,
+  "warped_rgb": 3.0055887598027144
+ },
+ "curule2": {
+  "valid": 52291,
+  "total": 57600,
+  "pairs": 1922,
+  "stable": 42691,
+  "eligible": true,
+  "unwarped_rgb": 28.444478285656274,
+  "warped_rgb": 2.9053955907504156
+ },
+ "curule3": {
+  "valid": 53786,
+  "total": 57600,
+  "pairs": 2840,
+  "stable": 45273,
+  "eligible": true,
+  "unwarped_rgb": 25.440902966447993,
+  "warped_rgb": 2.8548583040664415
+ },
+ "ladder1": {
+  "valid": 171794,
+  "total": 182080,
+  "pairs": 11432,
+  "stable": 119965,
+  "eligible": true,
+  "unwarped_rgb": 32.357960078574095,
+  "warped_rgb": 3.4180314185072036
+ },
+ "ladder2": {
+  "valid": 170700,
+  "total": 182080,
+  "pairs": 11732,
+  "stable": 123510,
+  "eligible": true,
+  "unwarped_rgb": 34.26556099564433,
+  "warped_rgb": 3.090042475924905
+ },
+ "octogons1": {
+  "valid": 52927,
+  "total": 57600,
+  "pairs": 920,
+  "stable": 41379,
+  "eligible": true,
+  "unwarped_rgb": 16.14895639495074,
+  "warped_rgb": 3.739706936690914
+ },
+ "octogons2": {
+  "valid": 54506,
+  "total": 57600,
+  "pairs": 758,
+  "stable": 43800,
+  "eligible": true,
+  "unwarped_rgb": 17.58557694503437,
+  "warped_rgb": 2.6025895731999724
+ },
+ "pendulum1": {
+  "valid": 53801,
+  "total": 57600,
+  "pairs": 1472,
+  "stable": 42156,
+  "eligible": true,
+  "unwarped_rgb": 26.243998734077064,
+  "warped_rgb": 3.276398449244402
+ },
+ "pendulum2": {
+  "valid": 53841,
+  "total": 57600,
+  "pairs": 1158,
+  "stable": 44688,
+  "eligible": true,
+  "unwarped_rgb": 21.64128163801337,
+  "warped_rgb": 6.741911413562559
+ },
+ "podium1": {
+  "valid": 50906,
+  "total": 57600,
+  "pairs": 504,
+  "stable": 42220,
+  "eligible": true,
+  "unwarped_rgb": 23.296041335327303,
+  "warped_rgb": 3.201185304753088
+ },
+ "skates1": {
+  "valid": 42920,
+  "total": 57600,
+  "pairs": 318,
+  "stable": 32952,
+  "eligible": true,
+  "unwarped_rgb": 71.47830407755569,
+  "warped_rgb": 4.64349527952704
+ },
+ "skates2": {
+  "valid": 45892,
+  "total": 57600,
+  "pairs": 276,
+  "stable": 35795,
+  "eligible": true,
+  "unwarped_rgb": 46.952013782185595,
+  "warped_rgb": 2.960627648181776
+ },
+ "traproom1": {
+  "valid": 47224,
+  "total": 57600,
+  "pairs": 2404,
+  "stable": 32769,
+  "eligible": true,
+  "unwarped_rgb": 50.13925763170476,
+  "warped_rgb": 3.295279074735268
+ },
+ "traproom2": {
+  "valid": 52172,
+  "total": 57600,
+  "pairs": 2222,
+  "stable": 35515,
+  "eligible": true,
+  "unwarped_rgb": 49.62549157632925,
+  "warped_rgb": 2.856276690600216
+ }
+}

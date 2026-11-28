@@ -1,0 +1,2938 @@
+{
+  "summary": {
+    "same": {
+      "means": {
+        "direct": 0.21825518981714617,
+        "always_scale": 0.2187080354581571,
+        "selected_scale": 0.21818689437377695
+      },
+      "group": {
+        "corridor": {
+          "direct": 0.21604024926387727,
+          "always_scale": 0.21915641731379804,
+          "selected_scale": 0.21663101661414078
+        },
+        "factory": {
+          "direct": 0.15857877873932463,
+          "always_scale": 0.1572310400830755,
+          "selected_scale": 0.15742836744927194
+        },
+        "kitchen": {
+          "direct": 0.11943771293065022,
+          "always_scale": 0.12098686209176221,
+          "selected_scale": 0.11893435645516587
+        },
+        "lab": {
+          "direct": 0.18799719484654376,
+          "always_scale": 0.19032649478455707,
+          "selected_scale": 0.1869672411607436
+        },
+        "lectureroom": {
+          "direct": 0.3810438479456266,
+          "always_scale": 0.38063740226675313,
+          "selected_scale": 0.38033707440490194
+        },
+        "livingroom": {
+          "direct": 0.15623298954529258,
+          "always_scale": 0.15931309872827176,
+          "selected_scale": 0.15609064222692365
+        },
+        "meetingroom": {
+          "direct": 0.1753422111272749,
+          "always_scale": 0.17865675478706294,
+          "selected_scale": 0.17573314941385407
+        },
+        "office": {
+          "direct": 0.14177456306219846,
+          "always_scale": 0.14243793725703344,
+          "selected_scale": 0.14388303544094222
+        },
+        "restaurant": {
+          "direct": 0.2768732496689855,
+          "always_scale": 0.28274820430885644,
+          "selected_scale": 0.2755742702212147
+        },
+        "restroom": {
+          "direct": 0.34303160543447175,
+          "always_scale": 0.3351995773956307,
+          "selected_scale": 0.3445136160322029
+        },
+        "storageroom": {
+          "direct": 0.2444546854243622,
+          "always_scale": 0.23909460102292604,
+          "selected_scale": 0.24396306869218481
+        }
+      },
+      "relative": {
+        "selected_scale_vs_direct": {
+          "relative": 0.03129155527822336,
+          "ci": [
+            -0.27259769108224474,
+            0.3051792002847994
+          ]
+        },
+        "always_scale_vs_direct": {
+          "relative": -0.20748447786753665,
+          "ci": [
+            -1.2847841949840326,
+            0.8188491339231818
+          ]
+        }
+      },
+      "n": 82
+    },
+    "extra": {
+      "means": {
+        "direct": 0.23974673655045642,
+        "always_scale": 0.24534858308716262,
+        "selected_scale": 0.23791514521074947
+      },
+      "group": {
+        "corridor": {
+          "direct": 0.16831425749880197,
+          "always_scale": 0.173263821185508,
+          "selected_scale": 0.16776462386995603
+        },
+        "lab": {
+          "direct": 0.27496211584852304,
+          "always_scale": 0.27740039807000466,
+          "selected_scale": 0.2744895843559164
+        },
+        "lectureroom": {
+          "direct": 0.21613662702717357,
+          "always_scale": 0.22791172033484164,
+          "selected_scale": 0.2124701552906407
+        },
+        "livingroom": {
+          "direct": 0.1504369975274786,
+          "always_scale": 0.15588461655937408,
+          "selected_scale": 0.15076799381755376
+        },
+        "restaurant": {
+          "direct": 0.38888368485030483,
+          "always_scale": 0.3922823592860847,
+          "selected_scale": 0.3840833687196803
+        }
+      },
+      "relative": {
+        "selected_scale_vs_direct": {
+          "relative": 0.7639692477405147,
+          "ci": [
+            0.08170874626475255,
+            1.302377452096104
+          ]
+        },
+        "always_scale_vs_direct": {
+          "relative": -2.3365684210376214,
+          "ci": [
+            -4.370124301154377,
+            -1.1111906348743483
+          ]
+        }
+      },
+      "n": 18
+    }
+  },
+  "rows": [
+    {
+      "key": "corridor_01",
+      "group": "corridor",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.15646006905527876,
+        "always_scale": 0.1183172798615636,
+        "selected_scale": 0.15650057355385025
+      },
+      "seeds": [
+        {
+          "direct": 0.174290283211941,
+          "always_scale": 0.12010009189276455,
+          "selected_scale": 0.17449864887252586
+        },
+        {
+          "direct": 0.1512282663579015,
+          "always_scale": 0.09547016116527109,
+          "selected_scale": 0.14983197078572638
+        },
+        {
+          "direct": 0.1438616575959938,
+          "always_scale": 0.1393815865266552,
+          "selected_scale": 0.1451711010032985
+        }
+      ]
+    },
+    {
+      "key": "corridor_02",
+      "group": "corridor",
+      "fold": "same",
+      "points": 342,
+      "scores": {
+        "direct": 0.23195761809150273,
+        "always_scale": 0.2515624756053291,
+        "selected_scale": 0.2311151572952114
+      },
+      "seeds": [
+        {
+          "direct": 0.22527731912505253,
+          "always_scale": 0.2510802711737059,
+          "selected_scale": 0.2245879525766148
+        },
+        {
+          "direct": 0.22721987812550248,
+          "always_scale": 0.2663269162944754,
+          "selected_scale": 0.22780595473063361
+        },
+        {
+          "direct": 0.2433756570239531,
+          "always_scale": 0.23728023934780582,
+          "selected_scale": 0.2409515645783859
+        }
+      ]
+    },
+    {
+      "key": "corridor_03",
+      "group": "corridor",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.21447234290769457,
+        "always_scale": 0.18693640100086836,
+        "selected_scale": 0.2132774835878782
+      },
+      "seeds": [
+        {
+          "direct": 0.20716847910442918,
+          "always_scale": 0.16932842893589095,
+          "selected_scale": 0.20529990924785932
+        },
+        {
+          "direct": 0.23208410461767245,
+          "always_scale": 0.17612290148007656,
+          "selected_scale": 0.23006192138332485
+        },
+        {
+          "direct": 0.20416444500098208,
+          "always_scale": 0.21535787258663755,
+          "selected_scale": 0.2044706201324504
+        }
+      ]
+    },
+    {
+      "key": "corridor_04",
+      "group": "corridor",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.12770538661019112,
+        "always_scale": 0.16936158612540397,
+        "selected_scale": 0.12407052889096111
+      },
+      "seeds": [
+        {
+          "direct": 0.1285102261428525,
+          "always_scale": 0.17905134147448748,
+          "selected_scale": 0.12506615412541847
+        },
+        {
+          "direct": 0.1230648678060992,
+          "always_scale": 0.18859759957215985,
+          "selected_scale": 0.12079260265278835
+        },
+        {
+          "direct": 0.13154106588162168,
+          "always_scale": 0.14043581732956456,
+          "selected_scale": 0.12635282989467653
+        }
+      ]
+    },
+    {
+      "key": "corridor_05",
+      "group": "corridor",
+      "fold": "extra",
+      "points": 365,
+      "scores": {
+        "direct": 0.21815337750186795,
+        "always_scale": 0.22952022289412108,
+        "selected_scale": 0.21720602436092706
+      },
+      "seeds": [
+        {
+          "direct": 0.22127524518284597,
+          "always_scale": 0.2380508342493739,
+          "selected_scale": 0.22005946616533603
+        },
+        {
+          "direct": 0.21015924678546696,
+          "always_scale": 0.23735913532228217,
+          "selected_scale": 0.20964100778464842
+        },
+        {
+          "direct": 0.2230256405372909,
+          "always_scale": 0.21315069911070714,
+          "selected_scale": 0.2219175991327967
+        }
+      ]
+    },
+    {
+      "key": "corridor_06",
+      "group": "corridor",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.6304209875136216,
+        "always_scale": 0.6358502905613349,
+        "selected_scale": 0.6360112326581978
+      },
+      "seeds": [
+        {
+          "direct": 0.6443122932444334,
+          "always_scale": 0.6446691976349557,
+          "selected_scale": 0.648741397125909
+        },
+        {
+          "direct": 0.6545256812245729,
+          "always_scale": 0.6449432438653605,
+          "selected_scale": 0.6592835531470412
+        },
+        {
+          "direct": 0.5924249880718586,
+          "always_scale": 0.6179384301836882,
+          "selected_scale": 0.6000087477016433
+        }
+      ]
+    },
+    {
+      "key": "corridor_07",
+      "group": "corridor",
+      "fold": "same",
+      "points": 290,
+      "scores": {
+        "direct": 0.06948454153461998,
+        "always_scale": 0.06655784818486936,
+        "selected_scale": 0.0702671407969948
+      },
+      "seeds": [
+        {
+          "direct": 0.07689613468621505,
+          "always_scale": 0.06931722935928128,
+          "selected_scale": 0.07904762738086392
+        },
+        {
+          "direct": 0.07330515653949057,
+          "always_scale": 0.06431282650213575,
+          "selected_scale": 0.07450840513428571
+        },
+        {
+          "direct": 0.05825233337815434,
+          "always_scale": 0.06604348869319107,
+          "selected_scale": 0.05724538987583478
+        }
+      ]
+    },
+    {
+      "key": "corridor_08",
+      "group": "corridor",
+      "fold": "same",
+      "points": 350,
+      "scores": {
+        "direct": 0.08365924808965487,
+        "always_scale": 0.09811694090298706,
+        "selected_scale": 0.08409095733554584
+      },
+      "seeds": [
+        {
+          "direct": 0.07926312702647906,
+          "always_scale": 0.10116328413461328,
+          "selected_scale": 0.08014916781816234
+        },
+        {
+          "direct": 0.07080292497932549,
+          "always_scale": 0.10581436059909859,
+          "selected_scale": 0.07162689570463572
+        },
+        {
+          "direct": 0.10091169226316012,
+          "always_scale": 0.08737317797524928,
+          "selected_scale": 0.10049680848383945
+        }
+      ]
+    },
+    {
+      "key": "corridor_09",
+      "group": "corridor",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.118475137495736,
+        "always_scale": 0.11700741947689493,
+        "selected_scale": 0.11832322337898499
+      },
+      "seeds": [
+        {
+          "direct": 0.126500238440196,
+          "always_scale": 0.1208405560315833,
+          "selected_scale": 0.1267560252317057
+        },
+        {
+          "direct": 0.12175790012591957,
+          "always_scale": 0.11138491332859124,
+          "selected_scale": 0.12056541357573142
+        },
+        {
+          "direct": 0.10716727392109242,
+          "always_scale": 0.11879678907051028,
+          "selected_scale": 0.10764823132951784
+        }
+      ]
+    },
+    {
+      "key": "corridor_10",
+      "group": "corridor",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.21416180030845436,
+        "always_scale": 0.22654851626802786,
+        "selected_scale": 0.2177150587944866
+      },
+      "seeds": [
+        {
+          "direct": 0.2308112365627035,
+          "always_scale": 0.23592275238001312,
+          "selected_scale": 0.2338035389847055
+        },
+        {
+          "direct": 0.2266021474924117,
+          "always_scale": 0.2350975145230575,
+          "selected_scale": 0.22934730417454757
+        },
+        {
+          "direct": 0.18507201687024794,
+          "always_scale": 0.20862528190101287,
+          "selected_scale": 0.1899943332242068
+        }
+      ]
+    },
+    {
+      "key": "factory_01",
+      "group": "factory",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.3185087812972435,
+        "always_scale": 0.3153757009836569,
+        "selected_scale": 0.316514855040483
+      },
+      "seeds": [
+        {
+          "direct": 0.335650545889878,
+          "always_scale": 0.3319748365469013,
+          "selected_scale": 0.3349361484344858
+        },
+        {
+          "direct": 0.32410129101204216,
+          "always_scale": 0.3163991784303636,
+          "selected_scale": 0.32030034323698886
+        },
+        {
+          "direct": 0.2957745069898104,
+          "always_scale": 0.29775308797370587,
+          "selected_scale": 0.29430807344997434
+        }
+      ]
+    },
+    {
+      "key": "factory_02",
+      "group": "factory",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.1521909457706946,
+        "always_scale": 0.14399288268482735,
+        "selected_scale": 0.1509482660334391
+      },
+      "seeds": [
+        {
+          "direct": 0.14735298956070403,
+          "always_scale": 0.130588936763427,
+          "selected_scale": 0.1457702095763756
+        },
+        {
+          "direct": 0.15317362449189287,
+          "always_scale": 0.13484219556413507,
+          "selected_scale": 0.15185396480415017
+        },
+        {
+          "direct": 0.156046223259487,
+          "always_scale": 0.16654751572691995,
+          "selected_scale": 0.15522062371979156
+        }
+      ]
+    },
+    {
+      "key": "factory_03",
+      "group": "factory",
+      "fold": "same",
+      "points": 364,
+      "scores": {
+        "direct": 0.13318061514769916,
+        "always_scale": 0.127350174384658,
+        "selected_scale": 0.1336830900995953
+      },
+      "seeds": [
+        {
+          "direct": 0.13028341917857456,
+          "always_scale": 0.11020117373192537,
+          "selected_scale": 0.12929143856728778
+        },
+        {
+          "direct": 0.12711912846358944,
+          "always_scale": 0.11363085794066573,
+          "selected_scale": 0.12743713038950422
+        },
+        {
+          "direct": 0.14213929780093346,
+          "always_scale": 0.15821849148138292,
+          "selected_scale": 0.14432070134199396
+        }
+      ]
+    },
+    {
+      "key": "factory_04",
+      "group": "factory",
+      "fold": "same",
+      "points": 361,
+      "scores": {
+        "direct": 0.1627820229125843,
+        "always_scale": 0.15374820397190678,
+        "selected_scale": 0.16283447518806002
+      },
+      "seeds": [
+        {
+          "direct": 0.15552016006121339,
+          "always_scale": 0.13515487030846052,
+          "selected_scale": 0.15494434681046168
+        },
+        {
+          "direct": 0.16351639321551473,
+          "always_scale": 0.14554037879298287,
+          "selected_scale": 0.16294640066204577
+        },
+        {
+          "direct": 0.16930951546102485,
+          "always_scale": 0.18054936281427691,
+          "selected_scale": 0.17061267809167255
+        }
+      ]
+    },
+    {
+      "key": "factory_05",
+      "group": "factory",
+      "fold": "same",
+      "points": 238,
+      "scores": {
+        "direct": 0.04120901518533864,
+        "always_scale": 0.04207906281781912,
+        "selected_scale": 0.04097840967446977
+      },
+      "seeds": [
+        {
+          "direct": 0.040988629804648354,
+          "always_scale": 0.04437748660170598,
+          "selected_scale": 0.041547121151056784
+        },
+        {
+          "direct": 0.043974843976242406,
+          "always_scale": 0.042201271220507236,
+          "selected_scale": 0.04237068550479559
+        },
+        {
+          "direct": 0.03866357177512517,
+          "always_scale": 0.039658430631244135,
+          "selected_scale": 0.03901742236755692
+        }
+      ]
+    },
+    {
+      "key": "factory_06",
+      "group": "factory",
+      "fold": "same",
+      "points": 375,
+      "scores": {
+        "direct": 0.2464775283932569,
+        "always_scale": 0.240590944087667,
+        "selected_scale": 0.24204414337034255
+      },
+      "seeds": [
+        {
+          "direct": 0.2612899165387599,
+          "always_scale": 0.24568607967001163,
+          "selected_scale": 0.25777944115729073
+        },
+        {
+          "direct": 0.2613384611346398,
+          "always_scale": 0.24685572891536753,
+          "selected_scale": 0.2558545524580493
+        },
+        {
+          "direct": 0.21680420750637094,
+          "always_scale": 0.22923102367762188,
+          "selected_scale": 0.21249843649568764
+        }
+      ]
+    },
+    {
+      "key": "factory_07",
+      "group": "factory",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.04153703111461308,
+        "always_scale": 0.04138127539216782,
+        "selected_scale": 0.04195208599335984
+      },
+      "seeds": [
+        {
+          "direct": 0.04149451547121048,
+          "always_scale": 0.03827307856563086,
+          "selected_scale": 0.04131487796245159
+        },
+        {
+          "direct": 0.0417647955761109,
+          "always_scale": 0.0461931538191276,
+          "selected_scale": 0.042942405755731036
+        },
+        {
+          "direct": 0.04135178229651784,
+          "always_scale": 0.03967759379174501,
+          "selected_scale": 0.04159897426189689
+        }
+      ]
+    },
+    {
+      "key": "factory_08",
+      "group": "factory",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.17274429009316675,
+        "always_scale": 0.19333007634190105,
+        "selected_scale": 0.17047161419442589
+      },
+      "seeds": [
+        {
+          "direct": 0.18668255030592665,
+          "always_scale": 0.20345837973616548,
+          "selected_scale": 0.18708470164916993
+        },
+        {
+          "direct": 0.17135093551025926,
+          "always_scale": 0.19806686460706746,
+          "selected_scale": 0.16517872240072096
+        },
+        {
+          "direct": 0.1601993844633144,
+          "always_scale": 0.17846498468247024,
+          "selected_scale": 0.15915141853338677
+        }
+      ]
+    },
+    {
+      "key": "kitchen_01",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 314,
+      "scores": {
+        "direct": 0.12137235990253392,
+        "always_scale": 0.1286291704310703,
+        "selected_scale": 0.12060671150387502
+      },
+      "seeds": [
+        {
+          "direct": 0.1333544449401656,
+          "always_scale": 0.13430533252825835,
+          "selected_scale": 0.13326297572805845
+        },
+        {
+          "direct": 0.12360376778575922,
+          "always_scale": 0.13034190230283232,
+          "selected_scale": 0.12100376515989478
+        },
+        {
+          "direct": 0.1071588669816769,
+          "always_scale": 0.12124027646212027,
+          "selected_scale": 0.10755339362367182
+        }
+      ]
+    },
+    {
+      "key": "kitchen_02",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 329,
+      "scores": {
+        "direct": 0.05432945508815316,
+        "always_scale": 0.05186453828760303,
+        "selected_scale": 0.05471768090064578
+      },
+      "seeds": [
+        {
+          "direct": 0.05261489461233792,
+          "always_scale": 0.051549557251785734,
+          "selected_scale": 0.05286211699444932
+        },
+        {
+          "direct": 0.054450759383498026,
+          "always_scale": 0.05081192648356156,
+          "selected_scale": 0.05494567389600665
+        },
+        {
+          "direct": 0.05592271126862354,
+          "always_scale": 0.053232131127461814,
+          "selected_scale": 0.05634525181148137
+        }
+      ]
+    },
+    {
+      "key": "kitchen_03",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 315,
+      "scores": {
+        "direct": 0.07555609902127434,
+        "always_scale": 0.07985753463369615,
+        "selected_scale": 0.07601981839474947
+      },
+      "seeds": [
+        {
+          "direct": 0.07787053254899706,
+          "always_scale": 0.08323468689609594,
+          "selected_scale": 0.0789439555539854
+        },
+        {
+          "direct": 0.07215834647621282,
+          "always_scale": 0.07433629917657832,
+          "selected_scale": 0.07257507685452211
+        },
+        {
+          "direct": 0.07663941803861314,
+          "always_scale": 0.08200161782841417,
+          "selected_scale": 0.07654042277574093
+        }
+      ]
+    },
+    {
+      "key": "kitchen_04",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.04843036580985318,
+        "always_scale": 0.04896840365395753,
+        "selected_scale": 0.04747463466326241
+      },
+      "seeds": [
+        {
+          "direct": 0.05191773490915005,
+          "always_scale": 0.050961405000931013,
+          "selected_scale": 0.05125868227232602
+        },
+        {
+          "direct": 0.050762867153205674,
+          "always_scale": 0.05123911206484619,
+          "selected_scale": 0.048383656141119745
+        },
+        {
+          "direct": 0.04261049536720383,
+          "always_scale": 0.044704693896095396,
+          "selected_scale": 0.04278156557634147
+        }
+      ]
+    },
+    {
+      "key": "kitchen_05",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 363,
+      "scores": {
+        "direct": 0.13473894475977147,
+        "always_scale": 0.1436775229464238,
+        "selected_scale": 0.13372710875282398
+      },
+      "seeds": [
+        {
+          "direct": 0.13894284485094627,
+          "always_scale": 0.14607844416367252,
+          "selected_scale": 0.13892336855143825
+        },
+        {
+          "direct": 0.1436449423787491,
+          "always_scale": 0.15015094775337529,
+          "selected_scale": 0.14124638013930266
+        },
+        {
+          "direct": 0.12162904704961909,
+          "always_scale": 0.1348031769222236,
+          "selected_scale": 0.12101157756773104
+        }
+      ]
+    },
+    {
+      "key": "kitchen_06",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.23451159928417428,
+        "always_scale": 0.23454343457274143,
+        "selected_scale": 0.23116162184223157
+      },
+      "seeds": [
+        {
+          "direct": 0.24583811100238137,
+          "always_scale": 0.23660975124213526,
+          "selected_scale": 0.24355584577206227
+        },
+        {
+          "direct": 0.23895294404449033,
+          "always_scale": 0.23650876946736651,
+          "selected_scale": 0.23308378313427178
+        },
+        {
+          "direct": 0.21874374280565112,
+          "always_scale": 0.23051178300872258,
+          "selected_scale": 0.21684523662036073
+        }
+      ]
+    },
+    {
+      "key": "kitchen_07",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.21647629278240452,
+        "always_scale": 0.21097227797963822,
+        "selected_scale": 0.21660488166472244
+      },
+      "seeds": [
+        {
+          "direct": 0.21995249828070104,
+          "always_scale": 0.21268605881142633,
+          "selected_scale": 0.22030023422750503
+        },
+        {
+          "direct": 0.2268215747348782,
+          "always_scale": 0.21296463525037485,
+          "selected_scale": 0.2259175452865567
+        },
+        {
+          "direct": 0.20265480533163424,
+          "always_scale": 0.2072661398771134,
+          "selected_scale": 0.20359686548010553
+        }
+      ]
+    },
+    {
+      "key": "kitchen_08",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 362,
+      "scores": {
+        "direct": 0.07008658679703698,
+        "always_scale": 0.06938201422896711,
+        "selected_scale": 0.07116239391901631
+      },
+      "seeds": [
+        {
+          "direct": 0.07414749168682064,
+          "always_scale": 0.07131966351743241,
+          "selected_scale": 0.07457188548594824
+        },
+        {
+          "direct": 0.06733822738986328,
+          "always_scale": 0.06291306955578399,
+          "selected_scale": 0.06839396892579104
+        },
+        {
+          "direct": 0.06877404131442705,
+          "always_scale": 0.07391330961368495,
+          "selected_scale": 0.07052132734530968
+        }
+      ]
+    },
+    {
+      "key": "lab_01",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.11950052890041886,
+        "always_scale": 0.12206453317000325,
+        "selected_scale": 0.11723784835895552
+      },
+      "seeds": [
+        {
+          "direct": 0.12602196314018693,
+          "always_scale": 0.11341188938012053,
+          "selected_scale": 0.12442832156243482
+        },
+        {
+          "direct": 0.11690444317899662,
+          "always_scale": 0.11944872089966725,
+          "selected_scale": 0.11177785613413517
+        },
+        {
+          "direct": 0.11557518038207304,
+          "always_scale": 0.133332989230222,
+          "selected_scale": 0.1155073673802966
+        }
+      ]
+    },
+    {
+      "key": "lab_02",
+      "group": "lab",
+      "fold": "same",
+      "points": 373,
+      "scores": {
+        "direct": 0.20380246190365559,
+        "always_scale": 0.21737857845938136,
+        "selected_scale": 0.2044610245935995
+      },
+      "seeds": [
+        {
+          "direct": 0.21067463868481492,
+          "always_scale": 0.20496641360748366,
+          "selected_scale": 0.21122167918364135
+        },
+        {
+          "direct": 0.19932288888900634,
+          "always_scale": 0.218930881637187,
+          "selected_scale": 0.19797448025655406
+        },
+        {
+          "direct": 0.20140985813714551,
+          "always_scale": 0.22823844013347339,
+          "selected_scale": 0.20418691434060313
+        }
+      ]
+    },
+    {
+      "key": "lab_03",
+      "group": "lab",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.20424771830724442,
+        "always_scale": 0.2092295459366351,
+        "selected_scale": 0.19713464901444624
+      },
+      "seeds": [
+        {
+          "direct": 0.2109424857458125,
+          "always_scale": 0.20227744689238034,
+          "selected_scale": 0.20602146259999152
+        },
+        {
+          "direct": 0.21721428617331404,
+          "always_scale": 0.21909187414773915,
+          "selected_scale": 0.20759815924769706
+        },
+        {
+          "direct": 0.18458638300260666,
+          "always_scale": 0.2063193167697858,
+          "selected_scale": 0.17778432519565013
+        }
+      ]
+    },
+    {
+      "key": "lab_04",
+      "group": "lab",
+      "fold": "extra",
+      "points": 351,
+      "scores": {
+        "direct": 0.4894371099502517,
+        "always_scale": 0.5189163429852333,
+        "selected_scale": 0.4889371501646831
+      },
+      "seeds": [
+        {
+          "direct": 0.5115982202747267,
+          "always_scale": 0.5135717214221911,
+          "selected_scale": 0.5107252945059285
+        },
+        {
+          "direct": 0.48830513739543957,
+          "always_scale": 0.5300824896267408,
+          "selected_scale": 0.48516186915903753
+        },
+        {
+          "direct": 0.4684079721805888,
+          "always_scale": 0.513094817906768,
+          "selected_scale": 0.47092428682908327
+        }
+      ]
+    },
+    {
+      "key": "lab_05",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.11425837650479158,
+        "always_scale": 0.11716935063861002,
+        "selected_scale": 0.1148357120838045
+      },
+      "seeds": [
+        {
+          "direct": 0.11539972971579962,
+          "always_scale": 0.11359593378982216,
+          "selected_scale": 0.11551619558420245
+        },
+        {
+          "direct": 0.11281566484294511,
+          "always_scale": 0.11446759589774064,
+          "selected_scale": 0.11292115447227151
+        },
+        {
+          "direct": 0.11455973495563,
+          "always_scale": 0.12344452222826725,
+          "selected_scale": 0.11606978619493949
+        }
+      ]
+    },
+    {
+      "key": "lab_06",
+      "group": "lab",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2391011677843805,
+        "always_scale": 0.23891433887991678,
+        "selected_scale": 0.23850937978623646
+      },
+      "seeds": [
+        {
+          "direct": 0.2569655467503995,
+          "always_scale": 0.24561639374249755,
+          "selected_scale": 0.2541893949493802
+        },
+        {
+          "direct": 0.22294329966775453,
+          "always_scale": 0.22859801728524531,
+          "selected_scale": 0.2225335141281144
+        },
+        {
+          "direct": 0.23739465693498749,
+          "always_scale": 0.2425286056120075,
+          "selected_scale": 0.23880523028121484
+        }
+      ]
+    },
+    {
+      "key": "lab_07",
+      "group": "lab",
+      "fold": "extra",
+      "points": 382,
+      "scores": {
+        "direct": 0.23317167595515076,
+        "always_scale": 0.2138676983075343,
+        "selected_scale": 0.23425819664696632
+      },
+      "seeds": [
+        {
+          "direct": 0.24857069644142823,
+          "always_scale": 0.21263267502420452,
+          "selected_scale": 0.24934384101376142
+        },
+        {
+          "direct": 0.2293390548671972,
+          "always_scale": 0.20201180621343875,
+          "selected_scale": 0.22808137635155368
+        },
+        {
+          "direct": 0.22160527655682682,
+          "always_scale": 0.22695861368495965,
+          "selected_scale": 0.22534937257558385
+        }
+      ]
+    },
+    {
+      "key": "lab_08",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.3272541258264712,
+        "always_scale": 0.34202501470457186,
+        "selected_scale": 0.32532980226958014
+      },
+      "seeds": [
+        {
+          "direct": 0.34464086666044064,
+          "always_scale": 0.3312884194028945,
+          "selected_scale": 0.341907962589017
+        },
+        {
+          "direct": 0.31934112284277233,
+          "always_scale": 0.34333341689916475,
+          "selected_scale": 0.31406145410185315
+        },
+        {
+          "direct": 0.3177803879762006,
+          "always_scale": 0.35145320781165634,
+          "selected_scale": 0.32001999011787036
+        }
+      ]
+    },
+    {
+      "key": "lab_09",
+      "group": "lab",
+      "fold": "same",
+      "points": 341,
+      "scores": {
+        "direct": 0.10917809494882962,
+        "always_scale": 0.09909339548918121,
+        "selected_scale": 0.11016301671220181
+      },
+      "seeds": [
+        {
+          "direct": 0.12177395641348561,
+          "always_scale": 0.0992090324255807,
+          "selected_scale": 0.12100113471719498
+        },
+        {
+          "direct": 0.10570933832758818,
+          "always_scale": 0.08465133315281584,
+          "selected_scale": 0.10548080221236031
+        },
+        {
+          "direct": 0.10005099010541507,
+          "always_scale": 0.11341982088914708,
+          "selected_scale": 0.10400711320705017
+        }
+      ]
+    },
+    {
+      "key": "lab_10",
+      "group": "lab",
+      "fold": "extra",
+      "points": 337,
+      "scores": {
+        "direct": 0.10227756164016667,
+        "always_scale": 0.09941715291724647,
+        "selected_scale": 0.10027340625609983
+      },
+      "seeds": [
+        {
+          "direct": 0.09791822206387663,
+          "always_scale": 0.10351653950547537,
+          "selected_scale": 0.09737488761531715
+        },
+        {
+          "direct": 0.10292107880774007,
+          "always_scale": 0.10063534057712521,
+          "selected_scale": 0.10118790123221222
+        },
+        {
+          "direct": 0.10599338404888332,
+          "always_scale": 0.09409957866913882,
+          "selected_scale": 0.10225742992077012
+        }
+      ]
+    },
+    {
+      "key": "lab_11",
+      "group": "lab",
+      "fold": "same",
+      "points": 370,
+      "scores": {
+        "direct": 0.18663508459655823,
+        "always_scale": 0.17673720099815704,
+        "selected_scale": 0.18806649646712462
+      },
+      "seeds": [
+        {
+          "direct": 0.19431427022336217,
+          "always_scale": 0.1660011289043948,
+          "selected_scale": 0.1930297241860101
+        },
+        {
+          "direct": 0.18103302419924944,
+          "always_scale": 0.16565337533463673,
+          "selected_scale": 0.18334932350726607
+        },
+        {
+          "direct": 0.18455795936706312,
+          "always_scale": 0.19855709875543961,
+          "selected_scale": 0.18782044170809767
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_01",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 351,
+      "scores": {
+        "direct": 0.11728546792712191,
+        "always_scale": 0.10192490483525389,
+        "selected_scale": 0.12208285423897945
+      },
+      "seeds": [
+        {
+          "direct": 0.1204482642676054,
+          "always_scale": 0.09040293889026431,
+          "selected_scale": 0.12150456702767122
+        },
+        {
+          "direct": 0.11351945606149084,
+          "always_scale": 0.09094431479225214,
+          "selected_scale": 0.1190528540180729
+        },
+        {
+          "direct": 0.11788868345226948,
+          "always_scale": 0.12442746082324521,
+          "selected_scale": 0.12569114167119422
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_02",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.07498266038296347,
+        "always_scale": 0.06253836631912991,
+        "selected_scale": 0.07217802440956049
+      },
+      "seeds": [
+        {
+          "direct": 0.08641758132689148,
+          "always_scale": 0.06776671163022348,
+          "selected_scale": 0.08346225076574183
+        },
+        {
+          "direct": 0.07426524040785848,
+          "always_scale": 0.050439819197522134,
+          "selected_scale": 0.07084781700190856
+        },
+        {
+          "direct": 0.06426515941414047,
+          "always_scale": 0.06940856812964412,
+          "selected_scale": 0.06222400546103107
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_03",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.9891595739181038,
+        "always_scale": 1.9326503832771775,
+        "selected_scale": 1.9846858233792537
+      },
+      "seeds": [
+        {
+          "direct": 1.9708173008091503,
+          "always_scale": 1.9005379559776348,
+          "selected_scale": 1.9613596447049055
+        },
+        {
+          "direct": 2.0527747321849334,
+          "always_scale": 1.9352532371993316,
+          "selected_scale": 2.0432026890327326
+        },
+        {
+          "direct": 1.9438866887602273,
+          "always_scale": 1.962159956654566,
+          "selected_scale": 1.949495136400123
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_04",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.11949463306703179,
+        "always_scale": 0.12532587241395357,
+        "selected_scale": 0.13094857448163608
+      },
+      "seeds": [
+        {
+          "direct": 0.12777382114077485,
+          "always_scale": 0.1196936859303041,
+          "selected_scale": 0.1385501462395169
+        },
+        {
+          "direct": 0.11605575533587159,
+          "always_scale": 0.11548076472591495,
+          "selected_scale": 0.12596485872941984
+        },
+        {
+          "direct": 0.1146543227244489,
+          "always_scale": 0.1408031665856417,
+          "selected_scale": 0.12833071847597144
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_05",
+      "group": "lectureroom",
+      "fold": "extra",
+      "points": 381,
+      "scores": {
+        "direct": 0.2531758321167214,
+        "always_scale": 0.2649101321196897,
+        "selected_scale": 0.24850177825964534
+      },
+      "seeds": [
+        {
+          "direct": 0.2624360063245505,
+          "always_scale": 0.256434628985273,
+          "selected_scale": 0.2559279207862266
+        },
+        {
+          "direct": 0.2645173526467095,
+          "always_scale": 0.2782103709756555,
+          "selected_scale": 0.259387322673998
+        },
+        {
+          "direct": 0.23257413737890412,
+          "always_scale": 0.26008539639814066,
+          "selected_scale": 0.2301900913187114
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_06",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.06244291247234501,
+        "always_scale": 0.06773656382889248,
+        "selected_scale": 0.06249340912467217
+      },
+      "seeds": [
+        {
+          "direct": 0.06426115678229691,
+          "always_scale": 0.07254752625169207,
+          "selected_scale": 0.06498342136444873
+        },
+        {
+          "direct": 0.06386681273544259,
+          "always_scale": 0.06953870501534902,
+          "selected_scale": 0.06296486680175678
+        },
+        {
+          "direct": 0.059200767899295514,
+          "always_scale": 0.061123460219636355,
+          "selected_scale": 0.05953193920781099
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_07",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 368,
+      "scores": {
+        "direct": 0.2811653918246376,
+        "always_scale": 0.2923458460955197,
+        "selected_scale": 0.27531660542722
+      },
+      "seeds": [
+        {
+          "direct": 0.26431955877066454,
+          "always_scale": 0.2889101382805173,
+          "selected_scale": 0.2588121427806071
+        },
+        {
+          "direct": 0.28275126614263113,
+          "always_scale": 0.3051738417054096,
+          "selected_scale": 0.279054916116938
+        },
+        {
+          "direct": 0.29642535056061725,
+          "always_scale": 0.28295355830063224,
+          "selected_scale": 0.28808275738411476
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_08",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 368,
+      "scores": {
+        "direct": 0.22340733873425056,
+        "always_scale": 0.27266558540853647,
+        "selected_scale": 0.21594684686378418
+      },
+      "seeds": [
+        {
+          "direct": 0.21175184584126064,
+          "always_scale": 0.2812338758768065,
+          "selected_scale": 0.2087081974338479
+        },
+        {
+          "direct": 0.22487871010265947,
+          "always_scale": 0.2981944267841794,
+          "selected_scale": 0.21745267426802328
+        },
+        {
+          "direct": 0.2335914602588316,
+          "always_scale": 0.23856845356462356,
+          "selected_scale": 0.22167966888948143
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_09",
+      "group": "lectureroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.17909742193762576,
+        "always_scale": 0.19091330854999353,
+        "selected_scale": 0.17643853232163606
+      },
+      "seeds": [
+        {
+          "direct": 0.1803357694852033,
+          "always_scale": 0.19988527445230347,
+          "selected_scale": 0.17981347644904375
+        },
+        {
+          "direct": 0.18027517964166578,
+          "always_scale": 0.20051713442309482,
+          "selected_scale": 0.1775628031441754
+        },
+        {
+          "direct": 0.17668131668600814,
+          "always_scale": 0.17233751677458226,
+          "selected_scale": 0.17193931737168897
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_10",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.18041280523855838,
+        "always_scale": 0.18991169595556182,
+        "selected_scale": 0.17904445731410948
+      },
+      "seeds": [
+        {
+          "direct": 0.18968721246181652,
+          "always_scale": 0.18123037576036763,
+          "selected_scale": 0.1865321055388363
+        },
+        {
+          "direct": 0.17341732190182155,
+          "always_scale": 0.19170705784613637,
+          "selected_scale": 0.171105342146025
+        },
+        {
+          "direct": 0.178133881352037,
+          "always_scale": 0.19679765426018145,
+          "selected_scale": 0.17949592425746722
+        }
+      ]
+    },
+    {
+      "key": "livingroom_01",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 307,
+      "scores": {
+        "direct": 0.34929235027004363,
+        "always_scale": 0.3538766360989367,
+        "selected_scale": 0.34942719074391526
+      },
+      "seeds": [
+        {
+          "direct": 0.3698749600758069,
+          "always_scale": 0.34652464450645304,
+          "selected_scale": 0.36706095603415656
+        },
+        {
+          "direct": 0.33992032630740515,
+          "always_scale": 0.34853799162895277,
+          "selected_scale": 0.3405922659280962
+        },
+        {
+          "direct": 0.33808176442691895,
+          "always_scale": 0.3665672721614045,
+          "selected_scale": 0.34062835026949295
+        }
+      ]
+    },
+    {
+      "key": "livingroom_02",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 382,
+      "scores": {
+        "direct": 0.17801985413840407,
+        "always_scale": 0.17407335666148968,
+        "selected_scale": 0.17949247115535194
+      },
+      "seeds": [
+        {
+          "direct": 0.16462009085076132,
+          "always_scale": 0.17547653334237964,
+          "selected_scale": 0.16737573566845507
+        },
+        {
+          "direct": 0.18164605124213715,
+          "always_scale": 0.17754713712558753,
+          "selected_scale": 0.18316585287801956
+        },
+        {
+          "direct": 0.18779342032231383,
+          "always_scale": 0.1691963995165019,
+          "selected_scale": 0.18793582491958113
+        }
+      ]
+    },
+    {
+      "key": "livingroom_03",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 379,
+      "scores": {
+        "direct": 0.21609036776747428,
+        "always_scale": 0.20615071082806846,
+        "selected_scale": 0.21407878991393456
+      },
+      "seeds": [
+        {
+          "direct": 0.22037270137136333,
+          "always_scale": 0.20209232361424526,
+          "selected_scale": 0.21868902701664036
+        },
+        {
+          "direct": 0.2261619531910996,
+          "always_scale": 0.20553727424713714,
+          "selected_scale": 0.22204299550248965
+        },
+        {
+          "direct": 0.20173644873995988,
+          "always_scale": 0.2108225346228229,
+          "selected_scale": 0.20150434722267357
+        }
+      ]
+    },
+    {
+      "key": "livingroom_04",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.0781358097224995,
+        "always_scale": 0.07803083845140425,
+        "selected_scale": 0.07833984400398225
+      },
+      "seeds": [
+        {
+          "direct": 0.07441767748318365,
+          "always_scale": 0.07644685427604613,
+          "selected_scale": 0.07472710834480915
+        },
+        {
+          "direct": 0.07726791604358556,
+          "always_scale": 0.07733449687682094,
+          "selected_scale": 0.07807928580618702
+        },
+        {
+          "direct": 0.08272183564072931,
+          "always_scale": 0.08031116420134568,
+          "selected_scale": 0.0822131378609506
+        }
+      ]
+    },
+    {
+      "key": "livingroom_05",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 333,
+      "scores": {
+        "direct": 0.08744112737292131,
+        "always_scale": 0.09765201598924488,
+        "selected_scale": 0.08720465409563849
+      },
+      "seeds": [
+        {
+          "direct": 0.10362760797329858,
+          "always_scale": 0.09581541047469577,
+          "selected_scale": 0.10182445020794627
+        },
+        {
+          "direct": 0.0771236483980933,
+          "always_scale": 0.09174982709283386,
+          "selected_scale": 0.07615079164235196
+        },
+        {
+          "direct": 0.08157212574737203,
+          "always_scale": 0.10539081040020498,
+          "selected_scale": 0.08363872043661727
+        }
+      ]
+    },
+    {
+      "key": "livingroom_06",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 304,
+      "scores": {
+        "direct": 0.1639789194397506,
+        "always_scale": 0.17888220147107795,
+        "selected_scale": 0.16935285998711214
+      },
+      "seeds": [
+        {
+          "direct": 0.16824545416316208,
+          "always_scale": 0.1711944133021011,
+          "selected_scale": 0.17149450582266315
+        },
+        {
+          "direct": 0.16182764526854965,
+          "always_scale": 0.16798014884114557,
+          "selected_scale": 0.16703491242272062
+        },
+        {
+          "direct": 0.16186365888754012,
+          "always_scale": 0.19747204226998716,
+          "selected_scale": 0.16952916171595264
+        }
+      ]
+    },
+    {
+      "key": "livingroom_07",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.16673299275314013,
+        "always_scale": 0.1658686676614646,
+        "selected_scale": 0.16562176695018804
+      },
+      "seeds": [
+        {
+          "direct": 0.17760440088079202,
+          "always_scale": 0.16070286811695755,
+          "selected_scale": 0.1748732789336379
+        },
+        {
+          "direct": 0.15886234284960934,
+          "always_scale": 0.15816194606160466,
+          "selected_scale": 0.1576158477860353
+        },
+        {
+          "direct": 0.16373223452901906,
+          "always_scale": 0.17874118880583165,
+          "selected_scale": 0.16437617413089087
+        }
+      ]
+    },
+    {
+      "key": "livingroom_08",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.09067148284911503,
+        "always_scale": 0.09384293948446343,
+        "selected_scale": 0.09102242619294514
+      },
+      "seeds": [
+        {
+          "direct": 0.09458220150138576,
+          "always_scale": 0.08623706856073676,
+          "selected_scale": 0.09473358504013817
+        },
+        {
+          "direct": 0.09358573962891177,
+          "always_scale": 0.09102625798648713,
+          "selected_scale": 0.09277142399836066
+        },
+        {
+          "direct": 0.08384650741704755,
+          "always_scale": 0.10426549190616642,
+          "selected_scale": 0.08556226954033658
+        }
+      ]
+    },
+    {
+      "key": "livingroom_09",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.09873340788265322,
+        "always_scale": 0.10272147053006381,
+        "selected_scale": 0.09799014198970125
+      },
+      "seeds": [
+        {
+          "direct": 0.10106095388942034,
+          "always_scale": 0.1049574747603029,
+          "selected_scale": 0.10137860966092632
+        },
+        {
+          "direct": 0.1006894465772706,
+          "always_scale": 0.10744599226491344,
+          "selected_scale": 0.09851514913543018
+        },
+        {
+          "direct": 0.09444982318126872,
+          "always_scale": 0.09576094456497507,
+          "selected_scale": 0.09407666717274728
+        }
+      ]
+    },
+    {
+      "key": "livingroom_10",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 375,
+      "scores": {
+        "direct": 0.39026626557812544,
+        "always_scale": 0.38504844481790285,
+        "selected_scale": 0.3891481397904993
+      },
+      "seeds": [
+        {
+          "direct": 0.39811531454633964,
+          "always_scale": 0.38476373387015966,
+          "selected_scale": 0.4010833816451451
+        },
+        {
+          "direct": 0.3991294956474582,
+          "always_scale": 0.39672165477872695,
+          "selected_scale": 0.3944077914354057
+        },
+        {
+          "direct": 0.37355398654057825,
+          "always_scale": 0.37365994580482204,
+          "selected_scale": 0.3719532462909471
+        }
+      ]
+    },
+    {
+      "key": "livingroom_11",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 377,
+      "scores": {
+        "direct": 0.044279189299033954,
+        "always_scale": 0.05320015287319999,
+        "selected_scale": 0.04305033598357707
+      },
+      "seeds": [
+        {
+          "direct": 0.05100598822805914,
+          "always_scale": 0.05175599266533105,
+          "selected_scale": 0.0494519371807066
+        },
+        {
+          "direct": 0.039772113480400224,
+          "always_scale": 0.05042298968633824,
+          "selected_scale": 0.03860265157163159
+        },
+        {
+          "direct": 0.04205946618864247,
+          "always_scale": 0.0574214762679307,
+          "selected_scale": 0.041096419198393006
+        }
+      ]
+    },
+    {
+      "key": "livingroom_12",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 373,
+      "scores": {
+        "direct": 0.090532280987415,
+        "always_scale": 0.10889846597053297,
+        "selected_scale": 0.08829056739857954
+      },
+      "seeds": [
+        {
+          "direct": 0.09889795763888327,
+          "always_scale": 0.10670996201471124,
+          "selected_scale": 0.09741897479436523
+        },
+        {
+          "direct": 0.09399397435369063,
+          "always_scale": 0.11988209823188985,
+          "selected_scale": 0.09032897151328853
+        },
+        {
+          "direct": 0.07870491096967111,
+          "always_scale": 0.10010333766499781,
+          "selected_scale": 0.07712375588808486
+        }
+      ]
+    },
+    {
+      "key": "livingroom_13",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 375,
+      "scores": {
+        "direct": 0.09919171770183503,
+        "always_scale": 0.1028976033568093,
+        "selected_scale": 0.10045487215556519
+      },
+      "seeds": [
+        {
+          "direct": 0.11324093663734167,
+          "always_scale": 0.10315146611822971,
+          "selected_scale": 0.11357468107843215
+        },
+        {
+          "direct": 0.09169985033885485,
+          "always_scale": 0.09739559301842292,
+          "selected_scale": 0.09262228250709344
+        },
+        {
+          "direct": 0.09263436612930856,
+          "always_scale": 0.10814575093377524,
+          "selected_scale": 0.09516765288116995
+        }
+      ]
+    },
+    {
+      "key": "livingroom_14",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 360,
+      "scores": {
+        "direct": 0.06145436997704051,
+        "always_scale": 0.07241606905874738,
+        "selected_scale": 0.059729648194406126
+      },
+      "seeds": [
+        {
+          "direct": 0.07177601061399552,
+          "always_scale": 0.07014966118844132,
+          "selected_scale": 0.0710412907490175
+        },
+        {
+          "direct": 0.054680233620239015,
+          "always_scale": 0.07275823046586224,
+          "selected_scale": 0.051227619591562995
+        },
+        {
+          "direct": 0.05790686569688698,
+          "always_scale": 0.07434031552193857,
+          "selected_scale": 0.056920034242637876
+        }
+      ]
+    },
+    {
+      "key": "livingroom_15",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 335,
+      "scores": {
+        "direct": 0.1881027633152391,
+        "always_scale": 0.19213753248838636,
+        "selected_scale": 0.1908973859828694
+      },
+      "seeds": [
+        {
+          "direct": 0.19881499606208278,
+          "always_scale": 0.19607725940782167,
+          "selected_scale": 0.20214158181613215
+        },
+        {
+          "direct": 0.19441474527483038,
+          "always_scale": 0.19309973080162626,
+          "selected_scale": 0.19590456298460077
+        },
+        {
+          "direct": 0.17107854860880417,
+          "always_scale": 0.18723560725571103,
+          "selected_scale": 0.17464601314787528
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_01",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.15236009210426368,
+        "always_scale": 0.14746282344444062,
+        "selected_scale": 0.1536831352338716
+      },
+      "seeds": [
+        {
+          "direct": 0.1495442785782925,
+          "always_scale": 0.1483520069721271,
+          "selected_scale": 0.14994994353518953
+        },
+        {
+          "direct": 0.15131635150970554,
+          "always_scale": 0.14522855703812132,
+          "selected_scale": 0.15401999526111657
+        },
+        {
+          "direct": 0.15621964622479306,
+          "always_scale": 0.1488079063230734,
+          "selected_scale": 0.15707946690530875
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_02",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.08761015424035996,
+        "always_scale": 0.10175358902589732,
+        "selected_scale": 0.08671976169702257
+      },
+      "seeds": [
+        {
+          "direct": 0.08960689066116684,
+          "always_scale": 0.09919559686016961,
+          "selected_scale": 0.08975931201725762
+        },
+        {
+          "direct": 0.08879910450425664,
+          "always_scale": 0.11053887780002994,
+          "selected_scale": 0.08653314687047879
+        },
+        {
+          "direct": 0.08442446755565643,
+          "always_scale": 0.09552629241749237,
+          "selected_scale": 0.0838668262033313
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_03",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 284,
+      "scores": {
+        "direct": 0.16023583364916782,
+        "always_scale": 0.1552027923549989,
+        "selected_scale": 0.16079115728739402
+      },
+      "seeds": [
+        {
+          "direct": 0.17174199598903755,
+          "always_scale": 0.15869965981916928,
+          "selected_scale": 0.17181229518829672
+        },
+        {
+          "direct": 0.16663315641583643,
+          "always_scale": 0.15220207162272253,
+          "selected_scale": 0.16598849184752204
+        },
+        {
+          "direct": 0.14233234854262952,
+          "always_scale": 0.15470664562310488,
+          "selected_scale": 0.1445726848263633
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_04",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 361,
+      "scores": {
+        "direct": 0.0791441464892822,
+        "always_scale": 0.08508497466735625,
+        "selected_scale": 0.07871755994823526
+      },
+      "seeds": [
+        {
+          "direct": 0.07611043995919935,
+          "always_scale": 0.0873762972675776,
+          "selected_scale": 0.07589590001211188
+        },
+        {
+          "direct": 0.07731898172407234,
+          "always_scale": 0.08918797970530669,
+          "selected_scale": 0.0776772220022363
+        },
+        {
+          "direct": 0.0840030177845749,
+          "always_scale": 0.07869064702918446,
+          "selected_scale": 0.0825795578303576
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_05",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 373,
+      "scores": {
+        "direct": 0.19925759238377583,
+        "always_scale": 0.20600123975714943,
+        "selected_scale": 0.19724561923769235
+      },
+      "seeds": [
+        {
+          "direct": 0.204302403875464,
+          "always_scale": 0.2038878747371007,
+          "selected_scale": 0.20205706445620988
+        },
+        {
+          "direct": 0.21000010225893748,
+          "always_scale": 0.21753363063058928,
+          "selected_scale": 0.20625535761107927
+        },
+        {
+          "direct": 0.18347027101692598,
+          "always_scale": 0.19658221390375827,
+          "selected_scale": 0.18342443564578798
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_06",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 371,
+      "scores": {
+        "direct": 0.1432697954280491,
+        "always_scale": 0.14586919594439315,
+        "selected_scale": 0.1426627925800749
+      },
+      "seeds": [
+        {
+          "direct": 0.15219027493862028,
+          "always_scale": 0.15159109072823646,
+          "selected_scale": 0.15163347202417488
+        },
+        {
+          "direct": 0.14923346483764965,
+          "always_scale": 0.1516750066271884,
+          "selected_scale": 0.14778415365568331
+        },
+        {
+          "direct": 0.1283856465078774,
+          "always_scale": 0.13434149047775454,
+          "selected_scale": 0.12857075206036644
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_07",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.44221988188868516,
+        "always_scale": 0.4361147268158095,
+        "selected_scale": 0.4454838422415211
+      },
+      "seeds": [
+        {
+          "direct": 0.466453607039867,
+          "always_scale": 0.4544919578684319,
+          "selected_scale": 0.4708631517034518
+        },
+        {
+          "direct": 0.4486117037934109,
+          "always_scale": 0.4323559748629306,
+          "selected_scale": 0.4465772775785726
+        },
+        {
+          "direct": 0.4115943348327775,
+          "always_scale": 0.42149624771606603,
+          "selected_scale": 0.4190110974425389
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_08",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.13864019283461557,
+        "always_scale": 0.15176469628645842,
+        "selected_scale": 0.14056132708502078
+      },
+      "seeds": [
+        {
+          "direct": 0.1513759343566472,
+          "always_scale": 0.15518098874700936,
+          "selected_scale": 0.15279748979229335
+        },
+        {
+          "direct": 0.13946595066620454,
+          "always_scale": 0.15368011657001268,
+          "selected_scale": 0.13959338992846118
+        },
+        {
+          "direct": 0.1250786934809949,
+          "always_scale": 0.1464329835423532,
+          "selected_scale": 0.12929310153430787
+        }
+      ]
+    },
+    {
+      "key": "office_01",
+      "group": "office",
+      "fold": "same",
+      "points": 339,
+      "scores": {
+        "direct": 0.22085363175161513,
+        "always_scale": 0.21422103955292318,
+        "selected_scale": 0.228226987094767
+      },
+      "seeds": [
+        {
+          "direct": 0.24487881979548123,
+          "always_scale": 0.2189298602897032,
+          "selected_scale": 0.2515205716486067
+        },
+        {
+          "direct": 0.21307603671620848,
+          "always_scale": 0.19335556300920512,
+          "selected_scale": 0.21875674142104753
+        },
+        {
+          "direct": 0.20460603874315567,
+          "always_scale": 0.23037769535986122,
+          "selected_scale": 0.21440364821464672
+        }
+      ]
+    },
+    {
+      "key": "office_02",
+      "group": "office",
+      "fold": "same",
+      "points": 355,
+      "scores": {
+        "direct": 0.11275363711231172,
+        "always_scale": 0.11298609429317623,
+        "selected_scale": 0.11484002119682858
+      },
+      "seeds": [
+        {
+          "direct": 0.12622738502689784,
+          "always_scale": 0.12079756201884084,
+          "selected_scale": 0.12837001809457102
+        },
+        {
+          "direct": 0.11427593556140343,
+          "always_scale": 0.10652706707632811,
+          "selected_scale": 0.11557001117233419
+        },
+        {
+          "direct": 0.09775759074863385,
+          "always_scale": 0.11163365378435972,
+          "selected_scale": 0.10058003432358055
+        }
+      ]
+    },
+    {
+      "key": "office_03",
+      "group": "office",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.07410125158139604,
+        "always_scale": 0.06945235307634956,
+        "selected_scale": 0.0769973390885199
+      },
+      "seeds": [
+        {
+          "direct": 0.063797692460548,
+          "always_scale": 0.06765699233999699,
+          "selected_scale": 0.06703887293738607
+        },
+        {
+          "direct": 0.0690461056505736,
+          "always_scale": 0.06684937932956564,
+          "selected_scale": 0.0724047212988979
+        },
+        {
+          "direct": 0.0894599566330665,
+          "always_scale": 0.07385068755948605,
+          "selected_scale": 0.09154842302927572
+        }
+      ]
+    },
+    {
+      "key": "office_04",
+      "group": "office",
+      "fold": "same",
+      "points": 345,
+      "scores": {
+        "direct": 0.05501709658784631,
+        "always_scale": 0.05334223935161631,
+        "selected_scale": 0.056458221165381406
+      },
+      "seeds": [
+        {
+          "direct": 0.049398820741031926,
+          "always_scale": 0.05246518546545984,
+          "selected_scale": 0.05034033899059098
+        },
+        {
+          "direct": 0.05391535691333046,
+          "always_scale": 0.052878054569381286,
+          "selected_scale": 0.05626922334324683
+        },
+        {
+          "direct": 0.061737112109176547,
+          "always_scale": 0.05468347802000781,
+          "selected_scale": 0.06276510116230642
+        }
+      ]
+    },
+    {
+      "key": "office_05",
+      "group": "office",
+      "fold": "same",
+      "points": 301,
+      "scores": {
+        "direct": 0.06315063794920439,
+        "always_scale": 0.06329015437535346,
+        "selected_scale": 0.06310438326551272
+      },
+      "seeds": [
+        {
+          "direct": 0.06226518264721152,
+          "always_scale": 0.06249548323122617,
+          "selected_scale": 0.06236604481625674
+        },
+        {
+          "direct": 0.0635886715692756,
+          "always_scale": 0.06480184052495312,
+          "selected_scale": 0.06363561977203352
+        },
+        {
+          "direct": 0.06359805963112604,
+          "always_scale": 0.06257313936988106,
+          "selected_scale": 0.06331148520824792
+        }
+      ]
+    },
+    {
+      "key": "office_06",
+      "group": "office",
+      "fold": "same",
+      "points": 371,
+      "scores": {
+        "direct": 0.053365828537465666,
+        "always_scale": 0.05221940822925517,
+        "selected_scale": 0.0529340212776216
+      },
+      "seeds": [
+        {
+          "direct": 0.05433511220918595,
+          "always_scale": 0.053566201822872264,
+          "selected_scale": 0.05408147299373757
+        },
+        {
+          "direct": 0.054082111472205534,
+          "always_scale": 0.051345303001516275,
+          "selected_scale": 0.05273787694930831
+        },
+        {
+          "direct": 0.05168026193100553,
+          "always_scale": 0.051746719863376985,
+          "selected_scale": 0.05198271388981892
+        }
+      ]
+    },
+    {
+      "key": "office_07",
+      "group": "office",
+      "fold": "same",
+      "points": 339,
+      "scores": {
+        "direct": 0.42612257414823745,
+        "always_scale": 0.44221935666550877,
+        "selected_scale": 0.42902032495818704
+      },
+      "seeds": [
+        {
+          "direct": 0.44449520093169964,
+          "always_scale": 0.44694285990952165,
+          "selected_scale": 0.44724999325841625
+        },
+        {
+          "direct": 0.42359830349279454,
+          "always_scale": 0.43870532301317466,
+          "selected_scale": 0.4239065473663378
+        },
+        {
+          "direct": 0.4102742180202181,
+          "always_scale": 0.44100988707383,
+          "selected_scale": 0.4159044342498071
+        }
+      ]
+    },
+    {
+      "key": "office_08",
+      "group": "office",
+      "fold": "same",
+      "points": 332,
+      "scores": {
+        "direct": 0.12883184682951104,
+        "always_scale": 0.1317728525120849,
+        "selected_scale": 0.12948298548071954
+      },
+      "seeds": [
+        {
+          "direct": 0.13016972464588716,
+          "always_scale": 0.12904020621744414,
+          "selected_scale": 0.13055507365950048
+        },
+        {
+          "direct": 0.13023491437880913,
+          "always_scale": 0.13019842150647012,
+          "selected_scale": 0.13053051244149733
+        },
+        {
+          "direct": 0.12609090146383684,
+          "always_scale": 0.13607992981234043,
+          "selected_scale": 0.12736337034116077
+        }
+      ]
+    },
+    {
+      "key": "restaurant_01",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.16612868422621244,
+        "always_scale": 0.1555172601721163,
+        "selected_scale": 0.1626973773361991
+      },
+      "seeds": [
+        {
+          "direct": 0.1692737908653007,
+          "always_scale": 0.148667585726646,
+          "selected_scale": 0.16480806316846086
+        },
+        {
+          "direct": 0.1667446543128728,
+          "always_scale": 0.1526064604702241,
+          "selected_scale": 0.16264046160566487
+        },
+        {
+          "direct": 0.16236760750046383,
+          "always_scale": 0.16527773431947881,
+          "selected_scale": 0.16064360723447157
+        }
+      ]
+    },
+    {
+      "key": "restaurant_02",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 338,
+      "scores": {
+        "direct": 0.18812344640177237,
+        "always_scale": 0.19377515564087852,
+        "selected_scale": 0.18877832851467655
+      },
+      "seeds": [
+        {
+          "direct": 0.19388858753689053,
+          "always_scale": 0.18243694790164997,
+          "selected_scale": 0.1927892208800502
+        },
+        {
+          "direct": 0.18125090384867243,
+          "always_scale": 0.18681734038759773,
+          "selected_scale": 0.1805751621279595
+        },
+        {
+          "direct": 0.18923084781975416,
+          "always_scale": 0.21207117863338784,
+          "selected_scale": 0.19297060253601997
+        }
+      ]
+    },
+    {
+      "key": "restaurant_03",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 346,
+      "scores": {
+        "direct": 0.20291857532865368,
+        "always_scale": 0.2088907938588419,
+        "selected_scale": 0.20607392487599205
+      },
+      "seeds": [
+        {
+          "direct": 0.20844475910294555,
+          "always_scale": 0.19961155692580046,
+          "selected_scale": 0.2111073814615106
+        },
+        {
+          "direct": 0.2158541933081281,
+          "always_scale": 0.2033625245685038,
+          "selected_scale": 0.21785349012697322
+        },
+        {
+          "direct": 0.18445677357488743,
+          "always_scale": 0.22369830008222147,
+          "selected_scale": 0.1892609030394923
+        }
+      ]
+    },
+    {
+      "key": "restaurant_04",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 372,
+      "scores": {
+        "direct": 0.21214662565140274,
+        "always_scale": 0.21507136745430208,
+        "selected_scale": 0.21348094359088368
+      },
+      "seeds": [
+        {
+          "direct": 0.22325806879506122,
+          "always_scale": 0.21818271262434713,
+          "selected_scale": 0.22417080720684104
+        },
+        {
+          "direct": 0.21203919376433636,
+          "always_scale": 0.2118565763589754,
+          "selected_scale": 0.21242133940293417
+        },
+        {
+          "direct": 0.20114261439481063,
+          "always_scale": 0.21517481337958366,
+          "selected_scale": 0.20385068416287583
+        }
+      ]
+    },
+    {
+      "key": "restaurant_05",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.15735341039291548,
+        "always_scale": 0.161408706238799,
+        "selected_scale": 0.15373629191841198
+      },
+      "seeds": [
+        {
+          "direct": 0.1637138930671461,
+          "always_scale": 0.15680830483000507,
+          "selected_scale": 0.15826611513228236
+        },
+        {
+          "direct": 0.16704205987296597,
+          "always_scale": 0.17512022933038054,
+          "selected_scale": 0.16337222814513033
+        },
+        {
+          "direct": 0.14130427823863434,
+          "always_scale": 0.1522975845560114,
+          "selected_scale": 0.13957053247782325
+        }
+      ]
+    },
+    {
+      "key": "restaurant_06",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 378,
+      "scores": {
+        "direct": 0.44915647163593936,
+        "always_scale": 0.456794102083417,
+        "selected_scale": 0.4406115058138767
+      },
+      "seeds": [
+        {
+          "direct": 0.46508153348335357,
+          "always_scale": 0.45354331285085,
+          "selected_scale": 0.4554704353505607
+        },
+        {
+          "direct": 0.459939431856899,
+          "always_scale": 0.4731628876252851,
+          "selected_scale": 0.4507837080994069
+        },
+        {
+          "direct": 0.42244844956756544,
+          "always_scale": 0.44367610577411587,
+          "selected_scale": 0.4155803739916626
+        }
+      ]
+    },
+    {
+      "key": "restaurant_07",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 295,
+      "scores": {
+        "direct": 0.28212629363670655,
+        "always_scale": 0.28172107465744867,
+        "selected_scale": 0.27803193688570677
+      },
+      "seeds": [
+        {
+          "direct": 0.29757071584257055,
+          "always_scale": 0.2880731606361399,
+          "selected_scale": 0.2936347032189177
+        },
+        {
+          "direct": 0.29287247379609865,
+          "always_scale": 0.2896912986565684,
+          "selected_scale": 0.286355416582652
+        },
+        {
+          "direct": 0.25593569127145027,
+          "always_scale": 0.26739876467963775,
+          "selected_scale": 0.25410569085555057
+        }
+      ]
+    },
+    {
+      "key": "restaurant_08",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 323,
+      "scores": {
+        "direct": 0.4522025277993695,
+        "always_scale": 0.46627131982314723,
+        "selected_scale": 0.45453744529340967
+      },
+      "seeds": [
+        {
+          "direct": 0.46061086381519567,
+          "always_scale": 0.45644316636828614,
+          "selected_scale": 0.46121969084264286
+        },
+        {
+          "direct": 0.4652821225439588,
+          "always_scale": 0.46393104584934874,
+          "selected_scale": 0.466632751367608
+        },
+        {
+          "direct": 0.430714597038954,
+          "always_scale": 0.47843974725180705,
+          "selected_scale": 0.4357598936699781
+        }
+      ]
+    },
+    {
+      "key": "restaurant_09",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 383,
+      "scores": {
+        "direct": 0.18476181113006965,
+        "always_scale": 0.19560105162083277,
+        "selected_scale": 0.17922648682057152
+      },
+      "seeds": [
+        {
+          "direct": 0.19589439481176452,
+          "always_scale": 0.1964317245835649,
+          "selected_scale": 0.19128053566071374
+        },
+        {
+          "direct": 0.19340785439226604,
+          "always_scale": 0.2061602919644202,
+          "selected_scale": 0.18600952941142057
+        },
+        {
+          "direct": 0.16498318418617836,
+          "always_scale": 0.1842111383145133,
+          "selected_scale": 0.16038939538958027
+        }
+      ]
+    },
+    {
+      "key": "restaurant_10",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.5414362987580325,
+        "always_scale": 0.5520719428241613,
+        "selected_scale": 0.5408386570803438
+      },
+      "seeds": [
+        {
+          "direct": 0.5700770796750098,
+          "always_scale": 0.5596068619568884,
+          "selected_scale": 0.5689953682039178
+        },
+        {
+          "direct": 0.5415105443024932,
+          "always_scale": 0.5537951050014029,
+          "selected_scale": 0.5380055734696125
+        },
+        {
+          "direct": 0.512721272296594,
+          "always_scale": 0.5428138615141926,
+          "selected_scale": 0.5155150295675012
+        }
+      ]
+    },
+    {
+      "key": "restaurant_11",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 381,
+      "scores": {
+        "direct": 0.7186978813065567,
+        "always_scale": 0.7078434895812472,
+        "selected_scale": 0.7104215573682809
+      },
+      "seeds": [
+        {
+          "direct": 0.7432545963071987,
+          "always_scale": 0.7018139175164066,
+          "selected_scale": 0.7297043220979448
+        },
+        {
+          "direct": 0.717876065731358,
+          "always_scale": 0.7038000774888429,
+          "selected_scale": 0.7133923628274799
+        },
+        {
+          "direct": 0.6949629818811132,
+          "always_scale": 0.7179164737384921,
+          "selected_scale": 0.688167987179418
+        }
+      ]
+    },
+    {
+      "key": "restaurant_12",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 378,
+      "scores": {
+        "direct": 0.2154687104854723,
+        "always_scale": 0.23614880765999838,
+        "selected_scale": 0.21249318115008617
+      },
+      "seeds": [
+        {
+          "direct": 0.22653461304083855,
+          "always_scale": 0.2381809287848141,
+          "selected_scale": 0.22396314891195154
+        },
+        {
+          "direct": 0.23296199330797224,
+          "always_scale": 0.2542432456571564,
+          "selected_scale": 0.22708746424461995
+        },
+        {
+          "direct": 0.18690952510760608,
+          "always_scale": 0.21602224853802468,
+          "selected_scale": 0.18642893029368704
+        }
+      ]
+    },
+    {
+      "key": "restroom_01",
+      "group": "restroom",
+      "fold": "same",
+      "points": 369,
+      "scores": {
+        "direct": 0.4719285860504882,
+        "always_scale": 0.4713419099675247,
+        "selected_scale": 0.47067246466932183
+      },
+      "seeds": [
+        {
+          "direct": 0.4760817255141527,
+          "always_scale": 0.466143425083636,
+          "selected_scale": 0.47852949415579177
+        },
+        {
+          "direct": 0.5066503600625992,
+          "always_scale": 0.48370268922731974,
+          "selected_scale": 0.5023118979577829
+        },
+        {
+          "direct": 0.4330536725747127,
+          "always_scale": 0.46417961559161836,
+          "selected_scale": 0.43117600189439076
+        }
+      ]
+    },
+    {
+      "key": "restroom_02",
+      "group": "restroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.21413462481845527,
+        "always_scale": 0.19905724482373674,
+        "selected_scale": 0.21835476739508394
+      },
+      "seeds": [
+        {
+          "direct": 0.2200675953914906,
+          "always_scale": 0.19158839990960497,
+          "selected_scale": 0.22427655236783164
+        },
+        {
+          "direct": 0.22056682155226948,
+          "always_scale": 0.18411576223900172,
+          "selected_scale": 0.22297142915432203
+        },
+        {
+          "direct": 0.2017694575116058,
+          "always_scale": 0.22146757232260347,
+          "selected_scale": 0.2078163206630982
+        }
+      ]
+    },
+    {
+      "key": "storageroom_01",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.23067185342394336,
+        "always_scale": 0.2357743887210203,
+        "selected_scale": 0.22977777350854012
+      },
+      "seeds": [
+        {
+          "direct": 0.24371795067474375,
+          "always_scale": 0.2385950612418291,
+          "selected_scale": 0.24261179814204328
+        },
+        {
+          "direct": 0.2409857724481611,
+          "always_scale": 0.24021936735439173,
+          "selected_scale": 0.2380328498297507
+        },
+        {
+          "direct": 0.20731183714892518,
+          "always_scale": 0.22850873756684012,
+          "selected_scale": 0.20868867255382642
+        }
+      ]
+    },
+    {
+      "key": "storageroom_02",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 369,
+      "scores": {
+        "direct": 0.23289766029896378,
+        "always_scale": 0.22753176511226672,
+        "selected_scale": 0.23484565417976913
+      },
+      "seeds": [
+        {
+          "direct": 0.2541372914230142,
+          "always_scale": 0.2323339541073068,
+          "selected_scale": 0.2543603227642878
+        },
+        {
+          "direct": 0.23102268140912466,
+          "always_scale": 0.21570318965723284,
+          "selected_scale": 0.23292406113010003
+        },
+        {
+          "direct": 0.21353300806475256,
+          "always_scale": 0.23455815157226056,
+          "selected_scale": 0.21725257864491948
+        }
+      ]
+    },
+    {
+      "key": "storageroom_03",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 343,
+      "scores": {
+        "direct": 0.17333663269276664,
+        "always_scale": 0.17100477954719429,
+        "selected_scale": 0.16979452751071478
+      },
+      "seeds": [
+        {
+          "direct": 0.18059368859022012,
+          "always_scale": 0.16972896737700938,
+          "selected_scale": 0.1792721000996943
+        },
+        {
+          "direct": 0.18601162231853616,
+          "always_scale": 0.17437546180891783,
+          "selected_scale": 0.17929725712937578
+        },
+        {
+          "direct": 0.15340458716954364,
+          "always_scale": 0.16890990945565565,
+          "selected_scale": 0.15081422530307423
+        }
+      ]
+    },
+    {
+      "key": "storageroom_04",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 379,
+      "scores": {
+        "direct": 0.39832539275681667,
+        "always_scale": 0.3671018317251944,
+        "selected_scale": 0.39539434406979607
+      },
+      "seeds": [
+        {
+          "direct": 0.4024989717429278,
+          "always_scale": 0.36136129578831183,
+          "selected_scale": 0.399677123825377
+        },
+        {
+          "direct": 0.4099223017400038,
+          "always_scale": 0.36723122375283196,
+          "selected_scale": 0.4057042466084333
+        },
+        {
+          "direct": 0.3825549047875184,
+          "always_scale": 0.37271297563443934,
+          "selected_scale": 0.38080166177557795
+        }
+      ]
+    },
+    {
+      "key": "storageroom_05",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 367,
+      "scores": {
+        "direct": 0.16624996682434856,
+        "always_scale": 0.15884787189377994,
+        "selected_scale": 0.1657117381927655
+      },
+      "seeds": [
+        {
+          "direct": 0.1550644919161965,
+          "always_scale": 0.14992394505312448,
+          "selected_scale": 0.15448486545874462
+        },
+        {
+          "direct": 0.16277539514261602,
+          "always_scale": 0.15511369067216244,
+          "selected_scale": 0.16440598082468516
+        },
+        {
+          "direct": 0.18091001341423316,
+          "always_scale": 0.1715059799560529,
+          "selected_scale": 0.1782443682948667
+        }
+      ]
+    },
+    {
+      "key": "storageroom_06",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 364,
+      "scores": {
+        "direct": 0.034484262013682626,
+        "always_scale": 0.03476487280437043,
+        "selected_scale": 0.03476258178640879
+      },
+      "seeds": [
+        {
+          "direct": 0.03009218676150306,
+          "always_scale": 0.03136637130518911,
+          "selected_scale": 0.03032046159175716
+        },
+        {
+          "direct": 0.03207861398460447,
+          "always_scale": 0.03533860811018882,
+          "selected_scale": 0.032975060736401586
+        },
+        {
+          "direct": 0.04128198529494035,
+          "always_scale": 0.03758963899773335,
+          "selected_scale": 0.04099222303106763
+        }
+      ]
+    },
+    {
+      "key": "storageroom_07",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.1351234106740227,
+        "always_scale": 0.12939962077420633,
+        "selected_scale": 0.1351209469584946
+      },
+      "seeds": [
+        {
+          "direct": 0.13427717220201757,
+          "always_scale": 0.13032878627747227,
+          "selected_scale": 0.13450666218225554
+        },
+        {
+          "direct": 0.1356270898637004,
+          "always_scale": 0.13001478929099022,
+          "selected_scale": 0.13605836013255024
+        },
+        {
+          "direct": 0.13546596995635016,
+          "always_scale": 0.12785528675415653,
+          "selected_scale": 0.13479781856067802
+        }
+      ]
+    },
+    {
+      "key": "storageroom_08",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 378,
+      "scores": {
+        "direct": 0.5845483047103532,
+        "always_scale": 0.588331677605376,
+        "selected_scale": 0.5862969833309896
+      },
+      "seeds": [
+        {
+          "direct": 0.6035431339112987,
+          "always_scale": 0.5988986873695017,
+          "selected_scale": 0.6058537953076139
+        },
+        {
+          "direct": 0.6027043483630915,
+          "always_scale": 0.5978626398388593,
+          "selected_scale": 0.6014487900017893
+        },
+        {
+          "direct": 0.5473974318566698,
+          "always_scale": 0.568233705607767,
+          "selected_scale": 0.5515883646835655
+        }
+      ]
+    }
+  ]
+}

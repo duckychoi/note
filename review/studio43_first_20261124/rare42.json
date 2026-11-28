@@ -1,0 +1,4898 @@
+{
+ "target0.08_anchors0_copy0.0": {
+  "flat": [
+   {
+    "below_one_percent": 0.000732421875,
+    "mae": 0.01908683776855469,
+    "mean_probability": 0.07981300354003906
+   },
+   {
+    "below_one_percent": 0.007568359375,
+    "mae": 0.02685020446777344,
+    "mean_probability": 0.07993125915527344
+   },
+   {
+    "below_one_percent": 0.02294921875,
+    "mae": 0.033005142211914064,
+    "mean_probability": 0.07962608337402344
+   },
+   {
+    "below_one_percent": 0.0419921875,
+    "mae": 0.038156356811523434,
+    "mean_probability": 0.08022880554199219
+   },
+   {
+    "below_one_percent": 0.06787109375,
+    "mae": 0.04275924682617187,
+    "mean_probability": 0.08040618896484375
+   },
+   {
+    "below_one_percent": 0.09375,
+    "mae": 0.04645805358886719,
+    "mean_probability": 0.08051109313964844
+   },
+   {
+    "below_one_percent": 0.116943359375,
+    "mae": 0.04995307922363281,
+    "mean_probability": 0.08028984069824219
+   },
+   {
+    "below_one_percent": 0.1455078125,
+    "mae": 0.053128051757812496,
+    "mean_probability": 0.08030319213867188
+   },
+   {
+    "below_one_percent": 0.169921875,
+    "mae": 0.05615608215332031,
+    "mean_probability": 0.08061790466308594
+   },
+   {
+    "below_one_percent": 0.19677734375,
+    "mae": 0.05872268676757812,
+    "mean_probability": 0.08036041259765625
+   },
+   {
+    "below_one_percent": 0.22265625,
+    "mae": 0.061423110961914065,
+    "mean_probability": 0.08044242858886719
+   },
+   {
+    "below_one_percent": 0.243408203125,
+    "mae": 0.06410797119140625,
+    "mean_probability": 0.08023834228515625
+   },
+   {
+    "below_one_percent": 0.268310546875,
+    "mae": 0.06638229370117188,
+    "mean_probability": 0.07998275756835938
+   },
+   {
+    "below_one_percent": 0.296630859375,
+    "mae": 0.06889808654785155,
+    "mean_probability": 0.08054542541503906
+   },
+   {
+    "below_one_percent": 0.309326171875,
+    "mae": 0.07065177917480468,
+    "mean_probability": 0.08043098449707031
+   },
+   {
+    "below_one_percent": 0.328125,
+    "mae": 0.07274116516113281,
+    "mean_probability": 0.08063697814941406
+   },
+   {
+    "below_one_percent": 0.34814453125,
+    "mae": 0.07488151550292968,
+    "mean_probability": 0.08047676086425781
+   },
+   {
+    "below_one_percent": 0.365478515625,
+    "mae": 0.07652976989746094,
+    "mean_probability": 0.08023262023925781
+   },
+   {
+    "below_one_percent": 0.3779296875,
+    "mae": 0.0789288330078125,
+    "mean_probability": 0.0807952880859375
+   },
+   {
+    "below_one_percent": 0.396484375,
+    "mae": 0.08061973571777344,
+    "mean_probability": 0.08123970031738281
+   },
+   {
+    "below_one_percent": 0.412353515625,
+    "mae": 0.08257217407226562,
+    "mean_probability": 0.08127593994140625
+   },
+   {
+    "below_one_percent": 0.42333984375,
+    "mae": 0.08359291076660155,
+    "mean_probability": 0.08087730407714844
+   },
+   {
+    "below_one_percent": 0.43603515625,
+    "mae": 0.08514205932617189,
+    "mean_probability": 0.08098602294921875
+   },
+   {
+    "below_one_percent": 0.450439453125,
+    "mae": 0.08693748474121094,
+    "mean_probability": 0.08145713806152344
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.002197265625,
+    "mae": 0.03125027974446615,
+    "mean_probability": 0.08015403747558594
+   },
+   {
+    "below_one_percent": 0.04345703125,
+    "mae": 0.04390920003255208,
+    "mean_probability": 0.08058522542317709
+   },
+   {
+    "below_one_percent": 0.104248046875,
+    "mae": 0.052484842936197915,
+    "mean_probability": 0.08083546956380208
+   },
+   {
+    "below_one_percent": 0.17578125,
+    "mae": 0.06076980590820312,
+    "mean_probability": 0.08167978922526042
+   },
+   {
+    "below_one_percent": 0.23779296875,
+    "mae": 0.06624949137369791,
+    "mean_probability": 0.08121999104817708
+   },
+   {
+    "below_one_percent": 0.287109375,
+    "mae": 0.07193631490071614,
+    "mean_probability": 0.08097546895345052
+   },
+   {
+    "below_one_percent": 0.332275390625,
+    "mae": 0.07773663838704427,
+    "mean_probability": 0.08202374776204427
+   },
+   {
+    "below_one_percent": 0.373779296875,
+    "mae": 0.08266438802083333,
+    "mean_probability": 0.08217264811197918
+   },
+   {
+    "below_one_percent": 0.41455078125,
+    "mae": 0.08664342244466146,
+    "mean_probability": 0.08214467366536458
+   },
+   {
+    "below_one_percent": 0.45068359375,
+    "mae": 0.08991594950358073,
+    "mean_probability": 0.08186022440592447
+   },
+   {
+    "below_one_percent": 0.47998046875,
+    "mae": 0.09332049051920574,
+    "mean_probability": 0.08190905253092448
+   },
+   {
+    "below_one_percent": 0.509765625,
+    "mae": 0.09731447855631511,
+    "mean_probability": 0.08263104756673177
+   },
+   {
+    "below_one_percent": 0.53369140625,
+    "mae": 0.10059092203776042,
+    "mean_probability": 0.08358103434244792
+   },
+   {
+    "below_one_percent": 0.556396484375,
+    "mae": 0.1042517344156901,
+    "mean_probability": 0.08462384541829426
+   },
+   {
+    "below_one_percent": 0.576171875,
+    "mae": 0.10623448689778647,
+    "mean_probability": 0.08507334391276042
+   },
+   {
+    "below_one_percent": 0.593994140625,
+    "mae": 0.10804656982421876,
+    "mean_probability": 0.08401921590169271
+   },
+   {
+    "below_one_percent": 0.607666015625,
+    "mae": 0.10936841328938803,
+    "mean_probability": 0.08358751932779948
+   },
+   {
+    "below_one_percent": 0.62255859375,
+    "mae": 0.11138839721679689,
+    "mean_probability": 0.08394622802734375
+   },
+   {
+    "below_one_percent": 0.64208984375,
+    "mae": 0.11256891886393229,
+    "mean_probability": 0.08333231608072916
+   },
+   {
+    "below_one_percent": 0.656982421875,
+    "mae": 0.11421417236328125,
+    "mean_probability": 0.08329289754231771
+   },
+   {
+    "below_one_percent": 0.668701171875,
+    "mae": 0.11578755696614584,
+    "mean_probability": 0.08326772054036458
+   },
+   {
+    "below_one_percent": 0.678466796875,
+    "mae": 0.11741172790527346,
+    "mean_probability": 0.08330675760904947
+   },
+   {
+    "below_one_percent": 0.689697265625,
+    "mae": 0.11796236673990887,
+    "mean_probability": 0.0825415293375651
+   },
+   {
+    "below_one_percent": 0.69873046875,
+    "mae": 0.11851679484049481,
+    "mean_probability": 0.08191630045572917
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.000732421875,
+    "mae": 0.01908683776855469,
+    "mean_probability": 0.07981300354003906
+   },
+   {
+    "below_one_percent": 0.007568359375,
+    "mae": 0.02685020446777344,
+    "mean_probability": 0.07993125915527344
+   },
+   {
+    "below_one_percent": 0.02294921875,
+    "mae": 0.033005142211914064,
+    "mean_probability": 0.07962608337402344
+   },
+   {
+    "below_one_percent": 0.0419921875,
+    "mae": 0.038156356811523434,
+    "mean_probability": 0.08022880554199219
+   },
+   {
+    "below_one_percent": 0.06787109375,
+    "mae": 0.04275924682617187,
+    "mean_probability": 0.08040618896484375
+   },
+   {
+    "below_one_percent": 0.09375,
+    "mae": 0.04645805358886719,
+    "mean_probability": 0.08051109313964844
+   },
+   {
+    "below_one_percent": 0.116943359375,
+    "mae": 0.04995307922363281,
+    "mean_probability": 0.08028984069824219
+   },
+   {
+    "below_one_percent": 0.1455078125,
+    "mae": 0.053128051757812496,
+    "mean_probability": 0.08030319213867188
+   },
+   {
+    "below_one_percent": 0.169921875,
+    "mae": 0.05615608215332031,
+    "mean_probability": 0.08061790466308594
+   },
+   {
+    "below_one_percent": 0.19677734375,
+    "mae": 0.05872268676757812,
+    "mean_probability": 0.08036041259765625
+   },
+   {
+    "below_one_percent": 0.22265625,
+    "mae": 0.061423110961914065,
+    "mean_probability": 0.08044242858886719
+   },
+   {
+    "below_one_percent": 0.243408203125,
+    "mae": 0.06410797119140625,
+    "mean_probability": 0.08023834228515625
+   },
+   {
+    "below_one_percent": 0.268310546875,
+    "mae": 0.06638229370117188,
+    "mean_probability": 0.07998275756835938
+   },
+   {
+    "below_one_percent": 0.296630859375,
+    "mae": 0.06889808654785155,
+    "mean_probability": 0.08054542541503906
+   },
+   {
+    "below_one_percent": 0.309326171875,
+    "mae": 0.07065177917480468,
+    "mean_probability": 0.08043098449707031
+   },
+   {
+    "below_one_percent": 0.328125,
+    "mae": 0.07274116516113281,
+    "mean_probability": 0.08063697814941406
+   },
+   {
+    "below_one_percent": 0.34814453125,
+    "mae": 0.07488151550292968,
+    "mean_probability": 0.08047676086425781
+   },
+   {
+    "below_one_percent": 0.365478515625,
+    "mae": 0.07652976989746094,
+    "mean_probability": 0.08023262023925781
+   },
+   {
+    "below_one_percent": 0.3779296875,
+    "mae": 0.0789288330078125,
+    "mean_probability": 0.0807952880859375
+   },
+   {
+    "below_one_percent": 0.396484375,
+    "mae": 0.08061973571777344,
+    "mean_probability": 0.08123970031738281
+   },
+   {
+    "below_one_percent": 0.412353515625,
+    "mae": 0.08257217407226562,
+    "mean_probability": 0.08127593994140625
+   },
+   {
+    "below_one_percent": 0.42333984375,
+    "mae": 0.08359291076660155,
+    "mean_probability": 0.08087730407714844
+   },
+   {
+    "below_one_percent": 0.43603515625,
+    "mae": 0.08514205932617189,
+    "mean_probability": 0.08098602294921875
+   },
+   {
+    "below_one_percent": 0.450439453125,
+    "mae": 0.08693748474121094,
+    "mean_probability": 0.08145713806152344
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.015269470214843747,
+    "mean_probability": 0.07985040283203126
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.01738745795355903,
+    "mean_probability": 0.07996856689453126
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.01835453913762019,
+    "mean_probability": 0.0798279747596154
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.018910576315487135,
+    "mean_probability": 0.07984599393956801
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.019183858235677084,
+    "mean_probability": 0.07991854713076638
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0193799072265625,
+    "mean_probability": 0.07993828125
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.01958277209051724,
+    "mean_probability": 0.07990495352909482
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.01970988880504261,
+    "mean_probability": 0.07991461551550663
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.019834454510663006,
+    "mean_probability": 0.07989063984638936
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.019913761790205792,
+    "mean_probability": 0.07988864805640244
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.01998227267795139,
+    "mean_probability": 0.079877685546875
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020042139170121175,
+    "mean_probability": 0.07986415318080359
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020093936560288916,
+    "mean_probability": 0.07983394982679835
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020151907937568533,
+    "mean_probability": 0.07991359242221766
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020181424500512295,
+    "mean_probability": 0.07990999815893954
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02018920428936298,
+    "mean_probability": 0.07989111797626203
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020203446097995924,
+    "mean_probability": 0.07989687270012455
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020235578981164383,
+    "mean_probability": 0.07988057175727739
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020276699313869724,
+    "mean_probability": 0.07991114628779425
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020300443672839508,
+    "mean_probability": 0.0799426570939429
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02034161017922794,
+    "mean_probability": 0.07993520938648896
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020344420015142205,
+    "mean_probability": 0.07992457357685218
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.020362145208543347,
+    "mean_probability": 0.07990787957304268
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02037856269128544,
+    "mean_probability": 0.07991057405766752
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   }
+  ]
+ },
+ "target0.08_anchors0_copy0.6": {
+  "flat": [
+   {
+    "below_one_percent": 0.04541015625,
+    "mae": 0.06156959533691406,
+    "mean_probability": 0.08204460144042969
+   },
+   {
+    "below_one_percent": 0.2626953125,
+    "mae": 0.08113456726074218,
+    "mean_probability": 0.07986640930175781
+   },
+   {
+    "below_one_percent": 0.438720703125,
+    "mae": 0.09356414794921876,
+    "mean_probability": 0.07804489135742188
+   },
+   {
+    "below_one_percent": 0.56396484375,
+    "mae": 0.10404388427734376,
+    "mean_probability": 0.07842636108398438
+   },
+   {
+    "below_one_percent": 0.6376953125,
+    "mae": 0.11217575073242189,
+    "mean_probability": 0.0791168212890625
+   },
+   {
+    "below_one_percent": 0.685791015625,
+    "mae": 0.11832855224609376,
+    "mean_probability": 0.08028030395507812
+   },
+   {
+    "below_one_percent": 0.721923828125,
+    "mae": 0.12159637451171877,
+    "mean_probability": 0.07968902587890625
+   },
+   {
+    "below_one_percent": 0.75048828125,
+    "mae": 0.12459678649902345,
+    "mean_probability": 0.07965660095214844
+   },
+   {
+    "below_one_percent": 0.7724609375,
+    "mae": 0.1272525787353516,
+    "mean_probability": 0.07912254333496094
+   },
+   {
+    "below_one_percent": 0.7919921875,
+    "mae": 0.12914970397949221,
+    "mean_probability": 0.07866859436035156
+   },
+   {
+    "below_one_percent": 0.81005859375,
+    "mae": 0.13094894409179691,
+    "mean_probability": 0.0784454345703125
+   },
+   {
+    "below_one_percent": 0.824951171875,
+    "mae": 0.1315732574462891,
+    "mean_probability": 0.07716941833496094
+   },
+   {
+    "below_one_percent": 0.835693359375,
+    "mae": 0.13204841613769533,
+    "mean_probability": 0.07628822326660156
+   },
+   {
+    "below_one_percent": 0.84619140625,
+    "mae": 0.13354629516601565,
+    "mean_probability": 0.07648086547851562
+   },
+   {
+    "below_one_percent": 0.853759765625,
+    "mae": 0.13533683776855474,
+    "mean_probability": 0.07723808288574219
+   },
+   {
+    "below_one_percent": 0.860595703125,
+    "mae": 0.13674766540527347,
+    "mean_probability": 0.07775306701660156
+   },
+   {
+    "below_one_percent": 0.8662109375,
+    "mae": 0.1377836608886719,
+    "mean_probability": 0.07802963256835938
+   },
+   {
+    "below_one_percent": 0.871826171875,
+    "mae": 0.13853141784667972,
+    "mean_probability": 0.07785987854003906
+   },
+   {
+    "below_one_percent": 0.87841796875,
+    "mae": 0.1392918395996094,
+    "mean_probability": 0.07790374755859375
+   },
+   {
+    "below_one_percent": 0.8828125,
+    "mae": 0.14072494506835942,
+    "mean_probability": 0.07878494262695312
+   },
+   {
+    "below_one_percent": 0.886962890625,
+    "mae": 0.1408426666259766,
+    "mean_probability": 0.07830238342285156
+   },
+   {
+    "below_one_percent": 0.890380859375,
+    "mae": 0.14045516967773441,
+    "mean_probability": 0.07751846313476562
+   },
+   {
+    "below_one_percent": 0.892822265625,
+    "mae": 0.13973457336425787,
+    "mean_probability": 0.07627296447753906
+   },
+   {
+    "below_one_percent": 0.897216796875,
+    "mae": 0.14080978393554688,
+    "mean_probability": 0.07680130004882812
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.0888671875,
+    "mae": 0.05319511413574218,
+    "mean_probability": 0.08122342427571615
+   },
+   {
+    "below_one_percent": 0.284912109375,
+    "mae": 0.07134267171223958,
+    "mean_probability": 0.08058141072591146
+   },
+   {
+    "below_one_percent": 0.415771484375,
+    "mae": 0.08527186075846355,
+    "mean_probability": 0.07997817993164062
+   },
+   {
+    "below_one_percent": 0.513427734375,
+    "mae": 0.09471867879231771,
+    "mean_probability": 0.07988052368164063
+   },
+   {
+    "below_one_percent": 0.580810546875,
+    "mae": 0.10075658162434897,
+    "mean_probability": 0.07803955078125
+   },
+   {
+    "below_one_percent": 0.63232421875,
+    "mae": 0.10837270100911459,
+    "mean_probability": 0.08029276529947915
+   },
+   {
+    "below_one_percent": 0.665771484375,
+    "mae": 0.11245526631673178,
+    "mean_probability": 0.08021558125813802
+   },
+   {
+    "below_one_percent": 0.699462890625,
+    "mae": 0.11775141398111981,
+    "mean_probability": 0.081805419921875
+   },
+   {
+    "below_one_percent": 0.72021484375,
+    "mae": 0.12116099039713542,
+    "mean_probability": 0.08176396687825521
+   },
+   {
+    "below_one_percent": 0.739501953125,
+    "mae": 0.12342714945475261,
+    "mean_probability": 0.08146934509277343
+   },
+   {
+    "below_one_percent": 0.76025390625,
+    "mae": 0.12461713155110678,
+    "mean_probability": 0.08015886942545572
+   },
+   {
+    "below_one_percent": 0.777099609375,
+    "mae": 0.12733065287272138,
+    "mean_probability": 0.08076235453287761
+   },
+   {
+    "below_one_percent": 0.7880859375,
+    "mae": 0.1290195973714193,
+    "mean_probability": 0.08076286315917969
+   },
+   {
+    "below_one_percent": 0.80029296875,
+    "mae": 0.1305508422851563,
+    "mean_probability": 0.08083165486653646
+   },
+   {
+    "below_one_percent": 0.810546875,
+    "mae": 0.13142344156901042,
+    "mean_probability": 0.08021647135416667
+   },
+   {
+    "below_one_percent": 0.81884765625,
+    "mae": 0.13276117960611983,
+    "mean_probability": 0.08037312825520833
+   },
+   {
+    "below_one_percent": 0.826416015625,
+    "mae": 0.1337699890136719,
+    "mean_probability": 0.08030497233072917
+   },
+   {
+    "below_one_percent": 0.83251953125,
+    "mae": 0.13447964986165367,
+    "mean_probability": 0.08005587259928384
+   },
+   {
+    "below_one_percent": 0.83935546875,
+    "mae": 0.13427561442057293,
+    "mean_probability": 0.07912012736002605
+   },
+   {
+    "below_one_percent": 0.843017578125,
+    "mae": 0.1353562164306641,
+    "mean_probability": 0.07956479390462239
+   },
+   {
+    "below_one_percent": 0.846923828125,
+    "mae": 0.13597935994466148,
+    "mean_probability": 0.07962977091471354
+   },
+   {
+    "below_one_percent": 0.85009765625,
+    "mae": 0.1370994059244792,
+    "mean_probability": 0.08019561767578126
+   },
+   {
+    "below_one_percent": 0.854736328125,
+    "mae": 0.13690767923990887,
+    "mean_probability": 0.07940355936686198
+   },
+   {
+    "below_one_percent": 0.858154296875,
+    "mae": 0.13743606567382816,
+    "mean_probability": 0.07940012613932292
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.069580078125,
+    "mae": 0.0528267472984086,
+    "mean_probability": 0.08122367993024666
+   },
+   {
+    "below_one_percent": 0.254638671875,
+    "mae": 0.07007549494739852,
+    "mean_probability": 0.08019101604170274
+   },
+   {
+    "below_one_percent": 0.39453125,
+    "mae": 0.08363995346239814,
+    "mean_probability": 0.07917139937703066
+   },
+   {
+    "below_one_percent": 0.49462890625,
+    "mae": 0.09325287277880512,
+    "mean_probability": 0.07986184864409687
+   },
+   {
+    "below_one_percent": 0.563232421875,
+    "mae": 0.09925426532204032,
+    "mean_probability": 0.07838377657006046
+   },
+   {
+    "below_one_percent": 0.615234375,
+    "mae": 0.10663727738860863,
+    "mean_probability": 0.08030198021803651
+   },
+   {
+    "below_one_percent": 0.65380859375,
+    "mae": 0.11040694723407289,
+    "mean_probability": 0.07984850078855577
+   },
+   {
+    "below_one_percent": 0.68359375,
+    "mae": 0.1152774110607363,
+    "mean_probability": 0.08086114739453007
+   },
+   {
+    "below_one_percent": 0.70654296875,
+    "mae": 0.11838895606048158,
+    "mean_probability": 0.08035395051578528
+   },
+   {
+    "below_one_percent": 0.72705078125,
+    "mae": 0.12066841088882865,
+    "mean_probability": 0.07987746709590524
+   },
+   {
+    "below_one_percent": 0.7509765625,
+    "mae": 0.12175306647652462,
+    "mean_probability": 0.07835928550506516
+   },
+   {
+    "below_one_percent": 0.76611328125,
+    "mae": 0.12433643801481489,
+    "mean_probability": 0.07886748056540258
+   },
+   {
+    "below_one_percent": 0.780517578125,
+    "mae": 0.12674275791924797,
+    "mean_probability": 0.07945989867728454
+   },
+   {
+    "below_one_percent": 0.79296875,
+    "mae": 0.12854343391184286,
+    "mean_probability": 0.07936957232150543
+   },
+   {
+    "below_one_percent": 0.803955078125,
+    "mae": 0.13015770440534263,
+    "mean_probability": 0.07974723775224152
+   },
+   {
+    "below_one_percent": 0.8134765625,
+    "mae": 0.1321495772768818,
+    "mean_probability": 0.08048338843102688
+   },
+   {
+    "below_one_percent": 0.822265625,
+    "mae": 0.13314753073619698,
+    "mean_probability": 0.08019142427957301
+   },
+   {
+    "below_one_percent": 0.830810546875,
+    "mae": 0.13315177232802017,
+    "mean_probability": 0.07903736363901671
+   },
+   {
+    "below_one_percent": 0.83740234375,
+    "mae": 0.13320586914481866,
+    "mean_probability": 0.07810441832454812
+   },
+   {
+    "below_one_percent": 0.843505859375,
+    "mae": 0.13512046379123333,
+    "mean_probability": 0.0790466816673418
+   },
+   {
+    "below_one_percent": 0.849609375,
+    "mae": 0.13635799733582904,
+    "mean_probability": 0.07951651884882943
+   },
+   {
+    "below_one_percent": 0.8515625,
+    "mae": 0.13782951828421605,
+    "mean_probability": 0.08046197985125506
+   },
+   {
+    "below_one_percent": 0.857421875,
+    "mae": 0.13855504658205958,
+    "mean_probability": 0.08059609040944693
+   },
+   {
+    "below_one_percent": 0.861083984375,
+    "mae": 0.13934790803855518,
+    "mean_probability": 0.08069810670631358
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.04925567626953124,
+    "mean_probability": 0.08163568115234376
+   },
+   {
+    "below_one_percent": 0.002197265625,
+    "mae": 0.05579247368706597,
+    "mean_probability": 0.08087392171223959
+   },
+   {
+    "below_one_percent": 0.00537109375,
+    "mae": 0.05834489088792068,
+    "mean_probability": 0.08014077993539664
+   },
+   {
+    "below_one_percent": 0.012451171875,
+    "mae": 0.06004408892463235,
+    "mean_probability": 0.08026740579044117
+   },
+   {
+    "below_one_percent": 0.035888671875,
+    "mae": 0.061236426943824404,
+    "mean_probability": 0.08039483933221726
+   },
+   {
+    "below_one_percent": 0.039794921875,
+    "mae": 0.06182843017578125,
+    "mean_probability": 0.08069908447265625
+   },
+   {
+    "below_one_percent": 0.047119140625,
+    "mae": 0.06221227185479526,
+    "mean_probability": 0.08050215096309267
+   },
+   {
+    "below_one_percent": 0.052734375,
+    "mae": 0.06236078435724432,
+    "mean_probability": 0.08048728249289773
+   },
+   {
+    "below_one_percent": 0.0732421875,
+    "mae": 0.06289677800358953,
+    "mean_probability": 0.08050614640519425
+   },
+   {
+    "below_one_percent": 0.07666015625,
+    "mae": 0.06324916932641006,
+    "mean_probability": 0.08048709032012194
+   },
+   {
+    "below_one_percent": 0.0791015625,
+    "mae": 0.06333014594184028,
+    "mean_probability": 0.08010182020399306
+   },
+   {
+    "below_one_percent": 0.092041015625,
+    "mae": 0.06356512575733418,
+    "mean_probability": 0.0801120306521046
+   },
+   {
+    "below_one_percent": 0.09423828125,
+    "mae": 0.06386160796543336,
+    "mean_probability": 0.08021786671764446
+   },
+   {
+    "below_one_percent": 0.097412109375,
+    "mae": 0.0640580133806195,
+    "mean_probability": 0.0803607820209704
+   },
+   {
+    "below_one_percent": 0.098388671875,
+    "mae": 0.06416625976562501,
+    "mean_probability": 0.0803905249423668
+   },
+   {
+    "below_one_percent": 0.110595703125,
+    "mae": 0.06420411564753606,
+    "mean_probability": 0.08034559513972356
+   },
+   {
+    "below_one_percent": 0.10986328125,
+    "mae": 0.06431245223335597,
+    "mean_probability": 0.0803202488111413
+   },
+   {
+    "below_one_percent": 0.111328125,
+    "mae": 0.06431604672784674,
+    "mean_probability": 0.08025347147902398
+   },
+   {
+    "below_one_percent": 0.119873046875,
+    "mae": 0.0644133966619318,
+    "mean_probability": 0.08027725814224837
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.06453725555796683,
+    "mean_probability": 0.0804102165316358
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.06459059771369485,
+    "mean_probability": 0.0803617374195772
+   },
+   {
+    "below_one_percent": 0.119140625,
+    "mae": 0.0647065477692679,
+    "mean_probability": 0.08048794864268785
+   },
+   {
+    "below_one_percent": 0.123046875,
+    "mae": 0.06472672985446068,
+    "mean_probability": 0.08049033872542842
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.06470176775430896,
+    "mean_probability": 0.08053830805513049
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0,
+    "mean_probability": 0.08
+   }
+  ]
+ },
+ "target0.08_anchors8_copy0.0": {
+  "flat": [
+   {
+    "below_one_percent": 0.001220703125,
+    "mae": 0.02423728942871094,
+    "mean_probability": 0.07935905456542969
+   },
+   {
+    "below_one_percent": 0.01171875,
+    "mae": 0.030597686767578125,
+    "mean_probability": 0.0799713134765625
+   },
+   {
+    "below_one_percent": 0.032470703125,
+    "mae": 0.03579513549804687,
+    "mean_probability": 0.07960128784179688
+   },
+   {
+    "below_one_percent": 0.051513671875,
+    "mae": 0.040606689453125004,
+    "mean_probability": 0.08008575439453125
+   },
+   {
+    "below_one_percent": 0.080810546875,
+    "mae": 0.044874572753906244,
+    "mean_probability": 0.08027267456054688
+   },
+   {
+    "below_one_percent": 0.10986328125,
+    "mae": 0.04826774597167968,
+    "mean_probability": 0.08060646057128906
+   },
+   {
+    "below_one_percent": 0.132080078125,
+    "mae": 0.05159851074218749,
+    "mean_probability": 0.08051681518554688
+   },
+   {
+    "below_one_percent": 0.157470703125,
+    "mae": 0.05448944091796874,
+    "mean_probability": 0.08054733276367188
+   },
+   {
+    "below_one_percent": 0.1806640625,
+    "mae": 0.05760086059570312,
+    "mean_probability": 0.08089828491210938
+   },
+   {
+    "below_one_percent": 0.2080078125,
+    "mae": 0.06022193908691406,
+    "mean_probability": 0.08070564270019531
+   },
+   {
+    "below_one_percent": 0.2314453125,
+    "mae": 0.06250312805175781,
+    "mean_probability": 0.08040428161621094
+   },
+   {
+    "below_one_percent": 0.25244140625,
+    "mae": 0.0653802490234375,
+    "mean_probability": 0.08045578002929688
+   },
+   {
+    "below_one_percent": 0.274169921875,
+    "mae": 0.06735618591308594,
+    "mean_probability": 0.08037376403808594
+   },
+   {
+    "below_one_percent": 0.298583984375,
+    "mae": 0.06966384887695312,
+    "mean_probability": 0.0809326171875
+   },
+   {
+    "below_one_percent": 0.314453125,
+    "mae": 0.07178619384765625,
+    "mean_probability": 0.08100128173828125
+   },
+   {
+    "below_one_percent": 0.332763671875,
+    "mae": 0.07409019470214843,
+    "mean_probability": 0.08140754699707031
+   },
+   {
+    "below_one_percent": 0.352783203125,
+    "mae": 0.07623916625976562,
+    "mean_probability": 0.08138656616210938
+   },
+   {
+    "below_one_percent": 0.369873046875,
+    "mae": 0.07787597656249999,
+    "mean_probability": 0.081207275390625
+   },
+   {
+    "below_one_percent": 0.382080078125,
+    "mae": 0.08027862548828125,
+    "mean_probability": 0.08196258544921875
+   },
+   {
+    "below_one_percent": 0.3994140625,
+    "mae": 0.08165153503417968,
+    "mean_probability": 0.08219337463378906
+   },
+   {
+    "below_one_percent": 0.4150390625,
+    "mae": 0.08345710754394531,
+    "mean_probability": 0.08205986022949219
+   },
+   {
+    "below_one_percent": 0.426025390625,
+    "mae": 0.08445030212402344,
+    "mean_probability": 0.08176231384277344
+   },
+   {
+    "below_one_percent": 0.435546875,
+    "mae": 0.08565124511718751,
+    "mean_probability": 0.08150863647460938
+   },
+   {
+    "below_one_percent": 0.452392578125,
+    "mae": 0.08746566772460937,
+    "mean_probability": 0.08192062377929688
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.004638671875,
+    "mae": 0.03494074503580729,
+    "mean_probability": 0.07956593831380208
+   },
+   {
+    "below_one_percent": 0.052490234375,
+    "mae": 0.04668406168619792,
+    "mean_probability": 0.08045399983723958
+   },
+   {
+    "below_one_percent": 0.126220703125,
+    "mae": 0.054776458740234374,
+    "mean_probability": 0.08046086629231772
+   },
+   {
+    "below_one_percent": 0.192626953125,
+    "mae": 0.06241996765136718,
+    "mean_probability": 0.08085746765136717
+   },
+   {
+    "below_one_percent": 0.2548828125,
+    "mae": 0.06730885823567707,
+    "mean_probability": 0.08016281127929686
+   },
+   {
+    "below_one_percent": 0.305419921875,
+    "mae": 0.07251284281412759,
+    "mean_probability": 0.07993863423665365
+   },
+   {
+    "below_one_percent": 0.347900390625,
+    "mae": 0.0778876241048177,
+    "mean_probability": 0.08042322794596354
+   },
+   {
+    "below_one_percent": 0.3876953125,
+    "mae": 0.08296368916829426,
+    "mean_probability": 0.08070284525553385
+   },
+   {
+    "below_one_percent": 0.426025390625,
+    "mae": 0.08719207763671875,
+    "mean_probability": 0.08107350667317707
+   },
+   {
+    "below_one_percent": 0.463623046875,
+    "mae": 0.09031265258789062,
+    "mean_probability": 0.08067245483398439
+   },
+   {
+    "below_one_percent": 0.49169921875,
+    "mae": 0.09344947814941407,
+    "mean_probability": 0.08084602355957031
+   },
+   {
+    "below_one_percent": 0.518798828125,
+    "mae": 0.09741505940755209,
+    "mean_probability": 0.08151168823242189
+   },
+   {
+    "below_one_percent": 0.543212890625,
+    "mae": 0.10048329671223959,
+    "mean_probability": 0.08223902384440104
+   },
+   {
+    "below_one_percent": 0.567626953125,
+    "mae": 0.10376388549804688,
+    "mean_probability": 0.08264872233072916
+   },
+   {
+    "below_one_percent": 0.585693359375,
+    "mae": 0.10560503641764324,
+    "mean_probability": 0.08306592305501302
+   },
+   {
+    "below_one_percent": 0.60302734375,
+    "mae": 0.10790654500325522,
+    "mean_probability": 0.08256734212239583
+   },
+   {
+    "below_one_percent": 0.616455078125,
+    "mae": 0.10900263468424479,
+    "mean_probability": 0.0818023681640625
+   },
+   {
+    "below_one_percent": 0.631103515625,
+    "mae": 0.11096448262532553,
+    "mean_probability": 0.08229916890462238
+   },
+   {
+    "below_one_percent": 0.651611328125,
+    "mae": 0.11225557963053387,
+    "mean_probability": 0.08186734517415364
+   },
+   {
+    "below_one_percent": 0.6630859375,
+    "mae": 0.11379069010416668,
+    "mean_probability": 0.08191757202148438
+   },
+   {
+    "below_one_percent": 0.675048828125,
+    "mae": 0.11544921875000001,
+    "mean_probability": 0.08190790812174478
+   },
+   {
+    "below_one_percent": 0.684326171875,
+    "mae": 0.1170604960123698,
+    "mean_probability": 0.0819305419921875
+   },
+   {
+    "below_one_percent": 0.695068359375,
+    "mae": 0.11786064147949221,
+    "mean_probability": 0.08131345113118489
+   },
+   {
+    "below_one_percent": 0.707275390625,
+    "mae": 0.11840644836425783,
+    "mean_probability": 0.08076642354329426
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.001220703125,
+    "mae": 0.02423728942871094,
+    "mean_probability": 0.07935905456542969
+   },
+   {
+    "below_one_percent": 0.01171875,
+    "mae": 0.030597686767578125,
+    "mean_probability": 0.0799713134765625
+   },
+   {
+    "below_one_percent": 0.032470703125,
+    "mae": 0.03579513549804687,
+    "mean_probability": 0.07960128784179688
+   },
+   {
+    "below_one_percent": 0.051513671875,
+    "mae": 0.040606689453125004,
+    "mean_probability": 0.08008575439453125
+   },
+   {
+    "below_one_percent": 0.080810546875,
+    "mae": 0.044874572753906244,
+    "mean_probability": 0.08027267456054688
+   },
+   {
+    "below_one_percent": 0.10986328125,
+    "mae": 0.04826774597167968,
+    "mean_probability": 0.08060646057128906
+   },
+   {
+    "below_one_percent": 0.132080078125,
+    "mae": 0.05159851074218749,
+    "mean_probability": 0.08051681518554688
+   },
+   {
+    "below_one_percent": 0.157470703125,
+    "mae": 0.05448944091796874,
+    "mean_probability": 0.08054733276367188
+   },
+   {
+    "below_one_percent": 0.1806640625,
+    "mae": 0.05760086059570312,
+    "mean_probability": 0.08089828491210938
+   },
+   {
+    "below_one_percent": 0.2080078125,
+    "mae": 0.06022193908691406,
+    "mean_probability": 0.08070564270019531
+   },
+   {
+    "below_one_percent": 0.2314453125,
+    "mae": 0.06250312805175781,
+    "mean_probability": 0.08040428161621094
+   },
+   {
+    "below_one_percent": 0.25244140625,
+    "mae": 0.0653802490234375,
+    "mean_probability": 0.08045578002929688
+   },
+   {
+    "below_one_percent": 0.274169921875,
+    "mae": 0.06735618591308594,
+    "mean_probability": 0.08037376403808594
+   },
+   {
+    "below_one_percent": 0.298583984375,
+    "mae": 0.06966384887695312,
+    "mean_probability": 0.0809326171875
+   },
+   {
+    "below_one_percent": 0.314453125,
+    "mae": 0.07178619384765625,
+    "mean_probability": 0.08100128173828125
+   },
+   {
+    "below_one_percent": 0.332763671875,
+    "mae": 0.07409019470214843,
+    "mean_probability": 0.08140754699707031
+   },
+   {
+    "below_one_percent": 0.352783203125,
+    "mae": 0.07623916625976562,
+    "mean_probability": 0.08138656616210938
+   },
+   {
+    "below_one_percent": 0.369873046875,
+    "mae": 0.07787597656249999,
+    "mean_probability": 0.081207275390625
+   },
+   {
+    "below_one_percent": 0.382080078125,
+    "mae": 0.08027862548828125,
+    "mean_probability": 0.08196258544921875
+   },
+   {
+    "below_one_percent": 0.3994140625,
+    "mae": 0.08165153503417968,
+    "mean_probability": 0.08219337463378906
+   },
+   {
+    "below_one_percent": 0.4150390625,
+    "mae": 0.08345710754394531,
+    "mean_probability": 0.08205986022949219
+   },
+   {
+    "below_one_percent": 0.426025390625,
+    "mae": 0.08445030212402344,
+    "mean_probability": 0.08176231384277344
+   },
+   {
+    "below_one_percent": 0.435546875,
+    "mae": 0.08565124511718751,
+    "mean_probability": 0.08150863647460938
+   },
+   {
+    "below_one_percent": 0.452392578125,
+    "mae": 0.08746566772460937,
+    "mean_probability": 0.08192062377929688
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.02090291341145833,
+    "mean_probability": 0.07937005905877977
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.022466414168074322,
+    "mean_probability": 0.07961768897804054
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.0231382204451651,
+    "mean_probability": 0.07951830594044812
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.023699862715126814,
+    "mean_probability": 0.07957027711730073
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.023838249655330882,
+    "mean_probability": 0.07961022231158088
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02396868715191832,
+    "mean_probability": 0.07961696511448021
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024115877069978635,
+    "mean_probability": 0.07958925948183761
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02421262812793703,
+    "mean_probability": 0.07955605872591635
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.024299529414848992,
+    "mean_probability": 0.07951933790373322
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.024373549952651515,
+    "mean_probability": 0.0795317234848485
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024451567086066987,
+    "mean_probability": 0.07952185530688882
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024533214278632615,
+    "mean_probability": 0.07951033693884835
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02455469552340082,
+    "mean_probability": 0.07947475952721537
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024611960331945962,
+    "mean_probability": 0.07954037062465885
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024635986328124998,
+    "mean_probability": 0.07954310327646684
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.02465314258560824,
+    "mean_probability": 0.07954070694145116
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024646692379287002,
+    "mean_probability": 0.07954795203914712
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.024672672414942406,
+    "mean_probability": 0.07953055424088099
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.02469604887237055,
+    "mean_probability": 0.07955900618173545
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024691293569711538,
+    "mean_probability": 0.07959939903846154
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024712418810712976,
+    "mean_probability": 0.07958901682207661
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.024717891062675072,
+    "mean_probability": 0.07956127177433474
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.02473356927048425,
+    "mean_probability": 0.07955096124643934
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.024719693299124358,
+    "mean_probability": 0.0795472258344714
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   }
+  ]
+ },
+ "target0.08_anchors8_copy0.6": {
+  "flat": [
+   {
+    "below_one_percent": 0.058837890625,
+    "mae": 0.062470779418945306,
+    "mean_probability": 0.08022117614746094
+   },
+   {
+    "below_one_percent": 0.281494140625,
+    "mae": 0.08129104614257812,
+    "mean_probability": 0.07939529418945312
+   },
+   {
+    "below_one_percent": 0.45458984375,
+    "mae": 0.09457496643066407,
+    "mean_probability": 0.07877922058105469
+   },
+   {
+    "below_one_percent": 0.56494140625,
+    "mae": 0.10423973083496094,
+    "mean_probability": 0.07891273498535156
+   },
+   {
+    "below_one_percent": 0.6328125,
+    "mae": 0.11153762817382815,
+    "mean_probability": 0.07929611206054688
+   },
+   {
+    "below_one_percent": 0.6748046875,
+    "mae": 0.11708198547363283,
+    "mean_probability": 0.08022499084472656
+   },
+   {
+    "below_one_percent": 0.717041015625,
+    "mae": 0.1205644989013672,
+    "mean_probability": 0.07932853698730469
+   },
+   {
+    "below_one_percent": 0.746337890625,
+    "mae": 0.12317810058593752,
+    "mean_probability": 0.07844161987304688
+   },
+   {
+    "below_one_percent": 0.770751953125,
+    "mae": 0.1279528045654297,
+    "mean_probability": 0.08004570007324219
+   },
+   {
+    "below_one_percent": 0.790283203125,
+    "mae": 0.13086685180664065,
+    "mean_probability": 0.08078384399414062
+   },
+   {
+    "below_one_percent": 0.807373046875,
+    "mae": 0.1329978942871094,
+    "mean_probability": 0.080902099609375
+   },
+   {
+    "below_one_percent": 0.822998046875,
+    "mae": 0.13302742004394535,
+    "mean_probability": 0.07924079895019531
+   },
+   {
+    "below_one_percent": 0.83349609375,
+    "mae": 0.13398765563964846,
+    "mean_probability": 0.07883262634277344
+   },
+   {
+    "below_one_percent": 0.842529296875,
+    "mae": 0.13504356384277344,
+    "mean_probability": 0.07876014709472656
+   },
+   {
+    "below_one_percent": 0.848388671875,
+    "mae": 0.13683288574218752,
+    "mean_probability": 0.0793609619140625
+   },
+   {
+    "below_one_percent": 0.85546875,
+    "mae": 0.13742210388183596,
+    "mean_probability": 0.07902717590332031
+   },
+   {
+    "below_one_percent": 0.862060546875,
+    "mae": 0.1374894714355469,
+    "mean_probability": 0.07804489135742188
+   },
+   {
+    "below_one_percent": 0.868896484375,
+    "mae": 0.13756065368652345,
+    "mean_probability": 0.07712364196777344
+   },
+   {
+    "below_one_percent": 0.87548828125,
+    "mae": 0.13795867919921878,
+    "mean_probability": 0.07680130004882812
+   },
+   {
+    "below_one_percent": 0.8798828125,
+    "mae": 0.13884780883789066,
+    "mean_probability": 0.07689285278320312
+   },
+   {
+    "below_one_percent": 0.885009765625,
+    "mae": 0.13949966430664068,
+    "mean_probability": 0.07680511474609375
+   },
+   {
+    "below_one_percent": 0.89013671875,
+    "mae": 0.14026962280273442,
+    "mean_probability": 0.07698822021484375
+   },
+   {
+    "below_one_percent": 0.89501953125,
+    "mae": 0.14060974121093756,
+    "mean_probability": 0.0767059326171875
+   },
+   {
+    "below_one_percent": 0.898193359375,
+    "mae": 0.1403300476074219,
+    "mean_probability": 0.07622909545898438
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.1064453125,
+    "mae": 0.05485486348470052,
+    "mean_probability": 0.07973136901855468
+   },
+   {
+    "below_one_percent": 0.308837890625,
+    "mae": 0.07203102111816406,
+    "mean_probability": 0.07856127421061197
+   },
+   {
+    "below_one_percent": 0.43310546875,
+    "mae": 0.08369188944498698,
+    "mean_probability": 0.0770300547281901
+   },
+   {
+    "below_one_percent": 0.525390625,
+    "mae": 0.09292060852050782,
+    "mean_probability": 0.0771569569905599
+   },
+   {
+    "below_one_percent": 0.586669921875,
+    "mae": 0.09949778238932291,
+    "mean_probability": 0.07613881429036459
+   },
+   {
+    "below_one_percent": 0.633544921875,
+    "mae": 0.10634847005208334,
+    "mean_probability": 0.07818883260091146
+   },
+   {
+    "below_one_percent": 0.668212890625,
+    "mae": 0.11069666544596354,
+    "mean_probability": 0.07790679931640625
+   },
+   {
+    "below_one_percent": 0.701416015625,
+    "mae": 0.11338607788085939,
+    "mean_probability": 0.07664540608723959
+   },
+   {
+    "below_one_percent": 0.728759765625,
+    "mae": 0.11816373189290366,
+    "mean_probability": 0.07797228495279948
+   },
+   {
+    "below_one_percent": 0.7490234375,
+    "mae": 0.11915850321451824,
+    "mean_probability": 0.07668011983235676
+   },
+   {
+    "below_one_percent": 0.76416015625,
+    "mae": 0.12186271667480471,
+    "mean_probability": 0.07673810323079427
+   },
+   {
+    "below_one_percent": 0.78173828125,
+    "mae": 0.12396087646484377,
+    "mean_probability": 0.07663777669270833
+   },
+   {
+    "below_one_percent": 0.79345703125,
+    "mae": 0.12564481099446617,
+    "mean_probability": 0.0766106923421224
+   },
+   {
+    "below_one_percent": 0.8056640625,
+    "mae": 0.12714182535807295,
+    "mean_probability": 0.07646382649739583
+   },
+   {
+    "below_one_percent": 0.813232421875,
+    "mae": 0.12864224751790365,
+    "mean_probability": 0.0768395741780599
+   },
+   {
+    "below_one_percent": 0.822265625,
+    "mae": 0.1302584838867188,
+    "mean_probability": 0.07758204142252603
+   },
+   {
+    "below_one_percent": 0.82861328125,
+    "mae": 0.13180727640787765,
+    "mean_probability": 0.0778339385986328
+   },
+   {
+    "below_one_percent": 0.83642578125,
+    "mae": 0.1324223327636719,
+    "mean_probability": 0.07753753662109375
+   },
+   {
+    "below_one_percent": 0.8427734375,
+    "mae": 0.13373730977376305,
+    "mean_probability": 0.07766685485839844
+   },
+   {
+    "below_one_percent": 0.84765625,
+    "mae": 0.1344438680013021,
+    "mean_probability": 0.07768605550130209
+   },
+   {
+    "below_one_percent": 0.851806640625,
+    "mae": 0.1354009501139323,
+    "mean_probability": 0.07778345743815104
+   },
+   {
+    "below_one_percent": 0.860107421875,
+    "mae": 0.1371337127685547,
+    "mean_probability": 0.07865918477376302
+   },
+   {
+    "below_one_percent": 0.8662109375,
+    "mae": 0.13744229634602867,
+    "mean_probability": 0.07843081156412761
+   },
+   {
+    "below_one_percent": 0.869140625,
+    "mae": 0.1370250447591146,
+    "mean_probability": 0.07738749186197916
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.08544921875,
+    "mae": 0.054339985690446596,
+    "mean_probability": 0.07961991274640041
+   },
+   {
+    "below_one_percent": 0.27685546875,
+    "mae": 0.07092376575863074,
+    "mean_probability": 0.0788201710525912
+   },
+   {
+    "below_one_percent": 0.408203125,
+    "mae": 0.08296848347936076,
+    "mean_probability": 0.07768926779240076
+   },
+   {
+    "below_one_percent": 0.506591796875,
+    "mae": 0.09252788873284763,
+    "mean_probability": 0.07750744773977444
+   },
+   {
+    "below_one_percent": 0.573974609375,
+    "mae": 0.09847152099395345,
+    "mean_probability": 0.07635438920043493
+   },
+   {
+    "below_one_percent": 0.615966796875,
+    "mae": 0.10509648078581377,
+    "mean_probability": 0.07789122251722662
+   },
+   {
+    "below_one_percent": 0.657470703125,
+    "mae": 0.10991093808492769,
+    "mean_probability": 0.07799455626810763
+   },
+   {
+    "below_one_percent": 0.68798828125,
+    "mae": 0.11330427473683333,
+    "mean_probability": 0.07797371105552448
+   },
+   {
+    "below_one_percent": 0.712646484375,
+    "mae": 0.11770864342944577,
+    "mean_probability": 0.07900445234669476
+   },
+   {
+    "below_one_percent": 0.7353515625,
+    "mae": 0.11860775339074295,
+    "mean_probability": 0.07784230471382445
+   },
+   {
+    "below_one_percent": 0.75146484375,
+    "mae": 0.1218974465425501,
+    "mean_probability": 0.0784432604240674
+   },
+   {
+    "below_one_percent": 0.767578125,
+    "mae": 0.12340698680451911,
+    "mean_probability": 0.07782030838459639
+   },
+   {
+    "below_one_percent": 0.781982421875,
+    "mae": 0.12638139792903372,
+    "mean_probability": 0.07894417021261257
+   },
+   {
+    "below_one_percent": 0.793701171875,
+    "mae": 0.12798145347630288,
+    "mean_probability": 0.0787996552467339
+   },
+   {
+    "below_one_percent": 0.80322265625,
+    "mae": 0.12956145632083266,
+    "mean_probability": 0.07906792637729262
+   },
+   {
+    "below_one_percent": 0.81591796875,
+    "mae": 0.13090940339265125,
+    "mean_probability": 0.07912353743157934
+   },
+   {
+    "below_one_percent": 0.820556640625,
+    "mae": 0.13233091696636468,
+    "mean_probability": 0.07953541947841203
+   },
+   {
+    "below_one_percent": 0.827880859375,
+    "mae": 0.1325217952260211,
+    "mean_probability": 0.07853823088293846
+   },
+   {
+    "below_one_percent": 0.8359375,
+    "mae": 0.1338751369259238,
+    "mean_probability": 0.07875099241313803
+   },
+   {
+    "below_one_percent": 0.84130859375,
+    "mae": 0.1351401339805986,
+    "mean_probability": 0.07937216294525681
+   },
+   {
+    "below_one_percent": 0.847412109375,
+    "mae": 0.13653948319350398,
+    "mean_probability": 0.07970857199093397
+   },
+   {
+    "below_one_percent": 0.854736328125,
+    "mae": 0.13758722090041986,
+    "mean_probability": 0.07998815517280602
+   },
+   {
+    "below_one_percent": 0.858642578125,
+    "mae": 0.13735405800265682,
+    "mean_probability": 0.07929633790453679
+   },
+   {
+    "below_one_percent": 0.863037109375,
+    "mae": 0.13744478649957803,
+    "mean_probability": 0.07873722795805758
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.04859648204985119,
+    "mean_probability": 0.08002691359747025
+   },
+   {
+    "below_one_percent": 0.005126953125,
+    "mae": 0.05489099451013514,
+    "mean_probability": 0.07997235272381757
+   },
+   {
+    "below_one_percent": 0.011962890625,
+    "mae": 0.05742979805424528,
+    "mean_probability": 0.07946533203125
+   },
+   {
+    "below_one_percent": 0.01904296875,
+    "mae": 0.05927672455276268,
+    "mean_probability": 0.07941149725430253
+   },
+   {
+    "below_one_percent": 0.040771484375,
+    "mae": 0.060059886259191175,
+    "mean_probability": 0.07964145795036764
+   },
+   {
+    "below_one_percent": 0.045166015625,
+    "mae": 0.060748399791150993,
+    "mean_probability": 0.0798320989325495
+   },
+   {
+    "below_one_percent": 0.051513671875,
+    "mae": 0.06121276333800748,
+    "mean_probability": 0.0796635971721421
+   },
+   {
+    "below_one_percent": 0.074951171875,
+    "mae": 0.0613298321487312,
+    "mean_probability": 0.07963017284421994
+   },
+   {
+    "below_one_percent": 0.077392578125,
+    "mae": 0.06179305723049496,
+    "mean_probability": 0.07952261495910234
+   },
+   {
+    "below_one_percent": 0.08154296875,
+    "mae": 0.06206105735085228,
+    "mean_probability": 0.07949047851562499
+   },
+   {
+    "below_one_percent": 0.08447265625,
+    "mae": 0.06232966133244129,
+    "mean_probability": 0.07931952882208218
+   },
+   {
+    "below_one_percent": 0.101806640625,
+    "mae": 0.06241022565038071,
+    "mean_probability": 0.07923227068131344
+   },
+   {
+    "below_one_percent": 0.10205078125,
+    "mae": 0.06268839518229166,
+    "mean_probability": 0.07934982371442195
+   },
+   {
+    "below_one_percent": 0.105712890625,
+    "mae": 0.0628010445807178,
+    "mean_probability": 0.07940417427162938
+   },
+   {
+    "below_one_percent": 0.116455078125,
+    "mae": 0.0630064921476403,
+    "mean_probability": 0.07951271025988521
+   },
+   {
+    "below_one_percent": 0.11669921875,
+    "mae": 0.06301118931094349,
+    "mean_probability": 0.0794429571509818
+   },
+   {
+    "below_one_percent": 0.116943359375,
+    "mae": 0.06303213842509026,
+    "mean_probability": 0.07942015279501355
+   },
+   {
+    "below_one_percent": 0.11767578125,
+    "mae": 0.06302249010105589,
+    "mean_probability": 0.07924808437100042
+   },
+   {
+    "below_one_percent": 0.125244140625,
+    "mae": 0.06314667636908373,
+    "mean_probability": 0.07921995490114281
+   },
+   {
+    "below_one_percent": 0.127685546875,
+    "mae": 0.06325120943509616,
+    "mean_probability": 0.07928182842548076
+   },
+   {
+    "below_one_percent": 0.127685546875,
+    "mae": 0.06321086805237353,
+    "mean_probability": 0.07923909385882513
+   },
+   {
+    "below_one_percent": 0.1279296875,
+    "mae": 0.06334641913405988,
+    "mean_probability": 0.07941227418701854
+   },
+   {
+    "below_one_percent": 0.131103515625,
+    "mae": 0.06338475122528485,
+    "mean_probability": 0.07947069919780496
+   },
+   {
+    "below_one_percent": 0.13232421875,
+    "mae": 0.06337882779864235,
+    "mean_probability": 0.07945088756727989
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.016405273437500006,
+    "mean_probability": 0.0794052734375
+   }
+  ]
+ },
+ "target0.03_anchors0_copy0.0": {
+  "flat": [
+   {
+    "below_one_percent": 0.000732421875,
+    "mae": 0.04996635437011718,
+    "mean_probability": 0.07981300354003906
+   },
+   {
+    "below_one_percent": 0.007568359375,
+    "mae": 0.05093589782714843,
+    "mean_probability": 0.07993125915527344
+   },
+   {
+    "below_one_percent": 0.02294921875,
+    "mae": 0.05210105895996092,
+    "mean_probability": 0.07962608337402344
+   },
+   {
+    "below_one_percent": 0.0419921875,
+    "mae": 0.05403923034667968,
+    "mean_probability": 0.08022880554199219
+   },
+   {
+    "below_one_percent": 0.06787109375,
+    "mae": 0.05575088500976561,
+    "mean_probability": 0.08040618896484375
+   },
+   {
+    "below_one_percent": 0.09375,
+    "mae": 0.05751869201660156,
+    "mean_probability": 0.08051109313964844
+   },
+   {
+    "below_one_percent": 0.116943359375,
+    "mae": 0.058917770385742176,
+    "mean_probability": 0.08028984069824219
+   },
+   {
+    "below_one_percent": 0.1455078125,
+    "mae": 0.06040466308593749,
+    "mean_probability": 0.08030319213867188
+   },
+   {
+    "below_one_percent": 0.169921875,
+    "mae": 0.0622034454345703,
+    "mean_probability": 0.08061790466308594
+   },
+   {
+    "below_one_percent": 0.19677734375,
+    "mae": 0.06344711303710937,
+    "mean_probability": 0.08036041259765625
+   },
+   {
+    "below_one_percent": 0.22265625,
+    "mae": 0.06500770568847655,
+    "mean_probability": 0.08044242858886719
+   },
+   {
+    "below_one_percent": 0.243408203125,
+    "mae": 0.06615493774414061,
+    "mean_probability": 0.08023834228515625
+   },
+   {
+    "below_one_percent": 0.268310546875,
+    "mae": 0.06728988647460937,
+    "mean_probability": 0.07998275756835938
+   },
+   {
+    "below_one_percent": 0.296630859375,
+    "mae": 0.06920921325683593,
+    "mean_probability": 0.08054542541503906
+   },
+   {
+    "below_one_percent": 0.309326171875,
+    "mae": 0.07010612487792969,
+    "mean_probability": 0.08043098449707031
+   },
+   {
+    "below_one_percent": 0.328125,
+    "mae": 0.07133308410644532,
+    "mean_probability": 0.08063697814941406
+   },
+   {
+    "below_one_percent": 0.34814453125,
+    "mae": 0.07221397399902343,
+    "mean_probability": 0.08047676086425781
+   },
+   {
+    "below_one_percent": 0.365478515625,
+    "mae": 0.07299827575683594,
+    "mean_probability": 0.08023262023925781
+   },
+   {
+    "below_one_percent": 0.3779296875,
+    "mae": 0.07447158813476562,
+    "mean_probability": 0.0807952880859375
+   },
+   {
+    "below_one_percent": 0.396484375,
+    "mae": 0.07580604553222656,
+    "mean_probability": 0.08123970031738281
+   },
+   {
+    "below_one_percent": 0.412353515625,
+    "mae": 0.0767523193359375,
+    "mean_probability": 0.08127593994140625
+   },
+   {
+    "below_one_percent": 0.42333984375,
+    "mae": 0.07706993103027343,
+    "mean_probability": 0.08087730407714844
+   },
+   {
+    "below_one_percent": 0.43603515625,
+    "mae": 0.07794265747070313,
+    "mean_probability": 0.08098602294921875
+   },
+   {
+    "below_one_percent": 0.450439453125,
+    "mae": 0.07915031433105468,
+    "mean_probability": 0.08145713806152344
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.002197265625,
+    "mae": 0.05107490539550781,
+    "mean_probability": 0.08015403747558594
+   },
+   {
+    "below_one_percent": 0.04345703125,
+    "mae": 0.05518712361653646,
+    "mean_probability": 0.08058522542317709
+   },
+   {
+    "below_one_percent": 0.104248046875,
+    "mae": 0.05955739339192709,
+    "mean_probability": 0.08083546956380208
+   },
+   {
+    "below_one_percent": 0.17578125,
+    "mae": 0.064429931640625,
+    "mean_probability": 0.08167978922526042
+   },
+   {
+    "below_one_percent": 0.23779296875,
+    "mae": 0.06725133260091146,
+    "mean_probability": 0.08121999104817708
+   },
+   {
+    "below_one_percent": 0.287109375,
+    "mae": 0.06978899637858074,
+    "mean_probability": 0.08097546895345052
+   },
+   {
+    "below_one_percent": 0.332275390625,
+    "mae": 0.07365267435709635,
+    "mean_probability": 0.08202374776204427
+   },
+   {
+    "below_one_percent": 0.373779296875,
+    "mae": 0.07613169352213542,
+    "mean_probability": 0.08217264811197918
+   },
+   {
+    "below_one_percent": 0.41455078125,
+    "mae": 0.07830769856770833,
+    "mean_probability": 0.08214467366536458
+   },
+   {
+    "below_one_percent": 0.45068359375,
+    "mae": 0.07996111551920573,
+    "mean_probability": 0.08186022440592447
+   },
+   {
+    "below_one_percent": 0.47998046875,
+    "mae": 0.08181154886881511,
+    "mean_probability": 0.08190905253092448
+   },
+   {
+    "below_one_percent": 0.509765625,
+    "mae": 0.08429537455240886,
+    "mean_probability": 0.08263104756673177
+   },
+   {
+    "below_one_percent": 0.53369140625,
+    "mae": 0.08643473307291667,
+    "mean_probability": 0.08358103434244792
+   },
+   {
+    "below_one_percent": 0.556396484375,
+    "mae": 0.0887615203857422,
+    "mean_probability": 0.08462384541829426
+   },
+   {
+    "below_one_percent": 0.576171875,
+    "mae": 0.09027659098307292,
+    "mean_probability": 0.08507334391276042
+   },
+   {
+    "below_one_percent": 0.593994140625,
+    "mae": 0.09030197143554688,
+    "mean_probability": 0.08401921590169271
+   },
+   {
+    "below_one_percent": 0.607666015625,
+    "mae": 0.09073168436686198,
+    "mean_probability": 0.08358751932779948
+   },
+   {
+    "below_one_percent": 0.62255859375,
+    "mae": 0.09187408447265626,
+    "mean_probability": 0.08394622802734375
+   },
+   {
+    "below_one_percent": 0.64208984375,
+    "mae": 0.09226821899414063,
+    "mean_probability": 0.08333231608072916
+   },
+   {
+    "below_one_percent": 0.656982421875,
+    "mae": 0.09312108357747395,
+    "mean_probability": 0.08329289754231771
+   },
+   {
+    "below_one_percent": 0.668701171875,
+    "mae": 0.09374582926432291,
+    "mean_probability": 0.08326772054036458
+   },
+   {
+    "below_one_percent": 0.678466796875,
+    "mae": 0.09443224589029948,
+    "mean_probability": 0.08330675760904947
+   },
+   {
+    "below_one_percent": 0.689697265625,
+    "mae": 0.09433128356933596,
+    "mean_probability": 0.0825415293375651
+   },
+   {
+    "below_one_percent": 0.69873046875,
+    "mae": 0.09414352416992187,
+    "mean_probability": 0.08191630045572917
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.000732421875,
+    "mae": 0.04996635437011718,
+    "mean_probability": 0.07981300354003906
+   },
+   {
+    "below_one_percent": 0.007568359375,
+    "mae": 0.05093589782714843,
+    "mean_probability": 0.07993125915527344
+   },
+   {
+    "below_one_percent": 0.02294921875,
+    "mae": 0.05210105895996092,
+    "mean_probability": 0.07962608337402344
+   },
+   {
+    "below_one_percent": 0.0419921875,
+    "mae": 0.05403923034667968,
+    "mean_probability": 0.08022880554199219
+   },
+   {
+    "below_one_percent": 0.06787109375,
+    "mae": 0.05575088500976561,
+    "mean_probability": 0.08040618896484375
+   },
+   {
+    "below_one_percent": 0.09375,
+    "mae": 0.05751869201660156,
+    "mean_probability": 0.08051109313964844
+   },
+   {
+    "below_one_percent": 0.116943359375,
+    "mae": 0.058917770385742176,
+    "mean_probability": 0.08028984069824219
+   },
+   {
+    "below_one_percent": 0.1455078125,
+    "mae": 0.06040466308593749,
+    "mean_probability": 0.08030319213867188
+   },
+   {
+    "below_one_percent": 0.169921875,
+    "mae": 0.0622034454345703,
+    "mean_probability": 0.08061790466308594
+   },
+   {
+    "below_one_percent": 0.19677734375,
+    "mae": 0.06344711303710937,
+    "mean_probability": 0.08036041259765625
+   },
+   {
+    "below_one_percent": 0.22265625,
+    "mae": 0.06500770568847655,
+    "mean_probability": 0.08044242858886719
+   },
+   {
+    "below_one_percent": 0.243408203125,
+    "mae": 0.06615493774414061,
+    "mean_probability": 0.08023834228515625
+   },
+   {
+    "below_one_percent": 0.268310546875,
+    "mae": 0.06728988647460937,
+    "mean_probability": 0.07998275756835938
+   },
+   {
+    "below_one_percent": 0.296630859375,
+    "mae": 0.06920921325683593,
+    "mean_probability": 0.08054542541503906
+   },
+   {
+    "below_one_percent": 0.309326171875,
+    "mae": 0.07010612487792969,
+    "mean_probability": 0.08043098449707031
+   },
+   {
+    "below_one_percent": 0.328125,
+    "mae": 0.07133308410644532,
+    "mean_probability": 0.08063697814941406
+   },
+   {
+    "below_one_percent": 0.34814453125,
+    "mae": 0.07221397399902343,
+    "mean_probability": 0.08047676086425781
+   },
+   {
+    "below_one_percent": 0.365478515625,
+    "mae": 0.07299827575683594,
+    "mean_probability": 0.08023262023925781
+   },
+   {
+    "below_one_percent": 0.3779296875,
+    "mae": 0.07447158813476562,
+    "mean_probability": 0.0807952880859375
+   },
+   {
+    "below_one_percent": 0.396484375,
+    "mae": 0.07580604553222656,
+    "mean_probability": 0.08123970031738281
+   },
+   {
+    "below_one_percent": 0.412353515625,
+    "mae": 0.0767523193359375,
+    "mean_probability": 0.08127593994140625
+   },
+   {
+    "below_one_percent": 0.42333984375,
+    "mae": 0.07706993103027343,
+    "mean_probability": 0.08087730407714844
+   },
+   {
+    "below_one_percent": 0.43603515625,
+    "mae": 0.07794265747070313,
+    "mean_probability": 0.08098602294921875
+   },
+   {
+    "below_one_percent": 0.450439453125,
+    "mae": 0.07915031433105468,
+    "mean_probability": 0.08145713806152344
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.04986834716796876,
+    "mean_probability": 0.07985040283203126
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05002309163411459,
+    "mean_probability": 0.07996856689453126
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.049907696063701934,
+    "mean_probability": 0.0798279747596154
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.049922790527343754,
+    "mean_probability": 0.07984599393956801
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.050009663899739584,
+    "mean_probability": 0.07991854713076638
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.050033325195312506,
+    "mean_probability": 0.07993828125
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000585095635776,
+    "mean_probability": 0.07990495352909482
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.0500297685102983,
+    "mean_probability": 0.07991461551550663
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.050009114033467056,
+    "mean_probability": 0.07989063984638936
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.050012281464367384,
+    "mean_probability": 0.07988864805640244
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05000572374131945,
+    "mean_probability": 0.079877685546875
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.049995465959821433,
+    "mean_probability": 0.07986415318080359
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.049966776146079014,
+    "mean_probability": 0.07983394982679835
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05004628499348958,
+    "mean_probability": 0.07991359242221766
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.050038071929431355,
+    "mean_probability": 0.07990999815893954
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05002206186147837,
+    "mean_probability": 0.07989111797626203
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05003138887709466,
+    "mean_probability": 0.07989687270012455
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05001245786065925,
+    "mean_probability": 0.07988057175727739
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05004186456853694,
+    "mean_probability": 0.07991114628779425
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.050073242187500006,
+    "mean_probability": 0.0799426570939429
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05006319651884191,
+    "mean_probability": 0.07993520938648896
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05005236336354459,
+    "mean_probability": 0.07992457357685218
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.05003550211588542,
+    "mean_probability": 0.07990787957304268
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.050039282729945234,
+    "mean_probability": 0.07991057405766752
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   }
+  ]
+ },
+ "target0.03_anchors0_copy0.6": {
+  "flat": [
+   {
+    "below_one_percent": 0.04541015625,
+    "mae": 0.057582626342773426,
+    "mean_probability": 0.08204460144042969
+   },
+   {
+    "below_one_percent": 0.2626953125,
+    "mae": 0.06821113586425781,
+    "mean_probability": 0.07986640930175781
+   },
+   {
+    "below_one_percent": 0.438720703125,
+    "mae": 0.07566329956054688,
+    "mean_probability": 0.07804489135742188
+   },
+   {
+    "below_one_percent": 0.56396484375,
+    "mae": 0.08258880615234376,
+    "mean_probability": 0.07842636108398438
+   },
+   {
+    "below_one_percent": 0.6376953125,
+    "mae": 0.08759475708007812,
+    "mean_probability": 0.0791168212890625
+   },
+   {
+    "below_one_percent": 0.685791015625,
+    "mae": 0.09160568237304688,
+    "mean_probability": 0.08028030395507812
+   },
+   {
+    "below_one_percent": 0.721923828125,
+    "mae": 0.09312698364257813,
+    "mean_probability": 0.07968902587890625
+   },
+   {
+    "below_one_percent": 0.75048828125,
+    "mae": 0.09481880187988281,
+    "mean_probability": 0.07965660095214844
+   },
+   {
+    "below_one_percent": 0.7724609375,
+    "mae": 0.09564796447753907,
+    "mean_probability": 0.07912254333496094
+   },
+   {
+    "below_one_percent": 0.7919921875,
+    "mae": 0.09634910583496094,
+    "mean_probability": 0.07866859436035156
+   },
+   {
+    "below_one_percent": 0.81005859375,
+    "mae": 0.09712539672851561,
+    "mean_probability": 0.0784454345703125
+   },
+   {
+    "below_one_percent": 0.824951171875,
+    "mae": 0.09671348571777344,
+    "mean_probability": 0.07716941833496094
+   },
+   {
+    "below_one_percent": 0.835693359375,
+    "mae": 0.09650718688964843,
+    "mean_probability": 0.07628822326660156
+   },
+   {
+    "below_one_percent": 0.84619140625,
+    "mae": 0.09726577758789062,
+    "mean_probability": 0.07648086547851562
+   },
+   {
+    "below_one_percent": 0.853759765625,
+    "mae": 0.09851020812988281,
+    "mean_probability": 0.07723808288574219
+   },
+   {
+    "below_one_percent": 0.860595703125,
+    "mae": 0.0994275665283203,
+    "mean_probability": 0.07775306701660156
+   },
+   {
+    "below_one_percent": 0.8662109375,
+    "mae": 0.1000537109375,
+    "mean_probability": 0.07802963256835938
+   },
+   {
+    "below_one_percent": 0.871826171875,
+    "mae": 0.10022026062011719,
+    "mean_probability": 0.07785987854003906
+   },
+   {
+    "below_one_percent": 0.87841796875,
+    "mae": 0.10061309814453125,
+    "mean_probability": 0.07790374755859375
+   },
+   {
+    "below_one_percent": 0.8828125,
+    "mae": 0.10180938720703125,
+    "mean_probability": 0.07878494262695312
+   },
+   {
+    "below_one_percent": 0.886962890625,
+    "mae": 0.10154335021972655,
+    "mean_probability": 0.07830238342285156
+   },
+   {
+    "below_one_percent": 0.890380859375,
+    "mae": 0.10093399047851562,
+    "mean_probability": 0.07751846313476562
+   },
+   {
+    "below_one_percent": 0.892822265625,
+    "mae": 0.09986289978027343,
+    "mean_probability": 0.07627296447753906
+   },
+   {
+    "below_one_percent": 0.897216796875,
+    "mae": 0.10064407348632812,
+    "mean_probability": 0.07680130004882812
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.0888671875,
+    "mae": 0.06016593933105469,
+    "mean_probability": 0.08122342427571615
+   },
+   {
+    "below_one_percent": 0.284912109375,
+    "mae": 0.06966278076171875,
+    "mean_probability": 0.08058141072591146
+   },
+   {
+    "below_one_percent": 0.415771484375,
+    "mae": 0.07653823852539063,
+    "mean_probability": 0.07997817993164062
+   },
+   {
+    "below_one_percent": 0.513427734375,
+    "mae": 0.08159673055013023,
+    "mean_probability": 0.07988052368164063
+   },
+   {
+    "below_one_percent": 0.580810546875,
+    "mae": 0.08356592814127604,
+    "mean_probability": 0.07803955078125
+   },
+   {
+    "below_one_percent": 0.63232421875,
+    "mae": 0.0887285868326823,
+    "mean_probability": 0.08029276529947915
+   },
+   {
+    "below_one_percent": 0.665771484375,
+    "mae": 0.09061439514160156,
+    "mean_probability": 0.08021558125813802
+   },
+   {
+    "below_one_percent": 0.699462890625,
+    "mae": 0.09398661295572916,
+    "mean_probability": 0.081805419921875
+   },
+   {
+    "below_one_percent": 0.72021484375,
+    "mae": 0.09531234741210938,
+    "mean_probability": 0.08176396687825521
+   },
+   {
+    "below_one_percent": 0.739501953125,
+    "mae": 0.09621803283691406,
+    "mean_probability": 0.08146934509277343
+   },
+   {
+    "below_one_percent": 0.76025390625,
+    "mae": 0.09595237731933595,
+    "mean_probability": 0.08015886942545572
+   },
+   {
+    "below_one_percent": 0.777099609375,
+    "mae": 0.09756045023600261,
+    "mean_probability": 0.08076235453287761
+   },
+   {
+    "below_one_percent": 0.7880859375,
+    "mae": 0.09825970967610677,
+    "mean_probability": 0.08076286315917969
+   },
+   {
+    "below_one_percent": 0.80029296875,
+    "mae": 0.09897176106770833,
+    "mean_probability": 0.08083165486653646
+   },
+   {
+    "below_one_percent": 0.810546875,
+    "mae": 0.0989787801106771,
+    "mean_probability": 0.08021647135416667
+   },
+   {
+    "below_one_percent": 0.81884765625,
+    "mae": 0.09960662841796875,
+    "mean_probability": 0.08037312825520833
+   },
+   {
+    "below_one_percent": 0.826416015625,
+    "mae": 0.10002405802408854,
+    "mean_probability": 0.08030497233072917
+   },
+   {
+    "below_one_percent": 0.83251953125,
+    "mae": 0.10012992858886718,
+    "mean_probability": 0.08005587259928384
+   },
+   {
+    "below_one_percent": 0.83935546875,
+    "mae": 0.09954269409179686,
+    "mean_probability": 0.07912012736002605
+   },
+   {
+    "below_one_percent": 0.843017578125,
+    "mae": 0.10021929423014322,
+    "mean_probability": 0.07956479390462239
+   },
+   {
+    "below_one_percent": 0.846923828125,
+    "mae": 0.10048055013020832,
+    "mean_probability": 0.07962977091471354
+   },
+   {
+    "below_one_percent": 0.85009765625,
+    "mae": 0.10125752766927082,
+    "mean_probability": 0.08019561767578126
+   },
+   {
+    "below_one_percent": 0.854736328125,
+    "mae": 0.10071769714355469,
+    "mean_probability": 0.07940355936686198
+   },
+   {
+    "below_one_percent": 0.858154296875,
+    "mae": 0.10090357462565104,
+    "mean_probability": 0.07940012613932292
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.069580078125,
+    "mae": 0.0589990447358396,
+    "mean_probability": 0.08122367993024666
+   },
+   {
+    "below_one_percent": 0.254638671875,
+    "mae": 0.06784974170174088,
+    "mean_probability": 0.08019101604170274
+   },
+   {
+    "below_one_percent": 0.39453125,
+    "mae": 0.07463937358298624,
+    "mean_probability": 0.07917139937703066
+   },
+   {
+    "below_one_percent": 0.49462890625,
+    "mae": 0.08062664376117644,
+    "mean_probability": 0.07986184864409687
+   },
+   {
+    "below_one_percent": 0.563232421875,
+    "mae": 0.08298240510039044,
+    "mean_probability": 0.07838377657006046
+   },
+   {
+    "below_one_percent": 0.615234375,
+    "mae": 0.08774297655649267,
+    "mean_probability": 0.08030198021803651
+   },
+   {
+    "below_one_percent": 0.65380859375,
+    "mae": 0.089451422566929,
+    "mean_probability": 0.07984850078855577
+   },
+   {
+    "below_one_percent": 0.68359375,
+    "mae": 0.09219338186784307,
+    "mean_probability": 0.08086114739453007
+   },
+   {
+    "below_one_percent": 0.70654296875,
+    "mae": 0.09318709432500107,
+    "mean_probability": 0.08035395051578528
+   },
+   {
+    "below_one_percent": 0.72705078125,
+    "mae": 0.09396670049226317,
+    "mean_probability": 0.07987746709590524
+   },
+   {
+    "below_one_percent": 0.7509765625,
+    "mae": 0.09360208694526598,
+    "mean_probability": 0.07835928550506516
+   },
+   {
+    "below_one_percent": 0.76611328125,
+    "mae": 0.09504952290465271,
+    "mean_probability": 0.07886748056540258
+   },
+   {
+    "below_one_percent": 0.780517578125,
+    "mae": 0.09642846441553546,
+    "mean_probability": 0.07945989867728454
+   },
+   {
+    "below_one_percent": 0.79296875,
+    "mae": 0.09709801871115603,
+    "mean_probability": 0.07936957232150543
+   },
+   {
+    "below_one_percent": 0.803955078125,
+    "mae": 0.09810486325767287,
+    "mean_probability": 0.07974723775224152
+   },
+   {
+    "below_one_percent": 0.8134765625,
+    "mae": 0.099350232842343,
+    "mean_probability": 0.08048338843102688
+   },
+   {
+    "below_one_percent": 0.822265625,
+    "mae": 0.09964286637862807,
+    "mean_probability": 0.08019142427957301
+   },
+   {
+    "below_one_percent": 0.830810546875,
+    "mae": 0.09894511690298023,
+    "mean_probability": 0.07903736363901671
+   },
+   {
+    "below_one_percent": 0.83740234375,
+    "mae": 0.09843364750127906,
+    "mean_probability": 0.07810441832454812
+   },
+   {
+    "below_one_percent": 0.843505859375,
+    "mae": 0.0997368651955985,
+    "mean_probability": 0.0790466816673418
+   },
+   {
+    "below_one_percent": 0.849609375,
+    "mae": 0.1005172052501975,
+    "mean_probability": 0.07951651884882943
+   },
+   {
+    "below_one_percent": 0.8515625,
+    "mae": 0.101666762907701,
+    "mean_probability": 0.08046197985125506
+   },
+   {
+    "below_one_percent": 0.857421875,
+    "mae": 0.10206992877081034,
+    "mean_probability": 0.08059609040944693
+   },
+   {
+    "below_one_percent": 0.861083984375,
+    "mae": 0.10242738579587748,
+    "mean_probability": 0.08069810670631358
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05263214111328125,
+    "mean_probability": 0.08163568115234376
+   },
+   {
+    "below_one_percent": 0.002197265625,
+    "mae": 0.05419213189019098,
+    "mean_probability": 0.08087392171223959
+   },
+   {
+    "below_one_percent": 0.00537109375,
+    "mae": 0.05536862886868991,
+    "mean_probability": 0.08014077993539664
+   },
+   {
+    "below_one_percent": 0.012451171875,
+    "mae": 0.05684315400965074,
+    "mean_probability": 0.08026740579044117
+   },
+   {
+    "below_one_percent": 0.035888671875,
+    "mae": 0.05801929292224702,
+    "mean_probability": 0.08039483933221726
+   },
+   {
+    "below_one_percent": 0.039794921875,
+    "mae": 0.058943957519531257,
+    "mean_probability": 0.08069908447265625
+   },
+   {
+    "below_one_percent": 0.047119140625,
+    "mae": 0.05932181522764009,
+    "mean_probability": 0.08050215096309267
+   },
+   {
+    "below_one_percent": 0.052734375,
+    "mae": 0.05970409046519887,
+    "mean_probability": 0.08048728249289773
+   },
+   {
+    "below_one_percent": 0.0732421875,
+    "mae": 0.06002570074957771,
+    "mean_probability": 0.08050614640519425
+   },
+   {
+    "below_one_percent": 0.07666015625,
+    "mae": 0.060260084198742375,
+    "mean_probability": 0.08048709032012194
+   },
+   {
+    "below_one_percent": 0.0791015625,
+    "mae": 0.06011937120225694,
+    "mean_probability": 0.08010182020399306
+   },
+   {
+    "below_one_percent": 0.092041015625,
+    "mae": 0.06023377710459184,
+    "mean_probability": 0.0801120306521046
+   },
+   {
+    "below_one_percent": 0.09423828125,
+    "mae": 0.06049872056493219,
+    "mean_probability": 0.08021786671764446
+   },
+   {
+    "below_one_percent": 0.097412109375,
+    "mae": 0.06077772709361294,
+    "mean_probability": 0.0803607820209704
+   },
+   {
+    "below_one_percent": 0.098388671875,
+    "mae": 0.06090583175909324,
+    "mean_probability": 0.0803905249423668
+   },
+   {
+    "below_one_percent": 0.110595703125,
+    "mae": 0.06099702805739182,
+    "mean_probability": 0.08034559513972356
+   },
+   {
+    "below_one_percent": 0.10986328125,
+    "mae": 0.061045514535212855,
+    "mean_probability": 0.0803202488111413
+   },
+   {
+    "below_one_percent": 0.111328125,
+    "mae": 0.061012029778467466,
+    "mean_probability": 0.08025347147902398
+   },
+   {
+    "below_one_percent": 0.119873046875,
+    "mae": 0.06106717196377841,
+    "mean_probability": 0.08027725814224837
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.061237476490162035,
+    "mean_probability": 0.0804102165316358
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.0612581787109375,
+    "mean_probability": 0.0803617374195772
+   },
+   {
+    "below_one_percent": 0.119140625,
+    "mae": 0.061448779159717345,
+    "mean_probability": 0.08048794864268785
+   },
+   {
+    "below_one_percent": 0.123046875,
+    "mae": 0.06146033174248152,
+    "mean_probability": 0.08049033872542842
+   },
+   {
+    "below_one_percent": 0.11962890625,
+    "mae": 0.06152114396242751,
+    "mean_probability": 0.08053830805513049
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.05000000000000001,
+    "mean_probability": 0.08
+   }
+  ]
+ },
+ "target0.03_anchors8_copy0.0": {
+  "flat": [
+   {
+    "below_one_percent": 0.001953125,
+    "mae": 0.040179061889648426,
+    "mean_probability": 0.06967353820800781
+   },
+   {
+    "below_one_percent": 0.01708984375,
+    "mae": 0.04234489440917968,
+    "mean_probability": 0.07011604309082031
+   },
+   {
+    "below_one_percent": 0.044189453125,
+    "mae": 0.04400840759277343,
+    "mean_probability": 0.06984519958496094
+   },
+   {
+    "below_one_percent": 0.069580078125,
+    "mae": 0.04636413574218749,
+    "mean_probability": 0.07037353515625
+   },
+   {
+    "below_one_percent": 0.104248046875,
+    "mae": 0.048522491455078115,
+    "mean_probability": 0.07071685791015625
+   },
+   {
+    "below_one_percent": 0.13525390625,
+    "mae": 0.05061050415039062,
+    "mean_probability": 0.07094573974609375
+   },
+   {
+    "below_one_percent": 0.15966796875,
+    "mae": 0.05208396911621093,
+    "mean_probability": 0.07067680358886719
+   },
+   {
+    "below_one_percent": 0.190185546875,
+    "mae": 0.05370811462402343,
+    "mean_probability": 0.07071495056152344
+   },
+   {
+    "below_one_percent": 0.218994140625,
+    "mae": 0.05565361022949218,
+    "mean_probability": 0.07106590270996094
+   },
+   {
+    "below_one_percent": 0.24658203125,
+    "mae": 0.05703941345214843,
+    "mean_probability": 0.07091331481933594
+   },
+   {
+    "below_one_percent": 0.26904296875,
+    "mae": 0.058185729980468746,
+    "mean_probability": 0.07061767578125
+   },
+   {
+    "below_one_percent": 0.29248046875,
+    "mae": 0.05959953308105469,
+    "mean_probability": 0.07060432434082031
+   },
+   {
+    "below_one_percent": 0.316162109375,
+    "mae": 0.0605744171142578,
+    "mean_probability": 0.07038307189941406
+   },
+   {
+    "below_one_percent": 0.343017578125,
+    "mae": 0.062355728149414064,
+    "mean_probability": 0.07079124450683594
+   },
+   {
+    "below_one_percent": 0.359375,
+    "mae": 0.06343429565429687,
+    "mean_probability": 0.07075881958007812
+   },
+   {
+    "below_one_percent": 0.376220703125,
+    "mae": 0.06473632812499999,
+    "mean_probability": 0.07107162475585938
+   },
+   {
+    "below_one_percent": 0.397216796875,
+    "mae": 0.06552818298339844,
+    "mean_probability": 0.07089042663574219
+   },
+   {
+    "below_one_percent": 0.41455078125,
+    "mae": 0.06635139465332032,
+    "mean_probability": 0.07061195373535156
+   },
+   {
+    "below_one_percent": 0.427001953125,
+    "mae": 0.06778831481933593,
+    "mean_probability": 0.07113838195800781
+   },
+   {
+    "below_one_percent": 0.447509765625,
+    "mae": 0.06923828124999999,
+    "mean_probability": 0.0716705322265625
+   },
+   {
+    "below_one_percent": 0.462890625,
+    "mae": 0.07001663208007813,
+    "mean_probability": 0.07157516479492188
+   },
+   {
+    "below_one_percent": 0.474365234375,
+    "mae": 0.07042205810546875,
+    "mean_probability": 0.07124710083007812
+   },
+   {
+    "below_one_percent": 0.4833984375,
+    "mae": 0.07099922180175781,
+    "mean_probability": 0.07118797302246094
+   },
+   {
+    "below_one_percent": 0.500244140625,
+    "mae": 0.07213737487792968,
+    "mean_probability": 0.07156562805175781
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.0078125,
+    "mae": 0.04213058471679687,
+    "mean_probability": 0.06991678873697915
+   },
+   {
+    "below_one_percent": 0.0693359375,
+    "mae": 0.04782300313313802,
+    "mean_probability": 0.07067146301269531
+   },
+   {
+    "below_one_percent": 0.153564453125,
+    "mae": 0.052525177001953124,
+    "mean_probability": 0.07060826619466146
+   },
+   {
+    "below_one_percent": 0.230224609375,
+    "mae": 0.05704668680826823,
+    "mean_probability": 0.07080650329589844
+   },
+   {
+    "below_one_percent": 0.29443359375,
+    "mae": 0.059686762491861986,
+    "mean_probability": 0.07013816833496093
+   },
+   {
+    "below_one_percent": 0.344970703125,
+    "mae": 0.06239006042480469,
+    "mean_probability": 0.0700750986735026
+   },
+   {
+    "below_one_percent": 0.390625,
+    "mae": 0.0658635711669922,
+    "mean_probability": 0.07087440490722656
+   },
+   {
+    "below_one_percent": 0.42919921875,
+    "mae": 0.06823143005371095,
+    "mean_probability": 0.07099901835123698
+   },
+   {
+    "below_one_percent": 0.46728515625,
+    "mae": 0.07057759602864584,
+    "mean_probability": 0.0712671915690104
+   },
+   {
+    "below_one_percent": 0.501953125,
+    "mae": 0.07203463236490887,
+    "mean_probability": 0.07082710266113282
+   },
+   {
+    "below_one_percent": 0.529052734375,
+    "mae": 0.07377446492513022,
+    "mean_probability": 0.07099660237630208
+   },
+   {
+    "below_one_percent": 0.555908203125,
+    "mae": 0.07622044881184897,
+    "mean_probability": 0.07174479166666667
+   },
+   {
+    "below_one_percent": 0.581787109375,
+    "mae": 0.07833038330078125,
+    "mean_probability": 0.07260208129882813
+   },
+   {
+    "below_one_percent": 0.605712890625,
+    "mae": 0.07996246337890625,
+    "mean_probability": 0.07297134399414062
+   },
+   {
+    "below_one_percent": 0.622802734375,
+    "mae": 0.08136314392089844,
+    "mean_probability": 0.07338142395019531
+   },
+   {
+    "below_one_percent": 0.6396484375,
+    "mae": 0.08164716084798178,
+    "mean_probability": 0.07269401550292967
+   },
+   {
+    "below_one_percent": 0.652587890625,
+    "mae": 0.08173500061035158,
+    "mean_probability": 0.07193717956542969
+   },
+   {
+    "below_one_percent": 0.666748046875,
+    "mae": 0.08262062072753906,
+    "mean_probability": 0.07212181091308593
+   },
+   {
+    "below_one_percent": 0.685302734375,
+    "mae": 0.08314885457356772,
+    "mean_probability": 0.07171529134114583
+   },
+   {
+    "below_one_percent": 0.696533203125,
+    "mae": 0.08432339986165366,
+    "mean_probability": 0.07220726013183593
+   },
+   {
+    "below_one_percent": 0.707275390625,
+    "mae": 0.08491345723470053,
+    "mean_probability": 0.07218208312988281
+   },
+   {
+    "below_one_percent": 0.7158203125,
+    "mae": 0.08555341084798178,
+    "mean_probability": 0.07219530741373698
+   },
+   {
+    "below_one_percent": 0.72607421875,
+    "mae": 0.08553487141927084,
+    "mean_probability": 0.07155507405598957
+   },
+   {
+    "below_one_percent": 0.7373046875,
+    "mae": 0.08558176676432291,
+    "mean_probability": 0.07113978068033854
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.001953125,
+    "mae": 0.040179061889648426,
+    "mean_probability": 0.06967353820800781
+   },
+   {
+    "below_one_percent": 0.01708984375,
+    "mae": 0.04234489440917968,
+    "mean_probability": 0.07011604309082031
+   },
+   {
+    "below_one_percent": 0.044189453125,
+    "mae": 0.04400840759277343,
+    "mean_probability": 0.06984519958496094
+   },
+   {
+    "below_one_percent": 0.069580078125,
+    "mae": 0.04636413574218749,
+    "mean_probability": 0.07037353515625
+   },
+   {
+    "below_one_percent": 0.104248046875,
+    "mae": 0.048522491455078115,
+    "mean_probability": 0.07071685791015625
+   },
+   {
+    "below_one_percent": 0.13525390625,
+    "mae": 0.05061050415039062,
+    "mean_probability": 0.07094573974609375
+   },
+   {
+    "below_one_percent": 0.15966796875,
+    "mae": 0.05208396911621093,
+    "mean_probability": 0.07067680358886719
+   },
+   {
+    "below_one_percent": 0.190185546875,
+    "mae": 0.05370811462402343,
+    "mean_probability": 0.07071495056152344
+   },
+   {
+    "below_one_percent": 0.218994140625,
+    "mae": 0.05565361022949218,
+    "mean_probability": 0.07106590270996094
+   },
+   {
+    "below_one_percent": 0.24658203125,
+    "mae": 0.05703941345214843,
+    "mean_probability": 0.07091331481933594
+   },
+   {
+    "below_one_percent": 0.26904296875,
+    "mae": 0.058185729980468746,
+    "mean_probability": 0.07061767578125
+   },
+   {
+    "below_one_percent": 0.29248046875,
+    "mae": 0.05959953308105469,
+    "mean_probability": 0.07060432434082031
+   },
+   {
+    "below_one_percent": 0.316162109375,
+    "mae": 0.0605744171142578,
+    "mean_probability": 0.07038307189941406
+   },
+   {
+    "below_one_percent": 0.343017578125,
+    "mae": 0.062355728149414064,
+    "mean_probability": 0.07079124450683594
+   },
+   {
+    "below_one_percent": 0.359375,
+    "mae": 0.06343429565429687,
+    "mean_probability": 0.07075881958007812
+   },
+   {
+    "below_one_percent": 0.376220703125,
+    "mae": 0.06473632812499999,
+    "mean_probability": 0.07107162475585938
+   },
+   {
+    "below_one_percent": 0.397216796875,
+    "mae": 0.06552818298339844,
+    "mean_probability": 0.07089042663574219
+   },
+   {
+    "below_one_percent": 0.41455078125,
+    "mae": 0.06635139465332032,
+    "mean_probability": 0.07061195373535156
+   },
+   {
+    "below_one_percent": 0.427001953125,
+    "mae": 0.06778831481933593,
+    "mean_probability": 0.07113838195800781
+   },
+   {
+    "below_one_percent": 0.447509765625,
+    "mae": 0.06923828124999999,
+    "mean_probability": 0.0716705322265625
+   },
+   {
+    "below_one_percent": 0.462890625,
+    "mae": 0.07001663208007813,
+    "mean_probability": 0.07157516479492188
+   },
+   {
+    "below_one_percent": 0.474365234375,
+    "mae": 0.07042205810546875,
+    "mean_probability": 0.07124710083007812
+   },
+   {
+    "below_one_percent": 0.4833984375,
+    "mae": 0.07099922180175781,
+    "mean_probability": 0.07118797302246094
+   },
+   {
+    "below_one_percent": 0.500244140625,
+    "mae": 0.07213737487792968,
+    "mean_probability": 0.07156562805175781
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03976806640625,
+    "mean_probability": 0.06969017392113096
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.040044143264358116,
+    "mean_probability": 0.06984216638513514
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04004445201945755,
+    "mean_probability": 0.06977916789504716
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040104520493659424,
+    "mean_probability": 0.06980907495471014
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040204561121323534,
+    "mean_probability": 0.06986793428308824
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040246775409962875,
+    "mean_probability": 0.06988336846379951
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04024573692908654,
+    "mean_probability": 0.06987554044805022
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04025954167645677,
+    "mean_probability": 0.06987602061795113
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.040263622719169466,
+    "mean_probability": 0.06986431352244128
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.04027833510890152,
+    "mean_probability": 0.06986967329545454
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040292543864381906,
+    "mean_probability": 0.06986144007898826
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040282428567179576,
+    "mean_probability": 0.06984044728545369
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040281856339862095,
+    "mean_probability": 0.06982375453895247
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04035492609682041,
+    "mean_probability": 0.06988588824542849
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040363953882334186,
+    "mean_probability": 0.06988908541932398
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04033933208363266,
+    "mean_probability": 0.06986967474107998
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04033944801303023,
+    "mean_probability": 0.06987343908647337
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.04032295721789676,
+    "mean_probability": 0.06985648197525599
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.04034933442050971,
+    "mean_probability": 0.06987930445995146
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04038695913461539,
+    "mean_probability": 0.06991621844951923
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.04038070902446848,
+    "mean_probability": 0.06990742702987536
+   },
+   {
+    "below_one_percent": 0.000244140625,
+    "mae": 0.040358818332020305,
+    "mean_probability": 0.06988882369353991
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.04034970362768097,
+    "mean_probability": 0.06987394358453419
+   },
+   {
+    "below_one_percent": 0.00048828125,
+    "mae": 0.04036105825232969,
+    "mean_probability": 0.06988131251004176
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   }
+  ]
+ },
+ "target0.03_anchors8_copy0.6": {
+  "flat": [
+   {
+    "below_one_percent": 0.07763671875,
+    "mae": 0.049920272827148435,
+    "mean_probability": 0.07121467590332031
+   },
+   {
+    "below_one_percent": 0.325927734375,
+    "mae": 0.0625750732421875,
+    "mean_probability": 0.0706939697265625
+   },
+   {
+    "below_one_percent": 0.502197265625,
+    "mae": 0.07082504272460938,
+    "mean_probability": 0.07012176513671875
+   },
+   {
+    "below_one_percent": 0.604248046875,
+    "mae": 0.07625228881835938,
+    "mean_probability": 0.06967926025390625
+   },
+   {
+    "below_one_percent": 0.666259765625,
+    "mae": 0.0804759979248047,
+    "mean_probability": 0.07016181945800781
+   },
+   {
+    "below_one_percent": 0.707275390625,
+    "mae": 0.08394088745117188,
+    "mean_probability": 0.07112884521484375
+   },
+   {
+    "below_one_percent": 0.74609375,
+    "mae": 0.08539505004882814,
+    "mean_probability": 0.07041549682617188
+   },
+   {
+    "below_one_percent": 0.77294921875,
+    "mae": 0.08631332397460938,
+    "mean_probability": 0.06969451904296875
+   },
+   {
+    "below_one_percent": 0.7958984375,
+    "mae": 0.08893211364746093,
+    "mean_probability": 0.07102775573730469
+   },
+   {
+    "below_one_percent": 0.8134765625,
+    "mae": 0.09073219299316407,
+    "mean_probability": 0.07176017761230469
+   },
+   {
+    "below_one_percent": 0.827880859375,
+    "mae": 0.09183509826660156,
+    "mean_probability": 0.07202720642089844
+   },
+   {
+    "below_one_percent": 0.84326171875,
+    "mae": 0.09097152709960937,
+    "mean_probability": 0.070404052734375
+   },
+   {
+    "below_one_percent": 0.8525390625,
+    "mae": 0.09076187133789063,
+    "mean_probability": 0.0695953369140625
+   },
+   {
+    "below_one_percent": 0.86083984375,
+    "mae": 0.09110198974609376,
+    "mean_probability": 0.06945037841796875
+   },
+   {
+    "below_one_percent": 0.865478515625,
+    "mae": 0.092176513671875,
+    "mean_probability": 0.07016372680664062
+   },
+   {
+    "below_one_percent": 0.871826171875,
+    "mae": 0.0920098876953125,
+    "mean_probability": 0.06964492797851562
+   },
+   {
+    "below_one_percent": 0.878173828125,
+    "mae": 0.09210769653320314,
+    "mean_probability": 0.06937789916992188
+   },
+   {
+    "below_one_percent": 0.8837890625,
+    "mae": 0.09159210205078125,
+    "mean_probability": 0.06850814819335938
+   },
+   {
+    "below_one_percent": 0.89013671875,
+    "mae": 0.09151626586914063,
+    "mean_probability": 0.06810760498046875
+   },
+   {
+    "below_one_percent": 0.893798828125,
+    "mae": 0.09194915771484374,
+    "mean_probability": 0.06822586059570312
+   },
+   {
+    "below_one_percent": 0.898681640625,
+    "mae": 0.0921924591064453,
+    "mean_probability": 0.06821632385253906
+   },
+   {
+    "below_one_percent": 0.90283203125,
+    "mae": 0.09262252807617187,
+    "mean_probability": 0.06842041015625
+   },
+   {
+    "below_one_percent": 0.906982421875,
+    "mae": 0.09270309448242187,
+    "mean_probability": 0.06824493408203125
+   },
+   {
+    "below_one_percent": 0.90966796875,
+    "mae": 0.09213409423828126,
+    "mean_probability": 0.06756210327148438
+   }
+  ],
+  "equal_origin": [
+   {
+    "below_one_percent": 0.138427734375,
+    "mae": 0.05255213419596354,
+    "mean_probability": 0.07021484375
+   },
+   {
+    "below_one_percent": 0.349609375,
+    "mae": 0.062367146809895836,
+    "mean_probability": 0.06947530110677083
+   },
+   {
+    "below_one_percent": 0.479736328125,
+    "mae": 0.06837865193684896,
+    "mean_probability": 0.06818517049153645
+   },
+   {
+    "below_one_percent": 0.570556640625,
+    "mae": 0.07287371317545574,
+    "mean_probability": 0.06792335510253905
+   },
+   {
+    "below_one_percent": 0.625732421875,
+    "mae": 0.07526377360026043,
+    "mean_probability": 0.06697998046875
+   },
+   {
+    "below_one_percent": 0.6689453125,
+    "mae": 0.07876614888509115,
+    "mean_probability": 0.06819318135579427
+   },
+   {
+    "below_one_percent": 0.702392578125,
+    "mae": 0.08044720967610677,
+    "mean_probability": 0.06792716979980468
+   },
+   {
+    "below_one_percent": 0.732666015625,
+    "mae": 0.08122599283854168,
+    "mean_probability": 0.06701583862304687
+   },
+   {
+    "below_one_percent": 0.7578125,
+    "mae": 0.0841545867919922,
+    "mean_probability": 0.06848665873209636
+   },
+   {
+    "below_one_percent": 0.77734375,
+    "mae": 0.08403996785481771,
+    "mean_probability": 0.06727676391601564
+   },
+   {
+    "below_one_percent": 0.7919921875,
+    "mae": 0.08464525858561199,
+    "mean_probability": 0.06692695617675781
+   },
+   {
+    "below_one_percent": 0.8076171875,
+    "mae": 0.08568397521972657,
+    "mean_probability": 0.06711082458496093
+   },
+   {
+    "below_one_percent": 0.817626953125,
+    "mae": 0.08624580383300781,
+    "mean_probability": 0.06706225077311198
+   },
+   {
+    "below_one_percent": 0.828125,
+    "mae": 0.08711191813151042,
+    "mean_probability": 0.06735305786132811
+   },
+   {
+    "below_one_percent": 0.834228515625,
+    "mae": 0.0879901377360026,
+    "mean_probability": 0.06779340108235676
+   },
+   {
+    "below_one_percent": 0.8427734375,
+    "mae": 0.08879249572753907,
+    "mean_probability": 0.06819775899251301
+   },
+   {
+    "below_one_percent": 0.84765625,
+    "mae": 0.08982602437337239,
+    "mean_probability": 0.0688775380452474
+   },
+   {
+    "below_one_percent": 0.85400390625,
+    "mae": 0.08963417053222655,
+    "mean_probability": 0.06833025614420574
+   },
+   {
+    "below_one_percent": 0.860107421875,
+    "mae": 0.09027107238769531,
+    "mean_probability": 0.06854642232259114
+   },
+   {
+    "below_one_percent": 0.864501953125,
+    "mae": 0.09056927998860677,
+    "mean_probability": 0.06859321594238281
+   },
+   {
+    "below_one_percent": 0.867919921875,
+    "mae": 0.09100423177083333,
+    "mean_probability": 0.06880518595377605
+   },
+   {
+    "below_one_percent": 0.8759765625,
+    "mae": 0.09206036885579427,
+    "mean_probability": 0.06946678161621093
+   },
+   {
+    "below_one_percent": 0.881591796875,
+    "mae": 0.09217386881510417,
+    "mean_probability": 0.0692779541015625
+   },
+   {
+    "below_one_percent": 0.8837890625,
+    "mae": 0.09144515991210937,
+    "mean_probability": 0.0683746337890625
+   }
+  ],
+  "known_corr": [
+   {
+    "below_one_percent": 0.110595703125,
+    "mae": 0.05118589581046021,
+    "mean_probability": 0.07014993906365166
+   },
+   {
+    "below_one_percent": 0.31591796875,
+    "mae": 0.061006465673216714,
+    "mean_probability": 0.06958844542925585
+   },
+   {
+    "below_one_percent": 0.45458984375,
+    "mae": 0.06715824479336908,
+    "mean_probability": 0.06817578938781454
+   },
+   {
+    "below_one_percent": 0.551513671875,
+    "mae": 0.07185507357568964,
+    "mean_probability": 0.06775333110269802
+   },
+   {
+    "below_one_percent": 0.615234375,
+    "mae": 0.07436520708950217,
+    "mean_probability": 0.06674640929049759
+   },
+   {
+    "below_one_percent": 0.65234375,
+    "mae": 0.07749326362270569,
+    "mean_probability": 0.06764983778648911
+   },
+   {
+    "below_one_percent": 0.692138671875,
+    "mae": 0.07927913045051606,
+    "mean_probability": 0.06730632025811835
+   },
+   {
+    "below_one_percent": 0.7216796875,
+    "mae": 0.0811012625867858,
+    "mean_probability": 0.06744977788141096
+   },
+   {
+    "below_one_percent": 0.74462890625,
+    "mae": 0.08314854380999726,
+    "mean_probability": 0.06806604587514536
+   },
+   {
+    "below_one_percent": 0.76513671875,
+    "mae": 0.08319588097906402,
+    "mean_probability": 0.06710615081668059
+   },
+   {
+    "below_one_percent": 0.781005859375,
+    "mae": 0.0842514554009463,
+    "mean_probability": 0.06718788746692556
+   },
+   {
+    "below_one_percent": 0.79443359375,
+    "mae": 0.08479822578825792,
+    "mean_probability": 0.06695322911240868
+   },
+   {
+    "below_one_percent": 0.807861328125,
+    "mae": 0.0863044636761954,
+    "mean_probability": 0.06768580655824802
+   },
+   {
+    "below_one_percent": 0.818359375,
+    "mae": 0.08702120886608201,
+    "mean_probability": 0.06778662351619225
+   },
+   {
+    "below_one_percent": 0.82666015625,
+    "mae": 0.0877812217085428,
+    "mean_probability": 0.06801333082228397
+   },
+   {
+    "below_one_percent": 0.837646484375,
+    "mae": 0.08836824713635308,
+    "mean_probability": 0.06807624517992968
+   },
+   {
+    "below_one_percent": 0.842529296875,
+    "mae": 0.08912457491421953,
+    "mean_probability": 0.06849030425007802
+   },
+   {
+    "below_one_percent": 0.848388671875,
+    "mae": 0.08836142088694376,
+    "mean_probability": 0.06736174787572681
+   },
+   {
+    "below_one_percent": 0.85546875,
+    "mae": 0.0892425321955943,
+    "mean_probability": 0.06784256229705546
+   },
+   {
+    "below_one_percent": 0.8603515625,
+    "mae": 0.09021368770683355,
+    "mean_probability": 0.06847108907295389
+   },
+   {
+    "below_one_percent": 0.86572265625,
+    "mae": 0.09067679634089958,
+    "mean_probability": 0.06866388097754253
+   },
+   {
+    "below_one_percent": 0.872314453125,
+    "mae": 0.09155526184342871,
+    "mean_probability": 0.06918538520931419
+   },
+   {
+    "below_one_percent": 0.8759765625,
+    "mae": 0.09105087290897783,
+    "mean_probability": 0.06848855637548706
+   },
+   {
+    "below_one_percent": 0.879150390625,
+    "mae": 0.0907116920396574,
+    "mean_probability": 0.06792534609904757
+   }
+  ],
+  "accumulate": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.042937360491071434,
+    "mean_probability": 0.07086437406994048
+   },
+   {
+    "below_one_percent": 0.00732421875,
+    "mae": 0.04623155748521959,
+    "mean_probability": 0.07081955368454393
+   },
+   {
+    "below_one_percent": 0.0166015625,
+    "mae": 0.04808948444870283,
+    "mean_probability": 0.07043212890625
+   },
+   {
+    "below_one_percent": 0.026611328125,
+    "mae": 0.049634850543478264,
+    "mean_probability": 0.07039200492527174
+   },
+   {
+    "below_one_percent": 0.057373046875,
+    "mae": 0.0507702205882353,
+    "mean_probability": 0.07052855009191178
+   },
+   {
+    "below_one_percent": 0.06396484375,
+    "mae": 0.05159095084313119,
+    "mean_probability": 0.0707003935256807
+   },
+   {
+    "below_one_percent": 0.073974609375,
+    "mae": 0.05195790347889957,
+    "mean_probability": 0.07051536625267094
+   },
+   {
+    "below_one_percent": 0.1044921875,
+    "mae": 0.05225890654370301,
+    "mean_probability": 0.0704918791118421
+   },
+   {
+    "below_one_percent": 0.107421875,
+    "mae": 0.05245631685192953,
+    "mean_probability": 0.07040461802642617
+   },
+   {
+    "below_one_percent": 0.111572265625,
+    "mae": 0.052645825935132576,
+    "mean_probability": 0.07040511807528409
+   },
+   {
+    "below_one_percent": 0.116455078125,
+    "mae": 0.05273228429299033,
+    "mean_probability": 0.07026154070269336
+   },
+   {
+    "below_one_percent": 0.136474609375,
+    "mae": 0.052830364401570434,
+    "mean_probability": 0.0701837313114689
+   },
+   {
+    "below_one_percent": 0.136962890625,
+    "mae": 0.053114838935959516,
+    "mean_probability": 0.07028968488666373
+   },
+   {
+    "below_one_percent": 0.140625,
+    "mae": 0.05331596807621452,
+    "mean_probability": 0.0703733699082287
+   },
+   {
+    "below_one_percent": 0.153564453125,
+    "mae": 0.05349089704241071,
+    "mean_probability": 0.07046455974968112
+   },
+   {
+    "below_one_percent": 0.15234375,
+    "mae": 0.053556895055076624,
+    "mean_probability": 0.07037701486170977
+   },
+   {
+    "below_one_percent": 0.154296875,
+    "mae": 0.05363576510322653,
+    "mean_probability": 0.07036689840929602
+   },
+   {
+    "below_one_percent": 0.154296875,
+    "mae": 0.05352030366760879,
+    "mean_probability": 0.07019363351242534
+   },
+   {
+    "below_one_percent": 0.16259765625,
+    "mae": 0.053538142824635926,
+    "mean_probability": 0.07016788815989078
+   },
+   {
+    "below_one_percent": 0.1630859375,
+    "mae": 0.05365395132211538,
+    "mean_probability": 0.07022402343749999
+   },
+   {
+    "below_one_percent": 0.16357421875,
+    "mae": 0.05370035210662573,
+    "mean_probability": 0.07017904242462426
+   },
+   {
+    "below_one_percent": 0.16357421875,
+    "mae": 0.05387343462775735,
+    "mean_probability": 0.07031786493894432
+   },
+   {
+    "below_one_percent": 0.168212890625,
+    "mae": 0.05394529613668733,
+    "mean_probability": 0.07038652435384551
+   },
+   {
+    "below_one_percent": 0.170166015625,
+    "mae": 0.053957102170027305,
+    "mean_probability": 0.07037469309828888
+   }
+  ],
+  "keep_initial": [
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   },
+   {
+    "below_one_percent": 0.0,
+    "mae": 0.03974340820312501,
+    "mean_probability": 0.06974340820312502
+   }
+  ]
+ }
+}

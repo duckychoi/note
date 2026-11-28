@@ -1,0 +1,2018 @@
+{
+ "n": 100,
+ "groups": {
+  "corridor": {
+   "frozen": 0.24066637605428695,
+   "frozen_shape": 0.016712901115533897,
+   "frozen_scale": 0.06596747224684804,
+   "augmentation": 0.2702686883509159,
+   "augmentation_shape": 0.017436530767008664,
+   "augmentation_scale": 0.07676767446100712,
+   "photometric": 0.26904875338077544,
+   "photometric_shape": 0.01757803196669556,
+   "photometric_scale": 0.07611078871414065,
+   "ground_truth": 0.27023571655154227,
+   "ground_truth_shape": 0.017737395464791916,
+   "ground_truth_scale": 0.07676327675580978
+  },
+  "factory": {
+   "frozen": 0.15179163590073586,
+   "frozen_shape": 0.009555422700941563,
+   "frozen_scale": 0.024478822480887175,
+   "augmentation": 0.21519794967025518,
+   "augmentation_shape": 0.009501114574959502,
+   "augmentation_scale": 0.04696826583676739,
+   "photometric": 0.21113256504759192,
+   "photometric_shape": 0.009388375357957557,
+   "photometric_scale": 0.04543945477780653,
+   "ground_truth": 0.20768450759351254,
+   "ground_truth_shape": 0.009358117502415553,
+   "ground_truth_scale": 0.043847144581377506
+  },
+  "kitchen": {
+   "frozen": 0.09639567276462913,
+   "frozen_shape": 0.009498463943600655,
+   "frozen_scale": 0.0045201972825452685,
+   "augmentation": 0.14233609987422824,
+   "augmentation_shape": 0.00917907762050163,
+   "augmentation_scale": 0.014719285656610737,
+   "photometric": 0.13873558025807142,
+   "photometric_shape": 0.009241944964742288,
+   "photometric_scale": 0.013734036809182726,
+   "ground_truth": 0.1367765972390771,
+   "ground_truth_shape": 0.009297307027736679,
+   "ground_truth_scale": 0.013265946337924106
+  },
+  "lab": {
+   "frozen": 0.1056569100103595,
+   "frozen_shape": 0.010952841067178682,
+   "frozen_scale": 0.007742962122640826,
+   "augmentation": 0.1151144951581955,
+   "augmentation_shape": 0.008739138635891404,
+   "augmentation_scale": 0.01087126657338641,
+   "photometric": 0.11458351226015524,
+   "photometric_shape": 0.008671404201198708,
+   "photometric_scale": 0.010881996734083672,
+   "ground_truth": 0.11365902864120224,
+   "ground_truth_shape": 0.00855240862901238,
+   "ground_truth_scale": 0.010709209794268563
+  },
+  "lectureroom": {
+   "frozen": 0.2847709707915783,
+   "frozen_shape": 0.011304037732770666,
+   "frozen_scale": 0.12039971867998248,
+   "augmentation": 0.3330902367830276,
+   "augmentation_shape": 0.012895233370363713,
+   "augmentation_scale": 0.14102995760767953,
+   "photometric": 0.334094675630331,
+   "photometric_shape": 0.013100788794690742,
+   "photometric_scale": 0.1420919025418698,
+   "ground_truth": 0.3338076688349247,
+   "ground_truth_shape": 0.013262276834575459,
+   "ground_truth_scale": 0.14250290110048808
+  },
+  "livingroom": {
+   "frozen": 0.10963099102179209,
+   "frozen_shape": 0.008970443772462507,
+   "frozen_scale": 0.012205149803776294,
+   "augmentation": 0.14632495070497195,
+   "augmentation_shape": 0.009210501514219989,
+   "augmentation_scale": 0.02340839851773732,
+   "photometric": 0.14425432110826175,
+   "photometric_shape": 0.009184890907878678,
+   "photometric_scale": 0.022969884764946377,
+   "ground_truth": 0.1434014064570268,
+   "ground_truth_shape": 0.009164847177453339,
+   "ground_truth_scale": 0.02275275542027278
+  },
+  "meetingroom": {
+   "frozen": 0.15005296003073454,
+   "frozen_shape": 0.008418694138526917,
+   "frozen_scale": 0.02138339212797291,
+   "augmentation": 0.21259316732175648,
+   "augmentation_shape": 0.011298787154373713,
+   "augmentation_scale": 0.03925326858916378,
+   "photometric": 0.2116988468915224,
+   "photometric_shape": 0.011388735510990955,
+   "photometric_scale": 0.03889499955766951,
+   "ground_truth": 0.20979927154257894,
+   "ground_truth_shape": 0.011357403098372743,
+   "ground_truth_scale": 0.038198280843062093
+  },
+  "office": {
+   "frozen": 0.13421750464476645,
+   "frozen_shape": 0.011045567225664854,
+   "frozen_scale": 0.020184192660963163,
+   "augmentation": 0.1380509901791811,
+   "augmentation_shape": 0.014875139517243952,
+   "augmentation_scale": 0.021084284531752928,
+   "photometric": 0.13698488986119628,
+   "photometric_shape": 0.015305481647374108,
+   "photometric_scale": 0.020604385163096595,
+   "ground_truth": 0.13679736480116844,
+   "ground_truth_shape": 0.015252769982907921,
+   "ground_truth_scale": 0.02039223428346304
+  },
+  "restaurant": {
+   "frozen": 0.316693505893151,
+   "frozen_shape": 0.014914411925322687,
+   "frozen_scale": 0.07683167443610728,
+   "augmentation": 0.3868885971605778,
+   "augmentation_shape": 0.01668672343172754,
+   "augmentation_scale": 0.10552314079056184,
+   "photometric": 0.3854585774242878,
+   "photometric_shape": 0.016685287526343018,
+   "photometric_scale": 0.10494975900898378,
+   "ground_truth": 0.38310852522651356,
+   "ground_truth_shape": 0.016739983160126332,
+   "ground_truth_scale": 0.104044109582901
+  },
+  "restroom": {
+   "frozen": 0.23512130230665207,
+   "frozen_shape": 0.01164789474569261,
+   "frozen_scale": 0.0536604622611776,
+   "augmentation": 0.28864027187228203,
+   "augmentation_shape": 0.02032350341323763,
+   "augmentation_scale": 0.07756574591621757,
+   "photometric": 0.29015349969267845,
+   "photometric_shape": 0.02062243886757642,
+   "photometric_scale": 0.07799235940910876,
+   "ground_truth": 0.28535936027765274,
+   "ground_truth_shape": 0.02008882339578122,
+   "ground_truth_scale": 0.0762083837762475
+  },
+  "storageroom": {
+   "frozen": 0.2471158429980278,
+   "frozen_shape": 0.008127874374622479,
+   "frozen_scale": 0.06889367744588526,
+   "augmentation": 0.27897310396656394,
+   "augmentation_shape": 0.0076428932952694595,
+   "augmentation_scale": 0.09188716892458615,
+   "photometric": 0.27711543068289757,
+   "photometric_shape": 0.0077253310300875455,
+   "photometric_scale": 0.0908115017646196,
+   "ground_truth": 0.27654916048049927,
+   "ground_truth_shape": 0.007731911100563593,
+   "ground_truth_scale": 0.09055691346111416
+  }
+ },
+ "means": {
+  "frozen": 0.18837397021970126,
+  "frozen_shape": 0.011013504794756138,
+  "frozen_scale": 0.04329706559534421,
+  "augmentation": 0.2297707773674505,
+  "augmentation_shape": 0.012526240299527015,
+  "augmentation_scale": 0.05900713249140643,
+  "photometric": 0.2284782411125245,
+  "photometric_shape": 0.012626610070503235,
+  "photometric_scale": 0.058589188113228004,
+  "ground_truth": 0.22701623705869992,
+  "ground_truth_shape": 0.012594840306703376,
+  "ground_truth_scale": 0.05811283235790261
+ },
+ "comparison": {
+  "photometric": {
+   "absrel": {
+    "relative": 0.5625329163851722,
+    "interval": [
+     0.13490628058953014,
+     1.1044798881599227
+    ],
+    "better": 9
+   },
+   "_shape": {
+    "relative": -0.8012761097997645,
+    "interval": [
+     -1.4512768450324558,
+     -0.13491535101274574
+    ],
+    "better": 4
+   }
+  },
+  "ground_truth": {
+   "absrel": {
+    "relative": 1.1988209903409541,
+    "interval": [
+     0.6066788571216833,
+     2.003877807383436
+    ],
+    "better": 10
+   },
+   "_shape": {
+    "relative": -0.5476504165336182,
+    "interval": [
+     -1.4549664520022387,
+     0.3865758641103356
+    ],
+    "better": 4
+   }
+  }
+ },
+ "rows": [
+  {
+   "key": "corridor_01",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.14737685024738312,
+    "frozen_shape": 0.0032319517340511084,
+    "frozen_scale": 0.017876222729682922,
+    "augmentation": 0.21663078665733337,
+    "augmentation_shape": 0.003724484471604228,
+    "augmentation_scale": 0.037192750722169876,
+    "photometric": 0.21474818885326385,
+    "photometric_shape": 0.003524470841512084,
+    "photometric_scale": 0.036620210856199265,
+    "ground_truth": 0.21245864033699036,
+    "ground_truth_shape": 0.0037546849343925714,
+    "ground_truth_scale": 0.03585554659366608
+   }
+  },
+  {
+   "key": "corridor_02",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.2364991009235382,
+    "frozen_shape": 0.0017957319505512714,
+    "frozen_scale": 0.07318895310163498,
+    "augmentation": 0.24734583497047424,
+    "augmentation_shape": 0.0016971271252259612,
+    "augmentation_scale": 0.0811295211315155,
+    "photometric": 0.24561959505081177,
+    "photometric_shape": 0.0018014548113569617,
+    "photometric_scale": 0.07985859364271164,
+    "ground_truth": 0.2486059069633484,
+    "ground_truth_shape": 0.001838883850723505,
+    "ground_truth_scale": 0.08212867379188538
+   }
+  },
+  {
+   "key": "corridor_03",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.1553390771150589,
+    "frozen_shape": 0.005732811987400055,
+    "frozen_scale": 0.019641662016510963,
+    "augmentation": 0.2648847997188568,
+    "augmentation_shape": 0.005549263674765825,
+    "augmentation_scale": 0.05348121002316475,
+    "photometric": 0.2608345150947571,
+    "photometric_shape": 0.005253423936665058,
+    "photometric_scale": 0.05206872150301933,
+    "ground_truth": 0.2652207911014557,
+    "ground_truth_shape": 0.005413156468421221,
+    "ground_truth_scale": 0.0536348894238472
+   }
+  },
+  {
+   "key": "corridor_04",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.24641284346580505,
+    "frozen_shape": 0.044026877731084824,
+    "frozen_scale": 0.0841006189584732,
+    "augmentation": 0.22551779448986053,
+    "augmentation_shape": 0.048070456832647324,
+    "augmentation_scale": 0.06716309487819672,
+    "photometric": 0.22432097792625427,
+    "photometric_shape": 0.04892494156956673,
+    "photometric_scale": 0.06640463322401047,
+    "ground_truth": 0.22897367179393768,
+    "ground_truth_shape": 0.04986702278256416,
+    "ground_truth_scale": 0.07015153020620346
+   }
+  },
+  {
+   "key": "corridor_05",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.2547565698623657,
+    "frozen_shape": 0.04849516600370407,
+    "frozen_scale": 0.05653169006109238,
+    "augmentation": 0.2223355919122696,
+    "augmentation_shape": 0.0455184131860733,
+    "augmentation_scale": 0.034354157745838165,
+    "photometric": 0.22448603808879852,
+    "photometric_shape": 0.044619061052799225,
+    "photometric_scale": 0.03675761818885803,
+    "ground_truth": 0.22349317371845245,
+    "ground_truth_shape": 0.044371385127305984,
+    "ground_truth_scale": 0.036498062312603
+   }
+  },
+  {
+   "key": "corridor_06",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.752183735370636,
+    "frozen_shape": 0.0003826567262876779,
+    "frozen_scale": 0.31435495615005493,
+    "augmentation": 0.9265276193618774,
+    "augmentation_shape": 0.0003114311839453876,
+    "augmentation_scale": 0.4297652542591095,
+    "photometric": 0.9189668297767639,
+    "photometric_shape": 0.0003058544534724206,
+    "photometric_scale": 0.4246285557746887,
+    "ground_truth": 0.9168044924736023,
+    "ground_truth_shape": 0.0002998285344801843,
+    "ground_truth_scale": 0.4231642782688141
+   }
+  },
+  {
+   "key": "corridor_07",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.21117831766605377,
+    "frozen_shape": 0.025576965883374214,
+    "frozen_scale": 0.059761885553598404,
+    "augmentation": 0.09996864199638367,
+    "augmentation_shape": 0.03137029707431793,
+    "augmentation_scale": 0.01234318409115076,
+    "photometric": 0.10184717178344727,
+    "photometric_shape": 0.03213135153055191,
+    "photometric_scale": 0.013084983453154564,
+    "ground_truth": 0.1046183705329895,
+    "ground_truth_shape": 0.0324346125125885,
+    "ground_truth_scale": 0.01401512511074543
+   }
+  },
+  {
+   "key": "corridor_08",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.13797816634178162,
+    "frozen_shape": 0.0024671002756804228,
+    "frozen_scale": 0.021598903462290764,
+    "augmentation": 0.10477269440889359,
+    "augmentation_shape": 0.001949750236235559,
+    "augmentation_scale": 0.011826216243207455,
+    "photometric": 0.106417715549469,
+    "photometric_shape": 0.0019722403958439827,
+    "photometric_scale": 0.012229730375111103,
+    "ground_truth": 0.10813998430967331,
+    "ground_truth_shape": 0.002052693860605359,
+    "ground_truth_scale": 0.012663250789046288
+   }
+  },
+  {
+   "key": "corridor_09",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.1168527603149414,
+    "frozen_shape": 0.0008707174565643072,
+    "frozen_scale": 0.01210317388176918,
+    "augmentation": 0.15432170033454895,
+    "augmentation_shape": 0.00042811670573428273,
+    "augmentation_scale": 0.020527271553874016,
+    "photometric": 0.14956694841384888,
+    "photometric_shape": 0.00045271331327967346,
+    "photometric_scale": 0.0193537138402462,
+    "ground_truth": 0.15071511268615723,
+    "ground_truth_shape": 0.00043821954750455916,
+    "ground_truth_scale": 0.019636007025837898
+   }
+  },
+  {
+   "key": "corridor_10",
+   "group": "corridor",
+   "scores": {
+    "frozen": 0.1480863392353058,
+    "frozen_shape": 0.034549031406641006,
+    "frozen_scale": 0.0005166565533727407,
+    "augmentation": 0.2403814196586609,
+    "augmentation_shape": 0.03574596717953682,
+    "augmentation_scale": 0.019894083961844444,
+    "photometric": 0.24367955327033997,
+    "photometric_shape": 0.03679480776190758,
+    "photometric_scale": 0.02010112628340721,
+    "ground_truth": 0.24332702159881592,
+    "ground_truth_shape": 0.036903467029333115,
+    "ground_truth_scale": 0.019885404035449028
+   }
+  },
+  {
+   "key": "factory_01",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.22769244015216827,
+    "frozen_shape": 0.018175281584262848,
+    "frozen_scale": 0.038055770099163055,
+    "augmentation": 0.377084344625473,
+    "augmentation_shape": 0.013425527140498161,
+    "augmentation_scale": 0.09803716093301773,
+    "photometric": 0.3628789484500885,
+    "photometric_shape": 0.012543728575110435,
+    "photometric_scale": 0.09192401170730591,
+    "ground_truth": 0.3522939085960388,
+    "ground_truth_shape": 0.012810316868126392,
+    "ground_truth_scale": 0.08717729896306992
+   }
+  },
+  {
+   "key": "factory_02",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.07422574609518051,
+    "frozen_shape": 0.00697037298232317,
+    "frozen_scale": 0.0022601739037781954,
+    "augmentation": 0.0701209232211113,
+    "augmentation_shape": 0.005626758094877005,
+    "augmentation_scale": 0.003062089206650853,
+    "photometric": 0.06793582439422607,
+    "photometric_shape": 0.005431808531284332,
+    "photometric_scale": 0.0025356546975672245,
+    "ground_truth": 0.06680471450090408,
+    "ground_truth_shape": 0.005343460477888584,
+    "ground_truth_scale": 0.0023275101557374
+   }
+  },
+  {
+   "key": "factory_03",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.10312531143426895,
+    "frozen_shape": 0.008958900347352028,
+    "frozen_scale": 0.007698696572333574,
+    "augmentation": 0.154160737991333,
+    "augmentation_shape": 0.010117012076079845,
+    "augmentation_scale": 0.018736304715275764,
+    "photometric": 0.15026190876960754,
+    "photometric_shape": 0.01020374707877636,
+    "photometric_scale": 0.017475927248597145,
+    "ground_truth": 0.15129128098487854,
+    "ground_truth_shape": 0.009967679157853127,
+    "ground_truth_scale": 0.017815561965107918
+   }
+  },
+  {
+   "key": "factory_04",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.12107982486486435,
+    "frozen_shape": 0.023585129529237747,
+    "frozen_scale": 0.0033076885156333447,
+    "augmentation": 0.18098869919776917,
+    "augmentation_shape": 0.024472195655107498,
+    "augmentation_scale": 0.01616409793496132,
+    "photometric": 0.17709726095199585,
+    "photometric_shape": 0.024637345224618912,
+    "photometric_scale": 0.014904575422406197,
+    "ground_truth": 0.1753932237625122,
+    "ground_truth_shape": 0.024268992245197296,
+    "ground_truth_scale": 0.014581459574401379
+   }
+  },
+  {
+   "key": "factory_05",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.06444422155618668,
+    "frozen_shape": 0.002325889188796282,
+    "frozen_scale": 0.003597986651584506,
+    "augmentation": 0.035379618406295776,
+    "augmentation_shape": 0.0023657081183046103,
+    "augmentation_scale": 0.0005369374412111938,
+    "photometric": 0.035747747868299484,
+    "photometric_shape": 0.0022393756080418825,
+    "photometric_scale": 0.0006701852544210851,
+    "ground_truth": 0.03574392944574356,
+    "ground_truth_shape": 0.002262541325762868,
+    "ground_truth_scale": 0.0006555616855621338
+   }
+  },
+  {
+   "key": "factory_06",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.4340629279613495,
+    "frozen_shape": 0.006191043648868799,
+    "frozen_scale": 0.1275952160358429,
+    "augmentation": 0.543422520160675,
+    "augmentation_shape": 0.00503548514097929,
+    "augmentation_scale": 0.18623313307762146,
+    "photometric": 0.5395931601524353,
+    "photometric_shape": 0.005057801958173513,
+    "photometric_scale": 0.1840876340866089,
+    "ground_truth": 0.5265605449676514,
+    "ground_truth_shape": 0.005058605223894119,
+    "ground_truth_scale": 0.1768634021282196
+   }
+  },
+  {
+   "key": "factory_07",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.09556204080581665,
+    "frozen_shape": 0.004218725487589836,
+    "frozen_scale": 0.00730292871594429,
+    "augmentation": 0.13651910424232483,
+    "augmentation_shape": 0.006729213986545801,
+    "augmentation_scale": 0.01490192860364914,
+    "photometric": 0.13227511942386627,
+    "photometric_shape": 0.006720337551087141,
+    "photometric_scale": 0.013928808271884918,
+    "ground_truth": 0.13123276829719543,
+    "ground_truth_shape": 0.006948608905076981,
+    "ground_truth_scale": 0.013669000938534737
+   }
+  },
+  {
+   "key": "factory_08",
+   "group": "factory",
+   "scores": {
+    "frozen": 0.09414057433605194,
+    "frozen_shape": 0.006018038839101791,
+    "frozen_scale": 0.006012119352817535,
+    "augmentation": 0.22390764951705933,
+    "augmentation_shape": 0.008237016387283802,
+    "augmentation_scale": 0.03807447478175163,
+    "photometric": 0.22327055037021637,
+    "photometric_shape": 0.008272858336567879,
+    "photometric_scale": 0.03798884153366089,
+    "ground_truth": 0.22215569019317627,
+    "ground_truth_shape": 0.008204735815525055,
+    "ground_truth_scale": 0.03768736124038696
+   }
+  },
+  {
+   "key": "kitchen_01",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.04266124218702316,
+    "frozen_shape": 0.0032089317683130503,
+    "frozen_scale": 0.00012428457557689399,
+    "augmentation": 0.07870330661535263,
+    "augmentation_shape": 0.002825321163982153,
+    "augmentation_scale": 0.004381666891276836,
+    "photometric": 0.0762307420372963,
+    "photometric_shape": 0.002796514192596078,
+    "photometric_scale": 0.004053453449159861,
+    "ground_truth": 0.07449538260698318,
+    "ground_truth_shape": 0.0027437799144536257,
+    "ground_truth_scale": 0.0038538656663149595
+   }
+  },
+  {
+   "key": "kitchen_02",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.058295588940382004,
+    "frozen_shape": 0.004908350296318531,
+    "frozen_scale": 9.602373756933957e-05,
+    "augmentation": 0.14525239169597626,
+    "augmentation_shape": 0.0029092729091644287,
+    "augmentation_scale": 0.017996542155742645,
+    "photometric": 0.1397676169872284,
+    "photometric_shape": 0.0027699247002601624,
+    "photometric_scale": 0.016749141737818718,
+    "ground_truth": 0.1347128450870514,
+    "ground_truth_shape": 0.0027401645202189684,
+    "ground_truth_scale": 0.01562156155705452
+   }
+  },
+  {
+   "key": "kitchen_03",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.12794409692287445,
+    "frozen_shape": 0.005088260397315025,
+    "frozen_scale": 0.013840285129845142,
+    "augmentation": 0.19029954075813293,
+    "augmentation_shape": 0.0013194774510338902,
+    "augmentation_scale": 0.030109116807579994,
+    "photometric": 0.184037446975708,
+    "photometric_shape": 0.0012443443993106484,
+    "photometric_scale": 0.028318842872977257,
+    "ground_truth": 0.1829209178686142,
+    "ground_truth_shape": 0.0013323480961844325,
+    "ground_truth_scale": 0.02798721194267273
+   }
+  },
+  {
+   "key": "kitchen_04",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.08816315978765488,
+    "frozen_shape": 0.008583723567426205,
+    "frozen_scale": 0.0034120152704417706,
+    "augmentation": 0.11669036000967026,
+    "augmentation_shape": 0.009580223821103573,
+    "augmentation_scale": 0.01086133811622858,
+    "photometric": 0.11281942576169968,
+    "photometric_shape": 0.009639857336878777,
+    "photometric_scale": 0.010138306766748428,
+    "ground_truth": 0.11008425056934357,
+    "ground_truth_shape": 0.009876113384962082,
+    "ground_truth_scale": 0.009555744007229805
+   }
+  },
+  {
+   "key": "kitchen_05",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.07046054303646088,
+    "frozen_shape": 0.002238297602161765,
+    "frozen_scale": 0.004167619626969099,
+    "augmentation": 0.163807675242424,
+    "augmentation_shape": 0.0016417594160884619,
+    "augmentation_scale": 0.022755177691578865,
+    "photometric": 0.153939351439476,
+    "photometric_shape": 0.0016048274701461196,
+    "photometric_scale": 0.02026134729385376,
+    "ground_truth": 0.1505270153284073,
+    "ground_truth_shape": 0.0015641202917322516,
+    "ground_truth_scale": 0.019431795924901962
+   }
+  },
+  {
+   "key": "kitchen_06",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.10930627584457397,
+    "frozen_shape": 0.008921589702367783,
+    "frozen_scale": 0.006793062202632427,
+    "augmentation": 0.14849568903446198,
+    "augmentation_shape": 0.006285765208303928,
+    "augmentation_scale": 0.01768721640110016,
+    "photometric": 0.14600960910320282,
+    "photometric_shape": 0.006295546889305115,
+    "photometric_scale": 0.017083005979657173,
+    "ground_truth": 0.1426306813955307,
+    "ground_truth_shape": 0.006026553455740213,
+    "ground_truth_scale": 0.016383979469537735
+   }
+  },
+  {
+   "key": "kitchen_07",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.187758207321167,
+    "frozen_shape": 0.03367945924401283,
+    "frozen_scale": 0.004919135011732578,
+    "augmentation": 0.24323774874210358,
+    "augmentation_shape": 0.04427584633231163,
+    "augmentation_scale": 0.01382416021078825,
+    "photometric": 0.242823526263237,
+    "photometric_shape": 0.044753219932317734,
+    "photometric_scale": 0.013002126477658749,
+    "ground_truth": 0.24406568706035614,
+    "ground_truth_shape": 0.045222021639347076,
+    "ground_truth_scale": 0.012984976172447205
+   }
+  },
+  {
+   "key": "kitchen_08",
+   "group": "kitchen",
+   "scores": {
+    "frozen": 0.08657626807689667,
+    "frozen_shape": 0.009359098970890045,
+    "frozen_scale": 0.0028091527055948973,
+    "augmentation": 0.05220208689570427,
+    "augmentation_shape": 0.004594954662024975,
+    "augmentation_scale": 0.00013906697859056294,
+    "photometric": 0.054256923496723175,
+    "photometric_shape": 0.004831324797123671,
+    "photometric_scale": 0.00026606989558786154,
+    "ground_truth": 0.05477599799633026,
+    "ground_truth_shape": 0.00487335491925478,
+    "ground_truth_scale": 0.00030843596323393285
+   }
+  },
+  {
+   "key": "lab_01",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.07100199162960052,
+    "frozen_shape": 0.004443957936018705,
+    "frozen_scale": 0.0028613037429749966,
+    "augmentation": 0.09322957694530487,
+    "augmentation_shape": 0.004612097982317209,
+    "augmentation_scale": 0.006071759387850761,
+    "photometric": 0.09326697140932083,
+    "photometric_shape": 0.004518547561019659,
+    "photometric_scale": 0.006116313859820366,
+    "ground_truth": 0.09355008602142334,
+    "ground_truth_shape": 0.004415248520672321,
+    "ground_truth_scale": 0.006257996428757906
+   }
+  },
+  {
+   "key": "lab_02",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.11051728576421738,
+    "frozen_shape": 0.009862249717116356,
+    "frozen_scale": 0.008330023847520351,
+    "augmentation": 0.1605871617794037,
+    "augmentation_shape": 0.007273026742041111,
+    "augmentation_scale": 0.02014733850955963,
+    "photometric": 0.15827319025993347,
+    "photometric_shape": 0.006997120566666126,
+    "photometric_scale": 0.01959129422903061,
+    "ground_truth": 0.15422101318836212,
+    "ground_truth_shape": 0.00693364767357707,
+    "ground_truth_scale": 0.018590711057186127
+   }
+  },
+  {
+   "key": "lab_03",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.12824614346027374,
+    "frozen_shape": 0.002812657505273819,
+    "frozen_scale": 0.013981918804347515,
+    "augmentation": 0.18295270204544067,
+    "augmentation_shape": 0.0033091383520513773,
+    "augmentation_scale": 0.027640778571367264,
+    "photometric": 0.1831897795200348,
+    "photometric_shape": 0.0031459187157452106,
+    "photometric_scale": 0.027735844254493713,
+    "ground_truth": 0.1814350187778473,
+    "ground_truth_shape": 0.0030626654624938965,
+    "ground_truth_scale": 0.027256807312369347
+   }
+  },
+  {
+   "key": "lab_04",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.11401665210723877,
+    "frozen_shape": 0.009834246709942818,
+    "frozen_scale": 0.00642743892967701,
+    "augmentation": 0.13802731037139893,
+    "augmentation_shape": 0.011680714786052704,
+    "augmentation_scale": 0.01270436029881239,
+    "photometric": 0.1384393721818924,
+    "photometric_shape": 0.011702249757945538,
+    "photometric_scale": 0.013206864707171917,
+    "ground_truth": 0.13567288219928741,
+    "ground_truth_shape": 0.011252173222601414,
+    "ground_truth_scale": 0.012762932106852531
+   }
+  },
+  {
+   "key": "lab_05",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.06913609802722931,
+    "frozen_shape": 0.007242913823574781,
+    "frozen_scale": 0.004265219904482365,
+    "augmentation": 0.034796684980392456,
+    "augmentation_shape": 0.002467227168381214,
+    "augmentation_scale": 6.987337656028103e-06,
+    "photometric": 0.032788317650556564,
+    "photometric_shape": 0.002336251549422741,
+    "photometric_scale": 6.677232886431739e-05,
+    "ground_truth": 0.03370798006653786,
+    "ground_truth_shape": 0.002377620665356517,
+    "ground_truth_scale": 6.691579619655386e-05
+   }
+  },
+  {
+   "key": "lab_06",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.14852777123451233,
+    "frozen_shape": 0.019430629909038544,
+    "frozen_scale": 0.0039780936203897,
+    "augmentation": 0.15475217998027802,
+    "augmentation_shape": 0.01365238893777132,
+    "augmentation_scale": 0.011313647031784058,
+    "photometric": 0.15259519219398499,
+    "photometric_shape": 0.013253609649837017,
+    "photometric_scale": 0.011038240045309067,
+    "ground_truth": 0.15294432640075684,
+    "ground_truth_shape": 0.013100871816277504,
+    "ground_truth_scale": 0.011405142955482006
+   }
+  },
+  {
+   "key": "lab_07",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.04336704686284065,
+    "frozen_shape": 0.006307912990450859,
+    "frozen_scale": 0.0004438655450940132,
+    "augmentation": 0.0824064090847969,
+    "augmentation_shape": 0.01085848081856966,
+    "augmentation_scale": 0.00368730491027236,
+    "photometric": 0.0804964229464531,
+    "photometric_shape": 0.010958557948470116,
+    "photometric_scale": 0.0033627445809543133,
+    "ground_truth": 0.07943098247051239,
+    "ground_truth_shape": 0.010998981073498726,
+    "ground_truth_scale": 0.003108464414253831
+   }
+  },
+  {
+   "key": "lab_08",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.13197629153728485,
+    "frozen_shape": 0.029655488207936287,
+    "frozen_scale": 0.003968949429690838,
+    "augmentation": 0.1354992836713791,
+    "augmentation_shape": 0.018000109121203423,
+    "augmentation_scale": 0.011759078130126,
+    "photometric": 0.13786405324935913,
+    "photometric_shape": 0.017930269241333008,
+    "photometric_scale": 0.012340626679360867,
+    "ground_truth": 0.1316264569759369,
+    "ground_truth_shape": 0.017585432156920433,
+    "ground_truth_scale": 0.011094721965491772
+   }
+  },
+  {
+   "key": "lab_09",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.09891249984502792,
+    "frozen_shape": 0.008752744644880295,
+    "frozen_scale": 0.009395841509103775,
+    "augmentation": 0.06492943316698074,
+    "augmentation_shape": 0.005061332602053881,
+    "augmentation_scale": 0.0032767488155514,
+    "photometric": 0.06470730155706406,
+    "photometric_shape": 0.0051124803721904755,
+    "photometric_scale": 0.0032481064554303885,
+    "ground_truth": 0.06726048141717911,
+    "ground_truth_shape": 0.004977689124643803,
+    "ground_truth_scale": 0.0036176315043121576
+   }
+  },
+  {
+   "key": "lab_10",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.16371314227581024,
+    "frozen_shape": 0.009066593833267689,
+    "frozen_scale": 0.02978646010160446,
+    "augmentation": 0.14580529928207397,
+    "augmentation_shape": 0.008187206462025642,
+    "augmentation_scale": 0.022479133680462837,
+    "photometric": 0.14599768817424774,
+    "photometric_shape": 0.008390706032514572,
+    "photometric_scale": 0.022537214681506157,
+    "ground_truth": 0.14792366325855255,
+    "ground_truth_shape": 0.008290777914226055,
+    "ground_truth_scale": 0.023239383473992348
+   }
+  },
+  {
+   "key": "lab_11",
+   "group": "lab",
+   "scores": {
+    "frozen": 0.08281108736991882,
+    "frozen_shape": 0.013071856461465359,
+    "frozen_scale": 0.0017334679141640663,
+    "augmentation": 0.07327340543270111,
+    "augmentation_shape": 0.011028802022337914,
+    "augmentation_scale": 0.0004967956338077784,
+    "photometric": 0.07280034571886063,
+    "photometric_shape": 0.011039734818041325,
+    "photometric_scale": 0.0004579422529786825,
+    "ground_truth": 0.07247642427682877,
+    "ground_truth_shape": 0.011081387288868427,
+    "ground_truth_scale": 0.0004006007220596075
+   }
+  },
+  {
+   "key": "lectureroom_01",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.0451628714799881,
+    "frozen_shape": 0.00563886109739542,
+    "frozen_scale": 4.901801730738953e-05,
+    "augmentation": 0.09608279168605804,
+    "augmentation_shape": 0.00529052410274744,
+    "augmentation_scale": 0.006370390299707651,
+    "photometric": 0.09539366513490677,
+    "photometric_shape": 0.005187212489545345,
+    "photometric_scale": 0.006331510841846466,
+    "ground_truth": 0.09389553219079971,
+    "ground_truth_shape": 0.0051369876600801945,
+    "ground_truth_scale": 0.006120180245488882
+   }
+  },
+  {
+   "key": "lectureroom_02",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.07244395464658737,
+    "frozen_shape": 0.0035990853793919086,
+    "frozen_scale": 0.0023104974534362555,
+    "augmentation": 0.08160364627838135,
+    "augmentation_shape": 0.0015561163891106844,
+    "augmentation_scale": 0.005900138057768345,
+    "photometric": 0.08308608084917068,
+    "photometric_shape": 0.0014687648508697748,
+    "photometric_scale": 0.006158263422548771,
+    "ground_truth": 0.08121594041585922,
+    "ground_truth_shape": 0.0013711393112316728,
+    "ground_truth_scale": 0.005894721020013094
+   }
+  },
+  {
+   "key": "lectureroom_03",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 1.3708161115646362,
+    "frozen_shape": 0.0008999904966913164,
+    "frozen_scale": 0.7443997859954834,
+    "augmentation": 1.7328577041625977,
+    "augmentation_shape": 0.000787658616900444,
+    "augmentation_scale": 1.0099353790283203,
+    "photometric": 1.7404229640960693,
+    "photometric_shape": 0.0007402042974717915,
+    "photometric_scale": 1.0155471563339233,
+    "ground_truth": 1.7367018461227417,
+    "ground_truth_shape": 0.0007776572019793093,
+    "ground_truth_scale": 1.012773036956787
+   }
+  },
+  {
+   "key": "lectureroom_04",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.09518253803253174,
+    "frozen_shape": 0.00741918757557869,
+    "frozen_scale": 0.005559919402003288,
+    "augmentation": 0.13870009779930115,
+    "augmentation_shape": 0.006378995720297098,
+    "augmentation_scale": 0.015273114666342735,
+    "photometric": 0.13439656794071198,
+    "photometric_shape": 0.006397084333002567,
+    "photometric_scale": 0.014350967481732368,
+    "ground_truth": 0.13113616406917572,
+    "ground_truth_shape": 0.00642599118873477,
+    "ground_truth_scale": 0.013653846457600594
+   }
+  },
+  {
+   "key": "lectureroom_05",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.1760110855102539,
+    "frozen_shape": 0.003759899642318487,
+    "frozen_scale": 0.025281410664319992,
+    "augmentation": 0.22595591843128204,
+    "augmentation_shape": 0.00384340132586658,
+    "augmentation_scale": 0.040338821709156036,
+    "photometric": 0.22796908020973206,
+    "photometric_shape": 0.003936118446290493,
+    "photometric_scale": 0.04098108783364296,
+    "ground_truth": 0.22635617852210999,
+    "ground_truth_shape": 0.003969782497733831,
+    "ground_truth_scale": 0.04042932763695717
+   }
+  },
+  {
+   "key": "lectureroom_06",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.08166821300983429,
+    "frozen_shape": 0.0064200046472251415,
+    "frozen_scale": 0.0047974721528589725,
+    "augmentation": 0.06807564198970795,
+    "augmentation_shape": 0.007770013529807329,
+    "augmentation_scale": 2.535172097850591e-05,
+    "photometric": 0.07223416119813919,
+    "photometric_shape": 0.008216530084609985,
+    "photometric_scale": 2.0746243535540998e-05,
+    "ground_truth": 0.07178682833909988,
+    "ground_truth_shape": 0.008129855617880821,
+    "ground_truth_scale": 1.696383515081834e-05
+   }
+  },
+  {
+   "key": "lectureroom_07",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.30324602127075195,
+    "frozen_shape": 0.018439704552292824,
+    "frozen_scale": 0.13711802661418915,
+    "augmentation": 0.18763546645641327,
+    "augmentation_shape": 0.024561027064919472,
+    "augmentation_scale": 0.04806302487850189,
+    "photometric": 0.1853681206703186,
+    "photometric_shape": 0.025909990072250366,
+    "photometric_scale": 0.0471210740506649,
+    "ground_truth": 0.1889176219701767,
+    "ground_truth_shape": 0.026431860402226448,
+    "ground_truth_scale": 0.04914214089512825
+   }
+  },
+  {
+   "key": "lectureroom_08",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.39709559082984924,
+    "frozen_shape": 0.025580719113349915,
+    "frozen_scale": 0.26776885986328125,
+    "augmentation": 0.3833593726158142,
+    "augmentation_shape": 0.015118688344955444,
+    "augmentation_scale": 0.2402593046426773,
+    "photometric": 0.3878525197505951,
+    "photometric_shape": 0.015237328596413136,
+    "photometric_scale": 0.24759842455387115,
+    "ground_truth": 0.39226844906806946,
+    "ground_truth_shape": 0.015422948636114597,
+    "ground_truth_scale": 0.2549678683280945
+   }
+  },
+  {
+   "key": "lectureroom_09",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.16369186341762543,
+    "frozen_shape": 0.03142980486154556,
+    "frozen_scale": 0.0026361909694969654,
+    "augmentation": 0.1811404824256897,
+    "augmentation_shape": 0.048044390976428986,
+    "augmentation_scale": 0.004077375400811434,
+    "photometric": 0.18092843890190125,
+    "photometric_shape": 0.04784576594829559,
+    "photometric_scale": 0.0035906797274947166,
+    "ground_truth": 0.1841442734003067,
+    "ground_truth_shape": 0.048957813531160355,
+    "ground_truth_scale": 0.003363976953551173
+   }
+  },
+  {
+   "key": "lectureroom_10",
+   "group": "lectureroom",
+   "scores": {
+    "frozen": 0.14239145815372467,
+    "frozen_shape": 0.0098531199619174,
+    "frozen_scale": 0.014076005667448044,
+    "augmentation": 0.23549124598503113,
+    "augmentation_shape": 0.015601517632603645,
+    "augmentation_scale": 0.04005667567253113,
+    "photometric": 0.23329515755176544,
+    "photometric_shape": 0.01606888882815838,
+    "photometric_scale": 0.03921911492943764,
+    "ground_truth": 0.2316538542509079,
+    "ground_truth_shape": 0.015998732298612595,
+    "ground_truth_scale": 0.038666948676109314
+   }
+  },
+  {
+   "key": "livingroom_01",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.14023399353027344,
+    "frozen_shape": 0.002065676264464855,
+    "frozen_scale": 0.016652530059218407,
+    "augmentation": 0.1957966536283493,
+    "augmentation_shape": 0.002155321417376399,
+    "augmentation_scale": 0.03147479519248009,
+    "photometric": 0.19533298909664154,
+    "photometric_shape": 0.0021942765451967716,
+    "photometric_scale": 0.03133486211299896,
+    "ground_truth": 0.1955854296684265,
+    "ground_truth_shape": 0.0022178851068019867,
+    "ground_truth_scale": 0.03141479194164276
+   }
+  },
+  {
+   "key": "livingroom_02",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.05699940025806427,
+    "frozen_shape": 0.00743554113432765,
+    "frozen_scale": 0.0007811011746525764,
+    "augmentation": 0.05735582113265991,
+    "augmentation_shape": 0.005183356814086437,
+    "augmentation_scale": 0.00011937517410842702,
+    "photometric": 0.05794769525527954,
+    "photometric_shape": 0.005077874753624201,
+    "photometric_scale": 0.00016811967361718416,
+    "ground_truth": 0.054569974541664124,
+    "ground_truth_shape": 0.004957654979079962,
+    "ground_truth_scale": 5.953403524472378e-05
+   }
+  },
+  {
+   "key": "livingroom_03",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.11336121708154678,
+    "frozen_shape": 0.0015094848349690437,
+    "frozen_scale": 0.011289989575743675,
+    "augmentation": 0.14244849979877472,
+    "augmentation_shape": 0.0009669317514635623,
+    "augmentation_scale": 0.017564332112669945,
+    "photometric": 0.13931602239608765,
+    "photometric_shape": 0.0009761478286236525,
+    "photometric_scale": 0.0168435201048851,
+    "ground_truth": 0.13753357529640198,
+    "ground_truth_shape": 0.0009721937822178006,
+    "ground_truth_scale": 0.01643560454249382
+   }
+  },
+  {
+   "key": "livingroom_04",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.0703730657696724,
+    "frozen_shape": 0.010826877318322659,
+    "frozen_scale": 0.0016917804023250937,
+    "augmentation": 0.05176995322108269,
+    "augmentation_shape": 0.007729570847004652,
+    "augmentation_scale": 0.00023559188412036747,
+    "photometric": 0.051986947655677795,
+    "photometric_shape": 0.007467020768672228,
+    "photometric_scale": 0.00038927700370550156,
+    "ground_truth": 0.05241519957780838,
+    "ground_truth_shape": 0.007494054734706879,
+    "ground_truth_scale": 0.00040730132604949176
+   }
+  },
+  {
+   "key": "livingroom_05",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.04320906475186348,
+    "frozen_shape": 0.006229720078408718,
+    "frozen_scale": 0.000734307337552309,
+    "augmentation": 0.05276131257414818,
+    "augmentation_shape": 0.005755740217864513,
+    "augmentation_scale": 0.00208845897577703,
+    "photometric": 0.04971877112984657,
+    "photometric_shape": 0.005655359476804733,
+    "photometric_scale": 0.0018299184739589691,
+    "ground_truth": 0.05073198676109314,
+    "ground_truth_shape": 0.005637839902192354,
+    "ground_truth_scale": 0.0019439070019870996
+   }
+  },
+  {
+   "key": "livingroom_06",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.10285241901874542,
+    "frozen_shape": 0.008667746558785439,
+    "frozen_scale": 0.004473425913602114,
+    "augmentation": 0.13240620493888855,
+    "augmentation_shape": 0.0038680594880133867,
+    "augmentation_scale": 0.013958059251308441,
+    "photometric": 0.12625592947006226,
+    "photometric_shape": 0.003629120998084545,
+    "photometric_scale": 0.012709621340036392,
+    "ground_truth": 0.12757685780525208,
+    "ground_truth_shape": 0.0035939819645136595,
+    "ground_truth_scale": 0.013026710599660873
+   }
+  },
+  {
+   "key": "livingroom_07",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.1030397042632103,
+    "frozen_shape": 0.0012772518675774336,
+    "frozen_scale": 0.00929476972669363,
+    "augmentation": 0.13595014810562134,
+    "augmentation_shape": 0.0012360458495095372,
+    "augmentation_scale": 0.015948601067066193,
+    "photometric": 0.1312803030014038,
+    "photometric_shape": 0.0012629060074687004,
+    "photometric_scale": 0.01489858515560627,
+    "ground_truth": 0.1322650909423828,
+    "ground_truth_shape": 0.0012598182074725628,
+    "ground_truth_scale": 0.015120011754333973
+   }
+  },
+  {
+   "key": "livingroom_08",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.10192664712667465,
+    "frozen_shape": 0.002014163415879011,
+    "frozen_scale": 0.0086257578805089,
+    "augmentation": 0.13135656714439392,
+    "augmentation_shape": 0.0022578241769224405,
+    "augmentation_scale": 0.014521079137921333,
+    "photometric": 0.12801314890384674,
+    "photometric_shape": 0.00223163072951138,
+    "photometric_scale": 0.013794239610433578,
+    "ground_truth": 0.1277444064617157,
+    "ground_truth_shape": 0.002190657425671816,
+    "ground_truth_scale": 0.013747839257121086
+   }
+  },
+  {
+   "key": "livingroom_09",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.11427133530378342,
+    "frozen_shape": 0.012842411175370216,
+    "frozen_scale": 0.0038073654286563396,
+    "augmentation": 0.22953222692012787,
+    "augmentation_shape": 0.009638570249080658,
+    "augmentation_scale": 0.03973238915205002,
+    "photometric": 0.2262296825647354,
+    "photometric_shape": 0.009629227221012115,
+    "photometric_scale": 0.03869524970650673,
+    "ground_truth": 0.2263423651456833,
+    "ground_truth_shape": 0.00985855981707573,
+    "ground_truth_scale": 0.03865298628807068
+   }
+  },
+  {
+   "key": "livingroom_10",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.39538902044296265,
+    "frozen_shape": 0.025231055915355682,
+    "frozen_scale": 0.10231317579746246,
+    "augmentation": 0.5300571918487549,
+    "augmentation_shape": 0.032297395169734955,
+    "augmentation_scale": 0.16680873930454254,
+    "photometric": 0.5298578143119812,
+    "photometric_shape": 0.031482845544815063,
+    "photometric_scale": 0.16704997420310974,
+    "ground_truth": 0.5273482799530029,
+    "ground_truth_shape": 0.03200100362300873,
+    "ground_truth_scale": 0.1654946357011795
+   }
+  },
+  {
+   "key": "livingroom_11",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.038844410330057144,
+    "frozen_shape": 0.002250516088679433,
+    "frozen_scale": 0.00016774568939581513,
+    "augmentation": 0.03973402455449104,
+    "augmentation_shape": 0.0021772272884845734,
+    "augmentation_scale": 0.00045928158215247095,
+    "photometric": 0.038460731506347656,
+    "photometric_shape": 0.002078586257994175,
+    "photometric_scale": 0.00043403610470704734,
+    "ground_truth": 0.03825515881180763,
+    "ground_truth_shape": 0.002061481587588787,
+    "ground_truth_scale": 0.0004233817453496158
+   }
+  },
+  {
+   "key": "livingroom_12",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.058960359543561935,
+    "frozen_shape": 0.0034838016144931316,
+    "frozen_scale": 0.002005765214562416,
+    "augmentation": 0.10224869847297668,
+    "augmentation_shape": 0.0036101595032960176,
+    "augmentation_scale": 0.008618581108748913,
+    "photometric": 0.10284791141748428,
+    "photometric_shape": 0.0035059626679867506,
+    "photometric_scale": 0.008721528574824333,
+    "ground_truth": 0.10137699544429779,
+    "ground_truth_shape": 0.003556354669854045,
+    "ground_truth_scale": 0.008457599207758904
+   }
+  },
+  {
+   "key": "livingroom_13",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.043422881513834,
+    "frozen_shape": 0.001763101085089147,
+    "frozen_scale": 0.0011223142500966787,
+    "augmentation": 0.08407342433929443,
+    "augmentation_shape": 0.002199543407186866,
+    "augmentation_scale": 0.005915517918765545,
+    "photometric": 0.080420583486557,
+    "photometric_shape": 0.002299297833815217,
+    "photometric_scale": 0.005368405487388372,
+    "ground_truth": 0.08025339990854263,
+    "ground_truth_shape": 0.0023484935518354177,
+    "ground_truth_scale": 0.005323461256921291
+   }
+  },
+  {
+   "key": "livingroom_14",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.06314884126186371,
+    "frozen_shape": 0.0034295041114091873,
+    "frozen_scale": 0.0020965291187167168,
+    "augmentation": 0.05994001775979996,
+    "augmentation_shape": 0.003317436669021845,
+    "augmentation_scale": 0.0019674331415444613,
+    "photometric": 0.05940280109643936,
+    "photometric_shape": 0.003328004153445363,
+    "photometric_scale": 0.0018596380250528455,
+    "ground_truth": 0.056862905621528625,
+    "ground_truth_shape": 0.0032244869507849216,
+    "ground_truth_scale": 0.0016279974952340126
+   }
+  },
+  {
+   "key": "livingroom_15",
+   "group": "livingroom",
+   "scores": {
+    "frozen": 0.19843250513076782,
+    "frozen_shape": 0.045529805123806,
+    "frozen_scale": 0.018020689487457275,
+    "augmentation": 0.24944351613521576,
+    "augmentation_shape": 0.055764339864254,
+    "augmentation_scale": 0.03171374276280403,
+    "photometric": 0.24674348533153534,
+    "photometric_shape": 0.05695510283112526,
+    "photometric_scale": 0.030451295897364616,
+    "ground_truth": 0.24215947091579437,
+    "ground_truth_shape": 0.05609824135899544,
+    "ground_truth_scale": 0.029155569151043892
+   }
+  },
+  {
+   "key": "meetingroom_01",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.3151729702949524,
+    "frozen_shape": 0.0056516374461352825,
+    "frozen_scale": 0.07335076481103897,
+    "augmentation": 0.4098440706729889,
+    "augmentation_shape": 0.010302919894456863,
+    "augmentation_scale": 0.11419983953237534,
+    "photometric": 0.4134214520454407,
+    "photometric_shape": 0.010334073565900326,
+    "photometric_scale": 0.11591078341007233,
+    "ground_truth": 0.41240397095680237,
+    "ground_truth_shape": 0.010591210797429085,
+    "ground_truth_scale": 0.11532297730445862
+   }
+  },
+  {
+   "key": "meetingroom_02",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.08666539192199707,
+    "frozen_shape": 0.007565238047391176,
+    "frozen_scale": 0.0037188557907938957,
+    "augmentation": 0.20103904604911804,
+    "augmentation_shape": 0.013562049716711044,
+    "augmentation_scale": 0.027279242873191833,
+    "photometric": 0.203294575214386,
+    "photometric_shape": 0.01358065102249384,
+    "photometric_scale": 0.02796351909637451,
+    "ground_truth": 0.20207537710666656,
+    "ground_truth_shape": 0.013405724428594112,
+    "ground_truth_scale": 0.02773713320493698
+   }
+  },
+  {
+   "key": "meetingroom_03",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.09246838092803955,
+    "frozen_shape": 0.002021128311753273,
+    "frozen_scale": 0.009401620365679264,
+    "augmentation": 0.031212860718369484,
+    "augmentation_shape": 0.001836244948208332,
+    "augmentation_scale": 0.00022080187045503408,
+    "photometric": 0.0316927433013916,
+    "photometric_shape": 0.001793598523363471,
+    "photometric_scale": 0.00038840636261738837,
+    "ground_truth": 0.033349160104990005,
+    "ground_truth_shape": 0.0019611252937465906,
+    "ground_truth_scale": 0.00047875751624815166
+   }
+  },
+  {
+   "key": "meetingroom_04",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.08363166451454163,
+    "frozen_shape": 0.010430150665342808,
+    "frozen_scale": 0.005822868552058935,
+    "augmentation": 0.10105918347835541,
+    "augmentation_shape": 0.012994813732802868,
+    "augmentation_scale": 0.0032069049775600433,
+    "photometric": 0.10304908454418182,
+    "photometric_shape": 0.013490484096109867,
+    "photometric_scale": 0.0033719134517014027,
+    "ground_truth": 0.10504914820194244,
+    "ground_truth_shape": 0.013474610634148121,
+    "ground_truth_scale": 0.004117900971323252
+   }
+  },
+  {
+   "key": "meetingroom_05",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.264213889837265,
+    "frozen_shape": 0.019095206633210182,
+    "frozen_scale": 0.04979614168405533,
+    "augmentation": 0.3620161712169647,
+    "augmentation_shape": 0.01955716870725155,
+    "augmentation_scale": 0.08955521881580353,
+    "photometric": 0.3581753969192505,
+    "photometric_shape": 0.019129516556859016,
+    "photometric_scale": 0.08799552172422409,
+    "ground_truth": 0.3505924642086029,
+    "ground_truth_shape": 0.01873037964105606,
+    "ground_truth_scale": 0.08482084423303604
+   }
+  },
+  {
+   "key": "meetingroom_06",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.09481209516525269,
+    "frozen_shape": 0.016163295134902,
+    "frozen_scale": 9.119532478507608e-05,
+    "augmentation": 0.17402081191539764,
+    "augmentation_shape": 0.025893477723002434,
+    "augmentation_scale": 0.007180533837527037,
+    "photometric": 0.17543818056583405,
+    "photometric_shape": 0.026526225730776787,
+    "photometric_scale": 0.00718314154073596,
+    "ground_truth": 0.17136678099632263,
+    "ground_truth_shape": 0.026470841839909554,
+    "ground_truth_scale": 0.006302438210695982
+   }
+  },
+  {
+   "key": "meetingroom_07",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.1466425657272339,
+    "frozen_shape": 0.0017864415422081947,
+    "frozen_scale": 0.017984813079237938,
+    "augmentation": 0.24567818641662598,
+    "augmentation_shape": 0.0014227662468329072,
+    "augmentation_scale": 0.047849684953689575,
+    "photometric": 0.23840971291065216,
+    "photometric_shape": 0.0013995658373460174,
+    "photometric_scale": 0.0453297458589077,
+    "ground_truth": 0.23532329499721527,
+    "ground_truth_shape": 0.0014059394598007202,
+    "ground_truth_scale": 0.04426922649145126
+   }
+  },
+  {
+   "key": "meetingroom_08",
+   "group": "meetingroom",
+   "scores": {
+    "frozen": 0.11681672185659409,
+    "frozen_shape": 0.004636455327272415,
+    "frozen_scale": 0.01090087741613388,
+    "augmentation": 0.1758750081062317,
+    "augmentation_shape": 0.004820856265723705,
+    "augmentation_scale": 0.024533921852707863,
+    "photometric": 0.17010962963104248,
+    "photometric_shape": 0.004855768755078316,
+    "photometric_scale": 0.02301696501672268,
+    "ground_truth": 0.1682339757680893,
+    "ground_truth_shape": 0.004819392692297697,
+    "ground_truth_scale": 0.02253696881234646
+   }
+  },
+  {
+   "key": "office_01",
+   "group": "office",
+   "scores": {
+    "frozen": 0.09752179682254791,
+    "frozen_shape": 0.013655834831297398,
+    "frozen_scale": 0.004794314503669739,
+    "augmentation": 0.13013769686222076,
+    "augmentation_shape": 0.019234031438827515,
+    "augmentation_scale": 0.011630825698375702,
+    "photometric": 0.12697502970695496,
+    "photometric_shape": 0.01953103393316269,
+    "photometric_scale": 0.010839898139238358,
+    "ground_truth": 0.12732234597206116,
+    "ground_truth_shape": 0.019544752314686775,
+    "ground_truth_scale": 0.01089674886316061
+   }
+  },
+  {
+   "key": "office_02",
+   "group": "office",
+   "scores": {
+    "frozen": 0.11994116008281708,
+    "frozen_shape": 0.010759975761175156,
+    "frozen_scale": 0.005723199807107449,
+    "augmentation": 0.12420684099197388,
+    "augmentation_shape": 0.012563470751047134,
+    "augmentation_scale": 0.005681281443685293,
+    "photometric": 0.1259763538837433,
+    "photometric_shape": 0.013267917558550835,
+    "photometric_scale": 0.005554115399718285,
+    "ground_truth": 0.12639042735099792,
+    "ground_truth_shape": 0.013560494408011436,
+    "ground_truth_scale": 0.005439938046038151
+   }
+  },
+  {
+   "key": "office_03",
+   "group": "office",
+   "scores": {
+    "frozen": 0.1438736766576767,
+    "frozen_shape": 0.0023770479019731283,
+    "frozen_scale": 0.024230532348155975,
+    "augmentation": 0.1120518147945404,
+    "augmentation_shape": 0.002567704301327467,
+    "augmentation_scale": 0.01395221333950758,
+    "photometric": 0.11311505734920502,
+    "photometric_shape": 0.002630451461300254,
+    "photometric_scale": 0.014284790493547916,
+    "ground_truth": 0.11349852383136749,
+    "ground_truth_shape": 0.0024714532773941755,
+    "ground_truth_scale": 0.014340376481413841
+   }
+  },
+  {
+   "key": "office_04",
+   "group": "office",
+   "scores": {
+    "frozen": 0.08070558309555054,
+    "frozen_shape": 0.002513730898499489,
+    "frozen_scale": 0.006217086687684059,
+    "augmentation": 0.0588221549987793,
+    "augmentation_shape": 0.004524772055447102,
+    "augmentation_scale": 0.0009328984888270497,
+    "photometric": 0.058500856161117554,
+    "photometric_shape": 0.004482653923332691,
+    "photometric_scale": 0.000916798715479672,
+    "ground_truth": 0.059633783996105194,
+    "ground_truth_shape": 0.004509206395596266,
+    "ground_truth_scale": 0.0010598599910736084
+   }
+  },
+  {
+   "key": "office_05",
+   "group": "office",
+   "scores": {
+    "frozen": 0.1314391940832138,
+    "frozen_shape": 0.005268847104161978,
+    "frozen_scale": 0.01825764589011669,
+    "augmentation": 0.07010200619697571,
+    "augmentation_shape": 0.006389108952134848,
+    "augmentation_scale": 0.0032808994874358177,
+    "photometric": 0.06954726576805115,
+    "photometric_shape": 0.006303413305431604,
+    "photometric_scale": 0.0031427780631929636,
+    "ground_truth": 0.07127786427736282,
+    "ground_truth_shape": 0.006436493713408709,
+    "ground_truth_scale": 0.003419014858081937
+   }
+  },
+  {
+   "key": "office_06",
+   "group": "office",
+   "scores": {
+    "frozen": 0.021567823365330696,
+    "frozen_shape": 0.0010696256067603827,
+    "frozen_scale": 0.00011198197898920625,
+    "augmentation": 0.03751680999994278,
+    "augmentation_shape": 0.002124700229614973,
+    "augmentation_scale": 0.00013031174603383988,
+    "photometric": 0.03750227764248848,
+    "photometric_shape": 0.002146962098777294,
+    "photometric_scale": 0.00011836037447210401,
+    "ground_truth": 0.037316225469112396,
+    "ground_truth_shape": 0.0021234413143247366,
+    "ground_truth_scale": 0.00011743761569960043
+   }
+  },
+  {
+   "key": "office_07",
+   "group": "office",
+   "scores": {
+    "frozen": 0.398962140083313,
+    "frozen_shape": 0.029002787545323372,
+    "frozen_scale": 0.10208679735660553,
+    "augmentation": 0.47256335616111755,
+    "augmentation_shape": 0.04941108077764511,
+    "augmentation_scale": 0.13043032586574554,
+    "photometric": 0.46892249584198,
+    "photometric_shape": 0.05181805416941643,
+    "photometric_scale": 0.1277703195810318,
+    "ground_truth": 0.4641731381416321,
+    "ground_truth_shape": 0.0511433444917202,
+    "ground_truth_scale": 0.12570534646511078
+   }
+  },
+  {
+   "key": "office_08",
+   "group": "office",
+   "scores": {
+    "frozen": 0.07972866296768188,
+    "frozen_shape": 0.02371668815612793,
+    "frozen_scale": 5.198271537665278e-05,
+    "augmentation": 0.09900724142789841,
+    "augmentation_shape": 0.022186247631907463,
+    "augmentation_scale": 0.0026355201844125986,
+    "photometric": 0.09533978253602982,
+    "photometric_shape": 0.022263366729021072,
+    "photometric_scale": 0.0022080205380916595,
+    "ground_truth": 0.09476660937070847,
+    "ground_truth_shape": 0.02223297394812107,
+    "ground_truth_scale": 0.0021591519471257925
+   }
+  },
+  {
+   "key": "restaurant_01",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.28142616152763367,
+    "frozen_shape": 0.028101835399866104,
+    "frozen_scale": 0.042852092534303665,
+    "augmentation": 0.33019858598709106,
+    "augmentation_shape": 0.02623729035258293,
+    "augmentation_scale": 0.06266488879919052,
+    "photometric": 0.3302081823348999,
+    "photometric_shape": 0.02645084634423256,
+    "photometric_scale": 0.06257524341344833,
+    "ground_truth": 0.32643815875053406,
+    "ground_truth_shape": 0.026294471696019173,
+    "ground_truth_scale": 0.06104506552219391
+   }
+  },
+  {
+   "key": "restaurant_02",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.22655722498893738,
+    "frozen_shape": 0.010998562909662724,
+    "frozen_scale": 0.03812119737267494,
+    "augmentation": 0.2846764624118805,
+    "augmentation_shape": 0.010649804025888443,
+    "augmentation_scale": 0.0590532012283802,
+    "photometric": 0.27844640612602234,
+    "photometric_shape": 0.01025465689599514,
+    "photometric_scale": 0.05678490549325943,
+    "ground_truth": 0.27940115332603455,
+    "ground_truth_shape": 0.010345075279474258,
+    "ground_truth_scale": 0.05712432414293289
+   }
+  },
+  {
+   "key": "restaurant_03",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.19169437885284424,
+    "frozen_shape": 0.0023386261891573668,
+    "frozen_scale": 0.03028786927461624,
+    "augmentation": 0.22412268817424774,
+    "augmentation_shape": 0.002352190436795354,
+    "augmentation_scale": 0.040386028587818146,
+    "photometric": 0.21407116949558258,
+    "photometric_shape": 0.0022875266149640083,
+    "photometric_scale": 0.03715001419186592,
+    "ground_truth": 0.21792401373386383,
+    "ground_truth_shape": 0.002345344517379999,
+    "ground_truth_scale": 0.038371406495571136
+   }
+  },
+  {
+   "key": "restaurant_04",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.37007319927215576,
+    "frozen_shape": 0.02425038069486618,
+    "frozen_scale": 0.09038528054952621,
+    "augmentation": 0.491923063993454,
+    "augmentation_shape": 0.03271237015724182,
+    "augmentation_scale": 0.14653384685516357,
+    "photometric": 0.491716593503952,
+    "photometric_shape": 0.032770052552223206,
+    "photometric_scale": 0.1463952660560608,
+    "ground_truth": 0.4892934262752533,
+    "ground_truth_shape": 0.03307808190584183,
+    "ground_truth_scale": 0.14501924812793732
+   }
+  },
+  {
+   "key": "restaurant_05",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.1760888397693634,
+    "frozen_shape": 0.008445625193417072,
+    "frozen_scale": 0.023672455921769142,
+    "augmentation": 0.26422709226608276,
+    "augmentation_shape": 0.01396137848496437,
+    "augmentation_scale": 0.05071311444044113,
+    "photometric": 0.2661932706832886,
+    "photometric_shape": 0.014484995044767857,
+    "photometric_scale": 0.05134538188576698,
+    "ground_truth": 0.26066091656684875,
+    "ground_truth_shape": 0.013951935805380344,
+    "ground_truth_scale": 0.049455441534519196
+   }
+  },
+  {
+   "key": "restaurant_06",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.46375572681427,
+    "frozen_shape": 0.001358017441816628,
+    "frozen_scale": 0.1446072906255722,
+    "augmentation": 0.579668402671814,
+    "augmentation_shape": 0.001815914991311729,
+    "augmentation_scale": 0.20816774666309357,
+    "photometric": 0.5836330652236938,
+    "photometric_shape": 0.0017992949578911066,
+    "photometric_scale": 0.21046952903270721,
+    "ground_truth": 0.5831955075263977,
+    "ground_truth_shape": 0.001810943242162466,
+    "ground_truth_scale": 0.21021120250225067
+   }
+  },
+  {
+   "key": "restaurant_07",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.19126780331134796,
+    "frozen_shape": 0.02720341831445694,
+    "frozen_scale": 0.013829977251589298,
+    "augmentation": 0.3063373863697052,
+    "augmentation_shape": 0.03585624322295189,
+    "augmentation_scale": 0.047047875821590424,
+    "photometric": 0.30678319931030273,
+    "photometric_shape": 0.03648872300982475,
+    "photometric_scale": 0.04694558307528496,
+    "ground_truth": 0.2994849383831024,
+    "ground_truth_shape": 0.03683696687221527,
+    "ground_truth_scale": 0.0441637821495533
+   }
+  },
+  {
+   "key": "restaurant_08",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.6046105623245239,
+    "frozen_shape": 0.01968536339700222,
+    "frozen_scale": 0.2082691639661789,
+    "augmentation": 0.6645605564117432,
+    "augmentation_shape": 0.009884858503937721,
+    "augmentation_scale": 0.25329259037971497,
+    "photometric": 0.6517615914344788,
+    "photometric_shape": 0.009427943266928196,
+    "photometric_scale": 0.24590711295604706,
+    "ground_truth": 0.6538988947868347,
+    "ground_truth_shape": 0.00926088634878397,
+    "ground_truth_scale": 0.2474379688501358
+   }
+  },
+  {
+   "key": "restaurant_09",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.2214457094669342,
+    "frozen_shape": 0.005028066225349903,
+    "frozen_scale": 0.038233160972595215,
+    "augmentation": 0.27287617325782776,
+    "augmentation_shape": 0.006144572980701923,
+    "augmentation_scale": 0.05599011480808258,
+    "photometric": 0.2724843919277191,
+    "photometric_shape": 0.006057660561054945,
+    "photometric_scale": 0.05587317794561386,
+    "ground_truth": 0.26971060037612915,
+    "ground_truth_shape": 0.006003962829709053,
+    "ground_truth_scale": 0.05485109984874725
+   }
+  },
+  {
+   "key": "restaurant_10",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.3369765877723694,
+    "frozen_shape": 0.0414721742272377,
+    "frozen_scale": 0.07143659889698029,
+    "augmentation": 0.37938424944877625,
+    "augmentation_shape": 0.053663697093725204,
+    "augmentation_scale": 0.0847751647233963,
+    "photometric": 0.3799284100532532,
+    "photometric_shape": 0.05345022305846214,
+    "photometric_scale": 0.08501717448234558,
+    "ground_truth": 0.3730766773223877,
+    "ground_truth_shape": 0.05413486808538437,
+    "ground_truth_scale": 0.08190355449914932
+   }
+  },
+  {
+   "key": "restaurant_11",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.5573379993438721,
+    "frozen_shape": 0.003374779596924782,
+    "frozen_scale": 0.19480274617671967,
+    "augmentation": 0.5564653277397156,
+    "augmentation_shape": 0.0017986149759963155,
+    "augmentation_scale": 0.19495141506195068,
+    "photometric": 0.5622456669807434,
+    "photometric_shape": 0.0017403974197804928,
+    "photometric_scale": 0.19826500117778778,
+    "ground_truth": 0.5643470883369446,
+    "ground_truth_shape": 0.0017976743401959538,
+    "ground_truth_scale": 0.19943903386592865
+   }
+  },
+  {
+   "key": "restaurant_12",
+   "group": "restaurant",
+   "scores": {
+    "frozen": 0.17908787727355957,
+    "frozen_shape": 0.006716093514114618,
+    "frozen_scale": 0.025482259690761566,
+    "augmentation": 0.28822317719459534,
+    "augmentation_shape": 0.005163745954632759,
+    "augmentation_scale": 0.06270170211791992,
+    "photometric": 0.2880309820175171,
+    "photometric_shape": 0.005011130589991808,
+    "photometric_scale": 0.06266871839761734,
+    "ground_truth": 0.2798709273338318,
+    "ground_truth_shape": 0.0050195869989693165,
+    "ground_truth_scale": 0.05950718745589256
+   }
+  },
+  {
+   "key": "restroom_01",
+   "group": "restroom",
+   "scores": {
+    "frozen": 0.39386874437332153,
+    "frozen_shape": 0.02079298533499241,
+    "frozen_scale": 0.10349555313587189,
+    "augmentation": 0.5021470189094543,
+    "augmentation_shape": 0.03868316486477852,
+    "augmentation_scale": 0.15048925578594208,
+    "photometric": 0.5040238499641418,
+    "photometric_shape": 0.039264287799596786,
+    "photometric_scale": 0.15124106407165527,
+    "ground_truth": 0.497099906206131,
+    "ground_truth_shape": 0.03823135048151016,
+    "ground_truth_scale": 0.1480533480644226
+   }
+  },
+  {
+   "key": "restroom_02",
+   "group": "restroom",
+   "scores": {
+    "frozen": 0.0763738602399826,
+    "frozen_shape": 0.0025028041563928127,
+    "frozen_scale": 0.0038253713864833117,
+    "augmentation": 0.07513352483510971,
+    "augmentation_shape": 0.001963841961696744,
+    "augmentation_scale": 0.0046422360464930534,
+    "photometric": 0.07628314942121506,
+    "photometric_shape": 0.001980589935556054,
+    "photometric_scale": 0.0047436547465622425,
+    "ground_truth": 0.0736188143491745,
+    "ground_truth_shape": 0.0019462963100522757,
+    "ground_truth_scale": 0.004363419488072395
+   }
+  },
+  {
+   "key": "storageroom_01",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.050658419728279114,
+    "frozen_shape": 0.0028451578691601753,
+    "frozen_scale": 0.0011750003322958946,
+    "augmentation": 0.05343359336256981,
+    "augmentation_shape": 0.003798926016315818,
+    "augmentation_scale": 0.0019131371518597007,
+    "photometric": 0.04948263242840767,
+    "photometric_shape": 0.0037580716889351606,
+    "photometric_scale": 0.0014452795730903745,
+    "ground_truth": 0.04766520857810974,
+    "ground_truth_shape": 0.0037704110145568848,
+    "ground_truth_scale": 0.0011592304799705744
+   }
+  },
+  {
+   "key": "storageroom_02",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.40836507081985474,
+    "frozen_shape": 0.0031734651420265436,
+    "frozen_scale": 0.11608169227838516,
+    "augmentation": 0.43128538131713867,
+    "augmentation_shape": 0.004159525502473116,
+    "augmentation_scale": 0.12699078023433685,
+    "photometric": 0.42716801166534424,
+    "photometric_shape": 0.004402909427881241,
+    "photometric_scale": 0.12485690414905548,
+    "ground_truth": 0.42573457956314087,
+    "ground_truth_shape": 0.004500213544815779,
+    "ground_truth_scale": 0.12410719692707062
+   }
+  },
+  {
+   "key": "storageroom_03",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.06642142683267593,
+    "frozen_shape": 0.01694258116185665,
+    "frozen_scale": 0.0002644216292537749,
+    "augmentation": 0.06330584734678268,
+    "augmentation_shape": 0.015752123668789864,
+    "augmentation_scale": 0.00025244569405913353,
+    "photometric": 0.06274843961000443,
+    "photometric_shape": 0.015618354082107544,
+    "photometric_scale": 0.0002394115290371701,
+    "ground_truth": 0.06279047578573227,
+    "ground_truth_shape": 0.015665104612708092,
+    "ground_truth_scale": 0.00020765267254319042
+   }
+  },
+  {
+   "key": "storageroom_04",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.6263026595115662,
+    "frozen_shape": 0.00107090943492949,
+    "frozen_scale": 0.23598478734493256,
+    "augmentation": 0.7717728018760681,
+    "augmentation_shape": 0.001085336902178824,
+    "augmentation_scale": 0.3265589773654938,
+    "photometric": 0.7730866074562073,
+    "photometric_shape": 0.0010630774777382612,
+    "photometric_scale": 0.32741835713386536,
+    "ground_truth": 0.7718287110328674,
+    "ground_truth_shape": 0.0010861969785764813,
+    "ground_truth_scale": 0.32659319043159485
+   }
+  },
+  {
+   "key": "storageroom_05",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.13118985295295715,
+    "frozen_shape": 0.025188902392983437,
+    "frozen_scale": 0.015049017034471035,
+    "augmentation": 0.07013411074876785,
+    "augmentation_shape": 0.01611194759607315,
+    "augmentation_scale": 0.00047325631021521986,
+    "photometric": 0.06929609179496765,
+    "photometric_shape": 0.01588970609009266,
+    "photometric_scale": 0.0006251284503377974,
+    "ground_truth": 0.06924909353256226,
+    "ground_truth_shape": 0.015853142365813255,
+    "ground_truth_scale": 0.0011077929520979524
+   }
+  },
+  {
+   "key": "storageroom_06",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.07060473412275314,
+    "frozen_shape": 0.0015740550588816404,
+    "frozen_scale": 0.00500623369589448,
+    "augmentation": 0.04152321815490723,
+    "augmentation_shape": 0.0014086379669606686,
+    "augmentation_scale": 0.0012178827309980989,
+    "photometric": 0.04289121553301811,
+    "photometric_shape": 0.001315385801717639,
+    "photometric_scale": 0.0014239837182685733,
+    "ground_truth": 0.0464966744184494,
+    "ground_truth_shape": 0.0014182367594912648,
+    "ground_truth_scale": 0.0017547286115586758
+   }
+  },
+  {
+   "key": "storageroom_07",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.11997871100902557,
+    "frozen_shape": 0.01219602394849062,
+    "frozen_scale": 0.012170223519206047,
+    "augmentation": 0.10676784813404083,
+    "augmentation_shape": 0.0172283835709095,
+    "augmentation_scale": 0.0009752654586918652,
+    "photometric": 0.11027234047651291,
+    "photometric_shape": 0.01824982650578022,
+    "photometric_scale": 0.0008942406857386231,
+    "ground_truth": 0.10852613300085068,
+    "ground_truth_shape": 0.018019266426563263,
+    "ground_truth_scale": 0.001112836180254817
+   }
+  },
+  {
+   "key": "storageroom_08",
+   "group": "storageroom",
+   "scores": {
+    "frozen": 0.5034058690071106,
+    "frozen_shape": 0.0020318999886512756,
+    "frozen_scale": 0.16541804373264313,
+    "augmentation": 0.6935620307922363,
+    "augmentation_shape": 0.0015982651384547353,
+    "augmentation_scale": 0.27671560645103455,
+    "photometric": 0.6819781064987183,
+    "photometric_shape": 0.0015053171664476395,
+    "photometric_scale": 0.2695887088775635,
+    "ground_truth": 0.6801024079322815,
+    "ground_truth_shape": 0.001542717101983726,
+    "ground_truth_scale": 0.26841267943382263
+   }
+  }
+ ],
+ "checkpoint": "e192ffe055b0fce2ba942768d042dca559db5c0b6fff9218adddf8a2ad6decd7",
+ "official_path_error": 0.0,
+ "init": "e90c16d952bea8520921539d28c4dbb52949de8582b3d69c7c2d6c6695001254",
+ "steps": 1024,
+ "params": 7096320
+}

@@ -1,0 +1,181 @@
+{
+ "artroom1": {
+  "valid": 0,
+  "total": 32
+ },
+ "skiboots1": {
+  "valid": 20,
+  "total": 32
+ },
+ "bandsaw1": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "bandsaw2": {
+  "valid": 161,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 111,
+  "eligible": false,
+  "unwarped_rgb": 31.83183183183183,
+  "warped_rgb": 2.1531531531531534
+ },
+ "chess1": {
+  "valid": 38832,
+  "total": 57600,
+  "pairs": 468,
+  "stable": 32260,
+  "eligible": true,
+  "unwarped_rgb": 34.00326564356947,
+  "warped_rgb": 3.1037565235364024
+ },
+ "chess2": {
+  "valid": 38189,
+  "total": 57600,
+  "pairs": 1336,
+  "stable": 31932,
+  "eligible": true,
+  "unwarped_rgb": 35.30418806630757,
+  "warped_rgb": 3.094826506325943
+ },
+ "chess3": {
+  "valid": 38093,
+  "total": 57600,
+  "pairs": 1328,
+  "stable": 32831,
+  "eligible": true,
+  "unwarped_rgb": 38.40818129207152,
+  "warped_rgb": 2.785304539408892
+ },
+ "curule1": {
+  "valid": 25092,
+  "total": 57600,
+  "pairs": 732,
+  "stable": 21836,
+  "eligible": true,
+  "unwarped_rgb": 35.61539048665812,
+  "warped_rgb": 3.3666575074800025
+ },
+ "curule2": {
+  "valid": 34534,
+  "total": 57600,
+  "pairs": 1360,
+  "stable": 29076,
+  "eligible": true,
+  "unwarped_rgb": 33.56917503553905,
+  "warped_rgb": 3.0155340028431237
+ },
+ "curule3": {
+  "valid": 17887,
+  "total": 57600,
+  "pairs": 648,
+  "stable": 16056,
+  "eligible": true,
+  "unwarped_rgb": 27.69803604052483,
+  "warped_rgb": 2.8771591097824283
+ },
+ "ladder1": {
+  "valid": 0,
+  "total": 182080,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "ladder2": {
+  "valid": 0,
+  "total": 182080,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "octogons1": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "octogons2": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "pendulum1": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "pendulum2": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "podium1": {
+  "valid": 3125,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 2833,
+  "eligible": false,
+  "unwarped_rgb": 49.63066243087422,
+  "warped_rgb": 4.07424402870926
+ },
+ "skates1": {
+  "valid": 39395,
+  "total": 57600,
+  "pairs": 10,
+  "stable": 29768,
+  "eligible": false,
+  "unwarped_rgb": 74.72265076745153,
+  "warped_rgb": 4.609133066100762
+ },
+ "skates2": {
+  "valid": 27817,
+  "total": 57600,
+  "pairs": 80,
+  "stable": 26467,
+  "eligible": true,
+  "unwarped_rgb": 53.59208322313321,
+  "warped_rgb": 2.640760191937129
+ },
+ "traproom1": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ },
+ "traproom2": {
+  "valid": 0,
+  "total": 57600,
+  "pairs": 0,
+  "stable": 0,
+  "eligible": false,
+  "unwarped_rgb": null,
+  "warped_rgb": null
+ }
+}

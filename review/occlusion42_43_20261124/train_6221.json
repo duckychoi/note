@@ -1,0 +1,62 @@
+{
+ "seed": 6221,
+ "constant": 2.3800387382507324,
+ "scales": {
+  "legacy": 0.9783709645271301,
+  "plain_depth": 0.9387515783309937,
+  "plain_order": 0.960651695728302,
+  "lines_depth": 0.9673669338226318,
+  "lines_order": 0.9687893390655518
+ },
+ "audit": {
+  "legacy": {
+   "order": 0.5104166666666666,
+   "both": 0.07291666666666667,
+   "flipped": 0.125,
+   "n": 384,
+   "ties": 0.0
+  },
+  "plain_depth": {
+   "order": 0.5299479166666666,
+   "both": 0.07291666666666667,
+   "flipped": 0.0859375,
+   "n": 384,
+   "ties": 0.0
+  },
+  "plain_order": {
+   "order": 0.5416666666666666,
+   "both": 0.11458333333333333,
+   "flipped": 0.14583333333333334,
+   "n": 384,
+   "ties": 0.0
+  },
+  "lines_depth": {
+   "order": 0.515625,
+   "both": 0.057291666666666664,
+   "flipped": 0.08333333333333333,
+   "n": 384,
+   "ties": 0.0
+  },
+  "lines_order": {
+   "order": 0.5208333333333334,
+   "both": 0.0703125,
+   "flipped": 0.09895833333333333,
+   "n": 384,
+   "ties": 0.0
+  }
+ },
+ "batch": {
+  "legacy": "56a0965246f3b292ce8d8e6d5300e77e480e18620a1fa62edd92fb7e945f1d52",
+  "plain_depth": "56a0965246f3b292ce8d8e6d5300e77e480e18620a1fa62edd92fb7e945f1d52",
+  "plain_order": "56a0965246f3b292ce8d8e6d5300e77e480e18620a1fa62edd92fb7e945f1d52",
+  "lines_depth": "56a0965246f3b292ce8d8e6d5300e77e480e18620a1fa62edd92fb7e945f1d52",
+  "lines_order": "56a0965246f3b292ce8d8e6d5300e77e480e18620a1fa62edd92fb7e945f1d52"
+ },
+ "rank_queries": {
+  "legacy": 0,
+  "plain_depth": 0,
+  "plain_order": 12288,
+  "lines_depth": 0,
+  "lines_order": 12288
+ }
+}

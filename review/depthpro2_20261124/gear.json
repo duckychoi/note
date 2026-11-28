@@ -1,0 +1,440 @@
+{
+  "object": "Gear",
+  "preset": "depthpro2-s",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "weights_sha256": "23ce46c7b39678e2e9d6983fbcfa2366e0f691ffedc300f6cb3efa082f2fc590",
+  "input_hashes": {
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_26.png": "5e166096907221b7d33644adad00dafa0f16ee86223e35b84863d9a1dc3e945f",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_53.png": "29ccd54f77fcc68258dea52564f6df416f9bd593ce93d010d6921c9e0dae8224",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_26.bmp": "f9111a90d8ade5fd291d15a4602508ff13a44ce06995891ed35f65f2316d4997",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_53.bmp": "8161b75ec9963fd922adbe58851762b841056a79a60f46e9c8c6a568476d335f",
+    "Gear/Scene_4/Ensenso/Stereo/LEFT_view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+    "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_26.bmp": "f44754d335187387b66996fcfc5da1daed5cbfe5ceb029042e9b0c2a7177be60",
+    "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+    "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_53.bmp": "50a044e6778d89b96738a061f089cd910682c128c259b9969948f18e65785cf5",
+    "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+    "Gear/Scene_4/GT_Depth/view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+    "Gear/Scene_4/GT_Depth/view_26.png": "a06fb1f3f8439bae3f245a71f6c0f29b1b320905f40a6bac82a4508f8585babc",
+    "Gear/Scene_4/GT_Depth/view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+    "Gear/Scene_4/GT_Depth/view_53.png": "8ccaf1c9ff0bfd1281c8f8bc5beb6ee40c14a5fc5f59aa26f994f8b2ecf50755",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_26.png": "e70af99844525f1171bf0c325f1fbd4365d1412e0d60a490f132dd191aba57eb",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_53.png": "fbddd2c537e9a015addf63a993bd4869ca2fe099204c4e9a8cf7312465a05688",
+    "Gear/Scene_5/Ensenso/Stereo/LEFT_view_26.bmp": "dc8d2e96db1a2031cd94a68325508bb777e7f8a11fc27fd1caf4f23254679a49",
+    "Gear/Scene_5/Ensenso/Stereo/LEFT_view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+    "Gear/Scene_5/Ensenso/Stereo/LEFT_view_53.bmp": "370ef50705f7b5ae21fc02874f7f4f080212efab88ee37f86267e1f5ab091ed6",
+    "Gear/Scene_5/Ensenso/Stereo/LEFT_view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+    "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_26.bmp": "080111390f880bf944ef8393cb4dae2030330534a4d6f014187867ed67193506",
+    "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+    "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_53.bmp": "d5642ff78ed83c70cf10127c1414ca6bdd7b47c8dfda260d71c8fe0149367b89",
+    "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+    "Gear/Scene_5/GT_Depth/view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+    "Gear/Scene_5/GT_Depth/view_26.png": "80c8de0eede32d5cf9bee7618325bf052a6ee08b22daf84fce144883562ec6d4",
+    "Gear/Scene_5/GT_Depth/view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+    "Gear/Scene_5/GT_Depth/view_53.png": "a724905661ca445975e5546a5f9a4551fbcc49bc09320fdaf3d3578cc4223f18",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_17.png": "959764e95e4b98b540115387226d3df9a5bc5dc862cfbee3cc3725ff8d972fa9",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_34.png": "e2e35987f6239727de79a76e6159426bdaef132052c641df2ae933278647ac98",
+    "Gear/Scene_8/Ensenso/Stereo/LEFT_view_17.bmp": "855a0d3b81f634532883a335ea5c8a672b35de292d47b80527b335dedf59545b",
+    "Gear/Scene_8/Ensenso/Stereo/LEFT_view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+    "Gear/Scene_8/Ensenso/Stereo/LEFT_view_34.bmp": "24e2ca67a2a020ec6b2acb6c1b8025e75c5eb7539ada40a1af5b35566a22506b",
+    "Gear/Scene_8/Ensenso/Stereo/LEFT_view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+    "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_17.bmp": "6673000c6190c4ff91707e7673868136132f43367fc1847281d33375747be7e5",
+    "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+    "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_34.bmp": "f8eb6457f95185556851483c85c748ff81d54ae0ac3225e9d983aaa8fbc55e9e",
+    "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+    "Gear/Scene_8/GT_Depth/view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+    "Gear/Scene_8/GT_Depth/view_17.png": "c2b785dea95d50c3b6d32cd86a7c71e4851e0574013e658963ec08212f4317b2",
+    "Gear/Scene_8/GT_Depth/view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+    "Gear/Scene_8/GT_Depth/view_34.png": "1a6e13408c319510182259f4aaac503aff1dc150765c416c30aa040bdfe07799",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_17.png": "66c065b95fac98404596c054cab519b313c3492ed7c8fa200bd53a8d2c0144c3",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_34.png": "c268a5ffd1c0444b388f13cbe70e7c07c039be8305b2ac3146beb06e8c014faf",
+    "Gear/Scene_9/Ensenso/Stereo/LEFT_view_17.bmp": "c2b09831d4640872aa64fce061c609ed118fb982fd6598c1f7439198ac91996b",
+    "Gear/Scene_9/Ensenso/Stereo/LEFT_view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+    "Gear/Scene_9/Ensenso/Stereo/LEFT_view_34.bmp": "eea76f73785837b23002051002a4a7a755fbc8d96849a120d714c6ddc97e6b3b",
+    "Gear/Scene_9/Ensenso/Stereo/LEFT_view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+    "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_17.bmp": "5f20919e250a7db62b30bd47ae9fed2a4c9885a60e87e5fa84f2fd672d7d760d",
+    "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+    "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_34.bmp": "5ede5d81c5ade1cf7bfa3e07dd8cb86854668ef7cf199761c67529d60607ff0b",
+    "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+    "Gear/Scene_9/GT_Depth/view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+    "Gear/Scene_9/GT_Depth/view_17.png": "ecd2f7f1901bdb1e010d96602fdfc162a2a828085f2dda51718a4d66a4d266ce",
+    "Gear/Scene_9/GT_Depth/view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+    "Gear/Scene_9/GT_Depth/view_34.png": "293cf579695f5df28bc1f4bb1140a1fbbc018490021b1e4c3e23d7a76b57862d"
+  },
+  "rows": [
+    {
+      "scene": 4,
+      "view": 26,
+      "reference_points": 15527,
+      "control_max_mm": 0.0,
+      "median_response_mm": 311.2398386001587,
+      "pattern_over_ordinary": 1.2717995506597732,
+      "response_after_scale_pct": 4.875830876761686,
+      "anchors": {
+        "no_anchor": [
+          638.6492632766423,
+          0
+        ],
+        "center": [
+          11.77377867241714,
+          3.0
+        ],
+        "random": [
+          27.412102902424955,
+          2.3984375
+        ],
+        "high": [
+          11.169045327764605,
+          2.0
+        ],
+        "low": [
+          12.377130715319865,
+          3.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.9759987417402549,
+        -0.9361623070265386,
+        -0.9332667444731575
+      ],
+      "ordinary": {
+        "ratio": 2.5837289559005767,
+        "mean_abs_mm": 638.8678568492203,
+        "aligned_mean_abs_mm": 11.07407744777713
+      },
+      "pattern": {
+        "ratio": 3.3225671552853506,
+        "mean_abs_mm": 953.7132249569765,
+        "aligned_mean_abs_mm": 28.254407751828197
+      }
+    },
+    {
+      "scene": 4,
+      "view": 53,
+      "reference_points": 13042,
+      "control_max_mm": null,
+      "median_response_mm": 50.88844895362854,
+      "pattern_over_ordinary": 0.9466121913245341,
+      "response_after_scale_pct": 2.6241724327557865,
+      "anchors": {
+        "no_anchor": [
+          497.1931346783403,
+          0
+        ],
+        "center": [
+          14.469389446988982,
+          2.0
+        ],
+        "random": [
+          24.723108721411503,
+          2.046875
+        ],
+        "high": [
+          11.853800800827374,
+          4.0
+        ],
+        "low": [
+          18.34618207669405,
+          3.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.8155235670714518,
+        -0.8050142023863939
+      ],
+      "ordinary": {
+        "ratio": 2.183573052324092,
+        "mean_abs_mm": 497.2071038202866,
+        "aligned_mean_abs_mm": 10.986317345187683
+      },
+      "pattern": {
+        "ratio": 2.077180980915267,
+        "mean_abs_mm": 478.54811532145317,
+        "aligned_mean_abs_mm": 27.528472978439822
+      }
+    },
+    {
+      "scene": 5,
+      "view": 26,
+      "reference_points": 15953,
+      "control_max_mm": null,
+      "median_response_mm": 527.0633697509766,
+      "pattern_over_ordinary": 1.5490589739894545,
+      "response_after_scale_pct": 2.453226549158667,
+      "anchors": {
+        "no_anchor": [
+          476.2990326206233,
+          0
+        ],
+        "center": [
+          10.000159659223414,
+          3.0
+        ],
+        "random": [
+          26.31831064581755,
+          2.4921875
+        ],
+        "high": [
+          10.95889647107757,
+          2.0
+        ],
+        "low": [
+          9.95486814823725,
+          4.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.7779028169862651,
+        -0.7952335842025392,
+        -0.7645386732797196
+      ],
+      "ordinary": {
+        "ratio": 2.1674756213556527,
+        "mean_abs_mm": 476.3937523716379,
+        "aligned_mean_abs_mm": 9.940172627280754
+      },
+      "pattern": {
+        "ratio": 3.3725379420063852,
+        "mean_abs_mm": 1003.60285091711,
+        "aligned_mean_abs_mm": 24.259177017923697
+      }
+    },
+    {
+      "scene": 5,
+      "view": 53,
+      "reference_points": 13921,
+      "control_max_mm": null,
+      "median_response_mm": 169.6077585220337,
+      "pattern_over_ordinary": 0.8076879734612323,
+      "response_after_scale_pct": 2.2960736841482388,
+      "anchors": {
+        "no_anchor": [
+          456.7469976254645,
+          0
+        ],
+        "center": [
+          17.731740322469612,
+          2.0
+        ],
+        "random": [
+          18.636202826224793,
+          2.15625
+        ],
+        "high": [
+          10.265634255262894,
+          3.0
+        ],
+        "low": [
+          11.64041764726936,
+          2.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.7713023081738083,
+        -0.7713892012238892
+      ],
+      "ordinary": {
+        "ratio": 2.071103053825082,
+        "mean_abs_mm": 456.74750272851423,
+        "aligned_mean_abs_mm": 9.580655662120872
+      },
+      "pattern": {
+        "ratio": 1.6719679470482616,
+        "mean_abs_mm": 309.17400697555087,
+        "aligned_mean_abs_mm": 25.732888050739103
+      }
+    },
+    {
+      "scene": 8,
+      "view": 17,
+      "reference_points": 15457,
+      "control_max_mm": null,
+      "median_response_mm": 48.528432846069336,
+      "pattern_over_ordinary": 0.9566470471054526,
+      "response_after_scale_pct": 1.3864908419618307,
+      "anchors": {
+        "no_anchor": [
+          658.4428474880369,
+          0
+        ],
+        "center": [
+          15.273529699041326,
+          4.0
+        ],
+        "random": [
+          22.230283705443536,
+          2.90625
+        ],
+        "high": [
+          18.886275758324352,
+          3.0
+        ],
+        "low": [
+          18.10058137704463,
+          2.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.9767241951622802,
+        -0.9666348589770392,
+        -0.9120018144903085,
+        -0.9315543709651619
+      ],
+      "ordinary": {
+        "ratio": 2.569632711255916,
+        "mean_abs_mm": 658.4902915813917,
+        "aligned_mean_abs_mm": 15.256834044767222
+      },
+      "pattern": {
+        "ratio": 2.4382393369937456,
+        "mean_abs_mm": 614.8176092226925,
+        "aligned_mean_abs_mm": 15.446375656869826
+      }
+    },
+    {
+      "scene": 8,
+      "view": 34,
+      "reference_points": 12304,
+      "control_max_mm": null,
+      "median_response_mm": 662.1382832527161,
+      "pattern_over_ordinary": 1.748157062654731,
+      "response_after_scale_pct": 3.1942384638951458,
+      "anchors": {
+        "no_anchor": [
+          469.1625937089486,
+          0
+        ],
+        "center": [
+          13.052621268199559,
+          2.0
+        ],
+        "random": [
+          22.72712022695402,
+          2.1171875
+        ],
+        "high": [
+          13.09370373923809,
+          4.0
+        ],
+        "low": [
+          26.69844916732086,
+          2.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.7723984694236854,
+        -0.7128584419838784
+      ],
+      "ordinary": {
+        "ratio": 2.0951656542166277,
+        "mean_abs_mm": 469.1928314625907,
+        "aligned_mean_abs_mm": 13.056754513134077
+      },
+      "pattern": {
+        "ratio": 3.688883881489108,
+        "mean_abs_mm": 1162.1530913244762,
+        "aligned_mean_abs_mm": 26.036641159060846
+      }
+    },
+    {
+      "scene": 9,
+      "view": 17,
+      "reference_points": 14979,
+      "control_max_mm": null,
+      "median_response_mm": 246.5258240699768,
+      "pattern_over_ordinary": 0.7749557706667712,
+      "response_after_scale_pct": 3.6883645144305635,
+      "anchors": {
+        "no_anchor": [
+          682.3586535850112,
+          0
+        ],
+        "center": [
+          16.906565539201406,
+          4.0
+        ],
+        "random": [
+          16.741067981842537,
+          2.9453125
+        ],
+        "high": [
+          18.23798516260422,
+          4.0
+        ],
+        "low": [
+          15.577769063832335,
+          4.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.9343502657474922,
+        -0.9928327554818045,
+        -0.9013693799109468,
+        -0.9460115433370194
+      ],
+      "ordinary": {
+        "ratio": 2.623277455465759,
+        "mean_abs_mm": 682.4963737278391,
+        "aligned_mean_abs_mm": 14.595684602637212
+      },
+      "pattern": {
+        "ratio": 2.029456911115011,
+        "mean_abs_mm": 439.70729456120415,
+        "aligned_mean_abs_mm": 17.592405998612346
+      }
+    },
+    {
+      "scene": 9,
+      "view": 34,
+      "reference_points": 11561,
+      "control_max_mm": null,
+      "median_response_mm": 223.85931015014648,
+      "pattern_over_ordinary": 1.2551342044356992,
+      "response_after_scale_pct": 3.0229949706903563,
+      "anchors": {
+        "no_anchor": [
+          416.42745277514064,
+          0
+        ],
+        "center": [
+          14.292734778683892,
+          1.0
+        ],
+        "random": [
+          31.234534295397104,
+          1.9921875
+        ],
+        "high": [
+          18.387392969348994,
+          4.0
+        ],
+        "low": [
+          18.5830226182103,
+          4.0
+        ]
+      },
+      "center_valid_log_ratios": [
+        -0.6893114529861774
+      ],
+      "ordinary": {
+        "ratio": 1.9796117273586142,
+        "mean_abs_mm": 416.48938077927954,
+        "aligned_mean_abs_mm": 14.223069933057333
+      },
+      "pattern": {
+        "ratio": 2.513694735656553,
+        "mean_abs_mm": 657.1035155882504,
+        "aligned_mean_abs_mm": 26.805878873169636
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "encoder_phase_expanded_results.json": {
+    "arms": {
+      "frozen": {
+        "ibims": [
+          0.2899278470873833,
+          0.6611590458461748
+        ],
+        "middlebury": [
+          4.90803199785727,
+          0.7776216504474481,
+          0.7863572170691603
+        ],
+        "synthetic_absrel": 0.3114013074276348,
+        "selected_step": null
+      },
+      "supervised": {
+        "ibims": [
+          0.33211023384705185,
+          0.47100641051736936
+        ],
+        "middlebury": [
+          4.7938368982738915,
+          0.7750749358976329,
+          0.7932330387174177
+        ],
+        "synthetic_absrel": 0.40070518866802257,
+        "selected_step": null
+      },
+      "cosine": {
+        "ibims": [
+          0.33123799599707127,
+          0.472113072514312
+        ],
+        "middlebury": [
+          4.7958958303486865,
+          0.7753088272832058,
+          0.7944320711018018
+        ],
+        "synthetic_absrel": 0.40047684089384145,
+        "selected_step": null
+      },
+      "phase": {
+        "ibims": [
+          0.31490483788773416,
+          0.492167426763806
+        ],
+        "middlebury": [
+          4.7071241868866815,
+          0.7492703770597776,
+          0.792496689254135
+        ],
+        "synthetic_absrel": 0.41382228976322544,
+        "selected_step": null
+      },
+      "decoder": {
+        "ibims": [
+          0.452461693584919,
+          0.24856847430471063
+        ],
+        "middlebury": [
+          4.592151862603647,
+          0.9593091030363683,
+          0.8073626408783916
+        ],
+        "synthetic_absrel": 0.5019608900571862,
+        "selected_step": null
+      }
+    },
+    "phase_comparisons": {
+      "frozen": {
+        "absrel_relative_reduction_pct": -8.6148988623445,
+        "interval_95_pct": [
+          -56.371085553914284,
+          32.72680581796245
+        ],
+        "delta1_change_pp": -16.899161908236866
+      },
+      "supervised": {
+        "absrel_relative_reduction_pct": 5.180628058345638,
+        "interval_95_pct": [
+          2.032300689050342,
+          8.282476897891943
+        ],
+        "delta1_change_pp": 2.1161016246436657
+      },
+      "cosine": {
+        "absrel_relative_reduction_pct": 4.930943402242272,
+        "interval_95_pct": [
+          1.7460389674549535,
+          8.059874572161117
+        ],
+        "delta1_change_pp": 2.005435424949408
+      },
+      "decoder": {
+        "absrel_relative_reduction_pct": 30.401878799352524,
+        "interval_95_pct": [
+          25.92575500106599,
+          34.91726947694635
+        ],
+        "delta1_change_pp": 24.359895245909552
+      }
+    }
+  },
+  "encoder_phase_dev_selected_results.json": {
+    "arms": {
+      "frozen": {
+        "ibims": [
+          0.2899278470873833,
+          0.6611590458461748
+        ],
+        "middlebury": [
+          4.90803199785727,
+          0.7776216504474481,
+          0.7863572170691603
+        ],
+        "synthetic_absrel": 0.3114013074276348,
+        "selected_step": null
+      },
+      "supervised": {
+        "ibims": [
+          0.21409625425934792,
+          0.6585065513665641
+        ],
+        "middlebury": [
+          4.92844338549508,
+          0.7816272896749001,
+          0.788064007909016
+        ],
+        "synthetic_absrel": 0.2991199965278308,
+        "selected_step": 256
+      },
+      "cosine": {
+        "ibims": [
+          0.21507826130837202,
+          0.6568589274535904
+        ],
+        "middlebury": [
+          4.926966766516368,
+          0.7819527056482103,
+          0.7893750960722387
+        ],
+        "synthetic_absrel": 0.30012692428297466,
+        "selected_step": 256
+      },
+      "phase": {
+        "ibims": [
+          0.21234691485762597,
+          0.6582297586608076
+        ],
+        "middlebury": [
+          4.963601909301898,
+          0.7708744892367609,
+          0.7902810348534959
+        ],
+        "synthetic_absrel": 0.28416216171657044,
+        "selected_step": 256
+      },
+      "decoder": {
+        "ibims": [
+          0.2045574365183711,
+          0.6691528279428729
+        ],
+        "middlebury": [
+          5.015126848662341,
+          0.7628001965306423,
+          0.7879893589912583
+        ],
+        "synthetic_absrel": 0.2650801641866565,
+        "selected_step": 384
+      }
+    },
+    "phase_comparisons": {
+      "frozen": {
+        "absrel_relative_reduction_pct": 26.758703246044067,
+        "interval_95_pct": [
+          -4.128967452095303,
+          54.235264877312794
+        ],
+        "delta1_change_pp": -0.29292871853671354
+      },
+      "supervised": {
+        "absrel_relative_reduction_pct": 0.8170808068425517,
+        "interval_95_pct": [
+          -1.3432895353450374,
+          3.015532409053344
+        ],
+        "delta1_change_pp": -0.027679270575641818
+      },
+      "cosine": {
+        "absrel_relative_reduction_pct": 1.2699314352508817,
+        "interval_95_pct": [
+          -0.8823882916716879,
+          3.477785785267273
+        ],
+        "delta1_change_pp": 0.13708312072174147
+      },
+      "decoder": {
+        "absrel_relative_reduction_pct": -3.8079663452153634,
+        "interval_95_pct": [
+          -9.276949625314748,
+          1.4204074669299862
+        ],
+        "delta1_change_pp": -1.0923069282065303
+      }
+    }
+  }
+}

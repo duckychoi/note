@@ -1,0 +1,654 @@
+{
+  "pairs": [
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "views": [
+        26,
+        29,
+        79
+      ],
+      "translation_mm": 139.41039650525636,
+      "sampled": 20480,
+      "known": 15527,
+      "missing": 3896,
+      "valid": 11631,
+      "gross": 23,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 14524,
+      "occluded_after_move": 1668,
+      "missing_in_view": 3896,
+      "missing_unrecovered": 2595,
+      "third_known": 17683,
+      "both_comparable": 14113,
+      "hidden_at_both": 1674
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 4,
+      "views": [
+        53,
+        56,
+        79
+      ],
+      "translation_mm": 257.7938049836569,
+      "sampled": 20480,
+      "known": 13042,
+      "missing": 3470,
+      "valid": 9572,
+      "gross": 14,
+      "median_absolute_mm": 0.15625,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 10396,
+      "occluded_after_move": 1811,
+      "missing_in_view": 3470,
+      "missing_unrecovered": 2692,
+      "third_known": 17683,
+      "both_comparable": 10500,
+      "hidden_at_both": 2026
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "views": [
+        26,
+        29,
+        79
+      ],
+      "translation_mm": 139.4253181341691,
+      "sampled": 20480,
+      "known": 15953,
+      "missing": 3826,
+      "valid": 12127,
+      "gross": 17,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 14619,
+      "occluded_after_move": 1529,
+      "missing_in_view": 3826,
+      "missing_unrecovered": 1695,
+      "third_known": 17647,
+      "both_comparable": 14173,
+      "hidden_at_both": 1498
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 5,
+      "views": [
+        53,
+        56,
+        79
+      ],
+      "translation_mm": 257.80193896199927,
+      "sampled": 20480,
+      "known": 13921,
+      "missing": 3118,
+      "valid": 10803,
+      "gross": 16,
+      "median_absolute_mm": 0.1875,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 11859,
+      "occluded_after_move": 2054,
+      "missing_in_view": 3118,
+      "missing_unrecovered": 2606,
+      "third_known": 17647,
+      "both_comparable": 11623,
+      "hidden_at_both": 1844
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "views": [
+        17,
+        20,
+        51
+      ],
+      "translation_mm": 210.92184939593537,
+      "sampled": 20480,
+      "known": 15457,
+      "missing": 1187,
+      "valid": 14270,
+      "gross": 52,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 12709,
+      "occluded_after_move": 2181,
+      "missing_in_view": 1187,
+      "missing_unrecovered": 674,
+      "third_known": 18321,
+      "both_comparable": 13508,
+      "hidden_at_both": 30
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 8,
+      "views": [
+        34,
+        37,
+        51
+      ],
+      "translation_mm": 227.56538502934418,
+      "sampled": 20480,
+      "known": 12304,
+      "missing": 1899,
+      "valid": 10405,
+      "gross": 14,
+      "median_absolute_mm": 0.15625,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 9143,
+      "occluded_after_move": 1408,
+      "missing_in_view": 1899,
+      "missing_unrecovered": 1656,
+      "third_known": 18321,
+      "both_comparable": 10028,
+      "hidden_at_both": 1710
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "views": [
+        17,
+        20,
+        51
+      ],
+      "translation_mm": 210.91325049249969,
+      "sampled": 20480,
+      "known": 14979,
+      "missing": 940,
+      "valid": 14039,
+      "gross": 26,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 11803,
+      "occluded_after_move": 2213,
+      "missing_in_view": 940,
+      "missing_unrecovered": 657,
+      "third_known": 18151,
+      "both_comparable": 12328,
+      "hidden_at_both": 23
+    },
+    {
+      "sensor": "Ensenso",
+      "scene": 9,
+      "views": [
+        34,
+        37,
+        51
+      ],
+      "translation_mm": 227.5722087285346,
+      "sampled": 20480,
+      "known": 11561,
+      "missing": 1353,
+      "valid": 10208,
+      "gross": 20,
+      "median_absolute_mm": 0.125,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 8642,
+      "occluded_after_move": 1555,
+      "missing_in_view": 1353,
+      "missing_unrecovered": 1239,
+      "third_known": 18151,
+      "both_comparable": 8322,
+      "hidden_at_both": 2010
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "views": [
+        31,
+        34,
+        79
+      ],
+      "translation_mm": 163.505204090776,
+      "sampled": 14400,
+      "known": 7301,
+      "missing": 937,
+      "valid": 6364,
+      "gross": 354,
+      "median_absolute_mm": 1.2152378428093016,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 6955,
+      "occluded_after_move": 1208,
+      "missing_in_view": 937,
+      "missing_unrecovered": 601,
+      "third_known": 17683,
+      "both_comparable": 13033,
+      "hidden_at_both": 256
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 4,
+      "views": [
+        62,
+        65,
+        79
+      ],
+      "translation_mm": 291.4591945125842,
+      "sampled": 14400,
+      "known": 9664,
+      "missing": 695,
+      "valid": 8969,
+      "gross": 561,
+      "median_absolute_mm": 0.9519264587567022,
+      "moved_out_of_view": 303,
+      "moved_gt_comparable": 2049,
+      "occluded_after_move": 23,
+      "missing_in_view": 692,
+      "missing_unrecovered": 232,
+      "third_known": 17683,
+      "both_comparable": 2528,
+      "hidden_at_both": 35
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "views": [
+        31,
+        34,
+        79
+      ],
+      "translation_mm": 163.94965772361675,
+      "sampled": 14400,
+      "known": 7319,
+      "missing": 840,
+      "valid": 6479,
+      "gross": 365,
+      "median_absolute_mm": 1.260026707304064,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 6911,
+      "occluded_after_move": 1222,
+      "missing_in_view": 840,
+      "missing_unrecovered": 430,
+      "third_known": 17647,
+      "both_comparable": 12987,
+      "hidden_at_both": 319
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 5,
+      "views": [
+        62,
+        65,
+        79
+      ],
+      "translation_mm": 292.1774055135308,
+      "sampled": 14400,
+      "known": 9742,
+      "missing": 711,
+      "valid": 9031,
+      "gross": 469,
+      "median_absolute_mm": 0.9704214728130864,
+      "moved_out_of_view": 303,
+      "moved_gt_comparable": 2426,
+      "occluded_after_move": 13,
+      "missing_in_view": 706,
+      "missing_unrecovered": 197,
+      "third_known": 17647,
+      "both_comparable": 2830,
+      "hidden_at_both": 74
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "views": [
+        23,
+        26,
+        51
+      ],
+      "translation_mm": 163.73603793688508,
+      "sampled": 14400,
+      "known": 11450,
+      "missing": 871,
+      "valid": 10579,
+      "gross": 703,
+      "median_absolute_mm": 1.2648782029458516,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 9344,
+      "occluded_after_move": 850,
+      "missing_in_view": 871,
+      "missing_unrecovered": 385,
+      "third_known": 18321,
+      "both_comparable": 8896,
+      "hidden_at_both": 204
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 8,
+      "views": [
+        46,
+        49,
+        51
+      ],
+      "translation_mm": 211.25798525036845,
+      "sampled": 14400,
+      "known": 11818,
+      "missing": 810,
+      "valid": 11008,
+      "gross": 179,
+      "median_absolute_mm": 1.06528067647821,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 6519,
+      "occluded_after_move": 583,
+      "missing_in_view": 810,
+      "missing_unrecovered": 264,
+      "third_known": 18321,
+      "both_comparable": 10104,
+      "hidden_at_both": 319
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "views": [
+        23,
+        26,
+        51
+      ],
+      "translation_mm": 169.9720819248213,
+      "sampled": 14400,
+      "known": 11267,
+      "missing": 910,
+      "valid": 10357,
+      "gross": 920,
+      "median_absolute_mm": 1.3516140130792564,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 9094,
+      "occluded_after_move": 498,
+      "missing_in_view": 910,
+      "missing_unrecovered": 417,
+      "third_known": 18151,
+      "both_comparable": 5581,
+      "hidden_at_both": 49
+    },
+    {
+      "sensor": "RealSense",
+      "scene": 9,
+      "views": [
+        47,
+        50,
+        51
+      ],
+      "translation_mm": 211.384778512439,
+      "sampled": 14400,
+      "known": 11736,
+      "missing": 881,
+      "valid": 10855,
+      "gross": 75,
+      "median_absolute_mm": 1.0379389272228536,
+      "moved_out_of_view": 0,
+      "moved_gt_comparable": 8173,
+      "occluded_after_move": 1034,
+      "missing_in_view": 881,
+      "missing_unrecovered": 443,
+      "third_known": 18151,
+      "both_comparable": 9819,
+      "hidden_at_both": 294
+    }
+  ],
+  "quality": {
+    "Ensenso": {
+      "coverage": {
+        "model": {
+          "coef": [
+            -7.036450467493483
+          ],
+          "intercept": -0.2650742781000295
+        },
+        "pooled": {
+          "n": 93055,
+          "positives": 182,
+          "prevalence": 0.001955832572134759,
+          "auc": 0.7525736729218904,
+          "ap": 0.011395657327770266
+        },
+        "scene4": {
+          "n": 21203,
+          "positives": 37,
+          "prevalence": 0.0017450360798000283,
+          "auc": 0.742535836412809,
+          "ap": 0.01779248455088127
+        },
+        "scene5": {
+          "n": 22930,
+          "positives": 33,
+          "prevalence": 0.001439162668992586,
+          "auc": 0.7876935049053668,
+          "ap": 0.0073964916819263754
+        },
+        "scene8": {
+          "n": 24675,
+          "positives": 66,
+          "prevalence": 0.002674772036474164,
+          "auc": 0.7637191123720442,
+          "ap": 0.017986364801659882
+        },
+        "scene9": {
+          "n": 24247,
+          "positives": 46,
+          "prevalence": 0.001897141914463645,
+          "auc": 0.7303614834457073,
+          "ap": 0.012102124504258103
+        }
+      },
+      "scatter": {
+        "model": {
+          "coef": [
+            0.14233986047474081
+          ],
+          "intercept": -7.159141889943806
+        },
+        "pooled": {
+          "n": 93055,
+          "positives": 182,
+          "prevalence": 0.001955832572134759,
+          "auc": 0.8957286939046976,
+          "ap": 0.07117014506706927
+        },
+        "scene4": {
+          "n": 21203,
+          "positives": 37,
+          "prevalence": 0.0017450360798000283,
+          "auc": 0.8959422429138011,
+          "ap": 0.13965912243132458
+        },
+        "scene5": {
+          "n": 22930,
+          "positives": 33,
+          "prevalence": 0.001439162668992586,
+          "auc": 0.883335252335558,
+          "ap": 0.06881070051578515
+        },
+        "scene8": {
+          "n": 24675,
+          "positives": 66,
+          "prevalence": 0.002674772036474164,
+          "auc": 0.8894959592265457,
+          "ap": 0.06535592051319944
+        },
+        "scene9": {
+          "n": 24247,
+          "positives": 46,
+          "prevalence": 0.001897141914463645,
+          "auc": 0.9146702525766991,
+          "ap": 0.07484892310112294
+        }
+      },
+      "both": {
+        "model": {
+          "coef": [
+            -8.90626990002812,
+            0.17767572339973547
+          ],
+          "intercept": 0.34868798430922254
+        },
+        "pooled": {
+          "n": 93055,
+          "positives": 182,
+          "prevalence": 0.001955832572134759,
+          "auc": 0.9676491931614519,
+          "ap": 0.050937792488109285
+        },
+        "scene4": {
+          "n": 21203,
+          "positives": 37,
+          "prevalence": 0.0017450360798000283,
+          "auc": 0.9784598450855656,
+          "ap": 0.1368497934171975
+        },
+        "scene5": {
+          "n": 22930,
+          "positives": 33,
+          "prevalence": 0.001439162668992586,
+          "auc": 0.9527846045730485,
+          "ap": 0.02827333184576243
+        },
+        "scene8": {
+          "n": 24675,
+          "positives": 66,
+          "prevalence": 0.002674772036474164,
+          "auc": 0.9709819147220098,
+          "ap": 0.07129767876712448
+        },
+        "scene9": {
+          "n": 24247,
+          "positives": 46,
+          "prevalence": 0.001897141914463645,
+          "auc": 0.9720951164432658,
+          "ap": 0.0467094709414404
+        }
+      }
+    },
+    "RealSense": {
+      "coverage": {
+        "model": {
+          "coef": [
+            -5.0548544641476125
+          ],
+          "intercept": 1.926475084578147
+        },
+        "pooled": {
+          "n": 73642,
+          "positives": 3626,
+          "prevalence": 0.049238206458271094,
+          "auc": 0.6220567341285667,
+          "ap": 0.09989767535057358
+        },
+        "scene4": {
+          "n": 15333,
+          "positives": 915,
+          "prevalence": 0.05967521033065936,
+          "auc": 0.6233392230567893,
+          "ap": 0.110804135393448
+        },
+        "scene5": {
+          "n": 15510,
+          "positives": 834,
+          "prevalence": 0.053771760154738876,
+          "auc": 0.6383243364425386,
+          "ap": 0.11233758635055985
+        },
+        "scene8": {
+          "n": 21587,
+          "positives": 882,
+          "prevalence": 0.04085792375040534,
+          "auc": 0.6148918152143736,
+          "ap": 0.08624997060172888
+        },
+        "scene9": {
+          "n": 21212,
+          "positives": 995,
+          "prevalence": 0.04690741089949085,
+          "auc": 0.6117141079587979,
+          "ap": 0.0982420516085601
+        }
+      },
+      "scatter": {
+        "model": {
+          "coef": [
+            0.12888090127418794
+          ],
+          "intercept": -3.0572042636215944
+        },
+        "pooled": {
+          "n": 73642,
+          "positives": 3626,
+          "prevalence": 0.049238206458271094,
+          "auc": 0.7905521268135324,
+          "ap": 0.28664750287871416
+        },
+        "scene4": {
+          "n": 15333,
+          "positives": 915,
+          "prevalence": 0.05967521033065936,
+          "auc": 0.5934179876853993,
+          "ap": 0.11661584958344262
+        },
+        "scene5": {
+          "n": 15510,
+          "positives": 834,
+          "prevalence": 0.053771760154738876,
+          "auc": 0.6759793718581961,
+          "ap": 0.17681148414792688
+        },
+        "scene8": {
+          "n": 21587,
+          "positives": 882,
+          "prevalence": 0.04085792375040534,
+          "auc": 0.8797961976386788,
+          "ap": 0.45695292956482747
+        },
+        "scene9": {
+          "n": 21212,
+          "positives": 995,
+          "prevalence": 0.04690741089949085,
+          "auc": 0.9046322526218668,
+          "ap": 0.3994169686972048
+        }
+      },
+      "both": {
+        "model": {
+          "coef": [
+            -4.6774284913390005,
+            0.08690259267053416
+          ],
+          "intercept": 1.504513066052565
+        },
+        "pooled": {
+          "n": 73642,
+          "positives": 3626,
+          "prevalence": 0.049238206458271094,
+          "auc": 0.8228063098618196,
+          "ap": 0.18722872168682297
+        },
+        "scene4": {
+          "n": 15333,
+          "positives": 915,
+          "prevalence": 0.05967521033065936,
+          "auc": 0.6642181486863339,
+          "ap": 0.1373251256074841
+        },
+        "scene5": {
+          "n": 15510,
+          "positives": 834,
+          "prevalence": 0.053771760154738876,
+          "auc": 0.7358288348879358,
+          "ap": 0.165931657817987
+        },
+        "scene8": {
+          "n": 21587,
+          "positives": 882,
+          "prevalence": 0.04085792375040534,
+          "auc": 0.898186680290727,
+          "ap": 0.20957322494401057
+        },
+        "scene9": {
+          "n": 21212,
+          "positives": 995,
+          "prevalence": 0.04690741089949085,
+          "auc": 0.9081564273859777,
+          "ap": 0.2330151639271658
+        }
+      }
+    }
+  }
+}

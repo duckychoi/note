@@ -1,0 +1,146 @@
+[
+  {
+    "file": "a-complexity/fast-bp.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/a-complexity/fast-bp.json",
+    "bytes": 404881,
+    "sha256": "2e4fe6d2e2065eb1abafc263788629bcdeb304a9d9e4b04ec9af0f0c3fc7204a"
+  },
+  {
+    "file": "a-complexity/results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/a-complexity/results.json",
+    "bytes": 717220,
+    "sha256": "5af7e5c64a28e01bd41e0d7fbb4c8203aabb3496c6630e7849618556692ea9ab"
+  },
+  {
+    "file": "c-encoder/results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/c-encoder/results.json",
+    "bytes": 7214,
+    "sha256": "a2331b2657eb3d30c93b707a89fa9b1b843beb7ddb12c0b7937357c5abbefa01"
+  },
+  {
+    "file": "crossview/results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/results.json",
+    "bytes": 64696,
+    "sha256": "b41d54382dd2b80ed2ef48c89a5e0f25194c3ed67cf0844e6b9adc4eb5c6678a"
+  },
+  {
+    "file": "crossview/visibility-diagnosis.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/visibility-diagnosis.json",
+    "bytes": 1068,
+    "sha256": "7a452d68820c7e378affed5afe5a29318de26bd9ca6d9fb1da5b37b0f49109b0"
+  },
+  {
+    "file": "crossview/visibility-encoder-results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/visibility-encoder/results.json",
+    "bytes": 9703,
+    "sha256": "47ef8aaf4cde566122d27516f3d40a5a7c9ad4f0469bcc6d61075d1bc86002c0"
+  },
+  {
+    "file": "crossview/visibility-results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/visibility-results.json",
+    "bytes": 21945,
+    "sha256": "32ed9db831547230915fd0739f937d581d2d3ae8ca8ff4d6a68d4b299b31dc6d"
+  },
+  {
+    "file": "full-development-choice.json",
+    "source": "research-sources/encoder42_eval/control43-geometry-pairs-v1/full-students-4244/development_choice.json",
+    "bytes": 104,
+    "sha256": "94ad302bebff4bb8ded36f779ecba3a4424caa4152b979be657909123fab4c5e"
+  },
+  {
+    "file": "full-students-queue.jsonl",
+    "source": "research-sources/encoder42_eval/control43-geometry-pairs-v1/full-students-4244/queue.jsonl",
+    "bytes": 4682,
+    "sha256": "aefc6a670fdb1e2b622655fd8b72fb542fbdb13fdfe2bdb716661f20591eedbc"
+  },
+  {
+    "file": "monocular-identifiability/diagnostic-hammer.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/monocular-identifiability/diagnostic-hammer.json",
+    "bytes": 356527,
+    "sha256": "10e927a75550eb827d372c5264edcce04052395ad85d507664bd7f87ff77c507"
+  },
+  {
+    "file": "monocular-identifiability/diagnostic-ibims.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/monocular-identifiability/diagnostic-ibims.json",
+    "bytes": 321561,
+    "sha256": "03b1a4e52b289a0f44741bf90d346c414bc6517206d7d5f80356b4a4f6638033"
+  },
+  {
+    "file": "monocular-identifiability/matched-transfer-hammer.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/monocular-identifiability/matched-transfer-hammer.json",
+    "bytes": 104975,
+    "sha256": "1926ca2a010bb193f20e52e243dc8bc3f47fd4f6a87add49fe470105cda32ef5"
+  },
+  {
+    "file": "monocular-identifiability/matched-transfer-ibims.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/monocular-identifiability/matched-transfer-ibims.json",
+    "bytes": 93802,
+    "sha256": "f037f8eae1e31fa4d0d24ccd14511ab496d441dc3bcfbec2368d09d2b217430b"
+  },
+  {
+    "file": "pf-paths/results.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/results.json",
+    "bytes": 74826,
+    "sha256": "a38f284da75137a82c8b4169430488e078dde48f6b26c71f5a951f8008969cae"
+  },
+  {
+    "file": "scale-confidence/calibration.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/scale-confidence/calibration.json",
+    "bytes": 7567,
+    "sha256": "3eb2ea5ee78b49cc5f8a64e1097aaeb0c6b6c729493dd08299bab3c8df6882ff"
+  },
+  {
+    "file": "scale-confidence/diagnostics.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/scale-confidence/diagnostics.json",
+    "bytes": 10056,
+    "sha256": "b4e19a598f0e1f138a6a27a923183f39f2d8978084b16ec2c6692ab2d9d7c765"
+  },
+  {
+    "file": "scale-confidence/hammer.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/scale-confidence/hammer.json",
+    "bytes": 93366,
+    "sha256": "ed83b3138650dd2b0dce185759b3356cfb2dec3c608d34be3ae44ac78002e933"
+  },
+  {
+    "file": "scale-confidence/ibims.json",
+    "source": "research-sources/encoder42_eval/pf42-trials/crossview-b/scale-confidence/ibims.json",
+    "bytes": 82956,
+    "sha256": "372db62893439ea0e6ef4784523e76f3a42466c2d79d41bb5b7b0aa8a94c92ae"
+  },
+  {
+    "file": "studio43/edge-motion.json",
+    "source": "research-sources/encoder42_eval/edge-motion-43/result.json",
+    "bytes": 51101,
+    "sha256": "dd483ee1f83ec0b4ae031d6ce7499f7cec6661412de492887bf0374ae6096a5e"
+  },
+  {
+    "file": "studio43/material-light-middlebury.json",
+    "source": "research-sources/encoder42_eval/material-light-43/middlebury.json",
+    "bytes": 27772,
+    "sha256": "a98489e908bbe4ba80da095d94743d09c2ee82c6fe826eefb90409831378723b"
+  },
+  {
+    "file": "studio43/scores-1024-diode.json",
+    "source": "research-sources/encoder42_eval/photometric-stereo-43/scores-1024-diode.json",
+    "bytes": 223129,
+    "sha256": "9936d238195a588f424128d5a6e47f5ea11a6b7458995a0d1ce8a0416b6c1e02"
+  },
+  {
+    "file": "studio43/scores-1024-hammer.json",
+    "source": "research-sources/encoder42_eval/photometric-stereo-43/scores-1024-hammer.json",
+    "bytes": 497027,
+    "sha256": "2a0418294aba99f869d98cc332cf9df01b86465da8d2c8219385607db4635b80"
+  },
+  {
+    "file": "studio43/scores-1024-ibims.json",
+    "source": "research-sources/encoder42_eval/photometric-stereo-43/scores-1024-ibims.json",
+    "bytes": 69566,
+    "sha256": "e7525d706e623b850c63956f5583fa357665c18d416d6de0203d2300cdaf5829"
+  },
+  {
+    "file": "studio43/teacher-diligent.json",
+    "source": "research-sources/encoder42_eval/photometric-stereo-43/teacher-diligent.json",
+    "bytes": 4941,
+    "sha256": "91985aea5f6942f6c27c3462751d3e6a1d7922d1eae57b24c5c346d65a22f8bc"
+  }
+]

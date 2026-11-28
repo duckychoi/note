@@ -1,0 +1,271 @@
+{
+  "cut": 1,
+  "rows": [
+    {
+      "scene": 4,
+      "initial": 26,
+      "options": {
+        "1": {
+          "distance_mm": 116.81833255238494,
+          "rotation_deg": 16.907211361807217,
+          "coverage": 0.8297925054196346,
+          "loss_mm": 18.078856483567534
+        },
+        "2": {
+          "distance_mm": 73.20433008024317,
+          "rotation_deg": 10.76993271246456,
+          "coverage": 0.7964075565190462,
+          "loss_mm": 20.962347816427048
+        },
+        "3": {
+          "distance_mm": 139.4156865559944,
+          "rotation_deg": 20.593955403485783,
+          "coverage": 0.801176834933416,
+          "loss_mm": 21.238580717485917
+        }
+      }
+    },
+    {
+      "scene": 4,
+      "initial": 53,
+      "options": {
+        "1": {
+          "distance_mm": 85.78159703104868,
+          "rotation_deg": 12.715773394758397,
+          "coverage": 0.7685757950658613,
+          "loss_mm": 24.310872635680234
+        },
+        "2": {
+          "distance_mm": 174.85845832168803,
+          "rotation_deg": 25.95436442963216,
+          "coverage": 0.7738155883851248,
+          "loss_mm": 24.08450518714181
+        },
+        "3": {
+          "distance_mm": 257.7332177537515,
+          "rotation_deg": 38.45738094022618,
+          "coverage": 0.7567862600975184,
+          "loss_mm": 25.36372623711263
+        }
+      }
+    },
+    {
+      "scene": 5,
+      "initial": 26,
+      "options": {
+        "1": {
+          "distance_mm": 116.80951056560605,
+          "rotation_deg": 16.90497625235147,
+          "coverage": 0.8601637107776262,
+          "loss_mm": 14.824811935287663
+        },
+        "2": {
+          "distance_mm": 73.19095179323921,
+          "rotation_deg": 10.768976597744409,
+          "coverage": 0.8339017735334243,
+          "loss_mm": 17.100339389579688
+        },
+        "3": {
+          "distance_mm": 139.41104199700675,
+          "rotation_deg": 20.594183365506503,
+          "coverage": 0.8525238744884038,
+          "loss_mm": 15.897335249026055
+        }
+      }
+    },
+    {
+      "scene": 5,
+      "initial": 53,
+      "options": {
+        "1": {
+          "distance_mm": 85.78333778117205,
+          "rotation_deg": 12.71502183987667,
+          "coverage": 0.8227590694647796,
+          "loss_mm": 18.636020058695777
+        },
+        "2": {
+          "distance_mm": 174.86393621620635,
+          "rotation_deg": 25.95384611839796,
+          "coverage": 0.8195054498129168,
+          "loss_mm": 19.07830041448662
+        },
+        "3": {
+          "distance_mm": 257.74066187446397,
+          "rotation_deg": 38.457544162043064,
+          "coverage": 0.813648934439564,
+          "loss_mm": 19.56550556124653
+        }
+      }
+    },
+    {
+      "scene": 8,
+      "initial": 17,
+      "options": {
+        "1": {
+          "distance_mm": 66.74480790314881,
+          "rotation_deg": 9.831347234203164,
+          "coverage": 0.9650090885484289,
+          "loss_mm": 3.84780585135148
+        },
+        "2": {
+          "distance_mm": 248.4669893766478,
+          "rotation_deg": 36.19481486958368,
+          "coverage": 0.9655284341729421,
+          "loss_mm": 3.9342498686484864
+        },
+        "3": {
+          "distance_mm": 210.91760358575388,
+          "rotation_deg": 30.672810478509298,
+          "coverage": 0.9674110620618022,
+          "loss_mm": 3.73792487483801
+        }
+      }
+    },
+    {
+      "scene": 8,
+      "initial": 34,
+      "options": {
+        "1": {
+          "distance_mm": 350.00358718243933,
+          "rotation_deg": 50.657095272008526,
+          "coverage": 0.9695396919935335,
+          "loss_mm": 3.6558761060735088
+        },
+        "2": {
+          "distance_mm": 291.6584460140906,
+          "rotation_deg": 42.67416457483184,
+          "coverage": 0.9697098613120054,
+          "loss_mm": 3.551677744351042
+        },
+        "3": {
+          "distance_mm": 227.55847086150195,
+          "rotation_deg": 31.798775457536415,
+          "coverage": 0.9575427550412661,
+          "loss_mm": 4.794125481440614
+        }
+      }
+    },
+    {
+      "scene": 9,
+      "initial": 17,
+      "options": {
+        "1": {
+          "distance_mm": 66.74358475883417,
+          "rotation_deg": 9.82908046974998,
+          "coverage": 0.9580751233084609,
+          "loss_mm": 4.6073606930885385
+        },
+        "2": {
+          "distance_mm": 248.47670111140897,
+          "rotation_deg": 36.19568032774909,
+          "coverage": 0.961932464904515,
+          "loss_mm": 4.360508171380685
+        },
+        "3": {
+          "distance_mm": 210.92105764425128,
+          "rotation_deg": 30.674109064996603,
+          "coverage": 0.9615530542557228,
+          "loss_mm": 4.408509200614153
+        }
+      }
+    },
+    {
+      "scene": 9,
+      "initial": 34,
+      "options": {
+        "1": {
+          "distance_mm": 350.0283717192906,
+          "rotation_deg": 50.66127492468746,
+          "coverage": 0.9447225084645959,
+          "loss_mm": 6.161530604514427
+        },
+        "2": {
+          "distance_mm": 291.67359748748703,
+          "rotation_deg": 42.67684038457075,
+          "coverage": 0.9364051229206536,
+          "loss_mm": 6.950248081368494
+        },
+        "3": {
+          "distance_mm": 227.57616815947324,
+          "rotation_deg": 31.801434287589395,
+          "coverage": 0.8473428529368467,
+          "loss_mm": 15.793317268664113
+        }
+      }
+    }
+  ],
+  "reference": {
+    "distance_mm": 208.91223241879882,
+    "rotation_deg": 30.381817720033894,
+    "coverage": 0.8687671790301343,
+    "loss_mm": 13.916166819887712
+  },
+  "candidate": {
+    "distance_mm": 154.84120120622572,
+    "rotation_deg": 22.527588371666397,
+    "coverage": 0.8964301030038656,
+    "loss_mm": 11.0574308228966
+  },
+  "oracle_choices": [
+    1,
+    1,
+    3,
+    3
+  ],
+  "oracle": {
+    "distance_mm": 160.27251853762567,
+    "rotation_deg": 23.023885361203533,
+    "coverage": 0.8729546718587439,
+    "loss_mm": 13.415664615815427
+  },
+  "sha256": {
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_27.json": "f291fc2aaab9cfe98cc836238165ed46b3a918b45bb5edd17a049aa661afd0ec",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_27.png": "400039200eb0f6096b5a910a0afc12d2e4aca12e8f7ff4696e24ad8afe049f9a",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_28.json": "206b50418e97ab26de8bc47cedf7475f25d084219b32879686bdc29dd33d44a1",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_28.png": "a234c48566dfa30211e2dff6a8f121533abff60c92897ed8cc80b0df9d842284",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_29.json": "06abfcf6fb7d23f55221d14094489ba11856183aa95f486e012eafeb337f5f29",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_29.png": "f9eaad4c7367020ad755c67264ce6d0ce3266a7781836a55b94c28eb09ee3de3",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_54.json": "1b33d666219a3dc1f8736650553b38ad6cd5fab764da24e823f5f2fd3aabf28a",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_54.png": "47fb6e3f831e7af19bdb97629a011a2cb5c2430f31b52ac114cfdee356864b74",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_55.json": "3e03b837021160cdd9acfb6a9da5524958ccbe538700f44335c4a2b58ac055fd",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_55.png": "66d2a537cf8b898bcab75db0ce556ea39466a0a46d1047c4098b92573a71d389",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_56.json": "b5ea2fa8bbb54497c2e872650ca75f035d869a37c2b36c0b56c19f274995ee5a",
+    "Chrome_screw/Scene_4/Ensenso/Depth/DEPTH_view_56.png": "db9ade4080596b4eddd2522f0d5ecd65cd9894f8e619abc094d39026ba39f446",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_27.json": "03ccad26d9d496bb571eb3f542ad0540fd8c30abbe5a8798019934228a3912df",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_27.png": "022343311274d094befc981d11061844472dbe0f436ee825870b6bab3763a00d",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_28.json": "a15aabec16f7de18b5f08ecc1546545ee5c4bad1f93742c6f17fdf8df63e8d9e",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_28.png": "9e973f21129f61c7c3cb019f87310136129a3593ca13f117fc882d5b3965757c",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_29.json": "3aee82d738800e491c418130587f8c98b6f7a1bb40cd789e06b24a220810e579",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_29.png": "278504514148ad40ecb325ac2d3408f188c7c723f8790c79d002472701bdb8dc",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_54.json": "a459cf0e43aff9d8bd97eb9a7868b72283a16a03c23c55026b3e3cd1808c22a1",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_54.png": "e0558a1c627a3490a1a5f087a2c7ac580088f2fb3797ae98245297ca700a7411",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_55.json": "dbf5aa41e47f34966f261596fa7739b77b740cf6e8c4d1496fa9f67fbc8ca86d",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_55.png": "858407854f98e9ecf17abaed2943e87bb76f06fea7843e686d6d03d45b4b5acd",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_56.json": "3c484afe26f0f14c05767734ab9d9f4fc9ab063353190a86164558657b19eaa2",
+    "Chrome_screw/Scene_5/Ensenso/Depth/DEPTH_view_56.png": "6768dcdca44487bf344b8bb8197f7116889be435e2e70ddbbe605b62be80346f",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_18.json": "e5fc0b714f0485cf42eef841f7b1244ee3ba2dba76c216ac15f502b1b60b01a1",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_18.png": "c57dce753f07ae3eba0d9bbaba71bd5d24bba0b473a990698e4427b36394bff3",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_19.json": "7ecc690d8d34477b1fee41ff0d43455a7a6fa5538eaba5c89874abd85429841c",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_19.png": "aac6eb2d15d380a2e2433f69b80928e3624f0f856ca76de04d372fa874ff1fc6",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_20.json": "7b688fed0ff1d457db4ddfd2f3ff98092da99ccf0e7559a95a885b2bbd2fc0c5",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_20.png": "9bdba89abd879d592a11224b29ff61030529c2c72c13b40219eb2bc5318acc81",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_35.json": "6ece7e01c0d1b8b24999622c488d23b7e721c419c2d579e7a9e110f5bd3d93f3",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_35.png": "fc79a93032b4d0c7af50e2aa5e16d3c9125acd0191a33bc4ca37cc2e0470048c",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_36.json": "9a2415bcceb379183dd472514ea99c2455e3828b3dc689dba9b08f8f42f6768c",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_36.png": "b9e164d0754f96501d7f6a98e5c79577cf2c1f99b5bd86bb858bef7d5b8fba4e",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_37.json": "94cb1046147e4cf90c74fcd5adc18ff34f72185ac696db4c2ee8b1d28ec31122",
+    "Chrome_screw/Scene_8/Ensenso/Depth/DEPTH_view_37.png": "ef35a5c17906ada0b64ffd42b3d6e3db1546a9791ffcbd5821a14cbad6268b8f",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_18.json": "ccb23cfe3bc88c5a68eefcd06e20976047b789dd468dec5d0daa52e959b44642",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_18.png": "45ff2dfd56d801b45ed8daa807887ae2ca10cb9f72e5990e19173c5507c56427",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_19.json": "9415c5e7d677f741c65062d57740e0d4ee36c4df9fecd2c11db19e18eaa025de",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_19.png": "bd87627ab346f6fd3c4f57323eb07a7ff2496407355657cd02f39f3f85a9d615",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_20.json": "da1d7239a0bb756f2cc22eedcdbcfb6630dd972966dc84c8d964c210e8c58834",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_20.png": "775051b526973d7247b64074c9dcc14c46d1982413a7c21cf18f2f101f9b641b",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_35.json": "962eb682505afa299a9a8f99991cca8d70d94ef298d4ad7a3cb003b2dc26bdce",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_35.png": "e7e6583d313302abdeff5ed1d09af307116a6d88e7f700f7d32ce392a3934b1a",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_36.json": "5c92dcbc13636b5ef3df596218056adbed65ec6aff9aaf91e7f1e264addc6cb9",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_36.png": "11a2560596ed8d7362be4ca0b692ae2a507695c02ef64cf9df5ff44452be58aa",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_37.json": "9f39065dba428b68fdbe8f4ab2d223b24d22790ac50a1009b273578eb4e4bcf9",
+    "Chrome_screw/Scene_9/Ensenso/Depth/DEPTH_view_37.png": "b78e7b23708c512218627ecc76320044196312d227c787ec66d99ceb93404260"
+  }
+}

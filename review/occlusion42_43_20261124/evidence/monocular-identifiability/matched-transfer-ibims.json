@@ -1,0 +1,3188 @@
+{
+  "rows": [
+    {
+      "key": "corridor_01",
+      "group": "corridor",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.1565735690747471,
+        "factor_direct": 0.2120562858083436,
+        "factor_shared": 0.17326301710856096,
+        "shared": 0.10680983193479361,
+        "previous_direct": 0.1562770206700552
+      },
+      "seeds": [
+        {
+          "direct": 0.17404917110088614,
+          "factor_direct": 0.22702276209587033,
+          "factor_shared": 0.19297483557973624
+        },
+        {
+          "direct": 0.15110774250690942,
+          "factor_direct": 0.20778407975359975,
+          "factor_shared": 0.15485522204749805
+        },
+        {
+          "direct": 0.14456379361644572,
+          "factor_direct": 0.20136201557556072,
+          "factor_shared": 0.17195899369844864
+        }
+      ]
+    },
+    {
+      "key": "corridor_02",
+      "group": "corridor",
+      "fold": "same",
+      "points": 342,
+      "scores": {
+        "direct": 0.23193612362146832,
+        "factor_direct": 0.20289940612002755,
+        "factor_shared": 0.21939250929128187,
+        "shared": 0.25591146143675986,
+        "previous_direct": 0.23192509795909555
+      },
+      "seeds": [
+        {
+          "direct": 0.2254292720970477,
+          "factor_direct": 0.2010968983371824,
+          "factor_shared": 0.21471960304190016
+        },
+        {
+          "direct": 0.22694148565833644,
+          "factor_direct": 0.19410418940507068,
+          "factor_shared": 0.2192354506080685
+        },
+        {
+          "direct": 0.24343761310902082,
+          "factor_direct": 0.21349713061782963,
+          "factor_shared": 0.22422247422387698
+        }
+      ]
+    },
+    {
+      "key": "corridor_03",
+      "group": "corridor",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2142711776605989,
+        "factor_direct": 0.23869006499201437,
+        "factor_shared": 0.21718337634127707,
+        "shared": 0.18648522617997357,
+        "previous_direct": 0.21431896087408678
+      },
+      "seeds": [
+        {
+          "direct": 0.20696262006018987,
+          "factor_direct": 0.23207369877792697,
+          "factor_shared": 0.2152574037816213
+        },
+        {
+          "direct": 0.23142897268685458,
+          "factor_direct": 0.2592860836877228,
+          "factor_shared": 0.22520317528534073
+        },
+        {
+          "direct": 0.20442194023475224,
+          "factor_direct": 0.22471041251039323,
+          "factor_shared": 0.21108954995686927
+        }
+      ]
+    },
+    {
+      "key": "corridor_04",
+      "group": "corridor",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.1277427643415884,
+        "factor_direct": 0.13203776374002207,
+        "factor_shared": 0.1335797210485948,
+        "shared": 0.1151060714752924,
+        "previous_direct": 0.1277187344477885
+      },
+      "seeds": [
+        {
+          "direct": 0.12870555839243478,
+          "factor_direct": 0.13195286493127245,
+          "factor_shared": 0.13245415506408376
+        },
+        {
+          "direct": 0.12300791054830215,
+          "factor_direct": 0.1260485968730018,
+          "factor_shared": 0.1302129863153786
+        },
+        {
+          "direct": 0.13151482408402834,
+          "factor_direct": 0.13811182941579195,
+          "factor_shared": 0.13807202176632202
+        }
+      ]
+    },
+    {
+      "key": "corridor_05",
+      "group": "corridor",
+      "fold": "extra",
+      "points": 365,
+      "scores": {
+        "direct": 0.2179360908320264,
+        "factor_direct": 0.21215013782894174,
+        "factor_shared": 0.2185722563237439,
+        "shared": 0.2179328794576082,
+        "previous_direct": 0.2181072165179411
+      },
+      "seeds": [
+        {
+          "direct": 0.22105863979259446,
+          "factor_direct": 0.21682216277543262,
+          "factor_shared": 0.22184214442550662
+        },
+        {
+          "direct": 0.20989704155743488,
+          "factor_direct": 0.20167700516165307,
+          "factor_shared": 0.2124969652819804
+        },
+        {
+          "direct": 0.22285259114604986,
+          "factor_direct": 0.21795124554973946,
+          "factor_shared": 0.22137765926374478
+        }
+      ]
+    },
+    {
+      "key": "corridor_06",
+      "group": "corridor",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.630595756439476,
+        "factor_direct": 0.6406685503355419,
+        "factor_shared": 0.6258959754462333,
+        "shared": 0.612893248529466,
+        "previous_direct": 0.6305724910636057
+      },
+      "seeds": [
+        {
+          "direct": 0.6438777704464873,
+          "factor_direct": 0.654144555606028,
+          "factor_shared": 0.6398046314163864
+        },
+        {
+          "direct": 0.6554033841820038,
+          "factor_direct": 0.6594139108070717,
+          "factor_shared": 0.6400110668931678
+        },
+        {
+          "direct": 0.592506114689937,
+          "factor_direct": 0.6084471845935261,
+          "factor_shared": 0.5978722280291455
+        }
+      ]
+    },
+    {
+      "key": "corridor_07",
+      "group": "corridor",
+      "fold": "same",
+      "points": 290,
+      "scores": {
+        "direct": 0.0699134606835842,
+        "factor_direct": 0.07264732549729626,
+        "factor_shared": 0.06473289014790819,
+        "shared": 0.07071474960406042,
+        "previous_direct": 0.06973071138088521
+      },
+      "seeds": [
+        {
+          "direct": 0.07764806821593069,
+          "factor_direct": 0.07794776371082011,
+          "factor_shared": 0.06827438904698298
+        },
+        {
+          "direct": 0.07341690887700093,
+          "factor_direct": 0.0810507336269932,
+          "factor_shared": 0.06893185447257871
+        },
+        {
+          "direct": 0.058675404957820976,
+          "factor_direct": 0.05894347915407546,
+          "factor_shared": 0.056992426924162905
+        }
+      ]
+    },
+    {
+      "key": "corridor_08",
+      "group": "corridor",
+      "fold": "same",
+      "points": 350,
+      "scores": {
+        "direct": 0.08389105583345706,
+        "factor_direct": 0.06638702269178066,
+        "factor_shared": 0.08605634467938666,
+        "shared": 0.10072754198657889,
+        "previous_direct": 0.08391449476905978
+      },
+      "seeds": [
+        {
+          "direct": 0.0794733510501076,
+          "factor_direct": 0.06255581880147987,
+          "factor_shared": 0.07981856656300432
+        },
+        {
+          "direct": 0.07100141175183745,
+          "factor_direct": 0.05252837444277092,
+          "factor_shared": 0.08044292000294158
+        },
+        {
+          "direct": 0.10119840469842614,
+          "factor_direct": 0.08407687483109123,
+          "factor_shared": 0.09790754747221407
+        }
+      ]
+    },
+    {
+      "key": "corridor_09",
+      "group": "corridor",
+      "fold": "extra",
+      "points": 384,
+      "scores": {
+        "direct": 0.11878484511731889,
+        "factor_direct": 0.1528003905855087,
+        "factor_shared": 0.12751370546854043,
+        "shared": 0.07061847601591538,
+        "previous_direct": 0.11846742113568681
+      },
+      "seeds": [
+        {
+          "direct": 0.12753207738644579,
+          "factor_direct": 0.15840722394863985,
+          "factor_shared": 0.13564068272400667
+        },
+        {
+          "direct": 0.12165484326986342,
+          "factor_direct": 0.15758384861072094,
+          "factor_shared": 0.1252655039921484
+        },
+        {
+          "direct": 0.10716761469564744,
+          "factor_direct": 0.14241009919716535,
+          "factor_shared": 0.1216349296894662
+        }
+      ]
+    },
+    {
+      "key": "corridor_10",
+      "group": "corridor",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.2148442684932181,
+        "factor_direct": 0.21987592309418336,
+        "factor_shared": 0.21185165740304823,
+        "shared": 0.21860101536375898,
+        "previous_direct": 0.2149798617815879
+      },
+      "seeds": [
+        {
+          "direct": 0.2307705958249972,
+          "factor_direct": 0.23021607184129528,
+          "factor_shared": 0.2206563569778592
+        },
+        {
+          "direct": 0.2277017308699377,
+          "factor_direct": 0.2351115575689256,
+          "factor_shared": 0.22494249678715197
+        },
+        {
+          "direct": 0.1860604787847194,
+          "factor_direct": 0.1943001398723292,
+          "factor_shared": 0.18995611844413351
+        }
+      ]
+    },
+    {
+      "key": "factory_01",
+      "group": "factory",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.3184406308698629,
+        "factor_direct": 0.33988419885735116,
+        "factor_shared": 0.31414151268241103,
+        "shared": 0.29253617368088697,
+        "previous_direct": 0.3189472561744338
+      },
+      "seeds": [
+        {
+          "direct": 0.3344733786305458,
+          "factor_direct": 0.3379583379377816,
+          "factor_shared": 0.3101078042123192
+        },
+        {
+          "direct": 0.32523685193235125,
+          "factor_direct": 0.3525747690096163,
+          "factor_shared": 0.327161337816611
+        },
+        {
+          "direct": 0.2956116620466917,
+          "factor_direct": 0.32911948962465565,
+          "factor_shared": 0.3051553960183028
+        }
+      ]
+    },
+    {
+      "key": "factory_02",
+      "group": "factory",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.15208146501693684,
+        "factor_direct": 0.16852736330101484,
+        "factor_shared": 0.17220694860293975,
+        "shared": 0.15407467040547132,
+        "previous_direct": 0.15229565602687709
+      },
+      "seeds": [
+        {
+          "direct": 0.14758570023199274,
+          "factor_direct": 0.1678583971472653,
+          "factor_shared": 0.1749140830524359
+        },
+        {
+          "direct": 0.15344916609062337,
+          "factor_direct": 0.17349579151738445,
+          "factor_shared": 0.1682972327653193
+        },
+        {
+          "direct": 0.15520952872819443,
+          "factor_direct": 0.1642279012383948,
+          "factor_shared": 0.17340952999106404
+        }
+      ]
+    },
+    {
+      "key": "factory_03",
+      "group": "factory",
+      "fold": "same",
+      "points": 364,
+      "scores": {
+        "direct": 0.13313092774644783,
+        "factor_direct": 0.1441021984874661,
+        "factor_shared": 0.144397951660626,
+        "shared": 0.13009358044902944,
+        "previous_direct": 0.13327349998942248
+      },
+      "seeds": [
+        {
+          "direct": 0.1299038714740597,
+          "factor_direct": 0.1435059253906632,
+          "factor_shared": 0.14699578563062177
+        },
+        {
+          "direct": 0.12747888593316856,
+          "factor_direct": 0.1412791877666128,
+          "factor_shared": 0.1348963849396368
+        },
+        {
+          "direct": 0.14201002583211522,
+          "factor_direct": 0.1475214823051223,
+          "factor_shared": 0.15130168441161948
+        }
+      ]
+    },
+    {
+      "key": "factory_04",
+      "group": "factory",
+      "fold": "same",
+      "points": 361,
+      "scores": {
+        "direct": 0.16272027762712843,
+        "factor_direct": 0.18504662892578772,
+        "factor_shared": 0.18718306342490898,
+        "shared": 0.15895774287392042,
+        "previous_direct": 0.16267200359699294
+      },
+      "seeds": [
+        {
+          "direct": 0.15514920342337538,
+          "factor_direct": 0.18196690180137218,
+          "factor_shared": 0.1867032124799468
+        },
+        {
+          "direct": 0.16392923633208828,
+          "factor_direct": 0.1875283970231346,
+          "factor_shared": 0.18190614602770105
+        },
+        {
+          "direct": 0.1690823931259216,
+          "factor_direct": 0.18564458795285643,
+          "factor_shared": 0.19293983176707907
+        }
+      ]
+    },
+    {
+      "key": "factory_05",
+      "group": "factory",
+      "fold": "same",
+      "points": 238,
+      "scores": {
+        "direct": 0.041313696324255134,
+        "factor_direct": 0.048111688052295994,
+        "factor_shared": 0.03868711066547989,
+        "shared": 0.04244319254589928,
+        "previous_direct": 0.041106655816114585
+      },
+      "seeds": [
+        {
+          "direct": 0.041046941700538395,
+          "factor_direct": 0.046700460167223456,
+          "factor_shared": 0.03783590081629613
+        },
+        {
+          "direct": 0.04421715420728601,
+          "factor_direct": 0.05398589597757159,
+          "factor_shared": 0.03990788723137409
+        },
+        {
+          "direct": 0.038676993064941,
+          "factor_direct": 0.04364870801209295,
+          "factor_shared": 0.03831754394876947
+        }
+      ]
+    },
+    {
+      "key": "factory_06",
+      "group": "factory",
+      "fold": "same",
+      "points": 375,
+      "scores": {
+        "direct": 0.24532680398516857,
+        "factor_direct": 0.26357209667803566,
+        "factor_shared": 0.25116893655890815,
+        "shared": 0.24862245222247617,
+        "previous_direct": 0.2467803094756992
+      },
+      "seeds": [
+        {
+          "direct": 0.2583618523208628,
+          "factor_direct": 0.26538250519535644,
+          "factor_shared": 0.25412815383246395
+        },
+        {
+          "direct": 0.26205612804391964,
+          "factor_direct": 0.28244837623264735,
+          "factor_shared": 0.263960622377452
+        },
+        {
+          "direct": 0.2155624315907233,
+          "factor_direct": 0.24288540860610328,
+          "factor_shared": 0.23541803346680842
+        }
+      ]
+    },
+    {
+      "key": "factory_07",
+      "group": "factory",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.04161979957461437,
+        "factor_direct": 0.04366760261239677,
+        "factor_shared": 0.0405143617076361,
+        "shared": 0.05371432412016794,
+        "previous_direct": 0.04155015784543029
+      },
+      "seeds": [
+        {
+          "direct": 0.04155646475123394,
+          "factor_direct": 0.045666919788137535,
+          "factor_shared": 0.04071538908889254
+        },
+        {
+          "direct": 0.04183031164245495,
+          "factor_direct": 0.044968358158363905,
+          "factor_shared": 0.04106523971386974
+        },
+        {
+          "direct": 0.041472622330154224,
+          "factor_direct": 0.040367529890688855,
+          "factor_shared": 0.039762456320146036
+        }
+      ]
+    },
+    {
+      "key": "factory_08",
+      "group": "factory",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.17225527559797996,
+        "factor_direct": 0.18453222136190636,
+        "factor_shared": 0.19083178831947586,
+        "shared": 0.18897533530574984,
+        "previous_direct": 0.17214708051031255
+      },
+      "seeds": [
+        {
+          "direct": 0.18568261283715307,
+          "factor_direct": 0.1833503640814418,
+          "factor_shared": 0.19090204390795779
+        },
+        {
+          "direct": 0.17081050052071586,
+          "factor_direct": 0.19116818373609082,
+          "factor_shared": 0.19669558499216735
+        },
+        {
+          "direct": 0.160272713436071,
+          "factor_direct": 0.17907811626818648,
+          "factor_shared": 0.1848977360583024
+        }
+      ]
+    },
+    {
+      "key": "kitchen_01",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 314,
+      "scores": {
+        "direct": 0.12208856746500985,
+        "factor_direct": 0.13891752936426857,
+        "factor_shared": 0.12778648158673125,
+        "shared": 0.09538856488997667,
+        "previous_direct": 0.1220054723060377
+      },
+      "seeds": [
+        {
+          "direct": 0.1338130460221558,
+          "factor_direct": 0.145357444762162,
+          "factor_shared": 0.1342789188900638
+        },
+        {
+          "direct": 0.12470673231973023,
+          "factor_direct": 0.14235532340999354,
+          "factor_shared": 0.12920251539507172
+        },
+        {
+          "direct": 0.10774592405314354,
+          "factor_direct": 0.12903981992065022,
+          "factor_shared": 0.11987801047505833
+        }
+      ]
+    },
+    {
+      "key": "kitchen_02",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 329,
+      "scores": {
+        "direct": 0.05437117765834553,
+        "factor_direct": 0.052632472579098456,
+        "factor_shared": 0.05457570915183754,
+        "shared": 0.057942821273767466,
+        "previous_direct": 0.054397681148281744
+      },
+      "seeds": [
+        {
+          "direct": 0.052680493975167886,
+          "factor_direct": 0.05244970078202635,
+          "factor_shared": 0.054677339456596044
+        },
+        {
+          "direct": 0.05437848852300469,
+          "factor_direct": 0.052753233015758995,
+          "factor_shared": 0.05437002939335192
+        },
+        {
+          "direct": 0.056054550476864,
+          "factor_direct": 0.05269448393951003,
+          "factor_shared": 0.05467975860556466
+        }
+      ]
+    },
+    {
+      "key": "kitchen_03",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 315,
+      "scores": {
+        "direct": 0.07546703756647372,
+        "factor_direct": 0.0759520594907452,
+        "factor_shared": 0.07733582123738425,
+        "shared": 0.08110412545471267,
+        "previous_direct": 0.07551898923964151
+      },
+      "seeds": [
+        {
+          "direct": 0.07777979429477586,
+          "factor_direct": 0.07804888372305521,
+          "factor_shared": 0.07956615401418268
+        },
+        {
+          "direct": 0.07212785670850287,
+          "factor_direct": 0.07715340279826463,
+          "factor_shared": 0.07531418410748848
+        },
+        {
+          "direct": 0.07649346169614239,
+          "factor_direct": 0.07265389195091575,
+          "factor_shared": 0.07712712559048159
+        }
+      ]
+    },
+    {
+      "key": "kitchen_04",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.04869058583421366,
+        "factor_direct": 0.061738085534791064,
+        "factor_shared": 0.05280757462036904,
+        "shared": 0.047462119642828315,
+        "previous_direct": 0.0486324923226531
+      },
+      "seeds": [
+        {
+          "direct": 0.05229321182061865,
+          "factor_direct": 0.06572064877264079,
+          "factor_shared": 0.05607176022947118
+        },
+        {
+          "direct": 0.05107816018509401,
+          "factor_direct": 0.07012200317801288,
+          "factor_shared": 0.05547469938735646
+        },
+        {
+          "direct": 0.04270038549692832,
+          "factor_direct": 0.049371604653719495,
+          "factor_shared": 0.04687626424427946
+        }
+      ]
+    },
+    {
+      "key": "kitchen_05",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 363,
+      "scores": {
+        "direct": 0.13460079409924822,
+        "factor_direct": 0.1419651502612947,
+        "factor_shared": 0.13181941165916197,
+        "shared": 0.1223577655036342,
+        "previous_direct": 0.13427128256880858
+      },
+      "seeds": [
+        {
+          "direct": 0.1384940769503618,
+          "factor_direct": 0.13787103125337744,
+          "factor_shared": 0.1279505519065367
+        },
+        {
+          "direct": 0.14278902652377948,
+          "factor_direct": 0.15126303112091305,
+          "factor_shared": 0.14045312046665281
+        },
+        {
+          "direct": 0.12251927882360336,
+          "factor_direct": 0.13676138840959357,
+          "factor_shared": 0.12705456260429637
+        }
+      ]
+    },
+    {
+      "key": "kitchen_06",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2341268376664161,
+        "factor_direct": 0.2507551608814759,
+        "factor_shared": 0.23712604679936958,
+        "shared": 0.21225642428108382,
+        "previous_direct": 0.23395289870107253
+      },
+      "seeds": [
+        {
+          "direct": 0.2457634181358043,
+          "factor_direct": 0.2574912866956191,
+          "factor_shared": 0.24481847226273032
+        },
+        {
+          "direct": 0.2382863584985344,
+          "factor_direct": 0.25533736969534215,
+          "factor_shared": 0.2365100137057888
+        },
+        {
+          "direct": 0.2183307363649096,
+          "factor_direct": 0.23943682625346666,
+          "factor_shared": 0.2300496544295897
+        }
+      ]
+    },
+    {
+      "key": "kitchen_07",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.21664345221495673,
+        "factor_direct": 0.22352426225167774,
+        "factor_shared": 0.20836674763703952,
+        "shared": 0.199638080121218,
+        "previous_direct": 0.21628120634369874
+      },
+      "seeds": [
+        {
+          "direct": 0.22005926971728046,
+          "factor_direct": 0.22675593350596782,
+          "factor_shared": 0.2118558620464805
+        },
+        {
+          "direct": 0.22634297468282094,
+          "factor_direct": 0.2306192183778348,
+          "factor_shared": 0.21225476348498484
+        },
+        {
+          "direct": 0.20352811224476877,
+          "factor_direct": 0.21319763487123053,
+          "factor_shared": 0.20098961737965326
+        }
+      ]
+    },
+    {
+      "key": "kitchen_08",
+      "group": "kitchen",
+      "fold": "same",
+      "points": 362,
+      "scores": {
+        "direct": 0.07029472834566623,
+        "factor_direct": 0.0688090246090967,
+        "factor_shared": 0.06756085276128783,
+        "shared": 0.06691038867719436,
+        "previous_direct": 0.07010557474400349
+      },
+      "seeds": [
+        {
+          "direct": 0.07438467347662552,
+          "factor_direct": 0.07397177525581217,
+          "factor_shared": 0.07301098285616996
+        },
+        {
+          "direct": 0.0673616160078374,
+          "factor_direct": 0.06602156578806845,
+          "factor_shared": 0.0639667681932787
+        },
+        {
+          "direct": 0.06913789555253576,
+          "factor_direct": 0.06643373278340949,
+          "factor_shared": 0.06570480723441485
+        }
+      ]
+    },
+    {
+      "key": "lab_01",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.11963916583012668,
+        "factor_direct": 0.12551017480239493,
+        "factor_shared": 0.12010939505838564,
+        "shared": 0.11481293664506087,
+        "previous_direct": 0.11989868623819656
+      },
+      "seeds": [
+        {
+          "direct": 0.12565918033903162,
+          "factor_direct": 0.12520847515449204,
+          "factor_shared": 0.12289729600159742
+        },
+        {
+          "direct": 0.1174302800739207,
+          "factor_direct": 0.13154364329515522,
+          "factor_shared": 0.11837560604355828
+        },
+        {
+          "direct": 0.11582803707742771,
+          "factor_direct": 0.11977840595753755,
+          "factor_shared": 0.11905528313000122
+        }
+      ]
+    },
+    {
+      "key": "lab_02",
+      "group": "lab",
+      "fold": "same",
+      "points": 373,
+      "scores": {
+        "direct": 0.2038579187712675,
+        "factor_direct": 0.20777519199483888,
+        "factor_shared": 0.21403472061254866,
+        "shared": 0.22190718756479388,
+        "previous_direct": 0.20337451686579788
+      },
+      "seeds": [
+        {
+          "direct": 0.21076082035346722,
+          "factor_direct": 0.21290080387250543,
+          "factor_shared": 0.219177667716775
+        },
+        {
+          "direct": 0.1993710517284857,
+          "factor_direct": 0.20883365819489497,
+          "factor_shared": 0.21305140549231738
+        },
+        {
+          "direct": 0.20144188423184958,
+          "factor_direct": 0.2015911139171163,
+          "factor_shared": 0.20987508862855356
+        }
+      ]
+    },
+    {
+      "key": "lab_03",
+      "group": "lab",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2039224077071371,
+        "factor_direct": 0.2301269823468267,
+        "factor_shared": 0.22085204328078623,
+        "shared": 0.17903829297776863,
+        "previous_direct": 0.2043585397987189
+      },
+      "seeds": [
+        {
+          "direct": 0.2102835685398111,
+          "factor_direct": 0.22584833230091306,
+          "factor_shared": 0.22051642021298679
+        },
+        {
+          "direct": 0.217808692218835,
+          "factor_direct": 0.24715128261490435,
+          "factor_shared": 0.2289656046726325
+        },
+        {
+          "direct": 0.18367496236276515,
+          "factor_direct": 0.21738133212466257,
+          "factor_shared": 0.21307410495673937
+        }
+      ]
+    },
+    {
+      "key": "lab_04",
+      "group": "lab",
+      "fold": "extra",
+      "points": 351,
+      "scores": {
+        "direct": 0.48996065236239605,
+        "factor_direct": 0.5054150189752726,
+        "factor_shared": 0.5059918144617557,
+        "shared": 0.4759494605057635,
+        "previous_direct": 0.4894320833932138
+      },
+      "seeds": [
+        {
+          "direct": 0.511780326104822,
+          "factor_direct": 0.5193119964727467,
+          "factor_shared": 0.5195422525123824
+        },
+        {
+          "direct": 0.48954412036286266,
+          "factor_direct": 0.5108573727845206,
+          "factor_shared": 0.5091336459237457
+        },
+        {
+          "direct": 0.46855751061950346,
+          "factor_direct": 0.48607568766855047,
+          "factor_shared": 0.4892995449491391
+        }
+      ]
+    },
+    {
+      "key": "lab_05",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.11416288230386377,
+        "factor_direct": 0.11229434144748036,
+        "factor_shared": 0.11582696695996027,
+        "shared": 0.11036021729206945,
+        "previous_direct": 0.11437611010309758
+      },
+      "seeds": [
+        {
+          "direct": 0.11545262588841462,
+          "factor_direct": 0.11579044116392781,
+          "factor_shared": 0.11979529906079618
+        },
+        {
+          "direct": 0.11261028832270101,
+          "factor_direct": 0.11034597304825046,
+          "factor_shared": 0.11234310013446348
+        },
+        {
+          "direct": 0.11442573270047571,
+          "factor_direct": 0.11074661013026284,
+          "factor_shared": 0.11534250168462114
+        }
+      ]
+    },
+    {
+      "key": "lab_06",
+      "group": "lab",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.2390519728867753,
+        "factor_direct": 0.23581422862324455,
+        "factor_shared": 0.23874274240010296,
+        "shared": 0.24356286694739462,
+        "previous_direct": 0.23911774423085083
+      },
+      "seeds": [
+        {
+          "direct": 0.25661079278229687,
+          "factor_direct": 0.24967839365680178,
+          "factor_shared": 0.2516450770277409
+        },
+        {
+          "direct": 0.22319138943020692,
+          "factor_direct": 0.22516158028128808,
+          "factor_shared": 0.22753019938408392
+        },
+        {
+          "direct": 0.23735373644782207,
+          "factor_direct": 0.23260271193164386,
+          "factor_shared": 0.23705295078848407
+        }
+      ]
+    },
+    {
+      "key": "lab_07",
+      "group": "lab",
+      "fold": "extra",
+      "points": 382,
+      "scores": {
+        "direct": 0.23320346779143322,
+        "factor_direct": 0.2309487705039922,
+        "factor_shared": 0.21991896671147537,
+        "shared": 0.22594621521894295,
+        "previous_direct": 0.23315715435669981
+      },
+      "seeds": [
+        {
+          "direct": 0.24865071229604324,
+          "factor_direct": 0.24141975346042183,
+          "factor_shared": 0.2322770241919877
+        },
+        {
+          "direct": 0.22980847270153879,
+          "factor_direct": 0.23057156303110737,
+          "factor_shared": 0.2130668920779888
+        },
+        {
+          "direct": 0.22115121837671772,
+          "factor_direct": 0.22085499502044745,
+          "factor_shared": 0.21441298386444965
+        }
+      ]
+    },
+    {
+      "key": "lab_08",
+      "group": "lab",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.3275369879981936,
+        "factor_direct": 0.33081914780457944,
+        "factor_shared": 0.3394655478963662,
+        "shared": 0.3337817582439288,
+        "previous_direct": 0.3277354639621161
+      },
+      "seeds": [
+        {
+          "direct": 0.3454147486001547,
+          "factor_direct": 0.3427977552315808,
+          "factor_shared": 0.3491549165336513
+        },
+        {
+          "direct": 0.31852203505732746,
+          "factor_direct": 0.3274554044406078,
+          "factor_shared": 0.33833905206158754
+        },
+        {
+          "direct": 0.3186741803370986,
+          "factor_direct": 0.3222042837415497,
+          "factor_shared": 0.3309026750938596
+        }
+      ]
+    },
+    {
+      "key": "lab_09",
+      "group": "lab",
+      "fold": "same",
+      "points": 341,
+      "scores": {
+        "direct": 0.10939478058306655,
+        "factor_direct": 0.12039466694969118,
+        "factor_shared": 0.1048521090281662,
+        "shared": 0.08877397321060931,
+        "previous_direct": 0.10924165766117762
+      },
+      "seeds": [
+        {
+          "direct": 0.12141293289315565,
+          "factor_direct": 0.12865015903863813,
+          "factor_shared": 0.11350693422766041
+        },
+        {
+          "direct": 0.10601604354561313,
+          "factor_direct": 0.1179488657266116,
+          "factor_shared": 0.09843134821146543
+        },
+        {
+          "direct": 0.10075536531043087,
+          "factor_direct": 0.11458497608382376,
+          "factor_shared": 0.10261804464537277
+        }
+      ]
+    },
+    {
+      "key": "lab_10",
+      "group": "lab",
+      "fold": "extra",
+      "points": 337,
+      "scores": {
+        "direct": 0.10212464691989281,
+        "factor_direct": 0.10638436055214802,
+        "factor_shared": 0.10498827547277789,
+        "shared": 0.10219026069943653,
+        "previous_direct": 0.10221565901558359
+      },
+      "seeds": [
+        {
+          "direct": 0.09794212829494821,
+          "factor_direct": 0.101624607776109,
+          "factor_shared": 0.10128146249940166
+        },
+        {
+          "direct": 0.10244796323221687,
+          "factor_direct": 0.10664730583873747,
+          "factor_shared": 0.10549090590127529
+        },
+        {
+          "direct": 0.10598384923251335,
+          "factor_direct": 0.11088116804159759,
+          "factor_shared": 0.1081924580176567
+        }
+      ]
+    },
+    {
+      "key": "lab_11",
+      "group": "lab",
+      "fold": "same",
+      "points": 370,
+      "scores": {
+        "direct": 0.18717631280842847,
+        "factor_direct": 0.18252930207702955,
+        "factor_shared": 0.1927605174244489,
+        "shared": 0.20042843535210528,
+        "previous_direct": 0.18664029975034668
+      },
+      "seeds": [
+        {
+          "direct": 0.19536743115475796,
+          "factor_direct": 0.1928934203856517,
+          "factor_shared": 0.20245819726495157
+        },
+        {
+          "direct": 0.18175696080571746,
+          "factor_direct": 0.17585815323086235,
+          "factor_shared": 0.18608712843912764
+        },
+        {
+          "direct": 0.18440454646480997,
+          "factor_direct": 0.1788363326145746,
+          "factor_shared": 0.18973622656926759
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_01",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 351,
+      "scores": {
+        "direct": 0.11739672374729675,
+        "factor_direct": 0.09946455119814739,
+        "factor_shared": 0.1064104808316036,
+        "shared": 0.13325076139409178,
+        "previous_direct": 0.11745548710716959
+      },
+      "seeds": [
+        {
+          "direct": 0.12056223154144441,
+          "factor_direct": 0.10665593921639575,
+          "factor_shared": 0.11261133867495678
+        },
+        {
+          "direct": 0.11361919548927354,
+          "factor_direct": 0.09475922222068445,
+          "factor_shared": 0.10183428410392253
+        },
+        {
+          "direct": 0.11800874421117225,
+          "factor_direct": 0.09697849215736193,
+          "factor_shared": 0.10478581971593147
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_02",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.07508161860936156,
+        "factor_direct": 0.10243586883815005,
+        "factor_shared": 0.07297435685244047,
+        "shared": 0.04320361462918209,
+        "previous_direct": 0.07482432590714087
+      },
+      "seeds": [
+        {
+          "direct": 0.08646507704227302,
+          "factor_direct": 0.10839642583975477,
+          "factor_shared": 0.08076186586358691
+        },
+        {
+          "direct": 0.07440578366205862,
+          "factor_direct": 0.10482097075179593,
+          "factor_shared": 0.06936519854718749
+        },
+        {
+          "direct": 0.06437399512375304,
+          "factor_direct": 0.09409020992289947,
+          "factor_shared": 0.06879600614654702
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_03",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 1.9863271037389214,
+        "factor_direct": 2.03212090506984,
+        "factor_shared": 2.0013052992521176,
+        "shared": 2.0034494432334466,
+        "previous_direct": 1.9865610434254932
+      },
+      "seeds": [
+        {
+          "direct": 1.9698102560231086,
+          "factor_direct": 2.005542115640024,
+          "factor_shared": 1.976803174475097
+        },
+        {
+          "direct": 2.0497263165720887,
+          "factor_direct": 2.0985736060076734,
+          "factor_shared": 2.051762826707938
+        },
+        {
+          "direct": 1.9394447386215663,
+          "factor_direct": 1.9922469935618226,
+          "factor_shared": 1.9753498965733176
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_04",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.11992142190428874,
+        "factor_direct": 0.10880409242179621,
+        "factor_shared": 0.10533041281986323,
+        "shared": 0.11606963185351209,
+        "previous_direct": 0.11973977767360726
+      },
+      "seeds": [
+        {
+          "direct": 0.12831119556998727,
+          "factor_direct": 0.12087764589896266,
+          "factor_shared": 0.1176145224326489
+        },
+        {
+          "direct": 0.11650175143005874,
+          "factor_direct": 0.10460681528056787,
+          "factor_shared": 0.09868991994229137
+        },
+        {
+          "direct": 0.11495131871282022,
+          "factor_direct": 0.10092781608585809,
+          "factor_shared": 0.0996867960846494
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_05",
+      "group": "lectureroom",
+      "fold": "extra",
+      "points": 381,
+      "scores": {
+        "direct": 0.25366563782255874,
+        "factor_direct": 0.2652687842064507,
+        "factor_shared": 0.2561983830816737,
+        "shared": 0.23131246041955547,
+        "previous_direct": 0.2533130224563644
+      },
+      "seeds": [
+        {
+          "direct": 0.26208056345290737,
+          "factor_direct": 0.2679518137332839,
+          "factor_shared": 0.2591990734489999
+        },
+        {
+          "direct": 0.26506787985432445,
+          "factor_direct": 0.2790496692429868,
+          "factor_shared": 0.2655926387441515
+        },
+        {
+          "direct": 0.23384847016044435,
+          "factor_direct": 0.24880486964308146,
+          "factor_shared": 0.2438034370518697
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_06",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.06246405292016242,
+        "factor_direct": 0.06731466883792762,
+        "factor_shared": 0.062363806430559,
+        "shared": 0.06255778047511734,
+        "previous_direct": 0.06257145532171805
+      },
+      "seeds": [
+        {
+          "direct": 0.06417482454087672,
+          "factor_direct": 0.06529179410950481,
+          "factor_shared": 0.06173277287865682
+        },
+        {
+          "direct": 0.06399839535600026,
+          "factor_direct": 0.07049690116960426,
+          "factor_shared": 0.06420842283994391
+        },
+        {
+          "direct": 0.05921893886361031,
+          "factor_direct": 0.06615531123467376,
+          "factor_shared": 0.06115022357307625
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_07",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 368,
+      "scores": {
+        "direct": 0.2809590282400694,
+        "factor_direct": 0.2770025283745598,
+        "factor_shared": 0.28171995842038733,
+        "shared": 0.26125116189239567,
+        "previous_direct": 0.2810590353345005
+      },
+      "seeds": [
+        {
+          "direct": 0.2636391073312308,
+          "factor_direct": 0.26803049309850635,
+          "factor_shared": 0.27008759036732377
+        },
+        {
+          "direct": 0.28252976897198795,
+          "factor_direct": 0.27110209815354513,
+          "factor_shared": 0.2793851517359497
+        },
+        {
+          "direct": 0.2967082084169896,
+          "factor_direct": 0.2918749938716278,
+          "factor_shared": 0.29568713315788847
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_08",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 368,
+      "scores": {
+        "direct": 0.22329138977024696,
+        "factor_direct": 0.21557726849860312,
+        "factor_shared": 0.21491740850842334,
+        "shared": 0.22653857626209284,
+        "previous_direct": 0.22272106398714575
+      },
+      "seeds": [
+        {
+          "direct": 0.21162769029786394,
+          "factor_direct": 0.2000575005897935,
+          "factor_shared": 0.19618279983223805
+        },
+        {
+          "direct": 0.22482995218179663,
+          "factor_direct": 0.22194874340386792,
+          "factor_shared": 0.2274982322122456
+        },
+        {
+          "direct": 0.23341652683108025,
+          "factor_direct": 0.22472556150214795,
+          "factor_shared": 0.2210711934807864
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_09",
+      "group": "lectureroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.1789211278297637,
+        "factor_direct": 0.18590783688236687,
+        "factor_shared": 0.17188044089149335,
+        "shared": 0.1540033775642123,
+        "previous_direct": 0.17894000413509323
+      },
+      "seeds": [
+        {
+          "direct": 0.18033584541055783,
+          "factor_direct": 0.18343705154326684,
+          "factor_shared": 0.16958480632353953
+        },
+        {
+          "direct": 0.17999509001333425,
+          "factor_direct": 0.18791355376928057,
+          "factor_shared": 0.17371781322742855
+        },
+        {
+          "direct": 0.17643244806539898,
+          "factor_direct": 0.18637290533455322,
+          "factor_shared": 0.172338703123512
+        }
+      ]
+    },
+    {
+      "key": "lectureroom_10",
+      "group": "lectureroom",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.18062120854268948,
+        "factor_direct": 0.18180622662119408,
+        "factor_shared": 0.1856908030600978,
+        "shared": 0.1734243747909728,
+        "previous_direct": 0.180319673420291
+      },
+      "seeds": [
+        {
+          "direct": 0.19010623278448804,
+          "factor_direct": 0.1916411161931561,
+          "factor_shared": 0.1949309118888995
+        },
+        {
+          "direct": 0.17318164291127883,
+          "factor_direct": 0.17729854506946566,
+          "factor_shared": 0.18005687487735159
+        },
+        {
+          "direct": 0.17857574993230155,
+          "factor_direct": 0.17647901860096055,
+          "factor_shared": 0.18208462241404239
+        }
+      ]
+    },
+    {
+      "key": "livingroom_01",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 307,
+      "scores": {
+        "direct": 0.34944309919559385,
+        "factor_direct": 0.34598968029929394,
+        "factor_shared": 0.34206961101615657,
+        "shared": 0.33282939049381877,
+        "previous_direct": 0.3489516076661985
+      },
+      "seeds": [
+        {
+          "direct": 0.3697594693985994,
+          "factor_direct": 0.3604832131831442,
+          "factor_shared": 0.3570199686020612
+        },
+        {
+          "direct": 0.341032225377759,
+          "factor_direct": 0.34026430848055184,
+          "factor_shared": 0.3332726884929673
+        },
+        {
+          "direct": 0.3375376028104231,
+          "factor_direct": 0.33722151923418575,
+          "factor_shared": 0.3359161759534413
+        }
+      ]
+    },
+    {
+      "key": "livingroom_02",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 382,
+      "scores": {
+        "direct": 0.17841572197886804,
+        "factor_direct": 0.16497082953968212,
+        "factor_shared": 0.17077490519641336,
+        "shared": 0.18565264213717336,
+        "previous_direct": 0.1784843378580888
+      },
+      "seeds": [
+        {
+          "direct": 0.16488462715828817,
+          "factor_direct": 0.15632855530003611,
+          "factor_shared": 0.16286872187563076
+        },
+        {
+          "direct": 0.1820751775267095,
+          "factor_direct": 0.16500180264049966,
+          "factor_shared": 0.17243934321496984
+        },
+        {
+          "direct": 0.18828736125160647,
+          "factor_direct": 0.1735821306785106,
+          "factor_shared": 0.1770166504986394
+        }
+      ]
+    },
+    {
+      "key": "livingroom_03",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 379,
+      "scores": {
+        "direct": 0.21612933025158873,
+        "factor_direct": 0.23184379027879495,
+        "factor_shared": 0.21521732725202444,
+        "shared": 0.18604766206288703,
+        "previous_direct": 0.2161083007057681
+      },
+      "seeds": [
+        {
+          "direct": 0.22067379549770796,
+          "factor_direct": 0.23203756773777695,
+          "factor_shared": 0.21871689079201218
+        },
+        {
+          "direct": 0.22570603654902677,
+          "factor_direct": 0.2418820458432462,
+          "factor_shared": 0.2173618080604689
+        },
+        {
+          "direct": 0.2020081587080315,
+          "factor_direct": 0.22161175725536159,
+          "factor_shared": 0.20957328290359228
+        }
+      ]
+    },
+    {
+      "key": "livingroom_04",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.07800371018276546,
+        "factor_direct": 0.07436030742960274,
+        "factor_shared": 0.0806902947027096,
+        "shared": 0.08985191140371461,
+        "previous_direct": 0.07808044326575102
+      },
+      "seeds": [
+        {
+          "direct": 0.07429398346538023,
+          "factor_direct": 0.07248664146726148,
+          "factor_shared": 0.07934355345208316
+        },
+        {
+          "direct": 0.07713637336487734,
+          "factor_direct": 0.07283216339339471,
+          "factor_shared": 0.07980488079574224
+        },
+        {
+          "direct": 0.08258077371803882,
+          "factor_direct": 0.07776211742815202,
+          "factor_shared": 0.08292244986030335
+        }
+      ]
+    },
+    {
+      "key": "livingroom_05",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 333,
+      "scores": {
+        "direct": 0.08763022582558778,
+        "factor_direct": 0.09260993772993466,
+        "factor_shared": 0.08598800847978323,
+        "shared": 0.07569672870360032,
+        "previous_direct": 0.08758756294869224
+      },
+      "seeds": [
+        {
+          "direct": 0.10386364829259906,
+          "factor_direct": 0.10283336653483886,
+          "factor_shared": 0.0966465553499467
+        },
+        {
+          "direct": 0.07719307025049552,
+          "factor_direct": 0.08702003580221662,
+          "factor_shared": 0.0771130860407621
+        },
+        {
+          "direct": 0.0818339589336688,
+          "factor_direct": 0.08797641085274847,
+          "factor_shared": 0.0842043840486409
+        }
+      ]
+    },
+    {
+      "key": "livingroom_06",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 304,
+      "scores": {
+        "direct": 0.16404825374350643,
+        "factor_direct": 0.15856904393364124,
+        "factor_shared": 0.15714358020345298,
+        "shared": 0.15929682559245348,
+        "previous_direct": 0.16384320511908704
+      },
+      "seeds": [
+        {
+          "direct": 0.16835664119278623,
+          "factor_direct": 0.16447861132163624,
+          "factor_shared": 0.16352013982359523
+        },
+        {
+          "direct": 0.16155541217693803,
+          "factor_direct": 0.1561584394373269,
+          "factor_shared": 0.15206698110840114
+        },
+        {
+          "direct": 0.16223270786079502,
+          "factor_direct": 0.15507008104196054,
+          "factor_shared": 0.1558436196783626
+        }
+      ]
+    },
+    {
+      "key": "livingroom_07",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.16663113352109807,
+        "factor_direct": 0.17660545338497702,
+        "factor_shared": 0.16526725008525636,
+        "shared": 0.1406435925265833,
+        "previous_direct": 0.16671748836060982
+      },
+      "seeds": [
+        {
+          "direct": 0.17744403246101503,
+          "factor_direct": 0.18345476958791246,
+          "factor_shared": 0.17365308730871573
+        },
+        {
+          "direct": 0.15892649535872394,
+          "factor_direct": 0.17214985817391895,
+          "factor_shared": 0.15608790965507915
+        },
+        {
+          "direct": 0.1635228727435552,
+          "factor_direct": 0.17421173239309964,
+          "factor_shared": 0.1660607532919742
+        }
+      ]
+    },
+    {
+      "key": "livingroom_08",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 372,
+      "scores": {
+        "direct": 0.09060966066248029,
+        "factor_direct": 0.1025557811528157,
+        "factor_shared": 0.09458141558285847,
+        "shared": 0.06812435002032301,
+        "previous_direct": 0.09050012196568406
+      },
+      "seeds": [
+        {
+          "direct": 0.09450951830035394,
+          "factor_direct": 0.10568907981782046,
+          "factor_shared": 0.09972327652694425
+        },
+        {
+          "direct": 0.09353374406410318,
+          "factor_direct": 0.10604358141029761,
+          "factor_shared": 0.0920640227300412
+        },
+        {
+          "direct": 0.08378571962298377,
+          "factor_direct": 0.09593468223032901,
+          "factor_shared": 0.09195694749158996
+        }
+      ]
+    },
+    {
+      "key": "livingroom_09",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.0988959924157898,
+        "factor_direct": 0.10139812428677046,
+        "factor_shared": 0.10381948784361039,
+        "shared": 0.10284466898704551,
+        "previous_direct": 0.09874285087751618
+      },
+      "seeds": [
+        {
+          "direct": 0.10101571733910175,
+          "factor_direct": 0.10049391862270193,
+          "factor_shared": 0.10317191450946758
+        },
+        {
+          "direct": 0.10113586297929619,
+          "factor_direct": 0.10497443412604134,
+          "factor_shared": 0.10774599970042764
+        },
+        {
+          "direct": 0.09453639692897146,
+          "factor_direct": 0.09872602011156813,
+          "factor_shared": 0.10054054932093592
+        }
+      ]
+    },
+    {
+      "key": "livingroom_10",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 375,
+      "scores": {
+        "direct": 0.38988606379238755,
+        "factor_direct": 0.40427647486558027,
+        "factor_shared": 0.40289553125042055,
+        "shared": 0.42329689645110874,
+        "previous_direct": 0.39037111697302845
+      },
+      "seeds": [
+        {
+          "direct": 0.39846129888405607,
+          "factor_direct": 0.39495024956547053,
+          "factor_shared": 0.393104672031195
+        },
+        {
+          "direct": 0.39905025669487165,
+          "factor_direct": 0.41886417582961283,
+          "factor_shared": 0.4164643311915913
+        },
+        {
+          "direct": 0.37214663579823504,
+          "factor_direct": 0.39901499920165745,
+          "factor_shared": 0.39911759052847545
+        }
+      ]
+    },
+    {
+      "key": "livingroom_11",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 377,
+      "scores": {
+        "direct": 0.04430694288754498,
+        "factor_direct": 0.051215080233851094,
+        "factor_shared": 0.0511111282519893,
+        "shared": 0.04382194976102386,
+        "previous_direct": 0.044368380308023064
+      },
+      "seeds": [
+        {
+          "direct": 0.05095753791383362,
+          "factor_direct": 0.053215997596236436,
+          "factor_shared": 0.05326780953309236
+        },
+        {
+          "direct": 0.03977080112571133,
+          "factor_direct": 0.04934030653881238,
+          "factor_shared": 0.04801569833734376
+        },
+        {
+          "direct": 0.042192489623089996,
+          "factor_direct": 0.05108893656650445,
+          "factor_shared": 0.05204987688553181
+        }
+      ]
+    },
+    {
+      "key": "livingroom_12",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 373,
+      "scores": {
+        "direct": 0.09080442763240287,
+        "factor_direct": 0.10747585454986618,
+        "factor_shared": 0.10516327881017921,
+        "shared": 0.0812163729730974,
+        "previous_direct": 0.09063074178477726
+      },
+      "seeds": [
+        {
+          "direct": 0.09940701510790774,
+          "factor_direct": 0.10654080165522306,
+          "factor_shared": 0.1055543478062042
+        },
+        {
+          "direct": 0.09404134727962318,
+          "factor_direct": 0.11650046302878322,
+          "factor_shared": 0.1107900336438147
+        },
+        {
+          "direct": 0.0789649205096777,
+          "factor_direct": 0.09938629896559222,
+          "factor_shared": 0.09914545498051873
+        }
+      ]
+    },
+    {
+      "key": "livingroom_13",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 375,
+      "scores": {
+        "direct": 0.09958333702875681,
+        "factor_direct": 0.11350950889960103,
+        "factor_shared": 0.0985365016874777,
+        "shared": 0.07261209050443547,
+        "previous_direct": 0.09948178275928647
+      },
+      "seeds": [
+        {
+          "direct": 0.11381038633774124,
+          "factor_direct": 0.12370347356498644,
+          "factor_shared": 0.10851094553504319
+        },
+        {
+          "direct": 0.09187483034016167,
+          "factor_direct": 0.10758102284232916,
+          "factor_shared": 0.09037501931251266
+        },
+        {
+          "direct": 0.09306479440836754,
+          "factor_direct": 0.10924403029148744,
+          "factor_shared": 0.09672354021487731
+        }
+      ]
+    },
+    {
+      "key": "livingroom_14",
+      "group": "livingroom",
+      "fold": "extra",
+      "points": 360,
+      "scores": {
+        "direct": 0.06135587499271435,
+        "factor_direct": 0.07399141536293004,
+        "factor_shared": 0.07132572427334817,
+        "shared": 0.059193322182765316,
+        "previous_direct": 0.06138293315682546
+      },
+      "seeds": [
+        {
+          "direct": 0.0715913018265742,
+          "factor_direct": 0.07448245394457499,
+          "factor_shared": 0.07305101290185938
+        },
+        {
+          "direct": 0.054759553661826735,
+          "factor_direct": 0.07475637849811556,
+          "factor_shared": 0.06884231050454442
+        },
+        {
+          "direct": 0.05771676948974212,
+          "factor_direct": 0.07273541364609959,
+          "factor_shared": 0.0720838494136407
+        }
+      ]
+    },
+    {
+      "key": "livingroom_15",
+      "group": "livingroom",
+      "fold": "same",
+      "points": 335,
+      "scores": {
+        "direct": 0.18820930545542758,
+        "factor_direct": 0.20665321320959038,
+        "factor_shared": 0.19546305892052596,
+        "shared": 0.168375295318294,
+        "previous_direct": 0.18821996504495928
+      },
+      "seeds": [
+        {
+          "direct": 0.19919639598126057,
+          "factor_direct": 0.21750804135005727,
+          "factor_shared": 0.20598718892741844
+        },
+        {
+          "direct": 0.19450584576358257,
+          "factor_direct": 0.2120576596401721,
+          "factor_shared": 0.19813851120471188
+        },
+        {
+          "direct": 0.1709256746214396,
+          "factor_direct": 0.19039393863854173,
+          "factor_shared": 0.18226347662944758
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_01",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.1520768273641405,
+        "factor_direct": 0.1467418830624915,
+        "factor_shared": 0.1480756190803233,
+        "shared": 0.1558484265506652,
+        "previous_direct": 0.15206933433839365
+      },
+      "seeds": [
+        {
+          "direct": 0.14903285659534643,
+          "factor_direct": 0.14778790389471025,
+          "factor_shared": 0.14761283285780782
+        },
+        {
+          "direct": 0.1513995014788138,
+          "factor_direct": 0.14282313521770104,
+          "factor_shared": 0.14710656434131472
+        },
+        {
+          "direct": 0.15579812401826124,
+          "factor_direct": 0.14961461007506324,
+          "factor_shared": 0.14950746004184737
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_02",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.08762703521607261,
+        "factor_direct": 0.09329887365795723,
+        "factor_shared": 0.09440744283089142,
+        "shared": 0.09119941310443958,
+        "previous_direct": 0.08749612117258336
+      },
+      "seeds": [
+        {
+          "direct": 0.08981576064575103,
+          "factor_direct": 0.0906647123911858,
+          "factor_shared": 0.09259394674403265
+        },
+        {
+          "direct": 0.0888263711659542,
+          "factor_direct": 0.09690696448588232,
+          "factor_shared": 0.09742878358662374
+        },
+        {
+          "direct": 0.08423897383651258,
+          "factor_direct": 0.09232494409680356,
+          "factor_shared": 0.09319959816201788
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_03",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 284,
+      "scores": {
+        "direct": 0.16070484576064467,
+        "factor_direct": 0.16808699126484783,
+        "factor_shared": 0.15981671072271555,
+        "shared": 0.15277289233899785,
+        "previous_direct": 0.1606049845870958
+      },
+      "seeds": [
+        {
+          "direct": 0.17194517549390145,
+          "factor_direct": 0.17390686516998985,
+          "factor_shared": 0.1642885054446956
+        },
+        {
+          "direct": 0.16771679719379967,
+          "factor_direct": 0.17599096363578237,
+          "factor_shared": 0.16449783164038975
+        },
+        {
+          "direct": 0.1424525645942329,
+          "factor_direct": 0.15436314498877124,
+          "factor_shared": 0.15066379508306138
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_04",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 361,
+      "scores": {
+        "direct": 0.0791362255794056,
+        "factor_direct": 0.07967200468355229,
+        "factor_shared": 0.07484299141280464,
+        "shared": 0.08799147402545025,
+        "previous_direct": 0.07915382366164347
+      },
+      "seeds": [
+        {
+          "direct": 0.07601246820009308,
+          "factor_direct": 0.08017947174830106,
+          "factor_shared": 0.07197371578280283
+        },
+        {
+          "direct": 0.07728550466453313,
+          "factor_direct": 0.07579354151460058,
+          "factor_shared": 0.07518093051969761
+        },
+        {
+          "direct": 0.08411070387359058,
+          "factor_direct": 0.08304300078775521,
+          "factor_shared": 0.07737432793591344
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_05",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 373,
+      "scores": {
+        "direct": 0.1989926715731077,
+        "factor_direct": 0.21746468047313983,
+        "factor_shared": 0.21020649181641726,
+        "shared": 0.1962515223813697,
+        "previous_direct": 0.19898013013701843
+      },
+      "seeds": [
+        {
+          "direct": 0.20373669292051624,
+          "factor_direct": 0.21521308366540964,
+          "factor_shared": 0.20845109425990158
+        },
+        {
+          "direct": 0.20960263263905168,
+          "factor_direct": 0.22930695594618272,
+          "factor_shared": 0.21877161761872654
+        },
+        {
+          "direct": 0.18363868915975523,
+          "factor_direct": 0.2078740018078271,
+          "factor_shared": 0.2033967635706236
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_06",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 371,
+      "scores": {
+        "direct": 0.1432710346442709,
+        "factor_direct": 0.15234748160069794,
+        "factor_shared": 0.14336660900910814,
+        "shared": 0.13167298176832376,
+        "previous_direct": 0.1430971914579597
+      },
+      "seeds": [
+        {
+          "direct": 0.151920074592423,
+          "factor_direct": 0.1580166227720388,
+          "factor_shared": 0.14726305990560087
+        },
+        {
+          "direct": 0.14968709981388362,
+          "factor_direct": 0.15892400322019923,
+          "factor_shared": 0.15052710648066756
+        },
+        {
+          "direct": 0.12820592952650608,
+          "factor_direct": 0.14010181880985578,
+          "factor_shared": 0.132309660641056
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_07",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.44256762873295136,
+        "factor_direct": 0.45951883240595787,
+        "factor_shared": 0.444825299719475,
+        "shared": 0.42130468488444994,
+        "previous_direct": 0.4422224550601573
+      },
+      "seeds": [
+        {
+          "direct": 0.4663314727247208,
+          "factor_direct": 0.4749691007286807,
+          "factor_shared": 0.4594695390313563
+        },
+        {
+          "direct": 0.44909806086367665,
+          "factor_direct": 0.4682475295439935,
+          "factor_shared": 0.44961878438485087
+        },
+        {
+          "direct": 0.41227335261045644,
+          "factor_direct": 0.43533986694519944,
+          "factor_shared": 0.4253875757422177
+        }
+      ]
+    },
+    {
+      "key": "meetingroom_08",
+      "group": "meetingroom",
+      "fold": "same",
+      "points": 383,
+      "scores": {
+        "direct": 0.1388957414247972,
+        "factor_direct": 0.1461080950240111,
+        "factor_shared": 0.14206996757496124,
+        "shared": 0.13374490357023394,
+        "previous_direct": 0.13893085330754862
+      },
+      "seeds": [
+        {
+          "direct": 0.15163172074246822,
+          "factor_direct": 0.1556365708247478,
+          "factor_shared": 0.15122500739925332
+        },
+        {
+          "direct": 0.1398233797906975,
+          "factor_direct": 0.14908545993380665,
+          "factor_shared": 0.14279879169956153
+        },
+        {
+          "direct": 0.1252321237412258,
+          "factor_direct": 0.13360225431347886,
+          "factor_shared": 0.13218610362606886
+        }
+      ]
+    },
+    {
+      "key": "office_01",
+      "group": "office",
+      "fold": "same",
+      "points": 339,
+      "scores": {
+        "direct": 0.2213743252534003,
+        "factor_direct": 0.23588799548926595,
+        "factor_shared": 0.20898033629880627,
+        "shared": 0.18586034401942028,
+        "previous_direct": 0.22128499821189926
+      },
+      "seeds": [
+        {
+          "direct": 0.24549454070735466,
+          "factor_direct": 0.25540509795410654,
+          "factor_shared": 0.2272759400109687
+        },
+        {
+          "direct": 0.21338205564882254,
+          "factor_direct": 0.23119323909774014,
+          "factor_shared": 0.20021719650992761
+        },
+        {
+          "direct": 0.2052463794040238,
+          "factor_direct": 0.2210656494159511,
+          "factor_shared": 0.19944787237552247
+        }
+      ]
+    },
+    {
+      "key": "office_02",
+      "group": "office",
+      "fold": "same",
+      "points": 355,
+      "scores": {
+        "direct": 0.11261060394918754,
+        "factor_direct": 0.12027368833517127,
+        "factor_shared": 0.10680862572195597,
+        "shared": 0.10311305517233237,
+        "previous_direct": 0.1127245866997848
+      },
+      "seeds": [
+        {
+          "direct": 0.12594092571897886,
+          "factor_direct": 0.128088351897694,
+          "factor_shared": 0.11492839126372342
+        },
+        {
+          "direct": 0.11399210305660187,
+          "factor_direct": 0.1235406161666294,
+          "factor_shared": 0.10854892284021371
+        },
+        {
+          "direct": 0.09789878307198191,
+          "factor_direct": 0.10919209694119045,
+          "factor_shared": 0.09694856306193078
+        }
+      ]
+    },
+    {
+      "key": "office_03",
+      "group": "office",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.07394742859519655,
+        "factor_direct": 0.06303865520885547,
+        "factor_shared": 0.06598305688027518,
+        "shared": 0.08391003203393266,
+        "previous_direct": 0.07402036353978488
+      },
+      "seeds": [
+        {
+          "direct": 0.06355646606865127,
+          "factor_direct": 0.05845419390018517,
+          "factor_shared": 0.06175538604716157
+        },
+        {
+          "direct": 0.06915223586612433,
+          "factor_direct": 0.05925752414565479,
+          "factor_shared": 0.06340595032746336
+        },
+        {
+          "direct": 0.08913358385081405,
+          "factor_direct": 0.07140424758072643,
+          "factor_shared": 0.07278783426620065
+        }
+      ]
+    },
+    {
+      "key": "office_04",
+      "group": "office",
+      "fold": "same",
+      "points": 345,
+      "scores": {
+        "direct": 0.05471883478806555,
+        "factor_direct": 0.050025869273492174,
+        "factor_shared": 0.051997323718556886,
+        "shared": 0.06598000054382076,
+        "previous_direct": 0.05489145865549206
+      },
+      "seeds": [
+        {
+          "direct": 0.049326971436923175,
+          "factor_direct": 0.04858407219703196,
+          "factor_shared": 0.04896446727112434
+        },
+        {
+          "direct": 0.053375848147552474,
+          "factor_direct": 0.04778771785701957,
+          "factor_shared": 0.05231697433497171
+        },
+        {
+          "direct": 0.061453684779721005,
+          "factor_direct": 0.053705817766424996,
+          "factor_shared": 0.05471052954957458
+        }
+      ]
+    },
+    {
+      "key": "office_05",
+      "group": "office",
+      "fold": "same",
+      "points": 301,
+      "scores": {
+        "direct": 0.06313611724540272,
+        "factor_direct": 0.06365830000457688,
+        "factor_shared": 0.06249082896819256,
+        "shared": 0.06440280608807382,
+        "previous_direct": 0.06316806094817358
+      },
+      "seeds": [
+        {
+          "direct": 0.0623213352955703,
+          "factor_direct": 0.06253821666778071,
+          "factor_shared": 0.06101431271109901
+        },
+        {
+          "direct": 0.06354166721230431,
+          "factor_direct": 0.06413405132659278,
+          "factor_shared": 0.063387938439909
+        },
+        {
+          "direct": 0.06354534922833355,
+          "factor_direct": 0.06430263201935717,
+          "factor_shared": 0.06307023575356967
+        }
+      ]
+    },
+    {
+      "key": "office_06",
+      "group": "office",
+      "fold": "same",
+      "points": 371,
+      "scores": {
+        "direct": 0.05341352367198048,
+        "factor_direct": 0.06379715470662388,
+        "factor_shared": 0.053331498249682446,
+        "shared": 0.04439209502816314,
+        "previous_direct": 0.05335625755727639
+      },
+      "seeds": [
+        {
+          "direct": 0.054322583144693994,
+          "factor_direct": 0.06372959801518627,
+          "factor_shared": 0.05444103181630131
+        },
+        {
+          "direct": 0.054156621724905776,
+          "factor_direct": 0.07018383987744067,
+          "factor_shared": 0.05465433965433394
+        },
+        {
+          "direct": 0.05176136614634166,
+          "factor_direct": 0.057478026227244704,
+          "factor_shared": 0.050899123278412096
+        }
+      ]
+    },
+    {
+      "key": "office_07",
+      "group": "office",
+      "fold": "same",
+      "points": 339,
+      "scores": {
+        "direct": 0.426379265324385,
+        "factor_direct": 0.4352297654728283,
+        "factor_shared": 0.4298318104061645,
+        "shared": 0.4241343086827752,
+        "previous_direct": 0.4261571099749928
+      },
+      "seeds": [
+        {
+          "direct": 0.4440912993595649,
+          "factor_direct": 0.44384645336076284,
+          "factor_shared": 0.4370990958237167
+        },
+        {
+          "direct": 0.4248935699835586,
+          "factor_direct": 0.4376723545612554,
+          "factor_shared": 0.4299360882647795
+        },
+        {
+          "direct": 0.41015292663003167,
+          "factor_direct": 0.42417048849646666,
+          "factor_shared": 0.4224602471299974
+        }
+      ]
+    },
+    {
+      "key": "office_08",
+      "group": "office",
+      "fold": "same",
+      "points": 332,
+      "scores": {
+        "direct": 0.12873442100114516,
+        "factor_direct": 0.13044447562581746,
+        "factor_shared": 0.1299979357028771,
+        "shared": 0.12451088046011632,
+        "previous_direct": 0.12883057820463398
+      },
+      "seeds": [
+        {
+          "direct": 0.13012456112283188,
+          "factor_direct": 0.13367636268013253,
+          "factor_shared": 0.13364742229212453
+        },
+        {
+          "direct": 0.13023605993375287,
+          "factor_direct": 0.1313096166312779,
+          "factor_shared": 0.1287134666828005
+        },
+        {
+          "direct": 0.1258426419468507,
+          "factor_direct": 0.12634744756604194,
+          "factor_shared": 0.12763291813370625
+        }
+      ]
+    },
+    {
+      "key": "restaurant_01",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 376,
+      "scores": {
+        "direct": 0.16598494656018425,
+        "factor_direct": 0.1723907292582164,
+        "factor_shared": 0.17310544912974515,
+        "shared": 0.15353021950960555,
+        "previous_direct": 0.1658728990359647
+      },
+      "seeds": [
+        {
+          "direct": 0.16890742881985635,
+          "factor_direct": 0.1760957206804283,
+          "factor_shared": 0.17811304523565213
+        },
+        {
+          "direct": 0.16658016137271223,
+          "factor_direct": 0.1714934979931247,
+          "factor_shared": 0.16859467257509023
+        },
+        {
+          "direct": 0.1624672494879842,
+          "factor_direct": 0.1695829691010963,
+          "factor_shared": 0.17260862957849316
+        }
+      ]
+    },
+    {
+      "key": "restaurant_02",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 338,
+      "scores": {
+        "direct": 0.18855682441576396,
+        "factor_direct": 0.202893810627203,
+        "factor_shared": 0.20001339204965451,
+        "shared": 0.16371899695553674,
+        "previous_direct": 0.1881156686596687
+      },
+      "seeds": [
+        {
+          "direct": 0.1935286734237706,
+          "factor_direct": 0.20967714040182003,
+          "factor_shared": 0.20902293335212724
+        },
+        {
+          "direct": 0.18169063096456076,
+          "factor_direct": 0.19717527435800347,
+          "factor_shared": 0.18856869770193777
+        },
+        {
+          "direct": 0.19045116885896063,
+          "factor_direct": 0.20182901712178547,
+          "factor_shared": 0.20244854509489846
+        }
+      ]
+    },
+    {
+      "key": "restaurant_03",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 346,
+      "scores": {
+        "direct": 0.2029523312801554,
+        "factor_direct": 0.2111538122751131,
+        "factor_shared": 0.1916631577771216,
+        "shared": 0.1794084925678141,
+        "previous_direct": 0.20284507424573298
+      },
+      "seeds": [
+        {
+          "direct": 0.20868196621075114,
+          "factor_direct": 0.21274519027328967,
+          "factor_shared": 0.1959873839498869
+        },
+        {
+          "direct": 0.21583786540439825,
+          "factor_direct": 0.2220385497292758,
+          "factor_shared": 0.19358401210703952
+        },
+        {
+          "direct": 0.18433716222531682,
+          "factor_direct": 0.19867769682277384,
+          "factor_shared": 0.18541807727443838
+        }
+      ]
+    },
+    {
+      "key": "restaurant_04",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 372,
+      "scores": {
+        "direct": 0.2123400000055767,
+        "factor_direct": 0.2281342770642166,
+        "factor_shared": 0.215714505770936,
+        "shared": 0.19419186876283065,
+        "previous_direct": 0.21221597298802905
+      },
+      "seeds": [
+        {
+          "direct": 0.22351597825581723,
+          "factor_direct": 0.23993790728634812,
+          "factor_shared": 0.22710162950392315
+        },
+        {
+          "direct": 0.21212669874527693,
+          "factor_direct": 0.229308965021996,
+          "factor_shared": 0.21344372850116283
+        },
+        {
+          "direct": 0.201377323015636,
+          "factor_direct": 0.2151559588843057,
+          "factor_shared": 0.20659815930772205
+        }
+      ]
+    },
+    {
+      "key": "restaurant_05",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 380,
+      "scores": {
+        "direct": 0.1578880889659712,
+        "factor_direct": 0.182065872805933,
+        "factor_shared": 0.17258330160546875,
+        "shared": 0.13644278570733862,
+        "previous_direct": 0.15746530816819557
+      },
+      "seeds": [
+        {
+          "direct": 0.1643650898754045,
+          "factor_direct": 0.18149183227580226,
+          "factor_shared": 0.17152227226286812
+        },
+        {
+          "direct": 0.16734801398878252,
+          "factor_direct": 0.19217556373685285,
+          "factor_shared": 0.18050206341999334
+        },
+        {
+          "direct": 0.14195116303372657,
+          "factor_direct": 0.17253022240514387,
+          "factor_shared": 0.16572556913354486
+        }
+      ]
+    },
+    {
+      "key": "restaurant_06",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 378,
+      "scores": {
+        "direct": 0.44849540763113455,
+        "factor_direct": 0.46481736448662786,
+        "factor_shared": 0.4564123742573995,
+        "shared": 0.42804594362861015,
+        "previous_direct": 0.4487515665988599
+      },
+      "seeds": [
+        {
+          "direct": 0.46480063511823194,
+          "factor_direct": 0.471389566280918,
+          "factor_shared": 0.46611571513308214
+        },
+        {
+          "direct": 0.4593464892810215,
+          "factor_direct": 0.47532634164825205,
+          "factor_shared": 0.4605078305453646
+        },
+        {
+          "direct": 0.42133909849415024,
+          "factor_direct": 0.4477361855307135,
+          "factor_shared": 0.44261357709375165
+        }
+      ]
+    },
+    {
+      "key": "restaurant_07",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 295,
+      "scores": {
+        "direct": 0.28213250797942324,
+        "factor_direct": 0.3045652693352033,
+        "factor_shared": 0.2867297468154316,
+        "shared": 0.26217973780636344,
+        "previous_direct": 0.2826643615286143
+      },
+      "seeds": [
+        {
+          "direct": 0.2969443020280686,
+          "factor_direct": 0.30501728247378523,
+          "factor_shared": 0.2870026519784166
+        },
+        {
+          "direct": 0.2936712057956772,
+          "factor_direct": 0.3205938510406336,
+          "factor_shared": 0.29933998510889565
+        },
+        {
+          "direct": 0.25578201611452384,
+          "factor_direct": 0.28808467449119113,
+          "factor_shared": 0.2738466033589826
+        }
+      ]
+    },
+    {
+      "key": "restaurant_08",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 323,
+      "scores": {
+        "direct": 0.452706318923864,
+        "factor_direct": 0.46653493833317156,
+        "factor_shared": 0.4530038477267348,
+        "shared": 0.41363322856364193,
+        "previous_direct": 0.4523213885851163
+      },
+      "seeds": [
+        {
+          "direct": 0.4603565277149992,
+          "factor_direct": 0.47415074433144305,
+          "factor_shared": 0.4630131676103183
+        },
+        {
+          "direct": 0.4667109113383512,
+          "factor_direct": 0.4738296399239498,
+          "factor_shared": 0.4528592427682061
+        },
+        {
+          "direct": 0.4310515177182414,
+          "factor_direct": 0.4516244307441217,
+          "factor_shared": 0.44313913280167994
+        }
+      ]
+    },
+    {
+      "key": "restaurant_09",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 383,
+      "scores": {
+        "direct": 0.18483480737614388,
+        "factor_direct": 0.2042182680828661,
+        "factor_shared": 0.1940292003563008,
+        "shared": 0.1657654100251965,
+        "previous_direct": 0.18482672397339808
+      },
+      "seeds": [
+        {
+          "direct": 0.19633092916639086,
+          "factor_direct": 0.20762897268220765,
+          "factor_shared": 0.19909158908653038
+        },
+        {
+          "direct": 0.19355631051377872,
+          "factor_direct": 0.2132609552560947,
+          "factor_shared": 0.19896788719511618
+        },
+        {
+          "direct": 0.16461718244826212,
+          "factor_direct": 0.19176487631029596,
+          "factor_shared": 0.18402812478725586
+        }
+      ]
+    },
+    {
+      "key": "restaurant_10",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 366,
+      "scores": {
+        "direct": 0.5414909970208585,
+        "factor_direct": 0.5579408337168722,
+        "factor_shared": 0.5545012027314952,
+        "shared": 0.5356413785878748,
+        "previous_direct": 0.5416442407289038
+      },
+      "seeds": [
+        {
+          "direct": 0.5702064836274015,
+          "factor_direct": 0.5794566295856156,
+          "factor_shared": 0.5756194728106979
+        },
+        {
+          "direct": 0.5413229940010257,
+          "factor_direct": 0.5630545015922503,
+          "factor_shared": 0.5553433538379677
+        },
+        {
+          "direct": 0.5129435134341486,
+          "factor_direct": 0.5313113699727504,
+          "factor_shared": 0.5325407815458197
+        }
+      ]
+    },
+    {
+      "key": "restaurant_11",
+      "group": "restaurant",
+      "fold": "extra",
+      "points": 381,
+      "scores": {
+        "direct": 0.71794475324989,
+        "factor_direct": 0.7400834129475583,
+        "factor_shared": 0.7231861254872484,
+        "shared": 0.6918281841968446,
+        "previous_direct": 0.7186034452105715
+      },
+      "seeds": [
+        {
+          "direct": 0.7415650667097536,
+          "factor_direct": 0.7507532330778728,
+          "factor_shared": 0.7370420734732014
+        },
+        {
+          "direct": 0.7184618730871175,
+          "factor_direct": 0.7456027019710092,
+          "factor_shared": 0.7181326398165775
+        },
+        {
+          "direct": 0.6938073199527989,
+          "factor_direct": 0.723894303793793,
+          "factor_shared": 0.7143836631719666
+        }
+      ]
+    },
+    {
+      "key": "restaurant_12",
+      "group": "restaurant",
+      "fold": "same",
+      "points": 378,
+      "scores": {
+        "direct": 0.21624450150438582,
+        "factor_direct": 0.2283383940703668,
+        "factor_shared": 0.21838874641441283,
+        "shared": 0.2124601239033342,
+        "previous_direct": 0.21605199310803505
+      },
+      "seeds": [
+        {
+          "direct": 0.2268753304923311,
+          "factor_direct": 0.2291216824892845,
+          "factor_shared": 0.21823805584991376
+        },
+        {
+          "direct": 0.23328273241550282,
+          "factor_direct": 0.2447147272992642,
+          "factor_shared": 0.23379281828959977
+        },
+        {
+          "direct": 0.18857544160532352,
+          "factor_direct": 0.2111787724225517,
+          "factor_shared": 0.20313536510372487
+        }
+      ]
+    },
+    {
+      "key": "restroom_01",
+      "group": "restroom",
+      "fold": "same",
+      "points": 369,
+      "scores": {
+        "direct": 0.4728823788044874,
+        "factor_direct": 0.5406180634637104,
+        "factor_shared": 0.5115378443448481,
+        "shared": 0.41334978935055117,
+        "previous_direct": 0.4722240398222224
+      },
+      "seeds": [
+        {
+          "direct": 0.47619740386003095,
+          "factor_direct": 0.5334038594781497,
+          "factor_shared": 0.5073861990901808
+        },
+        {
+          "direct": 0.5082471147236052,
+          "factor_direct": 0.5741425186501741,
+          "factor_shared": 0.5335790641420819
+        },
+        {
+          "direct": 0.43420261782982617,
+          "factor_direct": 0.5143078122628075,
+          "factor_shared": 0.4936482698022817
+        }
+      ]
+    },
+    {
+      "key": "restroom_02",
+      "group": "restroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.21433916873361966,
+        "factor_direct": 0.24508139866855658,
+        "factor_shared": 0.22016177593976713,
+        "shared": 0.19396330158351957,
+        "previous_direct": 0.2143534951203473
+      },
+      "seeds": [
+        {
+          "direct": 0.22033698931199244,
+          "factor_direct": 0.2456058102636669,
+          "factor_shared": 0.22507333949274702
+        },
+        {
+          "direct": 0.22081000280217097,
+          "factor_direct": 0.2564542989348285,
+          "factor_shared": 0.2202007690663347
+        },
+        {
+          "direct": 0.20187051408669557,
+          "factor_direct": 0.23318408680717426,
+          "factor_shared": 0.21521121926021966
+        }
+      ]
+    },
+    {
+      "key": "storageroom_01",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 382,
+      "scores": {
+        "direct": 0.23128905054372062,
+        "factor_direct": 0.24399914056296837,
+        "factor_shared": 0.23660334369186,
+        "shared": 0.22002092042695118,
+        "previous_direct": 0.23070706019181983
+      },
+      "seeds": [
+        {
+          "direct": 0.24466716502272895,
+          "factor_direct": 0.2515462058073693,
+          "factor_shared": 0.24330585001631483
+        },
+        {
+          "direct": 0.24151057445491178,
+          "factor_direct": 0.253767429976336,
+          "factor_shared": 0.2437990710743826
+        },
+        {
+          "direct": 0.20768941215352107,
+          "factor_direct": 0.22668378590519983,
+          "factor_shared": 0.22270510998488266
+        }
+      ]
+    },
+    {
+      "key": "storageroom_02",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 369,
+      "scores": {
+        "direct": 0.23311841323822746,
+        "factor_direct": 0.262132505912033,
+        "factor_shared": 0.23910777495192304,
+        "shared": 0.18815131597884358,
+        "previous_direct": 0.23375978852410342
+      },
+      "seeds": [
+        {
+          "direct": 0.25299557293663033,
+          "factor_direct": 0.2800324162202079,
+          "factor_shared": 0.258856086023026
+        },
+        {
+          "direct": 0.23210778886518085,
+          "factor_direct": 0.2613978453011612,
+          "factor_shared": 0.23122840585180307
+        },
+        {
+          "direct": 0.21425187791287117,
+          "factor_direct": 0.24496725621473003,
+          "factor_shared": 0.22723883298094005
+        }
+      ]
+    },
+    {
+      "key": "storageroom_03",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 343,
+      "scores": {
+        "direct": 0.17287353789641244,
+        "factor_direct": 0.1960532792645402,
+        "factor_shared": 0.1812698004690013,
+        "shared": 0.14581587786445374,
+        "previous_direct": 0.1731594260888604
+      },
+      "seeds": [
+        {
+          "direct": 0.1805642308189653,
+          "factor_direct": 0.19483401546697107,
+          "factor_shared": 0.1822889177671067
+        },
+        {
+          "direct": 0.18570068366193873,
+          "factor_direct": 0.21014509451074476,
+          "factor_shared": 0.1881548390111138
+        },
+        {
+          "direct": 0.15235569920833328,
+          "factor_direct": 0.18318072781590478,
+          "factor_shared": 0.17336564462878337
+        }
+      ]
+    },
+    {
+      "key": "storageroom_04",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 379,
+      "scores": {
+        "direct": 0.3984492694572172,
+        "factor_direct": 0.41953058398523857,
+        "factor_shared": 0.40344905769787665,
+        "shared": 0.3781624661841884,
+        "previous_direct": 0.3979444735006432
+      },
+      "seeds": [
+        {
+          "direct": 0.4020615633058407,
+          "factor_direct": 0.4194281953662845,
+          "factor_shared": 0.40469278831793776
+        },
+        {
+          "direct": 0.41093318190077194,
+          "factor_direct": 0.42872035689402904,
+          "factor_shared": 0.4071340858865557
+        },
+        {
+          "direct": 0.382353063165039,
+          "factor_direct": 0.4104431996954021,
+          "factor_shared": 0.3985202988891365
+        }
+      ]
+    },
+    {
+      "key": "storageroom_05",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 367,
+      "scores": {
+        "direct": 0.16637762915343776,
+        "factor_direct": 0.15654268483332695,
+        "factor_shared": 0.1631205781338434,
+        "shared": 0.17625619749660068,
+        "previous_direct": 0.16599465145190728
+      },
+      "seeds": [
+        {
+          "direct": 0.15508452754867083,
+          "factor_direct": 0.15074516193184828,
+          "factor_shared": 0.15934844159089231
+        },
+        {
+          "direct": 0.16320868089641846,
+          "factor_direct": 0.15052122226370585,
+          "factor_shared": 0.1567655845637263
+        },
+        {
+          "direct": 0.18083967901522396,
+          "factor_direct": 0.16836167030442672,
+          "factor_shared": 0.17324770824691163
+        }
+      ]
+    },
+    {
+      "key": "storageroom_06",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 364,
+      "scores": {
+        "direct": 0.03445906551741141,
+        "factor_direct": 0.03106597225640176,
+        "factor_shared": 0.032575506455715934,
+        "shared": 0.05194819231163098,
+        "previous_direct": 0.03448849976528015
+      },
+      "seeds": [
+        {
+          "direct": 0.030166941060477532,
+          "factor_direct": 0.031627945349345314,
+          "factor_shared": 0.029779163582850158
+        },
+        {
+          "direct": 0.03217842332367174,
+          "factor_direct": 0.03169335610147323,
+          "factor_shared": 0.03184396220766046
+        },
+        {
+          "direct": 0.041031832168084974,
+          "factor_direct": 0.02987661531838674,
+          "factor_shared": 0.03610339357663718
+        }
+      ]
+    },
+    {
+      "key": "storageroom_07",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 384,
+      "scores": {
+        "direct": 0.13521217607785566,
+        "factor_direct": 0.1356960349129256,
+        "factor_shared": 0.13113103701141693,
+        "shared": 0.13277728464849423,
+        "previous_direct": 0.13509391691234837
+      },
+      "seeds": [
+        {
+          "direct": 0.13419723461050845,
+          "factor_direct": 0.1359297603908042,
+          "factor_shared": 0.13087668478329087
+        },
+        {
+          "direct": 0.13616864760781114,
+          "factor_direct": 0.13668228814458122,
+          "factor_shared": 0.13187573356817625
+        },
+        {
+          "direct": 0.13527064601524735,
+          "factor_direct": 0.13447605620339134,
+          "factor_shared": 0.13064069268278364
+        }
+      ]
+    },
+    {
+      "key": "storageroom_08",
+      "group": "storageroom",
+      "fold": "same",
+      "points": 378,
+      "scores": {
+        "direct": 0.5842857236641315,
+        "factor_direct": 0.5934717047962743,
+        "factor_shared": 0.5801839002749848,
+        "shared": 0.5691926709507997,
+        "previous_direct": 0.5843176156488542
+      },
+      "seeds": [
+        {
+          "direct": 0.6031029832229651,
+          "factor_direct": 0.6053362940217277,
+          "factor_shared": 0.5902500319398404
+        },
+        {
+          "direct": 0.6028544844050343,
+          "factor_direct": 0.6074220018795586,
+          "factor_shared": 0.5906875965549906
+        },
+        {
+          "direct": 0.546899703364395,
+          "factor_direct": 0.5676568184875367,
+          "factor_shared": 0.5596140723301235
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "same": {
+      "means": {
+        "direct": 0.21834609486233145,
+        "factor_direct": 0.23041322325352587,
+        "factor_shared": 0.22225689742155808,
+        "shared": 0.20778948578554848,
+        "previous_direct": 0.21828027410664916
+      },
+      "group": {
+        "corridor": {
+          "direct": 0.21622102201851723,
+          "factor_direct": 0.22315779278490122,
+          "factor_shared": 0.2164944364332864,
+          "shared": 0.20840614331383547,
+          "previous_direct": 0.21617967161827056
+        },
+        "factory": {
+          "direct": 0.15836110959279925,
+          "factor_direct": 0.17218049978453182,
+          "factor_shared": 0.16739145920279822,
+          "shared": 0.15867718395045016,
+          "previous_direct": 0.15859657742941036
+        },
+        "kitchen": {
+          "direct": 0.11953539760629125,
+          "factor_direct": 0.12678671812155604,
+          "factor_shared": 0.11967233068164763,
+          "shared": 0.11038253623055194,
+          "previous_direct": 0.11939569967177467
+        },
+        "lab": {
+          "direct": 0.18809280361110736,
+          "factor_direct": 0.1931580045057607,
+          "factor_shared": 0.19333050533259563,
+          "shared": 0.18658320852921637,
+          "previous_direct": 0.18809287732628777
+        },
+        "lectureroom": {
+          "direct": 0.3807578184341296,
+          "factor_direct": 0.38556576373252727,
+          "factor_shared": 0.37883906577193655,
+          "shared": 0.3774681680663514,
+          "previous_direct": 0.38065648277213326
+        },
+        "livingroom": {
+          "direct": 0.15635367082267346,
+          "factor_direct": 0.16497809854035167,
+          "factor_shared": 0.157184046692103,
+          "shared": 0.14035892229471103,
+          "previous_direct": 0.1562722423338817
+        },
+        "meetingroom": {
+          "direct": 0.1754090012869238,
+          "factor_direct": 0.18290485527158196,
+          "factor_shared": 0.17720139152083705,
+          "shared": 0.1713482873279913,
+          "previous_direct": 0.17531936171530005
+        },
+        "office": {
+          "direct": 0.1417893149785954,
+          "factor_direct": 0.14529448801457892,
+          "factor_shared": 0.13867767699331385,
+          "shared": 0.1370379402535793,
+          "previous_direct": 0.14180417672400472
+        },
+        "restaurant": {
+          "direct": 0.27716802317200345,
+          "factor_direct": 0.29285801565139785,
+          "factor_shared": 0.28425502403048486,
+          "shared": 0.25897479247456573,
+          "previous_direct": 0.277043979100316
+        },
+        "restroom": {
+          "direct": 0.3436107737690535,
+          "factor_direct": 0.3928497310661335,
+          "factor_shared": 0.3658498101423076,
+          "shared": 0.30365654546703535,
+          "previous_direct": 0.34328876747128484
+        },
+        "storageroom": {
+          "direct": 0.24450810819355173,
+          "factor_direct": 0.25481148831546363,
+          "factor_shared": 0.24593012483582774,
+          "shared": 0.23279061573274534,
+          "previous_direct": 0.24443317901047712
+        }
+      },
+      "relative": {
+        "factor_shared_vs_direct": {
+          "relative": -1.7911025895344768,
+          "ci": [
+            -3.535512194997756,
+            -0.23549350024721552
+          ]
+        },
+        "factor_shared_vs_factor_direct": {
+          "relative": 3.5398688134288703,
+          "ci": [
+            2.362913094436675,
+            4.874563347585431
+          ]
+        },
+        "shared_vs_previous_direct": {
+          "relative": 4.806109193346075,
+          "ci": [
+            2.41924869050753,
+            7.434538179320718
+          ]
+        }
+      },
+      "n": 82
+    },
+    "extra": {
+      "means": {
+        "direct": 0.23975063521771328,
+        "factor_direct": 0.24984384518014693,
+        "factor_shared": 0.24200499848549825,
+        "shared": 0.22472005912618487,
+        "previous_direct": 0.23971518290430058
+      },
+      "group": {
+        "corridor": {
+          "direct": 0.16836046797467263,
+          "factor_direct": 0.1824752642072252,
+          "factor_shared": 0.17304298089614217,
+          "shared": 0.14427567773676178,
+          "previous_direct": 0.16828731882681397
+        },
+        "lab": {
+          "direct": 0.2750962556912407,
+          "factor_direct": 0.280916050010471,
+          "factor_shared": 0.27696635221533633,
+          "shared": 0.26802864547471433,
+          "previous_direct": 0.2749349655884991
+        },
+        "lectureroom": {
+          "direct": 0.21629338282616123,
+          "factor_direct": 0.2255883105444088,
+          "factor_shared": 0.21403941198658352,
+          "shared": 0.1926579189918839,
+          "previous_direct": 0.2161265132957288
+        },
+        "livingroom": {
+          "direct": 0.1504462447121607,
+          "factor_direct": 0.15517138669058833,
+          "factor_shared": 0.15465353285991176,
+          "shared": 0.152376045822948,
+          "previous_direct": 0.15047041430332028
+        },
+        "restaurant": {
+          "direct": 0.38855682488433096,
+          "factor_direct": 0.4050682144480413,
+          "factor_shared": 0.39132271446951755,
+          "shared": 0.36626200760461636,
+          "previous_direct": 0.3887567025071406
+        }
+      },
+      "relative": {
+        "factor_shared_vs_direct": {
+          "relative": -0.9402950134992594,
+          "ci": [
+            -2.15289692551639,
+            0.06371122645252303
+          ]
+        },
+        "factor_shared_vs_factor_direct": {
+          "relative": 3.1374984198616396,
+          "ci": [
+            1.67162706050078,
+            4.561748706291469
+          ]
+        },
+        "shared_vs_previous_direct": {
+          "relative": 6.255391751344375,
+          "ci": [
+            2.6163112510890763,
+            10.632910637830772
+          ]
+        }
+      },
+      "n": 18
+    }
+  }
+}

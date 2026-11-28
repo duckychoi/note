@@ -1,0 +1,504 @@
+{
+ "archive_url": "https://drive.usercontent.google.com/download?id=1qWcz7AD_9JwwFGskUfDFUirw0KOiGJ75&export=download&confirm=t",
+ "file_count_in_archive": 11386,
+ "selection": [
+  {
+   "scene": 4,
+   "sensor": "Ensenso",
+   "ids": [
+    26,
+    29,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_26.png",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_29.png"
+   ],
+   "gt": [
+    "Gear/Scene_4/GT_Depth/view_26.png",
+    "Gear/Scene_4/GT_Depth/view_29.png",
+    "Gear/Scene_4/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 4,
+   "sensor": "Ensenso",
+   "ids": [
+    53,
+    56,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_53.png",
+    "Gear/Scene_4/Ensenso/Depth/DEPTH_view_56.png"
+   ],
+   "gt": [
+    "Gear/Scene_4/GT_Depth/view_53.png",
+    "Gear/Scene_4/GT_Depth/view_56.png",
+    "Gear/Scene_4/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 4,
+   "sensor": "RealSense",
+   "ids": [
+    31,
+    34,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_4/RealSense/Depth/DEPTH_view_31.png",
+    "Gear/Scene_4/RealSense/Depth/DEPTH_view_34.png"
+   ],
+   "gt": [
+    "Gear/Scene_4/GT_Depth/view_31.png",
+    "Gear/Scene_4/GT_Depth/view_34.png",
+    "Gear/Scene_4/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 4,
+   "sensor": "RealSense",
+   "ids": [
+    62,
+    65,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_4/RealSense/Depth/DEPTH_view_62.png",
+    "Gear/Scene_4/RealSense/Depth/DEPTH_view_65.png"
+   ],
+   "gt": [
+    "Gear/Scene_4/GT_Depth/view_62.png",
+    "Gear/Scene_4/GT_Depth/view_65.png",
+    "Gear/Scene_4/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 5,
+   "sensor": "Ensenso",
+   "ids": [
+    26,
+    29,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_26.png",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_29.png"
+   ],
+   "gt": [
+    "Gear/Scene_5/GT_Depth/view_26.png",
+    "Gear/Scene_5/GT_Depth/view_29.png",
+    "Gear/Scene_5/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 5,
+   "sensor": "Ensenso",
+   "ids": [
+    53,
+    56,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_53.png",
+    "Gear/Scene_5/Ensenso/Depth/DEPTH_view_56.png"
+   ],
+   "gt": [
+    "Gear/Scene_5/GT_Depth/view_53.png",
+    "Gear/Scene_5/GT_Depth/view_56.png",
+    "Gear/Scene_5/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 5,
+   "sensor": "RealSense",
+   "ids": [
+    31,
+    34,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_5/RealSense/Depth/DEPTH_view_31.png",
+    "Gear/Scene_5/RealSense/Depth/DEPTH_view_34.png"
+   ],
+   "gt": [
+    "Gear/Scene_5/GT_Depth/view_31.png",
+    "Gear/Scene_5/GT_Depth/view_34.png",
+    "Gear/Scene_5/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 5,
+   "sensor": "RealSense",
+   "ids": [
+    62,
+    65,
+    79
+   ],
+   "raw": [
+    "Gear/Scene_5/RealSense/Depth/DEPTH_view_62.png",
+    "Gear/Scene_5/RealSense/Depth/DEPTH_view_65.png"
+   ],
+   "gt": [
+    "Gear/Scene_5/GT_Depth/view_62.png",
+    "Gear/Scene_5/GT_Depth/view_65.png",
+    "Gear/Scene_5/GT_Depth/view_79.png"
+   ]
+  },
+  {
+   "scene": 8,
+   "sensor": "Ensenso",
+   "ids": [
+    17,
+    20,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_17.png",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_20.png"
+   ],
+   "gt": [
+    "Gear/Scene_8/GT_Depth/view_17.png",
+    "Gear/Scene_8/GT_Depth/view_20.png",
+    "Gear/Scene_8/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 8,
+   "sensor": "Ensenso",
+   "ids": [
+    34,
+    37,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_34.png",
+    "Gear/Scene_8/Ensenso/Depth/DEPTH_view_37.png"
+   ],
+   "gt": [
+    "Gear/Scene_8/GT_Depth/view_34.png",
+    "Gear/Scene_8/GT_Depth/view_37.png",
+    "Gear/Scene_8/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 8,
+   "sensor": "RealSense",
+   "ids": [
+    23,
+    26,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_8/RealSense/Depth/DEPTH_view_23.png",
+    "Gear/Scene_8/RealSense/Depth/DEPTH_view_26.png"
+   ],
+   "gt": [
+    "Gear/Scene_8/GT_Depth/view_23.png",
+    "Gear/Scene_8/GT_Depth/view_26.png",
+    "Gear/Scene_8/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 8,
+   "sensor": "RealSense",
+   "ids": [
+    46,
+    49,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_8/RealSense/Depth/DEPTH_view_46.png",
+    "Gear/Scene_8/RealSense/Depth/DEPTH_view_49.png"
+   ],
+   "gt": [
+    "Gear/Scene_8/GT_Depth/view_46.png",
+    "Gear/Scene_8/GT_Depth/view_49.png",
+    "Gear/Scene_8/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 9,
+   "sensor": "Ensenso",
+   "ids": [
+    17,
+    20,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_17.png",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_20.png"
+   ],
+   "gt": [
+    "Gear/Scene_9/GT_Depth/view_17.png",
+    "Gear/Scene_9/GT_Depth/view_20.png",
+    "Gear/Scene_9/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 9,
+   "sensor": "Ensenso",
+   "ids": [
+    34,
+    37,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_34.png",
+    "Gear/Scene_9/Ensenso/Depth/DEPTH_view_37.png"
+   ],
+   "gt": [
+    "Gear/Scene_9/GT_Depth/view_34.png",
+    "Gear/Scene_9/GT_Depth/view_37.png",
+    "Gear/Scene_9/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 9,
+   "sensor": "RealSense",
+   "ids": [
+    23,
+    26,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_9/RealSense/Depth/DEPTH_view_23.png",
+    "Gear/Scene_9/RealSense/Depth/DEPTH_view_26.png"
+   ],
+   "gt": [
+    "Gear/Scene_9/GT_Depth/view_23.png",
+    "Gear/Scene_9/GT_Depth/view_26.png",
+    "Gear/Scene_9/GT_Depth/view_51.png"
+   ]
+  },
+  {
+   "scene": 9,
+   "sensor": "RealSense",
+   "ids": [
+    47,
+    50,
+    51
+   ],
+   "raw": [
+    "Gear/Scene_9/RealSense/Depth/DEPTH_view_47.png",
+    "Gear/Scene_9/RealSense/Depth/DEPTH_view_50.png"
+   ],
+   "gt": [
+    "Gear/Scene_9/GT_Depth/view_47.png",
+    "Gear/Scene_9/GT_Depth/view_50.png",
+    "Gear/Scene_9/GT_Depth/view_51.png"
+   ]
+  }
+ ],
+ "sha256": {
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_26.png": "5e166096907221b7d33644adad00dafa0f16ee86223e35b84863d9a1dc3e945f",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_29.json": "cb998e6d4ab8388ddaa3fd1d227abb429e8b180a11c16b09b329d7b19c516bc3",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_29.png": "e12ac37be6260bb49865c29b0a0662bc9deaebb55a496c49fa3b012862c85fc3",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_31.json": "ad0af42d84c599db51d794d04b92d60d4dc3550e553910bb960a942bbc3b67fc",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_31.png": "dc965ce0d539a0f2e767f2a0056d8e6a9b85f923eb7364b9fea4b9f53768cd0c",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_53.png": "29ccd54f77fcc68258dea52564f6df416f9bd593ce93d010d6921c9e0dae8224",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_56.json": "0fcc67cb385b05af07150d6b1c83c3f4d1bd9e20fff006681fe0ffcdf9553a64",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_56.png": "d791971800ea327f7d2f37db48096adce988464f20643bdc950603fce7e0291b",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_62.json": "bcc9daafa32d4d7d3daa75882ff0f0c612e4a87969488a1844d31ba23f6aeaa8",
+  "Gear/Scene_4/Ensenso/Depth/DEPTH_view_62.png": "f2591ff19657b52e12d0f1d4ae0046a179991252200591debae3a61b0873c749",
+  "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_26.bmp": "f44754d335187387b66996fcfc5da1daed5cbfe5ceb029042e9b0c2a7177be60",
+  "Gear/Scene_4/Ensenso/StereoPattern/LEFT_view_53.bmp": "50a044e6778d89b96738a061f089cd910682c128c259b9969948f18e65785cf5",
+  "Gear/Scene_4/Ensenso/StereoPattern/RIGHT_view_26.bmp": "ac1b04b754258b369227f2b703f75ebaf7bc6fca7943dde35a7736b88e5b96e2",
+  "Gear/Scene_4/Ensenso/StereoPattern/RIGHT_view_53.bmp": "d2e43840efed068e881619b96e391f9f6aba7db97936986f5a1dd180cafd2475",
+  "Gear/Scene_4/GT_Depth/view_26.json": "eabcd435e83e74c482db195e2cb355785be43b0230cae3c3fe534a10385c7f8c",
+  "Gear/Scene_4/GT_Depth/view_26.png": "a06fb1f3f8439bae3f245a71f6c0f29b1b320905f40a6bac82a4508f8585babc",
+  "Gear/Scene_4/GT_Depth/view_29.json": "cb998e6d4ab8388ddaa3fd1d227abb429e8b180a11c16b09b329d7b19c516bc3",
+  "Gear/Scene_4/GT_Depth/view_29.png": "d2daf3e37a19ab586eee8bc9b2b8e4fa36f8990fb0b1bf35250015f715fda4fa",
+  "Gear/Scene_4/GT_Depth/view_31.json": "ad0af42d84c599db51d794d04b92d60d4dc3550e553910bb960a942bbc3b67fc",
+  "Gear/Scene_4/GT_Depth/view_31.png": "67bda525b176ca943f379ead182540eeb03cbac66221a6c77380358a599d154f",
+  "Gear/Scene_4/GT_Depth/view_34.json": "513de4b64b247228ca632da9d54ae428c54ea2ce475ac884f831c479c79638c6",
+  "Gear/Scene_4/GT_Depth/view_34.png": "5f5c14bb79215e4339b1036277960e807a6a34394359d7c15d2ae0b713a8e0fe",
+  "Gear/Scene_4/GT_Depth/view_53.json": "9048abfa4483033ab5b33971a5008297cdfd59489b9eafa96d8e6f9a967689a7",
+  "Gear/Scene_4/GT_Depth/view_53.png": "8ccaf1c9ff0bfd1281c8f8bc5beb6ee40c14a5fc5f59aa26f994f8b2ecf50755",
+  "Gear/Scene_4/GT_Depth/view_56.json": "0fcc67cb385b05af07150d6b1c83c3f4d1bd9e20fff006681fe0ffcdf9553a64",
+  "Gear/Scene_4/GT_Depth/view_56.png": "9922496bd4af3306ff46c2629767c4493be3352eede9134e123a9b217934cad3",
+  "Gear/Scene_4/GT_Depth/view_62.json": "bcc9daafa32d4d7d3daa75882ff0f0c612e4a87969488a1844d31ba23f6aeaa8",
+  "Gear/Scene_4/GT_Depth/view_62.png": "7b393aab731234898a5c189a2a6e504f4b7b5ad982e3a69670530ab3c2bba2c7",
+  "Gear/Scene_4/GT_Depth/view_65.json": "094e2577312a60735b312541860f7add2daa52a40b709f327b33f43570eebaac",
+  "Gear/Scene_4/GT_Depth/view_65.png": "cc96c98dcdedae6a132f61cbd904ca24b68d07021cfaffa3a6cadf5f77a7c31b",
+  "Gear/Scene_4/GT_Depth/view_79.json": "c09de799aade09b6a0e07920a8b1bf0e632c9bdb1f8264c86dda22c113c128ea",
+  "Gear/Scene_4/GT_Depth/view_79.png": "178e32c22888fa06591d786bb2572e6cb207f108286124fd065f19160663ef85",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_26.json": "abfae46e8852d36f732f677ef62d445ba07d6321f5564ec10b92a1fc61acebb4",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_26.png": "f6c4125102aa5f871b912287aeeee99004dc86bda1c96569c4d3fbca47e2cf20",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_31.json": "4f24f387a44ce227cc52f6d48490b6e781fbbe0509ff2cd7d25dcd145311ced7",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_31.png": "aad8f4ec8c0507afe1d5248b53b8dce81d21054f16dcb3b5cb22959ec963c08c",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_34.json": "32b372966079676fa6c76da928b3339745dc495a5f7b63e528d84d5bcdf2d279",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_34.png": "62b9e877e41efcf7c98e4f007da239fb56d07cb43051031363b8914266857c44",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_53.json": "f7025339b780db1bf380d74492381b875d1b5c1f02ee018f75baad2ef6ba2386",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_53.png": "179b0fa0cf0d72fa1320c7b97ce6fc88af3b89d765f679ef7be1757d97acbc74",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_62.json": "9f7cbd411dfb79a81439a7316c0f4727448b3f12d9b8fb39e1c5092c60ebb642",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_62.png": "c481fe5eba7742a249105b44b24e7703d76f36b7393fc11ba2b38cd548c92477",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_65.json": "648be72658ecee5a477a477c04ee957b98c87137c98b54416898334dd55fdd67",
+  "Gear/Scene_4/RealSense/Depth/DEPTH_view_65.png": "7b2b2c5296ce1c791bf8074205ca89aefc98a329ac1b59928f1f68741fd1af03",
+  "Gear/Scene_4/RealSense/StereoPattern/LEFT_view_31.bmp": "8d3a9b7fe5a2f1f0362d35579e810b79937bafa56794c802286681999866474e",
+  "Gear/Scene_4/RealSense/StereoPattern/LEFT_view_62.bmp": "102c3fa43702727529d7cb8bd92641e2da3fcf11d00e5a7b7605f68a2150b731",
+  "Gear/Scene_4/RealSense/StereoPattern/RIGHT_view_31.bmp": "d50c3d597cacbb49e3f1316c0765c1f30b381bdce1feb2c5184d246f3a756a23",
+  "Gear/Scene_4/RealSense/StereoPattern/RIGHT_view_62.bmp": "dfec9dff03fa4806a7e339e89618546bd4cc0292f213c6522fc92f7f91e4d26c",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_26.png": "e70af99844525f1171bf0c325f1fbd4365d1412e0d60a490f132dd191aba57eb",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_29.json": "afc35ed97d01dd4e722637a2dd62c93b5c60f793ff76a9f0e4f83f595cd3e8cb",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_29.png": "7247cbfa460a6ae73b162f04a7d372c7036a819ac6093be73159445711001b48",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_31.json": "709aba7a9e43caf68afbbdbe589e7e12aaaaf2354a1bfe16cf21028d182f3d6a",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_31.png": "ea7e728c39acf455a8593882e01a417faf5d189afe7822888ad4e47817a4398d",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_53.png": "fbddd2c537e9a015addf63a993bd4869ca2fe099204c4e9a8cf7312465a05688",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_56.json": "9a0f2cdf32d7f330e36a46b4bea2618376b320871581fc68e4fc90d47ebcfff7",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_56.png": "5420dc393e855bd0c4dc8769fa242b0b8f0220473ff19cccd7b5ca73a86c4fcc",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_62.json": "c50745546b96cf98092a5bdf72376821e06a3125d44df6fa99365b7ffa9895e2",
+  "Gear/Scene_5/Ensenso/Depth/DEPTH_view_62.png": "c22b684ce2f0304af4c85481a505cbc70a77f04ff235b7c2ab2a63e840f9e26b",
+  "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_26.bmp": "080111390f880bf944ef8393cb4dae2030330534a4d6f014187867ed67193506",
+  "Gear/Scene_5/Ensenso/StereoPattern/LEFT_view_53.bmp": "d5642ff78ed83c70cf10127c1414ca6bdd7b47c8dfda260d71c8fe0149367b89",
+  "Gear/Scene_5/Ensenso/StereoPattern/RIGHT_view_26.bmp": "0915f0692489f3ca7f04c3802a899f53b0b9723d9c5e8c5de4f73808e690514a",
+  "Gear/Scene_5/Ensenso/StereoPattern/RIGHT_view_53.bmp": "556773ede0c361c7ff645bfe9e1a291c2e90b81928f4c9d5e3c3fbedafd9e0be",
+  "Gear/Scene_5/GT_Depth/view_26.json": "1c815587e667627397a43ce098f2ac64e6e29dc7c2d6d8a32d594ecf58e1069c",
+  "Gear/Scene_5/GT_Depth/view_26.png": "80c8de0eede32d5cf9bee7618325bf052a6ee08b22daf84fce144883562ec6d4",
+  "Gear/Scene_5/GT_Depth/view_29.json": "afc35ed97d01dd4e722637a2dd62c93b5c60f793ff76a9f0e4f83f595cd3e8cb",
+  "Gear/Scene_5/GT_Depth/view_29.png": "3937e19908dc9d4ae301384912636723b100dd85e417124ebba0cd382730ee71",
+  "Gear/Scene_5/GT_Depth/view_31.json": "709aba7a9e43caf68afbbdbe589e7e12aaaaf2354a1bfe16cf21028d182f3d6a",
+  "Gear/Scene_5/GT_Depth/view_31.png": "7aa3995bce10489e7c0cde673c675ad5ed1661462f326c488a7f46f42513e5db",
+  "Gear/Scene_5/GT_Depth/view_34.json": "1e9bf26a740654d07f3ff4b090ac8e70bf3c177a7e8cdffc859ceb8e6d01144c",
+  "Gear/Scene_5/GT_Depth/view_34.png": "dd9940048ed689328fb5c72d408677ae11f2f71f756913c16000bf8a818924c9",
+  "Gear/Scene_5/GT_Depth/view_53.json": "3d104fbdfee9c8ca75f0af8932a328d28b66c88426ca4743ce075c9c09644bdb",
+  "Gear/Scene_5/GT_Depth/view_53.png": "a724905661ca445975e5546a5f9a4551fbcc49bc09320fdaf3d3578cc4223f18",
+  "Gear/Scene_5/GT_Depth/view_56.json": "9a0f2cdf32d7f330e36a46b4bea2618376b320871581fc68e4fc90d47ebcfff7",
+  "Gear/Scene_5/GT_Depth/view_56.png": "080358c0827da267094d89fe91b6ab5b66bbad65fcfb8cac4b70d5ae31599e66",
+  "Gear/Scene_5/GT_Depth/view_62.json": "c50745546b96cf98092a5bdf72376821e06a3125d44df6fa99365b7ffa9895e2",
+  "Gear/Scene_5/GT_Depth/view_62.png": "9c927506bc7e77a72e81647bea2bc15eb00859142e98a1ab9053fed2c7428d8a",
+  "Gear/Scene_5/GT_Depth/view_65.json": "720c36857a990e128f99760e7e5a4e9cbfdd225241d3a85defb38d50a4a6c2bc",
+  "Gear/Scene_5/GT_Depth/view_65.png": "b053bde1a449f3ae245c4e655f6fb8f0d45730a0e40f2b64f8355f77a5155ab1",
+  "Gear/Scene_5/GT_Depth/view_79.json": "5f3c46787fb635e7d7640976de02068e1669304cd4ecf8c95f8ad76874afd897",
+  "Gear/Scene_5/GT_Depth/view_79.png": "53dd6debbad3c943fe4811b18b11e1a35d7de400c9745ce5eccd35396f9c1ccd",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_26.json": "e3ea428560c69f3ab3d2abe6c00c96a77d6eb9f6a61d97d1887c82c661f38b8e",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_26.png": "b7b310bc342ba42807e3f38f765f2200990721bf53e2627d48e0a72237dfdf39",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_31.json": "fc693785ed5d6e196e7151915014c83a13f38ea4a920d6f0a5a7b92ed0489f3b",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_31.png": "390774efb3aa63174820b1bad6334fe37cbb2500fdf8164af559006ee7666fa9",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_34.json": "e12d04c78ca3d89bb0c4449c885fff8c30a9b4721f3f1566d474ad363a5dbe4e",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_34.png": "7484986e0a6e23d6c315785060f56345d2f4a857caa9e07a738e5e27059cf561",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_53.json": "77c9303c2c0f00915d9b63c4d9d1a11c7c2e62fb7a4187786fbb5bbd0d3718e8",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_53.png": "dad978fb1af5b98916ff2b0a2574882a118ccdb866185cc2ac79165932e044f6",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_62.json": "d8c9028304cb2af6d6b0c8ddb91f6b86bcfa25fef27abc5a6e9aa72dee99b594",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_62.png": "9b133eb559db5385fd1af9ad3b767a7444884d79ee2df98f99205a7bfea41631",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_65.json": "3b7d12e679c74ddcc47cc58622c3ec43dc195b916b15fa1a253619fdcb3f5a50",
+  "Gear/Scene_5/RealSense/Depth/DEPTH_view_65.png": "5c73ddd00702175a931f01254ba8551d8fbbec1f21f13bdb5ff5d88983b9d764",
+  "Gear/Scene_5/RealSense/StereoPattern/LEFT_view_31.bmp": "abc734c16e6afb58fc48823c6932b152c988ca8d75e854f2ba35fe2a11965e3f",
+  "Gear/Scene_5/RealSense/StereoPattern/LEFT_view_62.bmp": "78e8e629dfd98e7d41732c7bdd8c7abf98428316363adfafa11463a202af7baa",
+  "Gear/Scene_5/RealSense/StereoPattern/RIGHT_view_31.bmp": "5dd4c734b7f5d2467c8808394f51cbb5ae51d10316a8d7ba33ac85ab526f94b4",
+  "Gear/Scene_5/RealSense/StereoPattern/RIGHT_view_62.bmp": "e9273bea4432dba29091c4840575aa9ec4ade703ee5fec9dc89761ed4af8f500",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_17.png": "959764e95e4b98b540115387226d3df9a5bc5dc862cfbee3cc3725ff8d972fa9",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_20.json": "181c73e0fee163f3884e3a98eabc965a1153e75448239318c9789d4dda21f181",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_20.png": "07bda2b3ae98854707f553d5cf563a8596548754c9c0a43c314a7bd42cd137dd",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_23.json": "9580614be00356b5843b7a560495bc692fd9366f42d1c556a7ff0039d9c7aa69",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_23.png": "422d4fa027cb7eca006d14a32b45da8bd3e29ee1cad459c9651072e2b2b5ddd6",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_34.png": "e2e35987f6239727de79a76e6159426bdaef132052c641df2ae933278647ac98",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_37.json": "b25df1591f8e9e0e45ea413238f80dcb75f24054ff93dfaaf7e05097fd01b5b3",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_37.png": "02c5fa3cd3694a2c8841093e7ebf7b9173444e56d492a4f9a628f9c1f3e1838e",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_46.json": "bd1ebef8fd79a3d01f1b76d91dee7976631364d8dc0d1cb9125362b341019e58",
+  "Gear/Scene_8/Ensenso/Depth/DEPTH_view_46.png": "45ec02b509aacfb9e9f3313b10ace61530d4fc084788adb451618559f1db0357",
+  "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_17.bmp": "6673000c6190c4ff91707e7673868136132f43367fc1847281d33375747be7e5",
+  "Gear/Scene_8/Ensenso/StereoPattern/LEFT_view_34.bmp": "f8eb6457f95185556851483c85c748ff81d54ae0ac3225e9d983aaa8fbc55e9e",
+  "Gear/Scene_8/Ensenso/StereoPattern/RIGHT_view_17.bmp": "4c457a09c5b573e821da082d2b529da7da0fc102f96ac457c326b3386d9b2682",
+  "Gear/Scene_8/Ensenso/StereoPattern/RIGHT_view_34.bmp": "381ae537a031345f7ba53c947346205c9a1424f4a6d1367cebd190cc56a9c1d0",
+  "Gear/Scene_8/GT_Depth/view_17.json": "484c7dc9a6582aad9356a9b231faba7c66ec4b8ed610e9666b9adc0a5e1fec3f",
+  "Gear/Scene_8/GT_Depth/view_17.png": "c2b785dea95d50c3b6d32cd86a7c71e4851e0574013e658963ec08212f4317b2",
+  "Gear/Scene_8/GT_Depth/view_20.json": "181c73e0fee163f3884e3a98eabc965a1153e75448239318c9789d4dda21f181",
+  "Gear/Scene_8/GT_Depth/view_20.png": "ea7b608c1ff8c8bb2ccd49d6777b5c0df995235a1acbce524abcb6364082531b",
+  "Gear/Scene_8/GT_Depth/view_23.json": "9580614be00356b5843b7a560495bc692fd9366f42d1c556a7ff0039d9c7aa69",
+  "Gear/Scene_8/GT_Depth/view_23.png": "58c2cc74bafd9a0968d165c0269305af71d04877ab0dc0de3c1a03b2bb19612e",
+  "Gear/Scene_8/GT_Depth/view_26.json": "2e3e80272bf0952fa1c0c93b6a7240da37bb6531683cba39fa65eb1f9318ee11",
+  "Gear/Scene_8/GT_Depth/view_26.png": "acb9b87d4e7c645cfc68afb100b8f9330b9c973b3f56cd028d255f4e995fddce",
+  "Gear/Scene_8/GT_Depth/view_34.json": "b0e82c9500c14a02f0a9f24a82a409296b20f75009af71b6675ae58403d84914",
+  "Gear/Scene_8/GT_Depth/view_34.png": "1a6e13408c319510182259f4aaac503aff1dc150765c416c30aa040bdfe07799",
+  "Gear/Scene_8/GT_Depth/view_37.json": "b25df1591f8e9e0e45ea413238f80dcb75f24054ff93dfaaf7e05097fd01b5b3",
+  "Gear/Scene_8/GT_Depth/view_37.png": "d3cc3343072ef6e477171c88f66daf6d50de1e806b055b2db3d13f0aa6380b74",
+  "Gear/Scene_8/GT_Depth/view_46.json": "bd1ebef8fd79a3d01f1b76d91dee7976631364d8dc0d1cb9125362b341019e58",
+  "Gear/Scene_8/GT_Depth/view_46.png": "fbc0ea8e264ca746460c6fea959c392c781ac523a79a766262105f54a00cf76a",
+  "Gear/Scene_8/GT_Depth/view_49.json": "aff8d3dad21199cb923dad79d7a01fc8727fa10f0273281c1ca6135eda9302a9",
+  "Gear/Scene_8/GT_Depth/view_49.png": "70943af0950602b8c5781dce0ec0a73aed5895cc43211e63fc1bffd06155bf72",
+  "Gear/Scene_8/GT_Depth/view_51.json": "7115169948dbcc12df014fa68dad1a6cd697ccee1608b5f34870f15576502141",
+  "Gear/Scene_8/GT_Depth/view_51.png": "ec9fe6a1c5359bf6d5596b5056e698991f234153a7ba2cd752a76aa120367a93",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_17.json": "7b54b0aad8b60cb5e54bd14d018116ee3468555d9aea1e6d486580382c5c0463",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_17.png": "2cf0747b458526c67baa57fc0b24fb8b01433044fac5d0b4fc2d0f8cbacdf6a9",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_23.json": "8f7d83e68ea4ce2b5b675289b145e59d62f6511a04193d8801ff1a11a688ecde",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_23.png": "abbb38fbedc04fffc4e7844e2908bbe3e691ce51ff96e3c49a8b6ac3f6cb88a7",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_26.json": "7b4b0fe3e65895f5cd2c50d7e40cd73328fbca568b81f851a07c65f9be47eb38",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_26.png": "723b36e60d5242d4a6fcf2bc45ad490b94ee42e4677197e9a220b63d739e3e53",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_34.json": "df3befde5c0ec4079a3c4df871675433126b12646695df9c81c193b1825b572f",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_34.png": "3753fd7b7b41f31785c37cadbf387ff65387ec86d77799ef8cae09605948ff85",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_46.json": "ff65240e0912b7e47f36190a222113d68bdd9a9927454d5ae1ff3dd8080feb76",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_46.png": "579d80f5ecb342ce598d227c86c91c5527149e89d9aa560ba5728566c94809cb",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_49.json": "4e00492020f48e53b23191819f43af284169f03bb1db77dc8bfe8b70d473b538",
+  "Gear/Scene_8/RealSense/Depth/DEPTH_view_49.png": "88ad03783c230e9314d13f6fa33af9891be1ce0ff0a9333541f684b3844b9b05",
+  "Gear/Scene_8/RealSense/StereoPattern/LEFT_view_23.bmp": "221cbd186da15cd765abb5bacc736f2b64ad9441602b1241d6fa073dfc06692d",
+  "Gear/Scene_8/RealSense/StereoPattern/LEFT_view_46.bmp": "bd3de2c0083a07da8619a240c3bdfe5261f53d7c31e5f4335e975b73b4e6b5b9",
+  "Gear/Scene_8/RealSense/StereoPattern/RIGHT_view_23.bmp": "6b552504dbc186e4179168dbf12fd96cdad2159efa6e66514a70b8839b7169cf",
+  "Gear/Scene_8/RealSense/StereoPattern/RIGHT_view_46.bmp": "c40fe7a3558e051e22efb702cc32c56515c288c9365c6a162ec9f20638712f89",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_17.png": "66c065b95fac98404596c054cab519b313c3492ed7c8fa200bd53a8d2c0144c3",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_20.json": "46ef2d6978b2467c4fa2240f87a55e251c9bc42b1a6b6ec8b2d0db753f270613",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_20.png": "aac427885065d3c18558ef6e2b4c7f7f8373ac114a8de68dadaefddcf0210716",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_23.json": "5f4467d59cec88748a793340444bb4ad1b62e77a63dfcd09ba90d15ecef31958",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_23.png": "7b66011393fc98c0b02b2451b448c69f0eee0bb4d1c3b20ea492c671cac12fe5",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_34.png": "c268a5ffd1c0444b388f13cbe70e7c07c039be8305b2ac3146beb06e8c014faf",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_37.json": "71a4971f579b6d88444573b1f14b5c17d1d3514318703a62120b3e288700a81b",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_37.png": "944269f41d9f3f0ff372c0b66a5e286c036bbb5bec15edeffa1e2ca883b6405c",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_47.json": "beda527e879aace0490df8254f9077e7cd1c6bf07e260d687c3a3b1137cc89eb",
+  "Gear/Scene_9/Ensenso/Depth/DEPTH_view_47.png": "1d49adb2544d17e4bbfa5283b404432ac3b71bf60020e6d9b47c8ef6d1addd07",
+  "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_17.bmp": "5f20919e250a7db62b30bd47ae9fed2a4c9885a60e87e5fa84f2fd672d7d760d",
+  "Gear/Scene_9/Ensenso/StereoPattern/LEFT_view_34.bmp": "5ede5d81c5ade1cf7bfa3e07dd8cb86854668ef7cf199761c67529d60607ff0b",
+  "Gear/Scene_9/Ensenso/StereoPattern/RIGHT_view_17.bmp": "8405469ed3d29b4732f70fa36d37bc042ed2eab87a41d3068f34d253e21a9154",
+  "Gear/Scene_9/Ensenso/StereoPattern/RIGHT_view_34.bmp": "7cd580e1af0b22d8ef341da6950e5183d4b04697ce8fd4e4952230b28b9d9987",
+  "Gear/Scene_9/GT_Depth/view_17.json": "5f1c7168404e1b196f823d02f01b7d87fc7f4f218bc84084e6bbe117f3e99c66",
+  "Gear/Scene_9/GT_Depth/view_17.png": "ecd2f7f1901bdb1e010d96602fdfc162a2a828085f2dda51718a4d66a4d266ce",
+  "Gear/Scene_9/GT_Depth/view_20.json": "46ef2d6978b2467c4fa2240f87a55e251c9bc42b1a6b6ec8b2d0db753f270613",
+  "Gear/Scene_9/GT_Depth/view_20.png": "9ea40d0d620596e6af13205ee094198cef32a7110770b1015f8ffec626c0c3ba",
+  "Gear/Scene_9/GT_Depth/view_23.json": "5f4467d59cec88748a793340444bb4ad1b62e77a63dfcd09ba90d15ecef31958",
+  "Gear/Scene_9/GT_Depth/view_23.png": "5c4961114e68b1bf45a08f7eb4577241c2d580efadf315f3eae0569831405193",
+  "Gear/Scene_9/GT_Depth/view_26.json": "aa4f5da4163b061d3182efde50bc2ffbd098e53b0dfc6aac653bb4844ff1fb54",
+  "Gear/Scene_9/GT_Depth/view_26.png": "b1ccb8a992ac3ac681c1cbbc3825edeef073291d1886900f5cc1bf7bfb002eed",
+  "Gear/Scene_9/GT_Depth/view_34.json": "572361e3ce764e2e878098dd84e05930e686e925fb45d9811218fd8ab15f425c",
+  "Gear/Scene_9/GT_Depth/view_34.png": "293cf579695f5df28bc1f4bb1140a1fbbc018490021b1e4c3e23d7a76b57862d",
+  "Gear/Scene_9/GT_Depth/view_37.json": "71a4971f579b6d88444573b1f14b5c17d1d3514318703a62120b3e288700a81b",
+  "Gear/Scene_9/GT_Depth/view_37.png": "aea982d7176c404559ede588d63b0e6ebcb5297f3588ea4792e61cbfd7af8a69",
+  "Gear/Scene_9/GT_Depth/view_47.json": "beda527e879aace0490df8254f9077e7cd1c6bf07e260d687c3a3b1137cc89eb",
+  "Gear/Scene_9/GT_Depth/view_47.png": "0d6edbe2205bdee5b81efc984998b1d99fd352360678405477c0ce5d56117a82",
+  "Gear/Scene_9/GT_Depth/view_50.json": "37aa495344e1b232474f8b05e5b33728552bd639a86130733d4ed67fc00bc9cb",
+  "Gear/Scene_9/GT_Depth/view_50.png": "f0a2a810126d1362b62f948a6eada707258bce000829f0a636ad4d4c27d4a4ad",
+  "Gear/Scene_9/GT_Depth/view_51.json": "902148a285cd135d7758ce4203bdca9a71f25633baea49ef2fe561ba2807e67f",
+  "Gear/Scene_9/GT_Depth/view_51.png": "d29f8b05e1cf9139808b45beea4951e68afa5341e5e96e09e775b7d20a000869",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_17.json": "67e9b9dc75e609f430c8716dd90032154092df611298ccd9b7675cb9fa31c3ca",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_17.png": "8e584dd6c4afd95bf530c7104c0d8d57272b5adca2cadd4425cbec328036151b",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_23.json": "0ea67496a8e345bcebe107c3972d903d930689dcd79e4f6cd1aa4ab971e152ee",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_23.png": "15065248d7a001e8a3cfb5b1b12402e0e02a26d726a47d1abd0d7cf861122561",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_26.json": "ee8a7051defcbb4bc6b7f93e0efe70a2a77166c8e1688e6c38d72d90cec1ac36",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_26.png": "832ee92346ea07c25083fb6be956bb4731e43e5d7814ec1f4885de1c0a9a7522",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_34.json": "d81501541116cdcac916113b7dbe03ffdc3424d58eaebda580afb36a5c22b572",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_34.png": "3adceb1d577bb71c3c3ff1bcb8e557a3595a77e123e19cad44093b44a7ff9cfc",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_47.json": "6f86cc000c38aa9e56397c63d7f463eeb6cff85f7b75fec8f9398837220e585b",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_47.png": "442276f65460b0aa420bb69309845f0761666c4012ed388a4ad206534a8699d6",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_50.json": "5bf228e5daa33bb8e6150b7fbc582d790fcc42737a5e8bee9098eeb1ed022256",
+  "Gear/Scene_9/RealSense/Depth/DEPTH_view_50.png": "bf399498627a32572bbbb13fa83f9d0ca6fb2b89a77955be7780732d6cb72dab",
+  "Gear/Scene_9/RealSense/StereoPattern/LEFT_view_23.bmp": "0529773d241ec8b0bc822d347e14c69fb02f8d3ccd401c3d4a4661bf97ec7376",
+  "Gear/Scene_9/RealSense/StereoPattern/LEFT_view_47.bmp": "1173c000a0b2bed25f0e28081775d0af874a589921b0ab520336422be70aff94",
+  "Gear/Scene_9/RealSense/StereoPattern/RIGHT_view_23.bmp": "b6b817b54f676e873eefba3c41c83034c1522386f79a49a7babe23ace19ff286",
+  "Gear/Scene_9/RealSense/StereoPattern/RIGHT_view_47.bmp": "971bb92fd4258d2deb949c2d798671dcc9de70bac2a3bf745d0e131fedfcbcfc"
+ },
+ "calibration_sha256": {
+  "Ensenso_DEPTH.yml": "77e0ff22b95afece583fec3f03471abae14629291bd3f3af5bef20bc5cc95a78",
+  "Ensenso_LEFT.yml": "1a8fcac8b726c3889453127327ed5508b8e83816da23313afba5a00f5af0bb82",
+  "Ensenso_RIGHT.yml": "2d85345f7936f33398ede32c3c8d974b1d309faae8deabf7b2c7cf74b07655f4",
+  "RealSense_DEPTH.yml": "dfcf67a4fa7f828b1cf61b841fc39abb5e68ce6ed640a0513756be238fbd1188",
+  "RealSense_LEFT.yml": "3feaea2efb16bda00fab7ddfd1c4eab7c85adaade8e8573425b0f60adf898c4a",
+  "RealSense_RIGHT.yml": "3feaea2efb16bda00fab7ddfd1c4eab7c85adaade8e8573425b0f60adf898c4a"
+ }
+}
